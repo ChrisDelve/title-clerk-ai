@@ -1,0 +1,217 @@
+TITLE:\
+FLHSMV TL-28 \'97 Electronic Lien and Title (ELT) Procedures\
+\
+CATEGORY:\
+Electronic Titles\
+ELT\
+Lienholders\
+Electronic Lien Releases\
+Title Status Verification\
+\
+--------------------------------------------------\
+\
+RULE:\
+Florida Electronic Lien and Title (ELT) records replace physical paper titles for participating lienholders.\
+\
+VERIFY:\
+- ELT participation status\
+- Current lienholder\
+- Electronic title status\
+- VIN consistency\
+- Lender information\
+\
+ESCALATE IF:\
+- ELT status unclear\
+- Lienholder mismatch exists\
+- Electronic title unresolved\
+- Fraud concerns arise\
+\
+\
+--------------------------------------------------\
+\
+RULE:\
+An active electronic lien generally prevents paper title issuance until lien satisfaction/release occurs.\
+\
+VERIFY:\
+- Active lien status\
+- Lien release status\
+- ELT release completion\
+- Supporting lender documentation\
+\
+COMMON MISTAKE:\
+Assuming customer payoff automatically generates paper title immediately.\
+\
+\
+--------------------------------------------------\
+\
+RULE:\
+ELT records must match lender/title system information exactly.\
+\
+VERIFY:\
+- Bank/lender name\
+- VIN\
+- Owner information\
+- Electronic title status\
+- Supporting documents\
+\
+ESCALATE IF:\
+- Bank name mismatch exists\
+- VIN discrepancy exists\
+- Ownership conflict exists\
+\
+\
+--------------------------------------------------\
+\
+RULE:\
+Electronic lien satisfactions must properly clear through ELT system before title transfer processing.\
+\
+VERIFY:\
+- Electronic release completed\
+- System updated\
+- Active lien removed\
+- Title eligible for transfer/printing\
+\
+ESCALATE IF:\
+- System still shows active lien\
+- Bank claims released but ELT still active\
+- Multiple liens involved\
+\
+\
+--------------------------------------------------\
+\
+RULE:\
+VIN must match ALL ELT/title/lender documentation exactly.\
+\
+VERIFY:\
+- ELT VIN\
+- System VIN\
+- Title VIN\
+- Supporting paperwork VIN\
+\
+ESCALATE IF:\
+- Any VIN discrepancy exists\
+- Altered VIN suspected\
+- VIN unreadable/incomplete\
+\
+\
+--------------------------------------------------\
+\
+RULE:\
+Paper title requests after ELT release may require additional processing steps.\
+\
+VERIFY:\
+- Lien satisfied\
+- Title eligible for print\
+- Customer request completed\
+- Supporting documentation if required\
+\
+ESCALATE IF:\
+- ELT release incomplete\
+- Title status unresolved\
+- Duplicate title conflict exists\
+\
+\
+--------------------------------------------------\
+\
+RULE:\
+Out-of-state electronic title systems may differ from Florida ELT procedures.\
+\
+VERIFY:\
+- Prior state title format\
+- Electronic title status\
+- Lender participation\
+- Ownership consistency\
+\
+ESCALATE IF:\
+- Prior state electronic title unresolved\
+- Missing lien release\
+- Ownership/title conflict exists\
+\
+\
+--------------------------------------------------\
+\
+RULE:\
+Multiple liens require careful review of lien priority and electronic release status.\
+\
+VERIFY:\
+- Primary lienholder\
+- Secondary lienholders\
+- Release sequence\
+- Current title status\
+\
+ESCALATE IF:\
+- One lien remains active\
+- Multiple lender conflicts exist\
+- Release order unclear\
+\
+\
+--------------------------------------------------\
+\
+RULE:\
+Business/entity lienholders require careful lender verification.\
+\
+VERIFY:\
+- Correct lender/business name\
+- ELT participation\
+- Supporting lender documentation\
+\
+ESCALATE IF:\
+- Business lender mismatch exists\
+- Fraud concerns arise\
+- Lender authority unclear\
+\
+\
+--------------------------------------------------\
+\
+RULE:\
+Title transfers should NOT proceed until electronic lien status is fully resolved.\
+\
+BEST PRACTICE:\
+Always verify live title/ELT status before processing ownership transfer.\
+\
+\
+--------------------------------------------------\
+\
+COMMON DEALERSHIP/PROCESSING MISTAKES:\
+- Assuming payoff clears title immediately\
+- Failure to verify ELT release\
+- VIN mismatch\
+- Incorrect lender entry\
+- Missing lien release verification\
+- Ignoring secondary liens\
+- Incorrect paper title assumptions\
+- Out-of-state ELT confusion\
+\
+\
+--------------------------------------------------\
+\
+HIGH-RISK ESCALATION SITUATIONS:\
+- Active electronic lien unresolved\
+- Multiple liens\
+- VIN discrepancies\
+- Fraud concerns\
+- Ownership conflicts\
+- Bank/lender mismatch\
+- Out-of-state ELT conflicts\
+- System/title status inconsistencies\
+\
+\
+--------------------------------------------------\
+\
+BEST PRACTICE:\
+Before processing ELT-related transaction:\
+1. Verify current title status.\
+2. Verify active lienholder.\
+3. Verify electronic lien release.\
+4. Verify VIN carefully.\
+5. Verify lender information.\
+6. Escalate unresolved ELT conflicts immediately.\
+\
+\
+--------------------------------------------------\
+\
+SOURCE:\
+FLHSMV TL-28 Electronic Lien and Title Procedures\
+\
+REFERENCE URL:\
+https://www.flhsmv.gov/pdf/proc/tl/tl-28.pdf}

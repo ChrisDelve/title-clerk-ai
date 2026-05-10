@@ -1,0 +1,296 @@
+TITLE:\
+FLHSMV RS-03 \'97 Motor Vehicle Registration Codes\
+\
+CATEGORY:\
+Registration Codes\
+Class Codes\
+Plate Types\
+Weight Codes\
+Vehicle Classification\
+Registration Categories\
+\
+--------------------------------------------------\
+\
+RULE:\
+Florida registration class codes determine:\
+- Registration fees\
+- Plate eligibility\
+- Vehicle classification\
+- Insurance requirements\
+- Operational restrictions\
+\
+VERIFY:\
+- Vehicle body type\
+- GVWR/weight\
+- Registration class code\
+- Plate type\
+- Commercial vs passenger use\
+- Supporting ownership documents\
+\
+ESCALATE IF:\
+- Registration class unclear\
+- Weight discrepancy exists\
+- Fraud concerns arise\
+- Vehicle classification conflict exists\
+\
+\
+--------------------------------------------------\
+\
+RULE:\
+Registration codes must accurately reflect the vehicle\'92s:\
+- Intended use\
+- Weight class\
+- Vehicle type\
+- Ownership type\
+- Commercial/passenger status\
+\
+VERIFY:\
+- Vehicle body style\
+- Weight documentation\
+- Commercial use\
+- Fleet/business ownership\
+- Supporting records\
+\
+COMMON MISTAKE:\
+Registering commercial vehicle under passenger class to avoid higher fees.\
+\
+\
+--------------------------------------------------\
+\
+RULE:\
+Passenger vehicle registrations generally use standard passenger class codes.\
+\
+VERIFY:\
+- Passenger vehicle use\
+- Non-commercial operation\
+- Vehicle weight eligibility\
+\
+ESCALATE IF:\
+- Commercial use suspected\
+- Incorrect passenger classification identified\
+\
+\
+--------------------------------------------------\
+\
+RULE:\
+Commercial registrations require proper weight classification.\
+\
+VERIFY:\
+- Declared GVWR\
+- Certified weight if required\
+- Commercial use\
+- Registration class code\
+\
+ESCALATE IF:\
+- Weight inconsistency exists\
+- Incorrect commercial class selected\
+- Supporting documentation missing\
+\
+NOTE:\
+Commercial registration fees are heavily dependent on declared gross vehicle weight. :contentReference[oaicite:0]\{index=0\}\
+\
+\
+--------------------------------------------------\
+\
+RULE:\
+Apportioned/IRP vehicles require specialized commercial registration coding.\
+\
+VERIFY:\
+- Interstate operation\
+- IRP eligibility\
+- Fleet records\
+- Business ownership\
+\
+ESCALATE IF:\
+- IRP classification conflict exists\
+- Interstate operation unclear\
+- Missing fleet documentation\
+\
+\
+--------------------------------------------------\
+\
+RULE:\
+Specialty plate registrations may require:\
+- Eligibility verification\
+- Additional affidavits\
+- Supporting documentation\
+- Specific class codes\
+\
+VERIFY:\
+- Specialty plate eligibility\
+- Military/veteran documents if applicable\
+- Disabled parking eligibility if applicable\
+- Supporting affidavits/forms\
+\
+ESCALATE IF:\
+- Eligibility unresolved\
+- Missing supporting documentation\
+- Incorrect specialty class code\
+\
+\
+--------------------------------------------------\
+\
+RULE:\
+Body type and registration class must align correctly.\
+\
+VERIFY:\
+- Body type\
+- Vehicle design\
+- Vehicle usage\
+- Registration code\
+\
+COMMON BODY TYPES:\
+- 4D = Sedan\
+- 2D = Coupe\
+- SUV = Sport Utility Vehicle\
+- PK = Pickup\
+- VN = Van\
+- TK = Truck\
+\
+ESCALATE IF:\
+- Body type conflict exists\
+- Incorrect classification identified\
+\
+\
+--------------------------------------------------\
+\
+RULE:\
+Low-speed vehicles, mini-trucks, autocycles, antique vehicles, and specialty vehicles may require unique registration coding.\
+\
+VERIFY:\
+- Vehicle classification\
+- Supporting title documents\
+- Manufacturer records\
+- Special registration eligibility\
+\
+ESCALATE IF:\
+- Specialty classification unclear\
+- Incorrect code assignment\
+- Manufacturer information conflict exists\
+\
+\
+--------------------------------------------------\
+\
+RULE:\
+Trust/entity-owned vehicles may require:\
+- Business/entity registration coding\
+- FEID verification\
+- Authorized signer review\
+\
+VERIFY:\
+- Entity documents\
+- Registration ownership\
+- FEID/business information\
+\
+ESCALATE IF:\
+- Ownership mismatch exists\
+- Business authority unclear\
+- Fraud concerns arise\
+\
+\
+--------------------------------------------------\
+\
+RULE:\
+VIN must match ALL registration and title records exactly.\
+\
+VERIFY:\
+- Registration VIN\
+- Title VIN\
+- Insurance VIN\
+- System VIN\
+- Supporting paperwork VIN\
+\
+ESCALATE IF:\
+- Any VIN discrepancy exists\
+- Altered VIN suspected\
+- VIN unreadable/incomplete\
+\
+\
+--------------------------------------------------\
+\
+RULE:\
+Incorrect registration coding may cause:\
+- Incorrect fees\
+- Insurance issues\
+- IRP conflicts\
+- Tax calculation errors\
+- Plate issuance problems\
+\
+VERIFY:\
+- Fee schedule alignment\
+- Registration class compatibility\
+- Plate type eligibility\
+\
+ESCALATE IF:\
+- Fee conflict exists\
+- Registration type mismatch identified\
+- Plate incompatibility exists\
+\
+\
+--------------------------------------------------\
+\
+RULE:\
+Fraud prevention review is critical during registration coding/classification.\
+\
+VERIFY:\
+- Vehicle legitimacy\
+- Weight accuracy\
+- Commercial use\
+- Ownership legitimacy\
+- Supporting documentation authenticity\
+\
+ESCALATE IF:\
+- Fraud concerns\
+- Altered weight records\
+- Suspicious registration downgrade attempts\
+- Fake business records\
+\
+\
+--------------------------------------------------\
+\
+COMMON DEALERSHIP FAILURE POINTS:\
+- Incorrect registration class\
+- Wrong weight class\
+- Passenger/commercial misclassification\
+- Incorrect body type\
+- Wrong specialty plate code\
+- IRP classification mistakes\
+- VIN mismatch\
+- Missing business documents\
+- Incorrect fee calculations\
+- Insurance classification mismatch\
+\
+\
+--------------------------------------------------\
+\
+HIGH-RISK ESCALATION SITUATIONS:\
+- Weight discrepancies\
+- VIN discrepancies\
+- Fraud concerns\
+- Commercial classification conflicts\
+- IRP conflicts\
+- Specialty plate eligibility disputes\
+- Ownership disputes\
+- Altered paperwork\
+- Incorrect fee avoidance attempts\
+\
+\
+--------------------------------------------------\
+\
+BEST PRACTICE:\
+Before assigning registration code:\
+1. Verify vehicle body type.\
+2. Verify commercial vs passenger use.\
+3. Verify GVWR/weight carefully.\
+4. Verify specialty eligibility if applicable.\
+5. Verify VIN across ALL documents.\
+6. Escalate any irregularity immediately.\
+\
+\
+--------------------------------------------------\
+\
+SOURCE:\
+FLHSMV RS-03 Motor Vehicle Registration Codes\
+\
+REFERENCE URL:\
+https://www.flhsmv.gov/pdf/proc/rs/rs-03.pdf}

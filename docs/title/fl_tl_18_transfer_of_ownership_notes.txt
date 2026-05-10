@@ -1,0 +1,238 @@
+TITLE:\
+FLHSMV TL-18 \'97 Transfer of Ownership Procedures\
+\
+CATEGORY:\
+Ownership Transfers\
+Title Transfers\
+Buyer/Seller Verification\
+Lienholder Processing\
+Vehicle Sale Transactions\
+\
+--------------------------------------------------\
+\
+RULE:\
+Transfer of ownership transactions require accurate completion of title reassignment, ownership information, signatures, and supporting documents.\
+\
+VERIFY:\
+- VIN consistency\
+- Seller information\
+- Buyer information\
+- Ownership conjunction\
+- Signatures completed\
+- Odometer disclosure completed if required\
+- Lienholder information accurate\
+\
+ESCALATE IF:\
+- Ownership conflict exists\
+- VIN discrepancy exists\
+- Missing signatures\
+- Fraud concerns arise\
+\
+\
+--------------------------------------------------\
+\
+RULE:\
+Seller reassignment section must be completed fully and legibly.\
+\
+VERIFY:\
+- Seller signatures\
+- Buyer names\
+- Date of transfer\
+- Odometer disclosure if applicable\
+- No improper alterations\
+\
+COMMON MISTAKE:\
+Incomplete reassignment section causing title rejection.\
+\
+\
+--------------------------------------------------\
+\
+RULE:\
+If ownership conjunction states AND:\
+\uc0\u8594  All titled owners must sign transfer paperwork.\
+\
+RULE:\
+If ownership conjunction states OR:\
+\uc0\u8594  Signature authority may vary depending on transaction type and title wording.\
+\
+VERIFY:\
+- Ownership wording\
+- Required signatures\
+- Title consistency\
+\
+ESCALATE IF:\
+- Ownership wording unclear\
+- Deceased owner involved\
+- Trust/entity ownership involved\
+- POA involved\
+\
+\
+--------------------------------------------------\
+\
+RULE:\
+VIN must match ALL transfer documents exactly.\
+\
+VERIFY:\
+- Title VIN\
+- Title application VIN\
+- Vehicle VIN\
+- System VIN\
+- Supporting paperwork VIN\
+\
+ESCALATE IF:\
+- Any VIN discrepancy exists\
+- Altered VIN suspected\
+- VIN unreadable\
+\
+\
+--------------------------------------------------\
+\
+RULE:\
+Odometer disclosures must comply with federal and state requirements during ownership transfer.\
+\
+VERIFY:\
+- Mileage entered correctly\
+- Correct odometer section completed\
+- VIN consistency with disclosure\
+\
+ESCALATE IF:\
+- Mileage discrepancy exists\
+- Odometer altered\
+- Missing odometer disclosure\
+- Federal compliance concerns arise\
+\
+\
+--------------------------------------------------\
+\
+RULE:\
+Lienholder information must be verified before ownership transfer processing.\
+\
+VERIFY:\
+- Existing lienholder\
+- Lien release status\
+- ELT status if applicable\
+- Supporting lender documentation\
+\
+ESCALATE IF:\
+- Missing lien release\
+- Electronic title unresolved\
+- Lender mismatch exists\
+- Multiple liens involved\
+\
+\
+--------------------------------------------------\
+\
+RULE:\
+Out-of-state ownership transfers may require additional documentation and VIN verification.\
+\
+VERIFY:\
+- Out-of-state title\
+- VIN inspection requirements\
+- Ownership consistency\
+- Supporting paperwork\
+\
+ESCALATE IF:\
+- Out-of-state title irregularity\
+- Missing VIN inspection\
+- Ownership conflict exists\
+\
+\
+--------------------------------------------------\
+\
+RULE:\
+Business/entity ownership transfers require authorized signer verification.\
+\
+VERIFY:\
+- Authorized signer\
+- Business documentation\
+- FEID/entity information if applicable\
+\
+ESCALATE IF:\
+- Signer authority unclear\
+- Missing business documentation\
+- Ownership inconsistency exists\
+\
+\
+--------------------------------------------------\
+\
+RULE:\
+POA documentation may authorize ownership transfer if properly executed.\
+\
+VERIFY:\
+- POA completeness\
+- Correct vehicle information\
+- Proper signatures\
+- Supporting documentation attached\
+\
+ESCALATE IF:\
+- POA altered\
+- Authority unclear\
+- Signature mismatch exists\
+\
+\
+--------------------------------------------------\
+\
+RULE:\
+Corrections or alterations on title reassignment require heightened review.\
+\
+VERIFY:\
+- No whiteout used\
+- Corrections legible\
+- Supporting documentation consistent\
+\
+ESCALATE IF:\
+- VIN corrected\
+- Ownership corrected\
+- Odometer corrected\
+- Multiple alterations exist\
+\
+\
+--------------------------------------------------\
+\
+COMMON DEALERSHIP MISTAKES:\
+- Missing seller signature\
+- Missing buyer information\
+- Incorrect conjunction interpretation\
+- Missing odometer disclosure\
+- VIN mismatch\
+- Missing lien release\
+- Incorrect reassignment completion\
+- Whiteout usage\
+- Incomplete POA paperwork\
+\
+\
+--------------------------------------------------\
+\
+HIGH-RISK ESCALATION SITUATIONS:\
+- VIN discrepancies\
+- Ownership disputes\
+- Fraud concerns\
+- Altered title paperwork\
+- Odometer discrepancies\
+- Trust/entity ownership\
+- Deceased owner\
+- Missing lien release\
+- Multiple reassignment issues\
+- Out-of-state ownership conflicts\
+\
+\
+--------------------------------------------------\
+\
+BEST PRACTICE:\
+Before processing ownership transfer:\
+1. Verify VIN carefully.\
+2. Verify ownership conjunction.\
+3. Verify all required signatures.\
+4. Verify lienholder/title status.\
+5. Verify odometer disclosure.\
+6. Review reassignment for alterations/errors.\
+7. Escalate any discrepancy immediately.\
+\
+\
+--------------------------------------------------\
+\
+SOURCE:\
+FLHSMV TL-18 Transfer of Ownership Procedures\
+\
+REFERENCE URL:\
+https://www.flhsmv.gov/pdf/proc/tl/tl-18.pdf}

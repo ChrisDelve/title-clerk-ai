@@ -1,0 +1,212 @@
+TITLE:\
+FLHSMV TL-12 \'97 Repossessions and Replevin Procedures\
+\
+CATEGORY:\
+Repossessions\
+Replevin Actions\
+Lienholder Rights\
+Title Recovery\
+Ownership Transfer After Default\
+\
+--------------------------------------------------\
+\
+RULE:\
+Repossession title processing requires strict verification of lienholder rights and supporting legal documentation.\
+\
+VERIFY:\
+- Lienholder information\
+- Title status\
+- Repossession paperwork\
+- VIN consistency\
+- Ownership records\
+- Supporting affidavits/court documents\
+\
+ESCALATE IF:\
+- Ownership conflict exists\
+- Court documentation unclear\
+- VIN discrepancy exists\
+- Fraud concerns arise\
+\
+\
+--------------------------------------------------\
+\
+RULE:\
+Lienholder must demonstrate legal authority to repossess vehicle before title transfer processing.\
+\
+VERIFY:\
+- Active lienholder status\
+- Security interest\
+- Default documentation if required\
+- Supporting repossession paperwork\
+\
+COMMON MISTAKE:\
+Processing repossession paperwork without verifying lienholder authority.\
+\
+\
+--------------------------------------------------\
+\
+RULE:\
+Replevin actions involve court-authorized recovery of vehicle ownership or possession.\
+\
+VERIFY:\
+- Court order/judgment\
+- Supporting legal paperwork\
+- Correct vehicle information\
+- Correct ownership information\
+\
+ESCALATE IF:\
+- Court order incomplete\
+- Ownership conflict exists\
+- Legal documentation unclear\
+\
+\
+--------------------------------------------------\
+\
+RULE:\
+VIN must match ALL repossession/replevin paperwork exactly.\
+\
+VERIFY:\
+- Court documents\
+- Existing title\
+- System VIN\
+- Vehicle VIN\
+- Supporting paperwork\
+\
+ESCALATE IF:\
+- Any VIN discrepancy exists\
+- VIN unreadable\
+- Altered VIN suspected\
+\
+\
+--------------------------------------------------\
+\
+RULE:\
+Lienholder information and title status must be verified carefully during repossession processing.\
+\
+VERIFY:\
+- Current lienholder\
+- Electronic title status\
+- Lien satisfaction status\
+- Existing title record\
+\
+ESCALATE IF:\
+- Multiple liens exist\
+- Electronic title unresolved\
+- Lienholder mismatch exists\
+- Title history unclear\
+\
+\
+--------------------------------------------------\
+\
+RULE:\
+Out-of-state repossession paperwork may require additional verification.\
+\
+VERIFY:\
+- State-specific documentation\
+- Court authority\
+- Ownership consistency\
+- Supporting title records\
+\
+ESCALATE IF:\
+- Out-of-state court documentation unclear\
+- State requirements uncertain\
+- Ownership conflict exists\
+\
+\
+--------------------------------------------------\
+\
+RULE:\
+Repossessed vehicles may require reassignment/title transfer documentation before resale.\
+\
+VERIFY:\
+- Assignment documentation\
+- Ownership transfer paperwork\
+- Odometer disclosure if applicable\
+- Dealer reassignment requirements\
+\
+ESCALATE IF:\
+- Missing assignment paperwork\
+- Odometer discrepancy exists\
+- Ownership transfer incomplete\
+\
+\
+--------------------------------------------------\
+\
+RULE:\
+Electronic title (ELT) status may affect repossession processing.\
+\
+VERIFY:\
+- ELT participation\
+- Lienholder electronic status\
+- Existing title format\
+- Lien release status if applicable\
+\
+ESCALATE IF:\
+- ELT status unclear\
+- Electronic title conflict exists\
+- Lender information inconsistent\
+\
+\
+--------------------------------------------------\
+\
+RULE:\
+Court-ordered ownership changes require heightened review before title issuance.\
+\
+VERIFY:\
+- Court judgment\
+- Legal authority\
+- Ownership transfer authority\
+- Supporting documentation\
+\
+ESCALATE IF:\
+- Legal documentation incomplete\
+- Court order altered\
+- Ownership dispute exists\
+\
+\
+--------------------------------------------------\
+\
+COMMON DEALERSHIP MISTAKES:\
+- Missing repossession paperwork\
+- Incorrect lienholder verification\
+- VIN mismatch\
+- Missing court documents\
+- Improper reassignment handling\
+- Missing odometer disclosure\
+- Electronic title assumptions\
+- Ownership verification failures\
+\
+\
+--------------------------------------------------\
+\
+HIGH-RISK ESCALATION SITUATIONS:\
+- Ownership disputes\
+- Fraud concerns\
+- VIN discrepancies\
+- Court order irregularities\
+- Multiple lienholders\
+- Altered legal documents\
+- Electronic title conflicts\
+- Missing repossession authority\
+- Out-of-state repossession complications\
+\
+\
+--------------------------------------------------\
+\
+BEST PRACTICE:\
+Before processing repossession/replevin title work:\
+1. Verify lienholder authority.\
+2. Verify court/legal documentation.\
+3. Verify VIN consistency.\
+4. Verify title status.\
+5. Verify reassignment/title transfer paperwork.\
+6. Escalate any ownership conflict immediately.\
+\
+\
+--------------------------------------------------\
+\
+SOURCE:\
+FLHSMV TL-12 Repossessions and Replevins\
+\
+REFERENCE URL:\
+https://www.flhsmv.gov/pdf/proc/tl/tl-12.pdf}

@@ -1,0 +1,218 @@
+TITLE:\
+FLHSMV TL-20 \'97 Bonded Title Procedures\
+\
+CATEGORY:\
+Bonded Titles\
+Ownership Verification\
+Missing Titles\
+Surety Bonds\
+Title Recovery\
+\
+--------------------------------------------------\
+\
+RULE:\
+Bonded titles may be issued when sufficient ownership evidence exists but standard title documentation is unavailable or incomplete.\
+\
+VERIFY:\
+- Ownership evidence\
+- VIN consistency\
+- Surety bond documentation\
+- Vehicle history\
+- Supporting paperwork\
+\
+ESCALATE IF:\
+- Ownership conflict exists\
+- VIN discrepancy exists\
+- Fraud concerns arise\
+- Vehicle history unclear\
+\
+\
+--------------------------------------------------\
+\
+RULE:\
+Bonded title transactions require heightened ownership verification before processing.\
+\
+VERIFY:\
+- Bill of sale\
+- Prior registration if available\
+- Vehicle possession\
+- Supporting ownership evidence\
+- Applicant identity\
+\
+COMMON MISTAKE:\
+Assuming possession alone proves legal ownership.\
+\
+\
+--------------------------------------------------\
+\
+RULE:\
+Surety bond requirements must comply with Florida procedures before bonded title issuance.\
+\
+VERIFY:\
+- Bond amount\
+- Bond validity\
+- Applicant information\
+- Vehicle information\
+- VIN consistency\
+\
+ESCALATE IF:\
+- Bond incomplete\
+- Bond information inconsistent\
+- Bond validity unclear\
+\
+\
+--------------------------------------------------\
+\
+RULE:\
+VIN must match ALL bonded title paperwork exactly.\
+\
+VERIFY:\
+- Vehicle VIN\
+- Bond VIN\
+- System VIN\
+- Supporting paperwork VIN\
+\
+ESCALATE IF:\
+- Any VIN discrepancy exists\
+- Altered VIN suspected\
+- VIN unreadable/incomplete\
+\
+\
+--------------------------------------------------\
+\
+RULE:\
+Vehicle history and ownership chain should be reviewed carefully before bonded title issuance.\
+\
+VERIFY:\
+- Existing title records\
+- Lienholder information\
+- Prior ownership if available\
+- Theft status if applicable\
+\
+ESCALATE IF:\
+- Theft concerns arise\
+- Active lien exists\
+- Ownership dispute exists\
+- Prior title unresolved\
+\
+\
+--------------------------------------------------\
+\
+RULE:\
+Lienholder/title status must be verified before bonded title processing.\
+\
+VERIFY:\
+- Existing lienholder\
+- ELT status if applicable\
+- Prior title status\
+- Supporting lender documentation\
+\
+ESCALATE IF:\
+- Active lien unresolved\
+- Electronic title conflict exists\
+- Missing lien release\
+\
+\
+--------------------------------------------------\
+\
+RULE:\
+Out-of-state ownership evidence may require additional verification before Florida bonded title issuance.\
+\
+VERIFY:\
+- Prior state documentation\
+- VIN consistency\
+- Ownership evidence\
+- Supporting paperwork\
+\
+ESCALATE IF:\
+- Prior state records conflict\
+- Ownership unclear\
+- Missing supporting documentation\
+\
+\
+--------------------------------------------------\
+\
+RULE:\
+Bonded title applicants must satisfy identity verification requirements.\
+\
+VERIFY:\
+- Applicant identification\
+- Name consistency\
+- Supporting identity documents\
+\
+ESCALATE IF:\
+- Identity unclear\
+- Name mismatch exists\
+- Fraud concerns arise\
+\
+\
+--------------------------------------------------\
+\
+RULE:\
+Bonded title situations involving businesses/entities require authorized signer verification.\
+\
+VERIFY:\
+- Business documentation\
+- Authorized signer\
+- Supporting entity paperwork\
+\
+ESCALATE IF:\
+- Signer authority unclear\
+- Business ownership conflict exists\
+\
+\
+--------------------------------------------------\
+\
+RULE:\
+Bonded title processing should STOP immediately if ownership legitimacy cannot be reasonably established.\
+\
+BEST PRACTICE:\
+Escalate any questionable ownership history before proceeding with bonded title issuance.\
+\
+\
+--------------------------------------------------\
+\
+COMMON DEALERSHIP/PROCESSING MISTAKES:\
+- Missing ownership evidence\
+- VIN mismatch\
+- Incomplete surety bond\
+- Failure to verify title/lien status\
+- Incorrect ownership assumptions\
+- Missing supporting documentation\
+- Ignoring possible theft/title issues\
+- Incomplete applicant verification\
+\
+\
+--------------------------------------------------\
+\
+HIGH-RISK ESCALATION SITUATIONS:\
+- Ownership disputes\
+- Fraud concerns\
+- VIN discrepancies\
+- Theft concerns\
+- Active liens\
+- Altered paperwork\
+- Missing vehicle history\
+- Out-of-state title conflicts\
+- Bond inconsistencies\
+\
+\
+--------------------------------------------------\
+\
+BEST PRACTICE:\
+Before processing bonded title:\
+1. Verify VIN carefully.\
+2. Verify ownership evidence thoroughly.\
+3. Verify lien/title status.\
+4. Verify bond validity.\
+5. Verify applicant identity.\
+6. Escalate any ownership irregularity immediately.\
+\
+\
+--------------------------------------------------\
+\
+SOURCE:\
+FLHSMV TL-20 Bonded Title Procedures\
+\
+REFERENCE URL:\
+https://www.flhs}

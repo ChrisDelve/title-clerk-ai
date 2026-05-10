@@ -1,0 +1,301 @@
+TITLE:\
+FLHSMV RS-05 \'97 Transfer of License Plates\
+\
+CATEGORY:\
+Plate Transfers\
+Registration Transfers\
+Initial Registration Fee Avoidance\
+Same Owner Transfers\
+Plate Eligibility\
+\
+--------------------------------------------------\
+\
+RULE:\
+Florida license plates may generally be transferred ONLY when:\
+- Ownership eligibility exists\
+- Registration class is compatible\
+- Insurance is valid\
+- Registration is active or transferable\
+- Vehicle classification permits transfer\
+\
+VERIFY:\
+- Plate ownership\
+- Vehicle ownership\
+- Registration class compatibility\
+- Florida insurance\
+- Registration expiration\
+- VIN consistency\
+\
+ESCALATE IF:\
+- Plate ownership conflict exists\
+- Insurance invalid/unverified\
+- Registration class conflict exists\
+- Fraud concerns arise\
+\
+\
+--------------------------------------------------\
+\
+RULE:\
+Plate transfers are commonly used when:\
+- Replacing a vehicle\
+- Trading in a vehicle\
+- Selling one vehicle and acquiring another\
+- Maintaining same registration ownership\
+\
+VERIFY:\
+- Prior registration records\
+- Owner continuity\
+- Vehicle disposition records\
+- Trade documentation if applicable\
+\
+COMMON MISTAKE:\
+Attempting to transfer a plate between different owners without proper eligibility.\
+\
+\
+--------------------------------------------------\
+\
+RULE:\
+Passenger plates generally may transfer between:\
+- Passenger vehicles\
+- Similar registration classes\
+\
+VERIFY:\
+- Registration class\
+- Vehicle body type\
+- Plate classification\
+\
+ESCALATE IF:\
+- Passenger/commercial mismatch exists\
+- Specialty plate incompatibility exists\
+\
+\
+--------------------------------------------------\
+\
+RULE:\
+Commercial plates require compatible commercial classification and weight eligibility before transfer.\
+\
+VERIFY:\
+- GVWR\
+- Weight class\
+- Commercial registration type\
+- Vehicle use\
+\
+ESCALATE IF:\
+- Weight mismatch exists\
+- Commercial classification conflict exists\
+- Incorrect fee calculation identified\
+\
+\
+--------------------------------------------------\
+\
+RULE:\
+Specialty plates may transfer ONLY when eligibility requirements continue to be met.\
+\
+VERIFY:\
+- Specialty qualification\
+- Military/veteran eligibility if applicable\
+- Disabled eligibility if applicable\
+- Supporting documentation\
+\
+ESCALATE IF:\
+- Specialty eligibility unresolved\
+- Missing supporting documentation\
+- Incorrect specialty transfer attempted\
+\
+\
+--------------------------------------------------\
+\
+RULE:\
+Florida insurance MUST be active before plate transfer processing.\
+\
+VERIFY:\
+- Florida-issued insurance\
+- Owner name consistency\
+- Vehicle information\
+- Policy effective dates\
+- Insurance company code\
+\
+ESCALATE IF:\
+- Out-of-state insurance presented\
+- Insurance expired\
+- Insurance unverifiable\
+- VIN mismatch on policy\
+\
+NOTE:\
+Florida electronically verifies insurance prior to registration issuance. :contentReference[oaicite:0]\{index=0\}\
+\
+\
+--------------------------------------------------\
+\
+RULE:\
+VIN must match ALL supporting registration and title documents exactly.\
+\
+VERIFY:\
+- Registration VIN\
+- Insurance VIN\
+- Title VIN\
+- System VIN\
+- Supporting paperwork VIN\
+\
+ESCALATE IF:\
+- Any VIN discrepancy exists\
+- Altered VIN suspected\
+- VIN unreadable/incomplete\
+\
+\
+--------------------------------------------------\
+\
+RULE:\
+Plate transfers may help avoid the Florida Initial Registration Fee when qualifying registration history exists.\
+\
+VERIFY:\
+- Existing Florida registration\
+- Same owner eligibility\
+- Plate transfer eligibility\
+- Registration continuity\
+\
+ESCALATE IF:\
+- Initial registration fee status unclear\
+- Ownership mismatch exists\
+\
+NOTE:\
+Florida generally imposes a $225 Initial Registration Fee when no transferable plate history exists. :contentReference[oaicite:1]\{index=1\}\
+\
+\
+--------------------------------------------------\
+\
+RULE:\
+Expired registrations may affect transfer eligibility and fees.\
+\
+VERIFY:\
+- Registration expiration date\
+- Delinquent status\
+- Renewal requirements\
+- Applicable penalties\
+\
+ESCALATE IF:\
+- Registration excessively expired\
+- Registration stop exists\
+- Plate ineligible for transfer\
+\
+\
+--------------------------------------------------\
+\
+RULE:\
+Registration stops or suspensions prevent valid plate transfer processing.\
+\
+VERIFY:\
+- Toll violations\
+- Parking stops\
+- Insurance suspensions\
+- Administrative stops\
+- Driver license suspensions\
+\
+ESCALATE IF:\
+- Active stop unresolved\
+- Suspension conflict exists\
+- Court/administrative issue unresolved\
+\
+\
+--------------------------------------------------\
+\
+RULE:\
+Trust/entity-owned registrations require:\
+- Ownership continuity\
+- Business/trust verification\
+- Authorized signer review\
+\
+VERIFY:\
+- FEID/business information\
+- Trust documents if applicable\
+- Authorized representative\
+\
+ESCALATE IF:\
+- Business authority unclear\
+- Ownership mismatch exists\
+- Fraud concerns arise\
+\
+\
+--------------------------------------------------\
+\
+RULE:\
+Leased vehicles and lienholder-held titles may require additional registration review before transfer processing.\
+\
+VERIFY:\
+- Lease agreement\
+- Lienholder records\
+- Registration-only status if applicable\
+- Ownership/title records\
+\
+ESCALATE IF:\
+- Lease/lien conflict exists\
+- Ownership authority unclear\
+- ELT/title inconsistency exists\
+\
+\
+--------------------------------------------------\
+\
+RULE:\
+Fraud prevention review is critical during plate transfer processing.\
+\
+VERIFY:\
+- Ownership legitimacy\
+- Insurance validity\
+- VIN authenticity\
+- Supporting documentation authenticity\
+\
+ESCALATE IF:\
+- Fraud concerns\
+- Fake insurance documents\
+- Altered paperwork\
+- Suspicious registration activity\
+\
+\
+--------------------------------------------------\
+\
+COMMON DEALERSHIP FAILURE POINTS:\
+- Wrong plate transferred\
+- Ownership mismatch\
+- Passenger/commercial mismatch\
+- Insurance name mismatch\
+- Expired registration overlooked\
+- Registration stop missed\
+- Incorrect specialty plate transfer\
+- VIN mismatch\
+- Incorrect initial registration fee handling\
+- Missing business/trust documents\
+\
+\
+--------------------------------------------------\
+\
+HIGH-RISK ESCALATION SITUATIONS:\
+- VIN discrepancies\
+- Fraud concerns\
+- Invalid insurance\
+- Ownership disputes\
+- Specialty eligibility conflicts\
+- Commercial weight conflicts\
+- Registration stops/suspensions\
+- Fake insurance documentation\
+- ELT/title inconsistencies\
+\
+\
+--------------------------------------------------\
+\
+BEST PRACTICE:\
+Before processing plate transfer:\
+1. Verify SAME OWNER eligibility FIRST.\
+2. Verify Florida insurance electronically.\
+3. Verify registration class compatibility.\
+4. Verify VIN across ALL documents.\
+5. Verify registration stop/suspension status.\
+6. Escalate any irregularity immediately.\
+\
+\
+--------------------------------------------------\
+\
+SOURCE:\
+FLHSMV RS-05 Transfer of License Plates\
+\
+REFERENCE URL:\
+https://www.flhsmv.gov/pdf/proc/rs/rs-05.pdf}

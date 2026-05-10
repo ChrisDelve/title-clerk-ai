@@ -1,0 +1,306 @@
+TITLE:\
+FLHSMV RS-01 \'97 Overview of Motor Vehicle Registration Requirements and Documents\
+\
+CATEGORY:\
+Vehicle Registration\
+Initial Registration\
+Registration Transfers\
+Insurance Verification\
+Registration Eligibility\
+\
+--------------------------------------------------\
+\
+RULE:\
+Florida vehicle registration transactions require verification of:\
+- Ownership/title eligibility\
+- Florida insurance\
+- Identity\
+- VIN consistency\
+- Registration eligibility\
+- Applicable fees/taxes\
+\
+VERIFY:\
+- VIN consistency\
+- Owner information\
+- Florida insurance\
+- Registration class\
+- Plate eligibility\
+- Supporting title documents\
+\
+ESCALATE IF:\
+- VIN discrepancy exists\
+- Insurance invalid/unverified\
+- Ownership conflict exists\
+- Fraud concerns arise\
+\
+\
+--------------------------------------------------\
+\
+RULE:\
+Initial registrations generally require:\
+- Proof of identity\
+- Florida insurance\
+- HSMV 82040\
+- Applicable title documents\
+- VIN verification if required\
+\
+VERIFY:\
+- Driver license/ID\
+- Insurance policy\
+- Title documentation\
+- VIN verification form if applicable\
+\
+COMMON MISTAKE:\
+Attempting registration using out-of-state insurance instead of Florida-issued policy.\
+\
+\
+--------------------------------------------------\
+\
+RULE:\
+Florida insurance MUST:\
+- Be issued by a Florida-authorized insurer\
+- Match owner/registrant information\
+- Match vehicle information\
+\
+VERIFY:\
+- Policy state = Florida\
+- Owner name consistency\
+- VIN consistency\
+- Insurance company code\
+- Effective dates\
+\
+ESCALATE IF:\
+- Out-of-state insurance presented\
+- Insurance name mismatch\
+- VIN mismatch on policy\
+- Insurance expired/post-dated\
+\
+NOTE:\
+Florida electronically verifies insurance before registration issuance. :contentReference[oaicite:0]\{index=0\}\
+\
+\
+--------------------------------------------------\
+\
+RULE:\
+VIN must match ALL registration and title documents exactly.\
+\
+VERIFY:\
+- Vehicle VIN\
+- Title VIN\
+- Registration VIN\
+- Insurance VIN\
+- System VIN\
+- Supporting paperwork VIN\
+\
+ESCALATE IF:\
+- Any VIN discrepancy exists\
+- Altered VIN suspected\
+- VIN unreadable/incomplete\
+\
+\
+--------------------------------------------------\
+\
+RULE:\
+Out-of-state vehicles entering Florida registration may require VIN verification using HSMV 82042.\
+\
+VERIFY:\
+- VIN inspection completion\
+- Authorized verifier\
+- Odometer reading if applicable\
+- Supporting ownership documents\
+\
+ESCALATE IF:\
+- Missing VIN verification\
+- Unauthorized verifier\
+- VIN discrepancy exists\
+\
+NOTE:\
+VIN verification is commonly required on out-of-state vehicles. :contentReference[oaicite:1]\{index=1\}\
+\
+\
+--------------------------------------------------\
+\
+RULE:\
+Registration issuance depends on valid ownership/title eligibility.\
+\
+VERIFY:\
+- Florida title\
+- Out-of-state title\
+- Registration-only eligibility\
+- Lienholder/title status\
+- Ownership continuity\
+\
+ESCALATE IF:\
+- Ownership conflict exists\
+- Title status unresolved\
+- ELT/title issue unresolved\
+\
+\
+--------------------------------------------------\
+\
+RULE:\
+Registration-only transactions may apply when:\
+- Out-of-state lienholder holds title\
+- Vehicle remains titled outside Florida\
+- Florida registration requested without Florida title issuance\
+\
+VERIFY:\
+- Out-of-state registration\
+- Proof lienholder possesses title\
+- Florida insurance\
+- VIN verification\
+\
+ESCALATE IF:\
+- Ownership/title inconsistency exists\
+- Missing lienholder proof\
+- Vehicle ineligible for registration-only transaction\
+\
+NOTE:\
+Florida permits certain \'93registration only\'94 situations for lien/lease vehicles. :contentReference[oaicite:2]\{index=2\}\
+\
+\
+--------------------------------------------------\
+\
+RULE:\
+Initial registration fee applies if owner has no transferable Florida plate/registration history.\
+\
+VERIFY:\
+- Existing plate eligibility\
+- Transferable registration history\
+- Vehicle ownership records\
+\
+ESCALATE IF:\
+- Registration history unclear\
+- Incorrect initial fee assessment\
+\
+NOTE:\
+Florida generally imposes a $225 initial registration fee under qualifying circumstances. :contentReference[oaicite:3]\{index=3\}\
+\
+\
+--------------------------------------------------\
+\
+RULE:\
+Plate transfers require:\
+- Same owner eligibility\
+- Proper registration class\
+- Active/valid plate status\
+\
+VERIFY:\
+- Plate ownership\
+- Registration expiration\
+- Vehicle classification compatibility\
+\
+ESCALATE IF:\
+- Plate ownership mismatch\
+- Incorrect plate class\
+- Expired/ineligible registration\
+\
+\
+--------------------------------------------------\
+\
+RULE:\
+Commercial, apportioned, leased, trust-owned, and specialty registrations may require additional documentation.\
+\
+VERIFY:\
+- Business/trust documents\
+- Lease agreements\
+- IRP requirements\
+- Commercial classifications\
+- Specialty eligibility\
+\
+ESCALATE IF:\
+- Classification unclear\
+- Missing supporting documents\
+- Business authority unresolved\
+\
+\
+--------------------------------------------------\
+\
+RULE:\
+Registration renewals require:\
+- Active insurance\
+- No registration stops\
+- Correct owner information\
+- Applicable fees paid\
+\
+VERIFY:\
+- Insurance verification\
+- Toll/parking stops\
+- Address accuracy\
+- Registration eligibility\
+\
+ESCALATE IF:\
+- Registration stop exists\
+- Insurance suspension active\
+- Ownership conflict exists\
+\
+\
+--------------------------------------------------\
+\
+RULE:\
+Fraud prevention review is critical during registration processing.\
+\
+VERIFY:\
+- Identity legitimacy\
+- VIN authenticity\
+- Insurance validity\
+- Ownership chain\
+- Supporting document authenticity\
+\
+ESCALATE IF:\
+- Fraud concerns\
+- Altered paperwork\
+- Suspicious ownership activity\
+- Fake insurance documentation\
+\
+\
+--------------------------------------------------\
+\
+COMMON DEALERSHIP FAILURE POINTS:\
+- Insurance name mismatch\
+- Out-of-state insurance used\
+- VIN mismatch\
+- Missing VIN verification\
+- Incorrect plate transfer\
+- Wrong registration class\
+- Missing proof of ownership\
+- Expired registration transfer\
+- Incorrect county fees\
+- Missing business/trust documents\
+- Registration stop overlooked\
+- Incorrect weight/classification\
+\
+\
+--------------------------------------------------\
+\
+HIGH-RISK ESCALATION SITUATIONS:\
+- VIN discrepancies\
+- Fraud concerns\
+- Invalid insurance\
+- Ownership disputes\
+- Active registration stop\
+- Out-of-state title conflicts\
+- Fake insurance cards\
+- ELT/title inconsistencies\
+- Incorrect registration classification\
+\
+\
+--------------------------------------------------\
+\
+BEST PRACTICE:\
+Before processing registration:\
+1. Verify Florida insurance FIRST.\
+2. Verify VIN across ALL documents.\
+3. Verify ownership/title eligibility.\
+4. Verify registration class and plate eligibility.\
+5. Verify registration stops/issues.\
+6. Escalate any irregularity immediately.\
+\
+\
+--------------------------------------------------\
+\
+SOURCE:\
+FLHSMV RS-01 Overview of Motor Vehicle Registration Requirements and Documents\
+\
+REFERENCE URL:\
+https://www.flhsmv.gov/pdf/proc/rs/rs-01.pdf}

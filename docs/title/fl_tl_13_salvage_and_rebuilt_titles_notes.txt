@@ -1,0 +1,214 @@
+TITLE:\
+FLHSMV TL-13 \'97 Salvage and Rebuilt Vehicle Procedures\
+\
+CATEGORY:\
+Salvage Titles\
+Rebuilt Titles\
+Insurance Loss Vehicles\
+Vehicle Inspections\
+Branding Requirements\
+\
+--------------------------------------------------\
+\
+RULE:\
+Vehicles declared total loss or salvage must follow Florida salvage/rebuilt title procedures before legal registration and operation.\
+\
+VERIFY:\
+- Salvage status\
+- Existing title branding\
+- VIN consistency\
+- Insurance documentation\
+- Ownership documentation\
+- Inspection requirements\
+\
+ESCALATE IF:\
+- Branding unclear\
+- VIN discrepancy exists\
+- Ownership conflict exists\
+- Fraud concerns arise\
+\
+\
+--------------------------------------------------\
+\
+RULE:\
+Salvage branding must remain consistent through title processing.\
+\
+VERIFY:\
+- Salvage designation\
+- Prior state branding\
+- Existing title records\
+- Supporting insurance paperwork\
+\
+COMMON MISTAKE:\
+Attempting to remove or ignore existing salvage branding.\
+\
+\
+--------------------------------------------------\
+\
+RULE:\
+Rebuilt titles require successful completion of applicable inspections before title issuance.\
+\
+VERIFY:\
+- Rebuilt inspection completed\
+- Inspection documentation attached\
+- VIN verification completed\
+- Supporting receipts/documentation available if required\
+\
+ESCALATE IF:\
+- Inspection incomplete\
+- VIN mismatch exists\
+- Supporting documents missing\
+- Fraud concerns arise\
+\
+\
+--------------------------------------------------\
+\
+RULE:\
+VIN must match ALL salvage/rebuilt paperwork exactly.\
+\
+VERIFY:\
+- Existing title VIN\
+- Inspection VIN\
+- Vehicle VIN\
+- System VIN\
+- Supporting paperwork VIN\
+\
+ESCALATE IF:\
+- Any VIN discrepancy exists\
+- Altered VIN suspected\
+- VIN plate issues identified\
+- VIN unreadable\
+\
+\
+--------------------------------------------------\
+\
+RULE:\
+Insurance company total-loss documentation may be required during salvage processing.\
+\
+VERIFY:\
+- Insurance paperwork\
+- Ownership assignment\
+- Supporting settlement documentation\
+- Vehicle status\
+\
+ESCALATE IF:\
+- Insurance ownership unclear\
+- Assignment incomplete\
+- Title status conflict exists\
+\
+\
+--------------------------------------------------\
+\
+RULE:\
+Out-of-state salvage/rebuilt vehicles require careful review before Florida title issuance.\
+\
+VERIFY:\
+- Existing branding\
+- Prior state requirements\
+- Inspection completion\
+- Ownership documentation\
+- Supporting paperwork\
+\
+ESCALATE IF:\
+- Branding terminology unclear\
+- State branding conflict exists\
+- Missing inspection documentation\
+\
+\
+--------------------------------------------------\
+\
+RULE:\
+Ownership and reassignment sections on salvage/rebuilt titles require heightened review.\
+\
+VERIFY:\
+- Seller reassignment\
+- Buyer information\
+- Signature completion\
+- Ownership consistency\
+\
+ESCALATE IF:\
+- Multiple conflicting reassignments\
+- Altered reassignment\
+- Ownership discrepancy exists\
+\
+\
+--------------------------------------------------\
+\
+RULE:\
+Lienholder information must be verified carefully during salvage/rebuilt title processing.\
+\
+VERIFY:\
+- Existing lienholder\
+- Lien release status\
+- ELT status if applicable\
+- Bank information consistency\
+\
+ESCALATE IF:\
+- Missing lien release\
+- Lienholder mismatch exists\
+- Electronic title unresolved\
+\
+\
+--------------------------------------------------\
+\
+RULE:\
+Rebuilt inspection vehicles may require supporting parts/component documentation.\
+\
+VERIFY:\
+- Receipts if applicable\
+- Major component documentation\
+- Inspection paperwork\
+- Ownership consistency\
+\
+ESCALATE IF:\
+- Missing documentation\
+- Suspicious parts history\
+- Incomplete rebuild paperwork\
+\
+\
+--------------------------------------------------\
+\
+COMMON DEALERSHIP MISTAKES:\
+- Missing rebuilt inspection\
+- Incorrect branding handling\
+- VIN mismatch\
+- Missing insurance paperwork\
+- Incorrect reassignment completion\
+- Ignoring prior state branding\
+- Missing lien release\
+- Incomplete rebuild documentation\
+\
+\
+--------------------------------------------------\
+\
+HIGH-RISK ESCALATION SITUATIONS:\
+- VIN discrepancies\
+- Fraud concerns\
+- Salvage branding conflicts\
+- Missing inspection documentation\
+- Ownership disputes\
+- Altered title paperwork\
+- Suspicious rebuild history\
+- Multiple branding inconsistencies\
+- Out-of-state salvage complications\
+\
+\
+--------------------------------------------------\
+\
+BEST PRACTICE:\
+Before processing salvage/rebuilt title:\
+1. Verify branding carefully.\
+2. Verify VIN consistency.\
+3. Verify inspection completion.\
+4. Verify ownership chain.\
+5. Verify lienholder/title status.\
+6. Escalate any irregularity immediately.\
+\
+\
+--------------------------------------------------\
+\
+SOURCE:\
+FLHSMV TL-13 Salvage and Rebuilt Vehicle Procedures\
+\
+REFERENCE URL:\
+https://www.flhsmv.gov/pdf/proc/tl/tl-13.pdf}

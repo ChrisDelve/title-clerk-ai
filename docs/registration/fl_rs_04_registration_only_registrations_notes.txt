@@ -1,0 +1,298 @@
+TITLE:\
+FLHSMV RS-04 \'97 Registration Only Registrations\
+\
+CATEGORY:\
+Registration Only\
+Out-of-State Titles\
+Lienholder Held Titles\
+Lease Vehicles\
+Florida Registration Without Florida Title\
+\
+--------------------------------------------------\
+\
+RULE:\
+A \'93Registration Only\'94 transaction allows Florida registration issuance WITHOUT issuing a Florida title under qualifying circumstances.\
+\
+VERIFY:\
+- Out-of-state title status\
+- Lienholder possession of title\
+- Florida insurance\
+- VIN consistency\
+- Registration eligibility\
+- Supporting ownership documents\
+\
+ESCALATE IF:\
+- Ownership conflict exists\
+- VIN discrepancy exists\
+- Fraud concerns arise\
+- Registration-only eligibility unclear\
+\
+\
+--------------------------------------------------\
+\
+RULE:\
+Registration-only transactions are generally used when:\
+- An out-of-state lienholder holds the title\
+- A lease company holds the title\
+- The owner wants Florida registration only\
+- Florida title issuance is not currently possible\
+\
+VERIFY:\
+- Current out-of-state registration\
+- Proof lienholder possesses title\
+- Lease/lien documents\
+- Vehicle ownership records\
+\
+COMMON MISTAKE:\
+Attempting registration-only transaction without proof that lienholder or lease company holds the title.\
+\
+\
+--------------------------------------------------\
+\
+RULE:\
+Registration-only transactions apply ONLY to vehicles titled in:\
+- U.S. states\
+- U.S. territories\
+\
+VERIFY:\
+- Prior state title jurisdiction\
+- Existing registration records\
+- Supporting ownership documents\
+\
+ESCALATE IF:\
+- Foreign title involved\
+- Prior title jurisdiction unclear\
+- Missing ownership records\
+\
+NOTE:\
+Foreign-country vehicles generally require import/title procedures instead of registration-only processing. :contentReference[oaicite:0]\{index=0\}\
+\
+\
+--------------------------------------------------\
+\
+RULE:\
+Florida insurance is REQUIRED before issuing registration-only registration.\
+\
+VERIFY:\
+- Florida-issued insurance\
+- Owner name consistency\
+- VIN consistency\
+- Insurance company code\
+- Effective dates\
+\
+ESCALATE IF:\
+- Out-of-state insurance presented\
+- Insurance expired\
+- VIN mismatch on insurance\
+- Insurance unverifiable\
+\
+NOTE:\
+Florida electronically verifies insurance before registration issuance. :contentReference[oaicite:1]\{index=1\}\
+\
+\
+--------------------------------------------------\
+\
+RULE:\
+VIN verification (HSMV 82042) is generally required for out-of-state vehicles entering Florida registration-only status.\
+\
+VERIFY:\
+- VIN verification form completion\
+- Authorized verifier\
+- VIN consistency\
+- Odometer reading if applicable\
+\
+AUTHORIZED VERIFIERS MAY INCLUDE:\
+- Florida notary\
+- Florida dealer\
+- Law enforcement officer\
+- Other authorized parties\
+\
+ESCALATE IF:\
+- Missing VIN verification\
+- Unauthorized verifier\
+- VIN discrepancy exists\
+\
+NOTE:\
+VIN verification requirements are specifically referenced for registration-only processing. :contentReference[oaicite:2]\{index=2\}\
+\
+\
+--------------------------------------------------\
+\
+RULE:\
+Proof that lienholder/lease company possesses the out-of-state title must be provided.\
+\
+ACCEPTABLE EXAMPLES MAY INCLUDE:\
+- Lienholder statement\
+- Lease agreement\
+- Retail installment contract\
+- Payoff statement\
+- Copy of title\
+- Out-of-state registration showing lienholder\
+\
+VERIFY:\
+- Lienholder name\
+- Vehicle VIN\
+- Ownership consistency\
+- Title possession evidence\
+\
+ESCALATE IF:\
+- Missing lienholder proof\
+- Ownership inconsistency exists\
+- Fraud concerns arise\
+\
+\
+--------------------------------------------------\
+\
+RULE:\
+Registration-only transactions do NOT create a Florida title record.\
+\
+VERIFY:\
+- Registration-only transaction coding\
+- Title issuance status\
+- Out-of-state title retention\
+\
+COMMON MISTAKE:\
+Accidentally processing full Florida title instead of registration-only transaction.\
+\
+\
+--------------------------------------------------\
+\
+RULE:\
+VIN must match ALL supporting documents exactly.\
+\
+VERIFY:\
+- Registration VIN\
+- Insurance VIN\
+- VIN verification VIN\
+- Out-of-state registration VIN\
+- System VIN\
+- Supporting paperwork VIN\
+\
+ESCALATE IF:\
+- Any VIN discrepancy exists\
+- Altered VIN suspected\
+- VIN unreadable/incomplete\
+\
+\
+--------------------------------------------------\
+\
+RULE:\
+At least one owner may need to appear with valid identification unless proper POA documentation is provided.\
+\
+VERIFY:\
+- Driver license/ID\
+- Passport if applicable\
+- Business authority if entity-owned\
+- POA documentation if applicable\
+\
+ESCALATE IF:\
+- Identity inconsistency exists\
+- Business authority unclear\
+- POA validity questionable\
+\
+\
+--------------------------------------------------\
+\
+RULE:\
+Business/entity-owned registration-only vehicles require:\
+- Business verification\
+- Authorized signer review\
+- Entity status confirmation\
+\
+VERIFY:\
+- FEID/business information\
+- Active entity status\
+- Authorized representative\
+\
+ESCALATE IF:\
+- Entity inactive\
+- Ownership mismatch exists\
+- Missing authorization documents\
+\
+\
+--------------------------------------------------\
+\
+RULE:\
+Sales/use tax implications may depend on:\
+- Length of ownership\
+- Prior state tax paid\
+- Vehicle purchase timing\
+\
+VERIFY:\
+- Purchase date\
+- Prior registration dates\
+- Ownership history\
+- Tax documentation\
+\
+ESCALATE IF:\
+- Tax calculation unclear\
+- Ownership timeline inconsistent\
+\
+\
+--------------------------------------------------\
+\
+RULE:\
+Fraud prevention review is critical during registration-only processing.\
+\
+VERIFY:\
+- Ownership legitimacy\
+- VIN authenticity\
+- Insurance validity\
+- Lienholder legitimacy\
+- Supporting documentation authenticity\
+\
+ESCALATE IF:\
+- Fraud concerns\
+- Altered paperwork\
+- Fake insurance documentation\
+- Suspicious ownership activity\
+\
+\
+--------------------------------------------------\
+\
+COMMON DEALERSHIP FAILURE POINTS:\
+- Out-of-state insurance used\
+- Missing VIN verification\
+- Missing lienholder proof\
+- VIN mismatch\
+- Incorrectly issuing Florida title\
+- Insurance name mismatch\
+- Missing business authorization\
+- Incorrect registration-only coding\
+- Foreign title processed incorrectly\
+- Ownership inconsistencies\
+\
+\
+--------------------------------------------------\
+\
+HIGH-RISK ESCALATION SITUATIONS:\
+- VIN discrepancies\
+- Fraud concerns\
+- Missing lienholder proof\
+- Foreign-country titles\
+- Ownership disputes\
+- Fake insurance documentation\
+- Altered paperwork\
+- Business authority conflicts\
+- Registration/title coding conflicts\
+\
+\
+--------------------------------------------------\
+\
+BEST PRACTICE:\
+Before processing registration-only transaction:\
+1. Verify lienholder/lease company holds title.\
+2. Verify Florida insurance FIRST.\
+3. Verify VIN across ALL documents.\
+4. Verify VIN inspection completion.\
+5. Verify registration-only eligibility carefully.\
+6. Escalate any irregularity immediately.\
+\
+\
+--------------------------------------------------\
+\
+SOURCE:\
+FLHSMV RS-04 Registration Only Registrations\
+\
+REFERENCE URL:\
+https://www.flhsmv.gov/pdf/proc/rs/rs-04.pdf}

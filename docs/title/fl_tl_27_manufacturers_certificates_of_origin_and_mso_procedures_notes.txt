@@ -1,0 +1,233 @@
+TITLE:\
+FLHSMV TL-27 \'97 Manufacturer\'92s Certificate of Origin (MCO/MSO) Procedures\
+\
+CATEGORY:\
+MSO/MCO Processing\
+New Vehicle Titles\
+Manufacturer Documents\
+Ownership Establishment\
+Dealer Processing\
+\
+--------------------------------------------------\
+\
+RULE:\
+A Manufacturer\'92s Statement/Certificate of Origin (MSO/MCO) establishes original ownership of a new vehicle before first title issuance.\
+\
+VERIFY:\
+- VIN consistency\
+- Manufacturer information\
+- Dealer assignment\
+- Buyer information\
+- Vehicle description\
+- Odometer disclosure if applicable\
+\
+ESCALATE IF:\
+- VIN discrepancy exists\
+- MSO altered\
+- Ownership assignment incomplete\
+- Fraud concerns arise\
+\
+\
+--------------------------------------------------\
+\
+RULE:\
+MSO/MCO must be properly assigned from manufacturer to dealer and from dealer to purchaser.\
+\
+VERIFY:\
+- Dealer assignment completed\
+- Purchaser assignment completed\
+- Signatures completed\
+- Supporting title application attached\
+\
+COMMON MISTAKE:\
+Incomplete dealer reassignment on MSO causing title rejection.\
+\
+\
+--------------------------------------------------\
+\
+RULE:\
+VIN must match ALL supporting documents exactly.\
+\
+VERIFY:\
+- MSO VIN\
+- Vehicle VIN\
+- Title application VIN\
+- System VIN\
+- Supporting paperwork VIN\
+\
+ESCALATE IF:\
+- Any VIN discrepancy exists\
+- Altered VIN suspected\
+- VIN unreadable/incomplete\
+\
+\
+--------------------------------------------------\
+\
+RULE:\
+Vehicle description information on MSO must match title application and system entry.\
+\
+VERIFY:\
+- Year\
+- Make\
+- Body type\
+- Weight if applicable\
+- Color if applicable\
+\
+ESCALATE IF:\
+- Vehicle description conflict exists\
+- Weight mismatch exists\
+- Body type unclear\
+\
+\
+--------------------------------------------------\
+\
+RULE:\
+Ownership information must be entered accurately during original title issuance from MSO.\
+\
+VERIFY:\
+- Buyer names\
+- Ownership conjunction\
+- Signatures\
+- Address information\
+- Identification requirements\
+\
+ESCALATE IF:\
+- Ownership mismatch exists\
+- Trust/entity ownership involved\
+- Missing signatures\
+- Name discrepancies exist\
+\
+\
+--------------------------------------------------\
+\
+RULE:\
+If ownership conjunction states AND:\
+\uc0\u8594  All owners must sign required title paperwork.\
+\
+RULE:\
+If ownership conjunction states OR:\
+\uc0\u8594  Signature authority may vary depending on transaction type.\
+\
+VERIFY:\
+- Ownership wording\
+- Signature completion\
+- Supporting ownership documentation\
+\
+COMMON MISTAKE:\
+Incorrect conjunction interpretation during original title processing.\
+\
+\
+--------------------------------------------------\
+\
+RULE:\
+Lienholder information must be entered correctly if financing exists.\
+\
+VERIFY:\
+- Lienholder name\
+- ELT code if applicable\
+- Supporting lender documentation\
+- Title application consistency\
+\
+ESCALATE IF:\
+- Missing ELT code\
+- Lender mismatch exists\
+- Multiple liens involved\
+- Electronic title complications\
+\
+\
+--------------------------------------------------\
+\
+RULE:\
+MSOs/MCOs should not contain improper alterations or corrections.\
+\
+VERIFY:\
+- No whiteout used\
+- Corrections legible\
+- Supporting documentation consistent\
+\
+ESCALATE IF:\
+- MSO altered\
+- VIN corrected\
+- Ownership corrected\
+- Multiple alterations exist\
+\
+\
+--------------------------------------------------\
+\
+RULE:\
+Duplicate or replacement MSOs may require manufacturer involvement and heightened review.\
+\
+VERIFY:\
+- Replacement documentation\
+- Manufacturer verification\
+- VIN consistency\
+- Ownership chain\
+\
+ESCALATE IF:\
+- Duplicate MSO conflict exists\
+- Ownership history unclear\
+- Fraud concerns arise\
+\
+\
+--------------------------------------------------\
+\
+RULE:\
+Business/entity ownership requires authorized signer verification.\
+\
+VERIFY:\
+- Authorized signer\
+- Business documentation\
+- FEID/entity information if applicable\
+\
+ESCALATE IF:\
+- Signer authority unclear\
+- Ownership inconsistency exists\
+- Missing business documentation\
+\
+\
+--------------------------------------------------\
+\
+COMMON DEALERSHIP/PROCESSING MISTAKES:\
+- Incomplete dealer assignment\
+- VIN mismatch\
+- Incorrect body type\
+- Missing signatures\
+- Missing ELT code\
+- Incorrect ownership conjunction interpretation\
+- Weight mismatch\
+- Altered MSO\
+- Missing supporting documents\
+\
+\
+--------------------------------------------------\
+\
+HIGH-RISK ESCALATION SITUATIONS:\
+- VIN discrepancies\
+- Fraud concerns\
+- Altered MSO\
+- Ownership disputes\
+- Duplicate MSO conflicts\
+- Missing lienholder information\
+- Trust/entity ownership complications\
+- Incomplete assignment chain\
+\
+\
+--------------------------------------------------\
+\
+BEST PRACTICE:\
+Before processing MSO/MCO title work:\
+1. Verify VIN carefully.\
+2. Verify assignment chain completely.\
+3. Verify ownership/signatures.\
+4. Verify lienholder information.\
+5. Verify vehicle description fields.\
+6. Escalate any irregularity immediately.\
+\
+\
+--------------------------------------------------\
+\
+SOURCE:\
+FLHSMV TL-27 Manufacturer\'92s Certificate of Origin Procedures\
+\
+REFERENCE URL:\
+https://www.flhsmv.gov/pdf/proc/tl/tl-27.pdf}

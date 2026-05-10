@@ -1,0 +1,211 @@
+TITLE:\
+FLHSMV TL-14 \'97 Mobile Home Title Procedures\
+\
+CATEGORY:\
+Mobile Homes\
+Manufactured Homes\
+Title Processing\
+Real Property Conversion\
+Lienholder Verification\
+\
+--------------------------------------------------\
+\
+RULE:\
+Mobile home title transactions require verification of ownership, unit information, and classification status before processing.\
+\
+VERIFY:\
+- VIN/serial number\
+- Manufacturer information\
+- Ownership information\
+- Decal/title status\
+- Lienholder information\
+- Supporting paperwork\
+\
+ESCALATE IF:\
+- Ownership conflict exists\
+- VIN/serial mismatch exists\
+- Missing unit information\
+- Fraud concerns arise\
+\
+\
+--------------------------------------------------\
+\
+RULE:\
+Mobile homes may contain multiple sections requiring separate title verification.\
+\
+VERIFY:\
+- Each unit/section identified\
+- VIN/serial numbers match\
+- Correct number of titles\
+- Ownership consistency across sections\
+\
+COMMON MISTAKE:\
+Processing only one section of a multi-section mobile home.\
+\
+\
+--------------------------------------------------\
+\
+RULE:\
+Mobile home ownership transfers require accurate reassignment and signature completion.\
+\
+VERIFY:\
+- Seller signatures\
+- Buyer information\
+- Ownership conjunction\
+- Supporting documents\
+\
+ESCALATE IF:\
+- Ownership mismatch exists\
+- Missing signatures\
+- Altered reassignment\
+- Trust/entity ownership involved\
+\
+\
+--------------------------------------------------\
+\
+RULE:\
+If ownership conjunction states AND:\
+\uc0\u8594  All owners must sign title paperwork.\
+\
+RULE:\
+If ownership conjunction states OR:\
+\uc0\u8594  Signature authority may vary depending on transaction type.\
+\
+VERIFY:\
+- Ownership wording\
+- Required signatures\
+- Supporting ownership documents\
+\
+COMMON MISTAKE:\
+Incorrect ownership conjunction interpretation during mobile home transfer processing.\
+\
+\
+--------------------------------------------------\
+\
+RULE:\
+Lienholder information must match title and supporting records exactly.\
+\
+VERIFY:\
+- Lienholder name\
+- ELT status if applicable\
+- Lien release status\
+- Bank documentation\
+\
+ESCALATE IF:\
+- Missing lien release\
+- Lienholder mismatch exists\
+- Multiple liens involved\
+- Title status unclear\
+\
+\
+--------------------------------------------------\
+\
+RULE:\
+Mobile homes permanently affixed to real property may involve additional documentation and title retirement procedures.\
+\
+VERIFY:\
+- Real property documentation\
+- Retirement paperwork\
+- County/property records if applicable\
+\
+ESCALATE IF:\
+- Title retirement status unclear\
+- Real property conversion incomplete\
+- Ownership conflict exists\
+\
+\
+--------------------------------------------------\
+\
+RULE:\
+VIN/serial numbers on mobile homes require heightened verification.\
+\
+VERIFY:\
+- VIN/serial on title\
+- VIN/serial on home\
+- Supporting paperwork consistency\
+\
+ESCALATE IF:\
+- Any VIN/serial discrepancy exists\
+- Altered serial plate suspected\
+- Missing serial information\
+\
+\
+--------------------------------------------------\
+\
+RULE:\
+Out-of-state mobile home title transactions may require additional verification.\
+\
+VERIFY:\
+- Prior state title\
+- Ownership consistency\
+- VIN/serial verification\
+- Lienholder/title status\
+\
+ESCALATE IF:\
+- Prior state branding/issues exist\
+- Ownership unclear\
+- Missing supporting documentation\
+\
+\
+--------------------------------------------------\
+\
+RULE:\
+Repossessed or abandoned mobile homes may require additional legal documentation before title processing.\
+\
+VERIFY:\
+- Court/legal paperwork\
+- Ownership authority\
+- Supporting documentation\
+\
+ESCALATE IF:\
+- Legal ownership unclear\
+- Court documents incomplete\
+- Multiple ownership claims exist\
+\
+\
+--------------------------------------------------\
+\
+COMMON DEALERSHIP MISTAKES:\
+- Missing one section/title of multi-section mobile home\
+- VIN/serial mismatch\
+- Missing lien release\
+- Incorrect ownership conjunction interpretation\
+- Incomplete reassignment\
+- Missing supporting documentation\
+- Real property/title retirement confusion\
+- Incorrect unit count\
+\
+\
+--------------------------------------------------\
+\
+HIGH-RISK ESCALATION SITUATIONS:\
+- Ownership disputes\
+- VIN/serial discrepancies\
+- Missing title section\
+- Fraud concerns\
+- Real property conversion issues\
+- Missing lien release\
+- Trust/entity ownership\
+- Altered paperwork\
+- Out-of-state mobile home complications\
+\
+\
+--------------------------------------------------\
+\
+BEST PRACTICE:\
+Before processing mobile home title work:\
+1. Verify ALL unit serial numbers.\
+2. Verify ownership carefully.\
+3. Verify lienholder/title status.\
+4. Verify reassignment completion.\
+5. Confirm whether home is attached to real property.\
+6. Escalate any discrepancy immediately.\
+\
+\
+--------------------------------------------------\
+\
+SOURCE:\
+FLHSMV TL-14 Mobile Home Title Procedures\
+\
+REFERENCE URL:\
+https://www.flhsmv.gov/pdf/proc/tl/tl-14.pdf}

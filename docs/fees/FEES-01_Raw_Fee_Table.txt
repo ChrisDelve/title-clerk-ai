@@ -1,0 +1,468 @@
+{\rtf1\ansi\ansicpg1252\cocoartf2869
+\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fswiss\fcharset0 Helvetica;}
+{\colortbl;\red255\green255\blue255;}
+{\*\expandedcolortbl;;}
+\margl1440\margr1440\vieww11520\viewh8400\viewkind0
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+
+\f0\fs24 \cf0 DOCUMENT: FEES-01\
+TITLE: Schedule of Motor Vehicle, Mobile Home, Off-Highway and Vessel Title and Lien Fees\
+SOURCE: https://www.flhsmv.gov/pdf/proc/fees/fees-01.pdf\
+SOURCE_REVISION: REV. 11/14\
+DOCUMENT_TYPE: Raw Fee Table\
+SECTION: Section 4 - Fees\
+\
+IMPORTANT:\
+This file is the structured raw fee extraction from FLHSMV FEES-01.\
+Use this file for fee lookup, AI retrieval, future fee calculators, and DMV/title workflow automation.\
+The official PDF remains the legal/source document.\
+\
+============================================================\
+MOTOR VEHICLE / MOBILE HOME - ORIGINAL AND TRANSFER TITLE FEES\
+============================================================\
+\
+Transaction: Original Title - New Motor Vehicle (MCO), No Lien\
+Electronic Record Only Total: $77.25\
+Printed Paper Title Total: $79.75\
+Fast Title Total: $87.25\
+\
+Transaction: Original Title - New Motor Vehicle (MCO), For Hire, No Lien\
+Electronic Record Only Total: $56.25\
+Printed Paper Title Total: $58.75\
+Fast Title Total: $66.25\
+\
+Transaction: Original Title - New Motor Vehicle (MCO), 1 Lien\
+Electronic Record Only Total: $79.25\
+Printed Paper Title Total: $81.75\
+Fast Title Total: $89.25\
+\
+Transaction: Original Title - New Motor Vehicle (MCO), For Hire, 1 Lien\
+Electronic Record Only Total: $58.25\
+Printed Paper Title Total: $60.75\
+Fast Title Total: $68.25\
+\
+Transaction: Original Title - New Mobile Home (MCO), No Lien\
+Electronic Record Only Total: $76.25\
+Printed Paper Title Total: $78.75\
+Fast Title Total: $86.25\
+\
+Transaction: Original Title - New Mobile Home (MCO), 1 Lien\
+Electronic Record Only Total: $78.25\
+Printed Paper Title Total: $80.75\
+Fast Title Total: $88.25\
+\
+Transaction: Original Title - New Recreational Motor Vehicle (MCO), No Lien\
+Electronic Record Only Total: $78.25\
+Printed Paper Title Total: $80.75\
+Fast Title Total: $88.25\
+\
+Transaction: Original Title - New Recreational Motor Vehicle (MCO), For Hire, No Lien\
+Electronic Record Only Total: $57.25\
+Printed Paper Title Total: $59.75\
+Fast Title Total: $67.25\
+\
+Transaction: Original Title - New Recreational Motor Vehicle (MCO), 1 Lien\
+Electronic Record Only Total: $80.25\
+Printed Paper Title Total: $82.75\
+Fast Title Total: $90.25\
+\
+Transaction: Original Title - New Recreational Motor Vehicle (MCO), For Hire, 1 Lien\
+Electronic Record Only Total: $59.25\
+Printed Paper Title Total: $61.75\
+Fast Title Total: $69.25\
+\
+Transaction: Original Title - Previously Titled or Registered in Another State or Country, No Lien\
+Electronic Record Only Total: $85.25\
+Printed Paper Title Total: $87.75\
+Fast Title Total: $95.25\
+\
+Transaction: Original Title - Previously Titled or Registered in Another State or Country, For Hire, No Lien\
+Electronic Record Only Total: $64.25\
+Printed Paper Title Total: $66.75\
+Fast Title Total: $74.25\
+\
+Transaction: Original Title - Previously Titled or Registered in Another State or Country, 1 Lien\
+Electronic Record Only Total: $87.25\
+Printed Paper Title Total: $89.75\
+Fast Title Total: $97.25\
+\
+Transaction: Original Title - Previously Titled or Registered in Another State or Country, For Hire, 1 Lien\
+Electronic Record Only Total: $66.25\
+Printed Paper Title Total: $68.75\
+Fast Title Total: $76.25\
+\
+Transaction: Transfer of Title, No Lien\
+Electronic Record Only Total: $75.25\
+Printed Paper Title Total: $77.75\
+Fast Title Total: $85.25\
+\
+Transaction: Transfer of Title, For Hire, No Lien\
+Electronic Record Only Total: $54.25\
+Printed Paper Title Total: $56.75\
+Fast Title Total: $64.25\
+\
+Transaction: Transfer of Title, 1 Lien\
+Electronic Record Only Total: $77.25\
+Printed Paper Title Total: $79.75\
+Fast Title Total: $87.25\
+\
+Transaction: Transfer of Title, For Hire, 1 Lien\
+Electronic Record Only Total: $56.25\
+Printed Paper Title Total: $58.75\
+Fast Title Total: $66.25\
+\
+Transaction: Transfer of Title - Assignment of Lien\
+Electronic Record Only Total: $78.25\
+Printed Paper Title Total: $80.75\
+Fast Title Total: $88.25\
+\
+Transaction: Transfer of Title - Assignment of Lien, For Hire\
+Electronic Record Only Total: $57.25\
+Printed Paper Title Total: $59.75\
+Fast Title Total: $67.25\
+\
+\
+============================================================\
+MOTOR VEHICLE / MOBILE HOME - DUPLICATE TITLE FEES\
+============================================================\
+\
+Transaction: Duplicate Title - No Lien\
+Electronic Record Only Total: $75.25\
+Printed Paper Title Total: $77.75\
+Fast Title Total: $85.25\
+\
+Transaction: Duplicate Title - For Hire, No Lien\
+Electronic Record Only Total: $54.25\
+Printed Paper Title Total: $56.75\
+Fast Title Total: $64.25\
+\
+Transaction: Duplicate Title - 1 Lien\
+Electronic Record Only Total: $77.25\
+Printed Paper Title Total: $79.75\
+Fast Title Total: $87.25\
+\
+Transaction: Duplicate Title - For Hire, 1 Lien\
+Electronic Record Only Total: $56.25\
+Printed Paper Title Total: $58.75\
+Fast Title Total: $66.25\
+\
+Transaction: Duplicate Lost In Transit\
+Electronic Record Only Total: $0.00\
+Printed Paper Title Total: N/A\
+Fast Title Total: $10.00\
+\
+Transaction: Duplicate with Transfer, No Lien\
+Electronic Record Only Total: $150.50\
+Printed Paper Title Total: $153.00\
+Fast Title Total: $160.50\
+\
+Transaction: Duplicate with Transfer, For Hire, No Lien\
+Electronic Record Only Total: $108.50\
+Printed Paper Title Total: $111.00\
+Fast Title Total: $118.50\
+\
+Transaction: Duplicate with Transfer, 1 Lien\
+Electronic Record Only Total: $152.50\
+Printed Paper Title Total: $155.00\
+Fast Title Total: $162.50\
+\
+Transaction: Duplicate with Transfer, For Hire, 1 Lien\
+Electronic Record Only Total: $110.50\
+Printed Paper Title Total: $113.00\
+Fast Title Total: $120.50\
+\
+\
+============================================================\
+MOTOR VEHICLE / MOBILE HOME - LIEN ACTIONS AND SALVAGE FEES\
+============================================================\
+\
+Transaction: Lien Add\
+Electronic Record Only Total: $74.25\
+Printed Paper Title Total: $76.75\
+Fast Title Total: $84.25\
+\
+Transaction: Lien Add, For Hire\
+Electronic Record Only Total: $53.25\
+Printed Paper Title Total: $55.75\
+Fast Title Total: $63.25\
+\
+Transaction: Title and Reassignment of Lien\
+Electronic Record Only Total: $75.25\
+Printed Paper Title Total: $77.75\
+Fast Title Total: $85.25\
+\
+Transaction: Title and Reassignment of Lien, For Hire\
+Electronic Record Only Total: $54.25\
+Printed Paper Title Total: $56.75\
+Fast Title Total: $64.25\
+\
+Transaction: Salvage Title - Previously Titled in Florida, No Lien\
+Electronic Record Only Total: $7.25\
+Printed Paper Title Total: $9.75\
+Fast Title Total: $17.25\
+\
+Transaction: Salvage Title - Previously Titled in Florida, 1 Lien\
+Electronic Record Only Total: $9.25\
+Printed Paper Title Total: $11.75\
+Fast Title Total: $19.25\
+\
+Transaction: Salvage Title - Previously Titled in Another State, No Lien\
+Electronic Record Only Total: $17.25\
+Printed Paper Title Total: $19.75\
+Fast Title Total: $27.25\
+\
+Transaction: Salvage Title - Previously Titled in Another State, 1 Lien\
+Electronic Record Only Total: $19.25\
+Printed Paper Title Total: $21.75\
+Fast Title Total: $29.25\
+\
+Transaction: Duplicate Salvage Title - No Lien\
+Electronic Record Only Total: $7.25\
+Printed Paper Title Total: $9.75\
+Fast Title Total: $17.25\
+\
+\
+============================================================\
+MOTOR VEHICLE / MOBILE HOME - REBUILT AND INSPECTION FEES\
+============================================================\
+\
+Transaction: Rebuilt Application - Previously Titled in Florida\
+Electronic Record Only Total: $75.25\
+Printed Paper Title Total: $77.75\
+Fast Title Total: $85.25\
+\
+Transaction: Rebuilt Application - Previously Titled in Florida, For Hire\
+Electronic Record Only Total: $54.25\
+Printed Paper Title Total: $56.75\
+Fast Title Total: $64.25\
+\
+Transaction: Rebuilt Application - Previously Titled in Another State\
+Electronic Record Only Total: $85.25\
+Printed Paper Title Total: $87.75\
+Fast Title Total: $95.25\
+\
+Transaction: Rebuilt Application - Previously Titled in Another State, For Hire\
+Electronic Record Only Total: $64.25\
+Printed Paper Title Total: $66.75\
+Fast Title Total: $74.25\
+\
+Transaction: Original Inspection Fee\
+Amount: $40.00\
+\
+Transaction: Re-Inspection Fee\
+Amount: $20.00\
+\
+\
+============================================================\
+MOTOR VEHICLE / MOBILE HOME - CERTIFICATE, DERELICT, CHILD SUPPORT, SUNSCREEN, WRECKER LIEN\
+============================================================\
+\
+Transaction: Certificate of Destruction - Previously Titled in Florida\
+Electronic Record Only Total: $4.25\
+Printed Paper Title Total: $7.25\
+\
+Transaction: Certificate of Destruction - Previously Titled in Another State\
+Electronic Record Only Total: $14.25\
+Printed Paper Title Total: $17.25\
+\
+Transaction: Derelict Motor Vehicle Certificate / Duplicate Derelict Motor Vehicle Certificate\
+Electronic Record Only Total: $2.50\
+Printed Paper Title Total: $5.50\
+\
+Transaction: Child Support Lien\
+Amount: $7.00\
+\
+Transaction: Sunscreening Medical Exemption\
+Electronic Record Only Total: $2.50\
+Printed Paper Title Total: $5.50\
+\
+Transaction: Wrecker Operator's Lien\
+Electronic Record Only Total: $2.50\
+Printed Paper Title Total: $4.50\
+\
+\
+============================================================\
+OFF-HIGHWAY VEHICLE TITLE AND LIEN FEES\
+============================================================\
+\
+Transaction: Off-Highway Vehicle, Original Title New or Used, with Title Decal, With or Without Lien\
+Electronic Record Only Total: $37.25\
+Printed Paper Title Total: $39.75\
+Fast Title Total: $44.25\
+Penalty If Applicable: $10.00\
+\
+Transaction: Off-Highway Vehicle, Transfer of Title, with Title Decal, With or Without Lien\
+Electronic Record Only Total: $37.25\
+Printed Paper Title Total: $39.75\
+Fast Title Total: $44.25\
+Penalty If Applicable: $10.00\
+\
+Transaction: Off-Highway Duplicate, with Title Decal\
+Electronic Record Only Total: $23.25\
+Printed Paper Title Total: $25.75\
+Fast Title Total: $30.25\
+Penalty If Applicable: $10.00\
+\
+Transaction: Modify Title Transaction - Issuing Duplicate and Adding Lien, with Title Decal\
+Electronic Record Only Total: $23.25\
+Printed Paper Title Total: $25.75\
+Fast Title Total: $30.25\
+Penalty If Applicable: $10.00\
+\
+Transaction: Off-Highway Lien Add, with Title Decal\
+Electronic Record Only Total: $34.25\
+Printed Paper Title Total: $36.75\
+Fast Title Total: $41.25\
+Penalty If Applicable: $10.00\
+\
+Transaction: Off-Highway Lien Reassignment, with Title Decal\
+Electronic Record Only Total: $34.25\
+Printed Paper Title Total: $36.75\
+Fast Title Total: $41.25\
+Penalty If Applicable: $10.00\
+\
+Transaction: Original or Replacement Title Validation Decal - Title Issued Previously\
+Amount: $4.00\
+\
+OHV Notes:\
+- Mail fee for an OHV title decal, when applicable: $0.75\
+- Branch fee may be charged by tax collector or license plate agency: $0.50 for each title and each decal issued\
+- $10 penalty applies when date of purchase is 30 days or more from date of application\
+\
+\
+============================================================\
+VESSEL TITLE AND LIEN FEES\
+============================================================\
+\
+Transaction: Vessel Original Title\
+Electronic Record Only Total: $5.25\
+Printed Paper Title Total: $7.75\
+Fast Title Total: $10.25\
+\
+Transaction: Vessel Original Title - Previously Registered Out of State\
+Electronic Record Only Total: $9.25\
+Printed Paper Title Total: $11.75\
+Fast Title Total: $14.25\
+\
+Transaction: Vessel Original Title, 1 Lien\
+Electronic Record Only Total: $6.25\
+Printed Paper Title Total: $8.75\
+Fast Title Total: $11.25\
+\
+Transaction: Vessel Original Title - Previously Registered Out of State, 1 Lien\
+Electronic Record Only Total: $10.25\
+Printed Paper Title Total: $12.75\
+Fast Title Total: $15.25\
+\
+Transaction: Vessel Transfer of Title\
+Electronic Record Only Total: $5.25\
+Printed Paper Title Total: $7.75\
+Fast Title Total: $10.25\
+Penalty If Applicable: $10.00\
+\
+Transaction: Vessel Transfer of Title, 1 Lien\
+Electronic Record Only Total: $6.25\
+Printed Paper Title Total: $8.75\
+Fast Title Total: $11.25\
+Penalty If Applicable: $10.00\
+\
+Transaction: Vessel Transfer of Title - With Transfer of Equity\
+Electronic Record Only Total: $5.25\
+Printed Paper Title Total: $7.75\
+Fast Title Total: $10.25\
+Penalty If Applicable: $10.00\
+\
+Transaction: Vessel Transfer of Title - With Transfer of Equity, 1 Lien\
+Electronic Record Only Total: $6.25\
+Printed Paper Title Total: $8.75\
+Fast Title Total: $11.25\
+Penalty If Applicable: $10.00\
+\
+Transaction: Vessel Lien Add\
+Electronic Record Only Total: $6.25\
+Printed Paper Title Total: $8.75\
+Fast Title Total: $11.25\
+\
+Transaction: Vessel Duplicate Title\
+Electronic Record Only Total: $6.00\
+Printed Paper Title Total: $8.50\
+Fast Title Total: $11.00\
+\
+Transaction: Vessel Duplicate Title, 1 Lien\
+Electronic Record Only Total: $7.00\
+Printed Paper Title Total: $9.50\
+Fast Title Total: $12.00\
+\
+Transaction: Vessel Duplicate with Transfer\
+Electronic Record Only Total: $11.25\
+Printed Paper Title Total: $13.75\
+Fast Title Total: $16.25\
+\
+Transaction: Vessel Duplicate with Transfer, 1 Lien\
+Electronic Record Only Total: $12.25\
+Printed Paper Title Total: $14.75\
+Fast Title Total: $17.25\
+\
+Transaction: Vessel Lost In Transit\
+Printed Paper Title Total: $5.00\
+\
+\
+============================================================\
+GENERAL FEE NOTES FROM FEES-01\
+============================================================\
+\
+Paper Title Mail Fee:\
+Amount: $2.50\
+\
+Fast Title Fee:\
+Amount: $10.00\
+\
+Motor Vehicle / Mobile Home Penalty:\
+Amount: $20.00\
+Applies When: Date of purchase is 30 days or more from date of application.\
+\
+OHV Penalty:\
+Amount: $10.00\
+Applies When: Date of purchase is 30 days or more from date of application.\
+\
+Vessel Penalty:\
+Amount: $10.00\
+Applies When: Date of purchase is 30 days or more from date of application.\
+\
+Branch Fee:\
+Amount: $0.50\
+Applies To: Each title issued by tax collector or license plate agency when applicable.\
+\
+OHV Title Decal Mail Fee:\
+Amount: $0.75\
+Applies To: OHV title decal mail fee when applicable.\
+\
+Lien Fee:\
+Common Motor Vehicle / Mobile Home Lien Fee: $2.00\
+Common Vessel Lien Fee: $1.00\
+\
+Common Added Fee Components:\
+Security Fee: $1.00 where applicable\
+Paper Title Mail Fee: $2.50 where applicable\
+Fast Title Fee Add-On: $10.00 where applicable\
+NGW Fee: $1.50 where applicable\
+Service Fee: $3.50 where applicable\
+Lemon Law Fee: $2.00 where applicable\
+Mobile Home Fee: $1.00 where applicable\
+Recreational Motor Vehicle Fee: $2.00 where applicable\
+\
+\
+============================================================\
+ABBREVIATIONS\
+============================================================\
+\
+STTF: State Transportation Trust Fund\
+HSOTF: Highway Safety Operating Trust Fund\
+GR: General Revenue\
+NGW: Non-Game Wildlife Trust Fund\
+MH: Mobile Home\
+MRCTF: Marine Resources Conservation Trust Fund\
+ITFDF: Incidental Trust Fund, Division of Forestry, Department of Agriculture and Consumer Services\
+\
+\
+END OF FILE}

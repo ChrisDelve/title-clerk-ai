@@ -1,0 +1,284 @@
+TITLE:\
+FLHSMV RS-06 \'97 Temporary License Plates\
+\
+CATEGORY:\
+Temporary Tags\
+Dealer Temp Tags\
+30-Day Tags\
+Metal Plate Delays\
+Out-of-State Buyers\
+Registration Pending\
+\
+--------------------------------------------------\
+\
+RULE:\
+Temporary license plates (temp tags) may ONLY be issued for statutorily authorized purposes and valid registration situations.\
+\
+VERIFY:\
+- Ownership/title eligibility\
+- Florida insurance\
+- VIN consistency\
+- Temp tag reason eligibility\
+- Buyer information\
+- Dealer authorization\
+\
+ESCALATE IF:\
+- Temp tag eligibility unclear\
+- VIN discrepancy exists\
+- Fraud concerns arise\
+- Insurance invalid/unverified\
+\
+\
+--------------------------------------------------\
+\
+RULE:\
+Temporary tags are commonly issued when:\
+- Metal plate unavailable\
+- Registration pending\
+- Title processing incomplete\
+- Out-of-state buyer requires transit operation\
+- Vehicle awaiting permanent registration\
+\
+VERIFY:\
+- Transaction status\
+- Registration processing stage\
+- Supporting title documents\
+- Dealer records\
+\
+COMMON MISTAKE:\
+Issuing temp tag without valid registration/title basis.\
+\
+\
+--------------------------------------------------\
+\
+RULE:\
+Florida insurance is generally REQUIRED before temporary registration issuance.\
+\
+VERIFY:\
+- Florida-issued insurance if applicable\
+- Owner name consistency\
+- VIN consistency\
+- Effective policy dates\
+- Insurance company code\
+\
+ESCALATE IF:\
+- Out-of-state insurance invalid for transaction\
+- Insurance expired\
+- VIN mismatch on insurance\
+- Insurance unverifiable\
+\
+NOTE:\
+Florida electronically verifies insurance before registration issuance in most standard vehicle transactions. ([flhsmv.gov](https://www.flhsmv.gov/motor-vehicles-tags-titles/license-plates-registration/motor-vehicle-registrations/?utm_source=chatgpt.com))\
+\
+\
+--------------------------------------------------\
+\
+RULE:\
+VIN must match ALL temporary registration and title documents exactly.\
+\
+VERIFY:\
+- Temp tag VIN\
+- Insurance VIN\
+- Title VIN\
+- System VIN\
+- Supporting paperwork VIN\
+\
+ESCALATE IF:\
+- Any VIN discrepancy exists\
+- Altered VIN suspected\
+- VIN unreadable/incomplete\
+\
+\
+--------------------------------------------------\
+\
+RULE:\
+Temporary tags must display:\
+- Expiration date\
+- Correct vehicle information\
+- Proper issuance information\
+\
+VERIFY:\
+- Temp tag expiration\
+- Registration information\
+- Dealer issuance records\
+\
+ESCALATE IF:\
+- Incorrect expiration date\
+- Invalid issuance information\
+- Duplicate tag concerns\
+\
+\
+--------------------------------------------------\
+\
+RULE:\
+Dealers may ONLY issue temporary tags under authorized dealer issuance authority.\
+\
+VERIFY:\
+- Dealer license status\
+- Dealer authorization\
+- Temp tag inventory/accountability\
+- Proper issuance logs\
+\
+ESCALATE IF:\
+- Unauthorized issuance suspected\
+- Dealer records inconsistent\
+- Fraud concerns arise\
+\
+\
+--------------------------------------------------\
+\
+RULE:\
+Temporary tag durations vary depending on transaction type and statutory authority.\
+\
+COMMON EXAMPLES:\
+- 30-day temporary tags\
+- Metal plate delay tags\
+- Out-of-state transit tags\
+\
+VERIFY:\
+- Correct temp tag type\
+- Proper expiration period\
+- Transaction eligibility\
+\
+ESCALATE IF:\
+- Incorrect tag duration\
+- Unauthorized extension requested\
+- Improper tag classification\
+\
+\
+--------------------------------------------------\
+\
+RULE:\
+Out-of-state buyers may require temporary operation permits for vehicle transport/removal.\
+\
+VERIFY:\
+- Buyer residency\
+- Vehicle destination\
+- Registration eligibility\
+- Supporting transaction records\
+\
+ESCALATE IF:\
+- Residency conflict exists\
+- Improper interstate use suspected\
+- Registration eligibility unclear\
+\
+\
+--------------------------------------------------\
+\
+RULE:\
+Metal plate delays may justify temporary registration issuance when:\
+- Permanent plate unavailable\
+- Registration processing delayed\
+- DMV issuance delay exists\
+\
+VERIFY:\
+- Registration submission status\
+- Plate issuance status\
+- Supporting dealer records\
+\
+ESCALATE IF:\
+- Delay unsupported\
+- Registration incomplete\
+- Temp tag misuse suspected\
+\
+\
+--------------------------------------------------\
+\
+RULE:\
+Business/entity-owned vehicles require:\
+- Authorized signer review\
+- Business verification\
+- Entity documentation if applicable\
+\
+VERIFY:\
+- FEID/business information\
+- Authorized representative\
+- Ownership consistency\
+\
+ESCALATE IF:\
+- Business authority unclear\
+- Ownership mismatch exists\
+- Fraud concerns arise\
+\
+\
+--------------------------------------------------\
+\
+RULE:\
+Fraud prevention review is critical during temporary tag issuance.\
+\
+VERIFY:\
+- Identity legitimacy\
+- VIN authenticity\
+- Insurance validity\
+- Dealer issuance legitimacy\
+- Supporting document authenticity\
+\
+ESCALATE IF:\
+- Fraud concerns\
+- Fake insurance documents\
+- Altered paperwork\
+- Suspicious temp tag activity\
+- Duplicate issuance patterns\
+\
+\
+--------------------------------------------------\
+\
+RULE:\
+Improper temporary tag issuance may expose:\
+- Dealer penalties\
+- Registration violations\
+- Fraud investigations\
+- Compliance enforcement actions\
+\
+BEST PRACTICE:\
+Treat temporary tags as controlled accountable inventory.\
+\
+\
+--------------------------------------------------\
+\
+COMMON DEALERSHIP FAILURE POINTS:\
+- Issuing temp tag without valid insurance\
+- VIN mismatch\
+- Incorrect expiration dates\
+- Temp tag issued before deal finalized\
+- Missing ownership verification\
+- Wrong temp tag type\
+- Failure to maintain issuance logs\
+- Unauthorized temp tag extensions\
+- Incorrect out-of-state processing\
+- Insurance name mismatch\
+\
+\
+--------------------------------------------------\
+\
+HIGH-RISK ESCALATION SITUATIONS:\
+- VIN discrepancies\
+- Fraud concerns\
+- Fake insurance documentation\
+- Unauthorized temp tag issuance\
+- Duplicate temp tags\
+- Ownership disputes\
+- Altered paperwork\
+- Dealer accountability issues\
+- Registration/title conflicts\
+\
+\
+--------------------------------------------------\
+\
+BEST PRACTICE:\
+Before issuing temporary tag:\
+1. Verify ownership/title eligibility FIRST.\
+2. Verify insurance electronically.\
+3. Verify VIN across ALL documents.\
+4. Verify correct temp tag type/duration.\
+5. Verify dealer issuance authority.\
+6. Escalate any irregularity immediately.\
+\
+\
+--------------------------------------------------\
+\
+SOURCE:\
+FLHSMV RS-06 Temporary License Plates\
+\
+REFERENCE URL:\
+https://www.flhsmv.gov/pdf/proc/rs/rs-06.pdf}

@@ -1,0 +1,213 @@
+TITLE:\
+FLHSMV TL-15 \'97 Nonnegotiable Certificates of Title\
+\
+CATEGORY:\
+Nonnegotiable Titles\
+Title Restrictions\
+Ownership Verification\
+Lienholder Processing\
+Special Title Status\
+\
+--------------------------------------------------\
+\
+RULE:\
+A nonnegotiable certificate of title indicates restrictions exist preventing standard ownership transfer processing until requirements are satisfied.\
+\
+VERIFY:\
+- Title status\
+- Restriction reason\
+- Ownership information\
+- Lienholder information\
+- Supporting documentation\
+\
+ESCALATE IF:\
+- Restriction unclear\
+- Ownership conflict exists\
+- Title status inconsistent\
+\
+\
+--------------------------------------------------\
+\
+RULE:\
+Nonnegotiable titles may be issued in situations involving unresolved title conditions or special title circumstances.\
+\
+EXAMPLES:\
+- Pending lien satisfaction\
+- Ownership issue\
+- Incomplete title requirements\
+- Court/legal restrictions\
+\
+VERIFY:\
+- Supporting paperwork\
+- Existing title status\
+- Legal/title conditions\
+\
+COMMON MISTAKE:\
+Treating nonnegotiable title as standard transferable title.\
+\
+\
+--------------------------------------------------\
+\
+RULE:\
+Ownership transfers involving nonnegotiable titles require heightened review before processing.\
+\
+VERIFY:\
+- Current ownership\
+- Supporting transfer documents\
+- Restriction resolution\
+- Signature requirements\
+\
+ESCALATE IF:\
+- Ownership unclear\
+- Restriction unresolved\
+- Supporting documentation incomplete\
+\
+\
+--------------------------------------------------\
+\
+RULE:\
+VIN must match ALL title and supporting records exactly.\
+\
+VERIFY:\
+- Existing title VIN\
+- System VIN\
+- Vehicle VIN\
+- Supporting paperwork VIN\
+\
+ESCALATE IF:\
+- Any VIN discrepancy exists\
+- Altered VIN suspected\
+- VIN unreadable\
+\
+\
+--------------------------------------------------\
+\
+RULE:\
+Lienholder information must be reviewed carefully on nonnegotiable titles.\
+\
+VERIFY:\
+- Existing lienholder\
+- ELT status\
+- Lien release status\
+- Bank documentation\
+\
+ESCALATE IF:\
+- Missing lien release\
+- Multiple liens exist\
+- Lienholder mismatch exists\
+- Electronic title status unclear\
+\
+\
+--------------------------------------------------\
+\
+RULE:\
+Court orders or legal documentation may impact negotiability of title.\
+\
+VERIFY:\
+- Court paperwork\
+- Ownership authority\
+- Legal restrictions\
+- Supporting documentation\
+\
+ESCALATE IF:\
+- Court documentation unclear\
+- Ownership dispute exists\
+- Legal restrictions unresolved\
+\
+\
+--------------------------------------------------\
+\
+RULE:\
+Out-of-state title restrictions may affect Florida title processing.\
+\
+VERIFY:\
+- Prior state title status\
+- Branding/restrictions\
+- Ownership consistency\
+- Supporting paperwork\
+\
+ESCALATE IF:\
+- Prior state restrictions unclear\
+- Branding conflict exists\
+- Ownership discrepancy exists\
+\
+\
+--------------------------------------------------\
+\
+RULE:\
+Business/entity ownership on restricted/nonnegotiable titles requires additional authority verification.\
+\
+VERIFY:\
+- Authorized signer\
+- Business documentation\
+- Ownership consistency\
+- Supporting paperwork\
+\
+ESCALATE IF:\
+- Signer authority unclear\
+- Entity ownership conflict exists\
+- Missing business documentation\
+\
+\
+--------------------------------------------------\
+\
+RULE:\
+Nonnegotiable title conditions must generally be resolved before standard title transfer processing can occur.\
+\
+VERIFY:\
+- Restriction satisfaction\
+- Supporting releases\
+- Required approvals\
+- Correct title status update\
+\
+ESCALATE IF:\
+- Restriction unresolved\
+- Missing required documentation\
+- Title history conflict exists\
+\
+\
+--------------------------------------------------\
+\
+COMMON DEALERSHIP MISTAKES:\
+- Treating nonnegotiable title as standard title\
+- Missing lien release\
+- Failure to verify restriction reason\
+- Ownership mismatch\
+- VIN mismatch\
+- Ignoring legal/title restrictions\
+- Incomplete supporting paperwork\
+- Incorrect ELT assumptions\
+\
+\
+--------------------------------------------------\
+\
+HIGH-RISK ESCALATION SITUATIONS:\
+- Ownership disputes\
+- Court/legal restrictions\
+- Missing lien release\
+- VIN discrepancies\
+- Fraud concerns\
+- Title history inconsistencies\
+- Out-of-state title conflicts\
+- Altered title paperwork\
+- Multiple ownership claims\
+\
+\
+--------------------------------------------------\
+\
+BEST PRACTICE:\
+Before processing nonnegotiable title:\
+1. Identify WHY title is nonnegotiable.\
+2. Verify restriction resolution requirements.\
+3. Verify ownership carefully.\
+4. Verify lienholder/title status.\
+5. Escalate unresolved title restrictions immediately.\
+\
+\
+--------------------------------------------------\
+\
+SOURCE:\
+FLHSMV TL-15 Nonnegotiable Certificates of Title\
+\
+REFERENCE URL:\
+https://www.flhsmv.gov/pdf/proc/tl/tl-15.pdf}
