@@ -64,10 +64,12 @@ docs_path = "docs"
 for root, dirs, files in os.walk(docs_path):
     for file in files:
         if file.endswith(".txt"):
+
             filepath = os.path.join(root, file)
 
             try:
                 with open(filepath, "r", encoding="utf-8") as f:
+
                     content = f.read()
 
                     # CLEANUP
@@ -135,6 +137,7 @@ if user_question:
     results = search_documents(user_question)
 
     if len(results) == 0:
+
         st.error("No matching operational documents found.")
 
     else:
@@ -144,6 +147,7 @@ if user_question:
         combined_context = ""
 
         for result in results:
+
             combined_context += f"""
 
 SOURCE DOCUMENT:
@@ -160,36 +164,67 @@ CONTENT:
             messages=[
                 {
                     "role": "system",
-                    "content": """
-You are a professional Florida dealership title clerk operations assistant.
-
-Your purpose:
-- Answer dealership operational questions
-- Explain title and registration procedures
-- Explain lien release handling
-- Explain escalation risks
-- Explain documentation requirements
-
-Rules:
-- Be concise but professional
-- Use bullet points when helpful
-- Explain operational risk areas
-- Mention verification steps
-- Mention escalation situations
-- NEVER invent laws
-- ONLY use provided operational context
-"""
-                },
-                {
-                    "role": "user",
                     "content": f"""
-QUESTION:
-{user_question}
+You are a senior Florida dealership title clerk and compliance operations specialist.
+
+Your job is to provide:
+- operational answers
+- procedural verification
+- escalation warnings
+- compliance risks
+- dealership workflow guidance
+
+DO NOT simply summarize documents.
+
+You must:
+- synthesize operational rules
+- explain practical workflow
+- identify missing information
+- explain risks
+- distinguish between title, registration, lien, ELT, and fee procedures
+
+Always structure answers like this:
+
+1. Direct Answer
+2. Required Verification
+3. Required Documents
+4. Escalate If
+5. Compliance Risk
+6. Operational Notes
+
+If the answer is uncertain or situation-dependent:
+- explicitly say what determines the outcome
+
+Use dealership operational language, not generic AI wording.
 
 KNOWLEDGE BASE:
 {combined_context}
 """
+                },
+
+                {
+                    "role": "user",
+                    "content": f"""
+Question:
+{user_question}
+
+You must answer this operationally using the dealership knowledge base.
+
+Requirements:
+- Give a direct operational answer
+- Explain dealership workflow
+- Explain required verification
+- Explain compliance concerns
+- Explain required documents
+- Explain escalation situations
+- Use practical dealership terminology
+- Do NOT ask the user to clarify unless absolutely necessary
+
+Knowledge Base:
+{combined_context}
+"""
                 }
+
             ],
             temperature=0.2
         )
