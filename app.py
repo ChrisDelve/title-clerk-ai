@@ -21,14 +21,6 @@ client = OpenAI(
 )
 
 # ----------------------------
-# HEADER / LOGO
-# ----------------------------
-
-st.image("logo.png", width=450)
-
-st.divider()
-
-# ----------------------------
 # SIDEBAR
 # ----------------------------
 
@@ -53,6 +45,14 @@ with st.sidebar:
     )
 
 # ----------------------------
+# HEADER / LOGO
+# ----------------------------
+
+st.image("logo.png", width=475)
+
+st.divider()
+
+# ----------------------------
 # LOAD DOCUMENTS
 # ----------------------------
 
@@ -68,32 +68,30 @@ for root, dirs, files in os.walk(docs_path):
 
             try:
                 with open(filepath, "r", encoding="utf-8") as f:
+
                     content = f.read()
 
                     # CLEANUP
+                    content = content.replace("\\", "\n")
+                    content = content.replace("*", "")
+                    content = content.replace("_", " ")
+                    content = content.replace("•", "-")
+                    content = content.replace("{", "")
+                    content = content.replace("}", "")
 
-
-                    # Reduce messy spacing from PDF/TXT extraction
-                    content = " ".join(content.split())
-
-                    # Add readable line breaks around common operational terms
-                    content = content.replace("Electronic", "\nElectronic")
-                    content = content.replace("Printed", "\nPrinted")
-                    content = content.replace("Paper", "\nPaper")
-                    content = content.replace("Fast Title", "\nFast Title")
-                    content = content.replace("Transaction:", "\n\nTransaction:")
-                    content = content.replace("TITLE:", "\n\nTITLE:")
-                    content = content.replace("CATEGORY:", "\n\nCATEGORY:")
-                    content = content.replace("RULE:", "\n\nRULE:")
-                    content = content.replace("VERIFY:", "\n\nVERIFY:")
-                    content = content.replace("ESCALATE IF:", "\n\nESCALATE IF:")
+                    # PRESERVE LINE BREAKS
+                    content = "\n".join(
+                        line.strip()
+                        for line in content.splitlines()
+                        if line.strip()
+                    )
 
                     DOCUMENTS.append({
                         "name": file,
                         "content": content
                     })
 
-            except Exception:
+            except:
                 pass
 
 # ----------------------------
@@ -122,12 +120,12 @@ def search_documents(query):
         fee_words = ["fee", "fees", "cost", "price", "how much", "amount"]
         if any(term in query_lower for term in fee_words):
             if "fees" in doc_name_lower or "fee" in doc_name_lower:
-                score += 20
+                score += 10
 
         # Boost duplicate title documents when asking duplicate title questions
         if "duplicate" in query_lower and "title" in query_lower:
             if "duplicate" in doc_name_lower:
-                score += 10
+                score += 8
 
         # Boost exact phrase matches
         if "duplicate title" in content_lower:
@@ -150,12 +148,10 @@ def search_documents(query):
             m for m in matches
             if "fee" in m["name"].lower() or "fees" in m["name"].lower()
         ]
-
         non_fee_matches = [
             m for m in matches
             if m not in fee_matches
         ]
-
         return (fee_matches + non_fee_matches)[:5]
 
     return matches[:5]
@@ -243,6 +239,13 @@ If the answer is uncertain or situation-dependent:
 
 Use dealership operational language, not generic AI wording.
 
+When providing fees:
+- Use clean plain text.
+- Do not italicize fee amounts.
+- Do not merge multiple fee amounts into one sentence.
+- Use bullet points for fee amounts.
+- If fee amounts vary by lien, paper/electronic title, fast title, vessel, or for-hire status, separate them clearly.
+
 KNOWLEDGE BASE:
 {combined_context}
 """
@@ -264,6 +267,9 @@ Requirements:
 - Explain escalation situations
 - Use practical dealership terminology
 - Do NOT ask the user to clarify unless absolutely necessary
+- Use clean plain text formatting
+- Do NOT use italic formatting
+- Do NOT merge fee amounts together
 
 Knowledge Base:
 {combined_context}
