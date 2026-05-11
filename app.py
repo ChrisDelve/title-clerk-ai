@@ -254,7 +254,7 @@ Knowledge Base:
 
         st.subheader("AI Operational Response")
 
-        st.write(ai_answer)
+       st.markdown(ai_answer)
 
         st.divider()
 
