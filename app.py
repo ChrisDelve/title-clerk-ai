@@ -1,58 +1,39 @@
 import streamlit as st
-import os
 from openai import OpenAI
+import os
 
-# ==================================================
+# ----------------------------
 # PAGE CONFIG
-# ==================================================
+# ----------------------------
 
 st.set_page_config(
     page_title="Delve AI",
+    page_icon="🚗",
     layout="wide"
 )
 
-# ==================================================
-# CUSTOM CSS
-# ==================================================
+# ----------------------------
+# OPENAI CLIENT
+# ----------------------------
 
-st.markdown(
-    """
-    <style>
-
-    .block-container {
-        padding-top: 1.5rem;
-        padding-bottom: 2rem;
-    }
-
-    div[data-testid="stVerticalBlock"] > div:has(img) {
-        margin-bottom: -40px;
-    }
-
-    .stTextInput input {
-        border-radius: 12px;
-        padding: 14px;
-    }
-
-    </style>
-    """,
-    unsafe_allow_html=True
+client = OpenAI(
+    api_key=st.secrets["OPENAI_API_KEY"]
 )
 
-# ==================================================
-# OPENAI
-# ==================================================
+# ----------------------------
+# HEADER / LOGO
+# ----------------------------
 
-api_key = st.secrets["OPENAI_API_KEY"]
+st.image("logo.png", width=450)
 
-client = OpenAI(api_key=api_key)
+st.divider()
 
-# ==================================================
+# ----------------------------
 # SIDEBAR
-# ==================================================
+# ----------------------------
 
 with st.sidebar:
-
-    st.markdown("### Operational Categories")
+    st.header("Operational Categories")
 
     st.markdown("""
     - Title Transfers
@@ -65,57 +46,28 @@ with st.sidebar:
     - Escalation Procedures
     """)
 
+    st.divider()
+
     st.info(
         "Internal dealership operations assistant designed to support title, registration, lien, and compliance workflows."
     )
 
-# ==================================================
-# LOGO
-# ==================================================
-
-st.image("logo.png", width=475)
-
-# ==================================================
-# HEADER
-# ==================================================
-
-st.markdown("## Instant Title & Registration Assistant")
-
-st.caption(
-    "Ask about duplicate titles • ELT • lien releases • registration transfers"
-)
-
-# ==================================================
-# SEARCH BOX
-# ==================================================
-
-with st.container(border=True):
-
-    user_question = st.text_input(
-        "",
-        placeholder="Ask your title clerk question here..."
-    )
-
-# ==================================================
+# ----------------------------
 # LOAD DOCUMENTS
-# ==================================================
+# ----------------------------
 
 DOCUMENTS = []
 
 docs_path = "docs"
 
 for root, dirs, files in os.walk(docs_path):
-
     for file in files:
-
         if file.endswith(".txt"):
 
             filepath = os.path.join(root, file)
 
             try:
-
                 with open(filepath, "r", encoding="utf-8") as f:
-
                     content = f.read()
 
                     # CLEANUP
@@ -123,17 +75,32 @@ for root, dirs, files in os.walk(docs_path):
                     content = content.replace("{", "")
                     content = content.replace("}", "")
 
+                    # Reduce messy spacing from PDF/TXT extraction
+                    content = " ".join(content.split())
+
+                    # Add readable line breaks around common operational terms
+                    content = content.replace("Electronic", "\nElectronic")
+                    content = content.replace("Printed", "\nPrinted")
+                    content = content.replace("Paper", "\nPaper")
+                    content = content.replace("Fast Title", "\nFast Title")
+                    content = content.replace("Transaction:", "\n\nTransaction:")
+                    content = content.replace("TITLE:", "\n\nTITLE:")
+                    content = content.replace("CATEGORY:", "\n\nCATEGORY:")
+                    content = content.replace("RULE:", "\n\nRULE:")
+                    content = content.replace("VERIFY:", "\n\nVERIFY:")
+                    content = content.replace("ESCALATE IF:", "\n\nESCALATE IF:")
+
                     DOCUMENTS.append({
                         "name": file,
                         "content": content
                     })
 
-            except:
+            except Exception:
                 pass
 
-# ==================================================
+# ----------------------------
 # SEARCH FUNCTION
-# ==================================================
+# ----------------------------
 
 def search_documents(query):
 
@@ -146,31 +113,70 @@ def search_documents(query):
         score = 0
 
         content_lower = doc["content"].lower()
+        doc_name_lower = doc["name"].lower()
+        query_lower = query.lower()
 
         for word in query_words:
-
             if word in content_lower:
                 score += 1
 
-        if score > 0:
+        # Boost fee documents when user asks about price/cost/fee
+        fee_words = ["fee", "fees", "cost", "price", "how much", "amount"]
+        if any(term in query_lower for term in fee_words):
+            if "fees" in doc_name_lower or "fee" in doc_name_lower:
+                score += 20
 
+        # Boost duplicate title documents when asking duplicate title questions
+        if "duplicate" in query_lower and "title" in query_lower:
+            if "duplicate" in doc_name_lower:
+                score += 10
+
+        # Boost exact phrase matches
+        if "duplicate title" in content_lower:
+            score += 5
+
+        if score > 0:
             matches.append({
                 "name": doc["name"],
                 "content": doc["content"],
                 "score": score
             })
 
-    matches = sorted(
-        matches,
-        key=lambda x: x["score"],
-        reverse=True
-    )
+    matches = sorted(matches, key=lambda x: x["score"], reverse=True)
+
+    # If question is about fees/cost/pricing, force fee documents to the top
+    fee_words = ["fee", "fees", "cost", "price", "how much", "amount"]
+
+    if any(term in query.lower() for term in fee_words):
+        fee_matches = [
+            m for m in matches
+            if "fee" in m["name"].lower() or "fees" in m["name"].lower()
+        ]
+
+        non_fee_matches = [
+            m for m in matches
+            if m not in fee_matches
+        ]
+
+        return (fee_matches + non_fee_matches)[:5]
 
     return matches[:5]
 
-# ==================================================
+# ----------------------------
+# USER INPUT
+# ----------------------------
+
+st.markdown("## Instant Title & Registration Assistant")
+st.caption("Ask about duplicate titles • ELT • lien releases • registration transfers")
+
+user_question = st.text_input(
+    "",
+    placeholder="Ask your title clerk question here..."
+)
+
+# ----------------------------
 # AI RESPONSE
-# ==================================================
+# ----------------------------
 
 if user_question:
 
@@ -178,30 +184,55 @@ if user_question:
 
     results = search_documents(user_question)
 
-    st.success(f"Found {len(results)} matching operational documents")
+    if len(results) == 0:
 
-    combined_context = ""
+        st.error("No matching operational documents found.")
 
-    for result in results:
+    else:
 
-        combined_context += f"""
+        st.success(f"Found {len(results)} matching operational documents")
 
-DOCUMENT NAME:
+        combined_context = ""
+
+        for result in results:
+
+            combined_context += f"""
+
+SOURCE DOCUMENT:
 {result['name']}
 
-DOCUMENT CONTENT:
+CONTENT:
 {result['content']}
 
+==================================================
 """
 
-    system_prompt = f"""
-You are an expert Florida dealership title clerk operations assistant.
+        response = client.chat.completions.create(
+            model="gpt-4.1-mini",
+            messages=[
+                {
+                    "role": "system",
+                    "content": f"""
+You are a senior Florida dealership title clerk and compliance operations specialist.
 
-You ONLY answer using the operational knowledge provided.
+Your job is to provide:
+- operational answers
+- procedural verification
+- escalation warnings
+- compliance risks
+- dealership workflow guidance
 
-Structure responses professionally.
+DO NOT simply summarize documents.
 
-Use:
+You must:
+- synthesize operational rules
+- explain practical workflow
+- identify missing information
+- explain risks
+- distinguish between title, registration, lien, ELT, and fee procedures
+
+Always structure answers like this:
+
 1. Direct Answer
 2. Required Verification
 3. Required Documents
@@ -209,56 +240,63 @@ Use:
 5. Compliance Risk
 6. Operational Notes
 
-Be operationally precise.
-"""
+If the answer is uncertain or situation-dependent:
+- explicitly say what determines the outcome
 
-    user_prompt = f"""
-QUESTION:
-{user_question}
+Use dealership operational language, not generic AI wording.
 
 KNOWLEDGE BASE:
 {combined_context}
 """
+                },
+                {
+                    "role": "user",
+                    "content": f"""
+Question:
+{user_question}
 
-    response = client.chat.completions.create(
-        model="gpt-4.1-mini",
-        messages=[
-            {
-                "role": "system",
-                "content": system_prompt
-            },
-            {
-                "role": "user",
-                "content": user_prompt
-            }
-        ],
-        temperature=0.2
-    )
+You must answer this operationally using the dealership knowledge base.
 
-    ai_answer = response.choices[0].message.content
+Requirements:
+- Give a direct operational answer
+- Explain dealership workflow
+- Explain required verification
+- Explain compliance concerns
+- Explain required documents
+- Explain escalation situations
+- Use practical dealership terminology
+- Do NOT ask the user to clarify unless absolutely necessary
 
-    # ==================================================
-    # DISPLAY RESPONSE
-    # ==================================================
+Knowledge Base:
+{combined_context}
+"""
+                }
+            ],
+            temperature=0.2
+        )
 
-    st.markdown("---")
+        ai_answer = response.choices[0].message.content
 
-    st.markdown("## AI Operational Response")
+        # ----------------------------
+        # DISPLAY ANSWER
+        # ----------------------------
 
-    st.markdown(ai_answer)
+        st.subheader("AI Operational Response")
 
-    # ==================================================
-    # SOURCES
-    # ==================================================
+        st.markdown(ai_answer)
 
-    st.markdown("---")
+        st.divider()
 
-    st.markdown("### Sources Used")
+        # ----------------------------
+        # SOURCES USED
+        # ----------------------------
 
-    for result in results:
+        st.subheader("Sources Used")
 
-        with st.expander(result["name"]):
+        for result in results:
 
-            st.caption(f"Match Score: {result['score']}")
+            with st.expander(result["name"]):
 
-            st.text(result["content"][:3000])
+                st.caption(f"Match Score: {result['score']}")
+
+                st.text(result["content"][:3000])
