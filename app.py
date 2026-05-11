@@ -248,13 +248,13 @@ Knowledge Base:
 
         ai_answer = response.choices[0].message.content
 
-        # ----------------------------
+                # ----------------------------
         # DISPLAY ANSWER
         # ----------------------------
 
         st.subheader("AI Operational Response")
 
-       st.markdown(ai_answer)
+        st.markdown(ai_answer)
 
         st.divider()
 
