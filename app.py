@@ -100,25 +100,27 @@ def search_documents(query):
         score = 0
 
         content_lower = doc["content"].lower()
+        doc_name_lower = doc["name"].lower()
+        query_lower = query.lower()
 
- for word in query_words:
-    if word in content_lower:
-        score += 1
+        for word in query_words:
+            if word in content_lower:
+                score += 1
 
-# Boost fee documents when user asks about price/cost/fee
-fee_words = ["fee", "fees", "cost", "price", "how much", "amount"]
-if any(term in query.lower() for term in fee_words):
-    if "fees" in doc["name"].lower() or "fee" in doc["name"].lower():
-        score += 10
+        # Boost fee documents when user asks about price/cost/fee
+        fee_words = ["fee", "fees", "cost", "price", "how much", "amount"]
+        if any(term in query_lower for term in fee_words):
+            if "fees" in doc_name_lower or "fee" in doc_name_lower:
+                score += 10
 
-# Boost duplicate title documents when asking duplicate title questions
-if "duplicate" in query.lower() and "title" in query.lower():
-    if "duplicate" in doc["name"].lower():
-        score += 8
+        # Boost duplicate title documents when asking duplicate title questions
+        if "duplicate" in query_lower and "title" in query_lower:
+            if "duplicate" in doc_name_lower:
+                score += 8
 
-# Boost exact phrase matches
-if "duplicate title" in content_lower:
-    score += 5
+        # Boost exact phrase matches
+        if "duplicate title" in content_lower:
+            score += 5
 
         if score > 0:
             matches.append({
