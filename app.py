@@ -24,8 +24,11 @@ client = OpenAI(
 # TITLE / HEADER
 # ----------------------------
 
-st.title("🚗 Florida Title Clerk AI")
-st.caption("Internal Operations Knowledge Assistant")
+# ----------------------------
+# LOGO / HEADER
+# ----------------------------
+
+st.image("logo.png", width=650)
 
 st.divider()
 
