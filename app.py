@@ -69,20 +69,34 @@ for root, dirs, files in os.walk(docs_path):
 
             try:
                 with open(filepath, "r", encoding="utf-8") as f:
-
                     content = f.read()
 
                     # CLEANUP
-                    content = content.replace("\\", "")
+                    content = content.replace("\\", "\n")
                     content = content.replace("{", "")
                     content = content.replace("}", "")
+
+                    # Reduce messy spacing from PDF/TXT extraction
+                    content = " ".join(content.split())
+
+                    # Add readable line breaks around common fee terms
+                    content = content.replace("Electronic", "\nElectronic")
+                    content = content.replace("Printed", "\nPrinted")
+                    content = content.replace("Paper", "\nPaper")
+                    content = content.replace("Fast Title", "\nFast Title")
+                    content = content.replace("Transaction:", "\n\nTransaction:")
+                    content = content.replace("TITLE:", "\n\nTITLE:")
+                    content = content.replace("CATEGORY:", "\n\nCATEGORY:")
+                    content = content.replace("RULE:", "\n\nRULE:")
+                    content = content.replace("VERIFY:", "\n\nVERIFY:")
+                    content = content.replace("ESCALATE IF:", "\n\nESCALATE IF:")
 
                     DOCUMENTS.append({
                         "name": file,
                         "content": content
                     })
 
-            except:
+            except Exception:
                 pass
 
 # ----------------------------
@@ -218,7 +232,6 @@ KNOWLEDGE BASE:
 {combined_context}
 """
                 },
-
                 {
                     "role": "user",
                     "content": f"""
@@ -241,14 +254,13 @@ Knowledge Base:
 {combined_context}
 """
                 }
-
             ],
             temperature=0.2
         )
 
         ai_answer = response.choices[0].message.content
 
-                # ----------------------------
+        # ----------------------------
         # DISPLAY ANSWER
         # ----------------------------
 
