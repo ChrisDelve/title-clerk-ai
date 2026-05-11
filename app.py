@@ -71,9 +71,7 @@ for root, dirs, files in os.walk(docs_path):
                     content = f.read()
 
                     # CLEANUP
-                    content = content.replace("\\", "\n")
-                    content = content.replace("{", "")
-                    content = content.replace("}", "")
+
 
                     # Reduce messy spacing from PDF/TXT extraction
                     content = " ".join(content.split())
@@ -283,7 +281,7 @@ Knowledge Base:
 
         st.subheader("AI Operational Response")
 
-        st.markdown(ai_answer)
+        st.write(ai_answer)
 
         st.divider()
 
