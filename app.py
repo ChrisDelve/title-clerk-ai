@@ -9,9 +9,135 @@ import os
 st.set_page_config(
     page_title="Delve AI",
     page_icon="🚗",
-    layout="wide"
+    layout="centered",
+    initial_sidebar_state="collapsed"
 )
+st.markdown("""
+<style>
+/* App background */
+.stApp {
+    background-color: #0E0E0E;
+    color: #F5F5F5;
+}
 
+/* Hide Streamlit header/footer/menu */
+#MainMenu {visibility: hidden;}
+footer {visibility: hidden;}
+header {visibility: hidden;}
+
+/* Main content width and spacing */
+.block-container {
+    max-width: 900px;
+    padding-top: 0rem;
+    padding-bottom: 4rem;
+}
+
+/* Text */
+h1, h2, h3, h4, h5, h6, p, label, span {
+    color: #F5F5F5 !important;
+    font-family: Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+}
+
+/* Muted subtitle text */
+.subtext {
+    color: #9A9A9A !important;
+    font-size: 0.98rem;
+    text-align: center;
+    max-width: 760px;
+    margin: 0 auto 1.5rem auto;
+    line-height: 1.75;
+    font-weight: 300;
+    letter-spacing: 0.2px;
+}
+
+/* Logo container */
+..logo-wrap {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 0.4rem;
+}
+
+/* Logo sizing */
+.logo-wrap img {
+    max-width: 620px;
+    width: 80%;
+
+    filter: drop-shadow(0 0 12px rgba(212,175,55,0.12));
+}
+
+/* Divider */
+hr {
+    border: none;
+    border-top: 1px solid #2A2A2A;
+    margin: 2rem 0;
+}
+
+/* Input box */
+.stTextInput input {
+    background: rgba(17,17,17,0.92) !important;
+    color: #F5F5F5 !important;
+
+    border: 1px solid rgba(212,175,55,0.22) !important;
+    border-radius: 14px !important;
+
+    height: 48px !important;
+min-height: 48px !important;
+line-height: 48px !important;
+
+padding: 0 1rem !important;
+
+    font-size: 0.95rem !important;
+    font-weight: 400 !important;
+    line-height: normal !important;
+
+    box-shadow: none !important;
+    transition: all 0.2s ease !important;
+}
+.stTextInput input::placeholder {
+    color: #7A7A7A !important;
+    opacity: 1 !important;
+    font-weight: 400 !important;
+}
+.stTextInput input:focus {
+    border: 1px solid #C8A96B !important;
+    box-shadow: 0 0 10px rgba(200,169,107,0.25) !important;
+}
+/* Text area if used */
+.stTextArea textarea {
+    background-color: #171717 !important;
+    color: #F5F5F5 !important;
+    border: 1px solid #2A2A2A !important;
+    border-radius: 14px !important;
+    padding: 1rem !important;
+    font-size: 1rem !important;
+}
+
+/* Buttons */
+.stButton button {
+    background-color: #C8A96B !important;
+    color: #0E0E0E !important;
+    border-radius: 12px !important;
+    border: none !important;
+    font-weight: 700 !important;
+    padding: 0.65rem 1.25rem !important;
+}
+
+/* Response card */
+.response-card {
+    background-color: #171717;
+    border: 1px solid #2A2A2A;
+    border-radius: 18px;
+    padding: 1.5rem;
+    margin-top: 1.5rem;
+}
+
+/* Small helper text */
+.helper {
+    color: #A1A1A1 !important;
+    font-size: 0.85rem;
+}
+</style>
+""", unsafe_allow_html=True)
 # ----------------------------
 # OPENAI CLIENT
 # ----------------------------
@@ -24,33 +150,69 @@ client = OpenAI(
 # SIDEBAR
 # ----------------------------
 
-with st.sidebar:
-    st.header("Operational Categories")
-
-    st.markdown("""
-    - Title Transfers
-    - Registration
-    - Liens / ELT
-    - Duplicate Titles
-    - Fees
-    - VIN Verification
-    - Dealer Processing
-    - Escalation Procedures
-    """)
-
-    st.divider()
-
-    st.info(
-        "Internal dealership operations assistant designed to support title, registration, lien, and compliance workflows."
-    )
-
 # ----------------------------
 # HEADER / LOGO
 # ----------------------------
 
-st.image("logo.png", width=475)
+st.markdown('<div class="logo-wrap">', unsafe_allow_html=True)
+st.image("logo.png", width=700)
+st.markdown('</div>', unsafe_allow_html=True)
 
-st.divider()
+st.markdown(
+    """
+    <h1 style='
+        text-align:center;
+        font-size:2.5rem;
+        font-weight:700;
+        letter-spacing:-1px;
+        line-height:1.1;
+        margin-bottom:0.8rem;
+        font-family: Inter, sans-serif;
+        color:white;
+    '>
+        Instant Title & Registration Assistant
+    </h1>
+    """,
+    unsafe_allow_html=True
+)
+
+st.markdown(
+    """
+    <p class='subtext' style='text-align:center; max-width:700px; margin:auto; line-height:1.8;'>
+    Ask about duplicate titles, ELT, lien releases, registration transfers, fees, & title procedures.
+    </p>
+    """,
+    unsafe_allow_html=True
+)
+st.markdown(
+    """
+    <div style="
+        width: 320px;
+        height: 1px;
+        margin: 2rem auto 2.2rem auto;
+        background: linear-gradient(
+            to right,
+            transparent,
+            rgba(212,175,55,0.9),
+            transparent
+        );
+        position: relative;
+    ">
+        <div style="
+            width: 10px;
+            height: 10px;
+            background: #D4AF37;
+            border-radius: 50%;
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+            box-shadow: 0 0 10px rgba(212,175,55,0.5);
+        "></div>
+    </div>
+    """,
+    unsafe_allow_html=True
+)
 
 # ----------------------------
 # LOAD DOCUMENTS
@@ -160,8 +322,6 @@ def search_documents(query):
 # USER INPUT
 # ----------------------------
 
-st.markdown("## Instant Title & Registration Assistant")
-st.caption("Ask about duplicate titles • ELT • lien releases • registration transfers")
 
 user_question = st.text_input(
     "",
