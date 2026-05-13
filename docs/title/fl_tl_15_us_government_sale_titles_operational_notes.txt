@@ -1,0 +1,244 @@
+FLORIDA TITLE & LIEN PROCEDURE
+U.S. GOVERNMENT SALE TITLE APPLICATIONS
+SOURCE: TL-15
+REVISION DATE: 06/26/2023
+
+==================================================
+PURPOSE
+==================================================
+
+This procedure governs:
+- Vehicles purchased at U.S. Government sales
+- Seized vehicle title processing
+- IRS seizure vehicle title processing
+- Standard Form 97 processing
+- Government forfeiture transactions
+
+==================================================
+VERY IMPORTANT RULE
+==================================================
+
+Standard Form 97:
+Acts like title or MCO.
+
+==================================================
+STANDARD FORM 97 RULE
+==================================================
+
+Standard Form 97:
+U.S. Government Certificate to Obtain Title.
+
+Required for government sale vehicles.
+
+==================================================
+CORE REQUIREMENTS
+==================================================
+
+Required:
+- Standard Form 97
+- HSMV 82040
+- VIN verification if required
+- Tax information
+- Plate/non-use affidavit
+- Fees
+
+==================================================
+VERY IMPORTANT RULE
+==================================================
+
+Government sale:
+Does NOT require lien satisfaction.
+
+Unless IRS seizure situation.
+
+==================================================
+VIN VERIFICATION RULE
+==================================================
+
+Out-of-state or untitled vehicles:
+Require HSMV 82042
+or VIN verification section.
+
+==================================================
+VERIFICATION EXEMPTIONS
+==================================================
+
+VIN verification NOT required for:
+- Mobile homes
+- Trailers under 2,000 lbs
+- Travel trailers
+- Camping trailers
+- Truck campers
+- Fifth-wheel RV trailers
+
+==================================================
+DEALER RULE
+==================================================
+
+Licensed dealer:
+May reassign Standard Form 97
+without titling into dealership name.
+
+==================================================
+VERY IMPORTANT RULE
+==================================================
+
+Individual purchaser:
+MUST title vehicle in own name
+before resale.
+
+==================================================
+SEIZED VEHICLE RULE
+==================================================
+
+Law enforcement seizure requires:
+- Federal Court Order of Forfeiture
+OR
+- Declaration of Forfeiture
+
+==================================================
+IRS SEIZURE RULE
+==================================================
+
+IRS seizure requires:
+Form 2435
+Certificate of Sale of Seized Property.
+
+==================================================
+VERY IMPORTANT RULE
+==================================================
+
+IRS seizure:
+Does NOT automatically clear purchase money liens.
+
+==================================================
+LIEN RULE
+==================================================
+
+IRS seizure transactions:
+Require lien satisfactions
+when applicable.
+
+==================================================
+VERY IMPORTANT RULE
+==================================================
+
+Government seizure by law enforcement:
+Does NOT require lien satisfaction.
+
+==================================================
+ODOMETER RULE
+==================================================
+
+Standard Form 97 odometer section:
+Must show government agency name,
+not individual seller name.
+
+==================================================
+NON-USE AFFIDAVIT RULE
+==================================================
+
+Motor vehicles:
+May use non-use affidavit.
+
+Mobile homes:
+Cannot use non-use affidavit.
+
+==================================================
+NEW 82040 FORM RULE
+==================================================
+
+Updated forms:
+- HSMV 82040 MV
+- HSMV 82040 MH
+- HSMV 82040 VS
+
+==================================================
+VERY IMPORTANT RULE
+==================================================
+
+Nongame Wildlife Fee:
+NOT required
+with Standard Form 97.
+
+==================================================
+FLORIDA TITLE RECORD RULE
+==================================================
+
+If Florida title record already exists:
+Same title number must be reused.
+
+==================================================
+DEALERSHIP HIGH-RISK ERROR AREAS
+==================================================
+
+MOST COMMON ERRORS:
+- Missing Standard Form 97
+- Missing forfeiture order
+- Missing Form 2435
+- Incorrect lien handling
+- Improper dealer reassignment
+- Missing VIN verification
+- Wrong tax collection
+- Using non-use affidavit for mobile home
+- Treating IRS seizure like normal seizure
+- Missing title in individual purchaser name
+
+==================================================
+AI CLASSIFICATION TAGS
+==================================================
+
+government sale
+Standard Form 97
+federal seizure
+government vehicle title
+IRS seizure
+Form 2435
+forfeiture vehicle
+government auction
+government title transfer
+federal court order
+declaration of forfeiture
+government bill of sale
+VIN verification
+HSMV 82042
+government reassignment
+government vehicle auction
+seized property
+
+==================================================
+WORKFLOW BEST PRACTICE
+==================================================
+
+Before processing:
+
+1. Verify government document type
+2. Verify Standard Form 97
+3. Verify seizure vs normal sale
+4. Verify lien requirements
+5. Verify VIN verification
+6. Verify taxes
+7. Verify registration/non-use
+8. Verify purchaser type
+9. Verify forfeiture documents
+10. Verify fees
+
+==================================================
+IMPORTANT SUPPORTING FORMS
+==================================================
+
+Standard Form 97
+Form 2435
+HSMV 82040
+HSMV 82042
+
+==================================================
+RELATED PROCEDURES
+==================================================
+
+TL-10
+TL-11
+
+==================================================
+END OF OPERATIONAL NOTES
+==================================================

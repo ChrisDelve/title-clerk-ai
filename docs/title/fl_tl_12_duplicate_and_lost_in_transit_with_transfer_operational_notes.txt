@@ -1,0 +1,244 @@
+FLORIDA TITLE & LIEN PROCEDURE
+DUPLICATE AND LOST IN TRANSIT WITH TRANSFER
+SOURCE: TL-12
+REVISION DATE: 07/07/2020
+
+==================================================
+PURPOSE
+==================================================
+
+This procedure governs:
+- Duplicate title with transfer
+- Lost in transit title transfers
+- Duplicate salvage transfers
+- Missing title transfer situations
+- Insurance company salvage transfers
+
+==================================================
+CORE RULE
+==================================================
+
+Duplicate with transfer:
+Allows ownership transfer
+when seller cannot locate title.
+
+==================================================
+VERY IMPORTANT RULE
+==================================================
+
+Buyer AND seller:
+Must BOTH be present.
+
+Valid identification required.
+
+==================================================
+POWER OF ATTORNEY RULE
+==================================================
+
+Power of attorney:
+NOT allowed
+for standard duplicate with transfer.
+
+==================================================
+EXCEPTION RULE
+==================================================
+
+Insurance company total loss:
+May use proper POA.
+
+==================================================
+VERY IMPORTANT ELECTRONIC TITLE RULE
+==================================================
+
+If title status is electronic:
+Duplicate with transfer CANNOT be processed.
+
+==================================================
+DUPLICATE WITH TRANSFER RULE
+==================================================
+
+When title lost:
+Use:
+HSMV 82101.
+
+==================================================
+REQUIRED DOCUMENTS RULE
+==================================================
+
+Required:
+- HSMV 82101
+- Buyer and seller signatures
+- Lien satisfactions
+- Tax information
+- Plate or non-use affidavit
+- Fees
+
+==================================================
+DEALER RULE
+==================================================
+
+Dealer as seller:
+Still considered seller.
+
+Dealer must comply fully.
+
+==================================================
+HSMV 82994 RULE
+==================================================
+
+Dealer handling transfer:
+Must complete HSMV 82994
+when applicable.
+
+==================================================
+LOST IN TRANSIT RULE
+==================================================
+
+Lost in transit applies:
+- More than 20 days
+- Less than 180 days
+since duplicate issued.
+
+==================================================
+VERY IMPORTANT RULE
+==================================================
+
+Lost in transit:
+Processed as no-fee fast title.
+
+==================================================
+SALVAGE TRANSFER RULE
+==================================================
+
+Insurance company total loss:
+Requires:
+- HSMV 82101
+- HSMV 82363
+- Lien satisfactions
+- Non-use affidavit
+- Fees
+
+==================================================
+VESSEL RULE
+==================================================
+
+Salvage section:
+Does NOT apply to vessels.
+
+==================================================
+NON-USE AFFIDAVIT RULE
+==================================================
+
+Motor vehicles:
+May use non-use affidavit.
+
+Mobile homes:
+Cannot use non-use affidavit
+except insurance situations.
+
+==================================================
+VESSEL NON-USE RULE
+==================================================
+
+Vessel non-use affidavit:
+Requires non-use registration issuance.
+
+==================================================
+LIEN RULE
+==================================================
+
+All liens:
+Must be satisfied
+before duplicate transfer.
+
+==================================================
+FEE RULE
+==================================================
+
+Duplicate with transfer:
+Requires:
+- Duplicate fee
+- Transfer fee
+- System service fee
+
+==================================================
+VERY IMPORTANT RULE
+==================================================
+
+If seller not present:
+Seller must obtain duplicate title FIRST
+before transferring ownership.
+
+==================================================
+HIGH-RISK ERROR AREAS
+==================================================
+
+MOST COMMON ERRORS:
+- Attempting process on electronic title
+- Missing seller presence
+- Using POA improperly
+- Missing lien satisfactions
+- Wrong lost-in-transit timeline
+- Missing HSMV 82363
+- Missing non-use affidavit
+- Incorrect insurance handling
+- Wrong fee collection
+
+==================================================
+AI CLASSIFICATION TAGS
+==================================================
+
+duplicate title
+lost in transit
+duplicate with transfer
+HSMV 82101
+HSMV 82363
+missing title
+salvage transfer
+insurance payoff
+duplicate fast title
+electronic title restriction
+non-use affidavit
+dealer transfer
+lien satisfaction
+title replacement
+transfer with lost title
+duplicate salvage
+Florida duplicate title
+
+==================================================
+WORKFLOW BEST PRACTICE
+==================================================
+
+Before processing:
+
+1. Verify title is NOT electronic
+2. Verify buyer present
+3. Verify seller present
+4. Verify identification
+5. Verify lien satisfaction
+6. Verify proper forms
+7. Verify insurance status
+8. Verify timeline for lost-in-transit
+9. Verify tax collection
+10. Verify fees
+
+==================================================
+IMPORTANT SUPPORTING FORMS
+==================================================
+
+HSMV 82101
+HSMV 82363
+HSMV 82994
+
+==================================================
+RELATED PROCEDURES
+==================================================
+
+TL-01
+TL-11
+TL-36
+
+==================================================
+END OF OPERATIONAL NOTES
+==================================================

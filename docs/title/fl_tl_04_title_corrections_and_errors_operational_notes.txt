@@ -1,0 +1,429 @@
+FLORIDA TITLE & LIEN PROCEDURE
+TITLE CORRECTIONS AND ERRORS
+SOURCE: TL-04
+REVISION DATE: 06/23/21
+
+==================================================
+PURPOSE
+==================================================
+
+This procedure governs:
+- Title corrections
+- Lien corrections
+- Modify vs correction transactions
+- Incorrect MCO situations
+- Non-delivery cancellations
+- Body type changes
+- ELT correction processing
+- VIN correction handling
+- Certificate cancellation procedures
+- Incorrectly issued title resolution
+
+This procedure is critical because incorrect title
+corrections can:
+- Create ownership defects
+- Break lien perfection
+- Create tax/title audit exposure
+- Cause dealership funding delays
+- Trigger duplicate ownership records
+- Cause DMV rejection or title cancellation
+
+==================================================
+CORE OPERATIONAL CLASSIFICATION
+==================================================
+
+FIRST DETERMINE:
+
+1. What type of error exists?
+   - Lien error
+   - Owner information error
+   - VIN error
+   - MCO error
+   - Non-delivery
+   - Body type correction
+   - Electronic title correction
+   - FLHSMV-issued error
+   - Dealer-created error
+
+2. Was the title:
+   - Printed paper title
+   - Electronic title (ELT)
+   - Out-of-state title
+   - Certificate of destruction
+
+3. Who caused the error?
+   - Dealer
+   - Lienholder
+   - Owner
+   - FLHSMV/agency
+
+THIS DETERMINES:
+- Fees required
+- Modify vs correction transaction
+- Required affidavits
+- Supporting documentation
+
+==================================================
+VERY IMPORTANT RULE
+==================================================
+
+IF FLHSMV OR COUNTY CAUSED ERROR:
+→ Correction transaction
+→ NO title fees
+
+IF DEALER/LIENHOLDER/OWNER CAUSED ERROR:
+→ Modify transaction
+→ TITLE FEES REQUIRED
+
+==================================================
+COMMENT DESC REQUIREMENT
+==================================================
+
+ALL corrections/changes/recreates REQUIRE:
+
+Detailed explanation entered into:
+"Comment Desc." field.
+
+This is mandatory.
+
+==================================================
+TITLE NUMBER CORRECTIONS
+==================================================
+
+County agencies CANNOT process title number corrections.
+
+MUST be submitted to FLHSMV:
+
+Florida Highway Safety and Motor Vehicles
+Direct Mail and Issuance RM #A330
+2900 Apalachee Parkway, MS #72
+Tallahassee, FL 32399
+
+==================================================
+LIEN CORRECTIONS — PAPER TITLE
+==================================================
+
+--------------------------------------------------
+DEALER REQUEST
+--------------------------------------------------
+
+REQUIRED:
+- Dealer affidavit on letterhead
+- Title certificate
+- Title fees
+
+Affidavit must explain:
+- What error occurred
+- Exact correction needed
+
+--------------------------------------------------
+LIENHOLDER REQUEST
+--------------------------------------------------
+
+REQUIRED:
+- Copy of lien instrument
+- Lienholder affidavit
+- Title certificate
+- Title fees
+
+--------------------------------------------------
+OWNER REQUEST
+--------------------------------------------------
+
+REQUIRED:
+- Title certificate
+- Affidavit
+- Supporting proof if needed
+- Title fees
+
+==================================================
+ELT CORRECTIONS
+==================================================
+
+FOR ELECTRONIC TITLES:
+
+--------------------------------------------------
+DEALER REQUEST
+--------------------------------------------------
+
+REQUIRED:
+- Corrected HSMV 82040 MV
+- Dealer affidavit
+- Fees
+
+--------------------------------------------------
+LIENHOLDER REQUEST
+--------------------------------------------------
+
+REQUIRED:
+- Lien instrument copy
+- Affidavit
+- Fees
+
+--------------------------------------------------
+OWNER REQUEST
+--------------------------------------------------
+
+REQUIRED:
+- Affidavit
+- Supporting proof if required
+- Fees
+
+IMPORTANT:
+ELT corrections still require:
+- Modify processing
+- Comment description entry
+
+==================================================
+NEW CAR NON-DELIVERY
+==================================================
+
+SCENARIO:
+Vehicle never delivered after title issuance.
+
+DEALER MUST:
+1. Request duplicate MCO from manufacturer.
+2. Retrieve title from owner/lienholder.
+
+IF TITLE ELECTRONIC:
+Lienholder must satisfy lien electronically.
+
+REQUIRED DOCUMENTS:
+- Title/satisfied lien
+- HSMV 82175
+- Refund paperwork if plate refund requested
+
+==================================================
+NON-DELIVERY IMPORTANT WORKFLOW
+==================================================
+
+IF TITLE ELECTRONIC:
+Tax collector must fax completed HSMV 82175
+to Field Support Center.
+
+Purpose:
+Change ELT to paper status so record can be
+cancelled WITHOUT printing title.
+
+==================================================
+INCORRECT MCO SUBMITTED
+==================================================
+
+SCENARIO:
+Wrong MCO used during title issuance.
+
+DEALER MUST:
+- Obtain duplicate/correct MCO
+- Retrieve incorrect title
+- Submit corrected title package
+
+REQUIRED:
+- Correct MCO
+- HSMV 82175
+- Title fees
+- Proof sales tax paid
+
+==================================================
+USED CAR NON-DELIVERY
+==================================================
+
+DEALER MUST:
+- Have incorrect title reassigned back to dealership
+- Hold title until vehicle sold again
+
+Dealer does NOT need to title vehicle into dealer name.
+
+Correct vehicle title package must then be submitted.
+
+==================================================
+BODY TYPE CHANGES
+==================================================
+
+REQUIRED:
+- Certificate of title
+- HSMV 82100
+- Certified weight affidavit/slip
+- Title fees
+
+THIS IS:
+NOT a correction.
+
+Must process as:
+TITLE MODIFICATION.
+
+==================================================
+DUMP TRUCK RULE
+==================================================
+
+IF body type changing to:
+DP (Dump Truck)
+
+REFER CUSTOMER TO:
+Regional Office.
+
+==================================================
+OUT-OF-STATE VIN CORRECTIONS
+==================================================
+
+VERY HIGH RISK AREA.
+
+IF correcting VIN on out-of-state title:
+
+REQUIRE:
+- Letter from prior state DMV
+OR
+- Corrected out-of-state title
+
+Letter must:
+- Be on official letterhead
+- State VIN error
+- State correct VIN
+
+==================================================
+VIN EXCEPTION RULE
+==================================================
+
+Regional administrator/supervisor MAY approve:
+Obvious VIN typo corrections.
+
+Examples:
+- S vs 5
+- O vs 0
+
+Requires:
+Written authorization on letterhead.
+
+==================================================
+CERTIFICATE OF DESTRUCTION ERRORS
+==================================================
+
+To cancel incorrect certificate of destruction:
+
+REQUIRED:
+- Insurance company affidavit
+- Perjury statement
+- Vehicle location details
+- Possession information
+- Intended use explanation
+- ID copy
+- Confidential VIN verification
+
+Mail to:
+FLHSMV Direct Mail & Issuance.
+
+==================================================
+FAST TITLE RULE
+==================================================
+
+Customer may expedite corrected paper title
+through Fast Title Service.
+
+Additional fees apply.
+
+==================================================
+NAME/ADDRESS CORRECTION RULE
+==================================================
+
+When corrected in issuance system:
+ALL associated records update automatically.
+
+==================================================
+MCO ERROR CORRECTIONS
+==================================================
+
+IF ORIGINAL MCO CONTAINED BAD DATA:
+- Make
+- Year
+- Vehicle information
+
+REQUIRED:
+- Corrected MCO
+- Dealer affidavit
+- Existing title
+- Fees
+
+Processed as:
+TITLE MODIFICATION.
+
+==================================================
+COMMON DEALERSHIP HIGH-RISK ERRORS
+==================================================
+
+MOST COMMON FAILURES:
+- Wrong modify/correction classification
+- Missing title fees
+- Missing affidavit
+- No Comment Desc entered
+- Wrong MCO submitted
+- ELT not converted properly
+- VIN correction without DMV authorization
+- Missing sales tax proof
+- Improper reassignment during non-delivery
+- Missing lien satisfaction
+
+==================================================
+AI CLASSIFICATION TAGS
+==================================================
+
+title correction
+title modify
+modify transaction
+correction transaction
+incorrect title
+wrong lien
+lien correction
+ELT correction
+electronic title correction
+non-delivery
+incorrect MCO
+duplicate MCO
+body type correction
+HSMV 82100
+HSMV 82175
+HSMV 83363
+certificate of destruction
+VIN correction
+out-of-state VIN
+dealer affidavit
+lienholder affidavit
+title fees
+Comment Desc
+Fast Title
+paper title correction
+electronic lien
+title cancellation
+
+==================================================
+WORKFLOW BEST PRACTICE
+==================================================
+
+Before processing any correction:
+
+1. Determine who caused error.
+2. Determine paper vs ELT title.
+3. Determine modify vs correction.
+4. Verify title fees applicability.
+5. Verify affidavit requirements.
+6. Verify title availability.
+7. Verify supporting documentation.
+8. Enter detailed Comment Desc.
+9. Verify if regional office approval required.
+10. Verify whether cancellation or modification needed.
+
+==================================================
+RELATED PROCEDURES
+==================================================
+
+TL-01 Signature Requirements
+TL-06 Brands and Usage
+TL-09 Odometer Disclosure
+TL-36 Total Loss Settlements
+HSMV 82040 MV
+HSMV 82100
+HSMV 82105
+HSMV 82175
+HSMV 83363
+
+==================================================
+END OF OPERATIONAL NOTES
+==================================================

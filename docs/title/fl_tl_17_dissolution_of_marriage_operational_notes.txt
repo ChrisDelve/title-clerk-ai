@@ -1,0 +1,434 @@
+FLORIDA TITLE & LIEN PROCEDURE
+DISSOLUTION OF MARRIAGE / DIVORCE TITLE TRANSFERS
+SOURCE: TL-17
+REVISION DATE: 06/26/2023
+
+==================================================
+PURPOSE
+==================================================
+
+This procedure governs:
+- Divorce-related title transfers
+- Court ordered ownership transfers
+- Motor vehicle title transfers after dissolution
+- Mobile home title transfers after dissolution
+- Vessel title transfers after dissolution
+
+==================================================
+LEGAL AUTHORITY
+==================================================
+
+Section 319.28(1)(a) and (2)(a), F.S.
+Transfer by operation of law.
+
+Section 328.01(3)(b), F.S.
+Application for certificate of title.
+
+Florida Rule of Civil Procedure 1.570(d)
+Court judgment acts as conveyance document.
+
+==================================================
+VERY IMPORTANT RULE
+==================================================
+
+A divorce decree MAY act as:
+- Transfer document
+- Conveyance document
+- Ownership assignment
+
+WITHOUT spouse signature
+IF wording properly conveys ownership.
+
+==================================================
+GENERAL RULE
+==================================================
+
+Court order must specifically identify:
+- Vehicle
+- Mobile home
+- Vessel
+
+==================================================
+IDENTIFICATION REQUIREMENTS
+==================================================
+
+Court order should reference:
+- VIN/HIN
+- Title number
+- Year
+- Make
+- Model
+
+==================================================
+VERY IMPORTANT RULE
+==================================================
+
+If VIN/HIN missing:
+Other identifying characteristics
+must clearly identify property.
+
+==================================================
+CONVEYANCE LANGUAGE RULE
+==================================================
+
+Acceptable ownership wording includes:
+- "Shall have sole and separate property"
+- "Exclusive ownership and possession"
+- "Vehicle shall belong to..."
+- "Awarded to..."
+
+==================================================
+VERY IMPORTANT RULE
+==================================================
+
+If decree properly conveys ownership:
+Other spouse signature NOT required.
+
+==================================================
+DEALERSHIP INTAKE QUESTIONS
+==================================================
+
+ALWAYS ASK:
+1. Do you have title?
+2. Florida title or out-of-state?
+3. Has spouse signed title?
+4. Will spouse sign title?
+5. Did decree award vehicle?
+6. Do you have decree/court order?
+
+==================================================
+FLORIDA TITLE REQUIREMENTS
+==================================================
+
+When previously titled in Florida:
+
+Required:
+- Florida title
+OR
+- Lost title certification on HSMV 82040
+
+- Divorce decree/court order
+- HSMV 82040
+- Lien satisfactions if applicable
+- Sales tax information
+- Registration/non-use affidavit
+- Title fees
+
+==================================================
+COURT ORDER PAGE REQUIREMENTS
+==================================================
+
+Only these pages required:
+- First page
+- Conveyance page
+- Judge signature page
+
+Entire decree NOT required.
+
+==================================================
+VERY IMPORTANT RULE
+==================================================
+
+Customer applying:
+Must be person awarded ownership.
+
+==================================================
+LIEN RULE
+==================================================
+
+All liens must be:
+- Satisfied
+OR
+- Properly transferred
+
+==================================================
+VERY IMPORTANT LIEN RULE
+==================================================
+
+If lienholder refuses to release title:
+Transfer CANNOT occur.
+
+==================================================
+TRANSFER OF EQUITY RULE
+==================================================
+
+Transfer of Equity allowed:
+Florida title transactions ONLY.
+
+==================================================
+OUT-OF-STATE TITLE REQUIREMENTS
+==================================================
+
+When previously titled out-of-state:
+
+Required:
+- Out-of-state title
+OR
+- Ownership/lien verification
+
+==================================================
+ACCEPTABLE OWNERSHIP VERIFICATION
+==================================================
+
+Acceptable proof:
+- State printout
+- State letterhead verification
+- Photocopy of title
+- Law enforcement teletype verification
+
+==================================================
+OUT-OF-STATE VIN RULE
+==================================================
+
+Out-of-state vehicles:
+Require VIN verification.
+
+==================================================
+ACCEPTABLE VIN VERIFICATION
+==================================================
+
+Use:
+- HSMV 82042
+OR
+- Section 8 of HSMV 82040
+
+==================================================
+VIN EXEMPTIONS
+==================================================
+
+VIN verification NOT required for:
+- Mobile homes
+- Vessels
+- Travel trailers
+- Camping trailers
+- Truck campers
+- Fifth-wheel recreation trailers
+- Trailers under 2,000 lbs
+- New dealer vehicles
+
+==================================================
+OUT-OF-STATE LIEN RULE
+==================================================
+
+Transfer of Equity:
+NOT allowed on out-of-state titles.
+
+==================================================
+VERY IMPORTANT RULE
+==================================================
+
+Out-of-state title with lien:
+Must satisfy prior lien first.
+
+==================================================
+REGISTRATION REQUIREMENTS
+==================================================
+
+Must provide:
+- Florida plate transfer
+OR
+- New registration
+OR
+- Non-use affidavit
+
+==================================================
+MOBILE HOME RULE
+==================================================
+
+Non-use affidavit:
+NOT acceptable for mobile homes.
+
+==================================================
+VESSEL RULE
+==================================================
+
+Vessel transfers require:
+- Florida registration transfer
+OR
+- New registration
+OR
+- Non-use affidavit
+
+==================================================
+TITLE APPLICATION RULE
+==================================================
+
+Use updated forms:
+
+Motor Vehicles:
+HSMV 82040 MV
+
+Vessels:
+HSMV 82040 VS
+
+Mobile Homes:
+HSMV 82040 MH
+
+==================================================
+VERY IMPORTANT RULE
+==================================================
+
+Effective 2024:
+Old HSMV 82040 no longer accepted.
+
+==================================================
+COURT ORDER COMPONENTS
+==================================================
+
+Court order must contain:
+- Court name
+- Parties involved
+- Case number
+- Order type
+- Vehicle identification
+- Conveyance wording
+- Judge signature
+- Entry date
+
+==================================================
+VERY IMPORTANT ERROR AREA
+==================================================
+
+BIGGEST DEALERSHIP MISTAKE:
+Court order does NOT properly
+award ownership.
+
+==================================================
+DEALERSHIP HIGH-RISK ERROR AREAS
+==================================================
+
+MOST COMMON ERRORS:
+- Missing conveyance wording
+- Wrong spouse applying
+- Missing judge signature page
+- VIN/HIN mismatch
+- Unsatisfied lien
+- Missing VIN verification
+- Transfer of Equity attempted on out-of-state title
+- Missing registration transfer
+- Missing sales tax information
+- Incomplete court order pages
+- No proof of ownership
+- Wrong HSMV 82040 version
+- Mobile home non-use affidavit submitted
+- Lienholder refusing release
+
+==================================================
+AI CLASSIFICATION TAGS
+==================================================
+
+divorce transfer
+dissolution of marriage
+court ordered transfer
+operation of law
+divorce decree
+awarded vehicle
+vehicle awarded in divorce
+divorce title transfer
+spouse transfer
+court order title
+transfer of equity
+divorce vehicle
+divorce vessel
+divorce mobile home
+family court transfer
+court conveyance
+ownership awarded
+marital settlement
+final judgment
+marriage dissolution
+
+==================================================
+WORKFLOW BEST PRACTICE
+==================================================
+
+Before processing:
+
+1. Verify ownership awarded
+2. Verify decree wording
+3. Verify VIN/HIN match
+4. Verify title status
+5. Verify lien status
+6. Verify customer identity
+7. Verify Florida vs out-of-state
+8. Verify VIN inspection if required
+9. Verify correct HSMV form
+10. Verify sales tax section
+11. Verify registration transfer
+12. Verify title fees
+13. Verify judge signature page
+14. Verify conveyance page included
+
+==================================================
+DEALERSHIP DECISION LOGIC
+==================================================
+
+IF:
+Florida title +
+Proper decree wording +
+No lien issue
+
+THEN:
+Process without spouse signature.
+
+--------------------------------------------------
+
+IF:
+Out-of-state title +
+Outstanding lien
+
+THEN:
+Prior lien must be satisfied first.
+
+--------------------------------------------------
+
+IF:
+Court order vague or unclear
+
+THEN:
+Reject until clarified.
+
+==================================================
+KEY DEFINITIONS
+==================================================
+
+CONVEY:
+Transfer awarded by court.
+
+COURT ORDER:
+Legal order requiring title transfer.
+
+DIVORCE:
+Dissolution of marriage.
+
+DIVORCE DECREE:
+Court order granting divorce.
+
+PETITIONER:
+Spouse initiating divorce.
+
+RESPONDENT:
+Other spouse.
+
+==================================================
+IMPORTANT SUPPORTING FORMS
+==================================================
+
+HSMV 82040 MV
+HSMV 82040 MH
+HSMV 82040 VS
+HSMV 82042
+
+==================================================
+RELATED PROCEDURES
+==================================================
+
+TL-01
+TL-03
+TL-10
+TL-15
+TL-18
+
+==================================================
+END OF OPERATIONAL NOTES
+==================================================

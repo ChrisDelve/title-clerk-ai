@@ -1,0 +1,481 @@
+FLORIDA TITLE & LIEN PROCEDURE
+TRANSFER OF FLORIDA CERTIFICATE OF TITLE
+SOURCE: TL-11
+REVISION DATE: 06/26/2023
+
+==================================================
+PURPOSE
+==================================================
+
+This procedure governs:
+- Transfer of Florida titles
+- Dealer reassignments
+- Casual sale transfers
+- Electronic title transfers
+- Open title handling
+- Odometer disclosure transfer rules
+- Lien transfer requirements
+- Title correction issues
+- Transfer of equity situations
+
+This is one of the MOST IMPORTANT dealership procedures.
+
+==================================================
+CORE TRANSFER RULE
+==================================================
+
+Ownership cannot transfer
+unless:
+- Seller properly assigns title
+- Purchaser properly identified
+- Required odometer disclosures completed
+
+==================================================
+VERY IMPORTANT RULE
+==================================================
+
+Open titles are illegal.
+
+Purchaser name MUST appear on title.
+
+==================================================
+TITLE TRANSFER SECTION RULE
+==================================================
+
+Transfer of Title by Seller section:
+Must be completed fully.
+
+Required:
+- Seller printed names
+- Seller signatures
+- Purchaser printed names
+- Odometer disclosure when required
+- Selling price
+
+==================================================
+VERY IMPORTANT RULE
+==================================================
+
+Printed names:
+Can be typed or stamped.
+
+BUT:
+Cannot be blank.
+
+==================================================
+NOTARIZATION RULE
+==================================================
+
+Florida title transfer section:
+Does NOT require notarization.
+
+Even if title contains notary area.
+
+==================================================
+ODOMETER DISCLOSURE RULE
+==================================================
+
+Non-exempt vehicles:
+Must complete odometer disclosure
+in Transfer of Title by Seller section.
+
+==================================================
+DEALER REASSIGNMENT RULE
+==================================================
+
+Florida dealer using paper title:
+Uses reassignment section on back of title first.
+
+Once reassignment spaces exhausted:
+Use HSMV 82994.
+
+==================================================
+ELECTRONIC TITLE DEALER RULE
+==================================================
+
+Electronic title traded into Florida dealer:
+Requires HSMV 82994.
+
+==================================================
+HSMV 82995 RULE
+==================================================
+
+Secure POA only used when:
+- Title held by lienholder
+OR
+- Title lost
+
+==================================================
+EXEMPT VEHICLE RULE
+==================================================
+
+Exempt vehicle:
+Seller signature still required.
+
+Selling price still required.
+
+Purchaser name still required.
+
+==================================================
+VESSEL AND MOBILE HOME RULE
+==================================================
+
+Vessels and mobile homes:
+Always odometer exempt.
+
+==================================================
+ELECTRONIC TITLE CASUAL SALE RULE
+==================================================
+
+Electronic title staying electronic:
+Buyer and seller BOTH must appear at agency.
+
+NO power of attorney allowed.
+
+==================================================
+VERY IMPORTANT RULE
+==================================================
+
+If title remains electronic:
+Use:
+- HSMV 82994
+OR
+- HSMV 82092 when applicable
+
+==================================================
+OUT-OF-STATE BUYER RULE
+==================================================
+
+Florida dealer selling to out-of-state resident:
+May provide reassigned title directly.
+
+Requires:
+HSMV 84061.
+
+==================================================
+CONFORMING TITLE RULE
+==================================================
+
+Conforming titles:
+Revision date 8/91 or later.
+
+==================================================
+NONCONFORMING TITLE RULE
+==================================================
+
+Nonconforming titles:
+Revision date before 8/91.
+
+==================================================
+CASUAL SALE RULE
+==================================================
+
+Transfer between individuals:
+May use:
+- HSMV 82040
+- HSMV 82041
+OR
+- Application for Title by Purchaser section
+
+When accompanied by:
+HSMV 82993.
+
+==================================================
+BROKER VESSEL RULE
+==================================================
+
+Vessel broker:
+NOT purchaser unless broker actually bought vessel.
+
+==================================================
+LIEN RECORDING RULE
+==================================================
+
+Lien information must include:
+- Lienholder name
+- Address
+- Supporting application
+
+Additional liens:
+Require HSMV 82139.
+
+==================================================
+LIEN SATISFACTION RULE
+==================================================
+
+Outstanding liens:
+Require satisfaction
+unless valid Transfer of Equity.
+
+==================================================
+PENALTY FEE RULE
+==================================================
+
+Penalty applies:
+30 days after seller signs title
+AND vehicle delivered.
+
+==================================================
+VERY IMPORTANT RULE
+==================================================
+
+30-day countdown begins:
+DAY AFTER signing and delivery.
+
+==================================================
+CO-OWNER CHANGE RULE
+==================================================
+
+Changing:
+- AND to OR
+- OR to AND
+- Name order
+
+Requires:
+- Modified title process
+- Affidavit or completed title
+
+If lien exists:
+Requires lienholder permission.
+
+==================================================
+ADDING OR REMOVING OWNER RULE
+==================================================
+
+Adding/removing name:
+Requires transfer process.
+
+If lien exists:
+Lienholder authorization required.
+
+==================================================
+TRANSFER OF EQUITY RULE
+==================================================
+
+ELT Transfer of Equity:
+Must process as Modify Title
+to preserve ELT status.
+
+==================================================
+OPEN TITLE RULE
+==================================================
+
+Open title exists when:
+- Purchaser name missing
+OR
+- Selling price missing
+
+==================================================
+VERY IMPORTANT RULE
+==================================================
+
+Open title requires:
+- Bill of sale
+- County stamp
+- Circled deficiency
+
+==================================================
+ODOMETER OMISSION RULE
+==================================================
+
+Missing odometer disclosure:
+NOT automatically open title.
+
+Refer to TL-09.
+
+==================================================
+CONSIGNMENT RULE
+==================================================
+
+If dealership returns title after failed consignment:
+Dealer affidavit required.
+
+Must state:
+Dealer never took ownership.
+
+==================================================
+WRONG SIGNATURE SECTION RULE
+==================================================
+
+If signed wrong section:
+Affidavit explaining mistake required.
+
+==================================================
+ALTERED PURCHASER NAME RULE
+==================================================
+
+If purchaser name altered/lined through:
+Requires:
+- Seller affidavit
+OR
+- Duplicate title
+OR
+- Court order
+
+==================================================
+ALTERED PURCHASE PRICE RULE
+==================================================
+
+Altered purchase price:
+Requires signed bill of sale.
+
+==================================================
+INSURANCE COMPANY VESSEL RULE
+==================================================
+
+Insurance company acquiring vessel:
+Must title vessel in insurance company name first.
+
+==================================================
+ELECTRONIC TITLE PRINT RULE
+==================================================
+
+Paper title can be requested anytime
+from electronic record.
+
+==================================================
+DONATION RULE
+==================================================
+
+Non-profit without dealer license:
+Must title vehicle in organization name
+before resale.
+
+==================================================
+NOTICE OF SALE RULE
+==================================================
+
+Seller should notify FLHSMV within 30 days.
+
+Uses:
+Notice of Sale section
+OR
+HSMV 82050.
+
+==================================================
+TRUST TITLE RULE
+==================================================
+
+Trust-owned title transfer:
+Requires:
+- Trust agreement
+OR
+- Certification of trust
+
+==================================================
+LEASE BRAND RULE
+==================================================
+
+Lease-branded vehicles:
+Carry brand forward
+while used as lease vehicles.
+
+==================================================
+LEASE BRAND REMOVAL RULE
+==================================================
+
+Lease brand removal requires:
+- Affidavit
+- Private use designation
+- Title fees
+
+Dealer cannot remove lease brand.
+
+==================================================
+DEALERSHIP HIGH-RISK ERROR AREAS
+==================================================
+
+MOST COMMON ERRORS:
+- Open titles
+- Missing selling price
+- Missing purchaser name
+- Wrong reassignment sequence
+- Missing odometer disclosure
+- Wrong electronic title process
+- Missing affidavits
+- Incorrect lien transfer
+- Incorrect Transfer of Equity
+- Altered purchaser names
+- Missing lienholder permission
+- Improper casual sale paperwork
+- Incorrect exempt handling
+
+==================================================
+AI CLASSIFICATION TAGS
+==================================================
+
+title transfer
+Florida title transfer
+open title
+dealer reassignment
+HSMV 82994
+HSMV 82995
+HSMV 82092
+HSMV 82040
+HSMV 82041
+HSMV 82993
+HSMV 82139
+HSMV 84061
+electronic title
+ELT
+casual sale
+transfer of equity
+odometer disclosure
+conforming title
+nonconforming title
+duplicate title
+lien satisfaction
+lease brand
+trust title
+notice of sale
+consignment title
+vessel broker
+title alteration
+purchase price alteration
+
+==================================================
+WORKFLOW BEST PRACTICE
+==================================================
+
+Before processing transfer:
+
+1. Verify title type
+2. Verify reassignment sequence
+3. Verify purchaser name present
+4. Verify selling price
+5. Verify odometer completion
+6. Verify lien status
+7. Verify signatures
+8. Verify electronic/paper status
+9. Verify supporting affidavits
+10. Verify taxes and registration
+
+==================================================
+IMPORTANT SUPPORTING FORMS
+==================================================
+
+HSMV 82040
+HSMV 82041
+HSMV 82050
+HSMV 82091
+HSMV 82092
+HSMV 82139
+HSMV 82993
+HSMV 82994
+HSMV 82995
+HSMV 84061
+
+==================================================
+RELATED PROCEDURES
+==================================================
+
+TL-01
+TL-09
+TL-10
+TL-21
+TL-36
+TL-52
+
+==================================================
+END OF OPERATIONAL NOTES
+==================================================

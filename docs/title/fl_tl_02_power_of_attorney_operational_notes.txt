@@ -1,0 +1,283 @@
+FLORIDA TITLE & LIEN PROCEDURE
+POWER OF ATTORNEY (POA) OPERATIONAL NOTES
+SOURCE: TL-02
+REVISION DATE: 03/25
+
+PURPOSE:
+This procedure governs the acceptance and operational handling of powers of attorney for motor vehicle, mobile home, and vessel title transactions in Florida.
+
+==================================================
+CORE OPERATIONAL CLASSIFICATION
+==================================================
+
+FIRST DETERMINE:
+
+1. Is the POA:
+   - Limited (HSMV 82053)
+   - Secure Limited (HSMV 82995)
+   - General
+   - Durable
+   - Court Ordered / Legal Instrument
+
+2. Is odometer disclosure required?
+   - YES = May require HSMV 82995
+   - NO = HSMV 82053 may be acceptable
+
+3. Is title physically available?
+   - YES
+   - NO (lienholder holding title)
+   - LOST
+
+4. Is POA being used:
+   - Seller side only
+   - Buyer side only
+   - BOTH seller and buyer
+
+==================================================
+HSMV 82053 — NON-SECURE LIMITED POA
+==================================================
+
+USE FOR:
+- Title transfer
+- Duplicate title
+- Lien recording
+- Title application signing
+- Odometer disclosure ONLY when acting as:
+   - Seller ONLY
+   - Buyer ONLY
+
+NOT ALLOWED:
+- Cannot sign as BOTH buyer and seller for odometer disclosure.
+
+REQUIREMENTS:
+- Vehicle specific
+- Must identify unit information
+- Must identify attorney-in-fact by FULL NAME
+
+ACCEPTABLE COPY RULES:
+- Clerk may accept photocopy IF original/certified copy viewed.
+- Clerk may photocopy original for submission.
+- Notary-certified copies acceptable when allowed.
+
+IMPORTANT:
+HSMV 82053 MUST accompany transaction paperwork.
+
+==================================================
+HSMV 82995 — SECURE POA
+==================================================
+
+USE ONLY WHEN:
+1. Title held by lienholder and unavailable.
+2. Title lost or destroyed.
+
+PURPOSE:
+Allows attorney-in-fact to complete BOTH sides of odometer disclosure legally.
+
+STRICT REQUIREMENTS:
+- ORIGINAL FORM REQUIRED
+- NO photocopies
+- NO certified copies
+
+IMPORTANT:
+Cannot assign alternate attorney-in-fact.
+
+DO NOT USE IF:
+Vehicle is odometer exempt.
+
+==================================================
+ODOMETER EXEMPTIONS
+==================================================
+
+ODOMETER DISCLOSURE NOT REQUIRED IF:
+- 2011 or newer AND over 20 years old
+- 2010 or older AND over 10 years old
+- Not self-propelled
+- GVWR exceeds 16,000 lbs
+- Dealer swap using MCO
+
+IF ODOMETER EXEMPT:
+Use HSMV 82053 instead of 82995.
+
+==================================================
+GENERAL / DURABLE POA
+==================================================
+
+GENERAL POA:
+- Broad authority while principal alive.
+- May authorize title work and lien transactions.
+
+DURABLE POA:
+- Continues after incapacity.
+- Must grant authority over personal property.
+
+EXECUTION REQUIREMENTS:
+POAs issued on/after 10/01/2011 require:
+- Two witnesses
+- Principal signature
+- Notary acknowledgement OR acceptable perjury clause
+
+COPY RULES:
+Photocopies acceptable UNLESS:
+- Attorney-in-fact transferring title TO themselves.
+
+==================================================
+DEATH OF OWNER RULE
+==================================================
+
+IMPORTANT:
+General, limited, or durable POA becomes INVALID upon death of principal.
+
+DO NOT PROCESS:
+Standard POA after registered owner death.
+
+INSTEAD REQUIRE:
+- Estate documents
+- Letters of Administration
+- Court orders
+- Successor trustee documentation
+
+==================================================
+ESTATE / PERSONAL REPRESENTATIVE RULES
+==================================================
+
+Personal representative may issue:
+- LIMITED POA ONLY
+
+DO NOT ACCEPT:
+- General POA from estate representative
+
+REQUIRED:
+- Letters of Administration copy
+
+==================================================
+OUT-OF-STATE POA REQUIREMENTS
+==================================================
+
+OUT-OF-STATE POA MUST INCLUDE:
+- Owner printed name
+- Owner signature
+- DL/ID/FEID
+- DOB
+- Address
+- VIN
+- Year
+- Make
+- Model
+- Body
+- Title number
+
+OUT-OF-STATE POA MAY BE VALID:
+If compliant with originating state's law.
+
+==================================================
+LEGAL INSTRUMENTS ACCEPTABLE
+==================================================
+
+ACCEPTABLE WHEN AUTHORIZING BUSINESS AFFAIRS:
+- Guardianship
+- Conservatorship
+- Trust agreement
+- Court order
+
+VERIFY:
+Document grants authority over titled property/business affairs.
+
+==================================================
+DEALERSHIP COMPLIANCE WARNINGS
+==================================================
+
+CRITICAL RULE:
+Dealership employees CANNOT act as independent third party POA signers for odometer disclosures.
+
+NOT ALLOWED:
+- Same dealer group employees
+- Sister rooftop employees
+- DBA crossover employees
+
+THIRD PARTY MUST:
+Have NO association with dealership.
+
+==================================================
+LIEN SATISFACTION
+==================================================
+
+General, limited, or durable POA may satisfy lien IF authority specifically granted.
+
+==================================================
+COMPANY / CORPORATE POA RULES
+==================================================
+
+Corporation may grant POA.
+
+REQUIRED:
+- Officer signature
+- Official title
+- Vehicle identification
+
+IF COMPANY AUTHORIZES EMPLOYEES:
+Require:
+- Letterhead authorization
+- Authorized signer list
+- Officer signature
+
+==================================================
+FAX / COPY PRACTICAL GUIDANCE
+==================================================
+
+ALWAYS VERIFY:
+- Correct form version
+- Signatures
+- Witnesses if required
+- Notary/perjury clause if applicable
+- Vehicle information complete
+- Odometer requirement applicability
+
+RED FLAGS:
+- POA after owner death
+- Dealer employee acting as independent third party
+- Missing witnesses
+- Missing authority language
+- Secure POA copy submitted instead of original
+- Self-transfer using photocopy POA
+- Incomplete VIN/unit description
+
+==================================================
+COMMON DEALERSHIP WORKFLOW CLASSIFICATIONS
+==================================================
+
+SCENARIO:
+Title unavailable due to lienholder
+→ Use HSMV 82995
+
+SCENARIO:
+Duplicate title application
+→ HSMV 82053 acceptable
+
+SCENARIO:
+Seller only POA signature
+→ HSMV 82053 acceptable
+
+SCENARIO:
+Dealer employee signing buyer and seller odometer disclosure
+→ Requires HSMV 82995 under allowed conditions
+
+SCENARIO:
+Owner deceased
+→ Standard POA invalid
+
+SCENARIO:
+Durable POA from elderly customer
+→ Verify witness requirement and durable authority language
+
+==================================================
+OPERATIONAL BEST PRACTICE
+==================================================
+
+Before processing ANY POA transaction:
+1. Verify title availability.
+2. Verify odometer disclosure requirement.
+3. Verify correct POA form type.
+4. Verify signer authority.
+5. Verify death/incapacity status.
+6. Verify original vs copy requirements.
+7. Verify dealership conflict/compliance issues.

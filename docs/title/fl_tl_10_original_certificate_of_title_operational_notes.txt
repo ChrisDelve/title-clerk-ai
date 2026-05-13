@@ -1,0 +1,447 @@
+FLORIDA TITLE & LIEN PROCEDURE
+ORIGINAL CERTIFICATE OF TITLE
+SOURCE: TL-10
+REVISION DATE: 12/25
+
+==================================================
+PURPOSE
+==================================================
+
+This procedure governs:
+- Issuance of original titles
+- Proof of ownership requirements
+- MCO requirements
+- Out-of-state title transfers
+- VIN verification
+- Lien recording
+- Imported vehicle titling
+- Vessel title requirements
+- Dealer reassignment procedures
+
+This is a CORE dealership titling procedure.
+
+==================================================
+CORE TITLE RULE
+==================================================
+
+To issue Florida title:
+Proper ownership chain required.
+
+==================================================
+PROOF OF OWNERSHIP RULE
+==================================================
+
+NEW vehicle:
+Requires:
+MCO (Manufacturer Certificate of Origin).
+
+USED vehicle:
+Requires:
+Existing title or approved ownership documents.
+
+==================================================
+VERY IMPORTANT RULE
+==================================================
+
+Ownership chain:
+MUST be complete.
+
+No breaks allowed.
+
+==================================================
+MCO RULE
+==================================================
+
+MCO must:
+- Be properly assigned
+- Show full vehicle description
+- Include odometer disclosure if required
+
+==================================================
+TWO-STAGE VEHICLE RULE
+==================================================
+
+Vehicles built in stages:
+Require BOTH MCOs.
+
+Use:
+- Year from 2nd stage
+- Make from 2nd stage
+- Weight from 2nd stage
+
+==================================================
+USED VEHICLE RULE
+==================================================
+
+Out-of-state used vehicle:
+Requires:
+- Title
+OR
+- Registration and bill of sale if non-title state
+
+==================================================
+OWNER NAME RULE
+==================================================
+
+Applications require:
+- Full first name
+- Full middle name/initial
+- Full last name
+
+==================================================
+ADDRESS RULE
+==================================================
+
+Florida residents using PO Box:
+Must also provide residential address.
+
+==================================================
+IDENTIFICATION RULE
+==================================================
+
+Individual requires:
+- Driver license
+- ID card
+OR
+- Passport
+
+Business requires:
+- FEID
+OR
+- Business authorization proof
+
+==================================================
+VEHICLE DESCRIPTION RULE
+==================================================
+
+Required:
+- Year
+- Make
+- Body
+- Color
+- Weight
+- VIN
+- GVW
+- BHP/CC
+
+==================================================
+VESSEL DESCRIPTION RULE
+==================================================
+
+Required:
+- Manufacturer
+- Year
+- Hull ID
+- Propulsion
+- Fuel
+- Length
+- Vessel use
+
+==================================================
+LIEN RECORDING RULE
+==================================================
+
+Lien must include:
+- Full lienholder name
+- Address
+- Date of lien
+- FEID/DL/account number
+
+==================================================
+VERY IMPORTANT RULE
+==================================================
+
+Out-of-state title:
+NO transfer of equity allowed.
+
+==================================================
+ODOMETER RULE
+==================================================
+
+Odometer section must be completed
+when applicable.
+
+Refer to TL-09.
+
+==================================================
+EXISTING FLORIDA TITLE RULE
+==================================================
+
+If Florida title already exists:
+Reuse same title number and FL number.
+
+Do NOT create duplicate Florida record.
+
+==================================================
+VESSEL PRIVATE LAKE RULE
+==================================================
+
+Untitled vessel used only on private lake:
+Seller affidavit required explaining no prior title.
+
+==================================================
+VIN VERIFICATION RULE
+==================================================
+
+VIN verification required on:
+Used vehicles from out of state.
+
+Uses:
+HSMV 82042.
+
+==================================================
+VIN VERIFICATION EXEMPTIONS
+==================================================
+
+NO verification required:
+- New vehicles
+- Trailers under 2,000 lbs
+- Travel trailers
+- Campers
+- Off-highway vehicles
+
+==================================================
+LIEN SATISFACTION RULE
+==================================================
+
+If prior lien exists:
+Proper lien satisfaction required.
+
+==================================================
+SALES TAX RULE
+==================================================
+
+Florida sales tax:
+Must be collected
+OR exemption documented.
+
+Refer to TL-08.
+
+==================================================
+REGISTRATION REQUIREMENT RULE
+==================================================
+
+Requires:
+- Plate transfer
+- New plate
+OR
+- Non-use affidavit
+
+==================================================
+OUT-OF-STATE DEALER SALE RULE
+==================================================
+
+Florida dealer selling to out-of-state resident:
+May provide title paperwork directly.
+
+Requires:
+HSMV 84061 affidavit.
+
+==================================================
+IMPORTED VEHICLE RULE
+==================================================
+
+Out-of-country imports require:
+- Foreign ownership proof
+- Certified translation
+- VIN verification
+- Customs Form 7501
+- HS-7
+- Sales tax determination
+
+==================================================
+VERY IMPORTANT TRANSLATION RULE
+==================================================
+
+Foreign documents:
+Must have certified English translation.
+
+Translator:
+Cannot have ownership interest.
+
+==================================================
+MOTORCYCLE RULE
+==================================================
+
+Motorcycles:
+NOT classified by CC alone.
+
+Must meet statutory motorcycle definition.
+
+==================================================
+MOPED RULE
+==================================================
+
+Mopeds:
+REGISTERED ONLY.
+
+NOT titled.
+
+==================================================
+TRAILER RULE
+==================================================
+
+Trailers:
+2,000 lbs or more:
+Require title.
+
+Under 2,000 lbs:
+Cannot be titled.
+
+==================================================
+VERY IMPORTANT MOTORCYCLE RULE
+==================================================
+
+Motorcycle without odometer:
+Non-exempt:
+Use:
+999999 Not Actual Miles.
+
+Exempt:
+Use:
+Exempt.
+
+==================================================
+MOBILE HOME RULE
+==================================================
+
+Each mobile home section:
+Requires separate title.
+
+==================================================
+VERY IMPORTANT TAX RULE
+==================================================
+
+Multi-section mobile homes:
+ALL sales tax entered on:
+Section A.
+
+==================================================
+PENALTY FEE RULE
+==================================================
+
+If title paperwork submitted over 30 days late:
+Penalty fee applies.
+
+==================================================
+DEALER REASSIGNMENT RULE
+==================================================
+
+Dealer reassignments:
+Must appear in sequence.
+
+==================================================
+VERY IMPORTANT RULE
+==================================================
+
+Conforming MCO:
+Must be used unless unavailable.
+
+Only then:
+Use HSMV 82994.
+
+==================================================
+DUPLICATE MCO RULE
+==================================================
+
+Duplicate MCO:
+Requires dealer affidavit.
+
+Must state:
+Original lost/destroyed.
+
+==================================================
+DEALERSHIP HIGH-RISK ERROR AREAS
+==================================================
+
+MOST COMMON ERRORS:
+- Broken ownership chain
+- Missing VIN verification
+- Wrong lien setup
+- Wrong imported vehicle documents
+- Incorrect MCO handling
+- Missing FEID
+- Wrong vessel proof
+- Incorrect trailer titling
+- Missing translations
+- Wrong odometer setup
+- Missing non-use affidavit
+- Incorrect mobile home handling
+- Wrong out-of-state processing
+
+==================================================
+AI CLASSIFICATION TAGS
+==================================================
+
+original title
+MCO
+manufacturer certificate of origin
+VIN verification
+HSMV 82042
+out-of-state title
+vehicle import
+customs 7501
+HS-7
+lien recording
+lien satisfaction
+mobile home title
+motorcycle title
+moped registration
+vessel title
+ownership chain
+duplicate MCO
+title reassignment
+dealer transfer
+transfer of equity
+FL title reinstatement
+non-use affidavit
+HSMV 84061
+foreign translation
+private lake vessel
+two-stage vehicle
+FEID
+out-of-country title
+
+==================================================
+WORKFLOW BEST PRACTICE
+==================================================
+
+Before issuing title:
+
+1. Verify ownership chain
+2. Verify VIN
+3. Verify odometer
+4. Verify liens
+5. Verify applicant ID
+6. Verify tax collection
+7. Verify reassignment sequence
+8. Verify imported docs
+9. Verify supporting affidavits
+10. Verify title eligibility
+
+==================================================
+IMPORTANT SUPPORTING FORMS
+==================================================
+
+HSMV 82040
+HSMV 82041
+HSMV 82042
+HSMV 82994
+HSMV 84061
+
+==================================================
+RELATED PROCEDURES
+==================================================
+
+TL-01
+TL-07
+TL-08
+TL-09
+TL-44
+VSTL-06
+VSTL-09
+VSTL-39
+
+==================================================
+END OF OPERATIONAL NOTES
+==================================================

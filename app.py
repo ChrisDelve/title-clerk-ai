@@ -24,7 +24,62 @@ st.markdown("""
 #MainMenu {visibility: hidden;}
 footer {visibility: hidden;}
 header {visibility: hidden;}
+/* INFO BOX COLOR */
 
+div[data-testid="stAlert"] {
+    background-color: #4A3B0A !important;
+    border: 1px solid #C9A227 !important;
+    color: #F5F5F5 !important;
+}
+
+/* INFO TEXT */
+
+div[data-testid="stAlert"] p {
+    color: #F5F5F5 !important;
+    font-weight: 600;
+}
+/* INFO BOX SIZE */
+
+div[data-testid="stAlert"] {
+    padding: 0.15rem 0.65rem !important;
+    min-height: 30px !important;
+    border-radius: 8px !important;
+}
+/* CENTER ALERT TEXT */
+
+div[data-testid="stAlert"] {
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    padding-top: 0 !important;
+    padding-bottom: 0 !important;
+}
+
+div[data-testid="stAlert"] > div {
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    width: 100% !important;
+    min-height: 30px !important;
+}
+
+div[data-testid="stAlert"] p {
+    text-align: center !important;
+    width: 100% !important;
+}
+/* TEXT SPACING */
+
+div[data-testid="stAlert"] p {
+    margin: 0 !important;
+    padding: 0 !important;
+    font-size: 0.90rem !important;
+    line-height: 1.1 !important;
+    font-weight: 600 !important;
+    text-align: center !important;
+    width: 100% !important;
+    position: relative !important;
+    top: -6px !important;
+}            
 /* Main content width and spacing */
 .block-container {
     max-width: 900px;
@@ -214,19 +269,25 @@ st.markdown(
     unsafe_allow_html=True
 )
 
-# ----------------------------
+# ------------------------------
 # LOAD DOCUMENTS
-# ----------------------------
+# ------------------------------
+
+from pypdf import PdfReader
 
 DOCUMENTS = []
 
 docs_path = "docs"
 
 for root, dirs, files in os.walk(docs_path):
-    for file in files:
-        if file.endswith(".txt"):
 
-            filepath = os.path.join(root, file)
+    for file in files:
+
+        filepath = os.path.join(root, file)
+
+        # ---------------- TXT FILES ----------------
+
+        if file.endswith(".txt"):
 
             try:
                 with open(filepath, "r", encoding="utf-8") as f:
@@ -234,27 +295,42 @@ for root, dirs, files in os.walk(docs_path):
                     content = f.read()
 
                     # CLEANUP
-                    content = content.replace("\\", "\n")
-                    content = content.replace("*", "")
-                    content = content.replace("_", " ")
-                    content = content.replace("•", "-")
+                    content = content.replace("\\n", "\n")
+                    content = content.replace("\\", "")
                     content = content.replace("{", "")
                     content = content.replace("}", "")
-
-                    # PRESERVE LINE BREAKS
-                    content = "\n".join(
-                        line.strip()
-                        for line in content.splitlines()
-                        if line.strip()
-                    )
 
                     DOCUMENTS.append({
                         "name": file,
                         "content": content
                     })
 
-            except:
-                pass
+            except Exception as e:
+                print(f"Error loading TXT {file}: {e}")
+
+        # ---------------- PDF FILES ----------------
+
+        elif file.endswith(".pdf"):
+
+            try:
+                reader = PdfReader(filepath)
+
+                pdf_text = ""
+
+                for page in reader.pages:
+
+                    text = page.extract_text()
+
+                    if text:
+                        pdf_text += text + "\n"
+
+                DOCUMENTS.append({
+                    "name": file,
+                    "content": pdf_text
+                })
+
+            except Exception as e:
+                print(f"Error loading PDF {file}: {e}")
 
 # ----------------------------
 # SEARCH FUNCTION
@@ -314,9 +390,9 @@ def search_documents(query):
             m for m in matches
             if m not in fee_matches
         ]
-        return (fee_matches + non_fee_matches)[:5]
+        return (fee_matches + non_fee_matches)[:2]
 
-    return matches[:5]
+    return matches[:2]
 
 # ----------------------------
 # USER INPUT
@@ -334,32 +410,33 @@ user_question = st.text_input(
 
 if user_question:
 
-    st.info("Searching Florida operational knowledge base...")
+    status_box = st.empty()
+
+    status_box.info("Classifying FLHSMV procedure scenario...")
 
     results = search_documents(user_question)
 
     if len(results) == 0:
-
+        
         st.error("No matching operational documents found.")
 
     else:
-
-        st.success(f"Found {len(results)} matching operational documents")
-
         combined_context = ""
 
         for result in results:
-
             combined_context += f"""
 
+
+    response = client.chat.completions.create(
 SOURCE DOCUMENT:
 {result['name']}
 
 CONTENT:
-{result['content']}
+{result['content'][:2500]}
 
 ==================================================
 """
+    
 
         response = client.chat.completions.create(
             model="gpt-4.1-mini",
@@ -367,47 +444,77 @@ CONTENT:
                 {
                     "role": "system",
                     "content": f"""
-You are a senior Florida dealership title clerk and compliance operations specialist.
+You are Delve AI, a Florida dealership title and registration operational assistant.
 
-Your job is to provide:
-- operational answers
-- procedural verification
-- escalation warnings
-- compliance risks
-- dealership workflow guidance
+Your primary purpose is to classify title and registration scenarios BEFORE providing procedural instructions.
 
-DO NOT simply summarize documents.
+CRITICAL BEHAVIOR RULES:
 
-You must:
-- synthesize operational rules
-- explain practical workflow
-- identify missing information
-- explain risks
-- distinguish between title, registration, lien, ELT, and fee procedures
+1. If the user's question is broad, vague, incomplete, or missing operational facts:
+- DO NOT immediately provide full procedural instructions.
+- FIRST enter INTAKE MODE.
+- Ask targeted intake questions to classify the exact FLHSMV procedure scenario.
 
-Always structure answers like this:
+2. Examples of broad questions:
+- dead owner
+- duplicate title
+- repo
+- trust
+- lien release
+- bonded title
+- out of state transfer
+- divorce transfer
+- title correction
 
-1. Direct Answer
-2. Required Verification
-3. Required Documents
-4. Escalate If
-5. Compliance Risk
-6. Operational Notes
+3. In INTAKE MODE:
+- Ask concise dealership-style operational intake questions.
+- Determine:
+    - ownership structure
+    - Florida vs out-of-state
+    - title availability
+    - lien status
+    - probate status
+    - trust involvement
+    - court documents
+    - electronic title status
+    - required authority/signers
 
-If the answer is uncertain or situation-dependent:
-- explicitly say what determines the outcome
+4. DO NOT hallucinate missing facts.
+Never assume:
+- probate opened
+- surviving spouse exists
+- title available
+- no liens
+- valid signatures
+- ownership conjunction
 
-Use dealership operational language, not generic AI wording.
+5. Only provide final procedural instructions AFTER enough facts are known to classify the scenario.
 
-When providing fees:
-- Use clean plain text.
-- Do not italicize fee amounts.
-- Do not merge multiple fee amounts into one sentence.
-- Use bullet points for fee amounts.
-- If fee amounts vary by lien, paper/electronic title, fast title, vessel, or for-hire status, separate them clearly.
+6. Always prioritize:
+- FLHSMV operational procedures
+- dealership workflow logic
+- exact form requirements
+- title authority rules
+- lien verification
+- ownership conjunction rules
 
-KNOWLEDGE BASE:
-{combined_context}
+7. Always mention exact HSMV forms when applicable.
+
+8. Keep responses operational, procedural, and dealership-oriented.
+Avoid generic legal disclaimers unless escalation is required.
+
+9. Escalate situations involving:
+- ownership disputes
+- conflicting probate authority
+- fraud concerns
+- missing heirs
+- invalid signatures
+- unresolved liens
+- court order ambiguity
+
+10. Powers of attorney become void upon death unless specifically allowed by Florida procedure.
+
+Your job is to behave like an experienced Florida title clerk performing procedural intake before processing.
 """
                 },
                 {

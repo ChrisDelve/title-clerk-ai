@@ -1,0 +1,199 @@
+FLORIDA TITLE & LIEN PROCEDURE
+CERTIFIED OR PLAIN COPIES OF SUPPORTING DOCUMENTS
+SOURCE: TL-03
+REVISION DATE: 03/28/2024
+
+PURPOSE:
+This procedure governs when photocopies, certified copies, faxed copies, translations, and supporting legal documents may be accepted with Florida title applications.
+
+==================================================
+CORE OPERATIONAL RULE
+==================================================
+
+ALWAYS DETERMINE:
+1. Is the document:
+   - Original
+   - Photocopy
+   - Certified copy
+   - Faxed copy
+   - Foreign document
+
+2. Does certification matter?
+3. Is translation required?
+4. Is clerk required to physically inspect original?
+
+==================================================
+POA COPY ACCEPTANCE RULES
+==================================================
+
+A photocopy of:
+- HSMV 82053
+- General POA
+- Durable POA
+
+MAY BE ACCEPTED IF:
+The clerk views the original or certified copy during processing.
+
+CUSTOMER MAY:
+- Retain original
+- Submit photocopy
+
+CLERK MAY:
+- Make photocopy for submission
+
+==================================================
+WHO MAY CERTIFY POA COPIES
+==================================================
+
+ACCEPTABLE CERTIFIERS:
+1. Notary Public
+2. Clerk of Court
+3. Active military commissioned officer
+4. LNC / Legalman Chief Petty Officer (E-7)
+
+IMPORTANT:
+Notary cannot certify public record copies prohibited by statute.
+
+==================================================
+FOREIGN DOCUMENT RULES
+==================================================
+
+IF DOCUMENTS OR TITLES ARE NOT IN ENGLISH:
+
+REQUIRED:
+- Full English translation
+- Translator signature
+- Notarized translation
+- Certification translation is accurate
+
+TRANSLATOR MUST:
+- State fluency/knowledge
+- Translate professionally/regularly
+- Have NO ownership interest in vehicle
+
+==================================================
+FOREIGN CERTIFICATION ACCEPTANCE
+==================================================
+
+ACCEPTABLE FOREIGN CERTIFIERS:
+- Judge
+- Justice
+- Minister
+- Consul General
+- Charge d'affaires
+- US Consul
+
+==================================================
+COURT ORDER REQUIREMENTS
+==================================================
+
+COURT ORDER MUST INCLUDE:
+- Court name
+- Case number
+- Parties involved
+- Order language/body
+- Judge identification
+- Date entered
+- Vehicle identification information
+
+ACCEPTABLE:
+Photocopy of court order.
+
+==================================================
+DOCUMENTS NOT REQUIRING CERTIFICATION
+==================================================
+
+Photocopies/faxes acceptable WITHOUT certification for:
+- Court Orders
+- Replevin
+- Bankruptcy
+- Letters of Administration
+- Death Certificates
+- Wills
+- Vessel Security Agreements
+- Trust Agreements
+
+==================================================
+FAX RULES
+==================================================
+
+NOT ACCEPTABLE:
+Completed HSMV forms faxed with copied signatures.
+
+ACCEPTABLE:
+Blank HSMV forms faxed first, then completed with original signatures.
+
+==================================================
+MULTI-VEHICLE POA RULE
+==================================================
+
+IF ONE POA COVERS MULTIPLE VEHICLES:
+- Photocopy may accompany each transaction set.
+- Clerk must reference first title number on subsequent files.
+
+BEST PRACTICE:
+Document linkage in issuance system comments.
+
+==================================================
+DEALERSHIP OPERATIONAL GUIDANCE
+==================================================
+
+ALWAYS VERIFY:
+- Clerk viewed original when required
+- Certification language present
+- Translation notarized if foreign
+- VIN/title data complete
+- Judge/order information complete
+- Faxed forms contain original signatures
+
+==================================================
+COMMON PROCESSING SCENARIOS
+==================================================
+
+SCENARIO:
+Customer keeps original POA
+→ Clerk views original and submits photocopy.
+
+SCENARIO:
+Foreign probate documents
+→ Require notarized English translation.
+
+SCENARIO:
+Faxed signed HSMV form
+→ Reject.
+
+SCENARIO:
+Faxed blank HSMV form later signed originally
+→ Acceptable.
+
+SCENARIO:
+Estate processing
+→ Letters of Administration photocopy acceptable.
+
+SCENARIO:
+Court ordered title transfer
+→ Court order photocopy acceptable if required data included.
+
+==================================================
+RED FLAGS
+==================================================
+
+- Missing VIN information
+- Missing translator certification
+- Faxed copied signatures
+- No proof original viewed
+- Foreign document without notarized translation
+- Court order missing judge identification
+- Multi-vehicle POA without cross-reference title numbers
+
+==================================================
+BEST PRACTICE
+==================================================
+
+Before accepting supporting documents:
+1. Confirm certification requirements.
+2. Verify original inspection requirements.
+3. Verify translation compliance.
+4. Verify signatures and notarization.
+5. Verify supporting legal authority.
+6. Verify complete vehicle identification.

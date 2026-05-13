@@ -1,0 +1,543 @@
+FLORIDA TITLE & LIEN PROCEDURE
+SALES AND USE TAX – MOTOR VEHICLES, MOBILE HOMES, AND VESSELS
+SOURCE: TL-08
+REVISION DATE: 06/26/2023
+
+==================================================
+PURPOSE
+==================================================
+
+This procedure governs:
+- Florida sales tax collection
+- Use tax collection
+- Trade-in tax calculations
+- Tax exemptions
+- Out-of-state transactions
+- Military exemptions
+- Dealer tax responsibilities
+- Corporate and trust transfers
+- Gift transfers
+- Inheritance transfers
+- Mobile home taxation
+- Agricultural exemptions
+- Foreign country vehicle taxation
+
+This is one of the MOST IMPORTANT dealership procedures.
+
+Incorrect tax handling can:
+- Create dealership liability
+- Trigger audits
+- Cause customer complaints
+- Result in under-collected taxes
+- Delay title issuance
+- Cause compliance violations
+
+==================================================
+CORE TAX RULE
+==================================================
+
+DEFAULT RULE:
+Florida sales tax applies to:
+- Motor vehicles
+- Mobile homes
+- Vessels
+
+STANDARD FLORIDA RATE:
+6%
+
+PLUS:
+Possible county discretionary surtax.
+
+==================================================
+STRAIGHT SALE RULE
+==================================================
+
+STRAIGHT SALE:
+No trade involved.
+
+TAXABLE AMOUNT:
+FULL purchase price.
+
+==================================================
+TRADE-IN RULE
+==================================================
+
+IF trade-in involved:
+
+TAXABLE AMOUNT:
+Sale price MINUS trade allowance.
+
+==================================================
+VERY IMPORTANT TRADE-IN RULE
+==================================================
+
+Trade vehicle:
+DOES NOT need to be titled
+in purchaser’s name.
+
+Third-party trade-ins ARE allowed
+IF transaction is structured as ONE transaction.
+
+VERY IMPORTANT for dealership structuring.
+
+==================================================
+COUNTY SURTAX RULE
+==================================================
+
+County surtax:
+Based on purchaser residence county.
+
+ONLY applies to:
+FIRST $5,000 of sales price.
+
+==================================================
+VESSEL TAX CAP
+==================================================
+
+VESSEL MAXIMUM TAX:
+$18,000 cap.
+
+==================================================
+NEW MOBILE HOME TAX RATE
+==================================================
+
+NEW mobile home:
+3% sales tax.
+
+ONLY applies to:
+NEW mobile homes never transferred
+to ultimate purchaser.
+
+==================================================
+DEALER TAX RESPONSIBILITIES
+==================================================
+
+Dealer MUST:
+- Collect sales tax
+- Collect surtax
+- Report tax collected
+- Enter dealer information
+- Include sales tax registration number
+
+Dealer information required EVEN IF:
+No tax due.
+
+==================================================
+OUT-OF-STATE RESIDENT SALES
+==================================================
+
+Florida dealer selling to out-of-state resident:
+
+Collect:
+Resident state equivalent tax rate.
+
+HOWEVER:
+Cannot exceed Florida 6% rate.
+
+NO Florida discretionary surtax applies.
+
+==================================================
+DR-123 REQUIREMENT
+==================================================
+
+Out-of-state partial exemption requires:
+DR-123.
+
+Customer must:
+License vehicle in home state within 45 days.
+
+==================================================
+HOPE SCHOLARSHIP RULE
+==================================================
+
+Before tax payment:
+Offer DR-HS1 form.
+
+==================================================
+TAXABLE TRANSFERS
+==================================================
+
+TAXABLE:
+- Individual to individual
+- Partnership to individual
+- Partnership to corporation
+- Individual to corporation
+- Corporation to corporation
+- Corporation to individual
+- Transfers with lien assumption
+- Most trust transfers for consideration
+- Taxicab classifications
+- Contest winnings
+- Certain out-of-state imports
+
+==================================================
+VERY IMPORTANT LIEN ASSUMPTION RULE
+==================================================
+
+IF lien assumed:
+Sales tax applies.
+
+Taxable amount includes:
+- Cash paid
+PLUS
+- Outstanding balance assumed
+
+This is a MAJOR dealership mistake area.
+
+==================================================
+CORPORATE TRANSFER RULE
+==================================================
+
+Transfers involving corporations:
+PRESUMED TAXABLE.
+
+Even if:
+Same owners/shareholders.
+
+Unless specific exemption applies.
+
+==================================================
+TRUST RULE
+==================================================
+
+Transfer to/from trust:
+TAXABLE IF consideration involved.
+
+NOT taxable IF:
+No consideration.
+
+==================================================
+"OR" OWNERSHIP RULE
+==================================================
+
+Removing party from OR title:
+NOT taxable.
+
+Reason:
+Each party already owns 100%.
+
+==================================================
+"AND" OWNERSHIP RULE
+==================================================
+
+Removing or adding party on AND title:
+GENERALLY taxable.
+
+Unless exemption applies.
+
+VERY IMPORTANT ownership distinction.
+
+==================================================
+EXEMPT TRANSFERS
+==================================================
+
+EXEMPT:
+- Even trade
+- Trade down
+- Divorce
+- Inheritance
+- Gift with no lien assumption
+- Corporate merger
+- Corporate name change
+- Dealer inventory transfers
+- Repossessed vehicle redemption
+- Certain tribal purchases
+- Certain farm/agriculture exemptions
+- Court ordered transfers
+- Certain nonprofit/religious transfers
+
+==================================================
+DIVORCE EXEMPTION
+==================================================
+
+REQUIRED:
+Divorce decree.
+
+==================================================
+INHERITANCE EXEMPTION
+==================================================
+
+Inheritance transfers:
+EXEMPT from sales tax.
+
+==================================================
+GIFT RULE
+==================================================
+
+Gift transfer exempt IF:
+- No consideration
+AND
+- No lien assumed.
+
+==================================================
+VERY IMPORTANT GIFT RULE
+==================================================
+
+IF donor ALSO financing vehicle:
+NOT a gift.
+
+Sales tax applies.
+
+==================================================
+MARRIED COUPLE RULE
+==================================================
+
+Transfers between married couple:
+EXEMPT.
+
+Even if:
+Outstanding lien exists.
+
+==================================================
+DEALER INVENTORY RULE
+==================================================
+
+Dealer titling inventory into dealer name:
+EXEMPT.
+
+Applies to:
+Licensed dealers holding for resale.
+
+==================================================
+REPOSSESSION REDEMPTION RULE
+==================================================
+
+Original owner redeeming repossessed vehicle:
+NOT taxable.
+
+ONLY IF:
+Redemption within 90 days.
+
+==================================================
+TRIBAL EXEMPTION RULE
+==================================================
+
+Seminole or Miccosukee exemption requires:
+- Sale on tribal land
+- Tribal residency
+- Tribal identification
+
+==================================================
+OUTBOARD MOTOR RULE
+==================================================
+
+Outboard motors/accessories:
+Can be exempt from vessel sales price
+IF:
+- Casual sale
+- Separately itemized
+
+==================================================
+OUT-OF-STATE VEHICLE TAX RULE
+==================================================
+
+Owned AND used outside Florida:
+6 months or more:
+NO Florida use tax.
+
+LESS THAN 6 MONTHS:
+Florida tax due.
+
+Credit allowed for other state taxes paid.
+
+==================================================
+FOREIGN COUNTRY RULE
+==================================================
+
+Foreign country purchases:
+Florida use tax applies.
+
+NO credit for foreign taxes paid.
+
+==================================================
+MILITARY FOREIGN IMPORT EXEMPTION
+==================================================
+
+Military exemption requires:
+- Active military
+- Vehicle owned/used abroad 6+ months
+- Personal use
+- Military proof
+
+==================================================
+MOBILE HOME RULES
+==================================================
+
+MH decal:
+Taxable.
+
+RP decal:
+Exempt IF land and mobile home sold together.
+
+==================================================
+PRIVATE SALE MOBILE HOME RULE
+==================================================
+
+Attachments may be deducted IF:
+- Itemized bill of sale provided
+- Mobile home retains value
+
+==================================================
+SERVICE WARRANTY RULE
+==================================================
+
+Service warranties:
+TAXABLE.
+
+Even if:
+Vehicle tax capped for surtax purposes.
+
+==================================================
+REBATE RULE
+==================================================
+
+MANUFACTURER rebate:
+Still taxable.
+
+DEALER discount:
+Not taxable.
+
+VERY IMPORTANT difference.
+
+==================================================
+LEASE TRADE-IN RULE
+==================================================
+
+Leased vehicle trade-in:
+NO trade-in tax credit.
+
+Reason:
+Lessee not actual owner.
+
+==================================================
+FOREIGN COUNTRY TRANSFER RULE
+==================================================
+
+Florida resident importing vehicle:
+Use tax due.
+
+Foreign tax credits:
+NOT allowed.
+
+==================================================
+AGRICULTURAL EXEMPTIONS
+==================================================
+
+Certain farm equipment/trailers:
+EXEMPT.
+
+Requires:
+Signed exemption certificate.
+
+==================================================
+NONPROFIT / RELIGIOUS EXEMPTION
+==================================================
+
+Exempt organizations:
+Must have Consumer Certificate of Exemption.
+
+==================================================
+SPECIAL NEEDS EQUIPMENT RULE
+==================================================
+
+Wheelchair lifts and accessibility modifications:
+EXEMPT IF:
+Prescription provided.
+
+Vehicle itself still taxable.
+
+==================================================
+DEALERSHIP HIGH-RISK ERROR AREAS
+==================================================
+
+MOST COMMON ERRORS:
+- Wrong trade-in calculation
+- Incorrect surtax handling
+- Assuming OR/AND same tax treatment
+- Missing lien assumption tax
+- Wrong out-of-state tax
+- Wrong gift classification
+- Improper military exemption
+- Dealer rebate miscalculation
+- Wrong mobile home classification
+- Improper corporate exemption
+- Missing DR-123
+- Incorrect trust taxation
+- Assuming all family transfers exempt
+- Wrong leased vehicle trade treatment
+
+==================================================
+AI CLASSIFICATION TAGS
+==================================================
+
+sales tax
+use tax
+trade-in tax
+gift transfer
+inheritance transfer
+divorce transfer
+corporate transfer
+trust transfer
+out-of-state title
+foreign vehicle
+dealer surtax
+tax exemption
+military exemption
+DR-123
+Hope Scholarship
+trade allowance
+dealer discount
+manufacturer rebate
+service warranty
+taxicab tax
+vehicle import
+mobile home tax
+farm exemption
+dealer inventory
+OR ownership
+AND ownership
+lien assumption
+taxable transfer
+nontaxable transfer
+county surtax
+
+==================================================
+WORKFLOW BEST PRACTICE
+==================================================
+
+Before calculating tax:
+
+1. Identify transfer type
+2. Determine ownership structure
+3. Verify consideration
+4. Verify lien assumption
+5. Verify trade-in structure
+6. Verify residence county
+7. Verify exemptions
+8. Verify out-of-state timing
+9. Verify supporting documents
+10. Verify dealer tax reporting
+
+==================================================
+IMPORTANT SUPPORTING FORMS
+==================================================
+
+HSMV 82040
+HSMV 82041
+HSMV 82091
+HSMV 82994
+DR-123
+DR-HS1
+
+==================================================
+RELATED PROCEDURES
+==================================================
+
+Fees-01
+TL-01
+TL-02
+TL-12
+
+==================================================
+END OF OPERATIONAL NOTES
+==================================================

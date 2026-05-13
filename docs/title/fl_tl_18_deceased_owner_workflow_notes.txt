@@ -1,0 +1,125 @@
+FLHSMV TL-18
+APPLICATION FOR CERTIFICATE OF TITLE AND SATISFACTION OF LIENS INVOLVING REGISTERED OWNERS OR LIENHOLDERS WHO ARE DECEASED
+
+PRIMARY RULE:
+Deceased owner transfers MUST first be classified into the correct TL-18 scenario before determining required documents or processing steps.
+
+INITIAL INTAKE QUESTIONS:
+1. Is the title available?
+2. Is the title Florida or out-of-state?
+3. Is ownership single or joint?
+4. If joint, are names connected by:
+   - AND
+   - OR
+   - AND with Rights of Survivorship
+5. Were the owners married?
+6. Is there a will?
+7. Has probate been opened?
+8. Are Letters of Administration available?
+9. Is there a court order, summary administration, or exempt property order?
+10. Is the title electronic?
+11. Are there active liens?
+12. Is there a surviving spouse?
+13. Is trust ownership involved?
+14. Is a successor trustee involved?
+
+TL-18 SCENARIO ROUTING:
+
+SCENARIO 1:
+Single ownership.
+Estate probated.
+Letters of Administration issued.
+
+IF TITLE AVAILABLE:
+- Personal representative signs title as seller.
+- Transfer may go to purchaser or Estate of Deceased.
+- HSMV 82040 MV / VS / MH required.
+- Letters of Administration required.
+- Lien satisfactions required if applicable.
+- Sales tax or exemption required.
+- Tag or non-use affidavit required.
+- Title fees required.
+
+IF TITLE NOT AVAILABLE:
+- HSMV 82101 completed by personal representative.
+- Duplicate title issued in deceased owner's name first.
+- Then follow title available process.
+
+SCENARIO 2:
+Joint ownership connected by AND.
+Not married couple.
+Estate administered.
+
+- Personal representative AND surviving co-owner must sign.
+- Letters of Administration required.
+
+SCENARIO 3:
+Joint ownership connected by OR.
+
+- Surviving co-owner receives full rights to vehicle.
+- Probate may not be required.
+- Death certificate required.
+- Surviving owner may transfer directly.
+
+SCENARIO 4:
+AND with Rights of Survivorship.
+
+- Surviving co-owner automatically receives ownership rights.
+- Death certificate required.
+- Surviving co-owner may transfer title directly.
+
+SCENARIO 5:
+Married couple.
+Tenancy by the Entirety.
+
+- Surviving spouse receives ownership rights.
+- Death certificate required.
+- Surviving spouse may transfer title.
+
+SCENARIO 6:
+Estate not probated.
+Single ownership.
+
+IF SURVIVING SPOUSE EXISTS:
+- Surviving spouse may transfer title without taking title first in some situations.
+
+IF NO SURVIVING SPOUSE:
+- Heirs must apply for title.
+- Release of Heirs section required.
+
+SCENARIO 7:
+Out-of-state title.
+
+- Follow deceased-owner procedure PLUS out-of-state title requirements.
+- VIN verification required.
+- Ownership verification required.
+
+SCENARIO 8:
+Trustee deceased.
+
+- Successor trustee authority must be verified.
+- Trust agreement required.
+- Death certificate for trustee required.
+
+HIGH RISK ESCALATION:
+- Ownership disputes
+- Missing probate authority
+- Missing heirs
+- Fraud concerns
+- VIN mismatch
+- Active lien complications
+- Missing trust authority
+- Conflicting wills
+- Missing death certificate
+- Multiple deceased owners
+
+CRITICAL RULES:
+- Powers of attorney become void upon death.
+- Electronic titles may require printing before transfer.
+- Lien status must always be verified.
+- Exact ownership conjunction controls transfer authority.
+- Probate status changes required documents.
+- Surviving spouse transfers may qualify for no-fee transfer.
+
+SOURCE:
+FLHSMV TL-18

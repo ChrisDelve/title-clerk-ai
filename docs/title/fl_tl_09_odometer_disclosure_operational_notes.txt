@@ -1,0 +1,451 @@
+FLORIDA TITLE & LIEN PROCEDURE
+ODOMETER DISCLOSURE AND DECLARATION REQUIREMENTS
+SOURCE: TL-09
+REVISION DATE: 02/05/2021
+
+==================================================
+PURPOSE
+==================================================
+
+This procedure governs:
+- Odometer disclosures
+- Odometer declarations
+- Dealer reassignment requirements
+- Power of attorney usage
+- Odometer fraud prevention
+- Disclosure corrections
+- Exempt vehicles
+- Conforming vs nonconforming titles
+
+This is a HIGH LIABILITY procedure.
+
+Incorrect odometer handling can:
+- Cause title rejection
+- Trigger odometer fraud investigations
+- Create federal violations
+- Create dealer penalties
+- Delay title issuance
+- Create criminal liability
+
+==================================================
+CORE ODOMETER RULE
+==================================================
+
+Federal and Florida law require:
+Proper odometer disclosure during ownership transfer.
+
+Required on:
+- Original titles
+- Transfers
+- Duplicates
+- Salvage titles
+- Reinstatements
+- Dealer reassignments
+
+==================================================
+ODOMETER DISCLOSURE REQUIREMENTS
+==================================================
+
+Required information:
+- Current odometer reading
+- Date read
+- Mileage status
+- Seller printed name
+- Seller signature
+- Buyer printed name
+- Buyer signature
+- Vehicle description
+- VIN
+
+==================================================
+APPROVED ODOMETER STATUSES
+==================================================
+
+ONLY valid statuses:
+- Actual Mileage
+- Exceeds Mechanical Limits
+- Not Actual Mileage
+
+==================================================
+VERY IMPORTANT RULE
+==================================================
+
+"TMU"
+(True Mileage Unknown)
+
+AND
+
+"ETM"
+(Exceeds True Mileage)
+
+ARE NOT ALLOWED.
+
+Must reject paperwork using these terms.
+
+==================================================
+FIVE DIGIT VS SIX DIGIT RULE
+==================================================
+
+Five-digit odometer:
+Maximum 99,999.
+
+Six-digit odometer:
+Maximum 999,999.
+
+==================================================
+VERY IMPORTANT RULE
+==================================================
+
+Do NOT write tenths.
+
+Tenths block must remain blank.
+
+==================================================
+SALVAGE / INOPERABLE VEHICLE RULE
+==================================================
+
+If odometer cannot be read:
+Use:
+999999
+
+AND:
+Not Actual Mileage.
+
+REQUIRED:
+Affidavit explaining why reading unavailable.
+
+Examples:
+- Burned vehicle
+- No battery
+- No keys
+- Inoperable
+
+==================================================
+TRANSACTIONS REQUIRING ODOMETER DISCLOSURE
+==================================================
+
+REQUIRED ON:
+- New original
+- Used original
+- Transfer
+- Duplicate
+- Salvage title
+- Duplicate with transfer
+- Reinstatement
+
+==================================================
+ODOMETER EXEMPT VEHICLES
+==================================================
+
+EXEMPT:
+- 2010 and older after 10 years
+- 2011 and newer after 20 years
+- GVWR over 16,000 lbs
+- Non-self-propelled vehicles
+- Dealer swaps on MCO
+- Low speed electric vehicles
+- Off-highway vehicles
+
+==================================================
+VERY IMPORTANT EXEMPTION RULE
+==================================================
+
+IF mileage already shown:
+Still enter mileage.
+
+Do NOT automatically ignore.
+
+==================================================
+CONFORMING TITLE RULE
+==================================================
+
+Florida titles January 1990 and newer:
+CONFORMING.
+
+Contain proper federal disclosure language.
+
+==================================================
+NONCONFORMING TITLE RULE
+==================================================
+
+Florida titles before January 1990:
+NONCONFORMING.
+
+Additional forms required.
+
+==================================================
+HSMV 82993 RULE
+==================================================
+
+Separate Odometer Disclosure Statement.
+
+Used:
+- Between individuals
+- Between companies
+- Supporting corrections
+- Additional disclosure support
+
+Requires:
+TWO originals exchanged.
+
+==================================================
+HSMV 82994 RULE
+==================================================
+
+Motor Vehicle Dealer Title Reassignment Supplement.
+
+Used by dealers:
+- Additional reassignments
+- Nonconforming titles
+- Out-of-state titles
+- Missing MCO situations
+
+Dealer retains copy:
+5 years.
+
+==================================================
+VERY IMPORTANT DEALER RULE
+==================================================
+
+Dealer CANNOT:
+Jump off conforming title early.
+
+ALL reassignment spaces must be used first.
+
+Violation requires rejection.
+
+==================================================
+VERY IMPORTANT EXCEPTION
+==================================================
+
+Out-of-state dealer mistakes:
+Do NOT reject solely for jump issue.
+
+Florida cannot regulate out-of-state dealers.
+
+==================================================
+HSMV 82995 RULE
+==================================================
+
+Secure Power of Attorney.
+
+ONLY used when:
+- Title held by lienholder
+OR
+- Title lost
+
+Allows odometer disclosure completion.
+
+==================================================
+VERY IMPORTANT POA RULE
+==================================================
+
+Attorney-in-fact generally:
+CANNOT sign as BOTH buyer and seller.
+
+UNLESS:
+Secure POA used.
+
+==================================================
+VERY IMPORTANT DEALERSHIP RULE
+==================================================
+
+Dealership/company should be listed:
+NOT individual employee.
+
+Allows any authorized employee to sign.
+
+==================================================
+HSMV 82053 RULE
+==================================================
+
+Non-secure Power of Attorney.
+
+Can be used:
+When signing for ONE side only.
+
+NOT both.
+
+==================================================
+VERY IMPORTANT RULE
+==================================================
+
+Seller CANNOT appoint buyer
+as POA for odometer disclosure.
+
+Buyer CANNOT appoint seller.
+
+==================================================
+HSMV 82996 RULE
+==================================================
+
+Odometer Affidavit.
+
+Used to verify:
+Five-digit vs six-digit odometer issues.
+
+VERY important correction form.
+
+==================================================
+OMISSION RULE
+==================================================
+
+Missing:
+- Signature
+- Date
+- Mileage
+- Status
+- Printed name
+- Address
+
+REQUIRES rejection.
+
+==================================================
+ALTERATION RULE
+==================================================
+
+White-out
+Ink-over
+Strike-over
+Erasure
+
+ALL considered alterations.
+
+Requires corrective documents.
+
+==================================================
+DISCREPANCY RULE
+==================================================
+
+Discrepancy exists when:
+- Mileage lower than prior mileage
+- Date older than prior date
+- Wrong digit classification
+- Mileage conflicts
+
+==================================================
+REQUIRED CORRECTION DOCUMENTS
+==================================================
+
+For discrepancies:
+- HSMV 82993
+OR
+- HSMV 82994
+
+PLUS:
+Affidavit explaining issue.
+
+==================================================
+ODOMETER FRAUD UNIT RULE
+==================================================
+
+Altered/discrepant transactions:
+May be reviewed by:
+FLHSMV Odometer Fraud Unit.
+
+==================================================
+OUT-OF-STATE TITLE BRAND RULE
+==================================================
+
+Out-of-state odometer brands:
+MUST carry forward.
+
+Example:
+"Uncertified"
+
+Must remain branded in Florida.
+
+==================================================
+DEALERSHIP HIGH-RISK ERROR AREAS
+==================================================
+
+MOST COMMON ERRORS:
+- Wrong mileage status
+- Missing signatures
+- Missing printed names
+- Using TMU
+- Wrong POA form
+- Dealer title jumping
+- Incorrect 5-digit/6-digit classification
+- Missing affidavits
+- Wrong odometer exemptions
+- Incorrect reassignment sequencing
+- Missing Part A on 82995
+- Using 82053 incorrectly
+- Incorrect discrepancy corrections
+
+==================================================
+AI CLASSIFICATION TAGS
+==================================================
+
+odometer disclosure
+odometer declaration
+actual mileage
+not actual mileage
+exceeds mechanical limits
+TMU rejection
+ETM rejection
+dealer reassignment
+conforming title
+nonconforming title
+HSMV 82993
+HSMV 82994
+HSMV 82995
+HSMV 82053
+HSMV 82996
+odometer affidavit
+power of attorney
+secure POA
+dealer jump
+odometer fraud
+mileage discrepancy
+title correction
+five digit odometer
+six digit odometer
+odometer exemption
+salvage odometer
+ELT title
+lienholder title
+missing title
+title reassignment
+
+==================================================
+WORKFLOW BEST PRACTICE
+==================================================
+
+Before processing:
+
+1. Verify exemption status
+2. Verify title type
+3. Verify mileage status selected
+4. Verify no alterations
+5. Verify signatures
+6. Verify printed names
+7. Verify reassignment order
+8. Verify POA validity
+9. Verify discrepancy handling
+10. Verify supporting affidavits
+
+==================================================
+IMPORTANT SUPPORTING FORMS
+==================================================
+
+HSMV 82993
+HSMV 82994
+HSMV 82995
+HSMV 82053
+HSMV 82996
+HSMV 82040
+
+==================================================
+RELATED PROCEDURES
+==================================================
+
+TL-10
+TL-01
+TL-07
+TL-44
+
+==================================================
+END OF OPERATIONAL NOTES
+==================================================

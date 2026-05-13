@@ -1,0 +1,249 @@
+FLORIDA TITLE & LIEN PROCEDURE
+FEDERALLY DONATED & STATE SURPLUS VEHICLES
+SOURCE: TL-14
+REVISION DATE: 01/22/2024
+
+==================================================
+PURPOSE
+==================================================
+
+This procedure governs:
+- Federally donated vehicles
+- State surplus vehicles
+- Government surplus mobile homes
+- Standard Form 97 processing
+- Surplus title issuance
+
+==================================================
+VERY IMPORTANT RULE
+==================================================
+
+Federally donated vehicles sold by Florida:
+Require Florida title processing.
+
+==================================================
+CORE REQUIRED DOCUMENTS
+==================================================
+
+Required:
+- Standard Form 97
+- HSMV 82040
+- VIN verification if required
+- Sales tax information
+- Plate/non-use affidavit
+- Title fees
+
+==================================================
+STANDARD FORM 97 RULE
+==================================================
+
+Standard Form 97:
+Acts as ownership document.
+
+Equivalent to:
+- Certificate of Title
+OR
+- Manufacturer Certificate of Origin (MCO)
+
+==================================================
+VERY IMPORTANT RULE
+==================================================
+
+Standard Form 97:
+Can be reassigned dealer-to-dealer.
+
+==================================================
+DEALER REASSIGNMENT RULE
+==================================================
+
+Licensed dealers:
+May reassign Standard Form 97
+using HSMV 82994.
+
+==================================================
+VERY IMPORTANT RULE
+==================================================
+
+Dealer does NOT have to title
+vehicle into dealership name first.
+
+==================================================
+VIN VERIFICATION RULE
+==================================================
+
+Out-of-state or non-Florida vehicles:
+Require HSMV 82042
+or VIN verification section.
+
+==================================================
+VIN VERIFICATION EXEMPTIONS
+==================================================
+
+VIN verification NOT required for:
+- Mobile homes
+- Trailers under 2,000 lbs
+- Travel trailers
+- Camping trailers
+- Truck campers
+- Fifth-wheel trailers
+
+==================================================
+NON-USE AFFIDAVIT RULE
+==================================================
+
+Motor vehicles:
+May use non-use affidavit.
+
+==================================================
+VERY IMPORTANT RULE
+==================================================
+
+Mobile homes:
+Cannot use non-use affidavit.
+
+==================================================
+TITLE PROCESSING RULE
+==================================================
+
+If prior Florida title exists:
+Reuse existing title number.
+
+==================================================
+VERY IMPORTANT RULE
+==================================================
+
+If no prior Florida record:
+Process as Original Used (ORT).
+
+==================================================
+NONGAME WILDLIFE FEE RULE
+==================================================
+
+Non-Game Wildlife Fee:
+NOT required with Standard Form 97.
+
+==================================================
+SYSTEM ENTRY RULE
+==================================================
+
+Enter previous title state as:
+GS (Government Services Administration)
+
+Used to waive wildlife fee.
+
+==================================================
+ODOMETER DISCLOSURE RULE
+==================================================
+
+Government agency name:
+Must appear on odometer disclosure.
+
+==================================================
+VERY IMPORTANT RULE
+==================================================
+
+Do NOT use individual employee name
+as seller on odometer disclosure.
+
+==================================================
+EMAIL DELIVERY RULE
+==================================================
+
+Certificate to Obtain Title:
+Emailed to donees.
+
+Hard copies not mailed.
+
+==================================================
+NEW 82040 FORM RULE
+==================================================
+
+Updated forms:
+- HSMV 82040 MV
+- HSMV 82040 MH
+- HSMV 82040 VS
+
+==================================================
+VERY IMPORTANT RULE
+==================================================
+
+As of 2024:
+Motor vehicles and mobile homes
+must use updated forms.
+
+==================================================
+DEALERSHIP HIGH-RISK ERROR AREAS
+==================================================
+
+MOST COMMON ERRORS:
+- Missing Standard Form 97
+- Wrong previous title state
+- Charging wildlife fee incorrectly
+- Missing VIN verification
+- Wrong title number usage
+- Using non-use affidavit for mobile homes
+- Improper reassignment handling
+- Wrong seller name on odometer section
+- Missing HSMV 82994 reassignment
+- Processing ORT incorrectly
+
+==================================================
+AI CLASSIFICATION TAGS
+==================================================
+
+federally donated vehicle
+state surplus vehicle
+government surplus
+Standard Form 97
+SF-97
+government title
+surplus vehicle
+government bill of sale
+federal vehicle transfer
+government reassignment
+government ownership transfer
+HSMV 82994
+government auction
+surplus title
+government mobile home
+government donated vehicle
+
+==================================================
+WORKFLOW BEST PRACTICE
+==================================================
+
+Before processing:
+
+1. Verify Standard Form 97
+2. Verify prior Florida title record
+3. Verify VIN inspection requirement
+4. Verify reassignment chain
+5. Verify tax collection
+6. Verify wildlife fee exemption
+7. Verify registration/non-use
+8. Verify title number handling
+9. Verify odometer disclosure
+10. Verify supporting forms
+
+==================================================
+IMPORTANT SUPPORTING FORMS
+==================================================
+
+Standard Form 97
+HSMV 82040 MV
+HSMV 82040 MH
+HSMV 82040 VS
+HSMV 82042
+HSMV 82994
+
+==================================================
+RELATED PROCEDURES
+==================================================
+
+TL-10
+TL-11
+TL-15
+
+==================================================
+END OF OPERATIONAL NOTES
+==================================================

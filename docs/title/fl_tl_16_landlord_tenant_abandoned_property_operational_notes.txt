@@ -1,0 +1,435 @@
+FLORIDA TITLE & LIEN PROCEDURE
+LANDLORD-TENANT ABANDONED PROPERTY
+SOURCE: TL-16
+REVISION DATE: 06/26/2023
+
+==================================================
+PURPOSE
+==================================================
+
+This procedure governs:
+- Abandoned vehicles
+- Abandoned vessels
+- Abandoned mobile homes
+- Landlord-tenant title transfers
+- Operation of law title processing
+- Public sale title issuance
+
+==================================================
+VERY IMPORTANT RULE
+==================================================
+
+TL-16 ONLY applies when:
+- Landlord exists
+- Tenant exists
+- Rental payments existed
+- Lease/rental relationship can be proven
+
+==================================================
+VERY IMPORTANT RULE
+==================================================
+
+NO landlord-tenant relationship:
+Requires court order.
+
+==================================================
+COURT ORDER RULE
+==================================================
+
+If customer cannot prove:
+- Rental agreement
+OR
+- Periodic rental payments
+
+Then:
+Florida declaratory judgment required.
+
+==================================================
+PROPERTY TYPES COVERED
+==================================================
+
+TL-16 applies to:
+- Motor vehicles
+- Recreational vehicles
+- Mobile homes
+- Manufactured homes
+- Vessels
+- Off-highway vehicles
+
+==================================================
+ABANDONED PROPERTY NOTIFICATION RULE
+==================================================
+
+Landlord MUST notify:
+- Former tenant
+AND
+- Any known owner of property
+
+==================================================
+VERY IMPORTANT DEADLINE RULE
+==================================================
+
+Personal delivery:
+Minimum 10 days notice.
+
+Mailed notice:
+Minimum 15 days notice.
+
+==================================================
+NOTICE REQUIREMENTS
+==================================================
+
+Notice must include:
+- Vehicle description
+- VIN/HIN
+- Make
+- Model
+- Year if known
+- Plate number
+- Claim deadline
+- Storage charges
+- Sale warning
+- Property location
+
+==================================================
+VESSEL REQUIREMENTS
+==================================================
+
+Vessel notices must include:
+- Registration number
+- Hull Identification Number (HIN)
+- Motor manufacturer
+- Horsepower
+
+==================================================
+TRAILER REQUIREMENT
+==================================================
+
+If vessel left on trailer:
+Trailer information required too.
+
+==================================================
+VERY IMPORTANT RULE
+==================================================
+
+If property believed under $500:
+Additional proof required.
+
+==================================================
+UNDER $500 DOCUMENTATION
+==================================================
+
+Must provide:
+- Kelley Blue Book or NADA
+- Exterior photos
+- Interior photos
+- VIN/HIN photos
+- Condition proof
+
+==================================================
+MOBILE HOME SPECIAL RULE
+==================================================
+
+Mobile homes under $500:
+Require:
+- Exterior photos
+- Interior photos
+- Serial number photo
+
+==================================================
+VERY IMPORTANT RULE
+==================================================
+
+Certificate of destruction
+may be required for damaged homes.
+
+==================================================
+STORAGE COST RULE
+==================================================
+
+Landlord may charge:
+- Storage fees
+- Advertising fees
+
+==================================================
+VERY IMPORTANT RULE
+==================================================
+
+Landlord cannot charge
+multiple parties same storage costs.
+
+==================================================
+PUBLIC SALE RULE
+==================================================
+
+Sale requires:
+- Newspaper advertisement
+- Once weekly
+- 2 consecutive weeks
+
+==================================================
+VERY IMPORTANT SALE TIMING RULE
+==================================================
+
+Sale timing:
+- At least 10 days after first publication
+- Last publication minimum 5 days before sale
+
+==================================================
+PUBLIC SALE LOCATION RULE
+==================================================
+
+Sale location:
+Must be nearest suitable location
+within county where property abandoned.
+
+==================================================
+VERY IMPORTANT RULE
+==================================================
+
+Landlord AND tenant
+may bid at sale.
+
+==================================================
+LIEN RULE
+==================================================
+
+Existing liens:
+Remain attached unless satisfied.
+
+==================================================
+VERY IMPORTANT RULE
+==================================================
+
+Unsatisfied liens:
+Must carry forward to new owner.
+
+==================================================
+BILL OF SALE REQUIREMENTS
+==================================================
+
+Bill of sale must include:
+- VIN/HIN
+- Title number if available
+- Buyer information
+- Seller information
+- Sale date
+- Sale amount
+- Signatures
+
+==================================================
+SALE PROCEEDS RULE
+==================================================
+
+Remaining proceeds:
+Must be sent to county treasury
+within 30 days after sale.
+
+==================================================
+VERY IMPORTANT RULE
+==================================================
+
+Former owner:
+Has 1 year to claim proceeds.
+
+==================================================
+IDENTIFICATION REQUIREMENTS
+==================================================
+
+Acceptable ID:
+- State driver license
+- State ID card
+- Passport
+- Passport card
+- Active Florida business verification
+
+==================================================
+BUSINESS RULE
+==================================================
+
+Business transactions:
+Must verify ACTIVE SunBiz status.
+
+==================================================
+VERY IMPORTANT RULE
+==================================================
+
+If business inactive:
+Reject transaction.
+
+==================================================
+POWER OF ATTORNEY RULE
+==================================================
+
+POA transactions require:
+- Original POA
+- Copy of agent ID
+
+==================================================
+RENTAL AGREEMENT RULE
+==================================================
+
+Must provide:
+Signed lease/rental agreement.
+
+==================================================
+ORAL LEASE RULE
+==================================================
+
+Oral lease under 1 year:
+Requires proof of periodic payments.
+
+==================================================
+FORM REQUIREMENTS
+==================================================
+
+Required forms may include:
+- HSMV 82040 MV
+- HSMV 82040 MH
+- HSMV 82040 VS
+- HSMV 82042
+- Notice to Reclaim Property
+- Landlord Affidavit
+- Affidavit of Mailing/Delivery
+
+==================================================
+VERY IMPORTANT RULE
+==================================================
+
+Out-of-state vehicles:
+Require confidential VIN inspection.
+
+==================================================
+MODULAR HOME RULE
+==================================================
+
+Modular homes obtained through
+landlord-tenant process:
+Require Dealer Services inspection.
+
+==================================================
+MOBILE HOME MULTI-SECTION RULE
+==================================================
+
+Doublewide/triplewide homes:
+Use separate HSMV 82040
+for each side.
+
+==================================================
+VERY IMPORTANT RULE
+==================================================
+
+All supporting documentation:
+Placed with Side A.
+
+==================================================
+LANDLORD AFFIDAVIT RULE
+==================================================
+
+Landlord affidavit required:
+- Individual form
+OR
+- Business/corporation form
+
+==================================================
+MAIL DELIVERY AFFIDAVIT RULE
+==================================================
+
+Must document:
+- Mailing
+OR
+- Personal delivery
+
+==================================================
+DEALERSHIP HIGH-RISK ERROR AREAS
+==================================================
+
+MOST COMMON ERRORS:
+- Missing lease agreement
+- Missing proof of rental payments
+- Wrong notification dates
+- Sale before waiting period
+- Incomplete newspaper advertisements
+- Missing VIN/HIN
+- Missing lien carry-forward
+- Missing landlord affidavit
+- Improper under-$500 documentation
+- Missing proof of mailing
+- Missing bill of sale
+- Business not active on SunBiz
+- Missing POA documentation
+- Wrong sale timelines
+- No proof of public sale
+
+==================================================
+AI CLASSIFICATION TAGS
+==================================================
+
+landlord tenant
+abandoned vehicle
+abandoned property
+operation of law
+eviction title
+tenant abandoned vehicle
+abandoned mobile home
+abandoned vessel
+public sale title
+storage lien
+former tenant
+abandoned RV
+operation law transfer
+property reclaim notice
+landlord affidavit
+public auction title
+tenant eviction
+abandoned trailer
+landlord sale
+reclaim abandoned property
+
+==================================================
+WORKFLOW BEST PRACTICE
+==================================================
+
+Before approving transaction:
+
+1. Verify landlord-tenant relationship
+2. Verify rental agreement
+3. Verify rental payments
+4. Verify notices sent correctly
+5. Verify timing requirements
+6. Verify publication requirements
+7. Verify public sale documentation
+8. Verify bill of sale
+9. Verify liens
+10. Verify identity documents
+11. Verify SunBiz status if business
+12. Verify VIN/HIN inspections
+13. Verify title application forms
+14. Verify landlord affidavit
+15. Verify proof of mailing/delivery
+
+==================================================
+IMPORTANT SUPPORTING FORMS
+==================================================
+
+HSMV 82040 MV
+HSMV 82040 MH
+HSMV 82040 VS
+HSMV 82042
+Landlord Affidavit
+Affidavit of Mailing
+Notice to Reclaim Property
+Bill of Sale
+
+==================================================
+RELATED PROCEDURES
+==================================================
+
+TL-10
+TL-11
+TL-15
+TL-18
+
+==================================================
+END OF OPERATIONAL NOTES
+==================================================

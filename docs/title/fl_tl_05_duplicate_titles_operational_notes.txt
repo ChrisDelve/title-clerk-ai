@@ -1,0 +1,412 @@
+FLORIDA TITLE & LIEN PROCEDURE
+DUPLICATE AND LOST IN TRANSIT TITLES
+SOURCE: TL-05
+REVISION DATE: 08/2025
+
+==================================================
+PURPOSE
+==================================================
+
+This procedure governs:
+- Duplicate title issuance
+- Lost in transit title processing
+- Duplicate title authorization verification
+- Address verification rules
+- Lienholder duplicate title requests
+- Dealer duplicate title requests
+- ELT duplicate limitations
+- Odometer requirements on duplicates
+- Damaged title replacement
+- Duplicate with transfer workflows
+
+This procedure is extremely important operationally because:
+- Duplicate titles void originals
+- Fraud prevention depends heavily on address verification
+- Incorrect duplicate issuance creates ownership exposure
+- ELT status affects processing eligibility
+- Odometer compliance must still be maintained
+
+==================================================
+CORE CLASSIFICATION LOGIC
+==================================================
+
+FIRST DETERMINE:
+
+1. What type of request?
+   - Duplicate title
+   - Lost in transit title
+   - Damaged title replacement
+   - Duplicate with transfer
+   - Lienholder duplicate
+   - Dealer duplicate
+
+2. Is title:
+   - Paper title
+   - Electronic title (ELT)
+
+3. Is there an active lien?
+
+4. Is address on application different from DMS records?
+
+5. Is odometer disclosure required?
+
+==================================================
+VERY IMPORTANT ELT RULE
+==================================================
+
+IF TITLE STATUS IS ELECTRONIC:
+Duplicate or lost in transit title CANNOT be processed
+using standard duplicate workflow.
+
+This is one of the MOST COMMON dealership mistakes.
+
+==================================================
+DUPLICATE TITLE REQUIREMENTS
+==================================================
+
+REQUIRED:
+1. HSMV 82101
+2. Duplicate block checked
+3. Address verification if applicable
+4. Title fees
+
+==================================================
+ACTIVE LIEN RULE
+==================================================
+
+IF ACTIVE LIEN EXISTS:
+ONLY LIENHOLDER may apply for duplicate title.
+
+Owner cannot obtain duplicate title while lien active.
+
+==================================================
+LOST IN TRANSIT TITLE RULES
+==================================================
+
+LOST IN TRANSIT means:
+Title issued but never received by customer.
+
+==================================================
+NO FEE LOST IN TRANSIT RULE
+==================================================
+
+NO duplicate fee required IF:
+- Current title processed date exceeds 20 days
+AND
+- Customer applies within 180 days of issue date
+
+AFTER 180 DAYS:
+Standard duplicate fees required.
+
+==================================================
+LOST IN TRANSIT WORKFLOW
+==================================================
+
+REQUIRED:
+1. HSMV 82101
+2. Lost in transit box checked
+3. Address verification completed
+
+==================================================
+RETURN TITLE STOP WORKFLOW
+==================================================
+
+IF SYSTEM SHOWS RETURN TITLE STOP:
+
+REQUIRED:
+1. Screen print Vehicle Stop Inquiry
+2. Update correct address
+3. Remove stop
+4. Create scan coversheet
+5. Submit proof of address change
+
+IMPORTANT:
+HSMV 82101 NOT required for stop-only correction.
+
+==================================================
+COMMENT DESC REQUIREMENT
+==================================================
+
+ALL address corrections MUST include:
+- What was corrected
+- Proof reviewed
+- Explanation entered into Comment Desc
+
+==================================================
+ADDRESS VERIFICATION RULES
+==================================================
+
+VERY HIGH RISK FRAUD AREA.
+
+IF ADDRESS ON APPLICATION ≠ DMS RECORD:
+Verification section REQUIRED.
+
+NO verification = reject application.
+
+==================================================
+INDIVIDUAL ADDRESS VERIFICATION
+==================================================
+
+ACCEPTABLE PROOF:
+- Driver license
+- Florida ID
+- Utility receipt
+- Utility contract
+- Homestead proof
+- Lease agreement
+- Current registration
+- Insurance policy
+- Other documentary evidence
+
+==================================================
+BUSINESS ADDRESS VERIFICATION
+==================================================
+
+REQUIRED:
+Business letterhead verification letter.
+
+MUST:
+- Show correct address
+- Be signed by authorized agent
+- Be signed by DIFFERENT person than applicant
+
+==================================================
+DEALER / AUCTION VERIFICATION
+==================================================
+
+IF dealership employee unknown:
+
+REQUIRE ONE:
+- Business credential with photo
+- Dealer license copy
+- Dealer license verification in system
+
+DO NOT PROCESS IF:
+Dealer license:
+- Revoked
+- Suspended
+- Cancelled
+
+UNLESS:
+System shows reinstatement.
+
+==================================================
+ODOMETER REQUIREMENTS
+==================================================
+
+CURRENT odometer reading REQUIRED:
+- Owner duplicate applications
+- Dealer duplicate applications
+
+==================================================
+ODOMETER EXEMPTION RULES
+==================================================
+
+EXEMPT:
+- 2011+ after 20 years
+- 2010 and older after 10 years
+
+IF EXEMPT:
+Customer may write:
+"EXEMPT"
+
+Do not reject if properly exempt.
+
+==================================================
+LIENHOLDER / LESSOR ODOMETER RULE
+==================================================
+
+IF lienholder or lessor applying:
+Current mileage may be unavailable.
+
+Use:
+- Existing DMS mileage
+- Existing date read
+OR
+- Last title issue date
+
+==================================================
+POWER OF ATTORNEY RULE
+==================================================
+
+IF signed by attorney-in-fact:
+Require:
+HSMV 82053.
+
+==================================================
+LIEN RECORDING RULE
+==================================================
+
+HSMV 82101 may ALSO:
+Record lien information.
+
+HSMV 82139 not always required.
+
+==================================================
+SALVAGE UNREBUILDABLE RULE
+==================================================
+
+IF salvage unrebuildable title lost:
+Issue:
+CERTIFICATE OF DESTRUCTION
+instead of duplicate salvage title.
+
+==================================================
+DEALER LOST TITLE WORKFLOW
+==================================================
+
+VERY IMPORTANT DEALERSHIP SCENARIO.
+
+IF dealer loses customer title:
+- Apply for duplicate using CURRENT mileage
+- Duplicate title mileage may exceed assignment mileage
+
+THIS IS ALLOWED.
+
+REQUIRED:
+Affidavit explaining discrepancy.
+
+==================================================
+DAMAGED TITLE RULE
+==================================================
+
+IF title damaged:
+- Illegible
+- Altered
+- Destroyed
+
+REQUIRED:
+- Physical damaged title
+- Title fees
+
+Reason code:
+"destroyed-damaged"
+
+==================================================
+PROOF OF IDENTITY REQUIREMENTS
+==================================================
+
+Customer must provide:
+Proof of identity.
+
+Copy required unless:
+Florida DL/ID used.
+
+APPLIES TO:
+- Authorized agents
+- Company signers
+
+==================================================
+IDENTITY EXEMPTIONS
+==================================================
+
+DOES NOT APPLY TO:
+- Licensed FL dealers
+- Licensed auctions
+- Insurance companies
+- Lienholders
+- Vessel dealers
+
+==================================================
+INSURANCE COMPANY RULE
+==================================================
+
+IF insurance company receiving duplicate:
+Require owner affidavit authorizing insurer.
+
+==================================================
+OUT-OF-STATE DEALER POA RULE
+==================================================
+
+Out-of-state secured POA acceptable
+for duplicate title requests.
+
+GENERAL POA also sufficient.
+
+==================================================
+ORIGINAL TITLE RULE
+==================================================
+
+Duplicate or lost in transit title:
+VOIDS ORIGINAL TITLE.
+
+IF original later found:
+Forward to FLHSMV for destruction.
+
+==================================================
+COMMON DEALERSHIP HIGH-RISK ERRORS
+==================================================
+
+MOST COMMON ERRORS:
+- Attempting duplicate on ELT title
+- Missing address verification
+- Missing odometer reading
+- Wrong fee classification
+- Missing POA
+- Dealer license suspended
+- No affidavit for mileage discrepancy
+- Incorrect lost in transit timing
+- Missing proof of identity
+- Missing Comment Desc notes
+
+==================================================
+AI CLASSIFICATION TAGS
+==================================================
+
+duplicate title
+lost in transit
+HSMV 82101
+return title stop
+duplicate with transfer
+damaged title
+destroyed title
+ELT duplicate
+electronic title
+duplicate authorization verification
+address verification
+duplicate title fee
+duplicate lienholder
+dealer duplicate
+odometer duplicate
+duplicate mileage
+title stop
+vehicle stop inquiry
+certificate of destruction
+lost title
+duplicate affidavit
+duplicate POA
+duplicate transfer
+title not received
+
+==================================================
+WORKFLOW BEST PRACTICE
+==================================================
+
+Before processing duplicate title:
+
+1. Verify title status (paper vs ELT)
+2. Verify active lien status
+3. Verify duplicate vs lost in transit
+4. Verify timing requirements
+5. Verify address mismatch
+6. Verify odometer applicability
+7. Verify identity documentation
+8. Verify POA if applicable
+9. Verify dealer license if dealer submitted
+10. Verify Comment Desc entries
+
+==================================================
+RELATED PROCEDURES
+==================================================
+
+TL-01 Signature Requirements
+TL-02 Power of Attorney
+TL-09 Odometer Disclosure
+TL-12 Duplicate With Transfer
+HSMV 82101
+HSMV 82053
+HSMV 82139
+
+==================================================
+END OF OPERATIONAL NOTES
+==================================================

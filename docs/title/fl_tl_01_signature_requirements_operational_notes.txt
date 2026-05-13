@@ -1,0 +1,474 @@
+FLHSMV TL-01
+SIGNATURE REQUIREMENTS
+DEALERSHIP OPERATIONAL NOTES
+REVISION DATE: 04/2026
+
+========================================================
+PRIMARY PURPOSE
+========================================================
+
+This procedure establishes required signature standards,
+identity verification requirements, ownership conjunction
+rules, business authorization standards, acceptable proof
+of identification, power of attorney handling, and
+transfer endorsement requirements for Florida title and
+registration transactions.
+
+This procedure is critical for:
+- Title transfers
+- Duplicate titles
+- Original title applications
+- ELT transactions
+- Registration processing
+- Odometer disclosures
+- Business-owned vehicles
+- Out-of-state title transfers
+- Power of attorney transactions
+- Deceased owner scenarios
+- Joint ownership processing
+
+Failure to obtain proper signatures can result in:
+- Title rejection
+- Fraud exposure
+- Ownership disputes
+- Compliance violations
+- Delayed funding
+- Delayed registration issuance
+
+========================================================
+CORE CLASSIFICATION LOGIC
+========================================================
+
+FIRST STEP:
+Determine how ownership names are connected on title.
+
+Critical conjunctions:
+- OR
+- AND
+- AND/OR
+- No conjunction shown
+
+This determines whether one signature or all signatures
+are required.
+
+========================================================
+FLORIDA TITLE CONJUNCTION RULES
+========================================================
+
+--------------------------------------------------------
+OWNERS CONNECTED BY "OR"
+--------------------------------------------------------
+
+Operational Meaning:
+Joint tenancy with survivorship rights.
+
+One owner may:
+- Transfer ownership
+- Sign reassignment
+- Sign duplicate title application
+- Sign most HSMV forms
+
+Rules:
+- Original application requires all signatures
+- Duplicate title requires one owner signature
+- Transfer requires one owner signature
+- HSMV forms generally require one owner signature
+
+Upon death:
+Ownership interest passes automatically to surviving owner.
+
+High Risk:
+Do NOT incorrectly require both signatures if title uses OR.
+
+========================================================
+OWNERS CONNECTED BY "AND"
+========================================================
+
+Operational Meaning:
+All owners must participate.
+
+Required:
+- All titled owners signatures
+- All reassignment signatures
+- All duplicate title signatures
+- All HSMV form signatures
+
+Upon death:
+Estate involvement may become necessary.
+
+High Risk:
+Missing one owner signature will reject transfer.
+
+========================================================
+AND/OR CONJUNCTION
+========================================================
+
+Rules vary by state.
+
+Always review:
+- Out-of-state title chart
+- State-specific conjunction rules
+- Any title messaging regarding ownership type
+
+========================================================
+ORIGINAL TITLE APPLICATION RULE
+========================================================
+
+Regardless of conjunction:
+ALL CUSTOMERS MUST SIGN ORIGINAL APPLICATION FOR TITLE.
+
+This is frequently missed by dealerships.
+
+========================================================
+PROOF OF IDENTITY REQUIREMENTS
+========================================================
+
+Proof of identity REQUIRED at title application.
+
+Acceptable:
+- Valid Florida DL
+- Valid out-of-state DL
+- Valid ID card
+- Valid Canadian DL/ID
+- Valid passport
+- Valid passport card
+
+Expired identification is NOT acceptable.
+
+If proof is NOT Florida DL/ID:
+- Submit legible copy with paperwork
+- Enter proof type and number into comments section
+
+========================================================
+VALID PASSPORT REQUIREMENTS
+========================================================
+
+Foreign passport acceptable ONLY if:
+- Unexpired
+AND
+- Has lawful presence documentation
+
+Examples:
+- I-94
+- Permanent resident card
+- Immigrant visa
+
+========================================================
+BUSINESS SIGNATURE REQUIREMENTS
+========================================================
+
+Corporate signatures MUST include:
+- Officer name
+- Official corporate title
+
+Examples:
+- President
+- Manager
+- Vice President
+- Authorized Agent
+
+Verify authorization through:
+https://dos.myflorida.com/sunbiz/
+
+If Sunbiz unavailable:
+Require business letter authorizing signer.
+
+Letter must:
+- Be on company letterhead
+- Be signed by different officer
+- State signer has authority
+
+Does NOT apply to licensed dealers.
+
+========================================================
+BUSINESS VALIDATION REQUIREMENTS
+========================================================
+
+Possible verification:
+- FEID documentation
+- Corporation papers
+- Certificate of Status
+- Fictitious name filings
+- Business license
+
+Customer business name must match:
+- Corporate charter
+- FEID records
+- Sunbiz records
+
+========================================================
+OWNER NAME REQUIREMENTS
+========================================================
+
+Title application name MUST match:
+- Driver license
+- Identification card
+- Passport
+
+Required format:
+- Full first name
+- Middle or maiden name
+- Last name
+
+Nicknames should not be used.
+
+========================================================
+NAME CHANGE WORKFLOW
+========================================================
+
+If customer changed name:
+- System may already reflect updated name
+- Old paper title may still show previous name
+
+To physically update title:
+Require:
+- Existing title
+- Affidavit requesting updated name
+
+Process as:
+MODIFY TITLE TRANSACTION
+
+Fees apply.
+
+Applies to:
+- Marriage
+- Divorce
+- Court order
+
+========================================================
+OUT-OF-STATE TITLE NAME CHANGE
+========================================================
+
+If:
+- Same owner
+- No ownership change
+- Only name changed
+
+Require:
+- Proof of name change
+- Affidavit
+
+Customer may alternatively:
+Transfer title into new name.
+
+========================================================
+ADDRESS REQUIREMENTS
+========================================================
+
+Application must contain:
+- Residential address
+OR
+- Business address
+
+If customer has valid Florida DL/ID:
+- Only mailing address may be updated
+
+Residential changes must occur through:
+- DL replacement
+- DL renewal
+
+Reason:
+Voter registration compliance.
+
+========================================================
+FRAUD ALERT PROCEDURES
+========================================================
+
+If system displays:
+"POSSIBLE IMPOSTER – IDENTITY VERIFICATION REQUIRED"
+
+Check:
+- MV fraud stops
+- Identity alerts
+- Customer notes
+
+If fraud stop exists:
+CONTACT MV FRAUD UNIT.
+
+========================================================
+ODOMETER DISCLOSURE RULES
+========================================================
+
+VERY IMPORTANT.
+
+Computer-generated signatures acceptable on:
+- Applications
+- Affidavits
+- Most forms
+
+NOT acceptable on odometer disclosures.
+
+Federal law requires:
+- Signature
+- Printed name
+
+Applies to:
+- Buyer
+- Seller
+
+Reject if:
+- Printed name missing
+
+========================================================
+ELECTRONIC SIGNATURE EXCEPTIONS
+========================================================
+
+Dealers and manufacturers may use electronic signatures
+for odometer disclosures IF:
+
+- Audit trail provided
+- Timestamp available
+- IP/location history available
+- Certificate of Completion included
+
+DocuSign certificate acceptable.
+
+Attestation letter required stating:
+Electronic signatures comply with 49 CFR 580.
+
+========================================================
+INSURANCE COMPANY EXCEPTION
+========================================================
+
+Insurance companies may use electronic odometer
+signatures in total loss transactions.
+
+Require:
+- Audit trail
+- Supporting timestamps
+- Attestation statement
+
+========================================================
+POWER OF ATTORNEY RULES
+========================================================
+
+Power of Attorney accepted for title work.
+
+Require:
+- Copy of POA with transaction
+
+EXCEPTION:
+HSMV 82995 MUST BE ORIGINAL.
+
+Photocopy NOT acceptable.
+
+High Risk:
+Dealers frequently attempt to use copied 82995 forms.
+
+========================================================
+SIGNATURE FORMAT RULES
+========================================================
+
+Acceptable signatures:
+- Handwritten
+- Printed
+- Stamped
+- "X"
+
+Unless federal odometer rules apply.
+
+========================================================
+CHILD IDENTIFICATION RULE
+========================================================
+
+Children under age 5:
+Birth certificate acceptable as ID.
+
+========================================================
+ELT TITLE PRINTING RULE
+========================================================
+
+Important exception:
+
+If printing ELT title:
+AND conjunction only requires ONE signature.
+
+Frequently misunderstood by clerks.
+
+========================================================
+OUT-OF-STATE TITLE TRANSFER RULES
+========================================================
+
+ALWAYS review Exhibit A for out-of-state titles.
+
+States differ significantly.
+
+Some states:
+- Require all signatures regardless of OR
+- Require one signature only
+- Require state-specific authorization
+
+High Risk States:
+- Maryland
+- Massachusetts
+- Virginia
+- Oregon
+- Washington
+- Georgia
+
+========================================================
+DEALERSHIP HIGH-RISK ERRORS
+========================================================
+
+MOST COMMON ERRORS:
+- Wrong conjunction interpretation
+- Missing co-owner signature
+- Missing POA copy
+- Using copied 82995
+- Accepting expired ID
+- Missing printed odometer names
+- Business signer missing title
+- Wrong name format
+- Missing ID copy for out-of-state customer
+- Failing to verify fraud stop
+
+========================================================
+AI CLASSIFICATION TAGS
+========================================================
+
+signature requirements
+joint ownership
+and conjunction
+or conjunction
+duplicate title signatures
+title transfer signatures
+co-owner signatures
+business signatures
+power of attorney
+82995
+odometer disclosure
+identity verification
+passport requirements
+proof of identity
+corporate authorization
+sunbiz
+name change
+modify title
+fraud stop
+possible imposter
+elt title print
+out-of-state title transfer
+ownership conjunction
+printed signature
+electronic signatures
+docusign
+insurance total loss
+dealer title processing
+
+========================================================
+RELATED PROCEDURES
+========================================================
+
+TL-02 Identification Requirements
+TL-18 Deceased Owner Procedures
+TL-10 Duplicate Titles
+TL-13 Transfer of Ownership
+HSMV 82040
+HSMV 82101
+HSMV 82993
+HSMV 82994
+HSMV 82995
+
+========================================================
+END OF OPERATIONAL NOTES
+========================================================

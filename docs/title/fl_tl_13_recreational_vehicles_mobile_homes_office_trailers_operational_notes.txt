@@ -1,0 +1,323 @@
+FLORIDA TITLE & LIEN PROCEDURE
+RECREATIONAL VEHICLES, MOBILE HOMES, AND OFFICE TRAILERS
+SOURCE: TL-13
+REVISION DATE: 06/26/2023
+
+==================================================
+PURPOSE
+==================================================
+
+This procedure governs:
+- Recreational vehicle title requirements
+- Mobile home title requirements
+- Office trailer title requirements
+- RV conversions
+- Van conversions
+- Tiny home trailer handling
+- Park trailer classifications
+- Truck conversion RV rules
+
+==================================================
+IMPORTANT RV CLASSIFICATIONS
+==================================================
+
+Travel Trailer = TV
+Camping Trailer = CA
+Motor Home = MH
+Private Motor Coach = PC
+Van Conversion = VC
+Mobile Home = HS
+Office Trailer = OT
+Park Trailer = PT
+Pickup Truck Mounted Camper = PM
+
+==================================================
+VERY IMPORTANT RULE
+==================================================
+
+Slide-in campers:
+NOT titled.
+
+Add-a-rooms:
+NOT titled.
+
+Port-a-rooms:
+NOT titled.
+
+==================================================
+TRAILER WEIGHT RULE
+==================================================
+
+Trailers under 2,000 lbs:
+No Florida title required.
+
+Trailers 2,000 lbs or more:
+Must be titled.
+
+==================================================
+TINY HOME RULE
+==================================================
+
+Tiny homes built on trailers:
+Usually NOT HUD or ANSI compliant.
+
+If trailer weighs 2,000 lbs or more:
+Must title as trailer.
+
+==================================================
+VERY IMPORTANT RULE
+==================================================
+
+Tiny home itself:
+May NOT qualify as mobile home or RV.
+
+Often only trailer gets titled.
+
+==================================================
+RV BODY TYPE REQUIREMENTS
+==================================================
+
+TV = rigid travel trailer
+CA = folding camper
+MH = self-propelled RV
+PC = private motor coach
+VC = van RV conversion
+HS = mobile home
+OT = office trailer
+PT = park trailer
+PM = pickup with mounted camper
+
+==================================================
+OFFICE TRAILER RULE
+==================================================
+
+Office trailer weight:
+Length × Width × 20 lbs.
+
+==================================================
+MOTOR HOME CONVERSION RULE
+==================================================
+
+Converted van/motor home:
+Requires second-stage MCO.
+
+==================================================
+VERY IMPORTANT RULE
+==================================================
+
+Second-stage VIN:
+Must match first-stage VIN.
+
+==================================================
+RV CONVERSION REQUIREMENTS
+==================================================
+
+Converted recreational vehicle must contain:
+- 110v wiring
+OR
+- LP gas piping
+OR
+- Plumbing system
+
+==================================================
+VERY IMPORTANT RULE
+==================================================
+
+Second-stage manufacturer:
+Must be licensed and bonded RV manufacturer.
+
+==================================================
+MODEL YEAR RULE
+==================================================
+
+1981 and newer motor homes:
+Use second-stage MCO year.
+
+Even if NMVTIS differs.
+
+==================================================
+TITLE ONLY RULE
+==================================================
+
+Title-only RV applications:
+Require dead storage affidavit
+if not registered.
+
+==================================================
+CONVERSION AFFIDAVIT RULE
+==================================================
+
+Owner-built RV conversion:
+Requires affidavit stating installed:
+- 110v electrical
+OR
+- LP gas piping
+OR
+- Plumbing system
+
+==================================================
+BROKER RULE
+==================================================
+
+RV brokers:
+Do NOT appear in title chain.
+
+==================================================
+VERY IMPORTANT RULE
+==================================================
+
+RV brokers:
+Still considered dealers
+for title processing purposes.
+
+==================================================
+HORSE TRAILER RULE
+==================================================
+
+Horse trailer with living quarters:
+Classified as travel trailer.
+
+==================================================
+HEAVY TRUCK CONVERSION RULE
+==================================================
+
+Heavy truck may become RV IF:
+- Used only for personal effects
+AND
+- Meets RV definition
+AND
+- NO fifth wheel connection
+
+==================================================
+VERY IMPORTANT RULE
+==================================================
+
+If truck conversion has fifth wheel:
+Cannot title as RV.
+
+==================================================
+TRUCK TRACTOR RULE
+==================================================
+
+Truck tractors:
+CANNOT convert into RVs.
+
+==================================================
+VERY IMPORTANT RULE
+==================================================
+
+Truck tractor with fifth wheel:
+Must remain truck tractor.
+
+==================================================
+AUCTION RULE
+==================================================
+
+Motor vehicle dealers:
+May dispose of RV trade-ins at auction.
+
+==================================================
+VERY IMPORTANT RULE
+==================================================
+
+Motor vehicle dealer:
+Cannot buy RV for resale
+unless properly licensed as RV dealer.
+
+==================================================
+NEW 82040 FORM RULE
+==================================================
+
+New forms:
+- HSMV 82040 MV
+- HSMV 82040 VS
+- HSMV 82040 MH
+
+==================================================
+VERY IMPORTANT RULE
+==================================================
+
+As of 2024:
+Motor vehicles and mobile homes
+must use updated 82040 forms.
+
+==================================================
+DEALERSHIP HIGH-RISK ERROR AREAS
+==================================================
+
+MOST COMMON ERRORS:
+- Titling slide-in campers
+- Wrong RV body type
+- Wrong trailer classification
+- Missing second-stage MCO
+- Wrong VIN usage
+- RV conversion without affidavit
+- Titling truck tractors as RVs
+- Missing dead storage affidavit
+- Wrong weight calculations
+- Tiny home misclassification
+- Fifth-wheel conversion mistakes
+
+==================================================
+AI CLASSIFICATION TAGS
+==================================================
+
+recreational vehicle
+RV title
+motor home
+travel trailer
+camping trailer
+private motor coach
+van conversion
+mobile home
+office trailer
+park trailer
+tiny home
+RV conversion
+truck conversion
+fifth wheel
+second-stage MCO
+dead storage affidavit
+HSMV 82040 MV
+HSMV 82040 MH
+RV broker
+horse trailer living quarters
+pickup mounted camper
+
+==================================================
+WORKFLOW BEST PRACTICE
+==================================================
+
+Before processing:
+
+1. Verify body type
+2. Verify trailer weight
+3. Verify RV classification
+4. Verify second-stage MCO
+5. Verify VIN consistency
+6. Verify RV conversion requirements
+7. Verify fifth-wheel presence
+8. Verify title eligibility
+9. Verify registration class
+10. Verify supporting affidavits
+
+==================================================
+IMPORTANT SUPPORTING FORMS
+==================================================
+
+HSMV 82040 MV
+HSMV 82040 MH
+HSMV 82040 VS
+HSMV 82042
+
+==================================================
+RELATED PROCEDURES
+==================================================
+
+TL-10
+TL-11
+TL-43
+
+==================================================
+END OF OPERATIONAL NOTES
+==================================================
