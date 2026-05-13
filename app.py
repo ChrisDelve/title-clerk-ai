@@ -273,8 +273,6 @@ st.markdown(
 # LOAD DOCUMENTS
 # ------------------------------
 
-from pypdf import PdfReader
-
 DOCUMENTS = []
 
 docs_path = "docs"
@@ -310,27 +308,6 @@ for root, dirs, files in os.walk(docs_path):
 
         # ---------------- PDF FILES ----------------
 
-        elif file.endswith(".pdf"):
-
-            try:
-                reader = PdfReader(filepath)
-
-                pdf_text = ""
-
-                for page in reader.pages:
-
-                    text = page.extract_text()
-
-                    if text:
-                        pdf_text += text + "\n"
-
-                DOCUMENTS.append({
-                    "name": file,
-                    "content": pdf_text
-                })
-
-            except Exception as e:
-                print(f"Error loading PDF {file}: {e}")
 
 # ----------------------------
 # SEARCH FUNCTION
