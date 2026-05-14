@@ -1,0 +1,179 @@
+DOCUMENT: FEES-03
+TITLE: Motor Vehicle/Mobile Home Class Code/Fee Chart
+SOURCE: https://www.flhsmv.gov/pdf/proc/fees/fees-03.pdf
+SECTION: Section 4 - Fees
+DOCUMENT_TYPE: AI Logic Map
+
+IMPORTANT:
+This file contains machine-readable workflow and classification logic derived from FEES-03.
+
+Purpose:
+- Vehicle classification automation
+- Registration fee branching
+- Weight classification logic
+- Commercial registration logic
+- Plate classification automation
+- IRF interaction logic
+- DMV workflow automation
+
+============================================================
+PRIVATE USE VEHICLE LOGIC
+============================================================
+
+IF vehicle_type = "private_passenger"
+AND vehicle_weight <= 2499
+THEN registration_fee = 27.60
+
+IF vehicle_type = "private_passenger"
+AND vehicle_weight >= 2500
+AND vehicle_weight <= 3499
+THEN registration_fee = 35.60
+
+IF vehicle_type = "private_passenger"
+AND vehicle_weight >= 3500
+THEN registration_fee = 45.60
+
+============================================================
+TRUCK CLASSIFICATION LOGIC
+============================================================
+
+IF vehicle_type = "truck"
+AND vehicle_weight <= 1999
+THEN registration_class = "light_truck"
+
+IF vehicle_type = "truck"
+AND vehicle_weight >= 2000
+AND vehicle_weight <= 3000
+THEN registration_class = "medium_truck"
+
+IF vehicle_type = "truck"
+AND vehicle_weight >= 3001
+AND vehicle_weight <= 5000
+THEN registration_class = "heavy_private_truck"
+
+============================================================
+COMMERCIAL VEHICLE LOGIC
+============================================================
+
+IF vehicle_use = "commercial"
+THEN commercial_registration_rules = TRUE
+
+IF declared_GVW >= 10000
+THEN commercial_fee_schedule_required = TRUE
+
+IF apportioned_registration = TRUE
+THEN IRP_review_required = TRUE
+
+IF vehicle_use = "for_hire"
+THEN for_hire_fee_schedule = TRUE
+
+============================================================
+MOTORCYCLE / SCOOTER / MOPED LOGIC
+============================================================
+
+IF vehicle_type = "motorcycle"
+THEN registration_fee = 10.00
+
+IF vehicle_type = "motor_scooter"
+THEN registration_fee = 10.00
+
+IF vehicle_type = "moped"
+THEN registration_fee = 5.00
+
+============================================================
+TRAILER LOGIC
+============================================================
+
+IF vehicle_type = "trailer"
+AND trailer_weight <= 1999
+THEN registration_fee = 14.50
+
+IF vehicle_type = "trailer"
+AND trailer_weight >= 2000
+THEN registration_fee = 27.00
+
+IF trailer_permanent_registration = TRUE
+THEN permanent_registration_fee = 87.50
+
+============================================================
+LICENSE PLATE LOGIC
+============================================================
+
+IF new_plate_required = TRUE
+THEN plate_fee = 28.00
+
+IF replacement_plate_requested = TRUE
+THEN replacement_plate_fee = 28.00
+
+IF replacement_decal_requested = TRUE
+THEN replacement_decal_fee = 2.90
+
+IF plate_transfer = TRUE
+THEN transfer_fee = 7.35
+
+============================================================
+IRF LOGIC
+============================================================
+
+IF no_transferable_florida_plate_exists = TRUE
+THEN apply_IRF = TRUE
+
+IF owner_has_existing_transferable_plate = TRUE
+THEN IRF_review_required = TRUE
+
+IF vehicle_entering_florida_system = TRUE
+THEN IRF_possible = TRUE
+
+============================================================
+SPECIAL CLASSIFICATION LOGIC
+============================================================
+
+IF vehicle_classification = "government"
+THEN government_schedule_review = TRUE
+
+IF vehicle_classification = "dealer"
+THEN dealer_plate_rules = TRUE
+
+IF vehicle_classification = "agricultural"
+THEN agricultural_restrictions_apply = TRUE
+
+IF vehicle_classification = "street_rod"
+THEN specialty_classification_rules_apply = TRUE
+
+IF vehicle_classification = "antique"
+THEN antique_registration_rules_apply = TRUE
+
+============================================================
+WEIGHT VALIDATION LOGIC
+============================================================
+
+IF vehicle_weight IS NULL
+THEN registration_cannot_be_completed = TRUE
+
+IF declared_GVW DOES_NOT_MATCH supporting_documents
+THEN manual_review_required = TRUE
+
+============================================================
+AI AUTOMATION PURPOSE
+============================================================
+
+This file supports:
+- Registration calculators
+- Vehicle classification engines
+- Dealer workflow automation
+- AI title clerk assistants
+- Registration validation systems
+- DMV compliance review
+- Future API integrations
+
+============================================================
+RELATED KNOWLEDGE AREAS
+============================================================
+
+fee_logic/registration_fees/
+fee_logic/weight_fees/
+fee_logic/commercial/
+fee_logic/plate_transfer/
+fee_logic/irf/
+
+END OF FILE

@@ -1,0 +1,43 @@
+DOCUMENT: FEES-01
+
+AI LOGIC MAP
+
+IF transaction_type = "title_transfer"
+THEN apply transfer title fee
+
+IF transaction_type = "original_title"
+THEN apply original title fee
+
+IF duplicate_title_requested = TRUE
+THEN apply duplicate title fee
+
+IF fast_title_requested = TRUE
+THEN add fast title fee
+
+IF lien_added = TRUE
+THEN add lien recording fee
+
+IF title_type = "electronic"
+THEN apply electronic title rules
+
+IF title_type = "paper"
+THEN apply paper title rules
+
+IF vehicle_type = "mobile_home"
+THEN use mobile home fee schedule
+
+IF vehicle_type = "vessel"
+THEN use vessel fee schedule
+
+IF vehicle_type = "off_highway_vehicle"
+THEN use OHV fee schedule
+
+AI PURPOSE:
+- Fee automation
+- Dealer workflow automation
+- Title transaction validation
+- Rule-based DMV processing
+- Future API integration
+- LLM retrieval support
+
+END OF LOGIC MAP

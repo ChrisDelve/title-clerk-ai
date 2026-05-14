@@ -1,0 +1,171 @@
+DOCUMENT: FEES-04
+TITLE: Vessel Registration Fee Chart
+SOURCE: https://www.flhsmv.gov/pdf/proc/fees/fees-04.pdf
+SECTION: Section 4 - Fees
+DOCUMENT_TYPE: AI Logic Map
+SOURCE_REVISION: Revised 03/04/20
+
+IMPORTANT:
+This file contains machine-readable vessel registration classification and fee logic derived from FEES-04.
+
+Purpose:
+- Vessel length classification
+- Vessel registration fee calculation
+- EPIRB / PLB reduced fee logic
+- Optional county fee logic
+- Commercial vessel fee logic
+- DMV workflow automation
+
+============================================================
+VESSEL LENGTH CLASSIFICATION LOGIC
+============================================================
+
+IF vessel_length < 12
+THEN vessel_classification = "Class A-1"
+AND vessel_registration_fee = 5.50
+AND reduced_fee = 2.95
+AND optional_county_fee = 1.75
+
+IF vessel_length >= 12
+AND vessel_length < 16
+THEN vessel_classification = "Class A-2"
+AND vessel_registration_fee = 16.25
+AND reduced_fee = 11.00
+AND optional_county_fee = 7.13
+
+IF vessel_length >= 16
+AND vessel_length < 26
+THEN vessel_classification = "Class 1"
+AND vessel_registration_fee = 28.75
+AND reduced_fee = 20.40
+AND optional_county_fee = 13.38
+
+IF vessel_length >= 26
+AND vessel_length < 40
+THEN vessel_classification = "Class 2"
+AND vessel_registration_fee = 78.25
+AND reduced_fee = 57.50
+AND optional_county_fee = 38.13
+
+IF vessel_length >= 40
+AND vessel_length < 65
+THEN vessel_classification = "Class 3"
+AND vessel_registration_fee = 127.75
+AND reduced_fee = 94.95
+AND optional_county_fee = 62.88
+
+IF vessel_length >= 65
+AND vessel_length < 110
+THEN vessel_classification = "Class 4"
+AND vessel_registration_fee = 152.75
+AND reduced_fee = 113.40
+AND optional_county_fee = 75.38
+
+IF vessel_length >= 110
+THEN vessel_classification = "Class 5"
+AND vessel_registration_fee = 189.75
+AND reduced_fee = 141.15
+AND optional_county_fee = 93.88
+
+============================================================
+REDUCED FEE LOGIC
+============================================================
+
+IF recreational_vessel = TRUE
+AND vessel_equipped_with_EPIRB = TRUE
+THEN reduced_fee_eligible = TRUE
+
+IF recreational_vessel = TRUE
+AND owner_has_PLB = TRUE
+THEN reduced_fee_eligible = TRUE
+
+IF reduced_fee_eligible = TRUE
+THEN use_reduced_fee = TRUE
+
+IF reduced_fee_eligible = FALSE
+THEN use_standard_vessel_registration_fee = TRUE
+
+============================================================
+OPTIONAL COUNTY FEE LOGIC
+============================================================
+
+IF registration_county IN [
+"Broward",
+"Charlotte",
+"Collier",
+"Dade",
+"Hardee",
+"Hillsborough",
+"Lee",
+"Manatee",
+"Martin",
+"Monroe",
+"Palm Beach",
+"Pinellas",
+"Polk",
+"Sarasota",
+"Volusia"
+]
+THEN optional_county_fee_applies = TRUE
+
+IF optional_county_fee_applies = TRUE
+THEN add_optional_county_fee_by_vessel_classification = TRUE
+
+IF registration_county NOT IN listed_optional_county_fee_counties
+THEN optional_county_fee_applies = FALSE
+
+============================================================
+DEALER REGISTRATION LOGIC
+============================================================
+
+IF registration_type = "dealer_registration"
+THEN vessel_registration_fee = 25.50
+AND reduced_fee = 11.75
+
+============================================================
+COMMERCIAL VESSEL LOGIC
+============================================================
+
+IF vessel_use = "commercial"
+AND owner_status IN ["non_resident", "alien"]
+AND statutory_exemption = FALSE
+THEN add_commercial_vessel_license_fee = 50.00
+
+============================================================
+ADDITIONAL FEE COMPONENT LOGIC
+============================================================
+
+IF vessel_registration_processed = TRUE
+THEN service_fee_component = 2.25
+AND aquatic_plate_fee_component = 2.00
+AND save_the_manatee_trust_fund_fee_component = 1.00
+
+============================================================
+VALIDATION LOGIC
+============================================================
+
+IF vessel_length IS NULL
+THEN vessel_registration_fee_cannot_be_determined = TRUE
+
+IF vessel_length < 0
+THEN invalid_vessel_length = TRUE
+
+IF reduced_fee_requested = TRUE
+AND vessel_equipped_with_EPIRB = FALSE
+AND owner_has_PLB = FALSE
+THEN reduced_fee_not_allowed = TRUE
+
+IF optional_county_fee_applied = TRUE
+AND registration_county NOT IN listed_optional_county_fee_counties
+THEN manual_review_required = TRUE
+
+============================================================
+RELATED KNOWLEDGE AREAS
+============================================================
+
+fee_logic/registration_fees/
+fee_logic/vessel_fees/
+fee_logic/county_fees/
+fee_logic/commercial/
+
+END OF FILE

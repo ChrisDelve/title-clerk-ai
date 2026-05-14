@@ -1,0 +1,248 @@
+DOCUMENT: FEES-02
+TITLE: Registration Fees
+SOURCE: https://www.flhsmv.gov/pdf/proc/fees/Fees-02.pdf
+SECTION: Section 4 - Fees
+DOCUMENT_TYPE: AI Logic Map
+
+IMPORTANT:
+This file contains machine-readable registration fee logic derived from FEES-02.
+
+Purpose:
+- Registration fee automation
+- Initial Registration Fee logic
+- Plate transfer logic
+- Weight-based registration logic
+- Commercial registration branching
+- Vessel/mobile home/trailer fee routing
+- DMV workflow automation
+
+============================================================
+INITIAL REGISTRATION FEE LOGIC
+============================================================
+
+IF no_transferable_florida_plate_exists = TRUE
+THEN apply_initial_registration_fee = TRUE
+
+IF owner_has_transferable_florida_plate = TRUE
+THEN apply_initial_registration_fee = FALSE
+
+IF vehicle_entering_florida_registration_system = TRUE
+THEN initial_registration_fee_review_required = TRUE
+
+IF new_owner_has_no_prior_florida_registration_credit = TRUE
+THEN apply_initial_registration_fee = TRUE
+
+IF initial_registration_fee_applies = TRUE
+THEN initial_registration_fee = 225.00
+
+============================================================
+PRIVATE VEHICLE REGISTRATION FEE LOGIC
+============================================================
+
+IF vehicle_type = "private_passenger_vehicle"
+AND vehicle_weight <= 2499
+THEN registration_fee_12_month = 27.60
+
+IF vehicle_type = "private_passenger_vehicle"
+AND vehicle_weight >= 2500
+AND vehicle_weight <= 3499
+THEN registration_fee_12_month = 35.60
+
+IF vehicle_type = "private_passenger_vehicle"
+AND vehicle_weight >= 3500
+THEN registration_fee_12_month = 45.60
+
+============================================================
+FOR HIRE VEHICLE REGISTRATION FEE LOGIC
+============================================================
+
+IF vehicle_use = "for_hire"
+AND vehicle_weight <= 2499
+THEN registration_fee_12_month = 17.00
+
+IF vehicle_use = "for_hire"
+AND vehicle_weight >= 2500
+AND vehicle_weight <= 3499
+THEN registration_fee_12_month = 25.00
+
+IF vehicle_use = "for_hire"
+AND vehicle_weight >= 3500
+THEN registration_fee_12_month = 30.00
+
+============================================================
+TRUCK REGISTRATION FEE LOGIC
+============================================================
+
+IF vehicle_type = "truck"
+AND vehicle_weight <= 1999
+THEN registration_fee_12_month = 27.60
+
+IF vehicle_type = "truck"
+AND vehicle_weight >= 2000
+AND vehicle_weight <= 3000
+THEN registration_fee_12_month = 35.60
+
+IF vehicle_type = "truck"
+AND vehicle_weight >= 3001
+AND vehicle_weight <= 5000
+THEN registration_fee_12_month = 45.60
+
+IF vehicle_type = "truck"
+AND vehicle_weight >= 5001
+AND vehicle_weight <= 5999
+THEN registration_fee_12_month = 57.60
+
+IF vehicle_type = "truck"
+AND vehicle_weight >= 6000
+AND vehicle_weight <= 7999
+THEN registration_fee_12_month = 72.60
+
+IF vehicle_type = "truck"
+AND vehicle_weight >= 8000
+THEN commercial_registration_schedule_review_required = TRUE
+
+============================================================
+MOTORCYCLE / SCOOTER / MOPED LOGIC
+============================================================
+
+IF vehicle_type = "motorcycle"
+THEN registration_fee_12_month = 10.00
+
+IF vehicle_type = "motor_scooter"
+THEN registration_fee_12_month = 10.00
+
+IF vehicle_type = "moped"
+THEN registration_fee_12_month = 5.00
+
+============================================================
+TRAILER REGISTRATION LOGIC
+============================================================
+
+IF vehicle_type = "trailer"
+AND trailer_weight <= 1999
+THEN registration_fee_12_month = 14.50
+
+IF vehicle_type = "trailer"
+AND trailer_weight >= 2000
+THEN registration_fee_12_month = 27.00
+
+IF trailer_permanent_registration = TRUE
+THEN permanent_trailer_registration_fee = 87.50
+
+============================================================
+VESSEL REGISTRATION ROUTING LOGIC
+============================================================
+
+IF vehicle_type = "vessel"
+THEN use_vessel_registration_fee_schedule = TRUE
+
+IF vehicle_type = "vessel"
+THEN cross_reference_document = "FEES-04"
+
+============================================================
+MOBILE HOME REGISTRATION ROUTING LOGIC
+============================================================
+
+IF vehicle_type = "mobile_home"
+THEN use_mobile_home_fee_schedule = TRUE
+
+IF mobile_home_decal_required = TRUE
+THEN mobile_home_decal_fee_review_required = TRUE
+
+============================================================
+LICENSE PLATE LOGIC
+============================================================
+
+IF new_license_plate_required = TRUE
+THEN new_plate_fee = 28.00
+
+IF replacement_license_plate_requested = TRUE
+THEN replacement_plate_fee = 28.00
+
+IF replacement_decal_requested = TRUE
+THEN replacement_decal_fee = 2.90
+
+IF plate_transfer = TRUE
+THEN plate_transfer_fee = 7.35
+
+============================================================
+SPECIALTY PLATE LOGIC
+============================================================
+
+IF specialty_plate_requested = TRUE
+THEN specialty_plate_fee_review_required = TRUE
+
+IF personalized_plate_requested = TRUE
+THEN personalized_plate_fee = 15.00
+
+IF specialty_plate_requested = TRUE
+THEN annual_use_fee_may_apply = TRUE
+
+============================================================
+COUNTY FEE LOGIC
+============================================================
+
+IF county_fee_applicable = TRUE
+THEN add_county_fee = TRUE
+
+IF county_fee_amount_unknown = TRUE
+THEN manual_county_fee_review_required = TRUE
+
+============================================================
+COMMERCIAL VEHICLE LOGIC
+============================================================
+
+IF vehicle_use = "commercial"
+THEN commercial_registration_review_required = TRUE
+
+IF declared_gross_vehicle_weight IS NOT NULL
+THEN use_declared_gvw_for_commercial_fee_schedule = TRUE
+
+IF declared_gross_vehicle_weight >= 8000
+THEN commercial_or_heavy_truck_schedule_review_required = TRUE
+
+IF apportioned_registration_required = TRUE
+THEN IRP_review_required = TRUE
+
+============================================================
+LATE REGISTRATION LOGIC
+============================================================
+
+IF registration_is_late = TRUE
+THEN late_registration_penalty_review_required = TRUE
+
+IF delinquency_period_unknown = TRUE
+THEN manual_review_required = TRUE
+
+============================================================
+VALIDATION LOGIC
+============================================================
+
+IF vehicle_weight IS NULL
+AND vehicle_type IN ["private_passenger_vehicle", "truck", "commercial_vehicle", "trailer"]
+THEN registration_fee_cannot_be_determined = TRUE
+
+IF vehicle_type IS NULL
+THEN registration_fee_cannot_be_determined = TRUE
+
+IF plate_transfer = TRUE
+AND owner_has_transferable_florida_plate = FALSE
+THEN plate_transfer_not_allowed = TRUE
+
+IF initial_registration_fee_applied = TRUE
+AND owner_has_transferable_florida_plate = TRUE
+THEN manual_review_required = TRUE
+
+============================================================
+RELATED KNOWLEDGE AREAS
+============================================================
+
+fee_logic/irf/
+fee_logic/registration_fees/
+fee_logic/weight_fees/
+fee_logic/plate_transfer/
+fee_logic/specialty_plates/
+fee_logic/commercial/
+fee_logic/county_fees/
+
+END OF FILE
