@@ -1,0 +1,234 @@
+DOCUMENT: FEES-02
+TITLE: Registration Fees
+SOURCE: https://www.flhsmv.gov/pdf/proc/fees/Fees-02.pdf
+SECTION: Section 4 - Fees
+DOCUMENT_TYPE: Raw Fee Table
+
+IMPORTANT:
+This file contains structured registration fee extraction from FEES-02.
+
+Use for:
+- Registration fee lookup
+- AI fee calculations
+- Deal worksheet automation
+- Registration validation
+- DMV workflow automation
+- Future database ingestion
+
+============================================================
+INITIAL REGISTRATION FEE (IRF)
+============================================================
+
+Initial Registration Fee (IRF)
+Amount: $225.00
+
+Applies When:
+- Owner has not previously registered a vehicle in Florida in their name
+- Vehicle enters Florida registration system
+- New Florida resident situations
+- Certain ownership transfer situations
+
+Common Exceptions:
+- Plate transfer situations
+- Certain immediate family transfers
+- Other statutory exemptions
+
+============================================================
+REGISTRATION FEES - PRIVATE USE VEHICLES
+============================================================
+
+Vehicle Weight: 0 - 2499 lbs
+12 Month Fee: $27.60
+
+Vehicle Weight: 2500 - 3499 lbs
+12 Month Fee: $35.60
+
+Vehicle Weight: 3500 lbs and Above
+12 Month Fee: $45.60
+
+============================================================
+REGISTRATION FEES - AUTOMOBILES FOR HIRE
+============================================================
+
+Vehicle Weight: 0 - 2499 lbs
+12 Month Fee: $17.00
+
+Vehicle Weight: 2500 - 3499 lbs
+12 Month Fee: $25.00
+
+Vehicle Weight: 3500 lbs and Above
+12 Month Fee: $30.00
+
+============================================================
+TRUCK REGISTRATION FEES
+============================================================
+
+Truck Weight: 0 - 1999 lbs
+12 Month Fee: $27.60
+
+Truck Weight: 2000 - 3000 lbs
+12 Month Fee: $35.60
+
+Truck Weight: 3001 - 5000 lbs
+12 Month Fee: $45.60
+
+Truck Weight: 5001 - 5999 lbs
+12 Month Fee: $57.60
+
+Truck Weight: 6000 - 7999 lbs
+12 Month Fee: $72.60
+
+Truck Weight: 8000 lbs and Above
+12 Month Fee: Refer to commercial schedule
+
+============================================================
+MOTORCYCLE REGISTRATION FEES
+============================================================
+
+Motorcycle Registration
+12 Month Fee: $10.00
+
+Motor Scooter Registration
+12 Month Fee: $10.00
+
+Moped Registration
+12 Month Fee: $5.00
+
+============================================================
+TRAILER REGISTRATION FEES
+============================================================
+
+Trailer Weight: 0 - 1999 lbs
+12 Month Fee: $14.50
+
+Trailer Weight: 2000 lbs and Above
+12 Month Fee: $27.00
+
+Permanent Trailer Registration
+Fee: $87.50
+
+============================================================
+MOBILE HOME REGISTRATION FEES
+============================================================
+
+Mobile Home Decal Fees
+Amount: Refer to classification schedule in official PDF
+
+============================================================
+VESSEL REGISTRATION FEES
+============================================================
+
+Vessel Length: Less than 12 feet
+12 Month Fee: $5.50
+
+Vessel Length: 12 feet to less than 16 feet
+12 Month Fee: $16.25
+
+Vessel Length: 16 feet to less than 26 feet
+12 Month Fee: $28.75
+
+Vessel Length: 26 feet to less than 40 feet
+12 Month Fee: $78.25
+
+Vessel Length: 40 feet to less than 65 feet
+12 Month Fee: $127.75
+
+Vessel Length: 65 feet to less than 110 feet
+12 Month Fee: $152.75
+
+Vessel Length: 110 feet and Above
+12 Month Fee: $189.75
+
+============================================================
+SPECIALTY LICENSE PLATE FEES
+============================================================
+
+Specialty Plate Additional Annual Use Fee
+Amount: Varies by plate type
+
+Personalized Plate Fee
+Annual Fee: $15.00
+
+Replacement License Plate Fee
+Amount: $28.00
+
+Replacement Decal Fee
+Amount: $2.90
+
+============================================================
+PLATE TRANSFER FEES
+============================================================
+
+License Plate Transfer Fee
+Amount: $7.35
+
+============================================================
+LATE REGISTRATION FEES
+============================================================
+
+Late Registration Penalty
+Amount: Varies based on delinquency period
+
+============================================================
+COUNTY FEES
+============================================================
+
+County Fees
+Amount: Varies by county
+
+May Include:
+- Local registration surcharges
+- Tax collector fees
+- County-specific assessments
+
+============================================================
+COMMERCIAL MOTOR VEHICLE FEES
+============================================================
+
+Commercial registration fees vary by:
+- Declared gross vehicle weight
+- Vehicle classification
+- Usage type
+
+Refer to official FEES-02 commercial schedules for:
+- Heavy trucks
+- Semi-trucks
+- Fleet vehicles
+- Apportioned vehicles
+
+============================================================
+BRANCH AND SERVICE FEES
+============================================================
+
+Branch Fee
+Amount: $0.50 where applicable
+
+Service Fee
+Amount: Varies by agency
+
+============================================================
+IMPORTANT NOTES
+============================================================
+
+- IRF is commonly missed during dealership processing.
+- Weight classification accuracy is critical.
+- County fees may vary significantly.
+- Commercial registration schedules are separate from standard passenger schedules.
+- Specialty plate fees may renew annually.
+- Vessel fees are based on vessel length.
+- Trailer registration may qualify for permanent registration.
+- Verify all legislative updates and current FLHSMV revisions before relying on stored amounts.
+
+============================================================
+RELATED KNOWLEDGE AREAS
+============================================================
+
+fee_logic/irf/
+fee_logic/registration_fees/
+fee_logic/weight_fees/
+fee_logic/plate_transfer/
+fee_logic/specialty_plates/
+fee_logic/commercial/
+fee_logic/county_fees/
+
+END OF FILE

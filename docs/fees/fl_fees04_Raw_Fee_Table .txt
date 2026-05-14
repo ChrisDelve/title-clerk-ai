@@ -1,0 +1,132 @@
+DOCUMENT: FEES-04
+TITLE: Vessel Registration Fee Chart
+SOURCE: https://www.flhsmv.gov/pdf/proc/fees/fees-04.pdf
+SECTION: Section 4 - Fees
+DOCUMENT_TYPE: Raw Fee Table
+SOURCE_REVISION: Revised 03/04/20
+
+IMPORTANT:
+This file contains structured vessel registration fee extraction from FEES-04.
+
+Use for:
+- Vessel registration fee lookup
+- Vessel classification by length
+- EPIRB / PLB reduced fee lookup
+- Optional county fee lookup
+- AI fee calculations
+- DMV workflow automation
+- Future database ingestion
+
+============================================================
+VESSEL REGISTRATION FEE CHART
+============================================================
+
+Vessel Classification: Class A-1
+Length: Less than 12 Feet
+Vessel Registration Fee: $5.50
+Reduced Fee: $2.95
+Optional County Fee: $1.75
+
+Vessel Classification: Class A-2
+Length: 12 to less than 16 Feet
+Vessel Registration Fee: $16.25
+Reduced Fee: $11.00
+Optional County Fee: $7.13
+
+Vessel Classification: Class 1
+Length: 16 to less than 26 Feet
+Vessel Registration Fee: $28.75
+Reduced Fee: $20.40
+Optional County Fee: $13.38
+
+Vessel Classification: Class 2
+Length: 26 to less than 40 Feet
+Vessel Registration Fee: $78.25
+Reduced Fee: $57.50
+Optional County Fee: $38.13
+
+Vessel Classification: Class 3
+Length: 40 to less than 65 Feet
+Vessel Registration Fee: $127.75
+Reduced Fee: $94.95
+Optional County Fee: $62.88
+
+Vessel Classification: Class 4
+Length: 65 to less than 110 Feet
+Vessel Registration Fee: $152.75
+Reduced Fee: $113.40
+Optional County Fee: $75.38
+
+Vessel Classification: Class 5
+Length: 110 or more in length
+Vessel Registration Fee: $189.75
+Reduced Fee: $141.15
+Optional County Fee: $93.88
+
+============================================================
+DEALER REGISTRATION
+============================================================
+
+Registration Type: Dealer Registration
+Vessel Registration Fee: $25.50
+Reduced Fee: $11.75
+Optional County Fee: Not Listed
+
+============================================================
+ADDITIONAL FEES / INCLUDED COMPONENTS
+============================================================
+
+Service Fee:
+Amount: $2.25
+
+Aquatic Plate Fee:
+Amount: $2.00
+
+Save the Manatee Trust Fund Fee:
+Amount: $1.00
+
+Commercial Vessel License Fee:
+Amount: $50.00
+
+Applies To:
+All non-residents or aliens unless specifically exempted by statute.
+
+============================================================
+OPTIONAL COUNTY FEE COUNTIES
+============================================================
+
+Optional County Fee applies in the following counties listed in FEES-04:
+
+- Broward
+- Charlotte
+- Collier
+- Dade
+- Hardee
+- Hillsborough
+- Lee
+- Manatee
+- Martin
+- Monroe
+- Palm Beach
+- Pinellas
+- Polk
+- Sarasota
+- Volusia
+
+============================================================
+REDUCED FEE QUALIFICATION
+============================================================
+
+Reduced Fee may apply when:
+
+Condition 1:
+Recreational vessel is equipped with an Emergency Position Indicating Radio Beacon (EPIRB)
+
+OR
+
+Condition 2:
+Owner of the recreational vessel owns a Personal Locator Beacon (PLB)
+
+============================================================
+END OF FILE
+============================================================

@@ -1,0 +1,877 @@
+FLORIDA REGISTRATION FEES AND FLAT TAX DISTRIBUTION
+PROCEDURE: FEES-02
+CATEGORY: REGISTRATION FEES / LICENSE PLATE FEES / FLAT TAXES / SURCHARGES / SPECIALTY PLATES / VOLUNTARY CONTRIBUTIONS
+
+==================================================
+PROCEDURE SUMMARY
+==================================================
+
+This file governs:
+- Registration fees
+- Registration surcharges
+- License plate fees
+- Flat taxes
+- Plate replacement fees
+- Initial registration fees
+- Temporary plate fees
+- Specialty plate fees
+- Specialty plate processing fees
+- Decal fees
+- Mail fees
+- Registration transfer fees
+- Delinquent fees
+- Annual use fees
+- Real property fees
+- Reflectorization fees
+- Mobile home surcharge fees
+- Commercial vehicle surcharges
+- Fleet plate fees
+- Personalized/specialty fees
+- Voluntary contribution fees
+- Distribution routing of collected funds
+
+Applies to:
+- Motor vehicles
+- Mobile homes
+- Mopeds
+- Commercial vehicles
+- Specialty license plates
+- Fleet registrations
+- Temporary registrations
+- Transporter plates
+- Historical plates
+- Street rods
+- Custom vehicles
+- Motorcycles
+- Government registration transactions
+
+==================================================
+AI CLASSIFICATION TAGS
+==================================================
+
+KEYWORDS:
+- registration fees
+- FEES-02
+- flat tax
+- initial registration fee
+- original plate fee
+- replacement plate fee
+- decal fee
+- decal mail fee
+- plate mail fee
+- specialty plate fee
+- specialty plate processing fee
+- transfer fee
+- temporary plate fee
+- delinquent fee
+- annual use fee
+- annual processing fee
+- real property fee
+- reflectorization fee
+- mobile home surcharge
+- commercial surcharge
+- FRVIS fee
+- LERSTF fee
+- EMS fee
+- juvenile justice fee
+- transportation disadvantaged fee
+- vehicle registration fees
+- registration surcharge
+- specialty license plates
+- voluntary contribution
+- military plate
+- custom vehicle fee
+- street rod fee
+- horseless carriage fee
+- historical plate
+- fleet registration
+- transporter plate
+- moped plate
+- license plate manufacturing fee
+- plate replacement
+- registration transfer
+- semi annual registration fee
+
+==================================================
+CORE REGISTRATION CONCEPTS
+==================================================
+
+Registration transactions may include:
+- base tax
+- flat tax
+- initial registration fee
+- service fee
+- branch fee
+- specialty plate fee
+- specialty plate processing fee
+- replacement fee
+- transfer fee
+- decal fee
+- mail fee
+- state surcharges
+- county distributions
+- trust fund distributions
+- voluntary contributions
+
+AI must calculate:
+1. Registration type
+2. Vehicle type
+3. Plate type
+4. Specialty plate status
+5. Transfer vs new issue
+6. Replacement vs renewal
+7. Weight class
+8. Commercial vs private use
+9. Motorcycle vs standard vehicle
+10. Temporary vs permanent registration
+11. Initial registration applicability
+12. Optional voluntary contributions
+13. Whether branch/service fees apply
+14. Whether mail fees apply
+15. Whether delinquent fees apply
+
+==================================================
+VERY IMPORTANT CORE RULE
+==================================================
+
+FEES-02 is primarily:
+- registration fee logic
+- plate fee logic
+- registration surcharge logic
+- fund distribution logic
+
+This file does NOT replace:
+- registration eligibility procedures
+- title procedures
+- insurance requirements
+- registration class determination procedures
+
+AI should combine FEES-02 with registration procedure documents.
+
+==================================================
+GENERAL REGISTRATION FEES
+==================================================
+
+ADVANCED REPLACEMENT FEE:
+Statute:
+320.06(1)(b)
+
+Amount:
+$2.80
+
+Purpose:
+Highway Safety Operating Trust Fund
+
+--------------------------------------------------
+
+AIR POLLUTION CONTROL FEE:
+Statute:
+320.03(6)
+
+Amount:
+$1.00
+
+--------------------------------------------------
+
+EMERGENCY MEDICAL SERVICES TRUST FUND FEE:
+Statute:
+320.0801(1)
+
+Amount:
+$0.10
+
+--------------------------------------------------
+
+FRVIS FEE:
+Florida Real Time Vehicle Information System
+
+Statute:
+320.03(5)
+
+Amount:
+$0.50
+
+--------------------------------------------------
+
+JUVENILE JUSTICE FEE:
+Not charged on mobile homes.
+
+Statute:
+320.08046
+
+Amount:
+$1.00
+
+--------------------------------------------------
+
+LERSTF FEE:
+Law Enforcement Radio System Trust Fund Fee
+
+Statute:
+320.0802
+
+Amount:
+$1.00
+
+--------------------------------------------------
+
+TRANSPORTATION DISADVANTAGED TRUST FUND FEE:
+Applies to:
+private use vehicles and trucks less than 5,000 lbs.
+
+Statute:
+320.03(9)
+
+Amount:
+$1.50
+
+--------------------------------------------------
+
+SURCHARGE FOR STATE TRANSPORTATION:
+Statute:
+320.0804
+
+Amount:
+$1.20
+
+Distribution:
+$1.00 State Transportation Trust Fund
+$0.20 Highway Safety Operating Trust Fund
+
+==================================================
+INITIAL REGISTRATION FEES
+==================================================
+
+INITIAL REGISTRATION FEE:
+Statute:
+320.072(1)
+
+Amount:
+$225.00
+
+Applies to:
+Initial Florida registration transactions.
+
+Does NOT apply to:
+- heavy truck/tractor
+- semis
+- vehicles for hire
+- travel trailers
+- camper trailers
+
+Distribution:
+$124.88 General Revenue Fund
+$100.12 State Transportation Trust Fund
+
+IMPORTANT:
+This is one of the most common fees missed by inexperienced title clerks.
+
+==================================================
+SERVICE / BRANCH / MAIL FEES
+==================================================
+
+SERVICE FEE:
+Statute:
+320.04(1)(a)
+
+Amount:
+$2.50
+
+Retained by:
+Tax Collector Issuing Agency
+
+--------------------------------------------------
+
+BRANCH FEE:
+Statute:
+320.04(1)(c)
+
+Amount:
+$0.50
+
+Retained by:
+Tax Collector
+
+--------------------------------------------------
+
+LICENSE PLATE MAIL FEE:
+Statute:
+320.031(2)
+
+Amount:
+$5.70
+
+--------------------------------------------------
+
+DECAL MAIL FEE:
+Statute:
+320.031(2)
+
+Amount:
+$1.00
+
+==================================================
+DECAL / PLATE FEES
+==================================================
+
+DECAL FEE:
+Statute:
+320.04(1)(b)
+
+Amount:
+$1.00
+
+--------------------------------------------------
+
+ORIGINAL LICENSE PLATE ISSUE FEE:
+Statute:
+320.0607(5)
+
+Amount:
+$28.00
+
+--------------------------------------------------
+
+MOTOR VEHICLE LICENSE PLATE REPLACEMENT FEE:
+Mandatory every 10 years.
+
+Statute:
+320.06(1)(b)
+
+Amount:
+$28.00
+
+--------------------------------------------------
+
+REPLACEMENT FEE:
+Replacement plate/decal.
+
+Statute:
+320.0607(3)
+
+Amount:
+$28.00
+
+--------------------------------------------------
+
+REFLECTORIZATION FEE:
+Statute:
+320.06(3)(b)
+
+Amount:
+$0.50
+
+==================================================
+TEMPORARY / TRANSFER FEES
+==================================================
+
+TEMPORARY LICENSE PLATE:
+Statute:
+320.131(2)
+
+Amount:
+$2.00
+
+Distribution:
+$1.00 Brain and Spinal Cord Injury Rehabilitation Trust Fund
+$1.00 Highway Safety Operating Trust Fund
+
+--------------------------------------------------
+
+TRANSFER FEE:
+Statute:
+320.0609(2)(a)
+
+Amount:
+$4.50
+
+==================================================
+DELINQUENT / PROCESSING FEES
+==================================================
+
+DELINQUENT FEE:
+Statute:
+320.07(4)(a)
+
+Amount:
+Variable
+
+--------------------------------------------------
+
+ANNUAL PROCESSING FEE:
+Statute:
+320.085(2)(c)
+
+Amount:
+$5.00
+
+==================================================
+COMMERCIAL / HEAVY VEHICLE FEES
+==================================================
+
+COMMERCIAL MOTOR VEHICLE ADDITIONAL SURCHARGE:
+Applies to:
+GVW 10,000 lbs or more.
+
+Statute:
+320.0801(2)
+
+Amount:
+$10.00
+
+Distribution:
+$5.00 State Transportation Trust Fund
+$5.00 General Revenue Fund
+
+--------------------------------------------------
+
+HEAVY TRUCK SEMI-ANNUAL REGISTRATION ADDITIONAL FEE:
+Statute:
+320.0705(1)
+
+Amount:
+$2.50
+
+--------------------------------------------------
+
+LEASE VEHICLE SEMI-ANNUAL REGISTRATION ADDITIONAL FEE:
+Statute:
+320.0705(3)
+
+Amount:
+$2.50
+
+==================================================
+SPECIAL VEHICLE TYPES
+==================================================
+
+CUSTOM MOTOR VEHICLE FLAT TAX:
+Statute:
+320.08(2)(a)
+
+Amount:
+$7.50
+
+--------------------------------------------------
+
+CUSTOM MOTOR VEHICLE PROCESSING FEE:
+Statute:
+320.0863(3)(a)
+
+Amount:
+$3.00
+
+--------------------------------------------------
+
+STREET ROD LICENSE PLATE FLAT TAX:
+Statute:
+320.08(2)(a)
+
+Amount:
+$7.50
+
+--------------------------------------------------
+
+HORSELESS CARRIAGE LICENSE PLATE FLAT TAX:
+Statute:
+320.08(2)(a)
+
+Amount:
+$7.50
+
+--------------------------------------------------
+
+MOPED LICENSE PLATE FLAT TAX:
+Statute:
+320.08(1)
+
+Amount:
+$5.00
+
+Additional amount:
+$2.50 Highway Safety Operating Trust Fund
+
+--------------------------------------------------
+
+MOPEDS AND ANTIQUE MOTORCYCLES:
+Statute:
+320.08(1)(c)
+
+Amount:
+$2.50
+
+==================================================
+TRANSPORTER / FLEET FEES
+==================================================
+
+TRANSPORTER LICENSE PLATE:
+Statutes:
+320.08(15)
+320.133
+
+Amount:
+$101.25
+
+Distribution:
+$75.00 Departments of Education and Transportation
+$26.75 General Revenue Fund
+
+--------------------------------------------------
+
+FLEET LICENSE PLATE MANUFACTURING FEE:
+One-time fee.
+
+Statute:
+320.0657(2)(c)
+
+Amount:
+$1.50
+
+--------------------------------------------------
+
+FLEET LICENSE PLATE MANAGEMENT FEE:
+Annual fee.
+
+Statute:
+320.0657(2)(c)
+
+Amount:
+$2.00
+
+==================================================
+MOBILE HOME FEES
+==================================================
+
+MOBILE HOME SURCHARGE FEE:
+Statute:
+320.08015
+
+Amount:
+$1.00
+
+Purpose:
+Florida Mobile Home Relocation Trust Fund
+
+==================================================
+REAL PROPERTY FEES
+==================================================
+
+REAL PROPERTY FEE:
+Statute:
+320.0815(2)
+
+Amount:
+$3.00
+
+Distribution:
+$2.50 Issuing Agency
+$0.25 County Property Appraiser
+$0.25 Highway Safety Operating Trust Fund
+
+==================================================
+SPECIALTY LICENSE PLATE PROCESSING FEES
+==================================================
+
+SPECIALTY LICENSE PLATE PROCESSING FEE:
+Required on all specialty plate types.
+
+Statutes:
+320.08056
+320.08058
+
+Amount:
+$5.00
+
+--------------------------------------------------
+
+SPECIALTY MOTORCYCLE PROCESSING FEE:
+Statute:
+320.08068(3)(c)
+
+Amount:
+$2.00
+
+==================================================
+SPECIALTY LICENSE PLATE DONATION STRUCTURE
+==================================================
+
+Most specialty plates include:
+- annual use fee
+- processing fee
+- base registration fees
+- specialty donation amount
+
+Many specialty plates:
+- route money to charities
+- universities
+- foundations
+- trust funds
+- veteran organizations
+- conservation organizations
+
+==================================================
+COMMON SPECIALTY PLATE DONATION AMOUNTS
+==================================================
+
+Most common annual specialty donation:
+$25.00
+
+Other common amounts:
+$15.00
+$20.00
+$22.00
+$23.00
+
+==================================================
+COMMON SPECIALTY PLATE EXAMPLES
+==================================================
+
+COLLEGIATE LICENSE PLATES:
+$25.00
+
+PROFESSIONAL SPORTS LICENSE PLATES:
+$25.00
+
+AGRICULTURE:
+$20.00
+
+AMERICAN LEGION:
+$25.00
+
+CHOOSE LIFE:
+$20.00
+
+END BREAST CANCER:
+$25.00
+
+EVERGLADES RIVER OF GRASS:
+$20.00
+
+EXPLORE OFF ROAD:
+$25.00
+
+FLORIDA SALUTES VETERANS:
+$15.00
+
+GO FISHING:
+$25.00
+
+HELPING SEA TURTLES SURVIVE:
+$23.00
+
+INDIAN RIVER LAGOON:
+$15.00
+
+INTER MIAMI CF:
+$25.00
+
+IN GOD WE TRUST:
+$25.00
+
+MARGARITAVILLE:
+$25.00
+
+MILITARY SERVICE PLATES:
+$15.00
+
+MOTORCYCLE SPECIALTY:
+$20.00
+
+NASCAR:
+$25.00
+
+ORLANDO CITY SOCCER:
+$25.00
+
+POLICE ATHLETIC LEAGUE:
+$20.00
+
+SAVE THE MANATEE:
+$25.00
+
+SUPPORT EDUCATION:
+$20.00
+
+SUPPORT OUR TROOPS:
+$25.00
+
+USA OLYMPIC SPIRIT:
+$15.00
+
+U.S. MARINES CORPS:
+$15.00
+
+==================================================
+VOLUNTARY CONTRIBUTIONS
+==================================================
+
+Voluntary contributions may be added during registration transactions.
+
+Examples include:
+- Aid to the Homeless
+- Autism
+- Blind Babies and Youth Services
+- Child Safety Seats
+- Children's Hearing
+- End Breast Cancer
+- Family First
+- Florida Sheriffs Youth Ranch
+- Marine Turtle Protection
+- Mothers Against Drunk Drivers
+- Organ Tissue Donor
+- Prevent Blindness
+- Prevent Child Sexual Abuse
+- Ronald McDonald House
+- Save the Manatee
+- Southeastern Guide Dogs
+- Stop Heart Disease
+- Support Nongame Wildlife
+- Support Our Troops
+
+==================================================
+COMMON VOLUNTARY CONTRIBUTION AMOUNTS
+==================================================
+
+Most voluntary contributions:
+$1.00
+
+Exceptions:
+Marine Turtle Protection:
+$5.00
+
+Child Safety Seats:
+$2.00
+
+Save the Manatee:
+$2 or $5
+
+MADD:
+Any amount
+
+==================================================
+AI DECISION LOGIC
+==================================================
+
+AI should determine:
+1. Is registration initial or renewal?
+2. Is transfer fee required?
+3. Is original plate issue fee required?
+4. Is replacement plate fee required?
+5. Is specialty plate selected?
+6. Is specialty processing fee required?
+7. Is motorcycle specialty processing fee required?
+8. Is vehicle commercial?
+9. What is vehicle weight class?
+10. Does initial registration fee apply?
+11. Does mobile home surcharge apply?
+12. Does temporary plate fee apply?
+13. Does plate mail fee apply?
+14. Does decal mail fee apply?
+15. Does branch fee apply?
+16. Does service fee apply?
+17. Does delinquent fee apply?
+18. Are voluntary contributions selected?
+19. Are transfer and replacement fees both applicable?
+20. Does vehicle qualify for exempt or special registration class?
+
+==================================================
+COMMON TITLE CLERK ERRORS
+==================================================
+
+- Forgetting $225 initial registration fee
+- Forgetting original plate issue fee
+- Forgetting transfer fee
+- Forgetting specialty processing fee
+- Forgetting branch fee
+- Forgetting service fee
+- Forgetting decal fee
+- Forgetting reflectorization fee
+- Charging incorrect specialty donation amount
+- Missing plate mail fee
+- Missing decal mail fee
+- Applying initial registration fee to exempt classes
+- Forgetting commercial surcharge
+- Forgetting transportation disadvantaged fee
+- Confusing replacement plate with replacement decal
+- Forgetting annual use fee on specialty plates
+- Forgetting mobile home surcharge
+- Incorrect semi-annual fee calculations
+- Forgetting temporary plate fee
+- Double charging transfer fee
+- Incorrectly waiving specialty processing fee
+
+==================================================
+IMPORTANT IMPLEMENTATION NOTES
+==================================================
+
+Most registration totals are built from:
+- base tax
+PLUS
+- registration fees
+PLUS
+- issue/transfer/replacement fees
+PLUS
+- specialty fees
+PLUS
+- processing fees
+PLUS
+- surcharges
+PLUS
+- service/branch fees
+PLUS
+- voluntary contributions
+
+AI should separate:
+MANDATORY FEES
+from
+OPTIONAL CONTRIBUTIONS
+
+==================================================
+RELATED PROCEDURES
+==================================================
+
+- RS procedures
+- registration class procedures
+- specialty plate procedures
+- IRP procedures
+- fleet registration procedures
+- temporary tag procedures
+- dealer registration procedures
+
+==================================================
+RELATED FORMS
+==================================================
+
+- HSMV 82040
+- HSMV 83027
+- HSMV 83140
+- HSMV 83330
+- HSMV 84490
+
+==================================================
+RELATED ENTITIES
+==================================================
+
+- FLHSMV
+- Tax Collectors
+- License Plate Agencies
+- Specialty Plate Organizations
+- Trust Funds
+- State Transportation Trust Fund
+- Highway Safety Operating Trust Fund
+
+==================================================
+REFERENCE NOTES
+==================================================
+
+Revision:
+02/2026
+
+Primary focus:
+- registration fees
+- registration surcharges
+- plate fees
+- specialty plate fees
+- voluntary contribution logic
+- fee calculation structure
+- registration distributions

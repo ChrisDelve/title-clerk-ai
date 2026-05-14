@@ -1,0 +1,393 @@
+FLORIDA VESSEL REGISTRATION FEE CHART
+PROCEDURE: FEES-04
+CATEGORY: VESSEL REGISTRATION FEES / BOAT REGISTRATION / EPIRB REDUCED FEES / COUNTY FEES
+
+==================================================
+PROCEDURE SUMMARY
+==================================================
+
+This file governs:
+- Florida vessel registration fees
+- Vessel class fee structure
+- Recreational vessel reduced registration fees
+- EPIRB reduced fee eligibility
+- PLB reduced fee eligibility
+- Optional county vessel fees
+- Dealer vessel registration fees
+- Commercial vessel additional license fees
+- Vessel registration class determination by length
+
+Applies to:
+- Recreational vessels
+- Boats
+- Dealer vessel registrations
+- Commercial vessel registrations
+- Non-resident commercial vessels
+- Alien commercial vessel registrations
+
+==================================================
+VERY IMPORTANT CORE CONCEPT
+==================================================
+
+FEES-04 is a:
+VESSEL REGISTRATION FEE CLASSIFICATION CHART.
+
+The chart determines:
+- vessel registration class
+- vessel registration fee
+- reduced EPIRB/PLB fee eligibility
+- optional county fee amounts
+
+AI must:
+1. Determine vessel length
+2. Determine vessel class
+3. Determine standard fee
+4. Determine reduced EPIRB/PLB fee eligibility
+5. Determine optional county fee applicability
+6. Determine commercial/non-resident applicability
+
+==================================================
+STATUTORY AUTHORITY
+==================================================
+
+Section:
+328.72(18), Florida Statutes
+
+Provides:
+Reduced vessel registration fees for:
+- recreational vessels equipped with EPIRB
+OR
+- recreational vessel owners possessing PLB
+
+==================================================
+AI CLASSIFICATION TAGS
+==================================================
+
+KEYWORDS:
+- vessel registration fee
+- boat registration fee
+- vessel fee chart
+- FEES-04
+- EPIRB fee reduction
+- PLB fee reduction
+- emergency position indicating radio beacon
+- personal locator beacon
+- vessel classification
+- vessel length fee
+- recreational vessel fee
+- optional county vessel fee
+- commercial vessel fee
+- dealer vessel registration
+- boat registration class
+- vessel registration class
+- aquatic plate fee
+- save the manatee fee
+- vessel service fee
+- non resident vessel fee
+- alien vessel fee
+- vessel county fee
+- boat county fee
+- Class A-1 vessel
+- Class A-2 vessel
+- Class 1 vessel
+- Class 2 vessel
+- Class 3 vessel
+- Class 4 vessel
+- Class 5 vessel
+
+==================================================
+VESSEL CLASSIFICATIONS AND STANDARD FEES
+==================================================
+
+CLASS A-1:
+Length:
+Less than 12 feet
+
+Standard registration fee:
+$5.50
+
+Reduced EPIRB/PLB fee:
+$2.95
+
+Optional county fee:
+$1.75
+
+--------------------------------------------------
+
+CLASS A-2:
+Length:
+12 feet to less than 16 feet
+
+Standard registration fee:
+$16.25
+
+Reduced EPIRB/PLB fee:
+$11.00
+
+Optional county fee:
+$7.13
+
+--------------------------------------------------
+
+CLASS 1:
+Length:
+16 feet to less than 26 feet
+
+Standard registration fee:
+$28.75
+
+Reduced EPIRB/PLB fee:
+$20.40
+
+Optional county fee:
+$13.38
+
+--------------------------------------------------
+
+CLASS 2:
+Length:
+26 feet to less than 40 feet
+
+Standard registration fee:
+$78.25
+
+Reduced EPIRB/PLB fee:
+$57.50
+
+Optional county fee:
+$38.13
+
+--------------------------------------------------
+
+CLASS 3:
+Length:
+40 feet to less than 65 feet
+
+Standard registration fee:
+$127.75
+
+Reduced EPIRB/PLB fee:
+$94.95
+
+Optional county fee:
+$62.88
+
+--------------------------------------------------
+
+CLASS 4:
+Length:
+65 feet to less than 110 feet
+
+Standard registration fee:
+$152.75
+
+Reduced EPIRB/PLB fee:
+$113.40
+
+Optional county fee:
+$75.38
+
+--------------------------------------------------
+
+CLASS 5:
+Length:
+110 feet or more
+
+Standard registration fee:
+$189.75
+
+Reduced EPIRB/PLB fee:
+$141.15
+
+Optional county fee:
+$93.88
+
+==================================================
+DEALER VESSEL REGISTRATION
+==================================================
+
+Dealer Registration Fee:
+$25.50
+
+Optional county fee:
+$11.75
+
+Reduced fee:
+Not applicable.
+
+==================================================
+MANDATORY ADDITIONAL FEES
+==================================================
+
+The following fees are INCLUDED in vessel registrations,
+but NOT included in the chart totals above:
+
+SERVICE FEE:
+$2.25
+
+--------------------------------------------------
+
+AQUATIC PLATE FEE:
+$2.00
+
+--------------------------------------------------
+
+SAVE THE MANATEE TRUST FUND FEE:
+$1.00
+
+==================================================
+COMMERCIAL VESSEL FEES
+==================================================
+
+Additional commercial vessel license fee:
+$50.00
+
+Applies to:
+- non-residents
+- aliens
+
+Unless specifically exempted by statute.
+
+==================================================
+OPTIONAL COUNTY FEES
+==================================================
+
+Optional county fee is retained by:
+The county where vessel is registered.
+
+Counties charging optional county fee:
+
+- Broward
+- Charlotte
+- Collier
+- Dade
+- Escambia
+- Hardee
+- Hillsborough
+- Lee
+- Manatee
+- Martin
+- Monroe
+- Palm Beach
+- Pinellas
+- Polk
+- Santa Rosa
+- Sarasota
+- Volusia
+
+AI must determine:
+whether county fee applies based on registration county.
+
+==================================================
+EPIRB / PLB REDUCED FEE LOGIC
+==================================================
+
+Reduced fee eligibility applies when:
+- recreational vessel equipped with EPIRB
+OR
+- owner possesses PLB
+
+EPIRB:
+Emergency Position Indicating Radio Beacon
+
+PLB:
+Personal Locator Beacon
+
+AI should:
+verify qualifying safety equipment before applying reduced fee.
+
+==================================================
+AI DECISION LOGIC
+==================================================
+
+AI should determine:
+1. Vessel length
+2. Vessel classification
+3. Standard registration fee
+4. Reduced fee eligibility
+5. EPIRB applicability
+6. PLB applicability
+7. Optional county fee applicability
+8. Registration county
+9. Dealer registration applicability
+10. Commercial registration applicability
+11. Non-resident/alien applicability
+12. Additional $50 commercial fee applicability
+13. Mandatory service/aquatic/manatee fees
+14. Final vessel registration total
+
+==================================================
+COMMON TITLE CLERK / VESSEL PROCESSING ERRORS
+==================================================
+
+- Using wrong vessel class
+- Incorrect vessel length classification
+- Forgetting optional county fee
+- Forgetting service fee
+- Forgetting aquatic plate fee
+- Forgetting Save the Manatee fee
+- Applying reduced fee without EPIRB/PLB eligibility
+- Forgetting commercial vessel fee
+- Charging county fee in non-county-fee county
+- Confusing vessel title fee with vessel registration fee
+- Using recreational fee for commercial vessel
+- Forgetting dealer registration rules
+- Incorrectly applying Class 5 rates
+- Forgetting additional fees outside chart totals
+
+==================================================
+IMPORTANT IMPLEMENTATION NOTES
+==================================================
+
+Chart totals DO NOT include:
+- service fee
+- aquatic plate fee
+- Save the Manatee fee
+
+These must be added separately.
+
+AI should:
+separate:
+BASE REGISTRATION FEES
+from:
+MANDATORY ADDITIONAL FEES.
+
+==================================================
+RELATED PROCEDURES
+==================================================
+
+- FEES-01
+- vessel title procedures
+- vessel registration procedures
+- vessel transfer procedures
+
+==================================================
+RELATED FORMS
+==================================================
+
+- HSMV vessel registration forms
+- vessel title application forms
+
+==================================================
+RELATED ENTITIES
+==================================================
+
+- FLHSMV
+- Tax Collectors
+- Vessel Owners
+- Vessel Dealers
+- Commercial Vessel Operators
+
+==================================================
+REFERENCE NOTES
+==================================================
+
+Revision:
+02/2026
+
+Primary focus:
+- vessel registration classification
+- vessel fee determination
+- EPIRB/PLB reduced fee eligibility
+- county fee applicability
+- commercial vessel fee logic

@@ -1,0 +1,593 @@
+FLORIDA MOTOR VEHICLE / MOBILE HOME CLASS CODE / FEE CHART
+PROCEDURE: FEES-03
+CATEGORY: CLASS CODES / REGISTRATION FEE LOGIC / BASE TAX STRUCTURE / SURCHARGE MATRIX
+
+==================================================
+PROCEDURE SUMMARY
+==================================================
+
+This file governs:
+- Florida motor vehicle registration class codes
+- Mobile home registration class codes
+- Base tax categories
+- Full fee registrations
+- Fractional registrations
+- Monthly registrations
+- Required surcharge combinations
+- Mandatory fee combinations
+- Registration fee matrix logic
+- Semi-annual registration logic
+- Personalized plate add-on logic
+- Non-resident military logic
+- Commercial surcharge applicability
+- Fee indicator matrix logic
+
+This chart is used to determine:
+- which fees apply to a registration class
+- which surcharges are required
+- which taxes are mandatory
+- which optional fees apply
+- how a registration total is constructed
+
+==================================================
+VERY IMPORTANT CORE CONCEPT
+==================================================
+
+FEES-03 is NOT a standalone fee schedule.
+
+It is a:
+REGISTRATION CLASS CODE LOGIC MATRIX.
+
+The chart determines:
+- which fees apply
+- which surcharges apply
+- which taxes apply
+- which options apply
+based on:
+- class code
+- registration type
+- vehicle type
+
+AI must combine:
+FEES-03
+WITH:
+- FEES-01
+- FEES-02
+- registration procedures
+- class code procedures
+
+==================================================
+AI CLASSIFICATION TAGS
+==================================================
+
+KEYWORDS:
+- class code
+- registration class code
+- fee chart
+- base tax
+- full fee
+- fractional registration
+- monthly registration
+- registration surcharge matrix
+- registration fee logic
+- class code fee chart
+- commercial registration fees
+- semi annual registration
+- personalized plate fee
+- registration surcharge applicability
+- registration tax structure
+- FEES-03
+- FRVIS
+- reflectorization
+- advanced replacement fee
+- decal on demand
+- transportation disadvantaged
+- EMS fee
+- LERSTF
+- juvenile justice fee
+- state transportation surcharge
+- accident records fee
+- service fee
+- real property fee
+- processing fee
+- amateur radio fee
+- motorcycle specialty fee
+
+==================================================
+CORE SURCHARGE DEFINITIONS
+==================================================
+
+EMS:
+Emergency Medical Services
+Statute:
+320.0801
+
+Amount:
+$0.10
+
+--------------------------------------------------
+
+LE:
+Law Enforcement Radio Systems
+
+Statute:
+320.0802
+
+Amount:
+$1.00
+
+--------------------------------------------------
+
+JJ:
+Juvenile Justice
+
+Statute:
+320.08046
+
+Amount:
+$1.00
+
+--------------------------------------------------
+
+ST:
+State Transportation 10,000 GVW
+
+Statute:
+320.0801(2)
+
+Amount:
+$10.00
+
+--------------------------------------------------
+
+AD:
+Accident Records
+
+Statute:
+320.08
+
+Amount:
+$2.50
+
+--------------------------------------------------
+
+TD:
+Transportation Disadvantaged
+
+Statute:
+320.03(9)
+
+Amount:
+$1.50
+
+--------------------------------------------------
+
+SS:
+Service Fee
+
+Statute:
+320.04(1)(a)
+
+Amount:
+$2.50
+
+==================================================
+OPTIONAL / MATRIX-BASED ADDITIONAL FEES
+==================================================
+
+RZ:
+Reflectorization
+
+Statute:
+320.06(3)(b)
+
+Amount:
+$0.50
+
+--------------------------------------------------
+
+FV:
+FRVIS
+
+Statute:
+320.03(5)
+
+Amount:
+$0.50
+
+--------------------------------------------------
+
+AC:
+Air Pollution Control
+
+Statute:
+320.03(6)
+
+Amount:
+$1.00
+
+--------------------------------------------------
+
+EM:
+Surcharge State Transportation
+
+Statute:
+320.0804
+
+Amount:
+$1.20
+
+--------------------------------------------------
+
+AV:
+Advanced Replacement
+
+Statute:
+320.06(1)(b)
+
+Amount:
+$2.80
+
+--------------------------------------------------
+
+DOD:
+Decal on Demand
+
+Statute:
+320.04(1)(b)
+
+Amount:
+$1.00
+
+==================================================
+BASE TAX TYPES
+==================================================
+
+F:
+Full Fee Registration
+
+--------------------------------------------------
+
+FR:
+Fractional Registration
+
+--------------------------------------------------
+
+M:
+Monthly Registration
+
+==================================================
+IMPORTANT DELINQUENCY RULES
+==================================================
+
+Single asterisk (*):
+Fees doubled after 13th month.
+
+Double asterisk (**):
+Fees tripled after 25th month.
+
+AI should:
+- identify delinquent registration timing
+- determine whether doubled/tripled penalties apply
+
+==================================================
+STANDARD REGISTRATION FEES
+==================================================
+
+SERVICE FEE:
+$2.50
+
+--------------------------------------------------
+
+BRANCH AGENCY FEE:
+$0.50
+
+--------------------------------------------------
+
+METAL LICENSE PLATE FEE:
+$28.00
+
+--------------------------------------------------
+
+INITIAL REGISTRATION FEE:
+$225.00
+
+--------------------------------------------------
+
+PERSONALIZED PLATE ANNUAL USE FEE:
+$10.00
+
+--------------------------------------------------
+
+PERSONALIZED PLATE PROCESSING FEE:
+$5.00
+
+--------------------------------------------------
+
+MAIL FEES:
+$3.20
+
+==================================================
+OPTIONAL ADDITIONAL FEE RULES
+==================================================
+
+OPTION A:
+Personalized plate fee logic.
+
+Additional:
+$10.00 personalized fee
+PLUS:
+$5.00 processing fee
+
+Motorcycle specialty plate:
+Only charged:
+$2.00
+
+If personalized motorcycle plate:
+Total:
+$7.00
+
+--------------------------------------------------
+
+OPTION B:
+Amateur Radio Fees
+
+Original issue:
+$5.00 additional
+
+Renewal:
+$1.50 additional
+
+--------------------------------------------------
+
+OPTION C:
+Semi-Annual Fee
+
+Additional:
+$2.50
+
+--------------------------------------------------
+
+OPTION D:
+Real Property Fee
+
+Additional:
+$0.50
+
+--------------------------------------------------
+
+OPTION E:
+Use Tax
+
+Additional:
+$27.00
+
+--------------------------------------------------
+
+OPTION F:
+Manufacture Fee
+
+Additional:
+$1.50
+
+--------------------------------------------------
+
+OPTION G:
+Processing Fee
+
+Additional:
+$3.00
+
+--------------------------------------------------
+
+OPTION H:
+Non-Resident Military
+
+Special class rule indicator.
+
+==================================================
+IMPORTANT AI INTERPRETATION RULES
+==================================================
+
+The chart uses:
+- class codes
+- indicators
+- surcharge markers
+- fee markers
+
+to determine:
+which fees apply to a specific registration class.
+
+AI must:
+1. Identify class code
+2. Identify registration type
+3. Determine base tax category
+4. Determine mandatory surcharges
+5. Determine optional surcharges
+6. Determine specialty/personalized applicability
+7. Determine semi-annual applicability
+8. Determine monthly/fractional/full fee logic
+
+==================================================
+CLASS CODE LOGIC
+==================================================
+
+Class codes determine:
+- vehicle registration category
+- surcharge combinations
+- tax structure
+- renewal structure
+- fee applicability
+
+Examples of class codes in chart:
+- O1
+- O9
+- 14
+- 31
+- 36
+- 37
+- 39
+- 41
+- 42
+- 50
+- 51
+- 52
+- 53
+- 54
+- 56
+- 62
+- 65
+- 69
+- 70
+- 71
+- 76
+- 77
+- 78
+- 82
+- 91
+- 92
+- 93
+- 94
+- 95
+- 96
+- 97
+- 102
+- 103
+
+==================================================
+SPECIAL REGISTRATION INDICATORS
+==================================================
+
+DV Plate Registration Use:
+MI indicator logic applies.
+
+--------------------------------------------------
+
+MIR or SIR:
+Inventory-related special registration indicators.
+
+--------------------------------------------------
+
+DV Wheelchair:
+Special disabled veteran/wheelchair applicability.
+
+--------------------------------------------------
+
+Medal of Honor:
+Special registration logic indicator.
+
+--------------------------------------------------
+
+Real Property:
+Real property fee indicator.
+
+==================================================
+COMMON TITLE CLERK ERRORS
+==================================================
+
+- Using wrong class code
+- Forgetting class-code-required surcharges
+- Forgetting transportation disadvantaged fee
+- Forgetting advanced replacement fee
+- Forgetting FRVIS fee
+- Forgetting reflectorization fee
+- Forgetting air pollution control fee
+- Forgetting state transportation surcharge
+- Incorrectly applying commercial surcharge
+- Incorrectly applying semi-annual fee
+- Forgetting motorcycle specialty adjustment
+- Incorrect personalized plate fee calculations
+- Applying full fee instead of fractional
+- Applying monthly instead of full fee
+- Missing delinquency multiplier
+- Forgetting service fee
+- Missing branch fee
+- Incorrect non-resident military classification
+- Incorrect use tax application
+- Incorrect processing fee logic
+
+==================================================
+AI DECISION LOGIC
+==================================================
+
+AI should determine:
+1. What class code applies?
+2. Is registration Full, Fractional, or Monthly?
+3. Does EMS fee apply?
+4. Does LE fee apply?
+5. Does JJ fee apply?
+6. Does State Transportation surcharge apply?
+7. Does Transportation Disadvantaged fee apply?
+8. Does Service Fee apply?
+9. Does Reflectorization apply?
+10. Does FRVIS apply?
+11. Does Air Pollution Control apply?
+12. Does Advanced Replacement apply?
+13. Does Decal On Demand apply?
+14. Is registration delinquent?
+15. Is fee doubled or tripled?
+16. Is personalized plate involved?
+17. Is motorcycle specialty logic involved?
+18. Is amateur radio logic involved?
+19. Is semi-annual fee required?
+20. Is processing fee required?
+
+==================================================
+VERY IMPORTANT IMPLEMENTATION NOTES
+==================================================
+
+FEES-03 should be treated as:
+a registration fee construction engine.
+
+AI should:
+combine the chart indicators
+with the transaction type
+to build accurate registration totals.
+
+This file is critical for:
+- accurate registration calculations
+- surcharge validation
+- registration auditing
+- identifying missing fees
+- registration class verification
+
+==================================================
+RELATED PROCEDURES
+==================================================
+
+- FEES-01
+- FEES-02
+- registration procedures
+- registration class procedures
+- specialty plate procedures
+- fleet registration procedures
+
+==================================================
+RELATED FORMS
+==================================================
+
+- HSMV 82040
+- HSMV 83027
+- HSMV 83140
+
+==================================================
+RELATED ENTITIES
+==================================================
+
+- FLHSMV
+- Tax Collectors
+- License Plate Agencies
+- Registration Issuing Agencies
+
+==================================================
+REFERENCE NOTES
+==================================================
+
+Revision:
+06/2015
+
+Primary focus:
+- class code fee logic
+- surcharge applicability
+- registration matrix interpretation
+- registration fee construction

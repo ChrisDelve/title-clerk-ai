@@ -16,8 +16,8 @@ st.markdown("""
 <style>
 /* App background */
 .stApp {
-    background-color: #0E0E0E;
-    color: #F5F5F5;
+    background-color: #161616;
+    color: #EAEAEA;
 }
 
 /* Hide Streamlit header/footer/menu */
@@ -537,7 +537,9 @@ Knowledge Base:
 
         st.subheader("AI Operational Response")
 
-        st.write(ai_answer)
+        ai_answer = ai_answer.replace("`", "")
+
+        st.markdown(ai_answer.replace("`", ""), unsafe_allow_html=False)
 
         st.divider()
 

@@ -1,0 +1,669 @@
+FLORIDA FEE PROCEDURE — SCHEDULE OF TITLE AND LIEN FEES
+PROCEDURE: FEES-01
+CATEGORY: TITLE FEES / LIEN FEES / FAST TITLE / PAPER TITLE / ELECTRONIC TITLE
+
+==================================================
+PROCEDURE SUMMARY
+==================================================
+
+This file governs:
+- Motor vehicle title fees
+- Mobile home title fees
+- Original title fees
+- Transfer title fees
+- Duplicate title fees
+- Lien add fees
+- Lien reassignment fees
+- Salvage title fees
+- Rebuilt title fees
+- Certificate of destruction fees
+- Derelict motor vehicle certificate fees
+- Sunscreening medical exemption certificate fees
+- Child support lien fees
+- Wrecker operator lien fees
+- Off-highway vehicle title fees
+- Vessel title and lien fees
+- Electronic title totals
+- Printed paper title totals
+- Fast title totals
+- Late title penalty rules
+- Branch fee rules
+
+Applies to:
+- Tax collectors
+- License plate agencies
+- FLHSMV personnel
+- Title clerks
+- Dealers
+- Mobile home processors
+- Vessel processors
+- OHV processors
+- Salvage/rebuilt processors
+
+==================================================
+AI CLASSIFICATION TAGS
+==================================================
+
+KEYWORDS:
+- title fees
+- lien fees
+- FEES-01
+- schedule of title and lien fees
+- original title fee
+- transfer title fee
+- duplicate title fee
+- fast title fee
+- paper title fee
+- electronic title fee
+- title mail fee
+- service fee
+- branch fee
+- late title penalty
+- motor vehicle title fee
+- mobile home title fee
+- vessel title fee
+- OHV title fee
+- salvage title fee
+- rebuilt title fee
+- certificate of destruction fee
+- derelict motor vehicle certificate
+- child support lien
+- wrecker operator lien
+- sunscreening medical exemption certificate
+- lien add
+- lien reassignment
+- assignment of lien
+- for hire title fee
+- out of state title fee
+- new MCO title fee
+- printed paper title
+- fast title
+- electronic title
+- lost in transit title
+- STTF
+- HSOTF
+- GR
+- MH Fee
+- NGW Fee
+- Lemon Law Fee
+- Security Fee
+- Lien Fee
+- MRCTF
+- ITFDF
+- title decal fee
+- title validation decal
+- original inspection fee
+- re-inspection fee
+
+COMMON USER QUESTIONS:
+- "How much is an original title?"
+- "How much is a transfer title?"
+- "How much is a duplicate title?"
+- "How much is a fast title?"
+- "How much is a paper title?"
+- "What is the title fee with a lien?"
+- "What is the fee for an out-of-state title?"
+- "How much is a mobile home title?"
+- "How much is a vessel title?"
+- "How much is an OHV title?"
+- "How much is a salvage title?"
+- "How much is a certificate of destruction?"
+- "What is the late title penalty?"
+- "What is the printed paper title mail fee?"
+- "What is the branch fee?"
+- "What is the rebuilt inspection fee?"
+
+==================================================
+CORE FEE COMPONENTS
+==================================================
+
+Electronic title totals generally include:
+- statutory title fees
+- applicable trust fund fees
+- security fee
+- lien fee if applicable
+- service fee where applicable
+
+Printed paper title total:
+Electronic title total
+PLUS:
+$2.50 paper title mail fee.
+
+Fast title total:
+Electronic title total
+PLUS:
+issuing agency fee
+PLUS:
+fast title GR fee
+PLUS:
+fast title HSOTF fee.
+
+==================================================
+IMPORTANT ADD-ON RULES
+==================================================
+
+PAPER TITLE MAIL FEE:
+$2.50
+
+FAST TITLE ADDITIONAL FEES:
+- Issuing agency fee: $3.50
+- Fast Title GR fee: $1.50
+- Fast Title HSOTF fee: $5.00
+
+LATE TITLE PENALTY:
+Motor vehicle/mobile home:
+$20.00 if applicable.
+
+OHV late penalty:
+$10.00 if purchase date is 30 days or more from application date.
+
+BRANCH FEE:
+Tax collector/license plate agency may charge:
+$0.50 additional branch fee for each title issued.
+
+==================================================
+MOTOR VEHICLE AND MOBILE HOME ORIGINAL / TRANSFER FEES
+==================================================
+
+ORIGINAL TITLE — NEW MOTOR VEHICLE MCO — NO LIEN:
+Electronic title: $77.25
+Printed paper title: $79.75
+Fast title: $87.25
+
+ORIGINAL TITLE — NEW MOTOR VEHICLE MCO — FOR HIRE — NO LIEN:
+Electronic title: $56.25
+Printed paper title: $58.75
+Fast title: $66.25
+
+ORIGINAL TITLE — NEW MOTOR VEHICLE MCO — 1 LIEN:
+Electronic title: $79.25
+Printed paper title: $81.75
+Fast title: $89.25
+
+ORIGINAL TITLE — NEW MOTOR VEHICLE MCO — FOR HIRE — 1 LIEN:
+Electronic title: $58.25
+Printed paper title: $60.75
+Fast title: $68.25
+
+ORIGINAL TITLE — NEW MOBILE HOME MCO — NO LIEN:
+Electronic title: $76.25
+Printed paper title: $78.75
+Fast title: $86.25
+
+ORIGINAL TITLE — NEW MOBILE HOME MCO — 1 LIEN:
+Electronic title: $78.25
+Printed paper title: $80.75
+Fast title: $88.25
+
+ORIGINAL TITLE — NEW RECREATIONAL MOTOR VEHICLE MCO — NO LIEN:
+Electronic title: $78.25
+Printed paper title: $80.75
+Fast title: $88.25
+
+ORIGINAL TITLE — NEW RECREATIONAL MOTOR VEHICLE MCO — FOR HIRE — NO LIEN:
+Electronic title: $57.25
+Printed paper title: $59.75
+Fast title: $67.25
+
+ORIGINAL TITLE — NEW RECREATIONAL MOTOR VEHICLE MCO — 1 LIEN:
+Electronic title: $80.25
+Printed paper title: $82.75
+Fast title: $90.25
+
+ORIGINAL TITLE — NEW RECREATIONAL MOTOR VEHICLE MCO — FOR HIRE — 1 LIEN:
+Electronic title: $59.25
+Printed paper title: $61.75
+Fast title: $69.25
+
+ORIGINAL TITLE — PREVIOUSLY TITLED / REGISTERED OUT OF STATE OR COUNTRY — NO LIEN:
+Electronic title: $85.25
+Printed paper title: $87.75
+Fast title: $95.25
+
+ORIGINAL TITLE — PREVIOUSLY TITLED / REGISTERED OUT OF STATE OR COUNTRY — FOR HIRE — NO LIEN:
+Electronic title: $64.25
+Printed paper title: $66.75
+Fast title: $74.25
+
+ORIGINAL TITLE — PREVIOUSLY TITLED / REGISTERED OUT OF STATE OR COUNTRY — 1 LIEN:
+Electronic title: $87.25
+Printed paper title: $89.75
+Fast title: $97.25
+
+ORIGINAL TITLE — PREVIOUSLY TITLED / REGISTERED OUT OF STATE OR COUNTRY — FOR HIRE — 1 LIEN:
+Electronic title: $66.25
+Printed paper title: $68.75
+Fast title: $76.25
+
+TRANSFER OF TITLE — NO LIEN:
+Electronic title: $75.25
+Printed paper title: $77.75
+Fast title: $85.25
+
+TRANSFER OF TITLE — FOR HIRE — NO LIEN:
+Electronic title: $54.25
+Printed paper title: $56.75
+Fast title: $64.25
+
+TRANSFER OF TITLE — 1 LIEN:
+Electronic title: $77.25
+Printed paper title: $79.75
+Fast title: $87.25
+
+TRANSFER OF TITLE — FOR HIRE — 1 LIEN:
+Electronic title: $56.25
+Printed paper title: $58.75
+Fast title: $66.25
+
+TRANSFER OF TITLE — ASSIGNMENT OF LIEN:
+Electronic title: $78.25
+Printed paper title: $80.75
+Fast title: $88.25
+
+TRANSFER OF TITLE — ASSIGNMENT OF LIEN — FOR HIRE:
+Electronic title: $57.25
+Printed paper title: $59.75
+Fast title: $67.25
+
+==================================================
+MOTOR VEHICLE AND MOBILE HOME DUPLICATE FEES
+==================================================
+
+DUPLICATE TITLE — NO LIEN:
+Electronic title: $75.25
+Printed paper title: $77.75
+Fast title: $85.25
+
+DUPLICATE TITLE — FOR HIRE — NO LIEN:
+Electronic title: $54.25
+Printed paper title: $56.75
+Fast title: $64.25
+
+DUPLICATE TITLE — 1 LIEN:
+Electronic title: $77.25
+Printed paper title: $79.75
+Fast title: $87.25
+
+DUPLICATE TITLE — FOR HIRE — 1 LIEN:
+Electronic title: $56.25
+Printed paper title: $58.75
+Fast title: $66.25
+
+DUPLICATE LOST IN TRANSIT:
+Electronic title: $0.00
+Printed paper title: $0.00
+Fast title: $10.00
+
+DUPLICATE WITH TRANSFER — NO LIEN:
+Electronic title: $150.50
+Printed paper title: $153.00
+Fast title: $160.50
+
+DUPLICATE WITH TRANSFER — FOR HIRE — NO LIEN:
+Electronic title: $108.50
+Printed paper title: $111.00
+Fast title: $118.50
+
+DUPLICATE WITH TRANSFER — 1 LIEN:
+Electronic title: $152.50
+Printed paper title: $155.00
+Fast title: $162.50
+
+DUPLICATE WITH TRANSFER — FOR HIRE — 1 LIEN:
+Electronic title: $110.50
+Printed paper title: $113.00
+Fast title: $120.50
+
+==================================================
+MOTOR VEHICLE / MOBILE HOME LIEN ACTIONS AND SALVAGE FEES
+==================================================
+
+LIEN ADD:
+Electronic title: $74.25
+Printed paper title: $76.75
+Fast title: $84.25
+
+LIEN ADD — FOR HIRE:
+Electronic title: $53.25
+Printed paper title: $55.75
+Fast title: $63.25
+
+TITLE AND REASSIGNMENT OF LIEN:
+Electronic title: $75.25
+Printed paper title: $77.75
+Fast title: $85.25
+
+TITLE AND REASSIGNMENT OF LIEN — FOR HIRE:
+Electronic title: $54.25
+Printed paper title: $56.75
+Fast title: $64.25
+
+SALVAGE TITLE — PREVIOUSLY TITLED IN FLORIDA — NO LIEN:
+Electronic title: $7.25
+Printed paper title: $9.75
+Fast title: $17.25
+
+SALVAGE TITLE — PREVIOUSLY TITLED IN FLORIDA — 1 LIEN:
+Electronic title: $9.25
+Printed paper title: $11.75
+Fast title: $19.25
+
+SALVAGE TITLE — PREVIOUSLY TITLED IN ANOTHER STATE — NO LIEN:
+Electronic title: $17.25
+Printed paper title: $19.75
+Fast title: $27.25
+
+SALVAGE TITLE — PREVIOUSLY TITLED IN ANOTHER STATE — 1 LIEN:
+Electronic title: $19.25
+Printed paper title: $21.75
+Fast title: $29.25
+
+DUPLICATE SALVAGE TITLE — NO LIEN:
+Electronic title: $7.25
+Printed paper title: $9.75
+Fast title: $17.25
+
+==================================================
+REBUILT AND INSPECTION FEES
+==================================================
+
+REBUILT APPLICATION — PREVIOUSLY TITLED IN FLORIDA:
+Electronic title: $75.25
+Printed paper title: $77.75
+Fast title: $85.25
+
+REBUILT APPLICATION — PREVIOUSLY TITLED IN FLORIDA — FOR HIRE:
+Electronic title: $54.25
+Printed paper title: $56.75
+Fast title: $64.25
+
+REBUILT APPLICATION — PREVIOUSLY TITLED IN ANOTHER STATE:
+Electronic title: $85.25
+Printed paper title: $87.75
+Fast title: $95.25
+
+REBUILT APPLICATION — PREVIOUSLY TITLED IN ANOTHER STATE — FOR HIRE:
+Electronic title: $64.25
+Printed paper title: $66.75
+Fast title: $74.25
+
+ORIGINAL INSPECTION FEE:
+$40.00
+
+RE-INSPECTION FEE:
+$20.00
+
+==================================================
+CERTIFICATE / SPECIAL LIEN FEES
+==================================================
+
+CERTIFICATE OF DESTRUCTION — PREVIOUSLY TITLED IN FLORIDA:
+Total: $7.25
+
+CERTIFICATE OF DESTRUCTION — PREVIOUSLY TITLED IN ANOTHER STATE:
+Total: $7.25
+
+DERELICT MOTOR VEHICLE CERTIFICATE OR DUPLICATE:
+Total: $5.50
+
+CHILD SUPPORT LIEN:
+Total: $7.00
+
+SUNSCREENING MEDICAL EXEMPTION CERTIFICATE:
+Total: $5.50
+
+WRECKER OPERATOR'S LIEN:
+Total: $4.50
+
+==================================================
+OFF-HIGHWAY VEHICLE TITLE AND LIEN FEES
+==================================================
+
+OHV ORIGINAL TITLE NEW OR USED WITH TITLE DECAL AND LIEN:
+Electronic title: $38.50
+Printed paper title: $41.00
+Fast title: $45.50
+
+OHV TRANSFER OF TITLE WITH TITLE DECAL AND LIEN:
+Electronic title: $38.50
+Printed paper title: $41.00
+Fast title: $45.50
+
+OHV DUPLICATE WITH TITLE DECAL:
+Electronic title: $23.25
+Printed paper title: $25.75
+Fast title: $30.25
+
+OHV MODIFY TITLE TRANSACTION — DUPLICATE AND ADDING LIEN WITH TITLE DECAL:
+Electronic title: $24.50
+Printed paper title: $27.00
+Fast title: $31.50
+
+OHV LIEN ADD WITH TITLE DECAL:
+Electronic title: $34.25
+Printed paper title: $36.75
+Fast title: $41.25
+
+OHV LIEN REASSIGNMENT WITH TITLE DECAL:
+Electronic title: $34.25
+Printed paper title: $36.75
+Fast title: $41.25
+
+OHV ORIGINAL OR REPLACEMENT TITLE VALIDATION DECAL:
+Electronic title: $4.00
+
+OHV TITLE DECAL FEE:
+$1.00 when OHV title decal issued.
+
+OHV TITLE DECAL MAIL FEE:
+$1.00 when applicable.
+
+OHV BRANCH FEE:
+$0.50 may apply for each title/decal issued.
+
+OHV LATE PENALTY:
+$10.00 when purchase date is 30 days or more from application date.
+
+==================================================
+VESSEL TITLE AND LIEN FEES
+==================================================
+
+VESSEL ORIGINAL TITLE:
+Electronic title: $5.25
+Printed paper title: $7.75
+Fast title: $10.25
+
+VESSEL ORIGINAL TITLE — PREVIOUSLY REGISTERED OUT OF STATE:
+Electronic title: $9.25
+Printed paper title: $11.75
+Fast title: $14.25
+
+VESSEL ORIGINAL TITLE — 1 LIEN:
+Electronic title: $6.25
+Printed paper title: $8.75
+Fast title: $11.25
+
+VESSEL ORIGINAL TITLE — PREVIOUSLY REGISTERED OUT OF STATE — 1 LIEN:
+Electronic title: $10.25
+Printed paper title: $12.75
+Fast title: $15.25
+
+VESSEL TRANSFER OF TITLE:
+Electronic title: $5.25
+Printed paper title: $7.75
+Fast title: $10.25
+
+VESSEL TRANSFER OF TITLE — 1 LIEN:
+Electronic title: $6.25
+Printed paper title: $8.75
+Fast title: $11.25
+
+VESSEL TRANSFER OF TITLE — WITH TRANSFER OF EQUITY:
+Electronic title: $5.25
+Printed paper title: $7.75
+Fast title: $10.25
+
+VESSEL TRANSFER OF TITLE — WITH TRANSFER OF EQUITY — 1 LIEN:
+Electronic title: $6.25
+Printed paper title: $8.75
+Fast title: $11.25
+
+VESSEL LIEN ADD:
+Electronic title: $6.25
+Printed paper title: $8.75
+Fast title: $11.25
+
+VESSEL DUPLICATE TITLE:
+Electronic title: $6.00
+Printed paper title: $8.50
+Fast title: $11.00
+
+VESSEL DUPLICATE TITLE — 1 LIEN:
+Electronic title: $7.00
+Printed paper title: $9.50
+Fast title: $12.00
+
+VESSEL DUPLICATE WITH TRANSFER:
+Electronic title: $11.25
+Printed paper title: $13.75
+Fast title: $16.25
+
+VESSEL DUPLICATE WITH TRANSFER — 1 LIEN:
+Electronic title: $12.25
+Printed paper title: $14.75
+Fast title: $17.25
+
+VESSEL LOST IN TRANSIT:
+Fast title: $5.00
+
+==================================================
+AI DECISION LOGIC
+==================================================
+
+AI should determine:
+1. Is transaction motor vehicle, mobile home, OHV, or vessel?
+2. Is transaction original, transfer, duplicate, lien add, salvage, rebuilt, certificate, or inspection?
+3. Is vehicle for-hire?
+4. Is there a lien?
+5. Is title electronic, printed paper, or fast title?
+6. Is the vehicle previously titled in Florida?
+7. Is the vehicle previously titled/registered out of state or country?
+8. Does NGW fee apply?
+9. Does mobile home fee apply?
+10. Does lemon law fee apply?
+11. Does late penalty apply?
+12. Does paper title mail fee apply?
+13. Does fast title fee apply?
+14. Does branch fee apply?
+15. Is OHV title decal involved?
+16. Is vessel out-of-state fee involved?
+17. Is transaction lost in transit?
+18. Is transaction certificate of destruction or derelict?
+19. Is rebuilt inspection fee needed?
+20. What exact total should be quoted?
+
+==================================================
+COMMON TITLE CLERK / FEE ERRORS
+==================================================
+
+- Quoting electronic title fee when customer wants paper title
+- Forgetting paper title mail fee
+- Forgetting fast title add-on fees
+- Applying standard vehicle title fee to vessel transaction
+- Applying motor vehicle title logic to OHV title
+- Missing lien fee
+- Missing out-of-state fee
+- Missing mobile home fee
+- Missing lemon law fee for new applicable vehicles
+- Missing late penalty
+- Charging late penalty when not applicable
+- Confusing duplicate title with duplicate-with-transfer
+- Confusing salvage title with certificate of destruction
+- Incorrect for-hire title total
+- Missing branch fee
+- Quoting title-only fee when registration fees are also due
+- Treating printed paper title and fast title as the same thing
+- Forgetting rebuilt inspection fee
+- Missing OHV decal/mail fee
+- Incorrect vessel lien total
+
+==================================================
+VERY IMPORTANT CORE CONCEPT
+==================================================
+
+FEES-01 is a fee schedule only.
+
+It should be used to calculate:
+- title fees
+- lien fees
+- title issuance totals
+- paper title totals
+- fast title totals
+- inspection fees
+- certificate fees
+- vessel title totals
+- OHV title totals
+
+It does NOT replace procedural requirements.
+
+AI must combine FEES-01 with the applicable procedure file when answering workflow questions.
+
+==================================================
+RELATED PROCEDURES
+==================================================
+
+- TL-01
+- TL-02
+- TL-03
+- TL-04
+- TL-05
+- TL-09
+- TL-10
+- TL-36
+- TL-37
+- TL-43
+- RS-38
+- RS-48
+- RS-57
+- RS-65
+
+==================================================
+RELATED FORMS
+==================================================
+
+- HSMV 82040
+- HSMV 82101
+- HSMV 82139
+- HSMV 82994
+- HSMV 83363
+- HSMV 83390
+- HSMV 84490
+
+==================================================
+RELATED ENTITIES
+==================================================
+
+- FLHSMV
+- Tax Collectors
+- License Plate Agencies
+- Dealers
+- Lienholders
+- Vessel Owners
+- OHV Owners
+- Insurance Companies
+
+==================================================
+REFERENCE NOTES
+==================================================
+
+Revision:
+04/2026
+
+Primary focus:
+- Exact title fee totals
+- Lien fee totals
+- Electronic vs printed vs fast title totals
+- Motor vehicle/mobile home fees
+- OHV fees
+- Vessel fees
+- Salvage/rebuilt/certificate fees
