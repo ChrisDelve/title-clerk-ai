@@ -1,0 +1,373 @@
+FLORIDA TITLE PROCEDURE — APPLICATION FOR CERTIFICATE OF TITLE FOR A REPLICA MOTOR VEHICLE
+PROCEDURE: TL-48
+CATEGORY: REPLICA VEHICLES / SPECIAL TITLES / MANUFACTURER VEHICLES
+
+==================================================
+PROCEDURE SUMMARY
+==================================================
+
+This procedure governs:
+- Replica motor vehicle titling
+- Replica branding requirements
+- Manufacturer requirements
+- MCO processing
+- Replica VIN/title rules
+- Replica dealer/manufacturer licensing
+- Physical inspection requirements
+
+Applies to:
+- Replica automobiles
+- Replica trucks
+- Replica motorcycles
+- Reproduction vehicles
+- Newly manufactured look-alike classic vehicles
+
+==================================================
+AI CLASSIFICATION TAGS
+==================================================
+
+KEYWORDS:
+- replica vehicle
+- replica title
+- reproduction vehicle
+- replica motor vehicle
+- replica VIN
+- replica branding
+- MCO replica
+- assembled vehicle
+- replica manufacturer
+- reproduction title
+- custom replica
+- classic reproduction
+- kit style vehicle
+- replica inspection
+
+COMMON USER QUESTIONS:
+- "How do I title a replica vehicle?"
+- "What is a replica vehicle?"
+- "Does replica vehicle need inspection?"
+- "Can replica vehicles be titled in Florida?"
+- "How is replica branded?"
+- "What year goes on replica title?"
+- "What VIN does replica use?"
+- "Does replica use MCO?"
+- "Who can sell replica vehicles?"
+- "Does replica need manufacturer license?"
+
+==================================================
+LEGAL AUTHORITY
+==================================================
+
+Governed by:
+- 319.14(1)(b) FS
+- 319.14(1)(c)7 FS
+- 320.645 FS
+- 320.63 FS
+
+==================================================
+VERY IMPORTANT REPLICA DEFINITION
+==================================================
+
+Replica:
+A completely NEW motor vehicle
+manufactured to:
+- Look like an older vehicle.
+
+==================================================
+VERY IMPORTANT REPLICA RULE
+==================================================
+
+Replica vehicles:
+Are NOT:
+- Assembled from kits.
+
+==================================================
+VERY IMPORTANT REGIONAL OFFICE RULE
+==================================================
+
+Replica vehicles:
+MUST NOT be titled
+in:
+- Regional Office.
+
+==================================================
+VERY IMPORTANT REPRODUCTION RULE
+==================================================
+
+Replica vehicles:
+May also be called:
+- Reproductions.
+
+==================================================
+VERY IMPORTANT NHTSA RULE
+==================================================
+
+Replica manufacturer:
+MUST be registered with:
+- National Highway Traffic Safety Administration.
+
+==================================================
+VERY IMPORTANT SUNBIZ RULE
+==================================================
+
+Replica manufacturer:
+MUST register business with:
+- Florida Division of Corporations (Sunbiz).
+
+==================================================
+VERY IMPORTANT MANUFACTURER LICENSE RULE
+==================================================
+
+Replica manufacturer:
+MUST meet:
+- Manufacturer licensing requirements
+
+Per:
+- 320.63 FS.
+
+==================================================
+VERY IMPORTANT REPLICA BRAND RULE
+==================================================
+
+Replica vehicles:
+Will receive:
+- "Replica" brand.
+
+==================================================
+VERY IMPORTANT BRAND PERMANENCY RULE
+==================================================
+
+Replica brand:
+Carries forward:
+- For life of vehicle.
+
+==================================================
+VERY IMPORTANT YEAR RULE
+==================================================
+
+Title "YR":
+Will reflect:
+- Year vehicle resembles.
+
+NOT:
+- Actual manufacturing year.
+
+==================================================
+VERY IMPORTANT COMMENTS FIELD RULE
+==================================================
+
+Actual manufacture year:
+MUST be entered in:
+- Comments description field
+In issuance system.
+
+==================================================
+VERY IMPORTANT MAKE RULE
+==================================================
+
+"Make":
+Will be:
+- Make shown on MCO.
+
+==================================================
+VERY IMPORTANT VIN RULE
+==================================================
+
+Identification number:
+Will be:
+- VIN from MCO.
+
+==================================================
+VERY IMPORTANT BODY TYPE RULE
+==================================================
+
+Body:
+Will be:
+- Body type shown on MCO.
+
+==================================================
+VERY IMPORTANT PREVIOUS STATE RULE
+==================================================
+
+Title:
+Will show:
+- "N" for new
+
+In:
+- Previous state field.
+
+==================================================
+VERY IMPORTANT WHOLESALE/RETAIL RULE
+==================================================
+
+Licensed replica manufacturers:
+May:
+- Retail through own franchise dealer license
+OR
+- Wholesale through authorized franchised dealers.
+
+==================================================
+DOCUMENTATION REQUIRED
+==================================================
+
+Required documents:
+- Manufacturer's Certificate of Origin
+- HSMV 82040
+- Sales tax information
+- Plate or non-use affidavit
+- Title fees
+
+==================================================
+VERY IMPORTANT MCO RULE
+==================================================
+
+Need:
+- Manufacturer's Certificate of Origin
+
+MUST be:
+- Properly assigned to purchaser.
+
+==================================================
+VERY IMPORTANT SALES TAX RULE
+==================================================
+
+Need:
+- Florida sales tax
+OR
+- Sales tax information listed on HSMV 82040.
+
+==================================================
+VERY IMPORTANT PLATE RULE
+==================================================
+
+Need:
+- Florida plate
+OR
+- Non-use affidavit.
+
+==================================================
+VERY IMPORTANT INSPECTION RULE
+==================================================
+
+Florida or out-of-state title:
+Issued WITHOUT replica brand:
+Must be referred to:
+- DMS Regional Office
+
+For:
+- Physical inspection.
+
+==================================================
+VERY IMPORTANT TITLE BRANDING RULE
+==================================================
+
+Replica vehicles:
+MUST remain branded:
+- Replica
+
+On:
+- Initial title
+- All future titles.
+
+==================================================
+VERY IMPORTANT DIFFERENCE FROM ASSEMBLED VEHICLES
+==================================================
+
+Replica vehicle:
+- Completely new vehicle
+- Manufactured to resemble older vehicle
+
+NOT:
+- Homemade vehicle
+- Assembled from parts
+- Traditional kit car build
+
+==================================================
+AI DECISION LOGIC
+==================================================
+
+AI should determine:
+1. Is vehicle a replica?
+2. Is vehicle completely new?
+3. Does it resemble older vehicle?
+4. Is manufacturer licensed?
+5. Is manufacturer NHTSA registered?
+6. Is manufacturer registered with Sunbiz?
+7. Is proper MCO provided?
+8. Is MCO assigned correctly?
+9. Is vehicle branded replica?
+10. Does title need inspection?
+11. Is title already improperly issued?
+12. Is actual manufacture year entered in comments?
+13. Is correct year displayed on title?
+14. Is correct VIN used?
+15. Is correct body type used?
+16. Is sales tax documented?
+17. Is plate/non-use affidavit included?
+
+==================================================
+COMMON TITLE CLERK ERRORS
+==================================================
+
+- Confusing replica with assembled-from-parts vehicle
+- Using actual manufacture year as title year
+- Forgetting replica brand
+- Missing comments description year
+- Using incorrect VIN source
+- Failing to inspect improperly branded title
+- Missing manufacturer licensing verification
+- Missing MCO assignment
+- Treating replica like rebuilt vehicle
+- Sending replica title to regional office incorrectly
+
+==================================================
+VERY IMPORTANT TITLE DISPLAY RULE
+==================================================
+
+Replica title displays:
+- Replica year appearance
+- MCO make
+- MCO VIN
+- MCO body type
+- "N" previous state indicator
+
+==================================================
+REPLICA CHECKLIST
+==================================================
+
+Checklist requires:
+- Completed MCO
+- HSMV 82040
+- Sales tax info
+- Plate/non-use affidavit
+- Title fees
+
+==================================================
+RELATED FORMS
+==================================================
+
+- HSMV 82040 MV
+- HSMV 82040 VS
+- HSMV 82040 MH
+
+==================================================
+RELATED STATUTES
+==================================================
+
+- 319.14 FS
+- 320.63 FS
+- 320.645 FS
+
+==================================================
+REFERENCE NOTES
+==================================================
+
+Current revision:
+- 06/26/2023
+
+Primary focus:
+- Replica vehicle titling
+- Replica branding
+- Manufacturer compliance
+- MCO processing
+- Title issuance standards

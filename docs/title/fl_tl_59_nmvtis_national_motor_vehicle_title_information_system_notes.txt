@@ -1,0 +1,689 @@
+FLORIDA TITLE PROCEDURE — NATIONAL MOTOR VEHICLE TITLE INFORMATION SYSTEM (NMVTIS)
+PROCEDURE: TL-59
+CATEGORY: NMVTIS / TITLE VERIFICATION / TITLE FRAUD PREVENTION / BRANDING
+
+==================================================
+PROCEDURE SUMMARY
+==================================================
+
+This procedure governs:
+- NMVTIS title inquiries
+- Out-of-state title verification
+- Brand verification
+- Theft checks
+- Odometer verification
+- VIN pointer verification
+- State of title validation
+- Title fraud prevention
+- Salvage/junk branding
+- Fast title restrictions
+
+Applies to:
+- Motor vehicles
+- Mobile homes
+- Interstate title transactions
+- Original titles
+- Used vehicle titles
+- In-state titles
+
+==================================================
+AI CLASSIFICATION TAGS
+==================================================
+
+KEYWORDS:
+- NMVTIS
+- National Motor Vehicle Title Information System
+- title verification
+- stolen vehicle check
+- VIN pointer
+- state of title
+- title brand
+- salvage brand
+- junk brand
+- flood brand
+- title washing
+- theft stop
+- NMVTIS pending
+- fast title restriction
+- title fraud
+- VIN inquiry
+- MCO verification
+- odometer brand
+- title history
+- state title key
+- CSOT
+- title discrepancy
+
+COMMON USER QUESTIONS:
+- "What is NMVTIS?"
+- "Why won't system print fast title?"
+- "What does NMVTIS pending mean?"
+- "What is a theft stop?"
+- "What if brands don't match?"
+- "Can stolen vehicle be titled?"
+- "What is title washing?"
+- "What does junk brand mean?"
+- "Can NMVTIS override be done?"
+- "Why is title blocked?"
+- "What is VIN pointer?"
+- "How are brands transferred?"
+- "What is state of title?"
+- "Can flood history disappear?"
+- "Why is fast title denied?"
+
+==================================================
+LEGAL AUTHORITY
+==================================================
+
+Governed by:
+- Anti Car Theft Act of 1992
+- Anti Car Theft Improvements Act of 1996
+- 319.23(4) FS
+- 319.23(5) FS
+- 319.40 FS
+- 319.30(1)(n) FS
+
+==================================================
+VERY IMPORTANT NMVTIS RULE
+==================================================
+
+NMVTIS:
+National database maintained by:
+- United States Department of Justice.
+
+==================================================
+VERY IMPORTANT PURPOSE RULE
+==================================================
+
+NMVTIS exists to:
+- Prevent title fraud
+- Prevent titling stolen vehicles
+- Preserve title brands
+- Track title history
+- Protect consumers
+
+==================================================
+VERY IMPORTANT TITLE WASHING RULE
+==================================================
+
+NMVTIS prevents:
+- Title washing.
+
+Meaning:
+Brands cannot disappear when vehicle moves between states.
+
+==================================================
+VERY IMPORTANT STOLEN VEHICLE RULE
+==================================================
+
+If NMVTIS reports vehicle stolen:
+States:
+DO NOT issue title.
+
+==================================================
+VERY IMPORTANT BRAND HISTORY RULE
+==================================================
+
+NMVTIS permanently stores:
+- All brands ever applied
+By:
+- Any state.
+
+==================================================
+DESCRIPTION AND USE
+==================================================
+
+Procedure assists:
+- Tax collectors
+- License plate agents
+- FLHSMV employees
+
+In processing:
+- Title transactions using NMVTIS data.
+
+==================================================
+GENERAL NMVTIS CAPABILITIES
+==================================================
+
+NMVTIS can determine:
+- Title validity
+- Current title state
+- Salvage status
+- Junk status
+- Odometer history
+- Theft status
+- Brand history
+- MCO validity
+
+==================================================
+VERY IMPORTANT CONSUMER RULE
+==================================================
+
+Consumers may access:
+- Brand history
+- Odometer history
+- Title history
+
+Before purchasing vehicle.
+
+==================================================
+VERY IMPORTANT DEALER RULE
+==================================================
+
+Dealers and auctions:
+May access:
+- Title history
+- Brand data
+- Odometer data.
+
+==================================================
+VERY IMPORTANT LAW ENFORCEMENT RULE
+==================================================
+
+Law enforcement:
+May access:
+- Theft data
+- Junkyard data
+- Salvage yard data
+- Brand information
+
+==================================================
+VERY IMPORTANT MCO RULE
+==================================================
+
+NMVTIS verifies:
+- Manufacturer Certificate of Origin (MCO)
+
+Electronically.
+
+==================================================
+VERY IMPORTANT VIN POINTER RULE
+==================================================
+
+VIN Pointer File:
+Tracks:
+- Vehicle
+- State of title
+- Title number
+- VIN history
+
+==================================================
+VERY IMPORTANT STATE OF TITLE RULE
+==================================================
+
+State of Title (SOT):
+Means:
+- Jurisdiction currently titling vehicle.
+
+==================================================
+VERY IMPORTANT FAST TITLE RULE
+==================================================
+
+If NMVTIS inquiry response:
+NOT received:
+
+Fast title:
+CANNOT be printed.
+
+==================================================
+VERY IMPORTANT NMVTIS PENDING RULE
+==================================================
+
+If transaction completes before response received:
+Transaction marked:
+- NMVTIS PENDING.
+
+==================================================
+VERY IMPORTANT FAST TITLE BLOCK RULE
+==================================================
+
+NMVTIS PENDING transactions:
+Cannot print:
+- Fast title.
+
+==================================================
+VERY IMPORTANT TEMP TAG RULE
+==================================================
+
+If NMVTIS issue unresolved:
+Customer may receive:
+- 30-day temporary plate.
+
+==================================================
+VERY IMPORTANT TEMP ISSUE REASON RULE
+==================================================
+
+Use temp issue reason:
+- N
+
+For:
+- NMVTIS issues.
+
+==================================================
+VERY IMPORTANT FIELD SUPPORT RULE
+==================================================
+
+Override authorization:
+Can ONLY be provided by:
+- Field Support Center.
+
+==================================================
+VERY IMPORTANT ORIGINAL TITLE RULE
+==================================================
+
+For never-titled vehicles:
+NMVTIS checks:
+- MCO data.
+
+==================================================
+VERY IMPORTANT VIN RULE
+==================================================
+
+VIN must match:
+- MCO
+- Title
+- NMVTIS inquiry response.
+
+==================================================
+VERY IMPORTANT MCO DISCREPANCY RULE
+==================================================
+
+If NMVTIS MCO differs greatly:
+- Verify VIN
+- Contact Field Support Center.
+
+==================================================
+VERY IMPORTANT USED VEHICLE RULE
+==================================================
+
+For out-of-state used vehicles:
+Compare:
+- Proof of ownership issue date
+Against:
+- NMVTIS issue date.
+
+==================================================
+VERY IMPORTANT LATER ISSUE DATE RULE
+==================================================
+
+If ownership document:
+Earlier than NMVTIS date:
+
+Discontinue transaction.
+
+Request:
+- More recent ownership proof.
+
+==================================================
+VERY IMPORTANT FLORIDA TITLE RULE
+==================================================
+
+All Florida titled vehicle transactions:
+Generate:
+- NMVTIS inquiry.
+
+==================================================
+VERY IMPORTANT BRAND RULE
+==================================================
+
+NMVTIS brand data:
+Overrides:
+- Paper title brand data.
+
+==================================================
+VERY IMPORTANT AUTOMATIC BRAND RULE
+==================================================
+
+NMVTIS brands:
+Automatically carry forward:
+To Florida title.
+
+==================================================
+VERY IMPORTANT NO TITLE BRANDS RULE
+==================================================
+
+Two brands prevent Florida title issuance:
+- 07 Dismantled
+- 08 Junked
+
+==================================================
+VERY IMPORTANT SALVAGE WARNING RULE
+==================================================
+
+Possible salvage brands:
+Generate:
+- Warning message.
+
+==================================================
+VERY IMPORTANT ODOMETER RULE
+==================================================
+
+NMVTIS odometer brands:
+Used to validate:
+- Odometer entered in transaction.
+
+==================================================
+VERY IMPORTANT BRAND DISPUTE RULE
+==================================================
+
+If customer disputes brand:
+Brand correction required:
+Before title issued without brand.
+
+==================================================
+VERY IMPORTANT STOLEN VEHICLE DATA RULE
+==================================================
+
+Theft inquiry may show:
+- VIN
+- Vehicle/part indicator
+- Theft status date
+- Law enforcement agency
+- Theft case number
+- Purge status
+
+==================================================
+VERY IMPORTANT THEFT OVERRIDE RULE
+==================================================
+
+Override for theft hit:
+ONLY allowed when:
+1. Reporting agency cleared theft
+OR
+2. Insurance company receiving title.
+
+==================================================
+VERY IMPORTANT STOLEN TITLE PROCEDURE RULE
+==================================================
+
+Refer stolen vehicle situations to:
+- TL-49
+
+==================================================
+VERY IMPORTANT WARNING 400 RULE
+==================================================
+
+Warning 400:
+Manufacturer data not on file.
+
+Usually means:
+- Older VIN
+- Unknown manufacturer
+- Manufacturer not participating.
+
+==================================================
+VERY IMPORTANT WARNING 437 RULE
+==================================================
+
+Warning 437:
+VIN titled in history but not current.
+
+Usually indicates:
+- VIN correction history.
+
+==================================================
+VERY IMPORTANT WARNING 543 RULE
+==================================================
+
+Warning 543:
+Brand 43 issued:
+VIN should not be used.
+
+Means:
+- State reassigned VIN.
+
+==================================================
+VERY IMPORTANT BRAND 43 RULE
+==================================================
+
+Brand 43:
+Applied to:
+- Old VIN
+
+When:
+- New VIN assigned.
+
+==================================================
+VERY IMPORTANT FRAUD INVESTIGATION RULE
+==================================================
+
+Brand 43 discrepancies:
+May indicate:
+- Fraudulent title application.
+
+==================================================
+VERY IMPORTANT THEFT MISSING DATA RULE
+==================================================
+
+Warnings:
+428
+429
+430
+
+Mean:
+Some theft data missing.
+
+Still requires:
+- Investigation.
+
+==================================================
+VERY IMPORTANT SOT DATA RULE
+==================================================
+
+State of Title data may be unavailable due to:
+- Non-participating state
+- Archived records
+- Undo CSOT in progress
+
+==================================================
+VERY IMPORTANT CSOT RULE
+==================================================
+
+CSOT:
+Means:
+- Change State of Title.
+
+==================================================
+VERY IMPORTANT CSOT WARNING RULE
+==================================================
+
+If CSOT Undo in progress:
+DO NOT process title:
+Until completed.
+
+==================================================
+VERY IMPORTANT BROKEN POINTER RULE
+==================================================
+
+Errors:
+409
+415
+
+May indicate:
+- Broken VIN pointer.
+
+Requires:
+- Field Support Center involvement.
+
+==================================================
+VERY IMPORTANT REGISTRATION OWNERSHIP RULE
+==================================================
+
+Some states:
+Use registration as:
+- Ownership proof.
+
+==================================================
+VERY IMPORTANT INACTIVE TITLE RULE
+==================================================
+
+Warning 507:
+Means:
+- Non-active title record returned.
+
+==================================================
+VERY IMPORTANT MESSAGE IGNORE RULE
+==================================================
+
+Ignore messages:
+- 20E
+- 20H
+- 200
+
+==================================================
+NMVTIS BRAND TRANSLATION RULES
+==================================================
+
+01 = Flood damage freshwater → W
+04 = Flood damage saltwater → W
+06 = Kit → A
+07 = Dismantled → P
+08 = Junk → P
+09 = Rebuilt → R
+10 = Reconstructed → P
+17/19 = Taxi → T
+18/20 = Police → C
+30 = Replica → L
+32 = Owner retained → O/R/W/SR
+47 = Manufacturer buy back → N
+
+==================================================
+VERY IMPORTANT BRAND DECISION RULE
+==================================================
+
+Certain NMVTIS brands require:
+- Clerk judgment
+To determine:
+- Correct Florida brand.
+
+==================================================
+VERY IMPORTANT SALVAGE RULE
+==================================================
+
+Salvage vehicle:
+May be rebuilt and retitled.
+
+==================================================
+VERY IMPORTANT JUNK RULE
+==================================================
+
+Junk/non-repairable vehicle:
+Cannot legally operate.
+
+==================================================
+VERY IMPORTANT FLOOD RULE
+==================================================
+
+Flood history:
+Never disappears from NMVTIS history.
+
+==================================================
+VERY IMPORTANT TITLE FRAUD RULE
+==================================================
+
+NMVTIS designed to stop:
+- Interstate title fraud
+- VIN switching
+- Stolen vehicle titling
+- Brand washing
+
+==================================================
+AI DECISION LOGIC
+==================================================
+
+AI should determine:
+1. Is NMVTIS response received?
+2. Is transaction NMVTIS pending?
+3. Can fast title print?
+4. Is theft hit present?
+5. Is override required?
+6. Are brands missing from title?
+7. Is odometer data mismatched?
+8. Is title issue date suspicious?
+9. Is VIN valid?
+10. Is vehicle out-of-state?
+11. Is MCO data matching?
+12. Is there Brand 43 issue?
+13. Is CSOT pending?
+14. Is title inactive?
+15. Are salvage/junk brands present?
+16. Is temp tag allowed?
+17. Is Field Support Center required?
+18. Is customer disputing brand?
+19. Is title fraud possible?
+20. Is vehicle stolen?
+21. Is VIN pointer broken?
+22. Are brands automatically required?
+
+==================================================
+COMMON TITLE CLERK ERRORS
+==================================================
+
+- Ignoring NMVTIS brands
+- Printing fast title while pending
+- Overlooking theft stop
+- Using paper title over NMVTIS data
+- Missing odometer discrepancies
+- Ignoring Brand 43 warning
+- Failing to contact Field Support
+- Processing inactive title incorrectly
+- Missing salvage branding
+- Ignoring CSOT warnings
+- Not comparing issue dates
+- Using incorrect VIN
+- Ignoring title history
+- Missing flood brand history
+
+==================================================
+VERY IMPORTANT CORE CONCEPT
+==================================================
+
+NMVTIS is:
+Florida's primary interstate title verification system.
+
+System priority:
+1. NMVTIS data
+2. State records
+3. Paper ownership documents
+
+==================================================
+RELATED PROCEDURES
+==================================================
+
+- TL-49 Motor Vehicle Reported as Stolen and Stolen Titles
+
+==================================================
+IMPORTANT DEFINITIONS
+==================================================
+
+MCO:
+Manufacturer's Certificate of Origin.
+
+VIN Pointer:
+Record pointing to official title state.
+
+CSOT:
+Change State of Title.
+
+Brand:
+Permanent vehicle condition marker.
+
+Salvage:
+Repairable heavily damaged vehicle.
+
+Junk/Non-repairable:
+Vehicle only usable for scrap or parts.
+
+==================================================
+REFERENCE NOTES
+==================================================
+
+Current revision:
+- 06/12/2013
+
+Primary focus:
+- Interstate title verification
+- Brand preservation
+- Theft prevention
+- NMVTIS processing
+- Title fraud prevention

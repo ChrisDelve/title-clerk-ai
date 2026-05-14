@@ -1,0 +1,344 @@
+FLORIDA REGISTRATION PROCEDURE — FRONT END EMERGENCY SERVICE LICENSE PLATES
+PROCEDURE: RS-32
+CATEGORY: FRONT-END PLATES / PUBLIC SAFETY OFFICER PLATES / EMERGENCY SERVICE PLATES
+
+==================================================
+PROCEDURE SUMMARY
+==================================================
+
+This procedure governs:
+- Front End Emergency Service license plates
+- EMS front-end plates
+- Firefighter front-end plates
+- Law Enforcement front-end plates
+- Emergency Management front-end plates
+- Front-end plate applications
+- Front-end plate replacements
+- Front-end plate eligibility verification
+- Front-end plate cancellation requirements
+
+Applies to:
+- Certified EMTs
+- Certified Paramedics
+- Firefighters
+- Law Enforcement Officers
+- Emergency Management Personnel
+- Public safety officers
+- Tax collectors
+- License plate agencies
+- FLHSMV personnel
+
+==================================================
+AI CLASSIFICATION TAGS
+==================================================
+
+KEYWORDS:
+- front end plate
+- emergency service plate
+- EMS plate
+- firefighter front plate
+- law enforcement front plate
+- emergency management plate
+- civil defense plate
+- HSMV 83020
+- emergency medical technician plate
+- paramedic plate
+- public safety officer plate
+- front-end emergency service plate
+- permanent front plate
+- front plate replacement
+- emergency service eligibility
+- front plate cancellation
+- front-end plate fee
+- front-end plate mail fee
+- front plate transferable
+- emergency responder front plate
+- front emergency display plate
+- firefighter novelty front plate
+- police front plate
+- EMS front display
+- public safety front display
+- front plate not assigned vehicle
+- emergency organization cancellation
+- front plate proof of eligibility
+- front plate replacement no free issue
+
+COMMON USER QUESTIONS:
+- "Who qualifies for front-end emergency plates?"
+- "Can firefighters get front display plates?"
+- "Can police officers get front-end plates?"
+- "What forms are required?"
+- "How much are front-end plates?"
+- "Can front-end plates move between vehicles?"
+- "Are front-end plates permanent?"
+- "Can multiple front-end plates be issued?"
+- "What proof is required?"
+- "How are replacement plates handled?"
+- "Are stolen replacements free?"
+- "Where do applications go?"
+- "When must front-end plate be surrendered?"
+
+==================================================
+LEGAL AUTHORITY
+==================================================
+
+Governed by:
+- 320.0898 FS
+
+==================================================
+DESCRIPTION AND USE
+==================================================
+
+Procedure explains:
+- Issuance of front-end emergency service plates
+- Eligibility standards
+- Replacement procedures
+- Display restrictions
+- Cancellation requirements
+
+==================================================
+VERY IMPORTANT CORE RULE
+==================================================
+
+Front-End Emergency Service plates:
+Issued:
+For display on front:
+Of motor vehicle:
+Owned by qualifying public safety officer.
+
+==================================================
+ELIGIBLE FRONT-END PLATES
+==================================================
+
+Authorized front-end plates:
+- Emergency Medical Services
+- Firefighter
+- Law Enforcement Officer
+- Emergency Management Personnel (Civil Defense)
+
+==================================================
+APPLICATION REQUIREMENTS
+==================================================
+
+Require:
+HSMV 83020:
+Application for Front End License Plates.
+
+==================================================
+VERY IMPORTANT PLATE TYPE RULE
+==================================================
+
+HSMV 83020:
+Must specify:
+Exact type:
+Of front-end plate requested.
+
+==================================================
+SUBMISSION RULE
+==================================================
+
+Applications submitted to:
+
+Florida Department of Highway Safety and Motor Vehicles
+2900 Apalachee Parkway MS-72
+Tallahassee FL 32399
+
+==================================================
+FEE RULES
+==================================================
+
+Require:
+- Front End Emergency Service plate fee
+- Mail fee
+
+==================================================
+VERY IMPORTANT FEE CHART RULE
+==================================================
+
+Refer:
+Motor Vehicle/Mobile Home Registration Fees and Flat Tax Distribution Chart:
+For applicable fees.
+
+==================================================
+PROOF OF ELIGIBILITY RULE
+==================================================
+
+Proof of eligibility:
+Required:
+For ALL front-end plate types.
+
+==================================================
+VERY IMPORTANT HSMV 83020 PROOF RULE
+==================================================
+
+HSMV 83020:
+Specifies:
+Required proof documents.
+
+==================================================
+REPLACEMENT RULES
+==================================================
+
+Replacement front-end plates:
+Available:
+If plate:
+- Lost
+- Stolen
+- Damaged
+
+==================================================
+VERY IMPORTANT NO FREE REPLACEMENT RULE
+==================================================
+
+Front-end emergency service plates:
+Do NOT receive:
+Free replacements.
+
+==================================================
+DISPLAY RULES
+==================================================
+
+Front-end plates:
+Displayed ONLY:
+On front:
+Of motor vehicle:
+Owned by customer.
+
+==================================================
+VERY IMPORTANT NOT ASSIGNED RULE
+==================================================
+
+Front-end emergency service plates:
+NOT assigned:
+To specific vehicle.
+
+==================================================
+VERY IMPORTANT TRANSFERABLE DISPLAY RULE
+==================================================
+
+Customer may move:
+Front-end plate:
+Between owned vehicles.
+
+==================================================
+VERY IMPORTANT PERMANENT RULE
+==================================================
+
+Front-end emergency service plates:
+Permanent plates.
+
+==================================================
+CANCELLATION RULES
+==================================================
+
+Plate must be returned:
+Within 10 days:
+If owner:
+No longer associated:
+With emergency service organization.
+
+==================================================
+VERY IMPORTANT ORGANIZATION STATUS RULE
+==================================================
+
+Loss of association:
+With qualifying organization:
+Requires cancellation.
+
+==================================================
+MULTIPLE PLATE RULE
+==================================================
+
+One or more:
+Front-end emergency service plates:
+May issue:
+To authorized customer.
+
+==================================================
+AI DECISION LOGIC
+==================================================
+
+AI should determine:
+1. Is applicant qualifying public safety officer?
+2. Which emergency service plate type applies?
+3. Is HSMV 83020 completed?
+4. Is proof of eligibility attached?
+5. Are fees submitted?
+6. Is mail fee included?
+7. Is replacement due to loss, theft, or damage?
+8. Is free replacement prohibited?
+9. Is customer displaying plate on owned vehicle?
+10. Is front-end plate being improperly assigned?
+11. Has customer lost qualifying status?
+12. Is cancellation required?
+13. Is return required within 10 days?
+14. Are multiple plates permitted?
+15. Is submission routed to MS-72?
+16. Is emergency management qualification valid?
+17. Is firefighter qualification valid?
+18. Is law enforcement qualification valid?
+19. Is EMS qualification valid?
+20. Is plate transferable between owned vehicles?
+
+==================================================
+COMMON TITLE CLERK / REGISTRATION ERRORS
+==================================================
+
+- Missing HSMV 83020
+- Missing proof of eligibility
+- Incorrect emergency service category
+- Improper free replacement issuance
+- Assigning plate to specific vehicle
+- Allowing display on non-owned vehicle
+- Failure to cancel after employment separation
+- Missing mail fee
+- Incorrect routing to FLHSMV
+- Misunderstanding permanent plate status
+- Denying multiple plates improperly
+- Failing to recover canceled plate
+- Incorrectly processing replacement requests
+- Missing organization verification
+- Improper display assumptions
+
+==================================================
+VERY IMPORTANT CORE CONCEPT
+==================================================
+
+Florida Front-End Emergency Service license plates:
+Provide permanent front-display recognition plates
+for qualifying public safety personnel,
+while requiring:
+- proof of active eligibility
+- proper front-only display
+- ownership compliance
+- fee payment
+and mandatory cancellation
+upon separation from qualifying service.
+
+==================================================
+RELATED FORMS
+==================================================
+
+- HSMV 83020
+
+==================================================
+RELATED ENTITIES
+==================================================
+
+- FLHSMV
+- Division of Motorist Services
+- Tax Collectors
+- License Plate Agencies
+
+==================================================
+REFERENCE NOTES
+==================================================
+
+Current revision:
+04/2025
+
+Primary focus:
+- Front-end emergency service plate issuance
+- Public safety eligibility verification
+- Replacement processing
+- Front-display and cancellation rules

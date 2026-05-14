@@ -1,0 +1,663 @@
+FLORIDA TITLE PROCEDURE — REBUILT MOTOR VEHICLE / MOBILE HOME / MOTORCYCLE
+PROCEDURE: TL-37
+CATEGORY: REBUILT TITLE PROCESSING
+
+==================================================
+PROCEDURE SUMMARY
+==================================================
+
+This procedure governs:
+- Rebuilt vehicle title applications
+- Salvage rebuildable inspections
+- Rebuilt decal issuance
+- Rebuilt title branding
+- Major component part verification
+- PRVIP rebuilt inspections
+- Regional office rebuilt inspections
+- Flood-damaged rebuilt processing
+- ASPT processing
+- Rebuilt documentation requirements
+
+Applies to:
+- Motor vehicles
+- Motorcycles
+- Mobile homes
+- Dealers
+- Rebuilders
+- Insurance companies
+- PRVIP facilities
+- Tax collectors
+- License plate agencies
+
+==================================================
+AI CLASSIFICATION TAGS
+==================================================
+
+KEYWORDS:
+- rebuilt title
+- salvage rebuildable
+- rebuilt inspection
+- rebuilt decal
+- PRVIP
+- rebuilt flood
+- flood damage
+- HSMV 84490
+- HSMV 82040
+- HSMV 82042
+- salvage vehicle
+- rebuilt vehicle
+- rebuilt motorcycle
+- rebuilt mobile home
+- major component parts
+- ASPT
+- rebuilt inspection fee
+- rebuilt decal assignment
+
+COMMON USER QUESTIONS:
+- "What is needed for rebuilt title?"
+- "What receipts are required?"
+- "What are major component parts?"
+- "How much is rebuilt inspection?"
+- "What is PRVIP?"
+- "Can dealer sell before rebuilt?"
+- "Where does rebuilt decal go?"
+- "What if VIN plate missing?"
+- "What if flood damaged?"
+- "What photos are required?"
+
+==================================================
+VERY IMPORTANT LEGAL RULES
+==================================================
+
+NO PERSON may:
+- Sell
+- Offer for sale
+- Exchange
+
+A rebuilt vehicle until:
+- Proper rebuilt title application submitted
+AND
+- Physical inspection completed
+AND
+- Rebuilt title issued.
+
+==================================================
+VERY IMPORTANT REBUILT TITLE BRAND RULE
+==================================================
+
+Florida rebuilt title must display:
+"REBUILT AND MAY HAVE PREVIOUSLY BEEN DECLARED A TOTAL LOSS VEHICLE DUE TO DAMAGE"
+
+==================================================
+VERY IMPORTANT REBUILT DECAL RULE
+==================================================
+
+After successful inspection:
+- FLHSMV assigns rebuilt decal
+- Decal affixed to vehicle
+- Decal remains permanently.
+
+Removing rebuilt decal intentionally:
+- Third-degree felony.
+
+==================================================
+VERY IMPORTANT REBUILT APPLICATION RULE
+==================================================
+
+Vehicle MUST already be rebuilt BEFORE:
+- Applying for rebuilt title.
+
+==================================================
+VERY IMPORTANT DEALER RULE
+==================================================
+
+If dealer rebuilds salvage rebuildable vehicle:
+Dealer MUST:
+- Obtain rebuilt title in dealer name
+BEFORE:
+- Selling vehicle.
+
+==================================================
+VERY IMPORTANT INSPECTION RULE
+==================================================
+
+Rebuilt applications submitted to:
+- FLHSMV Bureau of Dealer Services Regional Office
+OR
+- PRVIP facility.
+
+==================================================
+VERY IMPORTANT INSPECTION FEES
+==================================================
+
+Initial inspection:
+- $40
+
+Additional inspections after failure:
+- $20 each.
+
+==================================================
+VERY IMPORTANT COMMENT FIELD RULE
+==================================================
+
+Processing agency must enter:
+1. Region number OR PRVIP county/agency code
+2. Rebuilt decal number
+
+Into:
+- Comment Desc field.
+
+==================================================
+PROOF OF OWNERSHIP RULES
+==================================================
+
+FLORIDA PRE-1990 TOTAL LOSS:
+Requires:
+- Chain of bills of sale.
+
+FLORIDA 1990+ TOTAL LOSS:
+Requires:
+- Florida Salvage Rebuildable title.
+
+OUT-OF-STATE SALVAGE:
+Requires:
+- Rebuilt title process.
+
+OUT-OF-STATE REBUILT:
+Florida title issued:
+- Rebuilt brand only.
+- No rebuilt decal assigned.
+
+==================================================
+VERY IMPORTANT ROAD OPERABLE RULE
+==================================================
+
+If out-of-state salvage purchased already rebuilt:
+Applicant must provide affidavit.
+
+ROAD OPERABLE MEANS:
+Vehicle:
+- Meets federal/state safety regulations
+AND
+- Safe for roadway use.
+
+==================================================
+VERY IMPORTANT THEFT RECOVERY RULE
+==================================================
+
+Recovered total theft vehicle:
+Requires:
+- HSMV 84490.
+
+If NO major component parts replaced:
+- Receipts not required.
+
+==================================================
+VERY IMPORTANT OUT-OF-STATE VERIFICATION RULE
+==================================================
+
+Out-of-state ownership/lien verification may include:
+- State printout
+- State letterhead verification
+- Law enforcement teletype
+- Photocopy of title
+
+==================================================
+REQUIRED MAIN FORMS
+==================================================
+
+PRIMARY FORMS:
+- HSMV 82040 MV
+- HSMV 82040 MH
+- HSMV 82042
+- HSMV 84490
+
+==================================================
+VERY IMPORTANT VIN VERIFICATION RULE
+==================================================
+
+Out-of-state vehicles require:
+- VIN verification.
+
+May use:
+- HSMV 82042
+OR
+- Section 8 of HSMV 82040 MV.
+
+==================================================
+VIN VERIFICATION EXEMPTIONS
+==================================================
+
+VIN verification NOT required for:
+- New dealer-sold vehicles
+- Mobile homes
+- Trailers under 2,000 lbs
+- Travel trailers
+- Camping trailers
+- Truck campers
+- Fifth-wheel recreation trailers
+
+==================================================
+VERY IMPORTANT HSMV 84490 RULE
+==================================================
+
+HSMV 84490:
+MUST be completed by:
+- Customer
+AND
+- Compliance Examiner or PRVIP inspector.
+
+==================================================
+VERY IMPORTANT RECEIPT RULE
+==================================================
+
+Original receipts/bills of sale required for:
+- ALL major component parts.
+
+Receipts must contain:
+- Seller name
+- Seller address
+- Seller signature
+- Part description
+- VIN/serial numbers when applicable
+
+==================================================
+VERY IMPORTANT ENGINE RULE
+==================================================
+
+Engine receipts must include:
+- Engine year.
+
+==================================================
+VERY IMPORTANT RECEIPT NAME RULE
+==================================================
+
+Receipts MUST be:
+- In rebuilder/customer name.
+
+==================================================
+VERY IMPORTANT PAYMENT PROOF RULE
+==================================================
+
+If receipt not clearly paid:
+Need:
+- Paid invoice
+OR
+- Zero balance proof.
+
+==================================================
+MAJOR COMPONENT PARTS — MOTOR VEHICLES
+==================================================
+
+Includes:
+- Fender
+- Hood
+- Bumper
+- Cowl assembly
+- Firewall
+- Rear quarter panel
+- Truck lid
+- Door
+- Decklid
+- Floor pan
+- Engine
+- Frame
+- Transmission
+- Catalytic converter
+- Airbag
+
+==================================================
+VERY IMPORTANT EV COMPONENT RULE
+==================================================
+
+Electric/hybrid/plug-in vehicles additionally include:
+- Electric traction motor
+- Electronic transmission
+- Charge port
+- DC power converter
+- Onboard charger
+- Power electronics controller
+- Thermal system
+- Traction battery pack
+- Airbag
+
+==================================================
+MAJOR COMPONENT PARTS — TRUCKS
+==================================================
+
+Includes:
+- All standard major components
+PLUS:
+- Truck bed
+- Dump body
+- Wrecker body
+- Crane body
+- Mixer body
+- Cargo box
+
+==================================================
+MAJOR COMPONENT PARTS — MOTORCYCLES
+==================================================
+
+Includes:
+- Body assembly
+- Frame
+- Fenders
+- Gas tanks
+- Engine
+- Transmission
+- Front fork assembly
+- Wheels
+
+==================================================
+VERY IMPORTANT HARLEY RULE
+==================================================
+
+Harley Davidson frames pre-1970:
+- May use bill of sale without VIN.
+
+Other makes:
+- NOT allowed.
+
+==================================================
+MAJOR COMPONENT PARTS — MOBILE HOMES
+==================================================
+
+Major component part:
+- Frame.
+
+==================================================
+VERY IMPORTANT MISSING RECEIPT RULE
+==================================================
+
+If receipts unavailable:
+See:
+- TL-07.
+
+==================================================
+VERY IMPORTANT PHOTO RULE
+==================================================
+
+Must provide:
+- Photos of vehicle in wrecked condition
+- At least 2 angles
+- In focus
+- Showing all damage.
+
+==================================================
+VERY IMPORTANT ADDITIONAL DAMAGE RULE
+==================================================
+
+Examiner may request:
+- Insurance adjuster report
+OR
+- Repair estimate.
+
+==================================================
+VERY IMPORTANT SALES TAX RULE
+==================================================
+
+Sales tax due on:
+- Vehicle purchase price
+AND
+- Component parts
+where sales tax not previously paid.
+
+==================================================
+VERY IMPORTANT SEALED ENVELOPE RULE
+==================================================
+
+Regional office/PRVIP provides:
+- Sealed inspection envelope.
+
+If seal broken:
+- DO NOT accept.
+
+==================================================
+VERY IMPORTANT BILL OF SALE COUNT RULE
+==================================================
+
+Issuing agency must verify:
+- Number of receipts submitted
+matches:
+- HSMV 84490 receipt count.
+
+==================================================
+VERY IMPORTANT FLOOD BRAND RULE
+==================================================
+
+Water/Flood branded out-of-state titles:
+Florida title permanently branded:
+- FLOOD DAMAGED.
+
+==================================================
+VERY IMPORTANT FLOOD CARRY FORWARD RULE
+==================================================
+
+Flood brand:
+- Carries forward permanently
+for life of vehicle.
+
+==================================================
+VERY IMPORTANT DECAL PLACEMENT RULE
+==================================================
+
+MOTOR VEHICLES:
+- Driver door jamb.
+
+MOTORCYCLES:
+- Near right-side frame down tube.
+
+MOBILE HOMES:
+- Main door jamb hinge side below lower hinge.
+
+==================================================
+VERY IMPORTANT DECAL RULE
+==================================================
+
+Decal:
+- Cannot be placed on removable part.
+
+==================================================
+VERY IMPORTANT TEMP TAG RULE
+==================================================
+
+10-day temporary tag allowed:
+For:
+- Rebuilt inspection purposes.
+
+==================================================
+VERY IMPORTANT NON-RESIDENT RULE
+==================================================
+
+Non-Florida residents:
+- Cannot receive Florida rebuilt title/decal.
+
+==================================================
+VERY IMPORTANT MISSING VIN PLATE RULE
+==================================================
+
+If factory VIN removed:
+- Rebuilt inspection cannot proceed.
+
+Customer must:
+1. Schedule confidential inspection
+2. Obtain replacement VIN decal
+3. Return for decal installation
+
+ONLY regional offices may perform:
+- Replacement VIN process.
+
+==================================================
+VERY IMPORTANT INSURANCE DISPUTE RULE
+==================================================
+
+If insurer repairs then later totals vehicle:
+Insurance company must provide:
+- Original letterhead affidavit.
+
+==================================================
+VERY IMPORTANT DASH REPLACEMENT RULE
+==================================================
+
+If ONLY dash replaced:
+Vehicle:
+- NOT considered rebuilt
+- NOT ASPT.
+
+Regional office:
+- Examines vehicle
+- VIN transferred to replacement dash.
+
+==================================================
+VERY IMPORTANT JUNKED DASH RULE
+==================================================
+
+VIN remaining on replacement dash:
+- Must be removed and destroyed.
+
+==================================================
+VERY IMPORTANT JUNKED TITLE RULE
+==================================================
+
+Source junked vehicle:
+Title marked:
+- Cancelled (Junked).
+
+==================================================
+VERY IMPORTANT REASSIGNMENT RULE
+==================================================
+
+Salvage rebuildable titles:
+May be reassigned:
+- Dealer to dealer unlimited times.
+
+==================================================
+VERY IMPORTANT 30-DAY RULE
+==================================================
+
+Dealer must submit customer title application:
+Within:
+- 30 days of delivery.
+
+==================================================
+VERY IMPORTANT OWNER RETAINED RULE
+==================================================
+
+Insurance company transferring salvage back to owner:
+Owner may apply for:
+- Salvage Rebuildable
+- Rebuildable Flood
+- Rebuilt title
+
+==================================================
+VERY IMPORTANT CAB REPLACEMENT RULE
+==================================================
+
+If ONLY cab replaced:
+Vehicle classified:
+- ASPT
+NOT:
+- Rebuilt.
+
+Vehicle receives:
+- ASPT brand
+- FLA decal.
+
+==================================================
+VERY IMPORTANT PRVIP RULE
+==================================================
+
+PRVIP:
+Private Rebuilt Vehicle Inspection Program.
+
+Authorized private facilities may:
+- Conduct rebuilt inspections.
+
+==================================================
+VERY IMPORTANT PRVIP COUNTIES
+==================================================
+
+PRVIP program counties include:
+- Bay
+- Broward
+- Duval
+- Escambia
+- Hillsborough
+- Leon
+- Manatee
+- Marion
+- Miami-Dade
+- Orange
+- Palm Beach
+- Volusia
+
+==================================================
+VERY IMPORTANT PRVIP RECORD RULE
+==================================================
+
+FLHSMV may inspect:
+- ALL PRVIP records
+- Inspection records
+- Related documents.
+
+==================================================
+AI DECISION LOGIC
+==================================================
+
+AI should determine:
+1. Is vehicle already rebuilt?
+2. Is proof of ownership acceptable?
+3. Is VIN verification required?
+4. Are all receipts present?
+5. Are receipts properly paid?
+6. Are photos sufficient?
+7. Are major component parts documented?
+8. Is flood brand required?
+9. Is rebuilt inspection required?
+10. Is PRVIP allowed?
+11. Is replacement VIN process required?
+12. Is ASPT classification required?
+13. Is rebuilt decal assignment required?
+14. Is dealer violating pre-sale rebuilt rules?
+15. Is customer Florida resident?
+
+==================================================
+COMMON TITLE CLERK ERRORS
+==================================================
+
+- Missing receipts
+- Missing paid invoice proof
+- Missing VIN verification
+- Broken inspection envelope accepted
+- Missing rebuilt decal number
+- Incorrect flood branding
+- Accepting rebuilt sale before rebuilt title
+- Missing wreck photos
+- Missing HSMV 84490
+- Incorrect ASPT classification
+- Improper decal placement
+- Missing sales tax collection
+- Missing engine year on receipt
+
+==================================================
+RELATED PROCEDURES
+==================================================
+
+- TL-07 Missing Ownership Documents
+- TL-36 Total Loss Settlements
+- TL-43 ASPT / Specially Constructed Vehicles
+- RS-31 Temporary Tags
+
+==================================================
+REFERENCE NOTES
+==================================================
+
+Current revision:
+- 08/25
+
+PRVIP counties effective:
+- 10/01/2022
+
+Source procedure:
+TL-37 Rebuilt Vehicle Title Process

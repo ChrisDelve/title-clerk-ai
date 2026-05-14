@@ -1,0 +1,711 @@
+FLORIDA TITLE PROCEDURE — ASSEMBLED FROM PARTS (ASPT)
+PROCEDURE: TL-43
+CATEGORY: ASPT / FLA VIN / HOMEMADE VEHICLE TITLE PROCESSING
+
+==================================================
+PROCEDURE SUMMARY
+==================================================
+
+This procedure governs:
+- Assembled from parts (ASPT) vehicles
+- Homemade vehicles
+- Homemade trailers
+- Homemade frames
+- FLA VIN assignments
+- FLT trailer assignments
+- Motorcycle ASPT processing
+- Mobile home ASPT processing
+- Off-highway ASPT processing
+- Certificate of Destruction component usage
+- Regional Office inspections
+- Builder documentation requirements
+
+Applies to:
+- Motor vehicles
+- Mobile homes
+- Motorcycles
+- Trailers
+- Off-highway vehicles
+- Homemade dune buggies
+- Dump truck conversions
+- Custom-built vehicles
+- Tax collectors
+- Regional Offices
+- Compliance Examiners
+
+==================================================
+AI CLASSIFICATION TAGS
+==================================================
+
+KEYWORDS:
+- ASPT
+- assembled from parts
+- FLA number
+- FLT number
+- homemade vehicle
+- homemade trailer
+- homemade frame
+- HSMV 84490
+- Statement of Builder
+- Certificate of Destruction
+- assembled motorcycle
+- Regional Office inspection
+- custom build
+- dune buggy
+- dump truck conversion
+- assembled title
+- Florida assigned VIN
+
+COMMON USER QUESTIONS:
+- "How do I title a homemade vehicle?"
+- "What is ASPT?"
+- "What is an FLA number?"
+- "Can I build a car from parts?"
+- "How do I title homemade trailer?"
+- "Can Certificate of Destruction parts be used?"
+- "What is FLT number?"
+- "Do homemade trailers need inspection?"
+- "What forms are required?"
+- "What counts as major component parts?"
+
+==================================================
+ASPT DEFINITION
+==================================================
+
+ASPT means:
+- Vehicle assembled from parts
+OR
+- Combined from parts
+
+Using:
+- New parts
+OR
+- Used parts
+
+Placed on:
+- Existing frame
+OR
+- Homemade frame.
+
+==================================================
+VERY IMPORTANT NON-REBUILT RULE
+==================================================
+
+ASPT:
+DOES NOT mean:
+- Rebuilt vehicle
+
+If vehicle declared:
+- Total loss under 319.30 FS.
+
+==================================================
+VERY IMPORTANT CD RULE
+==================================================
+
+Parts from Certificate of Destruction (CD):
+MAY be used
+
+ONLY IF:
+- 49% or less of parts
+come from ONE CD vehicle.
+
+==================================================
+VERY IMPORTANT 50% RULE
+==================================================
+
+If:
+- 50% or more of parts
+come from ONE CD vehicle
+
+THEN:
+Vehicle considered:
+- Rebuild of CD vehicle
+NOT ASPT.
+
+==================================================
+VERY IMPORTANT MULTIPLE-CD RULE
+==================================================
+
+Parts from:
+- 3 or more CD vehicles
+
+MAY create ASPT
+
+IF:
+- 49% or less from each single vehicle.
+
+==================================================
+VERY IMPORTANT COMPLETED-STATE RULE
+==================================================
+
+Vehicle/mobile home/trailer:
+MUST be fully completed
+
+BEFORE:
+Applying for title.
+
+==================================================
+VERY IMPORTANT REGIONAL OFFICE RULE
+==================================================
+
+ASPT applications:
+MUST be submitted to:
+- Regional Office.
+
+==================================================
+VERY IMPORTANT INSPECTION RULE
+==================================================
+
+Compliance Examiner:
+- Inspects ASPT vehicle
+AND
+- Assigns FLA/FLT number.
+
+==================================================
+INSPECTION FEES
+==================================================
+
+Initial inspection:
+- $40
+
+Subsequent inspections:
+- $20 each.
+
+==================================================
+TITLE DATA RULES
+==================================================
+
+MAKE:
+- ASPT
+
+YEAR:
+- Year assembled.
+
+BODY:
+- Actual body type.
+
+BRAND:
+- Assembled From Parts
+
+==================================================
+VERY IMPORTANT FLA RULE
+==================================================
+
+FLA decal assigned to:
+- Motor vehicles
+- Mobile homes
+- Motorcycles
+- Off-highway vehicles
+- Some trailers
+
+==================================================
+VERY IMPORTANT FLT RULE
+==================================================
+
+FLT number assigned to:
+- ASPT trailers (TL)
+weighing:
+- 2,000 pounds or more
+
+AND titled by:
+- Weight.
+
+==================================================
+VERY IMPORTANT TRAILER WEIGHT RULE
+==================================================
+
+Trailers weighing:
+- 1,999 pounds or less
+
+CANNOT:
+- Be titled.
+
+==================================================
+VERY IMPORTANT NON-WEIGHT TRAILER RULE
+==================================================
+
+Trailers NOT titled by weight:
+(TV, CA, HS etc.)
+
+Receive:
+- FLA number
+NOT:
+- FLT number.
+
+==================================================
+REQUIRED DOCUMENTS — STANDARD ASPT
+==================================================
+
+Need:
+1. Florida title or out-of-state ownership
+2. HSMV 82040 MV/MH
+3. HSMV 84490
+4. Major component receipts
+5. Sales tax documentation
+6. Certified weight slip if required
+7. Title fees
+
+==================================================
+VERY IMPORTANT TITLE RULE
+==================================================
+
+Florida title used for donor frame:
+Will be marked:
+- Cancelled (Junked)
+
+AFTER:
+ASPT processing.
+
+==================================================
+VERY IMPORTANT TL-07 RULE
+==================================================
+
+If title unavailable:
+Follow:
+- TL-07.
+
+==================================================
+VERY IMPORTANT FLA ASSIGNMENT RULE
+==================================================
+
+FLA decal assigned:
+ONLY AFTER:
+Application reviewed and approved.
+
+==================================================
+VERY IMPORTANT RECEIPT RULE
+==================================================
+
+Original receipts required for:
+- ALL major component parts.
+
+==================================================
+RECEIPT REQUIREMENTS
+==================================================
+
+Receipts must show:
+- Seller name
+- Seller address
+- Seller signature
+- Identification number for component
+
+Business receipts:
+- Signature NOT required.
+
+==================================================
+VERY IMPORTANT ENGINE RULE
+==================================================
+
+Engine receipt must show:
+- Engine year.
+
+==================================================
+MOTOR VEHICLE MAJOR COMPONENTS
+==================================================
+
+Includes:
+- Fender
+- Hood
+- Bumper
+- Firewall/cowl assembly
+- Rear quarter panel
+- Trunk lid
+- Door
+- Decklid
+- Floor pan
+- Engine
+- Frame
+- Transmission
+- Catalytic converter
+- Airbag
+
+==================================================
+TRUCK MAJOR COMPONENTS
+==================================================
+
+Includes standard components PLUS:
+- Dump bed
+- Wrecker bed
+- Crane bed
+- Mixer body
+- Cargo box
+
+==================================================
+MOTORCYCLE MAJOR COMPONENTS
+==================================================
+
+Includes:
+- Frame/body assembly
+- Fenders
+- Gas tanks
+- Engine
+- Cylinder block
+- Heads
+- Engine case
+- Crank case
+- Transmission/drive train
+- Front fork assembly
+- Wheels
+
+==================================================
+VERY IMPORTANT HARLEY RULE
+==================================================
+
+Harley Davidson frames before 1970:
+Bills of sale accepted without VIN.
+
+Other brands:
+- NOT acceptable.
+
+==================================================
+VERY IMPORTANT MCO RULE
+==================================================
+
+MCO for:
+- Crank case
+OR
+- Transmission case
+
+DOES NOT replace:
+- Engine receipt
+OR
+- Transmission receipt.
+
+==================================================
+MOBILE HOME COMPONENT RULE
+==================================================
+
+Mobile home major component:
+- Frame only.
+
+==================================================
+VERY IMPORTANT SALES TAX RULE
+==================================================
+
+Sales tax due on:
+- Vehicle purchase price
+AND
+- All untaxed component parts.
+
+==================================================
+VERY IMPORTANT WEIGHT SLIP RULE
+==================================================
+
+Certified weight slip required:
+Except:
+- Motorcycles
+- Mobile homes
+- Length-based trailers.
+
+==================================================
+VERY IMPORTANT SEALED ENVELOPE RULE
+==================================================
+
+Compliance Examiner provides:
+- Sealed envelope
+
+Containing:
+- Original forms
+- Receipt copies
+
+IF seal broken:
+- DO NOT ACCEPT.
+
+Refer customer:
+- Back to Regional Office.
+
+==================================================
+VERY IMPORTANT BILL COUNT RULE
+==================================================
+
+Tax Collector:
+MUST verify:
+Receipt count matches:
+- HSMV 84490.
+
+==================================================
+VERY IMPORTANT COMMENT FIELD RULE
+==================================================
+
+Processing agent must enter:
+- Region number
+AND
+- FLA audit number
+
+In:
+- Comment Desc field.
+
+==================================================
+HOMEMADE FRAME RULE
+==================================================
+
+Need:
+- Affidavit describing frame construction
+AND
+- Verifying homemade frame.
+
+==================================================
+VERY IMPORTANT MOTORCYCLE RULE
+==================================================
+
+Motorcycle previously titled out-of-state:
+Using aftermarket VIN:
+Requires:
+- New FLA assignment.
+
+==================================================
+VERY IMPORTANT TRAILER TEMP TAG RULE
+==================================================
+
+Regional Office may issue:
+- Temporary plate
+
+To move trailer:
+- For weighing/inspection.
+
+==================================================
+VERY IMPORTANT FLT PLACEMENT RULE
+==================================================
+
+FLT number must be:
+- Welded
+OR
+- Die-cut stamped
+
+In:
+- Permanent visible location.
+
+Usually:
+- Tow hitch/front trailer area.
+
+==================================================
+VERY IMPORTANT TRAILER LEGIBILITY RULE
+==================================================
+
+If FLT number not legible:
+- Certification denied.
+
+==================================================
+TRAILER COMPONENT PARTS
+==================================================
+
+Includes:
+- Axle
+- Frame
+- Trailer body/cargo area
+
+==================================================
+VERY IMPORTANT TRAILER ROADWORTHY RULE
+==================================================
+
+Need affidavit stating:
+- Trailer roadworthy.
+
+==================================================
+VERY IMPORTANT REPAIR RULE
+==================================================
+
+Factory-built trailer:
+With only repairs:
+- NOT ASPT.
+
+==================================================
+VERY IMPORTANT FLA DECAL PLACEMENT RULE
+==================================================
+
+Motor vehicles:
+- Driver door jamb
+
+Motorcycles:
+- Right-side frame down tube
+
+Mobile homes:
+- Main door jamb below lower hinge
+
+Decals:
+- NOT on removable parts.
+
+==================================================
+VERY IMPORTANT DECAL INSTALL RULE
+==================================================
+
+Must:
+- Slice through decal
+before applying:
+- Clear laminate strip.
+
+==================================================
+VERY IMPORTANT ODOMETER RULE
+==================================================
+
+Odometer branded:
+- NOT ACTUAL MILEAGE
+
+For:
+- ASPT vehicles/motorcycles.
+
+==================================================
+VERY IMPORTANT BUILDER TITLE RULE
+==================================================
+
+If builder provides ALL parts:
+Builder MUST:
+- Title vehicle in own name
+BEFORE:
+- Selling vehicle.
+
+==================================================
+VERY IMPORTANT PRIOR FLA RULE
+==================================================
+
+Old FLA decal:
+MUST be removed
+WHEN:
+New FLA assigned.
+
+==================================================
+OFF-HIGHWAY RULE
+==================================================
+
+Off-highway ASPT:
+MAKE:
+- ASPT
+
+BODY:
+- OH
+
+BRAND:
+- Assembled From Parts
+
+==================================================
+VERY IMPORTANT OUT-OF-STATE RESIDENT RULE
+==================================================
+
+Florida resident temporarily out-of-state:
+MAY process through:
+- Regional Office.
+
+FLA decal may be mailed to:
+- Law enforcement authority
+for verification.
+
+==================================================
+VERY IMPORTANT NON-FLORIDA RESIDENT RULE
+==================================================
+
+Non-Florida legal residents:
+CANNOT receive:
+- Florida ASPT title
+OR
+- FLA assignment.
+
+==================================================
+VERY IMPORTANT TEMP TAG RULE
+==================================================
+
+10-day temporary plate:
+MAY be issued
+FOR:
+- Inspection/title purposes.
+
+==================================================
+VERY IMPORTANT CAB REPLACEMENT RULE
+==================================================
+
+If ONLY cab replaced:
+Vehicle becomes:
+- ASPT
+
+AND:
+- Requires FLA assignment.
+
+==================================================
+VERY IMPORTANT DUMP TRUCK RULE
+==================================================
+
+TR truck converted to dump truck:
+MUST process as:
+- ASPT
+
+Tax collector:
+- SHOULD NOT perform simple body correction.
+
+==================================================
+VERY IMPORTANT DUNE BUGGY RULE
+==================================================
+
+Homemade dune buggy:
+Must contact:
+- Regional Office.
+
+==================================================
+AI DECISION LOGIC
+==================================================
+
+AI should determine:
+1. Is vehicle ASPT or rebuilt?
+2. Are CD parts involved?
+3. Does 49% rule apply?
+4. Is vehicle completed?
+5. Is Regional Office inspection required?
+6. Is FLA or FLT assignment needed?
+7. Is homemade frame involved?
+8. Are all major component receipts present?
+9. Is certified weight slip required?
+10. Is sealed envelope intact?
+11. Is trailer over 2,000 pounds?
+12. Is vehicle off-highway?
+13. Is odometer branding required?
+14. Is applicant Florida resident?
+15. Is dump truck conversion involved?
+
+==================================================
+COMMON TITLE CLERK ERRORS
+==================================================
+
+- Accepting broken sealed envelope
+- Missing HSMV 84490
+- Missing major component receipts
+- Ignoring 49% CD rule
+- Incorrect FLA/FLT assignment
+- Titling sub-2000 lb trailer
+- Missing weight slip
+- Incorrect body type
+- Missing comment desc entry
+- Processing dump truck as body correction
+- Missing homemade frame affidavit
+- Incorrect decal placement
+- Missing inspection fees
+
+==================================================
+RELATED FORMS
+==================================================
+
+- HSMV 82040 MV
+- HSMV 82040 MH
+- HSMV 82040 VS
+- HSMV 84490
+- Florida Trailer (FLT) Serial Number Assignment
+
+==================================================
+RELATED PROCEDURES
+==================================================
+
+- TL-07 Missing Ownership
+- TL-37 Major Component Parts
+- RS-31 Temporary Tags
+
+==================================================
+REFERENCE NOTES
+==================================================
+
+Current revision:
+- 06/26/2023
+
+Key brands:
+- ASPT
+- Assembled From Parts
+
+Key assignments:
+- FLA
+- FLT

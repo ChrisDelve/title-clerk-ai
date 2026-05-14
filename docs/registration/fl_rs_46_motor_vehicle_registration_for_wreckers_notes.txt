@@ -1,0 +1,576 @@
+FLORIDA REGISTRATION PROCEDURE — MOTOR VEHICLE REGISTRATION FOR WRECKERS
+PROCEDURE: RS-46
+CATEGORY: COMMERCIAL REGISTRATION / WRECKER REGISTRATION / TOW TRUCK REGISTRATION
+
+==================================================
+PROCEDURE SUMMARY
+==================================================
+
+This procedure governs:
+- Regular Wrecker registrations
+- GVW Wrecker registrations
+- Tow truck registration classifications
+- Wrecker plate issuance
+- Gross Vehicle Weight (GVW) requirements
+- Heavy Vehicle Use Tax (HVUT) requirements
+- Commercial insurance requirements
+- Single and dual plate issuance
+- Wrecker registration renewals/transfers
+- Replacement wrecker license plates
+- PRIDE plate inventory handling
+
+Applies to:
+- Tow truck operators
+- Wrecker operators
+- Commercial towing businesses
+- Tax collectors
+- License plate agencies
+- FLHSMV personnel
+- County branch agencies
+
+==================================================
+AI CLASSIFICATION TAGS
+==================================================
+
+KEYWORDS:
+- wrecker registration
+- tow truck registration
+- regular wrecker
+- GVW wrecker
+- tow truck plate
+- wrecker plate
+- HSMV 83146
+- class code 92
+- class code 41
+- commercial tow truck
+- disabled vehicle towing
+- abandoned vehicle towing
+- impound towing
+- replacement motor vehicle
+- wrecker GVW
+- tow truck GVW
+- dual wrecker plates
+- single wrecker plate
+- front and rear plates
+- validation decal
+- wrecker insurance
+- commercial motor vehicle insurance
+- HVUT wrecker
+- IRS Form 2290
+- Schedule 1 2290
+- RS-33
+- RS-34
+- RS-05
+- RS-06
+- PRIDE duplicate plates
+- wrecker transfer
+- tow truck transfer
+- wrecker replacement plate
+- towing cargo restrictions
+- disabled vehicle towing exemption
+- commercial towing operations
+- tow truck registration tax
+- declared GVW
+- heavy duty wrecker
+- nondisabled vehicle towing
+- vessel towing
+- stolen recovered vehicle towing
+- replacement tow vehicle
+- motor vehicle issuance system
+- wrecker decal
+- GVW towing restrictions
+- Florida tow truck registration
+
+COMMON USER QUESTIONS:
+- "What is the difference between Regular Wrecker and GVW Wrecker?"
+- "Does a tow truck require commercial insurance?"
+- "When are dual plates required?"
+- "Does HVUT apply to tow trucks?"
+- "What class code applies?"
+- "Can a wrecker tow cargo?"
+- "What GVW should be declared?"
+- "Can wrecker plates transfer?"
+- "What if the tow truck plate is stolen?"
+- "What is a replacement motor vehicle?"
+- "Can a Regular Wrecker tow vessels?"
+- "When is Form 2290 required?"
+- "What fees apply?"
+- "Do wreckers need front plates?"
+- "What is the PRIDE duplicate plate process?"
+- "Can existing dual plates remain on lighter wreckers?"
+
+==================================================
+LEGAL AUTHORITY
+==================================================
+
+Governed by:
+- 320.01(37)-(40) FS
+- 320.06(3)(a) FS
+- 320.0821 FS
+- 320.08(5)(c) FS
+- 320.08(5)(d) FS
+
+==================================================
+DESCRIPTION AND USE
+==================================================
+
+Procedure explains:
+- Wrecker registration classifications
+- Tow truck eligibility
+- GVW requirements
+- Insurance/HVUT compliance
+- Plate issuance requirements
+- Renewal/replacement handling
+
+==================================================
+DEFINITION — WRECKER
+==================================================
+
+Wrecker:
+Means:
+Motor vehicle:
+Used to:
+- tow
+- carry
+OR
+- transport motor vehicles
+
+Using:
+- boom
+- winch
+- car carrier
+OR
+similar equipment.
+
+==================================================
+DEFINITION — TOW
+==================================================
+
+Tow:
+Means:
+Pulling, drawing, or carrying:
+Motor vehicle:
+Using:
+- direct attachment
+- drawbar
+- connection
+OR
+vehicle transport carrier.
+
+==================================================
+DEFINITION — DISABLED MOTOR VEHICLE
+==================================================
+
+Disabled motor vehicle:
+Means:
+Vehicle:
+- not operable under own power
+OR
+- unsafe for highway operation.
+
+==================================================
+DEFINITION — REPLACEMENT MOTOR VEHICLE
+==================================================
+
+Replacement motor vehicle:
+Means:
+Vehicle transported:
+To replace disabled vehicle:
+And transfer:
+- operator
+- passengers
+- load.
+
+==================================================
+VERY IMPORTANT CORE RULE
+==================================================
+
+Wrecker classification:
+Determined by:
+Declared operational use:
+And GVW usage.
+
+==================================================
+REGULAR WRECKER RULES
+==================================================
+
+Regular Wrecker:
+May tow:
+- disabled vehicles
+- abandoned vehicles
+- stolen recovered vehicles
+- impound vehicles
+- replacement motor vehicles
+- vessels.
+
+==================================================
+VERY IMPORTANT REGULAR WRECKER RULE
+==================================================
+
+Regular Wrecker:
+Requires:
+Net weight and GVW entry:
+Into motor vehicle issuance system.
+
+==================================================
+VERY IMPORTANT HVUT RULE
+==================================================
+
+If GVW:
+55,000 pounds or more:
+IRS Schedule 1 Form 2290:
+Required:
+Even if exempt from payment.
+
+==================================================
+VERY IMPORTANT RS-34 RULE
+==================================================
+
+HVUT processing:
+Governed by:
+RS-34.
+
+==================================================
+GVW WRECKER RULES
+==================================================
+
+GVW Wrecker:
+Registered:
+Based on:
+What it tows/hauls.
+
+==================================================
+VERY IMPORTANT GVW DECLARATION RULE
+==================================================
+
+If towing:
+- nondisabled motor vehicle
+- vessel
+OR
+- cargo
+
+Declared GVW:
+Must include:
+Vehicle weight plus load carried.
+
+==================================================
+VERY IMPORTANT DISABLED VEHICLE EXEMPTION RULE
+==================================================
+
+If GVW Wrecker:
+Tows:
+- disabled vehicle
+- abandoned vehicle
+- stolen recovered vehicle
+- impound vehicle
+- replacement vehicle
+
+Weight restrictions:
+Do NOT apply.
+
+==================================================
+VERY IMPORTANT CARGO RULE
+==================================================
+
+GVW restrictions:
+Still apply:
+When hauling cargo.
+
+==================================================
+APPLICATION REQUIREMENTS
+==================================================
+
+Customer:
+Must declare:
+Intended wrecker usage.
+
+==================================================
+INSURANCE RULES
+==================================================
+
+Commercial motor vehicle insurance:
+Required.
+
+==================================================
+VERY IMPORTANT RS-33 RULE
+==================================================
+
+Commercial insurance processing:
+Governed by:
+RS-33.
+
+==================================================
+HVUT APPLICATION RULE
+==================================================
+
+If combined GVW:
+55,000 pounds or more:
+HVUT proof required.
+
+==================================================
+FEE RULES — REGULAR WRECKER
+==================================================
+
+Regular Wrecker:
+Uses:
+Class code 92.
+
+Fees include:
+- Original plate fee
+- Decal on Demand fee
+- Service fee
+- Branch fee
+- Registration tax
+- Trust fund fees.
+
+==================================================
+FEE RULES — GVW WRECKER
+==================================================
+
+GVW Wrecker:
+Uses:
+Class code 41.
+
+Fees based on:
+Declared GVW.
+
+==================================================
+PLATE ISSUANCE RULES
+==================================================
+
+Regular Wrecker:
+Single plate:
+Displayed rear of vehicle.
+
+==================================================
+VERY IMPORTANT GVW 26,000 RULE
+==================================================
+
+GVW Wrecker:
+26,000 pounds or less:
+Single rear plate required.
+
+==================================================
+VERY IMPORTANT GVW 26,001 RULE
+==================================================
+
+GVW Wrecker:
+26,001 pounds or more:
+Requires:
+Dual plates:
+Front and rear.
+
+==================================================
+VERY IMPORTANT VALIDATION DECAL RULE
+==================================================
+
+Validation decal:
+Placed:
+On front plate:
+For dual plate GVW Wreckers.
+
+==================================================
+VERY IMPORTANT INVENTORY CODE RULE
+==================================================
+
+No separate inventory code:
+Exists:
+For:
+- GVW Wrecker over 26,001
+OR
+- under 26,000.
+
+==================================================
+VERY IMPORTANT EXISTING DUAL PLATE RULE
+==================================================
+
+Previously issued dual plates:
+For lighter wreckers:
+May continue:
+Until replacement cycle.
+
+==================================================
+VERY IMPORTANT PRIDE RULE
+==================================================
+
+PRIDE:
+Continues issuing:
+Dual plates:
+Regardless of GVW.
+
+==================================================
+VERY IMPORTANT DUPLICATE HOLD RULE
+==================================================
+
+For lighter GVW Wreckers:
+Unused duplicate plate:
+Held:
+For PRIDE pickup.
+
+==================================================
+RENEWAL AND TRANSFER RULES
+==================================================
+
+Renewals/transfers:
+May process:
+At any county license plate agency.
+
+==================================================
+VERY IMPORTANT WRECKER TRANSFER RULE
+==================================================
+
+"WRECKER" embossed plates:
+May transfer ONLY:
+To another wrecker vehicle.
+
+==================================================
+VERY IMPORTANT RS-05 RULE
+==================================================
+
+Transfer processing:
+Governed by:
+RS-05.
+
+==================================================
+REPLACEMENT RULES
+==================================================
+
+Replacement requires:
+- registration certificate copy
+- HSMV 83146
+- applicable fees.
+
+==================================================
+VERY IMPORTANT REPLACEMENT FEE RULE
+==================================================
+
+Replacement fees may include:
+- replacement fee
+- Decal on Demand fee
+- service fee
+- branch fee
+- Air Pollution fee
+- Reflectorization fee
+- EMS fee
+- Advanced Replacement fee
+- FRVIS fee.
+
+==================================================
+VERY IMPORTANT STOLEN PLATE RULE
+==================================================
+
+If stolen:
+And customer attests:
+On HSMV 83146:
+Replacement fee waived.
+
+==================================================
+VERY IMPORTANT RS-06 RULE
+==================================================
+
+Replacement processing:
+Governed by:
+RS-06.
+
+==================================================
+AI DECISION LOGIC
+==================================================
+
+AI should determine:
+1. Is vehicle Regular Wrecker or GVW Wrecker?
+2. What towing activities occur?
+3. Is cargo hauling involved?
+4. Is declared GVW accurate?
+5. Does disabled vehicle exemption apply?
+6. Is HVUT required?
+7. Is IRS Schedule 1 Form 2290 attached?
+8. Is commercial insurance attached?
+9. Is class code 92 or 41 appropriate?
+10. Is single or dual plate required?
+11. Does vehicle exceed 26,001 pounds GVW?
+12. Was validation decal placed correctly?
+13. Does inventory code handling apply?
+14. Should duplicate plate be held for PRIDE?
+15. Is transfer limited to another wrecker?
+16. Is HSMV 83146 required?
+17. Is stolen plate fee waiver applicable?
+18. Are all replacement fees correct?
+19. Is RS-05 transfer guidance required?
+20. Is RS-33/RS-34 compliance satisfied?
+
+==================================================
+COMMON TITLE CLERK / REGISTRATION ERRORS
+==================================================
+
+- Incorrect wrecker classification
+- Missing declared GVW
+- Incorrect class code usage
+- Missing HVUT documentation
+- Missing commercial insurance
+- Incorrect dual/single plate issuance
+- Incorrect validation decal placement
+- Ignoring cargo GVW rules
+- Improper transfer to non-wrecker vehicle
+- Missing HSMV 83146
+- Incorrect replacement fee calculation
+- Missing PRIDE duplicate handling
+- Ignoring disabled vehicle exemption
+- Incorrect Schedule 1 handling
+- Missing rear/front display requirements
+
+==================================================
+VERY IMPORTANT CORE CONCEPT
+==================================================
+
+Florida wrecker registration procedures:
+Provide specialized registration classifications
+for tow trucks and wreckers,
+while enforcing:
+- GVW-based requirements
+- commercial insurance compliance
+- HVUT compliance
+- cargo towing restrictions
+- dual plate requirements
+- PRIDE inventory handling
+and operational use classifications.
+
+==================================================
+RELATED PROCEDURES
+==================================================
+
+- RS-05
+- RS-06
+- RS-33
+- RS-34
+
+==================================================
+RELATED FORMS
+==================================================
+
+- HSMV 83146
+- IRS Schedule 1 Form 2290
+
+==================================================
+RELATED ENTITIES
+==================================================
+
+- FLHSMV
+- Tax Collectors
+- License Plate Agencies
+- PRIDE
+- Commercial Tow Operators
+
+==================================================
+REFERENCE NOTES
+==================================================
+
+Current revision:
+04/17/2019
+
+Primary focus:
+- Wrecker registration classifications
+- GVW handling
+- Commercial insurance compliance
+- HVUT requirements
+- Dual plate issuance
+- Replacement/transfer procedures

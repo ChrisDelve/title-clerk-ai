@@ -1,0 +1,308 @@
+==================================================
+FLORIDA TITLE & REGISTRATION ESCALATION FLAGS
+==================================================
+
+==================================================
+IMMEDIATE ESCALATION REQUIRED
+==================================================
+
+CATEGORY:
+Possible Fraud
+
+ESCALATE TO:
+Supervisor / Compliance Manager
+
+TRIGGERS:
+- altered title
+- forged signature
+- VIN tampering
+- scratched VIN plate
+- odometer discrepancy
+- inconsistent ownership documents
+- fake insurance card
+- fake lien release
+- fake ID
+- title washing concerns
+- duplicate VIN
+- title mismatch
+
+RISK:
+Very High
+
+--------------------------------------------------
+
+CATEGORY:
+Identity Verification Failure
+
+ESCALATE TO:
+Supervisor
+
+TRIGGERS:
+- expired ID
+- identity mismatch
+- name inconsistency
+- invalid identification
+- suspicious documentation
+
+RISK:
+High
+
+--------------------------------------------------
+
+CATEGORY:
+Court Ordered Ownership Issues
+
+ESCALATE TO:
+Supervisor / Legal Review
+
+TRIGGERS:
+- probate dispute
+- divorce ownership conflict
+- court ordered transfer dispute
+- inheritance dispute
+- conflicting ownership claims
+
+RISK:
+Very High
+
+--------------------------------------------------
+
+CATEGORY:
+Bonded Title Irregularities
+
+ESCALATE TO:
+Supervisor
+
+TRIGGERS:
+- incomplete bond
+- ownership uncertainty
+- conflicting VIN history
+- improper bond amount
+- missing title evidence
+
+RISK:
+Very High
+
+==================================================
+COMMERCIAL / TRUCKING ESCALATIONS
+==================================================
+
+CATEGORY:
+Commercial Insurance Compliance
+
+ESCALATE TO:
+Commercial Registration Specialist
+
+TRIGGERS:
+- missing ACORD information
+- invalid Scheduled Autos policy
+- missing commercial coverage
+- insufficient liability limits
+- missing PIP
+- interstate carrier confusion
+- hazmat carrier uncertainty
+
+RISK:
+Very High
+
+--------------------------------------------------
+
+CATEGORY:
+IRP / Interstate Registration Issues
+
+ESCALATE TO:
+Commercial Registration Specialist
+
+TRIGGERS:
+- interstate operation
+- apportioned registration confusion
+- incorrect GVW
+- missing HVUT
+- 3 axle commercial vehicle
+- IFTA uncertainty
+- trip permit issues
+
+RISK:
+Very High
+
+==================================================
+TITLE ESCALATIONS
+==================================================
+
+CATEGORY:
+Lien Issues
+
+ESCALATE TO:
+Title Supervisor
+
+TRIGGERS:
+- missing lien release
+- lienholder mismatch
+- unreleased lien
+- ELT conflict
+- duplicate lien
+- bank acquisition confusion
+
+RISK:
+High
+
+--------------------------------------------------
+
+CATEGORY:
+Out-of-State Title Issues
+
+ESCALATE TO:
+Title Supervisor
+
+TRIGGERS:
+- unreadable title
+- state-to-state conflicts
+- VIN inconsistency
+- unsupported ownership documents
+- title brand inconsistency
+
+RISK:
+High
+
+==================================================
+REGISTRATION ESCALATIONS
+==================================================
+
+CATEGORY:
+Temporary Tag Compliance
+
+ESCALATE TO:
+Supervisor
+
+TRIGGERS:
+- excessive temp tag requests
+- third temp tag request
+- suspicious temp tag usage
+- repeated temp tag issuance
+- missing title documentation
+- dealer misuse concerns
+
+RISK:
+Very High
+
+--------------------------------------------------
+
+CATEGORY:
+IRF Disputes
+
+ESCALATE TO:
+Supervisor
+
+TRIGGERS:
+- military exemption dispute
+- trust ownership confusion
+- operation of law dispute
+- prior registration conflict
+- customer demanding exemption
+- ownership mismatch
+
+RISK:
+High
+
+--------------------------------------------------
+
+CATEGORY:
+Insurance Suspension Risk
+
+ESCALATE TO:
+Supervisor
+
+TRIGGERS:
+- cancelled insurance
+- surrendered plate confusion
+- FR suspension risk
+- customer stop
+- seized plate
+- suspended registration
+
+RISK:
+Very High
+
+==================================================
+DEALERSHIP OPERATIONS ESCALATIONS
+==================================================
+
+CATEGORY:
+Dealer Compliance Concerns
+
+ESCALATE TO:
+Controller / Compliance Manager
+
+TRIGGERS:
+- missing deal paperwork
+- incomplete reassignment
+- unsigned title docs
+- incorrect temp tag handling
+- funding delay title issue
+- missing POA
+- stale contracts
+
+RISK:
+High
+
+--------------------------------------------------
+
+CATEGORY:
+Funding / Lien Delay Risks
+
+ESCALATE TO:
+F&I Manager / Controller
+
+TRIGGERS:
+- delayed title payoff
+- lien payoff mismatch
+- delayed title release
+- incorrect lender information
+- duplicate funding requests
+
+RISK:
+High
+
+==================================================
+SYSTEM RESPONSE RULES
+==================================================
+
+If escalation trigger detected:
+Assistant should:
+- stop assumptions
+- avoid guessing
+- recommend supervisor review
+- identify missing documentation
+- cite applicable procedures
+- identify compliance risk
+
+==================================================
+AI RESPONSE EXAMPLES
+==================================================
+
+Example:
+"Potential IRF exemption conflict detected.
+Supervisor review recommended before processing."
+
+--------------------------------------------------
+
+Example:
+"Commercial insurance documentation may be insufficient.
+Review ACORD coverage and Scheduled Autos VIN listing."
+
+--------------------------------------------------
+
+Example:
+"Possible ownership discrepancy detected.
+Escalate to title supervisor before proceeding."
+
+==================================================
+SYSTEM PURPOSE
+==================================================
+
+This file exists to:
+- reduce compliance risk
+- prevent improper processing
+- identify high-risk transactions
+- improve dealership operational safety
+- support escalation-aware AI behavior

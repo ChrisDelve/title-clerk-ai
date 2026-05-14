@@ -1,0 +1,385 @@
+FLORIDA REGISTRATION PROCEDURE — AMPHIBIOUS VEHICLES
+PROCEDURE: RS-60
+CATEGORY: SPECIALTY VEHICLES / DUAL REGISTRATION / MOTOR VEHICLE & VESSEL REGISTRATION
+
+==================================================
+PROCEDURE SUMMARY
+==================================================
+
+This procedure governs:
+- Amphibious vehicle registrations
+- Dual motor vehicle and vessel registration
+- Amphibious vehicle title processing
+- Amphibious vehicle vessel registration
+- Duplicate VIN vessel records
+- Amphibious insurance requirements
+- Amphibious vehicle class code assignments
+- Amphibious vehicle registration fees
+- Amphibious vehicle vessel decal issuance
+- Amphibious commercial/recreational operation
+- Amphibious title classifications
+- Amphibious FL number issuance
+
+Applies to:
+- Amphibious vehicle owners
+- Tax collectors
+- License plate agents
+- FLHSMV personnel
+- Recreational operators
+- Commercial operators
+- Amphibious transport businesses
+
+==================================================
+AI CLASSIFICATION TAGS
+==================================================
+
+KEYWORDS:
+- amphibious vehicle
+- dual registration
+- vessel registration
+- motor vehicle registration
+- amphibious title
+- duplicate VIN record
+- HSMV 82041
+- HSMV 87244
+- Application to Register Non-Titled Vessels
+- amphibious insurance
+- amphibious decal
+- amphibious FL number
+- amphibious passenger vehicle
+- amphibious bus
+- amphibious for-hire
+- vessel decal
+- vessel registration only
+- auto vehicle type AU
+- vessel vehicle type VS
+- amphibious vehicle fees
+- amphibious title classification
+- Florida amphibious registration
+- recreational vessel exemption
+- vessel registration exemption
+- Florida amphibious title
+- amphibious validation decal
+- amphibious annual vessel decal
+- vessel duplicate record
+- amphibious registration class code
+- amphibious commercial operation
+- amphibious registration fee
+- Florida vessel law
+- amphibious ownership
+- motor vehicle vessel combo
+- water and road vehicle
+- amphibious transport vehicle
+- vessel registration length fee
+- Section 320.01
+- Section 319.20
+- Section 319.21
+- Section 328.03
+- Section 328.48
+- amphibious VIN processing
+- amphibious title workflow
+
+COMMON USER QUESTIONS:
+- "Do amphibious vehicles require both registrations?"
+- "Does an amphibious vehicle need a title?"
+- "Can amphibious vehicles have both a plate and FL number?"
+- "What forms are required?"
+- "How are amphibious vehicles classified?"
+- "Is Florida insurance required?"
+- "How are fees calculated?"
+- "What is a duplicate VIN vessel record?"
+- "Does vessel registration still apply?"
+- "What vehicle type should be used?"
+- "What if title already exists?"
+- "How is vessel registration fee determined?"
+- "Are amphibious vehicles treated as vessels?"
+- "Can amphibious vehicles be commercial?"
+- "Can amphibious vehicles be for-hire?"
+
+==================================================
+LEGAL AUTHORITY
+==================================================
+
+Governed by:
+- 320.01(1)(a) FS
+- 319.20 FS
+- 319.21 FS
+- 328.03 FS
+- 328.48(2) FS
+
+==================================================
+DESCRIPTION AND USE
+==================================================
+
+Procedure explains:
+- Amphibious vehicle registration requirements
+- Motor vehicle title issuance
+- Vessel registration requirements
+- Dual registration procedures
+- Plate and vessel decal issuance
+
+==================================================
+VERY IMPORTANT CORE RULE
+==================================================
+
+Amphibious vehicles:
+Must be registered:
+As BOTH:
+- motor vehicles
+AND
+- vessels.
+
+==================================================
+VERY IMPORTANT MOTOR VEHICLE RULE
+==================================================
+
+Amphibious vehicles:
+Are included:
+Under definition of:
+Motor vehicle.
+
+==================================================
+VERY IMPORTANT TITLE RULE
+==================================================
+
+Florida Certificate of Title:
+Required:
+For amphibious vehicles.
+
+==================================================
+VERY IMPORTANT NO VESSEL TITLE RULE
+==================================================
+
+If motor vehicle title issued:
+No separate vessel title:
+Issued under vessel statutes.
+
+==================================================
+VESSEL REGISTRATION RULE
+==================================================
+
+Even if motor vehicle title exists:
+Amphibious vehicle:
+Still requires:
+Vessel registration.
+
+==================================================
+VERY IMPORTANT WATER OPERATION RULE
+==================================================
+
+All vessels operated:
+On Florida waters:
+Must be registered:
+Unless statutory exemption applies.
+
+==================================================
+VESSEL EXEMPTIONS
+==================================================
+
+Exempt vessels include:
+- vessels operated exclusively on private lakes/ponds
+- U.S. Government vessels
+- ship lifeboats
+- qualifying non-motor-powered vessels.
+
+==================================================
+MOTOR VEHICLE PROCESSING RULES
+==================================================
+
+Motor vehicle title application:
+Processed:
+Using standard motor vehicle requirements.
+
+==================================================
+VERY IMPORTANT AU VEHICLE TYPE RULE
+==================================================
+
+Motor vehicle processing:
+Uses:
+Vehicle type:
+"AU".
+
+==================================================
+INSURANCE RULES
+==================================================
+
+Proof of Florida insurance:
+Required.
+
+==================================================
+VERY IMPORTANT CLASSIFICATION RULE
+==================================================
+
+Amphibious vehicles:
+May classify as:
+- passenger vehicle
+- bus
+- for-hire vehicle
+
+depending on title documentation.
+
+==================================================
+VERY IMPORTANT FEE RULE
+==================================================
+
+Motor vehicle registration fees:
+Based on:
+- class code
+- vehicle weight.
+
+==================================================
+VESSEL PROCESSING RULES
+==================================================
+
+Vessel registration:
+Requires:
+- copy of HSMV 82041
+- HSMV 87244.
+
+==================================================
+VERY IMPORTANT REGISTRATION ONLY RULE
+==================================================
+
+If motor vehicle title already issued:
+Vessel processing:
+Creates:
+Registration-only vessel record.
+
+==================================================
+VERY IMPORTANT DUPLICATE VIN RULE
+==================================================
+
+Vessel registration:
+Creates:
+Duplicate VIN record:
+Using vessel vehicle type.
+
+==================================================
+VERY IMPORTANT VS VEHICLE TYPE RULE
+==================================================
+
+Vessel processing:
+Uses:
+Vehicle type:
+"VS".
+
+==================================================
+VERY IMPORTANT FL NUMBER RULE
+==================================================
+
+Upon vessel registration approval:
+FL number:
+And annual vessel decal:
+Issued.
+
+==================================================
+VERY IMPORTANT VESSEL FEE RULE
+==================================================
+
+Vessel registration fees:
+Based on:
+Length of amphibious vehicle.
+
+==================================================
+FORMS REQUIRED
+==================================================
+
+Commonly required forms:
+- HSMV 82041
+- HSMV 87244.
+
+==================================================
+AI DECISION LOGIC
+==================================================
+
+AI should determine:
+1. Is vehicle amphibious?
+2. Does vehicle require both registrations?
+3. Is motor vehicle title required?
+4. Does vessel registration apply?
+5. Was AU vehicle type used?
+6. Was VS vehicle type used?
+7. Is duplicate VIN vessel record required?
+8. Is Florida insurance attached?
+9. Is vehicle passenger, bus, or for-hire?
+10. Were class codes selected properly?
+11. Are fees based on correct weight?
+12. Are vessel fees based on correct length?
+13. Is HSMV 82041 attached?
+14. Is HSMV 87244 attached?
+15. Was annual vessel decal issued?
+16. Was FL number assigned?
+17. Does vessel exemption apply?
+18. Is commercial use involved?
+19. Is registration-only vessel record required?
+20. Was title issued under correct statutes?
+
+==================================================
+COMMON TITLE CLERK / REGISTRATION ERRORS
+==================================================
+
+- Failing to issue both registrations
+- Missing vessel registration
+- Issuing separate vessel title improperly
+- Missing Florida insurance
+- Incorrect AU or VS vehicle type usage
+- Missing duplicate VIN vessel record
+- Incorrect class code assignment
+- Incorrect fee calculation
+- Missing HSMV 82041
+- Missing HSMV 87244
+- Incorrect vessel fee length calculation
+- Missing FL number issuance
+- Ignoring vessel registration requirements
+- Improper for-hire classification
+- Failure to issue vessel decal
+
+==================================================
+VERY IMPORTANT CORE CONCEPT
+==================================================
+
+Florida amphibious vehicle procedures:
+Require dual compliance
+as BOTH:
+- motor vehicles
+AND
+- vessels
+
+while enforcing:
+- title issuance
+- vessel registration
+- duplicate VIN records
+- Florida insurance requirements
+- class code classifications
+- vessel decal issuance
+and water-operation registration compliance.
+
+==================================================
+RELATED FORMS
+==================================================
+
+- HSMV 82041
+- HSMV 87244
+
+==================================================
+RELATED ENTITIES
+==================================================
+
+- FLHSMV
+- Tax Collectors
+- License Plate Agents
+- Vessel Registration Authorities
+
+==================================================
+REFERENCE NOTES
+==================================================
+
+Current revision:
+06/28/2022
+
+Primary focus:
+- Amphibious vehicle dual registration
+- Motor vehicle and vessel compliance
+- Duplicate VIN vessel records
+- Insurance and fee processing
+- FL number and vessel decal issuance

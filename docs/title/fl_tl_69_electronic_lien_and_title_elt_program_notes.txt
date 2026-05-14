@@ -1,0 +1,724 @@
+FLORIDA TITLE PROCEDURE — ELECTRONIC LIEN AND TITLE (ELT) PROGRAM
+PROCEDURE: TL-69
+CATEGORY: ELECTRONIC TITLES / LIENS / ELT / E-TITLES
+
+==================================================
+PROCEDURE SUMMARY
+==================================================
+
+This procedure governs:
+- Electronic titles (e-titles)
+- Electronic liens
+- ELT participation
+- Mandatory lender participation
+- ELT exception reasons
+- Electronic lien satisfactions
+- E-title printing
+- Electronic title transfers
+- Non-ELT lienholders
+- ELT service providers
+- Repossessions involving ELT titles
+
+Applies to:
+- Motor vehicles
+- Vessels
+- Mobile homes
+- Lienholders
+- Dealers
+- Tax collectors
+- License plate agencies
+- ELT providers
+- FLHSMV personnel
+
+==================================================
+AI CLASSIFICATION TAGS
+==================================================
+
+KEYWORDS:
+- ELT
+- electronic lien and title
+- electronic title
+- e-title
+- ELT lienholder
+- non-ELT lienholder
+- electronic lien
+- lien satisfaction
+- HSMV 82150
+- HSMV 82994
+- HSMV 82092
+- electronic title transfer
+- electronic title print
+- print electronic title
+- fast title
+- mailed title
+- ELT provider
+- title held electronically
+- ELT exception reason
+- repossession ELT
+- lien reassignment
+- electronic title status
+- mandatory ELT
+- e-title conversion
+- ELT account number
+- title pending flag
+- MVCheck
+- electronic title database
+- non-ELT reasons
+- pre-existing out-of-state lien
+
+COMMON USER QUESTIONS:
+- "What is ELT?"
+- "What is an electronic title?"
+- "When is ELT mandatory?"
+- "How do lienholders enroll?"
+- "Can paper title still be printed?"
+- "What is ELT exception reason?"
+- "How does repossession work with ELT?"
+- "Can dealer transfer electronic title?"
+- "How do I print an e-title?"
+- "What happens after lien satisfied?"
+- "Do out-of-state lienholders need ELT?"
+- "Can non-ELT lienholders exist?"
+- "What is HSMV 82150?"
+- "What is HSMV 82994 used for?"
+- "How does fast title work with e-title?"
+
+==================================================
+LEGAL AUTHORITY
+==================================================
+
+Governed by:
+- 319.24(8) FS
+- 319.27(7) FS
+- 319.40(2) FS
+- 328.15(3)(b) FS
+- 328.30(2) FS
+
+==================================================
+DESCRIPTION AND USE
+==================================================
+
+Procedure explains:
+- Florida ELT program
+- Electronic lien processing
+- Electronic title handling
+- ELT enrollment
+- E-title transfer procedures
+- ELT exception handling
+
+==================================================
+GENERAL INFORMATION
+==================================================
+
+All titles with liens:
+Held electronically.
+
+==================================================
+VERY IMPORTANT LIEN TRANSMISSION RULE
+==================================================
+
+Lien notifications and satisfactions:
+Must be transmitted electronically:
+Between:
+FLHSMV and lienholder.
+
+==================================================
+VERY IMPORTANT MANDATORY PARTICIPATION RULE
+==================================================
+
+Most lienholders:
+Required to participate:
+In ELT program.
+
+==================================================
+VERY IMPORTANT DEFAULT ELECTRONIC TITLE RULE
+==================================================
+
+Beginning:
+January 1, 2013:
+Titles without liens:
+Default to electronic titles.
+
+==================================================
+VERY IMPORTANT CUSTOMER REQUEST RULE
+==================================================
+
+Paper title printed:
+ONLY if customer:
+Explicitly requests paper title.
+
+==================================================
+VERY IMPORTANT E-TITLE RULE
+==================================================
+
+Electronic title:
+Exists only in:
+Department database.
+
+==================================================
+VERY IMPORTANT ELT BENEFIT RULE
+==================================================
+
+ELT program reduces:
+- Paper title handling
+- Mailing costs
+- Storage costs
+- Fraud risk
+
+==================================================
+PARTICIPATING LIENHOLDER BENEFITS
+==================================================
+
+ELT lienholders no longer:
+- Retrieve paper titles
+- Physically sign off liens
+- Mail titles to customers
+- Request duplicate titles
+
+==================================================
+MANDATORY PARTICIPATION REQUIREMENTS
+==================================================
+
+Businesses regularly financing:
+Vehicles or vessels:
+Must participate in ELT.
+
+==================================================
+VERY IMPORTANT EXEMPTION RULE
+==================================================
+
+Individuals not regularly financing vehicles:
+Exempt from ELT participation.
+
+==================================================
+VERY IMPORTANT NON-ELT RULE
+==================================================
+
+Non-ELT lienholder:
+Requires:
+ELT exception reason.
+
+==================================================
+VERY IMPORTANT EXISTING LIEN RULE
+==================================================
+
+Existing non-ELT liens:
+Also require:
+ELT exception reason.
+
+==================================================
+VERY IMPORTANT OUT-OF-STATE RULE
+==================================================
+
+Out-of-state lienholders:
+Financing Florida-titled vehicles:
+Must participate in ELT.
+
+==================================================
+VERY IMPORTANT SERVICE PROVIDER RULE
+==================================================
+
+Lenders must contract:
+With FLHSMV-approved:
+ELT service provider.
+
+==================================================
+VERY IMPORTANT ELT PROVIDER RULE
+==================================================
+
+ELT provider:
+Must have:
+Written agreement with FLHSMV.
+
+==================================================
+VERY IMPORTANT SURETY BOND RULE
+==================================================
+
+ELT service providers:
+Must secure:
+Surety bond and power of attorney.
+
+==================================================
+ENROLLMENT PROCESS
+==================================================
+
+Lender enrollment requires:
+1. Select ELT provider
+2. Complete HSMV 82150
+3. Submit to provider
+4. Install software/hardware
+5. Receive startup date
+
+==================================================
+VERY IMPORTANT HSMV 82150 RULE
+==================================================
+
+Required enrollment form:
+Application and Notice of Interest – Electronic Lien and Title Process
+HSMV 82150.
+
+==================================================
+VERY IMPORTANT ACCOUNT NUMBER RULE
+==================================================
+
+FLHSMV assigns:
+ELT account number:
+To lienholder.
+
+==================================================
+VERY IMPORTANT SERVICE PROVIDER ROLE RULE
+==================================================
+
+Service provider:
+Matches transactions
+AND
+Maintains records.
+
+==================================================
+VERY IMPORTANT SATISFACTION RULE
+==================================================
+
+Lien satisfactions:
+Must be transmitted electronically:
+To FLHSMV.
+
+==================================================
+VERY IMPORTANT SOLE LIEN RULE
+==================================================
+
+When sole remaining lien satisfied:
+Department sends owner:
+Electronic title notification letter.
+
+==================================================
+VERY IMPORTANT ELECTRONIC RETENTION RULE
+==================================================
+
+Title remains electronic:
+Until owner requests:
+Paper title.
+
+==================================================
+VERY IMPORTANT REMAINING LIEN RULE
+==================================================
+
+If another lien remains:
+Title stays electronic.
+
+==================================================
+VERY IMPORTANT PRIMARY LIENHOLDER RULE
+==================================================
+
+If primary lienholder:
+ELT participant:
+Electronic title sent electronically.
+
+==================================================
+VERY IMPORTANT NON-ELT LETTER RULE
+==================================================
+
+Non-ELT lienholder:
+Receives letter:
+Explaining title held electronically.
+
+==================================================
+HOW E-TITLE PROCESS WORKS
+==================================================
+
+All titles:
+Remain electronic:
+Until printing requested.
+
+==================================================
+VERY IMPORTANT PRINT REQUEST RULE
+==================================================
+
+Owner may request:
+Printed paper title:
+At any time.
+
+==================================================
+VERY IMPORTANT MAIL FEE RULE
+==================================================
+
+Fee to convert e-title to mailed paper title:
+$2.50
+
+==================================================
+VERY IMPORTANT FAST TITLE RULE
+==================================================
+
+Fast title available:
+At participating tax collectors:
+For:
+$10.00
+
+==================================================
+VERY IMPORTANT SAME DOCUMENT RULE
+==================================================
+
+Electronic titles:
+Require same documentation:
+As paper titles.
+
+==================================================
+VERY IMPORTANT DATABASE PROCESSING RULE
+==================================================
+
+Electronic title processing:
+Entered into:
+Department database:
+Same as paper title.
+
+==================================================
+REPOSSESSION RULES
+==================================================
+
+Repossession procedures:
+Generally unchanged.
+
+==================================================
+VERY IMPORTANT REPOSSESSION TRANSFER RULE
+==================================================
+
+When repossession selected:
+System:
+- Deletes lien
+- Transfers ownership to lienholder
+- Allows fast or mailed title
+
+==================================================
+VERY IMPORTANT ELT REASSIGNMENT RULE
+==================================================
+
+Repossession with lien reassignment:
+NOT allowed:
+With primary ELT lien:
+Until title converted to paper.
+
+==================================================
+VERY IMPORTANT NON-ELT REASSIGNMENT RULE
+==================================================
+
+Repossession reassignment:
+Allowed:
+With primary non-ELT lien.
+
+==================================================
+VERY IMPORTANT ROUNDABOUT REASSIGNMENT RULE
+==================================================
+
+To process reassignment:
+User must:
+- Perform title transfer
+- Answer NO to repossession
+- Reassign lien
+- Change owner
+- Delete lien
+
+==================================================
+BENEFITS OF ELT PROGRAM
+==================================================
+
+Benefits include:
+- Reduced title fraud
+- Less paper usage
+- Faster lien notifications
+- Less storage
+- Expedited title printing
+- Better customer service
+- Reduced costs
+
+==================================================
+MISCELLANEOUS INFORMATION
+==================================================
+
+When title status:
+"Electronic":
+Special reassignment procedures apply.
+
+==================================================
+VERY IMPORTANT HSMV 82994 RULE
+==================================================
+
+Florida dealer trade-ins:
+Require:
+HSMV 82994.
+
+==================================================
+VERY IMPORTANT DEALER REASSIGNMENT RULE
+==================================================
+
+Dealer must complete:
+Additional HSMV 82994:
+When reselling to Florida resident.
+
+==================================================
+VERY IMPORTANT OUT-OF-STATE BUYER RULE
+==================================================
+
+Dealer selling to out-of-state buyer:
+Must request:
+Printed certificate of title.
+
+==================================================
+VERY IMPORTANT TITLE PRINT TIMING RULE
+==================================================
+
+Paper titles:
+Generally mailed:
+Within 2 days.
+
+==================================================
+VERY IMPORTANT TITLE HISTORY RULE
+==================================================
+
+Printing paper title:
+Does NOT change:
+Original issue date.
+
+==================================================
+VERY IMPORTANT PROCESS DATE RULE
+==================================================
+
+Process history:
+Updates:
+To reflect print date.
+
+==================================================
+VERY IMPORTANT ELECTRONIC TRANSFER RULE
+==================================================
+
+Electronic title transfer:
+Requires:
+Buyer and seller reassignment.
+
+==================================================
+VERY IMPORTANT VESSEL/MOBILE HOME RULE
+==================================================
+
+Vessels and mobile homes:
+May use:
+HSMV 82092:
+Instead of HSMV 82994.
+
+==================================================
+VERY IMPORTANT ODOMETER RULE
+==================================================
+
+HSMV 82092:
+Allowed when:
+- Odometer not required
+OR
+- Odometer exempt.
+
+==================================================
+VERY IMPORTANT LIEN CORRECTION RULE
+==================================================
+
+Electronic title lien corrections:
+See:
+TL-04.
+
+==================================================
+ELT EXCEPTION REASONS
+==================================================
+
+Valid ELT exception reasons:
+- Individual lienholder
+- Multi-individual business customer
+- Pre-existing out-of-state lien
+- Government entity
+- Trust
+- Court ordered lien
+- Delinquent support lien
+- Lien received prior to 2/9/2013
+- Infrequent business lienholder
+
+==================================================
+VERY IMPORTANT INFREQUENT BUSINESS RULE
+==================================================
+
+Business non-ELT lienholder:
+Maximum:
+2 liens:
+Within 12 months.
+
+==================================================
+VERY IMPORTANT PRE-2013 RULE
+==================================================
+
+Pre-2/9/2013 liens:
+May use:
+Historical exception reason.
+
+==================================================
+VERY IMPORTANT EFS RULE
+==================================================
+
+EFS providers:
+May only select:
+ELT lienholders.
+
+==================================================
+VERY IMPORTANT NON-ELT REPORT RULE
+==================================================
+
+Non-ELT Liens Report:
+Used for supervisor monitoring.
+
+==================================================
+VERY IMPORTANT PRE-EXISTING LIEN RULE
+==================================================
+
+Out-of-state lien:
+If lienholder not ELT:
+Use:
+"Pre-existing out-of-state lien" exception.
+
+==================================================
+VERY IMPORTANT PAPER TITLE RULE
+==================================================
+
+Using pre-existing out-of-state lien exception:
+Causes paper title:
+To be mailed to lienholder.
+
+==================================================
+VERY IMPORTANT HELPDESK RULE
+==================================================
+
+Helpdesk may assist:
+In determining:
+Lienholder ELT status.
+
+==================================================
+VERY IMPORTANT CUSTOMER NUMBER RULE
+==================================================
+
+FLHSMV customer number:
+Used as:
+ELT account number.
+
+==================================================
+VERY IMPORTANT ADDRESS RULE
+==================================================
+
+Must use:
+ELT customer record:
+Even if address differs from application.
+
+==================================================
+VERY IMPORTANT NON-ELT NOTICE RULE
+==================================================
+
+Non-ELT lienholder:
+Receives letter:
+Confirming lien recorded electronically.
+
+==================================================
+VERY IMPORTANT MVCHECK RULE
+==================================================
+
+MVCheck:
+Displays:
+- Lien information
+- Electronic title status
+
+==================================================
+AI DECISION LOGIC
+==================================================
+
+AI should determine:
+1. Is lienholder mandatory ELT participant?
+2. Does exception reason apply?
+3. Is lienholder out-of-state?
+4. Is lienholder financing regularly?
+5. Is HSMV 82150 required?
+6. Is electronic title active?
+7. Should paper title print?
+8. Is fast title eligible?
+9. Is repossession involved?
+10. Is lien reassignment prohibited?
+11. Is title transfer electronic?
+12. Is dealer using HSMV 82994?
+13. Is vessel/mobile home using HSMV 82092?
+14. Does non-ELT reporting apply?
+15. Is electronic satisfaction required?
+16. Does title remain electronic?
+17. Should title mail to lienholder?
+18. Does infrequent business rule apply?
+19. Is title correction under TL-04 required?
+20. Is MVCheck verification needed?
+
+==================================================
+COMMON TITLE CLERK ERRORS
+==================================================
+
+- Missing ELT participation requirement
+- Using wrong ELT exception reason
+- Incorrectly adding non-ELT lienholder
+- Forgetting HSMV 82150
+- Improper electronic title reassignment
+- Incorrect repossession handling
+- Failing to print title for out-of-state buyer
+- Missing HSMV 82994
+- Using wrong ELT customer
+- Ignoring FLHSMV customer number
+- Incorrect paper title conversion
+- Mishandling non-ELT repossessions
+- Forgetting electronic satisfaction requirements
+- Incorrect fast title assumptions
+
+==================================================
+VERY IMPORTANT CORE CONCEPT
+==================================================
+
+Florida’s ELT system:
+Requires most liens and titles:
+To exist electronically,
+with electronic lien transmission,
+satisfaction,
+and title management replacing traditional paper title handling.
+
+==================================================
+RELATED FORMS
+==================================================
+
+- HSMV 82150
+- HSMV 82994
+- HSMV 82092
+- HSMV 82040
+- HSMV 82041
+- HSMV 82260
+
+==================================================
+RELATED PROCEDURES
+==================================================
+
+- TL-01
+- TL-04
+- TL-10
+- TL-11
+
+==================================================
+RELATED SYSTEMS
+==================================================
+
+- MyDMV Portal
+- MVCheck
+- Motor Vehicle Issuance System
+
+==================================================
+REFERENCE NOTES
+==================================================
+
+Current revision:
+- 11/2025
+
+Primary focus:
+- Electronic lien/title processing
+- Mandatory ELT participation
+- E-title transfers
+- Electronic lien satisfactions
+- ELT exception management

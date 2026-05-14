@@ -1,0 +1,837 @@
+FLORIDA REGISTRATION PROCEDURE — PERSONALIZED LICENSE PLATES
+PROCEDURE: RS-27
+CATEGORY: PERSONALIZED PLATES / SPECIALTY PERSONALIZATION / RESERVED PLATES
+
+==================================================
+PROCEDURE SUMMARY
+==================================================
+
+This procedure governs:
+- Personalized license plate issuance
+- Personalized specialty plates
+- Personalized reservation processing
+- Personalized renewal and transfer
+- Personalized replacement plates
+- Personalized relinquishment/reissuance
+- Obscene/objective plate review
+- Personalized plate manufacturing
+- Personalized plate eligibility
+- Personalized configuration rules
+
+Applies to:
+- Florida vehicle owners
+- Vehicle lessees
+- Tax collectors
+- License plate agencies
+- Inventory Control Unit
+- FLHSMV personnel
+- PRIDE manufacturing facility
+
+==================================================
+AI CLASSIFICATION TAGS
+==================================================
+
+KEYWORDS:
+- personalized plate
+- vanity plate
+- custom plate
+- reserved plate
+- HSMV 83043
+- HSMV 83146
+- personalized specialty plate
+- personalized motorcycle plate
+- personalized replacement
+- personalized transfer
+- personalized reservation
+- personalized relinquishment
+- personalized reissuance
+- personalized stolen plate
+- personalized lost plate
+- personalized damaged plate
+- personalized seized plate
+- personalized lost in transit
+- obscene plate review
+- objectionable plate
+- FCIC personalized plate
+- Inventory Control Unit
+- PRIDE manufacturing
+- personalized plate explanation
+- reserved plate explanation
+- left design personalized
+- center design personalized
+- personalized asterisk spacing
+- personalized plate characters
+- personalized plate O versus zero
+- amateur radio personalized motorcycle
+- apportioned personalization prohibition
+- dual truck plate prohibition
+- restricted plate prohibition
+- wrecker plate prohibition
+- semiannual registration prohibition
+- personalized trailer plate
+- personalized Florida Graphic plate
+- personalized motorcycle specialty
+- personalized renewal
+- personalized expiration
+- personalized surrender rights
+- personalized 45 day manufacturing
+- personalized specialty inventory codes
+- personalized complaints
+- personalized recall
+- personalized rejection
+- personalized license plate inventory code
+- personalized spacing rules
+
+COMMON USER QUESTIONS:
+- "How many characters can personalized plate have?"
+- "Can specialty plates be personalized?"
+- "Can apportioned plates be personalized?"
+- "What forms are required?"
+- "What if someone else had the plate before?"
+- "Can trailers have personalized plates?"
+- "What happens if personalized plate is stolen?"
+- "Can I keep same personalized plate?"
+- "What if my personalized plate is objectionable?"
+- "How long does manufacturing take?"
+- "What if plate has letter O?"
+- "How do asterisks work?"
+- "Can motorcycles get personalized plates?"
+- "Can amateur radio callsigns be personalized?"
+- "What happens if personalized plate expires?"
+
+==================================================
+LEGAL AUTHORITY
+==================================================
+
+Governed by:
+- 320.0805 FS
+
+==================================================
+DESCRIPTION AND USE
+==================================================
+
+Procedure explains:
+- Personalized plate issuance
+- Reservation rules
+- Character restrictions
+- Specialty personalization rules
+- Replacement procedures
+
+==================================================
+VERY IMPORTANT CORE RULE
+==================================================
+
+Personalized license plates:
+May issue:
+To owners or lessees:
+Of eligible vehicles:
+Subject to character,
+eligibility,
+and approval restrictions.
+
+==================================================
+APPLICATION REQUIREMENTS
+==================================================
+
+Require:
+HSMV 83043:
+Application for Personalized License Plate.
+
+==================================================
+VERY IMPORTANT CONFIRMATION PAGE RULE
+==================================================
+
+If customer physically present:
+Signed confirmation page:
+May replace HSMV 83043.
+
+==================================================
+VERY IMPORTANT INSURANCE RULE
+==================================================
+
+Proof of Florida insurance required.
+
+==================================================
+VERY IMPORTANT RS-36 RULE
+==================================================
+
+Insurance requirements:
+Governed by:
+RS-36.
+
+==================================================
+VERY IMPORTANT MANUFACTURING TIME RULE
+==================================================
+
+Minimum:
+45 workdays:
+Required:
+For manufacturing:
+After order received by PRIDE.
+
+==================================================
+VERY IMPORTANT ADVANCED REGISTRATION RULE
+==================================================
+
+Applications made:
+During advanced registration period:
+May issue:
+For following year expiration.
+
+==================================================
+PERSONALIZED CONFIGURATION RULES
+==================================================
+
+Center design plates:
+Maximum:
+7 characters:
+Plus optional space/hyphen.
+
+==================================================
+VERY IMPORTANT LEFT DESIGN RULE
+==================================================
+
+Left design plates:
+Maximum:
+5 characters:
+Including spaces/hyphens.
+
+==================================================
+VERY IMPORTANT LETTER O RULE
+==================================================
+
+System converts:
+Letter O:
+To:
+Number 0.
+
+==================================================
+VERY IMPORTANT ZERO RULE
+==================================================
+
+Florida personalized plates:
+Do NOT use:
+Letter O.
+
+Use:
+Number 0 instead.
+
+==================================================
+AMATEUR RADIO RULE
+==================================================
+
+Amateur radio call letters:
+Not authorized:
+As personalized plates.
+
+==================================================
+VERY IMPORTANT MOTORCYCLE AMATEUR RULE
+==================================================
+
+Exception:
+Motorcycles:
+May use amateur radio call letters.
+
+==================================================
+VERY IMPORTANT RS-21 RULE
+==================================================
+
+Amateur radio procedures:
+Governed by:
+RS-21.
+
+==================================================
+VEHICLES NOT ELIGIBLE FOR PERSONALIZATION
+==================================================
+
+Cannot personalize:
+- Apportioned vehicles
+- Restricted plates
+- Wrecker plates
+- Dual truck plate vehicles
+- Semiannual registration vehicles
+
+==================================================
+VERY IMPORTANT MOTORCYCLE RULE
+==================================================
+
+Motorcycle personalized plates:
+Available ONLY as:
+- Florida Graphic
+OR
+- Motorcycle Specialty.
+
+==================================================
+VERY IMPORTANT TRAILER RULE
+==================================================
+
+Trailers:
+May receive:
+Personalized plates.
+
+==================================================
+OBSCENE / OBJECTIVE REVIEW RULES
+==================================================
+
+Inventory Control Unit:
+Reviews:
+All personalized configurations.
+
+==================================================
+VERY IMPORTANT MANAGEMENT REVIEW RULE
+==================================================
+
+Questionable configurations:
+Reviewed by management:
+For:
+- Approval
+- Rejection
+- Recall
+
+==================================================
+REJECTION RULES
+==================================================
+
+If rejected:
+Customer receives:
+- Refund check
+- Cancellation notice
+- Instructions for replacement plate.
+
+==================================================
+RECALL RULES
+==================================================
+
+If recalled after issuance:
+Customer receives:
+- Refund
+- Regular graphic plate
+- Instructions for replacement.
+
+==================================================
+COMPLAINT RULES
+==================================================
+
+Complaints sent to:
+
+Division of Motorist Services
+License Plate/Registration Review MS-74
+2900 Apalachee Parkway
+Tallahassee FL 32399-0500
+
+==================================================
+RESERVATION RULES
+==================================================
+
+Reservation screen:
+Must include:
+Customer explanation:
+For personalization meaning.
+
+==================================================
+VERY IMPORTANT EXPLANATION RULE
+==================================================
+
+Failure to provide valid explanation:
+More than 3 times:
+May suspend clerk login.
+
+==================================================
+VERY IMPORTANT PROCESSED BY MAIL RULE
+==================================================
+
+For mailed 10-year replacement:
+Use:
+"Processed by Mail"
+In explanation field.
+
+==================================================
+VERY IMPORTANT CHARACTER ENTRY RULE
+==================================================
+
+Characters:
+Must be carefully entered:
+Exactly as desired:
+For PRIDE manufacturing.
+
+==================================================
+VERY IMPORTANT ASTERISK RULE
+==================================================
+
+Asterisks:
+Control spacing:
+On personalized plates.
+
+==================================================
+CENTER DESIGN ASTERISK RULES
+==================================================
+
+To cover center design:
+Place asterisks:
+Before and after wording.
+
+Example:
+**TEST**
+
+==================================================
+VERY IMPORTANT CENTER GAP RULE
+==================================================
+
+To avoid covering center design:
+Place asterisks:
+Within wording.
+
+Example:
+TES**TER
+
+==================================================
+LEFT DESIGN ASTERISK RULES
+==================================================
+
+Extra left-side spacing:
+Use:
+Leading asterisk.
+
+Example:
+*TEST
+
+==================================================
+VERY IMPORTANT RIGHT SPACING RULE
+==================================================
+
+Extra right-side spacing:
+Use:
+Trailing asterisk.
+
+Example:
+TEST*
+
+==================================================
+VERY IMPORTANT PRIDE RULE
+==================================================
+
+PRIDE manufactures plates:
+Exactly:
+"As Seen"
+On reservation screen.
+
+==================================================
+VOIDED TRANSACTION RULE
+==================================================
+
+Voided personalized transactions:
+Must be verified:
+To ensure cancellation occurred.
+
+==================================================
+VERY IMPORTANT INVENTORY FAX RULE
+==================================================
+
+If void failed:
+Fax voided transaction:
+To Inventory:
+850-617-5145.
+
+==================================================
+EXPIRATION / REISSUANCE RULES
+==================================================
+
+If personalized plate:
+Expired over one year:
+Different customer:
+May reserve same plate.
+
+==================================================
+VERY IMPORTANT OWNER RIGHTS RULE
+==================================================
+
+Original owner:
+May relinquish rights:
+In writing.
+
+==================================================
+ORDER PROCESSING RULES
+==================================================
+
+FLHSMV:
+Generates all personalized orders.
+
+==================================================
+VERY IMPORTANT COUNTY CONTACT RULE
+==================================================
+
+County offices:
+Must NOT directly contact PRIDE:
+For status or priority orders.
+
+==================================================
+INCORRECT MANUFACTURING RULES
+==================================================
+
+Incorrectly manufactured plates:
+Require:
+- HSMV 83043
+- Incorrect plate copy
+- Confirmation form
+- Registration certificate
+
+==================================================
+VERY IMPORTANT CUSTOMER ERROR RULE
+==================================================
+
+Incorrect customer-requested configuration:
+Requires:
+New reservation:
+Using:
+"Customer Request"
+Reason code.
+
+==================================================
+DELIVERY RULES
+==================================================
+
+Personalized plates:
+Delivered:
+To county office:
+For issuance.
+
+==================================================
+VERY IMPORTANT CREDIT PLATE RULE
+==================================================
+
+When new personalized plate issued:
+Customer:
+No longer required:
+To surrender credit plate.
+
+==================================================
+RENEWAL / TRANSFER RULES
+==================================================
+
+Renewals and transfers:
+May process:
+At county offices.
+
+==================================================
+EXPIRATION RULE
+==================================================
+
+Personalized plate:
+Uses same expiration:
+As prior plate.
+
+==================================================
+REPLACEMENT RULES — STOLEN
+==================================================
+
+If personalized plate stolen:
+Different configuration:
+May issue:
+At no charge.
+
+==================================================
+VERY IMPORTANT SAME CONFIGURATION STOLEN RULE
+==================================================
+
+To replace with SAME configuration:
+Must provide:
+Proof plate removed from FCIC file.
+
+==================================================
+VERY IMPORTANT LS CODE RULE
+==================================================
+
+If removed from FCIC:
+Replacement uses:
+Reason code:
+LS.
+
+==================================================
+REPLACEMENT RULES — LOST
+==================================================
+
+Lost personalized plates:
+May replace:
+With same characters:
+Fees required.
+
+==================================================
+REPLACEMENT RULES — DEFACED / DAMAGED
+==================================================
+
+Defaced/damaged plates:
+May replace:
+With same characters.
+
+==================================================
+VERY IMPORTANT CITATION RULE
+==================================================
+
+If law enforcement citation issued:
+Copy of citation:
+May waive replacement fee.
+
+==================================================
+VERY IMPORTANT TEMPORARY PLATE RULE
+==================================================
+
+Temporary plate:
+May issue:
+For up to 90 days:
+While waiting on replacement.
+
+==================================================
+REPLACEMENT RULES — SEIZED
+==================================================
+
+Seized personalized plates:
+Require:
+New reservation
+And replacement fees.
+
+==================================================
+VERY IMPORTANT SEIZED RULE
+==================================================
+
+Insurance status:
+Does NOT matter:
+For seized replacement requirement.
+
+==================================================
+REPLACEMENT REQUIREMENTS
+==================================================
+
+Require:
+- HSMV 83043 if new choice
+- HSMV 83146
+- Current registration copy
+- Applicable fees
+
+==================================================
+VERY IMPORTANT STOLEN CERTIFICATION RULE
+==================================================
+
+If stolen:
+No replacement fee:
+When customer certifies:
+Law enforcement report made.
+
+==================================================
+REPLACEMENT RULES — LOST IN TRANSIT
+==================================================
+
+Lost-in-transit replacements:
+May issue:
+At no charge:
+Within 180 days of issuance.
+
+==================================================
+VERY IMPORTANT LOST-IN-TRANSIT RULE
+==================================================
+
+Require:
+HSMV 83146.
+
+==================================================
+RELINQUISHMENT / REISSUANCE RULES
+==================================================
+
+Personalized plate rights:
+May be relinquished:
+To another customer.
+
+==================================================
+VERY IMPORTANT SURRENDER RULE
+==================================================
+
+Original owner:
+Must surrender plate:
+For cancellation.
+
+==================================================
+VERY IMPORTANT SIGNED STATEMENT RULE
+==================================================
+
+Original owner:
+Must provide:
+Signed statement:
+Relinquishing rights.
+
+==================================================
+VERY IMPORTANT NO NOTARY RULE
+==================================================
+
+Relinquishment statements:
+Do NOT require:
+Notary or perjury clause.
+
+==================================================
+VERY IMPORTANT NEW CUSTOMER RULE
+==================================================
+
+New customer:
+Must:
+- Title/register vehicle
+- Complete HSMV 83043
+- Provide Florida insurance
+- Pay applicable fees
+
+==================================================
+SPECIALTY PERSONALIZATION RULES
+==================================================
+
+Only inventory codes ending in:
+"P"
+Eligible:
+For personalization.
+
+==================================================
+VERY IMPORTANT NON-ELIGIBLE INVENTORY RULE
+==================================================
+
+Non-personalizable inventory examples:
+- Antique
+- Indefinite
+- Dealer
+- Manufacturer
+- IRP
+- Temporary
+- Restricted
+- Wrecker
+- Tribal plates
+- Transporter
+- X-Series
+- Permanent plates
+
+==================================================
+VERY IMPORTANT SPECIALTY CHARACTER RULE
+==================================================
+
+Different specialty plates:
+Have different maximum character counts.
+
+==================================================
+EXAMPLES OF SPECIALTY PERSONALIZATION
+==================================================
+
+Examples include:
+- Disabled Veteran
+- Purple Heart
+- Gold Star
+- Specialty conservation plates
+- Collegiate plates
+- Professional sports plates
+- Military plates
+- Motorcycle specialty plates
+
+==================================================
+VERY IMPORTANT NEW SPECIALTY PLATES RULE
+==================================================
+
+2025 additions include:
+- Inter Miami CF
+- Margaritaville
+- Protect Biscayne Bay
+- Protect the Gopher Tortoise
+
+==================================================
+AI DECISION LOGIC
+==================================================
+
+AI should determine:
+1. Is vehicle eligible for personalization?
+2. Is inventory code eligible?
+3. Is character count valid?
+4. Is plate left-design or center-design?
+5. Should asterisks be used?
+6. Is letter O improperly used?
+7. Is Florida insurance verified?
+8. Is HSMV 83043 required?
+9. Is HSMV 83146 required?
+10. Is obscene/objective review required?
+11. Is explanation field completed?
+12. Is reservation expired over one year?
+13. Is FCIC removal proof required?
+14. Is stolen replacement free?
+15. Is temporary plate needed?
+16. Is relinquishment statement required?
+17. Is motorcycle personalization valid?
+18. Does RS-21 apply?
+19. Does RS-36 apply?
+20. Is replacement lost-in-transit eligible?
+
+==================================================
+COMMON TITLE CLERK / REGISTRATION ERRORS
+==================================================
+
+- Using letter O instead of zero
+- Exceeding character limits
+- Incorrect asterisk placement
+- Missing explanation field
+- Missing HSMV 83043
+- Missing HSMV 83146
+- Issuing personalization on prohibited inventory
+- Allowing IRP personalization
+- Incorrect FCIC stolen processing
+- Failing to verify one-year expiration
+- Missing signed relinquishment statement
+- Contacting PRIDE directly
+- Incorrect replacement reason codes
+- Missing Florida insurance
+- Improper motorcycle personalization
+- Incorrect spacing for center design plates
+
+==================================================
+VERY IMPORTANT CORE CONCEPT
+==================================================
+
+Florida personalized license plates:
+Allow customized alphanumeric configurations
+on eligible registrations and specialty plates,
+while requiring strict compliance with:
+- character limitations
+- spacing configuration rules
+- inventory eligibility
+- insurance verification
+- replacement documentation
+and state review of objectionable content.
+
+==================================================
+RELATED PROCEDURES
+==================================================
+
+- RS-06
+- RS-21
+- RS-36
+- RS-53
+
+==================================================
+RELATED FORMS
+==================================================
+
+- HSMV 83043
+- HSMV 83146
+
+==================================================
+RELATED ENTITIES
+==================================================
+
+- FLHSMV
+- Inventory Control Unit
+- PRIDE
+- FCIC
+- County License Plate Agencies
+
+==================================================
+REFERENCE NOTES
+==================================================
+
+Current revision:
+10/2025
+
+Primary focus:
+- Personalized plate reservations
+- Personalized configuration rules
+- Specialty personalization
+- Replacement and relinquishment procedures
+- Obscene/objective review process

@@ -1,0 +1,363 @@
+FLORIDA TITLE PROCEDURE — TRANSFER OF CERTIFICATE OF TITLE INVOLVING GUARDIANSHIP
+PROCEDURE: TL-20
+CATEGORY: TITLE TRANSFERS / GUARDIANSHIP / COURT ORDER
+RELATED STATUTES:
+- Chapter 744 Florida Statutes
+
+==================================================
+PROCEDURE SUMMARY
+==================================================
+
+This procedure governs title transactions involving motor vehicles or mobile homes owned by a person under guardianship.
+
+A guardian may NOT:
+- Purchase
+- Sell
+- Transfer
+- Record liens
+
+against a vehicle or mobile home UNLESS authorized by court order or guardianship authority.
+
+The procedure establishes requirements for:
+- Florida title transfers
+- Out-of-state title transfers
+- Duplicate titles
+- Court-authorized transfers
+- Guardian authority verification
+
+Applies to:
+- Motor vehicles
+- Mobile homes
+
+==================================================
+AI CLASSIFICATION TAGS
+==================================================
+
+KEYWORDS:
+- guardianship
+- guardian
+- ward
+- incompetent owner
+- plenary guardian
+- guardian ad litem
+- successor guardian
+- conservator
+- court appointed guardian
+- guardian transfer
+- title transfer guardianship
+- guardian title
+- incapacitated owner
+- duplicate title guardian
+- court authorization
+
+COMMON USER QUESTIONS:
+- "Customer under guardianship"
+- "Guardian selling vehicle"
+- "Need court order for title transfer"
+- "Guardian applying for duplicate title"
+- "Plenary guardianship"
+- "Temporary guardian transfer"
+- "Guardian ad litem"
+- "Incompetent owner vehicle"
+
+==================================================
+INITIAL CLASSIFICATION LOGIC
+==================================================
+
+FIRST DETERMINE:
+
+1. Is the unit:
+- Motor vehicle
+- Mobile home
+
+2. Is ownership:
+- Florida title
+- Out-of-state title
+
+3. Is title:
+- Available
+- Lost
+- Destroyed
+- Missing
+
+4. What type of guardian authority exists:
+- Plenary guardian
+- Limited guardian
+- Guardian ad litem
+- Successor guardian
+- Conservator
+
+5. Is there:
+- Court order authorizing transaction
+- Letters of guardianship
+- Specific lien authorization
+- Purchase authorization
+- Sale authorization
+
+==================================================
+IMPORTANT LEGAL RULE
+==================================================
+
+Guardians may NOT:
+- Purchase
+- Sell
+- Transfer
+- Record liens
+
+WITHOUT court authorization.
+
+Guardian authority must be verified before processing transaction.
+
+==================================================
+FLORIDA TITLE AVAILABLE
+==================================================
+
+IF FLORIDA TITLE IS AVAILABLE:
+
+REQUIRED:
+- Florida certificate of title completed for transfer
+- Guardian documentation
+- Court authorization
+- Sales tax information
+- Registration/decal information
+- Title fees
+
+==================================================
+ACCEPTABLE GUARDIAN DOCUMENTS
+==================================================
+
+ONE OF THE FOLLOWING REQUIRED:
+
+- Letters of guardianship
+- Court order appointing guardian ad litem
+- Order appointing successor guardian
+- Conservator appointment for estate
+
+==================================================
+COURT ORDER REQUIREMENTS
+==================================================
+
+A court order authorizing the following is required:
+
+- Purchase
+- Sale
+- Transfer
+- Recording of lien
+
+IF the court order includes:
+- Guardian name
+AND
+- Authorization details
+
+THEN separate guardian appointment paperwork may not be required.
+
+==================================================
+PLENARY GUARDIANSHIP RULE
+==================================================
+
+IMPORTANT:
+
+Plenary guardianship usually grants:
+- Full legal authority
+- Complete powers over property
+- Authority to transfer or sell vehicles
+
+IF plenary authority clearly exists:
+- Separate court order may NOT be required.
+
+==================================================
+TEMPORARY GUARDIANSHIP RULE
+==================================================
+
+IMPORTANT:
+
+Temporary guardianship ALONE does NOT authorize:
+- Purchase
+- Sale
+- Transfer
+- Lien recording
+
+WITHOUT specific court order.
+
+==================================================
+REGISTRATION REQUIREMENTS
+==================================================
+
+MOTOR VEHICLES:
+- Florida plate transfer/purchase
+OR
+- Non-use affidavit
+
+MOBILE HOMES:
+- Mobile home decal
+OR
+- RP decal
+
+IMPORTANT:
+Non-use affidavit NOT acceptable for mobile homes.
+
+==================================================
+DUPLICATE TITLE PROCEDURES
+==================================================
+
+IF FLORIDA TITLE NOT AVAILABLE:
+
+REQUIRED:
+- HSMV 82101
+- Guardian signs application
+- Application completed in owner name
+- Guardian address used for mailing
+- Guardian proof of identification
+- Court documentation
+
+IMPORTANT:
+Duplicate title should be mailed to guardian — not owner.
+
+Court order serves as address verification.
+
+==================================================
+OUT-OF-STATE TITLE PROCEDURES
+==================================================
+
+REQUIRED:
+- Out-of-state title or registration
+OR
+- Ownership/lien verification
+- HSMV title application
+- VIN verification if required
+- Guardian documentation
+- Court authorization
+- Tax information
+- Registration/decal information
+- Title fees
+
+==================================================
+ACCEPTABLE OWNERSHIP VERIFICATION
+==================================================
+
+IF OUT-OF-STATE TITLE NOT AVAILABLE:
+
+ACCEPTABLE:
+- State computer printout
+- State letterhead verification
+- Teletype verification
+- Photocopy of out-of-state title
+
+Verification must show:
+- Ownership
+- Lien status
+- State source
+
+==================================================
+VIN VERIFICATION RULES
+==================================================
+
+VIN VERIFICATION REQUIRED FOR:
+- Most out-of-state motor vehicles
+
+VIN VERIFICATION NOT REQUIRED FOR:
+- Mobile homes
+- Trailers under 2,000 lbs
+- Travel trailers
+- Camping trailers
+- Truck campers
+- Fifth-wheel recreation trailers
+
+==================================================
+ACCEPTABLE VIN VERIFICATION METHODS
+==================================================
+
+ACCEPTABLE:
+- HSMV 82042
+- Section 8 of HSMV 82040
+- Affidavit verifying VIN
+
+==================================================
+TITLE APPLICATION FORMS
+==================================================
+
+MOTOR VEHICLES:
+- HSMV 82040 MV
+
+VESSELS:
+- HSMV 82040 VS
+
+MOBILE HOMES:
+- HSMV 82040 MH
+
+==================================================
+COMMON DEALERSHIP ERRORS
+==================================================
+
+- Accepting guardian signature without court authority
+- Assuming temporary guardianship gives full authority
+- Missing court order
+- Missing letters of guardianship
+- Mailing duplicate title to owner instead of guardian
+- Missing VIN verification
+- Processing transfer without proof of guardian appointment
+- Using non-use affidavit for mobile home
+- Not verifying plenary vs limited powers
+
+==================================================
+AI RESPONSE GUIDANCE
+==================================================
+
+AI should:
+1. Identify Florida vs out-of-state ownership
+2. Determine whether title available
+3. Identify type of guardian authority
+4. Verify whether court order required
+5. Verify plenary vs limited authority
+6. Determine duplicate title requirements
+7. Verify VIN verification requirements
+8. Verify registration/decal requirements
+9. Verify taxes and fees
+10. Confirm legal authority before transfer
+
+==================================================
+DEFINITIONAL LOGIC
+==================================================
+
+GUARDIAN:
+Court-appointed person acting on behalf of ward.
+
+WARD:
+Person under guardianship.
+
+PLENARY GUARDIAN:
+Guardian with full legal authority.
+
+LIMITED GUARDIAN:
+Guardian with only specifically granted powers.
+
+GUARDIAN AD LITEM:
+Guardian appointed for legal proceeding only.
+
+SUCCESSOR GUARDIAN:
+Replacement guardian assuming duties.
+
+CONSERVATOR:
+Person protecting incompetent person's estate/property.
+
+==================================================
+RELATED PROCEDURES
+==================================================
+
+- TL-05 Address Verification
+- TL-11 Duplicate Titles
+- Court Ordered Transfers
+- Incompetent Owner Procedures
+- Power of Attorney Procedures
+
+==================================================
+IMPORTANT OPERATIONAL NOTES
+==================================================
+
+- Court authority controls transaction legality
+- Guardian authority must be verified before transfer
+- Plenary guardianship often eliminates need for separate order
+- Temporary guardianship does NOT automatically authorize transfers
+- Duplicate titles should be mailed to guardian
+- Mobile homes cannot use non-use affidavit
+- Guardian powers may be limited and must be reviewed carefully

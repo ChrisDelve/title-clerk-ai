@@ -1,0 +1,521 @@
+FLORIDA TITLE PROCEDURE — AUTONOMOUS VEHICLES
+PROCEDURE: TL-68
+CATEGORY: AUTONOMOUS VEHICLES / SPECIAL BRANDS / ADVANCED VEHICLE TECHNOLOGY
+
+==================================================
+PROCEDURE SUMMARY
+==================================================
+
+This procedure governs:
+- Autonomous vehicle titling
+- Autonomous vehicle registration
+- Autonomous vehicle branding
+- Fully autonomous vehicle operation
+- Automated driving systems
+- Insurance requirements
+- AV ownership transfers
+- AV testing operations
+- Prior autonomous branding
+- AV registration processing
+
+Applies to:
+- Autonomous vehicles
+- Fully autonomous vehicles
+- Vehicles with automated driving systems
+- Tax collectors
+- License plate agencies
+- FLHSMV personnel
+- Manufacturers
+- Research organizations
+- AV testing entities
+
+==================================================
+AI CLASSIFICATION TAGS
+==================================================
+
+KEYWORDS:
+- autonomous vehicle
+- AV
+- automated driving system
+- fully autonomous vehicle
+- autonomous brand
+- prior autonomous
+- HSMV 82040 MV
+- self driving vehicle
+- automated driving
+- autonomous registration
+- autonomous title
+- minimal risk condition
+- operational design domain
+- dynamic driving task
+- autonomous insurance
+- autonomous testing
+- autonomous transfer
+- MyDMV Portal
+- autonomous technology
+- autonomous conversion
+- autonomous vehicle network
+- AV branding
+- AV insurance
+- AV registration certificate
+- autonomous title transfer
+- autonomous vehicle law
+
+COMMON USER QUESTIONS:
+- "How are autonomous vehicles titled?"
+- "What insurance does AV require?"
+- "Can fully autonomous vehicle drive without person?"
+- "What is autonomous brand?"
+- "What happens if autonomous system removed?"
+- "Can autonomous vehicles transfer ownership online?"
+- "What prints on registration?"
+- "Does NMVTIS show autonomous brand?"
+- "Can AV be tested in Florida?"
+- "What is minimal risk condition?"
+- "Who can operate autonomous vehicle?"
+- "What forms required for AV?"
+- "Can AV transactions be done locally?"
+- "What is prior autonomous brand?"
+- "Can AV use MyDMV portal?"
+
+==================================================
+LEGAL AUTHORITY
+==================================================
+
+Governed by:
+- 316.003(3) FS
+- 319.145 FS
+- 49 CFR Part 567
+
+==================================================
+DESCRIPTION AND USE
+==================================================
+
+Procedure explains:
+- Titling autonomous vehicles
+- Registering autonomous vehicles
+- Insurance verification
+- AV branding requirements
+- AV transfer restrictions
+- Autonomous operation rules
+
+==================================================
+IMPORTANT DEFINITIONS
+==================================================
+
+AUTOMATED DRIVING SYSTEM:
+Hardware and software capable of performing dynamic driving task on sustained basis.
+
+AUTONOMOUS VEHICLE:
+Vehicle equipped with automated driving system.
+
+DYNAMIC DRIVING TASK:
+Real-time operational and tactical functions required to operate vehicle in traffic.
+
+FULLY AUTONOMOUS VEHICLE:
+Vehicle designed to function without human operator.
+
+OPERATIONAL DESIGN DOMAIN:
+Specific operating conditions under which automated driving system functions properly.
+
+MINIMAL RISK CONDITION:
+Safe condition such as:
+- Complete stop
+- Hazard lamps activated
+
+==================================================
+VERY IMPORTANT FEDERAL CERTIFICATION RULE
+==================================================
+
+Autonomous vehicle:
+Must comply with:
+49 CFR Part 567:
+When required by federal law.
+
+==================================================
+VERY IMPORTANT CERTIFICATION LABEL RULE
+==================================================
+
+Vehicle must bear:
+Required certification labels.
+
+==================================================
+VERY IMPORTANT TRAFFIC LAW RULE
+==================================================
+
+Autonomous vehicle:
+Must be capable of operating:
+In compliance with:
+Florida traffic laws.
+
+==================================================
+VERY IMPORTANT HUMAN OPERATOR RULE
+==================================================
+
+If vehicle is NOT fully autonomous:
+System must:
+- Alert licensed human operator
+OR
+- Achieve minimal risk condition.
+
+==================================================
+VERY IMPORTANT FAILURE ALERT RULE
+==================================================
+
+Vehicle must safely alert:
+Human operator:
+If automated driving system fails.
+
+==================================================
+VERY IMPORTANT FULLY AUTONOMOUS RULE
+==================================================
+
+Fully autonomous vehicle:
+May operate:
+Without human operator physically present.
+
+==================================================
+VERY IMPORTANT FULLY AUTONOMOUS FAILURE RULE
+==================================================
+
+Fully autonomous vehicle:
+Must achieve:
+Minimal risk condition:
+If automated driving system fails.
+
+==================================================
+VERY IMPORTANT FEDERAL PREEMPTION RULE
+==================================================
+
+Federal NHTSA regulations:
+Supersede Florida law:
+If conflict exists.
+
+==================================================
+GENERAL INFORMATION
+==================================================
+
+Fully autonomous vehicles:
+May operate on Florida highways.
+
+==================================================
+VERY IMPORTANT LICENSED OPERATOR RULE
+==================================================
+
+Licensed human operator:
+NOT required:
+For fully autonomous vehicle operation.
+
+==================================================
+VERY IMPORTANT TESTING RULE
+==================================================
+
+Autonomous technology testing:
+Allowed on Florida roads.
+
+==================================================
+VERY IMPORTANT TESTING PERSONNEL RULE
+==================================================
+
+Testing may be conducted by:
+- Employees
+- Contractors
+- Manufacturer-designated persons
+- Research organizations
+
+==================================================
+VERY IMPORTANT EDUCATIONAL INSTITUTION RULE
+==================================================
+
+Research organizations:
+May test autonomous vehicles:
+If associated with accredited educational institutions.
+
+==================================================
+VERY IMPORTANT TEST DRIVER RULE
+==================================================
+
+During testing:
+Human operator must be present:
+To monitor and intervene:
+Unless testing on closed course.
+
+==================================================
+VERY IMPORTANT MANUFACTURER LIABILITY RULE
+==================================================
+
+Original manufacturer:
+Not liable:
+For defects caused by:
+Third-party autonomous conversion.
+
+==================================================
+VERY IMPORTANT ORIGINAL DEFECT RULE
+==================================================
+
+Original manufacturer:
+Still liable:
+If defect existed before conversion.
+
+==================================================
+APPLICATION REQUIREMENTS
+==================================================
+
+Autonomous vehicles:
+Processed locally:
+At tax collector offices and LPAs.
+
+==================================================
+VERY IMPORTANT NO MAILING RULE
+==================================================
+
+AV applications:
+No longer mailed:
+To FLHSMV for processing.
+
+==================================================
+VERY IMPORTANT BRAND RULE
+==================================================
+
+Autonomous vehicle brand:
+Must be checked:
+On HSMV 82040 MV.
+
+==================================================
+VERY IMPORTANT MOTOR VEHICLE ISSUANCE RULE
+==================================================
+
+Autonomous brand:
+Must be entered:
+Into motor vehicle issuance system.
+
+==================================================
+VERY IMPORTANT TITLE BRAND RULE
+==================================================
+
+Autonomous brand:
+Will print:
+On title record.
+
+==================================================
+INSURANCE REQUIREMENTS
+==================================================
+
+Fully autonomous vehicles:
+Operating on:
+On-demand autonomous vehicle network
+OR
+Prearranged ride:
+Require enhanced insurance.
+
+==================================================
+VERY IMPORTANT LIABILITY COVERAGE RULE
+==================================================
+
+Required primary liability coverage:
+Minimum:
+$1 million.
+
+==================================================
+VERY IMPORTANT COVERAGE RULE
+==================================================
+
+Coverage must include:
+- Death
+- Bodily injury
+- Property damage
+
+==================================================
+VERY IMPORTANT PIP RULE
+==================================================
+
+Must carry:
+Personal Injury Protection (PIP)
+Meeting minimum coverage requirements.
+
+==================================================
+VERY IMPORTANT UM/UIM RULE
+==================================================
+
+Must carry:
+- Uninsured motorist coverage
+- Underinsured motorist coverage
+
+==================================================
+TITLE FEES RULE
+==================================================
+
+Standard title fees apply.
+
+==================================================
+MISCELLANEOUS RULES
+==================================================
+
+All AV title and registration transactions:
+May be processed:
+At tax collector office or LPA.
+
+==================================================
+MYDMV PORTAL RULE
+==================================================
+
+Allowed online transactions:
+- Duplicate Registration
+- Print Electronic Title
+
+==================================================
+VERY IMPORTANT SYSTEM REMOVAL RULE
+==================================================
+
+If automated driving system removed:
+Owner may apply:
+To remove autonomous brand.
+
+==================================================
+VERY IMPORTANT PRIOR AUTONOMOUS RULE
+==================================================
+
+After autonomous system removed:
+"PRIOR AUTONOMOUS" brand added.
+
+==================================================
+VERY IMPORTANT BRAND ERROR RULE
+==================================================
+
+Prior autonomous brand:
+NOT added:
+If original autonomous brand:
+Applied in error.
+
+==================================================
+VERY IMPORTANT OWNERSHIP CHANGE RULE
+==================================================
+
+Until autonomous system removed:
+Ownership changes:
+Must be performed:
+At Department.
+
+==================================================
+VERY IMPORTANT NMVTIS RULE
+==================================================
+
+NMVTIS:
+Will NOT display:
+Autonomous brand.
+
+==================================================
+VERY IMPORTANT REGISTRATION CERTIFICATE RULE
+==================================================
+
+Registration certificate prints:
+"AUTONOMOUS VEHICLE"
+
+==================================================
+VERY IMPORTANT LAW ENFORCEMENT RULE
+==================================================
+
+Registration wording:
+Allows law enforcement:
+To identify autonomous vehicles.
+
+==================================================
+REQUIRED DOCUMENTS
+==================================================
+
+Required:
+1. HSMV 82040 MV
+2. Proof of insurance
+3. Title fees
+
+==================================================
+VERY IMPORTANT INSURANCE VERIFICATION RULE
+==================================================
+
+Insurance verification must confirm:
+- $1 million liability coverage
+- PIP coverage
+- UM/UIM coverage
+
+==================================================
+AI DECISION LOGIC
+==================================================
+
+AI should determine:
+1. Is vehicle autonomous?
+2. Is vehicle fully autonomous?
+3. Is automated driving system installed?
+4. Was autonomous brand applied?
+5. Was HSMV 82040 MV completed correctly?
+6. Does insurance meet AV minimums?
+7. Does vehicle require human operator alert system?
+8. Can vehicle achieve minimal risk condition?
+9. Is AV ownership transfer restricted?
+10. Was autonomous system removed?
+11. Should prior autonomous brand apply?
+12. Is transaction eligible online?
+13. Must transaction be completed at Department?
+14. Is registration certificate marked correctly?
+15. Does federal certification apply?
+16. Are certification labels present?
+17. Is testing operation lawful?
+18. Is human monitor required during testing?
+19. Does manufacturer liability exemption apply?
+20. Does NHTSA preemption apply?
+
+==================================================
+COMMON TITLE CLERK ERRORS
+==================================================
+
+- Missing autonomous brand
+- Failing to enter brand in issuance system
+- Incorrect insurance verification
+- Missing $1 million coverage
+- Missing UM/UIM coverage
+- Incorrect ownership transfer handling
+- Forgetting PRIOR AUTONOMOUS brand
+- Assuming NMVTIS displays AV brand
+- Processing transfer online improperly
+- Missing HSMV 82040 MV branding
+- Incorrect testing assumptions
+- Misunderstanding fully autonomous operation
+- Missing minimal risk condition requirements
+
+==================================================
+VERY IMPORTANT CORE CONCEPT
+==================================================
+
+Autonomous vehicles:
+Require special branding,
+insurance,
+and operational compliance,
+while fully autonomous vehicles:
+May legally operate:
+Without a human driver physically present.
+
+==================================================
+RELATED FORMS
+==================================================
+
+- HSMV 82040 MV
+
+==================================================
+RELATED REGULATIONS
+==================================================
+
+- 49 CFR Part 567
+- FMVSS compliance standards
+
+==================================================
+REFERENCE NOTES
+==================================================
+
+Current revision:
+- 10/2025
+
+Primary focus:
+- Autonomous vehicle branding
+- AV registration
+- Insurance compliance
+- Fully autonomous operation
+- Automated driving systems

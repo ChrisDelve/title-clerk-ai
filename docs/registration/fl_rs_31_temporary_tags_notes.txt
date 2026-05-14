@@ -1,0 +1,779 @@
+FLORIDA REGISTRATION PROCEDURE — TEMPORARY TAGS
+PROCEDURE: RS-31
+CATEGORY: TEMPORARY TAGS / ETR / DEALER TEMP TAGS / PRINT-ON-DEMAND TAGS
+
+==================================================
+PROCEDURE SUMMARY
+==================================================
+
+This procedure governs:
+- Temporary tag issuance
+- Electronic Temporary Registration (ETR)
+- Print-on-demand temporary tags
+- Pre-printed temporary tags
+- Dealer temporary tag issuance
+- Temporary tag duration rules
+- Temporary tag display requirements
+- Temporary tag fees
+- Temporary tag insurance requirements
+- Temporary tag outage procedures
+- Temporary tag sales tax requirements
+- Out-of-state temporary registrations
+
+Applies to:
+- Florida dealers
+- Tax collectors
+- License plate agencies
+- ETR vendors
+- Motor vehicle purchasers
+- Recreational vehicle purchasers
+- Motorcycle purchasers
+- Out-of-state buyers
+- FLHSMV personnel
+
+==================================================
+AI CLASSIFICATION TAGS
+==================================================
+
+KEYWORDS:
+- temporary tag
+- temp tag
+- ETR
+- electronic temporary registration
+- print-on-demand tag
+- pre-printed temp tag
+- HSMV 83091
+- HSMV 82082
+- HSMV 83090
+- temporary license plate
+- dealer temp tag
+- 10 day temp tag
+- 30 day temp tag
+- 60 day temp tag
+- 90 day temp tag
+- temporary registration
+- out of state temp tag
+- rebuilt inspection temp tag
+- VIN verification temp tag
+- casual sale temp tag
+- lienholder delay temp tag
+- demonstration temp tag
+- drive-away company temp tag
+- repossession temp tag
+- marine trailer temp tag
+- heavy truck temp tag
+- IRP trip permit
+- IFTA permit
+- ETR outage
+- temporary tag suspension
+- temporary tag felony
+- temporary tag moving violation
+- temporary tag nonmoving violation
+- DR123
+- RS-05
+- RS-27
+- RS-36
+- TL-01
+- TL-08
+- EFS pending
+- temporary tag display
+- temporary tag sales tax
+- dealer third temp tag
+- off-line temporary issuance
+- POD temporary tag
+- out of state insurance temp tag
+
+COMMON USER QUESTIONS:
+- "How many temporary tags can dealer issue?"
+- "When can a 10-day temp tag be issued?"
+- "What requires a 30-day temp tag?"
+- "Who qualifies for a 60-day temp tag?"
+- "When is a 90-day temp tag allowed?"
+- "Can dealers issue 10-day temp tags?"
+- "What forms are required?"
+- "What happens during ETR outage?"
+- "Can temp tag be reissued?"
+- "What insurance is required?"
+- "Can out-of-state buyers get temp tags?"
+- "Can heavy trucks use temp tags?"
+- "What is DR123?"
+- "How are temp tags displayed?"
+- "Can temporary tags be used after expiration?"
+
+==================================================
+LEGAL AUTHORITY
+==================================================
+
+Governed by:
+- 320.131 FS
+- Chapter 318 FS
+- 320.38 FS
+
+==================================================
+DESCRIPTION AND USE
+==================================================
+
+Procedure explains:
+- Temporary tag issuance
+- ETR processing
+- Dealer limitations
+- Temporary tag durations
+- Print-on-demand requirements
+- Temporary tag compliance
+
+==================================================
+VERY IMPORTANT CORE RULE
+==================================================
+
+Temporary tag:
+May ONLY be issued:
+For one vehicle:
+And cannot be reissued.
+
+==================================================
+VERY IMPORTANT REISSUANCE RULE
+==================================================
+
+Re-issuance:
+Of same temporary tag:
+Not lawful.
+
+==================================================
+VERY IMPORTANT DISCRETIONARY RULE
+==================================================
+
+Regional Office or tax collector:
+May authorize:
+More than two temporary tags.
+
+==================================================
+ETR SYSTEM RULES
+==================================================
+
+ETR:
+Electronic Temporary Registration system:
+Used for electronic temp tag issuance.
+
+==================================================
+VERY IMPORTANT PRINT-ON-DEMAND RULE
+==================================================
+
+All temporary tags:
+Must be print-on-demand:
+Except:
+- ETR outage
+OR
+- Trailer under 2,000 lbs.
+
+==================================================
+VERY IMPORTANT DEALER LIMIT RULE
+==================================================
+
+Dealer:
+May issue:
+Maximum two temporary tags:
+Per customer:
+Per vehicle.
+
+==================================================
+VERY IMPORTANT FOUR TAG RULE
+==================================================
+
+Dealer:
+May issue:
+Maximum four temporary tags:
+Per vehicle:
+Across multiple customers.
+
+==================================================
+VERY IMPORTANT DEALER TAG RULE
+==================================================
+
+If dealer plate use valid:
+Temporary tag:
+May NOT be issued.
+
+==================================================
+TEMP TAG APPLICATION REQUIREMENTS
+==================================================
+
+Require:
+HSMV 83091:
+Application for Temporary License Plate.
+
+==================================================
+VERY IMPORTANT TITLE/MCO RULE
+==================================================
+
+Copy of:
+- Title
+OR
+- MCO
+
+Required:
+To verify VIN.
+
+==================================================
+VERY IMPORTANT CUSTOMER POSSESSION RULE
+==================================================
+
+Customer:
+Must carry:
+Original HSMV 83091:
+While operating vehicle:
+Until temp tag expiration.
+
+==================================================
+VERY IMPORTANT RETENTION RULE
+==================================================
+
+Issuing office:
+Must retain:
+Duplicate HSMV 83091:
+Minimum 12 months.
+
+==================================================
+IDENTITY REQUIREMENTS
+==================================================
+
+Proof of identity:
+Required per:
+TL-01.
+
+==================================================
+VERY IMPORTANT EXPIRED ID RULE
+==================================================
+
+Expired:
+- Driver license
+- ID card
+- Passport
+
+NOT acceptable.
+
+==================================================
+BUSINESS CUSTOMER RULE
+==================================================
+
+Business applicants:
+Require:
+- FEID
+OR
+- Business verification
+OR
+- Local business license.
+
+==================================================
+INSURANCE REQUIREMENTS
+==================================================
+
+Florida insurance required:
+Except:
+- Motorcycles
+- Trailers
+- Federally owned vehicles.
+
+==================================================
+VERY IMPORTANT RS-36 RULE
+==================================================
+
+Insurance requirements:
+Governed by:
+RS-36.
+
+==================================================
+OUT-OF-STATE REGISTRATION RULE
+==================================================
+
+If vehicle registering out-of-state:
+Proof of out-of-state issuance required.
+
+==================================================
+VERY IMPORTANT OUT-OF-STATE INSURANCE RULE
+==================================================
+
+For out-of-state insurance:
+Use insurance code:
+"S"
+
+Policy field:
+"out of state"
+
+==================================================
+VERY IMPORTANT COMMENT FIELD RULE
+==================================================
+
+Comments must include:
+- Insurance company
+- Policy number
+- Effective date
+- Phone number
+
+==================================================
+TEMP TAG FEES
+==================================================
+
+Temporary tag fee:
+$2.
+
+==================================================
+VERY IMPORTANT ADDITIONAL FEES RULE
+==================================================
+
+Additional fees may include:
+- Service fee
+- Branch fee
+
+==================================================
+VERY IMPORTANT NON-USE RULE
+==================================================
+
+Temporary tag:
+Cannot issue:
+If owner filed:
+Non-use certification.
+
+==================================================
+VERY IMPORTANT DEALER DISCLOSURE RULE
+==================================================
+
+Dealer:
+May only identify:
+$2 fee:
+As state-assessed fee.
+
+==================================================
+TEMP TAG DURATIONS
+==================================================
+
+Temporary tags may issue:
+For:
+- 10 days
+- 30 days
+- 60 days
+- 90 days
+
+==================================================
+VERY IMPORTANT DEALER DURATION RULE
+==================================================
+
+Dealers:
+May issue ONLY:
+30-day temporary tags.
+
+==================================================
+10-DAY TEMP TAG RULES
+==================================================
+
+10-day temp tags allowed for:
+- Vehicle weighing
+- VIN verification
+- Rebuilt inspection
+- Shipping vehicle out of country
+
+==================================================
+VERY IMPORTANT REBUILT INSPECTION RULE
+==================================================
+
+Vehicle scheduled:
+For rebuilt inspection:
+Within 10 days:
+Eligible.
+
+==================================================
+VERY IMPORTANT SHIPPING RULE
+==================================================
+
+Vehicle being shipped out of country:
+Eligible:
+For one 10-day temporary tag.
+
+==================================================
+VERY IMPORTANT DEALER SHIPPING RULE
+==================================================
+
+Dealer:
+Cannot issue:
+10-day temp tag directly.
+
+Must process:
+Through tax collector/agent.
+
+==================================================
+30-DAY TEMP TAG RULES
+==================================================
+
+30-day temp tags allowed for:
+- Casual/private sales
+- Demonstrations
+- Title delays
+- Repossession demonstrations
+- Out-of-state buyer registrations
+- Out-of-state title procurement
+- Rental car companies
+- Marine trailer dealers
+- Off-premises dealer transport
+- Heavy truck movement
+
+==================================================
+VERY IMPORTANT DEMONSTRATION RULE
+==================================================
+
+Demo temporary tag:
+Cannot issue:
+If seller never registered vehicle.
+
+==================================================
+VERY IMPORTANT TITLE DELAY RULE
+==================================================
+
+If lienholder delay exists:
+Require:
+- Payoff verification letter
+- HSMV 82050
+
+==================================================
+VERY IMPORTANT COMMON CARRIER RULE
+==================================================
+
+Certified common carriers:
+May use:
+30-day temporary tags.
+
+==================================================
+VERY IMPORTANT REPOSSESSION RULE
+==================================================
+
+Banks/credit unions:
+May use:
+30-day temp tags:
+For repossession demonstrations.
+
+==================================================
+VERY IMPORTANT OUT-OF-STATE BUYER RULE
+==================================================
+
+Out-of-state residents:
+May receive:
+30-day temp tag:
+For Florida purchases.
+
+==================================================
+VERY IMPORTANT TL-08 RULE
+==================================================
+
+Sales tax processing:
+Governed by:
+TL-08.
+
+==================================================
+VERY IMPORTANT RENTAL CAR RULE
+==================================================
+
+Rental car companies:
+May use:
+30-day temporary tags.
+
+==================================================
+VERY IMPORTANT HEAVY TRUCK RULE
+==================================================
+
+Heavy truck temporary tags:
+Allowed:
+If vehicle remains in Florida.
+
+==================================================
+VERY IMPORTANT HVUT RULE
+==================================================
+
+Heavy truck temp tag:
+Requires:
+HVUT proof:
+Unless first 60 days.
+
+==================================================
+VERY IMPORTANT IRP/IFTA RULE
+==================================================
+
+Heavy truck leaving Florida:
+Requires:
+- IRP trip permit
+AND
+- IFTA permit.
+
+==================================================
+60-DAY TEMP TAG RULES
+==================================================
+
+60-day temporary tags allowed for:
+- Out-of-state title with active lien
+- Active-duty military stationed outside Florida
+
+==================================================
+VERY IMPORTANT ACTIVE LIEN RULE
+==================================================
+
+Out-of-state title:
+With active lien:
+Eligible:
+For 60-day temp tag.
+
+==================================================
+VERY IMPORTANT MILITARY 60-DAY RULE
+==================================================
+
+Military member:
+Stationed outside Florida:
+Eligible:
+With:
+- Orders
+OR
+- Affidavit.
+
+==================================================
+90-DAY TEMP TAG RULES
+==================================================
+
+90-day temporary tags:
+Issued:
+While waiting:
+For personalized/specialty plate manufacturing.
+
+==================================================
+VERY IMPORTANT RS-27 RULE
+==================================================
+
+90-day personalized plate procedures:
+Governed by:
+RS-27.
+
+==================================================
+ETR OUTAGE RULES
+==================================================
+
+ETR outage:
+Allows:
+Pre-printed temp tag issuance.
+
+==================================================
+VERY IMPORTANT HSMV 82082 RULE
+==================================================
+
+Outage issuance:
+Requires:
+HSMV 82082.
+
+==================================================
+VERY IMPORTANT ONE BUSINESS DAY RULE
+==================================================
+
+Outage issuance:
+Must report to FLHSMV:
+Within one business day.
+
+==================================================
+VERY IMPORTANT FIVE YEAR RULE
+==================================================
+
+Dealers:
+Must retain:
+Outage issuance records:
+5 years.
+
+==================================================
+PRE-PRINTED TEMP TAG RULES
+==================================================
+
+Pre-printed temp tags:
+Allowed for:
+- ETR outages
+- Trailers under 2,000 lbs.
+
+==================================================
+VERY IMPORTANT HSMV 83090 RULE
+==================================================
+
+Dealer pre-printed tag requests:
+Require:
+HSMV 83090.
+
+==================================================
+VERY IMPORTANT SUSPENSION RULE
+==================================================
+
+Dealers with suspended temp privileges:
+Cannot purchase:
+Pre-printed temporary tags.
+
+==================================================
+DISPLAY RULES
+==================================================
+
+Temporary tag:
+Must display:
+In rear license plate bracket.
+
+==================================================
+VERY IMPORTANT FRONT DISPLAY RULE
+==================================================
+
+Vehicles requiring front plates:
+Display temp tag:
+Front location.
+
+==================================================
+SALES TAX RULES
+==================================================
+
+Florida temporary tag issuance:
+Requires:
+Florida sales tax collection:
+For out-of-state buyers.
+
+==================================================
+VERY IMPORTANT DR123 RULE
+==================================================
+
+Out-of-state buyer sales tax:
+Requires:
+DR123:
+Partial Exemption affidavit.
+
+==================================================
+VERY IMPORTANT COUNTY SURTAX RULE
+==================================================
+
+County discretionary surtax:
+NOT applicable:
+To out-of-state residents.
+
+==================================================
+VERY IMPORTANT EFS PENDING RULE
+==================================================
+
+If title shows:
+"EFS Pending"
+No ETR transaction allowed.
+
+==================================================
+VERY IMPORTANT THIRD TEMP TAG RULE
+==================================================
+
+Third dealer temp tag:
+Requires:
+Tax collector/agent processing
+And reason entry.
+
+==================================================
+AI DECISION LOGIC
+==================================================
+
+AI should determine:
+1. What temp tag duration applies?
+2. Is ETR required?
+3. Is print-on-demand required?
+4. Is dealer limited to two tags?
+5. Does vehicle already qualify for dealer tag?
+6. Is HSMV 83091 required?
+7. Is title/MCO attached?
+8. Is insurance required?
+9. Is out-of-state insurance involved?
+10. Is non-use certification blocking issuance?
+11. Does 10-day qualification apply?
+12. Does 30-day qualification apply?
+13. Does 60-day qualification apply?
+14. Does 90-day qualification apply?
+15. Is ETR outage involved?
+16. Is HSMV 82082 required?
+17. Is HSMV 83090 required?
+18. Does HVUT apply?
+19. Does IRP/IFTA apply?
+20. Is DR123 required?
+
+==================================================
+COMMON TITLE CLERK / REGISTRATION ERRORS
+==================================================
+
+- Reissuing same temporary tag
+- Exceeding dealer tag limits
+- Issuing temp tag when dealer plate valid
+- Missing HSMV 83091
+- Missing title/MCO copy
+- Accepting expired ID
+- Missing insurance verification
+- Incorrect out-of-state insurance coding
+- Issuing temp tag after non-use affidavit
+- Incorrect duration assignment
+- Dealer issuing prohibited 10-day tags
+- Missing HVUT proof
+- Missing IRP/IFTA permits
+- Missing outage reporting
+- Incorrect sales tax handling
+- Missing DR123
+- Incorrect temp tag display
+- Issuing ETR while EFS pending
+
+==================================================
+VERY IMPORTANT CORE CONCEPT
+==================================================
+
+Florida temporary tags:
+Provide short-term lawful operation
+for vehicles pending registration,
+title completion,
+inspection,
+transport,
+or specialty plate manufacturing,
+while requiring strict compliance with:
+- ETR issuance rules
+- duration limitations
+- insurance verification
+- dealer issuance restrictions
+- sales tax compliance
+and anti-fraud accountability standards.
+
+==================================================
+RELATED PROCEDURES
+==================================================
+
+- RS-05
+- RS-27
+- RS-36
+- TL-01
+- TL-08
+
+==================================================
+RELATED FORMS
+==================================================
+
+- HSMV 82040
+- HSMV 82050
+- HSMV 82082
+- HSMV 83090
+- HSMV 83091
+- DR123
+
+==================================================
+RELATED ENTITIES
+==================================================
+
+- FLHSMV
+- Bureau of Dealer Services
+- Tax Collectors
+- License Plate Agencies
+- ETR Vendors
+
+==================================================
+REFERENCE NOTES
+==================================================
+
+Current revision:
+04/2025
+
+Primary focus:
+- Temporary tag issuance
+- ETR compliance
+- Dealer temp tag restrictions
+- Out-of-state and military temp tags
+- ETR outage procedures
+- Temporary tag sales tax handling

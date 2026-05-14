@@ -1,0 +1,543 @@
+FLORIDA REGISTRATION PROCEDURE — MOTOR VEHICLE REGISTRATION FOR BUSES
+PROCEDURE: RS-56
+CATEGORY: COMMERCIAL REGISTRATION / BUS REGISTRATION / PASSENGER TRANSPORTATION
+
+==================================================
+PROCEDURE SUMMARY
+==================================================
+
+This procedure governs:
+- Bus registrations
+- Private-use bus registrations
+- School bus registrations
+- For-hire bus registrations
+- Half-year bus registrations
+- Full-year bus registrations
+- Autonomous vehicle (AV) bus registrations
+- Bus GVW calculations
+- Bus insurance requirements
+- Bus replacement plates
+- Bus IRP registration requirements
+- Government bus registrations
+- Nonprofit organization bus exemptions
+
+Applies to:
+- Bus owners
+- School transportation operators
+- Private businesses
+- Charter operators
+- Autonomous vehicle operators
+- Government entities
+- Tax collectors
+- License plate agencies
+- FLHSMV personnel
+
+==================================================
+AI CLASSIFICATION TAGS
+==================================================
+
+KEYWORDS:
+- bus registration
+- school bus registration
+- for-hire bus
+- private bus registration
+- half-year bus registration
+- autonomous vehicle bus
+- AV bus registration
+- GVW bus calculation
+- bus passenger weight
+- HSMV 83146
+- 82040 MV
+- bus replacement plate
+- IRP bus registration
+- interstate bus registration
+- charter bus IRP
+- migrant worker bus
+- employee shuttle bus
+- parking shuttle bus
+- private school bus
+- nonprofit bus exemption
+- state transportation fee
+- class code 01
+- class code 09
+- class code 36
+- class code 37
+- class code 92
+- bus insurance requirements
+- $1 million liability AV
+- uninsured underinsured coverage
+- personal injury protection
+- bus registration fees
+- bus registration use codes
+- PR registration use
+- HF registration use
+- HH registration use
+- FY registration use
+- HY registration use
+- SI registration use
+- bus GVW formula
+- passenger multiplier 150
+- bus fleet registration
+- AV title registration
+- government AV registration
+- TL-68
+- RS-01
+- RS-33
+- RS-36
+- RS-61
+- fees-03
+- Florida bus registration
+- passenger transport registration
+
+COMMON USER QUESTIONS:
+- "How are buses classified?"
+- "What class code applies to a bus?"
+- "How is bus GVW calculated?"
+- "When is IRP registration required?"
+- "Can buses use half-year registration?"
+- "What insurance is required?"
+- "How are autonomous buses registered?"
+- "What documents are required for AV buses?"
+- "What class code applies to private school buses?"
+- "Can nonprofits receive exemptions?"
+- "What fees apply?"
+- "How are replacement plates processed?"
+- "Can county offices issue bus plates?"
+- "Does a bus require Florida insurance?"
+- "What passenger count changes the class code?"
+
+==================================================
+LEGAL AUTHORITY
+==================================================
+
+Governed by:
+- 320.0655 FS
+- 320.08(2)(d) FS
+- 320.08(5)(c) FS
+- 320.08(6)(a) FS
+- 320.08(6)(b) FS
+- 320.10(c) FS
+
+==================================================
+DESCRIPTION AND USE
+==================================================
+
+Procedure explains:
+- Bus registration classifications
+- Weight and GVW calculations
+- Insurance requirements
+- Autonomous bus processing
+- IRP requirements
+- Replacement procedures
+
+==================================================
+VERY IMPORTANT CORE RULE
+==================================================
+
+All buses:
+Operating on Florida roads:
+Must be registered:
+Using proper class code and registration use.
+
+==================================================
+PRIVATE USE BUS RULES
+==================================================
+
+Private use buses:
+May register:
+Under class code 01.
+
+==================================================
+PRIVATE USE EXAMPLES
+==================================================
+
+Examples include:
+- large family bus use
+- migrant worker transportation
+- employee parking shuttle transportation.
+
+==================================================
+VERY IMPORTANT IRF RULE
+==================================================
+
+Initial Registration Fee:
+Required:
+When registered:
+Under class code 01.
+
+==================================================
+SCHOOL BUS RULES
+==================================================
+
+School buses:
+Used exclusively:
+For school/church transportation:
+Within county:
+Use:
+Class code 92 (Restricted).
+
+==================================================
+FOR-HIRE BUS RULES
+==================================================
+
+For-hire buses:
+8 passengers or less:
+Including driver:
+Use:
+Class code 09.
+
+==================================================
+VERY IMPORTANT CLASS CODE 36 RULE
+==================================================
+
+For-hire buses:
+9 passengers or more:
+Use:
+Class code 36.
+
+==================================================
+SPECIAL INTEREST BUS RULE
+==================================================
+
+Special interest buses:
+Use:
+Class code 37.
+
+==================================================
+VERY IMPORTANT IRP RULE
+==================================================
+
+Buses transporting passengers:
+State-to-state:
+Picking up and dropping off passengers:
+Require:
+IRP registration.
+
+==================================================
+VERY IMPORTANT CHARTER RULE
+==================================================
+
+Chartered interstate buses:
+Must use:
+International Registration Plan (IRP).
+
+==================================================
+WEIGHT RULES
+==================================================
+
+Registration fee:
+Based on:
+Net weight.
+
+==================================================
+VERY IMPORTANT GVW RULE
+==================================================
+
+Gross Vehicle Weight:
+Must be entered:
+To determine:
+State Transportation fee.
+
+==================================================
+VERY IMPORTANT PASSENGER FORMULA RULE
+==================================================
+
+GVW calculation:
+Passenger count × 150 pounds
+PLUS
+Net vehicle weight.
+
+==================================================
+CLASSIFICATION DETAILS
+==================================================
+
+Class code 01:
+Vehicle Type:
+AU
+Body Type:
+BU
+Registration Use:
+PR.
+
+--------------------------------------------------
+
+Class code 92:
+Vehicle Type:
+BS
+Body Type:
+BU
+Registration Use:
+PR.
+
+--------------------------------------------------
+
+Class code 09:
+Vehicle Type:
+BS
+Body Type:
+BU
+Registration Use:
+HF or HH.
+
+--------------------------------------------------
+
+Class code 36:
+Vehicle Type:
+BS
+Body Type:
+BU
+Registration Use:
+FY or HY.
+
+--------------------------------------------------
+
+Class code 37:
+Vehicle Type:
+BS
+Body Type:
+BU
+Registration Use:
+SI.
+
+==================================================
+FEE RULES
+==================================================
+
+Registration fees:
+Determined using:
+Motor Vehicle/Mobile Home Class Code Fee Chart.
+
+==================================================
+VERY IMPORTANT FEES RULE
+==================================================
+
+Refer to:
+fees-03:
+For bus fee calculations.
+
+==================================================
+INSURANCE RULES
+==================================================
+
+Proof of Florida insurance:
+Required.
+
+==================================================
+VERY IMPORTANT RS-33 RULE
+==================================================
+
+Additional insurance requirements:
+Governed by:
+RS-33.
+
+==================================================
+VERY IMPORTANT RS-36 RULE
+==================================================
+
+Florida insurance processing:
+Governed by:
+RS-36.
+
+==================================================
+AUTONOMOUS VEHICLE RULES
+==================================================
+
+Autonomous buses:
+Processed:
+As standard bus transactions:
+Using proper class code.
+
+==================================================
+VERY IMPORTANT FEID RULE
+==================================================
+
+Autonomous fleet buses:
+Should be titled and registered:
+In company name:
+Using FEID number.
+
+==================================================
+VERY IMPORTANT GOVERNMENT AV RULE
+==================================================
+
+Government entities:
+Must process AV buses:
+Like other government-owned vehicles.
+
+==================================================
+VERY IMPORTANT TL-68 RULE
+==================================================
+
+Autonomous vehicle processing:
+Also governed by:
+TL-68.
+
+==================================================
+AUTONOMOUS VEHICLE DOCUMENT REQUIREMENTS
+==================================================
+
+Required documentation:
+- 82040 MV
+- proof of insurance.
+
+==================================================
+VERY IMPORTANT AV INSURANCE RULE
+==================================================
+
+Autonomous vehicle insurance:
+Must include:
+- minimum $1 million liability coverage
+- bodily injury coverage
+- property damage coverage
+- PIP coverage
+- uninsured/underinsured coverage.
+
+==================================================
+ISSUANCE RULES
+==================================================
+
+County tax collector offices:
+May issue:
+All bus plates:
+Except IRP buses.
+
+==================================================
+VERY IMPORTANT IRP ISSUANCE RULE
+==================================================
+
+IRP buses:
+Cannot be issued:
+Through standard county issuance process.
+
+==================================================
+REPLACEMENT RULES
+==================================================
+
+Replacement requires:
+- HSMV 83146
+- registration certificate copy.
+
+==================================================
+VERY IMPORTANT RS-06 RULE
+==================================================
+
+Replacement processing:
+Governed by:
+RS-06.
+
+==================================================
+AI DECISION LOGIC
+==================================================
+
+AI should determine:
+1. Is bus private, school, for-hire, or special interest?
+2. What passenger count applies?
+3. Is class code correct?
+4. Is IRF applicable?
+5. Is interstate transportation occurring?
+6. Does IRP registration apply?
+7. Was GVW calculated correctly?
+8. Was passenger multiplier applied properly?
+9. Is State Transportation fee due?
+10. Is Florida insurance attached?
+11. Does RS-33 commercial insurance apply?
+12. Is autonomous vehicle involved?
+13. Is FEID required?
+14. Is $1 million AV liability coverage present?
+15. Is 82040 MV attached?
+16. Is government entity ownership involved?
+17. Is replacement transaction proper?
+18. Is HSMV 83146 attached?
+19. Is county issuance allowed?
+20. Is proper registration use code selected?
+
+==================================================
+COMMON TITLE CLERK / REGISTRATION ERRORS
+==================================================
+
+- Incorrect class code assignment
+- Incorrect passenger classification
+- Missing IRP determination
+- Incorrect GVW calculation
+- Missing passenger weight multiplier
+- Missing State Transportation fee review
+- Missing Florida insurance
+- Missing AV insurance requirements
+- Missing FEID on fleet AVs
+- Missing 82040 MV
+- Incorrect registration use code
+- Improper issuance of IRP buses
+- Missing HSMV 83146
+- Incorrect fee chart usage
+- Failing to apply IRF
+
+==================================================
+VERY IMPORTANT CORE CONCEPT
+==================================================
+
+Florida bus registration procedures:
+Provide structured registration classifications
+for:
+- private buses
+- school buses
+- for-hire buses
+- autonomous buses
+
+while enforcing:
+- passenger-count classifications
+- GVW calculations
+- IRP interstate requirements
+- insurance compliance
+- autonomous vehicle liability standards
+and proper class code usage.
+
+==================================================
+RELATED PROCEDURES
+==================================================
+
+- RS-01
+- RS-06
+- RS-33
+- RS-36
+- RS-61
+- TL-68
+
+==================================================
+RELATED FORMS
+==================================================
+
+- HSMV 83146
+- 82040 MV
+
+==================================================
+RELATED DOCUMENTS
+==================================================
+
+- fees-03
+- International Registration Plan (IRP)
+
+==================================================
+RELATED ENTITIES
+==================================================
+
+- FLHSMV
+- Tax Collectors
+- License Plate Agencies
+- Government Agencies
+- Charter Operators
+- School Transportation Operators
+
+==================================================
+REFERENCE NOTES
+==================================================
+
+Current revision:
+07/26/2024
+
+Primary focus:
+- Bus registration classifications
+- Passenger/GVW calculations
+- Autonomous vehicle processing
+- IRP requirements
+- Insurance compliance
+- Replacement procedures

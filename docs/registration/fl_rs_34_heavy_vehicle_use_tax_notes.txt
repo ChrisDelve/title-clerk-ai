@@ -1,0 +1,581 @@
+FLORIDA REGISTRATION PROCEDURE — HEAVY VEHICLE USE TAX (HVUT)
+PROCEDURE: RS-34
+CATEGORY: HVUT / HEAVY TRUCK TAX COMPLIANCE / FORM 2290
+
+==================================================
+PROCEDURE SUMMARY
+==================================================
+
+This procedure governs:
+- Heavy Vehicle Use Tax (HVUT) requirements
+- IRS Form 2290 verification
+- HVUT proof of filing/payment/exemption
+- Heavy truck registration tax compliance
+- HVUT document retention
+- HVUT exemption processing
+- Interstate/commercial heavy truck registration support
+- HVUT audit correction handling
+- Suspicious HVUT documentation handling
+- Alternate Proof of Payment Program requirements
+
+Applies to:
+- Heavy truck owners
+- Truck tractor owners
+- Commercial carriers
+- Bus operators
+- Tax collectors
+- License plate agencies
+- Motorist Review Unit
+- FLHSMV personnel
+
+==================================================
+AI CLASSIFICATION TAGS
+==================================================
+
+KEYWORDS:
+- HVUT
+- Heavy Vehicle Use Tax
+- Form 2290
+- Schedule 1
+- IRS 2290
+- HVUT proof
+- 55,000 pounds
+- heavy truck tax
+- truck tractor tax
+- HVUT exemption
+- IRS stamped 2290
+- electronic 2290
+- HVUT audit
+- HVUT Error Report
+- Motorist Review Unit
+- heavy truck registration tax
+- IRS watermark
+- Alternate Proof of Payment Program
+- EIN verification
+- Sunbiz verification
+- leased truck HVUT
+- registrant mismatch
+- commercial truck tax
+- IRS received stamp
+- heavy vehicle tax suspension
+- agricultural vehicle exemption
+- blood collector vehicle exemption
+- 5,000 mile exemption
+- 7,500 mile agricultural exemption
+- combined GVW
+- truck tractor HVUT
+- commercial bus HVUT
+- suspicious 2290
+- altered VIN 2290
+- Scan Coversheet
+- TL-62
+- registration stop
+- IRS office locator
+- IRS current tax year
+- apportioned registration tax compliance
+- IRS fiscal year
+- HVUT lease documentation
+- proof of payment
+- cancelled check proof
+- electronic filing watermark
+
+COMMON USER QUESTIONS:
+- "Does this truck require HVUT?"
+- "What is Form 2290?"
+- "What proof is acceptable for HVUT?"
+- "What if the truck was just purchased?"
+- "Can electronic 2290 forms be used?"
+- "What if the VIN looks altered?"
+- "What if the registrant name differs?"
+- "What if the customer leased the truck?"
+- "What if the EIN cannot be verified?"
+- "When is HVUT exempt?"
+- "What tax year form is required?"
+- "What happens if documents are missing?"
+- "What is the 60-day exemption?"
+- "What if the county ignores HVUT errors?"
+- "What vehicles require HVUT?"
+- "What if Schedule 1 has no watermark?"
+- "How are suspicious forms handled?"
+- "Can agricultural vehicles be exempt?"
+
+==================================================
+LEGAL AUTHORITY
+==================================================
+
+Governed by:
+- 320.02(7) FS
+
+==================================================
+DESCRIPTION AND USE
+==================================================
+
+Procedure explains:
+- HVUT registration compliance
+- IRS Form 2290 verification
+- HVUT proof standards
+- Exemptions from proof
+- Audit/error correction handling
+- Heavy truck tax processing requirements
+
+==================================================
+VERY IMPORTANT CORE RULE
+==================================================
+
+Motor vehicles:
+55,000 pounds GVW or more:
+Require proof of:
+- filing
+- payment
+OR
+- exemption
+From Federal Heavy Vehicle Use Tax:
+Before registration issuance.
+
+==================================================
+VEHICLES SUBJECT TO HVUT
+==================================================
+
+Vehicles requiring HVUT include:
+- Truck tractors
+- Heavy trucks
+- Buses
+
+==================================================
+VERY IMPORTANT COMBINED GVW RULE
+==================================================
+
+Truck tractors:
+Require HVUT:
+At combined GVW:
+55,000 pounds or more.
+
+==================================================
+VERY IMPORTANT HEAVY TRUCK RULE
+==================================================
+
+Heavy trucks:
+Require HVUT:
+At GVW:
+55,000 pounds or more.
+
+==================================================
+VERY IMPORTANT BUS RULE
+==================================================
+
+Buses:
+Require HVUT:
+At GVW:
+55,000 pounds or more.
+
+==================================================
+ACCEPTABLE HVUT PROOF
+==================================================
+
+Acceptable proof includes:
+- IRS stamped Schedule 1 Form 2290
+- Completed Form 2290 with cancelled check
+- IRS stamped exempt Form 2290
+- Electronically filed Form 2290
+
+==================================================
+VERY IMPORTANT STAMPED FORM RULE
+==================================================
+
+IRS stamped Schedule 1:
+Acceptable proof:
+When stamped:
+"Received" by IRS.
+
+==================================================
+VERY IMPORTANT CANCELLED CHECK RULE
+==================================================
+
+If non-receipted Form 2290 used:
+Require:
+Copy of both sides:
+Of cancelled check.
+
+==================================================
+HVUT EXEMPTION RULES
+==================================================
+
+Exempt proof allowed for:
+- Vehicles traveling under mileage thresholds
+- Agricultural vehicles
+- Blood collector vehicles
+
+==================================================
+VERY IMPORTANT 5,000 MILE RULE
+==================================================
+
+Vehicle:
+55,000 pounds or more:
+Traveling less than:
+5,000 miles:
+May qualify for exemption.
+
+==================================================
+VERY IMPORTANT AGRICULTURAL RULE
+==================================================
+
+Agricultural vehicle:
+Traveling less than:
+7,500 miles:
+May qualify for exemption.
+
+==================================================
+VERY IMPORTANT BLOOD COLLECTOR RULE
+==================================================
+
+Blood collector vehicles:
+May qualify:
+For HVUT exemption.
+
+==================================================
+VERY IMPORTANT ELECTRONIC FILING RULE
+==================================================
+
+Electronically filed Form 2290:
+Must show:
+Visible IRS watermark:
+"Received XX/XX/XXXX"
+
+==================================================
+VERY IMPORTANT WATERMARK RULE
+==================================================
+
+IRS watermark:
+May appear faint.
+
+Clerk must:
+- verify watermark
+- circle stamped area
+- enter IRS received date
+- enter full User ID
+
+==================================================
+VERY IMPORTANT ALTERED VIN RULE
+==================================================
+
+Form 2290:
+Must NOT be accepted:
+If VIN or category:
+Appears altered.
+
+==================================================
+VERY IMPORTANT 25 VEHICLE RULE
+==================================================
+
+Businesses:
+25 or more vehicles:
+Required by IRS:
+To electronically file Form 2290.
+
+==================================================
+VERY IMPORTANT CURRENT TAX YEAR RULE
+==================================================
+
+Form 2290:
+Must be:
+For current IRS tax year.
+
+==================================================
+VERY IMPORTANT JULY-SEPTEMBER RULE
+==================================================
+
+Registrations:
+During July, August, September:
+May use:
+Current OR previous fiscal year:
+Schedule 1 Form 2290.
+
+==================================================
+VERY IMPORTANT PURCHASE WITHIN 60 DAYS RULE
+==================================================
+
+If vehicle purchased:
+Within 60 days:
+Customer may avoid:
+HVUT proof requirement:
+With:
+- bill of sale
+OR
+- acceptable purchase documentation
+AND
+- HSMV 82040/82041.
+
+==================================================
+VERY IMPORTANT LATE TITLE RULE
+==================================================
+
+If HSMV 82040 submitted:
+More than 60 days after purchase:
+HVUT proof required.
+
+==================================================
+VERY IMPORTANT GVW MATCH RULE
+==================================================
+
+GVW declared:
+On registration:
+Must be:
+Equal to or less than:
+GVW category:
+Declared on Form 2290.
+
+==================================================
+VERY IMPORTANT COPY RETENTION RULE
+==================================================
+
+License plate agent:
+Must retain copy:
+Of HVUT proof submitted.
+
+==================================================
+MISCELLANEOUS IRS RULES
+==================================================
+
+If customer lacks acceptable proof:
+Customer must visit:
+IRS office:
+For assistance.
+
+==================================================
+VERY IMPORTANT TL-62 RULE
+==================================================
+
+HVUT reporting requirements:
+Governed by:
+TL-62.
+
+==================================================
+HVUT ERROR REPORT RULES
+==================================================
+
+If county receives:
+HVUT Error Report:
+Response required:
+Within 15 working days.
+
+==================================================
+VERY IMPORTANT ADDITIONAL FIVE DAYS RULE
+==================================================
+
+Additional:
+5 working days:
+May be granted:
+If more time required.
+
+==================================================
+VERY IMPORTANT REGISTRATION STOP RULE
+==================================================
+
+Failure to submit required HVUT documents:
+May result in:
+Registration Stop:
+Preventing renewal.
+
+==================================================
+VERY IMPORTANT FRAUD RULE
+==================================================
+
+If suspicious/questionable documents:
+Notation must be made:
+On EOD Report.
+
+==================================================
+VERY IMPORTANT FHWA VERIFICATION RULE
+==================================================
+
+Suspicious documents:
+Forwarded by FLHSMV:
+To FHWA:
+For verification.
+
+==================================================
+VERY IMPORTANT EIN RULE
+==================================================
+
+EIN:
+Must be completed:
+On Form 2290.
+
+==================================================
+VERY IMPORTANT SSN RULE
+==================================================
+
+If:
+- Social Security Number
+OR
+- "Applied For"
+
+Used instead of EIN:
+Application should be rejected.
+
+==================================================
+VERY IMPORTANT SUNBIZ RULE
+==================================================
+
+EIN may be checked:
+Using Sunbiz.
+
+==================================================
+VERY IMPORTANT NON-INCORPORATED RULE
+==================================================
+
+If business not incorporated:
+EIN may NOT verify:
+Within Sunbiz.
+
+Application should NOT automatically reject.
+
+==================================================
+LEASE / REGISTRANT MISMATCH RULE
+==================================================
+
+If registrant differs:
+From Form 2290 owner:
+Verification required.
+
+==================================================
+VERY IMPORTANT LEASE DOCUMENT RULE
+==================================================
+
+Require:
+Lease documentation:
+Showing:
+- lessee/registrant relationship
+- vehicle description.
+
+==================================================
+VERY IMPORTANT DIVISION OF CORPORATIONS RULE
+==================================================
+
+Alternative proof:
+Division of Corporations (Sunbiz) documentation:
+Showing connection:
+Between owner and registrant.
+
+==================================================
+ALTERNATE PROOF OF PAYMENT PROGRAM
+==================================================
+
+Some counties participate:
+In:
+Alternate Proof of Payment of 2290 Program.
+
+==================================================
+VERY IMPORTANT SUPPLEMENTAL DOCUMENT RULE
+==================================================
+
+Participating counties:
+Require:
+Supplemental reporting documents.
+
+==================================================
+AI DECISION LOGIC
+==================================================
+
+AI should determine:
+1. Does vehicle require HVUT?
+2. Is GVW 55,000 pounds or more?
+3. Is vehicle truck tractor, truck, or bus?
+4. Is acceptable Form 2290 proof attached?
+5. Is IRS stamp/watermark verified?
+6. Is VIN altered?
+7. Is current tax year used?
+8. Does July-September exception apply?
+9. Does 60-day purchase exemption apply?
+10. Does GVW category match registration?
+11. Is EIN valid?
+12. Is Sunbiz verification required?
+13. Does registrant mismatch exist?
+14. Is lease documentation required?
+15. Does exemption mileage apply?
+16. Is suspicious fraud notation required?
+17. Does TL-62 reporting apply?
+18. Is registration stop risk present?
+19. Is county participating in alternate payment program?
+20. Must documents be retained?
+
+==================================================
+COMMON TITLE CLERK / REGISTRATION ERRORS
+==================================================
+
+- Missing Form 2290
+- Using outdated tax year
+- Missing IRS stamp
+- Missing watermark verification
+- Accepting altered VIN
+- Incorrect GVW category
+- Missing cancelled check proof
+- Missing lease documentation
+- Rejecting unverifiable EIN improperly
+- Accepting SSN instead of EIN
+- Ignoring suspicious documents
+- Missing EOD fraud notation
+- Missing TL-62 reporting
+- Ignoring HVUT Error Reports
+- Failure to respond within 15 days
+- Missing registration stop follow-up
+- Incorrect mileage exemption handling
+- Missing purchase-date exemption review
+
+==================================================
+VERY IMPORTANT CORE CONCEPT
+==================================================
+
+Florida HVUT procedures:
+Require strict IRS tax compliance
+for commercial heavy vehicles
+55,000 pounds GVW or greater,
+while enforcing:
+- Form 2290 verification
+- GVW matching
+- EIN validation
+- fraud prevention
+- registration stop enforcement
+and audit/reporting compliance.
+
+==================================================
+RELATED PROCEDURES
+==================================================
+
+- RS-45
+- TL-62
+
+==================================================
+RELATED FORMS
+==================================================
+
+- IRS Schedule 1 Form 2290
+- HSMV 82040
+- HSMV 82041
+
+==================================================
+RELATED ENTITIES
+==================================================
+
+- FLHSMV
+- IRS
+- FHWA
+- Motorist Review Unit
+- Tax Collectors
+- License Plate Agencies
+- Sunbiz
+
+==================================================
+REFERENCE NOTES
+==================================================
+
+Current revision:
+12/2023
+
+Primary focus:
+- HVUT proof verification
+- IRS Form 2290 compliance
+- Heavy truck registration tax requirements
+- EIN validation
+- Suspicious document handling
+- Registration stop enforcement

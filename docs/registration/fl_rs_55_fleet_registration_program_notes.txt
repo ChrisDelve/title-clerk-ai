@@ -1,0 +1,699 @@
+FLORIDA REGISTRATION PROCEDURE — FLEET REGISTRATION PROGRAM
+PROCEDURE: RS-55
+CATEGORY: FLEET REGISTRATION / COMMERCIAL FLEETS / CORPORATE REGISTRATION PROGRAM
+
+==================================================
+PROCEDURE SUMMARY
+==================================================
+
+This procedure governs:
+- Fleet registration program participation
+- Fleet license plate issuance
+- Fleet specialty license plates
+- Corporate fleet registration requirements
+- Fleet eligibility standards
+- Fleet renewals and reconciliation
+- Fleet management fees
+- Fleet inventory control
+- Fleet compliance investigations
+- Fleet sanctions and penalties
+- Fleet plate replacement procedures
+- Fleet company review procedures
+- Tax collector fleet audits
+- Fleet plate inventory management
+
+Applies to:
+- Fleet companies
+- Corporate vehicle fleets
+- Commercial fleet operators
+- Fleet lessees
+- Fleet owners
+- Tax collectors
+- License plate agencies
+- FLHSMV personnel
+- Fleet administrators
+
+==================================================
+AI CLASSIFICATION TAGS
+==================================================
+
+KEYWORDS:
+- fleet registration
+- fleet license plate
+- fleet plate
+- fleet registration program
+- fleet company
+- FLR inventory code
+- DUR inventory code
+- fleet specialty plate
+- fleet renewal
+- fleet reconciliation
+- fleet management fee
+- fleet registration expiration
+- fleet vehicle reconciliation
+- fleet review checklist
+- fleet audit
+- fleet sanctions
+- fleet investigation
+- fleet administrative stop
+- fleet suspension
+- fleet termination
+- fleet registration application
+- fleet company review
+- fleet unit number
+- fleet company logo requirement
+- fleet plate inventory
+- fleet registration receipt
+- fleet vehicle control procedure
+- fleet error report
+- fleet registration June expiration
+- fleet registration December expiration
+- fleet specialty plate authorization
+- fleet sponsor approval letter
+- fleet public records request
+- MV Public Records Unit
+- DatalistingUnit
+- fleet FEID
+- fleet number
+- fleet processing agency
+- fleet vehicle identification
+- fleet trailers
+- semitrailer fleet
+- fleet company compliance
+- fleet registration tax
+- fleet delinquent fees
+- fleet registration sanctions
+- fleet license plate replacement
+- fleet inventory return
+- fleet registration no decals
+- fleet no registration certificate
+- fleet registration audit checklist
+- 320.0657
+- 320.0605
+- 320.08056
+- fleet program eligibility
+- fleet review inspection
+- fleet registration processing
+
+COMMON USER QUESTIONS:
+- "What qualifies for the fleet registration program?"
+- "How many vehicles are required?"
+- "Can apportioned vehicles be in fleet?"
+- "Do fleet vehicles get decals?"
+- "Can fleet vehicles use specialty plates?"
+- "What is the fleet management fee?"
+- "How are fleet renewals handled?"
+- "What happens if fleet plates are unassigned?"
+- "Can FLHSMV audit fleet companies?"
+- "What sanctions apply?"
+- "How do fleet specialty plates work?"
+- "Can a fleet switch tax collector offices?"
+- "What if fleet company needs vehicle list?"
+- "Do fleet plates expire?"
+- "What is the FLR inventory code?"
+- "What is required on fleet vehicles?"
+- "Can trailers qualify?"
+- "What if fleet renewals are late?"
+- "How are delinquent fees calculated?"
+- "Can fleet plates be replaced?"
+
+==================================================
+LEGAL AUTHORITY
+==================================================
+
+Governed by:
+- 320.0605 FS
+- 320.0657 FS
+- 320.08056(2)(b) FS
+- 320.01(11)(a) FS
+
+==================================================
+DESCRIPTION AND USE
+==================================================
+
+Procedure explains:
+- Fleet registration program participation
+- Fleet plate issuance
+- Specialty fleet plates
+- Fleet compliance procedures
+- Renewal and reconciliation requirements
+
+==================================================
+VERY IMPORTANT CORE RULE
+==================================================
+
+Fleet Registration Program:
+Allows qualified companies:
+To manage large vehicle groups:
+Under consolidated fleet registration procedures.
+
+==================================================
+VERY IMPORTANT FLEET PLATE RULE
+==================================================
+
+Fleet plates:
+Display:
+- "FLORIDA" at top
+- "FLEET" at bottom.
+
+==================================================
+VERY IMPORTANT NO DECAL RULE
+==================================================
+
+Fleet registrations:
+Do NOT require:
+- annual validation decals
+OR
+- individual registration certificates.
+
+==================================================
+SPECIALTY FLEET PLATE RULES
+==================================================
+
+Fleet companies:
+May purchase:
+Specialty license plates:
+For fleet vehicles.
+
+==================================================
+VERY IMPORTANT SPONSOR APPROVAL RULE
+==================================================
+
+Specialty fleet plates:
+Require:
+Approval letter:
+From sponsoring specialty plate organization.
+
+==================================================
+VERY IMPORTANT FLR RULE
+==================================================
+
+Fleet specialty plates:
+Must include:
+Letters:
+"FLR"
+On right side of plate.
+
+==================================================
+VERY IMPORTANT DIRECT ORDER RULE
+==================================================
+
+Fleet specialty plates:
+Must be ordered:
+Directly from FLHSMV.
+
+==================================================
+VERY IMPORTANT RS-22 RULE
+==================================================
+
+Specialty plate processing:
+Governed additionally by:
+RS-22.
+
+==================================================
+ELIGIBILITY RULES
+==================================================
+
+Fleet companies:
+Must submit:
+Complete list of fleet vehicles.
+
+==================================================
+VERY IMPORTANT MINIMUM VEHICLE RULE
+==================================================
+
+Fleet participation requires:
+Minimum:
+- 100 vehicles
+OR
+- 25 trailers/semitrailers.
+
+==================================================
+VERY IMPORTANT APPORTIONED RULE
+==================================================
+
+Apportioned motor vehicles:
+CANNOT participate:
+In fleet program.
+
+==================================================
+VERY IMPORTANT IDENTIFICATION RULE
+==================================================
+
+All fleet vehicles:
+Must display:
+- company name or logo
+AND
+- unit number.
+
+==================================================
+VEHICLE LIST REQUEST RULE
+==================================================
+
+Fleet company:
+May request vehicle list:
+From MV Public Records Unit:
+For fee.
+
+==================================================
+MV PUBLIC RECORDS CONTACT
+==================================================
+
+Division of Motorist Services
+Attn: MV Public Records Unit
+2900 Apalachee Parkway MS 57
+Tallahassee FL 32399-0500
+
+Phone:
+850-617-2804
+
+Email:
+DMVrecords@flhsmv.gov
+
+==================================================
+APPLICATION RULES
+==================================================
+
+Fleet application:
+Requires:
+- number/type of vehicles
+- FEID
+OR
+- customer numbers.
+
+==================================================
+VERY IMPORTANT FLEET NUMBER RULE
+==================================================
+
+Division of Motorist Services:
+Assigns:
+Fleet numbers.
+
+==================================================
+VERY IMPORTANT FAX RULE
+==================================================
+
+Applications may be faxed:
+To Fleet Unit:
+850-617-5145.
+
+==================================================
+VERY IMPORTANT FLEET UNIT RULE
+==================================================
+
+Fleet Unit phone:
+850-617-2900.
+
+==================================================
+REGISTRATION RULES
+==================================================
+
+Initial application:
+Must be submitted:
+90 days before:
+Current registration expiration.
+
+==================================================
+VERY IMPORTANT RENEWAL RULE
+==================================================
+
+Renewal information:
+Should be submitted:
+60 days before expiration.
+
+==================================================
+VERY IMPORTANT EXPIRATION RULE
+==================================================
+
+Fleet registrations expire:
+In:
+- June
+OR
+- December
+
+Depending on:
+Vehicle weight.
+
+==================================================
+FEE RULES
+==================================================
+
+Fleet registration includes:
+- annual registration taxes
+- annual registration fees
+- fleet management fee
+- manufacturing fee.
+
+==================================================
+VERY IMPORTANT FLEET MANAGEMENT FEE RULE
+==================================================
+
+Additional annual fleet management fee:
+$2.00:
+Per vehicle.
+
+==================================================
+VERY IMPORTANT MANUFACTURING FEE RULE
+==================================================
+
+One-time manufacturing fee:
+$1.50:
+Per vehicle.
+
+==================================================
+VERY IMPORTANT FLEET INCREASE RULE
+==================================================
+
+When fleet size increases:
+$10 issuance fee:
+Charged:
+Per added vehicle.
+
+==================================================
+DELINQUENT FEE RULES
+==================================================
+
+Late fleet renewals:
+Subject to delinquent fees.
+
+==================================================
+VERY IMPORTANT DELINQUENT START RULE
+==================================================
+
+Delinquent fees begin:
+11th calendar day:
+Of month:
+Following renewal period.
+
+==================================================
+DELINQUENT FEE SCHEDULE
+==================================================
+
+License tax:
+$5-$25:
+$5 delinquent fee.
+
+License tax:
+Over $25-$50:
+$10 delinquent fee.
+
+License tax:
+Over $50-$100:
+$15 delinquent fee.
+
+License tax:
+Over $100-$400:
+$50 delinquent fee.
+
+License tax:
+Over $400-$600:
+$100 delinquent fee.
+
+License tax:
+Over $600:
+$250 delinquent fee.
+
+==================================================
+RECONCILIATION RULES
+==================================================
+
+Fleet companies:
+Must submit:
+Annual reconciliation.
+
+==================================================
+VERY IMPORTANT SURRENDER RULE
+==================================================
+
+All unassigned fleet plates:
+Must be surrendered annually.
+
+==================================================
+VERY IMPORTANT SANCTIONS RULE
+==================================================
+
+Failure to comply:
+May result in:
+- fines
+- suspension
+- termination
+- registration stops
+- plate cancellation.
+
+==================================================
+VERY IMPORTANT $1000 RULE
+==================================================
+
+Fines:
+Up to:
+$1,000:
+Per occurrence.
+
+==================================================
+VERY IMPORTANT ERROR REPORT RULE
+==================================================
+
+Before renewal:
+License plate agency:
+Runs:
+Error report:
+For:
+- administrative stops
+- exceptions.
+
+==================================================
+VERY IMPORTANT INTERNAL CONTROL RULE
+==================================================
+
+Fleet companies:
+Must maintain:
+Internal vehicle control procedures.
+
+==================================================
+VERY IMPORTANT RANDOM CHECK RULE
+==================================================
+
+License plate agencies:
+May conduct:
+Random fleet checks.
+
+==================================================
+VERY IMPORTANT NO RENEWAL NOTICE RULE
+==================================================
+
+FLHSMV:
+Does NOT provide:
+Fleet renewal notifications.
+
+==================================================
+VERY IMPORTANT INVESTIGATION RULE
+==================================================
+
+Detailed investigations:
+May occur:
+For just cause.
+
+==================================================
+GENERAL INFORMATION RULES
+==================================================
+
+Fleet plates:
+Use:
+Light green background:
+With darker green alphanumeric characters.
+
+==================================================
+VERY IMPORTANT INVENTORY CODE RULE
+==================================================
+
+Inventory codes:
+FLR and DUR:
+Expire:
+12/31/2099.
+
+==================================================
+VERY IMPORTANT NO REPLACEMENT RULE
+==================================================
+
+System:
+Will NOT automatically indicate:
+Fleet plate replacement required.
+
+==================================================
+VERY IMPORTANT REPLACEMENT CONDITIONS RULE
+==================================================
+
+Fleet plates replaced ONLY:
+For:
+- damage
+- loss
+- theft
+OR
+company request.
+
+==================================================
+VERY IMPORTANT SAME TAX COLLECTOR RULE
+==================================================
+
+Fleet company:
+Must continue using:
+Original tax collector office:
+For fleet processing.
+
+==================================================
+VERY IMPORTANT OFFICE CHANGE RULE
+==================================================
+
+To switch tax collector office:
+Fleet company must submit:
+- new application
+- printed vehicle list
+- proof of insurance.
+
+==================================================
+DATA LISTING UNIT RULE
+==================================================
+
+Fleet companies:
+May request:
+Fleet vehicle lists:
+Using fleet number.
+
+==================================================
+DATA LISTING UNIT CONTACT
+==================================================
+
+Division of Motorist Services
+Attn: Data Listing Unit
+2900 Apalachee Parkway MS 91
+Tallahassee FL 32399-0500
+
+Phone:
+850-617-2805
+
+Email:
+Datalistingunit@flhsmv.gov
+
+==================================================
+EXHIBIT A RULE
+==================================================
+
+Application for Fleet Registration:
+Requires:
+- company information
+- fleet administrator
+- county office
+- FEID/customer number
+- vehicle counts
+- fleet totals.
+
+==================================================
+VERY IMPORTANT DUAL PLATE RULE
+==================================================
+
+Heavy trucks:
+26,001 pounds or more GVW:
+Receive dual plates.
+
+==================================================
+AI DECISION LOGIC
+==================================================
+
+AI should determine:
+1. Does company meet fleet minimum?
+2. Are apportioned vehicles excluded?
+3. Is vehicle list complete?
+4. Is FEID/customer number provided?
+5. Was application submitted timely?
+6. Does company display logos/unit numbers?
+7. Is specialty plate approval letter attached?
+8. Does FLR specialty plate rule apply?
+9. Are renewal timelines met?
+10. Are fleet management/manufacturing fees correct?
+11. Are delinquent fees applicable?
+12. Was annual reconciliation completed?
+13. Were unassigned plates surrendered?
+14. Does company maintain internal controls?
+15. Are sanctions required?
+16. Was proper tax collector office used?
+17. Is office transfer documentation complete?
+18. Is replacement request valid?
+19. Was Data Listing Unit request processed correctly?
+20. Does inventory code handling apply?
+
+==================================================
+COMMON TITLE CLERK / REGISTRATION ERRORS
+==================================================
+
+- Allowing apportioned vehicles into fleet program
+- Missing minimum vehicle threshold
+- Missing company logo/unit numbers
+- Missing specialty sponsor approval letter
+- Incorrect renewal timing
+- Incorrect delinquent fee calculation
+- Failing to collect fleet management fee
+- Failing to surrender unassigned plates
+- Missing internal control procedures
+- Incorrect tax collector office handling
+- Missing FEID/customer number
+- Incorrect FLR specialty plate processing
+- Missing reconciliation review
+- Ignoring administrative stops
+- Incorrect inventory code assumptions
+
+==================================================
+VERY IMPORTANT CORE CONCEPT
+==================================================
+
+Florida Fleet Registration Program procedures:
+Provide centralized large-scale registration management
+for qualifying commercial fleets,
+while enforcing:
+- minimum fleet eligibility
+- reconciliation controls
+- annual surrender requirements
+- internal inventory procedures
+- specialty fleet plate controls
+- audit/investigation authority
+and strict fleet compliance standards.
+
+==================================================
+RELATED PROCEDURES
+==================================================
+
+- RS-22
+
+==================================================
+RELATED EXHIBITS
+==================================================
+
+- Exhibit A — Application for Fleet Registration
+- Exhibit B — Fleet Company Review Checklist
+- Exhibit C — County Tax Collector Review Checklist
+
+==================================================
+RELATED ENTITIES
+==================================================
+
+- FLHSMV
+- Division of Motorist Services
+- Fleet Unit
+- MV Public Records Unit
+- Data Listing Unit
+- Tax Collectors
+- License Plate Agencies
+
+==================================================
+REFERENCE NOTES
+==================================================
+
+Current revision:
+03/2026
+
+Primary focus:
+- Fleet registration eligibility
+- Fleet specialty plates
+- Fleet reconciliation/compliance
+- Fleet sanctions
+- Inventory control
+- Renewal and fee management

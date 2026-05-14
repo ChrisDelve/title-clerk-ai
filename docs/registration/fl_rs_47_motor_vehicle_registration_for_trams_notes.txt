@@ -1,0 +1,456 @@
+FLORIDA REGISTRATION PROCEDURE — MOTOR VEHICLE REGISTRATION FOR TRAMS
+PROCEDURE: RS-47
+CATEGORY: COMMERCIAL REGISTRATION / TRAM REGISTRATION / PASSENGER TRANSPORT VEHICLES
+
+==================================================
+PROCEDURE SUMMARY
+==================================================
+
+This procedure governs:
+- Tram registrations
+- Passenger tram classifications
+- Power unit registration
+- Trailing module registration
+- For-hire tram registration
+- Not-for-hire tram registration
+- Tram GVW calculations
+- Tram insurance requirements
+- Heavy Vehicle Use Tax (HVUT) requirements
+- Tram title requirements
+- Replacement tram plates
+- Tram renewals and transfers
+
+Applies to:
+- Entertainment parks
+- Retirement communities
+- Shopping centers
+- Tram operators
+- Tax collectors
+- License plate agencies
+- FLHSMV personnel
+- Passenger transport operations
+
+==================================================
+AI CLASSIFICATION TAGS
+==================================================
+
+KEYWORDS:
+- tram registration
+- tram power unit
+- trailing module
+- passenger tram
+- tram GVW
+- tram insurance
+- tram trailer registration
+- tram for-hire
+- tram not-for-hire
+- tram class codes
+- class code 31
+- class code 09
+- class code 36
+- class code 53
+- class code 54
+- tram title requirements
+- tram ownership proof
+- tram passenger weight
+- tram registration fees
+- HSMV 83146
+- RS-34
+- RS-36
+- RS-06
+- tram replacement plate
+- tram transport vehicle
+- retirement community tram
+- entertainment park tram
+- shopping center tram
+- tram module trailer
+- passenger hauling tram
+- tram towing module
+- tram registration tax
+- Florida tram registration
+- tram proof of ownership
+- tram insurance compliance
+- tram heavy vehicle use tax
+- tram renewal
+- tram transfer
+- tram replacement fees
+- tram passenger capacity
+- bus classification tram
+- van classification tram
+- trailer module tram
+- tram registration classification
+
+COMMON USER QUESTIONS:
+- "Do trams require registration?"
+- "How are tram power units classified?"
+- "What class code applies?"
+- "How are trailing modules registered?"
+- "Do tram trailers require titles?"
+- "How is tram GVW calculated?"
+- "When is HVUT required?"
+- "What insurance is required?"
+- "How are passenger counts determined?"
+- "What if trailer weight is unknown?"
+- "Do replacement tram plates require fees?"
+- "Can tram registrations transfer?"
+- "What if tram plate is stolen?"
+- "Can tram trailers use bill of sale?"
+- "What class code applies to for-hire trams?"
+
+==================================================
+LEGAL AUTHORITY
+==================================================
+
+Governed by:
+- 316.605 FS
+- 320.02 FS
+
+==================================================
+DESCRIPTION AND USE
+==================================================
+
+Procedure explains:
+- Tram registration requirements
+- Passenger tram classifications
+- GVW calculation rules
+- Insurance/HVUT compliance
+- Replacement and renewal procedures
+
+==================================================
+VERY IMPORTANT CORE RULE
+==================================================
+
+Any tram:
+Operated on Florida roads:
+Must be registered.
+
+==================================================
+POWER UNIT RULES — NOT-FOR-HIRE
+==================================================
+
+Not-for-hire power units:
+Registered:
+As trucks:
+Based on weight.
+
+==================================================
+VERY IMPORTANT GVW RULE
+==================================================
+
+If net weight:
+Exceeds 5,000 pounds:
+Gross Vehicle Weight:
+Must be declared.
+
+==================================================
+VERY IMPORTANT PASSENGER WEIGHT RULE
+==================================================
+
+GVW calculation:
+Includes:
+- power unit net weight
+PLUS
+- passenger weight
+In power unit only.
+
+==================================================
+VERY IMPORTANT TRAILING MODULE EXCLUSION RULE
+==================================================
+
+Do NOT include:
+- trailing module weight
+OR
+- trailing module passengers
+When calculating power unit GVW.
+
+==================================================
+POWER UNIT RULES — FOR-HIRE
+==================================================
+
+For-hire classifications:
+Based on passenger count.
+
+==================================================
+VERY IMPORTANT CLASS CODE 31 RULE
+==================================================
+
+For-hire:
+Up to 4 passengers:
+Including driver:
+Use:
+Class code 31.
+
+==================================================
+VERY IMPORTANT CLASS CODE 09 RULE
+==================================================
+
+For-hire:
+Over 4 passengers but less than 9:
+Use:
+Class code 09 (van).
+
+==================================================
+VERY IMPORTANT CLASS CODE 36 RULE
+==================================================
+
+For-hire:
+Over 9 passengers:
+Use:
+Class code 36 (bus).
+
+==================================================
+TRAILING MODULE RULES
+==================================================
+
+Trailing modules:
+Registered:
+As trailers.
+
+==================================================
+VERY IMPORTANT TRAILER WEIGHT RULE
+==================================================
+
+If proof of ownership:
+Does not show weight:
+Weight may be calculated:
+Width × Length × 20 pounds.
+
+==================================================
+VERY IMPORTANT CLASS CODE 53 RULE
+==================================================
+
+Not-for-hire trailing modules:
+Use:
+Class code 53.
+
+==================================================
+VERY IMPORTANT CLASS CODE 54 RULE
+==================================================
+
+For-hire trailing modules:
+Use:
+Class code 54.
+
+==================================================
+PROOF OF OWNERSHIP RULES
+==================================================
+
+Power unit:
+Requires:
+Manufacturer’s Certificate of Origin:
+And title.
+
+==================================================
+VERY IMPORTANT TRAILING MODULE OWNERSHIP RULE
+==================================================
+
+Trailing module:
+Acceptable proof:
+- Manufacturer’s Certificate of Origin
+OR
+- bill of sale.
+
+==================================================
+VERY IMPORTANT 2,000 POUND TITLE RULE
+==================================================
+
+Trailing modules:
+2,000 pounds or more:
+Require title.
+
+==================================================
+INSURANCE RULES
+==================================================
+
+Proof of Florida insurance:
+Required.
+
+==================================================
+VERY IMPORTANT RS-36 RULE
+==================================================
+
+Insurance processing:
+Governed by:
+RS-36.
+
+==================================================
+HVUT RULES
+==================================================
+
+If power unit GVW:
+55,000 pounds or more:
+HVUT proof required.
+
+==================================================
+VERY IMPORTANT RS-34 RULE
+==================================================
+
+HVUT processing:
+Governed by:
+RS-34.
+
+==================================================
+FEE RULES
+==================================================
+
+Required fees include:
+- registration tax
+- trust fund fees
+- original plate fee
+- Decal on Demand fee
+- service fee
+- branch fee if applicable.
+
+==================================================
+VERY IMPORTANT CLASSIFICATION RULE
+==================================================
+
+Fees:
+Determined:
+By:
+- vehicle classification
+- weight
+- applicable class code.
+
+==================================================
+RENEWAL AND TRANSFER RULES
+==================================================
+
+Renewals and transfers:
+May process:
+At any county license plate agency.
+
+==================================================
+REPLACEMENT RULES
+==================================================
+
+Replacement requires:
+- copy of registration certificate
+- HSMV 83146
+- applicable replacement fees.
+
+==================================================
+VERY IMPORTANT REPLACEMENT FEES RULE
+==================================================
+
+Replacement fees may include:
+- replacement fee
+- Decal on Demand fee
+- service fee
+- branch fee
+- Air Pollution fee
+- FRVIS fee
+- Reflectorization fee
+- EMS fee.
+
+==================================================
+VERY IMPORTANT STOLEN PLATE RULE
+==================================================
+
+If customer:
+Provides police report or agency card:
+Per RS-06:
+Replacement fee waived.
+
+==================================================
+AI DECISION LOGIC
+==================================================
+
+AI should determine:
+1. Is tram for-hire or not-for-hire?
+2. What passenger count applies?
+3. What class code applies?
+4. Is GVW declaration required?
+5. Was GVW calculated correctly?
+6. Were trailing module passengers excluded?
+7. Is trailing module properly classified?
+8. Was trailer weight estimated correctly?
+9. Is title required for trailing module?
+10. Is proof of ownership acceptable?
+11. Is Florida insurance attached?
+12. Is HVUT required?
+13. Are correct fees assessed?
+14. Is HSMV 83146 required?
+15. Is replacement fee waiver applicable?
+16. Are branch fees applicable?
+17. Is title required on power unit?
+18. Is trailer for-hire or not-for-hire?
+19. Is passenger classification accurate?
+20. Are renewal/transfer rules satisfied?
+
+==================================================
+COMMON TITLE CLERK / REGISTRATION ERRORS
+==================================================
+
+- Incorrect passenger count classification
+- Wrong class code usage
+- Incorrect GVW calculation
+- Including trailing module passengers improperly
+- Missing title requirement
+- Missing insurance verification
+- Missing HVUT documentation
+- Incorrect trailer weight estimate
+- Using wrong trailer class code
+- Missing HSMV 83146
+- Charging replacement fee incorrectly
+- Failing to waive stolen plate fee
+- Incorrect for-hire determination
+- Missing branch fees
+- Improper ownership documentation
+
+==================================================
+VERY IMPORTANT CORE CONCEPT
+==================================================
+
+Florida tram registration procedures:
+Require registration
+for tram power units and passenger modules
+operating on Florida roads,
+while enforcing:
+- passenger-count classifications
+- GVW calculations
+- trailer registration rules
+- insurance compliance
+- HVUT compliance
+and specialized for-hire/not-for-hire classifications.
+
+==================================================
+RELATED PROCEDURES
+==================================================
+
+- RS-06
+- RS-34
+- RS-36
+
+==================================================
+RELATED FORMS
+==================================================
+
+- HSMV 83146
+- Manufacturer’s Certificate of Origin
+
+==================================================
+RELATED ENTITIES
+==================================================
+
+- FLHSMV
+- Tax Collectors
+- License Plate Agencies
+- Entertainment Parks
+- Retirement Communities
+- Shopping Centers
+
+==================================================
+REFERENCE NOTES
+==================================================
+
+Current revision:
+06/29/2022
+
+Primary focus:
+- Tram registration classifications
+- Passenger transport vehicle registration
+- GVW calculations
+- Insurance/HVUT compliance
+- Trailer module registration
+- Replacement/renewal procedures

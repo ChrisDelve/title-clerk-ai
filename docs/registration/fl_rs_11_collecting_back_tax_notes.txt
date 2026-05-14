@@ -1,0 +1,334 @@
+FLORIDA REGISTRATION PROCEDURE — COLLECTING BACK TAX
+PROCEDURE: RS-11
+CATEGORY: BACK TAX / DELINQUENT REGISTRATION TAX / STORAGE EXEMPTIONS
+
+==================================================
+PROCEDURE SUMMARY
+==================================================
+
+This procedure governs:
+- Collection of back registration tax
+- Delinquent registration tax assessments
+- Initial registration back tax
+- Renewal transaction back tax
+- Storage exemptions
+- Back tax affidavit exemptions
+- Vehicle non-operation exemptions
+- Registration withholding for unpaid taxes
+
+Applies to:
+- Motor vehicles
+- Mobile homes
+- Travel trailers
+- Park trailers
+- Vehicle owners
+- New purchasers
+- Tax collectors
+- License plate agencies
+- FLHSMV personnel
+
+==================================================
+AI CLASSIFICATION TAGS
+==================================================
+
+KEYWORDS:
+- back tax
+- collecting back tax
+- delinquent registration tax
+- unpaid registration tax
+- registration withholding
+- back registration fees
+- initial registration back tax
+- renewal back tax
+- storage affidavit
+- non operational affidavit
+- stored vehicle exemption
+- continuously maintained in storage
+- vehicle not operated
+- notarized affidavit
+- perjury clause affidavit
+- mobile home back tax
+- travel trailer back tax
+- park trailer back tax
+- registration expiration back tax
+- purchase date tax
+- proof of ownership date
+- delinquent registration
+- tax due from purchase date
+- renewal expiration tax
+- back tax exemption
+- RS-11
+- unpaid registration periods
+- vehicle storage exemption
+- registration tax due
+- withheld registration
+
+COMMON USER QUESTIONS:
+- "What is back tax?"
+- "How is back tax calculated?"
+- "Can back tax be waived?"
+- "What affidavit is needed?"
+- "Does stored vehicle owe back tax?"
+- "Can mobile home avoid back tax?"
+- "Does new owner owe previous owner's tax?"
+- "When does back tax start?"
+- "How are renewal back taxes calculated?"
+- "Can FLHSMV refuse registration?"
+- "What if vehicle sat unused?"
+- "Does trailer qualify for exemption?"
+- "What if vehicle was in storage?"
+- "Can affidavit remove back tax?"
+- "How is purchase date used?"
+
+==================================================
+LEGAL AUTHORITY
+==================================================
+
+Governed by:
+- 320.18 FS
+
+==================================================
+DESCRIPTION AND USE
+==================================================
+
+Procedure explains:
+- Assessment of back tax
+- Collection of unpaid registration taxes
+- Storage-related exemptions
+- Affidavit requirements
+
+==================================================
+VERY IMPORTANT CORE RULE
+==================================================
+
+FLHSMV may withhold registration:
+Until unpaid registration tax:
+For prior required periods:
+Is fully paid.
+
+==================================================
+ASSESSING BACK TAX RULES
+==================================================
+
+Back tax assessed:
+Based on:
+- Initial registration
+OR
+- Renewal transaction.
+
+==================================================
+INITIAL REGISTRATION BACK TAX RULE
+==================================================
+
+Initial registration:
+Back tax due:
+From purchase date.
+
+==================================================
+VERY IMPORTANT PURCHASE DATE RULE
+==================================================
+
+Purchase date determined by:
+Proof of ownership:
+Transferred to new owner.
+
+==================================================
+VERY IMPORTANT NEW OWNER RULE
+==================================================
+
+New owner:
+Only responsible:
+For tax due:
+From their own purchase date.
+
+==================================================
+VERY IMPORTANT PRIOR OWNER RULE
+==================================================
+
+Previous owner's unpaid back tax:
+Cannot be assessed:
+To new owner.
+
+==================================================
+RENEWAL TRANSACTION BACK TAX RULE
+==================================================
+
+Renewal transaction:
+Back tax due:
+From expiration date:
+Of last registration.
+
+==================================================
+VERY IMPORTANT EXPIRATION RULE
+==================================================
+
+Renewal back tax calculated:
+Beginning:
+Date last registration expired:
+In owner's name.
+
+==================================================
+BACK TAX EXEMPTION RULES
+==================================================
+
+Certain vehicles:
+May qualify:
+For exemption from back tax.
+
+==================================================
+VERY IMPORTANT STORAGE EXEMPTION RULE
+==================================================
+
+Vehicle exempt from back tax:
+If continuously maintained:
+In storage:
+Entire claimed period.
+
+==================================================
+VERY IMPORTANT NON-OPERATION RULE
+==================================================
+
+Vehicle must NOT have been:
+- Operated
+OR
+- Removed from storage
+At any time:
+During claimed exemption period.
+
+==================================================
+AFFIDAVIT REQUIREMENTS
+==================================================
+
+Require:
+Notarized affidavit
+OR
+Perjury clause affidavit.
+
+==================================================
+VERY IMPORTANT AFFIDAVIT CONTENT RULE
+==================================================
+
+Affidavit must state:
+- Vehicle continuously stored
+- Vehicle not removed from storage
+- Vehicle not operated
+- Entire exemption period covered
+
+==================================================
+VERY IMPORTANT EXCLUDED VEHICLE RULE
+==================================================
+
+Back tax exemption:
+Does NOT apply:
+To:
+- Mobile homes
+- Travel trailers registered as mobile homes
+- Park trailers registered as mobile homes
+
+==================================================
+VERY IMPORTANT MOBILE HOME RULE
+==================================================
+
+Mobile homes:
+Still subject:
+To back tax assessment.
+
+==================================================
+VERY IMPORTANT TRAVEL TRAILER RULE
+==================================================
+
+Travel trailers registered as mobile homes:
+NOT exempt:
+From back tax.
+
+==================================================
+VERY IMPORTANT PARK TRAILER RULE
+==================================================
+
+Park trailers registered as mobile homes:
+NOT exempt:
+From back tax.
+
+==================================================
+AI DECISION LOGIC
+==================================================
+
+AI should determine:
+1. Is transaction initial registration or renewal?
+2. What is purchase date?
+3. What is last expiration date?
+4. Is back tax owed?
+5. Is owner new purchaser?
+6. Is prior owner delinquency excluded?
+7. Is vehicle continuously stored?
+8. Was vehicle ever operated?
+9. Was vehicle removed from storage?
+10. Is affidavit notarized or perjury compliant?
+11. Does affidavit cover full period?
+12. Is vehicle mobile home?
+13. Is vehicle travel trailer as mobile home?
+14. Is vehicle park trailer as mobile home?
+15. Is exemption prohibited?
+16. Should registration be withheld?
+17. Is delinquent registration period valid?
+18. Is proof of ownership date verified?
+19. Is exemption legally allowable?
+20. Is storage exemption fully satisfied?
+
+==================================================
+COMMON TITLE CLERK / REGISTRATION ERRORS
+==================================================
+
+- Charging prior owner's back tax to new owner
+- Using incorrect purchase date
+- Incorrect renewal delinquency period
+- Allowing exemption for mobile homes
+- Missing affidavit
+- Accepting incomplete storage affidavit
+- Ignoring vehicle operation history
+- Incorrectly waiving back tax
+- Failing to collect delinquent tax
+- Misunderstanding continuous storage requirement
+- Incorrectly exempting travel trailers
+- Incorrectly exempting park trailers
+
+==================================================
+VERY IMPORTANT CORE CONCEPT
+==================================================
+
+Florida back tax rules:
+Require unpaid registration taxes
+to be collected for delinquent registration periods,
+unless the owner properly proves
+the vehicle remained continuously stored
+and non-operational during the claimed exemption period.
+
+==================================================
+RELATED TRANSACTIONS
+==================================================
+
+- Initial registrations
+- Renewal registrations
+- Delinquent renewals
+
+==================================================
+RELATED DOCUMENTS
+==================================================
+
+- Proof of ownership
+- Storage affidavit
+- Notarized affidavit
+- Perjury clause affidavit
+
+==================================================
+REFERENCE NOTES
+==================================================
+
+Current revision:
+05/25/2022
+
+Primary focus:
+- Back tax assessment
+- Delinquent registration tax
+- Storage exemptions
+- Affidavit compliance

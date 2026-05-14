@@ -1,0 +1,385 @@
+FLORIDA TITLE PROCEDURE — VEHICLE TITLE DETERMINATION PROCESS
+PROCEDURE: TL-71
+CATEGORY: TITLE ELIGIBILITY / TITLE DETERMINATION / VEHICLE CLASSIFICATION
+
+==================================================
+PROCEDURE SUMMARY
+==================================================
+
+This procedure governs:
+- Vehicle title eligibility determination
+- Florida title qualification review
+- Vehicle classification analysis
+- Correct title branding procedures
+- Determination flow process
+- Salvage and rebuilt determination
+- Replica and assembled-from-parts analysis
+- Manufacturer title review
+- Kit car title determination
+
+Applies to:
+- Motor vehicles
+- Rebuilt vehicles
+- Salvage vehicles
+- Replica vehicles
+- Kit cars
+- Assembled-from-parts vehicles
+- Tax collectors
+- License plate agencies
+- FLHSMV personnel
+
+==================================================
+AI CLASSIFICATION TAGS
+==================================================
+
+KEYWORDS:
+- title determination
+- title eligibility
+- Florida title eligibility
+- vehicle title determination
+- title process flow
+- salvage vehicle
+- rebuilt vehicle
+- assembled from parts
+- replica vehicle
+- kit car
+- vehicle cannot be titled
+- title brand determination
+- title flow chart
+- manufacturer title
+- vehicle classification
+- title decision tree
+- salvage title
+- rebuilt title
+- TL-10
+- TL-41
+- TL-43
+- TL-48
+- originally manufactured
+- reconstructed vehicle
+- title review
+- title branding
+- title status
+- vehicle legal title
+- title process chart
+
+COMMON USER QUESTIONS:
+- "Can this vehicle be titled in Florida?"
+- "What title brand applies?"
+- "Is this salvage or rebuilt?"
+- "Can assembled vehicle be titled?"
+- "What procedure should I use?"
+- "What if vehicle cannot be titled?"
+- "Does kit car qualify?"
+- "How do I determine title brand?"
+- "Can replica vehicle get title?"
+- "What is reconstructed vehicle?"
+- "Which title procedure applies?"
+- "What if vehicle was manufactured from parts?"
+- "How do I know if title allowed?"
+- "What if no valid title exists?"
+- "What flow chart determines title eligibility?"
+
+==================================================
+LEGAL AUTHORITY
+==================================================
+
+Governed by:
+- 316.003(46) FS
+- 320.01(1)(a) FS
+- 320.60(10) FS
+- 319.14(1)(c)5 FS
+
+==================================================
+IMPORTANT DEFINITIONS
+==================================================
+
+MOTOR VEHICLE:
+Self-propelled vehicle:
+Used to transport persons or property.
+
+KIT CAR:
+Motor vehicle assembled:
+Using manufacturer supplied kit:
+To rebuild wrecked or outdated vehicle.
+
+==================================================
+DESCRIPTION AND USE
+==================================================
+
+Procedure provides:
+Instructions and flow process:
+To determine:
+- Whether vehicle may be legally titled
+- Proper title brand designation
+
+==================================================
+VERY IMPORTANT CORE RULE
+==================================================
+
+Flow chart:
+Must be used:
+To determine:
+If vehicle can legally receive Florida title.
+
+==================================================
+VERY IMPORTANT PROCEDURE RULE
+==================================================
+
+If flow process directs:
+Specific title procedure:
+That procedure is:
+ONLY authorized method.
+
+==================================================
+VERY IMPORTANT NO TITLE RULE
+==================================================
+
+If flow chart outcome:
+"Vehicle cannot be titled"
+NO Florida title:
+May be issued or transferred.
+
+==================================================
+GENERAL INFORMATION
+==================================================
+
+Title determination:
+Requires:
+Review of vehicle history,
+construction,
+and manufacturer origin.
+
+==================================================
+FLOW CHART OVERVIEW
+==================================================
+
+Flow process determines:
+1. Whether vehicle was originally manufactured
+2. Whether vehicle qualifies as salvage
+3. Whether vehicle assembled from parts
+4. Whether vehicle is replica
+5. Whether vehicle can legally be titled
+6. Appropriate title procedure
+7. Correct title brand
+
+==================================================
+VERY IMPORTANT FLOW CHART RULE
+==================================================
+
+Exhibit A:
+Contains:
+Vehicle Title Determination Process Flow Chart.
+
+==================================================
+FLOW CHART DECISION POINTS
+==================================================
+
+Flow chart evaluates:
+- Was vehicle originally manufactured?
+- Does vehicle have VIN?
+- Is title branded?
+- Was vehicle assembled from parts?
+- Is vehicle salvage?
+- Is vehicle replica?
+- Is vehicle reconstructed?
+- Is vehicle originally manufactured?
+- Is vehicle older than statutory thresholds?
+- Is proper procedure available?
+
+==================================================
+VERY IMPORTANT SALVAGE RULE
+==================================================
+
+Certain salvage determinations:
+Require:
+TL-10 processing.
+
+==================================================
+VERY IMPORTANT REPLICA RULE
+==================================================
+
+Replica vehicle determinations:
+Require:
+TL-48 processing.
+
+==================================================
+VERY IMPORTANT ASSEMBLED RULE
+==================================================
+
+Assembled-from-parts vehicles:
+May require:
+TL-41 processing.
+
+==================================================
+VERY IMPORTANT REBUILT RULE
+==================================================
+
+Rebuilt vehicle determinations:
+May require:
+TL-43 processing.
+
+==================================================
+VERY IMPORTANT MANUFACTURER RULE
+==================================================
+
+Vehicles originally manufactured:
+May retain:
+Original manufacturer title designation.
+
+==================================================
+VERY IMPORTANT TITLE BRAND RULE
+==================================================
+
+Title brand:
+Must follow:
+Specific title procedure outcome.
+
+==================================================
+VERY IMPORTANT ONLY AUTHORIZED METHOD RULE
+==================================================
+
+Once flow process identifies:
+Applicable procedure:
+No alternate titling method allowed.
+
+==================================================
+VERY IMPORTANT ILLEGAL TITLE RULE
+==================================================
+
+Vehicles failing determination process:
+Cannot legally receive:
+Florida certificate of title.
+
+==================================================
+FLOW CHART LINKED PROCEDURES
+==================================================
+
+Referenced procedures:
+- TL-10
+- TL-41
+- TL-43
+- TL-48
+
+==================================================
+VERY IMPORTANT KIT CAR RULE
+==================================================
+
+Kit car:
+Defined as:
+Vehicle rebuilt using manufacturer supplied kit.
+
+==================================================
+VERY IMPORTANT MOTOR VEHICLE RULE
+==================================================
+
+Motor vehicle definition excludes:
+- Bicycles
+- Electric bicycles
+- Mopeds
+- Swamp buggies
+- Micromobility devices
+- Personal delivery devices
+- Vehicles running only on tracks
+
+==================================================
+VERY IMPORTANT DEALER DISCLOSURE RULE
+==================================================
+
+If vehicle delivered previously:
+Dealer must disclose:
+"THIS VEHICLE WAS DELIVERED TO A PREVIOUS PURCHASER."
+
+==================================================
+VERY IMPORTANT ACKNOWLEDGMENT RULE
+==================================================
+
+Purchaser:
+Must sign:
+Acknowledgment disclosure.
+
+==================================================
+AI DECISION LOGIC
+==================================================
+
+AI should determine:
+1. Is vehicle legally considered motor vehicle?
+2. Was vehicle originally manufactured?
+3. Is vehicle salvage?
+4. Is vehicle rebuilt?
+5. Is vehicle assembled from parts?
+6. Is vehicle replica?
+7. Is vehicle kit car?
+8. Does vehicle qualify for title?
+9. Which title procedure applies?
+10. Is title prohibited?
+11. Is title brand required?
+12. Does TL-10 apply?
+13. Does TL-41 apply?
+14. Does TL-43 apply?
+15. Does TL-48 apply?
+16. Does vehicle retain manufacturer status?
+17. Is disclosure required?
+18. Is acknowledgment required?
+19. Is title issuance prohibited?
+20. Is alternative procedure prohibited?
+
+==================================================
+COMMON TITLE CLERK ERRORS
+==================================================
+
+- Using incorrect title procedure
+- Titling prohibited vehicle
+- Ignoring flow chart determination
+- Applying wrong title brand
+- Misclassifying salvage vehicle
+- Misclassifying replica vehicle
+- Incorrect assembled-from-parts processing
+- Ignoring rebuilt determination
+- Failing to follow authorized procedure
+- Incorrect manufacturer designation
+- Improper kit car classification
+- Missing dealer disclosure acknowledgment
+
+==================================================
+VERY IMPORTANT CORE CONCEPT
+==================================================
+
+Florida title eligibility:
+Must be determined through:
+Structured flow-chart analysis,
+which identifies:
+Whether a vehicle may legally receive title
+and which exact title procedure and brand apply.
+
+==================================================
+RELATED PROCEDURES
+==================================================
+
+- TL-10
+- TL-41
+- TL-43
+- TL-48
+
+==================================================
+RELATED VEHICLE TYPES
+==================================================
+
+- Salvage vehicles
+- Rebuilt vehicles
+- Replica vehicles
+- Kit cars
+- Assembled-from-parts vehicles
+
+==================================================
+REFERENCE NOTES
+==================================================
+
+Current revision:
+- 07/11/2022
+
+Primary focus:
+- Vehicle title eligibility
+- Title determination flow analysis
+- Correct title procedure selection
+- Title branding decisions

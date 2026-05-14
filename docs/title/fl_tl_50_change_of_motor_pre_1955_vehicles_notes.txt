@@ -1,0 +1,418 @@
+FLORIDA TITLE PROCEDURE — CHANGE OF MOTOR ON VEHICLES MANUFACTURED PRIOR TO 1955
+PROCEDURE: TL-50
+CATEGORY: PRE-1955 VEHICLES / MOTOR NUMBER TITLING / ENGINE REPLACEMENT
+
+==================================================
+PROCEDURE SUMMARY
+==================================================
+
+This procedure governs:
+- Change of motor on pre-1955 vehicles
+- Motor number title updates
+- Engine replacement title processing
+- FLA VIN assignment after engine changes
+- Out-of-state pre-1955 title conversions
+- Verification of motor numbers
+- Ownership transfers involving changed motors
+
+Applies to:
+- Vehicles manufactured before 1955
+- Antique vehicles
+- Classic vehicles
+- Motor-number titled vehicles
+
+==================================================
+AI CLASSIFICATION TAGS
+==================================================
+
+KEYWORDS:
+- pre-1955 title
+- motor number title
+- change of motor
+- engine replacement
+- antique car title
+- old vehicle title
+- FLA VIN assignment
+- motor number verification
+- HSMV 82103
+- pre-1955 engine swap
+- antique engine replacement
+- old VIN rules
+- classic vehicle title
+
+COMMON USER QUESTIONS:
+- "How do I title a pre-1955 vehicle?"
+- "What happens if old car engine replaced?"
+- "Does pre-1955 use VIN or engine number?"
+- "When does Florida assign FLA VIN?"
+- "Can engine number be changed on title?"
+- "How do I title antique vehicle with replacement motor?"
+- "Does title stay same after engine swap?"
+- "What if out-of-state title uses motor number?"
+- "Does year or make change after engine replacement?"
+- "What forms needed for change of motor?"
+
+==================================================
+LEGAL AUTHORITY
+==================================================
+
+Governed by:
+- 319.23 FS
+
+==================================================
+VERY IMPORTANT PRE-1955 RULE
+==================================================
+
+Vehicles manufactured prior to:
+- 1955
+
+Are titled by:
+- Motor number.
+
+NOT:
+- VIN.
+
+==================================================
+VERY IMPORTANT VIN RULE
+==================================================
+
+If out-of-state title:
+Already uses VIN:
+Florida title:
+Will continue using:
+- VIN.
+
+==================================================
+VERY IMPORTANT OUT-OF-STATE VIN RULE
+==================================================
+
+If out-of-state title:
+Shows VIN instead of motor number:
+Refer to:
+- TL-10.
+
+==================================================
+FLORIDA TITLE / SAME OWNER MOTOR CHANGE
+==================================================
+
+If:
+- Florida titled
+AND
+- Same owner replaced motor
+
+Need:
+- Florida title
+- HSMV 82103
+- Bill of sale/receipt for motor
+- Lien satisfactions
+- Title fees
+
+==================================================
+VERY IMPORTANT HSMV 82103 RULE
+==================================================
+
+Need:
+- HSMV 82103
+Affidavit for Change of Motor.
+
+==================================================
+VERY IMPORTANT MOTOR RECEIPT RULE
+==================================================
+
+Motor bill of sale/receipt:
+Must show:
+- Year
+- Make
+- Motor number
+- Seller name
+- Seller address
+- Seller signature
+
+==================================================
+VERY IMPORTANT NOTARIZATION RULE
+==================================================
+
+Motor bill of sale:
+Does NOT require:
+- Notarization.
+
+==================================================
+VERY IMPORTANT PRE-1955 REPLACEMENT MOTOR RULE
+==================================================
+
+If replacement motor:
+Manufactured BEFORE 1955:
+
+Title:
+MUST display:
+- Replacement motor number.
+
+==================================================
+VERY IMPORTANT POST-1955 MOTOR RULE
+==================================================
+
+If replacement motor:
+Manufactured 1955 or newer:
+
+Florida:
+Assigns:
+- FLA VIN decal.
+
+==================================================
+VERY IMPORTANT FLA DECAL RULE
+==================================================
+
+If FLA assigned:
+Certificate of title:
+Will show:
+- Assigned FLA number
+AS:
+- Vehicle identification number.
+
+==================================================
+VERY IMPORTANT YEAR/MAKE RULE
+==================================================
+
+When FLA assigned:
+- Year DOES NOT change
+- Make DOES NOT change.
+
+==================================================
+FLORIDA TITLE / NEW PURCHASER RULE
+==================================================
+
+If:
+- Vehicle sold
+AND
+- Purchaser replaced motor
+
+Need:
+- Assigned Florida title
+- HSMV 82040 MV
+- HSMV 82103
+- Motor bill of sale
+- Lien satisfactions
+- Sales tax
+- Plate/non-use affidavit
+- Title fees
+
+==================================================
+VERY IMPORTANT SALES TAX RULE
+==================================================
+
+Need:
+- Florida sales tax
+OR
+- Sales tax exemption information.
+
+==================================================
+VERY IMPORTANT PLATE RULE
+==================================================
+
+Need:
+- Florida plate
+OR
+- Non-use affidavit.
+
+==================================================
+OUT-OF-STATE MOTOR NUMBER TITLE RULE
+==================================================
+
+If out-of-state title:
+Uses motor number
+AND
+Motor replaced:
+
+Need:
+- Out-of-state ownership proof
+OR
+- Title/lien verification
+- HSMV 82040 MV
+- HSMV 82042 or equivalent VIN verification
+- HSMV 82103
+- Motor receipt
+- Lien satisfactions
+- Sales tax
+- Plate/non-use affidavit
+- Fees
+
+==================================================
+VERY IMPORTANT TITLE/LIEN VERIFICATION RULE
+==================================================
+
+Out-of-state verification may be:
+- Computer printout
+- DMV letter
+- Photocopy of title
+- Teletype/law enforcement verification
+
+==================================================
+VERY IMPORTANT HSMV 82042 RULE
+==================================================
+
+Need:
+- HSMV 82042
+OR
+- VIN section on HSMV 82040 MV.
+
+==================================================
+VERY IMPORTANT VIN/MOTOR VERIFICATION RULE
+==================================================
+
+Verification must confirm:
+- VIN
+AND
+- Motor number.
+
+==================================================
+VERY IMPORTANT ALTERNATE AFFIDAVIT RULE
+==================================================
+
+Instead of HSMV 82042:
+Can use:
+- Affidavit from seller and purchaser
+
+Verifying:
+- VIN and motor numbers match vehicle.
+
+==================================================
+VERY IMPORTANT SAME VEHICLE RULE
+==================================================
+
+If out-of-state title:
+Used motor number
+AND
+Motor replaced:
+
+Must determine:
+Vehicle remains:
+- Same vehicle shown on title.
+
+==================================================
+VERY IMPORTANT FLA ASSIGNMENT RULE
+==================================================
+
+If replacement motor:
+1955 or newer:
+- Assign FLA VIN decal.
+
+==================================================
+VERY IMPORTANT TITLE DISPLAY RULE
+==================================================
+
+After FLA assignment:
+Title shows:
+- FLA VIN
+
+NOT:
+- New motor number.
+
+==================================================
+MISCELLANEOUS RULES
+==================================================
+
+If out-of-state title:
+Already uses VIN:
+Continue using:
+- VIN title process.
+
+==================================================
+EXHIBIT A CHECKLIST ITEMS
+==================================================
+
+Florida record requires:
+- Florida title
+- HSMV 82040 MV
+- HSMV 82103
+- HSMV 82042 or VIN verification
+- Motor bill of sale
+- Lien satisfactions
+- Sales tax
+- Plate/non-use affidavit
+- Title fees
+
+==================================================
+VERY IMPORTANT PRE-1955 IDENTIFICATION CONCEPT
+==================================================
+
+Before 1955:
+Vehicle identification commonly based on:
+- Engine/motor number
+
+NOT:
+- Chassis VIN.
+
+==================================================
+AI DECISION LOGIC
+==================================================
+
+AI should determine:
+1. Was vehicle manufactured before 1955?
+2. Does title use motor number?
+3. Is vehicle Florida titled?
+4. Is ownership changing?
+5. Was motor replaced?
+6. Is replacement motor pre-1955?
+7. Is replacement motor 1955 or newer?
+8. Is FLA VIN assignment required?
+9. Is out-of-state title involved?
+10. Is VIN verification required?
+11. Are liens satisfied?
+12. Is motor bill of sale complete?
+13. Is HSMV 82103 completed?
+14. Is vehicle still identifiable as same vehicle?
+15. Is sales tax documented?
+16. Is plate/non-use affidavit included?
+
+==================================================
+COMMON TITLE CLERK ERRORS
+==================================================
+
+- Confusing motor number with VIN
+- Forgetting FLA assignment for newer motors
+- Changing year/make incorrectly
+- Missing HSMV 82103
+- Accepting incomplete engine receipt
+- Missing VIN verification
+- Failing to verify same vehicle identity
+- Improper out-of-state processing
+- Forgetting sales tax documentation
+- Using wrong identification number on title
+
+==================================================
+VERY IMPORTANT IDENTIFICATION TRANSITION RULE
+==================================================
+
+If modern engine installed:
+Florida transitions identification from:
+- Motor number
+
+TO:
+- Assigned FLA VIN decal.
+
+==================================================
+RELATED FORMS
+==================================================
+
+- HSMV 82040 MV
+- HSMV 82042
+- HSMV 82103
+
+==================================================
+RELATED PROCEDURES
+==================================================
+
+- TL-10
+
+==================================================
+REFERENCE NOTES
+==================================================
+
+Current revision:
+- 09/18/2023
+
+Primary focus:
+- Pre-1955 identification systems
+- Motor number title corrections
+- Engine replacement title processing
+- FLA VIN assignments

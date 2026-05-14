@@ -1,0 +1,486 @@
+FLORIDA REGISTRATION PROCEDURE — TEMPORARILY EMPLOYED 90-DAY LICENSE PLATES
+PROCEDURE: RS-41
+CATEGORY: TEMPORARY REGISTRATION / NON-RESIDENT REGISTRATION / 90-DAY PLATES
+
+==================================================
+PROCEDURE SUMMARY
+==================================================
+
+This procedure governs:
+- Temporarily employed 90-day license plates
+- Non-resident temporary registration
+- Temporary Florida employment registration eligibility
+- 90-day registration renewals
+- Temporary registration application requirements
+- Temporary registration insurance requirements
+- Temporary plate inventory handling
+- Replacement temporarily employed plates
+- Lost-in-transit temporary plates
+- Duplicate temporary registrations
+- Temporary registration corrections
+
+Applies to:
+- Non-residents temporarily employed in Florida
+- Tax collectors
+- License plate agencies
+- FLHSMV personnel
+- Temporary workers
+- County branch agencies
+
+==================================================
+AI CLASSIFICATION TAGS
+==================================================
+
+KEYWORDS:
+- temporarily employed plate
+- 90-day registration
+- temporary employment registration
+- temporary Florida employment
+- TE plate
+- 90-day plate
+- non-resident registration
+- temporary worker registration
+- HSMV 83080
+- Motor Vehicle Registration Eligibility Affidavit
+- out-of-state registration
+- temporary registration renewal
+- temporary plate eligibility
+- temporary employed plate replacement
+- temporary employed insurance
+- temporary employed affidavit
+- TE00000
+- ZZ99999
+- temporary Florida worker
+- nonresident vehicle registration
+- temporary registration certificate
+- temporary employment affidavit
+- lost-in-transit plate
+- HSMV 83146
+- duplicate registration certificate
+- temporary registration correction
+- temporary license plate inventory
+- RS-06
+- RS-36
+- out-of-state insurance accepted
+- 180-day temporary registration
+- second 90-day plate
+- two plates within 12 months
+- heavy truck restriction
+- truck tractor restriction
+- temporary registration expiration
+- county branch fee
+- temporary registration fee
+- FRVIS fee
+- air pollution fee
+- EMS fee
+- transportation disadvantaged fee
+- Florida temporary registration
+
+COMMON USER QUESTIONS:
+- "Who qualifies for a temporarily employed plate?"
+- "Can non-residents get Florida registration?"
+- "How long is the plate valid?"
+- "Can the 90-day plate be renewed?"
+- "How many temporary employed plates can customer receive?"
+- "What documents are required?"
+- "Is out-of-state insurance acceptable?"
+- "Can commercial trucks get this plate?"
+- "What is HSMV 83080?"
+- "What happens after 180 days?"
+- "What if plate is lost or stolen?"
+- "Can duplicate registration be issued?"
+- "What fees apply?"
+- "Can county branch agencies issue these?"
+- "What if plate is lost in transit?"
+
+==================================================
+LEGAL AUTHORITY
+==================================================
+
+Governed by:
+- 320.1325 FS
+
+==================================================
+DESCRIPTION AND USE
+==================================================
+
+Procedure explains:
+- Temporary registration eligibility
+- 90-day temporary plates
+- Application requirements
+- Renewal limitations
+- Insurance requirements
+- Replacement/correction procedures
+
+==================================================
+VERY IMPORTANT CORE RULE
+==================================================
+
+Temporary employed 90-day registration:
+May be issued:
+To applicant:
+Temporarily employed in Florida:
+But NOT Florida resident.
+
+==================================================
+VERY IMPORTANT VALIDITY RULE
+==================================================
+
+Temporary employed plate:
+Valid:
+90 days.
+
+==================================================
+VERY IMPORTANT RENEWAL RULE
+==================================================
+
+One additional:
+90-day registration:
+May be issued.
+
+Maximum:
+Two temporary employed plates:
+Within 12-month period.
+
+==================================================
+VERY IMPORTANT 12-MONTH RULE
+==================================================
+
+12-month limitation:
+Begins:
+Date first temporary employed plate issued.
+
+==================================================
+VERY IMPORTANT 180-DAY RULE
+==================================================
+
+After:
+180 days:
+Applicant must apply:
+For permanent registration:
+If continued Florida residency/use required.
+
+==================================================
+PLATE INVENTORY RULE
+==================================================
+
+Plate range:
+TE00000 through ZZ99999:
+Used for temporarily employed plates.
+
+==================================================
+VERY IMPORTANT INVENTORY RULE
+==================================================
+
+Temporary employed plates:
+Must be entered:
+Into motor vehicle issuance system inventory.
+
+==================================================
+VERY IMPORTANT SYSTEM VALIDATION RULE
+==================================================
+
+Motor vehicle issuance system:
+Tracks:
+- original issue date
+- number of plates issued
+
+To prevent:
+More than two plates:
+Within same 12-month period.
+
+==================================================
+DISPLAY RULES
+==================================================
+
+Temporary employed plates:
+Must display:
+Conspicuously:
+On rear bracket.
+
+==================================================
+VERY IMPORTANT FRONT DISPLAY RULE
+==================================================
+
+If vehicle normally requires front plate:
+Temporary plate:
+Must display:
+On front:
+Where normal plate would be mounted.
+
+==================================================
+VEHICLE ELIGIBILITY RULES
+==================================================
+
+Temporary employed plates:
+May issue:
+On most motor vehicles.
+
+==================================================
+VERY IMPORTANT COMMERCIAL TRUCK RULE
+==================================================
+
+Cannot issue:
+To:
+- commercial truck tractors
+OR
+- heavy trucks
+26,001 pounds GVW or more
+
+Unless:
+Owned or operated by government entity.
+
+==================================================
+APPLICATION REQUIREMENTS
+==================================================
+
+Applicant must provide:
+- out-of-state registration copy
+AND
+- proof of temporary employment.
+
+==================================================
+ACCEPTABLE EMPLOYMENT VERIFICATION
+==================================================
+
+Acceptable proof includes:
+- employer verification letter
+- customer affidavit
+- HSMV 83080.
+
+==================================================
+VERY IMPORTANT EMPLOYER LETTER RULE
+==================================================
+
+Employer letter:
+Must state:
+Applicant temporarily employed in Florida.
+
+==================================================
+VERY IMPORTANT AFFIDAVIT RULE
+==================================================
+
+Customer affidavit:
+Must specify:
+- temporary employment
+AND
+- employment location in Florida.
+
+==================================================
+VERY IMPORTANT HSMV 83080 RULE
+==================================================
+
+HSMV 83080:
+May be used:
+As employment verification affidavit/application.
+
+==================================================
+FEE RULES
+==================================================
+
+Temporary employed plate fee:
+$40:
+Plus applicable statutory/service fees.
+
+==================================================
+ADDITIONAL FEES RULE
+==================================================
+
+Additional fees may include:
+- service fee
+- branch fee
+- FRVIS fee
+- EMS fee
+- Air Pollution Control fee
+- Transportation Disadvantaged fee.
+
+==================================================
+VERY IMPORTANT CLASS CODE RULE
+==================================================
+
+Fee determination:
+Requires:
+Motor Vehicle/Mobile Home Class Code/Fee Chart.
+
+==================================================
+INSURANCE RULES
+==================================================
+
+Proof of insurance:
+Required.
+
+==================================================
+VERY IMPORTANT OUT-OF-STATE INSURANCE RULE
+==================================================
+
+Out-of-state insurance:
+Acceptable:
+For temporarily employed plate issuance.
+
+==================================================
+VERY IMPORTANT RS-36 RULE
+==================================================
+
+Insurance processing:
+Governed by:
+RS-36.
+
+==================================================
+REPLACEMENT RULES
+==================================================
+
+Lost, stolen, or defaced plates:
+Processed:
+Per RS-06.
+
+==================================================
+LOST-IN-TRANSIT RULES
+==================================================
+
+Lost-in-transit temporary employed plates:
+May be replaced:
+Using HSMV 83146.
+
+==================================================
+VERY IMPORTANT LOST-IN-TRANSIT FEE RULE
+==================================================
+
+No fee:
+For lost-in-transit replacement.
+
+==================================================
+VERY IMPORTANT SAME EXPIRATION RULE
+==================================================
+
+Replacement plate:
+Keeps:
+Original expiration date.
+
+==================================================
+CORRECTION RULES
+==================================================
+
+Corrected registration:
+May process:
+Without fee.
+
+==================================================
+VERY IMPORTANT CORRECTION EXPIRATION RULE
+==================================================
+
+Corrected registration:
+Carries forward:
+Original expiration date.
+
+==================================================
+DUPLICATE REGISTRATION RULE
+==================================================
+
+Duplicate registration certificate:
+May issue:
+With required service fee.
+
+==================================================
+AI DECISION LOGIC
+==================================================
+
+AI should determine:
+1. Is applicant temporarily employed in Florida?
+2. Is applicant non-resident?
+3. Is out-of-state registration attached?
+4. Is employment verification acceptable?
+5. Is HSMV 83080 used?
+6. Has applicant exceeded two plates in 12 months?
+7. Did system verify prior issuance?
+8. Is vehicle eligible?
+9. Is vehicle excluded heavy truck/commercial tractor?
+10. Does government entity exemption apply?
+11. Is insurance attached?
+12. Is out-of-state insurance acceptable?
+13. Are additional fees calculated correctly?
+14. Is replacement transaction appropriate?
+15. Is HSMV 83146 required?
+16. Is correction transaction fee-free?
+17. Does duplicate registration fee apply?
+18. Is front display required?
+19. Has 180-day limit been reached?
+20. Should applicant move to permanent registration?
+
+==================================================
+COMMON TITLE CLERK / REGISTRATION ERRORS
+==================================================
+
+- Issuing more than two plates in 12 months
+- Missing out-of-state registration copy
+- Missing employment verification
+- Accepting invalid affidavit
+- Issuing plate to Florida resident improperly
+- Ignoring heavy truck restriction
+- Incorrect fee calculation
+- Rejecting valid out-of-state insurance
+- Missing inventory entry
+- Incorrect plate display instructions
+- Charging lost-in-transit replacement fee
+- Incorrect expiration date on replacement
+- Missing HSMV 83146
+- Incorrect correction processing
+- Failing to require permanent registration after 180 days
+
+==================================================
+VERY IMPORTANT CORE CONCEPT
+==================================================
+
+Florida temporarily employed 90-day registration procedures:
+Allow non-residents
+temporarily employed in Florida
+to legally operate vehicles
+through:
+- short-term registration
+- limited renewals
+- employment verification
+- temporary insurance acceptance
+
+while enforcing:
+- strict issuance limits
+- vehicle eligibility restrictions
+- inventory tracking
+- insurance compliance
+and transition to permanent registration after 180 days.
+
+==================================================
+RELATED PROCEDURES
+==================================================
+
+- RS-06
+- RS-36
+
+==================================================
+RELATED FORMS
+==================================================
+
+- HSMV 83080
+- HSMV 83146
+
+==================================================
+RELATED ENTITIES
+==================================================
+
+- FLHSMV
+- Tax Collectors
+- License Plate Agencies
+- County Branch Agencies
+
+==================================================
+REFERENCE NOTES
+==================================================
+
+Current revision:
+04/27/2022
+
+Primary focus:
+- Temporarily employed registrations
+- 90-day temporary plates
+- Non-resident registration eligibility
+- Insurance requirements
+- Replacement/correction processing
+- Issuance limitation enforcement

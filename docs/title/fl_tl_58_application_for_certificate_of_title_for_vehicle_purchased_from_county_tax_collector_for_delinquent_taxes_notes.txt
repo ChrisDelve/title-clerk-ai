@@ -1,0 +1,473 @@
+FLORIDA TITLE PROCEDURE — APPLICATION FOR CERTIFICATE OF TITLE FOR A MOTOR VEHICLE OR MOBILE HOME PURCHASED FROM A COUNTY TAX COLLECTOR FOR DELINQUENT TAXES
+PROCEDURE: TL-58
+CATEGORY: DELINQUENT TAX SALES / OPERATION OF LAW / COURT-ORDERED TITLE TRANSFERS
+
+==================================================
+PROCEDURE SUMMARY
+==================================================
+
+This procedure governs:
+- Titles issued after tax collector sales
+- Delinquent tax seizure sales
+- Court-ordered levy and seizure
+- Operation of law title transfers
+- Tax deed related title processing
+- Mobile home tax sale titles
+- Delinquent property title issuance
+
+Applies to:
+- Motor vehicles
+- Mobile homes
+- Court-ordered tax seizure sales
+
+==================================================
+AI CLASSIFICATION TAGS
+==================================================
+
+KEYWORDS:
+- delinquent tax sale
+- tax collector sale
+- levy and seizure
+- operation of law title
+- Chapter 197 sale
+- tax seizure title
+- tax collector bill of sale
+- delinquent taxes vehicle
+- delinquent taxes mobile home
+- tax deed title
+- unpaid taxes vehicle
+- court ordered seizure
+- county tax collector title
+- tax sale purchase
+
+COMMON USER QUESTIONS:
+- "How do I title a vehicle bought at tax sale?"
+- "What paperwork needed after delinquent tax sale?"
+- "Does tax sale remove liens?"
+- "What is levy and seizure?"
+- "Can mobile home be sold for unpaid taxes?"
+- "What forms needed for tax collector sale?"
+- "Does dealer need title before resale?"
+- "What if previous state unknown?"
+- "Is VIN verification required?"
+- "Can non-use affidavit be used?"
+
+==================================================
+LEGAL AUTHORITY
+==================================================
+
+Governed by:
+- 197.402 FS
+- 197.413 FS
+- 197.417 FS
+- 197.552 FS
+
+==================================================
+VERY IMPORTANT DELINQUENT TAX RULE
+==================================================
+
+Florida law allows:
+- Advertisement
+- Levy
+- Seizure
+- Sale
+
+Of personal property:
+For:
+- Delinquent taxes.
+
+==================================================
+VERY IMPORTANT COURT ORDER RULE
+==================================================
+
+Tax collector:
+Must apply to:
+- Circuit court
+
+For:
+- Order directing levy and seizure.
+
+==================================================
+VERY IMPORTANT PUBLIC SALE RULE
+==================================================
+
+After seizure:
+Property sold:
+- At public sale.
+
+==================================================
+VERY IMPORTANT SURVIVING LIEN RULE
+==================================================
+
+Most liens:
+Do NOT survive:
+- Tax deed issuance.
+
+EXCEPTION:
+Governmental liens may survive.
+
+==================================================
+VERY IMPORTANT GOVERNMENT LIEN RULE
+==================================================
+
+Liens held by:
+- Municipal government
+- County government
+- Special district
+- Community development district
+
+May survive:
+If not satisfied.
+
+==================================================
+DESCRIPTION AND USE
+==================================================
+
+Procedure assists:
+- Tax collectors
+- License plate agents
+- FLHSMV employees
+
+In issuing:
+- Florida title after tax collector sale.
+
+==================================================
+VERY IMPORTANT 82040 UPDATE RULE
+==================================================
+
+As of:
+- 07/01/2023
+
+HSMV 82040 split into:
+- HSMV 82040 MV
+- HSMV 82040 VS
+- HSMV 82040 MH
+
+==================================================
+82040 MV RULE
+==================================================
+
+Used for:
+- Auto
+- Bus
+- Motorcycle
+- Truck
+- Trailer
+- Off-highway vehicle
+- Tool trailer
+
+==================================================
+82040 VS RULE
+==================================================
+
+Used for:
+- Vessels only.
+
+==================================================
+82040 MH RULE
+==================================================
+
+Used for:
+- Mobile homes only.
+
+==================================================
+VERY IMPORTANT VESSEL RULE
+==================================================
+
+Effective:
+- 07/01/2023
+
+Florida vessel titles:
+Must use:
+- HSMV 82040 VS.
+
+==================================================
+VERY IMPORTANT 2024 MOTOR VEHICLE RULE
+==================================================
+
+Effective:
+- 01/01/2024
+
+Motor vehicle and mobile home titles:
+Must use:
+- HSMV 82040 MV
+OR
+- HSMV 82040 MH.
+
+==================================================
+FLORIDA TITLED VEHICLE REQUIREMENTS
+==================================================
+
+If vehicle/mobile home:
+Currently titled in Florida:
+
+Need:
+- HSMV 82040
+- Original/certified tax sale bill of sale
+- Lien satisfactions if applicable
+- Sales tax documentation
+- Plate/decal/non-use affidavit
+- Title fees
+
+==================================================
+VERY IMPORTANT BILL OF SALE RULE
+==================================================
+
+Need:
+- Original OR certified copy
+Of bill of sale.
+
+==================================================
+VERY IMPORTANT BILL OF SALE SOURCE RULE
+==================================================
+
+Bill of sale issued by:
+- Clerk of Court
+OR
+- Tax collector.
+
+==================================================
+VERY IMPORTANT BILL OF SALE CONTENT RULE
+==================================================
+
+Bill of sale must show:
+- Selling price
+- Complete vehicle/mobile home description
+- Purchaser information
+
+==================================================
+VERY IMPORTANT CHAPTER 197 RULE
+==================================================
+
+Bill of sale must state:
+Vehicle sold pursuant to:
+- Chapter 197 Florida Statutes.
+
+==================================================
+VERY IMPORTANT LIEN SATISFACTION RULE
+==================================================
+
+Need lien satisfactions:
+ONLY for:
+- Governmental unit liens
+- Special district liens
+- Community development district liens
+
+==================================================
+VERY IMPORTANT OTHER LIEN RULE
+==================================================
+
+Other liens:
+Generally extinguished by:
+- Levy and seizure order.
+
+==================================================
+VERY IMPORTANT SALES TAX RULE
+==================================================
+
+Need:
+- Florida sales tax
+OR
+- Sales tax exemption information.
+
+==================================================
+VERY IMPORTANT PLATE RULE
+==================================================
+
+Need:
+- Florida license plate
+OR
+- Non-use affidavit.
+
+==================================================
+VERY IMPORTANT MOBILE HOME RULE
+==================================================
+
+For mobile homes:
+Need:
+- Mobile home decal
+OR
+- RP decal.
+
+==================================================
+VERY IMPORTANT NON-USE AFFIDAVIT RULE
+==================================================
+
+Non-use affidavit:
+NOT acceptable:
+For:
+- Mobile homes.
+
+==================================================
+OUT-OF-STATE OR UNKNOWN STATE RULE
+==================================================
+
+If:
+- Not titled in Florida
+OR
+- Previous state unknown
+
+Need:
+- VIN verification.
+
+==================================================
+VERY IMPORTANT HSMV 82042 RULE
+==================================================
+
+Need:
+- HSMV 82042
+OR
+- VIN verification section on HSMV 82040.
+
+==================================================
+VERY IMPORTANT VIN VERIFICATION RULE
+==================================================
+
+VIN must be verified by:
+- Authorized official listed on form.
+
+==================================================
+VERY IMPORTANT ALTERNATE AFFIDAVIT RULE
+==================================================
+
+Instead of HSMV 82042:
+Can use affidavit from:
+- Seller
+AND
+- Purchaser
+
+Verifying:
+VIN on paperwork matches vehicle.
+
+==================================================
+VERY IMPORTANT VIN VERIFICATION EXEMPTIONS
+==================================================
+
+Verification NOT required for:
+- Mobile homes
+- Trailers under 2,000 pounds
+- Semi-trailers under 2,000 pounds
+- Travel trailers
+- Camping trailers
+- Truck campers
+- Fifth-wheel recreation trailers
+
+==================================================
+VERY IMPORTANT DEALER RESALE RULE
+==================================================
+
+Dealer or individual purchasing:
+Through operation of law:
+
+MUST obtain title:
+In own name
+BEFORE:
+Reselling vehicle/mobile home.
+
+==================================================
+EXHIBIT A CHECKLIST ITEMS
+==================================================
+
+Florida record requires:
+- HSMV 82040
+- Bill of sale
+- Lien satisfactions if applicable
+- Sales tax documentation
+- Plate/decal/non-use affidavit
+- Fees
+
+Out-of-state/unknown state requires:
+- All above documents
+PLUS
+- HSMV 82042 or VIN verification.
+
+==================================================
+VERY IMPORTANT OPERATION OF LAW RULE
+==================================================
+
+Tax collector sales:
+Are processed as:
+- Operation of law title transfers.
+
+==================================================
+AI DECISION LOGIC
+==================================================
+
+AI should determine:
+1. Was vehicle sold for delinquent taxes?
+2. Was levy and seizure court ordered?
+3. Is vehicle Florida titled?
+4. Is previous state unknown?
+5. Is VIN verification required?
+6. Is proper HSMV form used?
+7. Is certified bill of sale included?
+8. Does bill of sale reference Chapter 197?
+9. Are surviving governmental liens satisfied?
+10. Is sales tax documented?
+11. Is plate/decal included?
+12. Is non-use affidavit improperly used?
+13. Is mobile home involved?
+14. Is operation of law applicable?
+15. Is dealer attempting immediate resale?
+16. Are title fees included?
+
+==================================================
+COMMON TITLE CLERK ERRORS
+==================================================
+
+- Missing Chapter 197 statement
+- Missing certified bill of sale
+- Requiring extinguished liens unnecessarily
+- Accepting non-use affidavit for mobile home
+- Missing VIN verification
+- Allowing dealer resale before titling
+- Using wrong HSMV 82040 version
+- Forgetting RP decal requirement
+- Missing tax exemption information
+- Confusing tax sale with repossession
+
+==================================================
+VERY IMPORTANT TAX SALE CONCEPT
+==================================================
+
+Tax collector sale:
+Transfers ownership:
+Through:
+- Court-authorized seizure
+- Public tax sale
+- Operation of law
+
+NOT:
+- Traditional reassigned title transfer.
+
+==================================================
+RELATED FORMS
+==================================================
+
+- HSMV 82040
+- HSMV 82040 MV
+- HSMV 82040 VS
+- HSMV 82040 MH
+- HSMV 82042
+
+==================================================
+RELATED STATUTES
+==================================================
+
+- 197.402 FS
+- 197.413 FS
+- 197.417 FS
+- 197.552 FS
+
+==================================================
+REFERENCE NOTES
+==================================================
+
+Current revision:
+- 06/26/2023
+
+Primary focus:
+- Delinquent tax seizure sales
+- Operation of law title transfers
+- Court ordered levy and seizure
+- Tax collector title issuance

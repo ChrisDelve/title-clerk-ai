@@ -1,0 +1,471 @@
+FLORIDA TITLE PROCEDURE — LAW ENFORCEMENT LOST / ABANDONED PROPERTY / UNCLAIMED EVIDENCE
+PROCEDURE: TL-29
+CATEGORY: LAW ENFORCEMENT TITLE TRANSFER
+RELATED STATUTES:
+- 705.103 F.S.
+- 705.105 F.S.
+- 50.011 F.S.
+- 50.031 F.S.
+
+==================================================
+PROCEDURE SUMMARY
+==================================================
+
+This procedure explains:
+- Lost property vehicles
+- Abandoned property vehicles
+- Unclaimed evidence vehicles
+- Law enforcement disposition procedures
+- Public sale procedures
+- Agency retention procedures
+- Government transfers
+- Donation procedures
+
+Applies when:
+- Law enforcement agency controls vehicle/mobile home
+- Property abandoned/lost/seized
+- Title transfer required
+
+==================================================
+AI CLASSIFICATION TAGS
+==================================================
+
+KEYWORDS:
+- abandoned property
+- lost property
+- unclaimed evidence
+- police seizure
+- law enforcement title
+- public sale vehicle
+- seized vehicle
+- abandoned vehicle by police
+- evidence vehicle
+- law enforcement auction
+- agency retained vehicle
+- operation of law
+
+COMMON USER QUESTIONS:
+- "Police auction title"
+- "Law enforcement vehicle title"
+- "Abandoned vehicle held by police"
+- "How to title seized vehicle"
+- "Government auction title"
+- "Unclaimed evidence vehicle"
+
+==================================================
+CORE LEGAL CONCEPTS
+==================================================
+
+LOST PROPERTY:
+Property with:
+- No identifiable owner
+- Apparent value
+- Mislaid on public property
+- Substantially operable/functional
+
+ABANDONED PROPERTY:
+Property with:
+- No identifiable owner
+- Wrecked/inoperative/dismantled
+OR
+- No apparent intrinsic value
+
+UNCLAIMED EVIDENCE:
+Property:
+- Seized by law enforcement
+- Used in criminal/quasi-criminal case
+- Unclaimed for 60 days after case disposition
+
+==================================================
+LAW ENFORCEMENT OPTIONS
+==================================================
+
+Agency may:
+- Retain vehicle
+- Transfer vehicle
+- Donate vehicle
+- Trade vehicle
+- Sell vehicle
+- Destroy vehicle (if low value)
+
+==================================================
+VERY IMPORTANT ABANDONED PROPERTY RULE
+==================================================
+
+If property abandoned on public property:
+Officer:
+- Places notice on vehicle
+- Mails notice to owner/lienholder
+
+==================================================
+VERY IMPORTANT 5-DAY RULE
+==================================================
+
+If owner does not remove property:
+- Within 5 days after posting/mailing
+Agency may proceed with disposition.
+
+==================================================
+LOST PROPERTY HOLDING RULE
+==================================================
+
+Lost property:
+- Must remain in custody 90 days
+
+Agency:
+- Publishes notice during first 45 days
+
+==================================================
+UNCLAIMED EVIDENCE RULE
+==================================================
+
+Unclaimed evidence:
+- Must remain after case disposition
+- Minimum 60 days
+
+==================================================
+GENERAL DOCUMENT REQUIREMENTS
+==================================================
+
+Most transactions require:
+- HSMV 82040 MV
+OR
+- HSMV 82040 MH
+- Notice documentation
+- Certified mail proof
+- Bill of sale
+- Lien satisfactions
+- Sales tax info
+- Plate/decal info
+- Title fees
+
+==================================================
+VERY IMPORTANT NOTICE REQUIREMENTS
+==================================================
+
+Notice must:
+- Be physically placed on vehicle
+- Be mailed certified mail
+- Return receipt requested
+
+Recipients:
+- Owner
+- Lienholder (if applicable)
+
+==================================================
+CERTIFIED MAIL PROOF REQUIREMENTS
+==================================================
+
+Need:
+- Original return receipt
+OR
+- Certified copy
+OR
+- Returned unopened certified letter
+
+==================================================
+NOTICE CONTENT REQUIREMENTS
+==================================================
+
+Notice should include:
+- Property description
+- Public property location
+- 5-day removal warning
+- Disposal warning
+- Removal/storage/publication cost liability
+- Posting date
+- Officer information
+- Officer contact information
+
+==================================================
+VERY IMPORTANT PUBLIC SALE RULES
+==================================================
+
+If agency sells at public sale:
+Need:
+- Newspaper advertisement
+- Bill of sale
+- Lien satisfactions
+- Sales tax handling
+- Plate/decal handling
+- Title fees
+
+==================================================
+PUBLICATION REQUIREMENTS
+==================================================
+
+Advertisement must:
+- Publish once weekly
+- 2 consecutive weeks
+- Newspaper of general circulation
+
+==================================================
+NO NEWSPAPER RULE
+==================================================
+
+If no newspaper available:
+Post advertisement:
+- Courthouse door
+- 3 public places
+- At least 10 days before sale
+
+==================================================
+ADVERTISEMENT CONTENT REQUIREMENTS
+==================================================
+
+Advertisement must include:
+- Make
+- Year
+- VIN
+- Sale date
+- Sale time
+- Sale location
+- Statement sale subject to liens
+
+==================================================
+SALE LOCATION RULE
+==================================================
+
+Sale held:
+- Nearest suitable place
+where property stored/held
+
+==================================================
+BILL OF SALE REQUIREMENTS
+==================================================
+
+Bill of sale must:
+- Be on agency letterhead
+- Include complete description
+- Include make/year/VIN
+- State sale subject to liens
+
+==================================================
+OUT-OF-STATE TITLE REQUIREMENTS
+==================================================
+
+Need:
+- HSMV 82042
+OR
+- VIN verification on HSMV form
+
+==================================================
+VIN VERIFICATION EXEMPTIONS
+==================================================
+
+Verification NOT required:
+- Mobile homes
+- Trailers under 2,000 lbs
+- Travel trailers
+- Camping trailers
+- Truck campers
+- Fifth-wheel recreational trailers
+
+==================================================
+OUT-OF-STATE OWNERSHIP VERIFICATION
+==================================================
+
+Need verification from prior state:
+- Ownership
+- Lien status
+- Vehicle description
+
+==================================================
+ACCEPTABLE OWNERSHIP VERIFICATION
+==================================================
+
+Acceptable:
+- State printout
+- Official state letter
+- Copy of title
+- Teletype printout
+
+==================================================
+UNKNOWN PREVIOUS STATE RULE
+==================================================
+
+If previous state unknown:
+Need:
+- Affidavit from agency
+
+==================================================
+ABANDONED PROPERTY AFFIDAVIT RULE
+==================================================
+
+For abandoned property:
+Need notarized/perjury affidavit stating:
+- Property abandoned
+- Full description
+- Intended disposition
+
+==================================================
+UNCLAIMED EVIDENCE AFFIDAVIT RULE
+==================================================
+
+Need affidavit stating:
+- Property unclaimed evidence
+- Proceedings complete 60+ days
+- Intended disposition
+
+==================================================
+AGENCY RETENTION RULE
+==================================================
+
+If agency retains vehicle:
+Sales tax area should state:
+- "Retaining pursuant to s. 705.103"
+OR
+- "Retaining pursuant to s. 705.105"
+
+depending on case type.
+
+==================================================
+LIEN SATISFACTION RULE
+==================================================
+
+Need:
+- Satisfaction of all liens
+shown in Florida or other states
+
+==================================================
+PLATE / DECAL RULES
+==================================================
+
+Need:
+- License plate transfer/purchase
+OR
+- Non-use affidavit
+
+Mobile homes:
+- Non-use affidavit NOT allowed
+
+==================================================
+VERY IMPORTANT OPERATION OF LAW RULE
+==================================================
+
+If dealer/individual purchases:
+Title must issue:
+- In purchaser name first
+before resale.
+
+==================================================
+LOW VALUE PROPERTY RULE
+==================================================
+
+If property not valuable:
+Agency may:
+- Destroy property
+without titling first.
+
+==================================================
+REFUSE REMOVAL RULE
+==================================================
+
+If abandoned property low value:
+Agency may:
+- Notify refuse removal service
+without titling first.
+
+==================================================
+EXHIBIT CHECKLIST TYPES
+==================================================
+
+Exhibit A:
+Selling lost property/unclaimed evidence.
+
+Exhibit B:
+Selling lost property/unclaimed evidence checklist.
+
+Exhibit C:
+Retaining/trading/donating/selling abandoned property.
+
+Exhibit D:
+Retaining/transferring/donating unclaimed evidence.
+
+==================================================
+DEFINITION LOGIC
+==================================================
+
+LAW ENFORCEMENT OFFICER:
+Certified officer authorized to:
+- Bear arms
+- Make arrests
+- Enforce law
+
+PUBLIC PROPERTY:
+Government-owned:
+- Roads
+- Parks
+- Sidewalks
+- Rights-of-way
+- Public land
+
+==================================================
+AI DECISION LOGIC
+==================================================
+
+AI should determine:
+1. Lost property?
+2. Abandoned property?
+3. Unclaimed evidence?
+4. Public sale or retention?
+5. Florida or out-of-state title?
+6. Notice posted correctly?
+7. Certified mail proof included?
+8. Publication requirements met?
+9. VIN verification required?
+10. Affidavit required?
+11. Lien satisfactions required?
+12. Agency retaining/transferring/donating/selling?
+13. Plate/decal requirements met?
+14. Destruction allowed?
+
+==================================================
+COMMON TITLE CLERK ERRORS
+==================================================
+
+- Missing certified mail proof
+- Missing affidavit
+- Missing publication proof
+- Missing VIN verification
+- Missing lien satisfactions
+- Missing law enforcement letterhead
+- Missing sale subject-to-lien statement
+- Wrong sales tax notation
+- Missing full vehicle description
+- Missing agency disposition statement
+
+==================================================
+IMPORTANT OPERATIONAL NOTES
+==================================================
+
+Law enforcement titles are:
+- High-documentation transactions
+- Operation-of-law transactions
+- Extremely affidavit-sensitive
+
+Most common rejection reasons:
+- Missing agency affidavit
+- Missing certified mail proof
+- Missing publication proof
+- Missing lien satisfactions
+- Missing VIN verification
+- Incomplete bill of sale
+
+==================================================
+RELATED FORMS
+==================================================
+
+- HSMV 82040 MV
+- HSMV 82040 MH
+- HSMV 82042
+
+==================================================
+RELATED PROCEDURES
+==================================================
+
+- Operation of law title transfers
+- Storage liens
+- Tow liens
+- Abandoned vehicle procedures
+- Public auction title procedures

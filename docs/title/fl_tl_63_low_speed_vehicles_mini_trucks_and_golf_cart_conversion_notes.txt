@@ -1,0 +1,740 @@
+FLORIDA TITLE PROCEDURE — LOW-SPEED VEHICLES, MINI-TRUCKS, AND GOLF CART CONVERSIONS
+PROCEDURE: TL-63
+CATEGORY: LOW-SPEED VEHICLES / MINI-TRUCKS / GOLF CART CONVERSIONS
+
+==================================================
+PROCEDURE SUMMARY
+==================================================
+
+This procedure governs:
+- Low-speed vehicles (LSVs)
+- Mini-trucks
+- Golf cart to LSV conversions
+- LSV to golf cart conversions
+- LSV titling
+- LSV registration
+- Mini-truck registration
+- Compliance inspections
+- FLA assignments
+- LSV branding
+- Electric vehicle classifications
+
+Applies to:
+- Low-speed vehicles
+- Neighborhood electric vehicles
+- Mini-trucks
+- Golf carts
+- Converted golf carts
+- Dealers
+- Regional office inspections
+
+==================================================
+AI CLASSIFICATION TAGS
+==================================================
+
+KEYWORDS:
+- low-speed vehicle
+- LSV
+- mini-truck
+- golf cart conversion
+- converted golf cart
+- neighborhood electric vehicle
+- FLA number
+- HSMV 86064
+- HSMV 86066
+- HSMV 84490
+- low-speed vehicle brand
+- golf cart
+- converted vehicle
+- electric LSV
+- 49 CFR 571.500
+- mini truck
+- ASPT
+- converted to golf cart
+- regional office inspection
+- compliance examiner
+- LSV title
+- LSV registration
+- low speed
+- 35 mph road
+- GVWR
+- vehicle inspection
+
+COMMON USER QUESTIONS:
+- "Can golf carts be titled?"
+- "How do I convert golf cart to LSV?"
+- "What forms needed for LSV?"
+- "Can mini-trucks be registered?"
+- "What roads can LSV drive on?"
+- "Does LSV need insurance?"
+- "Can ATV be converted to LSV?"
+- "What is FLA number?"
+- "Does LSV need inspection?"
+- "Can LSV become golf cart again?"
+- "What speed can mini-trucks drive?"
+- "What body type for LSV?"
+- "Does LSV require VIN?"
+- "Can gas-powered LSV exist?"
+- "What proof needed for conversion?"
+
+==================================================
+LEGAL AUTHORITY
+==================================================
+
+Governed by:
+- 316.212 FS
+- 316.2122 FS
+- 316.2125 FS
+- 316.2126 FS
+- 316.21265 FS
+- 316.225 FS
+- 316.271 FS
+- 316.2952 FS
+- 316.410 FS
+- 319.14(10) FS
+- 320.01 FS
+- 320.02 FS
+- Chapter 319 FS
+- 49 CFR 571.500
+
+==================================================
+DESCRIPTION AND USE
+==================================================
+
+Procedure explains:
+- How to process LSV titles
+- Mini-truck processing
+- Golf cart conversion requirements
+- Inspection procedures
+- Registration requirements
+- Branding rules
+
+==================================================
+GENERAL INFORMATION
+==================================================
+
+NHTSA defines:
+- Low-speed vehicles
+As:
+- Motor vehicles.
+
+==================================================
+VERY IMPORTANT LSV ENGINE RULE
+==================================================
+
+Florida allows:
+LSVs to be:
+- Electric
+OR
+- Gasoline powered.
+
+==================================================
+VERY IMPORTANT LSV SPEED RULE
+==================================================
+
+Maximum LSV speed:
+25 MPH.
+
+==================================================
+VERY IMPORTANT ROAD SPEED RULE
+==================================================
+
+LSVs may NOT operate:
+On roads where minimum speed exceeds:
+35 MPH.
+
+==================================================
+VERY IMPORTANT MINI-TRUCK SPEED RULE
+==================================================
+
+Mini-trucks may reach:
+55 MPH.
+
+==================================================
+VERY IMPORTANT MINI-TRUCK ROAD RULE
+==================================================
+
+Mini-trucks may NOT operate:
+On roads where posted speed exceeds:
+35 MPH.
+
+==================================================
+VERY IMPORTANT GVWR RULE
+==================================================
+
+LSV GVWR:
+Must be:
+Under 3,000 pounds.
+
+==================================================
+VERY IMPORTANT FEDERAL STANDARD RULE
+==================================================
+
+LSVs must conform to:
+49 CFR 571.500
+Standard No. 500.
+
+==================================================
+VERY IMPORTANT MCO RULE
+==================================================
+
+New LSVs and mini-trucks:
+Issued:
+Manufacturer's Certificate of Origin (MCO).
+
+==================================================
+VERY IMPORTANT VIN RULE
+==================================================
+
+LSVs and mini-trucks require:
+17-digit VIN.
+
+==================================================
+VERY IMPORTANT FEDERAL COMPLIANCE RULE
+==================================================
+
+MCO must state:
+Vehicle conforms to:
+49 CFR 571.500.
+
+==================================================
+VERY IMPORTANT BODY TYPE RULE
+==================================================
+
+LSV body types:
+- 2P
+- 4P
+- 6P
+- 9P
+
+==================================================
+VERY IMPORTANT BRANDING RULE
+==================================================
+
+Selecting LSV body type:
+Automatically creates:
+"Low-speed vehicle" brand.
+
+==================================================
+VERY IMPORTANT MINI-TRUCK BODY TYPE RULE
+==================================================
+
+Mini-truck body type:
+- MT
+
+==================================================
+VERY IMPORTANT ELECTRIC RULE
+==================================================
+
+Electric LSV:
+Must use:
+Electric vehicle use type.
+
+==================================================
+VERY IMPORTANT TITLE PRINT RULE
+==================================================
+
+Electric LSV titles print:
+- Low-speed Vehicle brand
+AND
+- "Electric" in model space.
+
+==================================================
+VERY IMPORTANT REGISTRATION CLASS RULE
+==================================================
+
+LSVs register as:
+- AU Auto
+
+According to:
+Weight.
+
+==================================================
+VERY IMPORTANT FOR-HIRE RULE
+==================================================
+
+For-hire LSV:
+Uses class code:
+Based on weight.
+
+==================================================
+VERY IMPORTANT OLD TITLE RULE
+==================================================
+
+Pre-FRVIS LSVs:
+May not already have:
+LSV brand.
+
+==================================================
+VERY IMPORTANT TRANSFER BRAND RULE
+==================================================
+
+Older unbranded LSV:
+Must receive:
+LSV brand
+During transfer.
+
+==================================================
+LSV OPERATION REQUIREMENTS
+==================================================
+
+LSV or mini-truck:
+May operate ONLY on:
+Roads with posted speed:
+35 MPH or less.
+
+==================================================
+VERY IMPORTANT CROSSING RULE
+==================================================
+
+LSVs may cross:
+Higher speed roads:
+At intersections.
+
+==================================================
+VERY IMPORTANT EQUIPMENT RULE
+==================================================
+
+LSVs and mini-trucks require:
+- Headlamps
+- Stop lamps
+- Turn signals
+- Tail lamps
+- Reflex reflectors
+- Parking brake
+- Rearview mirrors
+- Windshield
+- Seat belts
+- VIN
+
+==================================================
+VERY IMPORTANT INSURANCE RULE
+==================================================
+
+LSVs and mini-trucks:
+Must be:
+Registered
+AND
+Insured.
+
+==================================================
+VERY IMPORTANT LICENSE RULE
+==================================================
+
+LSV operator:
+Must possess:
+Valid driver license.
+
+==================================================
+VERY IMPORTANT COUNTY RESTRICTION RULE
+==================================================
+
+County or municipality:
+May prohibit:
+LSV operation:
+For safety reasons.
+
+==================================================
+VERY IMPORTANT DOT RESTRICTION RULE
+==================================================
+
+Florida DOT:
+May prohibit:
+LSV operation:
+For safety reasons.
+
+==================================================
+GOLF CART CONVERSION RULES
+==================================================
+
+Golf carts:
+Cannot normally:
+Be titled or registered.
+
+==================================================
+VERY IMPORTANT GOLF CART EXCEPTION RULE
+==================================================
+
+Golf carts MAY be converted:
+To:
+Low-speed vehicles.
+
+==================================================
+VERY IMPORTANT COMPLETED CONVERSION RULE
+==================================================
+
+Vehicle must be:
+Fully converted:
+Before applying for title.
+
+==================================================
+VERY IMPORTANT REGIONAL OFFICE RULE
+==================================================
+
+Applications for golf cart conversion:
+Must be submitted:
+To Motorist Services Regional Office.
+
+==================================================
+VERY IMPORTANT INSPECTION RULE
+==================================================
+
+Compliance examiner:
+Reviews paperwork
+AND
+Schedules virtual inspection.
+
+==================================================
+VERY IMPORTANT FLA NUMBER RULE
+==================================================
+
+Converted LSV:
+Receives:
+FLA number.
+
+==================================================
+VERY IMPORTANT CONVERTED YEAR RULE
+==================================================
+
+Converted LSV year:
+Equals:
+Year converted.
+
+==================================================
+VERY IMPORTANT CONVERTED MAKE RULE
+==================================================
+
+Converted LSV make:
+- ASPT
+
+==================================================
+REQUIRED CONVERSION DOCUMENTS
+==================================================
+
+Required:
+1. Original MCO or bill of sale
+2. HSMV 82040
+3. HSMV 84490
+4. HSMV 86064
+5. Bills of sale/receipts for parts
+6. Sales tax documentation
+7. Insurance proof
+8. Vehicle weight
+9. Title fees
+10. Photos
+11. Inspection fee
+
+==================================================
+VERY IMPORTANT BUILDER STATEMENT RULE
+==================================================
+
+HSMV 84490:
+Must state:
+Vehicle conforms to:
+49 CFR 571.500
+AND
+Florida statutes.
+
+==================================================
+VERY IMPORTANT AFFIDAVIT RULE
+==================================================
+
+Golf cart conversion requires:
+HSMV 86064.
+
+==================================================
+VERY IMPORTANT PARTS RECEIPT RULE
+==================================================
+
+All conversion parts:
+Require:
+Bills of sale or receipts.
+
+==================================================
+VERY IMPORTANT SALES TAX RULE
+==================================================
+
+Sales tax due on:
+- Golf cart purchase
+- Conversion parts
+If tax not previously collected.
+
+==================================================
+VERY IMPORTANT INSURANCE MINIMUM RULE
+==================================================
+
+Minimum insurance:
+- $10,000 PDL
+AND
+- $10,000 PIP
+
+==================================================
+VERY IMPORTANT STANDARD WEIGHT RULE
+==================================================
+
+Standard conversion weights:
+- 2 passenger = 980 lbs
+- 4 passenger = 1,240 lbs
+- 6 passenger = 1,460 lbs
+
+==================================================
+VERY IMPORTANT WEIGHT SLIP RULE
+==================================================
+
+Certified weight slip:
+NO LONGER REQUIRED.
+
+==================================================
+VERY IMPORTANT COMMENT DESC RULE
+==================================================
+
+Processing agency must enter:
+- Region number
+- FLA decal audit number
+
+In:
+Comment Desc field.
+
+==================================================
+VERY IMPORTANT PHOTO RULE
+==================================================
+
+Required photos:
+- Front
+- Back
+- Left side
+- Right side
+
+==================================================
+PREVIOUSLY CANCELLED TITLE RULE
+==================================================
+
+If previously cancelled LSV title found:
+FLHSMV sends:
+14-day notice letter:
+To prior owner.
+
+==================================================
+VERY IMPORTANT 14-DAY RULE
+==================================================
+
+If no objection received:
+Within 14 days:
+Title may be reinstated.
+
+==================================================
+LSV TO GOLF CART CONVERSION RULES
+==================================================
+
+LSV may be converted:
+Back into:
+Golf cart.
+
+==================================================
+VERY IMPORTANT SURRENDER RULE
+==================================================
+
+Owner must surrender:
+- Current title
+- Registration plate
+
+==================================================
+VERY IMPORTANT TRAILER RULE
+==================================================
+
+Vehicle must be:
+Trailed:
+To regional office.
+
+==================================================
+VERY IMPORTANT CONVERSION INSPECTION RULE
+==================================================
+
+Regional office inspection fee:
+- $40
+
+==================================================
+VERY IMPORTANT GOLF CART AFFIDAVIT RULE
+==================================================
+
+Conversion to golf cart requires:
+HSMV 86066.
+
+==================================================
+VERY IMPORTANT GOLF CART SPEED RULE
+==================================================
+
+Converted golf cart:
+Must comply with:
+20 MPH golf cart restriction.
+
+==================================================
+VERY IMPORTANT DECAL RULE
+==================================================
+
+Regional office issues:
+Rear decal reading:
+"CONVERTED VEHICLE. Max speed 20 mph."
+
+==================================================
+VERY IMPORTANT DECAL DISPLAY RULE
+==================================================
+
+Decal must:
+Be visible on rear:
+Of vehicle.
+
+==================================================
+MISCELLANEOUS RULES
+==================================================
+
+Golf carts:
+Cannot be titled or registered.
+
+LSVs and mini-trucks:
+MUST be titled and registered.
+
+==================================================
+VERY IMPORTANT DEALER LICENSE RULE
+==================================================
+
+Retailers selling:
+LSVs or mini-trucks:
+Must have dealer license.
+
+==================================================
+VERY IMPORTANT ODOMETER RULE
+==================================================
+
+LSVs:
+Exempt from odometer disclosure laws.
+
+==================================================
+VERY IMPORTANT OFF-ROAD VEHICLE RULE
+==================================================
+
+Off-road vehicles:
+Cannot be converted:
+To LSVs.
+
+Examples:
+- Mule
+- ATV
+
+==================================================
+VERY IMPORTANT GVWR CALCULATION RULE
+==================================================
+
+GVWR includes:
+- Vehicle weight
+- Cargo load
+- 150 lbs per seat position
+
+==================================================
+VERY IMPORTANT TRI-VEHICLE RULE
+==================================================
+
+Tri-vehicles:
+Refer to:
+TL-67.
+
+==================================================
+AI DECISION LOGIC
+==================================================
+
+AI should determine:
+1. Is vehicle an LSV?
+2. Is vehicle a mini-truck?
+3. Is golf cart conversion involved?
+4. Is regional office inspection required?
+5. Is FLA number required?
+6. Is proper body type selected?
+7. Is LSV branding required?
+8. Is electric use type required?
+9. Does vehicle exceed speed limitations?
+10. Is road legal for operation?
+11. Are required safety components installed?
+12. Is valid insurance provided?
+13. Is valid driver license required?
+14. Are all conversion forms present?
+15. Is HSMV 86064 required?
+16. Is HSMV 86066 required?
+17. Are photos included?
+18. Is ASPT make required?
+19. Is conversion complete?
+20. Was previous title cancelled?
+21. Is 14-day notice required?
+22. Is off-road conversion prohibited?
+23. Is mini-truck operation legal?
+24. Is title/registration mandatory?
+
+==================================================
+COMMON TITLE CLERK ERRORS
+==================================================
+
+- Titling golf carts directly
+- Missing LSV brand
+- Incorrect body type
+- Missing FLA number
+- Missing inspection
+- Missing conversion affidavit
+- Accepting ATV conversion
+- Missing receipts for parts
+- Incorrect make assignment
+- Missing insurance proof
+- Missing photos
+- Incorrect road usage advice
+- Missing electric designation
+- Forgetting AU classification
+- Incorrect GVWR calculation
+- Failing to surrender old title
+- Missing conversion decal
+
+==================================================
+VERY IMPORTANT CORE CONCEPT
+==================================================
+
+Golf carts:
+Are NOT road vehicles.
+
+Only after:
+Proper conversion,
+inspection,
+documentation,
+and compliance:
+Can they become:
+Road-legal low-speed vehicles.
+
+==================================================
+RELATED PROCEDURES
+==================================================
+
+- TL-05
+- TL-10
+- TL-11
+- TL-12
+- TL-67
+
+==================================================
+RELATED FORMS
+==================================================
+
+- HSMV 82040 MV
+- HSMV 82041
+- HSMV 84490
+- HSMV 86064
+- HSMV 86066
+
+==================================================
+REFERENCE NOTES
+==================================================
+
+Current revision:
+- 08/2025
+
+Primary focus:
+- Low-speed vehicle titling
+- Mini-truck registration
+- Golf cart conversions
+- LSV compliance
+- Regional office inspections

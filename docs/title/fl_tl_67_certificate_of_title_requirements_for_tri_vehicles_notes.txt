@@ -1,0 +1,427 @@
+FLORIDA TITLE PROCEDURE — CERTIFICATE OF TITLE REQUIREMENTS FOR TRI-VEHICLES
+PROCEDURE: TL-67
+CATEGORY: TRI-VEHICLES / SPECIAL VEHICLE TYPES / TITLE & REGISTRATION
+
+==================================================
+PROCEDURE SUMMARY
+==================================================
+
+This procedure governs:
+- Tri-vehicle definitions
+- Tri-vehicle title requirements
+- Tri-vehicle registration
+- FRVIS setup
+- Dealer licensing
+- NHTSA compliance
+- Vehicle classification
+- ILEV classification
+
+Applies to:
+- Tri-vehicles
+- Manufacturers
+- Importers
+- Dealers
+- Distributors
+- Tax collectors
+- License plate agencies
+- FLHSMV personnel
+
+==================================================
+AI CLASSIFICATION TAGS
+==================================================
+
+KEYWORDS:
+- tri-vehicle
+- 3 wheel vehicle
+- three wheeled vehicle
+- enclosed three wheeled vehicle
+- 3W body type
+- inherently low emission vehicle
+- ILEV
+- AU vehicle type
+- tri vehicle registration
+- tri vehicle title
+- NHTSA approved
+- HOV lane
+- enclosed occupant compartment
+- three wheel passenger vehicle
+- tri vehicle dealer
+- FRVIS tri vehicle
+- motorcycle vs tri vehicle
+- FMVSS 207
+- FMVSS 209
+- FMVSS 205
+- FMVSS 104
+- FMVSS 216
+- rollover crush resistance
+- seating systems
+- windshield wiping system
+- tri vehicle manufacturer
+- tri vehicle distributor
+
+COMMON USER QUESTIONS:
+- "What is a tri-vehicle?"
+- "Is a tri-vehicle a motorcycle?"
+- "How is tri-vehicle registered?"
+- "What body type for tri-vehicle?"
+- "Can tri-vehicle use HOV lane?"
+- "What FRVIS setup is used?"
+- "Does tri-vehicle need dealer license?"
+- "Can any 3-wheel vehicle qualify?"
+- "What safety standards apply?"
+- "What is minimum weight?"
+- "What speed capability required?"
+- "Can Slingshot qualify?"
+- "How are fees calculated?"
+- "What vehicle type is used?"
+- "What NHTSA approvals required?"
+
+==================================================
+LEGAL AUTHORITY
+==================================================
+
+Governed by:
+- 316.003(95) FS
+- 322.01(46) FS
+- 316.0741 FS
+- 320.08(2) FS
+
+==================================================
+DESCRIPTION AND USE
+==================================================
+
+Procedure explains:
+- Tri-vehicle titling
+- Tri-vehicle registration
+- FRVIS entry requirements
+- Manufacturer requirements
+- NHTSA compliance requirements
+
+==================================================
+TRI-VEHICLE DEFINITION
+==================================================
+
+Tri-vehicle:
+An enclosed three-wheeled passenger vehicle.
+
+==================================================
+VERY IMPORTANT WHEEL RULE
+==================================================
+
+Tri-vehicle:
+Must operate:
+With three wheels:
+In contact with ground.
+
+==================================================
+VERY IMPORTANT WEIGHT RULE
+==================================================
+
+Minimum unladen weight:
+900 pounds.
+
+==================================================
+VERY IMPORTANT OCCUPANT RULE
+==================================================
+
+Must have:
+Single completely enclosed:
+Occupant compartment.
+
+==================================================
+VERY IMPORTANT PRODUCTION RULE
+==================================================
+
+Vehicle must be produced:
+Minimum:
+300 units:
+Per calendar year.
+
+==================================================
+VERY IMPORTANT SPEED RULE
+==================================================
+
+Vehicle must be capable of:
+Greater than:
+60 MPH:
+On level ground.
+
+==================================================
+VERY IMPORTANT SEAT RULE
+==================================================
+
+Seats must comply with:
+FMVSS 207
+Seating Systems.
+
+==================================================
+VERY IMPORTANT STEERING RULE
+==================================================
+
+Vehicle must have:
+Steering wheel.
+
+==================================================
+VERY IMPORTANT PROPULSION RULE
+==================================================
+
+Propulsion unit:
+Must be located:
+Forward or aft:
+Of occupant compartment.
+
+==================================================
+VERY IMPORTANT SEAT BELT RULE
+==================================================
+
+Seat belts must comply with:
+FMVSS 209.
+
+==================================================
+VERY IMPORTANT WINDSHIELD RULE
+==================================================
+
+Windshield must comply with:
+FMVSS 205.
+
+==================================================
+VERY IMPORTANT WIPER RULE
+==================================================
+
+Wiper and washer system:
+Must comply with:
+FMVSS 104.
+
+==================================================
+VERY IMPORTANT ROLLOVER RULE
+==================================================
+
+Vehicle structure:
+Must comply with:
+FMVSS 216
+Rollover Crush Resistance.
+
+==================================================
+VERY IMPORTANT ILEV RULE
+==================================================
+
+Tri-vehicles:
+Are inherently low-emission vehicles (ILEV).
+
+==================================================
+VERY IMPORTANT HOV RULE
+==================================================
+
+Tri-vehicles may:
+Operate in:
+HOV lanes.
+
+==================================================
+VERY IMPORTANT BODY TYPE RULE
+==================================================
+
+Tri-vehicle body type:
+3W.
+
+==================================================
+VERY IMPORTANT DESCRIPTION RULE
+==================================================
+
+Vehicle description:
+Tri-vehicle.
+
+==================================================
+VERY IMPORTANT REGISTRATION RULE
+==================================================
+
+Tri-vehicles:
+Registered and taxed:
+Like automobiles.
+
+==================================================
+VERY IMPORTANT FEE RULE
+==================================================
+
+Fees calculated:
+Like regular automobiles:
+Using:
+- Net weight
+- Registered use
+- Appropriate class code
+
+==================================================
+VERY IMPORTANT MOTORCYCLE RULE
+==================================================
+
+Tri-vehicle:
+Is NOT a motorcycle.
+
+==================================================
+VERY IMPORTANT FRVIS RULE
+==================================================
+
+FRVIS setup:
+Vehicle Type = AU
+Body Type = 3W
+
+==================================================
+VERY IMPORTANT REG USE RULE
+==================================================
+
+Proper registration use code:
+Must be entered.
+
+==================================================
+VERY IMPORTANT MC BODY TYPE RULE
+==================================================
+
+FRVIS will NOT allow:
+Tri-vehicle:
+As motorcycle body type:
+MC.
+
+==================================================
+VERY IMPORTANT DEALER LICENSE RULE
+==================================================
+
+Manufacturers, importers,
+distributors, and dealers:
+Must be licensed.
+
+==================================================
+VERY IMPORTANT DEALER SERVICES RULE
+==================================================
+
+Dealer Services:
+Verifies applications:
+With NHTSA.
+
+==================================================
+VERY IMPORTANT NHTSA RULE
+==================================================
+
+Only NHTSA-approved tri-vehicles:
+May be titled and registered.
+
+==================================================
+VERY IMPORTANT AUTHORIZED SOURCE RULE
+==================================================
+
+Tri-vehicles must originate from:
+Authorized:
+- Manufacturers
+- Importers
+- Distributors
+
+==================================================
+INSURANCE RULE
+==================================================
+
+Insurance requirements:
+Refer to:
+RS-36.
+
+==================================================
+EXHIBIT RULE
+==================================================
+
+Exhibit A:
+Provides examples:
+Of tri-vehicles.
+
+==================================================
+AI DECISION LOGIC
+==================================================
+
+AI should determine:
+1. Does vehicle have 3 wheels?
+2. Is occupant compartment enclosed?
+3. Does vehicle exceed 900 lbs?
+4. Can vehicle exceed 60 MPH?
+5. Does vehicle meet FMVSS standards?
+6. Is steering wheel present?
+7. Is propulsion unit properly located?
+8. Are certified seat belts installed?
+9. Is windshield compliant?
+10. Is rollover protection compliant?
+11. Is vehicle NHTSA-approved?
+12. Is manufacturer authorized?
+13. Is vehicle type AU?
+14. Is body type 3W?
+15. Is vehicle incorrectly classified as MC?
+16. Does ILEV status apply?
+17. Can HOV lane access apply?
+18. Are fees calculated as automobile?
+19. Is proper reg use code entered?
+20. Is dealer properly licensed?
+
+==================================================
+COMMON TITLE CLERK ERRORS
+==================================================
+
+- Entering body type as MC
+- Treating tri-vehicle as motorcycle
+- Incorrect FRVIS setup
+- Incorrect fee calculations
+- Missing AU vehicle type
+- Titling non-approved 3-wheel vehicle
+- Missing NHTSA verification
+- Incorrect HOV assumptions
+- Incorrect registration class
+- Using improper reg use code
+- Accepting unlicensed manufacturer
+- Ignoring FMVSS requirements
+
+==================================================
+VERY IMPORTANT CORE CONCEPT
+==================================================
+
+Tri-vehicles:
+Are legally treated:
+As enclosed automobile-type vehicles,
+NOT motorcycles,
+Even though they operate with:
+Three wheels.
+
+==================================================
+RELATED PROCEDURES
+==================================================
+
+- RS-36
+
+==================================================
+FEDERAL STANDARDS REFERENCED
+==================================================
+
+- FMVSS 104
+- FMVSS 205
+- FMVSS 207
+- FMVSS 209
+- FMVSS 216
+
+==================================================
+FRVIS ENTRY FORMAT
+==================================================
+
+Vehicle Type:
+AU
+
+Body Type:
+3W
+
+Description:
+Tri-vehicle
+
+==================================================
+REFERENCE NOTES
+==================================================
+
+Current revision:
+- 09/12/2022
+
+Primary focus:
+- Tri-vehicle classification
+- FRVIS setup
+- NHTSA compliance
+- Special vehicle titling
+- ILEV classification

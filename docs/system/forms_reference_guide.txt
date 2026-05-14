@@ -1,0 +1,270 @@
+==================================================
+FLORIDA TITLE & REGISTRATION FORMS REFERENCE GUIDE
+==================================================
+
+==================================================
+REGISTRATION FORMS
+==================================================
+
+FORM:
+HSMV 82002
+
+NAME:
+Initial Registration Fee Exemption Affidavit
+
+USED FOR:
+- IRF exemptions
+- prior registration exemptions
+- military exemptions
+- operation of law exemptions
+
+RELATED PROCEDURES:
+RS-30
+
+--------------------------------------------------
+
+FORM:
+HSMV 82040
+
+NAME:
+Application for Certificate of Title With/Without Registration
+
+USED FOR:
+- title applications
+- ownership transfers
+- registration applications
+
+RELATED PROCEDURES:
+TL-08
+
+--------------------------------------------------
+
+FORM:
+HSMV 82050
+
+NAME:
+Notice of Sale and/or Bill of Sale
+
+USED FOR:
+- notice of sale
+- plate surrender support
+- title transfer support
+
+RELATED PROCEDURES:
+RS-31
+RS-43
+TL-08
+
+--------------------------------------------------
+
+FORM:
+HSMV 82082
+
+NAME:
+Off-Line Preprinted Temporary License Plate Authorization
+
+USED FOR:
+- ETR outages
+- offline temporary tag issuance
+
+RELATED PROCEDURES:
+RS-31
+
+--------------------------------------------------
+
+FORM:
+HSMV 83020
+
+NAME:
+Application for Front End License Plates
+
+USED FOR:
+- firefighter front plates
+- EMS front plates
+- law enforcement front plates
+
+RELATED PROCEDURES:
+RS-32
+
+--------------------------------------------------
+
+FORM:
+HSMV 83043
+
+NAME:
+Application for Personalized License Plate
+
+USED FOR:
+- personalized plates
+- vanity plates
+- specialty personalization
+
+RELATED PROCEDURES:
+RS-27
+
+--------------------------------------------------
+
+FORM:
+HSMV 83045
+
+NAME:
+Application for Registration of a Street Rod, Custom Vehicle, Horseless Carriage or Antique
+
+USED FOR:
+- custom vehicles
+- street rods
+- antique registrations
+
+RELATED PROCEDURES:
+RS-28
+
+--------------------------------------------------
+
+FORM:
+HSMV 83090
+
+NAME:
+Temporary License Plate Inventory Application
+
+USED FOR:
+- preprinted temp tag inventory
+- dealer temporary inventory
+
+RELATED PROCEDURES:
+RS-31
+
+--------------------------------------------------
+
+FORM:
+HSMV 83091
+
+NAME:
+Application for Temporary License Plate
+
+USED FOR:
+- temporary tags
+- ETR transactions
+- temporary registration issuance
+
+RELATED PROCEDURES:
+RS-31
+
+--------------------------------------------------
+
+FORM:
+HSMV 83146
+
+NAME:
+Application for Replacement License Plate, Validation Decal, or Parking Permit
+
+USED FOR:
+- replacement plates
+- replacement decals
+- replacement registrations
+
+RELATED PROCEDURES:
+RS-06
+RS-27
+RS-29
+RS-45
+
+--------------------------------------------------
+
+FORM:
+HSMV 83330
+
+NAME:
+Insurance Affidavit
+
+USED FOR:
+- standard insurance verification
+
+NOT VALID FOR:
+- commercial motor vehicle insurance proof
+
+RELATED PROCEDURES:
+RS-33
+RS-36
+
+--------------------------------------------------
+
+FORM:
+HSMV 84003
+
+NAME:
+Accountable Inventory Certification
+
+USED FOR:
+- obsolete inventory
+- surrendered plate destruction
+- PRIDE pickup documentation
+
+RELATED PROCEDURES:
+RS-43
+RS-52
+
+==================================================
+COMMERCIAL / INSURANCE FORMS
+==================================================
+
+FORM:
+ACORD Certificate of Liability Insurance
+
+USED FOR:
+- commercial vehicle insurance proof
+- apportioned registrations
+- CMV compliance
+
+RELATED PROCEDURES:
+RS-33
+
+--------------------------------------------------
+
+FORM:
+Form E
+
+NAME:
+Uniform Motor Carrier Bodily Injury and Property Damage Liability Certificate
+
+USED FOR:
+- motor carrier insurance proof
+
+RELATED PROCEDURES:
+RS-33
+
+--------------------------------------------------
+
+FORM:
+DR123
+
+NAME:
+Affidavit for Partial Exemption of Motor Vehicle Sold for Licensing in Another State
+
+USED FOR:
+- out-of-state temporary registration tax handling
+
+RELATED PROCEDURES:
+RS-31
+
+==================================================
+AI SYSTEM NOTES
+==================================================
+
+The assistant should:
+- identify required forms
+- identify supporting documents
+- identify related procedures
+- identify invalid form usage
+- identify escalation risks
+- identify signature/notary requirements when applicable
+
+==================================================
+SYSTEM PURPOSE
+==================================================
+
+This file exists to:
+- centralize procedural form intelligence
+- improve transaction accuracy
+- reduce missing paperwork
+- support AI workflow guidance
+- reduce title and registration rejection rates

@@ -1,0 +1,377 @@
+FLORIDA TITLE PROCEDURE — CERTIFICATE OF TITLE APPLICATIONS INVOLVING TRUST AGREEMENTS
+PROCEDURE: TL-21
+CATEGORY: TRUSTS / TRUSTEES / TITLE TRANSFERS
+RELATED STATUTES:
+- 319.22 FS
+- 319.23 FS
+- 328.01 FS
+- 328.03 FS
+- 328.11 FS
+- Chapter 736 Florida Trust Code
+- 736.0703 FS
+- 736.1017 FS
+
+==================================================
+PROCEDURE SUMMARY
+==================================================
+
+This procedure governs:
+- Vehicle titles in trust names
+- Transfers into trusts
+- Transfers out of trusts
+- Duplicate titles involving trusts
+- Trustee signing authority
+- Successor trustee authority
+
+Applies to:
+- Motor vehicles
+- Mobile homes
+- Vessels
+
+A trust is treated as a separate legal entity.
+
+For trust ownership to legally control:
+- Vehicle must actually be titled in trust name.
+
+==================================================
+AI CLASSIFICATION TAGS
+==================================================
+
+KEYWORDS:
+- trust
+- trust agreement
+- certification of trust
+- trustee
+- successor trustee
+- revocable trust
+- irrevocable trust
+- living trust
+- settlor
+- co-trustee
+- UDT
+- under declaration of trust
+- trust transfer
+- trust title
+- trust ownership
+- deceased trustee
+
+COMMON USER QUESTIONS:
+- "Vehicle in trust"
+- "Trustee signing title"
+- "Need trust paperwork"
+- "Successor trustee"
+- "Trust transfer"
+- "Certification of trust"
+- "Can trustee sign alone"
+- "Trustee deceased"
+- "Vehicle owned by trust"
+
+==================================================
+CORE LEGAL PRINCIPLE
+==================================================
+
+A trust is a separate legal entity.
+
+Title may be:
+- Issued INTO trust
+- Issued OUT OF trust
+- Transferred BY trustee
+- Held by trustee for trust
+
+Trust authority must be verified before processing.
+
+==================================================
+ACCEPTABLE TRUST DOCUMENTATION
+==================================================
+
+ONE OF THE FOLLOWING REQUIRED:
+
+1. Copy of trust agreement
+OR
+2. Certification of Trust
+
+==================================================
+MINIMUM TRUST AGREEMENT PAGES REQUIRED
+==================================================
+
+ONLY THESE PAGES REQUIRED:
+
+- First page
+- Page naming trustee/successor trustee
+- Signature page of creator/settlor
+
+==================================================
+CERTIFICATION OF TRUST REQUIREMENTS
+==================================================
+
+Certification of Trust must contain:
+
+- Trust exists
+- Date trust executed
+- Identity of settlor
+- Identity/address of trustee
+- Trustee powers
+- Revocable vs irrevocable status
+- Revocation authority
+- Co-trustee authority
+- Title-taking instructions
+- Statement trust not revoked/amended
+
+Must be:
+- Signed by trustee
+- Notarized
+
+OR
+
+Contain penalty of perjury clause.
+
+==================================================
+TRUST TITLE NAMING RULE
+==================================================
+
+IMPORTANT:
+
+Trust name MUST appear on title.
+
+Even if customer only wants trustee shown.
+
+EXAMPLES:
+- Smith Family Trust
+- John Smith as Trustee for Smith Family Trust
+- Friendly Bank U/D/T
+
+==================================================
+TRUSTEE SIGNATURE RULES
+==================================================
+
+IF trustee already named on title:
+
+EXAMPLE:
+"John Smith, Trustee"
+
+THEN:
+John Smith signs as trustee.
+
+==================================================
+UNIDENTIFIED TRUSTEE RULE
+==================================================
+
+IF title only shows trust name:
+
+EXAMPLE:
+"Smith Family Trust"
+
+THEN:
+Trustee signs:
+"John Smith, Trustee for Smith Family Trust"
+
+==================================================
+CO-TRUSTEE SIGNATURE RULES
+==================================================
+
+IF trustees joined by:
+- "AND"
+THEN:
+Both must sign.
+
+IF joined by:
+- "OR"
+THEN:
+Either may sign.
+
+IF trust agreement allows independent action:
+- Either trustee may sign.
+
+==================================================
+TRANSFER INTO TRUST
+==================================================
+
+REQUIRED:
+- Title assigned into trust
+- HSMV title application
+- Trust agreement OR certification
+- VIN verification if required
+- Sales tax information
+- Registration/decal information
+- Title fees
+
+==================================================
+TRANSFER OUT OF TRUST
+==================================================
+
+REQUIRED:
+- Title assigned by trustee
+- Purchaser title application
+- Lien satisfactions if applicable
+- Sales tax information
+- Title fees
+
+IMPORTANT:
+If title only shows trust name:
+- Trust agreement/certification required again.
+
+==================================================
+DUPLICATE TITLE PROCEDURES
+==================================================
+
+APPLICATION FOR DUPLICATE:
+- HSMV 82101 completed by trustee
+
+DUPLICATE WITH TRANSFER:
+- HSMV 82101 completed by trustee and purchaser
+- Tax information
+- Registration/decal information
+- Fees
+
+==================================================
+DECEASED TRUSTEE RULES
+==================================================
+
+IF trustee deceased:
+- Follow TL-18 deceased procedures
+
+IMPORTANT:
+Duplicate with transfer NOT allowed when:
+- Title in trust name
+AND
+- Trustee deceased
+
+==================================================
+SUCCESSOR TRUSTEE RULES
+==================================================
+
+Successor trustee assumes authority:
+- Upon death of trustee
+
+May require:
+- Death certificate
+- Trust documentation
+
+==================================================
+POWER OF ATTORNEY RULES
+==================================================
+
+Only trustee may sign title work UNLESS:
+- Valid power of attorney exists
+
+If business signs:
+- Affidavit required
+- Must state acting for trustee
+
+POA must contain:
+- Complete vehicle description
+
+==================================================
+OUT-OF-STATE TITLE REQUIREMENTS
+==================================================
+
+Out-of-state titles require:
+- Ownership proof
+- VIN verification if applicable
+- HSMV application
+- Trust documentation
+- Fees and taxes
+
+==================================================
+TRUST VS WILL LOGIC
+==================================================
+
+IMPORTANT:
+
+Ownership controls procedure.
+
+IF vehicle owned by:
+- Estate → follow deceased owner procedures
+- Trust → follow trust procedures
+
+IF will leaves vehicle to trust:
+- Title must first go into trust before sale.
+
+==================================================
+SUCCESSOR TRUSTEE AUTHORITY
+==================================================
+
+Successor trustee may:
+- Transfer ownership
+- Sell vehicle
+- Act for trust
+
+WITHOUT first titling into own name,
+IF trust ownership already established.
+
+==================================================
+COMMON DEALERSHIP ERRORS
+==================================================
+
+- Missing trust documentation
+- Accepting trustee signature without authority proof
+- Forgetting trust name must appear on title
+- Not checking AND vs OR trustee wording
+- Processing duplicate with transfer after trustee death
+- Treating estate ownership same as trust ownership
+- Missing successor trustee documentation
+- Accepting unsigned certification of trust
+- Missing notarization/perjury statement
+
+==================================================
+AI RESPONSE GUIDANCE
+==================================================
+
+AI should:
+1. Determine if ownership is trust or estate
+2. Verify trust documentation
+3. Verify trustee authority
+4. Verify successor trustee status
+5. Determine whether co-trustees must both sign
+6. Verify duplicate title eligibility
+7. Verify transfer authority
+8. Verify tax/registration requirements
+9. Verify VIN requirements
+10. Confirm title naming format
+
+==================================================
+TRUST DEFINITIONS
+==================================================
+
+LIVING TRUST:
+Trust effective during settlor lifetime.
+
+REVOCABLE TRUST:
+Trust may be changed/revoked.
+
+IRREVOCABLE TRUST:
+Trust cannot be changed/revoked.
+
+SETTLOR:
+Person creating trust.
+
+TRUSTEE:
+Person managing trust.
+
+SUCCESSOR TRUSTEE:
+Replacement trustee after trustee death/incapacity.
+
+UNDER DECLARATION OF TRUST (U/D/T):
+Formal trust declaration structure.
+
+==================================================
+RELATED PROCEDURES
+==================================================
+
+- TL-05 Duplicate Titles
+- TL-10 Original Titles
+- TL-11 Transfers
+- TL-12 Duplicate with Transfer
+- TL-18 Deceased Owners
+
+==================================================
+IMPORTANT OPERATIONAL NOTES
+==================================================
+
+- Trust must actually own vehicle for trust rules to apply
+- Trust documentation verifies authority
+- Trust name must appear on title
+- Co-trustee wording controls signatures
+- Trustee death changes procedure requirements
+- Duplicate with transfer prohibited after trustee death
+- Ownership type determines whether trust or deceased procedure applies

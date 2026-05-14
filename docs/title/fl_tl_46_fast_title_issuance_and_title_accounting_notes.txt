@@ -1,0 +1,569 @@
+FLORIDA TITLE PROCEDURE — FAST TITLE ISSUANCE & TITLE ACCOUNTING
+PROCEDURE: TL-46
+CATEGORY: FAST TITLES / TITLE INVENTORY / TITLE SECURITY / TITLE ACCOUNTING
+
+==================================================
+PROCEDURE SUMMARY
+==================================================
+
+This procedure governs:
+- Fast title issuance
+- Expedited title printing
+- Title inventory accounting
+- Title audit reports
+- Voided title procedures
+- Walk-in title release
+- Blank title paper security
+- Fast title ledgers
+- Title release authorization
+- Dealer fast title pickup procedures
+
+Applies to:
+- Tax collectors
+- License plate agents
+- FLHSMV issuing offices
+- Fast title locations
+- Dealer title pickup staff
+
+==================================================
+AI CLASSIFICATION TAGS
+==================================================
+
+KEYWORDS:
+- fast title
+- expedited title
+- same day title
+- title audit
+- voided title
+- title inventory
+- blank title paper
+- title ledger
+- walk-in title
+- title release affidavit
+- title accounting
+- title security
+- title correction
+- title recall
+- title audit number
+- title control number
+
+COMMON USER QUESTIONS:
+- "How do fast titles work?"
+- "What if fast title printed wrong?"
+- "How long keep voided title?"
+- "Can someone else pick up title?"
+- "Does dealer need POA for fast title?"
+- "How are blank titles secured?"
+- "What is title audit report?"
+- "What happens if title paper missing?"
+- "What if title mailed with mistake?"
+- "What documents needed for fast title pickup?"
+
+==================================================
+LEGAL AUTHORITY
+==================================================
+
+Based on:
+- Chapter 319 Florida Statutes
+
+Covers:
+- Certificates of title
+- New vehicles
+- Used vehicles
+- Mobile homes
+- Operation of law titles
+
+==================================================
+VERY IMPORTANT DOCUMENT RULE
+==================================================
+
+All title documentation:
+MUST:
+- Be complete
+- Be accurate
+- Be fully processed
+
+BEFORE:
+- Certificate issued.
+
+==================================================
+FAST TITLE ISSUANCE PROCESS
+==================================================
+
+When application complete:
+1. Clerk enters transaction into system
+2. Title generated
+3. HSMV 82041 generated
+4. Title control number printed
+5. Data verified
+6. Title released or mailed
+
+==================================================
+VERY IMPORTANT 82041 RULE
+==================================================
+
+After title issuance:
+- HSMV 82041 prints automatically.
+
+==================================================
+VERY IMPORTANT TITLE CONTROL NUMBER RULE
+==================================================
+
+Title control number:
+Prints:
+- Upper left corner of HSMV 82041.
+
+==================================================
+VERY IMPORTANT DATA VERIFICATION RULE
+==================================================
+
+Before mailing or release:
+Must verify:
+- VIN
+- Lien information
+- Audit number
+- Owner name
+- Address
+- Title information
+
+==================================================
+VERY IMPORTANT SAME DAY VOID RULE
+==================================================
+
+If incorrect information found:
+Same day:
+- Void transaction immediately.
+
+==================================================
+NEXT DAY ERROR RULE
+==================================================
+
+If error discovered next day:
+Two possibilities apply.
+
+==================================================
+NEXT DAY ERROR — TITLE NOT RELEASED
+==================================================
+
+If title:
+NOT mailed
+AND
+NOT delivered:
+
+Can:
+- Reissue correctly
+
+Using:
+- Title correction screen.
+
+==================================================
+NEXT DAY ERROR — TITLE ALREADY RELEASED
+==================================================
+
+If title already:
+- Mailed
+OR
+- Delivered:
+
+Must:
+- Submit photocopies
+- Send letterhead explanation
+- Request recall letter
+
+Through:
+- Field Support Center.
+
+==================================================
+VERY IMPORTANT BLANK TITLE SECURITY RULE
+==================================================
+
+Blank title paper:
+MUST:
+- Be secured
+- Be stored in approved safe/vault
+- Be stored at approved location.
+
+==================================================
+VERY IMPORTANT SECURITY APPROVAL RULE
+==================================================
+
+Storage location:
+Must:
+- Be inspected
+- Be documented
+- Be approved by Division of Motorist Services Support.
+
+==================================================
+VERY IMPORTANT TITLE PAPER ORDER RULE
+==================================================
+
+Blank title paper:
+Ordered:
+- In increments of 2000.
+
+==================================================
+VERY IMPORTANT SHIPPING RULE
+==================================================
+
+Blank title paper:
+Shipped:
+- Via FedEx.
+
+==================================================
+VERY IMPORTANT TITLE ACCOUNTABILITY RULE
+==================================================
+
+Every agency:
+Responsible for:
+- All title paper
+- All issued titles
+- Inventory tracking
+- Security compliance.
+
+==================================================
+VOIDED TITLE RULES
+==================================================
+
+Voided titles:
+Must:
+- Match Title Audit Report.
+
+==================================================
+VERY IMPORTANT VOID STAMP RULE
+==================================================
+
+Voided titles:
+MUST:
+- Be stamped "VOID".
+
+==================================================
+VERY IMPORTANT VOID RETENTION RULE
+==================================================
+
+Voided titles:
+Must retain:
+- 1 year.
+
+==================================================
+VERY IMPORTANT AUDIT REPORT RULE
+==================================================
+
+Title Audit Report:
+Must account for:
+- Every voided title
+- Every title number
+- Every audit number.
+
+==================================================
+VERY IMPORTANT MANUAL VOID RULE
+==================================================
+
+If void not listed:
+Must:
+- Manually mark void
+- Manually list audit number
+- Mark TTL inventory obsolete.
+
+==================================================
+VERY IMPORTANT UNUSED TITLE PAPER RULE
+==================================================
+
+Unused audit numbers:
+Must:
+- Be consecutive.
+
+==================================================
+VERY IMPORTANT DISCREPANCY RULE
+==================================================
+
+If title inventory discrepancy found:
+Must immediately contact:
+- Inventory Control Unit.
+
+==================================================
+VERY IMPORTANT THEFT RULE
+==================================================
+
+If title paper:
+- Stolen
+OR
+- Unaccounted for:
+
+Must:
+- Contact law enforcement
+- File crime report
+- Notify inventory control.
+
+==================================================
+MAIL RELEASE RULE
+==================================================
+
+If lien exists:
+Title mailed to:
+- Lienholder
+
+UNLESS:
+- Lienholder authorizes owner mailing.
+
+==================================================
+NO LIEN RULE
+==================================================
+
+If no lien:
+Title mailed to:
+- Owner
+OR
+- Designated business/person.
+
+==================================================
+VERY IMPORTANT MAIL ACCOUNTABILITY RULE
+==================================================
+
+Office:
+Responsible for:
+- Proper mailing documentation
+- Title release accountability.
+
+==================================================
+WALK-IN TITLE RELEASE RULE
+==================================================
+
+Walk-in customer:
+Must:
+- Sign ledger.
+
+==================================================
+FAST TITLE LEDGER REQUIREMENTS
+==================================================
+
+Ledger must contain:
+- Title number
+- Batch number
+- Printed name
+- Signature
+- Address
+- Phone number
+- DL/ID number
+
+==================================================
+VERY IMPORTANT PHOTO ID RULE
+==================================================
+
+Photo ID:
+REQUIRED:
+For title pickup.
+
+==================================================
+VERY IMPORTANT TWO OWNER RULE
+==================================================
+
+If title names joined by:
+- "AND"
+
+Only:
+- One signature required.
+
+==================================================
+NON-OWNER PICKUP RULE
+==================================================
+
+If non-owner picking up:
+Need one of:
+- Authorization Release Affidavit
+- Power of Attorney
+- Notarized affidavit
+- Perjury clause affidavit.
+
+==================================================
+VERY IMPORTANT NON-OWNER ID RULE
+==================================================
+
+Non-owner:
+Still must provide:
+- Photo ID.
+
+==================================================
+VERY IMPORTANT DEALER EXCEPTION RULE
+==================================================
+
+Licensed Florida dealers:
+DO NOT need:
+- POA
+- Authorization affidavit
+
+To pick up:
+- Fast title for customer.
+
+==================================================
+DEALER FAST TITLE REQUIREMENTS
+==================================================
+
+Dealer must provide:
+- Letterhead authorization
+- Authorized employee list
+- Photo ID
+- Signed walk-in ledger.
+
+==================================================
+VERY IMPORTANT FAST TITLE LEDGER RETENTION RULE
+==================================================
+
+Fast Title Service Walk-In Ledgers:
+Must retain:
+- 1 calendar year.
+
+==================================================
+TITLE AUDIT REPORT PURPOSE
+==================================================
+
+Title Audit Report tracks:
+- Audit numbers
+- Voids
+- Replacements
+- Inventory
+- Batch tracking
+- Unused title paper
+
+==================================================
+VOIDED TITLE DESTRUCTION RULE
+==================================================
+
+After:
+- 1 year retention complete
+
+Voided title:
+May be destroyed.
+
+==================================================
+AUTHORIZATION RELEASE AFFIDAVIT PURPOSE
+==================================================
+
+Allows:
+- Third party pickup
+Of:
+- Printed title
+- Registration
+
+==================================================
+AUTHORIZATION AFFIDAVIT REQUIREMENTS
+==================================================
+
+Requires:
+- Owner information
+- Vehicle description
+- Title number
+- VIN
+- Signature
+- Date
+
+==================================================
+AI DECISION LOGIC
+==================================================
+
+AI should determine:
+1. Is fast title requested?
+2. Is title data verified?
+3. Is transaction accurate?
+4. Was title already released?
+5. Does correction screen apply?
+6. Is recall process required?
+7. Is lienholder involved?
+8. Is title mailed or walk-in?
+9. Is recipient owner?
+10. Is authorization needed?
+11. Is dealer exception applicable?
+12. Is title inventory discrepancy present?
+13. Is void process complete?
+14. Was VOID stamped?
+15. Was ledger signed?
+16. Is photo ID required?
+17. Are audit numbers consecutive?
+18. Is title paper secure?
+
+==================================================
+COMMON TITLE CLERK ERRORS
+==================================================
+
+- Releasing title before verification
+- Forgetting VIN verification
+- Not voiding same-day errors
+- Missing recall procedure
+- Missing title ledger signature
+- Releasing title without photo ID
+- Missing dealer authorization letter
+- Failing to stamp VOID
+- Incorrect title inventory balancing
+- Missing audit number tracking
+- Improper title paper storage
+- Failing to report missing titles
+- Not retaining voids for 1 year
+
+==================================================
+IMPORTANT SECURITY RISKS
+==================================================
+
+High-risk items:
+- Blank title paper
+- Missing audit numbers
+- Untracked voids
+- Improper title release
+- Unauthorized pickup
+- Unsecured title inventory
+
+==================================================
+RELATED FORMS
+==================================================
+
+- HSMV 82041
+- Fast Title Walk-In Ledger
+- Authorization Release Affidavit
+- Title Audit Report
+
+==================================================
+RELATED PROCEDURES
+==================================================
+
+- TL-62
+
+==================================================
+IMPORTANT AUDIT CONCEPTS
+==================================================
+
+Audit numbers:
+Must:
+- Balance daily
+- Match reports
+- Remain consecutive
+- Account for all title stock
+
+==================================================
+FAST TITLE OPERATION FLOW
+==================================================
+
+1. Receive title application
+2. Verify documents
+3. Process transaction
+4. Print title
+5. Verify HSMV 82041
+6. Verify title accuracy
+7. Handle corrections if needed
+8. Log title release
+9. Obtain signatures/ID
+10. Retain audit records
+
+==================================================
+REFERENCE NOTES
+==================================================
+
+Current revision:
+- 02/16/2022
+
+Focus area:
+- Fast title issuance
+- Security
+- Accounting
+- Audit compliance
+- Inventory control
+
+Critical compliance area:
+- Blank title inventory security.

@@ -1,0 +1,665 @@
+FLORIDA TITLE PROCEDURE — TRANSFER OF CERTIFICATE OF TITLE UPON SALE OF DERELICT OR ABANDONED MOTOR VEHICLE BY A PUBLIC-USE AIRPORT
+PROCEDURE: TL-66
+CATEGORY: ABANDONED VEHICLES / DERELICT VEHICLES / AIRPORT SALES / OPERATION OF LAW
+
+==================================================
+PROCEDURE SUMMARY
+==================================================
+
+This procedure governs:
+- Abandoned vehicles at airports
+- Derelict vehicles at airports
+- Public-use airport towing liens
+- Airport vehicle auctions
+- Airport operation-of-law title transfers
+- Claim of lien filings
+- Airport public sales
+- Certified notice requirements
+- Airport storage liens
+- Airport title issuance
+
+Applies to:
+- Motor vehicles
+- Public-use airports
+- Airport directors
+- Tax collectors
+- License plate agencies
+- Purchasers at airport auctions
+
+DOES NOT APPLY TO:
+- Vessels
+- Mobile homes
+
+==================================================
+AI CLASSIFICATION TAGS
+==================================================
+
+KEYWORDS:
+- abandoned vehicle airport
+- derelict vehicle airport
+- airport lien
+- public-use airport
+- airport auction
+- operation of law
+- towing lien
+- airport storage lien
+- abandoned vehicle notice
+- claim of lien
+- airport title transfer
+- airport sale
+- airport towing
+- derelict motor vehicle
+- HSMV 82040 MV
+- certified notice
+- newspaper advertisement
+- abandoned vehicle auction
+- airport facility lien
+- public auction
+- internet auction
+- airport storage fees
+- airport parking fees
+- airport operation of law
+- airport vehicle disposal
+
+COMMON USER QUESTIONS:
+- "How does airport sell abandoned vehicle?"
+- "What notice is required?"
+- "Can airport sell free of liens?"
+- "How long before airport can auction vehicle?"
+- "What documents needed?"
+- "Does insurance company get notice?"
+- "Can airport keep sale proceeds?"
+- "What if certified mail unclaimed?"
+- "What if VIN missing?"
+- "Does dealer need title before resale?"
+- "What is airport claim of lien?"
+- "Can airport title vehicle itself?"
+- "What newspaper requirements apply?"
+- "When are prior liens removed?"
+- "What if airport uses wrecker company?"
+
+==================================================
+LEGAL AUTHORITY
+==================================================
+
+Governed by:
+- 705.184 FS
+- 705.182 FS
+- 713.78 FS
+- 627.736 FS
+
+==================================================
+DESCRIPTION AND USE
+==================================================
+
+Procedure explains:
+- Airport abandoned vehicle processing
+- Airport lien procedures
+- Auction title transfers
+- Required notices
+- Documentation requirements
+
+==================================================
+VERY IMPORTANT ABANDONED VEHICLE RULE
+==================================================
+
+Abandoned motor vehicle:
+Vehicle:
+- Wrecked
+- Inoperative
+- Partially dismantled
+OR
+Idle on airport premises:
+For 45 consecutive calendar days.
+
+==================================================
+VERY IMPORTANT DERELICT RULE
+==================================================
+
+Derelict motor vehicle:
+Vehicle:
+Not in drivable condition.
+
+==================================================
+VERY IMPORTANT AIRPORT POSSESSION RULE
+==================================================
+
+Airport director or designee:
+May take possession:
+Of abandoned or derelict vehicle.
+
+==================================================
+VERY IMPORTANT RECORD RULE
+==================================================
+
+Airport must record:
+Date vehicle found.
+
+==================================================
+VERY IMPORTANT WRECKER RULE
+==================================================
+
+Airport may use:
+- Airport wrecker
+OR
+- Licensed independent wrecker company.
+
+==================================================
+VERY IMPORTANT WRECKER EXCEPTION RULE
+==================================================
+
+If independent wrecker used:
+Wrecker must comply with:
+713.78 FS.
+
+==================================================
+VERY IMPORTANT OWNER SEARCH RULE
+==================================================
+
+Airport must contact:
+FLHSMV:
+To determine:
+- Owner
+- Insurance company
+- Lienholders
+
+==================================================
+VERY IMPORTANT 7-BUSINESS-DAY RULE
+==================================================
+
+Within:
+7 business days:
+Airport must send:
+Certified notice:
+To:
+- Owner
+- Insurance company
+- Lienholders
+
+==================================================
+VERY IMPORTANT CERTIFIED MAIL RULE
+==================================================
+
+Notice requires:
+Certified mail:
+Return receipt requested.
+
+==================================================
+VERY IMPORTANT NOTICE CONTENT RULE
+==================================================
+
+Notice must state:
+- Vehicle possession
+- Towing/storage/parking charges
+- Lien claim
+- Hearing rights
+- Potential sale/disposal rights
+
+==================================================
+VERY IMPORTANT 30-DAY RULE
+==================================================
+
+Vehicle may be disposed:
+After:
+30 calendar days:
+If not claimed.
+
+==================================================
+VERY IMPORTANT LIEN AGE RULE
+==================================================
+
+Vehicle may be sold free of liens:
+After:
+35 days:
+If liens older than 5 years.
+
+==================================================
+VERY IMPORTANT 50-DAY RULE
+==================================================
+
+Vehicle may be sold free of liens:
+After:
+50 days:
+If liens 5 years old or less.
+
+==================================================
+VERY IMPORTANT FAILED NOTICE RULE
+==================================================
+
+If notice attempts unsuccessful:
+Notice requirement considered satisfied.
+
+==================================================
+VERY IMPORTANT COURT COMPLAINT RULE
+==================================================
+
+Owner/lienholder may:
+File complaint:
+Within:
+10 calendar days:
+After learning vehicle location.
+
+==================================================
+VERY IMPORTANT BOND RULE
+==================================================
+
+Owner/lienholder may recover vehicle:
+By posting:
+Cash bond or security.
+
+==================================================
+VERY IMPORTANT AUCTION RULE
+==================================================
+
+Airport may sell vehicle:
+At:
+- Internet auction
+OR
+- Physical auction
+
+==================================================
+VERY IMPORTANT SALE NOTICE RULE
+==================================================
+
+If sale date not included in original notice:
+Separate sale notice required.
+
+==================================================
+VERY IMPORTANT SALE NOTICE TIMING RULE
+==================================================
+
+Sale notice must be mailed:
+At least:
+10 calendar days:
+Before sale.
+
+==================================================
+VERY IMPORTANT NEWSPAPER RULE
+==================================================
+
+Public auction notice:
+Must be published:
+One time:
+At least 10 calendar days before sale.
+
+==================================================
+VERY IMPORTANT NEWSPAPER REQUIREMENT RULE
+==================================================
+
+Newspaper must:
+- Be general circulation
+- In county where sale held
+
+==================================================
+VERY IMPORTANT EXCESS PROCEEDS RULE
+==================================================
+
+Airport retains:
+Excess proceeds:
+After towing/storage/sale costs paid.
+
+==================================================
+VERY IMPORTANT CLAIM OF LIEN RULE
+==================================================
+
+Airport must record:
+Claim of lien:
+With clerk of court.
+
+==================================================
+VERY IMPORTANT GOOD FAITH PURCHASER RULE
+==================================================
+
+Good faith purchaser:
+Takes vehicle:
+Free of prior interests.
+
+==================================================
+GENERAL INFORMATION
+==================================================
+
+Procedure does NOT apply to:
+- Vessels
+- Mobile homes
+
+==================================================
+VERY IMPORTANT TITLE PENALTY RULE
+==================================================
+
+If title application:
+Not submitted within:
+30 days of auction:
+Penalty fee due.
+
+==================================================
+VERY IMPORTANT MISSING VIN RULE
+==================================================
+
+If visible VIN missing:
+Contact:
+- Regional office
+OR
+- Auto theft law enforcement.
+
+==================================================
+VERY IMPORTANT REPLACEMENT VIN RULE
+==================================================
+
+Replacement VIN decal:
+Must be affixed:
+Before vehicle sold.
+
+==================================================
+VERY IMPORTANT AIRPORT PROCEEDS RULE
+==================================================
+
+Airport retains:
+Sale proceeds exceeding costs.
+
+==================================================
+VERY IMPORTANT DEALER TITLE RULE
+==================================================
+
+Dealer or individual:
+Purchasing through operation of law:
+Must title vehicle:
+In own name:
+Before resale.
+
+==================================================
+VERY IMPORTANT INSURANCE DISCLOSURE RULE
+==================================================
+
+Tax collectors and LPAs:
+May disclose insurance info:
+To towing companies:
+Under:
+705.184 FS.
+
+==================================================
+DOCUMENTATION REQUIREMENTS
+==================================================
+
+Required:
+1. Notice of Abandoned/Derelict Vehicle
+2. Certified mail receipts/unclaimed letters
+3. Notice of Sale
+4. Newspaper advertisement
+5. Claim of Lien
+6. Bill of Sale if sold
+7. HSMV 82040 MV
+8. Sales tax documentation
+9. Plate or non-use affidavit
+10. Title fees
+
+==================================================
+VERY IMPORTANT REGISTERED OWNER RULE
+==================================================
+
+If registered owner differs from titled owner:
+Both must receive notice.
+
+==================================================
+VERY IMPORTANT CO-OWNER RULE
+==================================================
+
+If co-owners have different addresses:
+Each owner must receive notice.
+
+==================================================
+VERY IMPORTANT INSURANCE EXCEPTION RULE
+==================================================
+
+Insurance company notice:
+NOT required:
+If FRVIS shows policy cancelled:
+Before vehicle found/towed.
+
+==================================================
+VERY IMPORTANT USPS RULE
+==================================================
+
+Acceptable proof:
+- Signed return receipt
+- Unclaimed certified letter
+- Electronic return receipt
+
+==================================================
+VERY IMPORTANT FORWARDING ORDER RULE
+==================================================
+
+Letters marked:
+"Forwarding Order Expired"
+Are acceptable.
+
+==================================================
+VERY IMPORTANT UNCLAIMED LETTER RULE
+==================================================
+
+Tax collector staff:
+Must open:
+Returned unclaimed letters.
+
+==================================================
+VERY IMPORTANT INITIALS RULE
+==================================================
+
+Staff must place:
+Initials and date:
+On opened envelope.
+
+==================================================
+VERY IMPORTANT TRACK AND CONFIRM RULE
+==================================================
+
+USPS "Track & Confirm":
+NOT acceptable:
+Instead of electronic return receipt.
+
+==================================================
+VERY IMPORTANT REQUIRED NOTICE ITEMS RULE
+==================================================
+
+Notice must include:
+- Airport name/address
+- Year/make/VIN
+- Possession statement
+- Lien claim
+- Charges owed
+- Hearing rights
+- Sale/disposal rights
+
+==================================================
+VERY IMPORTANT NOTICE OF SALE RULE
+==================================================
+
+Sale notice must include:
+- Date of sale
+- Time of sale
+- Location of sale
+- Vehicle location
+- Vehicle description
+- Airport information
+
+==================================================
+VERY IMPORTANT SALE DATE RULE
+==================================================
+
+Sale date in newspaper:
+Must match:
+Sale notice date.
+
+==================================================
+VERY IMPORTANT NEWSPAPER TIMING RULE
+==================================================
+
+10-day publication period:
+Does NOT include:
+- Publication date
+- Sale date
+
+==================================================
+VERY IMPORTANT COUNTY RULE
+==================================================
+
+Newspaper notice:
+Must specify:
+County circulated.
+
+==================================================
+VERY IMPORTANT CLAIM SERVICE RULE
+==================================================
+
+Claim of lien:
+Must be served:
+Before recording:
+With clerk of court.
+
+==================================================
+VERY IMPORTANT METHOD RULE
+==================================================
+
+Method of service:
+Must be specified:
+On HSMV 82040 MV.
+
+==================================================
+VERY IMPORTANT BILL OF SALE RULE
+==================================================
+
+If vehicle sold:
+Need original bill of sale:
+Showing complete description.
+
+==================================================
+VERY IMPORTANT UNSOLD VEHICLE RULE
+==================================================
+
+If vehicle not sold:
+Airport MUST title vehicle:
+In airport name.
+
+==================================================
+VERY IMPORTANT SALES TAX RULE
+==================================================
+
+Sales tax or exemption:
+Must appear on:
+HSMV 82040 MV.
+
+==================================================
+VERY IMPORTANT AIRPORT TITLE STATEMENT RULE
+==================================================
+
+If airport titling vehicle:
+82040 MV must state:
+"obtained per Florida statutes, s. 705.184, for towing, storage and parking fees only."
+
+==================================================
+VERY IMPORTANT LICENSE PLATE RULE
+==================================================
+
+Need:
+- Florida plate
+OR
+- Non-use affidavit
+
+==================================================
+VERY IMPORTANT AIRPORT EXEMPTION RULE
+==================================================
+
+Airport titling in own name:
+Does NOT require:
+Plate/non-use affidavit.
+
+==================================================
+AI DECISION LOGIC
+==================================================
+
+AI should determine:
+1. Is vehicle abandoned or derelict?
+2. Was 45-day idle requirement met?
+3. Was proper notice sent?
+4. Was notice sent within 7 business days?
+5. Were all owners notified?
+6. Was insurance company notified?
+7. Do insurance exceptions apply?
+8. Are certified mail proofs valid?
+9. Was sale notice required separately?
+10. Was newspaper publication timely?
+11. Are lien age timelines satisfied?
+12. Is vehicle eligible for free-and-clear sale?
+13. Was claim of lien recorded?
+14. Was lien served before recording?
+15. Was VIN missing?
+16. Was replacement VIN assigned?
+17. Is airport titling vehicle itself?
+18. Was vehicle sold at proper auction?
+19. Was title application timely?
+20. Does penalty fee apply?
+21. Is operation-of-law titling required?
+22. Must dealer title before resale?
+23. Are excess proceeds retained properly?
+24. Is HSMV 82040 MV completed correctly?
+
+==================================================
+COMMON TITLE CLERK ERRORS
+==================================================
+
+- Missing insurance company notice
+- Missing co-owner notices
+- Incorrect certified mail timing
+- Using Track & Confirm only
+- Missing newspaper publication
+- Wrong auction dates
+- Missing claim of lien recording
+- Failure to open unclaimed letters
+- Missing initials/date on envelopes
+- Missing operation-of-law title transfer
+- Dealer resale without titling
+- Missing replacement VIN
+- Incorrect lien age calculations
+- Missing airport statutory statement
+- Late title application penalty oversight
+
+==================================================
+VERY IMPORTANT CORE CONCEPT
+==================================================
+
+Public-use airports:
+May dispose of abandoned or derelict vehicles:
+Through operation-of-law auction procedures:
+After strict notice,
+lien,
+and publication compliance.
+
+==================================================
+RELATED FORMS
+==================================================
+
+- HSMV 82040 MV
+- Notice of Abandoned/Derelict Motor Vehicle Found on Premises of a Public-Use Airport
+- Claim of Lien
+
+==================================================
+RELATED STATUTES
+==================================================
+
+- 705.184 FS
+- 705.182 FS
+- 713.78 FS
+
+==================================================
+REFERENCE NOTES
+==================================================
+
+Current revision:
+- 12/2024 format update
+- Original procedure revision date: 08/03/2011
+
+Primary focus:
+- Airport abandoned vehicles
+- Airport towing/storage liens
+- Public-use airport auctions
+- Operation-of-law title transfers
+- Certified notice compliance

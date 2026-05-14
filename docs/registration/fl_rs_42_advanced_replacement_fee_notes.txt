@@ -1,0 +1,402 @@
+FLORIDA REGISTRATION PROCEDURE — ADVANCED REPLACEMENT FEE (ARF)
+PROCEDURE: RS-42
+CATEGORY: LICENSE PLATE FEES / 10-YEAR PLATE REPLACEMENT / ADVANCED REPLACEMENT FEE
+
+==================================================
+PROCEDURE SUMMARY
+==================================================
+
+This procedure governs:
+- Advanced Replacement Fee (ARF)
+- 10-year mandatory metal plate replacement
+- ARF fee accumulation
+- Forced plate replacement credits
+- Voluntary replacement restrictions
+- Plate replacement exemptions
+- ARF database tracking
+- Specialty/personalized plate replacement credits
+- Exempt class code handling
+- ARF collection during issuance and renewal
+
+Applies to:
+- Vehicle owners
+- Tax collectors
+- License plate agencies
+- FLHSMV personnel
+- Registration renewal processing staff
+
+==================================================
+AI CLASSIFICATION TAGS
+==================================================
+
+KEYWORDS:
+- Advanced Replacement Fee
+- ARF
+- 10-year plate replacement
+- forced plate replacement
+- metal plate replacement
+- $2.80 fee
+- $28 replacement fee
+- voluntary replacement
+- replacement credit
+- specialty plate replacement
+- personalized plate replacement
+- plate renewal fee
+- license plate replacement
+- mandatory replacement
+- plate issue date
+- Highway Safety Operating Trust Fund
+- ARF database
+- class code exemption
+- exempt class codes
+- historical authenticated plate
+- biennial registration fee
+- annual registration fee
+- replacement cycle
+- defaced plate
+- lost plate replacement
+- specialty plate upgrade
+- forced replacement credit
+- 320.06(1)(b)
+- 320.08056(8)
+- plate replacement schedule
+- registration renewal ARF
+- 10 year renewal
+- plate replacement accumulation
+- tag replacement fee
+- replacement plate credit
+- registration fee accumulation
+- Florida plate replacement
+
+COMMON USER QUESTIONS:
+- "What is the Advanced Replacement Fee?"
+- "Why am I being charged $2.80?"
+- "When does plate replacement happen?"
+- "Can ARF credit be refunded?"
+- "What if customer changes to specialty plate?"
+- "Does a lost plate qualify for ARF credit?"
+- "What if customer voluntarily replaces plate?"
+- "What class codes are exempt?"
+- "How is ARF collected on renewals?"
+- "Can personalized plates use ARF credit?"
+- "When is a plate forced to replace?"
+- "What happens after 10 years?"
+- "Is ARF tracked in the system?"
+- "Can customer receive refund if plate surrendered early?"
+- "How does biennial registration affect ARF?"
+
+==================================================
+LEGAL AUTHORITY
+==================================================
+
+Governed by:
+- 320.06(1)(b) FS
+- 320.08056(8)(a) FS
+- 320.08056(8)(b) FS
+
+==================================================
+DESCRIPTION AND USE
+==================================================
+
+Procedure explains:
+- ARF collection rules
+- Mandatory plate replacement cycles
+- Credit eligibility
+- Exemption handling
+- Renewal fee accumulation
+
+==================================================
+VERY IMPORTANT CORE RULE
+==================================================
+
+Florida metal license plates:
+Must be replaced:
+Every 10 years.
+
+==================================================
+VERY IMPORTANT ARF RULE
+==================================================
+
+$28 replacement fee:
+Collected incrementally:
+At:
+$2.80 per year.
+
+==================================================
+VERY IMPORTANT TRUST FUND RULE
+==================================================
+
+ARF funds:
+Deposited into:
+Highway Safety Operating Trust Fund.
+
+==================================================
+ORIGINAL ISSUANCE RULES
+==================================================
+
+First-time plate issuance:
+Requires:
+- $28 plate fee
+PLUS
+- $2.80 ARF.
+
+==================================================
+VERY IMPORTANT INITIAL ISSUE RULE
+==================================================
+
+Original metal plate issuance:
+Total:
+$30.80:
+Before other applicable fees.
+
+==================================================
+ANNUAL REGISTRATION RULE
+==================================================
+
+Annual registration:
+Collect:
+$2.80 ARF.
+
+==================================================
+BIENNIAL REGISTRATION RULE
+==================================================
+
+Biennial registration:
+Collect:
+$5.60 ARF.
+
+==================================================
+RENEWAL RULES
+==================================================
+
+Each renewal:
+Requires:
+Additional $2.80 ARF assessment.
+
+==================================================
+VERY IMPORTANT DATABASE RULE
+==================================================
+
+FLHSMV system:
+Retains:
+ARF accumulation records.
+
+==================================================
+FORCED REPLACEMENT RULES
+==================================================
+
+Plate replacement:
+Required:
+Every 10 years:
+Based on original issue date.
+
+==================================================
+VERY IMPORTANT FORCED CREDIT RULE
+==================================================
+
+During forced 10-year replacement:
+Accumulated ARF credit:
+May apply:
+Toward replacement plate fee.
+
+==================================================
+VERY IMPORTANT SPECIALTY PLATE CREDIT RULE
+==================================================
+
+Customer:
+Changing to:
+- specialty plate
+OR
+- personalized plate
+
+At forced replacement time:
+May receive ARF credit.
+
+==================================================
+VOLUNTARY REPLACEMENT RULES
+==================================================
+
+Voluntary replacement:
+Occurs:
+Before required 10-year replacement.
+
+==================================================
+VERY IMPORTANT NO VOLUNTARY CREDIT RULE
+==================================================
+
+Voluntary replacement:
+Does NOT allow:
+Use of accumulated ARF credit.
+
+==================================================
+VOLUNTARY REPLACEMENT EXAMPLES
+==================================================
+
+Examples include:
+- lost plate
+- defaced plate
+- voluntary specialty plate upgrade
+- voluntary personalized plate upgrade.
+
+==================================================
+VERY IMPORTANT NO REFUND RULE
+==================================================
+
+No refund or credit:
+Given:
+For previously collected ARF:
+If customer voluntarily replaces or surrenders plate early.
+
+==================================================
+VERY IMPORTANT DEPARTMENT-FORCED RULE
+==================================================
+
+Credit MAY apply:
+If department requires replacement:
+Under:
+320.08056(8)(a) or (b) FS.
+
+==================================================
+EXEMPTION RULES
+==================================================
+
+Certain class codes:
+Exempt:
+From:
+$28 replacement fee
+AND
+$2.80 ARF.
+
+==================================================
+EXEMPT CLASS CODES
+==================================================
+
+Exempt class codes include:
+- 37
+- 82
+- 95
+- 97
+
+Old exempt codes:
+- 24
+- 81
+- 82
+- 83
+- 85
+- 87
+- 97
+
+==================================================
+VERY IMPORTANT MOBILE HOME EXEMPTION RULE
+==================================================
+
+Mobile home class codes exempt:
+- 50
+- 51
+- 37
+
+Old codes:
+- 50
+- 51
+- 86
+
+==================================================
+VERY IMPORTANT HISTORICAL PLATE RULE
+==================================================
+
+Historical Authenticated plates:
+Class code 15:
+Exempt from ARF.
+
+==================================================
+AI DECISION LOGIC
+==================================================
+
+AI should determine:
+1. Is plate subject to ARF?
+2. Is replacement mandatory or voluntary?
+3. Has 10-year replacement period been reached?
+4. Is ARF credit accumulated?
+5. Is customer eligible for forced replacement credit?
+6. Is customer changing to specialty/personalized plate?
+7. Is replacement voluntary?
+8. Is refund prohibited?
+9. Is class code exempt?
+10. Is mobile home exemption applicable?
+11. Is historical authenticated plate exempt?
+12. Is annual or biennial registration used?
+13. Is correct ARF amount collected?
+14. Is replacement due under department order?
+15. Is ARF tracked properly in database?
+16. Is issue date accurate?
+17. Is replacement cycle calculated correctly?
+18. Is $28 fee applicable?
+19. Is trust fund allocation applicable?
+20. Is incorrect ARF waiver occurring?
+
+==================================================
+COMMON TITLE CLERK / REGISTRATION ERRORS
+==================================================
+
+- Failing to collect ARF
+- Incorrect ARF amount
+- Applying ARF credit to voluntary replacement
+- Missing 10-year replacement requirement
+- Incorrect exemption application
+- Incorrect class code exemption
+- Missing specialty plate credit handling
+- Refunding ARF improperly
+- Incorrect biennial calculation
+- Incorrect issue date tracking
+- Failing to apply forced replacement credit
+- Charging exempt historical plates
+- Missing mobile home exemptions
+- Incorrect renewal fee accumulation
+- Confusing voluntary vs forced replacement
+
+==================================================
+VERY IMPORTANT CORE CONCEPT
+==================================================
+
+Florida Advanced Replacement Fee procedures:
+Systematically collect:
+Future plate replacement costs
+through:
+incremental annual ARF charges,
+while enforcing:
+- mandatory 10-year plate replacement
+- controlled credit usage
+- exemption handling
+- ARF tracking
+and restrictions on voluntary replacement credits/refunds.
+
+==================================================
+RELATED PROCEDURES
+==================================================
+
+- RS-06
+- RS-22
+- RS-27
+
+==================================================
+RELATED ENTITIES
+==================================================
+
+- FLHSMV
+- Tax Collectors
+- License Plate Agencies
+- Highway Safety Operating Trust Fund
+
+==================================================
+REFERENCE NOTES
+==================================================
+
+Current revision:
+05/25/2022
+
+Primary focus:
+- Advanced Replacement Fee collection
+- 10-year mandatory plate replacement
+- Forced replacement credits
+- Voluntary replacement restrictions
+- Exempt class code handling

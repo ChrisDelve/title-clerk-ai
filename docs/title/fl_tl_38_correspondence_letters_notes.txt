@@ -1,0 +1,304 @@
+FLORIDA TITLE PROCEDURE — CORRESPONDENCE LETTERS
+PROCEDURE: TL-38
+CATEGORY: TITLE DEFICIENCY / TITLE CORRECTION PROCESSING
+
+==================================================
+PROCEDURE SUMMARY
+==================================================
+
+This procedure governs:
+- Correspondence letters
+- Deficient title applications
+- Returned title applications
+- Missing document requests
+- Correction requests
+- Title processing deficiencies
+- Refund request handling
+- Title correction communication procedures
+
+Applies to:
+- Tax collectors
+- License plate agencies
+- FLHSMV
+- DMS employees
+- Title applicants
+- Mail-to customers
+
+==================================================
+AI CLASSIFICATION TAGS
+==================================================
+
+KEYWORDS:
+- correspondence letter
+- title deficiency
+- title correction
+- incomplete title application
+- rejected title
+- missing documents
+- title returned
+- correction request
+- title application error
+- DMS correspondence
+- title deficiency notice
+- title processing error
+
+COMMON USER QUESTIONS:
+- "Why was my title application returned?"
+- "What is a correspondence letter?"
+- "What happens if title paperwork incomplete?"
+- "How do I fix title deficiency?"
+- "Can title fees be refunded?"
+- "What documents are returned?"
+- "What is CRS number?"
+- "What happens after title rejection?"
+
+==================================================
+VERY IMPORTANT PROCEDURE PURPOSE
+==================================================
+
+Correspondence Letters are used when:
+- Title applications are incomplete
+- Required documents missing
+- Information inaccurate
+- Corrections needed
+- Additional verification required
+
+==================================================
+VERY IMPORTANT TITLE PROCESSING RULE
+==================================================
+
+Applications that are:
+- Inaccurate
+- Incomplete
+- Missing documentation
+
+WILL NOT:
+- Be processed.
+
+==================================================
+VERY IMPORTANT CORRESPONDENCE LETTER RULE
+==================================================
+
+When application deficient:
+License plate agency OR DMS may:
+- Issue correspondence letter
+- Return submitted documentation
+- Request corrections/additional documents
+
+==================================================
+VERY IMPORTANT REVIEW RULE
+==================================================
+
+Every title application must be checked for:
+- Completeness
+- Accuracy
+- Required documentation
+- Compliance with standards
+
+==================================================
+CORRESPONDENCE LETTER REQUIRED CONTENTS
+==================================================
+
+Correspondence letter must contain:
+- Mail-to customer name/address
+- Applicant name
+- Correspondence number
+- VIN
+- Transaction ID
+- Batch number
+- Amount of money held
+- Current date
+- Required corrective actions
+- Agency contact instructions
+
+==================================================
+VERY IMPORTANT RETURN PACKAGE RULE
+==================================================
+
+When correspondence letter issued:
+ALL originally submitted documents:
+- Returned to customer/applicant
+- Attached to correspondence letter
+
+==================================================
+VERY IMPORTANT CUSTOMER ACTION RULE
+==================================================
+
+Customer should:
+- Promptly correct deficiencies
+- Return correspondence letter
+- Return supporting documents
+- Return all requested corrections
+
+To:
+- Original license plate agency
+
+==================================================
+VERY IMPORTANT DELAY RULE
+==================================================
+
+Failure to promptly return requested documents:
+May:
+- Delay title issuance
+
+==================================================
+VERY IMPORTANT AGENCY REVIEW RULE
+==================================================
+
+When corrected documents returned:
+Agency employee must verify:
+- All required documents attached
+- Corrections completed
+
+==================================================
+VERY IMPORTANT REFUND RULE
+==================================================
+
+Refund requests:
+- Must be submitted in writing
+
+Using:
+- Correspondence letter
+
+==================================================
+VERY IMPORTANT SERVICE FEE RULE
+==================================================
+
+When refund issued:
+ALL fees refunded EXCEPT:
+- Service fee
+
+==================================================
+VERY IMPORTANT CONTACT RULE
+==================================================
+
+All customer inquiries:
+Directed to:
+- Telephone number listed on correspondence letter
+
+==================================================
+SAMPLE CORRESPONDENCE LETTER INFORMATION
+==================================================
+
+Sample includes:
+- VIN reference
+- Transaction type
+- Deficiency code
+- Missing information request
+- Returned documents listed
+- Contact information
+- Resubmission instructions
+
+==================================================
+EXAMPLE DEFICIENCY
+==================================================
+
+Example:
+Unable to process title application because:
+- Vehicle color missing
+
+==================================================
+EXAMPLE RETURNED DOCUMENTS
+==================================================
+
+Sample returned documents:
+- Florida title
+- Insurance card
+
+==================================================
+EXAMPLE MONEY HOLD RULE
+==================================================
+
+Sample correspondence indicates:
+- Amount held in DMS
+
+==================================================
+AI DECISION LOGIC
+==================================================
+
+AI should determine:
+1. Is application complete?
+2. Are required forms present?
+3. Is ownership proof acceptable?
+4. Are corrections required?
+5. Should correspondence letter be generated?
+6. What deficiencies exist?
+7. What supporting documents missing?
+8. Is refund request eligible?
+9. Are all returned corrections resubmitted?
+10. Is title ready for processing?
+
+==================================================
+COMMON TITLE CLERK ERRORS
+==================================================
+
+- Missing VIN information
+- Missing owner information
+- Incorrect application data
+- Missing signatures
+- Missing supporting documents
+- Incorrect fees
+- Failure to attach returned docs
+- Failure to verify corrections
+- Failure to return correspondence letter
+- Processing incomplete correction packages
+
+==================================================
+CORRESPONDENCE LETTER WORKFLOW
+==================================================
+
+1. Application submitted
+2. Agency reviews application
+3. Deficiency discovered
+4. Correspondence letter generated
+5. Documents returned to customer
+6. Customer corrects issue
+7. Customer resubmits package
+8. Agency re-verifies
+9. Title processed
+
+==================================================
+VERY IMPORTANT DOCUMENT HANDLING RULE
+==================================================
+
+Returned package typically includes:
+- Correspondence letter
+- Original submitted documents
+- Instructions for correction
+- Agency contact information
+
+==================================================
+IMPORTANT TITLE QUALITY CONTROL RULE
+==================================================
+
+Correspondence letters are part of:
+- Title quality control
+- Fraud prevention
+- Accuracy verification
+- Documentation compliance
+
+==================================================
+RELATED PROCEDURES
+==================================================
+
+- TL-01 Certificate of Title Applications
+- TL-02 Ownership Documents
+- TL-06 Title Corrections
+- TL-07 Missing Documents
+- TL-36 Salvage/Rebuilt Processing
+
+==================================================
+REFERENCE NOTES
+==================================================
+
+Current revision:
+- 02/26/2024
+
+Procedure category:
+- Title Deficiency Processing
+
+Primary agencies:
+- Tax Collectors
+- License Plate Agencies
+- DMS
+- FLHSMV

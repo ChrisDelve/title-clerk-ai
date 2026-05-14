@@ -1,0 +1,517 @@
+FLORIDA REGISTRATION PROCEDURE — PARKING TICKET AND TOLL VIOLATION STOPS ON REGISTRATION
+PROCEDURE: RS-37
+CATEGORY: REGISTRATION STOPS / TOLL VIOLATIONS / PARKING VIOLATIONS / COMPLIANCE HOLDS
+
+==================================================
+PROCEDURE SUMMARY
+==================================================
+
+This procedure governs:
+- Registration stops for unpaid parking tickets
+- Registration stops for toll violations
+- Disabled parking violation stops
+- Toll authority stop processing
+- Registration renewal stop handling
+- Proof of payment verification
+- Governmental stop submissions
+- Registration stop removal procedures
+- Reporting agency compliance
+- Toll dispute resolution handling
+
+Applies to:
+- Vehicle owners
+- Registrants
+- Toll authorities
+- Clerks of court
+- Traffic violation bureaus
+- Governmental entities
+- Tax collectors
+- License plate agencies
+- FLHSMV personnel
+- Private tag agents
+
+==================================================
+AI CLASSIFICATION TAGS
+==================================================
+
+KEYWORDS:
+- registration stop
+- toll violation stop
+- parking ticket stop
+- unpaid tolls
+- unpaid parking tickets
+- disabled parking violation
+- toll suspension
+- registration renewal stop
+- proof of payment
+- toll authority
+- clerk of court stop
+- Data Listing Unit
+- toll dispute
+- parking violation bureau
+- stop clearance
+- registration hold
+- SunPass stop
+- toll fines
+- stop removal
+- stop deletion
+- proof of paid tolls
+- parking ticket suspension
+- governmental entity stop
+- revalidation decal stop
+- toll authority receipt
+- stop satisfaction
+- verification of error
+- registration renewal denial
+- outstanding fines
+- parking citation stop
+- registration blocked
+- stop scan coversheet
+- toll dispute resolution
+- toll invoice dispute
+- location code
+- registration stop message
+- parking permit exempt
+- vessel exempt
+- mobile home exempt
+- lease vehicle exemption
+- THEA
+- CFX
+- MDX
+- LeeWay
+- SunPass
+- Paytheatolls
+- Paymdxtolls
+- Data Listing Unit MS-91
+
+COMMON USER QUESTIONS:
+- "Why is there a registration stop?"
+- "How do I clear a toll stop?"
+- "Why can’t registration renew?"
+- "Can title transfer still be processed?"
+- "What proof is required?"
+- "Who placed the stop?"
+- "How do I remove a parking ticket hold?"
+- "Can mobile homes be stopped?"
+- "Can leased vehicles be exempt?"
+- "What toll authority should customer contact?"
+- "What is a verification of error?"
+- "What documents are submitted to FLHSMV?"
+- "Can original registration still process?"
+- "How are stops deleted?"
+- "What if reporting agency code is missing?"
+
+==================================================
+LEGAL AUTHORITY
+==================================================
+
+Governed by:
+- 316.1967(6) FS
+- 316.1001(4) FS
+- 320.03(8) FS
+- 318.15(3) FS
+- 713.78(13) FS
+
+==================================================
+DESCRIPTION AND USE
+==================================================
+
+Procedure explains:
+- Registration stop processing
+- Toll and parking violation enforcement
+- Stop qualification requirements
+- Stop removal procedures
+- Renewal restriction processing
+
+==================================================
+VERY IMPORTANT CORE RULE
+==================================================
+
+License plate or revalidation decal:
+Cannot be issued:
+If registration stop exists:
+Until:
+- fines paid
+OR
+- stop removed
+OR
+- verification of error provided.
+
+==================================================
+PARKING VIOLATION STOP RULE
+==================================================
+
+Registration stops may apply:
+For:
+- three or more unpaid parking tickets
+OR
+- disabled parking violations.
+
+==================================================
+VERY IMPORTANT DISABLED PARKING RULE
+==================================================
+
+ANY outstanding:
+Disabled parking violation:
+May trigger registration stop.
+
+==================================================
+TOLL VIOLATION STOP RULE
+==================================================
+
+One or more:
+Outstanding toll violations:
+May trigger registration stop.
+
+==================================================
+VERY IMPORTANT LEASE VEHICLE RULE
+==================================================
+
+Registration stop:
+Does NOT apply:
+To owner of leased vehicle:
+If vehicle registered:
+In lessee name.
+
+==================================================
+VERY IMPORTANT PRIVATE TAG AGENT RULE
+==================================================
+
+Private tag agent:
+May lose authority:
+If issuing plate:
+Contrary to stop restrictions.
+
+==================================================
+DESCRIPTION OF STOP PROCESSING
+==================================================
+
+System displays:
+"Registration Stop" message:
+During registration transaction.
+
+==================================================
+VERY IMPORTANT NO RENEWAL RULE
+==================================================
+
+Existing registration:
+Cannot be renewed:
+Until stop:
+- satisfied
+OR
+- deleted.
+
+==================================================
+VERY IMPORTANT TITLE APPLICATION RULE
+==================================================
+
+Title and original registration:
+May still process:
+Despite stop.
+
+==================================================
+VERY IMPORTANT TRANSFER RULE
+==================================================
+
+Transfer of existing plate:
+May still process:
+Despite stop.
+
+==================================================
+VERY IMPORTANT EXTENSION RULE
+==================================================
+
+Registration period extension:
+Cannot process:
+Until stop cleared.
+
+==================================================
+EXEMPT TRANSACTIONS RULE
+==================================================
+
+Registration stops:
+Do NOT apply to:
+- mobile homes
+- vessels
+- parking permits.
+
+==================================================
+STOP REMOVAL REQUIREMENTS
+==================================================
+
+Require:
+- proof of payment
+OR
+- verification of error.
+
+==================================================
+VERY IMPORTANT SCAN COVERSHEET RULE
+==================================================
+
+Tax collector removing stop:
+Must create:
+Scan coversheet:
+With:
+- proof of payment documentation
+OR
+- verification of error documentation.
+
+==================================================
+VERY IMPORTANT TRANSACTION SUMMARY RULE
+==================================================
+
+Documentation:
+Submitted with:
+Transaction Summary Report:
+For imaging.
+
+==================================================
+ORIGINAL QUALIFICATION REQUIREMENTS
+==================================================
+
+Traffic bureaus:
+Must submit:
+Local ordinance copy:
+For parking-related stops.
+
+==================================================
+VERY IMPORTANT DATA LISTING UNIT RULE
+==================================================
+
+Submit ordinance/letters to:
+
+Department of Highway Safety and Motor Vehicles
+Data Listing Unit MS-91
+2900 Apalachee Parkway
+Neil Kirkman Building
+Tallahassee FL 32399-0500
+
+==================================================
+VERY IMPORTANT TOLL AUTHORITY RULE
+==================================================
+
+Toll authorities:
+Need only submit:
+Compliance letter:
+Not ordinance.
+
+==================================================
+VERY IMPORTANT LEGAL APPROVAL RULE
+==================================================
+
+FLHSMV legal staff:
+Must approve:
+Ordinance or letter:
+Before stop data submission.
+
+==================================================
+STOP DATA SUBMISSION RULE
+==================================================
+
+Governmental entity:
+Must electronically submit:
+Stop data:
+To Data Listing Unit.
+
+==================================================
+VERY IMPORTANT TECHNICAL SUPPORT RULE
+==================================================
+
+Technical support:
+Data Listing Unit:
+(850) 617-2805
+
+==================================================
+STOP UPDATE RULE
+==================================================
+
+Stops:
+Added and deleted electronically:
+Periodically:
+By reporting agency.
+
+==================================================
+REGISTRATION RENEWAL NOTICE RULE
+==================================================
+
+Renewal notices:
+Will notify customer:
+Of registration stop.
+
+==================================================
+VERY IMPORTANT REPORTING AGENCY RULE
+==================================================
+
+Customer must contact:
+Reporting agency:
+To resolve stop.
+
+==================================================
+VERY IMPORTANT LOCATION CODE RULE
+==================================================
+
+Reporting agency:
+Identified by:
+4-digit location code:
+On record.
+
+==================================================
+VERY IMPORTANT TOLL AUTHORITY IDENTIFICATION RULE
+==================================================
+
+If reporting agency absent:
+Ask customer:
+Which toll authority issued invoice.
+
+==================================================
+VERY IMPORTANT UNIFORM RECEIPT RULE
+==================================================
+
+Parking violation bureaus:
+Must issue:
+Uniform receipt:
+After fines paid.
+
+==================================================
+TOLL AUTHORITY CONTACTS
+==================================================
+
+SunPass:
+888-824-8655
+888-865-5352
+
+--------------------------------------------------
+
+Central Florida Expressway Authority (CFX):
+407-690-5200
+
+--------------------------------------------------
+
+Tampa Hillsborough Expressway Authority (THEA):
+877-271-3458
+
+Website:
+Paytheatolls.com
+
+--------------------------------------------------
+
+LeeWay:
+239-533-9297
+
+--------------------------------------------------
+
+Miami-Dade Expressway Authority (MDX):
+855-277-0848
+
+Website:
+Paymdxtolls.com
+
+==================================================
+AI DECISION LOGIC
+==================================================
+
+AI should determine:
+1. Does registration stop exist?
+2. Is stop for parking or toll violations?
+3. Is disabled parking violation involved?
+4. Does lease vehicle exemption apply?
+5. Is renewal blocked?
+6. Can title/original registration still process?
+7. Is transfer of plate allowed?
+8. Is proof of payment attached?
+9. Is verification of error attached?
+10. Is scan coversheet required?
+11. Must documentation be imaged?
+12. Is reporting agency identified?
+13. Is location code available?
+14. Which toll authority applies?
+15. Is customer directed correctly?
+16. Is uniform receipt required?
+17. Is mobile home/vessel exempt?
+18. Is stop deletion pending?
+19. Was ordinance/legal approval completed?
+20. Is private tag agent compliance risk present?
+
+==================================================
+COMMON TITLE CLERK / REGISTRATION ERRORS
+==================================================
+
+- Attempting renewal with active stop
+- Failing to request proof of payment
+- Missing scan coversheet
+- Missing Transaction Summary documentation
+- Incorrectly denying title application
+- Incorrectly denying plate transfer
+- Failing to identify toll authority
+- Ignoring lease vehicle exemption
+- Processing decal despite stop
+- Missing verification of error documentation
+- Incorrect stop satisfaction processing
+- Failing to image documents
+- Confusing exempt transaction types
+- Improperly clearing stop without proof
+- Missing uniform receipt review
+
+==================================================
+VERY IMPORTANT CORE CONCEPT
+==================================================
+
+Florida registration stop procedures:
+Prevent renewal issuance
+when customers have:
+- unpaid parking violations
+- disabled parking violations
+- toll violations
+
+while still allowing limited title/transfer processing,
+until:
+- proof of payment
+- verification of error
+OR
+- electronic stop deletion occurs.
+
+==================================================
+RELATED PROCEDURES
+==================================================
+
+- TL-52
+- RS-43
+
+==================================================
+RELATED DOCUMENTS
+==================================================
+
+- Proof of payment receipts
+- Verification of error documents
+- Scan Coversheet
+- Transaction Summary Report
+
+==================================================
+RELATED ENTITIES
+==================================================
+
+- FLHSMV
+- Data Listing Unit
+- Clerks of Court
+- Toll Authorities
+- Tax Collectors
+- License Plate Agencies
+- SunPass
+- CFX
+- THEA
+- LeeWay
+- MDX
+
+==================================================
+REFERENCE NOTES
+==================================================
+
+Current revision:
+05/25/2022
+
+Primary focus:
+- Registration stop processing
+- Toll and parking violation enforcement
+- Stop removal procedures
+- Renewal restriction handling
+- Proof of payment verification

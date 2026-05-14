@@ -1,0 +1,770 @@
+FLORIDA REGISTRATION PROCEDURE — REGISTRATION (RENEWAL) PERIODS
+PROCEDURE: RS-02
+CATEGORY: REGISTRATIONS / RENEWALS / EXPIRATION PERIODS
+
+==================================================
+PROCEDURE SUMMARY
+==================================================
+
+This procedure governs:
+- Vehicle registration periods
+- Renewal periods
+- Advance renewal periods
+- Extended (biennial) registrations
+- Heavy truck renewal cycles
+- Dealer registration periods
+- Transporter registration periods
+- Rental vehicle registration periods
+- Long-term lease registration rules
+- Mobile home renewal periods
+- Delinquent registration timing
+- Six-month registrations
+- DUI reinstatement registrations
+
+Applies to:
+- Natural persons
+- Businesses
+- Rental companies
+- Dealers
+- Heavy trucks
+- Semi-trailers
+- Transporters
+- Mobile homes
+- Long-term leases
+- For-hire vehicles
+
+==================================================
+AI CLASSIFICATION TAGS
+==================================================
+
+KEYWORDS:
+- registration renewal
+- renewal periods
+- registration expiration
+- registration cycle
+- birthday renewal
+- business registration renewal
+- June 30 expiration
+- heavy truck renewal
+- dealer plate expiration
+- transporter plate expiration
+- mobile home expiration
+- six month registration
+- biennial registration
+- extended registration
+- delinquent registration fee
+- advance renewal period
+- registration grace period
+- short term rental
+- long term lease
+- leased vehicle registration
+- for hire registration
+- semiannual registration
+- REG USE HY
+- REG USE HH
+- permanent decal issued
+- rental vehicle registration
+- registration class codes
+- registration period logic
+- staggered registration
+- registration expiration chart
+- dealer registration cycle
+- company registration cycle
+
+COMMON USER QUESTIONS:
+- "When does registration expire?"
+- "Can I renew early?"
+- "How long is registration valid?"
+- "Can registration be two years?"
+- "What is the grace period?"
+- "What happens after DUI suspension?"
+- "How do business renewals work?"
+- "How do dealer plates renew?"
+- "How do truck renewals work?"
+- "Can for-hire vehicles do six month registration?"
+- "What month does company registration expire?"
+- "How are rental cars renewed?"
+- "Can deceased owner registration renew?"
+- "Which vehicles cannot do biennial registration?"
+- "How are long-term leases registered?"
+
+==================================================
+LEGAL AUTHORITY
+==================================================
+
+Governed by:
+- Section 320.01 FS
+- Section 320.02 FS
+- Section 320.07 FS
+- Section 320.055 FS
+- Section 320.0601 FS
+- Section 320.0705 FS
+- Section 320.95 FS
+
+==================================================
+DESCRIPTION AND USE
+==================================================
+
+Procedure explains:
+- Registration validity periods
+- Renewal timing
+- Renewal enforcement
+- Expiration calculations
+- Special renewal categories
+- Business renewal schedules
+
+==================================================
+DEFINITIONS
+==================================================
+
+==================================================
+REGISTRATION PERIOD
+==================================================
+
+Registration period:
+Time vehicle registration remains valid.
+
+==================================================
+VERY IMPORTANT REGISTRATION LENGTH RULE
+==================================================
+
+Registration periods:
+- 12 months
+OR
+- 24 months.
+
+==================================================
+ANNUAL REGISTRATION RULE
+==================================================
+
+Annual registration:
+Cannot exceed:
+15 months.
+
+==================================================
+BIENNIAL REGISTRATION RULE
+==================================================
+
+Biennial registration:
+Cannot exceed:
+27 months.
+
+==================================================
+RENEWAL PERIOD DEFINITION
+==================================================
+
+Renewal period:
+Time registration renewal must occur.
+
+==================================================
+VERY IMPORTANT NATURAL PERSON RULE
+==================================================
+
+Natural person registration:
+Expires:
+At midnight on owner's birthday.
+
+==================================================
+ADVANCE RENEWAL RULE
+==================================================
+
+Advance renewal:
+Allowed during:
+Three months before birth month:
+Through owner's birthday.
+
+==================================================
+EXTENDED REGISTRATION RULE
+==================================================
+
+Extended registration:
+24-month registration validity.
+
+==================================================
+VERY IMPORTANT BIENNIAL FEE RULE
+==================================================
+
+Biennial registration:
+Requires:
+Two-year total:
+Of taxes and fees.
+
+==================================================
+SHORT TERM RENTAL VEHICLE RULE
+==================================================
+
+Short-term rental vehicle:
+Lease period:
+Less than 12 months.
+
+==================================================
+LONG TERM LEASE RULE
+==================================================
+
+Long-term lease:
+Lease period:
+12 months or longer.
+
+==================================================
+REGISTRATION AND RENEWAL RULES
+==================================================
+
+==================================================
+NATURAL PERSON REGISTRATION RULE
+==================================================
+
+Natural person registration:
+Begins:
+Midnight on owner's birthday.
+
+Ends:
+Midnight on next birthday.
+
+==================================================
+VERY IMPORTANT MULTIPLE OWNER RULE
+==================================================
+
+Multiple owners:
+First listed owner's birthday:
+Determines registration period.
+
+==================================================
+VERY IMPORTANT NATURAL PERSON RENEWAL RULE
+==================================================
+
+Renewal period:
+30 days prior to owner's birthday.
+
+==================================================
+VERY IMPORTANT EXPIRATION RULE
+==================================================
+
+Expiration:
+Midnight of birthday.
+
+==================================================
+MOBILE HOME REGISTRATION RULE
+==================================================
+
+Mobile home registration:
+January 1 through December 31.
+
+==================================================
+MOBILE HOME RENEWAL RULE
+==================================================
+
+Renewal period:
+31 days before expiration.
+
+==================================================
+VERY IMPORTANT MOBILE HOME EXPIRATION RULE
+==================================================
+
+Mobile home expiration:
+December 31.
+
+==================================================
+BUSINESS REGISTRATION RULE
+==================================================
+
+Company/entity registration:
+June 1 through May 31:
+Unless otherwise specified.
+
+==================================================
+VERY IMPORTANT BUSINESS EXPIRATION RULE
+==================================================
+
+Business registration expiration:
+June 30.
+
+==================================================
+SHORT TERM RENTAL RULE
+==================================================
+
+Short-term rental vehicles:
+Use same June-May cycle.
+
+REG USE:
+SL
+
+==================================================
+RENTAL CAR PERMANENT REGISTRATION RULE
+==================================================
+
+Rental companies:
+May choose:
+Regular or permanent registration.
+
+==================================================
+VERY IMPORTANT PM DECAL RULE
+==================================================
+
+Permanent rental registration:
+Yellow decal:
+Displays:
+PM
+
+==================================================
+PERMANENT DECAL ISSUED RULE
+==================================================
+
+Paper registration:
+Displays:
+"Permanent Decal Issued"
+
+==================================================
+VERY IMPORTANT FOR-HIRE SIX MONTH RULE
+==================================================
+
+For-hire vehicles:
+May obtain:
+Six-month registration.
+
+REG USE:
+HH
+
+==================================================
+VERY IMPORTANT FOR-HIRE GRACE PERIOD RULE
+==================================================
+
+No grace period:
+For six-month for-hire registrations.
+
+==================================================
+DUI REINSTATEMENT RULE
+==================================================
+
+Driver license reinstated after DUI suspension:
+Requires:
+Six-month registration.
+
+==================================================
+VERY IMPORTANT DUI REGISTRATION PERIOD RULE
+==================================================
+
+DUI reinstatement registration:
+Begins:
+First day of birth month.
+
+Ends:
+Last day of fifth month after birth month.
+
+==================================================
+VERY IMPORTANT DUI FEES RULE
+==================================================
+
+DUI reinstatement:
+Requires:
+One-half annual tax:
+Plus applicable fees.
+
+==================================================
+HEAVY TRUCK RULES
+==================================================
+
+Heavy trucks:
+5,001–7,999 lbs:
+Use birthday registration cycle.
+
+==================================================
+HEAVY TRUCK OVER 7999 RULE
+==================================================
+
+Heavy trucks over 7,999 lbs:
+Truck tractors:
+Semi-trailers:
+Buses:
+December 1 through November 30 cycle.
+
+==================================================
+VERY IMPORTANT HEAVY TRUCK EXPIRATION RULE
+==================================================
+
+Heavy truck expiration:
+December 31.
+
+==================================================
+SEMIANNUAL HEAVY TRUCK RULE
+==================================================
+
+Semiannual registration allowed:
+For:
+- Heavy trucks
+- Truck tractors
+- Buses
+
+==================================================
+VERY IMPORTANT SEMIANNUAL ELIGIBILITY RULE
+==================================================
+
+Semiannual allowed only if:
+Annual tax exceeds $100.
+
+==================================================
+VERY IMPORTANT APPORTIONED RULE
+==================================================
+
+Apportioned vehicles:
+Cannot use semiannual registration.
+
+==================================================
+SEMIANNUAL REG USE RULE
+==================================================
+
+Heavy trucks/truck tractors:
+REG USE:
+HY
+
+Buses:
+REG USE:
+HY
+
+==================================================
+FIRST SEMIANNUAL PERIOD RULE
+==================================================
+
+First semiannual period:
+December 1 through May 31.
+
+==================================================
+VERY IMPORTANT FIRST PERIOD GRACE RULE
+==================================================
+
+No grace period:
+For first semiannual period.
+
+==================================================
+SECOND SEMIANNUAL PERIOD RULE
+==================================================
+
+Second semiannual period:
+June 1 through November 30.
+
+==================================================
+VERY IMPORTANT SECOND PERIOD GRACE RULE
+==================================================
+
+Second semiannual period:
+Grace period exists through December 31.
+
+==================================================
+VERY IMPORTANT NEW DECAL RULE
+==================================================
+
+Additional tax months collected:
+Requires:
+New validation decal issuance.
+
+==================================================
+FOR-HIRE LEASED VEHICLE RULES
+==================================================
+
+For-hire leased vehicles:
+Must be registered:
+In lessee's name.
+
+==================================================
+NATURAL PERSON LESSEE RULE
+==================================================
+
+Natural person lessee:
+Uses birthday registration cycle.
+
+==================================================
+COMPANY LESSEE RULE
+==================================================
+
+Company lessee:
+Uses staggered expiration:
+Based on company name.
+
+==================================================
+VERY IMPORTANT STAGGERED EXPIRATION RULE
+==================================================
+
+Company registration expiration:
+Determined by:
+First alpha character:
+Of company name.
+
+==================================================
+STAGGERED COMPANY EXPIRATION CHART
+==================================================
+
+A = June 30
+B/C = July 31
+D/E = August 31
+F = September 30
+G = October 31
+H/I/J = November 30
+K/L = December 31
+M/N = January 31
+O/P/Q = February 29
+R/S/T/U = March 31
+V = April 30
+W/X/Y/Z = May 31
+
+==================================================
+VERY IMPORTANT NUMERIC COMPANY RULE
+==================================================
+
+Numeric company names:
+Use:
+First alpha character.
+
+Example:
+123 Leasing:
+Expires December 31.
+
+==================================================
+VERY IMPORTANT ALL NUMERIC COMPANY RULE
+==================================================
+
+All numeric company names:
+Assigned:
+June 30 expiration.
+
+==================================================
+VERY IMPORTANT "THE" COMPANY RULE
+==================================================
+
+If company begins with "The":
+Use first alpha character:
+After "The"
+
+Example:
+The Hertz Corporation:
+Expires November 30.
+
+==================================================
+DEALER REGISTRATION RULES
+==================================================
+
+Dealer plates:
+Use same period:
+As dealer license.
+
+==================================================
+VERY IMPORTANT DEALER LICENSE RULE
+==================================================
+
+Current dealer license:
+Required:
+For registration period.
+
+==================================================
+FRANCHISED DEALER RULE
+==================================================
+
+Franchised dealers:
+January through December.
+
+Expiration:
+December 31.
+
+==================================================
+INDEPENDENT DEALER RULE
+==================================================
+
+Independent dealers:
+May through April.
+
+Expiration:
+April 30.
+
+==================================================
+RV DEALER RULE
+==================================================
+
+RV dealers:
+October through September.
+
+Expiration:
+September 30.
+
+==================================================
+MARINE TRAILER DEALER RULE
+==================================================
+
+Marine boat trailer dealers:
+July through June.
+
+Expiration:
+June 30.
+
+==================================================
+TRANSPORTER PLATE RULE
+==================================================
+
+Transporter plates:
+January through December.
+
+Expiration:
+December 31.
+
+==================================================
+DELINQUENT REGISTRATION RULE
+==================================================
+
+Delinquent fee may apply:
+If renewal not completed:
+By 11th calendar day:
+Of month following due month.
+
+==================================================
+DECEASED OWNER RULE
+==================================================
+
+FLHSMV allows:
+One-time 12-month renewal:
+In deceased owner's name.
+
+==================================================
+VERY IMPORTANT DECEASED OWNER RULE
+==================================================
+
+Renewal must occur:
+Within:
+One year of death.
+
+==================================================
+VERY IMPORTANT DECEASED OWNER DOCUMENT RULE
+==================================================
+
+Requires:
+Will or legal proof.
+
+==================================================
+VERY IMPORTANT VESSEL EXCLUSION RULE
+==================================================
+
+Vessels:
+Do NOT qualify:
+For deceased-owner renewal.
+
+==================================================
+BIENNIAL REGISTRATION RESTRICTIONS
+==================================================
+
+Cannot use biennial registration:
+- Restricted plates
+- National Guard exemption
+- Out-of-state military class 14 or 50
+- Heavy trucks over 8,000 lbs
+- Semi-trailers class 56 or 103
+- Transporters
+- Dealer registrations
+- Government vehicles
+
+==================================================
+VERY IMPORTANT BIENNIAL HEAVY TRUCK RULE
+==================================================
+
+Class code 41:
+Only eligible:
+If under 8,000 lbs.
+
+==================================================
+VERY IMPORTANT DEALER BIENNIAL RULE
+==================================================
+
+Dealer registrations:
+Cannot:
+Use biennial registration.
+
+==================================================
+VERY IMPORTANT GOVERNMENT BIENNIAL RULE
+==================================================
+
+Government vehicles:
+Cannot:
+Use biennial registration.
+
+==================================================
+AI DECISION LOGIC
+==================================================
+
+AI should determine:
+1. Is registrant natural person or business?
+2. Which renewal cycle applies?
+3. Which expiration date applies?
+4. Is advance renewal allowed?
+5. Is biennial registration allowed?
+6. Is vehicle excluded from biennial?
+7. Does six-month registration apply?
+8. Is DUI reinstatement involved?
+9. Does heavy truck cycle apply?
+10. Does company staggered expiration apply?
+11. Which dealer cycle applies?
+12. Is transporter plate involved?
+13. Is delinquent fee applicable?
+14. Is deceased owner renewal eligible?
+15. Is permanent rental registration used?
+16. Which REG USE code applies?
+
+==================================================
+COMMON TITLE CLERK / REGISTRATION ERRORS
+==================================================
+
+- Wrong expiration date
+- Wrong birthday owner selected
+- Incorrect company stagger assignment
+- Allowing biennial when prohibited
+- Missing delinquent fee
+- Incorrect heavy truck cycle
+- Incorrect dealer cycle
+- Incorrect REG USE
+- Applying grace period incorrectly
+- Missing six-month DUI requirement
+- Incorrect transporter expiration
+- Registering leased vehicle under lessor
+- Missing deceased-owner documentation
+- Incorrect PM decal handling
+
+==================================================
+VERY IMPORTANT CORE CONCEPT
+==================================================
+
+Florida registration renewal periods:
+Depend primarily on:
+- Owner type
+- Vehicle type
+- Weight class
+- Lease type
+- Registration use code
+- Dealer classification
+- Commercial status
+
+Correct expiration logic:
+Is critical to lawful registration issuance.
+
+==================================================
+RELATED PROCEDURES
+==================================================
+
+- RS-35
+
+==================================================
+RELATED STATUTES
+==================================================
+
+- 320.01 FS
+- 320.02 FS
+- 320.07 FS
+- 320.055 FS
+- 320.0601 FS
+- 320.0705 FS
+
+==================================================
+REFERENCE NOTES
+==================================================
+
+Current revision:
+07/01/2021
+
+Primary focus:
+- Renewal cycles
+- Expiration periods
+- Registration timing
+- Commercial renewal structures

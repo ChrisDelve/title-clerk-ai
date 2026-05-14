@@ -1,298 +1,845 @@
-TITLE:\
-FLHSMV RS-04 \'97 Registration Only Registrations\
-\
-CATEGORY:\
-Registration Only\
-Out-of-State Titles\
-Lienholder Held Titles\
-Lease Vehicles\
-Florida Registration Without Florida Title\
-\
---------------------------------------------------\
-\
-RULE:\
-A \'93Registration Only\'94 transaction allows Florida registration issuance WITHOUT issuing a Florida title under qualifying circumstances.\
-\
-VERIFY:\
-- Out-of-state title status\
-- Lienholder possession of title\
-- Florida insurance\
-- VIN consistency\
-- Registration eligibility\
-- Supporting ownership documents\
-\
-ESCALATE IF:\
-- Ownership conflict exists\
-- VIN discrepancy exists\
-- Fraud concerns arise\
-- Registration-only eligibility unclear\
-\
-\
---------------------------------------------------\
-\
-RULE:\
-Registration-only transactions are generally used when:\
-- An out-of-state lienholder holds the title\
-- A lease company holds the title\
-- The owner wants Florida registration only\
-- Florida title issuance is not currently possible\
-\
-VERIFY:\
-- Current out-of-state registration\
-- Proof lienholder possesses title\
-- Lease/lien documents\
-- Vehicle ownership records\
-\
-COMMON MISTAKE:\
-Attempting registration-only transaction without proof that lienholder or lease company holds the title.\
-\
-\
---------------------------------------------------\
-\
-RULE:\
-Registration-only transactions apply ONLY to vehicles titled in:\
-- U.S. states\
-- U.S. territories\
-\
-VERIFY:\
-- Prior state title jurisdiction\
-- Existing registration records\
-- Supporting ownership documents\
-\
-ESCALATE IF:\
-- Foreign title involved\
-- Prior title jurisdiction unclear\
-- Missing ownership records\
-\
-NOTE:\
-Foreign-country vehicles generally require import/title procedures instead of registration-only processing. :contentReference[oaicite:0]\{index=0\}\
-\
-\
---------------------------------------------------\
-\
-RULE:\
-Florida insurance is REQUIRED before issuing registration-only registration.\
-\
-VERIFY:\
-- Florida-issued insurance\
-- Owner name consistency\
-- VIN consistency\
-- Insurance company code\
-- Effective dates\
-\
-ESCALATE IF:\
-- Out-of-state insurance presented\
-- Insurance expired\
-- VIN mismatch on insurance\
-- Insurance unverifiable\
-\
-NOTE:\
-Florida electronically verifies insurance before registration issuance. :contentReference[oaicite:1]\{index=1\}\
-\
-\
---------------------------------------------------\
-\
-RULE:\
-VIN verification (HSMV 82042) is generally required for out-of-state vehicles entering Florida registration-only status.\
-\
-VERIFY:\
-- VIN verification form completion\
-- Authorized verifier\
-- VIN consistency\
-- Odometer reading if applicable\
-\
-AUTHORIZED VERIFIERS MAY INCLUDE:\
-- Florida notary\
-- Florida dealer\
-- Law enforcement officer\
-- Other authorized parties\
-\
-ESCALATE IF:\
-- Missing VIN verification\
-- Unauthorized verifier\
-- VIN discrepancy exists\
-\
-NOTE:\
-VIN verification requirements are specifically referenced for registration-only processing. :contentReference[oaicite:2]\{index=2\}\
-\
-\
---------------------------------------------------\
-\
-RULE:\
-Proof that lienholder/lease company possesses the out-of-state title must be provided.\
-\
-ACCEPTABLE EXAMPLES MAY INCLUDE:\
-- Lienholder statement\
-- Lease agreement\
-- Retail installment contract\
-- Payoff statement\
-- Copy of title\
-- Out-of-state registration showing lienholder\
-\
-VERIFY:\
-- Lienholder name\
-- Vehicle VIN\
-- Ownership consistency\
-- Title possession evidence\
-\
-ESCALATE IF:\
-- Missing lienholder proof\
-- Ownership inconsistency exists\
-- Fraud concerns arise\
-\
-\
---------------------------------------------------\
-\
-RULE:\
-Registration-only transactions do NOT create a Florida title record.\
-\
-VERIFY:\
-- Registration-only transaction coding\
-- Title issuance status\
-- Out-of-state title retention\
-\
-COMMON MISTAKE:\
-Accidentally processing full Florida title instead of registration-only transaction.\
-\
-\
---------------------------------------------------\
-\
-RULE:\
-VIN must match ALL supporting documents exactly.\
-\
-VERIFY:\
-- Registration VIN\
-- Insurance VIN\
-- VIN verification VIN\
-- Out-of-state registration VIN\
-- System VIN\
-- Supporting paperwork VIN\
-\
-ESCALATE IF:\
-- Any VIN discrepancy exists\
-- Altered VIN suspected\
-- VIN unreadable/incomplete\
-\
-\
---------------------------------------------------\
-\
-RULE:\
-At least one owner may need to appear with valid identification unless proper POA documentation is provided.\
-\
-VERIFY:\
-- Driver license/ID\
-- Passport if applicable\
-- Business authority if entity-owned\
-- POA documentation if applicable\
-\
-ESCALATE IF:\
-- Identity inconsistency exists\
-- Business authority unclear\
-- POA validity questionable\
-\
-\
---------------------------------------------------\
-\
-RULE:\
-Business/entity-owned registration-only vehicles require:\
-- Business verification\
-- Authorized signer review\
-- Entity status confirmation\
-\
-VERIFY:\
-- FEID/business information\
-- Active entity status\
-- Authorized representative\
-\
-ESCALATE IF:\
-- Entity inactive\
-- Ownership mismatch exists\
-- Missing authorization documents\
-\
-\
---------------------------------------------------\
-\
-RULE:\
-Sales/use tax implications may depend on:\
-- Length of ownership\
-- Prior state tax paid\
-- Vehicle purchase timing\
-\
-VERIFY:\
-- Purchase date\
-- Prior registration dates\
-- Ownership history\
-- Tax documentation\
-\
-ESCALATE IF:\
-- Tax calculation unclear\
-- Ownership timeline inconsistent\
-\
-\
---------------------------------------------------\
-\
-RULE:\
-Fraud prevention review is critical during registration-only processing.\
-\
-VERIFY:\
-- Ownership legitimacy\
-- VIN authenticity\
-- Insurance validity\
-- Lienholder legitimacy\
-- Supporting documentation authenticity\
-\
-ESCALATE IF:\
-- Fraud concerns\
-- Altered paperwork\
-- Fake insurance documentation\
-- Suspicious ownership activity\
-\
-\
---------------------------------------------------\
-\
-COMMON DEALERSHIP FAILURE POINTS:\
-- Out-of-state insurance used\
-- Missing VIN verification\
-- Missing lienholder proof\
-- VIN mismatch\
-- Incorrectly issuing Florida title\
-- Insurance name mismatch\
-- Missing business authorization\
-- Incorrect registration-only coding\
-- Foreign title processed incorrectly\
-- Ownership inconsistencies\
-\
-\
---------------------------------------------------\
-\
-HIGH-RISK ESCALATION SITUATIONS:\
-- VIN discrepancies\
-- Fraud concerns\
-- Missing lienholder proof\
-- Foreign-country titles\
-- Ownership disputes\
-- Fake insurance documentation\
-- Altered paperwork\
-- Business authority conflicts\
-- Registration/title coding conflicts\
-\
-\
---------------------------------------------------\
-\
-BEST PRACTICE:\
-Before processing registration-only transaction:\
-1. Verify lienholder/lease company holds title.\
-2. Verify Florida insurance FIRST.\
-3. Verify VIN across ALL documents.\
-4. Verify VIN inspection completion.\
-5. Verify registration-only eligibility carefully.\
-6. Escalate any irregularity immediately.\
-\
-\
---------------------------------------------------\
-\
-SOURCE:\
-FLHSMV RS-04 Registration Only Registrations\
-\
-REFERENCE URL:\
-https://www.flhsmv.gov/pdf/proc/rs/rs-04.pdf}
+FLORIDA REGISTRATION PROCEDURE — REGISTRATION ONLY REGISTRATIONS
+PROCEDURE: RS-04
+CATEGORY: REGISTRATION ONLY / NON-TITLED REGISTRATIONS / OUT-OF-STATE LIENS
+
+==================================================
+PROCEDURE SUMMARY
+==================================================
+
+This procedure governs:
+- Registration Only transactions
+- Non-titled registrations
+- Out-of-state lienholder registrations
+- Out-of-state lessor registrations
+- Nonresident military registrations
+- Temporary employment registrations
+- Heavy truck intrastate registrations
+- Mobile home registration only processing
+- Trailer under 2,000 pound registrations
+- Moped registrations
+- Marine nonprofit trailer registrations
+- Registration-only renewal notices
+
+Applies to:
+- Trailers under 2,000 lbs
+- Mopeds
+- Heavy trucks
+- Truck tractors
+- Buses
+- Mobile homes
+- Park trailers
+- Travel trailers
+- Nonresident military
+- Temporary employees
+- Out-of-state lienholder vehicles
+- Government loaned vehicles
+- Nonprofit marine trailers
+- Tax collectors
+- License plate agencies
+- FLHSMV personnel
+
+==================================================
+AI CLASSIFICATION TAGS
+==================================================
+
+KEYWORDS:
+- registration only
+- REG ONLY
+- out of state lienholder
+- registration only title
+- non titled registration
+- OL reg only
+- TN reg only
+- NR reg only
+- IO reg only
+- TE reg only
+- VL reg only
+- registration only reason code
+- title not required
+- out of state lessor
+- temporarily employed plate
+- nonresident military registration
+- intrastate operation registration
+- trailer identification number
+- TIN number
+- under 2000 pound trailer
+- moped registration
+- mobile home registration only
+- no VIN trailer
+- registration only renewal
+- nonprofit marine trailer
+- REG USE NP
+- class code 55
+- IRS determination letter
+- nonprofit marine trailer exemption
+- out of country military registration
+- HSMV 82042
+- Florida registration without title
+- title held by lienholder
+- title held by lessor
+- registration only affidavit
+- heavy truck lease registration
+
+COMMON USER QUESTIONS:
+- "What is a registration only?"
+- "Can I register vehicle without Florida title?"
+- "How do I register vehicle with out-of-state lien?"
+- "What reason code applies?"
+- "Can military register without title?"
+- "How does temporary employment plate work?"
+- "Can trailer under 2,000 lbs be titled?"
+- "What is TIN number?"
+- "Can mobile home be registration only?"
+- "Can nonprofit marine trailer avoid fees?"
+- "What proof is needed for out-of-state lienholder?"
+- "Can registration only be renewed?"
+- "What documents are required?"
+- "Can lessor authorize registration only?"
+- "What happens if VIN missing?"
+
+==================================================
+LEGAL AUTHORITY
+==================================================
+
+Governed by:
+- 319.20 FS
+- 319.21 FS
+- 320.02 FS
+- 320.0815 FS
+- 320.37 FS
+- 320.102 FS
+
+==================================================
+DESCRIPTION AND USE
+==================================================
+
+Procedure explains:
+- Authorized Registration Only transactions
+- Eligibility verification
+- Required documentation
+- Registration-only renewals
+- Registration-only reason codes
+- Nonprofit marine trailer exemptions
+
+==================================================
+VERY IMPORTANT CORE RULE
+==================================================
+
+Registration Only:
+Allows Florida registration issuance:
+Without Florida title:
+ONLY under specifically authorized circumstances.
+
+==================================================
+AUTHORIZED REGISTRATION ONLY TRANSACTIONS
+==================================================
+
+Authorized situations:
+A. Title not required
+B. Out-of-state lienholder/lessor
+C. Temporarily employed
+D. Nonresident military
+E. Vehicles loaned to government
+F. Intrastate leased heavy trucks
+G. Certain mobile homes/travel trailers
+H. Non-US military ownership
+
+==================================================
+TITLE NOT REQUIRED RULE
+==================================================
+
+Title not required for:
+- Mopeds
+- Electric motorized bicycles
+- Gas motorized bicycles
+- Trailers under 2,000 lbs
+
+==================================================
+VERY IMPORTANT TN RULE
+==================================================
+
+REG ONLY reason code:
+TN
+Meaning:
+Title Not Required.
+
+==================================================
+OUT-OF-STATE LIENHOLDER RULE
+==================================================
+
+Registration Only allowed:
+When title held by:
+Out-of-state lienholder.
+
+==================================================
+VERY IMPORTANT OL RULE
+==================================================
+
+REG ONLY reason code:
+OL
+Meaning:
+Out-of-State Lienholder.
+
+==================================================
+SPECIALTY PLATE RULE
+==================================================
+
+Specialty plates:
+Allowed on:
+Registration Only transactions:
+If customer eligible.
+
+==================================================
+VERY IMPORTANT SPECIAL PLATE RULE
+==================================================
+
+Special plates require:
+Proof of eligibility.
+
+==================================================
+TEMPORARILY EMPLOYED RULE
+==================================================
+
+Temporary employee:
+Must receive:
+90-day Temporarily Employed plate.
+
+==================================================
+VERY IMPORTANT TE RULE
+==================================================
+
+REG ONLY reason code:
+TE
+Meaning:
+Temporarily Employed.
+
+==================================================
+VERY IMPORTANT RS-41 RULE
+==================================================
+
+Temporary employment registrations:
+Governed by:
+RS-41.
+
+==================================================
+NONRESIDENT MILITARY RULE
+==================================================
+
+Nonresident U.S. Armed Forces:
+May obtain:
+Florida Registration Only.
+
+==================================================
+VERY IMPORTANT NR RULE
+==================================================
+
+REG ONLY reason code:
+NR
+Meaning:
+Nonresident Military.
+
+==================================================
+VERY IMPORTANT FOREIGN PURCHASE RULE
+==================================================
+
+Military member purchasing vehicle overseas:
+Must first title vehicle:
+In home state:
+Before Florida Registration Only.
+
+==================================================
+GOVERNMENT LOAN RULE
+==================================================
+
+Vehicles loaned to government agencies:
+May receive:
+Permanent government plate.
+
+==================================================
+VERY IMPORTANT VL RULE
+==================================================
+
+REG ONLY reason code:
+VL
+Meaning:
+Vehicles Loaned or Leased.
+
+==================================================
+HEAVY TRUCK LEASE RULE
+==================================================
+
+Heavy trucks leased:
+To Florida businesses:
+May receive:
+Registration Only.
+
+==================================================
+VERY IMPORTANT IO RULE
+==================================================
+
+REG ONLY reason code:
+IO
+Meaning:
+Intrastate Operation.
+
+==================================================
+VERY IMPORTANT DUAL PLATE RULE
+==================================================
+
+Heavy truck:
+26,001 lbs or greater:
+Requires:
+Two truck plates.
+
+==================================================
+MOBILE HOME REGISTRATION ONLY RULE
+==================================================
+
+Registration Only allowed:
+For mobile homes/travel trailers:
+If:
+- Affixed to land
+- In Florida over 6 months
+- VIN unknown
+- Ownership unsubstantiated
+
+==================================================
+VERY IMPORTANT MOBILE HOME TN RULE
+==================================================
+
+Reason code:
+TN
+Still applies:
+For certain mobile homes/travel trailers.
+
+==================================================
+VERY IMPORTANT TIN RULE
+==================================================
+
+System generates:
+TIN
+Trailer Identification Number:
+When VIN unavailable.
+
+==================================================
+VERY IMPORTANT TIN AFFIX RULE
+==================================================
+
+TIN:
+NOT required:
+To be die cut or affixed.
+
+==================================================
+VERY IMPORTANT OWNERSHIP WARNING RULE
+==================================================
+
+Registration Only:
+Cannot be used:
+As proof of ownership:
+For future title issuance.
+
+==================================================
+VERY IMPORTANT COURT ORDER RULE
+==================================================
+
+Florida title later requires:
+- Court order
+OR
+- Valid assigned title.
+
+==================================================
+NON-US MILITARY RULE
+==================================================
+
+Non-US military members:
+May receive:
+Registration Only:
+If ownership proof:
+In member's name.
+
+==================================================
+VERY IMPORTANT NON-US REVIEW RULE
+==================================================
+
+Proof of military status:
+May require:
+Department review.
+
+==================================================
+ORIGINAL TRANSACTION REQUIREMENTS
+==================================================
+
+==================================================
+TRAILER / MOPED REQUIREMENTS
+==================================================
+
+Required:
+- MCO and/or bill of sale
+- Chain of ownership
+
+==================================================
+VERY IMPORTANT USED TRAILER RULE
+==================================================
+
+Used trailer under 2,000 lbs:
+Requires:
+- Bill of sale
+- Previous plate number
+
+==================================================
+VERY IMPORTANT NEVER REGISTERED RULE
+==================================================
+
+If never registered in Florida:
+Require:
+Certified weight slip.
+
+==================================================
+VERY IMPORTANT NO VIN TRAILER RULE
+==================================================
+
+Trailer without VIN:
+System generates:
+TIN.
+
+==================================================
+OUT-OF-STATE LIENHOLDER REQUIREMENTS
+==================================================
+
+Require:
+- Letter from lienholder
+- VIN/year/make
+- Outstanding lien confirmation
+
+==================================================
+VERY IMPORTANT FAX RULE
+==================================================
+
+Fax copy:
+Acceptable.
+
+==================================================
+VERY IMPORTANT TITLE COPY RULE
+==================================================
+
+Need:
+Out-of-state title copy:
+Unless electronic title.
+
+==================================================
+VERY IMPORTANT TITLE RECEIPT RULE
+==================================================
+
+If title not issued:
+Out-of-state title receipt acceptable.
+
+==================================================
+OUT-OF-STATE LESSOR REQUIREMENTS
+==================================================
+
+Require:
+- Letter from lessor
+- Authorization for Florida Registration Only
+- VIN/year/make
+- Lease agreement if needed
+
+==================================================
+VERY IMPORTANT OUTSTANDING LIEN RULE
+==================================================
+
+If leased vehicle also financed:
+Need:
+Lienholder authorization letter.
+
+==================================================
+TEMPORARILY EMPLOYED REQUIREMENTS
+==================================================
+
+Require:
+- Valid out-of-state registration
+- Employer/customer affidavit
+
+==================================================
+NONRESIDENT MILITARY REQUIREMENTS
+==================================================
+
+Require:
+- Military orders
+- Out-of-state driver license
+- Out-of-state registration
+
+==================================================
+GOVERNMENT LOAN REQUIREMENTS
+==================================================
+
+Require:
+- Ownership proof
+- Loan agreement
+- Sales tax exemption number
+
+==================================================
+HEAVY TRUCK LEASE REQUIREMENTS
+==================================================
+
+Require:
+- Out-of-state title/title receipt
+- Lienholder statement if lien exists
+- Lease agreement
+- HVUT proof
+
+==================================================
+VERY IMPORTANT RS-34 RULE
+==================================================
+
+Heavy Vehicle Use Tax:
+Governed by:
+RS-34.
+
+==================================================
+MOBILE HOME REQUIREMENTS
+==================================================
+
+Require affidavit:
+Signed by:
+- Customer
+- Mobile Home Inspector
+OR
+- Compliance Examiner
+
+==================================================
+MOBILE HOME AFFIDAVIT MUST STATE
+==================================================
+
+Affidavit must include:
+- Customer controls mobile home
+- Previous owner unknown
+- VIN unknown
+- Description
+- Location
+- Year/make or unknown
+
+==================================================
+VERY IMPORTANT UNKNOWN MAKE RULE
+==================================================
+
+Unknown make:
+Enter:
+UNKN.
+
+==================================================
+VERY IMPORTANT UNKNOWN YEAR RULE
+==================================================
+
+Unknown year:
+Enter:
+1900.
+
+==================================================
+VERY IMPORTANT COMMENTS RULE
+==================================================
+
+Comments field:
+Must state:
+"Person in Charge of Registration-ownership cannot be substantiated"
+
+==================================================
+VERY IMPORTANT BACK TAX RULE
+==================================================
+
+Only:
+Current year plus two years:
+Back tax collectible.
+
+==================================================
+VERY IMPORTANT MODULAR HOME RULE
+==================================================
+
+After:
+10/01/2015:
+Registration Only:
+Generally no longer applies:
+To modular homes.
+
+==================================================
+ADDITIONAL DOCUMENTATION RULES
+==================================================
+
+==================================================
+VERY IMPORTANT HSMV 82042 RULE
+==================================================
+
+Registration Only:
+Out-of-state lienholder/lessor:
+Requires:
+HSMV 82042.
+
+==================================================
+SALES TAX RULES
+==================================================
+
+If purchased within:
+6 months:
+Florida sales tax may apply.
+
+==================================================
+VERY IMPORTANT OUT-OF-STATE TAX RULE
+==================================================
+
+Credit allowed:
+For:
+Out-of-state tax paid.
+
+==================================================
+VERY IMPORTANT DIFFERENCE RULE
+==================================================
+
+If less than Florida tax paid:
+Difference owed.
+
+==================================================
+VERY IMPORTANT TL-08 RULE
+==================================================
+
+Sales tax guidance:
+Governed by:
+TL-08.
+
+==================================================
+INSURANCE RULES
+==================================================
+
+Florida insurance required:
+For Registration Only transactions.
+
+==================================================
+VERY IMPORTANT INSURANCE EXEMPTION RULE
+==================================================
+
+Insurance NOT required:
+For:
+- Mopeds
+- Motorcycles
+- Trailers
+- Federally owned vehicles
+
+==================================================
+RENEWAL NOTICE RULES
+==================================================
+
+Renewal notices:
+Not legally required.
+
+==================================================
+VERY IMPORTANT OUT-OF-STATE LIEN RENEWAL RULE
+==================================================
+
+Renewal notice message:
+"R/O Out-of-State Lien Holder"
+
+==================================================
+VERY IMPORTANT NONRESIDENT MILITARY RENEWAL RULE
+==================================================
+
+Renewal notice message:
+"R/O Non-Resident U.S. Armed Forces"
+
+==================================================
+VERY IMPORTANT TEMP EMPLOYED RENEWAL RULE
+==================================================
+
+Temporary employed plates:
+Do NOT receive:
+Renewal notice.
+
+==================================================
+VERY IMPORTANT GOVERNMENT LOAN RENEWAL RULE
+==================================================
+
+Permanent government plates:
+Do NOT receive:
+Renewal notice.
+
+==================================================
+NONPROFIT MARINE TRAILER RULES
+==================================================
+
+Marine trailer nonprofit:
+Governed by:
+320.102 FS.
+
+==================================================
+VERY IMPORTANT CLASS CODE 55 RULE
+==================================================
+
+Class code:
+55
+Meaning:
+Marine Trailer Nonprofit.
+
+==================================================
+VERY IMPORTANT REG USE NP RULE
+==================================================
+
+REG USE:
+NP
+Meaning:
+Marine Trailer Nonprofit.
+
+==================================================
+VERY IMPORTANT NONPROFIT REQUIREMENT RULE
+==================================================
+
+Nonprofit organization:
+Must be:
+IRS 501(c)(3).
+
+==================================================
+VERY IMPORTANT IRS LETTER RULE
+==================================================
+
+Require:
+IRS Determination Letter.
+
+==================================================
+VERY IMPORTANT FEIN RULE
+==================================================
+
+FEIN:
+Must match:
+Motor vehicle issuance system customer record.
+
+==================================================
+VERY IMPORTANT BUSINESS ONLY RULE
+==================================================
+
+REG USE NP:
+Restricted:
+To business customers only.
+
+==================================================
+VERY IMPORTANT SPECIALTY PLATE FEE RULE
+==================================================
+
+Specialty/personalized fees:
+Still apply:
+For nonprofit trailers.
+
+==================================================
+VERY IMPORTANT BIENNIAL RULE
+==================================================
+
+Biennial registration:
+Allowed:
+For nonprofit marine trailers.
+
+==================================================
+AI DECISION LOGIC
+==================================================
+
+AI should determine:
+1. Does Registration Only qualify?
+2. Which REG ONLY reason code applies?
+3. Is title prohibited or unavailable?
+4. Is title held by lienholder/lessor?
+5. Is customer temporarily employed?
+6. Is military status valid?
+7. Is government loan involved?
+8. Is heavy truck intrastate lease involved?
+9. Does mobile home affidavit qualify?
+10. Should TIN be generated?
+11. Is HSMV 82042 required?
+12. Is Florida insurance required?
+13. Is sales tax due?
+14. Does nonprofit marine trailer exemption apply?
+15. Is FEIN verified?
+16. Is REG USE NP allowed?
+17. Should renewal notice print?
+18. Does renewal message apply?
+19. Is ownership proof sufficient?
+20. Is title issuance prohibited?
+
+==================================================
+COMMON TITLE CLERK / REGISTRATION ERRORS
+==================================================
+
+- Issuing Registration Only without authorization
+- Wrong REG ONLY reason code
+- Missing lienholder letter
+- Missing lease authorization
+- Missing HSMV 82042
+- Missing military orders
+- Incorrect TIN handling
+- Accepting Registration Only as ownership proof
+- Incorrect nonprofit FEIN
+- Issuing NP REG USE to individuals
+- Missing sales tax collection
+- Incorrect insurance exemptions
+- Incorrect heavy truck plate issuance
+- Missing mobile home affidavit
+- Using Registration Only when Florida title required
+
+==================================================
+VERY IMPORTANT CORE CONCEPT
+==================================================
+
+Registration Only transactions:
+Allow limited Florida registration issuance
+without Florida title,
+but ONLY under narrowly authorized statutory situations
+with strict documentation,
+reason code,
+and ownership verification requirements.
+
+==================================================
+RELATED PROCEDURES
+==================================================
+
+- RS-01
+- RS-07
+- RS-12
+- RS-15
+- RS-16
+- RS-17
+- RS-19
+- RS-21
+- RS-22
+- RS-34
+- RS-36
+- RS-41
+- RS-55
+- RS-61
+- RS-63
+- RS-68
+- TL-08
+
+==================================================
+RELATED FORMS
+==================================================
+
+- HSMV 82042
+- HSMV 82041
+
+==================================================
+RELATED REG ONLY REASON CODES
+==================================================
+
+TN = Title Not Required
+OL = Out-of-State Lienholder
+TE = Temporarily Employed
+NR = Nonresident Military
+VL = Vehicles Loaned or Leased
+IO = Intrastate Operation
+
+==================================================
+REFERENCE NOTES
+==================================================
+
+Current revision:
+07/10/2024
+
+Primary focus:
+- Registration Only eligibility
+- Out-of-state lienholder registrations
+- Nonresident military registrations
+- Trailer/moped registrations
+- Mobile home Registration Only processing

@@ -1,0 +1,523 @@
+FLORIDA REGISTRATION PROCEDURE — BICYCLE WITH A GAS MOTOR (DEFINED AS A MOPED)
+PROCEDURE: RS-68
+CATEGORY: MOPEDS / ASSEMBLED FROM PARTS / GAS-POWERED BICYCLES
+
+==================================================
+PROCEDURE SUMMARY
+==================================================
+
+This procedure governs:
+- Gas-powered bicycle registration
+- Bicycle-to-moped conversions
+- Assembled from parts mopeds
+- Gas engine kit bicycle processing
+- FLA VIN decal assignments
+- Compliance Examiner inspections
+- ASPT make assignments
+- Moped classification determinations
+- Motorcycle classification determinations
+- Moped registration requirements
+- Moped title exemptions
+- Moped safety compliance
+- Builder documentation requirements
+- Component parts verification
+- Moped inspection affidavits
+- Sales tax collection for assembled mopeds
+- Regional Office processing procedures
+
+Applies to:
+- Bicycle owners
+- Moped owners
+- Builders
+- Tax collectors
+- License plate agents
+- DMS Compliance Examiners
+- FLHSMV personnel
+- Customers assembling gas-powered bicycles
+
+==================================================
+AI CLASSIFICATION TAGS
+==================================================
+
+KEYWORDS:
+- gas-powered bicycle
+- motorized bicycle
+- moped conversion
+- assembled from parts moped
+- ASPT
+- FLA decal
+- Florida Assigned VIN
+- bicycle gas engine kit
+- gas motor bicycle
+- HSMV 84490
+- Statement of Builder
+- moped registration
+- moped no title
+- moped inspection
+- Compliance Examiner
+- DMS Regional Office
+- bicycle converted to moped
+- moped affidavit
+- bicycle motor kit
+- 50cc moped
+- 2 brake horsepower
+- 30 mph moped
+- motorcycle conversion
+- assembled motorcycle
+- TL-43
+- motorized bicycle affidavit
+- moped registration plate
+- motorcycle license plate
+- FLA VIN decal
+- motorized bicycle registration
+- moped safety standards
+- Federal safety standards
+- 316.46 FS
+- 320.01(27)
+- gas-powered bicycle registration
+- bicycle engine conversion
+- moped builder documents
+- original bills of sale
+- major component parts
+- bicycle frame receipt
+- engine receipt
+- not actual mileage
+- moped inspection fee
+- regional office registration
+- moped compliance
+- moped operator rules
+- rules of the road
+- assembled moped
+- moped driver license requirement
+- moped registration only
+- Florida moped law
+
+COMMON USER QUESTIONS:
+- "Does a gas-powered bicycle need registration?"
+- "Does a gas-powered bicycle need a title?"
+- "What qualifies as a moped?"
+- "When does a gas-powered bicycle become a motorcycle?"
+- "What forms are required?"
+- "What is an ASPT vehicle?"
+- "What is an FLA decal?"
+- "Do I need a driver license?"
+- "Where is the inspection completed?"
+- "What documents are needed?"
+- "What if the engine exceeds 50cc?"
+- "What if the bicycle exceeds 30 mph?"
+- "How much is the inspection fee?"
+- "Who assigns the VIN decal?"
+- "What happens if inspection fails?"
+- "What safety standards apply?"
+- "What major component parts require receipts?"
+- "Are electric bicycles handled under this procedure?"
+- "Does the vehicle need a motorcycle plate?"
+- "Can the vehicle be titled?"
+
+==================================================
+LEGAL AUTHORITY
+==================================================
+
+Governed by:
+- 316.003(4) FS
+- 316.46 FS
+- 320.01(1)(a) FS
+- 320.01(27) FS
+- 316.208 FS
+- 316.2085 FS
+- 316.211 FS
+
+==================================================
+DESCRIPTION AND USE
+==================================================
+
+Procedure explains:
+- Registration requirements for gas-powered bicycles
+- Moped classification standards
+- Motorcycle conversion thresholds
+- Inspection procedures
+- Documentation requirements
+
+==================================================
+VERY IMPORTANT CORE RULE
+==================================================
+
+If gas-powered bicycle:
+- does not exceed 2 brake horsepower
+- does not exceed 30 MPH
+- does not exceed 50cc
+
+Vehicle:
+Classifies as:
+MOPED.
+
+==================================================
+VERY IMPORTANT MOPED RULE
+==================================================
+
+Qualifying gas-powered bicycle:
+MUST be:
+Registered:
+BUT NOT titled.
+
+==================================================
+VERY IMPORTANT ELECTRIC BICYCLE RULE
+==================================================
+
+Electric helper motor bicycles:
+Under statutory bicycle definition:
+Are NOT registered or titled.
+
+==================================================
+VERY IMPORTANT MOTORCYCLE RULE
+==================================================
+
+If gas-powered bicycle:
+- exceeds 2 brake horsepower
+OR
+- exceeds 30 MPH
+OR
+- exceeds 50cc
+
+Vehicle:
+Classifies as:
+MOTORCYCLE.
+
+==================================================
+VERY IMPORTANT TL-43 RULE
+==================================================
+
+Motorcycle classification:
+Requires:
+Title and registration processing:
+Under:
+TL-43 assembled from parts procedures.
+
+==================================================
+VERY IMPORTANT DMS INSPECTION RULE
+==================================================
+
+Customer:
+Must contact:
+DMS Regional Office.
+
+Compliance Examiner:
+Inspects vehicle:
+Before registration.
+
+==================================================
+VERY IMPORTANT FLA DECAL RULE
+==================================================
+
+If vehicle complies:
+Compliance Examiner:
+Assigns:
+FLA VIN decal.
+
+==================================================
+VERY IMPORTANT MOTORCYCLE PLATE RULE
+==================================================
+
+Regional Office:
+Issues:
+Registration and motorcycle plate:
+For qualifying moped.
+
+==================================================
+VERY IMPORTANT ASPT RULE
+==================================================
+
+Assembled gas-powered bicycle:
+Uses:
+MAKE:
+"ASPT"
+
+==================================================
+VERY IMPORTANT MODEL YEAR RULE
+==================================================
+
+Model year:
+Equals:
+Year vehicle assembled.
+
+==================================================
+VERY IMPORTANT COMPLETED STATE RULE
+==================================================
+
+Vehicle:
+Must be fully completed:
+Before inspection/VIN assignment.
+
+==================================================
+VERY IMPORTANT ORIGINAL DOCUMENT RULE
+==================================================
+
+Customer:
+Must provide:
+Original documentation:
+To Compliance Examiner.
+
+==================================================
+VERY IMPORTANT REJECTION RULE
+==================================================
+
+If inspection rejected:
+Compliance Examiner:
+Retains paperwork:
+Until deficiencies corrected.
+
+==================================================
+INSPECTION FEE RULES
+==================================================
+
+Initial inspection fee:
+$40.
+
+Subsequent inspections:
+$20 each.
+
+==================================================
+DOCUMENTATION REQUIREMENTS
+==================================================
+
+Required documents include:
+- HSMV 84490
+- original bills of sale
+- original receipts
+- affidavit for inspection
+- sales tax documentation.
+
+==================================================
+VERY IMPORTANT HSMV 84490 RULE
+==================================================
+
+HSMV 84490:
+Statement of Builder:
+Must:
+- be completed by customer
+- include assigned FLA number
+- be completed by Compliance Examiner.
+
+==================================================
+VERY IMPORTANT MAJOR COMPONENT RULE
+==================================================
+
+Major component parts:
+Include:
+- bicycle frame
+- gasoline motor.
+
+==================================================
+VERY IMPORTANT ENGINE RECEIPT RULE
+==================================================
+
+Engine receipt:
+Must include:
+- engine year
+- seller information
+- purchaser information.
+
+==================================================
+VERY IMPORTANT CUSTOMER NAME RULE
+==================================================
+
+Bills of sale/receipts:
+Must be:
+In customer/builder name.
+
+==================================================
+VERY IMPORTANT AFFIDAVIT RULE
+==================================================
+
+Customer:
+Must sign:
+Affidavit for Inspection of a Motorized Bicycle Converted to a Moped.
+
+==================================================
+VERY IMPORTANT SALES TAX RULE
+==================================================
+
+Sales tax:
+Collected:
+On component parts:
+If tax not previously paid.
+
+==================================================
+VERY IMPORTANT COMMENT FIELD RULE
+==================================================
+
+Regional Office:
+Must enter:
+- inspecting region number
+- FLA decal audit number
+
+Into:
+Comment Desc. field.
+
+==================================================
+VERY IMPORTANT FLA DECAL PLACEMENT RULE
+==================================================
+
+FLA decal:
+Must be affixed:
+To bicycle frame.
+
+==================================================
+VERY IMPORTANT ODOMETER RULE
+==================================================
+
+Assembled from parts moped:
+Odometer branded:
+"NOT ACTUAL MILEAGE."
+
+==================================================
+VERY IMPORTANT DRIVER LICENSE RULE
+==================================================
+
+Driver license:
+Required:
+To operate gas-powered bicycle classified as moped.
+
+==================================================
+VERY IMPORTANT RULES OF ROAD RULE
+==================================================
+
+Moped operators:
+Must comply with:
+- rules of the road
+- motorcycle safety equipment requirements.
+
+==================================================
+VERY IMPORTANT LAW ENFORCEMENT RULE
+==================================================
+
+Questions regarding:
+Where vehicle may operate:
+Should be directed:
+To law enforcement.
+
+==================================================
+EXHIBIT A RULE
+==================================================
+
+Exhibit A:
+Contains:
+Affidavit for Inspection of a Motorized Bicycle Converted to a Moped.
+
+==================================================
+EXHIBIT B RULE
+==================================================
+
+Exhibit B:
+Contains:
+Frequently Asked Questions and Answers
+for assembled-from-parts motorized bicycles.
+
+==================================================
+AI DECISION LOGIC
+==================================================
+
+AI should determine:
+1. Does vehicle qualify as moped?
+2. Does vehicle instead qualify as motorcycle?
+3. Is engine 50cc or less?
+4. Is top speed 30 MPH or less?
+5. Is horsepower 2 brake HP or less?
+6. Is DMS inspection required?
+7. Was vehicle fully assembled before inspection?
+8. Was FLA decal assigned?
+9. Is ASPT make used?
+10. Is model year correct?
+11. Is HSMV 84490 complete?
+12. Are original receipts attached?
+13. Are receipts in customer name?
+14. Was affidavit signed?
+15. Is sales tax due?
+16. Was comment field completed properly?
+17. Is odometer branded NOT ACTUAL MILEAGE?
+18. Is motorcycle plate issued?
+19. Does TL-43 apply?
+20. Does customer need law enforcement guidance?
+
+==================================================
+COMMON TITLE CLERK / REGISTRATION ERRORS
+==================================================
+
+- Titling qualifying mopeds improperly
+- Failing to classify motorcycle correctly
+- Missing DMS inspection requirement
+- Missing FLA decal assignment
+- Missing HSMV 84490
+- Accepting incomplete receipts
+- Accepting receipts not in customer name
+- Incorrect ASPT make assignment
+- Incorrect model year assignment
+- Missing affidavit
+- Incorrect sales tax handling
+- Missing Comment Desc. entry
+- Incorrect odometer branding
+- Issuing wrong plate type
+- Ignoring speed/horsepower thresholds
+
+==================================================
+VERY IMPORTANT CORE CONCEPT
+==================================================
+
+Florida gas-powered bicycle procedures:
+Create a structured assembled-from-parts registration process
+for bicycles converted into mopeds,
+while enforcing:
+- horsepower limitations
+- speed limitations
+- engine displacement limits
+- Compliance Examiner inspections
+- FLA VIN decal assignment
+- documentation verification
+and motorcycle reclassification thresholds.
+
+==================================================
+RELATED PROCEDURES
+==================================================
+
+- TL-43
+
+==================================================
+RELATED FORMS
+==================================================
+
+- HSMV 84490
+
+==================================================
+RELATED EXHIBITS
+==================================================
+
+- Exhibit A — Affidavit for Inspection of a Motorized Bicycle Converted to a Moped
+- Exhibit B — Frequently Asked Questions and Answers
+
+==================================================
+RELATED ENTITIES
+==================================================
+
+- FLHSMV
+- DMS Regional Offices
+- DMS Compliance Examiners
+- Tax Collectors
+- License Plate Agents
+- Law Enforcement
+
+==================================================
+REFERENCE NOTES
+==================================================
+
+Current revision:
+05/12/2022
+
+Historical creation:
+05/12/2014
+
+Primary focus:
+- Gas-powered bicycle registration
+- Moped classification
+- Assembled-from-parts inspections
+- FLA decal assignments
+- Motorcycle threshold determinations

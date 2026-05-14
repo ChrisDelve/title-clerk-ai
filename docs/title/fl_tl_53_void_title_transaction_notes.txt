@@ -1,0 +1,342 @@
+FLORIDA TITLE PROCEDURE — VOID TITLE TRANSACTION
+PROCEDURE: TL-53
+CATEGORY: TITLE VOIDING / TRANSACTION CORRECTIONS / FRVIS PROCESSING
+
+==================================================
+PROCEDURE SUMMARY
+==================================================
+
+This procedure governs:
+- Voiding incorrect title transactions
+- Pending transaction reversals
+- FRVIS void processing
+- Cashiered transaction voids
+- Reprocessing corrected title transactions
+- Prior day transaction void rules
+- Fast title void limitations
+
+Applies to:
+- Tax collectors
+- License plate agents
+- FLHSMV employees
+- FRVIS title transaction processing
+
+==================================================
+AI CLASSIFICATION TAGS
+==================================================
+
+KEYWORDS:
+- void title transaction
+- void pending transaction
+- FRVIS void
+- title void
+- void cashiered transaction
+- pending title correction
+- void report transaction
+- fast title void
+- title correction
+- void payment first
+- reprocess transaction
+- title error correction
+- previous day void
+- current day void
+
+COMMON USER QUESTIONS:
+- "Can a title transaction be voided?"
+- "How long do you have to void transaction?"
+- "Can fast title be voided?"
+- "Do payments have to be voided first?"
+- "Can prior day transaction be voided?"
+- "What is pending transaction?"
+- "How do I correct title mistake?"
+- "Can cashiered transaction be voided?"
+- "What if customer already left with title?"
+- "When do I use TL-04 instead?"
+
+==================================================
+DESCRIPTION AND USE
+==================================================
+
+This procedure assists:
+- Tax collector employees
+- License plate agents
+- FLHSMV staff
+
+In determining:
+- When title transaction may be voided.
+
+==================================================
+DEFINITION OF VOID
+==================================================
+
+VOID:
+Means:
+- Vacate
+OR
+- Undo
+
+An incorrect transaction record
+marked pending on:
+- Motorist Services database (FRVIS).
+
+==================================================
+VERY IMPORTANT PENDING STATUS RULE
+==================================================
+
+Transaction may only be voided if:
+- Record still marked pending.
+
+==================================================
+GENERAL VOID RULE
+==================================================
+
+If error detected:
+AND
+Transaction still pending:
+
+Transaction should:
+- Be voided
+AND
+- Reprocessed correctly.
+
+==================================================
+VERY IMPORTANT VOID EXPIRATION RULE
+==================================================
+
+If void period expired:
+Refer to:
+- TL-04
+
+For:
+- Correction/change procedures.
+
+==================================================
+VERY IMPORTANT CORRECTION RULE
+==================================================
+
+After void period expires:
+Cannot simply void transaction.
+
+Must:
+- Use correction procedures instead.
+
+==================================================
+SPECIAL INSTRUCTIONS
+==================================================
+
+Only two reporting periods may be voided:
+1. Current day's work
+2. Previous day's work
+
+==================================================
+VERY IMPORTANT CURRENT DAY RULE
+==================================================
+
+Current day transactions:
+May be voided.
+
+==================================================
+VERY IMPORTANT PREVIOUS DAY RULE
+==================================================
+
+Previous day transactions:
+May be voided.
+
+==================================================
+VERY IMPORTANT OLDER REPORT RULE
+==================================================
+
+Transactions:
+CANNOT be voided
+If from:
+- Earlier than previous day's report.
+
+==================================================
+VERY IMPORTANT CASHIERED TRANSACTION RULE
+==================================================
+
+If transaction already cashiered:
+Payment:
+MUST be voided FIRST.
+
+==================================================
+VERY IMPORTANT PAYMENT VOID FIRST RULE
+==================================================
+
+Order required:
+1. Void payment
+2. Void transaction
+
+==================================================
+VERY IMPORTANT CASHIER WARNING RULE
+==================================================
+
+If different cashier voids payment:
+System displays:
+- Warning message.
+
+==================================================
+VERY IMPORTANT WARNING MESSAGE RULE
+==================================================
+
+Warning message:
+DOES NOT stop:
+- Void process.
+
+==================================================
+SYSTEM ERROR MESSAGE RULE
+==================================================
+
+If attempting to void paid transaction:
+System displays error.
+
+Example message:
+"You must void payments first on a paid transaction."
+
+==================================================
+VERY IMPORTANT REPROCESSING RULE
+==================================================
+
+If previous day's transaction:
+Is voided and reprocessed:
+
+Reprocessing:
+Must occur on:
+- Current day's report.
+
+==================================================
+VERY IMPORTANT REPORT REPRINT RULE
+==================================================
+
+Previous day's report:
+Must be:
+- Reprinted
+
+To show:
+- Payment voided
+- Transaction voided.
+
+==================================================
+VERY IMPORTANT FAST TITLE RULE
+==================================================
+
+Transactions with:
+- FAST TITLE FLAG
+
+CANNOT be voided:
+From:
+- Prior day.
+
+==================================================
+VERY IMPORTANT CUSTOMER POSSESSION RULE
+==================================================
+
+Cannot void title transaction:
+If:
+- Customer already left office with title.
+
+==================================================
+VERY IMPORTANT UNNECESSARY VOID RULE
+==================================================
+
+Clerks should:
+Correct title when possible:
+To avoid unnecessary voids.
+
+==================================================
+VOID PROCESS WORKFLOW
+==================================================
+
+Typical process:
+1. Error discovered
+2. Verify transaction pending
+3. Determine report period
+4. Void payment if cashiered
+5. Void transaction
+6. Reprocess correctly
+7. Reprint reports if needed
+
+==================================================
+VERY IMPORTANT DATABASE STATUS RULE
+==================================================
+
+Voiding applies only to:
+- Pending database transactions.
+
+==================================================
+AI DECISION LOGIC
+==================================================
+
+AI should determine:
+1. Is transaction still pending?
+2. Is transaction current day?
+3. Is transaction previous day?
+4. Is transaction older than previous day?
+5. Was transaction cashiered?
+6. Was payment voided first?
+7. Is different cashier voiding payment?
+8. Is FAST TITLE FLAG present?
+9. Has customer already left with title?
+10. Is TL-04 correction procedure required?
+11. Is reprocessing needed?
+12. Must prior report be reprinted?
+13. Is warning message expected?
+14. Is correction preferable to void?
+
+==================================================
+COMMON TITLE CLERK ERRORS
+==================================================
+
+- Attempting to void old report transactions
+- Forgetting to void payment first
+- Trying to void fast title from prior day
+- Voiding after customer already left
+- Forgetting to reprint previous day report
+- Using void instead of correction procedure
+- Ignoring pending status requirement
+- Reprocessing on wrong report day
+- Confusing warning message with hard stop
+- Unnecessarily voiding correctable titles
+
+==================================================
+VERY IMPORTANT LIMITATION RULE
+==================================================
+
+Voiding is intended for:
+- Immediate correction of recent pending transactions.
+
+NOT:
+- Historical corrections.
+
+==================================================
+VERY IMPORTANT FRVIS CONCEPT
+==================================================
+
+FRVIS tracks:
+- Pending transactions
+- Cashiered transactions
+- Report day activity
+- Void activity
+- Reprocessed title work
+
+==================================================
+RELATED PROCEDURES
+==================================================
+
+- TL-04 Corrections/Changes to Certificate of Title or Lien Information
+
+==================================================
+REFERENCE NOTES
+==================================================
+
+Current revision:
+- 05/20/2020
+
+Primary focus:
+- Pending transaction voids
+- FRVIS corrections
+- Cashier/payment void rules
+- Fast title restrictions
+
+Important operational rule:
+- Void payment before voiding paid transaction.

@@ -1,0 +1,532 @@
+FLORIDA TITLE PROCEDURE — LIEN SATISFACTIONS AND ALTERNATE METHODS OF REMOVAL OF RECORDED LIENS
+PROCEDURE: TL-33
+CATEGORY: LIEN SATISFACTIONS / LIEN REMOVAL / ELT
+
+==================================================
+PROCEDURE SUMMARY
+==================================================
+
+This procedure explains:
+- Lien satisfactions
+- Removing liens from Florida titles
+- Alternate methods of lien removal
+- ELT lien releases
+- Paper lien releases
+- Judgment lien handling
+- Lienholder stamp/perforation rules
+- Certified mail requirements
+- Paid-in-full proof requirements
+
+Applies to:
+- Motor vehicles
+- Mobile homes
+- Vessels
+
+==================================================
+AI CLASSIFICATION TAGS
+==================================================
+
+KEYWORDS:
+- lien satisfaction
+- remove lien
+- paid off lien
+- lien release
+- ELT release
+- recorded lien
+- HSMV 82260
+- lien deletion
+- alternate lien removal
+- lost lienholder
+- paid in full
+- judgment lien
+- lien reassignment
+- electronic lien
+
+COMMON USER QUESTIONS:
+- "How do I remove a lien?"
+- "Paid off vehicle but lien still there"
+- "Lienholder gone out of business"
+- "How do I clear a lien?"
+- "What is HSMV 82260?"
+- "How do electronic liens work?"
+- "Can I remove an old lien?"
+- "Lienholder won’t release title"
+
+==================================================
+VERY IMPORTANT LIEN SATISFACTION RULE
+==================================================
+
+When lien paid:
+Owner may demand:
+- Satisfaction of lien
+from lienholder.
+
+==================================================
+VERY IMPORTANT 10-DAY RULE
+==================================================
+
+Lienholder must:
+- Forward title/satisfaction
+within:
+- 10 days of payoff
+
+==================================================
+IMPORTANT ELT RULE
+==================================================
+
+If lien electronic:
+Lien MUST be released:
+- Electronically
+
+==================================================
+VERY IMPORTANT ELT WARNING
+==================================================
+
+FLHSMV CANNOT manually release:
+- Electronic liens
+
+Even if:
+- Customer provides paper satisfaction
+
+==================================================
+WHEN CUSTOMER PROVIDES PAID TITLE
+==================================================
+
+If title shows:
+- Paid lien
+AND
+- No subsequent liens
+
+Then:
+Issue clean title.
+
+==================================================
+PROCESSING RULES
+==================================================
+
+If liens remain on file:
+Process as:
+- Lien Add/Delete/Reassign
+
+If no liens remain:
+Process as:
+- Title Correction
+
+==================================================
+MERGER / NAME CHANGE RULE
+==================================================
+
+If payoff entity differs from title lienholder:
+Need:
+- Merger papers
+OR
+- Corporate charter
+unless agency confirms entities same.
+
+==================================================
+METHODS OF LIEN REMOVAL
+==================================================
+
+Acceptable methods:
+- Title satisfaction section
+- HSMV 82260
+- ELT release
+- Approved stamp
+- Approved perforation
+
+==================================================
+HSMV 82260 OVERVIEW
+==================================================
+
+Form:
+- Lien Satisfaction
+
+Used to:
+- Release recorded lien
+
+==================================================
+SUBSEQUENT LIEN RULE
+==================================================
+
+If title shows:
+- Additional lien(s)
+
+Then:
+First lienholder must:
+- Send title to FLHSMV
+within 10 days.
+
+==================================================
+VERY IMPORTANT ELT EXCEPTION RULE
+==================================================
+
+When satisfying/updating:
+- Existing non-ELT
+
+Must select:
+- ELT exception reason
+
+==================================================
+VERY IMPORTANT CUSTOMER WARNING
+==================================================
+
+If customer provides:
+- HSMV 82260
+for active ELT lien
+
+Reject transaction.
+
+==================================================
+LIENHOLDER STAMP RULES
+==================================================
+
+Approved lienholder stamp/perforation must show:
+- Lienholder name
+- Word "PAID"
+- Satisfaction date
+
+==================================================
+PERMIT NUMBER STAMP RULE
+==================================================
+
+If permit number assigned:
+Stamp must include:
+- Permit number
+
+==================================================
+NO-PERMIT STAMP RULE
+==================================================
+
+If no permit number:
+Stamp must include:
+- Authorized signature
+
+==================================================
+VERY IMPORTANT MULTIPLE LIEN RULE
+==================================================
+
+If same lienholder holds:
+- Multiple liens
+
+Do NOT use:
+- PAID stamp
+OR
+- Perforation
+
+Because:
+- Could remove ALL liens.
+
+==================================================
+OUT-OF-STATE LIEN SATISFACTION RULE
+==================================================
+
+Out-of-state lienholder letter acceptable if:
+- Original
+- On letterhead
+- Includes vehicle info
+
+No notarization required.
+
+==================================================
+VERY IMPORTANT COPY RULE
+==================================================
+
+NO:
+- Email copies
+- Fax copies
+- Photocopies
+
+Accepted for lien satisfaction.
+
+Must be:
+- Original
+OR
+- Certified copy
+
+==================================================
+OUT-OF-STATE TITLE RULE
+==================================================
+
+If out-of-state title shows:
+- No liens
+
+AND old Florida paper title shows lien:
+Florida title may issue:
+- Without lien satisfaction
+
+==================================================
+VERY IMPORTANT ELT CONFLICT RULE
+==================================================
+
+If Florida record shows:
+- Active electronic lien
+
+STOP.
+
+Contact:
+- Field Support Center
+
+==================================================
+ALTERNATE METHOD OF LIEN REMOVAL
+==================================================
+
+Used when:
+- Lien paid
+AND
+- Lienholder unavailable/unresponsive
+
+==================================================
+VERY IMPORTANT ALTERNATE METHOD RULE
+==================================================
+
+Electronic liens:
+CANNOT normally be removed:
+Using alternate method.
+
+==================================================
+ALTERNATE METHOD REQUIRED DOCUMENTS
+==================================================
+
+Need:
+- HSMV 82040 MV/MH/VS
+OR
+- HSMV 82101
+- Florida title if available
+- Certified mail proof
+- Payoff proof
+- Title fees
+
+==================================================
+CERTIFIED MAIL REQUIREMENTS
+==================================================
+
+Need:
+- Returned unopened certified mail
+OR
+- Signed receipt card
+OR
+- Delivery proof
+
+==================================================
+VERY IMPORTANT 20-DAY RULE
+==================================================
+
+Certified letter must be mailed:
+- At least 20 days before application
+
+==================================================
+UNOPENED ENVELOPE RULE
+==================================================
+
+Processing clerk must:
+- Open returned envelope
+- Verify contents
+- Initial envelope
+- Date envelope
+
+==================================================
+ACCEPTABLE PAYOFF PROOF
+==================================================
+
+Acceptable:
+- Paid sales contract
+- Canceled checks
+- Signed receipts
+- Lien satisfaction proof
+
+==================================================
+VERY IMPORTANT 5-YEAR RULE
+==================================================
+
+If:
+- No sales contract
+AND
+- No payoff record
+
+Owner may need:
+- Wait until lien over 5 years old
+OR
+- Obtain court order
+
+==================================================
+JUDGMENT LIEN CERTIFICATE RULES
+==================================================
+
+If second Judgment Lien Certificate submitted:
+For:
+- Same lienor
+- Same owner
+- Same vehicle/vessel
+
+Then:
+- Remove first judgment lien
+- Record second judgment lien
+
+==================================================
+JUDGMENT LIEN PROCESS
+==================================================
+
+Steps:
+1. Verify TL-32 requirements
+2. Locate first judgment lien
+3. Delete original lien
+4. Add new judgment lien
+
+==================================================
+ASSIGNMENT OF LIEN RULE
+==================================================
+
+If lien sold to another lender:
+Need:
+- Assignment contract
+OR
+- HSMV 82139
+
+==================================================
+VERY IMPORTANT SIGNATURE RULE
+==================================================
+
+Computer-generated signatures:
+- NOT acceptable
+
+==================================================
+CERTIFIED COPY RULE
+==================================================
+
+Acceptable:
+- Original HSMV 82260
+- Certified copy
+
+NOT acceptable:
+- Fax
+- Email
+- Photocopy
+
+==================================================
+DECEASED LIENHOLDER RULE
+==================================================
+
+If lienholder deceased:
+Refer to:
+- TL-18
+
+==================================================
+NEW HSMV 82040 FORM RULES
+==================================================
+
+HSMV 82040 split into:
+- HSMV 82040 MV
+- HSMV 82040 VS
+- HSMV 82040 MH
+
+==================================================
+FORM TYPE LOGIC
+==================================================
+
+HSMV 82040 MV:
+Motor vehicles
+
+HSMV 82040 VS:
+Vessels
+
+HSMV 82040 MH:
+Mobile homes
+
+==================================================
+VERY IMPORTANT 2024 RULE
+==================================================
+
+Effective January 1, 2024:
+Old combined HSMV 82040:
+No longer accepted for:
+- Motor vehicles
+- Mobile homes
+
+==================================================
+DEFINITIONS
+==================================================
+
+ELT:
+Electronic lien title
+
+ELT PROVIDER:
+Third-party ELT service company
+
+LIENHOLDER:
+Entity loaning money secured by vehicle
+
+LIEN SATISFACTION:
+Proof lien paid
+
+SUBSEQUENT LIEN:
+Additional lien while first lien still active
+
+==================================================
+AI DECISION LOGIC
+==================================================
+
+AI should determine:
+1. Paper lien or ELT lien?
+2. Initial lien or subsequent lien?
+3. Proper lien release provided?
+4. HSMV 82260 required?
+5. Alternate method applicable?
+6. Certified mail proof included?
+7. Payoff proof included?
+8. 20-day requirement met?
+9. Active electronic lien conflict?
+10. Merger papers needed?
+11. Multiple liens involved?
+12. Judgment lien involved?
+
+==================================================
+COMMON TITLE CLERK ERRORS
+==================================================
+
+- Accepting faxed lien satisfaction
+- Accepting emailed release
+- Attempting manual ELT release
+- Missing certified mail proof
+- Missing 20-day waiting period
+- Missing payoff proof
+- Using PAID stamp incorrectly
+- Forgetting merger papers
+- Incorrect title transaction type
+- Removing wrong judgment lien
+
+==================================================
+IMPORTANT OPERATIONAL NOTES
+==================================================
+
+This procedure is:
+- Extremely documentation sensitive
+- Highly dependent on ELT status
+- Frequently rejected for copy/fax issues
+
+Most common rejection reasons:
+- Non-original lien satisfaction
+- Active ELT conflicts
+- Missing certified mail proof
+- Missing payoff evidence
+- Missing signatures
+- Wrong processing type
+
+==================================================
+RELATED FORMS
+==================================================
+
+- HSMV 82040 MV
+- HSMV 82040 VS
+- HSMV 82040 MH
+- HSMV 82101
+- HSMV 82139
+- HSMV 82260
+
+==================================================
+RELATED PROCEDURES
+==================================================
+
+- TL-07 Release of Lien
+- TL-18 Deceased Lienholder
+- TL-32 Notice of Lien / Judgment Liens
+- ELT Procedures

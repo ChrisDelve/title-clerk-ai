@@ -1,0 +1,402 @@
+FLORIDA REGISTRATION PROCEDURE — WHEELCHAIR EMBLEM LICENSE PLATE FOR MOTORCYCLES
+PROCEDURE: RS-54
+CATEGORY: DISABLED REGISTRATION / MOTORCYCLE WHEELCHAIR PLATES / ACCESSIBILITY PLATES
+
+==================================================
+PROCEDURE SUMMARY
+==================================================
+
+This procedure governs:
+- Wheelchair emblem motorcycle license plates
+- Disabled motorcycle registration plates
+- Motorcycle accessibility parking privileges
+- Moped wheelchair emblem plates
+- Motorized disability access vehicle plates
+- Disabled motorcycle lessee registrations
+- Replacement wheelchair emblem motorcycle plates
+- Stolen wheelchair emblem plate processing
+- Motorcycle disabled parking privileges
+- Wheelchair symbol plate renewals/transfers
+
+Applies to:
+- Disabled motorcycle owners
+- Disabled motorcycle lessees
+- Moped owners
+- Motorized disability access vehicle owners
+- Tax collectors
+- License plate agencies
+- FLHSMV personnel
+
+==================================================
+AI CLASSIFICATION TAGS
+==================================================
+
+KEYWORDS:
+- wheelchair emblem motorcycle plate
+- motorcycle wheelchair plate
+- disabled motorcycle plate
+- motorcycle accessibility plate
+- motorcycle disabled parking
+- HSMV 83007
+- HSMV 83146
+- motorcycle wheelchair emblem
+- disabled motorcycle registration
+- moped wheelchair plate
+- motorized disability access vehicle plate
+- disabled parking motorcycle
+- motorcycle parking privileges
+- international wheelchair symbol motorcycle
+- class code 65
+- class code 69
+- motorcycle disabled plate replacement
+- stolen disabled motorcycle plate
+- SP replacement code
+- wheelchair emblem transfer
+- disabled lessee motorcycle
+- motorcycle disability certification
+- disabled motorcycle decal
+- motorcycle registration tax
+- wheelchair motorcycle transfer
+- RS-38
+- RS-53
+- disabled motorcycle qualification
+- Florida disabled motorcycle plate
+- law enforcement stolen plate report
+- wheelchair emblem renewal
+- disabled motorcycle plate fees
+- motorcycle disability access
+- parking permit motorcycle
+- motorcycle placard equivalent
+- reflectorization fee
+- Decal on Demand fee
+- Advanced Replacement fee
+- motorcycle wheelchair registration
+
+COMMON USER QUESTIONS:
+- "How do I get a wheelchair motorcycle plate?"
+- "Do motorcycle wheelchair plates allow disabled parking?"
+- "Can a lessee qualify?"
+- "Can mopeds qualify?"
+- "What forms are required?"
+- "Who can certify disability?"
+- "Can motorized disability access vehicles qualify?"
+- "What fees apply?"
+- "Can wheelchair plates transfer?"
+- "What if the plate is stolen?"
+- "What is code SP?"
+- "Does a police report waive replacement fees?"
+- "What class code applies?"
+- "Can any county process replacements?"
+- "What proof is acceptable for disability?"
+
+==================================================
+LEGAL AUTHORITY
+==================================================
+
+Governed by:
+- 320.08035 FS
+- 320.0848 FS
+
+==================================================
+DESCRIPTION AND USE
+==================================================
+
+Procedure explains:
+- Wheelchair emblem motorcycle plate issuance
+- Qualification requirements
+- Parking privileges
+- Replacement procedures
+- Renewal and transfer processing
+
+==================================================
+VERY IMPORTANT CORE RULE
+==================================================
+
+Wheelchair emblem motorcycle plates:
+Provide same parking privileges:
+As disabled parking permits:
+Issued under:
+320.0848 FS.
+
+==================================================
+ELIGIBILITY RULES
+==================================================
+
+Wheelchair emblem plates:
+May issue:
+To owner or lessee:
+Of:
+- motorcycle
+- moped
+- motorized disability access vehicle.
+
+==================================================
+VERY IMPORTANT FLORIDA RESIDENCY RULE
+==================================================
+
+Applicant:
+Must reside:
+In Florida.
+
+==================================================
+VERY IMPORTANT DISABILITY QUALIFICATION RULE
+==================================================
+
+Applicant:
+Must qualify:
+For disabled parking permit:
+Under:
+320.0848 FS.
+
+==================================================
+APPLICATION REQUIREMENTS
+==================================================
+
+Application requires:
+HSMV 83007.
+
+==================================================
+VERY IMPORTANT PHYSICIAN CERTIFICATION RULE
+==================================================
+
+Physician’s Statement of Certification:
+On HSMV 83007:
+Must be completed:
+By approved certifying authority.
+
+==================================================
+VERY IMPORTANT RS-38 RULE
+==================================================
+
+Additional acceptable disability proof:
+Governed by:
+RS-38.
+
+==================================================
+VERY IMPORTANT APPLICATION RETENTION RULE
+==================================================
+
+County license plate agency:
+Must retain:
+HSMV 83007 application.
+
+==================================================
+LESSEE RULES
+==================================================
+
+Wheelchair emblem plates:
+May issue:
+On leased vehicles.
+
+==================================================
+VERY IMPORTANT RS-53 RULE
+==================================================
+
+Lessee/registrant processing:
+Governed by:
+RS-53.
+
+==================================================
+FEE RULES
+==================================================
+
+Applicable fees include:
+- registration tax
+- trust fund fees
+- original plate fee
+- service fee
+- branch fee
+- Decal on Demand fee.
+
+==================================================
+VERY IMPORTANT CLASS CODE RULE
+==================================================
+
+Use:
+Class code 65
+OR
+Class code 69:
+As applicable.
+
+==================================================
+RENEWAL AND TRANSFER RULES
+==================================================
+
+Renewals/transfers:
+May process:
+Through any county tax collector
+OR
+license plate agency.
+
+==================================================
+REPLACEMENT RULES
+==================================================
+
+Replacement requires:
+- copy of current registration certificate
+- HSMV 83146
+- applicable fees.
+
+==================================================
+VERY IMPORTANT REPLACEMENT FEES RULE
+==================================================
+
+Replacement fees may include:
+- replacement fee
+- service fee
+- branch fee
+- Air Pollution Control fee
+- Reflectorization fee
+- Emergency Medical Services fee
+- FRVIS fee
+- Advanced Replacement fee
+- Decal on Demand fee.
+
+==================================================
+STOLEN PLATE RULES
+==================================================
+
+If plate/decal reported stolen:
+Replacement:
+May issue:
+At no charge.
+
+==================================================
+VERY IMPORTANT POLICE REPORT RULE
+==================================================
+
+Customer must provide:
+- police report
+OR
+- law enforcement agency card
+Containing:
+Case number.
+
+==================================================
+VERY IMPORTANT COMMENT RULE
+==================================================
+
+Motor vehicle issuance system comments:
+Must include:
+- law enforcement agency name
+- stolen report case number.
+
+==================================================
+VERY IMPORTANT SP CODE RULE
+==================================================
+
+If replacement uses:
+Code "SP":
+Copy of police report or law enforcement card:
+Must attach:
+To HSMV 83146.
+
+==================================================
+VERY IMPORTANT NO REPORT RULE
+==================================================
+
+If no police report/card provided:
+Replacement fees required.
+
+==================================================
+AI DECISION LOGIC
+==================================================
+
+AI should determine:
+1. Does applicant qualify for disabled parking privileges?
+2. Is vehicle motorcycle, moped, or disability access vehicle?
+3. Is Florida residency established?
+4. Is HSMV 83007 completed?
+5. Is certifying authority acceptable?
+6. Is application retained by agency?
+7. Does RS-38 acceptable proof apply?
+8. Is vehicle leased?
+9. Does RS-53 lessee guidance apply?
+10. Is correct class code used?
+11. Are proper fees assessed?
+12. Is transfer or renewal transaction appropriate?
+13. Is replacement transaction required?
+14. Is HSMV 83146 attached?
+15. Is police report/card attached?
+16. Does SP code apply?
+17. Are replacement fees waived properly?
+18. Were issuance system comments entered?
+19. Is current registration certificate attached?
+20. Are parking privileges explained correctly?
+
+==================================================
+COMMON TITLE CLERK / REGISTRATION ERRORS
+==================================================
+
+- Missing HSMV 83007
+- Missing disability certification
+- Incorrect class code usage
+- Failing to retain application
+- Ignoring lessee eligibility
+- Missing RS-38 disability proof review
+- Missing RS-53 lease review
+- Incorrect replacement fee assessment
+- Missing police report attachment
+- Missing SP code documentation
+- Missing issuance system comments
+- Charging stolen plate replacement improperly
+- Incorrectly denying moped eligibility
+- Incorrectly denying motorized disability access vehicles
+- Missing current registration certificate
+
+==================================================
+VERY IMPORTANT CORE CONCEPT
+==================================================
+
+Florida wheelchair emblem motorcycle plate procedures:
+Provide accessibility parking privileges
+to qualified disabled operators
+of:
+- motorcycles
+- mopeds
+- motorized disability access vehicles
+
+while enforcing:
+- disability certification
+- Florida residency
+- lessee eligibility rules
+- replacement documentation requirements
+- stolen plate verification
+and disabled parking compliance standards.
+
+==================================================
+RELATED PROCEDURES
+==================================================
+
+- RS-38
+- RS-53
+
+==================================================
+RELATED FORMS
+==================================================
+
+- HSMV 83007
+- HSMV 83146
+
+==================================================
+RELATED ENTITIES
+==================================================
+
+- FLHSMV
+- Tax Collectors
+- License Plate Agencies
+- Law Enforcement
+
+==================================================
+REFERENCE NOTES
+==================================================
+
+Current revision:
+05/29/2019
+
+Primary focus:
+- Wheelchair emblem motorcycle plates
+- Disabled parking privileges
+- Lessee eligibility
+- Replacement/stolen plate processing
+- Disability certification requirements

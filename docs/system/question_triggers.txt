@@ -1,0 +1,249 @@
+==================================================
+FLORIDA TITLE & REGISTRATION QUESTION TRIGGERS
+==================================================
+
+==================================================
+REGISTRATION QUESTIONS
+==================================================
+
+QUESTION:
+"How do I replace a stolen plate?"
+
+ROUTE TO:
+RS-06
+RS-43
+
+KEYWORDS:
+- stolen plate
+- replacement plate
+- police report
+- unavailable plate
+
+--------------------------------------------------
+
+QUESTION:
+"Can this personalized plate be transferred?"
+
+ROUTE TO:
+RS-27
+
+KEYWORDS:
+- personalized plate
+- vanity plate
+- transfer plate
+- custom plate
+
+--------------------------------------------------
+
+QUESTION:
+"Does this vehicle owe IRF?"
+
+ROUTE TO:
+RS-30
+
+KEYWORDS:
+- IRF
+- initial registration fee
+- $225 fee
+- prior registration
+- exempt
+
+--------------------------------------------------
+
+QUESTION:
+"What temp tag should be issued?"
+
+ROUTE TO:
+RS-31
+
+KEYWORDS:
+- temp tag
+- ETR
+- 30 day
+- 60 day
+- 90 day
+- temporary registration
+
+--------------------------------------------------
+
+QUESTION:
+"What insurance does this truck need?"
+
+ROUTE TO:
+RS-33
+RS-45
+
+KEYWORDS:
+- commercial insurance
+- truck insurance
+- CMV
+- GVW
+- ACORD
+
+--------------------------------------------------
+
+QUESTION:
+"Does this truck require IRP?"
+
+ROUTE TO:
+RS-45
+
+KEYWORDS:
+- IRP
+- interstate
+- apportioned
+- heavy truck
+- GVW
+
+--------------------------------------------------
+
+QUESTION:
+"How do I surrender this plate?"
+
+ROUTE TO:
+RS-43
+
+KEYWORDS:
+- surrender plate
+- cancel plate
+- insurance suspension
+- unavailable plate
+
+--------------------------------------------------
+
+QUESTION:
+"Can this customer get a specialty plate?"
+
+ROUTE TO:
+RS-22
+RS-27
+
+KEYWORDS:
+- specialty plate
+- personalized specialty
+- annual use fee
+
+--------------------------------------------------
+
+QUESTION:
+"What documents are required for title transfer?"
+
+ROUTE TO:
+TL-08
+
+KEYWORDS:
+- title transfer
+- reassignment
+- title application
+- ownership transfer
+
+--------------------------------------------------
+
+QUESTION:
+"How do I remove this lien?"
+
+ROUTE TO:
+TL-17
+
+KEYWORDS:
+- lien release
+- lien satisfaction
+- lienholder
+- title lien
+
+--------------------------------------------------
+
+QUESTION:
+"What do I do if title is bonded?"
+
+ROUTE TO:
+TL-20
+
+KEYWORDS:
+- bonded title
+- surety bond
+- ownership dispute
+
+--------------------------------------------------
+
+QUESTION:
+"How long do we retain these documents?"
+
+ROUTE TO:
+TL-62
+
+KEYWORDS:
+- retention
+- document retention
+- audit
+- recordkeeping
+
+==================================================
+HIGH-RISK / ESCALATION TRIGGERS
+==================================================
+
+QUESTION TYPE:
+Insurance Suspension
+
+ROUTE TO:
+RS-43
+TL-52
+
+ESCALATE:
+YES
+
+--------------------------------------------------
+
+QUESTION TYPE:
+Possible Fraud
+
+ROUTE TO:
+Supervisor Review
+
+ESCALATE:
+IMMEDIATE
+
+KEYWORDS:
+- altered title
+- VIN mismatch
+- forged signature
+- odometer discrepancy
+
+--------------------------------------------------
+
+QUESTION TYPE:
+Commercial Vehicle Compliance
+
+ROUTE TO:
+RS-33
+RS-45
+
+ESCALATE:
+RECOMMENDED
+
+--------------------------------------------------
+
+QUESTION TYPE:
+Ownership Dispute
+
+ROUTE TO:
+TL-08
+TL-20
+
+ESCALATE:
+YES
+
+==================================================
+SYSTEM NOTES
+==================================================
+
+Purpose:
+Map natural-language dealership questions
+to procedural intelligence.
+
+This file helps future AI systems:
+- identify user intent
+- determine applicable procedures
+- identify escalation risks
+- improve retrieval accuracy
+- improve workflow automation

@@ -1,0 +1,485 @@
+FLORIDA REGISTRATION PROCEDURE — COMMERCIAL MOTOR VEHICLE INSURANCE
+PROCEDURE: RS-33
+CATEGORY: COMMERCIAL VEHICLE INSURANCE / CMV LIABILITY / COMMERCIAL REGISTRATION INSURANCE
+
+==================================================
+PROCEDURE SUMMARY
+==================================================
+
+This procedure governs:
+- Commercial Motor Vehicle (CMV) insurance requirements
+- Commercial liability insurance minimums
+- Commercial vehicle insurance proof requirements
+- Combined Single Limit (CSL) insurance
+- Split limit commercial insurance
+- Self-insurance certificates
+- Interstate commercial carrier insurance
+- Hazardous material carrier insurance
+- Passenger carrier insurance
+- Lease-operator insurance verification
+- Acceptable commercial insurance documentation
+
+Applies to:
+- Commercial motor vehicle owners
+- Interstate carriers
+- Intrastate carriers
+- For-hire carriers
+- Hazardous material carriers
+- Passenger carriers
+- Owner/operators
+- Lessors
+- Lessees
+- Tax collectors
+- License plate agencies
+- FLHSMV personnel
+
+==================================================
+AI CLASSIFICATION TAGS
+==================================================
+
+KEYWORDS:
+- commercial motor vehicle insurance
+- CMV insurance
+- commercial insurance
+- commercial liability insurance
+- commercial vehicle coverage
+- CSL insurance
+- combined single limit
+- split limit policy
+- ACORD form
+- COI
+- certificate of liability insurance
+- Form E insurance
+- self insurance certificate
+- commercial PIP
+- commercial PDL
+- commercial BIL
+- scheduled autos
+- commercial vehicle insurance proof
+- interstate carrier insurance
+- hazardous materials insurance
+- passenger carrier insurance
+- lease operator insurance
+- lessor lessee insurance
+- FMCSA self insurance
+- commercial insurance cancellation
+- commercial insurance suspension
+- commercial insurance GVW
+- commercial insurance minimums
+- commercial insurance bond
+- HSMV 83330
+- commercial insurance affidavit
+- RS-33
+- FLHSMV-BCVDS
+- selfinsurance@flhsmv.gov
+- USDOT insurance
+- Title 49 CFR Part 387
+- apportioned registration insurance
+- commercial insurance certificate holder
+
+COMMON USER QUESTIONS:
+- "What insurance do heavy trucks need?"
+- "What is commercial vehicle insurance?"
+- "How much insurance is required for CMVs?"
+- "What is CSL insurance?"
+- "Can split limit policies be used?"
+- "What is an ACORD form?"
+- "What is Form E?"
+- "What proof of insurance is accepted?"
+- "Do leased trucks need special insurance proof?"
+- "What insurance is required for interstate carriers?"
+- "What insurance is required for hazmat carriers?"
+- "What insurance is required for buses?"
+- "What happens if commercial insurance cancels?"
+- "What is Scheduled Autos?"
+- "Can HSMV 83330 be used?"
+
+==================================================
+LEGAL AUTHORITY
+==================================================
+
+Governed by:
+- 320.02(5)(e) FS
+- 320.01(25) FS
+- 627.7415 FS
+- 627.742 FS
+- 627.733(3)(b) FS
+- Chapter 324 FS
+- 49 CFR Part 387
+
+==================================================
+DESCRIPTION AND USE
+==================================================
+
+Procedure explains:
+- Commercial vehicle insurance minimums
+- Insurance proof requirements
+- Accepted commercial insurance documents
+- Interstate carrier requirements
+- Insurance cancellation consequences
+
+==================================================
+VERY IMPORTANT CORE RULE
+==================================================
+
+Commercial motor vehicle:
+Cannot legally operate:
+During registration period:
+Without required commercial liability insurance.
+
+==================================================
+COMMERCIAL MOTOR VEHICLE DEFINITION
+==================================================
+
+Commercial motor vehicle:
+Vehicle:
+- 26,001 pounds or more GVW
+OR
+- 3 or more axles
+OR
+- Combination exceeding 26,001 pounds GVW.
+
+==================================================
+COMBINED SINGLE LIMIT (CSL) DEFINITION
+==================================================
+
+Combined Single Limit:
+Single maximum liability amount:
+For:
+- Bodily injury
+AND
+- Property damage combined.
+
+==================================================
+SPLIT LIMIT POLICY DEFINITION
+==================================================
+
+Split limit policy:
+Separates:
+- Bodily injury limits
+- Property damage limits
+
+==================================================
+VERY IMPORTANT SPLIT LIMIT RULE
+==================================================
+
+Split limit policy acceptable:
+ONLY IF:
+Coverage equals or exceeds:
+Required CSL amount.
+
+==================================================
+MINIMUM COVERAGE REQUIREMENTS
+==================================================
+
+26,000-34,999 pounds:
+Minimum:
+$50,000.
+
+35,000-43,999 pounds:
+Minimum:
+$100,000.
+
+44,000 pounds or more:
+Minimum:
+$300,000.
+
+==================================================
+VERY IMPORTANT INTERSTATE HAZMAT RULE
+==================================================
+
+Interstate for-hire carriers
+OR
+Hazmat carriers:
+10,000 pounds or more:
+Require:
+$750,000 CSL minimum.
+
+==================================================
+VERY IMPORTANT PASSENGER CARRIER RULE
+==================================================
+
+Nonpublic interstate passenger carriers:
+15 passengers or less:
+Require:
+$1,500,000 minimum.
+
+16 passengers or more:
+Require:
+$5,000,000 minimum.
+
+==================================================
+VERY IMPORTANT PIP RULE
+==================================================
+
+Commercial insurance:
+Must include:
+$10,000 PIP coverage.
+
+==================================================
+VERY IMPORTANT PDL/BIL RULE
+==================================================
+
+Commercial policy must indicate:
+- PIP
+- PDL
+- BIL
+Coverage.
+
+==================================================
+LEASED COMMERCIAL VEHICLE RULE
+==================================================
+
+If owner/operator:
+Leases vehicle:
+To carrier company:
+Customer must provide:
+Proof of insurance:
+Under lease arrangement.
+
+==================================================
+VERY IMPORTANT LESSEE RULE
+==================================================
+
+If insurance proof:
+Shows carrier company:
+As insured:
+Customer must also prove:
+Lease relationship.
+
+==================================================
+SCHEDULED AUTOS RULE
+==================================================
+
+If policy marked:
+"Scheduled Autos":
+Specific VINs:
+Must appear:
+On insurance proof.
+
+==================================================
+VERY IMPORTANT INVALID SCHEDULED AUTOS RULE
+==================================================
+
+If:
+"Scheduled Autos"
+Appears
+AND VIN absent:
+Insurance proof:
+INVALID.
+
+==================================================
+ACCEPTABLE INSURANCE PROOF
+==================================================
+
+Acceptable proof includes:
+- Certificate of Liability Insurance (COI)
+- ACORD form
+- Self-insurance certificate
+- Form E
+- FMCSA self-insurance
+- Insurance policy
+- Insurance binder
+- Insurance certificate
+- Surety bond
+
+==================================================
+VERY IMPORTANT ACORD RULE
+==================================================
+
+ACORD form:
+Acceptable:
+If it shows:
+- Policy number
+- Coverage levels
+- PIP coverage.
+
+==================================================
+VERY IMPORTANT IRP CERTIFICATE HOLDER RULE
+==================================================
+
+IRP/apportioned registrations:
+Using ACORD:
+Must list certificate holder as:
+
+FLHSMV-BCVDS
+2900 Apalachee Parkway, Mail Stop 62
+Tallahassee FL 32399-0626
+
+==================================================
+SELF-INSURANCE RULES
+==================================================
+
+FLHSMV Bureau of Motorist Compliance:
+May issue:
+Certificates of self-insurance.
+
+==================================================
+VERY IMPORTANT SELF-INSURANCE CONTACT RULE
+==================================================
+
+Self-insurance questions:
+Email:
+SelfInsurance@flhsmv.gov
+
+==================================================
+FORM E RULE
+==================================================
+
+Form E:
+Uniform Motor Carrier Bodily Injury and Property Damage Liability Certificate:
+Accepted proof.
+
+==================================================
+VERY IMPORTANT FORM E RULE
+==================================================
+
+Form E:
+NOT departmental form.
+
+==================================================
+VERY IMPORTANT NATIONAL ASSOCIATION RULE
+==================================================
+
+Form E:
+Promulgated by:
+National Association of Regulatory Utilities Commissioners.
+
+==================================================
+FMCSA SELF-INSURANCE RULE
+==================================================
+
+Proof of FMCSA self-insurance:
+Acceptable.
+
+==================================================
+VERY IMPORTANT HSMV 83330 RULE
+==================================================
+
+HSMV 83330 insurance affidavit:
+NOT acceptable:
+For commercial vehicle insurance proof.
+
+==================================================
+INSURANCE CANCELLATION RULES
+==================================================
+
+If insurer submits cancellation notice:
+FLHSMV may suspend:
+Commercial registration.
+
+==================================================
+VERY IMPORTANT CANCELLATION NOTICE RULE
+==================================================
+
+Insurer:
+Must notify FLHSMV:
+At same time:
+Cancellation notice sent to insured.
+
+==================================================
+OUT-OF-STATE LEASE RULE
+==================================================
+
+Florida resident:
+With Florida commercial registration:
+Leased to out-of-state company:
+Still requires:
+Florida commercial insurance.
+
+==================================================
+AI DECISION LOGIC
+==================================================
+
+AI should determine:
+1. Is vehicle commercial motor vehicle?
+2. Does GVW require CMV insurance?
+3. What minimum liability applies?
+4. Is interstate/hazmat coverage required?
+5. Is passenger carrier minimum applicable?
+6. Does policy include PIP?
+7. Does policy include PDL/BIL?
+8. Is CSL or split limit acceptable?
+9. Is Scheduled Autos listed?
+10. Are VINs required?
+11. Is lease arrangement involved?
+12. Is lessor/lessee documentation sufficient?
+13. Is ACORD valid?
+14. Is IRP certificate holder listed?
+15. Is self-insurance certificate valid?
+16. Is Form E acceptable?
+17. Is HSMV 83330 improperly submitted?
+18. Has insurance cancellation occurred?
+19. Is FMCSA self-insurance valid?
+20. Is Florida commercial insurance still required?
+
+==================================================
+COMMON TITLE CLERK / REGISTRATION ERRORS
+==================================================
+
+- Accepting insufficient liability limits
+- Missing PIP coverage
+- Missing PDL/BIL verification
+- Accepting invalid Scheduled Autos proof
+- Missing VINs on Scheduled Autos policy
+- Missing lease arrangement proof
+- Accepting HSMV 83330
+- Missing IRP certificate holder
+- Incorrect interstate coverage minimum
+- Incorrect passenger carrier minimum
+- Accepting incomplete ACORD forms
+- Misunderstanding split limit policies
+- Failing to verify hazmat insurance
+- Missing FMCSA verification
+- Failing to suspend after cancellation notice
+
+==================================================
+VERY IMPORTANT CORE CONCEPT
+==================================================
+
+Florida commercial motor vehicle insurance requirements:
+Mandate specific liability coverage levels
+based on:
+- vehicle weight
+- interstate operation
+- hazardous materials transport
+- passenger capacity
+
+while requiring strict proof of:
+- PIP
+- liability coverage
+- valid commercial insurance documentation
+and ongoing insurance compliance.
+
+==================================================
+RELATED FORMS
+==================================================
+
+- ACORD Certificate of Liability Insurance
+- Form E
+- HSMV 83330
+
+==================================================
+RELATED ENTITIES
+==================================================
+
+- FLHSMV
+- Bureau of Motorist Compliance
+- FMCSA
+- USDOT
+- Tax Collectors
+- License Plate Agencies
+
+==================================================
+REFERENCE NOTES
+==================================================
+
+Current revision:
+12/12/2019
+
+Primary focus:
+- Commercial motor vehicle insurance requirements
+- CMV liability minimums
+- Accepted insurance proof
+- Interstate/hazmat/passenger carrier coverage
+- Commercial insurance compliance and suspension rules

@@ -1,0 +1,379 @@
+FLORIDA REGISTRATION PROCEDURE — WHEELCHAIR SYMBOL (SUFFIX) LICENSE PLATES
+PROCEDURE: RS-19
+CATEGORY: DISABLED LICENSE PLATES / WHEELCHAIR SYMBOL PLATES / ACCESSIBLE PARKING
+
+==================================================
+PROCEDURE SUMMARY
+==================================================
+
+This procedure governs:
+- Wheelchair Symbol license plates
+- Disabled wheelchair suffix plates
+- Disabled parking privileges
+- Wheelchair plate renewals
+- Wheelchair plate transfers
+- Wheelchair replacement plates
+- Eligibility for disabled symbol plates
+- Vehicle qualification rules
+- Medical qualification alternatives
+
+Applies to:
+- Disabled individuals
+- Qualified lessees
+- Vehicle owners
+- Vehicle operators with long-term mobility issues
+- Tax collectors
+- License plate agencies
+- FLHSMV personnel
+
+==================================================
+AI CLASSIFICATION TAGS
+==================================================
+
+KEYWORDS:
+- wheelchair symbol plate
+- wheelchair suffix plate
+- disabled plate
+- disabled parking plate
+- HSMV 83007
+- HSMV 83039
+- HSMV 83146
+- disabled parking permit
+- wheelchair license plate
+- mobility impairment plate
+- international wheelchair symbol
+- disabled veteran wheelchair plate
+- motorcycle wheelchair symbol
+- wheelchair plate renewal
+- wheelchair plate transfer
+- wheelchair plate replacement
+- disabled parking privileges
+- long term mobility problems
+- wheelchair suffix eligibility
+- truck 5000 pounds disabled plate
+- heavy truck under 8000 pounds
+- accessible parking registration
+- disabled lessee plate
+- physician certification disabled plate
+- Florida disabled registration
+- disability registration
+- accessible parking rights
+- wheelchair plate insurance
+- disabled permit alternative
+- disabled parking registration
+- wheelchair plate class code
+
+COMMON USER QUESTIONS:
+- "Who qualifies for wheelchair symbol plate?"
+- "Can organization get wheelchair plate?"
+- "Can leased vehicle qualify?"
+- "What forms are required?"
+- "Does physician certification expire?"
+- "Can wheelchair plate replace parking permit?"
+- "Can heavy truck get wheelchair plate?"
+- "What insurance is required?"
+- "How do renewals work?"
+- "How do transfers work?"
+- "How do replacements work?"
+- "What vehicles qualify?"
+- "Can for-hire vehicle qualify?"
+- "What ID is required?"
+- "Can truck camper qualify?"
+
+==================================================
+LEGAL AUTHORITY
+==================================================
+
+Governed by:
+- 320.0843(1) FS
+- 320.0848(2)(e) FS
+- 320.0848(1)(e) FS
+
+==================================================
+DESCRIPTION AND USE
+==================================================
+
+Procedure explains:
+- Wheelchair symbol plate issuance
+- Disabled parking privileges
+- Qualification standards
+- Renewal/transfer procedures
+- Replacement procedures
+
+==================================================
+VERY IMPORTANT CORE RULE
+==================================================
+
+Wheelchair Symbol license plates:
+May issue:
+To owners or lessees:
+Who qualify:
+For disabled parking permits.
+
+==================================================
+VERY IMPORTANT PARKING PRIVILEGE RULE
+==================================================
+
+Wheelchair Symbol plate:
+Provides:
+All parking privileges:
+Afforded:
+To disabled parking permit holders.
+
+==================================================
+VERY IMPORTANT MULTIPLE OWNER RULE
+==================================================
+
+If multiple registrants:
+Eligible customer:
+Must be identified:
+On registration certificate.
+
+==================================================
+VERY IMPORTANT LONG-TERM MOBILITY RULE
+==================================================
+
+Person with long-term mobility problems:
+May receive:
+Wheelchair Symbol plate:
+In lieu of disabled parking permit.
+
+==================================================
+VERY IMPORTANT ORGANIZATION RULE
+==================================================
+
+Organizations:
+Do NOT qualify:
+For Wheelchair Symbol plates.
+
+==================================================
+VERY IMPORTANT ORGANIZATION EXCEPTION RULE
+==================================================
+
+Organizations may still qualify:
+For disabled parking permit:
+But NOT wheelchair suffix plate.
+
+==================================================
+APPLICATION REQUIREMENTS
+==================================================
+
+Require:
+- HSMV 83007
+OR
+- HSMV 83039
+
+==================================================
+VERY IMPORTANT FORM RULE
+==================================================
+
+Forms must be:
+Accurately completed.
+
+==================================================
+ELIGIBLE VEHICLE RULES
+==================================================
+
+Eligible vehicles:
+- Private automobiles
+- Trucks 5,000 lbs or less
+- For-hire autos seating fewer than 9
+- Motor homes
+- Truck campers not for hire
+- Heavy trucks under 8,000 lbs GVW
+
+==================================================
+VERY IMPORTANT COMMERCIAL USE RULE
+==================================================
+
+Motor homes and truck campers:
+Cannot be:
+For hire or commercial use.
+
+==================================================
+VERY IMPORTANT DRIVER LICENSE RULE
+==================================================
+
+Require:
+Florida driver license
+OR
+Florida identification card.
+
+==================================================
+INSURANCE REQUIREMENTS
+==================================================
+
+Florida insurance required.
+
+==================================================
+VERY IMPORTANT RS-36 RULE
+==================================================
+
+Insurance requirements:
+Governed by:
+RS-36.
+
+==================================================
+FEE RULES
+==================================================
+
+Fees include:
+- Regular registration tax
+- Appropriate regular class code fees
+- Trust fund fee
+- Original plate fee
+- Decal on Demand fee
+- Service fee
+- Branch fee if applicable
+
+==================================================
+VERY IMPORTANT FEE CHART RULE
+==================================================
+
+Refer:
+Registration Fees and Flat Taxes Distribution Chart:
+For applicable fees.
+
+==================================================
+RENEWAL RULES
+==================================================
+
+Renewals:
+May process:
+Through county license plate agencies.
+
+==================================================
+VERY IMPORTANT PHYSICIAN RULE
+==================================================
+
+Wheelchair Symbol plate renewals:
+Do NOT require:
+Physician recertification.
+
+==================================================
+TRANSFER RULES
+==================================================
+
+Transfers:
+May process:
+Through county license plate agencies.
+
+==================================================
+REPLACEMENT RULES
+==================================================
+
+Replacement Wheelchair Symbol plates:
+May process:
+Through county license plate agencies.
+
+==================================================
+REPLACEMENT REQUIREMENTS
+==================================================
+
+Require:
+- HSMV 83146
+- Copy of registration certificate
+- Applicable fees
+
+==================================================
+VERY IMPORTANT RS-06 RULE
+==================================================
+
+Replacement fees and procedures:
+Governed by:
+RS-06.
+
+==================================================
+AI DECISION LOGIC
+==================================================
+
+AI should determine:
+1. Does applicant qualify for disabled parking permit?
+2. Is long-term mobility impairment established?
+3. Is organization prohibited?
+4. Is vehicle type eligible?
+5. Does truck exceed weight limit?
+6. Is vehicle commercial/for hire?
+7. Is HSMV 83007 provided?
+8. Is HSMV 83039 provided?
+9. Is Florida ID verified?
+10. Is Florida insurance verified?
+11. Does RS-36 apply?
+12. Is physician recertification required?
+13. Is renewal allowed?
+14. Is transfer allowed?
+15. Is HSMV 83146 required?
+16. Is registration copy attached?
+17. Are class code fees correct?
+18. Is eligible registrant identified?
+19. Does disabled parking privilege apply?
+20. Is replacement governed by RS-06?
+
+==================================================
+COMMON TITLE CLERK / REGISTRATION ERRORS
+==================================================
+
+- Issuing wheelchair plate to organization
+- Missing HSMV 83007 or HSMV 83039
+- Missing Florida ID
+- Missing insurance verification
+- Incorrect vehicle weight qualification
+- Allowing commercial-use motor home
+- Requiring unnecessary physician recertification
+- Missing HSMV 83146
+- Missing registration copy
+- Incorrect fee calculations
+- Failing to note eligible registrant
+- Misunderstanding parking privileges
+- Incorrect replacement routing
+- Improper truck qualification
+
+==================================================
+VERY IMPORTANT CORE CONCEPT
+==================================================
+
+Florida Wheelchair Symbol license plates:
+Provide disabled parking privileges
+to qualifying individuals with long-term mobility impairments,
+while requiring strict compliance with:
+- eligibility standards
+- vehicle restrictions
+- identity verification
+- insurance requirements
+and excluding organizational ownership eligibility.
+
+==================================================
+RELATED PROCEDURES
+==================================================
+
+- RS-06
+- RS-36
+
+==================================================
+RELATED FORMS
+==================================================
+
+- HSMV 83007
+- HSMV 83039
+- HSMV 83146
+
+==================================================
+RELATED ENTITIES
+==================================================
+
+- FLHSMV
+- County License Plate Agencies
+- Tax Collectors
+
+==================================================
+REFERENCE NOTES
+==================================================
+
+Current revision:
+02/22/2022
+
+Primary focus:
+- Wheelchair Symbol plate issuance
+- Disabled parking privileges
+- Eligibility and vehicle restrictions
+- Renewal and replacement procedures

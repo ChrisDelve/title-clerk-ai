@@ -1,0 +1,348 @@
+FLORIDA REGISTRATION PROCEDURE — FOR HIRE VEHICLES
+PROCEDURE: RS-36
+CATEGORY: COMMERCIAL REGISTRATION / FOR-HIRE VEHICLES / PASSENGER TRANSPORT
+
+==================================================
+PROCEDURE SUMMARY
+==================================================
+
+This procedure governs:
+- For-hire vehicle registrations
+- Passenger transportation vehicles
+- Taxicab registrations
+- Limousine registrations
+- Shuttle registrations
+- Transportation network vehicle classifications
+- For-hire registration weight classes
+- Passenger-carrying commercial vehicles
+- Registration taxation for for-hire vehicles
+- Interstate for-hire registration rules
+- Intrastate passenger transport registration
+- Rental vehicle distinctions
+- For-hire truck classifications
+- Commercial passenger vehicle registration
+- Apportioned registration exceptions
+- For-hire license plate issuance
+- Passenger vehicle use classifications
+
+Applies to:
+- Taxicab operators
+- Limousine companies
+- Shuttle services
+- Passenger transportation businesses
+- Commercial vehicle owners
+- Tax collectors
+- License plate agents
+- FLHSMV personnel
+- Commercial fleet operators
+
+==================================================
+AI CLASSIFICATION TAGS
+==================================================
+
+KEYWORDS:
+- for hire registration
+- for hire vehicle
+- taxicab registration
+- limousine registration
+- shuttle registration
+- passenger transport vehicle
+- commercial passenger vehicle
+- for hire plate
+- FH registration
+- passenger carrying vehicle
+- transportation vehicle
+- intrastate passenger carrier
+- interstate passenger carrier
+- vehicle for compensation
+- for hire tax class
+- commercial plate
+- registration weight class
+- passenger vehicle classification
+- for hire truck
+- for hire bus
+- charter vehicle
+- commercial passenger registration
+- rental vehicle distinction
+- vehicle carrying passengers for compensation
+- commercial use registration
+- for hire plate fees
+- passenger transport operation
+- transportation service vehicle
+- Florida for hire law
+- commercial passenger plate
+- vehicle use for compensation
+- for hire operation
+- commercial passenger classification
+- transportation network service
+- vehicle registration commercial use
+- passenger hire vehicle
+- fleet for hire registration
+- commercial transport vehicle
+- class code for hire
+- registration fee classification
+- commercial passenger fleet
+- hire and compensation vehicle
+
+COMMON USER QUESTIONS:
+- "What qualifies as a for-hire vehicle?"
+- "Does a limousine need for-hire registration?"
+- "How are taxicabs registered?"
+- "What plate is required for passenger transport?"
+- "Does a shuttle require commercial registration?"
+- "Can a rental vehicle be classified as for-hire?"
+- "What fees apply to for-hire vehicles?"
+- "What is the difference between commercial and for-hire?"
+- "Do interstate passenger vehicles require apportioned registration?"
+- "How are passenger capacity fees determined?"
+- "Can a truck be registered for-hire?"
+- "What is passenger transport classification?"
+- "Do rideshare vehicles use for-hire plates?"
+- "What registration class applies to taxicabs?"
+- "Are buses considered for-hire vehicles?"
+
+==================================================
+LEGAL AUTHORITY
+==================================================
+
+Governed by:
+- Chapter 320 FS
+- 320.08 FS
+- 320.01 FS
+- 320.06 FS
+
+==================================================
+DESCRIPTION AND USE
+==================================================
+
+Procedure explains:
+- For-hire registration requirements
+- Passenger transport classifications
+- Commercial registration taxation
+- Plate issuance requirements
+- Passenger transportation compliance
+
+==================================================
+VERY IMPORTANT CORE RULE
+==================================================
+
+Vehicles:
+Used to transport:
+Passengers or property:
+For compensation:
+Must comply:
+With Florida for-hire registration requirements.
+
+==================================================
+VERY IMPORTANT FOR-COMPENSATION RULE
+==================================================
+
+Vehicle operation:
+For compensation or hire:
+Triggers:
+Commercial registration review.
+
+==================================================
+TAXICAB RULE
+==================================================
+
+Taxicabs:
+Require:
+For-hire registration classification.
+
+==================================================
+LIMOUSINE RULE
+==================================================
+
+Limousines:
+Transporting passengers for compensation:
+Require:
+For-hire registration.
+
+==================================================
+SHUTTLE RULE
+==================================================
+
+Shuttle/passenger transport vehicles:
+Used commercially:
+Require:
+Appropriate for-hire registration class.
+
+==================================================
+VERY IMPORTANT PASSENGER VEHICLE RULE
+==================================================
+
+Passenger-carrying vehicles:
+May require:
+Different registration classifications:
+Based on:
+- seating capacity
+- weight
+- operational use.
+
+==================================================
+VERY IMPORTANT COMMERCIAL USE RULE
+==================================================
+
+Vehicle use:
+Determines registration class:
+Not merely vehicle body type.
+
+==================================================
+VERY IMPORTANT RENTAL RULE
+==================================================
+
+Rental vehicles:
+Must be evaluated separately:
+From for-hire passenger transport operations.
+
+==================================================
+VERY IMPORTANT INTERSTATE RULE
+==================================================
+
+Interstate for-hire operations:
+May require:
+Additional interstate or apportioned registration compliance.
+
+==================================================
+VERY IMPORTANT WEIGHT CLASS RULE
+==================================================
+
+Registration taxes/fees:
+May vary based on:
+- vehicle weight
+- passenger capacity
+- operational classification.
+
+==================================================
+VERY IMPORTANT COMMERCIAL PLATE RULE
+==================================================
+
+For-hire vehicles:
+Receive:
+Commercial registration classification
+and plate assignment.
+
+==================================================
+VERY IMPORTANT PASSENGER TRANSPORT RULE
+==================================================
+
+Primary classification determination:
+Is whether vehicle:
+Regularly transports passengers:
+For compensation.
+
+==================================================
+VERY IMPORTANT PROPERTY TRANSPORT RULE
+==================================================
+
+Vehicles transporting property:
+For compensation:
+May also qualify:
+For for-hire registration.
+
+==================================================
+VERY IMPORTANT FLEET RULE
+==================================================
+
+Fleet-operated passenger vehicles:
+Must maintain:
+Consistent commercial registration compliance.
+
+==================================================
+VERY IMPORTANT USE CLASSIFICATION RULE
+==================================================
+
+Improper registration class:
+May result in:
+Incorrect taxes/fees
+and registration violations.
+
+==================================================
+AI DECISION LOGIC
+==================================================
+
+AI should determine:
+1. Is vehicle used for compensation?
+2. Is vehicle transporting passengers?
+3. Is vehicle transporting property?
+4. Does taxicab classification apply?
+5. Does limousine classification apply?
+6. Does shuttle classification apply?
+7. Is vehicle commercial or personal use?
+8. Is interstate operation involved?
+9. Does apportioned registration apply?
+10. What passenger capacity applies?
+11. What weight class applies?
+12. Is rental classification more appropriate?
+13. Does vehicle require commercial plate?
+14. Is fleet registration involved?
+15. Are fees/taxes calculated properly?
+16. Is passenger transport regular business activity?
+17. Does operational use match registration?
+18. Is for-hire truck classification applicable?
+19. Are commercial registration requirements satisfied?
+20. Is correct registration class assigned?
+
+==================================================
+COMMON TITLE CLERK / REGISTRATION ERRORS
+==================================================
+
+- Registering for-hire vehicle as private use
+- Incorrect taxicab classification
+- Incorrect limousine classification
+- Missing commercial registration taxes
+- Incorrect passenger capacity classification
+- Ignoring interstate operation requirements
+- Improper apportioned registration review
+- Misclassifying rental vehicles
+- Incorrect commercial plate issuance
+- Improper fleet registration handling
+- Incorrect operational use coding
+- Incorrect weight class calculations
+- Missing for-compensation determination
+- Misclassifying passenger transport operations
+- Incorrect property transport classification
+
+==================================================
+VERY IMPORTANT CORE CONCEPT
+==================================================
+
+Florida for-hire registration procedures:
+Create commercial registration standards
+for vehicles transporting:
+- passengers
+- property
+for compensation,
+
+while enforcing:
+- operational-use classifications
+- commercial tax structures
+- passenger transportation compliance
+- fleet registration standards
+- interstate operational review
+and proper commercial registration assignments.
+
+==================================================
+RELATED ENTITIES
+==================================================
+
+- FLHSMV
+- Tax Collectors
+- License Plate Agents
+- Commercial Fleet Operators
+- Passenger Transportation Companies
+
+==================================================
+REFERENCE NOTES
+==================================================
+
+Current revision:
+Refer to RS-36 PDF.
+
+Primary focus:
+- For-hire passenger vehicle registration
+- Commercial operational classifications
+- Passenger transportation compliance
+- Commercial registration taxation
+- Fleet and transport registration standards

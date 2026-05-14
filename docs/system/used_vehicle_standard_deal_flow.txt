@@ -1,0 +1,241 @@
+==================================================
+USED VEHICLE STANDARD DEAL FLOW
+FLORIDA TITLE & REGISTRATION WORKFLOW
+==================================================
+
+==================================================
+PURPOSE
+==================================================
+
+This workflow outlines the standard dealership
+processing flow for a used vehicle retail transaction
+in Florida.
+
+Applies to:
+- retail used vehicle sales
+- financed deals
+- cash deals
+- dealer-assisted registrations
+
+==================================================
+STEP 1 — VERIFY OWNERSHIP DOCUMENTS
+==================================================
+
+Verify:
+- title assigned properly
+- reassignment completed
+- seller signatures present
+- buyer information complete
+- odometer disclosure complete
+- lien status verified
+
+RELATED PROCEDURES:
+- TL-08
+- TL-17
+
+ESCALATE IF:
+- altered title
+- missing signatures
+- VIN mismatch
+- incomplete reassignment
+- lien conflict
+
+==================================================
+STEP 2 — VERIFY CUSTOMER IDENTITY
+==================================================
+
+Verify:
+- valid driver license
+- customer legal name
+- customer address
+- identity consistency
+
+RELATED PROCEDURES:
+- TL-01
+
+ESCALATE IF:
+- expired ID
+- identity mismatch
+- suspicious documents
+
+==================================================
+STEP 3 — VERIFY INSURANCE
+==================================================
+
+Verify:
+- Florida insurance
+- policy active
+- VIN matches if applicable
+
+RELATED PROCEDURES:
+- RS-36
+- RS-33 if commercial
+
+ESCALATE IF:
+- invalid insurance
+- commercial coverage uncertainty
+- fake insurance concerns
+
+==================================================
+STEP 4 — DETERMINE TITLE STATUS
+==================================================
+
+Determine:
+- paper title
+- ELT title
+- duplicate title needed
+- lien satisfaction needed
+
+RELATED PROCEDURES:
+- TL-17
+- TL-28
+
+ESCALATE IF:
+- lien unreleased
+- title unavailable
+- ELT conflict
+
+==================================================
+STEP 5 — DETERMINE REGISTRATION TYPE
+==================================================
+
+Determine:
+- transfer plate
+- new plate
+- temporary tag needed
+- specialty plate
+- personalized plate
+
+RELATED PROCEDURES:
+- RS-22
+- RS-27
+- RS-31
+
+==================================================
+STEP 6 — DETERMINE IRF STATUS
+==================================================
+
+Determine:
+- IRF due
+- prior registration exemption
+- military exemption
+- operation of law exemption
+- trust exemption
+
+RELATED PROCEDURES:
+- RS-30
+
+ESCALATE IF:
+- exemption dispute
+- ownership conflict
+- trust confusion
+
+==================================================
+STEP 7 — DETERMINE COMMERCIAL STATUS
+==================================================
+
+Determine:
+- passenger vehicle
+- commercial vehicle
+- heavy truck
+- interstate operation
+- GVW classification
+
+RELATED PROCEDURES:
+- RS-33
+- RS-45
+
+ESCALATE IF:
+- IRP uncertainty
+- GVW uncertainty
+- commercial insurance issue
+
+==================================================
+STEP 8 — CALCULATE FEES
+==================================================
+
+Calculate:
+- registration fees
+- plate fees
+- title fees
+- IRF
+- specialty fees
+- taxes
+
+VERIFY:
+- correct class code
+- proper registration period
+
+==================================================
+STEP 9 — ISSUE TEMPORARY TAG IF NEEDED
+==================================================
+
+Determine:
+- temp tag duration
+- ETR eligibility
+- title delay eligibility
+
+RELATED PROCEDURES:
+- RS-31
+
+ESCALATE IF:
+- excessive temp tag requests
+- missing title paperwork
+- repeated temp issuance
+
+==================================================
+STEP 10 — SUBMIT TITLE AND REGISTRATION
+==================================================
+
+Verify:
+- all signatures complete
+- all forms complete
+- funding package complete
+- insurance verified
+- fees collected
+
+SUBMIT:
+- title application
+- registration application
+- supporting documents
+
+==================================================
+STEP 11 — FINAL DEAL REVIEW
+==================================================
+
+Verify:
+- deal jacket complete
+- copies retained
+- lender requirements satisfied
+- customer copies issued
+
+ESCALATE IF:
+- missing paperwork
+- funding issues
+- unresolved compliance concerns
+
+==================================================
+COMMON FAILURE POINTS
+==================================================
+
+- missing reassignment
+- incorrect odometer disclosure
+- incorrect IRF exemption
+- invalid insurance
+- missing lien release
+- temp tag misuse
+- incorrect GVW
+- unsigned title docs
+- stale funding paperwork
+
+==================================================
+SYSTEM PURPOSE
+==================================================
+
+This workflow exists to:
+- standardize dealership processing
+- reduce compliance risk
+- guide title clerks
+- support AI workflow reasoning
+- improve transaction accuracy
+- identify escalation points

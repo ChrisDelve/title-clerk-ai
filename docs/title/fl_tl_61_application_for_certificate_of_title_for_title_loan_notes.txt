@@ -1,0 +1,661 @@
+FLORIDA TITLE PROCEDURE — APPLICATION FOR CERTIFICATE OF TITLE FOR A TITLE LOAN
+PROCEDURE: TL-61
+CATEGORY: TITLE LOANS / REPOSSESSION / TITLE TRANSFER / LIEN RECORDING
+
+==================================================
+PROCEDURE SUMMARY
+==================================================
+
+This procedure governs:
+- Title loan defaults
+- Title loan repossessions
+- Transfer of title after default
+- Title loan lien recording
+- Dealer sale requirements
+- Required notices
+- Certified mail requirements
+- Purchaser title issuance
+- Lender title issuance
+- Title loan documentation
+
+Applies to:
+- Motor vehicles
+- Out-of-state titles
+- Florida titles
+- Title loan lenders
+- Borrowers
+- Licensed repossession agents
+- Licensed motor vehicle dealers
+
+==================================================
+AI CLASSIFICATION TAGS
+==================================================
+
+KEYWORDS:
+- title loan
+- title loan default
+- repossession
+- lender repossession
+- title loan lender
+- title loan agreement
+- title loan transfer
+- HSMV 82040
+- HSMV 82139
+- HSMV 82042
+- HSMV 82994
+- certified notice
+- repossession affidavit
+- title loan sale
+- dealer reassignment
+- title loan lien
+- borrower default
+- repossessed vehicle
+- title loan maturity
+- physical possession
+- Chapter 537
+- lien recording
+- title transfer after default
+
+COMMON USER QUESTIONS:
+- "Can title lender take vehicle?"
+- "What paperwork is needed for title loan repo?"
+- "Does lender need dealer to sell?"
+- "Can lender title vehicle?"
+- "What notice is required?"
+- "How long after default?"
+- "Can borrower buy vehicle back?"
+- "What forms are required?"
+- "What affidavit is needed?"
+- "What if title is out of state?"
+- "Does lender need physical possession?"
+- "Can title lender record lien?"
+- "What is title loan maturity?"
+- "Does title have to be signed?"
+- "Can lender sell without dealer?"
+
+==================================================
+LEGAL AUTHORITY
+==================================================
+
+Governed by:
+- 319.22 FS
+- 537.012(1) FS
+- 537.012(3) FS
+- 537.012(4) FS
+- 537.008 FS
+
+==================================================
+VERY IMPORTANT TITLE LOAN RULE
+==================================================
+
+Title loan:
+Loan secured by:
+- Motor vehicle title.
+
+==================================================
+VERY IMPORTANT SECURITY RULE
+==================================================
+
+Lender possesses:
+- Certificate of title
+
+NOT necessarily:
+- Vehicle itself.
+
+==================================================
+VERY IMPORTANT DEFAULT RULE
+==================================================
+
+Borrower defaults when:
+- Full amount not repaid
+AND
+- No payment made within 30 days after maturity date or extension.
+
+==================================================
+VERY IMPORTANT REPOSSESSION RULE
+==================================================
+
+Lender may repossess vehicle:
+ONLY through:
+- Licensed repossession agent.
+
+==================================================
+VERY IMPORTANT PHYSICAL POSSESSION RULE
+==================================================
+
+Lender MUST have:
+- Physical possession of vehicle
+
+Before:
+- Titling vehicle
+OR
+- Selling vehicle.
+
+==================================================
+VERY IMPORTANT DEALER SALE RULE
+==================================================
+
+If lender sells vehicle without titling into lender name:
+Vehicle MUST be sold through:
+- Licensed Florida motor vehicle dealer.
+
+==================================================
+VERY IMPORTANT TITLE IN LENDER NAME RULE
+==================================================
+
+If lender first titles vehicle into lender name:
+Vehicle later:
+DOES NOT have to be sold through dealer.
+
+==================================================
+VERY IMPORTANT PURCHASER RIGHTS RULE
+==================================================
+
+Purchaser receives:
+- Right
+- Title
+- Interest
+
+Of:
+- Owner
+AND
+- Title loan lender.
+
+==================================================
+DESCRIPTION AND USE
+==================================================
+
+Procedure assists:
+- Tax collectors
+- License plate agencies
+- FLHSMV employees
+
+With:
+- Title loan title processing.
+
+==================================================
+VERY IMPORTANT NEW FORM RULE
+==================================================
+
+As of July 1, 2023:
+HSMV 82040 split into:
+- HSMV 82040 MV
+- HSMV 82040 VS
+- HSMV 82040 MH
+
+==================================================
+FORM USAGE RULES
+==================================================
+
+HSMV 82040 MV:
+Motor vehicle title applications.
+
+HSMV 82040 VS:
+Vessel title applications.
+
+HSMV 82040 MH:
+Mobile home title applications.
+
+==================================================
+VERY IMPORTANT MOTOR VEHICLE TYPES RULE
+==================================================
+
+HSMV 82040 MV used for:
+- AU Auto
+- BS Bus
+- MC Motorcycle
+- OH Off-highway
+- TO Tools
+- TR Truck
+- TT Travel trailer
+- VT Vehicle trailer
+
+==================================================
+VERY IMPORTANT VESSEL RULE
+==================================================
+
+Effective July 1, 2023:
+Vessel titles require:
+- HSMV 82040 VS.
+
+==================================================
+VERY IMPORTANT MOTOR VEHICLE FORM RULE
+==================================================
+
+Effective January 1, 2024:
+Motor vehicle titles require:
+- HSMV 82040 MV.
+
+==================================================
+TITLE LOAN DEFAULT DOCUMENTS REQUIRED
+==================================================
+
+Required documents:
+1. Florida or out-of-state title
+2. Certified notice copy
+3. Returned certified receipt/unclaimed letter
+4. HSMV 82994 if dealer sale
+5. HSMV 82040
+6. HSMV 82042 if needed
+7. Copy of 537.008 FS
+8. Default affidavit
+9. Lien satisfactions
+10. Sales tax or Chapter 537 statement
+11. Plate or non-use affidavit
+12. Title fees
+
+==================================================
+VERY IMPORTANT TITLE RULE
+==================================================
+
+Title:
+Does NOT have to be completed for transfer:
+To title loan lender.
+
+==================================================
+VERY IMPORTANT NOTICE RULE
+==================================================
+
+Notice must:
+- Be mailed certified
+- Be sent 10 days prior to sale.
+
+==================================================
+VERY IMPORTANT NOTICE CONTENT RULE
+==================================================
+
+Notice must contain:
+- Year
+- Make
+- VIN
+- Sale date
+- Sale time
+- Sale place
+- Loan payoff accounting
+- Interest amount
+- Expenses incurred
+
+==================================================
+VERY IMPORTANT CERTIFIED MAIL RULE
+==================================================
+
+Must provide:
+- Returned receipt card
+OR
+- Unclaimed unopened certified letter.
+
+==================================================
+VERY IMPORTANT DEALER REASSIGNMENT RULE
+==================================================
+
+If sold through dealer:
+Require:
+- HSMV 82994.
+
+==================================================
+VERY IMPORTANT BORROWER PURCHASE RULE
+==================================================
+
+Borrower may:
+Purchase vehicle at sale:
+If not redeemed before sale.
+
+==================================================
+VERY IMPORTANT OUT-OF-STATE VIN RULE
+==================================================
+
+Out-of-state vehicles require:
+- VIN verification.
+
+==================================================
+VERY IMPORTANT VIN FORM RULE
+==================================================
+
+VIN verification:
+- HSMV 82042
+OR
+- VIN section on HSMV 82040.
+
+==================================================
+VERY IMPORTANT VIN EXEMPTION RULE
+==================================================
+
+VIN verification NOT required for:
+- Mobile homes
+- Trailers under 2,000 lbs
+- Travel trailers
+- Camping trailers
+- Truck campers
+- Fifth wheel recreational trailers
+
+==================================================
+VERY IMPORTANT DEFAULT AFFIDAVIT RULE
+==================================================
+
+Affidavit must state:
+- Last payment date
+- No payment within required period
+- Lender took possession under 537.012(1)
+- Whether vehicle being sold or titled into lender name
+
+==================================================
+VERY IMPORTANT DEALERSHIP NAME RULE
+==================================================
+
+If sold through dealer:
+Affidavit must include:
+- Dealership name.
+
+==================================================
+VERY IMPORTANT LIEN SATISFACTION RULE
+==================================================
+
+All recorded liens:
+Must be satisfied.
+
+==================================================
+VERY IMPORTANT CHAPTER 537 STATEMENT RULE
+==================================================
+
+If lender taking title:
+HSMV 82040 must state:
+- "Obtained per Chapter 537, Florida Statutes, for Title Loan"
+
+==================================================
+VERY IMPORTANT REGISTRATION RULE
+==================================================
+
+Must provide:
+- Florida plate
+OR
+- Non-use affidavit.
+
+==================================================
+VERY IMPORTANT TITLE LOAN LIEN RULE
+==================================================
+
+Lender may:
+Record lien on title.
+
+==================================================
+FLORIDA TITLE LIEN REQUIREMENTS
+==================================================
+
+If vehicle already titled in Florida:
+Required:
+- Florida title
+- HSMV 82139
+- Lien satisfactions
+- Fees
+
+==================================================
+OUT-OF-STATE TITLE LIEN REQUIREMENTS
+==================================================
+
+Required:
+- Out-of-state title
+- HSMV 82040
+- HSMV 82042 if required
+- HSMV 82139
+- Lien satisfactions
+- Fees
+
+==================================================
+VERY IMPORTANT HSMV 82139 RULE
+==================================================
+
+HSMV 82139:
+Notice of Lien.
+
+==================================================
+VERY IMPORTANT LIEN FORM EXCEPTION RULE
+==================================================
+
+HSMV 82139 not needed:
+If lien already shown:
+On completed HSMV 82040.
+
+==================================================
+VERY IMPORTANT TL-23 RULE
+==================================================
+
+After lien recorded:
+If default occurs:
+Refer to:
+- TL-23.
+
+==================================================
+MISCELLANEOUS RULES
+==================================================
+
+Before repossession:
+Borrower must have opportunity:
+To voluntarily surrender vehicle.
+
+==================================================
+VERY IMPORTANT PERSONAL PROPERTY RULE
+==================================================
+
+Borrower must have:
+Reasonable opportunity:
+To remove personal belongings.
+
+==================================================
+VERY IMPORTANT THIRD PARTY POSSESSION RULE
+==================================================
+
+After repossession:
+Lender may authorize:
+Third party physical possession.
+
+==================================================
+VERY IMPORTANT TITLE LOAN INFO RULE
+==================================================
+
+Exhibit A:
+Explains:
+- Title loan process
+- Default process
+- Repossession requirements
+
+==================================================
+TITLE LOAN CHECKLIST RULES
+==================================================
+
+Exhibit B includes:
+- Florida record checklist
+- Out-of-state record checklist
+- Required supporting documents
+
+==================================================
+PERFECTING LIEN CHECKLIST RULES
+==================================================
+
+Exhibit C includes:
+- Lien perfection checklist
+- Florida/out-of-state processing
+
+==================================================
+IMPORTANT DEFINITIONS
+==================================================
+
+LOAN PROPERTY:
+Title deposited as collateral.
+
+MATURITY DATE:
+30 days after execution date.
+
+TITLE LOAN:
+Loan secured by title certificate.
+
+TITLE LOAN AGREEMENT:
+Written loan agreement.
+
+TITLE LOAN LENDER:
+Person servicing title loans.
+
+TITLE LOAN OFFICE:
+Location conducting title loan business.
+
+TITLED PERSONAL PROPERTY:
+Vehicle with state-issued title.
+
+==================================================
+VERY IMPORTANT TITLE LOAN AGREEMENT RULE
+==================================================
+
+Agreement must include:
+- Vehicle information
+- VIN
+- Borrower information
+- Loan amount
+- Finance charge
+- APR
+- Maturity date
+- Payment totals
+
+==================================================
+VERY IMPORTANT MATURITY RULE
+==================================================
+
+Maturity date:
+30 days after agreement executed.
+
+==================================================
+VERY IMPORTANT REQUIRED DISCLOSURE RULE
+==================================================
+
+Agreement must warn:
+Vehicle may be repossessed and sold.
+
+==================================================
+VERY IMPORTANT DUPLICATE TITLE RULE
+==================================================
+
+Borrower represents:
+Will NOT apply for duplicate title:
+While agreement active.
+
+==================================================
+VERY IMPORTANT SIGNATURE RULE
+==================================================
+
+All owners:
+Must sign:
+Title loan agreement.
+
+==================================================
+VERY IMPORTANT BORROWER COPY RULE
+==================================================
+
+Borrower must receive:
+Exact copy:
+Of executed agreement.
+
+==================================================
+VERY IMPORTANT REDEMPTION RULE
+==================================================
+
+Borrower may redeem:
+By repaying:
+All amounts legally due.
+
+==================================================
+VERY IMPORTANT SECURITY INTEREST RULE
+==================================================
+
+After redemption:
+Lender must:
+Release security interest.
+
+==================================================
+VERY IMPORTANT POSSESSION RULE
+==================================================
+
+During agreement:
+Lender may retain:
+ONLY title document.
+
+==================================================
+VERY IMPORTANT ADDITIONAL SECURITY RULE
+==================================================
+
+Lender cannot require:
+Additional collateral or guaranty.
+
+==================================================
+AI DECISION LOGIC
+==================================================
+
+AI should determine:
+1. Has borrower defaulted?
+2. Was 30-day period exceeded?
+3. Did lender repossess legally?
+4. Is repossession agent licensed?
+5. Does lender have physical possession?
+6. Was certified notice sent?
+7. Was notice timely?
+8. Is notice complete?
+9. Is dealer sale required?
+10. Was HSMV 82994 completed?
+11. Is VIN verification required?
+12. Are lien satisfactions required?
+13. Is HSMV 82139 needed?
+14. Is lender titling vehicle?
+15. Is Chapter 537 statement present?
+16. Is borrower allowed redemption?
+17. Is out-of-state title involved?
+18. Are fees included?
+19. Is registration/non-use affidavit included?
+20. Does lender qualify for transfer?
+
+==================================================
+COMMON TITLE CLERK ERRORS
+==================================================
+
+- Missing certified notice
+- Missing returned receipt
+- Dealer sale without HSMV 82994
+- No physical possession
+- Missing lender affidavit
+- Missing Chapter 537 statement
+- Incorrect VIN verification handling
+- Missing lien satisfactions
+- Processing without licensed dealer
+- Using wrong HSMV 82040 version
+- Missing borrower redemption rights
+- Missing maturity calculations
+- Failing to confirm default timeline
+
+==================================================
+VERY IMPORTANT CORE CONCEPT
+==================================================
+
+Title loan repossession:
+Requires:
+- Proper default
+- Proper notice
+- Physical possession
+- Proper documentation
+- Dealer compliance
+- Statutory compliance
+
+==================================================
+RELATED PROCEDURES
+==================================================
+
+- TL-23
+
+==================================================
+REFERENCE NOTES
+==================================================
+
+Current revision:
+- 06/26/2023
+
+Primary focus:
+- Title loan defaults
+- Title loan repossessions
+- Lender title processing
+- Dealer sale compliance
+- Lien perfection

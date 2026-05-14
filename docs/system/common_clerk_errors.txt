@@ -1,0 +1,346 @@
+==================================================
+FLORIDA TITLE & REGISTRATION COMMON CLERK ERRORS
+==================================================
+
+==================================================
+TITLE ERRORS
+==================================================
+
+ERROR:
+Missing reassignment section
+
+RISK:
+Title rejection
+
+RELATED PROCEDURES:
+TL-08
+
+--------------------------------------------------
+
+ERROR:
+Incorrect odometer disclosure
+
+RISK:
+Federal compliance violation
+
+RELATED PROCEDURES:
+TL-08
+
+--------------------------------------------------
+
+ERROR:
+Missing seller signature
+
+RISK:
+Ownership invalidation
+
+RELATED PROCEDURES:
+TL-08
+
+--------------------------------------------------
+
+ERROR:
+VIN mismatch between documents
+
+RISK:
+Fraud investigation / rejection
+
+RELATED PROCEDURES:
+TL-08
+TL-20
+
+ESCALATE:
+YES
+
+--------------------------------------------------
+
+ERROR:
+Lien release missing
+
+RISK:
+Unable to transfer title
+
+RELATED PROCEDURES:
+TL-17
+
+--------------------------------------------------
+
+ERROR:
+Incorrect lien satisfaction documentation
+
+RISK:
+Title processing delay
+
+RELATED PROCEDURES:
+TL-17
+
+--------------------------------------------------
+
+ERROR:
+ELT lien still active
+
+RISK:
+Title issuance blocked
+
+RELATED PROCEDURES:
+TL-28
+
+==================================================
+REGISTRATION ERRORS
+==================================================
+
+ERROR:
+Incorrect IRF exemption
+
+RISK:
+Financial liability / audit issue
+
+RELATED PROCEDURES:
+RS-30
+
+ESCALATE:
+RECOMMENDED
+
+--------------------------------------------------
+
+ERROR:
+Failure to verify prior registration
+
+RISK:
+Incorrect IRF waiver
+
+RELATED PROCEDURES:
+RS-30
+
+--------------------------------------------------
+
+ERROR:
+Improper temp tag duration
+
+RISK:
+Compliance violation
+
+RELATED PROCEDURES:
+RS-31
+
+--------------------------------------------------
+
+ERROR:
+Excessive temp tag issuance
+
+RISK:
+Dealer audit exposure
+
+RELATED PROCEDURES:
+RS-31
+
+ESCALATE:
+YES
+
+--------------------------------------------------
+
+ERROR:
+Issuing temp tag without proper title documents
+
+RISK:
+Fraud/compliance exposure
+
+RELATED PROCEDURES:
+RS-31
+
+--------------------------------------------------
+
+ERROR:
+Improper specialty plate processing
+
+RISK:
+Incorrect fee collection
+
+RELATED PROCEDURES:
+RS-22
+RS-27
+
+--------------------------------------------------
+
+ERROR:
+Improper surrendered plate handling
+
+RISK:
+Insurance suspension exposure
+
+RELATED PROCEDURES:
+RS-43
+
+==================================================
+COMMERCIAL / TRUCK ERRORS
+==================================================
+
+ERROR:
+Incorrect GVW declaration
+
+RISK:
+Incorrect taxation / IRP issues
+
+RELATED PROCEDURES:
+RS-45
+
+ESCALATE:
+RECOMMENDED
+
+--------------------------------------------------
+
+ERROR:
+Commercial insurance not verified
+
+RISK:
+Illegal registration issuance
+
+RELATED PROCEDURES:
+RS-33
+
+--------------------------------------------------
+
+ERROR:
+Invalid ACORD certificate
+
+RISK:
+Commercial compliance violation
+
+RELATED PROCEDURES:
+RS-33
+
+--------------------------------------------------
+
+ERROR:
+Missing HVUT proof
+
+RISK:
+Heavy truck registration rejection
+
+RELATED PROCEDURES:
+RS-34
+RS-45
+
+--------------------------------------------------
+
+ERROR:
+Failure to identify IRP requirement
+
+RISK:
+Interstate compliance violation
+
+RELATED PROCEDURES:
+RS-45
+
+ESCALATE:
+YES
+
+==================================================
+DEALERSHIP OPERATIONS ERRORS
+==================================================
+
+ERROR:
+Missing POA documentation
+
+RISK:
+Processing delays
+
+--------------------------------------------------
+
+ERROR:
+Incomplete funding package
+
+RISK:
+Funding delay
+
+--------------------------------------------------
+
+ERROR:
+Unsigned customer paperwork
+
+RISK:
+Contract invalidation
+
+--------------------------------------------------
+
+ERROR:
+Incorrect customer address
+
+RISK:
+Title mailing issues
+
+--------------------------------------------------
+
+ERROR:
+Missing proof of insurance
+
+RISK:
+Registration rejection
+
+RELATED PROCEDURES:
+RS-36
+
+--------------------------------------------------
+
+ERROR:
+Failure to retain supporting documents
+
+RISK:
+Audit exposure
+
+RELATED PROCEDURES:
+TL-62
+
+==================================================
+HIGH-RISK RED FLAGS
+==================================================
+
+RED FLAG:
+Altered title appearance
+
+ACTION:
+Immediate supervisor escalation
+
+--------------------------------------------------
+
+RED FLAG:
+Signature inconsistencies
+
+ACTION:
+Supervisor review
+
+--------------------------------------------------
+
+RED FLAG:
+Customer attempting multiple temp tags
+
+ACTION:
+Compliance review
+
+--------------------------------------------------
+
+RED FLAG:
+Fake or altered insurance cards
+
+ACTION:
+Immediate escalation
+
+--------------------------------------------------
+
+RED FLAG:
+Conflicting ownership claims
+
+ACTION:
+Title supervisor review
+
+==================================================
+SYSTEM PURPOSE
+==================================================
+
+This file exists to:
+- reduce processing errors
+- improve dealership compliance
+- identify operational risk
+- support AI warning systems
+- reduce title rejection rates
+- improve transaction accuracy

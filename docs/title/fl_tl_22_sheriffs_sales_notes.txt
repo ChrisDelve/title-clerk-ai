@@ -1,0 +1,271 @@
+FLORIDA TITLE PROCEDURE — APPLICATION FOR CERTIFICATE OF TITLE FOR A MOTOR VEHICLE PURCHASED FROM A SHERIFF'S SALE
+PROCEDURE: TL-22
+CATEGORY: SHERIFF SALES / OPERATION OF LAW / COURT ORDER TRANSFERS
+RELATED STATUTE:
+- 319.28 FS
+
+==================================================
+PROCEDURE SUMMARY
+==================================================
+
+This procedure governs:
+- Vehicles purchased from sheriff sales
+- Mobile homes purchased from sheriff sales
+- Court-ordered seizure sales
+- Transfers by operation of law
+
+Applies when:
+- Sheriff seizes property under court order
+- Public auction/sheriff sale occurs
+- Purchaser applies for Florida title
+
+==================================================
+AI CLASSIFICATION TAGS
+==================================================
+
+KEYWORDS:
+- sheriff sale
+- writ of execution
+- seized vehicle
+- court ordered sale
+- operation of law
+- sheriff auction
+- forced sale
+- levy sale
+- execution sale
+- title from sheriff sale
+- court seizure
+- judicial sale
+
+COMMON USER QUESTIONS:
+- "Bought at sheriff sale"
+- "Court ordered vehicle sale"
+- "Need title from sheriff"
+- "Writ of execution"
+- "Vehicle seized"
+- "Auction title"
+- "Sheriff bill of sale"
+- "Operation of law transfer"
+
+==================================================
+CORE LEGAL PRINCIPLE
+==================================================
+
+A Writ of Execution authorizes:
+- Sheriff seizure of property
+- Public sale of property
+- Transfer of ownership by court authority
+
+Purchaser must properly retitle vehicle/mobile home after sale.
+
+==================================================
+WRIT OF EXECUTION DEFINITION
+==================================================
+
+A Writ of Execution:
+- Is issued by court
+- Directs sheriff to seize property
+- Allows public sale to satisfy debt
+
+This document is required for title processing.
+
+==================================================
+FLORIDA-TITLED VEHICLE REQUIREMENTS
+==================================================
+
+IF vehicle/mobile home currently titled in Florida:
+
+REQUIRED:
+
+1. HSMV 82040 title application
+2. Original sheriff bill of sale
+3. HSMV 82993 odometer disclosure if applicable
+4. Copy of Writ of Execution
+5. Lien satisfactions if required
+6. Sales tax information
+7. Registration/decal information
+8. Title fees
+
+==================================================
+SHERIFF BILL OF SALE REQUIREMENTS
+==================================================
+
+Bill of sale must contain:
+- Sheriff information
+- Purchaser name
+- Selling price
+- Complete vehicle description
+
+Original required.
+
+==================================================
+ODOMETER REQUIREMENTS
+==================================================
+
+HSMV 82993 required:
+- For vehicles subject to odometer law
+
+Must be completed by:
+- Sheriff
+AND
+- Purchaser
+
+==================================================
+LIEN REQUIREMENTS
+==================================================
+
+Lien satisfactions required:
+- For liens shown on records
+
+IF lien carried forward:
+- Affidavit or lienholder statement required
+
+==================================================
+IMPORTANT LIEN EXCEPTION
+==================================================
+
+IF lien recorded AFTER Writ of Execution issued:
+- Lien satisfaction NOT required
+
+==================================================
+REGISTRATION REQUIREMENTS
+==================================================
+
+Motor vehicles:
+- Plate transfer
+OR
+- New plate
+OR
+- Non-use affidavit
+
+Mobile homes:
+- Decal required
+- Non-use affidavit NOT allowed
+
+==================================================
+OUT-OF-STATE VEHICLE REQUIREMENTS
+==================================================
+
+IF vehicle previously titled out of state:
+
+REQUIRED:
+
+1. VIN verification
+2. Ownership verification
+3. Sheriff sale documents
+4. Writ of Execution
+5. Sales tax
+6. Registration requirements
+7. Fees
+
+==================================================
+VIN VERIFICATION RULES
+==================================================
+
+VIN verification required for:
+- Most out-of-state vehicles
+
+May use:
+- HSMV 82042
+OR
+- VIN section on HSMV 82040
+
+==================================================
+VIN VERIFICATION EXEMPTIONS
+==================================================
+
+VIN verification NOT required for:
+- Mobile homes
+- Trailers under 2,000 lbs
+- Semi-trailers under 2,000 lbs
+- Travel trailers
+- Camping trailers
+- Truck campers
+- Fifth-wheel recreation trailers
+
+==================================================
+OUT-OF-STATE OWNERSHIP PROOF
+==================================================
+
+ACCEPTABLE:
+- Out-of-state title
+- State printout
+- State letter
+- Teletype verification
+- Ownership/lien verification records
+
+==================================================
+DEALER REQUIREMENT
+==================================================
+
+IMPORTANT:
+
+Dealer purchasing from sheriff sale:
+- MUST title vehicle in dealer name first
+
+Cannot:
+- Immediately resell without titling
+
+Applies to:
+- Dealers
+- Individuals
+
+==================================================
+COMMON DEALERSHIP ERRORS
+==================================================
+
+- Missing Writ of Execution
+- Missing sheriff bill of sale
+- Missing odometer disclosure
+- Missing lien satisfaction
+- Missing out-of-state verification
+- Attempting resale before dealer titles vehicle
+- Using non-use affidavit on mobile home
+- Missing VIN verification
+- Accepting incomplete ownership proof
+
+==================================================
+AI RESPONSE GUIDANCE
+==================================================
+
+AI should:
+1. Determine Florida or out-of-state ownership
+2. Verify sheriff sale documentation
+3. Verify Writ of Execution
+4. Verify odometer requirements
+5. Verify lien status
+6. Verify VIN requirements
+7. Verify tax requirements
+8. Verify registration/decal requirements
+9. Verify title fees
+10. Confirm dealer retitling requirements
+
+==================================================
+FORMS REFERENCED
+==================================================
+
+- HSMV 82040
+- HSMV 82042
+- HSMV 82993
+
+==================================================
+RELATED PROCEDURES
+==================================================
+
+- Operation of law procedures
+- Odometer disclosure procedures
+- Out-of-state transfer procedures
+- Lien satisfaction procedures
+
+==================================================
+IMPORTANT OPERATIONAL NOTES
+==================================================
+
+- Sheriff sale transfers ownership by court authority
+- Writ of Execution is critical document
+- Original sheriff bill of sale required
+- Dealer must title before resale
+- Mobile homes cannot use non-use affidavit
+- Out-of-state ownership must be verified
+- Certain liens may not require satisfaction
+- Odometer disclosure rules still apply

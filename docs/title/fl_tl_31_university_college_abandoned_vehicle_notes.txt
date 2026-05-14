@@ -1,0 +1,378 @@
+FLORIDA TITLE PROCEDURE — ABANDONED VEHICLES ON UNIVERSITY OR COLLEGE CAMPUSES
+PROCEDURE: TL-31
+CATEGORY: OPERATION OF LAW / CAMPUS ABANDONED VEHICLES
+RELATED STATUTES:
+- Section 705.18 F.S.
+
+==================================================
+PROCEDURE SUMMARY
+==================================================
+
+This procedure explains:
+- Abandoned vehicles on university campuses
+- Abandoned vehicles on college campuses
+- Disposal authority for state institutions
+- Sale of abandoned campus vehicles
+- Title transfer requirements
+- Operation of law transfers
+
+Applies when:
+- Vehicle abandoned on state university campus
+- Vehicle abandoned on Florida College System campus
+- Vehicle unclaimed by owner
+- Institution disposes of vehicle
+
+==================================================
+AI CLASSIFICATION TAGS
+==================================================
+
+KEYWORDS:
+- university abandoned vehicle
+- college abandoned vehicle
+- campus vehicle
+- abandoned campus car
+- operation of law
+- school vehicle auction
+- university title transfer
+- college title transfer
+- campus tow vehicle
+- abandoned property on campus
+
+COMMON USER QUESTIONS:
+- "Vehicle abandoned at college"
+- "University sold abandoned vehicle"
+- "Campus auction title"
+- "How to title abandoned college vehicle"
+- "Operation of law university vehicle"
+
+==================================================
+GENERAL PROCESS FLOW
+==================================================
+
+1. Vehicle found abandoned on campus
+2. University/college records finding date
+3. Waiting period expires
+4. Institution disposes/sells vehicle
+5. Purchaser applies for title
+
+==================================================
+VERY IMPORTANT 30-DAY RULE
+==================================================
+
+Vehicle:
+- Must remain unclaimed
+for minimum:
+- 30 days after found
+
+==================================================
+LONGER HOLD RULE
+==================================================
+
+University/college president or designee:
+May extend holding period if necessary.
+
+==================================================
+VERY IMPORTANT OWNER RECLAIM RULE
+==================================================
+
+Owner may reclaim vehicle:
+- Any time before sale
+
+==================================================
+GENERAL DOCUMENT REQUIREMENTS
+==================================================
+
+Usually required:
+- HSMV 82040 MV/MH/VS
+OR
+- HSMV 82041 (older transitional usage)
+- Bill of sale
+- Lien satisfactions
+- Sales tax handling
+- Plate/decal handling
+- Title fees
+
+==================================================
+VERY IMPORTANT FORM UPDATE RULE
+==================================================
+
+As of July 1, 2023:
+HSMV 82040 split into:
+- HSMV 82040 MV
+- HSMV 82040 VS
+- HSMV 82040 MH
+
+==================================================
+FORM TYPE LOGIC
+==================================================
+
+HSMV 82040 MV:
+Used for:
+- Autos
+- Trucks
+- Motorcycles
+- Buses
+- Travel trailers
+- Vehicle trailers
+- Off-highway vehicles
+- Tools
+
+HSMV 82040 VS:
+Used for:
+- Vessels only
+
+HSMV 82040 MH:
+Used for:
+- Mobile homes only
+
+==================================================
+VERY IMPORTANT 2024 RULE
+==================================================
+
+Effective January 1, 2024:
+Old combined HSMV 82040:
+- No longer accepted
+for motor vehicles/mobile homes.
+
+==================================================
+FLORIDA TITLE RECORD REQUIREMENTS
+==================================================
+
+If vehicle currently titled in Florida:
+Need:
+- HSMV 82040 or approved equivalent
+- Bill of sale
+- Lien satisfactions
+- Sales tax handling
+- Plate/non-use handling
+- Title fees
+
+==================================================
+BILL OF SALE REQUIREMENTS
+==================================================
+
+Bill of sale must come from:
+- University president
+OR
+- College president
+OR
+- Official designee
+
+==================================================
+VERY IMPORTANT DESIGNEE RULE
+==================================================
+
+If designee signs:
+Need:
+- Letter of appointment
+from president.
+
+==================================================
+BILL OF SALE CONTENT REQUIREMENTS
+==================================================
+
+Must include:
+- Selling price
+- Complete vehicle description
+- Vehicle identifying information
+
+==================================================
+LIEN SATISFACTION REQUIREMENTS
+==================================================
+
+Need lien satisfactions for:
+- Florida liens
+- Out-of-state liens
+
+==================================================
+SALES TAX REQUIREMENTS
+==================================================
+
+Need:
+- Florida sales tax
+OR
+- Sales tax exemption information
+
+==================================================
+PLATE / NON-USE RULES
+==================================================
+
+Need:
+- Florida plate transfer/purchase
+OR
+- Non-use affidavit
+
+==================================================
+MOBILE HOME RULE
+==================================================
+
+For mobile homes:
+Need:
+- Mobile home decal
+OR
+- RP decal
+
+Non-use affidavit:
+- NOT acceptable
+
+==================================================
+VERY IMPORTANT DEALER RULE
+==================================================
+
+If dealer/individual purchases:
+- Vehicle obtained through operation of law
+AND
+- No negotiable title exists
+
+Then:
+Certificate of title MUST issue:
+- In purchaser name first
+before resale.
+
+==================================================
+OUT-OF-STATE TITLE REQUIREMENTS
+==================================================
+
+If vehicle previously titled out of state:
+Need:
+- HSMV 82042
+OR
+- VIN verification on HSMV 82040
+
+==================================================
+ALTERNATIVE VIN VERIFICATION RULE
+==================================================
+
+Instead of HSMV 82042:
+May submit affidavit from:
+- Seller
+AND
+- Purchaser
+
+Affidavit must confirm:
+- VIN on documents matches vehicle
+
+==================================================
+VIN VERIFICATION EXEMPTIONS
+==================================================
+
+Verification NOT required for:
+- Mobile homes
+- Trailers under 2,000 lbs
+- Travel trailers
+- Camping trailers
+- Truck campers
+- Fifth-wheel recreational trailers
+
+==================================================
+OUT-OF-STATE OWNERSHIP VERIFICATION
+==================================================
+
+Need ownership/lien verification from previous state.
+
+==================================================
+ACCEPTABLE OWNERSHIP VERIFICATION
+==================================================
+
+Acceptable proof:
+- Computer printout
+- State agency letter
+- Teletype printout
+- Photocopy of title
+
+==================================================
+UNKNOWN STATE RULE
+==================================================
+
+If previous state unknown:
+Need affidavit from:
+- University president
+OR
+- Designee
+
+Affidavit must state:
+- Previous registration state unknown
+
+==================================================
+EXHIBIT A CHECKLIST SUMMARY
+==================================================
+
+Checklist includes:
+- HSMV 82040 or HSMV 82041
+- HSMV 82042
+- Ownership/lien verification
+- Bill of sale
+- Letter of appointment (if needed)
+- Lien satisfactions
+- Sales tax handling
+- Plate/non-use handling
+- Title fees
+
+==================================================
+AI DECISION LOGIC
+==================================================
+
+AI should determine:
+1. Florida or out-of-state title?
+2. 30-day holding period met?
+3. Owner reclaimed vehicle?
+4. President or designee signed?
+5. Letter of appointment needed?
+6. VIN verification required?
+7. Ownership verification present?
+8. Lien satisfactions included?
+9. Dealer operation-of-law issue involved?
+10. Mobile home rules applicable?
+11. Sales tax handled properly?
+12. Plate/decal requirements met?
+
+==================================================
+COMMON TITLE CLERK ERRORS
+==================================================
+
+- Missing bill of sale
+- Missing president authorization
+- Missing appointment letter
+- Missing VIN verification
+- Missing out-of-state ownership verification
+- Missing lien satisfactions
+- Missing sales tax handling
+- Missing title fees
+- Missing non-use affidavit
+- Dealer skipping retitle requirement
+
+==================================================
+IMPORTANT OPERATIONAL NOTES
+==================================================
+
+Campus abandoned vehicle titles are:
+- Operation-of-law transactions
+- Documentation-sensitive
+- Authorization-sensitive
+
+Most common rejection reasons:
+- Missing appointment letter
+- Missing ownership verification
+- Missing VIN verification
+- Missing lien satisfaction
+- Improper form usage
+- Missing operation-of-law title issuance
+
+==================================================
+RELATED FORMS
+==================================================
+
+- HSMV 82040 MV
+- HSMV 82040 VS
+- HSMV 82040 MH
+- HSMV 82041
+- HSMV 82042
+
+==================================================
+RELATED PROCEDURES
+==================================================
+
+- Operation of law title transfers
+- Abandoned property procedures
+- Law enforcement title procedures
+- Public auction title procedures

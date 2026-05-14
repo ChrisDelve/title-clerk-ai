@@ -1,0 +1,508 @@
+FLORIDA TITLE PROCEDURE — RETIREMENT OR REINSTATEMENT OF MOBILE HOME CERTIFICATE OF TITLE
+PROCEDURE: TL-39
+CATEGORY: MOBILE HOME TITLE RETIREMENT / REINSTATEMENT
+
+==================================================
+PROCEDURE SUMMARY
+==================================================
+
+This procedure governs:
+- Retirement of mobile home titles
+- Reinstatement of retired mobile home titles
+- Permanently affixed mobile homes
+- Real property conversion
+- Mobile home deed conversion
+- RP decal requirements
+- Clerk of Court recording requirements
+- Mobile home lien handling
+- Retired title processing
+- Reinstated title processing
+
+Applies to:
+- Mobile homes
+- Double wide homes
+- Triple wide homes
+- Mobile home owners
+- Tax collectors
+- License plate agencies
+- FLHSMV
+
+==================================================
+AI CLASSIFICATION TAGS
+==================================================
+
+KEYWORDS:
+- retired mobile home title
+- mobile home retirement
+- reinstate mobile home title
+- RP decal
+- permanently affixed
+- mobile home deed conversion
+- mobile home real property
+- HSMV 82109
+- retired title
+- mobile home affidavit
+- clerk of court recording
+- mobile home lien satisfaction
+- mobile home real estate conversion
+
+COMMON USER QUESTIONS:
+- "How do I retire a mobile home title?"
+- "What is an RP decal?"
+- "Can mobile home become real property?"
+- "How do I reinstate retired mobile home title?"
+- "What documents required for retirement?"
+- "Can double wide title be retired?"
+- "Can modular home title be retired?"
+- "What if title missing?"
+- "Do liens need satisfied?"
+- "What if mobile home moved later?"
+
+==================================================
+VERY IMPORTANT LEGAL RULE
+==================================================
+
+Mobile home title may be retired ONLY when:
+- Mobile home permanently affixed
+AND
+- Owner owns real property.
+
+==================================================
+VERY IMPORTANT LEASE RULE
+==================================================
+
+Leased property qualifies ONLY if:
+- Lease term is 30 years or more.
+
+==================================================
+VERY IMPORTANT OWNERSHIP RULE
+==================================================
+
+Mobile home title MUST already be:
+- In same owner name
+as:
+- Real property owner
+
+BEFORE:
+- Title retirement allowed.
+
+==================================================
+VERY IMPORTANT TITLE-FIRST RULE
+==================================================
+
+If customer buys mobile home intending retirement:
+Customer MUST:
+- First obtain title and registration
+in their name
+BEFORE:
+- Retirement processing.
+
+==================================================
+VERY IMPORTANT RP DECAL RULE
+==================================================
+
+RP decal MUST be issued:
+BEFORE:
+- Retiring title.
+
+==================================================
+VERY IMPORTANT REAL PROPERTY RULE
+==================================================
+
+Once title retired:
+Mobile home transfers:
+- By deed
+OR
+- Real estate contract
+
+Together with:
+- Real property.
+
+==================================================
+VERY IMPORTANT LIEN RULE
+==================================================
+
+After retirement:
+Separate mobile home lien:
+- No longer exists.
+
+Security interest only exists through:
+- Mortgage
+OR
+- Deed of trust
+on real property.
+
+==================================================
+VERY IMPORTANT RETIREMENT FEE RULE
+==================================================
+
+NO:
+- Retirement fee
+OR
+- Service charge
+for retirement transaction.
+
+==================================================
+REQUIRED DOCUMENTS — TITLE RETIREMENT
+==================================================
+
+Need:
+1. Original HSMV 82109
+2. Recorded title copies
+3. Lien satisfaction or lienholder release
+4. Legal description
+5. Lease agreement if leased property
+6. Sworn owner statement
+
+==================================================
+VERY IMPORTANT DOUBLE/TRIPLE WIDE RULE
+==================================================
+
+Double/triple wide homes:
+Require:
+- Separate HSMV 82109
+for EACH unit.
+
+==================================================
+VERY IMPORTANT AND-OWNER RULE
+==================================================
+
+If ownership joined by:
+- AND
+
+ALL owners must sign:
+- HSMV 82109.
+
+==================================================
+VERY IMPORTANT RECORDING RULE
+==================================================
+
+Required documents MUST first be:
+- Recorded with Clerk of Court
+
+BEFORE:
+- Submission to FLHSMV.
+
+==================================================
+VERY IMPORTANT ACCEPTABLE RECORDING RULE
+==================================================
+
+Copies must show:
+- Clerk received stamp
+OR
+- Certified copy
+OR
+- ERecord stamp.
+
+==================================================
+TITLE COPY REQUIREMENT
+==================================================
+
+Need:
+- Copy of title in owner name.
+
+Original title:
+- Must be recorded with Clerk of Court.
+
+==================================================
+LIEN SATISFACTION RULE
+==================================================
+
+If lien shown:
+Need:
+- Lien satisfaction
+OR
+- Lienholder statement agreeing release upon retirement.
+
+==================================================
+VERY IMPORTANT LIEN EXCEPTION
+==================================================
+
+If lien satisfied directly on title:
+Separate lien satisfaction:
+- NOT required.
+
+==================================================
+VERY IMPORTANT LEGAL DESCRIPTION RULE
+==================================================
+
+Need:
+- Legal description of real property.
+
+May use:
+- Tax bill
+- Warranty deed
+- Simple legal description statement
+
+==================================================
+VERY IMPORTANT LEASE COPY RULE
+==================================================
+
+If property leased:
+Need:
+- Copy of lease agreement
+
+Lease must be:
+- 30 years or longer.
+
+==================================================
+VERY IMPORTANT SWORN STATEMENT RULE
+==================================================
+
+Need sworn statement confirming:
+- Applicant owns real property
+AND
+- Mobile home permanently affixed.
+
+==================================================
+VERY IMPORTANT SYSTEM LETTER RULE
+==================================================
+
+System generates:
+- Correspondence letter
+
+Serves as:
+- Proof title retired.
+
+==================================================
+REINSTATEMENT RULE
+==================================================
+
+If mobile home later removed from property:
+Retired title may be:
+- Reinstated.
+
+==================================================
+VERY IMPORTANT REINSTATEMENT TRANSACTION RULE
+==================================================
+
+Reinstatement processed as:
+- ORIGINAL transaction.
+
+Previous state must show:
+- FL.
+
+==================================================
+REQUIRED DOCUMENTS — REINSTATEMENT
+==================================================
+
+Need:
+1. HSMV 82040 MH
+2. Removal consent affidavit
+3. Title company certification
+4. Decal fees
+5. Title fees
+
+==================================================
+VERY IMPORTANT REINSTATEMENT AFFIDAVIT RULE
+==================================================
+
+Affidavit must be signed by:
+- Property owner
+- Secured parties
+- Lienholders
+
+Consenting to:
+- Removal of mobile home.
+
+==================================================
+VERY IMPORTANT TITLE COMPANY RULE
+==================================================
+
+Need title company certification listing:
+- Owners
+- Secured parties
+- Lienholders
+
+Certification must be dated:
+- Within 10 days of application.
+
+==================================================
+VERY IMPORTANT CANCELLATION CODE RULE
+==================================================
+
+To retire title:
+Use:
+- Cancellation of Title transaction
+
+Reason code:
+- TM (Retirement of Mobile Home)
+
+==================================================
+VERY IMPORTANT DEALER FAILURE RULE
+==================================================
+
+If dealer closed/suspended before applying for title:
+Customer MUST:
+- Obtain title first
+using:
+- Operation of law process
+
+BEFORE:
+- Retirement.
+
+==================================================
+VERY IMPORTANT OPERATION OF LAW RULE
+==================================================
+
+Operation of law examples:
+- Deceased owner
+- Towing/storage
+- Estate situations
+
+Customer MUST:
+- Obtain title first
+BEFORE:
+- Retirement.
+
+==================================================
+VERY IMPORTANT MISSING TITLE RULE
+==================================================
+
+If one title missing on double/triple wide:
+Need:
+- Duplicate title first
+
+BEFORE:
+- Retirement processing.
+
+==================================================
+VERY IMPORTANT ORIGINAL TITLE RULE
+==================================================
+
+If Clerk returns original title:
+Agency should:
+- Retain original title
+- Send to FLHSMV
+
+If already processed:
+- Shred original title.
+
+==================================================
+VERY IMPORTANT DEALER APPLICATION RULE
+==================================================
+
+Selling dealer MUST:
+- Apply for title on behalf of customer.
+
+==================================================
+VERY IMPORTANT SAME-DAY RP DECAL RULE
+==================================================
+
+If property appraiser confirms:
+- Real property classification
+
+RP decal may issue:
+- Same day.
+
+==================================================
+VERY IMPORTANT FUTURE REAL PROPERTY RULE
+==================================================
+
+If property becomes real property NEXT year:
+Must first issue:
+- Regular mobile home decal.
+
+==================================================
+VERY IMPORTANT TOTAL LOSS RULE
+==================================================
+
+If retired mobile home later total loss:
+Customer MUST:
+- Obtain valid title again
+BEFORE:
+- Signing over to insurance company.
+
+==================================================
+VERY IMPORTANT BODY TYPE RULE
+==================================================
+
+ONLY body type:
+- HS
+
+May be retired.
+
+==================================================
+VERY IMPORTANT NON-ELIGIBLE TYPES RULE
+==================================================
+
+Cannot retire:
+- PT (Park Trailer)
+- MD (Modular/Manufactured Building)
+
+==================================================
+VERY IMPORTANT SUBMISSION RULE
+==================================================
+
+HSMV 82109 and supporting documents:
+MUST be submitted to:
+- FLHSMV.
+
+==================================================
+AI DECISION LOGIC
+==================================================
+
+AI should determine:
+1. Is mobile home permanently affixed?
+2. Does applicant own real property?
+3. Is lease term 30+ years?
+4. Is title already in applicant name?
+5. Was RP decal issued?
+6. Are all units included?
+7. Are all owners signing?
+8. Were documents recorded with Clerk?
+9. Is lien satisfied/released?
+10. Is legal description included?
+11. Is sworn statement included?
+12. Is reinstatement being requested?
+13. Is title company certification current?
+14. Is body type eligible?
+15. Is duplicate title needed first?
+
+==================================================
+COMMON TITLE CLERK ERRORS
+==================================================
+
+- Attempting retirement before title transfer
+- Missing RP decal
+- Missing recorded documents
+- Missing lien release
+- Missing unit title on double/triple wide
+- Incorrect body type
+- Missing sworn affidavit
+- Missing legal description
+- Accepting short-term lease
+- Incorrect reinstatement transaction type
+- Missing title company certification
+- Forgetting previous state FL
+
+==================================================
+RELATED FORMS
+==================================================
+
+- HSMV 82109
+- HSMV 82040 MH
+- HSMV 82040 MV
+- HSMV 82040 VS
+
+==================================================
+RELATED PROCEDURES
+==================================================
+
+- TL-05 Duplicate Titles
+- TL-11 Mobile Home Transfers
+- TL-18 Operation of Law
+- TL-36 Total Loss Settlements
+
+==================================================
+REFERENCE NOTES
+==================================================
+
+Current revision:
+- 06/26/2023
+
+Reason code:
+- TM (Retirement of Mobile Home)
+
+Eligible body type:
+- HS only

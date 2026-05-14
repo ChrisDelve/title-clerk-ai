@@ -1,0 +1,393 @@
+FLORIDA REGISTRATION PROCEDURE — CERTIFIED COPIES FOR U.S. CUSTOMS
+PROCEDURE: RS-57
+CATEGORY: TITLE RECORDS / EXPORT DOCUMENTS / CERTIFIED COPIES / U.S. CUSTOMS
+
+==================================================
+PROCEDURE SUMMARY
+==================================================
+
+This procedure governs:
+- Certified copies for exported vehicles
+- Certified title copy requests
+- Certified computer-generated vehicle record printouts
+- U.S. Customs ownership documentation
+- Export ownership verification
+- Apostille processing guidance
+- Vehicle export document requests
+- Bureau of Records processing
+- Certified ownership printouts
+- Records request procedures
+
+Applies to:
+- Vehicle owners
+- Exporters
+- Leasing companies
+- Lienholders
+- Tax collectors
+- License plate agents
+- FLHSMV personnel
+- U.S. Customs documentation requests
+
+==================================================
+AI CLASSIFICATION TAGS
+==================================================
+
+KEYWORDS:
+- certified copy for customs
+- certified title copy
+- U.S. Customs export
+- export title documentation
+- certified vehicle record
+- computer-generated printout
+- HSMV 90510
+- Motor Vehicle Records Request
+- apostille
+- Hague Convention apostille
+- Bureau of Records
+- export vehicle ownership
+- certified ownership printout
+- leased vehicle export
+- lienholder title export
+- customs ownership proof
+- export documentation
+- certified title request
+- vehicle export paperwork
+- title record certification
+- mail stop 57
+- certified printout fee
+- certified title fee
+- Department of State apostille
+- foreign export documentation
+- exported motor vehicle
+- VIN request
+- ownership indicia
+- odometer statement retention
+- supporting title documents
+- title archive retention
+- certified FLHSMV records
+- vehicle export compliance
+- embassy legalization
+- apostille certification
+- customs certified copy
+- exported leased vehicle
+- title printout certification
+- FLHSMV Bureau of Records
+- certified record mailing
+- vehicle customs release
+- title copy request letter
+- Florida vehicle export
+- records request processing
+- vehicle ownership certification
+
+COMMON USER QUESTIONS:
+- "How do I get a certified title copy?"
+- "What documents are needed for vehicle export?"
+- "How much is a certified title copy?"
+- "Can I request a certified computer printout?"
+- "What form is required?"
+- "Where do requests get mailed?"
+- "How long does processing take?"
+- "What is an apostille?"
+- "How do I get an apostille?"
+- "Can leased vehicles use certified copies?"
+- "Can lienholders keep original title?"
+- "What if request is mailed to wrong office?"
+- "Do I need VIN included?"
+- "What fees apply?"
+- "How long are title records retained?"
+
+==================================================
+LEGAL AUTHORITY
+==================================================
+
+Governed by:
+- 319.23(12) FS
+- 320.05(3)(a) FS
+- 320.05(3)(b) FS
+
+==================================================
+DESCRIPTION AND USE
+==================================================
+
+Procedure explains:
+- Certified copy issuance
+- Export ownership documentation
+- U.S. Customs support procedures
+- Apostille guidance
+- Fee and request processing
+
+==================================================
+VERY IMPORTANT CORE RULE
+==================================================
+
+Certified copies of Florida motor vehicle records:
+May be issued:
+For motor vehicles being exported:
+Outside the United States.
+
+==================================================
+VERY IMPORTANT RECORD RETENTION RULE
+==================================================
+
+FLHSMV:
+Retains:
+Titles, MSOs, applications, supporting documents,
+and ownership records:
+For minimum:
+10 years.
+
+==================================================
+COMMON EXPORT USE RULE
+==================================================
+
+Certified copies commonly used:
+For:
+- leased vehicles
+- vehicles with lienholder-held titles
+- export ownership verification
+- vehicle shipping documentation.
+
+==================================================
+APPLICATION REQUIREMENTS
+==================================================
+
+Customer must submit:
+- request letter
+OR
+- HSMV 90510.
+
+==================================================
+VERY IMPORTANT VIN RULE
+==================================================
+
+Request must include:
+Vehicle Identification Number (VIN).
+
+==================================================
+REQUEST MAILING ADDRESS
+==================================================
+
+Florida Highway Safety and Motor Vehicles
+Division of Motorist Services
+Bureau of Records Mail Stop #57
+2900 Apalachee Parkway
+Tallahassee FL 32399-0500
+
+==================================================
+REQUEST LETTER RULE
+==================================================
+
+Request letter:
+Must specify:
+Customer request details.
+
+==================================================
+VERY IMPORTANT HSMV 90510 RULE
+==================================================
+
+Customer may alternatively submit:
+HSMV 90510:
+Motor Vehicle, Vessel and Mobile Home Records Request.
+
+==================================================
+FEE RULES
+==================================================
+
+Certified copy of original title:
+$3.00.
+
+==================================================
+VERY IMPORTANT COMPUTER PRINTOUT RULE
+==================================================
+
+Certified computer-generated printout:
+Fee:
+$0.50:
+For printout
+PLUS
+$3.00:
+Certification fee.
+
+==================================================
+VERY IMPORTANT MISSING FEE RULE
+==================================================
+
+If request submitted:
+Without proper fees:
+FLHSMV mails notice:
+Requesting correct fees.
+
+==================================================
+VERY IMPORTANT WRONG OFFICE RULE
+==================================================
+
+Requests received:
+In wrong office:
+Will be forwarded:
+To correct office.
+
+Processing may be delayed.
+
+==================================================
+VERY IMPORTANT PHONE CALL RULE
+==================================================
+
+Department phone inquiries:
+Forwarded:
+To appropriate office.
+
+==================================================
+PROCESSING TIME RULE
+==================================================
+
+Certified computer-generated printout:
+Processed:
+Within approximately:
+Two weeks.
+
+==================================================
+APOSTILLE RULES
+==================================================
+
+Customers requiring apostille:
+Must apply:
+Through Department of State:
+Division of Notaries.
+
+==================================================
+VERY IMPORTANT APOSTILLE FEE RULE
+==================================================
+
+Apostille fee:
+$20.00:
+Per page.
+
+==================================================
+VERY IMPORTANT APOSTILLE PAYMENT RULE
+==================================================
+
+Checks/money orders:
+For apostille:
+Must be payable to:
+Department of State.
+
+==================================================
+VERY IMPORTANT APOSTILLE LINK RULE
+==================================================
+
+Apostille instructions:
+Available at:
+http://notaries.dos.state.fl.us/notproc7.html
+
+==================================================
+DEFINITION — APOSTILLE
+==================================================
+
+Apostille:
+Simplified certification:
+Issued by Secretary of State:
+For documents used internationally
+under Hague Convention countries.
+
+==================================================
+VERY IMPORTANT HAGUE CONVENTION RULE
+==================================================
+
+Apostille:
+Recognized:
+Without additional embassy legalization:
+In participating Hague Convention countries.
+
+==================================================
+AI DECISION LOGIC
+==================================================
+
+AI should determine:
+1. Is vehicle being exported?
+2. Is certified title copy or printout requested?
+3. Is HSMV 90510 attached?
+4. Does request include VIN?
+5. Is request letter acceptable?
+6. Are proper fees included?
+7. Is original title held by lienholder?
+8. Is leased vehicle involved?
+9. Is apostille required?
+10. Is Department of State processing required?
+11. Is apostille fee applicable?
+12. Is customer using Hague Convention country?
+13. Was request mailed to correct office?
+14. Is processing timeline explained?
+15. Was missing fee notice triggered?
+16. Is certified printout sufficient?
+17. Is certified original title copy required?
+18. Are title records retained under statute?
+19. Is export ownership proof adequate?
+20. Is Bureau of Records handling correct?
+
+==================================================
+COMMON TITLE CLERK / RECORDS ERRORS
+==================================================
+
+- Missing VIN on request
+- Missing required fees
+- Sending request to incorrect office
+- Using uncertified copy for customs
+- Confusing certified title copy vs printout
+- Missing HSMV 90510
+- Incorrect apostille guidance
+- Incorrect apostille fee explanation
+- Failing to explain Hague Convention use
+- Missing lienholder/export explanation
+- Missing leased vehicle documentation guidance
+- Incorrect processing time communication
+- Accepting incomplete request letters
+- Improper ownership proof assumptions
+- Missing Bureau of Records routing
+
+==================================================
+VERY IMPORTANT CORE CONCEPT
+==================================================
+
+Florida certified copy procedures for U.S. Customs:
+Provide legally certified ownership documentation
+for exported motor vehicles,
+while enforcing:
+- VIN-based records requests
+- fee requirements
+- records certification standards
+- apostille processing guidance
+- long-term document retention
+and international ownership verification support.
+
+==================================================
+RELATED FORMS
+==================================================
+
+- HSMV 90510
+
+==================================================
+RELATED ENTITIES
+==================================================
+
+- FLHSMV
+- Division of Motorist Services
+- Bureau of Records
+- U.S. Customs
+- Department of State
+- Division of Notaries
+- Lienholders
+- Leasing Companies
+
+==================================================
+REFERENCE NOTES
+==================================================
+
+Current revision:
+06/28/2022
+
+Primary focus:
+- Certified title copies
+- Export ownership documentation
+- Apostille guidance
+- U.S. Customs support
+- Certified vehicle record requests

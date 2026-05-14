@@ -1,0 +1,678 @@
+FLORIDA REGISTRATION PROCEDURE — INITIAL REGISTRATION FEE (IRF)
+PROCEDURE: RS-30
+CATEGORY: INITIAL REGISTRATION FEE / IRF EXEMPTIONS / LICENSE PLATE TRANSFERS
+
+==================================================
+PROCEDURE SUMMARY
+==================================================
+
+This procedure governs:
+- Initial Registration Fee (IRF)
+- IRF exemption processing
+- IRF affidavit requirements
+- Prior registration exemptions
+- Immediate family exemptions
+- Military exemptions
+- Operation of law exemptions
+- Court order exemptions
+- Trust and entity IRF handling
+- IRF refunds
+- Customer stop IRF rules
+- IRF supporting documentation retention
+
+Applies to:
+- Florida vehicle owners
+- Military members
+- Dependents of military members
+- Trusts
+- Businesses
+- Tax collectors
+- License plate agencies
+- FLHSMV personnel
+
+==================================================
+AI CLASSIFICATION TAGS
+==================================================
+
+KEYWORDS:
+- IRF
+- Initial Registration Fee
+- $225 IRF
+- HSMV 82002
+- IRF exemption affidavit
+- prior registration exemption
+- operation of law exemption
+- immediate family exemption
+- military exemption
+- court order exemption
+- trust IRF
+- beneficial use affidavit
+- customer stop IRF
+- original registration fee
+- Florida license plate transfer
+- IRF refund
+- non resident military exemption
+- RS-07
+- RS-50
+- RS-65
+- TL-62
+- operation of law title transfer
+- divorce decree exemption
+- inheritance exemption
+- repossession exemption
+- fictitious name exemption
+- corporate name change exemption
+- HSMV 82040
+- HSMV 82050
+- trust flag
+- military orders exemption
+- DD214 exemption
+- MIA exemption
+- disabled veteran IRF exemption
+- exempt class code IRF
+- class code 95 exemption
+- class code 96 exemption
+- demonstrator IRF exemption
+- goat vehicle exemption
+- governmental vehicle exemption
+- temporary employed plate exemption
+- co-owner exemption
+- beneficial use statement
+- registration only exemption
+
+COMMON USER QUESTIONS:
+- "When is the $225 IRF charged?"
+- "How do I avoid the IRF?"
+- "What vehicles are exempt?"
+- "What is prior registration exemption?"
+- "Do military members pay IRF?"
+- "What forms are required?"
+- "What is operation of law?"
+- "Can family transfers avoid IRF?"
+- "Does a trust pay IRF?"
+- "Can IRF be refunded?"
+- "What happens with expired plates?"
+- "What is beneficial use affidavit?"
+- "Can disabled veterans avoid IRF?"
+- "What if customer stop exists?"
+- "What records must be retained?"
+
+==================================================
+LEGAL AUTHORITY
+==================================================
+
+Governed by:
+- 320.072 FS
+- 320.06 FS
+- 320.08 FS
+- 319.28 FS
+- 657.002(8) FS
+- 865.09 FS
+
+==================================================
+DESCRIPTION AND USE
+==================================================
+
+Procedure explains:
+- Collection of $225 Initial Registration Fee
+- Exemptions from IRF
+- Required affidavits and proof
+- Refund eligibility
+- Exception scenarios
+
+==================================================
+VERY IMPORTANT CORE RULE
+==================================================
+
+$225 Initial Registration Fee:
+Required:
+When owner:
+Does NOT have:
+Florida license plate:
+To transfer:
+From previously owned vehicle.
+
+==================================================
+VERY IMPORTANT IRF AMOUNT RULE
+==================================================
+
+IRF amount:
+$225.
+
+==================================================
+CLASS CODE EXEMPTIONS
+==================================================
+
+IRF exempt class codes include:
+09, 14, 36, 37, 39, 41, 42 (Motor Coach),
+46, 50, 51, 53, 54, 56, 62, 65, 69,
+70, 71, 76, 77, 78, 80, 83,
+91, 92, 93, 94, 95, 96, 97.
+
+==================================================
+VERY IMPORTANT CLASS CODE 91/95 RULE
+==================================================
+
+Class code 91 or 95:
+IRF exempt ONLY IF:
+Vehicle:
+30 years old or older.
+
+==================================================
+VERY IMPORTANT PRIVATE MOTOR COACH RULE
+==================================================
+
+Private motor coach:
+Class code 42:
+IRF exempt.
+
+==================================================
+VERY IMPORTANT MOTORCYCLE RULE
+==================================================
+
+IRF NOT required:
+On:
+- Motorcycles
+- Mopeds
+- Disability access vehicles
+
+==================================================
+HSMV 82002 RULE
+==================================================
+
+Most IRF exemptions require:
+HSMV 82002:
+IRF Exemption Affidavit.
+
+==================================================
+VERY IMPORTANT RETENTION RULE
+==================================================
+
+HSMV 82002:
+And supporting documents:
+Must retain:
+Minimum one year.
+
+==================================================
+VERY IMPORTANT TL-62 RULE
+==================================================
+
+Retention procedures:
+Governed by:
+TL-62.
+
+==================================================
+PRIOR REGISTRATION EXEMPTION
+==================================================
+
+IRF exempt:
+If customer provides:
+Proof of prior Florida registration.
+
+==================================================
+VERY IMPORTANT PRIOR REGISTRATION RULE
+==================================================
+
+Issuance system:
+Must use:
+Exemption reason:
+"prior registration"
+
+==================================================
+VERY IMPORTANT LICENSE PLATE ENTRY RULE
+==================================================
+
+Prior plate number:
+Must enter:
+In issuance system prior registration field.
+
+==================================================
+VERY IMPORTANT OVERRIDE RULE
+==================================================
+
+If override required:
+Contact:
+Field Support Center.
+
+==================================================
+TRANSFER BACK RULE
+==================================================
+
+If plate transferred:
+Between exempt and non-exempt categories:
+Customer may still qualify:
+When transferring back.
+
+==================================================
+OPERATION OF LAW EXEMPTION
+==================================================
+
+Operation of law examples:
+- Inheritance
+- Bankruptcy
+- Insolvency
+- Replevin
+- Divorce decree
+- Judicial sale
+- Repossession
+- Storage lien sale
+
+==================================================
+VERY IMPORTANT DIVORCE RULE
+==================================================
+
+If divorce decree awards vehicle:
+IRF exempt:
+Even if recipient:
+Not previously on registration.
+
+==================================================
+VERY IMPORTANT NON-AWARDED DIVORCE RULE
+==================================================
+
+If decree does NOT award vehicle:
+And title transferred:
+To person not on registration:
+IRF due.
+
+==================================================
+IMMEDIATE FAMILY EXEMPTION
+==================================================
+
+Immediate family transfers:
+IRF exempt.
+
+==================================================
+VERY IMPORTANT IMMEDIATE FAMILY DEFINITION RULE
+==================================================
+
+Immediate family includes:
+- Parents
+- Children
+- Spouse
+- Surviving spouse
+- Stepchildren
+- Blood relatives
+- Relatives by marriage
+- Adopted relatives
+
+==================================================
+VERY IMPORTANT SAME HOUSEHOLD RULE
+==================================================
+
+Immediate family exemption:
+Requires:
+Same household address:
+In issuance system.
+
+==================================================
+MILITARY EXEMPTIONS
+==================================================
+
+Military exemptions apply to:
+- Nonresident active-duty military
+- Spouses
+- Dependent children
+- Certain former military members
+- Certain survivors
+
+==================================================
+VERY IMPORTANT NONRESIDENT MILITARY RULE
+==================================================
+
+Nonresident military stationed in Florida:
+IRF exempt.
+
+==================================================
+VERY IMPORTANT MILITARY DOCUMENT RULE
+==================================================
+
+Require:
+- Military orders
+AND
+- Driver license
+
+==================================================
+VERY IMPORTANT FLORIDA RESIDENT MILITARY RULE
+==================================================
+
+Florida resident military:
+Stationed outside Florida:
+May qualify for IRF exemption.
+
+==================================================
+VERY IMPORTANT DD214 RULE
+==================================================
+
+Former military member exemption:
+Requires:
+DD214 discharge document.
+
+==================================================
+VERY IMPORTANT SIX MONTH RULE
+==================================================
+
+Former service member:
+Must register vehicle:
+Within 6 months after discharge.
+
+==================================================
+VERY IMPORTANT MIA/DEATH RULE
+==================================================
+
+Spouse/dependent:
+Of deceased or MIA service member:
+May qualify:
+Within one year.
+
+==================================================
+COURT ORDER EXEMPTION
+==================================================
+
+Court order ownership awards:
+IRF exempt.
+
+==================================================
+VERY IMPORTANT COURT ORDER RULE
+==================================================
+
+Require:
+Copy of court order retained:
+Minimum one year.
+
+==================================================
+FICTITIOUS NAME EXEMPTION
+==================================================
+
+Name changes:
+Using fictitious/corporate name filings:
+IRF exempt.
+
+==================================================
+VERY IMPORTANT ADMINISTRATIVE EXEMPTION RULE
+==================================================
+
+Issuance system exemption reason:
+"administrative"
+
+==================================================
+EXEMPTIONS NOT REQUIRING HSMV 82002
+==================================================
+
+No affidavit required for:
+- Registration renewals
+- Co-owner title transfers
+- Manufacturer demonstrators
+- 90-day temporary employed plates
+- Non-operational transferred registrations
+- Government-owned vehicles
+- Goat vehicles
+- Certain exempt plate owners
+
+==================================================
+VERY IMPORTANT CO-OWNER RULE
+==================================================
+
+Joint ownership transfer:
+To original co-owner:
+IRF exempt.
+
+==================================================
+VERY IMPORTANT NON-OPERATIONAL RULE
+==================================================
+
+IRF exempt:
+If transferred plate from vehicle:
+- In storage
+- Non-operational
+OR
+Not used on public roads.
+
+==================================================
+VERY IMPORTANT GOVERNMENT RULE
+==================================================
+
+Government-owned/operated vehicles:
+IRF exempt.
+
+==================================================
+GOAT VEHICLE RULE
+==================================================
+
+"Goat" vehicle:
+Agricultural citrus/farm vehicle:
+IRF exempt.
+
+==================================================
+VERY IMPORTANT EXEMPT PLATE RULE
+==================================================
+
+IRF exempt license plate owners include:
+- Disabled Veteran (100%)
+- Ex-POW
+- Medal of Honor
+- Miccosukee Indian
+- Seminole Indian
+- Taiwanese Official
+- X-Series
+
+==================================================
+VERY IMPORTANT DISABLED VETERAN LIMIT RULE
+==================================================
+
+Disabled veteran:
+Only one tax-free plate allowed.
+
+==================================================
+EXCEPTIONS TO EXEMPTIONS
+==================================================
+
+Some scenarios:
+Still require IRF:
+Even with prior registration.
+
+==================================================
+TRUST RULES
+==================================================
+
+Transfer:
+Individual to Trust:
+Normally requires IRF.
+
+==================================================
+VERY IMPORTANT TRUST FLAG RULE
+==================================================
+
+Trust customer:
+Must be created:
+As business customer:
+With TRUST flag marked.
+
+==================================================
+VERY IMPORTANT BENEFICIAL USE RULE
+==================================================
+
+If trustee provides:
+Beneficial use affidavit:
+Individual may become registrant:
+IRF exempt.
+
+==================================================
+VERY IMPORTANT HSMV 82040 RULE
+==================================================
+
+Beneficial use statement:
+May be entered:
+On reverse side:
+Of HSMV 82040.
+
+==================================================
+BUSINESS TO INDIVIDUAL RULE
+==================================================
+
+Company/entity:
+To individual transfer:
+IRF due.
+
+==================================================
+CUSTOMER STOP RULE
+==================================================
+
+If customer stop exists:
+And old plate expired:
+IRF due.
+
+==================================================
+VERY IMPORTANT RS-50 RULE
+==================================================
+
+Customer stop procedures:
+Governed by:
+RS-50.
+
+==================================================
+VERY IMPORTANT 90-DAY REFUND RULE
+==================================================
+
+If customer stop cleared:
+Within 90 days:
+IRF refund may apply.
+
+==================================================
+IRF REFUND RULES
+==================================================
+
+IRF refund possible:
+If owner disposes of vehicle:
+Within 3 months:
+After paying IRF.
+
+==================================================
+VERY IMPORTANT ELIGIBLE VEHICLE RULE
+==================================================
+
+Refund applies to:
+- Private passenger automobiles
+- Trucks 5,000 lbs or less
+- Motor homes
+
+==================================================
+VERY IMPORTANT RS-65 RULE
+==================================================
+
+Refund procedures:
+Governed by:
+RS-65.
+
+==================================================
+VERY IMPORTANT HSMV 82050 RULE
+==================================================
+
+Disposed vehicle:
+May require:
+HSMV 82050:
+Notice of Sale.
+
+==================================================
+AI DECISION LOGIC
+==================================================
+
+AI should determine:
+1. Is IRF required?
+2. Does customer have transferable Florida plate?
+3. Is vehicle class code exempt?
+4. Is HSMV 82002 required?
+5. Is prior registration valid?
+6. Is operation of law applicable?
+7. Does immediate family exemption apply?
+8. Are addresses matching?
+9. Does military exemption apply?
+10. Are military documents valid?
+11. Does trust exception apply?
+12. Is beneficial use affidavit present?
+13. Does customer stop exist?
+14. Is refund eligibility met?
+15. Is RS-50 applicable?
+16. Is RS-65 applicable?
+17. Is co-owner transfer exempt?
+18. Is governmental exemption valid?
+19. Is Disabled Veteran limitation exceeded?
+20. Must documents be retained one year?
+
+==================================================
+COMMON TITLE CLERK / REGISTRATION ERRORS
+==================================================
+
+- Charging IRF when exempt
+- Missing HSMV 82002
+- Missing military proof
+- Incorrect trust handling
+- Incorrect divorce decree interpretation
+- Missing same-household verification
+- Missing prior plate entry
+- Incorrect exempt class code handling
+- Missing beneficial use affidavit
+- Charging IRF on co-owner transfers
+- Failing to retain documents
+- Incorrect customer stop handling
+- Missing HSMV 82050
+- Incorrect refund eligibility
+- Misapplying disabled veteran exemptions
+
+==================================================
+VERY IMPORTANT CORE CONCEPT
+==================================================
+
+Florida's Initial Registration Fee system:
+Requires a $225 fee
+for first-time Florida registrations
+unless the owner qualifies
+through:
+- transferable prior registration
+- exempt class code
+- military status
+- family transfer
+- operation of law
+or other statutory exemptions,
+all supported by strict affidavit
+and documentation requirements.
+
+==================================================
+RELATED PROCEDURES
+==================================================
+
+- RS-07
+- RS-50
+- RS-65
+- TL-62
+
+==================================================
+RELATED FORMS
+==================================================
+
+- HSMV 82002
+- HSMV 82040
+- HSMV 82050
+
+==================================================
+RELATED ENTITIES
+==================================================
+
+- FLHSMV
+- Field Support Center
+- Tax Collectors
+- License Plate Agencies
+
+==================================================
+REFERENCE NOTES
+==================================================
+
+Current revision:
+03/14/2022
+
+Primary focus:
+- $225 Initial Registration Fee
+- IRF exemptions
+- Military exemptions
+- Trust/entity handling
+- Refund eligibility and documentation retention

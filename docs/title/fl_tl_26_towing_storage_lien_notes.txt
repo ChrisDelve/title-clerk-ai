@@ -1,0 +1,658 @@
+FLORIDA TITLE PROCEDURE — TOWING AND STORAGE LIEN TITLE TRANSFERS
+PROCEDURE: TL-26
+CATEGORY: TOWING LIEN / STORAGE LIEN / TOW SALE TITLE / CERTIFICATE OF DESTRUCTION
+RELATED STATUTES:
+- 713.78 F.S.
+- 713.785 F.S.
+- 715.07 F.S.
+- 323.001 F.S.
+- 50.011 F.S.
+
+==================================================
+PROCEDURE SUMMARY
+==================================================
+
+This procedure explains:
+- Towing liens
+- Storage liens
+- Public tow sales
+- Certificate of Title issuance after tow sale
+- Certificate of Destruction issuance
+- Mobile home towing lien procedures
+- Tow company notice requirements
+- NMVTIS requirements
+- Third-party service provider requirements
+
+Applies to:
+- Motor vehicles
+- Vessels
+- Mobile homes
+
+==================================================
+AI CLASSIFICATION TAGS
+==================================================
+
+KEYWORDS:
+- towing lien
+- storage lien
+- tow title
+- tow sale
+- impound title
+- abandoned vehicle tow
+- wrecker lien
+- certificate of destruction
+- public tow sale
+- notice of lien
+- notice of sale
+- TL-26
+- tow company
+- impound invoice
+- 713.78
+- 713.785
+
+COMMON USER QUESTIONS:
+- "Tow company sold vehicle"
+- "Need title from tow sale"
+- "Impound title transfer"
+- "Storage lien title"
+- "Vehicle abandoned at impound"
+- "Certificate of destruction"
+- "Tow lien paperwork"
+- "Can tow company get title"
+
+==================================================
+IMPORTANT DEFINITIONS
+==================================================
+
+MOTOR VEHICLE:
+Any mobile item mounted on wheels.
+Includes:
+- Off-highway vehicles
+
+VESSEL:
+Watercraft capable of transportation on water.
+
+WRECKER:
+Vehicle used to tow or transport vehicles/vessels.
+
+NEWER MODEL:
+3 model years old or less.
+
+OLDER MODEL:
+More than 3 model years old.
+
+GOOD FAITH EFFORT:
+Series of ownership checks required under statute.
+
+STORAGE:
+Begins the day AFTER tow date.
+
+==================================================
+WHO MAY AUTHORIZE TOW
+==================================================
+
+Authorized parties:
+- Vehicle owner
+- Property owner
+- Authorized property representative
+- Landlord
+- Law enforcement
+
+PRIVATE PROPERTY TOW RULE:
+Tow company must notify law enforcement:
+- Within 30 minutes of vehicle arriving at storage facility
+
+Tow company must document:
+- Officer name
+- Badge number
+- Date/time notified
+
+==================================================
+VERY IMPORTANT STORAGE FEE RULE
+==================================================
+
+No storage fee:
+- If stored less than 6 hours
+
+==================================================
+THIRD-PARTY SERVICE PROVIDERS
+==================================================
+
+Tow companies MUST use approved third-party providers.
+
+APPROVED PROVIDERS:
+- Auto Data Direct (ADD123.com)
+- Beacon Software (Towlien.com)
+
+Third-party providers handle:
+- Notice processing
+- Mailing
+- Tracking
+- Electronic reporting
+- NMVTIS integration
+
+==================================================
+NOTICE OF LIEN REQUIREMENTS
+==================================================
+
+Notice of Lien MUST include:
+- Fact of possession
+- Who authorized tow
+- Lien claim statement
+- Itemized charges
+- Hearing rights
+- Sale rights
+- Storage location
+- Administrative fee disclosure
+
+==================================================
+ADMINISTRATIVE FEE RULE
+==================================================
+
+Administrative fee:
+- Maximum $250
+
+==================================================
+VERY IMPORTANT VIN RULE
+==================================================
+
+If Notice returned undeliverable:
+- Last 8 VIN/HIN digits must appear:
+  - In address box
+  - On outside envelope
+
+Envelope must also show:
+- Tow company name
+- Physical address
+- Telephone number
+
+==================================================
+CO-OWNER / LIENHOLDER RULE
+==================================================
+
+If multiple owners:
+- ALL must be notified
+
+If lienholder has multiple addresses:
+- Notice must go to ALL addresses
+
+==================================================
+INSURANCE COMPANY NOTICE RULE
+==================================================
+
+Insurance notice NOT required if:
+- Owner requested tow
+- Code enforcement tow
+- Insurance cancelled before tow
+- Out-of-state title state does not release insurance info
+
+==================================================
+LAW ENFORCEMENT BLOCK RULE
+==================================================
+
+If FLHSMV shows:
+- "Law Enforcement Block"
+
+Tow company must send certified notice to:
+
+FLHSMV
+ATTN: Law Enforcement Block
+2900 Apalachee Parkway
+MS #57 – B231
+Tallahassee FL 32399
+
+==================================================
+PRIVACY ACT BLOCK RULE
+==================================================
+
+If Privacy Act Block exists:
+- Tax collector/license plate office may release info
+
+==================================================
+CRITICAL TIMING RULES
+==================================================
+
+FOR TOWS ON OR BEFORE 06/30/2024:
+
+Notice of Lien:
+- Within 7 business days after tow
+
+Older models:
+- Sale after 35 days
+
+Newer models:
+- Sale after 50 days
+
+Notice of Sale:
+- At least 30 days before sale
+
+Newspaper ad:
+- 10 calendar days before sale
+
+==================================================
+UPDATED 07/01/2024 RULES
+==================================================
+
+FOR TOWS ON OR AFTER 07/01/2024:
+
+Notice of Lien:
+- Within 5 business days after tow
+
+Older models:
+- Sale after 35 days
+
+Newer models:
+- Sale after 57 days
+
+Notice of Sale:
+- 30 days before sale for older model
+- 52 days before sale for newer model
+
+Public sale ad:
+- Must post online
+- 20 days before sale
+
+==================================================
+ONLINE PUBLIC SALE REQUIREMENT
+==================================================
+
+Approved public sale sites:
+- CarLocate.com
+- findmycar.us
+
+Ad must include:
+- Tow company info
+- Vehicle/Vessel info
+- Sale location/date/time
+- Amount due breakdown
+
+==================================================
+GOOD FAITH NOTICE
+==================================================
+
+If owner/lienholder cannot be located:
+- Tow company must notify local law enforcement
+
+Deadline:
+- Within 5 business days after tow
+  (new law)
+- Previously 7 business days
+
+Requires:
+- Certified mail
+OR
+- Receipt-acknowledged electronic delivery
+
+==================================================
+GOOD FAITH SEARCH REQUIREMENTS
+==================================================
+
+Tow company must:
+- Conduct physical search
+- Run ownership checks
+- Request 50-state search
+
+If no state found:
+- Signed Good Faith Notice replaces Notice of Lien
+
+If state found:
+- Tow company must contact title state
+- Must mail notices to returned addresses
+
+==================================================
+STORAGE FEE PENALTIES
+==================================================
+
+If notices late:
+- Storage fees restricted or eliminated
+
+If owner only:
+- Late notice = no storage fees
+
+If lienholder exists:
+- Only limited storage fees allowed
+
+==================================================
+LAW ENFORCEMENT STORAGE RULE
+==================================================
+
+If law enforcement requests hold:
+- Up to 5 days:
+  Owner/lienholder pays
+
+- Beyond 5 days:
+  Law enforcement pays storage after day 5
+
+==================================================
+PUBLIC SALE RULES
+==================================================
+
+Public sale:
+- Must occur after statutory waiting period
+- Must occur in proper county
+
+Older models:
+- 35-day minimum
+
+Newer models:
+- 57-day minimum (new law)
+
+==================================================
+AGE DETERMINATION RULE
+==================================================
+
+Model year counts as Year 1.
+
+Example:
+2023 vehicle year calculations:
+- 2021 model = 3 years old
+- 2020 model = 4 years old
+
+==================================================
+REQUIRED TITLE DOCUMENTS
+==================================================
+
+Required:
+- HSMV 82040 MV
+- HSMV 82040 VS
+- HSMV 82040 MH
+- HSMV 82012 (COD)
+- Notice of Lien
+- Notice of Sale if required
+- Tow ticket/trip sheet
+- PS 3877 certified mailing proof
+- NMVTIS proof
+- Public sale proof
+- Mailing proof
+- Owner/lienholder record proof
+
+==================================================
+TOW TICKET REQUIREMENTS
+==================================================
+
+Tow ticket must contain:
+- Tow company name/address/phone
+- Vehicle description
+- VIN/HIN
+- License plate
+- Tow location
+- Storage location
+- Date/time tow
+- Authorizing party
+- Tow fees
+- Mileage
+- Storage fee
+- Recovery fees
+- Administrative fee
+
+==================================================
+VERY IMPORTANT LAW ENFORCEMENT NAME RULE
+==================================================
+
+NO abbreviations allowed for:
+- Law enforcement agency names
+
+==================================================
+NON-CONSENSUAL TOW DISTANCE RULES
+==================================================
+
+COUNTIES 500,000+:
+- Storage within 10 miles
+- Up to 20 if no closer facility
+
+COUNTIES UNDER 500,000:
+- Storage within 15 miles
+- Up to 30 if no closer facility
+
+==================================================
+PUBLICATION REQUIREMENTS
+==================================================
+
+PRE-07/01/2024:
+- Newspaper publication required
+
+POST-07/01/2024:
+- Online public sale posting required
+
+==================================================
+CERTIFICATE OF DESTRUCTION RULES
+==================================================
+
+COD application:
+- HSMV 82012
+
+Must include:
+- NMVTIS reporting proof
+- Proof vehicle destroyed/scrapped/etc.
+
+==================================================
+VERY IMPORTANT COD RESTRICTIONS
+==================================================
+
+Certificate of Destruction cannot issue if:
+- FCIC stolen stop
+- Pending title
+- Administrative stop
+- Cancelled/voided record
+- Correspondence stop
+
+==================================================
+OFF-HIGHWAY VEHICLE RULE
+==================================================
+
+Certificate of Destruction:
+- CANNOT issue for off-highway vehicle
+
+==================================================
+JUNK VEHICLE RULE
+==================================================
+
+If FLHSMV record shows:
+- "Junk"
+
+THEN:
+- Certificate of Destruction required
+- No title issued
+
+==================================================
+SALVAGE TITLE OPTION
+==================================================
+
+Tow company or purchaser may use:
+- HSMV 82363
+
+Possible result:
+- Salvage Rebuildable Title
+
+==================================================
+TITLE IN DEALER NAME RULE
+==================================================
+
+Dealer purchasing at tow sale:
+- MUST title in dealer name first
+- BEFORE resale
+
+==================================================
+UNSOLD VEHICLE RULE
+==================================================
+
+If unsold:
+- Tow company applies for title/COD in own name
+
+==================================================
+SALES TAX EXEMPTION WORDING
+==================================================
+
+Required wording:
+"Obtained per Florida Statutes 713.78 or 713.785, for towing and storage charges."
+
+==================================================
+LIENS ON NEW TITLE
+==================================================
+
+All prior liens:
+- Removed from title
+- Unless court order states otherwise
+
+==================================================
+CORRECTION / VIN ERROR RULE
+==================================================
+
+If incorrect VIN/HIN used:
+- Title cancelled
+- Owner/lienholder must be re-notified
+- Advertisement republished
+- Confidential VIN inspection required
+
+==================================================
+CERTIFICATE OF DESTRUCTION LIFECYCLE RULE
+==================================================
+
+Once COD issued:
+- No title may ever issue again
+
+COD:
+- Reassignable maximum 2 times
+
+Final dismantler:
+- Must keep COD for 3 years
+
+==================================================
+IMPORTANT FLHSMV SYSTEM RULE
+==================================================
+
+FLHSMV system displays:
+- Notice of Lien
+- Notice of Sale
+
+If displayed info:
+- Does NOT match paperwork
+→ Reject transaction
+
+==================================================
+SHOW CAUSE LETTER RULE
+==================================================
+
+FLHSMV:
+- No longer issues Show Cause letters
+
+==================================================
+LIEN ONLY IN-STATE LIEN STOP
+==================================================
+
+If stop shows:
+- "LIEN ONLY – IN STATE LIEN"
+
+Tow company must:
+- Obtain lienholder info
+- Send notices to lienholder
+
+==================================================
+LICENSE PLATE RULE
+==================================================
+
+Owner may retrieve:
+- Valid OR expired plate
+
+If unclaimed:
+- Tow company should surrender plate to tax collector
+
+==================================================
+SALVAGE BRAND LIFETIME RULE
+==================================================
+
+Once salvage title issued:
+- Salvage designation remains forever
+
+==================================================
+WRECKER OPERATOR LIEN
+==================================================
+
+Tow company may submit:
+- Wrecker Operator Lien
+
+Maximum:
+- 7 days of charges
+
+See:
+- RS-50
+
+==================================================
+AI DECISION LOGIC
+==================================================
+
+AI should determine:
+1. Tow date before or after 07/01/2024?
+2. Older or newer model?
+3. Proper notice timing?
+4. Proper mailing proof?
+5. Proper publication method?
+6. NMVTIS completed?
+7. Good Faith Notice required?
+8. Law Enforcement Block present?
+9. Proper sale waiting period met?
+10. Correct title/COD application?
+11. Proper storage fee assessment?
+12. All required parties notified?
+13. VIN/HIN accurate?
+14. Proper public sale procedure followed?
+
+==================================================
+COMMON TITLE CLERK ERRORS
+==================================================
+
+- Using wrong timing rules
+- Missing mailing proof
+- Missing NMVTIS proof
+- Incorrect waiting periods
+- Wrong sale publication method
+- Missing owner notice
+- Missing lienholder notice
+- Incorrect VIN
+- Missing tow invoice details
+- Missing online sale proof
+- Invalid administrative fee
+- Wrong storage fee calculation
+
+==================================================
+IMPORTANT OPERATIONAL NOTES
+==================================================
+
+This is one of the most timing-sensitive title procedures.
+
+Small errors can:
+- Void sale
+- Void storage charges
+- Require re-mailing
+- Require re-publication
+- Require restart of process
+
+Tow lien title work requires:
+- Exact statutory timing
+- Proper mailing proof
+- NMVTIS verification
+- Complete documentation
+- Correct model-year calculations
+
+==================================================
+RELATED FORMS
+==================================================
+
+- HSMV 82040 MV
+- HSMV 82040 VS
+- HSMV 82040 MH
+- HSMV 82012
+- HSMV 82363
+- PS Form 3877
+- Notice of Lien
+- Notice of Sale
+
+==================================================
+RELATED PROCEDURES
+==================================================
+
+- RS-50 Wrecker Operator Liens
+- Certificate of Destruction procedures
+- Salvage title procedures
+- Public sale title transfers
+- Abandoned vehicle procedures

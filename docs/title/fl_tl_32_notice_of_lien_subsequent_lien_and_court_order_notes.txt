@@ -1,0 +1,478 @@
+FLORIDA TITLE PROCEDURE — NOTICE OF LIEN, SUBSEQUENT LIENS, LIEN ACTIONS, AND COURT ORDERS
+PROCEDURE: TL-32
+CATEGORY: LIENS / ELT / COURT ORDER TITLES / JUDGMENT LIENS
+
+==================================================
+PROCEDURE SUMMARY
+==================================================
+
+This procedure explains:
+- Initial lien additions
+- Subsequent liens
+- Lien reassignment
+- Child support liens
+- Court ordered liens
+- Judgment liens
+- ELT handling
+- Certified mail requirements
+- Lien receipt dates
+- Electronic titles
+
+Applies to:
+- Motor vehicles
+- Mobile homes
+- Vessels
+
+==================================================
+AI CLASSIFICATION TAGS
+==================================================
+
+KEYWORDS:
+- lien add
+- subsequent lien
+- second lien
+- lien reassignment
+- judgment lien
+- court order lien
+- child support lien
+- HSMV 82139
+- HSMV 82161
+- lien receipt date
+- certified mail lien
+- electronic title lien
+- ELT lien
+
+COMMON USER QUESTIONS:
+- "How do I add a lien?"
+- "How do I record a second lien?"
+- "What is a lien reassignment?"
+- "How do court ordered liens work?"
+- "What is required for judgment liens?"
+- "How do child support liens work?"
+- "What if first lienholder will not release title?"
+
+==================================================
+VERY IMPORTANT CO-OWNER RULE
+==================================================
+
+If title owners joined by:
+- "OR"
+
+Then:
+- One owner may place lien.
+
+If title owners joined by:
+- "AND"
+
+Then:
+- ALL owners must sign.
+
+==================================================
+IMPORTANT LIEN DATE DEFINITIONS
+==================================================
+
+LIEN DATE:
+- Date security agreement executed.
+
+LIEN RECEIPT DATE:
+- Date lien received by processing office.
+
+TRANSACTION DATE:
+- Date entered into system.
+
+These are NOT always same date.
+
+==================================================
+VERY IMPORTANT LIEN RECEIPT RULE
+==================================================
+
+Agency MUST:
+- Capture lien receipt date
+- Date stamp signed lien document
+
+==================================================
+INITIAL LIEN ("LIEN ADD") REQUIREMENTS
+==================================================
+
+Generally required:
+- Florida title
+unless ELT/electronic title
+- HSMV 82139 Sections 1 & 2
+- Owner signatures
+- Title fees
+- Lien fees
+
+==================================================
+TITLE MAIL AUTHORIZATION RULE
+==================================================
+
+If lienholder wants title mailed to owner:
+Need:
+- HSMV 82139 completed appropriately
+
+Does NOT apply to:
+- Vessels
+
+==================================================
+LIEN REASSIGNMENT REQUIREMENTS
+==================================================
+
+Needed:
+- Florida title
+unless electronic title
+- HSMV 82139 Sections 1 & 3
+- Assignor signature
+- Assignee signature
+- Title fees
+- Lien fees
+
+==================================================
+LIEN REASSIGNMENT SUMMARY
+==================================================
+
+Purpose:
+Transfers lien:
+- From old lienholder
+to
+- New lienholder
+
+==================================================
+SUBSEQUENT LIEN PROCESS
+==================================================
+
+Subsequent lienholder must:
+1. Send certified mail to first lienholder
+2. Include HSMV 82139 copy
+3. Wait for return receipt
+4. Submit documents
+
+==================================================
+SUBSEQUENT LIEN REQUIRED FORMS
+==================================================
+
+Need:
+- HSMV 82139 Sections 1, 2, and 4
+- Signed by owner
+
+==================================================
+SUBSEQUENT LIEN REQUIRED DOCUMENTS
+==================================================
+
+Need:
+- Original HSMV 82139
+- Certified receipt card
+OR
+- Returned unclaimed envelope
+- Title/lien fees
+
+==================================================
+VERY IMPORTANT CERTIFIED MAIL RULE
+==================================================
+
+Certified mail MUST be:
+- Return receipt requested
+
+==================================================
+UNCLAIMED CERTIFIED MAIL RULE
+==================================================
+
+Returned unclaimed mail acceptable.
+
+Clerk must:
+- Open envelope
+- Verify contents
+- Initial envelope
+- Date envelope
+
+==================================================
+FORWARDING ORDER EXPIRED RULE
+==================================================
+
+Letters marked:
+- "Forwarding Order Expired"
+
+Are acceptable.
+
+==================================================
+LOST GREEN RECEIPT RULE
+==================================================
+
+If green receipt lost:
+Applicant may need:
+- USPS tracking proof
+- USPS verification
+- Form 3811-A
+- Certified mailing proof
+- Re-mail certified letter
+
+==================================================
+ELT / ELECTRONIC TITLE RULE
+==================================================
+
+If FLHSMV shows:
+- Electronic Title
+
+Then:
+- First lienholder does not need to send paper title.
+
+==================================================
+FIRST LIENHOLDER FAILURE RULE
+==================================================
+
+If first lienholder:
+- Refuses
+- Neglects
+- Fails
+to send title
+
+Then:
+FLHSMV may:
+- Demand title return
+for subsequent lien recording.
+
+==================================================
+CHILD SUPPORT LIENS
+==================================================
+
+Only processed by:
+- FLHSMV
+
+==================================================
+CHILD SUPPORT INITIAL LIEN REQUIREMENTS
+==================================================
+
+Need:
+- Florida title unless ELT
+- HSMV 82139 Sections 1 & 2
+- Signed by child support director/designee
+- Title/lien fees
+
+==================================================
+VERY IMPORTANT CHILD SUPPORT ELT RULE
+==================================================
+
+Child support liens:
+- EXEMPT from ELT requirements
+
+==================================================
+CHILD SUPPORT SUBSEQUENT LIEN RULES
+==================================================
+
+Requires:
+- Certified mail
+- Return receipt
+- HSMV 82139
+- FLHSMV processing
+
+==================================================
+COURT ORDER LIENS
+==================================================
+
+Court order may direct:
+- FLHSMV to place lien
+
+==================================================
+COURT ORDER INITIAL LIEN REQUIREMENTS
+==================================================
+
+Need:
+- Court order copy
+- VIN listed in order
+- HSMV 82139 Sections 1 & 2
+- Signed by lienor
+- Title/lien fees
+
+==================================================
+COURT ORDER SUBSEQUENT LIEN REQUIREMENTS
+==================================================
+
+Need:
+- Certified mail
+- Court order
+- HSMV 82139 Sections 1,2,4
+
+==================================================
+JUDGMENT LIEN OVERVIEW
+==================================================
+
+Judgment liens:
+Can be placed on:
+- Motor vehicles
+- Vessels
+
+==================================================
+JUDGMENT LIEN REQUIRED DOCUMENTS
+==================================================
+
+Need:
+- Judgment Lien Certificate copy
+- HSMV 82161
+- Verification of filing number
+- Title/lien fees
+
+==================================================
+VERY IMPORTANT JUDGMENT LIEN RULE
+==================================================
+
+Do NOT reject:
+Because judgment certificate lacks:
+- Vehicle physical description
+
+==================================================
+JUDGMENT LIEN VERIFICATION RULE
+==================================================
+
+Must verify:
+- Judgment filing number
+
+Website:
+https://dos.sunbiz.org/jlidet.html
+
+==================================================
+VERY IMPORTANT COMMENT RULE
+==================================================
+
+Must add comment:
+- "Lien per FS 55.205"
+
+During title transaction.
+
+==================================================
+JUDGMENT LIEN WARNING
+==================================================
+
+If same lienholder already recorded:
+Refer to:
+- TL-33
+Alternate Method of Removal of Recorded Liens
+
+==================================================
+VESSEL LIEN RULE
+==================================================
+
+Vessels require:
+- Lien date
+
+==================================================
+IMPORTANT REQUIRED DATES
+==================================================
+
+Required:
+- Lien receipt date
+
+==================================================
+ACCEPTABLE PROOF OF CERTIFIED MAIL
+==================================================
+
+Acceptable:
+- Green receipt
+- USPS tracking
+- USPS verification letter
+- USPS Form 3811-A
+- Form 3877
+- Postal confirmation
+
+==================================================
+FORM 3877 RULE
+==================================================
+
+Must show:
+- Addressee
+- Address
+- Certified article number
+- USPS postmark
+
+==================================================
+IMPORTANT PROCESSING NOTES
+==================================================
+
+When ELT shown:
+Process as:
+- "Lien Add"
+
+==================================================
+ENTITY SEARCH RULE
+==================================================
+
+FFIEC search tool may confirm:
+- Closed institutions
+- Renamed institutions
+
+==================================================
+AI DECISION LOGIC
+==================================================
+
+AI should determine:
+1. Initial lien or subsequent lien?
+2. ELT or paper title?
+3. Certified mail required?
+4. Court order involved?
+5. Judgment lien involved?
+6. Child support lien involved?
+7. HSMV 82139 required?
+8. HSMV 82161 required?
+9. Lien reassignment involved?
+10. Vessel lien rules applicable?
+11. Proper receipt proof included?
+12. Comment "Lien per FS 55.205" needed?
+
+==================================================
+COMMON TITLE CLERK ERRORS
+==================================================
+
+- Missing certified mail proof
+- Wrong HSMV sections completed
+- Missing lien receipt date
+- Missing judgment verification
+- Missing court order VIN
+- Missing title fees
+- Missing lien fees
+- Missing signatures
+- Failure to process ELT properly
+- Forgetting required comment
+- Using wrong form
+
+==================================================
+VERY IMPORTANT ELT NOTES
+==================================================
+
+Electronic titles:
+- Change document requirements
+- Change lienholder actions
+- Often remove need for paper title
+
+==================================================
+RELATED FORMS
+==================================================
+
+- HSMV 82139
+- HSMV 82161
+- USPS Form 3811-A
+- USPS Form 3877
+
+==================================================
+RELATED PROCEDURES
+==================================================
+
+- TL-33 Alternate Method of Removal of Recorded Liens
+- ELT procedures
+- Court ordered title procedures
+- Judgment enforcement procedures
+
+==================================================
+IMPORTANT OPERATIONAL SUMMARY
+==================================================
+
+This procedure is heavily:
+- Documentation driven
+- Date sensitive
+- Certified-mail dependent
+- ELT dependent
+
+Most common rejection reasons:
+- Missing certified proof
+- Wrong HSMV sections
+- Missing signatures
+- Missing lien receipt date
+- Missing verification
+- Missing required comments

@@ -1,0 +1,280 @@
+==================================================
+FLORIDA TITLE & REGISTRATION PROCEDURE INDEX
+SYSTEM VERSION: 1.0
+==================================================
+
+==================================================
+PROCEDURE DIRECTORY
+==================================================
+
+[RS-06]
+NAME = Replacement License Plates / Decals / Registrations
+CATEGORY = Registration
+RISK_LEVEL = Medium
+RELATED = RS-27, RS-43
+COMMON_TRIGGERS =
+- stolen plate
+- damaged plate
+- replacement decal
+- seized plate
+- lost registration
+
+--------------------------------------------------
+
+[RS-22]
+NAME = Specialty License Plates
+CATEGORY = Registration
+RISK_LEVEL = Low
+RELATED = RS-27
+COMMON_TRIGGERS =
+- specialty plate
+- trust fund plate
+- annual use fee
+- specialty voucher
+
+--------------------------------------------------
+
+[RS-23]
+NAME = Miccosukee and Seminole Indian Tribal Plates
+CATEGORY = Registration
+RISK_LEVEL = Medium
+RELATED = RS-31
+COMMON_TRIGGERS =
+- tribal plate
+- Seminole plate
+- Miccosukee plate
+- title only tribal
+
+--------------------------------------------------
+
+[RS-24]
+NAME = Forestry Products License Plates
+CATEGORY = Registration
+RISK_LEVEL = High
+RELATED = RS-33, RS-45
+COMMON_TRIGGERS =
+- forestry plate
+- forestry truck
+- 150 mile rule
+- unprocessed forestry
+
+--------------------------------------------------
+
+[RS-26]
+NAME = Dealer and Manufacturer Plates
+CATEGORY = Dealer
+RISK_LEVEL = High
+RELATED = RS-31
+COMMON_TRIGGERS =
+- dealer plate
+- demo plate
+- manufacturer plate
+- garage liability
+
+--------------------------------------------------
+
+[RS-27]
+NAME = Personalized License Plates
+CATEGORY = Registration
+RISK_LEVEL = Medium
+RELATED = RS-06, RS-22, RS-31
+COMMON_TRIGGERS =
+- personalized plate
+- vanity plate
+- custom plate
+- objectionable plate
+
+--------------------------------------------------
+
+[RS-28]
+NAME = Custom Vehicle and Street Rod Plates
+CATEGORY = Registration
+RISK_LEVEL = Medium
+RELATED = RS-36
+COMMON_TRIGGERS =
+- street rod
+- custom vehicle
+- title branding
+- replica vehicle
+
+--------------------------------------------------
+
+[RS-29]
+NAME = X-Series Exempt Plates
+CATEGORY = Compliance
+RISK_LEVEL = Medium
+RELATED = RS-36
+COMMON_TRIGGERS =
+- nonprofit plate
+- exempt plate
+- church van
+- X-series
+
+--------------------------------------------------
+
+[RS-30]
+NAME = Initial Registration Fee (IRF)
+CATEGORY = Fees
+RISK_LEVEL = Very High
+RELATED = TL-08, TL-52
+COMMON_TRIGGERS =
+- IRF
+- $225 fee
+- prior registration
+- military exemption
+- operation of law
+
+--------------------------------------------------
+
+[RS-31]
+NAME = Temporary Tags
+CATEGORY = Registration
+RISK_LEVEL = Very High
+RELATED = RS-26, RS-27, RS-45
+COMMON_TRIGGERS =
+- temp tag
+- temporary registration
+- ETR
+- 30 day temp
+- 60 day temp
+
+--------------------------------------------------
+
+[RS-32]
+NAME = Front End Emergency Service Plates
+CATEGORY = Registration
+RISK_LEVEL = Low
+RELATED = NONE
+COMMON_TRIGGERS =
+- firefighter plate
+- EMS plate
+- law enforcement front plate
+
+--------------------------------------------------
+
+[RS-33]
+NAME = Commercial Motor Vehicle Insurance
+CATEGORY = Compliance
+RISK_LEVEL = Very High
+RELATED = RS-45
+COMMON_TRIGGERS =
+- commercial insurance
+- CMV insurance
+- ACORD
+- CSL
+- hazmat insurance
+
+--------------------------------------------------
+
+[RS-43]
+NAME = Surrender of License Plate by Owner
+CATEGORY = Compliance
+RISK_LEVEL = High
+RELATED = RS-06, TL-52
+COMMON_TRIGGERS =
+- surrender plate
+- cancel registration
+- insurance suspension
+- unavailable plate
+
+--------------------------------------------------
+
+[RS-45]
+NAME = Heavy Truck and Truck Tractor Plates
+CATEGORY = Registration
+RISK_LEVEL = Very High
+RELATED = RS-31, RS-33, RS-34
+COMMON_TRIGGERS =
+- GVW
+- heavy truck
+- truck tractor
+- IRP
+- HVUT
+
+--------------------------------------------------
+
+[RS-52]
+NAME = Tax Collector Inventory
+CATEGORY = Internal Operations
+RISK_LEVEL = Low
+RELATED = NONE
+COMMON_TRIGGERS =
+- inventory
+- Bin 67
+- PRIDE
+- obsolete plate
+
+==================================================
+TITLE PROCEDURES
+==================================================
+
+[TL-01]
+NAME = Identity Requirements
+CATEGORY = Title
+RISK_LEVEL = High
+
+[TL-08]
+NAME = Original Title Applications
+CATEGORY = Title
+RISK_LEVEL = Very High
+
+[TL-17]
+NAME = Lien Satisfaction Procedures
+CATEGORY = Title
+RISK_LEVEL = Very High
+
+[TL-20]
+NAME = Bonded Titles
+CATEGORY = Title
+RISK_LEVEL = Very High
+
+[TL-28]
+NAME = Electronic Lien and Title
+CATEGORY = Title
+RISK_LEVEL = High
+
+[TL-52]
+NAME = Insurance/Suspension Related Processing
+CATEGORY = Compliance
+RISK_LEVEL = Very High
+
+[TL-62]
+NAME = Retention Requirements
+CATEGORY = System
+RISK_LEVEL = Medium
+
+==================================================
+AI SYSTEM NOTES
+==================================================
+
+RISK LEVEL DEFINITIONS:
+Low
+Medium
+High
+Very High
+
+Very High =
+- suspension risk
+- fraud risk
+- legal liability
+- financial exposure
+- compliance violations
+
+==================================================
+SYSTEM PURPOSE
+==================================================
+
+This file serves as:
+- AI routing map
+- retrieval reference
+- workflow graph
+- escalation engine
+- procedure relationship index
+- future embedding architecture
+
+The assistant should:
+- identify matching procedures
+- identify related procedures
+- determine escalation risk
+- recommend supporting procedures
+- identify required forms and proofs

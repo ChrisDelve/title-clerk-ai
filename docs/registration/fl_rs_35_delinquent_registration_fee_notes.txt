@@ -1,0 +1,423 @@
+FLORIDA REGISTRATION PROCEDURE — DELINQUENT REGISTRATION FEE
+PROCEDURE: RS-35
+CATEGORY: DELINQUENT FEES / LATE RENEWALS / REGISTRATION PENALTIES
+
+==================================================
+PROCEDURE SUMMARY
+==================================================
+
+This procedure governs:
+- Delinquent registration fees
+- Late registration renewal penalties
+- Delinquent fee exemptions
+- Non-use affidavit exemptions
+- Military active-duty exemptions
+- Mail-in renewal timing exemptions
+- Insurance surrender exemptions
+- Expired registration citation exemptions
+- Back tax handling
+
+Applies to:
+- Vehicle owners
+- Mobile home owners
+- Tax collectors
+- License plate agencies
+- FLHSMV personnel
+- Active-duty military members
+
+==================================================
+AI CLASSIFICATION TAGS
+==================================================
+
+KEYWORDS:
+- delinquent registration fee
+- late registration fee
+- expired registration fee
+- renewal penalty
+- delinquent tax
+- back tax
+- non-use affidavit
+- dead storage affidavit
+- registration renewal penalty
+- expired tag fee
+- registration expired
+- late renewal
+- military registration exemption
+- insurance surrender exemption
+- expired registration citation
+- DOT receipt exemption
+- 10 working day exemption
+- active duty exemption
+- 35 mile military rule
+- mail-in renewal exemption
+- delinquent renewal
+- storage affidavit
+- notarized affidavit
+- perjury clause affidavit
+- expired mobile home registration
+- registration suspension exemption
+- registration back taxes
+- trust fund fee exclusion
+- late registration assessment
+- expired registration compliance
+- surrender plate exemption
+- insurance replacement plate
+- renewal mailing date
+- 320.07(4)
+- 320.07(5)
+- 316.545(2)
+- 316.545(6)
+
+COMMON USER QUESTIONS:
+- "How much is the delinquent registration fee?"
+- "When does the late fee apply?"
+- "Can delinquent fees be waived?"
+- "What if the vehicle was in storage?"
+- "What is a non-use affidavit?"
+- "Do military members pay delinquent fees?"
+- "What if the registration was mailed on time?"
+- "What if customer got ticketed for expired registration?"
+- "What if plate was surrendered for insurance?"
+- "Are trust fund fees included?"
+- "When are back taxes due?"
+- "Can mobile homes use non-use affidavits?"
+- "What proof is needed for military exemption?"
+
+==================================================
+LEGAL AUTHORITY
+==================================================
+
+Governed by:
+- 320.07(4) FS
+- 320.07(5) FS
+- 316.545(2)(b) FS
+- 316.545(6) FS
+
+==================================================
+DESCRIPTION AND USE
+==================================================
+
+Procedure explains:
+- Delinquent registration fee assessments
+- Late renewal penalties
+- Exemption qualifications
+- Required affidavits
+- Military exemption processing
+
+==================================================
+VERY IMPORTANT CORE RULE
+==================================================
+
+Delinquent registration fee:
+Applies:
+Beginning:
+11th calendar day:
+Of month following:
+Registration expiration month.
+
+==================================================
+VERY IMPORTANT TRUST FUND RULE
+==================================================
+
+Delinquent fee:
+Applies ONLY:
+To registration tax.
+
+Does NOT apply:
+To Trust Fund Fees.
+
+==================================================
+DELINQUENT FEE SCHEDULE
+==================================================
+
+License tax:
+More than $5 but not more than $25:
+Delinquent fee:
+$5.
+
+--------------------------------------------------
+
+License tax:
+Over $25 but not more than $50:
+Delinquent fee:
+$10.
+
+--------------------------------------------------
+
+License tax:
+Over $50 but not more than $100:
+Delinquent fee:
+$15.
+
+--------------------------------------------------
+
+License tax:
+Over $100 but not more than $400:
+Delinquent fee:
+$50.
+
+--------------------------------------------------
+
+License tax:
+Over $400 but not more than $600:
+Delinquent fee:
+$100.
+
+--------------------------------------------------
+
+License tax:
+Over $600:
+Delinquent fee:
+$250.
+
+==================================================
+NON-USE AFFIDAVIT EXEMPTION
+==================================================
+
+Delinquent fee does NOT apply:
+If:
+Vehicle continuously maintained:
+In dead storage:
+Entire previous registration period.
+
+==================================================
+VERY IMPORTANT DEAD STORAGE RULE
+==================================================
+
+Require:
+- notarized affidavit
+OR
+- perjury clause affidavit
+
+Stating:
+Vehicle:
+- not operated
+- continuously stored
+
+==================================================
+VERY IMPORTANT MOBILE HOME RULE
+==================================================
+
+Dead storage exemption:
+Does NOT apply:
+To:
+- mobile homes
+- park trailers
+- travel trailers registered as mobile homes.
+
+==================================================
+VERY IMPORTANT CURRENT PERIOD RULE
+==================================================
+
+If non-use affidavit:
+Applies only to portion:
+Of current registration period:
+Delinquent fee STILL required.
+
+==================================================
+VERY IMPORTANT EXAMPLE RULE
+==================================================
+
+If registration:
+December 1 through November 30
+AND vehicle stored entire period:
+No delinquent fee due:
+When renewing in December.
+
+==================================================
+VERY IMPORTANT PARTIAL STORAGE RULE
+==================================================
+
+If vehicle stored:
+Only partial current period:
+Delinquent fee:
+AND back tax:
+Still due.
+
+==================================================
+MAIL-IN EXEMPTION RULE
+==================================================
+
+Delinquent fee does NOT apply:
+If mail-in registration:
+Postmarked:
+Before 11th calendar day:
+Following expiration month.
+
+==================================================
+INSURANCE SURRENDER EXEMPTION
+==================================================
+
+Delinquent fee does NOT apply:
+If:
+- valid plate surrendered for insurance purposes
+AND
+- replacement plate applied for:
+On same vehicle.
+
+==================================================
+VERY IMPORTANT SAME VEHICLE RULE
+==================================================
+
+Insurance surrender exemption:
+Requires:
+Replacement plate:
+On SAME vehicle.
+
+==================================================
+EXPIRED REGISTRATION CITATION EXEMPTION
+==================================================
+
+Delinquent fee does NOT apply:
+If customer:
+- assessed expired registration penalty
+AND
+- obtains valid registration:
+Within 10 business days.
+
+==================================================
+VERY IMPORTANT DOT RECEIPT RULE
+==================================================
+
+Require:
+Official Department of Transportation receipt:
+Showing penalty paid.
+
+==================================================
+MILITARY EXEMPTION RULE
+==================================================
+
+Active-duty service member:
+No delinquent fee due:
+If registration expired:
+While stationed:
+35 miles or more:
+From home of record.
+
+==================================================
+VERY IMPORTANT MILITARY DOCUMENT RULE
+==================================================
+
+Require:
+- official military orders
+OR
+- written commanding officer verification.
+
+==================================================
+VERY IMPORTANT ACTIVE DUTY RULE
+==================================================
+
+Military exemption applies:
+To:
+- motor vehicles
+- mobile homes.
+
+==================================================
+BACK TAX RULES
+==================================================
+
+Back taxes may still apply:
+Depending on:
+Registration period
+And affidavit coverage.
+
+==================================================
+AI DECISION LOGIC
+==================================================
+
+AI should determine:
+1. Is registration delinquent?
+2. Has 11th calendar day passed?
+3. What delinquent fee tier applies?
+4. Are Trust Fund Fees excluded?
+5. Is dead storage affidavit provided?
+6. Does storage cover entire registration period?
+7. Is vehicle mobile home/trailer excluded?
+8. Does current-period partial storage apply?
+9. Is mail-in postmark timely?
+10. Was plate surrendered for insurance?
+11. Is replacement on same vehicle?
+12. Was expired registration citation issued?
+13. Was registration corrected within 10 business days?
+14. Is DOT receipt attached?
+15. Is military exemption applicable?
+16. Is service member stationed 35+ miles away?
+17. Are military documents valid?
+18. Are back taxes due?
+19. Is affidavit notarized/perjury compliant?
+20. Does exemption fully remove delinquent fee?
+
+==================================================
+COMMON TITLE CLERK / REGISTRATION ERRORS
+==================================================
+
+- Charging delinquent fee before 11th day
+- Applying delinquent fee to Trust Fund Fees
+- Improper dead storage exemption approval
+- Missing affidavit
+- Accepting partial-period exemption incorrectly
+- Applying dead storage exemption to mobile homes
+- Ignoring valid mail postmark
+- Missing insurance surrender exemption
+- Incorrect same-vehicle determination
+- Missing DOT receipt
+- Missing military proof
+- Incorrect military distance determination
+- Waiving back taxes improperly
+- Incorrect fee bracket assessment
+- Missing notarization/perjury clause
+
+==================================================
+VERY IMPORTANT CORE CONCEPT
+==================================================
+
+Florida delinquent registration fee procedures:
+Impose escalating penalties
+for late registration renewals,
+while allowing strict statutory exemptions
+for:
+- dead storage
+- military deployment
+- insurance surrender situations
+- timely mailed renewals
+and certain expired registration citation corrections.
+
+==================================================
+RELATED PROCEDURES
+==================================================
+
+- RS-43
+- TL-52
+
+==================================================
+RELATED FORMS / DOCUMENTS
+==================================================
+
+- Non-use affidavit
+- Military orders
+- Commanding officer verification
+- DOT penalty receipt
+
+==================================================
+RELATED ENTITIES
+==================================================
+
+- FLHSMV
+- Department of Transportation
+- Tax Collectors
+- License Plate Agencies
+
+==================================================
+REFERENCE NOTES
+==================================================
+
+Current revision:
+05/02/2022
+
+Primary focus:
+- Delinquent registration fee assessment
+- Late renewal penalties
+- Dead storage exemptions
+- Military exemptions
+- Insurance surrender exemptions
+- Back tax handling

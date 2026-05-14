@@ -1,0 +1,778 @@
+FLORIDA TITLE PROCEDURE — BONDED TITLES
+PROCEDURE: TL-70
+CATEGORY: BONDED TITLES / TITLE DEFECTS / MISSING TITLES
+
+==================================================
+PROCEDURE SUMMARY
+==================================================
+
+This procedure governs:
+- Bonded title issuance
+- Missing title ownership situations
+- Surety bond requirements
+- Bonded title eligibility
+- Bonded title restrictions
+- Bonded title branding
+- Bonded title processing
+- Kelley Blue Book valuation requirements
+- Sales tax collection for bonded titles
+- Bonded title removal procedures
+
+Applies to:
+- Motor vehicles
+- Motorcycles
+- Private sale vehicles
+- Florida titled vehicles
+- Tax collectors
+- License plate agencies
+- FLHSMV personnel
+
+==================================================
+AI CLASSIFICATION TAGS
+==================================================
+
+KEYWORDS:
+- bonded title
+- BT brand
+- title bond
+- surety bond
+- HSMV 82026
+- HSMV 82033
+- HSMV 82040
+- HSMV 82042
+- bonded title affidavit
+- missing title
+- no title
+- title defect
+- bonded title processing
+- private sale title
+- Florida bonded title
+- title without assignment
+- Kelley Blue Book
+- KBB valuation
+- private party value
+- bonded title eligibility
+- bonded title rejection
+- title review
+- bonded title transfer
+- title without lien
+- bonded title removal
+- bonded title expiration
+- current retail value
+- penal sum
+- bonded title checklist
+- title surety bond
+- BT title
+- no lien bonded title
+
+COMMON USER QUESTIONS:
+- "What is a bonded title?"
+- "Can I get a title without previous title?"
+- "What vehicles qualify for bonded title?"
+- "Can electronic titles be bonded?"
+- "How long does bonded title stay branded?"
+- "What forms are required?"
+- "How much bond is needed?"
+- "Can lien be added to bonded title?"
+- "What KBB value is used?"
+- "Can out-of-state vehicle get bonded title?"
+- "Can gifted vehicle get bonded title?"
+- "Can truck qualify?"
+- "How is sales tax collected?"
+- "What is penal sum?"
+- "Can out-of-state bond be used?"
+
+==================================================
+LEGAL AUTHORITY
+==================================================
+
+Governed by:
+- 319.23(7) FS
+
+==================================================
+DESCRIPTION AND USE
+==================================================
+
+Procedure explains:
+- Bonded title issuance
+- Required forms
+- Eligibility review
+- Surety bond requirements
+- Processing standards
+
+==================================================
+VERY IMPORTANT CORE RULE
+==================================================
+
+Bonded title:
+Used when applicant:
+Cannot provide:
+Assigned title certificate.
+
+==================================================
+PROCESS FOR BONDED TITLE ISSUANCE
+==================================================
+
+Upon receiving bonded title application:
+1. Review all documents immediately
+2. Verify signatures and affidavits
+3. Reject incomplete applications
+4. Scan all documents clearly
+5. Send documents to BMSS
+6. Do NOT collect payment initially
+7. Contact customer within 5 business days
+
+==================================================
+VERY IMPORTANT BMSS RULE
+==================================================
+
+Bonded title documents:
+Must be emailed to:
+MSSG@flhsmv.gov
+
+==================================================
+VERY IMPORTANT PAYMENT RULE
+==================================================
+
+Do NOT collect payment:
+Before FLHSMV review approval.
+
+==================================================
+VERY IMPORTANT VIN STOP RULE
+==================================================
+
+Rejected bonded title VIN:
+Receives stop:
+"INFO23-010 Contact (850) 617-3174"
+
+==================================================
+VEHICLES ELIGIBLE FOR BONDED TITLE
+==================================================
+
+Eligible vehicles:
+- Automobiles
+- Trucks under 8,000 lbs net weight
+- Motorcycles
+
+==================================================
+VERY IMPORTANT PRIVATE SALE RULE
+==================================================
+
+Bonded titles:
+Only for:
+Private casual sales:
+Where money exchanged.
+
+==================================================
+VERY IMPORTANT FLORIDA TITLE RULE
+==================================================
+
+Vehicle must have:
+Current Florida paper title.
+
+==================================================
+VERY IMPORTANT NO LIEN RULE
+==================================================
+
+Vehicle must have:
+NO:
+- Security interest
+- Liens
+- Encumbrances
+
+==================================================
+VERY IMPORTANT MODEL YEAR RULE
+==================================================
+
+Eligible vehicles:
+2010 model year:
+Through rolling maximum year table.
+
+==================================================
+VERY IMPORTANT FEDERAL ODOMETER RULE
+==================================================
+
+Eligibility tied to:
+Federal odometer disclosure changes:
+Effective:
+01/01/2021.
+
+==================================================
+VERY IMPORTANT NOT ELIGIBLE RULE
+==================================================
+
+Bonded titles NOT allowed for:
+- Electronic titles
+- 2011 or newer vehicles
+- Vehicles older than allowable range
+- Out-of-state titled vehicles
+- NMVTIS non-Florida records
+- Vehicles with liens
+- Vehicles adding liens
+- Vessels
+- Mobile homes
+- RVs
+- Off-highway vehicles
+- Trucks 8,000 lbs or more
+
+==================================================
+VERY IMPORTANT TRANSACTION TYPE RULE
+==================================================
+
+Bonded titles NOT allowed for:
+- Inheritance
+- Gift
+- Divorce
+- Transfer between spouses
+- Even trade
+- Trade down
+
+==================================================
+VERY IMPORTANT TL-07 RULE
+==================================================
+
+If bonded title ineligible:
+Refer customer:
+To TL-07.
+
+==================================================
+APPLICANT REQUIREMENTS
+==================================================
+
+Applicant must be:
+- Florida resident
+OR
+- Florida based business.
+
+==================================================
+ACCEPTABLE IDENTIFICATION
+==================================================
+
+Acceptable ID includes:
+- Driver license
+- Identification card
+- Passport
+- Passport card
+- Active Florida business verification
+
+==================================================
+VERY IMPORTANT BUSINESS RULE
+==================================================
+
+Business must:
+- Be active in SunBiz
+OR
+- Have verifiable active local business license.
+
+==================================================
+TITLE RECORD REVIEW
+==================================================
+
+Motor vehicle issuance system:
+Must show:
+Seller name matching:
+Current owner.
+
+==================================================
+VERY IMPORTANT NAME MATCH RULE
+==================================================
+
+Seller name:
+Must exactly match:
+Current owner in system.
+
+==================================================
+VERY IMPORTANT REJECTION RULE
+==================================================
+
+Reject transaction if:
+- Seller name mismatch
+- Liens exist
+- Security interests exist
+- Encumbrances exist
+
+==================================================
+REQUIRED DOCUMENTS
+==================================================
+
+Required:
+1. Valid ID
+2. HSMV 82026
+3. HSMV 82033
+4. HSMV 82040 MV
+5. HSMV 82042
+6. Current KBB screenshot
+
+==================================================
+VERY IMPORTANT LEGIBILITY RULE
+==================================================
+
+Missing, incomplete,
+or illegible documentation:
+Requires rejection.
+
+==================================================
+POWER OF ATTORNEY RULE
+==================================================
+
+POA transactions:
+Require:
+- Power of attorney
+- POA holder ID copy
+
+==================================================
+VERY IMPORTANT BUSINESS OFFICER RULE
+==================================================
+
+Business officer:
+Must specify:
+Official title.
+
+==================================================
+VERY IMPORTANT BUSINESS AUTHORIZATION RULE
+==================================================
+
+If officer not verified:
+Must provide:
+Original authorization letter.
+
+==================================================
+HSMV 82026 RULES
+==================================================
+
+All sections:
+Must be completed legibly.
+
+==================================================
+VERY IMPORTANT MOTOR VEHICLE DESCRIPTION RULE
+==================================================
+
+Vehicle description:
+Must match:
+Motor vehicle issuance system.
+
+==================================================
+VERY IMPORTANT CURRENT RETAIL VALUE RULE
+==================================================
+
+Current retail value:
+Must match:
+Kelley Blue Book value.
+
+==================================================
+VERY IMPORTANT ZIP CODE RULE
+==================================================
+
+KBB value:
+Must use applicant residential ZIP code.
+
+==================================================
+VERY IMPORTANT PRIVATE PARTY RULE
+==================================================
+
+KBB value must use:
+"Private Party Value"
+
+==================================================
+VERY IMPORTANT CONDITION RULE
+==================================================
+
+Vehicle condition:
+Must be:
+"Good" or better.
+
+==================================================
+VERY IMPORTANT AFFIDAVIT RULE
+==================================================
+
+Applicant must explain:
+- How vehicle obtained
+- Why title unavailable
+- Attempts to contact seller
+
+==================================================
+HSMV 82033 RULES
+==================================================
+
+Bond expires:
+3 years from issuance.
+
+==================================================
+VERY IMPORTANT BRAND REMOVAL RULE
+==================================================
+
+BT brand removed:
+3 years after issue date.
+
+==================================================
+VERY IMPORTANT BOND COVERAGE RULE
+==================================================
+
+Bond must remain valid:
+Entire 3-year period.
+
+==================================================
+VERY IMPORTANT PENAL SUM RULE
+==================================================
+
+Penal sum:
+Must equal:
+At least 2X current retail value.
+
+==================================================
+VERY IMPORTANT BOND VALUE MATCH RULE
+==================================================
+
+Bond value:
+Must match:
+KBB value
+AND
+HSMV 82026 value.
+
+==================================================
+VERY IMPORTANT SURETY RULE
+==================================================
+
+Surety company:
+Must be licensed:
+In Florida.
+
+==================================================
+VERY IMPORTANT ALTERATION RULE
+==================================================
+
+Altered bonds:
+Require:
+New bond or amendment.
+
+==================================================
+VERY IMPORTANT SIGNATURE RULE
+==================================================
+
+Bond invalid without:
+- Principal signature
+- Surety agent signature
+
+==================================================
+VERY IMPORTANT OUT-OF-STATE SURETY RULE
+==================================================
+
+Out-of-state surety companies:
+Allowed:
+If licensed in Florida.
+
+==================================================
+HSMV 82040 MV RULES
+==================================================
+
+Required for:
+Every bonded title transaction.
+
+==================================================
+VERY IMPORTANT SECTION 8 RULE
+==================================================
+
+Section 8:
+May replace:
+Separate HSMV 82042 VIN verification.
+
+==================================================
+VERY IMPORTANT SECTION 9 RULE
+==================================================
+
+Section 9 completed:
+If Florida business has:
+Sales tax registration number.
+
+==================================================
+VERY IMPORTANT ODOMETER RULE
+==================================================
+
+Mileage cannot be actual:
+Without proper odometer disclosure.
+
+==================================================
+HSMV 82042 RULES
+==================================================
+
+VIN verification:
+Required for all bonded titles.
+
+==================================================
+LIEN RULES
+==================================================
+
+Bonded title cannot be issued:
+If purchaser owes balance.
+
+==================================================
+VERY IMPORTANT FINANCING RULE
+==================================================
+
+No financing allowed:
+On bonded title issuance.
+
+==================================================
+VERY IMPORTANT POST-ISSUANCE LIEN RULE
+==================================================
+
+Liens cannot be added:
+After bonded title issued.
+
+==================================================
+KELLEY BLUE BOOK RULES
+==================================================
+
+FLHSMV selected:
+Kelley Blue Book:
+For all bonded title valuations.
+
+==================================================
+VERY IMPORTANT SCREENSHOT RULE
+==================================================
+
+Current KBB screenshot:
+Must be clear and legible.
+
+==================================================
+VERY IMPORTANT KBB DATA RULE
+==================================================
+
+KBB valuation must include:
+- ZIP code
+- Mileage
+- Options
+- Color
+- Condition
+
+==================================================
+VERY IMPORTANT SALES TAX RULE
+==================================================
+
+Sales tax collected:
+On:
+- Current retail value
+OR
+- Valid bill of sale amount
+
+==================================================
+VERY IMPORTANT BILL OF SALE RULE
+==================================================
+
+Valid bill of sale requires:
+- Vehicle description
+- Purchase date
+- Buyer signature
+- Seller signature
+- Selling price
+
+==================================================
+VERY IMPORTANT 80% RULE
+==================================================
+
+If sale price:
+Less than 80% of retail value:
+Department of Revenue review possible.
+
+==================================================
+VERY IMPORTANT GIFT RULE
+==================================================
+
+Gift transactions:
+NOT eligible:
+For bonded title.
+
+==================================================
+BONDED TITLE BRAND REMOVAL
+==================================================
+
+Motor vehicle issuance system:
+Automatically removes:
+BT brand:
+After 3 years.
+
+==================================================
+VERY IMPORTANT HISTORY RULE
+==================================================
+
+System retains:
+Bonded title history:
+Even after brand removed.
+
+==================================================
+VERY IMPORTANT DUPLICATE TITLE RULE
+==================================================
+
+After brand removed:
+Customer may request:
+Duplicate clean title.
+
+==================================================
+OUT-OF-STATE BONDED TITLE RULES
+==================================================
+
+Out-of-state bonded brand:
+NOT carried forward:
+To Florida title.
+
+==================================================
+VERY IMPORTANT OUT-OF-STATE BOND RULE
+==================================================
+
+Customer must provide:
+Copy of surety bond:
+From out-of-state bonded title.
+
+==================================================
+VERY IMPORTANT COURT ORDER RULE
+==================================================
+
+If no copy of surety bond:
+Customer must provide:
+Florida court order.
+
+==================================================
+PROCESSING RULES
+==================================================
+
+Bonded title processed as:
+Title transfer.
+
+==================================================
+VERY IMPORTANT ACQUIRED BY RULE
+==================================================
+
+ACQUIRED BY:
+R (Regular)
+
+==================================================
+VERY IMPORTANT VERIFIED RULE
+==================================================
+
+VERIFIED:
+Yes
+
+==================================================
+VERY IMPORTANT MILEAGE RULE
+==================================================
+
+Mileage:
+Exempt
+OR
+Not Actual.
+
+==================================================
+VERY IMPORTANT BRAND CODE RULE
+==================================================
+
+BRAND:
+BT (Bonded Title)
+
+==================================================
+VERY IMPORTANT BRAND DATE RULE
+==================================================
+
+Brand date:
+Issue date of title.
+
+==================================================
+BONDED TITLE CHECKLIST
+==================================================
+
+Checklist:
+- Valid identification
+- HSMV 82026
+- HSMV 82033
+- HSMV 82040
+- Current KBB screenshot
+- POA if applicable
+- Out-of-state surety bond copy if needed
+
+==================================================
+AI DECISION LOGIC
+==================================================
+
+AI should determine:
+1. Is vehicle eligible for bonded title?
+2. Is vehicle Florida titled?
+3. Is title electronic?
+4. Are liens present?
+5. Is seller current owner?
+6. Is vehicle within eligible model years?
+7. Is truck under 8,000 lbs?
+8. Is transaction private sale?
+9. Is transaction prohibited type?
+10. Is KBB value correct?
+11. Is ZIP code correct?
+12. Is condition "good" or better?
+13. Does penal sum equal 2X value?
+14. Is surety company licensed?
+15. Is VIN verification complete?
+16. Is sales tax based correctly?
+17. Is financing involved?
+18. Was bond altered?
+19. Is BT brand required?
+20. Has 3-year expiration passed?
+
+==================================================
+COMMON TITLE CLERK ERRORS
+==================================================
+
+- Attempting bonded title on electronic title
+- Allowing liens on bonded title
+- Incorrect KBB valuation
+- Wrong ZIP code valuation
+- Using trade-in value
+- Missing signatures
+- Missing VIN verification
+- Incorrect penal sum
+- Accepting gifts/divorce transfers
+- Accepting out-of-state title
+- Allowing financing
+- Missing business verification
+- Incorrect seller name
+- Incomplete affidavit explanation
+- Accepting vehicle over 8,000 lbs
+- Missing BMSS review process
+
+==================================================
+VERY IMPORTANT CORE CONCEPT
+==================================================
+
+A bonded title:
+Allows issuance of a Florida title
+when ownership exists
+but properly assigned title documentation is unavailable,
+provided strict eligibility,
+surety bond,
+and valuation requirements are met.
+
+==================================================
+RELATED FORMS
+==================================================
+
+- HSMV 82026
+- HSMV 82033
+- HSMV 82040 MV
+- HSMV 82042
+
+==================================================
+RELATED PROCEDURES
+==================================================
+
+- TL-01
+- TL-07
+
+==================================================
+REFERENCE NOTES
+==================================================
+
+Current revision:
+- 04/2025
+
+Primary focus:
+- Bonded title eligibility
+- Surety bond requirements
+- Missing title ownership
+- BT brand processing
+- KBB valuation compliance

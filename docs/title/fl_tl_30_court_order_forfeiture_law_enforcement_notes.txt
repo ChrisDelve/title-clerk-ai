@@ -1,0 +1,401 @@
+FLORIDA TITLE PROCEDURE — COURT ORDER OF FORFEITURE TO LAW ENFORCEMENT AGENCY
+PROCEDURE: TL-30
+CATEGORY: LAW ENFORCEMENT / OPERATION OF LAW TITLE
+RELATED STATUTES:
+- Sections 932.701–7055 F.S.
+- Section 319.33(7)(a) F.S.
+
+==================================================
+PROCEDURE SUMMARY
+==================================================
+
+This procedure explains title requirements for:
+- Confiscated vehicles
+- Forfeited vehicles
+- Contraband vehicles
+- Law enforcement seizure cases
+- Court ordered forfeiture
+- Public auction forfeiture sales
+
+Applies when:
+- Vehicle/mobile home confiscated by law enforcement
+- Court enters forfeiture order
+- Agency retains vehicle
+OR
+- Vehicle sold at auction
+
+==================================================
+AI CLASSIFICATION TAGS
+==================================================
+
+KEYWORDS:
+- forfeiture
+- confiscated vehicle
+- contraband vehicle
+- police seizure
+- seized vehicle
+- court ordered forfeiture
+- law enforcement title
+- operation of law
+- forfeiture auction
+- police vehicle title
+
+COMMON USER QUESTIONS:
+- "How to title seized vehicle"
+- "Court ordered forfeiture title"
+- "Police auction vehicle"
+- "Contraband forfeiture"
+- "Can police keep seized vehicle"
+- "Law enforcement forfeiture process"
+
+==================================================
+CORE LEGAL CONCEPTS
+==================================================
+
+CONFISCATE:
+Government seizure of property.
+
+CONTRABAND:
+Illegal goods/property subject to forfeiture.
+
+ORDER OF FORFEITURE:
+Court order allowing:
+- Sale of property
+OR
+- Title transfer to law enforcement.
+
+==================================================
+VERY IMPORTANT VIN RULE
+==================================================
+
+If VIN:
+- Destroyed
+- Removed
+- Altered
+- Covered
+- Defaced
+OR
+- Real identity cannot be determined
+
+Vehicle becomes contraband.
+
+==================================================
+VERY IMPORTANT COURT ORDER RULE
+==================================================
+
+If VIN/identity issue exists:
+Court must order:
+- FLHSMV assigned VIN
+before title issuance.
+
+==================================================
+GENERAL DOCUMENT REQUIREMENTS
+==================================================
+
+Typically required:
+- HSMV 82040 MV/MH/VS
+- Court Order of Forfeiture
+- Bill of sale (if auction)
+- Lien handling documentation
+- Sales tax handling
+- Plate/decal handling
+- Title fees
+
+==================================================
+POLICE VEHICLE DESIGNATION RULE
+==================================================
+
+If agency certifies:
+- Vehicle NOT used in law enforcement
+AND
+- WILL NOT be used in law enforcement
+
+Then:
+"Police Vehicle" designation NOT shown on title.
+
+==================================================
+VERY IMPORTANT FUTURE USE RULE
+==================================================
+
+If agency later uses vehicle:
+Title must be surrendered and reissued showing:
+- "Police Vehicle"
+
+==================================================
+FLORIDA TITLE RECORD REQUIREMENTS
+==================================================
+
+If vehicle titled in Florida:
+Need:
+- HSMV 82040
+- Court Order of Forfeiture
+- Additional supporting documents
+
+==================================================
+COURT ORDER REQUIREMENTS
+==================================================
+
+Court order usually states:
+- Vehicle forfeited "to the use of"
+OR
+- "to be sold by"
+law enforcement agency.
+
+==================================================
+PUBLIC AUCTION RULE
+==================================================
+
+If sold at auction:
+Purchaser submits:
+- Original bill of sale
+OR
+- Certified copy
+
+==================================================
+BILL OF SALE REQUIREMENTS
+==================================================
+
+Bill of sale must:
+- Be on original agency letterhead
+- Include year/make/model
+- Include VIN
+- Include full vehicle description
+
+==================================================
+VERY IMPORTANT LIEN RULES
+==================================================
+
+Liens handled several ways.
+
+==================================================
+LIEN OPTION 1 — COURT EXTINGUISHES LIEN
+==================================================
+
+If court order:
+- Shows lienholder party
+AND
+- Satisfies/discharges lien
+
+Then:
+Clear title may issue.
+
+==================================================
+LIEN OPTION 2 — LIEN PRESERVED / AUCTION SALE
+==================================================
+
+If lien preserved:
+Agency may:
+- Sell vehicle at auction
+to satisfy lien.
+
+Need:
+- Proof lienholder notified
+
+==================================================
+VERY IMPORTANT NOTICE REQUIREMENTS
+==================================================
+
+Lienholder notice:
+- Certified mail
+- Return receipt requested
+
+Need:
+- Green receipt attached
+
+==================================================
+LIEN OPTION 3 — AGENCY RETAINS VEHICLE
+==================================================
+
+If agency keeps vehicle:
+Need:
+- HSMV 82260
+to satisfy lien.
+
+==================================================
+LIEN OPTION 4 — LIEN CONTINUES
+==================================================
+
+If lien preserved:
+Lienholder remains on:
+- New title application
+
+==================================================
+VERY IMPORTANT IMPLIED SATISFACTION RULE
+==================================================
+
+If:
+- Court order silent about lien
+AND
+- Lien exists
+
+Lien considered:
+- Satisfied
+
+==================================================
+SALES TAX REQUIREMENTS
+==================================================
+
+Need:
+- Florida sales tax paid
+OR
+- Sales tax exemption/specification on HSMV 82040
+
+==================================================
+PLATE / NON-USE RULES
+==================================================
+
+Need:
+- Florida plate transfer/purchase
+OR
+- Non-use affidavit
+
+==================================================
+LAW ENFORCEMENT NON-USE AFFIDAVIT RULE
+==================================================
+
+Agency may submit affidavit stating:
+- Vehicle not used in law enforcement
+- Vehicle not used on Florida highways
+
+==================================================
+MOBILE HOME RULE
+==================================================
+
+Non-use affidavit:
+- NOT acceptable for mobile homes
+
+Need:
+- Mobile home decal
+OR
+- RP decal
+
+==================================================
+OUT-OF-STATE / NO FLORIDA TITLE RECORD
+==================================================
+
+If no Florida title record:
+Need:
+- HSMV 82042
+OR
+- VIN verification section on HSMV 82040
+
+==================================================
+ALTERNATIVE VIN VERIFICATION RULE
+==================================================
+
+Instead of HSMV 82042:
+May use affidavit from:
+- Seller
+AND
+- Purchaser
+
+Affidavit must confirm:
+- VIN on vehicle matches documents
+
+==================================================
+VIN VERIFICATION EXEMPTIONS
+==================================================
+
+Verification NOT required for:
+- Mobile homes
+- Trailers under 2,000 lbs
+- Travel trailers
+- Camping trailers
+- Truck campers
+- Fifth-wheel recreation trailers
+
+==================================================
+VERY IMPORTANT DEALER RULE
+==================================================
+
+If dealer/individual buys forfeited vehicle:
+Title must issue:
+- In buyer name first
+before resale.
+
+==================================================
+EXHIBIT A CHECKLIST SUMMARY
+==================================================
+
+Checklist includes:
+- HSMV 82040
+- HSMV 82042
+- Court Order of Forfeiture
+- Bill of sale
+- Lien instructions/satisfaction
+- Sales tax handling
+- Plate/decal handling
+- Title fees
+
+==================================================
+AI DECISION LOGIC
+==================================================
+
+AI should determine:
+1. Is this forfeiture case?
+2. Is vehicle confiscated contraband?
+3. Is there Florida title record?
+4. Was vehicle sold or retained?
+5. Does court order mention lien?
+6. Was lien extinguished or preserved?
+7. Is certified mail proof required?
+8. Is VIN reassignment required?
+9. Is Police Vehicle branding required?
+10. Is VIN verification required?
+11. Is dealer purchasing vehicle?
+12. Are sales tax requirements met?
+13. Are title fees included?
+14. Are plate/decal requirements met?
+
+==================================================
+COMMON TITLE CLERK ERRORS
+==================================================
+
+- Missing Court Order of Forfeiture
+- Missing lien instructions
+- Missing certified mail proof
+- Missing green receipt
+- Missing VIN verification
+- Missing bill of sale
+- Missing Police Vehicle designation handling
+- Missing VIN reassignment order
+- Improper lien handling
+- Missing title fees
+
+==================================================
+IMPORTANT OPERATIONAL NOTES
+==================================================
+
+Forfeiture titles are:
+- Court-order dependent
+- Lien-sensitive
+- Operation-of-law transactions
+
+Most important document:
+- Court Order of Forfeiture
+
+Court order controls:
+- Ownership disposition
+- Lien handling
+- VIN reassignment authority
+- Agency authority to sell/retain
+
+==================================================
+RELATED FORMS
+==================================================
+
+- HSMV 82040 MV
+- HSMV 82040 MH
+- HSMV 82040 VS
+- HSMV 82042
+- HSMV 82260
+
+==================================================
+RELATED PROCEDURES
+==================================================
+
+- Operation of law titles
+- Law enforcement title transfers
+- Contraband vehicle procedures
+- Assigned VIN procedures
+- Public auction title procedures

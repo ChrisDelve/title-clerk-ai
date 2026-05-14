@@ -1,296 +1,368 @@
-TITLE:\
-FLHSMV RS-03 \'97 Motor Vehicle Registration Codes\
-\
-CATEGORY:\
-Registration Codes\
-Class Codes\
-Plate Types\
-Weight Codes\
-Vehicle Classification\
-Registration Categories\
-\
---------------------------------------------------\
-\
-RULE:\
-Florida registration class codes determine:\
-- Registration fees\
-- Plate eligibility\
-- Vehicle classification\
-- Insurance requirements\
-- Operational restrictions\
-\
-VERIFY:\
-- Vehicle body type\
-- GVWR/weight\
-- Registration class code\
-- Plate type\
-- Commercial vs passenger use\
-- Supporting ownership documents\
-\
-ESCALATE IF:\
-- Registration class unclear\
-- Weight discrepancy exists\
-- Fraud concerns arise\
-- Vehicle classification conflict exists\
-\
-\
---------------------------------------------------\
-\
-RULE:\
-Registration codes must accurately reflect the vehicle\'92s:\
-- Intended use\
-- Weight class\
-- Vehicle type\
-- Ownership type\
-- Commercial/passenger status\
-\
-VERIFY:\
-- Vehicle body style\
-- Weight documentation\
-- Commercial use\
-- Fleet/business ownership\
-- Supporting records\
-\
-COMMON MISTAKE:\
-Registering commercial vehicle under passenger class to avoid higher fees.\
-\
-\
---------------------------------------------------\
-\
-RULE:\
-Passenger vehicle registrations generally use standard passenger class codes.\
-\
-VERIFY:\
-- Passenger vehicle use\
-- Non-commercial operation\
-- Vehicle weight eligibility\
-\
-ESCALATE IF:\
-- Commercial use suspected\
-- Incorrect passenger classification identified\
-\
-\
---------------------------------------------------\
-\
-RULE:\
-Commercial registrations require proper weight classification.\
-\
-VERIFY:\
-- Declared GVWR\
-- Certified weight if required\
-- Commercial use\
-- Registration class code\
-\
-ESCALATE IF:\
-- Weight inconsistency exists\
-- Incorrect commercial class selected\
-- Supporting documentation missing\
-\
-NOTE:\
-Commercial registration fees are heavily dependent on declared gross vehicle weight. :contentReference[oaicite:0]\{index=0\}\
-\
-\
---------------------------------------------------\
-\
-RULE:\
-Apportioned/IRP vehicles require specialized commercial registration coding.\
-\
-VERIFY:\
-- Interstate operation\
-- IRP eligibility\
-- Fleet records\
-- Business ownership\
-\
-ESCALATE IF:\
-- IRP classification conflict exists\
-- Interstate operation unclear\
-- Missing fleet documentation\
-\
-\
---------------------------------------------------\
-\
-RULE:\
-Specialty plate registrations may require:\
-- Eligibility verification\
-- Additional affidavits\
-- Supporting documentation\
-- Specific class codes\
-\
-VERIFY:\
-- Specialty plate eligibility\
-- Military/veteran documents if applicable\
-- Disabled parking eligibility if applicable\
-- Supporting affidavits/forms\
-\
-ESCALATE IF:\
-- Eligibility unresolved\
-- Missing supporting documentation\
-- Incorrect specialty class code\
-\
-\
---------------------------------------------------\
-\
-RULE:\
-Body type and registration class must align correctly.\
-\
-VERIFY:\
-- Body type\
-- Vehicle design\
-- Vehicle usage\
-- Registration code\
-\
-COMMON BODY TYPES:\
-- 4D = Sedan\
-- 2D = Coupe\
-- SUV = Sport Utility Vehicle\
-- PK = Pickup\
-- VN = Van\
-- TK = Truck\
-\
-ESCALATE IF:\
-- Body type conflict exists\
-- Incorrect classification identified\
-\
-\
---------------------------------------------------\
-\
-RULE:\
-Low-speed vehicles, mini-trucks, autocycles, antique vehicles, and specialty vehicles may require unique registration coding.\
-\
-VERIFY:\
-- Vehicle classification\
-- Supporting title documents\
-- Manufacturer records\
-- Special registration eligibility\
-\
-ESCALATE IF:\
-- Specialty classification unclear\
-- Incorrect code assignment\
-- Manufacturer information conflict exists\
-\
-\
---------------------------------------------------\
-\
-RULE:\
-Trust/entity-owned vehicles may require:\
-- Business/entity registration coding\
-- FEID verification\
-- Authorized signer review\
-\
-VERIFY:\
-- Entity documents\
-- Registration ownership\
-- FEID/business information\
-\
-ESCALATE IF:\
-- Ownership mismatch exists\
-- Business authority unclear\
-- Fraud concerns arise\
-\
-\
---------------------------------------------------\
-\
-RULE:\
-VIN must match ALL registration and title records exactly.\
-\
-VERIFY:\
-- Registration VIN\
-- Title VIN\
-- Insurance VIN\
-- System VIN\
-- Supporting paperwork VIN\
-\
-ESCALATE IF:\
-- Any VIN discrepancy exists\
-- Altered VIN suspected\
-- VIN unreadable/incomplete\
-\
-\
---------------------------------------------------\
-\
-RULE:\
-Incorrect registration coding may cause:\
-- Incorrect fees\
-- Insurance issues\
-- IRP conflicts\
-- Tax calculation errors\
-- Plate issuance problems\
-\
-VERIFY:\
-- Fee schedule alignment\
-- Registration class compatibility\
-- Plate type eligibility\
-\
-ESCALATE IF:\
-- Fee conflict exists\
-- Registration type mismatch identified\
-- Plate incompatibility exists\
-\
-\
---------------------------------------------------\
-\
-RULE:\
-Fraud prevention review is critical during registration coding/classification.\
-\
-VERIFY:\
-- Vehicle legitimacy\
-- Weight accuracy\
-- Commercial use\
-- Ownership legitimacy\
-- Supporting documentation authenticity\
-\
-ESCALATE IF:\
-- Fraud concerns\
-- Altered weight records\
-- Suspicious registration downgrade attempts\
-- Fake business records\
-\
-\
---------------------------------------------------\
-\
-COMMON DEALERSHIP FAILURE POINTS:\
-- Incorrect registration class\
-- Wrong weight class\
-- Passenger/commercial misclassification\
-- Incorrect body type\
-- Wrong specialty plate code\
-- IRP classification mistakes\
-- VIN mismatch\
-- Missing business documents\
-- Incorrect fee calculations\
-- Insurance classification mismatch\
-\
-\
---------------------------------------------------\
-\
-HIGH-RISK ESCALATION SITUATIONS:\
-- Weight discrepancies\
-- VIN discrepancies\
-- Fraud concerns\
-- Commercial classification conflicts\
-- IRP conflicts\
-- Specialty plate eligibility disputes\
-- Ownership disputes\
-- Altered paperwork\
-- Incorrect fee avoidance attempts\
-\
-\
---------------------------------------------------\
-\
-BEST PRACTICE:\
-Before assigning registration code:\
-1. Verify vehicle body type.\
-2. Verify commercial vs passenger use.\
-3. Verify GVWR/weight carefully.\
-4. Verify specialty eligibility if applicable.\
-5. Verify VIN across ALL documents.\
-6. Escalate any irregularity immediately.\
-\
-\
---------------------------------------------------\
-\
-SOURCE:\
-FLHSMV RS-03 Motor Vehicle Registration Codes\
-\
-REFERENCE URL:\
-https://www.flhsmv.gov/pdf/proc/rs/rs-03.pdf}
+FLORIDA REGISTRATION PROCEDURE — MOTOR VEHICLE REGISTRATION CODES
+PROCEDURE: RS-03
+CATEGORY: REGISTRATION CODES / CLASS CODES / INVENTORY CODES / FEES
+
+==================================================
+PROCEDURE SUMMARY
+==================================================
+
+This procedure governs:
+- Motor vehicle registration codes
+- Tax class codes
+- Registration fee calculations
+- Inventory code usage
+- Personalized plate indicators
+- Amateur radio plate indicators
+- Dealer specialty indicators
+- Fleet specialty indicators
+- Registration use code logic
+- Transfer fee logic
+- Mail fee handling
+
+Applies to:
+- Motor vehicles
+- License plates
+- Registration transactions
+- Dealers
+- Fleet vehicles
+- Personalized plates
+- Tax collectors
+- License plate agencies
+- FLHSMV personnel
+
+==================================================
+AI CLASSIFICATION TAGS
+==================================================
+
+KEYWORDS:
+- registration codes
+- motor vehicle registration codes
+- class code
+- tax class code
+- inventory code
+- reg use
+- registration use code
+- registration fees
+- fee calculation
+- transfer fee
+- mail fee
+- personalized plate code
+- amateur radio plate
+- dealer specialty plate
+- fleet specialty plate
+- registration tax
+- RS-03
+- registration classification
+- license plate inventory code
+- body type classification
+- weight classification
+- vehicle type classification
+- fee exemption logic
+- registration fee logic
+- transfer code
+- fee code
+- mail code
+- inventory suffix P
+- inventory suffix A
+- inventory suffix J
+- inventory suffix O
+
+COMMON USER QUESTIONS:
+- "How are registration fees calculated?"
+- "What determines class code?"
+- "What is reg use?"
+- "What is inventory code?"
+- "What does personalized plate code mean?"
+- "How is transfer fee calculated?"
+- "What is dealer specialty code?"
+- "What is fleet specialty code?"
+- "Are transfer codes still used?"
+- "How are mail fees handled?"
+- "What determines registration tax?"
+- "How do fee exemptions work?"
+- "What code identifies amateur radio plate?"
+- "How are class codes created?"
+- "What system determines fees?"
+
+==================================================
+LEGAL AUTHORITY
+==================================================
+
+Governed by:
+- Chapter 320 FS
+- Section 320.08 FS
+- Section 320.17 FS
+- Section 320.031 FS
+- Section 320.0609 FS
+
+==================================================
+DESCRIPTION AND USE
+==================================================
+
+Procedure explains:
+- Registration code structures
+- Registration fee determination
+- Inventory code indicators
+- Registration classification logic
+- Transfer fee processing
+- Mail fee distribution
+
+==================================================
+TAX CLASS CODE RULES
+==================================================
+
+Tax class code:
+Determined by:
+Combination of vehicle information.
+
+==================================================
+VERY IMPORTANT CLASS CODE RULE
+==================================================
+
+Class code created from:
+- Vehicle weight
+- Body type
+- Vehicle type
+
+==================================================
+VERY IMPORTANT REGISTRATION USE RULE
+==================================================
+
+Registration use code:
+Combined with:
+- Inventory code
+- Class code
+To determine registration fees.
+
+==================================================
+VERY IMPORTANT CLASS CODE CONVERSION RULE
+==================================================
+
+Class code conversions:
+Available through:
+General Reports:
+In motor vehicle issuance system.
+
+==================================================
+TAG TYPE CODE RULES
+==================================================
+
+Tag type identifier codes:
+No longer used.
+
+==================================================
+VERY IMPORTANT INVENTORY CODE RULE
+==================================================
+
+License plate inventory codes:
+Now used:
+To determine registration fees.
+
+==================================================
+VERY IMPORTANT PERSONALIZED PLATE RULE
+==================================================
+
+Inventory code ending with:
+"P"
+Indicates:
+Personalized plate.
+
+==================================================
+VERY IMPORTANT AMATEUR RADIO RULE
+==================================================
+
+Inventory code ending with:
+"A"
+Indicates:
+Amateur radio plate.
+
+==================================================
+VERY IMPORTANT DEALER SPECIALTY RULE
+==================================================
+
+Inventory code ending with:
+"J"
+Indicates:
+Dealer specialty plate.
+
+==================================================
+VERY IMPORTANT FLEET SPECIALTY RULE
+==================================================
+
+Inventory code ending with:
+"O"
+Indicates:
+Fleet specialty plate.
+
+==================================================
+FEE CODE RULES
+==================================================
+
+Fee codes:
+No longer used.
+
+==================================================
+VERY IMPORTANT REG USE FEE RULE
+==================================================
+
+Registration use codes:
+Now determine:
+- Charges
+- Exemptions
+
+==================================================
+TRANSFER CODE RULES
+==================================================
+
+Transfer codes:
+No longer used.
+
+==================================================
+VERY IMPORTANT TRANSFER CALCULATION RULE
+==================================================
+
+Motor vehicle issuance system:
+Calculates:
+Registration tax and fees:
+Using:
+- REG USE
+- Vehicle weight
+
+==================================================
+VERY IMPORTANT TRANSFER FEE RULE
+==================================================
+
+Certain plate transfers:
+Require:
+$4.50 transfer fee.
+
+==================================================
+MAIL CODE RULES
+==================================================
+
+Mail code handling:
+References:
+RS-01.
+
+==================================================
+VERY IMPORTANT COUNTY MAIL FEE RULE
+==================================================
+
+Mail fees collected by county:
+Retained by county.
+
+==================================================
+VERY IMPORTANT STATE MAIL FEE RULE
+==================================================
+
+Mail fees collected by FLHSMV:
+Distributed to:
+General Revenue Fund.
+
+==================================================
+REGISTRATION FEE LOGIC
+==================================================
+
+Registration fees determined by:
+- Weight
+- Body type
+- Vehicle type
+- Registration use
+- Inventory code
+- Class code
+
+==================================================
+VERY IMPORTANT SYSTEM LOGIC RULE
+==================================================
+
+Motor vehicle issuance system:
+Automatically calculates:
+Registration taxes and fees.
+
+==================================================
+AI DECISION LOGIC
+==================================================
+
+AI should determine:
+1. What class code applies?
+2. What weight category applies?
+3. What body type applies?
+4. What vehicle type applies?
+5. What REG USE applies?
+6. What inventory code applies?
+7. Is inventory code personalized?
+8. Is inventory code amateur radio?
+9. Is inventory code dealer specialty?
+10. Is inventory code fleet specialty?
+11. Is transfer fee applicable?
+12. Are exemptions controlled by REG USE?
+13. Should transfer codes be ignored?
+14. Should fee codes be ignored?
+15. Does county retain mail fee?
+16. Does state receive mail fee?
+17. Does system auto-calculate fees?
+18. Should General Reports be referenced?
+19. Is registration fee system-generated?
+20. Does inventory suffix affect fee structure?
+
+==================================================
+COMMON TITLE CLERK / REGISTRATION ERRORS
+==================================================
+
+- Using obsolete fee codes
+- Using obsolete transfer codes
+- Incorrect REG USE assignment
+- Incorrect inventory code
+- Missing personalized plate suffix
+- Incorrect dealer specialty coding
+- Incorrect fleet specialty coding
+- Miscalculating transfer fees manually
+- Ignoring vehicle weight
+- Incorrect class code determination
+- Misunderstanding fee exemption logic
+- Incorrect mail fee routing
+- Failing to use issuance system calculations
+
+==================================================
+VERY IMPORTANT CORE CONCEPT
+==================================================
+
+Florida registration fee calculations:
+Are primarily system-driven
+and based upon:
+- Vehicle weight
+- Body type
+- Vehicle type
+- Registration use
+- Inventory code
+- Class code
+
+Older fee and transfer code systems:
+Are no longer used.
+
+==================================================
+RELATED PROCEDURES
+==================================================
+
+- RS-01
+- RS-05
+
+==================================================
+RELATED SYSTEMS
+==================================================
+
+- Motor Vehicle Issuance System
+- General Reports
+
+==================================================
+REFERENCE NOTES
+==================================================
+
+Current revision:
+02/11/2022
+
+Primary focus:
+- Registration fee logic
+- Inventory code structure
+- Class code determination
+- REG USE fee calculations

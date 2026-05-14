@@ -1,0 +1,490 @@
+FLORIDA TITLE PROCEDURE — MARK TITLE SOLD
+PROCEDURE: TL-52
+CATEGORY: TITLE STATUS / NOTICE OF SALE / SOLD FLAG PROCESSING
+
+==================================================
+PROCEDURE SUMMARY
+==================================================
+
+This procedure governs:
+- Marking Florida titles as sold
+- Notice of sale processing
+- Seller liability limitation
+- DMV sold status updates
+- Dealership trade-in sold reporting
+- Temporary plate issuance during pending title transfers
+- Sold flag corrections
+- Duplicate title processing after sold status
+
+Applies to:
+- Motor vehicles
+- Mobile homes
+- Vessels
+- Off-highway vehicles
+
+==================================================
+AI CLASSIFICATION TAGS
+==================================================
+
+KEYWORDS:
+- mark title sold
+- sold flag
+- notice of sale
+- HSMV 82050
+- sold status
+- title sold
+- trade-in sold
+- DMV sold status
+- temporary plate pending title
+- duplicate after sold
+- lien payoff pending title
+- sold title correction
+- title transfer pending
+- seller liability protection
+
+COMMON USER QUESTIONS:
+- "How do I mark a title sold?"
+- "What is HSMV 82050?"
+- "How do I protect myself after selling vehicle?"
+- "Can dealer mark title sold?"
+- "What happens when title marked sold?"
+- "Can temporary plate be issued before lien release?"
+- "What if buyer lost title?"
+- "How do I remove sold status?"
+- "What if mark sold was mistake?"
+- "Does sold flag transfer ownership?"
+
+==================================================
+LEGAL AUTHORITY
+==================================================
+
+Governed by:
+- 319.22(2)(b) FS
+- 319.23(6) FS
+- 328.01(3)(d) FS
+
+==================================================
+VERY IMPORTANT LIABILITY RULE
+==================================================
+
+Seller:
+Must notify department:
+Within:
+- 30 days after sale or transfer.
+
+==================================================
+VERY IMPORTANT LIABILITY PROTECTION RULE
+==================================================
+
+Notice of sale:
+Protects seller from:
+- Future civil liability.
+
+==================================================
+VERY IMPORTANT DEALER EXCEPTION RULE
+==================================================
+
+Notice requirement:
+Does NOT apply:
+When:
+- Vehicle traded to licensed dealer
+OR
+- Insurance company takes possession.
+
+==================================================
+VERY IMPORTANT DEALER TRADE-IN RULE
+==================================================
+
+Licensed dealer:
+Must submit:
+- Notice of sale
+
+Within:
+- 30 days.
+
+==================================================
+VERY IMPORTANT VESSEL RULE
+==================================================
+
+Vessel owner:
+Not considered owner after:
+- Properly endorsed title delivered
+OR
+- Notice submitted.
+
+==================================================
+VERY IMPORTANT VOID RULE
+==================================================
+
+Void means:
+- Vacate or undo incorrect pending transaction record.
+
+==================================================
+DESCRIPTION AND USE
+==================================================
+
+Procedure assists:
+- Tax collector employees
+- License plate agents
+- FLHSMV employees
+
+With:
+- Processing notice of sale transactions.
+
+==================================================
+VERY IMPORTANT DELAYED TITLE TRANSFER RULE
+==================================================
+
+Seller may not accompany buyer:
+Therefore:
+- Transfer may not complete immediately.
+
+==================================================
+MARK TITLE SOLD REQUIREMENTS
+==================================================
+
+Seller must submit:
+- HSMV 82050
+OR
+- Notice of Sale section on back of title.
+
+==================================================
+VERY IMPORTANT HSMV 82050 RULE
+==================================================
+
+HSMV 82050:
+Used for:
+- Motor vehicles
+- Mobile homes
+- Off-highway vehicles
+- Vessels.
+
+==================================================
+VERY IMPORTANT DEALERSHIP TRADE-IN RULE
+==================================================
+
+For trade-ins:
+Dealer completes:
+- Section 7 on HSMV 82040 MV
+OR
+- HSMV 82040 MH.
+
+==================================================
+VERY IMPORTANT DATABASE UPDATE RULE
+==================================================
+
+DMV database:
+Must reflect:
+- "Sold"
+
+After trade-in paperwork submitted.
+
+==================================================
+VERY IMPORTANT NAME MATCH RULE
+==================================================
+
+Title clerk must verify:
+- Names on DMV system
+Match:
+- Names on HSMV 82040 MV.
+
+==================================================
+VERY IMPORTANT NO DUPLICATE SOLD RULE
+==================================================
+
+If vehicle already transferred:
+DO NOT:
+- Mark title sold again.
+
+==================================================
+VERY IMPORTANT PRIVATE SALE RULE
+==================================================
+
+Private/casual sale:
+Seller should complete:
+- HSMV 82050
+OR
+- Notice of Sale on back of title.
+
+==================================================
+VERY IMPORTANT COMMENT DESCRIPTION RULE
+==================================================
+
+When marking sold:
+Enter in comment description:
+- Purchaser/dealer name
+- Actual date of sale.
+
+==================================================
+VERY IMPORTANT SALE DATE RULE
+==================================================
+
+Actual sale date:
+May differ from:
+- Transaction processing date.
+
+==================================================
+VERY IMPORTANT UNKNOWN DATE RULE
+==================================================
+
+If exact sale date unknown:
+Enter:
+- Partial date information.
+
+Examples:
+- 07/03
+- 2003
+
+==================================================
+VERY IMPORTANT SELLER NAME RULE
+==================================================
+
+Seller name:
+Remains on DMV database:
+Until:
+- Title officially transferred.
+
+==================================================
+VERY IMPORTANT PHYSICAL DOCUMENT RULE
+==================================================
+
+Title clerk:
+Must physically view:
+- Signed HSMV 82050
+OR
+- Signed Notice of Sale section.
+
+==================================================
+VERY IMPORTANT RETENTION RULE
+==================================================
+
+Department:
+Does NOT retain:
+- HSMV 82050.
+
+Customer:
+Responsible for:
+- Keeping records.
+
+==================================================
+DUPLICATE TITLE AFTER SOLD STATUS
+==================================================
+
+If buyer loses title:
+Seller must apply for duplicate.
+
+==================================================
+DUPLICATE TITLE REQUIREMENTS
+==================================================
+
+Need:
+- HSMV 82101
+
+Completed by:
+- Seller.
+
+==================================================
+VERY IMPORTANT SOLD STATUS REAPPLICATION RULE
+==================================================
+
+After duplicate issued:
+If transfer not ready:
+Title clerk must:
+- Restore sold status.
+
+==================================================
+MISCELLANEOUS INFORMATION
+==================================================
+
+System prompts:
+- Sold status
+After mark sold transaction completed.
+
+==================================================
+VERY IMPORTANT REGISTRATION DETACH RULE
+==================================================
+
+Registration:
+Will detach from title record.
+
+Allows:
+- Temporary plate issuance.
+
+==================================================
+PENDING LIEN RELEASE RULE
+==================================================
+
+If purchaser waiting for lien release:
+License plate agent may:
+- Mark title sold
+AND
+- Issue temporary plate.
+
+==================================================
+VERY IMPORTANT LIEN VERIFICATION RULE
+==================================================
+
+Need:
+- Lienholder verification letter.
+
+==================================================
+ACCEPTABLE LIEN LETTERS
+==================================================
+
+Acceptable letters:
+1. Previous owner's lienholder payoff letter
+OR
+2. Purchaser's lienholder payoff confirmation.
+
+==================================================
+VERY IMPORTANT TEMP PLATE RULE
+==================================================
+
+Temporary plate issuance:
+Requires:
+- HSMV 82050.
+
+==================================================
+VERY IMPORTANT VESSEL EXCLUSION RULE
+==================================================
+
+Pending lien temporary plate process:
+Does NOT apply:
+To:
+- Vessels.
+
+==================================================
+VERY IMPORTANT PENALTY DATE RULE
+==================================================
+
+Use transfer date on title:
+To determine:
+- Penalty fees.
+
+==================================================
+VERY IMPORTANT FALLBACK DATE RULE
+==================================================
+
+If no title transfer date:
+Use:
+- Mark title sold status date.
+
+==================================================
+VERY IMPORTANT COMMENT FIELD DATE RULE
+==================================================
+
+If comment description contains date:
+Use:
+- Comment field date.
+
+==================================================
+VERY IMPORTANT ALTERED PURCHASER RULE
+==================================================
+
+If purchaser/dealer name altered:
+AND
+System reflects sold:
+Refer to:
+- TL-11 Section III.
+
+==================================================
+SOLD FLAG ERROR CORRECTION RULE
+==================================================
+
+If sold status entered in error:
+Need:
+- Seller affidavit.
+
+==================================================
+VERY IMPORTANT TITLE CORRECTION RULE
+==================================================
+
+Incorrect sold flag:
+May be removed:
+Using:
+- Title correction transaction.
+
+==================================================
+VERY IMPORTANT NO TITLE PRINT RULE
+==================================================
+
+When removing incorrect sold flag:
+DO NOT:
+- Print certificate of title.
+
+==================================================
+AI DECISION LOGIC
+==================================================
+
+AI should determine:
+1. Is seller reporting sale?
+2. Is transaction dealer trade-in?
+3. Is transaction private sale?
+4. Is HSMV 82050 completed?
+5. Is Notice of Sale section completed?
+6. Has vehicle already transferred?
+7. Does sold status already exist?
+8. Is temporary plate requested?
+9. Is lien release pending?
+10. Is acceptable lien letter included?
+11. Is duplicate title needed?
+12. Was sold status entered by mistake?
+13. Is affidavit required?
+14. Is penalty fee due?
+15. Is vessel involved?
+16. Is registration detached?
+17. Is purchaser information altered?
+
+==================================================
+COMMON TITLE CLERK ERRORS
+==================================================
+
+- Forgetting to enter purchaser/dealer name
+- Using wrong sale date
+- Marking already transferred title sold
+- Forgetting to restore sold status after duplicate
+- Retaining HSMV 82050 unnecessarily
+- Issuing title during sold flag correction
+- Missing lien verification letter
+- Applying temp plate process to vessels
+- Missing seller affidavit for correction
+- Incorrectly calculating penalty fee date
+
+==================================================
+VERY IMPORTANT BUSINESS PURPOSE
+==================================================
+
+Mark title sold:
+Primarily protects:
+- Seller liability exposure
+
+While allowing:
+- Delayed title transfer processing.
+
+==================================================
+RELATED FORMS
+==================================================
+
+- HSMV 82050
+- HSMV 82040 MV
+- HSMV 82040 MH
+- HSMV 82101
+
+==================================================
+RELATED PROCEDURES
+==================================================
+
+- TL-11
+
+==================================================
+REFERENCE NOTES
+==================================================
+
+Current revision:
+- 08/14/2020
+
+Primary focus:
+- Sold flag processing
+- Notice of sale procedures
+- Seller liability protection
+- Temporary plate issuance during pending title transfer

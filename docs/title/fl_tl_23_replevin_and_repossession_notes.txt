@@ -1,0 +1,404 @@
+FLORIDA TITLE PROCEDURE — APPLICATION FOR CERTIFICATE OF TITLE FOLLOWING REPLEVIN AND REPOSSESSION FOR NON-FULFILLMENT OF CONTRACT
+PROCEDURE: TL-23
+CATEGORY: REPOSSESSION / REPLEVIN / OPERATION OF LAW
+RELATED STATUTES:
+- 319.24 FS
+- 319.28 FS
+- 319.323 FS
+- 328.01 FS
+
+==================================================
+PROCEDURE SUMMARY
+==================================================
+
+This procedure governs:
+- Vehicle repossessions
+- Mobile home repossessions
+- Vessel repossessions
+- Replevin court actions
+- Lienholder title transfers
+- Non-fulfillment of contract cases
+
+Applies when:
+- Borrower defaults
+- Vehicle is repossessed
+- Court awards possession
+- Lienholder seeks title
+
+==================================================
+AI CLASSIFICATION TAGS
+==================================================
+
+KEYWORDS:
+- repossession
+- repo
+- replevin
+- default
+- lienholder repossession
+- involuntary transfer
+- operation of law
+- writ of replevin
+- final judgment
+- secured creditor
+- repossessed vehicle
+- repossessed vessel
+- non-fulfillment of contract
+- collateral recovery
+
+COMMON USER QUESTIONS:
+- "Repo title"
+- "Vehicle repossessed"
+- "Lienholder taking title"
+- "Need repo title"
+- "Court awarded vehicle"
+- "Replevin order"
+- "Can lienholder title vehicle?"
+- "Repossession paperwork"
+- "Florida repo title"
+
+==================================================
+CORE LEGAL PRINCIPLE
+==================================================
+
+Repossession transfers ownership rights through:
+- Lienholder repossession rights
+OR
+- Court-ordered replevin
+
+Repossessor must:
+- Possess vehicle
+- Follow statutory requirements
+- Apply for Florida title
+
+==================================================
+IMPORTANT DEFINITIONS
+==================================================
+
+DEFAULT:
+Failure to meet financial obligations.
+
+REPOSSESSION:
+Recovery of collateral after loan default.
+
+REPLEVIN:
+Court process recovering property wrongfully withheld.
+
+WRIT OF REPLEVIN:
+Court document authorizing sheriff recovery only.
+
+FINAL JUDGMENT IN REPLEVIN:
+Court order awarding ownership/possession.
+
+==================================================
+VERY IMPORTANT REPLEVIN RULE
+==================================================
+
+A Writ of Replevin:
+- ONLY authorizes recovery of vehicle/property
+
+A Writ of Replevin ALONE:
+- DOES NOT authorize title issuance
+
+A Final Judgment in Replevin:
+- Must award ownership
+- Must specifically describe vehicle/mobile home
+
+==================================================
+FLORIDA TITLE WITH FLORIDA LIENHOLDER
+==================================================
+
+REQUIRED:
+
+1. Florida title
+UNLESS:
+- Electronic title exists
+
+2. HSMV 82040 application
+
+3. Sales tax or exemption
+
+4. Non-use affidavit if applicable
+
+5. Title fees
+
+==================================================
+SUBSEQUENT LIENHOLDER REQUIREMENTS
+==================================================
+
+IF subsequent lien exists:
+
+PRIMARY lienholder must notify subsequent lienholder.
+
+Acceptable proof:
+- Lien satisfaction
+OR
+- HSMV 82048
+OR
+- Notice of intent to repossess
+
+AND:
+- Certified mail receipt
+OR
+- Returned unclaimed letter
+
+==================================================
+15-DAY REPOSSESSION RULE
+==================================================
+
+Subsequent lienholder has:
+- 15 calendar days
+after mailing notice
+
+To:
+- Protest repossession
+
+IMPORTANT:
+Applications submitted BEFORE expiration of 15-day period:
+- MUST be rejected
+
+==================================================
+STOP CONDITIONS
+==================================================
+
+Administrative stop placed if:
+- Subsequent lienholder protests repossession
+
+==================================================
+ELECTRONIC TITLE RULES
+==================================================
+
+Paper title not required if:
+- DMS reflects Electronic Title
+
+IF title lost:
+- Affidavit required
+UNLESS:
+- Electronic title exists
+
+==================================================
+OUT-OF-STATE TITLE RULES
+==================================================
+
+IF out-of-state title:
+- Florida repossession title required
+IF repossessed in Florida
+
+Requires:
+- Ownership verification
+- VIN verification
+- Title/lien status verification
+
+==================================================
+VIN VERIFICATION REQUIREMENTS
+==================================================
+
+VIN verification may be completed by ONLY:
+
+- Florida law enforcement
+- Florida tax collector/DMS employee
+- Florida DMS compliance examiner
+- Florida licensed dealer
+- Florida licensed auction (VF/VI/VA)
+
+Auction verification:
+- Must be on auction letterhead
+
+==================================================
+VIN VERIFICATION EXEMPTIONS
+==================================================
+
+VIN verification NOT required for:
+- Mobile homes
+- Trailers under 2,000 lbs
+- Semi trailers under 2,000 lbs
+- Travel trailers
+- Camping trailers
+- Truck campers
+- Fifth-wheel trailers
+
+==================================================
+VESSEL REPOSSESSION RULES
+==================================================
+
+VESSELS require:
+- Copy of lien instrument
+(front and back)
+
+Must show:
+- Lienholder
+- Customer
+- Year
+- Make
+- HIN
+- Execution date
+
+Verbal contracts:
+- NOT acceptable
+
+==================================================
+VESSEL SPECIAL RULE
+==================================================
+
+Lienholder repossessing vessel:
+- Does NOT have to title vessel before resale
+
+==================================================
+OUT-OF-STATE REPOSSESSION STATES
+==================================================
+
+Certain states require:
+- Special repossession affidavits/forms
+
+Exhibit B contains:
+- State-by-state form chart
+
+AI should flag:
+- Out-of-state repo involving non-Florida title
+
+==================================================
+FLOOR PLAN REPOSSESSION RULES
+==================================================
+
+Floor planner not shown as lienholder:
+- Must provide floor plan agreement
+
+If blanket inventory clause exists:
+- Vehicle list may not be required
+
+Otherwise:
+- Inventory list required
+
+==================================================
+FIRST LIENHOLDER RULE
+==================================================
+
+ONLY first lienholder:
+- Has repossession rights
+
+Subsequent lienholder:
+- Cannot repo title vehicle
+until becoming first lienholder
+
+==================================================
+MCO REPOSSESSION RULE
+==================================================
+
+IF:
+- MCO assigned
+BUT
+- Original title never issued
+
+THEN:
+- Original title must issue first
+showing lien
+
+AFTER:
+- Repo title may issue
+
+==================================================
+STOLEN REPOSSESSED VEHICLE RULE
+==================================================
+
+IF repossessed vehicle stolen while in lienholder possession:
+
+REQUIRED:
+- Police report
+- Affidavit
+- Loan default confirmation
+
+==================================================
+LIEN RECORDING RULE
+==================================================
+
+IF lien missing from title:
+- HSMV 82139 required
+- Lien recording fee required
+
+==================================================
+REPO TITLE ERROR CORRECTION
+==================================================
+
+IF repossession title issued in error:
+- Title must be mailed to FLHSMV
+- Affidavit explanation required
+- Prior record reinstated
+
+==================================================
+MOBILE HOME SPECIAL RULE
+==================================================
+
+Repossessed mobile home exempt from registration IF:
+- Not transferred for occupancy
+AND
+- Remains unoccupied
+
+==================================================
+COMMON DEALERSHIP ERRORS
+==================================================
+
+- Accepting Writ of Replevin alone
+- Missing 15-day waiting period
+- Missing certified mail proof
+- Missing subsequent lienholder notice
+- Missing VIN verification
+- Incorrect repossession state affidavit
+- Missing lien instrument for vessel
+- Attempting repo by non-first lienholder
+- Missing out-of-state title verification
+- Missing HSMV 82139 lien assignment
+- Trying verbal vessel contract
+- Incorrectly rejecting electronic title repos
+
+==================================================
+AI DECISION LOGIC
+==================================================
+
+AI should determine:
+
+1. Florida or out-of-state title?
+2. Florida or out-of-state lienholder?
+3. Vehicle, mobile home, or vessel?
+4. Replevin or repossession?
+5. Is title electronic?
+6. Are there subsequent liens?
+7. Has 15-day period passed?
+8. Is VIN verification required?
+9. Is proper repo affidavit required?
+10. Is repossessor first lienholder?
+11. Is there final judgment?
+12. Is floor plan involved?
+
+==================================================
+IMPORTANT FORMS
+==================================================
+
+- HSMV 82040
+- HSMV 82042
+- HSMV 82048
+- HSMV 82139
+- HSMV 87008
+
+==================================================
+RELATED PROCEDURES
+==================================================
+
+- TL-07 lien procedures
+- Operation of law transfers
+- Electronic title procedures
+- Vessel title procedures
+- Replevin procedures
+- Out-of-state title procedures
+
+==================================================
+IMPORTANT OPERATIONAL NOTES
+==================================================
+
+- Repossessor must possess vehicle
+- Writ of Replevin alone insufficient
+- Final Judgment awards ownership
+- 15-day subsequent lienholder period critical
+- Only first lienholder has repo rights
+- Electronic titles simplify processing
+- Vessel repossessions have additional contract requirements
+- Florida repossession title required for Florida repossessions
+- Out-of-state repo forms vary by title state

@@ -1,0 +1,673 @@
+FLORIDA TITLE PROCEDURE — REPORTS / EOD REPORTING / DOCUMENT SUBMISSION
+PROCEDURE: TL-62
+CATEGORY: REPORTS / END OF DAY / SCANNING / AUDIT / COMPLIANCE
+
+==================================================
+PROCEDURE SUMMARY
+==================================================
+
+This procedure explains:
+- EOD reports
+- Daily report requirements
+- Reports sent to FLHSMV
+- Reports retained by counties
+- Scanning procedures
+- Document packaging
+- Transaction Summary Reports
+- Audit reports
+- HVUT reporting
+- Customer creation reporting
+- Merge customer reporting
+- Sales tax reporting
+- Batch preparation
+- Mailing requirements
+
+Applies to:
+- Tax collectors
+- License plate agencies
+- FLHSMV employees
+- Fast title offices
+- Scanning operations
+- Audit compliance operations
+
+==================================================
+AI CLASSIFICATION TAGS
+==================================================
+
+KEYWORDS:
+- EOD report
+- end of day
+- transaction summary report
+- scan EOD detail
+- title audit report
+- initial exempt report
+- reduced annual use fee report
+- HVUT report
+- heavy vehicle use tax
+- create customer report
+- merge customer report
+- scan cover sheet
+- imaging
+- title scanning
+- report batching
+- barcode report
+- title audit
+- FLHSMV scanning unit
+- document retention
+- transaction ID order
+- report packaging
+- county retained reports
+- attestation statement
+
+COMMON USER QUESTIONS:
+- "What reports go to FLHSMV?"
+- "What reports stay at county?"
+- "How long retain reports?"
+- "What order do documents go in?"
+- "Where do reports get mailed?"
+- "What is scan EOD detail?"
+- "What is title audit report?"
+- "What reports are required daily?"
+- "What if no activity?"
+- "What is HVUT report?"
+- "How are documents packaged?"
+- "What is transaction summary report?"
+- "What is required for imaging?"
+- "How long keep supporting docs?"
+- "Can reports be destroyed?"
+
+==================================================
+DESCRIPTION AND USE
+==================================================
+
+Procedure explains:
+- Which reports must be submitted to FLHSMV
+- Which reports agencies retain
+- EOD report handling
+- Imaging preparation
+- Compliance requirements
+
+==================================================
+GENERAL INFORMATION
+==================================================
+
+Motor vehicle issuance system:
+Contains:
+- General reports
+- EOD reports
+
+Reports used for:
+- Daily operations
+- Accountability
+- Quality control
+- Audits
+- Compliance
+
+==================================================
+VERY IMPORTANT REPORT RULE
+==================================================
+
+Reports may be:
+Generated multiple times:
+During the same day.
+
+==================================================
+VERY IMPORTANT OPTIONAL REPORT RULE
+==================================================
+
+Some reports:
+Optional to print:
+And not required for FLHSMV submission.
+
+==================================================
+EOD REPORT RULES
+==================================================
+
+Every processing day:
+EOD reports generated.
+
+==================================================
+VERY IMPORTANT DAILY REQUIREMENT RULE
+==================================================
+
+Agency MUST run:
+Daily reports:
+Even if there is:
+NO activity.
+
+==================================================
+VERY IMPORTANT ATTESTATION RULE
+==================================================
+
+EOD reports contain:
+- Attestation statement
+- Signature requirement
+- Date requirement
+
+==================================================
+REPORTS SENT TO FLHSMV
+==================================================
+
+Primary report:
+- Transaction Summary Report
+
+==================================================
+TRANSACTION SUMMARY REPORT RULES
+==================================================
+
+Transaction Summary Report:
+Shows:
+- All transactions processed that day
+- Counts
+- Dollar totals
+- County retained money
+- Money due FLHSMV
+
+==================================================
+VERY IMPORTANT VEHICLE/VESSEL RULE
+==================================================
+
+Vehicles and vessels:
+Appear separately:
+On report.
+
+Only:
+ONE report:
+Sent to FLHSMV.
+
+==================================================
+VERY IMPORTANT SUBMISSION DEADLINE RULE
+==================================================
+
+Reports and monies:
+Must be submitted:
+Within:
+10 business days:
+Of EOD process.
+
+==================================================
+VERY IMPORTANT DOCUMENT ORDER RULE
+==================================================
+
+Documents MUST remain:
+In transaction ID order.
+
+==================================================
+VERY IMPORTANT BARCODE RULE
+==================================================
+
+Page one:
+Transaction Summary Report with barcode:
+Must be:
+Top sheet.
+
+==================================================
+VERY IMPORTANT IMAGING ORDER RULE
+==================================================
+
+Documents submitted in this order:
+
+1. Transaction Summary Report with barcode
+2. Title transactions with HSMV 82041
+3. HVUT scan cover sheets and docs
+4. MVSR scan cover sheets and docs
+5. MSWOL scan cover sheets and docs
+
+==================================================
+VERY IMPORTANT TITLE TRANSACTION RULE
+==================================================
+
+Title transaction packets include:
+- Generated HSMV 82041
+- Original supporting documents
+
+==================================================
+VERY IMPORTANT SCAN COVER SHEET RULE
+==================================================
+
+Scan cover sheets required for:
+- HVUT
+- MVSR
+- MSWOL
+
+==================================================
+VERY IMPORTANT MAILING ORDER RULE
+==================================================
+
+When packaging multiple reports:
+Reports must be:
+In agency report number order.
+
+==================================================
+VERY IMPORTANT MAILING ADDRESS RULE
+==================================================
+
+Reports mailed to:
+
+Florida Highway Safety and Motor Vehicles
+Division of Motorist Services
+High-Speed Scanning Unit
+Clara H. Adams Building
+2928 Apalachee Parkway, MS 71
+Tallahassee, Florida 32399
+
+==================================================
+COUNTY RETAINED REPORTS
+==================================================
+
+Required retention:
+Minimum:
+1 year.
+
+==================================================
+VERY IMPORTANT RETENTION RULE
+==================================================
+
+Required EOD retained reports:
+Must:
+- Run daily
+- Be retained minimum one year
+- Be retained even with no activity
+
+==================================================
+SCAN EOD DETAIL REPORT
+==================================================
+
+Displays:
+- Titles
+- HVUT registrations
+- Stops
+
+Required for scanning.
+
+==================================================
+VERY IMPORTANT SCAN EOD RULE
+==================================================
+
+Scan EOD Detail:
+NOT submitted:
+To FLHSMV.
+
+==================================================
+TITLE AUDIT REPORT
+==================================================
+
+Tracks:
+- Fast titles issued
+- Fast titles voided
+
+==================================================
+VERY IMPORTANT TITLE AUDIT RULE
+==================================================
+
+Must balance:
+To titles printed or voided:
+That day.
+
+==================================================
+VERY IMPORTANT TITLE AUDIT RETENTION RULE
+==================================================
+
+Retain:
+- Title Audit Report
+- Supporting documents
+
+For:
+1 year.
+
+Then:
+Destroy.
+
+==================================================
+INITIAL EXEMPT REPORT
+==================================================
+
+Tracks:
+Initial Registration Fee exemptions.
+
+==================================================
+VERY IMPORTANT INITIAL EXEMPT RULE
+==================================================
+
+Shows:
+- User ID
+- Exemption code used
+
+==================================================
+VERY IMPORTANT INITIAL EXEMPT DOCUMENT RULE
+==================================================
+
+Retain:
+- Initial Exempt Report
+- HSMV 82002
+- Supporting documents
+
+For:
+1 year.
+
+Then:
+Destroy.
+
+==================================================
+REDUCED ANNUAL USE FEE REPORT
+==================================================
+
+Tracks:
+Reduced fees for:
+- Aquaculture plates
+- Save Our Seas plates
+
+==================================================
+VERY IMPORTANT REDUCED FEE RULE
+==================================================
+
+Reduced fee allowed:
+If:
+10 or more plates:
+Requested by same owner.
+
+==================================================
+VERY IMPORTANT REDUCED FEE RETENTION RULE
+==================================================
+
+Retain:
+Report and supporting docs:
+1 year.
+
+Then:
+Destroy.
+
+==================================================
+HEAVY VEHICLE USE TAX REPORT
+==================================================
+
+Tracks:
+HVUT registrations.
+
+==================================================
+VERY IMPORTANT HVUT RULE
+==================================================
+
+Included when:
+HVUT question answered:
+"Yes"
+
+==================================================
+VERY IMPORTANT HVUT ORIGINAL DOCUMENT RULE
+==================================================
+
+Original HVUT transactions:
+Must be sent:
+With Transaction Summary Report.
+
+==================================================
+VERY IMPORTANT HVUT ERROR RULE
+==================================================
+
+Motorist Review Error Reports:
+Emailed monthly:
+If errors found.
+
+==================================================
+VERY IMPORTANT HVUT RETENTION RULE
+==================================================
+
+Retain:
+HVUT reports and supporting docs:
+Minimum 1 year.
+
+==================================================
+CREATE CUSTOMER REPORT
+==================================================
+
+Reviewed daily:
+To verify:
+Customer records created correctly.
+
+==================================================
+VERY IMPORTANT CREATE CUSTOMER RULE
+==================================================
+
+Verify:
+Customer information matches:
+Provided identification.
+
+==================================================
+MERGE CUSTOMER REPORT
+==================================================
+
+Reviewed daily:
+For proper merge compliance.
+
+==================================================
+VERY IMPORTANT MERGE CUSTOMER ERROR RULE
+==================================================
+
+If merge error found:
+Contact:
+Field Support Center.
+
+==================================================
+DOR SALES TAX COUNTY SUMMARY
+==================================================
+
+Tracks:
+Sales tax collected.
+
+==================================================
+VERY IMPORTANT DOR RULE
+==================================================
+
+NOT sent:
+To FLHSMV.
+
+==================================================
+VERY IMPORTANT DOR REPORTING RULE
+==================================================
+
+Sales tax data:
+Reported:
+To Department of Revenue.
+
+==================================================
+EXHIBIT A RULES
+==================================================
+
+Exhibit A:
+Example:
+EOD report with attestation statement.
+
+==================================================
+VERY IMPORTANT ATTESTATION REQUIREMENT RULE
+==================================================
+
+Attestation confirms:
+- Transactions performed correctly
+- Supporting docs submitted properly
+
+==================================================
+EXHIBIT B RULES
+==================================================
+
+Exhibit B:
+Best practices for:
+Submitting reports and documents.
+
+==================================================
+VERY IMPORTANT DOCUMENT CONDITION RULE
+==================================================
+
+Before batching:
+Check for:
+- Torn paper
+- Damaged paper
+- Illegible printing
+
+==================================================
+VERY IMPORTANT REPAIR RULE
+==================================================
+
+Repair torn paper:
+Using:
+Scotch tape.
+
+==================================================
+VERY IMPORTANT FLATTEN RULE
+==================================================
+
+Documents:
+Must be flattened.
+No folds.
+
+==================================================
+VERY IMPORTANT POST-IT RULE
+==================================================
+
+Remove:
+Post-its and notes:
+Covering information.
+
+==================================================
+VERY IMPORTANT BARCODE LEGIBILITY RULE
+==================================================
+
+Barcodes must:
+- Be legible
+- Remain unobstructed
+
+==================================================
+VERY IMPORTANT STAPLE RULE
+==================================================
+
+No more than:
+One staple:
+Upper left corner.
+
+==================================================
+VERY IMPORTANT PACKAGING RULE
+==================================================
+
+Batch order:
+
+1. Transaction Summary Report
+2. HSMV 82041 forms
+3. Supporting docs for HSMV 82041
+4. 93011 forms
+5. Supporting docs for 93011
+
+==================================================
+VERY IMPORTANT TRANSACTION ID RULE
+==================================================
+
+Documents:
+Must remain:
+In numerical order:
+By transaction ID.
+
+==================================================
+VERY IMPORTANT SUPPORTING DOC RULE
+==================================================
+
+Do NOT send:
+Supporting docs:
+Without matching:
+93011 or HSMV 82041.
+
+==================================================
+VERY IMPORTANT SHIPPING RULE
+==================================================
+
+Documents should:
+Fit snugly:
+Inside shipping box.
+
+==================================================
+VERY IMPORTANT STACK HEIGHT RULE
+==================================================
+
+Stacks:
+No taller than:
+4 inches.
+
+==================================================
+AI DECISION LOGIC
+==================================================
+
+AI should determine:
+1. Is EOD report required?
+2. Does report go to FLHSMV?
+3. Is report county retained?
+4. Has retention period expired?
+5. Is attestation required?
+6. Are documents in correct order?
+7. Is barcode sheet first?
+8. Are supporting docs attached?
+9. Are docs ordered by transaction ID?
+10. Is scan cover sheet required?
+11. Is report retention one year?
+12. Is report optional?
+13. Is report sent within 10 business days?
+14. Are HVUT originals included?
+15. Are documents damaged?
+16. Are barcodes obstructed?
+17. Are staples excessive?
+18. Is shipping packaging compliant?
+19. Is customer merge valid?
+20. Is customer creation verified?
+
+==================================================
+COMMON TITLE CLERK ERRORS
+==================================================
+
+- Missing barcode top sheet
+- Sending docs out of transaction order
+- Missing supporting documents
+- Mailing reports late
+- Missing daily EOD runs
+- Failing to sign attestation
+- Retaining reports improperly
+- Sending county-retained reports to FLHSMV
+- Obstructed barcodes
+- Excessive staples
+- Folding documents
+- Missing HSMV 82041 forms
+- Incorrect scan packet order
+- Failing to retain HVUT docs
+- Customer merge errors
+- Fast title balancing errors
+
+==================================================
+VERY IMPORTANT CORE CONCEPT
+==================================================
+
+TL-62 controls:
+- EOD accountability
+- Imaging preparation
+- Audit compliance
+- Report retention
+- Proper document packaging
+- Transaction tracking
+
+==================================================
+RELATED PROCEDURES
+==================================================
+
+- TL-46
+- RS-22
+- RS-30
+- RS-34
+- TL-01
+
+==================================================
+REFERENCE NOTES
+==================================================
+
+Current revision:
+- 09/22/2022
+
+Primary focus:
+- EOD reporting
+- Imaging procedures
+- Compliance retention
+- Audit tracking
+- FLHSMV document submission

@@ -1,0 +1,431 @@
+FLORIDA TITLE PROCEDURE — TAX LIENS ON MOBILE HOMES
+PROCEDURE: TL-64
+CATEGORY: TAX LIENS / MOBILE HOMES / TITLE CORRECTIONS
+
+==================================================
+PROCEDURE SUMMARY
+==================================================
+
+This procedure governs:
+- Tax liens on mobile homes
+- Mobile home unpaid decal taxes
+- Filing tax liens
+- Priority tax liens
+- Notice requirements
+- Certified mail requirements
+- Title correction processing
+- Lienholder notification
+- Removal of tax liens
+
+Applies to:
+- Mobile homes
+- Tax collectors
+- License plate agencies
+- FLHSMV employees
+- Existing lienholders
+- ELT lienholders
+
+==================================================
+AI CLASSIFICATION TAGS
+==================================================
+
+KEYWORDS:
+- tax lien
+- mobile home tax lien
+- unpaid decal fees
+- mobile home decal
+- title correction
+- HSMV 82139
+- first lienholder
+- certified mail
+- return receipt
+- section 320.19
+- superior lien
+- lien reassignment
+- tax collector lien
+- license plate agency lien
+- unpaid registration fees
+- mobile home taxes
+- lien priority
+- tangible personal property
+- real property decal
+- tax warrant
+- FLHSMV lien
+
+COMMON USER QUESTIONS:
+- "Can tax collector place lien?"
+- "What is required for tax lien?"
+- "Can lien override first lienholder?"
+- "Does tax lien become first lien?"
+- "What forms required?"
+- "Does lienholder need notice?"
+- "How is tax lien processed?"
+- "Can tax lien be added by title correction?"
+- "What if there is already a lien?"
+- "What if there is no lien?"
+- "What happens to old title?"
+- "Do ELT lienholders submit title?"
+- "What statute governs tax liens?"
+- "How do you remove tax lien?"
+
+==================================================
+LEGAL AUTHORITY
+==================================================
+
+Governed by:
+- 320.19 FS
+
+==================================================
+VERY IMPORTANT TAX LIEN RULE
+==================================================
+
+Unpaid license tax:
+Creates:
+First lien:
+Against mobile home.
+
+==================================================
+VERY IMPORTANT SUPERIOR LIEN RULE
+==================================================
+
+Tax lien:
+Is superior:
+To all other liens.
+
+==================================================
+VERY IMPORTANT 30-DAY RULE
+==================================================
+
+If taxes unpaid:
+More than:
+30 days:
+Department may enforce lien.
+
+==================================================
+VERY IMPORTANT TAX WARRANT RULE
+==================================================
+
+Department may issue:
+Tax warrant:
+For unpaid taxes.
+
+==================================================
+DESCRIPTION AND USE
+==================================================
+
+Procedure explains:
+- How to place tax liens
+- Required notices
+- Required forms
+- Existing lienholder handling
+- Title correction processing
+
+==================================================
+GENERAL INFORMATION
+==================================================
+
+Tax liens apply ONLY to:
+Mobile homes requiring:
+Mobile home decal.
+
+==================================================
+VERY IMPORTANT REAL PROPERTY RULE
+==================================================
+
+Tax liens do NOT apply to:
+- Real property decals
+- Mobile homes taxed as tangible personal property
+
+==================================================
+VERY IMPORTANT CUSTOMER NOTICE RULE
+==================================================
+
+Owner must be notified:
+Before lien filed.
+
+==================================================
+VERY IMPORTANT WARNING RULE
+==================================================
+
+Agency must advise:
+Lien may be placed:
+If unpaid fees remain unpaid.
+
+==================================================
+VERY IMPORTANT RECORD RETENTION RULE
+==================================================
+
+Retain:
+- Citations
+- Letters
+- Notifications
+
+Related to lien case.
+
+==================================================
+FILING TAX LIEN — PRIMARY LIEN EXISTS
+==================================================
+
+When primary lien already exists:
+Special notice procedures required.
+
+==================================================
+REQUIRED DOCUMENTS — EXISTING LIEN CASE
+==================================================
+
+Required:
+1. Copy of notice letter to owner
+2. Completed HSMV 82139
+3. Certified mail notice to first lienholder
+4. Returned certified receipt
+5. Title correction processing
+6. Original HSMV 82139
+7. Certified receipt card
+
+==================================================
+VERY IMPORTANT OWNER LETTER RULE
+==================================================
+
+Agency must send:
+Written notice:
+Of fees due
+AND
+Proposed lien placement.
+
+==================================================
+VERY IMPORTANT HSMV 82139 RULE
+==================================================
+
+HSMV 82139:
+Must be completed:
+Sections 1, 2, and 4.
+
+==================================================
+VERY IMPORTANT LIENHOLDER NOTICE RULE
+==================================================
+
+Copy of HSMV 82139:
+Must be sent:
+Certified mail:
+To first lienholder.
+
+==================================================
+VERY IMPORTANT CERTIFIED MAIL RULE
+==================================================
+
+Certified mail requires:
+Return receipt requested.
+
+==================================================
+VERY IMPORTANT TITLE CORRECTION RULE
+==================================================
+
+Tax lien processed as:
+- Title Correction
+
+==================================================
+VERY IMPORTANT COMMENT DESC RULE
+==================================================
+
+Comment Desc must state:
+"Issued pursuant to section 320.19, Florida Statutes."
+
+==================================================
+VERY IMPORTANT PRIORITY CHANGE RULE
+==================================================
+
+Tax lien becomes:
+First lien.
+
+Existing first lien:
+Becomes:
+Second lien.
+
+==================================================
+VERY IMPORTANT ORIGINAL DOCUMENT RULE
+==================================================
+
+Department requires:
+- Original HSMV 82139
+- Signed certified receipt card
+
+==================================================
+VERY IMPORTANT PRIOR LIENHOLDER RULE
+==================================================
+
+Prior first lienholder:
+Must still submit:
+Required documents:
+To FLHSMV.
+
+==================================================
+MAILING ADDRESS RULE
+==================================================
+
+Send to:
+
+Department of Highway Safety & Motor Vehicles
+2900 Apalachee Parkway, MS #72
+Tallahassee, Florida 32399-0500
+
+==================================================
+VERY IMPORTANT TITLE SUBMISSION RULE
+==================================================
+
+Prior lienholder submits:
+- Florida Certificate of Title
+- Copy of HSMV 82139
+
+==================================================
+VERY IMPORTANT COPY RULE
+==================================================
+
+Copy of HSMV 82139:
+Helps FLHSMV determine:
+Where to direct title.
+
+==================================================
+VERY IMPORTANT ELT RULE
+==================================================
+
+Submission requirement:
+Does NOT apply:
+To ELT lienholders.
+
+==================================================
+FILING TAX LIEN — NO PRIMARY LIEN EXISTS
+==================================================
+
+If no primary lien:
+Simplified process applies.
+
+==================================================
+REQUIRED DOCUMENTS — NO PRIOR LIEN
+==================================================
+
+Required:
+1. HSMV 82139
+2. Title correction
+3. Original HSMV 82139
+4. Title if available
+
+==================================================
+VERY IMPORTANT HSMV 82139 SECTION RULE
+==================================================
+
+If no prior lien:
+Complete:
+Sections 1 and 2 only.
+
+==================================================
+VERY IMPORTANT FIRST LIEN RULE
+==================================================
+
+Tax lien added as:
+First lien.
+
+==================================================
+VERY IMPORTANT TITLE SUBMISSION TIMING RULE
+==================================================
+
+If owner submits title:
+Before paperwork:
+Send title with paperwork.
+
+==================================================
+VERY IMPORTANT SHRED RULE
+==================================================
+
+If title received:
+After paperwork already sent:
+Agency should:
+Shred title.
+
+==================================================
+REMOVING TAX LIENS
+==================================================
+
+Removal handled under:
+- TL-33
+
+==================================================
+AI DECISION LOGIC
+==================================================
+
+AI should determine:
+1. Is mobile home eligible for tax lien?
+2. Is decal required?
+3. Are taxes unpaid over 30 days?
+4. Was owner notified?
+5. Was lien warning provided?
+6. Does primary lien already exist?
+7. Is HSMV 82139 completed correctly?
+8. Were proper sections completed?
+9. Was certified mail sent?
+10. Was return receipt obtained?
+11. Was title correction used?
+12. Is Comment Desc correct?
+13. Does tax lien become first lien?
+14. Is prior lienholder downgraded?
+15. Are original documents submitted?
+16. Is ELT exception applicable?
+17. Was title submitted timely?
+18. Should title be shredded?
+19. Is TL-33 needed for removal?
+20. Are supporting notices retained?
+
+==================================================
+COMMON TITLE CLERK ERRORS
+==================================================
+
+- Filing lien against ineligible mobile home
+- Missing owner notification
+- Missing certified mail
+- Missing return receipt
+- Incorrect HSMV 82139 sections
+- Failing to process as title correction
+- Missing Comment Desc language
+- Incorrect lien priority handling
+- Forgetting prior lienholder notice
+- Sending title unnecessarily for ELT
+- Improper title shredding
+- Losing supporting documentation
+- Missing original HSMV 82139
+- Incorrect address submission
+
+==================================================
+VERY IMPORTANT CORE CONCEPT
+==================================================
+
+Mobile home tax liens:
+Automatically gain:
+Superior lien priority:
+Over existing liens
+When properly processed under:
+320.19 FS.
+
+==================================================
+RELATED PROCEDURES
+==================================================
+
+- TL-33
+
+==================================================
+RELATED FORMS
+==================================================
+
+- HSMV 82139
+
+==================================================
+REFERENCE NOTES
+==================================================
+
+Current revision:
+- 06/14/2019
+
+Primary focus:
+- Mobile home tax liens
+- Superior lien priority
+- Certified lienholder notice
+- Title correction processing
+- Tax enforcement compliance

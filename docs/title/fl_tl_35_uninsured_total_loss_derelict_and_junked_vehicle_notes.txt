@@ -1,0 +1,555 @@
+FLORIDA TITLE PROCEDURE — UNINSURED TOTAL LOSS, JUNKED, AND DERELICT VEHICLES
+PROCEDURE: TL-35
+CATEGORY: SALVAGE / DERELICT / JUNKED / CERTIFICATE OF DESTRUCTION
+
+==================================================
+PROCEDURE SUMMARY
+==================================================
+
+This procedure explains:
+- Uninsured total loss vehicles
+- Salvage titles
+- Certificates of destruction
+- Junked vehicles
+- Derelict vehicles
+- Salvage dealer processing
+- Secondary metals recycler rules
+- Lien handling on derelict vehicles
+- NMVTIS requirements
+
+Applies to:
+- Motor vehicles
+- Mobile homes
+- Trailers
+- Salvage dealers
+- Recyclers
+
+==================================================
+AI CLASSIFICATION TAGS
+==================================================
+
+KEYWORDS:
+- salvage
+- certificate of destruction
+- derelict
+- junked
+- total loss
+- uninsured total loss
+- salvage rebuildable
+- recycler
+- salvage dealer
+- derelict certificate
+- junked title
+- DV stop
+- DA stop
+- NMVTIS
+- HSMV 82363
+- HSMV 82137
+
+COMMON USER QUESTIONS:
+- "How do I junk a vehicle?"
+- "What is a derelict certificate?"
+- "Can I destroy vehicle with lien?"
+- "What is DV stop?"
+- "What is DA stop?"
+- "What forms needed for salvage?"
+- "How long must recycler hold vehicle?"
+- "What qualifies as derelict?"
+- "What happens if title missing?"
+
+==================================================
+VERY IMPORTANT DEFINITIONS
+==================================================
+
+DERELICT MOTOR VEHICLE:
+- Value under $1,000
+- At least 10 model years old
+- Primary value is scrap/dismantling
+
+TRAILER DERELICT RULE:
+- Value under $5,000
+- At least 10 model years old
+
+==================================================
+CERTIFICATE TYPES
+==================================================
+
+Possible title outcomes:
+- Salvage Rebuildable
+- Salvage Rebuildable Flood
+- Certificate of Destruction
+- Derelict Motor Vehicle Certificate
+
+==================================================
+VERY IMPORTANT TOTAL LOSS RULE
+==================================================
+
+Uninsured vehicle:
+TOTAL LOSS if repair cost:
+- 80% or more
+of replacement value.
+
+==================================================
+VERY IMPORTANT MOBILE HOME RULE
+==================================================
+
+Mobile home exempt from salvage law if:
+- Retail value under $1,500
+OR
+- Repair cost less than 80%
+
+==================================================
+VERY IMPORTANT OWNER RULE
+==================================================
+
+Owner of uninsured total loss vehicle:
+MUST obtain:
+- Salvage title
+OR
+- Certificate of destruction
+
+BEFORE:
+- Scrapping
+- Dismantling
+- Disposal
+
+==================================================
+VERY IMPORTANT DEADLINE
+==================================================
+
+Owner/self-insured must submit:
+- Title
+within:
+- 72 hours
+after vehicle becomes salvage.
+
+==================================================
+CERTIFICATE OF DESTRUCTION RULE
+==================================================
+
+Once issued:
+Vehicle may ONLY be:
+- Sold for parts
+OR
+- Sold for scrap
+
+==================================================
+FORMS USED
+==================================================
+
+MAIN FORMS:
+- HSMV 82363
+- HSMV 82137
+- HSMV 82042
+- HSMV 82041
+- HSMV 82101
+
+NEW TITLE APPLICATION FORMS:
+- HSMV 82040 MV
+- HSMV 82040 MH
+- HSMV 82040 VS
+
+==================================================
+HSMV 82040 SPLIT RULE
+==================================================
+
+As of July 1, 2023:
+82040 split into:
+- MV
+- MH
+- VS
+
+==================================================
+VEHICLE TYPES USING 82040 MV
+==================================================
+
+Includes:
+- Auto
+- Bus
+- Motorcycle
+- Off-highway
+- Tools
+- Truck
+- Travel trailer
+- Vehicle trailer
+
+==================================================
+SALVAGE APPLICATION — FL TITLE AVAILABLE
+==================================================
+
+Need:
+1. Florida title
+2. HSMV 82363
+3. Odometer disclosure
+4. Lien satisfactions
+5. Title fees
+
+==================================================
+SALVAGE APPLICATION — FL TITLE MISSING
+==================================================
+
+Must first obtain:
+- Duplicate title
+
+Using:
+- HSMV 82101
+
+==================================================
+OUT-OF-STATE TOTAL LOSS RULE
+==================================================
+
+Need:
+1. MCO or out-of-state ownership
+2. HSMV 82363
+3. VIN verification
+4. Lien satisfactions
+5. Sales tax info
+6. Title fees
+
+==================================================
+VIN VERIFICATION RULE
+==================================================
+
+Use:
+- HSMV 82042
+
+OR:
+- Affidavit verifying VIN
+
+==================================================
+VIN VERIFICATION EXEMPTIONS
+==================================================
+
+VIN verification NOT required for:
+- Mobile homes
+- Small trailers under 2,000 lbs
+- Travel trailers
+- Camping trailers
+- Truck campers
+- Fifth wheel recreation trailers
+
+==================================================
+JUNKED VEHICLE RULE
+==================================================
+
+If vehicle destroyed/dismantled:
+Title must show:
+- "JUNKED"
+
+==================================================
+JUNKED TITLE PROCESS
+==================================================
+
+Need:
+- Title marked JUNKED
+- Owner/insurance signature
+- Lien satisfactions
+
+No title fee required.
+
+==================================================
+VERY IMPORTANT OUT-OF-STATE JUNK RULE
+==================================================
+
+Florida does NOT junk:
+- Out-of-state title records
+
+Out-of-state title must be:
+- Sent back to issuing state
+
+==================================================
+VERY IMPORTANT DERELICT RULE
+==================================================
+
+If title NOT available:
+Use:
+- HSMV 82137
+
+==================================================
+VERY IMPORTANT 24-HOUR RULE
+==================================================
+
+Salvage dealer/recycler must submit:
+- HSMV 82137
+
+Within:
+- 24 hours
+of receiving vehicle.
+
+==================================================
+VERY IMPORTANT REJECTION RULE
+==================================================
+
+If 24-hour limit exceeded:
+Application:
+- MUST be rejected
+
+Unless:
+- Holiday
+- Executive order
+- Court order exception
+
+==================================================
+HSMV 82137 SECTION RULES
+==================================================
+
+SECTION 1:
+Completed by:
+- Seller/owner
+
+Requires:
+- Driver license copy
+
+If seller not owner:
+Need:
+- Right thumbprint
+
+SECTION 2:
+Completed by:
+- Transporter
+
+SECTION 3:
+Completed by:
+- Salvage dealer/recycler
+
+==================================================
+VERY IMPORTANT LIEN RULES
+==================================================
+
+LIEN 3 YEARS OLD OR MORE:
+- System removes lien automatically
+- Vehicle held 3 business days
+
+LIEN LESS THAN 3 YEARS:
+- 10-day DV stop placed
+- Destruction date shows PENDING
+- Lienholder notified
+
+==================================================
+DV STOP RULE
+==================================================
+
+DV:
+- Derelict Vehicle Stop
+- 10 calendar days
+
+==================================================
+DA STOP RULE
+==================================================
+
+DA:
+- Derelict Administrative Stop
+- 30 calendar days
+
+Used when:
+- Lienholder protests
+
+==================================================
+VERY IMPORTANT PENDING RULE
+==================================================
+
+If destruction date:
+- PENDING
+
+Vehicle:
+- MAY NOT be destroyed.
+
+==================================================
+VERY IMPORTANT AUTHORIZED DESTRUCTION RULE
+==================================================
+
+Vehicle may ONLY be destroyed after:
+- Authorized destruction date assigned
+
+Dealer MUST:
+- Print MV Check screen
+- Keep with derelict certificate
+
+==================================================
+MV CHECK RULE
+==================================================
+
+Dealers/recyclers verify:
+- Destruction authorization
+
+Using:
+https://services.flhsmv.gov/MVCheckWeb/
+
+==================================================
+LIENHOLDER PROTEST RULE
+==================================================
+
+If lienholder protests within 10 days:
+- DA stop added
+- 30-day hold begins
+
+==================================================
+LIENHOLDER NO RESPONSE RULE
+==================================================
+
+If no response:
+- Stop removed
+- Destruction date assigned
+
+==================================================
+VERY IMPORTANT DERELICT LIEN RULE
+==================================================
+
+A lien:
+- CANNOT be added
+to:
+- Derelict certificate
+
+==================================================
+VERY IMPORTANT PAYMENT RULE
+==================================================
+
+If seller NOT owner of record:
+Dealer/recycler must pay:
+- Seller directly
+
+Cannot pay:
+- Transporter
+
+==================================================
+SALVAGE DEALER RECORD RETENTION
+==================================================
+
+Must keep:
+- Titles
+- Salvage titles
+- Certificates
+- Applications
+
+For:
+- 3 years
+
+==================================================
+DERELICT CERTIFICATE RULE
+==================================================
+
+Derelict certificate:
+- Plain white paper
+- One reassignment only
+
+==================================================
+DUPLICATE DERELICT RULE
+==================================================
+
+Lost derelict certificate:
+Use:
+- HSMV 82137
+for duplicate.
+
+==================================================
+TOWING/STORAGE COMPANY RULE
+==================================================
+
+Tow/storage companies:
+CANNOT use:
+- Derelict application
+
+Must obtain:
+- Proper title
+OR
+- Certificate of destruction
+
+==================================================
+NMVTIS RULE
+==================================================
+
+Salvage dealer/recycler:
+Must notify:
+- NMVTIS
+
+BUT:
+No proof required with application.
+
+==================================================
+ERROR CORRECTION RULES
+==================================================
+
+If title junked in error:
+Need:
+- Affidavit
+- HSMV 82101
+- Duplicate title fee
+
+If derelict issued in error:
+Need:
+- Original derelict certificate
+OR affidavit
+- Error affidavit
+- VIN verification
+
+==================================================
+COMMON TITLE CLERK ERRORS
+==================================================
+
+- Missing 24-hour deadline
+- Accepting incomplete HSMV 82137
+- Missing thumbprint
+- Destroying vehicle before authorization
+- Missing lien satisfactions
+- Missing VIN verification
+- Attempting lien add on derelict certificate
+- Junking out-of-state title incorrectly
+- Missing owner signatures
+- Not checking lien age
+
+==================================================
+AI DECISION LOGIC
+==================================================
+
+AI should determine:
+1. Is vehicle salvage, junked, or derelict?
+2. Is title available?
+3. Is vehicle titled in Florida?
+4. Is lien active?
+5. How old is lien?
+6. Does DV stop apply?
+7. Does DA stop apply?
+8. Is destruction authorized?
+9. Was HSMV 82137 timely submitted?
+10. Is thumbprint required?
+11. Does vehicle qualify as derelict?
+12. Is VIN verification required?
+13. Is duplicate title required?
+14. Is out-of-state process required?
+15. Is junk process or salvage process proper?
+
+==================================================
+IMPORTANT OPERATIONAL NOTES
+==================================================
+
+This procedure is:
+- Extremely compliance-sensitive
+- Timing-sensitive
+- Lien-sensitive
+
+Most common major issue:
+- Destroying vehicle before authorized destruction date.
+
+Most common rejection:
+- Missing 24-hour submission rule.
+
+==================================================
+RELATED PROCEDURES
+==================================================
+
+- TL-05 Duplicate Titles
+- TL-11 Transfer of Florida Title
+- TL-36 Salvage Clarification
+
+==================================================
+RELATED FORMS
+==================================================
+
+- HSMV 82363
+- HSMV 82137
+- HSMV 82042
+- HSMV 82041
+- HSMV 82101
+- HSMV 82040 MV
+- HSMV 82040 MH
+- HSMV 82040 VS

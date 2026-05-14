@@ -1,0 +1,549 @@
+FLORIDA TITLE PROCEDURE — LABOR, SERVICE, AND STORAGE LIENS
+PROCEDURE: TL-25
+CATEGORY: TITLE LIEN / REPAIR SHOP LIEN / STORAGE LIEN / PUBLIC SALE TITLE
+RELATED STATUTES:
+- 713.585 F.S.
+- 559.905 F.S.
+- 559.911 F.S.
+- 319.28 F.S.
+
+==================================================
+PROCEDURE SUMMARY
+==================================================
+
+This procedure explains:
+- Labor liens
+- Repair liens
+- Storage liens
+- Repair shop title processes
+- Public sale title procedures
+- Notice requirements
+- Newspaper publication requirements
+- Certificate of Compliance requirements
+- Report of Sale requirements
+- FDACS repair registration requirements
+
+This procedure is used when:
+- Repair shop is unpaid
+- Vehicle storage charges accrue
+- Vehicle abandoned after repair
+- Repair facility enforces lien rights
+- Vehicle sold at public sale
+
+==================================================
+AI CLASSIFICATION TAGS
+==================================================
+
+KEYWORDS:
+- labor lien
+- storage lien
+- mechanic lien
+- repair lien
+- unpaid repair bill
+- abandoned vehicle repair shop
+- public sale title
+- lien sale
+- notice of lien
+- certificate of compliance
+- report of sale
+- repair shop title
+- 713.585
+- storage charges
+- title by lien sale
+
+COMMON USER QUESTIONS:
+- "Customer never picked up vehicle"
+- "Repair bill unpaid"
+- "Need lien title"
+- "Can repair shop get title"
+- "Storage lien process"
+- "Notice of lien"
+- "Public sale title"
+- "Mechanic lien title"
+- "Vehicle abandoned at shop"
+
+==================================================
+IMPORTANT DEFINITIONS
+==================================================
+
+MOTOR VEHICLE:
+Includes:
+- Automobile
+- Truck
+- Bus
+- Motorcycle
+- Recreational vehicle
+- Motor scooter
+
+DOES NOT INCLUDE:
+- Trailers
+- Mobile homes
+- Travel trailers without motive power
+- Watercraft
+- Aircraft
+
+==================================================
+IMPORTANT AGENCIES
+==================================================
+
+FLHSMV:
+- Title processing
+- Lien title issuance
+
+FDACS:
+- Repair shop registration oversight
+
+NMVTIS:
+- State title research
+- Ownership research
+
+CLERK OF COURT:
+- Certificate of Compliance
+- Report of Sale
+- Hearing requests
+- Bond processing
+
+==================================================
+IMPORTANT TIMELINE
+==================================================
+
+DAY 0:
+- Repairs completed
+- Customer notified
+
+WITHIN 7 BUSINESS DAYS:
+- Notice of Claim of Lien mailed
+- Good Faith Notice if owner unknown
+
+15 DAYS BEFORE SALE:
+- Notice of Sale mailed
+- Newspaper publication
+
+60 DAYS AFTER REPAIR COMPLETION:
+- Earliest vehicle may be sold
+
+61ST DAY:
+- Public sale allowed
+
+==================================================
+VERY IMPORTANT RULES
+==================================================
+
+A vehicle:
+- Cannot be sold before 60 days after repairs completed
+
+Notice of lien:
+- Must be mailed within 7 business days after storage charges begin
+
+Failure to notify properly:
+- Can eliminate storage charges
+- Can invalidate process
+- May require restart
+
+==================================================
+REPAIR SHOP REGISTRATION REQUIREMENTS
+==================================================
+
+Repair shop MUST:
+- Be registered with FDACS
+- Have valid registration
+- Registration valid on repair drop-off date
+
+REQUIRED:
+- Copy of Motor Vehicle Repair Registration Certificate
+
+If registration invalid:
+- Transaction rejected
+- Court order required
+
+If address mismatch:
+- Transaction rejected
+
+==================================================
+EXCEPTION — UPHOLSTERY SHOPS
+==================================================
+
+Upholstery shops:
+- May be exempt from FDACS registration
+
+Instead of registration certificate:
+- FDACS exemption letter required
+
+==================================================
+WRITTEN REPAIR ESTIMATE REQUIREMENTS
+==================================================
+
+Repair estimate MUST include:
+- Shop name/address/phone
+- Customer information
+- Date/time
+- Vehicle information
+- Proposed completion date
+- Repair description
+- Estimated costs
+- Labor method
+- Storage charge disclosure
+- Warranty statement
+- Payment method
+- Authorization information
+
+==================================================
+VERY IMPORTANT $100 RULE
+==================================================
+
+If repair exceeds $100:
+- Special disclosure section required
+
+Customer must:
+- Request estimate
+OR
+- Waive estimate
+OR
+- Set max repair amount
+
+==================================================
+INVOICE REQUIREMENTS
+==================================================
+
+Invoice MUST include:
+- Odometer reading
+- Work completed
+- Itemized labor
+- Itemized parts
+- Warranty information
+- FDACS registration number
+
+==================================================
+ADMINISTRATIVE FEE RULE
+==================================================
+
+Administrative fee:
+- Maximum $250
+
+Cannot exceed:
+- $250 combined extra fees
+
+==================================================
+NOTICE OF CLAIM OF LIEN REQUIREMENTS
+==================================================
+
+Notice must be sent:
+- Certified mail
+
+Must go to:
+- Registered owner
+- Customer
+- Lienholders
+- Interested parties
+
+Must contain:
+- VIN
+- Vehicle description
+- Amount owed
+- Repair information
+- Storage charges
+- Sale information
+- Hearing rights
+- Bond rights
+- Inspection rights
+
+==================================================
+VERY IMPORTANT VIN RULE
+==================================================
+
+Last 8 digits of VIN:
+- Must appear on envelope
+- Must appear in delivery address area
+
+==================================================
+SALE DATE RULE
+==================================================
+
+If Notice of Claim of Lien includes:
+- Sale date
+- Time
+- Location
+
+THEN:
+- Separate Notice of Sale not required
+
+==================================================
+INSPECTION RIGHTS
+==================================================
+
+Interested parties:
+- May inspect vehicle
+
+Lienor must:
+- Allow inspection within 3 business days
+
+==================================================
+PERSONAL PROPERTY RULE
+==================================================
+
+Lienor must release:
+- Personal property not attached to vehicle
+
+==================================================
+GOOD FAITH NOTICE
+==================================================
+
+If owner/lienholder cannot be located:
+- Law enforcement notification required
+
+Must include:
+- VIN
+- Vehicle description
+- Good faith effort statement
+
+==================================================
+GOOD FAITH EFFORT REQUIREMENTS
+==================================================
+
+Required checks:
+- FLHSMV database
+- NMVTIS
+- Vehicle tags
+- Stickers/decals
+- Interior papers/documents
+
+==================================================
+LAW ENFORCEMENT BLOCK RULE
+==================================================
+
+If Law Enforcement Block exists:
+- Notice sent to FLHSMV DMS Law Enforcement Block section
+
+==================================================
+PRIVACY ACT BLOCK RULE
+==================================================
+
+If Privacy Act Block exists:
+- Address may be obtained through tax collector office
+
+==================================================
+APPROVED THIRD-PARTY SERVICES
+==================================================
+
+Approved providers:
+- Auto Data Direct (ADD123)
+- Beacon Software / TowLien
+
+Third-party service handles:
+- Notice generation
+- Certified mail
+- Tracking
+- NMVTIS lookup
+- FLHSMV reporting
+
+==================================================
+NEWSPAPER AD REQUIREMENTS
+==================================================
+
+Advertisement required:
+- At least 15 days before sale
+
+Must contain:
+- Sale date/time/location
+- Vehicle description
+- Amount owed
+- Lien statement
+- Hearing rights
+- Bond rights
+
+==================================================
+CERTIFICATE OF COMPLIANCE
+==================================================
+
+Must be:
+- Filed with Clerk of Court
+- Filed BEFORE sale
+
+Requires:
+- Notice copies
+- Proof of mailing
+- Publication proof
+- NMVTIS checks
+
+==================================================
+REPORT OF SALE
+==================================================
+
+Filed AFTER sale.
+
+Must include:
+- Purchaser
+- Sale price
+- Amount retained
+- Vehicle description
+- Hearing information
+
+==================================================
+PUBLIC SALE RULES
+==================================================
+
+Sale:
+- Public sale only
+- Cash payment required
+
+Purchaser receives:
+- Clear title free of liens
+
+==================================================
+VERY IMPORTANT DEALER RULE
+==================================================
+
+Dealer purchaser:
+- MUST title vehicle in dealership name before resale
+
+==================================================
+IF VEHICLE DOES NOT SELL
+==================================================
+
+If unsold:
+- Repair shop must title vehicle in shop name
+
+==================================================
+TITLE APPLICATION REQUIREMENTS
+==================================================
+
+Required documents:
+- HSMV 82040
+- Repair estimate
+- Notice of Claim of Lien
+- Notice of Sale
+- Newspaper publication
+- Certificate of Compliance
+- Report of Sale
+- FDACS registration certificate
+- Bill of sale
+- Identification
+- Fees/taxes
+
+==================================================
+OUT-OF-STATE VEHICLE RULE
+==================================================
+
+If vehicle previously titled out of state:
+- Confidential VIN inspection required
+
+==================================================
+UNKNOWN TITLE STATE RULE
+==================================================
+
+If title state unknown:
+- Good Faith Notice required
+- NMVTIS proof required
+
+==================================================
+IMPORTANT TITLE COMMENTS
+==================================================
+
+If lienor obtaining title:
+- "Obtained per s. 713.585, F.S." required
+
+==================================================
+REJECTION CONDITIONS
+==================================================
+
+Transaction rejected if:
+- Missing documents
+- Illegible documents
+- Incorrect notice timing
+- Invalid publication
+- Missing signatures
+- Invalid repair registration
+- Incorrect advertisement county
+- Improper mailing dates
+
+==================================================
+CRITICAL TIMING FAILURES
+==================================================
+
+Notice mailed late:
+- Storage charges limited
+
+Notice errors:
+- Re-mail required
+
+Major defects:
+- Entire process restarted
+
+==================================================
+AI DECISION LOGIC
+==================================================
+
+AI should determine:
+1. Was repair shop properly registered?
+2. Were notices timely mailed?
+3. Was certified mail used?
+4. Was newspaper publication timely?
+5. Was 60-day waiting period met?
+6. Was Certificate of Compliance filed?
+7. Was Report of Sale filed?
+8. Were all lienholders notified?
+9. Was NMVTIS checked?
+10. Was law enforcement notified if owner unknown?
+11. Was sale conducted properly?
+12. Is title application complete?
+
+==================================================
+COMMON DEALERSHIP/TITLE CLERK ERRORS
+==================================================
+
+- Selling before 60 days
+- Missing certified mail proof
+- Wrong newspaper county
+- Missing FDACS registration
+- Invalid repair estimate
+- Missing VIN on envelope
+- No NMVTIS check
+- Missing law enforcement notice
+- Missing Clerk certification
+- Improper notice timing
+- Invalid public sale process
+
+==================================================
+IMPORTANT OPERATIONAL NOTES
+==================================================
+
+This is one of the highest-rejection title procedures.
+
+Strict compliance required:
+- Timing
+- Mailing
+- Publication
+- Documentation
+- Clerk filings
+
+Small procedural defects:
+- Can invalidate entire lien process
+
+Repair shop liens:
+- Must strictly follow statute
+- Require detailed documentation
+- Frequently rejected for timing defects
+
+==================================================
+RELATED FORMS
+==================================================
+
+- HSMV 82040 MV
+- HSMV 82040 VS
+- HSMV 82040 MH
+- HSMV 84044
+- Notice of Claim of Lien
+- Notice of Sale
+- Certificate of Compliance
+- Report of Sale
+- Good Faith Notice
+
+==================================================
+RELATED PROCEDURES
+==================================================
+
+- Repossession titles
+- Abandoned vehicle procedures
+- Court ordered titles
+- Mechanic lien enforcement
+- Public sale title procedures

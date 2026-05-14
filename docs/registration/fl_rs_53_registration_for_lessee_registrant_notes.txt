@@ -1,0 +1,597 @@
+FLORIDA REGISTRATION PROCEDURE — REGISTRATION FOR LESSEE/REGISTRANT
+PROCEDURE: RS-53
+CATEGORY: LEASE REGISTRATION / LESSEE REGISTRATION / REGISTRANT POSSIBLE VEHICLES
+
+==================================================
+PROCEDURE SUMMARY
+==================================================
+
+This procedure governs:
+- Lessee/registrant vehicle registrations
+- Long-term leased vehicle registration requirements
+- Lease vehicle plate issuance
+- Registrant possible class codes
+- Lease plate assumptions
+- Lease plate transfers
+- Specialty and military plate issuance to lessees
+- Personalized plate reservations for lessees
+- Replacement lessee plates
+- Lease vehicle inquiry handling
+- Lease vehicle proof requirements
+- Government agency registration restrictions
+
+Applies to:
+- Long-term vehicle lessees
+- Leasing companies
+- Vehicle lessors
+- Registrants
+- Tax collectors
+- License plate agents
+- FLHSMV personnel
+- Government agencies
+
+==================================================
+AI CLASSIFICATION TAGS
+==================================================
+
+KEYWORDS:
+- lessee registration
+- registrant registration
+- registrant possible
+- long-term lease registration
+- leased vehicle registration
+- lease plate transfer
+- lease plate assumption
+- assumption of plate
+- lessee/registrant
+- registrant possible class code
+- HSMV 83146
+- leased vehicle transfer
+- leased vehicle registration
+- lease documentation
+- lease registration proof
+- rental documentation
+- lease vehicle inquiry
+- lessor owner
+- registration in lessee name
+- leased vehicle title
+- lease registration renewal
+- lease replacement plate
+- lease personalized plate
+- lease military plate
+- lease specialty plate
+- lease government plate
+- registrant inquiry
+- title inquiry lessor
+- plate inquiry lessee
+- rental agreement documentation
+- registration certificate lease
+- Florida leased vehicle
+- lease class code
+- plate assumption
+- registration extension decal
+- RS-05
+- RS-06
+- RS-12
+- RS-15
+- RS-16
+- RS-17
+- RS-19
+- RS-21
+- RS-22
+- RS-30
+- RS-36
+- RS-55
+- Initial Registration Fee lease
+- long-term lease plate
+- lessee title inquiry
+- vehicle class combination inquiry
+- government lease registration
+- lessee registration proof
+- registrant ownership transfer
+
+COMMON USER QUESTIONS:
+- "Can a leased vehicle be registered in the lessee’s name?"
+- "What does registrant possible mean?"
+- "Can lease plates transfer?"
+- "Can a lessee get specialty plates?"
+- "Can military plates be issued to a lessee?"
+- "How do I check if class code is registrant possible?"
+- "Can old lessor plates be assumed?"
+- "What documents are required?"
+- "What records appear in vehicle inquiry?"
+- "Does lessee need Florida insurance?"
+- "Can personalized plates be reserved for leased vehicles?"
+- "Can government plates be issued to lessees?"
+- "What if decal year remains same?"
+- "What fees apply?"
+- "What rental paperwork must remain in vehicle?"
+- "Can a lease plate transfer to privately owned vehicle?"
+
+==================================================
+LEGAL AUTHORITY
+==================================================
+
+Governed by:
+- 320.0601(4) FS
+- 320.0605(1) FS
+- 320.0655 FS
+
+==================================================
+DESCRIPTION AND USE
+==================================================
+
+Procedure explains:
+- Registration issuance for lessees
+- Registrant possible processing
+- Lease plate assumptions/transfers
+- Specialty plate eligibility
+- Lease inquiry handling
+- Replacement procedures
+
+==================================================
+VERY IMPORTANT CORE RULE
+==================================================
+
+Long-term leased motor vehicles:
+Must be registered:
+In name and address:
+Of lessee:
+If class code is registrant possible.
+
+==================================================
+DEFINITION — ASSUMPTION
+==================================================
+
+Assumption:
+Means:
+Transfer of license plate ownership:
+From lessor/owner:
+To lessee/registrant.
+
+==================================================
+DEFINITION — REGISTRANT
+==================================================
+
+Registrant:
+Means:
+Lessee required:
+To register vehicle:
+In their own name:
+Instead of lessor/owner.
+
+==================================================
+DEFINITION — REGISTRANT POSSIBLE
+==================================================
+
+Registrant possible:
+Means:
+Registration may exist:
+In different name:
+Than titled owner.
+
+==================================================
+VERY IMPORTANT VEHICLE CLASS INQUIRY RULE
+==================================================
+
+To verify registrant possible:
+Use:
+Miscellaneous Inquiry
+→ Misc. Registration Inquiries
+→ Vehicle Class Combination.
+
+==================================================
+VERY IMPORTANT CHECKMARK RULE
+==================================================
+
+If class code:
+Is registrant possible:
+System automatically displays:
+Checkmark:
+In "registrant possible" box.
+
+==================================================
+VERY IMPORTANT TITLE RULE
+==================================================
+
+Valid Florida title:
+Must exist:
+Before lessee/registrant plate issuance.
+
+==================================================
+VERY IMPORTANT CLASS CODE RESTRICTION RULE
+==================================================
+
+If class code:
+NOT registrant possible:
+Lessee registration:
+Cannot issue.
+
+==================================================
+FIRST-TIME FLORIDA TITLE RULE
+==================================================
+
+When lease vehicle:
+First titled in Florida:
+Registration issues:
+In lessee/registrant name:
+If class code qualifies.
+
+==================================================
+DOCUMENTATION RULES
+==================================================
+
+Customer must provide:
+Documentation verifying:
+- lessee name
+AND
+- vehicle description.
+
+==================================================
+ACCEPTABLE DOCUMENTATION RULE
+==================================================
+
+Acceptable documentation includes:
+- lease agreement
+- power of attorney
+- lease documentation
+showing:
+- lessee name
+- vehicle description.
+
+==================================================
+PLATE ASSUMPTION RULES
+==================================================
+
+Older plates:
+Previously issued:
+In lessor/owner name:
+May be assumed:
+By lessee/registrant.
+
+==================================================
+VERY IMPORTANT SAME VEHICLE RULE
+==================================================
+
+Assumed plate:
+Must remain:
+Assigned:
+To same vehicle.
+
+==================================================
+VERY IMPORTANT ASSUMPTION DOCUMENT RULE
+==================================================
+
+Plate assumption:
+Requires:
+Lease documentation:
+Verifying:
+- lessee name
+- vehicle description.
+
+==================================================
+PLATE TRANSFER RULES
+==================================================
+
+If lessee already has:
+Plate issued in their name:
+Plate may transfer:
+To:
+- another leased vehicle
+OR
+- privately owned vehicle.
+
+==================================================
+VERY IMPORTANT DECAL RULE
+==================================================
+
+If registration period extended:
+New decal required:
+Even if expiration year unchanged.
+
+==================================================
+RENTAL/LEASE DOCUMENTATION RULES
+==================================================
+
+Vehicle operator:
+Must possess:
+Registration certificate
+OR
+True copy of lease/rental documentation.
+
+==================================================
+VERY IMPORTANT REQUIRED LEASE INFORMATION RULE
+==================================================
+
+Lease/rental documentation must contain:
+- rental date
+- exit time
+- rental station ID
+- agreement number
+- VIN
+- plate number/state
+- make/model/color
+- mileage
+- authorized renter name.
+
+==================================================
+SPECIAL PLATE ELIGIBILITY RULES
+==================================================
+
+Lessee/registrants:
+May qualify:
+For:
+- specialty plates
+- military plates
+- disabled plates
+- amateur radio plates
+- fleet plates
+- government plates
+subject to qualification rules.
+
+==================================================
+VERY IMPORTANT GOVERNMENT PLATE RULE
+==================================================
+
+Government plates:
+With agency acronym:
+Processed ONLY:
+Through Division of Motorist Services.
+
+==================================================
+VERY IMPORTANT MEDAL OF HONOR RULE
+==================================================
+
+Certain military plates:
+Available ONLY:
+Through Division of Motorist Services.
+
+==================================================
+FEE RULES
+==================================================
+
+Applicable fees include:
+- registration tax
+- trust fund fees
+- service fee
+- branch fee
+- license plate fee
+- specialty annual use fee
+- Initial Registration Fee if applicable.
+
+==================================================
+VERY IMPORTANT IRF RULE
+==================================================
+
+Initial Registration Fee:
+May apply:
+When transferring:
+From lease class code:
+To class code subject to IRF.
+
+==================================================
+VERY IMPORTANT RS-30 RULE
+==================================================
+
+IRF exemptions:
+Governed by:
+RS-30.
+
+==================================================
+PROOF OF OWNERSHIP RULES
+==================================================
+
+Acceptable proof includes:
+- Florida registration certificate
+- Florida title copy
+- title application receipt.
+
+==================================================
+INSURANCE RULES
+==================================================
+
+Florida insurance:
+Required.
+
+==================================================
+VERY IMPORTANT RS-36 RULE
+==================================================
+
+Insurance processing:
+Governed by:
+RS-36.
+
+==================================================
+RENEWAL AND TRANSFER RULES
+==================================================
+
+Renewals/transfers:
+May process:
+At county tax collector or license plate agent.
+
+==================================================
+REPLACEMENT RULES
+==================================================
+
+Replacement requires:
+- HSMV 83146
+- registration certificate copy
+- applicable fees.
+
+==================================================
+VERY IMPORTANT REPLACEMENT FEE RULE
+==================================================
+
+Replacement fees may include:
+- replacement fee
+- service fee
+- branch fee
+- Air Pollution fee
+- EMS fee
+- FRVIS fee
+- Reflectorization fee
+- Advanced Replacement fee
+- Decal on Demand fee.
+
+==================================================
+PERSONALIZED PLATE RESERVATION RULE
+==================================================
+
+Personalized plate:
+May reserve:
+In lessee/registrant name:
+If class code is registrant possible.
+
+==================================================
+VERY IMPORTANT SAME NAME RULE
+==================================================
+
+Reserved personalized plate:
+Must issue:
+In same name:
+As reservation.
+
+==================================================
+INQUIRY RULES
+==================================================
+
+Title/VIN inquiry:
+Displays:
+Lessor/owner information.
+
+==================================================
+VERY IMPORTANT LICENSE PLATE INQUIRY RULE
+==================================================
+
+Plate/decal inquiry:
+Displays:
+Lessee/registrant information.
+
+==================================================
+VERY IMPORTANT TITLE DATA RULE
+==================================================
+
+Separate title data:
+Shows:
+Actual title owner.
+
+==================================================
+VERY IMPORTANT TAG HISTORY RULE
+==================================================
+
+Tag history:
+Displays:
+Registrant name:
+At time of transaction.
+
+==================================================
+AI DECISION LOGIC
+==================================================
+
+AI should determine:
+1. Is vehicle registrant possible?
+2. Does valid Florida title exist?
+3. Is class code eligible?
+4. Is lease documentation acceptable?
+5. Does documentation verify lessee and vehicle?
+6. Is plate assumption allowed?
+7. Is assumed plate staying on same vehicle?
+8. Is plate transfer allowed?
+9. Is IRF applicable?
+10. Does IRF exemption apply?
+11. Is Florida insurance attached?
+12. Is specialty/military plate qualification satisfied?
+13. Is government plate restricted to DMS?
+14. Is replacement transaction appropriate?
+15. Is HSMV 83146 required?
+16. Are replacement fees calculated correctly?
+17. Is personalized reservation allowed?
+18. Is inquiry showing lessor or lessee correctly?
+19. Is decal replacement required?
+20. Is lease documentation retained in vehicle?
+
+==================================================
+COMMON TITLE CLERK / REGISTRATION ERRORS
+==================================================
+
+- Issuing lessee registration on non-registrant possible class code
+- Missing lease documentation
+- Missing valid Florida title
+- Incorrect plate assumption
+- Assuming plate to different vehicle
+- Missing IRF review
+- Missing Florida insurance
+- Incorrect inquiry interpretation
+- Missing required lease paperwork in vehicle
+- Issuing restricted government/military plates improperly
+- Incorrect personalized reservation name
+- Missing decal issuance on extension
+- Incorrect transfer eligibility determination
+- Missing HSMV 83146
+- Incorrect replacement fee assessment
+
+==================================================
+VERY IMPORTANT CORE CONCEPT
+==================================================
+
+Florida lessee/registrant registration procedures:
+Allow qualifying leased vehicles
+to register in lessee names
+instead of titled lessor names,
+while enforcing:
+- registrant possible class codes
+- valid Florida title requirements
+- lease documentation verification
+- insurance compliance
+- controlled plate assumptions/transfers
+and specialty plate qualification rules.
+
+==================================================
+RELATED PROCEDURES
+==================================================
+
+- RS-05
+- RS-06
+- RS-12
+- RS-15
+- RS-16
+- RS-17
+- RS-19
+- RS-21
+- RS-22
+- RS-30
+- RS-36
+- RS-55
+
+==================================================
+RELATED FORMS
+==================================================
+
+- HSMV 83146
+- Lease agreement documentation
+- Power of Attorney
+
+==================================================
+RELATED ENTITIES
+==================================================
+
+- FLHSMV
+- Tax Collectors
+- License Plate Agents
+- Leasing Companies
+- Government Agencies
+
+==================================================
+REFERENCE NOTES
+==================================================
+
+Current revision:
+06/10/2022
+
+Primary focus:
+- Lessee/registrant registration issuance
+- Registrant possible class codes
+- Lease plate assumptions/transfers
+- Specialty/military plate eligibility
+- Inquiry handling
+- Replacement procedures

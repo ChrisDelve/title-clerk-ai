@@ -1,0 +1,398 @@
+FLORIDA REGISTRATION PROCEDURE — PARALYZED VETERANS OF AMERICA LICENSE PLATES
+PROCEDURE: RS-16
+CATEGORY: PVA LICENSE PLATES / DISABLED VETERAN PLATES / ACCESSIBLE PARKING
+
+==================================================
+PROCEDURE SUMMARY
+==================================================
+
+This procedure governs:
+- Paralyzed Veterans of America (PVA) license plates
+- PVA motorcycle license plates
+- PVA plate renewals
+- PVA plate transfers
+- PVA replacement plates
+- Disabled parking privileges for PVA plates
+- Ownership and lessee requirements
+- Cancellation requirements for PVA plates
+
+Applies to:
+- Members of the Paralyzed Veterans of America
+- Disabled veterans
+- Vehicle owners
+- Vehicle lessees
+- Motorcycle owners
+- Tax collectors
+- License plate agencies
+- FLHSMV personnel
+- Titles and Registration Issuance office
+
+==================================================
+AI CLASSIFICATION TAGS
+==================================================
+
+KEYWORDS:
+- PVA plate
+- Paralyzed Veterans of America plate
+- disabled veteran plate
+- wheelchair parking plate
+- HSMV 83146
+- HSMV 82041
+- PVA motorcycle plate
+- paralyzed veteran registration
+- paralyzed veteran replacement plate
+- PVA renewal
+- PVA transfer
+- PVA eligibility
+- PVA membership proof
+- disabled parking privileges
+- handicap parking plate
+- international wheelchair symbol
+- Florida disabled veteran plate
+- paralyzed veteran lessee
+- PVA ownership requirements
+- motorcycle PVA processing
+- Titles and Registration Issuance
+- free replacement stolen plate
+- PVA cancellation
+- veteran no longer resident
+- veteran death plate cancellation
+- PVA registration fees
+- accessible parking registration
+- disabled parking permit alternative
+- wheelchair emblem plate
+- PVA Florida residency
+- PVA insurance requirements
+
+COMMON USER QUESTIONS:
+- "Who qualifies for PVA plate?"
+- "Can leased vehicle get PVA plate?"
+- "Can motorcycle get PVA plate?"
+- "What proof is required?"
+- "Does PVA plate allow handicap parking?"
+- "Can multiple PVA plates be issued?"
+- "What forms are needed?"
+- "Where are motorcycle requests sent?"
+- "How do replacements work?"
+- "Can stolen PVA plate be replaced free?"
+- "What happens if veteran dies?"
+- "Can nonresident keep PVA plate?"
+- "What fees apply?"
+- "Can transfer process locally?"
+- "What ownership is required?"
+
+==================================================
+LEGAL AUTHORITY
+==================================================
+
+Governed by:
+- 316.1955(1) FS
+- 320.0845 FS
+- 320.0848(2)(e) FS
+
+==================================================
+DESCRIPTION AND USE
+==================================================
+
+Procedure explains:
+- Issuance of PVA plates
+- Parking privileges
+- Eligibility requirements
+- Transfer and renewal procedures
+- Replacement processing
+- Cancellation rules
+
+==================================================
+VERY IMPORTANT CORE RULE
+==================================================
+
+One or more PVA license plates:
+May issue:
+To motor vehicles or motorcycles:
+Owned or leased:
+By Paralyzed Veterans of America members.
+
+==================================================
+VERY IMPORTANT DISABLED PARKING RULE
+==================================================
+
+Vehicles displaying:
+- PVA plate
+- Disabled Veteran plate
+- Disabled Veteran Wheelchair plate
+- International Wheelchair plate
+- Motorcycle Wheelchair emblem
+
+May park:
+In handicapped-designated parking spaces.
+
+==================================================
+VERY IMPORTANT MOTORCYCLE RULE
+==================================================
+
+All PVA motorcycle plate requests:
+Must be submitted to:
+
+Titles and Registration Issuance MS#72
+2900 Apalachee Parkway
+Tallahassee FL 32399
+
+==================================================
+VERY IMPORTANT REGISTRATION NAME RULE
+==================================================
+
+PVA plate:
+Must issue:
+In veteran's name:
+As:
+- Owner
+- Co-owner
+OR
+- Lessee/registrant
+
+==================================================
+PROOF OF ELIGIBILITY RULE
+==================================================
+
+Require:
+Proof of membership:
+In Paralyzed Veterans of America.
+
+==================================================
+PROOF OF OWNERSHIP RULES
+==================================================
+
+Acceptable ownership proof:
+- Florida registration certificate
+- Florida title
+- HSMV 82041 title receipt
+- Lease agreement
+
+==================================================
+VERY IMPORTANT LEASE RULE
+==================================================
+
+If vehicle leased:
+Require:
+Copy of lease agreement.
+
+==================================================
+INSURANCE REQUIREMENTS
+==================================================
+
+Florida insurance required.
+
+==================================================
+VERY IMPORTANT RS-36 RULE
+==================================================
+
+Insurance requirements:
+Governed by:
+RS-36.
+
+==================================================
+FEE RULES
+==================================================
+
+Fees include:
+- Regular registration tax
+- Appropriate regular class code fees
+- Trust fund fee
+- Original plate fee
+- Decal on Demand fee
+- Service fee
+- Branch fee if applicable
+
+==================================================
+VERY IMPORTANT FEE CHART RULE
+==================================================
+
+Refer:
+Registration Fees and Flat Taxes Distribution Chart:
+For applicable fees.
+
+==================================================
+RENEWAL RULES
+==================================================
+
+Renewals:
+May process:
+Through any county license plate agency.
+
+==================================================
+TRANSFER RULES
+==================================================
+
+Transfers:
+May process:
+Through any county license plate agency.
+
+==================================================
+VERY IMPORTANT TRANSFER NAME RULE
+==================================================
+
+Transfers:
+Must remain:
+In paralyzed veteran's name:
+As:
+- Owner
+- Co-owner
+OR
+- Lessee
+
+==================================================
+REPLACEMENT RULES
+==================================================
+
+Replacement PVA plates:
+May process:
+Through county license plate agencies.
+
+==================================================
+VERY IMPORTANT MOTORCYCLE REPLACEMENT RULE
+==================================================
+
+Replacement PVA motorcycle requests:
+Must be submitted to:
+Titles and Registration Issuance MS#72.
+
+==================================================
+REPLACEMENT REQUIREMENTS
+==================================================
+
+Require:
+- Copy of registration certificate
+- HSMV 83146
+- Applicable fees
+
+==================================================
+VERY IMPORTANT STOLEN PLATE RULE
+==================================================
+
+If stolen:
+Police report or agency card:
+Allows free replacement.
+
+==================================================
+REPLACEMENT FEES RULE
+==================================================
+
+Replacement fees may include:
+- Replacement fee
+- Decal on Demand fee
+- Service fee
+- Branch fee if applicable
+- Air Pollution Control fee
+- EMS fee
+- FRVIS fee
+- Reflectorization fee
+- Advanced Replacement fee
+
+==================================================
+MISCELLANEOUS CANCELLATION RULES
+==================================================
+
+PVA plate must be surrendered and canceled if:
+- Veteran dies
+- Veteran no longer owns vehicle
+- Veteran no longer Florida resident
+
+==================================================
+VERY IMPORTANT ALTERNATE PLATE RULE
+==================================================
+
+If PVA eligibility ends:
+Applicant must purchase:
+Alternate eligible plate.
+
+==================================================
+AI DECISION LOGIC
+==================================================
+
+AI should determine:
+1. Is applicant PVA member?
+2. Is proof of membership valid?
+3. Is vehicle owned or leased?
+4. Is lease agreement required?
+5. Is motorcycle involved?
+6. Must request route to Tallahassee?
+7. Is registration in veteran's name?
+8. Is Florida insurance verified?
+9. Does RS-36 apply?
+10. Is transfer allowed?
+11. Is transfer still in veteran's name?
+12. Is HSMV 83146 required?
+13. Is registration copy attached?
+14. Is stolen replacement fee waived?
+15. Is police report attached?
+16. Has veteran died?
+17. Has veteran moved out of Florida?
+18. Does veteran still own vehicle?
+19. Should PVA plate be canceled?
+20. Is alternate plate required?
+
+==================================================
+COMMON TITLE CLERK / REGISTRATION ERRORS
+==================================================
+
+- Missing proof of PVA membership
+- Incorrect ownership/lessee assignment
+- Missing lease agreement
+- Improper motorcycle routing
+- Missing Florida insurance
+- Missing HSMV 83146
+- Missing registration copy
+- Charging for stolen replacement with police report
+- Allowing transfer outside veteran's name
+- Failing to cancel plate after death
+- Failing to cancel after loss of residency
+- Incorrect handicap parking assumptions
+- Missing fee assessment
+- Incorrect Tallahassee routing
+
+==================================================
+VERY IMPORTANT CORE CONCEPT
+==================================================
+
+Florida PVA license plates:
+Provide specialized recognition
+and disabled parking privileges
+for qualifying members of the Paralyzed Veterans of America,
+while requiring strict ownership,
+membership,
+and residency compliance.
+
+==================================================
+RELATED PROCEDURES
+==================================================
+
+- RS-06
+- RS-36
+
+==================================================
+RELATED FORMS
+==================================================
+
+- HSMV 83146
+- HSMV 82041
+
+==================================================
+RELATED ENTITIES
+==================================================
+
+- Paralyzed Veterans of America
+- Titles and Registration Issuance
+- FLHSMV
+
+==================================================
+REFERENCE NOTES
+==================================================
+
+Current revision:
+05/20/2022
+
+Primary focus:
+- PVA plate eligibility
+- Disabled parking privileges
+- PVA renewals/transfers
+- Replacement and cancellation processing

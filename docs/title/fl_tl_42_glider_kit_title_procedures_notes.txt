@@ -1,0 +1,348 @@
+FLORIDA TITLE PROCEDURE — MOTOR VEHICLE MADE WITH TRUCK TRACTOR GLIDER KIT
+PROCEDURE: TL-42
+CATEGORY: GLIDER KIT TITLE PROCESSING
+
+==================================================
+PROCEDURE SUMMARY
+==================================================
+
+This procedure governs:
+- Truck tractor glider kits
+- Glider kit title applications
+- Rebuilt truck tractor assemblies
+- Truck tractors assembled from parts
+- Florida glider kit titling
+- Out-of-state glider kit ownership
+- Major component documentation
+- Title cancellation procedures
+- Glider Kit branding
+
+Applies to:
+- Truck tractors
+- Commercial trucks
+- Semi trucks
+- Rebuilt truck tractors
+- Glider kit manufacturers
+- Title clerks
+- Tax collectors
+- License plate agencies
+- FLHSMV personnel
+
+==================================================
+AI CLASSIFICATION TAGS
+==================================================
+
+KEYWORDS:
+- glider kit
+- truck tractor
+- HSMV 82040 MV
+- HSMV 82041
+- glider title
+- truck rebuild
+- glider branding
+- TA cancellation
+- assembled truck
+- commercial vehicle rebuild
+- glider MCO
+- glider affidavit
+
+COMMON USER QUESTIONS:
+- "How do I title a glider kit?"
+- "What is a glider kit?"
+- "Does glider kit need MCO?"
+- "What title brand is required?"
+- "What is cancellation reason TA?"
+- "Can glider kit use out-of-state title?"
+- "What receipts are needed?"
+- "Can salvage unrebuildable be used?"
+- "What parts are major components?"
+
+==================================================
+GLIDER KIT DEFINITION
+==================================================
+
+Glider kits consist of:
+- Cab
+- Front axle
+- Frame
+- Accessories
+
+Placed on:
+- Existing truck tractors
+OR
+- Truck tractors assembled from multiple donor trucks.
+
+==================================================
+VERY IMPORTANT TITLE BRAND RULE
+==================================================
+
+All glider kit titles:
+MUST show:
+- GLIDER KIT
+
+Brand carries forward:
+- For life of vehicle.
+
+==================================================
+VERY IMPORTANT TITLE STATUS RULE
+==================================================
+
+Glider kits are titled as:
+- Used motor vehicles
+- Second level title.
+
+==================================================
+TITLE DATA RULES
+==================================================
+
+YEAR:
+- Year shown on MCO
+OR
+- Application year if MCO missing year.
+
+MAKE:
+- Make shown on MCO.
+
+VIN:
+- VIN shown on MCO.
+
+BODY:
+- Body type shown on MCO.
+
+==================================================
+REQUIRED DOCUMENTS — FLORIDA TITLE VEHICLE
+==================================================
+
+Need:
+1. Florida title for donor truck tractor
+2. Glider kit MCO
+3. HSMV 82040 MV or HSMV 82041
+4. Road-operable affidavit
+5. Major component receipts
+6. Sales tax documentation
+7. Plate transfer or non-use affidavit
+8. Title fees
+
+==================================================
+VERY IMPORTANT DONOR TITLE RULE
+==================================================
+
+Florida donor title:
+MUST be cancelled.
+
+Cancellation reason:
+- TA
+
+Comments field:
+MUST include:
+- "Glider Kit"
+
+==================================================
+VERY IMPORTANT TL-07 RULE
+==================================================
+
+If Florida title unavailable:
+Follow:
+- TL-07 procedures
+
+BEFORE:
+Processing glider title.
+
+==================================================
+VERY IMPORTANT AFFIDAVIT RULE
+==================================================
+
+Need notarized/perjury affidavit stating:
+- Vehicle road operable
+AND
+- Repairs completed.
+
+==================================================
+VERY IMPORTANT MAJOR COMPONENT RULE
+==================================================
+
+Receipts required for all major components:
+NOT covered by:
+- Title
+OR
+- MCO.
+
+==================================================
+RECEIPT REQUIREMENTS
+==================================================
+
+Receipts/bills of sale must show:
+- Seller name
+- Seller address
+- Seller signature
+
+==================================================
+VERY IMPORTANT PRE-1955 ENGINE RULE
+==================================================
+
+For pre-1955 vehicles:
+Engine receipt must show:
+- Engine number
+- Engine year.
+
+==================================================
+MAJOR COMPONENT PARTS
+==================================================
+
+Includes:
+- Front end assembly
+- Fender
+- Hood
+- Grill
+- Bumper
+- Rear body section
+- Quarter panels
+- Deck lid
+- Floor pan
+- Door assemblies
+- Engine
+- Transmission
+- Frame
+- Cowl assembly/firewall
+- Airbag
+
+==================================================
+VERY IMPORTANT SALES TAX RULE
+==================================================
+
+Must:
+- Collect Florida sales tax
+OR
+- Specify tax exemption/tax information
+on HSMV application.
+
+==================================================
+VERY IMPORTANT LICENSE PLATE RULE
+==================================================
+
+Need:
+- Florida plate transfer
+OR
+- Non-use affidavit.
+
+==================================================
+OUT-OF-STATE GLIDER KIT RULE
+==================================================
+
+If donor vehicle titled out-of-state:
+Need:
+- Out-of-state ownership proof
+PLUS
+- All remaining required documents.
+
+==================================================
+VERY IMPORTANT OUT-OF-STATE VIN RULE
+==================================================
+
+VIN verification:
+NOT required
+
+Because:
+Vehicle titled using:
+- Manufacturer-assigned glider VIN.
+
+==================================================
+MULTIPLE DONOR TRUCK RULE
+==================================================
+
+If assembled from several trucks:
+AND
+- No title exists
+
+Need:
+- All standard documents
+PLUS
+- Affidavit stating vehicle assembled from stock parts.
+
+==================================================
+VERY IMPORTANT SALVAGE RULE
+==================================================
+
+Florida title CANNOT issue if ownership document is:
+- Salvage Unrebuildable
+OR
+- Certificate of Destruction.
+
+These vehicles:
+- Parts/scrap only.
+
+==================================================
+VERY IMPORTANT EXHIBIT RULE
+==================================================
+
+Procedure contains:
+- Glider Kit Checklist
+- Truck tractor glider diagram
+- Reference to TL-37 component pictures
+
+==================================================
+AI DECISION LOGIC
+==================================================
+
+AI should determine:
+1. Is this a glider kit vehicle?
+2. Is donor vehicle Florida titled?
+3. Is donor vehicle out-of-state?
+4. Is donor title available?
+5. Was title cancellation completed?
+6. Was cancellation reason TA entered?
+7. Was “Glider Kit” comment added?
+8. Is MCO present?
+9. Is road-operable affidavit included?
+10. Are all major component receipts present?
+11. Is sales tax addressed?
+12. Is plate transfer/non-use affidavit included?
+13. Is salvage unrebuildable ownership involved?
+14. Was vehicle assembled from multiple trucks?
+15. Is additional affidavit required?
+
+==================================================
+COMMON TITLE CLERK ERRORS
+==================================================
+
+- Missing title cancellation
+- Wrong cancellation reason
+- Missing “Glider Kit” comment
+- Missing MCO
+- Missing affidavit
+- Missing receipts
+- Accepting salvage unrebuildable ownership
+- Missing sales tax documentation
+- Missing plate transfer/non-use affidavit
+- Incorrect VIN verification requirement
+- Missing second-level title processing
+
+==================================================
+RELATED FORMS
+==================================================
+
+- HSMV 82040 MV
+- HSMV 82041
+
+==================================================
+RELATED PROCEDURES
+==================================================
+
+- TL-07 Missing Ownership
+- TL-37 Major Component Parts
+
+==================================================
+REFERENCE NOTES
+==================================================
+
+Current revision:
+- 12/27/2021
+
+Key branding:
+- GLIDER KIT
+
+Key cancellation reason:
+- TA
+
+Vehicle type:
+- Truck Tractor

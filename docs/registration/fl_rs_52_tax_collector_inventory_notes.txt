@@ -1,0 +1,530 @@
+FLORIDA REGISTRATION PROCEDURE — TAX COLLECTOR INVENTORY
+PROCEDURE: RS-52
+CATEGORY: INVENTORY CONTROL / LICENSE PLATE INVENTORY / PRIDE INVENTORY MANAGEMENT
+
+==================================================
+PROCEDURE SUMMARY
+==================================================
+
+This procedure governs:
+- Tax collector inventory management
+- License plate inventory ordering
+- Validation decal inventory
+- Temporary tag inventory
+- Obsolete inventory handling
+- EFS agent inventory assignment
+- Inventory reorder procedures
+- Inventory discrepancy reporting
+- Inventory destruction/disposal
+- PRIDE inventory pickup procedures
+- Inventory audit requirements
+
+Applies to:
+- Tax collectors
+- License plate agencies
+- EFS agents
+- FLHSMV personnel
+- Inventory Control Unit
+- PRIDE
+- Motor vehicle inventory personnel
+
+==================================================
+AI CLASSIFICATION TAGS
+==================================================
+
+KEYWORDS:
+- inventory control
+- tax collector inventory
+- license plate inventory
+- PRIDE inventory
+- obsolete inventory
+- HSMV 84003
+- EFS inventory
+- EFS agent
+- reorder point
+- inventory parameters
+- inventory shipment
+- inventory discrepancy
+- inventory audit
+- voided registration
+- inventory status RT
+- inventory pending status
+- inventory pickup
+- inventory destruction
+- inventory disposal
+- inventory cancellation
+- accountable inventory
+- validation decal inventory
+- temporary tag inventory
+- inventory report
+- Make Inventory Obsolete
+- Bin 67
+- Inventory Control Unit
+- PRIDE pickup
+- inventory reorder flag
+- emergency inventory order
+- inventory levels
+- inventory increments
+- RGR
+- RGS
+- RMR
+- title paper inventory
+- GDC inventory
+- specialty inventory
+- voided decals
+- shredded decals
+- incinerated decals
+- stolen inventory
+- inventory affidavit
+- inventory police report
+- inventory Monday processing
+- inventory purchase order
+- inventory electronically transmitted
+
+COMMON USER QUESTIONS:
+- "How much inventory should agencies keep?"
+- "When should inventory be reordered?"
+- "How are obsolete plates handled?"
+- "What is Bin 67?"
+- "What is HSMV 84003?"
+- "What happens if inventory is missing?"
+- "What if inventory is stolen?"
+- "How do EFS inventory audits work?"
+- "What does RT status mean?"
+- "How long does PRIDE take to ship?"
+- "How are voided decals destroyed?"
+- "What increments must inventory be ordered in?"
+- "How are emergency orders processed?"
+- "Who picks up obsolete inventory?"
+- "What records must EFS agents submit?"
+
+==================================================
+LEGAL AUTHORITY
+==================================================
+
+Governed by:
+- 320.06(4) FS
+- Chapter 946 FS
+
+==================================================
+DESCRIPTION AND USE
+==================================================
+
+Procedure explains:
+- Inventory ordering
+- Inventory control
+- Inventory audits
+- Inventory disposal
+- EFS inventory responsibilities
+
+==================================================
+VERY IMPORTANT CORE RULE
+==================================================
+
+License plate agencies:
+Must maintain:
+Approximately three-month supply:
+Of inventory.
+
+==================================================
+PRIDE RULE
+==================================================
+
+PRIDE:
+Manufactures:
+- License plates
+- Validation decals
+- Temporary license plates
+- Disabled parking permits
+- Vessel decals
+
+==================================================
+VERY IMPORTANT REORDER RULE
+==================================================
+
+Inventory orders:
+Should ONLY be placed:
+When inventory drops:
+Below reorder point.
+
+==================================================
+VERY IMPORTANT REORDER FLAG RULE
+==================================================
+
+Orders may only be placed:
+When:
+Reorder flag:
+Marked in issuance system.
+
+==================================================
+VERY IMPORTANT THREE-MONTH RULE
+==================================================
+
+Reorder point:
+Represents:
+Three-month usage level.
+
+==================================================
+VERY IMPORTANT INVENTORY PARAMETER RULE
+==================================================
+
+Inventory parameters:
+Automatically set:
+Based on:
+Actual agency usage.
+
+==================================================
+VERY IMPORTANT PRIDE MANUFACTURING RULE
+==================================================
+
+PRIDE:
+Has:
+45 calendar days:
+To manufacture and ship inventory:
+After receiving order.
+
+==================================================
+EMERGENCY ORDER RULES
+==================================================
+
+Emergency inventory orders:
+Require:
+Contacting Inventory Control Unit.
+
+==================================================
+VERY IMPORTANT INVENTORY CONTROL RULE
+==================================================
+
+Inventory Control Unit phone:
+(850) 617-2900
+
+==================================================
+OBSOLETE INVENTORY RULES
+==================================================
+
+Obsolete license plates:
+Require:
+Inventory Control approval:
+Unless covered by Technical Advisory Notice.
+
+==================================================
+VERY IMPORTANT SURRENDERED PLATE RULE
+==================================================
+
+Surrendered plates:
+Must follow:
+Obsolete inventory procedures.
+
+==================================================
+VERY IMPORTANT BIN 67 RULE
+==================================================
+
+Obsolete inventory:
+Transferred:
+To:
+Bin 67:
+Using:
+"Make Inventory Obsolete"
+Transaction.
+
+==================================================
+VERY IMPORTANT INVENTORY REPORT RULE
+==================================================
+
+Inventory Report:
+Must print:
+Before PRIDE pickup.
+
+==================================================
+AUDIT REQUIREMENTS
+==================================================
+
+Obsolete,
+surrendered,
+or cancelled plates:
+Listed on:
+HSMV 84003.
+
+==================================================
+VERY IMPORTANT PRIDE PICKUP RULE
+==================================================
+
+HSMV 84003:
+Submitted to PRIDE:
+For pickup/disposal.
+
+==================================================
+VERY IMPORTANT AUDIT COPY RULE
+==================================================
+
+Copy of HSMV 84003:
+Must be retained:
+For records/audit.
+
+==================================================
+EFS INVENTORY RULES
+==================================================
+
+Initial EFS inventory:
+Determined:
+By transaction volume:
+And tax collector discretion.
+
+==================================================
+VERY IMPORTANT EFS RECEIPT RULE
+==================================================
+
+EFS agent:
+Must verify:
+Shipment against packing slip:
+Immediately upon receipt.
+
+==================================================
+VERY IMPORTANT PACKING SLIP RULE
+==================================================
+
+Packing slip:
+Must be signed:
+Acknowledging receipt.
+
+==================================================
+VERY IMPORTANT EFS INVENTORY REPORT RULE
+==================================================
+
+EFS agents:
+Must provide:
+Actual inventory count:
+Including pending inventory.
+
+==================================================
+VERY IMPORTANT SECOND BUSINESS DAY RULE
+==================================================
+
+Signed inventory report:
+Due:
+No later than second business day:
+After inventory taken.
+
+==================================================
+MISSING INVENTORY RULES
+==================================================
+
+Missing inventory:
+Requires payment:
+Unless stolen procedures completed.
+
+==================================================
+VERY IMPORTANT STOLEN INVENTORY RULE
+==================================================
+
+If inventory stolen:
+EFS agent must:
+- File police report
+- Submit voided registration
+- Submit police report copy
+- Submit notarized/perjury affidavit
+
+==================================================
+VERY IMPORTANT 72-HOUR RULE
+==================================================
+
+Stolen inventory documents:
+Must be submitted:
+Within 72 hours.
+
+==================================================
+VOIDED INVENTORY RULES
+==================================================
+
+If inventory voided:
+And not reused:
+Inventory status:
+Must be:
+"RT"
+
+==================================================
+VERY IMPORTANT RT STATUS RULE
+==================================================
+
+Inventory not in RT status:
+Must be returned:
+To EFS agent:
+For correction.
+
+==================================================
+VOIDED INVENTORY RETURN REQUIREMENTS
+==================================================
+
+Require:
+- Voided registration
+- License plate with decal
+- Signed affidavit on EFS letterhead
+
+==================================================
+VERY IMPORTANT OBSOLETE EFS RULE
+==================================================
+
+Obsolete EFS inventory:
+Must:
+- Be inventoried
+- Listed on HSMV 84003
+- Returned to tax collector
+- Submitted to PRIDE
+
+==================================================
+INVENTORY MONDAY RULES
+==================================================
+
+Inventory levels:
+Should be checked:
+Every Monday.
+
+==================================================
+VERY IMPORTANT SYSTEM ASSIGNMENT RULE
+==================================================
+
+Inventory assignment:
+Processed systematically:
+Every Monday.
+
+==================================================
+VERY IMPORTANT ELECTRONIC TRANSMISSION RULE
+==================================================
+
+Purchase orders:
+Electronically transmitted:
+To PRIDE:
+Every Monday.
+
+==================================================
+ORDER INCREMENT RULES
+==================================================
+
+Inventory order increments:
+- RGR/RGS/RMR = 100
+- Title Paper = 2000
+- GDC = 1000
+- All others = 10
+
+==================================================
+VERY IMPORTANT SPECIALTY ORDER RULE
+==================================================
+
+If fewer than 10 specialty plates needed:
+Contact Inventory Control Unit.
+
+==================================================
+VERY IMPORTANT ORDER STATUS RULE
+==================================================
+
+License plate agency:
+Should monitor:
+Order status:
+For modifications/cancellations.
+
+==================================================
+VOIDED DECAL RULES
+==================================================
+
+Voided decals:
+Destroyed locally:
+By:
+- Shredding
+OR
+- Incineration.
+
+==================================================
+AI DECISION LOGIC
+==================================================
+
+AI should determine:
+1. Is inventory below reorder point?
+2. Is reorder flag marked?
+3. Is three-month supply maintained?
+4. Is emergency order required?
+5. Does obsolete inventory require Bin 67 transfer?
+6. Is Inventory Report printed?
+7. Is HSMV 84003 required?
+8. Is PRIDE pickup required?
+9. Has EFS shipment been verified?
+10. Was packing slip signed?
+11. Is inventory report due within 2 business days?
+12. Is inventory missing or stolen?
+13. Was police report filed?
+14. Is RT status required?
+15. Is voided inventory reusable?
+16. Are proper order increments used?
+17. Is Inventory Control contact required?
+18. Are voided decals properly destroyed?
+19. Is audit retention satisfied?
+20. Is inventory order status monitored?
+
+==================================================
+COMMON TITLE CLERK / INVENTORY ERRORS
+==================================================
+
+- Ordering inventory before reorder point
+- Ignoring reorder flag restrictions
+- Failing to maintain 3-month inventory
+- Missing Bin 67 transfer
+- Missing Inventory Report
+- Missing HSMV 84003
+- Failure to retain audit copy
+- Failure to verify EFS shipments
+- Missing signed packing slips
+- Missing EFS inventory reports
+- Incorrect RT status handling
+- Missing police reports for stolen inventory
+- Missing 72-hour submission requirement
+- Incorrect order increments
+- Failure to monitor order status
+- Improper voided decal destruction
+
+==================================================
+VERY IMPORTANT CORE CONCEPT
+==================================================
+
+Florida tax collector inventory procedures:
+Control the ordering,
+tracking,
+auditing,
+distribution,
+and destruction
+of accountable motor vehicle inventory,
+while requiring strict compliance with:
+- reorder thresholds
+- audit documentation
+- EFS accountability
+- PRIDE manufacturing/disposal procedures
+and secure inventory handling standards.
+
+==================================================
+RELATED FORMS
+==================================================
+
+- HSMV 84003
+
+==================================================
+RELATED ENTITIES
+==================================================
+
+- FLHSMV
+- PRIDE
+- Inventory Control Unit
+- Tax Collectors
+- License Plate Agencies
+- EFS Agents
+
+==================================================
+REFERENCE NOTES
+==================================================
+
+Current revision:
+04/14/2022
+
+Primary focus:
+- Inventory ordering and control
+- Obsolete inventory handling
+- EFS inventory accountability
+- PRIDE pickup/disposal procedures
+- Audit and retention requirements

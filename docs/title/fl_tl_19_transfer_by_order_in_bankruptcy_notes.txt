@@ -1,0 +1,326 @@
+FLORIDA TITLE PROCEDURE — TRANSFER OF CERTIFICATE OF TITLE BY ORDER IN BANKRUPTCY
+PROCEDURE: TL-19
+CATEGORY: TITLE TRANSFERS / COURT ORDER / BANKRUPTCY
+RELATED STATUTES:
+- F.S. 319.28
+- F.S. 328.01
+
+==================================================
+PROCEDURE SUMMARY
+==================================================
+
+This procedure governs transfers of ownership involving motor vehicles, mobile homes, or vessels when ownership is transferred through bankruptcy proceedings.
+
+The bankruptcy trustee is the legally authorized party responsible for transferring ownership, applying for duplicate titles, assigning titles, or completing reassignment documentation.
+
+Transactions may involve:
+- Florida titles
+- Out-of-state titles
+- Lost titles
+- Dealer reassignments
+- Trustee-issued bills of sale
+- Court-authorized ownership transfers
+
+The procedure applies to:
+- Motor vehicles
+- Mobile homes
+- Vessels
+
+==================================================
+AI CLASSIFICATION TAGS
+==================================================
+
+KEYWORDS:
+- bankruptcy
+- trustee
+- interim trustee
+- transfer by bankruptcy
+- bankruptcy title
+- bankruptcy court order
+- bankruptcy transfer
+- trustee reassignment
+- duplicate title bankruptcy
+- bankrupt owner
+- bankrupt lienholder
+- court ordered transfer
+- operation of law transfer
+
+COMMON USER QUESTIONS:
+- "Customer filed bankruptcy"
+- "Trustee sold vehicle"
+- "Need title from bankruptcy court"
+- "Bankruptcy trustee signed title"
+- "Bankruptcy order transfer"
+- "Can trustee apply for duplicate title?"
+- "Dealer bought bankruptcy vehicle"
+- "Lienholder bankrupt"
+- "Transfer ownership from bankruptcy"
+
+==================================================
+INITIAL INTAKE / CLASSIFICATION LOGIC
+==================================================
+
+FIRST DETERMINE:
+
+1. Is the unit:
+- Motor vehicle
+- Mobile home
+- Vessel
+
+2. Is ownership:
+- Florida titled
+- Out-of-state titled
+- Untitled
+- Lost title
+
+3. Is the title:
+- Available
+- Lost
+- Destroyed
+- Missing
+
+4. Is there:
+- Existing lien
+- Released lien
+- Court-preserved lien
+- Trustee reassignment
+
+5. Is transaction:
+- Direct buyer purchase
+- Dealer purchase
+- Duplicate title only
+- Trustee reassignment
+- Court order ownership transfer
+
+==================================================
+FLORIDA TITLE AVAILABLE
+==================================================
+
+IF FLORIDA TITLE IS AVAILABLE:
+
+REQUIRED:
+- Original Florida title
+- Trustee signs as transferor/seller
+- Purchaser signs if required
+- Dealer reassignment if dealer involved
+- Bankruptcy documentation
+- HSMV application
+- Lien satisfactions unless court preserves liens
+- Taxes or exemption
+- Registration/decal information
+- Title fees
+
+==================================================
+ACCEPTABLE BANKRUPTCY DOCUMENTS
+==================================================
+
+ANY ONE OF THE FOLLOWING IS ACCEPTABLE:
+
+- Trustee appointment from bankruptcy court
+- Interim trustee appointment
+- Order approving trustee bond
+- Notice of Commencement of Case
+
+==================================================
+TITLE APPLICATION FORMS
+==================================================
+
+MOTOR VEHICLES:
+- HSMV 82040 MV
+
+VESSELS:
+- HSMV 82040 VS
+
+MOBILE HOMES:
+- HSMV 82040 MH
+
+==================================================
+IF FLORIDA TITLE IS NOT AVAILABLE
+==================================================
+
+REQUIRED:
+- Bill of sale OR HSMV 82050
+- Trustee as seller
+- Purchaser information
+- Bankruptcy documentation
+- HSMV application
+- Lien satisfactions unless preserved/released by court
+- Tax or exemption information
+- Registration/decal information
+- Title fees
+
+==================================================
+DUPLICATE TITLE RULES
+==================================================
+
+IMPORTANT RULE:
+
+Once bankruptcy judgment is issued:
+ONLY THE TRUSTEE MAY APPLY FOR OR RECEIVE DUPLICATE TITLE.
+
+REQUIRED:
+- HSMV 82101
+- Trustee signature
+- Trustee address on application
+- Bankruptcy documentation
+- Proof of identification
+- Lien satisfactions if applicable
+- Title fees
+
+IMPORTANT:
+Duplicate title should be mailed to trustee address — not owner.
+
+==================================================
+OUT-OF-STATE TITLE PROCEDURES
+==================================================
+
+REQUIRED:
+- HSMV title application
+- VIN verification if applicable
+- Bankruptcy documentation
+- Out-of-state ownership document assigned by trustee
+- Lien satisfactions
+- Tax or exemption information
+- Florida registration/decal assignment
+- Title fees
+
+==================================================
+VIN VERIFICATION RULES
+==================================================
+
+VIN VERIFICATION NOT REQUIRED FOR:
+- Vessels
+- Mobile homes
+- Trailers under 2,000 pounds
+- Travel trailers
+- Camping trailers
+- Truck campers
+- Fifth-wheel recreation trailers
+
+==================================================
+OUT-OF-STATE TITLE MISSING
+==================================================
+
+IF OUT-OF-STATE TITLE CANNOT BE LOCATED:
+
+REQUIRED:
+- Verification of title/lien status
+- Bill of sale from trustee
+- Follow TL-07 verification guidelines
+
+==================================================
+LIEN RULES
+==================================================
+
+LIEN SATISFACTIONS REQUIRED FOR:
+- Any recorded liens
+- Florida liens
+- Out-of-state liens
+
+UNLESS:
+- Court order preserves liens
+- Court order releases liens
+
+==================================================
+BANKRUPT LIENHOLDER PROCEDURES
+==================================================
+
+IF LIENHOLDER FILED BANKRUPTCY:
+
+The trustee must:
+- Complete lien reassignment
+- Assign loans to new lienholder
+- Apply for duplicate title if title lost
+
+==================================================
+DEALER RULES
+==================================================
+
+IMPORTANT:
+
+If dealer purchases vehicle obtained through bankruptcy:
+- Dealer MUST title vehicle in dealer name first
+BEFORE resale.
+
+Applies to:
+- Motor vehicle dealers
+- Vessel dealers
+- Individual purchasers
+
+==================================================
+UNTITLED / UNREGISTERED VEHICLES
+==================================================
+
+IF VEHICLE NEVER TITLED OR REGISTERED:
+
+Court order may serve as proof of ownership IF:
+- Court order grants trustee authority to sell
+
+==================================================
+REGISTRATION REQUIREMENTS
+==================================================
+
+MOTOR VEHICLES:
+- Florida plate transfer/purchase
+OR
+- Non-use affidavit
+
+VESSELS:
+- Florida registration assignment
+OR
+- Non-use affidavit
+
+MOBILE HOMES:
+- Decal or RP decal required
+- NON-USE AFFIDAVIT NOT ACCEPTABLE
+
+==================================================
+COMMON DEALERSHIP ERRORS
+==================================================
+
+- Accepting owner signature instead of trustee
+- Missing bankruptcy documentation
+- Missing lien satisfactions
+- Duplicate title issued to owner instead of trustee
+- Selling bankruptcy vehicle before titling into dealer name
+- Missing VIN verification on out-of-state vehicle
+- Using incorrect HSMV application version
+- Assuming court order automatically clears liens
+
+==================================================
+AI RESPONSE GUIDANCE
+==================================================
+
+AI should:
+1. Determine Florida vs out-of-state title
+2. Determine whether title available
+3. Determine whether trustee is properly documented
+4. Identify lien status
+5. Identify duplicate title requirements
+6. Verify correct HSMV form
+7. Verify registration/decal requirements
+8. Determine if VIN verification required
+9. Identify whether dealer reassignment applies
+10. Confirm taxes and fees collected
+
+==================================================
+RELATED PROCEDURES
+==================================================
+
+- TL-07 Verification of Title and Lien Status
+- TL-18 Deceased Owner Transfers
+- TL-11 Duplicate Title Procedures
+- RS-50 Wrecker Operator Liens
+- ELT procedures
+- Court ordered title transfer procedures
+
+==================================================
+IMPORTANT OPERATIONAL NOTES
+==================================================
+
+- Trustee is the controlling legal authority after bankruptcy judgment
+- Court orders do NOT automatically clear all liens
+- Dealer must obtain title before resale
+- Duplicate titles go only to trustee
+- Out-of-state ownership verification may be required
+- Bankruptcy documents must clearly identify trustee authority

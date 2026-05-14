@@ -1,0 +1,453 @@
+FLORIDA TITLE PROCEDURE — WAREHOUSEMAN'S LIEN TITLE TRANSFER
+PROCEDURE: TL-27
+CATEGORY: WAREHOUSE LIEN / STORAGE LIEN / TITLE TRANSFER
+RELATED STATUTES:
+- 677.102 F.S.
+- 677.209 F.S.
+- 677.210 F.S.
+- 50.011 F.S.
+- 50.031 F.S.
+
+==================================================
+PROCEDURE SUMMARY
+==================================================
+
+This procedure explains:
+- Warehouseman's liens
+- Sale of stored vehicles through lien process
+- Transfer of title after warehouse lien sale
+- Required notices
+- Required advertisements
+- Required documentation
+- Timeline requirements
+
+Applies when:
+- A warehouse stores a vehicle
+- Charges remain unpaid
+- Warehouse enforces lien
+- Vehicle sold at auction
+
+==================================================
+AI CLASSIFICATION TAGS
+==================================================
+
+KEYWORDS:
+- warehouse lien
+- warehouseman's lien
+- storage lien
+- lien sale
+- warehouse title
+- auction title
+- stored vehicle
+- unpaid storage
+- warehouse auction
+- warehouseman
+- 677.210
+- title transfer by lien
+
+COMMON USER QUESTIONS:
+- "Warehouse sold vehicle"
+- "Storage company title transfer"
+- "Vehicle sold at warehouse auction"
+- "How to title warehouse lien vehicle"
+- "Warehouseman lien requirements"
+
+==================================================
+LEGAL DEFINITIONS
+==================================================
+
+WAREHOUSEMAN:
+A person engaged in the business of storing goods for hire.
+
+WAREHOUSEMAN'S LIEN:
+A lien for:
+- Storage expenses
+- Charges
+- Security interest
+- Advances
+- Interest
+
+==================================================
+GENERAL PROCESS FLOW
+==================================================
+
+1. Vehicle stored by warehouse
+2. Charges remain unpaid
+3. Notice sent to owners/lienholders
+4. Waiting period expires
+5. Advertisement published or posted
+6. Auction held
+7. Purchaser applies for title
+
+==================================================
+VERY IMPORTANT NOTICE REQUIREMENTS
+==================================================
+
+Notice must be:
+- Personally delivered
+OR
+- Sent by certified/registered mail
+
+Notice must go to:
+- Registered owner
+- All lienholders
+- All known interested parties
+
+Addresses:
+- Must use vehicle records
+- Florida or out-of-state records
+
+==================================================
+NOTICE CONTENT REQUIREMENTS
+==================================================
+
+Notice MUST include:
+
+1. Itemized statement of claim
+2. Vehicle description
+3. Year
+4. Make
+5. VIN
+6. Demand for payment
+7. Payment deadline
+8. Sale warning
+9. Auction time/place statement
+
+==================================================
+PAYMENT DEADLINE RULE
+==================================================
+
+Demand for payment must allow:
+- Minimum 10 days after notice delivery/receipt
+
+==================================================
+VERY IMPORTANT SALE WARNING RULE
+==================================================
+
+Notice MUST clearly state:
+- Vehicle will be advertised
+- Vehicle will be sold by auction
+- Sale conducted under 677.210 F.S.
+
+==================================================
+MAIL PROOF REQUIREMENTS
+==================================================
+
+If mailed:
+Must submit:
+- Original return receipt
+OR
+- Certified copy
+OR
+- Unclaimed unopened returned letter
+
+==================================================
+HAND DELIVERY RULE
+==================================================
+
+If notice hand-delivered:
+Must submit:
+- Notarized affidavit
+OR
+- Perjury clause affidavit
+
+Affidavit must confirm:
+- Notice personally delivered
+
+==================================================
+WAREHOUSE RECEIPT REQUIREMENT
+==================================================
+
+Must submit warehouse receipt showing:
+- Vehicle description
+- Year
+- Make
+- VIN
+
+==================================================
+PUBLIC SALE REQUIREMENTS
+==================================================
+
+Vehicle must be:
+- Advertised for sale
+OR
+- Posted publicly if no newspaper exists
+
+==================================================
+NEWSPAPER ADVERTISEMENT RULES
+==================================================
+
+If newspaper available:
+Advertisement must:
+- Publish once weekly
+- For 2 consecutive weeks
+- In newspaper of general circulation
+
+==================================================
+VERY IMPORTANT SALE TIMING RULE
+==================================================
+
+Sale may occur:
+- 15 calendar days after first publication
+
+==================================================
+NO NEWSPAPER AVAILABLE RULE
+==================================================
+
+If no general circulation newspaper exists:
+- Notice must be posted
+
+Posting requirements:
+- Minimum 6 conspicuous places
+- Neighborhood of proposed sale
+
+==================================================
+POSTED NOTICE TIMING RULE
+==================================================
+
+Posted notice:
+- Minimum 10 calendar days before sale
+
+DO NOT include:
+- Posting date
+- Sale date
+
+==================================================
+ADVERTISEMENT CONTENT REQUIREMENTS
+==================================================
+
+Advertisement must include:
+- Vehicle description
+- Year
+- Make
+- VIN
+- Warehouse tenant name
+- Sale date
+- Sale location
+- Sale time
+- Publication/posting dates
+
+==================================================
+SALE LOCATION RULE
+==================================================
+
+Sale must occur:
+- At nearest suitable place
+to where vehicle stored
+
+==================================================
+BILL OF SALE REQUIREMENTS
+==================================================
+
+If vehicle sold:
+Need bill of sale showing:
+- Selling price
+- Complete vehicle description
+
+==================================================
+UNSOLD VEHICLE RULE
+==================================================
+
+If vehicle NOT sold:
+- Warehouseman MUST title vehicle in own name
+
+==================================================
+LIEN SATISFACTION RULE
+==================================================
+
+Must provide:
+- Satisfaction for all liens
+shown on state records
+
+==================================================
+SALES TAX REQUIREMENTS
+==================================================
+
+Must provide:
+- Florida sales tax
+OR
+- Sales tax exemption information
+
+==================================================
+REGISTRATION REQUIREMENTS
+==================================================
+
+Must provide:
+- Florida plate number
+OR
+- Non-use affidavit
+
+MOBILE HOME RULE:
+- Non-use affidavit NOT allowed
+
+==================================================
+OUT-OF-STATE VEHICLE REQUIREMENTS
+==================================================
+
+If vehicle previously titled out of state:
+Additional documents required.
+
+==================================================
+VIN VERIFICATION REQUIREMENTS
+==================================================
+
+Need:
+- HSMV 82042
+OR
+- VIN verification section on title form
+OR
+- Affidavit confirming VIN match
+
+==================================================
+VIN VERIFICATION EXCEPTIONS
+==================================================
+
+VIN verification NOT required for:
+- Mobile homes
+- Trailers under 2,000 lbs
+- Certain recreational trailers
+
+==================================================
+OUT-OF-STATE OWNERSHIP PROOF
+==================================================
+
+Acceptable proof:
+- Computer printout
+- Official state letter
+- Copy of out-of-state title
+- Law enforcement teletype
+
+Must verify:
+- Ownership
+- Lien status
+
+==================================================
+UNKNOWN STATE RULE
+==================================================
+
+If previous state unknown:
+Need affidavit stating:
+- State unknown
+- Vehicle had no plate at storage intake
+
+==================================================
+VERY IMPORTANT REDEMPTION RULE
+==================================================
+
+Before sale:
+Any interested person may:
+- Pay lien amount
+- Pay expenses
+
+IF PAID:
+- Vehicle CANNOT be sold
+
+==================================================
+PROCEEDS RULE
+==================================================
+
+Warehouseman may:
+- Keep lien amount
+
+Remaining balance:
+- Must be held for rightful claimant
+
+==================================================
+TITLE APPLICATION FORMS
+==================================================
+
+Possible forms:
+- HSMV 82040 MV
+- HSMV 82040 MH
+- HSMV 82040 VS
+- HSMV 82041
+- HSMV 82042
+
+==================================================
+TIMELINE LOGIC
+==================================================
+
+DAY 1:
+- Notice sent
+
+DAY 11 OR LATER:
+- Advertisement/posting phase begins
+
+IF NEWSPAPER:
+- Publish once weekly
+- 2 consecutive weeks
+- Sale 15+ days after first publication
+
+IF NO NEWSPAPER:
+- Post in 6 visible places
+- 10 days before sale
+
+==================================================
+AI DECISION LOGIC
+==================================================
+
+AI should determine:
+1. Florida or out-of-state vehicle?
+2. Proper notice sent?
+3. 10-day demand met?
+4. Proper mail proof included?
+5. Proper advertisement method used?
+6. Proper sale timing met?
+7. Correct publication dates?
+8. Correct sale location?
+9. Lien satisfactions included?
+10. VIN verification needed?
+11. Unsold vehicle titled correctly?
+12. All required forms present?
+
+==================================================
+COMMON TITLE CLERK ERRORS
+==================================================
+
+- Missing certified mail proof
+- Sale too early
+- Missing VIN in notice
+- Missing itemized charges
+- Incorrect publication timing
+- Missing warehouse receipt
+- Missing lien satisfactions
+- Missing VIN verification
+- Sale location incorrect
+- Missing proof of advertisement
+- No affidavit for hand delivery
+
+==================================================
+IMPORTANT OPERATIONAL NOTES
+==================================================
+
+Warehouseman's lien procedures are:
+- Extremely document-sensitive
+- Timeline-sensitive
+- Notice-sensitive
+
+The most common rejection reasons:
+- Improper notice timing
+- Missing mail proof
+- Improper advertisement
+- Missing VIN verification
+- Missing lien releases
+
+==================================================
+RELATED FORMS
+==================================================
+
+- HSMV 82040 MV
+- HSMV 82040 MH
+- HSMV 82040 VS
+- HSMV 82041
+- HSMV 82042
+
+==================================================
+RELATED PROCEDURES
+==================================================
+
+- Storage lien procedures
+- Tow lien procedures
+- Auction title procedures
+- Abandoned vehicle procedures
+- Certificate of title transfer procedures

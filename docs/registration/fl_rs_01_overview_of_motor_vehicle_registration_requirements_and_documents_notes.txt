@@ -1,306 +1,984 @@
-TITLE:\
-FLHSMV RS-01 \'97 Overview of Motor Vehicle Registration Requirements and Documents\
-\
-CATEGORY:\
-Vehicle Registration\
-Initial Registration\
-Registration Transfers\
-Insurance Verification\
-Registration Eligibility\
-\
---------------------------------------------------\
-\
-RULE:\
-Florida vehicle registration transactions require verification of:\
-- Ownership/title eligibility\
-- Florida insurance\
-- Identity\
-- VIN consistency\
-- Registration eligibility\
-- Applicable fees/taxes\
-\
-VERIFY:\
-- VIN consistency\
-- Owner information\
-- Florida insurance\
-- Registration class\
-- Plate eligibility\
-- Supporting title documents\
-\
-ESCALATE IF:\
-- VIN discrepancy exists\
-- Insurance invalid/unverified\
-- Ownership conflict exists\
-- Fraud concerns arise\
-\
-\
---------------------------------------------------\
-\
-RULE:\
-Initial registrations generally require:\
-- Proof of identity\
-- Florida insurance\
-- HSMV 82040\
-- Applicable title documents\
-- VIN verification if required\
-\
-VERIFY:\
-- Driver license/ID\
-- Insurance policy\
-- Title documentation\
-- VIN verification form if applicable\
-\
-COMMON MISTAKE:\
-Attempting registration using out-of-state insurance instead of Florida-issued policy.\
-\
-\
---------------------------------------------------\
-\
-RULE:\
-Florida insurance MUST:\
-- Be issued by a Florida-authorized insurer\
-- Match owner/registrant information\
-- Match vehicle information\
-\
-VERIFY:\
-- Policy state = Florida\
-- Owner name consistency\
-- VIN consistency\
-- Insurance company code\
-- Effective dates\
-\
-ESCALATE IF:\
-- Out-of-state insurance presented\
-- Insurance name mismatch\
-- VIN mismatch on policy\
-- Insurance expired/post-dated\
-\
-NOTE:\
-Florida electronically verifies insurance before registration issuance. :contentReference[oaicite:0]\{index=0\}\
-\
-\
---------------------------------------------------\
-\
-RULE:\
-VIN must match ALL registration and title documents exactly.\
-\
-VERIFY:\
-- Vehicle VIN\
-- Title VIN\
-- Registration VIN\
-- Insurance VIN\
-- System VIN\
-- Supporting paperwork VIN\
-\
-ESCALATE IF:\
-- Any VIN discrepancy exists\
-- Altered VIN suspected\
-- VIN unreadable/incomplete\
-\
-\
---------------------------------------------------\
-\
-RULE:\
-Out-of-state vehicles entering Florida registration may require VIN verification using HSMV 82042.\
-\
-VERIFY:\
-- VIN inspection completion\
-- Authorized verifier\
-- Odometer reading if applicable\
-- Supporting ownership documents\
-\
-ESCALATE IF:\
-- Missing VIN verification\
-- Unauthorized verifier\
-- VIN discrepancy exists\
-\
-NOTE:\
-VIN verification is commonly required on out-of-state vehicles. :contentReference[oaicite:1]\{index=1\}\
-\
-\
---------------------------------------------------\
-\
-RULE:\
-Registration issuance depends on valid ownership/title eligibility.\
-\
-VERIFY:\
-- Florida title\
-- Out-of-state title\
-- Registration-only eligibility\
-- Lienholder/title status\
-- Ownership continuity\
-\
-ESCALATE IF:\
-- Ownership conflict exists\
-- Title status unresolved\
-- ELT/title issue unresolved\
-\
-\
---------------------------------------------------\
-\
-RULE:\
-Registration-only transactions may apply when:\
-- Out-of-state lienholder holds title\
-- Vehicle remains titled outside Florida\
-- Florida registration requested without Florida title issuance\
-\
-VERIFY:\
-- Out-of-state registration\
-- Proof lienholder possesses title\
-- Florida insurance\
-- VIN verification\
-\
-ESCALATE IF:\
-- Ownership/title inconsistency exists\
-- Missing lienholder proof\
-- Vehicle ineligible for registration-only transaction\
-\
-NOTE:\
-Florida permits certain \'93registration only\'94 situations for lien/lease vehicles. :contentReference[oaicite:2]\{index=2\}\
-\
-\
---------------------------------------------------\
-\
-RULE:\
-Initial registration fee applies if owner has no transferable Florida plate/registration history.\
-\
-VERIFY:\
-- Existing plate eligibility\
-- Transferable registration history\
-- Vehicle ownership records\
-\
-ESCALATE IF:\
-- Registration history unclear\
-- Incorrect initial fee assessment\
-\
-NOTE:\
-Florida generally imposes a $225 initial registration fee under qualifying circumstances. :contentReference[oaicite:3]\{index=3\}\
-\
-\
---------------------------------------------------\
-\
-RULE:\
-Plate transfers require:\
-- Same owner eligibility\
-- Proper registration class\
-- Active/valid plate status\
-\
-VERIFY:\
-- Plate ownership\
-- Registration expiration\
-- Vehicle classification compatibility\
-\
-ESCALATE IF:\
-- Plate ownership mismatch\
-- Incorrect plate class\
-- Expired/ineligible registration\
-\
-\
---------------------------------------------------\
-\
-RULE:\
-Commercial, apportioned, leased, trust-owned, and specialty registrations may require additional documentation.\
-\
-VERIFY:\
-- Business/trust documents\
-- Lease agreements\
-- IRP requirements\
-- Commercial classifications\
-- Specialty eligibility\
-\
-ESCALATE IF:\
-- Classification unclear\
-- Missing supporting documents\
-- Business authority unresolved\
-\
-\
---------------------------------------------------\
-\
-RULE:\
-Registration renewals require:\
-- Active insurance\
-- No registration stops\
-- Correct owner information\
-- Applicable fees paid\
-\
-VERIFY:\
-- Insurance verification\
-- Toll/parking stops\
-- Address accuracy\
-- Registration eligibility\
-\
-ESCALATE IF:\
-- Registration stop exists\
-- Insurance suspension active\
-- Ownership conflict exists\
-\
-\
---------------------------------------------------\
-\
-RULE:\
-Fraud prevention review is critical during registration processing.\
-\
-VERIFY:\
-- Identity legitimacy\
-- VIN authenticity\
-- Insurance validity\
-- Ownership chain\
-- Supporting document authenticity\
-\
-ESCALATE IF:\
-- Fraud concerns\
-- Altered paperwork\
-- Suspicious ownership activity\
-- Fake insurance documentation\
-\
-\
---------------------------------------------------\
-\
-COMMON DEALERSHIP FAILURE POINTS:\
-- Insurance name mismatch\
-- Out-of-state insurance used\
-- VIN mismatch\
-- Missing VIN verification\
-- Incorrect plate transfer\
-- Wrong registration class\
-- Missing proof of ownership\
-- Expired registration transfer\
-- Incorrect county fees\
-- Missing business/trust documents\
-- Registration stop overlooked\
-- Incorrect weight/classification\
-\
-\
---------------------------------------------------\
-\
-HIGH-RISK ESCALATION SITUATIONS:\
-- VIN discrepancies\
-- Fraud concerns\
-- Invalid insurance\
-- Ownership disputes\
-- Active registration stop\
-- Out-of-state title conflicts\
-- Fake insurance cards\
-- ELT/title inconsistencies\
-- Incorrect registration classification\
-\
-\
---------------------------------------------------\
-\
-BEST PRACTICE:\
-Before processing registration:\
-1. Verify Florida insurance FIRST.\
-2. Verify VIN across ALL documents.\
-3. Verify ownership/title eligibility.\
-4. Verify registration class and plate eligibility.\
-5. Verify registration stops/issues.\
-6. Escalate any irregularity immediately.\
-\
-\
---------------------------------------------------\
-\
-SOURCE:\
-FLHSMV RS-01 Overview of Motor Vehicle Registration Requirements and Documents\
-\
-REFERENCE URL:\
-https://www.flhsmv.gov/pdf/proc/rs/rs-01.pdf}
+FLORIDA REGISTRATION PROCEDURE — OVERVIEW OF MOTOR VEHICLE REGISTRATION REQUIREMENTS AND DOCUMENTS
+PROCEDURE: RS-01
+CATEGORY: REGISTRATIONS / LICENSE PLATES / GENERAL REGISTRATION REQUIREMENTS
+
+==================================================
+PROCEDURE SUMMARY
+==================================================
+
+This procedure governs:
+- Motor vehicle registration requirements
+- Registration issuance
+- Registration renewals
+- License plate issuance
+- Validation decal issuance
+- Owner and registrant requirements
+- Address requirements
+- Insurance verification
+- Vehicle information requirements
+- Special license plate categories
+- SAFE designation
+- Florida Freedom Boater decals
+- Registration class codes
+
+Applies to:
+- Passenger vehicles
+- Trucks
+- Motorcycles
+- Trailers
+- Mobile homes
+- Buses
+- Vessels
+- Dealers
+- Businesses
+- Tax collectors
+- License plate agencies
+- FLHSMV personnel
+
+==================================================
+AI CLASSIFICATION TAGS
+==================================================
+
+KEYWORDS:
+- registration requirements
+- Florida registration
+- vehicle registration
+- motor vehicle registration
+- registration renewal
+- proof of insurance
+- Florida address requirement
+- registration class codes
+- license plate issuance
+- validation decal
+- registration certificate
+- registration eligibility
+- owner information
+- registrant information
+- registration documents
+- HSMV 82040 MV
+- HSMV 83140
+- HSMV 72120
+- HSMV 87191
+- SAFE designation
+- Florida Freedom Boater decal
+- deaf hard of hearing designation
+- autonomous vehicle registration
+- FEID
+- mailing address
+- residential address
+- Florida residency
+- registration refusal
+- five digit insurance code
+- Florida insurance
+- permanent registration
+- personalized plate
+- specialty plate
+- antique plate
+- dealer plate
+- transporter plate
+- registration class code
+- validation sticker
+- registration decal
+- heavy truck dual plate
+- motorcycle registration
+- moped registration
+- restricted plate
+- apportioned plate
+- HOV decal
+- fleet plate
+
+COMMON USER QUESTIONS:
+- "What documents are required for registration?"
+- "Can I register vehicle without Florida address?"
+- "Can minor register vehicle?"
+- "What insurance is required?"
+- "What is SAFE designation?"
+- "What plates are available?"
+- "How are class codes assigned?"
+- "Can business register vehicle?"
+- "Can out-of-state resident register in Florida?"
+- "What qualifies as moped?"
+- "What is autonomous vehicle registration requirement?"
+- "What is required for vessel safety decal?"
+- "What are restricted plates?"
+- "What validation decal goes where?"
+- "Can customer use PO box?"
+- "What identification is required?"
+- "What is acceptable insurance proof?"
+- "When is registration refused?"
+- "What is heavy truck dual plate?"
+- "What class code applies?"
+
+==================================================
+LEGAL AUTHORITY
+==================================================
+
+Governed by:
+- Chapter 320 FS
+- Section 119.071 FS
+- Section 320.01 FS
+- Section 320.02 FS
+- Section 327.70 FS
+
+==================================================
+DESCRIPTION AND USE
+==================================================
+
+Procedure provides:
+Instructions and requirements:
+For issuing and renewing:
+- License plates
+- Registration certificates
+- Validation decals
+
+==================================================
+RELATED PROCEDURES
+==================================================
+
+Referenced procedures:
+- RS-08
+- RS-12
+- RS-13
+- RS-14
+- RS-15
+- RS-16
+- RS-17
+- RS-19
+- RS-21
+- RS-22
+- RS-23
+- RS-25
+- RS-26
+- RS-27
+- RS-28
+- RS-29
+- RS-32
+- RS-36
+- RS-38
+- RS-46
+- RS-61
+- RS-63
+- RS-66
+- RS-68
+- TL-10
+- TL-11
+- TL-46
+- TL-68
+
+==================================================
+PROOF OF OWNERSHIP RULES
+==================================================
+
+Vehicle registration requires:
+- Florida title in applicant name
+OR
+- Application for Florida title submitted simultaneously.
+
+==================================================
+VERY IMPORTANT TITLE RULE
+==================================================
+
+Registration cannot be issued:
+Without:
+Valid ownership documentation.
+
+==================================================
+OWNER / REGISTRANT NAME RULES
+==================================================
+
+Application must include:
+- Full first name
+- Full middle/maiden name
+- Full last name
+
+==================================================
+VERY IMPORTANT DRIVER LICENSE RULE
+==================================================
+
+Natural persons:
+Should provide:
+Florida driver license or ID number.
+
+==================================================
+VERY IMPORTANT BUSINESS RULE
+==================================================
+
+Businesses:
+Require:
+FEID number.
+
+==================================================
+VERY IMPORTANT DEALER RULE
+==================================================
+
+Dealer submitting registration:
+Must provide:
+- Driver license
+- ID card
+- Valid passport
+- Foreign passport with DHS stamp
+- I-94
+- Permanent resident card
+OR
+- Immigrant visa documentation.
+
+==================================================
+VERY IMPORTANT MINOR RULE
+==================================================
+
+Minor registrant:
+Must include:
+Parent, guardian, or custodian:
+As co-registrant.
+
+==================================================
+DEAF / HARD OF HEARING RULES
+==================================================
+
+Customer may voluntarily indicate:
+- Deaf
+OR
+- Hard of hearing
+
+==================================================
+VERY IMPORTANT CUSTOMER PRESENCE RULE
+==================================================
+
+Customer must be present:
+To voluntarily add:
+Deaf/Hard of Hearing indicator.
+
+==================================================
+VERY IMPORTANT VOID RULE
+==================================================
+
+If transaction voided:
+Indicator must be manually removed:
+From MTRFM010.
+
+==================================================
+ADDRESS REQUIREMENTS
+==================================================
+
+Registration requires:
+Residential street address:
+Or permanent business address.
+
+==================================================
+VERY IMPORTANT FLORIDA ADDRESS RULE
+==================================================
+
+Florida address required:
+For Florida registration issuance.
+
+==================================================
+ACCEPTABLE IDENTIFICATION
+==================================================
+
+Acceptable identification:
+- Driver license
+- Identification card
+- Valid passport
+
+==================================================
+VERY IMPORTANT BUSINESS VERIFICATION RULE
+==================================================
+
+Business customers may provide:
+- FEID
+- Business authorization verification
+- Florida business license
+
+==================================================
+NO PERMANENT ADDRESS RULES
+==================================================
+
+If customer lacks permanent address:
+Additional information required.
+
+==================================================
+BUSINESS ALTERNATIVE ADDRESS RULE
+==================================================
+
+Business registration may use:
+Residence address of:
+- Owner
+- Officer
+- Supervisory employee
+
+==================================================
+INDIVIDUAL ALTERNATIVE ADDRESS RULE
+==================================================
+
+Individual registration may use:
+Residence address of:
+- Relative
+OR
+- Friend residing in Florida
+
+==================================================
+MILITARY EXEMPTION RULE
+==================================================
+
+Florida resident active-duty military:
+Exempt from:
+Permanent residence street address requirement.
+
+==================================================
+VERY IMPORTANT DL/ID ADDRESS RULE
+==================================================
+
+If customer has valid Florida DL/ID:
+Only mailing address may be updated.
+
+==================================================
+VERY IMPORTANT VOTER REGISTRATION RULE
+==================================================
+
+Residential address updates:
+Should occur during:
+DL/ID renewal or replacement:
+To preserve voter registration compliance.
+
+==================================================
+PO BOX RULE
+==================================================
+
+PO Box mailing address:
+Requires:
+Residential address also provided.
+
+==================================================
+ADDRESS CHANGE RULE
+==================================================
+
+Owner/registrant:
+Must notify FLHSMV:
+Within 30 days:
+Of address change.
+
+==================================================
+VERY IMPORTANT NON-FLORIDA RESIDENT RULE
+==================================================
+
+Customer without Florida residence:
+Cannot:
+Title or register vehicle in Florida.
+
+==================================================
+EXEMPT ADDRESS CONFIDENTIALITY RULE
+==================================================
+
+Certain public officials and protected persons:
+May use protected addresses:
+Per RS-08.
+
+==================================================
+VEHICLE INFORMATION RULES
+==================================================
+
+Application requires:
+Complete vehicle description including:
+- Make
+- Year
+- Model
+- Body
+- Color
+- Weight
+- Length
+- BHP/CC
+- GVW
+- VIN
+
+==================================================
+VERY IMPORTANT PRE-1955 RULE
+==================================================
+
+Vehicles manufactured through 1954:
+Use:
+Motor number:
+Instead of VIN.
+
+==================================================
+VERY IMPORTANT GVW RULE
+==================================================
+
+Applicant declares:
+Maximum gross vehicle weight:
+For:
+- Trucks over 5,000 lbs
+- Truck tractors
+- Buses
+
+==================================================
+AUTONOMOUS VEHICLE RULES
+==================================================
+
+Fully autonomous vehicles:
+Should be titled and registered:
+In company name:
+Using FEID.
+
+==================================================
+VERY IMPORTANT AV INSURANCE RULE
+==================================================
+
+Autonomous vehicles require:
+Minimum:
+$1 million liability coverage.
+
+==================================================
+AUTONOMOUS VEHICLE REQUIRED DOCUMENTS
+==================================================
+
+Required:
+- HSMV 82040 MV
+- Insurance verification
+
+==================================================
+AUTONOMOUS VEHICLE INSURANCE REQUIREMENTS
+==================================================
+
+Must include:
+- Liability coverage
+- PIP
+- Uninsured motorist coverage
+- Underinsured motorist coverage
+
+==================================================
+SEX / DOB RULES
+==================================================
+
+Sex codes:
+- F = Female
+- M = Male
+
+==================================================
+DATE FORMAT RULE
+==================================================
+
+Date format:
+MM/DD/YY
+
+==================================================
+INSURANCE REQUIREMENTS
+==================================================
+
+Florida insurance proof required.
+
+==================================================
+VERY IMPORTANT INSURANCE EXEMPTION RULE
+==================================================
+
+Insurance proof not required for:
+- Vehicles under four wheels
+- Trailers
+- Mobile homes
+- Motorcycles
+- Government vehicles
+
+==================================================
+VERY IMPORTANT REGISTRATION REFUSAL RULE
+==================================================
+
+Registration must be refused:
+If proof of insurance:
+Not provided or verified.
+
+==================================================
+VERY IMPORTANT INSURANCE CARD RULE
+==================================================
+
+Insurance card must include:
+- Insurance company name
+- Coverage identification number
+- Make
+- Year
+- VIN
+
+==================================================
+FIVE DIGIT INSURANCE CODE RULE
+==================================================
+
+Insurance verification:
+Requires:
+Five-digit insurance company code.
+
+==================================================
+VERY IMPORTANT INSURANCE COMPANY RULE
+==================================================
+
+If company not in insurance table:
+Contact insurer:
+For proper code.
+
+==================================================
+MILITARY INSURANCE EXEMPTION RULE
+==================================================
+
+Certain Florida resident military members:
+May qualify:
+For Florida insurance exemption.
+
+==================================================
+ASSIGNED IDENTIFICATION NUMBER RULES
+==================================================
+
+Individuals may use:
+- Driver license number
+- ID card number
+- System customer number
+
+==================================================
+BUSINESS IDENTIFICATION RULES
+==================================================
+
+Businesses may use:
+- FEID
+- FEID suffix
+- System customer number
+
+==================================================
+VERY IMPORTANT CUSTOMER CREATION RULE
+==================================================
+
+If no customer number exists:
+System creates:
+Customer number.
+
+==================================================
+SAFE DESIGNATION RULES
+==================================================
+
+SAFE designation:
+Alerts law enforcement:
+To communication-sensitive conditions.
+
+==================================================
+SAFE ELIGIBLE CONDITIONS
+==================================================
+
+Conditions include:
+- Autism
+- ADHD
+- Down Syndrome
+- Alzheimer’s
+- PTSD
+- Diabetes
+- Deafness
+- Blindness
+- Other limiting disorders
+
+==================================================
+SAFE REQUIRED FORM RULE
+==================================================
+
+Requires:
+HSMV 72120.
+
+==================================================
+VERY IMPORTANT SAFE FEE RULE
+==================================================
+
+SAFE designation:
+No fee:
+When processed as registration correction.
+
+==================================================
+FLORIDA FREEDOM BOATER DECAL RULES
+==================================================
+
+Vessel safety inspection decal:
+Issued upon:
+Safety equipment attestation.
+
+==================================================
+VERY IMPORTANT BOATER DECAL LOCATION RULE
+==================================================
+
+Decal must be located:
+Within 6 inches:
+Of vessel registration decal.
+
+==================================================
+VERY IMPORTANT BOATER DECAL VALIDITY RULE
+==================================================
+
+Florida Freedom Boater decal:
+Valid:
+5 years.
+
+==================================================
+VERY IMPORTANT BOATER REQUIRED FORM RULE
+==================================================
+
+Requires:
+HSMV 87191.
+
+==================================================
+VERY IMPORTANT LOST DECAL RULE
+==================================================
+
+Lost decal replacement:
+Processed:
+No fee:
+As duplicate registration:
+Reason code LT.
+
+==================================================
+IMPOSTER ALERT RULE
+==================================================
+
+If system displays:
+"Possible Imposter – Identity Verification Required"
+Review:
+Fraud stops.
+
+==================================================
+VERY IMPORTANT FRAUD STOP RULE
+==================================================
+
+If fraud stops present:
+Contact:
+MV Fraud Unit.
+
+==================================================
+LICENSE PLATE RULES
+==================================================
+
+Registration documentation includes:
+- Metal license plate
+- Registration certificate
+- Validation decal
+
+==================================================
+LICENSE PLATE CATEGORIES
+==================================================
+
+Categories:
+- Regular graphic
+- Special
+- Specialty
+- Personalized
+
+==================================================
+VERY IMPORTANT PLATE LOCATION RULE
+==================================================
+
+Standard plate:
+Displayed:
+Rear of vehicle.
+
+==================================================
+VERY IMPORTANT TRUCK TRACTOR RULE
+==================================================
+
+Truck tractor plate:
+Displayed:
+Front of vehicle.
+
+==================================================
+VALIDATION DECAL RULES
+==================================================
+
+Validation decal:
+Affixed:
+Upper right corner:
+Of license plate.
+
+==================================================
+VALIDATION DECAL INFORMATION
+==================================================
+
+Validation decal contains:
+- Expiration month/year
+- Sequential decal number
+- Plate number
+- Vehicle type
+
+==================================================
+VERY IMPORTANT DUAL PLATE RULE
+==================================================
+
+Dual plate vehicles:
+Only front plate:
+Receives decal.
+
+==================================================
+LICENSE PLATE TYPES
+==================================================
+
+Includes:
+- Dealer
+- Restricted
+- Permanent semi-trailer
+- Motorcycle
+- Moped
+- Government
+- Specialty
+- Military
+- Antique
+- Transporter
+- Fleet
+- HOV
+- Temporary
+
+==================================================
+VERY IMPORTANT DEALER PLATE RULE
+==================================================
+
+Dealer plates:
+Cannot be used:
+On wreckers or car carriers.
+
+==================================================
+RESTRICTED PLATE RULES
+==================================================
+
+Restricted plates:
+Have limited authorized usage.
+
+==================================================
+VERY IMPORTANT AGRICULTURE RULE
+==================================================
+
+Agriculture restricted vehicles:
+Must:
+- Be owned by grower
+- Operate within 150-mile radius
+
+==================================================
+VERY IMPORTANT TOOL VEHICLE RULE
+==================================================
+
+Tool vehicles:
+Cannot:
+Carry loads or pull trailers.
+
+==================================================
+PERMANENT SEMI-TRAILER RULE
+==================================================
+
+Permanent semi-trailer plates:
+- Non-transferable
+- No expiration
+
+==================================================
+MOTORCYCLE RULES
+==================================================
+
+Motorcycle:
+Motor-driven vehicle:
+With seat/saddle:
+Kick or electric start.
+
+==================================================
+MOPED RULES
+==================================================
+
+Moped:
+- Human pedals
+- ≤2 BHP
+- ≤30 MPH
+- ≤50cc
+
+==================================================
+MOTORIZED DISABILITY ACCESS VEHICLE RULE
+==================================================
+
+Motorized disability access vehicle:
+- ≤2 BHP
+- ≤30 MPH
+- ≤50cc if combustion engine
+- Body type DA
+
+==================================================
+VERY IMPORTANT MOTORIZED BICYCLE RULE
+==================================================
+
+Motorized bicycles:
+No longer registered:
+Unless gas motor classification applies:
+Per RS-68.
+
+==================================================
+SPECIAL PLATE RULES
+==================================================
+
+Special plates require:
+Specific qualification eligibility.
+
+==================================================
+SPECIAL PLATE CATEGORIES
+==================================================
+
+Includes:
+- Amateur Radio
+- Wheelchair
+- Emergency services
+- Legislative
+- Indian Tribe
+- Government
+- Antique
+- Street Rod
+- Transporter
+- Military
+- Personalized
+- Specialty
+
+==================================================
+VERY IMPORTANT FOREIGN OFFICIAL RULE
+==================================================
+
+Taiwanese officials:
+Exempt from:
+- Registration fees
+- Title fees
+- Sales tax
+
+==================================================
+VALIDATION DECAL COLOR ROTATION
+==================================================
+
+Color rotation:
+2024 = Red
+2025 = Blue
+2026 = Orange
+2027 = Green
+2028 = Red
+2029 = Blue
+2030 = Orange
+
+==================================================
+CLASS CODES
+==================================================
+
+Major class codes include:
+01 = Passenger
+09 = For-Hire
+14 = Non-resident military
+31 = Lightweight trucks
+36 = Buses
+37 = Exempt
+39 = Forestry trucks
+41 = Heavy trucks
+42 = Motor homes
+50 = Mobile homes
+51 = Vehicle trailer ≤500 lbs
+52 = Vehicle trailer >500 lbs
+53 = For-hire trailers
+54 = Semi-trailer
+62 = Camp trailer
+65 = Motorcycles
+69 = Mopeds
+70 = Transporter
+71 = Dealer
+74 = Boat Dealer
+76 = Park Trailer
+77 = Travel trailer ≤35 feet
+78 = Travel trailer >35 feet
+80 = Antique Motorcycle
+82 = Horseless Carriage
+91 = Antique Truck
+92 = Restricted
+93 = Goats
+94 = Tools
+95 = Antique vehicles
+96 = Exempt X-Series
+97 = Government
+100 = Vessels
+101 = Vessel Dealer
+102 = Agricultural
+103 = Permanent Semi-trailer
+
+==================================================
+AI DECISION LOGIC
+==================================================
+
+AI should determine:
+1. Is ownership proof valid?
+2. Is Florida address valid?
+3. Is applicant Florida resident?
+4. Is co-registrant required?
+5. Is business FEID required?
+6. Is insurance required?
+7. Is insurance exempt?
+8. Is proof acceptable?
+9. Is registration refusal required?
+10. Is autonomous vehicle involved?
+11. Is $1 million AV insurance verified?
+12. Is SAFE designation requested?
+13. Is HSMV 72120 required?
+14. Is vessel safety decal requested?
+15. Is HSMV 87191 required?
+16. Is restricted plate eligible?
+17. What class code applies?
+18. What plate category applies?
+19. Is validation decal required?
+20. Is fraud stop review required?
+
+==================================================
+COMMON TITLE CLERK / REGISTRATION ERRORS
+==================================================
+
+- Registering vehicle without Florida address
+- Missing co-registrant for minor
+- Incorrect insurance exemption
+- Missing FEID
+- Using invalid mailing address only
+- Incorrect plate class code
+- Improper restricted plate issuance
+- Incorrect decal placement
+- Failing to refuse registration
+- Incorrect autonomous vehicle processing
+- Missing SAFE form
+- Missing boater decal attestation
+- Incorrect motorcycle/moped classification
+- Accepting invalid identification
+- Missing fraud stop review
+
+==================================================
+VERY IMPORTANT CORE CONCEPT
+==================================================
+
+Florida motor vehicle registration:
+Requires valid ownership,
+Florida residency/address compliance,
+insurance verification,
+proper customer identification,
+and correct classification of plates,
+decals,
+and registration type before issuance.
+
+==================================================
+RELATED FORMS
+==================================================
+
+- HSMV 82040 MV
+- HSMV 72120
+- HSMV 83140
+- HSMV 87191
+
+==================================================
+RELATED SYSTEMS
+==================================================
+
+- Motor Vehicle Issuance System
+- MTRFM010
+- Insurance Table
+- MV Fraud Unit
+
+==================================================
+REFERENCE NOTES
+==================================================
+
+Current revision:
+- 04/2026
+
+Primary focus:
+- Registration issuance
+- Registration renewals
+- License plate classifications
+- Insurance verification
+- Address compliance
+- Registration eligibility

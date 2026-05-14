@@ -1,0 +1,546 @@
+FLORIDA TITLE PROCEDURE — TOTAL LOSS SETTLEMENTS INVOLVING INSURANCE COMPANIES
+PROCEDURE: TL-36
+CATEGORY: INSURANCE TOTAL LOSS / SALVAGE / CERTIFICATE OF DESTRUCTION
+
+==================================================
+PROCEDURE SUMMARY
+==================================================
+
+This procedure governs:
+- Insurance company total loss processing
+- Salvage title issuance
+- Certificate of destruction issuance
+- Insurance-declared total loss branding
+- Salvage theft processing
+- Owner retained salvage
+- Independent entity processing
+- NMVTIS reporting
+- VIN verification requirements
+- Total loss calculations
+- Electronic signature workflows
+
+Applies to:
+- Insurance companies
+- Vehicle owners
+- Self-insured owners
+- Independent entities
+- Dealers
+- Tax collector offices
+
+==================================================
+AI CLASSIFICATION TAGS
+==================================================
+
+KEYWORDS:
+- total loss
+- insurance total loss
+- salvage
+- salvage rebuildable
+- rebuildable flood
+- certificate of destruction
+- salvage theft
+- owner retained
+- insurance-declared total loss
+- NMVTIS
+- independent entity
+- HSMV 82363
+- HSMV 82042
+- HSMV 82101
+- HSMV 82090
+- HSMV 82089
+- HSMV 82994
+- VIN verification
+- late model vehicle
+
+COMMON USER QUESTIONS:
+- "When is COD required?"
+- "When is rebuildable allowed?"
+- "What is 90% rule?"
+- "What is total loss threshold?"
+- "Can owner keep salvage?"
+- "What forms needed for insurance total loss?"
+- "How long to submit title?"
+- "When is VIN verification required?"
+- "What is salvage theft?"
+- "What is independent entity?"
+
+==================================================
+VERY IMPORTANT DEFINITIONS
+==================================================
+
+CERTIFICATE OF DESTRUCTION:
+Authorizes:
+- Dismantling
+- Destruction
+- Parts/scrap use only
+
+INDEPENDENT ENTITY:
+Business temporarily storing damaged vehicles under agreement with insurance company and engaged in resale/sale of damaged vehicles.
+
+LATE MODEL VEHICLE:
+- 7 model years old or newer
+
+==================================================
+VERY IMPORTANT TOTAL LOSS RULES
+==================================================
+
+INSURED VEHICLE:
+Total loss exists when insurance company pays to replace vehicle.
+
+UNINSURED/SELF-INSURED VEHICLE:
+Total loss exists when repair cost:
+- 80% or more
+of replacement value.
+
+==================================================
+VERY IMPORTANT 90% RULE
+==================================================
+
+Certificate of destruction REQUIRED when:
+- Vehicle is 7 years old or newer
+AND
+- Retail value at least $7,500
+AND
+- Repair cost equals or exceeds 90% of retail value.
+
+==================================================
+VERY IMPORTANT MOBILE HOME RULE
+==================================================
+
+Certificate of destruction REQUIRED when:
+- Mobile home repair cost is 80% or more of retail value.
+
+EXCEPTION:
+Not applicable if mobile home worth less than:
+- $1,500 retail before damage.
+
+==================================================
+VERY IMPORTANT OWNER RETAINED RULE
+==================================================
+
+If owner keeps vehicle after insurance payout:
+Owner may directly apply for:
+- Salvage rebuildable
+OR
+- Certificate of destruction.
+
+==================================================
+VERY IMPORTANT 72-HOUR RULE
+==================================================
+
+Insurance company must submit:
+- Application and title
+
+Within:
+- 72 hours
+after receiving title from owner.
+
+==================================================
+VERY IMPORTANT TITLE BRAND RULE
+==================================================
+
+Once salvage issued:
+Brand follows vehicle:
+- For entire lifecycle.
+
+==================================================
+SALVAGE REBUILDABLE VS COD
+==================================================
+
+REBUILDABLE:
+Vehicle may eventually return to road after rebuild process.
+
+CERTIFICATE OF DESTRUCTION:
+Vehicle:
+- Cannot be rebuilt for road use.
+- Parts/scrap only.
+
+==================================================
+WHEN COD REQUIRED
+==================================================
+
+Certificate of destruction required when:
+1. 90%+ damage rule applies
+2. Vehicle only useful for parts/scrap
+3. Out-of-state title says:
+   - junk
+   - nonrepairable
+   - dismantling only
+4. Insurance company chooses COD voluntarily
+
+==================================================
+WHEN REBUILDABLE ALLOWED
+==================================================
+
+Rebuildable allowed when:
+- Vehicle under $7,500 OR
+- Older than 7 model years
+AND
+- Not damaged to parts/scrap-only condition.
+
+==================================================
+VERY IMPORTANT OWNER/SELF-INSURED RULE
+==================================================
+
+Owner/self-insured may apply for rebuildable when:
+- Vehicle is 7 years or newer
+- Worth at least $7,500
+- Damage is 80% to 89%
+
+==================================================
+VERY IMPORTANT WHEELCHAIR VAN RULE
+==================================================
+
+Insurance company may request:
+- Insurance-declared total loss
+instead of COD when:
+- Vehicle has wheelchair modifications
+AND
+- Repairable safely.
+
+==================================================
+TITLE BRANDS
+==================================================
+
+Possible brands:
+- Salvage Rebuildable
+- Salvage Rebuildable Flood
+- Salvage Theft
+- Insurance Declared Total Loss
+- Total Loss
+- Certificate of Destruction
+
+==================================================
+VERY IMPORTANT TOTAL LOSS BRAND RULE
+==================================================
+
+If insurance repair cost exceeds:
+- 100% of vehicle value
+
+Owner may request:
+- "Total Loss" brand
+
+This:
+- DOES NOT create salvage title.
+- Creates regular title with Total Loss brand.
+
+==================================================
+VERY IMPORTANT SALVAGE THEFT RULE
+==================================================
+
+Salvage Theft issued when:
+- Vehicle stolen
+AND
+- Insurance company pays total loss.
+
+==================================================
+SALVAGE THEFT RECOVERY RULE
+==================================================
+
+If recovered substantially intact:
+Vehicle may return to normal title flow.
+
+If NOT substantially intact:
+Must process:
+- Rebuildable
+OR
+- Certificate of destruction.
+
+==================================================
+VERY IMPORTANT VIN VERIFICATION RULES
+==================================================
+
+VIN verification commonly required using:
+- HSMV 82042
+
+Verification may be completed by:
+- Florida notary
+- Licensed dealer
+- Law enforcement
+- Military police
+- Compliance examiner
+- Tax collector employee
+
+==================================================
+VERY IMPORTANT COD VIN RULE
+==================================================
+
+If applying for COD using out-of-state title:
+VIN verification required.
+
+==================================================
+VIN VERIFICATION EXEMPTIONS
+==================================================
+
+VIN verification NOT required for:
+- Mobile homes
+- Trailers under 2,000 lbs
+- Travel trailers
+- Camping trailers
+- Truck campers
+- Fifth-wheel recreation trailers
+
+==================================================
+VERY IMPORTANT LOST TITLE RULE
+==================================================
+
+If Florida title unavailable:
+Use:
+- HSMV 82101
+
+==================================================
+VERY IMPORTANT ELECTRONIC TITLE RULE
+==================================================
+
+If Florida electronic title:
+Use:
+- HSMV 82994
+to transfer interest to insurance company.
+
+==================================================
+MAIN FORMS USED
+==================================================
+
+PRIMARY FORMS:
+- HSMV 82363
+- HSMV 82042
+- HSMV 82101
+- HSMV 82040 MV
+- HSMV 82040 MH
+- HSMV 82040 VS
+- HSMV 82090
+- HSMV 82089
+- HSMV 82994
+- HSMV 82053
+- HSMV 82052
+
+==================================================
+VERY IMPORTANT ELECTRONIC SIGNATURE RULE
+==================================================
+
+Electronic signature process allowed for:
+- Certificate of destruction only
+when title:
+- Lost
+OR
+- Not available.
+
+==================================================
+E-SIGN PROCESS
+==================================================
+
+Insurance company:
+1. Sends HSMV 82053 to owner
+2. Owner electronically signs
+3. Insurance company completes:
+   - HSMV 82101
+   - HSMV 82363
+   - HSMV 82052
+4. Tax collector processes COD.
+
+==================================================
+VERY IMPORTANT INDEPENDENT ENTITY RULE
+==================================================
+
+Independent entity:
+- NOT towing company
+- NOT repair facility
+
+Must notify owner vehicle available for pickup.
+
+==================================================
+VERY IMPORTANT 30-DAY NOTICE RULE
+==================================================
+
+Independent entity must:
+- Send certified notice to owner
+
+Owner has:
+- 30 days
+to retrieve vehicle.
+
+==================================================
+VERY IMPORTANT NMVTIS RULE
+==================================================
+
+Insurance companies:
+Must notify NMVTIS.
+
+Independent entities:
+Must provide proof of NMVTIS reporting.
+
+==================================================
+VERY IMPORTANT STORAGE FEE RULE
+==================================================
+
+Independent entity:
+CANNOT:
+- Charge storage fees
+- Apply for title under towing/storage statutes.
+
+==================================================
+VERY IMPORTANT RECORD RETENTION RULE
+==================================================
+
+Independent entity must keep:
+- Notice records
+- NMVTIS records
+- Delivery attempts
+
+For:
+- 3 years minimum.
+
+==================================================
+VERY IMPORTANT ATTEMPTED DELIVERY RULE
+==================================================
+
+Attempted delivery:
+- Counts as valid notice attempt.
+
+Must have:
+- Tracking proof
+- Delivery timeline.
+
+==================================================
+VERY IMPORTANT REASSIGNMENT RULE
+==================================================
+
+Rebuildable salvage titles:
+May be reassigned:
+- Dealer to dealer multiple times.
+
+COD:
+Maximum:
+- 2 reassignments.
+
+==================================================
+VERY IMPORTANT NON-USE RULE
+==================================================
+
+Non-use affidavit:
+Allowed for motor vehicles.
+
+NOT allowed for:
+- Mobile homes.
+
+==================================================
+VERY IMPORTANT PENALTY RULE
+==================================================
+
+Title transfer required:
+Within:
+- 30 days
+from transfer date.
+
+==================================================
+VERY IMPORTANT FEMA RULE
+==================================================
+
+FEMA:
+Does not need title issued in its name.
+
+==================================================
+VERY IMPORTANT CALIFORNIA RULE
+==================================================
+
+California salvage TITLE:
+Already rebuilt.
+
+California salvage CERTIFICATE:
+NOT rebuilt.
+
+==================================================
+VERY IMPORTANT MISSING VIN RULE
+==================================================
+
+Missing VIN plate:
+Vehicle may be:
+- Contraband
+- Subject to forfeiture.
+
+If COD being issued:
+Replacement VIN decal:
+- NOT required.
+
+==================================================
+VERY IMPORTANT REBUILD RULE
+==================================================
+
+If dealer rebuilds rebuildable vehicle:
+Dealer MUST:
+- Obtain rebuilt title
+before sale.
+
+==================================================
+COMMON TITLE CLERK ERRORS
+==================================================
+
+- Wrong salvage classification
+- Missing VIN verification
+- Missing lien satisfactions
+- Incorrect 90% determination
+- Processing rebuildable instead of COD
+- Missing owner retained designation
+- Missing odometer statement
+- Incorrect salvage theft handling
+- Missing NMVTIS proof
+- Accepting invalid reassignment
+- Forgetting title brand carry-forward
+
+==================================================
+AI DECISION LOGIC
+==================================================
+
+AI should determine:
+1. Is vehicle insured or uninsured?
+2. Is total loss threshold met?
+3. Is vehicle late model?
+4. Is retail value above $7,500?
+5. Is repair estimate 80%-89% or 90%+?
+6. Is rebuildable allowed?
+7. Is COD mandatory?
+8. Is owner retaining salvage?
+9. Is salvage theft involved?
+10. Is VIN verification required?
+11. Is title available?
+12. Is NMVTIS reporting required?
+13. Is independent entity involved?
+14. Is wheelchair exemption applicable?
+15. Is electronic title involved?
+
+==================================================
+RELATED PROCEDURES
+==================================================
+
+- TL-05 Duplicate Titles
+- TL-09 Odometer Disclosure
+- TL-35 Derelict/Junked Vehicles
+- TL-37 Rebuilt Inspection Process
+
+==================================================
+IMPORTANT OPERATIONAL NOTES
+==================================================
+
+This procedure is:
+- Highly compliance-sensitive
+- Insurance-sensitive
+- Timeline-sensitive
+
+Most common major issue:
+- Incorrect rebuildable vs COD determination.
+
+Most common rejection:
+- Missing title documentation or VIN verification.
+
+==================================================
+REFERENCE NOTES
+==================================================
+
+Current procedure revision:
+- 02/26
+
+This procedure heavily interacts with:
+- Salvage law
+- NMVTIS reporting
+- Insurance settlement processing
+- Rebuilt title procedures 

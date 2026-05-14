@@ -1,0 +1,385 @@
+FLORIDA REGISTRATION PROCEDURE — CUSTOM VEHICLE AND STREET ROD LICENSE PLATES
+PROCEDURE: RS-28
+CATEGORY: CUSTOM VEHICLES / STREET RODS / SPECIALTY HISTORIC REGISTRATIONS
+
+==================================================
+PROCEDURE SUMMARY
+==================================================
+
+This procedure governs:
+- Custom Vehicle license plates
+- Street Rod license plates
+- Custom Vehicle eligibility
+- Street Rod eligibility
+- Title branding requirements
+- Custom Vehicle renewals
+- Street Rod renewals
+- Custom Vehicle transfers
+- Street Rod transfers
+- Insurance requirements
+- Historic modified vehicle registrations
+
+Applies to:
+- Custom vehicle owners
+- Street rod owners
+- Vehicle builders
+- Florida vehicle owners
+- Tax collectors
+- License plate agencies
+- FLHSMV personnel
+
+==================================================
+AI CLASSIFICATION TAGS
+==================================================
+
+KEYWORDS:
+- custom vehicle plate
+- street rod plate
+- custom vehicle registration
+- street rod registration
+- HSMV 83045
+- custom vehicle title brand
+- street rod title brand
+- altered vehicle
+- non-original materials
+- replica vehicle
+- replica body
+- historic modified vehicle
+- custom body vehicle
+- 1948 street rod
+- post-1948 custom vehicle
+- class code 95
+- antique custom vehicle
+- custom vehicle transfer
+- street rod transfer
+- custom vehicle insurance
+- street rod insurance
+- custom vehicle renewal
+- street rod renewal
+- RS-36
+- modified vehicle plate
+- specialty modified vehicle
+- custom car title branding
+- street rod title branding
+- recreated classic vehicle
+- custom registration fees
+- custom vehicle qualifications
+- street rod qualifications
+
+COMMON USER QUESTIONS:
+- "What qualifies as a street rod?"
+- "What qualifies as a custom vehicle?"
+- "Can replica cars qualify?"
+- "Does the title need branding?"
+- "What forms are required?"
+- "Can custom vehicle plates transfer?"
+- "Can newer replicas qualify?"
+- "What insurance is required?"
+- "What year qualifies as street rod?"
+- "What year qualifies as custom vehicle?"
+- "What is class code 95?"
+- "Can altered classic cars qualify?"
+- "Can fiberglass body qualify?"
+- "What is non-original materials?"
+- "Can custom vehicles be renewed normally?"
+
+==================================================
+LEGAL AUTHORITY
+==================================================
+
+Governed by:
+- 319.14(1)(c)11a-b FS
+- 319.14(1)(c)12a-b FS
+- 320.0863 FS
+
+==================================================
+DESCRIPTION AND USE
+==================================================
+
+Procedure explains:
+- Custom Vehicle plate issuance
+- Street Rod plate issuance
+- Eligibility standards
+- Branding requirements
+- Transfer restrictions
+
+==================================================
+VERY IMPORTANT CORE RULE
+==================================================
+
+Custom Vehicle and Street Rod plates:
+Require:
+Vehicle title/record:
+To carry proper brand:
+Before plate issuance.
+
+==================================================
+CUSTOM VEHICLE DEFINITION
+==================================================
+
+Custom vehicle:
+Motor vehicle:
+25 years old or older:
+And model year after 1948:
+OR
+Manufactured to resemble vehicle:
+25 years old or older:
+And model year after 1948.
+
+==================================================
+VERY IMPORTANT CUSTOM VEHICLE ALTERATION RULE
+==================================================
+
+Custom vehicle must:
+- Be altered from manufacturer's original design
+OR
+- Have body constructed from non-original materials.
+
+==================================================
+VERY IMPORTANT CUSTOM VEHICLE BRAND RULE
+==================================================
+
+Vehicle title/record:
+Must carry:
+"Custom Vehicle"
+Brand:
+Before issuance.
+
+==================================================
+VERY IMPORTANT MODEL YEAR RULE
+==================================================
+
+Model year listed:
+Based on:
+Body style vehicle resembles:
+NOT actual manufacture date.
+
+==================================================
+STREET ROD DEFINITION
+==================================================
+
+Street rod:
+Motor vehicle:
+Model year 1948 or older:
+OR
+Manufactured after 1948:
+To resemble vehicle:
+1948 or older.
+
+==================================================
+VERY IMPORTANT STREET ROD ALTERATION RULE
+==================================================
+
+Street rod must:
+- Be altered from manufacturer's original design
+OR
+- Have body constructed from non-original materials.
+
+==================================================
+VERY IMPORTANT STREET ROD BRAND RULE
+==================================================
+
+Vehicle title/record:
+Must carry:
+"Street Rod"
+Brand:
+Before issuance.
+
+==================================================
+VERY IMPORTANT STREET ROD YEAR RULE
+==================================================
+
+Street rod qualification:
+Limited to:
+1948 or older appearance.
+
+==================================================
+APPLICATION REQUIREMENTS
+==================================================
+
+Require:
+HSMV 83045:
+Application for Registration of a Street Rod,
+Custom Vehicle,
+Horseless Carriage,
+or Antique (Permanent).
+
+==================================================
+VERY IMPORTANT BRANDING REQUIREMENT RULE
+==================================================
+
+Before applying:
+Vehicle record:
+Must already contain:
+Proper title brand.
+
+==================================================
+VERY IMPORTANT INSURANCE RULE
+==================================================
+
+Proof of Florida insurance required.
+
+==================================================
+VERY IMPORTANT RS-36 RULE
+==================================================
+
+Insurance requirements:
+Governed by:
+RS-36.
+
+==================================================
+FEE RULES
+==================================================
+
+Fees include:
+- Regular tax fees
+- Trust fund fee
+- Processing fee
+- Original license plate fee
+- Decal on Demand fee
+- Service fee
+- Branch fee if applicable
+
+==================================================
+VERY IMPORTANT CLASS CODE RULE
+==================================================
+
+Custom Vehicle and Street Rod:
+Use:
+Class code 95.
+
+==================================================
+VERY IMPORTANT FEE CHART RULE
+==================================================
+
+Refer:
+Registration Fees and Flat Taxes Distribution Chart:
+For applicable fees.
+
+==================================================
+RENEWAL RULES
+==================================================
+
+Renewals:
+May process:
+At any local tax collector office
+Or license plate agency.
+
+==================================================
+TRANSFER RULES
+==================================================
+
+Transfers:
+May process:
+At any local tax collector office
+Or license plate agency.
+
+==================================================
+VERY IMPORTANT TRANSFER ELIGIBILITY RULE
+==================================================
+
+Custom Vehicle or Street Rod plates:
+May ONLY transfer:
+To another vehicle:
+Meeting same qualification standards.
+
+==================================================
+AI DECISION LOGIC
+==================================================
+
+AI should determine:
+1. Is vehicle Custom Vehicle or Street Rod?
+2. Does vehicle meet age/model-year requirements?
+3. Does vehicle resemble qualifying historic model?
+4. Has vehicle been altered from original design?
+5. Does vehicle use non-original body materials?
+6. Does title carry correct brand?
+7. Is Custom Vehicle brand required?
+8. Is Street Rod brand required?
+9. Is HSMV 83045 completed?
+10. Is Florida insurance verified?
+11. Does RS-36 apply?
+12. Is class code 95 correct?
+13. Are all registration fees assessed?
+14. Is transfer vehicle also qualified?
+15. Does replica vehicle qualify?
+16. Is model year determined correctly?
+17. Is body-style resemblance valid?
+18. Is renewal allowed?
+19. Is transfer allowed?
+20. Is registration office authorized?
+
+==================================================
+COMMON TITLE CLERK / REGISTRATION ERRORS
+==================================================
+
+- Issuing plate before title branding
+- Incorrectly classifying Custom Vehicle vs Street Rod
+- Using actual manufacture year instead of appearance year
+- Missing HSMV 83045
+- Missing Florida insurance
+- Incorrect class code assignment
+- Allowing transfer to nonqualifying vehicle
+- Failing to verify altered/non-original construction
+- Incorrect fee calculation
+- Misunderstanding replica qualification
+- Missing title brand verification
+- Incorrectly issuing post-1948 Street Rod
+- Incorrectly issuing pre-1949 Custom Vehicle
+- Missing trust fund fee
+- Incorrect renewal assumptions
+
+==================================================
+VERY IMPORTANT CORE CONCEPT
+==================================================
+
+Florida Custom Vehicle and Street Rod license plates:
+Provide specialty registration status
+for altered,
+replica,
+or reconstructed historic-style vehicles,
+while requiring:
+- proper title branding
+- strict year/style qualifications
+- modified construction standards
+- insurance verification
+and specialized registration processing.
+
+==================================================
+RELATED PROCEDURES
+==================================================
+
+- RS-36
+
+==================================================
+RELATED FORMS
+==================================================
+
+- HSMV 83045
+
+==================================================
+RELATED CLASS CODES
+==================================================
+
+- Class code 95
+
+==================================================
+RELATED ENTITIES
+==================================================
+
+- FLHSMV
+- Tax Collectors
+- License Plate Agencies
+
+==================================================
+REFERENCE NOTES
+==================================================
+
+Current revision:
+11/30/2020
+
+Primary focus:
+- Custom Vehicle qualifications
+- Street Rod qualifications
+- Title branding requirements
+- Registration issuance and transfer rules

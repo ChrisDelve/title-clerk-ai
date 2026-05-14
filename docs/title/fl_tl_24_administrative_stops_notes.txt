@@ -1,0 +1,251 @@
+FLORIDA TITLE PROCEDURE — ADMINISTRATIVE STOPS
+PROCEDURE: TL-24
+CATEGORY: TITLE STOP / COURT ORDER / TITLE HOLD
+RELATED AGENCY:
+- FLHSMV
+- Bureau of Issuance Oversight
+- Motor Vehicle Stops Section
+
+==================================================
+PROCEDURE SUMMARY
+==================================================
+
+This procedure explains:
+- Administrative stop placement
+- Administrative stop removal
+- Court ordered title holds
+- Title processing restrictions
+- FLHSMV stop procedures
+
+Administrative stops:
+- Prevent title activity
+- Freeze title processing
+- Restrict ownership changes
+
+==================================================
+AI CLASSIFICATION TAGS
+==================================================
+
+KEYWORDS:
+- administrative stop
+- title stop
+- stop on title
+- court ordered stop
+- title freeze
+- title hold
+- stop request
+- title restriction
+- blocked title
+- stop removal
+
+COMMON USER QUESTIONS:
+- "There’s a stop on the title"
+- "Can’t process title"
+- "Administrative stop"
+- "Court order stop"
+- "Remove title stop"
+- "Vehicle title frozen"
+- "Title blocked"
+- "Need stop removed"
+
+==================================================
+DEFINITION
+==================================================
+
+An administrative stop:
+- Is a computer entry on a title record
+- Prevents title processing
+- Is based on a court order
+- Remains active until removed
+
+==================================================
+PURPOSE OF ADMINISTRATIVE STOP
+==================================================
+
+Administrative stops are used to:
+- Prevent improper title transfers
+- Freeze disputed ownership
+- Protect court interests
+- Prevent fraudulent activity
+- Block title issuance
+- Restrict registration/title transactions
+
+==================================================
+IMPORTANT SYSTEM EFFECT
+==================================================
+
+Once an administrative stop exists:
+- Further title action is blocked
+- Title transactions cannot proceed
+- Ownership changes may be denied
+- Processing remains suspended
+
+UNTIL:
+- Court authorizes removal
+
+==================================================
+REQUIRED DOCUMENTATION
+==================================================
+
+To place or remove a stop:
+
+REQUIRED:
+- Court order
+
+Court order MUST:
+- Be signed by a Judge
+- Identify vehicle
+- State reason for stop
+
+==================================================
+VEHICLE IDENTIFICATION REQUIREMENTS
+==================================================
+
+Court order must contain:
+- Vehicle title number
+OR
+- VIN
+
+==================================================
+REQUESTER INFORMATION REQUIRED
+==================================================
+
+Request must include:
+- Name
+- Mailing address
+- Email address
+- Telephone number
+
+==================================================
+HOW TO SUBMIT ADMINISTRATIVE STOP REQUEST
+==================================================
+
+ACCEPTED METHODS:
+
+1. Fax
+2. Email
+3. Mail
+
+==================================================
+FAX INFORMATION
+==================================================
+
+FAX:
+(850) 617-3946
+
+==================================================
+EMAIL INFORMATION
+==================================================
+
+EMAIL:
+AdminStop@flhsmv.gov
+
+==================================================
+MAILING ADDRESS
+==================================================
+
+Florida Department of Highway Safety and Motor Vehicles
+Bureau of Issuance Oversight – Motor Vehicle Stops
+ATTN: Administrative Stop Request
+2900 Apalachee Parkway, MS #98
+Tallahassee, FL 32399
+
+==================================================
+WHO MAY SUBMIT REQUEST
+==================================================
+
+Requests may be submitted by:
+- Tax collector office
+- License plate agency
+- Requesting party
+- Court-related requester
+
+==================================================
+FLHSMV PROCESSING TIME
+==================================================
+
+Once received:
+- FLHSMV places stop within 48 hours
+
+==================================================
+ACKNOWLEDGEMENT LETTER
+==================================================
+
+FLHSMV sends:
+- Acknowledgement letter
+
+Letter confirms:
+- Stop placement
+- Stop remains active
+- Court controls release
+
+==================================================
+STOP REMOVAL RULE
+==================================================
+
+Administrative stop remains until:
+- Subsequent court direction
+OR
+- Final court order
+
+==================================================
+VERY IMPORTANT RULE
+==================================================
+
+Administrative stops:
+- REQUIRE court order
+
+NOT acceptable:
+- Verbal request
+- Dealer request alone
+- Customer request alone
+- Attorney request without court order
+
+==================================================
+AI DECISION LOGIC
+==================================================
+
+AI should determine:
+
+1. Is there an administrative stop?
+2. Is there a signed court order?
+3. Is stop placement requested?
+4. Is stop removal requested?
+5. Is VIN/title number included?
+6. Is requester information complete?
+7. Has court authorized removal?
+
+==================================================
+COMMON DEALERSHIP/TITLE ERRORS
+==================================================
+
+- Attempting stop without court order
+- Missing judge signature
+- Missing VIN/title number
+- Assuming stop automatically expires
+- Trying to process title with active stop
+- Missing requester information
+- Sending incomplete court documents
+
+==================================================
+IMPORTANT OPERATIONAL NOTES
+==================================================
+
+- Administrative stops are court-controlled
+- FLHSMV cannot arbitrarily remove stops
+- Court documentation is mandatory
+- Stops freeze title processing
+- Proper identification information required
+- 48-hour placement window
+- Stop remains until court authorizes release
+
+==================================================
+RELATED PROCEDURES
+==================================================
+
+- Replevin procedures
+- Fraud investigations
+- Court ordered title actions
+- Ownership disputes
+- Title suspension procedures
+- Legal hold procedures

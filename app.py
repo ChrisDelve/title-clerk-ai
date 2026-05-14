@@ -356,20 +356,26 @@ def search_documents(query):
     matches = sorted(matches, key=lambda x: x["score"], reverse=True)
 
     # If question is about fees/cost/pricing, force fee documents to the top
+    matches = sorted(matches, key=lambda x: x["score"], reverse=True)
+
+    # If question is about fees/cost/pricing, force fee documents to the top
     fee_words = ["fee", "fees", "cost", "price", "how much", "amount"]
 
     if any(term in query.lower() for term in fee_words):
+
         fee_matches = [
             m for m in matches
             if "fee" in m["name"].lower() or "fees" in m["name"].lower()
         ]
+
         non_fee_matches = [
             m for m in matches
             if m not in fee_matches
         ]
-        return (fee_matches + non_fee_matches)[:2]
 
-    return matches[:2]
+        return (fee_matches + non_fee_matches)[:4]
+
+    return matches[:4]
 
 # ----------------------------
 # USER INPUT
@@ -377,8 +383,8 @@ def search_documents(query):
 
 
 user_question = st.text_input(
-    "",
-    placeholder="Ask your title clerk question here..."
+    "Ask a question",
+    placeholder="Example: What forms do I need for an out-of-state title transfer?"
 )
 
 # ----------------------------

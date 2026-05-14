@@ -1,0 +1,386 @@
+FLORIDA TITLE PROCEDURE — CUSTOMER SERVICE CENTER & TITLE SUPPORT
+PROCEDURE: TL-40
+CATEGORY: CUSTOMER SERVICE / RECORD ACCESS / TITLE SUPPORT
+
+==================================================
+PROCEDURE SUMMARY
+==================================================
+
+This procedure governs:
+- FLHSMV Customer Service Center operations
+- Public title information access
+- Motor vehicle record requests
+- Vessel record requests
+- Mobile home record requests
+- Confidential information rules
+- Phone inquiry procedures
+- Title status assistance
+- Lien information requests
+- Public document copy requests
+- Field Support Center procedures
+
+Applies to:
+- Tax collectors
+- License plate agencies
+- DMS Compliance Examiners
+- Supervisors
+- Customers
+- Public record requestors
+- FLHSMV staff
+
+==================================================
+AI CLASSIFICATION TAGS
+==================================================
+
+KEYWORDS:
+- customer service center
+- title status
+- FLHSMV support
+- public records
+- HSMV 90510
+- title inquiry
+- registration inquiry
+- lien information
+- title copies
+- certified title copy
+- non-certified copy
+- DPPA
+- confidential records
+- title assistance
+- field support center
+
+COMMON USER QUESTIONS:
+- "How do I check title status?"
+- "How do I get title copy?"
+- "Can I get owner information by plate?"
+- "How do I request vehicle records?"
+- "What number do I call FLHSMV?"
+- "Can title information be given by phone?"
+- "How do supervisors contact support?"
+- "How do I request certified copies?"
+- "What information is confidential?"
+- "How do I request public records?"
+
+==================================================
+VERY IMPORTANT PURPOSE RULE
+==================================================
+
+Customer Service Center provides:
+- Accurate title information
+- Registration information
+- Lien information
+- Vehicle procedure assistance
+- Public records guidance
+
+==================================================
+VERY IMPORTANT PUBLIC RECORD RULE
+==================================================
+
+Florida maintains public records for:
+- Motor vehicles
+- Mobile homes
+- Vessels
+- Liens
+- Title applications
+- Registration records
+
+==================================================
+VERY IMPORTANT CONFIDENTIALITY RULE
+==================================================
+
+Personal identifying information:
+- Confidential
+AND
+- Protected under DPPA.
+
+==================================================
+VERY IMPORTANT DPPA RULE
+==================================================
+
+Protected information includes:
+- Name
+- Address
+- Social Security number
+- Telephone number
+- Medical/disability information
+- Height
+- Date of birth
+- Race
+- Gender
+
+==================================================
+VERY IMPORTANT PHONE RELEASE RULE
+==================================================
+
+Personal information may ONLY be released by phone:
+AFTER:
+- Proper identity verification.
+
+==================================================
+REQUIRED PHONE VERIFICATION INFORMATION
+==================================================
+
+Customer must provide:
+- Name
+- Date of birth
+AND
+- Social Security number
+OR
+- Driver license number
+
+PLUS:
+At least TWO additional identifiers.
+
+==================================================
+ADDITIONAL IDENTIFIER RULE
+==================================================
+
+Additional identifiers may include:
+- Original license issue year
+- Last address on file
+- Citation information
+- Endorsements
+- Other driving record information
+
+==================================================
+VERY IMPORTANT CUSTOMER SERVICE NUMBER
+==================================================
+
+Public Customer Service Center:
+- (850) 617-2000
+
+==================================================
+VERY IMPORTANT COLLECT CALL RULE
+==================================================
+
+Customer Service Center:
+DOES NOT:
+- Accept collect calls.
+
+==================================================
+VERY IMPORTANT INQUIRY RULE
+==================================================
+
+When requesting title/vehicle information:
+Must provide:
+- Correct VIN
+OR
+- Correct title number.
+
+==================================================
+VERY IMPORTANT LICENSE PLATE RULE
+==================================================
+
+Customer Service Center:
+CANNOT provide:
+- Florida license plate information by phone.
+
+==================================================
+VERY IMPORTANT RECORD REQUEST RULE
+==================================================
+
+License plate information may ONLY be obtained by:
+- Submitting HSMV 90510.
+
+==================================================
+REQUIRED RECORD REQUEST FORM
+==================================================
+
+Form required:
+- HSMV 90510
+Motor Vehicle, Vessel and Mobile Home Records Request
+
+==================================================
+RECORD REQUEST MAILING ADDRESS
+==================================================
+
+Division of Motorist Services
+2900 Apalachee Parkway
+Room B-231, MS 57
+Tallahassee, FL 32399-0500
+
+==================================================
+FIELD SUPPORT CENTER PURPOSE
+==================================================
+
+Field Support Center assists:
+- Supervisors
+- Tax collector staff
+- License plate agencies
+- DMS Compliance Examiners
+
+With:
+- Title issues
+- Registration issues
+- Vessel issues
+- Lien problems
+- Procedure questions
+
+==================================================
+VERY IMPORTANT SUPPORT NUMBER RULE
+==================================================
+
+Field Support Center phone number:
+- Restricted
+- Internal use only
+
+Should NOT:
+- Be distributed publicly.
+
+==================================================
+VERY IMPORTANT CALL LIMIT RULE
+==================================================
+
+Maximum:
+- Five inquiries/questions per call
+
+For:
+- Support unit access management.
+
+==================================================
+PUBLIC DOCUMENT COPY RULE
+==================================================
+
+Customers may request:
+- Certified copies
+- Non-certified copies
+
+Of:
+- Titles
+- Registrations
+- Vessel records
+
+==================================================
+VERY IMPORTANT COPY PROCESS RULE
+==================================================
+
+Copies issued AFTER:
+- Payment received.
+
+==================================================
+NON-CERTIFIED COPY PHONE NUMBER
+==================================================
+
+Non-certified copy inquiries:
+- 850-617-2000
+
+==================================================
+CERTIFIED COPY PHONE NUMBER
+==================================================
+
+Certified copies/subpoena records:
+- 850-617-2804
+
+==================================================
+VERY IMPORTANT SUBPOENA RULE
+==================================================
+
+Subpoena records include:
+- Motor vehicles
+- Mobile homes
+- Vessels
+
+==================================================
+AI DECISION LOGIC
+==================================================
+
+AI should determine:
+1. Is request public or confidential?
+2. Is customer properly verified?
+3. Is DPPA restriction applicable?
+4. Is HSMV 90510 required?
+5. Is VIN/title number available?
+6. Is customer requesting plate lookup?
+7. Is certified or non-certified copy needed?
+8. Should inquiry be routed to Field Support?
+9. Is caller authorized supervisor/staff?
+10. Is request title, registration, vessel, or lien related?
+
+==================================================
+VERY IMPORTANT PRIVACY RULE
+==================================================
+
+AI should NEVER:
+- Release protected personal data
+without:
+- Proper authorization
+OR
+- Proper verification.
+
+==================================================
+COMMON TITLE CLERK ERRORS
+==================================================
+
+- Giving plate information by phone
+- Releasing confidential data improperly
+- Failing identity verification
+- Sending public to internal support lines
+- Accepting incomplete record requests
+- Missing HSMV 90510 requirement
+- Exceeding inquiry limits
+- Using incorrect support channels
+- Processing requests without VIN/title number
+
+==================================================
+COMMON CUSTOMER SERVICE QUESTIONS
+==================================================
+
+- Title status
+- Lien status
+- Registration verification
+- Record copy requests
+- Vehicle ownership records
+- Mobile home title questions
+- Vessel title questions
+- Duplicate record requests
+
+==================================================
+IMPORTANT SUPPORT WORKFLOW
+==================================================
+
+1. Customer contacts FLHSMV
+2. Identity verified if necessary
+3. VIN/title reviewed
+4. Information provided if authorized
+5. Record request process explained if needed
+6. Copies issued after payment
+
+==================================================
+VERY IMPORTANT INTERNAL SUPPORT RULE
+==================================================
+
+Field Support Center:
+Primarily serves:
+- Government/title personnel
+
+NOT:
+- General public.
+
+==================================================
+RELATED FORMS
+==================================================
+
+- HSMV 90510
+Motor Vehicle, Vessel and Mobile Home Records Request
+
+==================================================
+RELATED PROCEDURES
+==================================================
+
+- TL-01 Title Applications
+- TL-05 Duplicate Titles
+- TL-38 Correspondence Letters
+- Public Records Procedures
+
+==================================================
+REFERENCE NOTES
+==================================================
+
+Current revision:
+- 03/30/2018
+
+Main public number:
+- 850-617-2000
+
+Certified copies:
+- 850-617-2804

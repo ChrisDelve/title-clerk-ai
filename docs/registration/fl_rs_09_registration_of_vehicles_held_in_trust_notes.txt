@@ -1,0 +1,413 @@
+FLORIDA REGISTRATION PROCEDURE — REGISTRATION OF VEHICLES HELD IN TRUST
+PROCEDURE: RS-09
+CATEGORY: TRUST REGISTRATIONS / TRUSTEES / BENEFICIAL USE / LICENSE PLATE TRANSFERS
+
+==================================================
+PROCEDURE SUMMARY
+==================================================
+
+This procedure governs:
+- Registration of vehicles held in trust
+- Trustee registrations
+- Trust registrations
+- Beneficial use registrations
+- Trust plate transfers
+- TRUST Flag requirements
+- Registrant assignment
+- Trust customer records
+- Initial Registration Fee requirements
+- Trust-to-individual transfers
+- Individual-to-trust transfers
+
+Applies to:
+- Trusts
+- Trustees
+- Individual registrants
+- Beneficial users
+- Specialty license plates
+- Tax collectors
+- License plate agencies
+- FLHSMV personnel
+
+==================================================
+AI CLASSIFICATION TAGS
+==================================================
+
+KEYWORDS:
+- trust registration
+- trustee registration
+- beneficial use
+- TRUST flag
+- trust plate transfer
+- trustee plate transfer
+- trust registrant
+- trust customer record
+- registration in trust
+- title in trust
+- title in trustee name
+- John Doe Trustee
+- beneficial user affidavit
+- trust affidavit
+- trust vehicle registration
+- Initial Registration Fee trust
+- trust to individual transfer
+- individual to trust transfer
+- trust entity registration
+- trust business customer
+- Customer Detail Maintenance
+- trust specialty plate
+- trust registration comments
+- trust plate assumption
+- trust registrant DOB
+- trust registration tax
+- trust class code
+- trust ownership
+- trustee ownership
+- trust title transfer
+- trust beneficial use statement
+- trust registration logic
+- trust entity vs natural person
+- trust registration rules
+
+COMMON USER QUESTIONS:
+- "Can trust vehicle be registered in person's name?"
+- "Can trustee keep same plate?"
+- "What is beneficial use?"
+- "What is TRUST flag?"
+- "Can plate transfer from trust to person?"
+- "Does Initial Registration Fee apply?"
+- "Can individual use trust-owned vehicle plate?"
+- "How is trustee customer created?"
+- "What DOB used for trust registration?"
+- "Can trust get specialty plate?"
+- "Does affidavit go to FLHSMV?"
+- "Can trustee transfer existing plate?"
+- "Can title stay in trust while registration in individual name?"
+- "What comments required?"
+- "Is trust considered separate entity?"
+
+==================================================
+LEGAL AUTHORITY
+==================================================
+
+Governed by:
+- 320.091 FS
+- 320.0807 FS
+- 320.083 FS
+- 320.084 FS
+- 320.0842 FS
+- 320.0843 FS
+- 320.0845 FS
+- 320.086 FS
+- 320.0863 FS
+- 320.089 FS
+- 320.0893 FS
+- 320.0898 FS
+
+==================================================
+DESCRIPTION AND USE
+==================================================
+
+Procedure explains:
+- Registration processing for trust-owned vehicles
+- Trustee registration handling
+- Beneficial use plate transfers
+- TRUST Flag processing
+- Initial Registration Fee handling
+
+==================================================
+VERY IMPORTANT CORE RULE
+==================================================
+
+Vehicle titled:
+In name of trust or trustee:
+May be registered:
+In name of individual:
+Who has beneficial use of vehicle.
+
+==================================================
+AUTHORIZED LICENSE PLATES
+==================================================
+
+Applies to:
+- Regular alphanumeric plates
+- Specialty plates
+- Military plates
+- Antique plates
+- Legislative plates
+- Amateur radio plates
+- Wheelchair plates
+- Street rod plates
+- Historical plates
+
+==================================================
+TRUSTEE RULES
+==================================================
+
+If vehicle titled:
+"John Doe Trustee"
+Customer record:
+Must be created:
+As business customer.
+
+==================================================
+VERY IMPORTANT TRUST FLAG RULE
+==================================================
+
+Customer Detail Maintenance:
+Must mark:
+TRUST Flag:
+With "X".
+
+==================================================
+VERY IMPORTANT TRUSTEE REGISTRATION RULE
+==================================================
+
+Registration may issue:
+In name:
+"John Doe Trustee"
+Using:
+06/30:
+As DOB.
+
+==================================================
+VERY IMPORTANT INDIVIDUAL REGISTRANT RULE
+==================================================
+
+Registration may alternatively issue:
+In name:
+"John Doe"
+As individual registrant.
+
+==================================================
+VERY IMPORTANT SEX/DOB RULE
+==================================================
+
+If individual registrant used:
+Use:
+Individual's actual:
+- Sex
+- Date of birth.
+
+==================================================
+TRUSTEE PLATE TRANSFER RULE
+==================================================
+
+Plate issued:
+To "John Doe":
+May transfer:
+To vehicle titled:
+In name of:
+"John Doe Trustee."
+
+==================================================
+VERY IMPORTANT TRUSTEE ASSUMPTION RULE
+==================================================
+
+Plate issued:
+To trustee:
+May be assumed:
+Into individual's name.
+
+==================================================
+VERY IMPORTANT REGISTRATION TAX RULE
+==================================================
+
+Appropriate registration tax and fees:
+Must charge:
+When changing:
+To individual's DOB.
+
+==================================================
+VERY IMPORTANT INITIAL REGISTRATION FEE EXEMPTION RULE
+==================================================
+
+Initial Registration Fee:
+NOT required:
+When plate transferred:
+From trustee:
+To same individual.
+
+==================================================
+TRUST ENTITY RULES
+==================================================
+
+Trust:
+Considered:
+Separate legal entity:
+From natural person.
+
+==================================================
+VERY IMPORTANT TRUST ENTITY TRANSFER RULE
+==================================================
+
+If title/registration issued:
+To Trust:
+Plate cannot transfer:
+To individual.
+
+==================================================
+VERY IMPORTANT INDIVIDUAL TO TRUST RULE
+==================================================
+
+If title/registration issued:
+To individual:
+Plate cannot transfer:
+To Trust.
+
+==================================================
+VERY IMPORTANT INITIAL REGISTRATION FEE RULE
+==================================================
+
+Initial Registration Fee:
+Required:
+When transferring:
+Between:
+- Trust
+AND
+- Individual.
+
+==================================================
+VERY IMPORTANT RS-53 ANALOGY RULE
+==================================================
+
+Trust transfer logic:
+Similar to:
+Lease class code transfer:
+Under RS-53.
+
+==================================================
+BENEFICIAL USE RULES
+==================================================
+
+If title transferred:
+Into Trust:
+Trustee may provide affidavit:
+Naming beneficial user.
+
+==================================================
+VERY IMPORTANT BENEFICIAL USER RULE
+==================================================
+
+Named beneficial user:
+May become:
+Registrant:
+By transferring plate.
+
+==================================================
+VERY IMPORTANT TRUST BUSINESS CUSTOMER RULE
+==================================================
+
+Trust customer record:
+Must be:
+Business customer:
+With TRUST Flag marked "X".
+
+==================================================
+DOCUMENTATION RULES
+==================================================
+
+Beneficial use affidavit:
+Required from Trustee.
+
+==================================================
+VERY IMPORTANT AFFIDAVIT SUBMISSION RULE
+==================================================
+
+Affidavit:
+Does NOT need:
+Submission to FLHSMV.
+
+==================================================
+VERY IMPORTANT COMMENTS RULE
+==================================================
+
+Transaction comments:
+Must contain:
+Information concerning:
+Beneficial use transaction.
+
+==================================================
+AI DECISION LOGIC
+==================================================
+
+AI should determine:
+1. Is title in trustee name or trust name?
+2. Is trust separate entity?
+3. Is TRUST Flag required?
+4. Should customer record be business customer?
+5. Is beneficial use involved?
+6. Is individual registrant allowed?
+7. Should 06/30 DOB be used?
+8. Should actual DOB be used?
+9. Can plate transfer occur?
+10. Is plate assumption allowed?
+11. Is Initial Registration Fee exempt?
+12. Is Initial Registration Fee required?
+13. Is affidavit required?
+14. Must affidavit be submitted to FLHSMV?
+15. Should transaction comments be entered?
+16. Is specialty plate eligible?
+17. Is trustee-to-individual transfer occurring?
+18. Is individual-to-trust transfer prohibited?
+19. Is same beneficial user involved?
+20. Is RS-53 comparison applicable?
+
+==================================================
+COMMON TITLE CLERK / REGISTRATION ERRORS
+==================================================
+
+- Treating trust as natural person
+- Missing TRUST Flag
+- Creating trust as individual customer
+- Incorrect DOB assignment
+- Incorrect Initial Registration Fee assessment
+- Improper trust-to-individual transfer
+- Improper individual-to-trust transfer
+- Missing beneficial use affidavit
+- Sending affidavit to FLHSMV unnecessarily
+- Missing transaction comments
+- Misunderstanding trustee vs trust distinction
+- Incorrect specialty plate handling
+- Incorrect registrant assignment
+- Failing to create business customer record
+
+==================================================
+VERY IMPORTANT CORE CONCEPT
+==================================================
+
+Florida trust registration procedures:
+Allow vehicles titled in trust or trustee names
+to be registered to individuals with beneficial use,
+but strict distinctions exist between:
+- Trustee ownership
+- Trust entity ownership
+- Individual registrants
+for purposes of plate transfer and Initial Registration Fee assessment.
+
+==================================================
+RELATED PROCEDURES
+==================================================
+
+- RS-05
+- RS-53
+
+==================================================
+RELATED SYSTEMS
+==================================================
+
+- Customer Detail Maintenance
+
+==================================================
+REFERENCE NOTES
+==================================================
+
+Current revision:
+06/28/2022
+
+Primary focus:
+- Trust registrations
+- Trustee registrations
+- Beneficial use plate transfers
+- TRUST Flag handling
+- Initial Registration Fee logic

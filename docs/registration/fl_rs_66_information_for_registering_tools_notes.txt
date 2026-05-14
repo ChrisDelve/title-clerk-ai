@@ -1,0 +1,459 @@
+FLORIDA REGISTRATION PROCEDURE — INFORMATION FOR REGISTERING TOOLS
+PROCEDURE: RS-66
+CATEGORY: SPECIAL PURPOSE VEHICLES / TOOL REGISTRATION / COMMERCIAL VEHICLES
+
+==================================================
+PROCEDURE SUMMARY
+==================================================
+
+This procedure governs:
+- Tool vehicle registration
+- Special purpose vehicle classification
+- Tool vehicle titling
+- Restricted tool registration
+- Tool class code assignments
+- Tool insurance exemptions
+- Street-legal tool determination
+- Construction tool vehicle registration
+- Excavation vehicle registration
+- Pump truck registration
+- Crane registration
+- Tool vs heavy truck classification
+- Trailer exclusion rules
+- Off-road equipment exclusions
+- Restricted use tool plates
+
+Applies to:
+- Construction companies
+- Excavation companies
+- Well drilling companies
+- Concrete pump operators
+- Commercial vehicle owners
+- Tax collectors
+- License plate agents
+- FLHSMV personnel
+- Compliance personnel
+
+==================================================
+AI CLASSIFICATION TAGS
+==================================================
+
+KEYWORDS:
+- tool registration
+- special purpose vehicle
+- class code 94
+- TO vehicle type
+- RSR inventory code
+- restricted plate
+- construction vehicle
+- well drilling vehicle
+- excavation vehicle
+- spraying vehicle
+- street legal tool
+- pump truck
+- concrete pump truck
+- crane registration
+- ditch digger
+- excavator tool
+- tool heavy truck distinction
+- heavy truck class code 41
+- hauling load restriction
+- trailer exclusion
+- frontend loader
+- bulldozer
+- grader
+- street sweeper
+- tractor registration
+- off-road equipment
+- non street legal equipment
+- tow trailer restriction
+- side body truck
+- supply hauling
+- trailer towing restriction
+- Florida tool registration
+- motorized tool vehicle
+- commercial special purpose vehicle
+- restricted vehicle use
+- non-transport vehicle
+- tool vehicle insurance exemption
+- vehicle type TO
+- RSR plate
+- tool classification
+- FLHSMV tool procedure
+- tool title requirement
+- street legal machinery
+- road legal construction equipment
+- RS-63
+- trailer registration exclusion
+- converter gear
+- tow dolly
+- stump grinder
+- transportable speed sign
+- grill on wheels
+- tree spade
+- road construction equipment
+
+COMMON USER QUESTIONS:
+- "What qualifies as a tool vehicle?"
+- "Can a crane be registered as a tool?"
+- "Can a trailer be registered as a tool?"
+- "Does a tool vehicle require insurance?"
+- "What class code applies to tools?"
+- "What is an RSR plate?"
+- "Can a concrete pump truck qualify?"
+- "What if the vehicle hauls supplies?"
+- "Can a bulldozer be titled?"
+- "Can a frontend loader be registered?"
+- "What if the vehicle tows a trailer?"
+- "What is vehicle type TO?"
+- "Can off-road equipment be registered?"
+- "What if the truck carries tools?"
+- "How is a heavy truck different from a tool?"
+- "Can a street sweeper be registered?"
+- "What equipment is excluded?"
+
+==================================================
+LEGAL AUTHORITY
+==================================================
+
+Governed by:
+- 320.08(5)(b) FS
+
+==================================================
+DESCRIPTION AND USE
+==================================================
+
+Procedure explains:
+- Qualification standards for tool registration
+- Street-legal tool requirements
+- Tool vs heavy truck distinctions
+- Restricted plate issuance
+- Excluded equipment classifications
+
+==================================================
+VERY IMPORTANT CORE RULE
+==================================================
+
+A tool:
+Is a street-legal special purpose motor vehicle:
+Designed exclusively:
+For:
+- drilling
+- excavation
+- construction
+- spraying
+OR
+similar activity
+
+and NOT designed or used:
+To transport loads over public roads.
+
+==================================================
+VERY IMPORTANT LOAD RULE
+==================================================
+
+Primary determination question:
+"Do you haul a load with this vehicle
+in addition to using it as a tool?"
+
+==================================================
+VERY IMPORTANT ANY LOAD RULE
+==================================================
+
+Hauling a load:
+Means:
+ANY load.
+
+==================================================
+VERY IMPORTANT HEAVY TRUCK RULE
+==================================================
+
+If vehicle:
+- carries tools/supplies
+OR
+- tows trailer
+
+DO NOT register as tool.
+
+Register as:
+Heavy truck:
+Class code 41.
+
+==================================================
+VERY IMPORTANT TRAILER RULE
+==================================================
+
+Tools:
+Can ONLY be:
+Street-legal motorized vehicles.
+
+NEVER trailers.
+
+==================================================
+VERY IMPORTANT OFF-ROAD RULE
+==================================================
+
+Do NOT title or register:
+- frontend loaders
+- bulldozers
+- road graders
+- tractors
+OR
+similar off-road equipment.
+
+==================================================
+VERY IMPORTANT STREET LEGAL RULE
+==================================================
+
+Equipment:
+Must be legally drivable:
+On streets/highways:
+To qualify as tool.
+
+==================================================
+RESTRICTED PLATE RULES
+==================================================
+
+Tool registrations:
+Receive:
+Restricted license plate.
+
+==================================================
+VERY IMPORTANT RSR RULE
+==================================================
+
+Restricted tool plates:
+Use inventory code:
+RSR.
+
+==================================================
+VERY IMPORTANT RESTRICTED USE RULE
+==================================================
+
+RSR inventory code:
+Indicates:
+Restricted operational use.
+
+==================================================
+CLASS CODE RULES
+==================================================
+
+Tool registrations:
+Use:
+Class code 94.
+
+==================================================
+VERY IMPORTANT TO VEHICLE TYPE RULE
+==================================================
+
+Vehicle type:
+"TO"
+Represents:
+Tool vehicle.
+
+==================================================
+TITLE RULES
+==================================================
+
+Vehicle types requiring title:
+Must be titled:
+As tool vehicle.
+
+==================================================
+INSURANCE RULES
+==================================================
+
+Vehicles registered:
+With vehicle type TO:
+Do NOT require:
+Proof of insurance.
+
+==================================================
+YES — EXAMPLES OF TOOLS
+==================================================
+
+Examples of street-legal tools include:
+- crane
+- concrete pump truck
+- excavator/ditch digger
+- pump truck
+- tree spade
+- transportable speed sign
+- stump grinder
+- grill on wheels
+when mounted on street-legal motor vehicle.
+
+==================================================
+NO — EXAMPLES OF TRAILERS
+==================================================
+
+The following trailer-mounted equipment:
+Are NOT tools:
+- trailer concrete pump
+- trailer grill on wheels
+- trailer transportable speed sign
+- trailer tree spade
+- trailer stump grinder.
+
+==================================================
+VERY IMPORTANT RS-63 RULE
+==================================================
+
+Trailer-mounted equipment:
+Governed by:
+RS-63.
+
+==================================================
+NO — CONVERTER GEAR RULE
+==================================================
+
+Converter gear:
+Not titled or registered.
+
+==================================================
+VERY IMPORTANT DOUBLE RIG RULE
+==================================================
+
+Vehicles attached:
+To converter gear:
+Must both:
+Be registered.
+
+==================================================
+NO — TOW DOLLY RULE
+==================================================
+
+Tow dolly:
+Not titled or registered.
+
+==================================================
+VERY IMPORTANT TOWING VEHICLE RULE
+==================================================
+
+Towing vehicle:
+Must maintain:
+Current registration.
+
+==================================================
+NO — OFF-ROAD EQUIPMENT RULE
+==================================================
+
+Off-road/non-street-legal equipment:
+Not titled or registered.
+
+==================================================
+EXAMPLES OF NON-REGISTERABLE EQUIPMENT
+==================================================
+
+Examples include:
+- street sweeper
+- tractor
+- grader
+- bulldozer
+- frontend loader.
+
+==================================================
+AI DECISION LOGIC
+==================================================
+
+AI should determine:
+1. Is vehicle street legal?
+2. Is vehicle motorized?
+3. Is vehicle designed exclusively as tool?
+4. Does vehicle haul ANY load?
+5. Does vehicle carry supplies/tools?
+6. Does vehicle tow trailer?
+7. Should vehicle instead register as heavy truck?
+8. Is vehicle actually trailer-mounted equipment?
+9. Is class code 94 appropriate?
+10. Is vehicle type TO appropriate?
+11. Does RSR inventory code apply?
+12. Is title required?
+13. Does insurance exemption apply?
+14. Is equipment off-road only?
+15. Is equipment excluded from registration?
+16. Is converter gear involved?
+17. Does tow dolly exemption apply?
+18. Is RS-63 applicable instead?
+19. Is restricted use status correct?
+20. Does vehicle qualify under special purpose definition?
+
+==================================================
+COMMON TITLE CLERK / REGISTRATION ERRORS
+==================================================
+
+- Registering load-carrying truck as tool
+- Registering trailer as tool
+- Incorrectly titling off-road equipment
+- Missing class code 94
+- Incorrect vehicle type assignment
+- Failing to identify heavy truck usage
+- Ignoring trailer towing activity
+- Requiring insurance improperly
+- Registering non-street-legal equipment
+- Misclassifying concrete pump trailers
+- Misclassifying cranes
+- Incorrect RSR inventory code usage
+- Registering tow dollies improperly
+- Registering converter gear improperly
+- Ignoring restricted-use limitations
+
+==================================================
+VERY IMPORTANT CORE CONCEPT
+==================================================
+
+Florida tool registration procedures:
+Provide special registration classifications
+for street-legal special purpose vehicles
+used exclusively for:
+- drilling
+- excavation
+- construction
+- spraying
+and similar industrial activities,
+
+while enforcing:
+- no-load transportation restrictions
+- restricted-use registration
+- street-legal requirements
+- trailer exclusions
+- heavy truck distinctions
+and off-road equipment exclusions.
+
+==================================================
+RELATED PROCEDURES
+==================================================
+
+- RS-63
+
+==================================================
+RELATED EXHIBITS
+==================================================
+
+- Exhibit A — Examples of Street-Legal Tools
+- Exhibit A — Examples of Trailers
+- Exhibit A — Converter Gear and Tow Dolly
+- Exhibit A — Off-Road Construction Equipment
+
+==================================================
+RELATED ENTITIES
+==================================================
+
+- FLHSMV
+- Tax Collectors
+- License Plate Agents
+- Commercial Vehicle Operators
+
+==================================================
+REFERENCE NOTES
+==================================================
+
+Current revision:
+05/25/2022
+
+Primary focus:
+- Tool registration qualifications
+- Special purpose vehicle classification
+- Restricted-use registration
+- Heavy truck distinction
+- Trailer/off-road exclusions

@@ -1,0 +1,287 @@
+FLORIDA TITLE PROCEDURE — MANUFACTURER’S BUY BACK
+PROCEDURE: TL-34
+CATEGORY: LEMON LAW / BRANDED TITLES / MANUFACTURER BUY BACK
+
+==================================================
+PROCEDURE SUMMARY
+==================================================
+
+This procedure explains:
+- Florida Lemon Law buy backs
+- Manufacturer repurchased vehicles
+- "Manufacturer’s Buy Back" title branding
+- Required documents
+- Resale disclosure requirements
+- Brand removal limitations
+
+Applies when:
+- Manufacturer repurchases vehicle
+due to:
+- Defects
+- Nonconformities
+- Lemon Law settlements
+- Arbitration decisions
+- Court actions
+
+==================================================
+AI CLASSIFICATION TAGS
+==================================================
+
+KEYWORDS:
+- lemon law
+- manufacturer buy back
+- manuf buy bk
+- branded title
+- defective vehicle
+- resale disclosure
+- nonconformity
+- buyback vehicle
+- arbitration vehicle
+- repurchased vehicle
+
+COMMON USER QUESTIONS:
+- "What is Manuf Buy Bk?"
+- "Why is my title branded?"
+- "Can a lemon law brand be removed?"
+- "Manufacturer repurchased vehicle"
+- "What documents needed for buy back?"
+- "What is resale disclosure of nonconformity?"
+
+==================================================
+LEGAL PURPOSE
+==================================================
+
+Florida law protects consumers by:
+- Requiring disclosure
+of:
+- Defective vehicles
+- Lemon law repurchases
+
+==================================================
+VERY IMPORTANT TITLE BRAND RULE
+==================================================
+
+If manufacturer repurchases vehicle:
+Title MUST be branded:
+- Manufacturer’s Buy Back
+
+System shorthand:
+- Manuf Buy Bk
+
+==================================================
+WHEN BRAND REQUIRED
+==================================================
+
+Brand required if:
+Vehicle repurchased due to:
+- Settlement
+- Arbitration
+- Attorney General action
+- Court decision
+- Lemon Law determination
+
+==================================================
+VERY IMPORTANT EXCEPTION
+==================================================
+
+If manufacturer states:
+Settlement occurred BEFORE:
+- Formal claim filed
+
+Then:
+Brand may NOT be required.
+
+==================================================
+REQUIRED DOCUMENTS
+==================================================
+
+Need:
+1. Current title assigned to manufacturer
+2. HSMV 82040
+3. Certified Resale Disclosure of Nonconformity
+4. Sales tax exemption wording
+5. Plate transfer or non-use affidavit
+6. Title fee
+
+==================================================
+TITLE ASSIGNMENT RULE
+==================================================
+
+Original owner must complete:
+- Transfer of Title by Seller section
+
+Vehicle transfers:
+- Into manufacturer name
+
+==================================================
+HSMV 82040 RULE
+==================================================
+
+HSMV 82040 must:
+- Be completed in manufacturer name
+
+==================================================
+VERY IMPORTANT SALES TAX WORDING
+==================================================
+
+The OTHER section must state EXACTLY:
+
+"OBTAINED PURSUANT TO CHAPTER 681, FLORIDA STATUTES"
+
+==================================================
+VERY IMPORTANT REJECTION RULE
+==================================================
+
+If exact Chapter 681 wording missing:
+Application:
+- MUST be rejected
+
+==================================================
+PLATE REQUIREMENT
+==================================================
+
+Need:
+- Plate transfer
+OR
+- Non-use affidavit
+
+==================================================
+TITLE BRAND RESULT
+==================================================
+
+New title issued to manufacturer will display:
+- Manuf Buy Bk
+
+==================================================
+OUT-OF-STATE BRAND RULE
+==================================================
+
+Florida CANNOT remove:
+- Manufacturer Buy Back brand
+added by:
+- Another state
+
+==================================================
+BRAND REMOVAL RULE
+==================================================
+
+To request removal:
+Need:
+- Current title
+- Affidavit requesting removal
+- Current odometer reading
+- Proper title fee
+
+==================================================
+VERY IMPORTANT NMVTIS RULE
+==================================================
+
+Even if Florida removes:
+- Manuf Buy Bk
+
+NMVTIS brand:
+- REMAINS
+
+==================================================
+VERY IMPORTANT FIELD SUPPORT RULE
+==================================================
+
+Field Support Helpdesk must assist with:
+- Brand removal processing
+
+==================================================
+RESALE DISCLOSURE OF NONCONFORMITY
+==================================================
+
+Certified copy required.
+
+Disclosure explains:
+- Vehicle repurchased due to defects
+- Nonconformities not repaired
+within reasonable attempts
+
+==================================================
+EXHIBIT A PURPOSE
+==================================================
+
+Exhibit A documents:
+- Defect disclosure
+- Settlement/arbitration source
+- Manufacturer acknowledgment
+- Consumer acknowledgment
+
+==================================================
+EXHIBIT A IMPORTANT DATA
+==================================================
+
+Disclosure includes:
+- VIN
+- Odometer
+- Vehicle make/model
+- Defect description
+- Settlement details
+- Arbitration details
+- Consumer signatures
+
+==================================================
+AI DECISION LOGIC
+==================================================
+
+AI should determine:
+1. Was vehicle repurchased by manufacturer?
+2. Was Lemon Law involved?
+3. Is title branding required?
+4. Is certified disclosure included?
+5. Is exact Chapter 681 wording present?
+6. Is vehicle transferring into manufacturer name?
+7. Is plate/non-use affidavit included?
+8. Is existing brand from another state?
+9. Is customer requesting brand removal?
+10. Is Field Support involvement required?
+
+==================================================
+COMMON TITLE CLERK ERRORS
+==================================================
+
+- Missing exact Chapter 681 wording
+- Missing certified disclosure
+- Forgetting title brand
+- Incorrect manufacturer transfer
+- Attempting to remove out-of-state brand
+- Missing title fee
+- Missing odometer reading for removal
+- Accepting incomplete disclosure forms
+
+==================================================
+IMPORTANT OPERATIONAL NOTES
+==================================================
+
+This procedure is:
+- Highly compliance-sensitive
+- Consumer protection focused
+- Strictly disclosure based
+
+Most common rejection reasons:
+- Missing statutory wording
+- Incomplete disclosure form
+- Incorrect HSMV 82040 completion
+- Missing title assignment
+- Missing certified copy
+
+==================================================
+RELATED FORMS
+==================================================
+
+- HSMV 82040
+- Resale Disclosure of Nonconformity
+
+==================================================
+RELATED SUBJECTS
+==================================================
+
+- Lemon Law
+- Branded Titles
+- Consumer Protection
+- NMVTIS Branding
+- Arbitration Vehicles
+- Defective Vehicle Disclosure

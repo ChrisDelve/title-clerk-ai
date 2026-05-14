@@ -1,0 +1,567 @@
+FLORIDA TITLE PROCEDURE — APPLICATION FOR CERTIFICATE OF TITLE BY PAWNBROKERS
+PROCEDURE: TL-47
+CATEGORY: PAWNBROKER TITLES / OPERATION OF LAW / FORFEITED VEHICLES
+
+==================================================
+PROCEDURE SUMMARY
+==================================================
+
+This procedure governs:
+- Pawnbroker title transfers
+- Pawn transaction defaults
+- Purchase transaction title transfers
+- Operation of law title issuance
+- Pawnbroker documentation requirements
+- Vehicle forfeiture to pawnbroker
+- Vehicle ownership transfers involving pawnshops
+
+Applies to:
+- Motor vehicles
+- Motorcycles
+- Trucks
+- Buses
+- Travel trailers
+- Vehicle trailers
+- Off-highway vehicles
+- Mobile homes
+- Vessels
+
+==================================================
+AI CLASSIFICATION TAGS
+==================================================
+
+KEYWORDS:
+- pawnbroker title
+- pawn title
+- pawned vehicle
+- forfeited vehicle
+- pawn transaction
+- purchase transaction
+- operation of law
+- Chapter 539
+- pawnshop title
+- unredeemed pawn
+- pawn forfeiture
+- pawnbroker transaction form
+- title by pawnbroker
+- pawn default
+- pledged vehicle
+- repossessed pawn vehicle
+
+COMMON USER QUESTIONS:
+- "Can a pawnshop get title to a vehicle?"
+- "What happens if pawn vehicle not redeemed?"
+- "Does pawnbroker need title in their name?"
+- "What documents does pawnshop need?"
+- "How long before pawnshop gets ownership?"
+- "Does title need assignment for pawn?"
+- "What is a purchase transaction?"
+- "Does pawnbroker need VIN verification?"
+- "Can non-use affidavit be used?"
+- "Does operation of law penalty apply?"
+
+==================================================
+LEGAL AUTHORITY
+==================================================
+
+Governed by:
+- 319.22 FS
+- 539.001 FS
+- 539.002 FS
+- Chapter 539 Florida Statutes
+
+==================================================
+VERY IMPORTANT PAWNBROKING ACT RULE
+==================================================
+
+Chapter 539:
+Known as:
+- Florida Pawnbroking Act.
+
+==================================================
+VERY IMPORTANT 30 DAY HOLD RULE
+==================================================
+
+Goods delivered to pawnbroker:
+Must remain:
+- Securely stored
+- Unaltered
+
+For:
+- 30 calendar days.
+
+==================================================
+VERY IMPORTANT PURCHASE TRANSACTION RULE
+==================================================
+
+Purchase transaction goods:
+Cannot:
+- Be sold
+- Be disposed of
+
+Before:
+- 30-day holding period expires.
+
+==================================================
+VERY IMPORTANT FORFEITURE RULE
+==================================================
+
+If pledged goods:
+NOT redeemed within:
+- 30 days after maturity date
+
+Ownership:
+Automatically transfers:
+To pawnbroker.
+
+==================================================
+VERY IMPORTANT OPERATION OF LAW RULE
+==================================================
+
+After default:
+Ownership transfers:
+- By operation of law.
+
+==================================================
+VERY IMPORTANT NO FURTHER NOTICE RULE
+==================================================
+
+After pawn default:
+- No additional notice required.
+
+==================================================
+VERY IMPORTANT VEHICLE POSSESSION RULE
+==================================================
+
+If transaction involves vehicle:
+Vehicle:
+MUST be in possession
+of pawnbroker.
+
+==================================================
+VERY IMPORTANT TRANSACTION FORM RULE
+==================================================
+
+Pawnbroker:
+MUST complete:
+- Pawnbroker Transaction Form.
+
+==================================================
+VERY IMPORTANT SELLER SIGNATURE RULE
+==================================================
+
+Pledgor/seller:
+MUST sign:
+- Pawnbroker Transaction Form.
+
+==================================================
+UPDATED HSMV 82040 RULE
+==================================================
+
+As of 07/01/2023:
+HSMV 82040 split into:
+- 82040 MV
+- 82040 VS
+- 82040 MH
+
+==================================================
+82040 MV VEHICLE TYPES
+==================================================
+
+Used for:
+- AU Auto
+- BS Bus
+- MC Motorcycle
+- OH Off-Highway
+- TO Tools
+- TR Truck
+- TT Travel Trailer
+- VT Vehicle Trailer
+
+==================================================
+82040 VS RULE
+==================================================
+
+Used for:
+- Vessels only.
+
+==================================================
+82040 MH RULE
+==================================================
+
+Used for:
+- Mobile homes only.
+
+==================================================
+VERY IMPORTANT VESSEL RULE
+==================================================
+
+Effective:
+- 07/01/2023
+
+Vessel titles:
+MUST use:
+- HSMV 82040 VS.
+
+==================================================
+VERY IMPORTANT MOTOR VEHICLE RULE
+==================================================
+
+Effective:
+- 01/01/2024
+
+Motor vehicle titles:
+MUST use:
+- HSMV 82040 MV.
+
+==================================================
+PAWN DEFAULT TITLE REQUIREMENTS
+==================================================
+
+When pawn in default:
+Pawnbroker submits:
+- Title/proof of ownership
+- HSMV 82040 or 82041
+- VIN verification if needed
+- Registration certificate
+- Pawnbroker transaction form
+- Affidavit of non-redemption
+- Lien satisfactions
+- Plate/non-use affidavit
+- Title fees
+
+==================================================
+VERY IMPORTANT PAWN TITLE ASSIGNMENT RULE
+==================================================
+
+For pawn transaction:
+Title:
+Does NOT have to be assigned
+for transfer.
+
+==================================================
+VERY IMPORTANT MISSING TITLE RULE
+==================================================
+
+If title unavailable:
+Need:
+- Pawnbroker affidavit.
+
+==================================================
+VERY IMPORTANT OWNERSHIP VERIFICATION RULE
+==================================================
+
+Pawnbroker:
+Should always verify:
+Vehicle titled in:
+- Pledgor's name.
+
+==================================================
+VERY IMPORTANT TITLE IN PAWNBROKER NAME RULE
+==================================================
+
+Pawnbroker:
+MUST obtain title
+in pawnbroker name
+before:
+- Selling vehicle.
+
+==================================================
+OUT-OF-STATE VIN VERIFICATION RULE
+==================================================
+
+If vehicle not titled in Florida:
+Need:
+- HSMV 82042
+OR
+- VIN section of HSMV 82040.
+
+==================================================
+VERY IMPORTANT VIN VERIFICATION EXEMPTIONS
+==================================================
+
+VIN verification NOT required for:
+- Mobile homes
+- Trailers under 2,000 lbs
+- Semi-trailers under 2,000 lbs
+- Travel trailers
+- Camping trailers
+- Truck campers
+- Fifth wheel recreational trailers
+
+==================================================
+VERY IMPORTANT REGISTRATION CERTIFICATE RULE
+==================================================
+
+Need:
+- Copy of Pawnbroker Registration Certificate
+
+Issued by:
+- Florida Department of Agriculture and Consumer Services.
+
+==================================================
+VERY IMPORTANT NON-REDEMPTION AFFIDAVIT RULE
+==================================================
+
+Need affidavit stating:
+Vehicle:
+NOT redeemed within:
+- 30 days after pawn maturity date.
+
+==================================================
+VERY IMPORTANT LIEN SATISFACTION RULE
+==================================================
+
+Need:
+- Lien satisfactions
+
+For:
+- All liens shown in Florida or other states.
+
+==================================================
+VERY IMPORTANT CHAPTER 539 STATEMENT RULE
+==================================================
+
+Must state on:
+- HSMV 82040
+OR
+- HSMV 82041
+
+The wording:
+"Obtained pursuant to Chapter 539, Florida Statutes."
+
+==================================================
+VERY IMPORTANT PLATE RULE
+==================================================
+
+Need:
+- Florida plate
+OR
+- Non-use affidavit.
+
+==================================================
+PURCHASE TRANSACTION RULES
+==================================================
+
+If vehicle acquired through:
+- Purchase transaction
+
+Pawnbroker may title vehicle after:
+- 30 calendar days.
+
+==================================================
+VERY IMPORTANT PURCHASE TITLE RULE
+==================================================
+
+For purchase transaction:
+Title:
+MUST be assigned
+to pawnbroker.
+
+==================================================
+VERY IMPORTANT PURCHASE HOLDING RULE
+==================================================
+
+Need affidavit stating:
+Vehicle held:
+- 30 calendar days
+after purchase date.
+
+==================================================
+VERY IMPORTANT PENALTY RULE
+==================================================
+
+Penalty fee:
+NOT applicable.
+
+Reason:
+- Operation of law transaction.
+
+==================================================
+VERY IMPORTANT EXTENSION RULE
+==================================================
+
+Pawnbroker:
+May extend:
+- Maturity date.
+
+Must provide:
+- Written memorandum/new transaction form.
+
+==================================================
+VERY IMPORTANT RE-PURCHASE RULE
+==================================================
+
+If original owner:
+Repurchases vehicle
+and resells to new buyer:
+
+Need affidavit explaining:
+- Why title assigned to pawnbroker
+- Transfer to pawnbroker void
+- New purchaser information
+
+==================================================
+PAWNBROKER DEFINITIONS
+==================================================
+
+PAWN:
+Advancement of funds
+secured by pledged goods.
+
+PURCHASE:
+Transfer of goods to pawnbroker
+through:
+- Purchase
+- Trade
+- Consignment.
+
+PLEDGED GOODS:
+Property delivered to pawnbroker.
+
+PLEDGOR:
+Person delivering pledged goods.
+
+DEFAULT DATE:
+Date ownership vests in pawnbroker.
+
+==================================================
+VERY IMPORTANT PLEDGED GOODS RULE
+==================================================
+
+"Pledged goods":
+DOES NOT include:
+- Titles only
+- Written security only
+
+Without:
+- Physical possession.
+
+==================================================
+VERY IMPORTANT TRANSACTION FORM CONTENT RULE
+==================================================
+
+Pawnbroker transaction form must include:
+- Pawnshop information
+- Goods description
+- Seller information
+- Thumbprint
+- Identification
+- Transaction date
+- Amount financed
+- Finance charge
+- APR
+- Default date
+- Ownership warranty statement
+
+==================================================
+VERY IMPORTANT THUMBPRINT RULE
+==================================================
+
+Transaction form:
+Must include:
+- Right thumbprint.
+
+==================================================
+VERY IMPORTANT FALSE OWNERSHIP RULE
+==================================================
+
+False ownership representation:
+Can result in:
+- Third degree felony
+OR
+- Second degree felony.
+
+==================================================
+VERY IMPORTANT COPY DELIVERY RULE
+==================================================
+
+Pawnbroker:
+Must give:
+- Exact copy
+Of completed transaction form
+To pledgor/seller.
+
+==================================================
+AI DECISION LOGIC
+==================================================
+
+AI should determine:
+1. Pawn or purchase transaction?
+2. Was vehicle redeemed?
+3. Did 30-day period expire?
+4. Is title assigned correctly?
+5. Is operation of law applicable?
+6. Is title in pledgor name?
+7. Is VIN verification required?
+8. Is out-of-state title involved?
+9. Is pawnbroker registration included?
+10. Is non-redemption affidavit included?
+11. Are liens satisfied?
+12. Is Chapter 539 statement listed?
+13. Is title penalty exempt?
+14. Is vehicle in possession of pawnbroker?
+15. Is proper HSMV form used?
+16. Is non-use affidavit acceptable?
+17. Is purchase transaction fully transferred?
+
+==================================================
+COMMON TITLE CLERK ERRORS
+==================================================
+
+- Requiring assigned title on pawn default
+- Forgetting operation of law exemption
+- Missing Chapter 539 statement
+- Missing lien satisfactions
+- Missing pawnbroker registration certificate
+- Accepting incomplete purchase assignment
+- Missing VIN verification
+- Ignoring 30-day waiting requirement
+- Allowing sale before pawnbroker titles vehicle
+- Confusing pawn vs purchase transaction
+- Forgetting affidavit requirements
+
+==================================================
+VERY IMPORTANT PAWN VS PURCHASE DIFFERENCE
+==================================================
+
+PAWN:
+- Title assignment NOT required
+- Ownership transfers after default
+
+PURCHASE:
+- Title assignment REQUIRED
+- 30-day holding period required
+
+==================================================
+RELATED FORMS
+==================================================
+
+- HSMV 82040 MV
+- HSMV 82040 VS
+- HSMV 82040 MH
+- HSMV 82041
+- HSMV 82042
+- Pawnbroker Transaction Form
+
+==================================================
+RELATED STATUTES
+==================================================
+
+- 319.22 FS
+- 539.001 FS
+- 539.002 FS
+- 538.03 FS
+
+==================================================
+REFERENCE NOTES
+==================================================
+
+Current revision:
+- 06/26/2023
+
+Primary focus:
+- Pawnbroker vehicle ownership transfers
+- Operation of law titles
+- Pawn defaults
+- Purchase transaction title processing
