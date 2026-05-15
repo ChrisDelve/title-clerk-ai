@@ -1,0 +1,98 @@
+DOCUMENT: VALIDATION_LOGIC_MAP
+
+PURPOSE:
+- Missing information detection
+- Deal completion validation
+- Required document validation
+- Customer identity validation
+- Ownership chain validation
+- Plate eligibility validation
+- Submission readiness validation
+- Workflow blocking condition detection
+
+IMPORTANT:
+This file identifies whether a transaction has enough valid information and documentation to proceed.
+
+============================================================
+IDENTIFICATION VALIDATION LOGIC
+============================================================
+
+IF valid_identification_missing = TRUE
+THEN transaction_cannot_be_completed = TRUE
+
+IF customer_identification_expired = TRUE
+THEN valid_identification_required = TRUE
+
+IF customer_identification_invalid = TRUE
+THEN manual_review_required = TRUE
+
+IF valid_identification_missing = TRUE
+THEN likely_rejection_reason = "Missing valid identification"
+============================================================
+TRANSFER TAG VALIDATION LOGIC
+============================================================
+
+IF plate_transfer_requested = TRUE
+AND plate_not_in_customer_name = TRUE
+THEN plate_transfer_not_allowed = TRUE
+
+IF transfer_tag_not_in_customer_name = TRUE
+THEN transaction_cannot_use_requested_plate = TRUE
+
+IF plate_owner_does_not_match_customer = TRUE
+THEN new_plate_or_correct_owner_review_required = TRUE
+
+IF plate_transfer_requested = TRUE
+AND ownership_match_missing = TRUE
+THEN reject_before_submission = TRUE
+============================================================
+AUDIT TRAIL VALIDATION LOGIC
+============================================================
+
+IF audit_trail_missing = TRUE
+THEN manual_review_required = TRUE
+
+IF ownership_chain_incomplete = TRUE
+THEN transaction_cannot_be_completed = TRUE
+
+IF dealer_assignment_history_missing = TRUE
+THEN audit_trail_required = TRUE
+
+IF prior_transaction_documentation_missing = TRUE
+THEN submission_hold_required = TRUE
+
+IF audit_trail_missing = TRUE
+THEN likely_rejection_reason = "Missing audit trail or incomplete ownership chain"
+============================================================
+CUSTOMER CONTACT VALIDATION LOGIC
+============================================================
+
+IF customer_contact_unavailable = TRUE
+THEN document_correction_risk = TRUE
+
+IF customer_signature_needed = TRUE
+AND customer_contact_unavailable = TRUE
+THEN transaction_hold_required = TRUE
+
+IF missing_customer_documentation = TRUE
+AND customer_contact_unavailable = TRUE
+THEN escalation_required = TRUE
+
+IF customer_contact_unavailable = TRUE
+THEN deal_delay_risk = "high"
+============================================================
+ODOMETER UNIT VALIDATION LOGIC
+============================================================
+
+IF odometer_unit = "kilometers"
+THEN odometer_conversion_review_required = TRUE
+
+IF vehicle_titled_in_kilometers = TRUE
+AND mileage_disclosure_required = TRUE
+THEN mileage_unit_disclosure_review_required = TRUE
+
+IF odometer_unit_unclear = TRUE
+THEN manual_review_required = TRUE
+
+IF odometer_unit_mismatch_detected = TRUE
+THEN reject_before_submission = TRUE

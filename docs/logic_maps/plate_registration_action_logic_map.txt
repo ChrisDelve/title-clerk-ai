@@ -1,0 +1,28 @@
+DOCUMENT: PLATE_REGISTRATION_ACTION_LOGIC_MAP
+
+PURPOSE:
+- Plate transfer detection
+- New plate requirement detection
+- Replacement plate logic
+- Registration action routing
+- IRF review support
+- Plate ownership validation
+
+============================================================
+TRANSFER TAG OWNERSHIP LOGIC
+============================================================
+
+IF transfer_tag_requested = TRUE
+THEN plate_ownership_verification_required = TRUE
+
+IF transfer_tag_not_in_customer_name = TRUE
+THEN plate_transfer_not_allowed = TRUE
+
+IF plate_owner_does_not_match_customer = TRUE
+THEN issue_new_plate_review_required = TRUE
+
+IF plate_transfer_not_allowed = TRUE
+THEN IRF_review_required = TRUE
+
+IF plate_transfer_not_allowed = TRUE
+THEN customer_should_not_be_quoted_plate_transfer_only = TRUE

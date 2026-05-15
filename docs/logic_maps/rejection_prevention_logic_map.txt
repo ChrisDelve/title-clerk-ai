@@ -1,0 +1,187 @@
+DOCUMENT: REJECTION_PREVENTION_LOGIC_MAP
+
+PURPOSE:
+- DMV rejection prevention
+- DLRDMV rejection prevention
+- Deal validation
+- Missing document detection
+- Workflow issue detection
+- Submission error prevention
+- Title and registration rejection analysis
+- Operational risk detection
+
+IMPORTANT:
+This file identifies:
+- situations likely to cause DMV rejection
+- missing requirements before submission
+- common dealership processing mistakes
+- conditions requiring manual review or escalation
+
+This file should be used BEFORE deal submission.
+
+============================================================
+MISSING SIGNATURE LOGIC
+============================================================
+
+IF required_signature_missing = TRUE
+THEN likely_rejection_reason = "Missing required signature"
+
+IF ownership_type = "AND"
+AND all_owners_not_signed = TRUE
+THEN reject_before_submission = TRUE
+
+============================================================
+ACTIVE LIEN LOGIC
+============================================================
+
+IF active_lien_exists = TRUE
+AND lien_release_missing = TRUE
+THEN likely_rejection_reason = "Active lien unresolved"
+
+IF title_record_shows_active_lien = TRUE
+AND lien_satisfaction_not_provided = TRUE
+THEN reject_before_submission = TRUE
+
+============================================================
+VIN VALIDATION LOGIC
+============================================================
+
+IF VIN_mismatch_detected = TRUE
+THEN manual_review_required = TRUE
+
+IF VIN_verification_required = TRUE
+AND VIN_verification_missing = TRUE
+THEN reject_before_submission = TRUE
+
+============================================================
+OUT OF STATE TITLE LOGIC
+============================================================
+
+IF out_of_state_transaction = TRUE
+AND title_missing = TRUE
+THEN transaction_cannot_be_completed = TRUE
+
+IF out_of_state_transfer = TRUE
+AND required_documents_missing = TRUE
+THEN likely_rejection_reason = "Missing out-of-state documentation"
+
+============================================================
+ELT LIEN RELEASE REJECTION PREVENTION
+============================================================
+
+IF active_ELT_lien_exists = TRUE
+AND lien_release_not_available = TRUE
+THEN likely_rejection_reason = "Active lien not satisfied"
+
+IF lienholder_out_of_business = TRUE
+THEN do_not_assume_lien_can_be_cleared_without_documentation = TRUE
+
+IF title_record_shows_active_lien = TRUE
+AND no_lien_release_documentation = TRUE
+THEN reject_before_submission = TRUE
+
+============================================================
+IMPORTED VEHICLE REJECTION PREVENTION
+============================================================
+
+IF vehicle_imported_from_out_of_country = TRUE
+AND import_documents_missing = TRUE
+THEN likely_rejection_reason = "Missing import documentation"
+
+IF imported_vehicle_transaction = TRUE
+AND required_federal_compliance_documents_missing = TRUE
+THEN reject_before_submission = TRUE
+
+IF out_of_country_transaction = TRUE
+AND ownership_documents_incomplete = TRUE
+THEN transaction_hold_required = TRUE
+
+IF imported_vehicle_transaction = TRUE
+THEN supervisor_review_required = TRUE
+
+============================================================
+ODOMETER UNIT REJECTION PREVENTION
+============================================================
+
+IF vehicle_titled_in_kilometers = TRUE
+AND mileage_unit_not_disclosed = TRUE
+THEN likely_rejection_reason = "Odometer unit issue"
+
+IF odometer_unit_mismatch_detected = TRUE
+THEN manual_review_required = TRUE
+
+IF odometer_disclosure_incomplete = TRUE
+THEN reject_before_submission = TRUE
+
+============================================================
+VALID IDENTIFICATION REJECTION PREVENTION
+============================================================
+
+IF valid_identification_missing = TRUE
+THEN likely_rejection_reason = "Missing valid identification"
+
+IF customer_ID_invalid = TRUE
+THEN reject_before_submission = TRUE
+
+IF customer_identity_cannot_be_verified = TRUE
+THEN transaction_hold_required = TRUE
+
+============================================================
+TRANSFER TAG REJECTION PREVENTION
+============================================================
+
+IF transfer_tag_not_in_customer_name = TRUE
+THEN likely_rejection_reason = "Plate not eligible for transfer"
+
+IF plate_owner_does_not_match_customer = TRUE
+THEN reject_before_submission = TRUE
+
+IF plate_transfer_requested = TRUE
+AND transferable_plate_not_verified = TRUE
+THEN manual_review_required = TRUE
+
+============================================================
+AUDIT TRAIL REJECTION PREVENTION
+============================================================
+
+IF audit_trail_missing = TRUE
+THEN likely_rejection_reason = "Missing audit trail"
+
+IF ownership_chain_incomplete = TRUE
+THEN reject_before_submission = TRUE
+
+IF dealer_reassignment_history_missing = TRUE
+THEN submission_hold_required = TRUE
+
+============================================================
+CUSTOMER UNREACHABLE REJECTION PREVENTION
+============================================================
+
+IF customer_contact_unavailable = TRUE
+AND correction_needed = TRUE
+THEN transaction_hold_required = TRUE
+
+IF customer_signature_needed = TRUE
+AND customer_contact_unavailable = TRUE
+THEN deal_completion_blocked = TRUE
+
+IF missing_documents_require_customer_action = TRUE
+AND customer_contact_unavailable = TRUE
+THEN escalation_required = TRUE
+
+============================================================
+GIFTED TRADE REJECTION PREVENTION
+============================================================
+
+IF gifted_trade = TRUE
+AND gift_documentation_missing = TRUE
+THEN likely_rejection_reason = "Missing gift documentation"
+
+IF gifted_trade = TRUE
+AND ownership_chain_incomplete = TRUE
+THEN reject_before_submission = TRUE
+
+IF gifted_trade = TRUE
+AND tax_exemption_claimed = TRUE
+AND exemption_support_missing = TRUE
+THEN manual_review_required = TRUE

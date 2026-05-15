@@ -1,0 +1,106 @@
+DOCUMENT: TRANSACTION_TYPE_LOGIC_MAP
+
+PURPOSE:
+- Transaction classification
+- Workflow routing
+- Procedure selection
+- Registration workflow determination
+- Title workflow determination
+- Form routing
+- Fee routing
+- Escalation routing
+- Validation branching
+- Operational transaction detection
+
+IMPORTANT:
+This file determines:
+- what type of DMV/dealership transaction is being processed
+- what workflow path applies
+- what additional logic maps should be referenced
+
+This is a master operational classification engine.
+
+============================================================
+TITLE TRANSFER LOGIC
+============================================================
+
+IF ownership_transferring = TRUE
+THEN transaction_type = "title_transfer"
+
+IF vehicle_sold = TRUE
+THEN title_transfer_required = TRUE
+
+IF buyer_and_seller_present = TRUE
+THEN standard_transfer_workflow = TRUE
+
+============================================================
+DUPLICATE TITLE LOGIC
+============================================================
+
+IF title_lost = TRUE
+THEN transaction_type = "duplicate_title"
+
+IF duplicate_requested = TRUE
+THEN duplicate_title_workflow_required = TRUE
+
+============================================================
+OUT OF STATE TRANSACTION LOGIC
+============================================================
+
+IF prior_title_state != "FL"
+THEN out_of_state_transaction = TRUE
+
+IF customer_moved_to_florida = TRUE
+THEN florida_transfer_workflow_required = TRUE
+
+============================================================
+OUT OF COUNTRY / IMPORTED VEHICLE LOGIC
+============================================================
+
+IF vehicle_imported_from_out_of_country = TRUE
+THEN transaction_type = "imported_vehicle_transaction"
+
+IF prior_country != "USA"
+THEN out_of_country_transaction = TRUE
+
+IF out_of_country_transaction = TRUE
+THEN import_document_review_required = TRUE
+
+IF vehicle_imported_from_out_of_country = TRUE
+THEN title_and_registration_complexity = "high"
+
+IF imported_vehicle_transaction = TRUE
+THEN escalation_logic_map_review_required = TRUE
+
+IF imported_vehicle_transaction = TRUE
+THEN validation_logic_map_review_required = TRUE
+
+============================================================
+ODOMETER UNIT CONVERSION LOGIC
+============================================================
+
+IF odometer_unit = "kilometers"
+THEN odometer_unit_conversion_review_required = TRUE
+
+IF vehicle_titled_in_kilometers = TRUE
+THEN transaction_type = "odometer_unit_review"
+
+IF odometer_unit = "kilometers"
+AND florida_title_required = TRUE
+THEN mileage_disclosure_review_required = TRUE
+
+============================================================
+GIFTED TRADE LOGIC
+============================================================
+
+IF trade_vehicle_received_as_gift = TRUE
+THEN transaction_type = "gifted_trade"
+
+IF gifted_trade = TRUE
+THEN ownership_chain_review_required = TRUE
+
+IF gifted_trade = TRUE
+THEN tax_exemption_or_tax_due_review_required = TRUE
+
+IF gifted_trade = TRUE
+THEN supporting_gift_documentation_review_required = TRUE

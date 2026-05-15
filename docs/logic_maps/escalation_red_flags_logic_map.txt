@@ -1,0 +1,73 @@
+DOCUMENT: ESCALATION_RED_FLAGS_LOGIC_MAP
+
+PURPOSE:
+- Supervisor escalation detection
+- High-risk title issue detection
+- Deal delay prevention
+- Legal/compliance risk routing
+- Manual review triggers
+- Stop-processing conditions
+
+IMPORTANT:
+This file identifies when dealership staff should not continue normal processing without supervisor, title lead, tax collector, FLHSMV, or compliance review.
+
+============================================================
+IMPORTED VEHICLE ESCALATION LOGIC
+============================================================
+
+IF vehicle_imported_from_out_of_country = TRUE
+THEN escalation_required = TRUE
+
+IF imported_vehicle_transaction = TRUE
+THEN title_lead_review_required = TRUE
+
+IF import_documentation_missing = TRUE
+THEN supervisor_review_required = TRUE
+
+IF federal_compliance_status_unknown = TRUE
+THEN manual_FLHSMV_or_tax_collector_review_required = TRUE
+
+============================================================
+CUSTOMER UNREACHABLE ESCALATION LOGIC
+============================================================
+
+IF customer_contact_unavailable = TRUE
+AND required_document_missing = TRUE
+THEN escalation_required = TRUE
+
+IF customer_contact_unavailable = TRUE
+AND signature_correction_needed = TRUE
+THEN transaction_hold_required = TRUE
+
+IF customer_contact_unavailable = TRUE
+AND deal_deadline_active = TRUE
+THEN management_review_required = TRUE
+
+============================================================
+AUDIT TRAIL ESCALATION LOGIC
+============================================================
+
+IF audit_trail_missing = TRUE
+THEN supervisor_review_required = TRUE
+
+IF ownership_chain_incomplete = TRUE
+THEN title_lead_review_required = TRUE
+
+IF dealer_assignment_history_unclear = TRUE
+THEN manual_review_required = TRUE
+
+============================================================
+GIFTED TRADE ESCALATION LOGIC
+============================================================
+
+IF gifted_trade = TRUE
+AND ownership_chain_unclear = TRUE
+THEN supervisor_review_required = TRUE
+
+IF gifted_trade = TRUE
+AND tax_treatment_unclear = TRUE
+THEN accounting_or_tax_review_required = TRUE
+
+IF gifted_trade = TRUE
+AND supporting_documents_missing = TRUE
+THEN transaction_hold_required = TRUE
