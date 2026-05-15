@@ -1,0 +1,81 @@
+DOCUMENT: REJECTION_PREVENTION_LOGIC_MAP
+
+PURPOSE:
+- DMV rejection prevention
+- DLRDMV rejection prevention
+- Deal validation
+- Missing document detection
+- Workflow issue detection
+- Submission error prevention
+- Title and registration rejection analysis
+- Operational risk detection
+
+IMPORTANT:
+This file identifies:
+- situations likely to cause DMV rejection
+- missing requirements before submission
+- common dealership processing mistakes
+- conditions requiring manual review or escalation
+
+This file should be used BEFORE deal submission.
+
+============================================================
+MISSING SIGNATURE LOGIC
+============================================================
+
+IF required_signature_missing = TRUE
+THEN likely_rejection_reason = "Missing required signature"
+
+IF ownership_type = "AND"
+AND all_owners_not_signed = TRUE
+THEN reject_before_submission = TRUE
+
+============================================================
+ACTIVE LIEN LOGIC
+============================================================
+
+IF active_lien_exists = TRUE
+AND lien_release_missing = TRUE
+THEN likely_rejection_reason = "Active lien unresolved"
+
+IF title_record_shows_active_lien = TRUE
+AND lien_satisfaction_not_provided = TRUE
+THEN reject_before_submission = TRUE
+
+============================================================
+VIN VALIDATION LOGIC
+============================================================
+
+IF VIN_mismatch_detected = TRUE
+THEN manual_review_required = TRUE
+
+IF VIN_verification_required = TRUE
+AND VIN_verification_missing = TRUE
+THEN reject_before_submission = TRUE
+
+============================================================
+OUT OF STATE TITLE LOGIC
+============================================================
+
+IF out_of_state_transaction = TRUE
+AND title_missing = TRUE
+THEN transaction_cannot_be_completed = TRUE
+
+IF out_of_state_transfer = TRUE
+AND required_documents_missing = TRUE
+THEN likely_rejection_reason = "Missing out-of-state documentation"
+
+============================================================
+ELT LIEN RELEASE REJECTION PREVENTION
+============================================================
+
+IF active_ELT_lien_exists = TRUE
+AND lien_release_not_available = TRUE
+THEN likely_rejection_reason = "Active lien not satisfied"
+
+IF lienholder_out_of_business = TRUE
+THEN do_not_assume_lien_can_be cleared_without documentation = TRUE
+
+IF title_record_shows_active_lien = TRUE
+AND no_lien_release_documentation = TRUE
+THEN reject_before_submission = TRUE

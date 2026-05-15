@@ -1,0 +1,69 @@
+DOCUMENT: LIEN_LOGIC_MAP
+PURPOSE:
+- Lien detection
+- Lien release requirements
+- ELT logic
+- Paper lien logic
+- Lienholder issue escalation
+- Rejection prevention
+
+============================================================
+ACTIVE LIEN LOGIC
+============================================================
+
+IF lien_active = TRUE
+THEN lien_satisfaction_required = TRUE
+
+IF lien_active = TRUE
+AND lien_satisfaction_missing = TRUE
+THEN title_transfer_cannot_be_completed = TRUE
+
+============================================================
+ELT LIEN LOGIC
+============================================================
+
+IF title_status = "electronic_title"
+AND lien_active = TRUE
+THEN ELT_lien_review_required = TRUE
+
+IF ELT_lien_exists = TRUE
+THEN lienholder_electronic_release_required = TRUE
+
+============================================================
+ELT LIENHOLDER OUT OF BUSINESS LOGIC
+============================================================
+
+IF title_status = "electronic_title"
+AND lien_active = TRUE
+AND lienholder_out_of_business = TRUE
+THEN lien_release_problem = TRUE
+
+IF lienholder_out_of_business = TRUE
+AND lien_release_unavailable = TRUE
+THEN escalation_required = TRUE
+
+IF ELT_lien_exists = TRUE
+AND lienholder_cannot_release_lien = TRUE
+THEN manual_FLHSMV_or_supervisor_review_required = TRUE
+
+IF lienholder_out_of_business = TRUE
+THEN customer_must_provide_alternate_lien_satisfaction_proof = TRUE
+
+IF alternate_lien_satisfaction_proof_missing = TRUE
+THEN transaction_hold_required = TRUE
+
+IF active_ELT_lien_unresolved = TRUE
+THEN deal_cannot_be_finalized = TRUE
+
+============================================================
+PAPER LIEN RELEASE LOGIC
+============================================================
+
+IF paper_title_has_lien = TRUE
+AND lien_release_attached = FALSE
+THEN lien_satisfaction_required = TRUE
+
+IF lien_release_document_provided = TRUE
+THEN lien_release_review_required = TRUE
+
+END OF FILE
