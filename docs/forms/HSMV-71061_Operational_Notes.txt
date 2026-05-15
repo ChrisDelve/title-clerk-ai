@@ -1,0 +1,36 @@
+DOCUMENT: HSMV-71061
+TITLE: Application for Rebuilt Motor Vehicle Inspection
+SOURCE: https://www.flhsmv.gov/pdf/forms/71061.pdf
+DOCUMENT_TYPE: Operational Notes
+
+PURPOSE:
+This form is used during rebuilt vehicle inspection processing.
+
+COMMON USE CASES:
+- Rebuilt vehicle inspection
+- Salvage rebuild processing
+- VIN verification
+- Compliance review
+- Highway safety inspection workflows
+
+IMPORTANT NOTES:
+- Vehicle must pass inspection before rebuilt title issuance.
+- Supporting receipts may be required.
+- Parts documentation may be required.
+- VIN must match all ownership documents.
+- Inspection scheduling may be required.
+
+COMMON ERRORS:
+- Missing receipts
+- Incomplete parts documentation
+- VIN mismatch
+- Missing signatures
+- Incomplete inspection information
+
+AI TRAINING NOTES:
+Treat this as:
+- Rebuilt inspection workflow form
+- Salvage rebuild compliance form
+- Inspection scheduling reference
+
+END OF FILE

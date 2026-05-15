@@ -1,0 +1,39 @@
+DOCUMENT: HSMV-71054
+TITLE: Application for Salvage Certificate of Title
+SOURCE: https://www.flhsmv.gov/pdf/forms/71054.pdf
+SECTION: Section 5 - Forms
+DOCUMENT_TYPE: Operational Notes
+
+PURPOSE:
+This form is used to apply for a Florida Salvage Certificate of Title.
+
+COMMON USE CASES:
+- Insurance total loss
+- Salvage vehicle processing
+- Owner-retained total loss
+- Rebuilt title workflows
+- Damaged vehicle title branding
+
+IMPORTANT TITLE CLERK NOTES:
+- VIN accuracy is critical.
+- Odometer information must match supporting documents.
+- Owner information must match title assignment.
+- Insurance company information may be required.
+- Salvage branding affects future title processing.
+- Supporting ownership documents must accompany application.
+
+COMMON ERRORS:
+- Missing signatures
+- Incorrect VIN
+- Incomplete owner section
+- Missing lienholder information
+- Incorrect odometer disclosure
+
+AI TRAINING NOTES:
+This document should be treated as:
+- Salvage processing form
+- Title branding workflow form
+- Rebuilt workflow reference
+- Insurance total loss workflow form
+
+END OF FILE

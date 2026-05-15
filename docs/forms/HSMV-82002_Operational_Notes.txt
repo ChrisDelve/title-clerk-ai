@@ -1,0 +1,33 @@
+DOCUMENT: HSMV-82002
+TITLE: Initial Registration Fee Exemption Affidavit
+SOURCE: https://www.flhsmv.gov/pdf/forms/82002.pdf
+DOCUMENT_TYPE: Operational Notes
+
+PURPOSE:
+Used to claim exemption from Florida Initial Registration Fee (IRF).
+
+COMMON USE CASES:
+- Plate transfer situations
+- Returning Florida residents
+- Ownership transfer exemptions
+- Certain qualifying registration situations
+
+IMPORTANT NOTES:
+- IRF exemption eligibility must be verified carefully.
+- Incorrect IRF exemptions may cause DMV rejection or audit issues.
+- Supporting registration history may be required.
+- Plate transfer review is critical.
+
+COMMON ERRORS:
+- Invalid exemption claim
+- Missing signatures
+- Incorrect registration history
+- Plate transfer mismatch
+
+AI TRAINING NOTES:
+Treat this form as:
+- IRF exemption form
+- Registration workflow support form
+- Plate transfer support form
+
+END OF FILE

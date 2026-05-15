@@ -1,0 +1,39 @@
+DOCUMENT: HSMV-82053
+TITLE: Power of Attorney for Motor Vehicle, Mobile Home or Vessel
+SOURCE: https://www.flhsmv.gov/pdf/forms/82053.pdf
+DOCUMENT_TYPE: Operational Notes
+
+PURPOSE:
+Used to authorize another individual or entity to act on behalf of the owner regarding title, registration, lien, or odometer transactions.
+
+COMMON USE CASES:
+- Dealer title processing
+- Odometer disclosure authority
+- Remote transactions
+- Lender/title processing
+- Out-of-state owner transactions
+- Title correction processing
+
+IMPORTANT TITLE CLERK NOTES:
+- Owner names must match title documents exactly.
+- VIN accuracy is critical.
+- POA authority scope should be reviewed carefully.
+- Signatures must be properly completed.
+- POA may authorize odometer disclosure.
+- Some lenders require specific POA wording.
+
+COMMON ERRORS:
+- Incorrect VIN
+- Missing signatures
+- Owner mismatch
+- Incomplete authorization language
+- Missing notarization where applicable
+
+AI TRAINING NOTES:
+Treat this form as:
+- Delegated authority form
+- Odometer authorization form
+- Dealer processing support form
+- Remote transaction support form
+
+END OF FILE

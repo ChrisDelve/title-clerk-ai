@@ -1,0 +1,36 @@
+DOCUMENT: HSMV-82091
+TITLE: Reassignment Supplement to a Certificate of Title
+SOURCE: https://www.flhsmv.gov/pdf/forms/82091.pdf
+DOCUMENT_TYPE: Operational Notes
+
+PURPOSE:
+Used to supplement title reassignment transactions when additional reassignment space is needed.
+
+COMMON USE CASES:
+- Dealer reassignment overflow
+- Auction transactions
+- Multiple ownership transfers
+- Wholesale vehicle processing
+- Dealer inventory transfers
+
+IMPORTANT TITLE CLERK NOTES:
+- VIN accuracy is critical.
+- Buyer and seller information must match reassignment chain.
+- Odometer disclosures must remain consistent.
+- Dealer information must match licensing records.
+- Reassignment order matters.
+
+COMMON ERRORS:
+- Broken reassignment chain
+- Incorrect VIN
+- Missing dealer signatures
+- Odometer mismatch
+- Incomplete buyer/seller information
+
+AI TRAINING NOTES:
+Treat this form as:
+- Dealer reassignment workflow form
+- Wholesale transaction support form
+- Chain-of-ownership support form
+
+END OF FILE

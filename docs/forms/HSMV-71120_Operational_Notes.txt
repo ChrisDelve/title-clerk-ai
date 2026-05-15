@@ -1,0 +1,33 @@
+DOCUMENT: HSMV-71120
+TITLE: Application for Certificate of Destruction
+SOURCE: https://www.flhsmv.gov/pdf/forms/71120.pdf
+DOCUMENT_TYPE: Operational Notes
+
+PURPOSE:
+This form is used to apply for a Florida Certificate of Destruction.
+
+COMMON USE CASES:
+- Vehicle permanently destroyed
+- Scrap vehicle processing
+- Insurance total loss destruction
+- Non-rebuildable vehicle processing
+
+IMPORTANT NOTES:
+- Certificate of Destruction generally prevents future titling.
+- VIN accuracy is critical.
+- Supporting ownership documents are required.
+- Insurance company documentation may be required.
+
+COMMON ERRORS:
+- Incorrect VIN
+- Missing owner signatures
+- Missing insurance information
+- Incomplete destruction certification
+
+AI TRAINING NOTES:
+Treat this as:
+- Destruction workflow form
+- Non-rebuildable vehicle processing form
+- Insurance destruction workflow reference
+
+END OF FILE

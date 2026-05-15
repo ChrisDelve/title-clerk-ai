@@ -1,0 +1,33 @@
+DOCUMENT: HSMV-82363
+TITLE: Application for Salvage Title or Certificate of Destruction
+SOURCE: https://www.flhsmv.gov/pdf/forms/82363.pdf
+DOCUMENT_TYPE: Operational Notes
+
+PURPOSE:
+Used to apply for a salvage title or certificate of destruction.
+
+COMMON USE CASES:
+- Insurance total loss
+- Salvage vehicle processing
+- Non-rebuildable vehicle processing
+- Certificate of destruction issuance
+
+IMPORTANT NOTES:
+- VIN accuracy is critical.
+- Insurance information may be required.
+- Ownership documents required.
+- Salvage branding affects future title processing.
+
+COMMON ERRORS:
+- Incorrect VIN
+- Missing signatures
+- Missing insurance information
+- Incomplete destruction/salvage election
+
+AI TRAINING NOTES:
+Treat this form as:
+- Salvage workflow form
+- Certificate of destruction form
+- Insurance total loss processing form
+
+END OF FILE

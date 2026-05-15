@@ -1,0 +1,36 @@
+DOCUMENT: HSMV-82996
+TITLE: Motor Vehicle Odometer Disclosure and Acknowledgment
+SOURCE: https://www.flhsmv.gov/pdf/forms/82996.pdf
+DOCUMENT_TYPE: Operational Notes
+
+PURPOSE:
+Used to disclose and acknowledge odometer readings during ownership transfer transactions.
+
+COMMON USE CASES:
+- Dealer sales
+- Trade-ins
+- Private party transfers
+- Odometer disclosure compliance
+- Title transfer processing
+
+IMPORTANT NOTES:
+- Federal odometer disclosure laws apply.
+- VIN accuracy is critical.
+- Mileage must match supporting documents.
+- Odometer branding disclosures must be accurate.
+- Signatures are required.
+
+COMMON ERRORS:
+- Mileage mismatch
+- Incorrect VIN
+- Missing signatures
+- Incorrect odometer status
+- Incomplete disclosure
+
+AI TRAINING NOTES:
+Treat this form as:
+- Odometer disclosure form
+- Federal compliance form
+- Ownership transfer support form
+
+END OF FILE

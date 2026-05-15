@@ -1,0 +1,22 @@
+DOCUMENT: HSMV-82042
+TITLE: VIN and Odometer Verification
+SOURCE: https://www.flhsmv.gov/pdf/forms/82042.pdf
+DOCUMENT_TYPE: Operational Notes
+
+PURPOSE:
+Used to verify VIN and odometer information for title and registration processing.
+
+COMMON USE CASES:
+- Out-of-state title transfer
+- VIN verification
+- Registration processing
+- Odometer verification
+- Inspection workflows
+
+IMPORTANT NOTES:
+- VIN must match vehicle and title paperwork.
+- Authorized personnel must complete verification.
+- Odometer disclosure accuracy is critical.
+- Incorrect VINs commonly cause DMV rejection.
+
+END OF FILE

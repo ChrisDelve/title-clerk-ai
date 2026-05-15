@@ -1,0 +1,30 @@
+DOCUMENT: HSMV-82050
+TITLE: Notice of Sale and Bill of Sale
+SOURCE: https://www.flhsmv.gov/pdf/forms/82050.pdf
+DOCUMENT_TYPE: Operational Notes
+
+PURPOSE:
+Used to document sale/transfer of vehicle ownership.
+
+COMMON USE CASES:
+- Private party sale
+- Dealer sale support
+- Ownership transfer
+- Tax documentation
+- Odometer support
+
+IMPORTANT NOTES:
+- VIN accuracy is critical.
+- Sale price affects tax calculations.
+- Buyer/seller information must match supporting documents.
+- Odometer disclosure may be required.
+- Signatures are required.
+
+COMMON ERRORS:
+- Incorrect VIN
+- Missing sale amount
+- Missing signatures
+- Incorrect buyer information
+- Odometer inconsistencies
+
+END OF FILE

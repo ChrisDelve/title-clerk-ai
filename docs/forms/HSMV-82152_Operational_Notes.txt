@@ -1,0 +1,33 @@
+DOCUMENT: HSMV-82152
+TITLE: Affidavit for Transfer of Motor Vehicle or Vessel
+SOURCE: https://www.flhsmv.gov/pdf/forms/82152.pdf
+DOCUMENT_TYPE: Operational Notes
+
+PURPOSE:
+Used to support ownership transfer situations through affidavit process.
+
+COMMON USE CASES:
+- Estate transfers
+- Family transfers
+- Non-standard ownership transfers
+- Vessel transfer situations
+
+IMPORTANT NOTES:
+- Supporting ownership documentation may be required.
+- Affidavit statements must be complete and accurate.
+- VIN accuracy is critical.
+- Signatures are required.
+
+COMMON ERRORS:
+- Missing affidavit information
+- Incorrect VIN
+- Missing signatures
+- Ownership documentation mismatch
+
+AI TRAINING NOTES:
+Treat this form as:
+- Affidavit ownership transfer form
+- Estate transfer support form
+- Non-standard title transfer form
+
+END OF FILE

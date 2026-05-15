@@ -1,0 +1,35 @@
+DOCUMENT: HSMV-82993
+TITLE: Secure Odometer Disclosure and Reassignment Supplement
+SOURCE: https://www.flhsmv.gov/pdf/forms/82993.pdf
+DOCUMENT_TYPE: Operational Notes
+
+PURPOSE:
+Used for secure odometer disclosure and reassignment processing.
+
+COMMON USE CASES:
+- Odometer disclosure support
+- Dealer reassignment workflows
+- Ownership transfer
+- Wholesale dealer transactions
+- Auction processing
+
+IMPORTANT NOTES:
+- Odometer accuracy is critical.
+- VIN must match title documents.
+- Federal odometer disclosure rules apply.
+- Dealer reassignment consistency required.
+
+COMMON ERRORS:
+- Odometer mismatch
+- Incorrect VIN
+- Missing signatures
+- Incomplete reassignment chain
+- Mileage inconsistency
+
+AI TRAINING NOTES:
+Treat this form as:
+- Odometer disclosure form
+- Dealer reassignment support form
+- Federal odometer compliance form
+
+END OF FILE

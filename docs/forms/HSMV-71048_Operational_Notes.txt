@@ -1,0 +1,78 @@
+DOCUMENT: HSMV-71048
+TITLE: Certification of Highway or Highway Safety Inspection
+SOURCE: https://www.flhsmv.gov/pdf/forms/71048.pdf
+SECTION: Section 5 - Forms
+DOCUMENT_TYPE: Operational Notes
+
+PURPOSE:
+This form is used to certify that a vehicle has passed a required highway or highway safety inspection.
+
+============================================================
+TITLE CLERK OPERATIONAL NOTES
+============================================================
+
+1. FORM PURPOSE
+
+This form documents that a vehicle inspection has been completed and certified.
+
+The inspection is generally related to:
+- rebuilt vehicles
+- reconstructed vehicles
+- specially constructed vehicles
+- inspection-related title processing
+
+2. COMMON USE CASES
+
+This form may commonly appear during:
+- rebuilt title processing
+- salvage rebuild processing
+- inspection verification
+- title branding workflows
+- DMV compliance review
+
+3. INSPECTION CERTIFICATION REQUIREMENT
+
+The form must be completed by:
+- authorized inspection personnel
+- law enforcement
+- approved FLHSMV inspection entities
+- authorized compliance examiners
+
+4. VIN ACCURACY IS CRITICAL
+
+Always verify:
+- VIN matches title paperwork
+- VIN matches vehicle
+- VIN contains 17 characters
+- no altered VIN indicators exist
+
+5. COMMON TITLE CLERK ERRORS
+
+Common issues include:
+- incomplete VIN
+- missing inspector signature
+- missing inspection date
+- illegible writing
+- altered inspection information
+- mismatch between supporting documents and inspection data
+
+6. DEALERSHIP WORKFLOW IMPORTANCE
+
+This form may be required before:
+- rebuilt title issuance
+- registration processing
+- title conversion
+- final DMV submission
+
+7. AI TRAINING NOTES
+
+This document should be treated as:
+- inspection certification form
+- rebuilt title workflow form
+- VIN validation source
+- compliance inspection reference
+
+IMPORTANT:
+The PDF remains the official legal/source document.
+
+END OF FILE

@@ -1,0 +1,48 @@
+DOCUMENT: HSMV-82040
+TITLE: Application for Certificate of Title With/Without Registration
+SOURCE: https://www.flhsmv.gov/pdf/forms/82040-mv.pdf
+DOCUMENT_TYPE: Operational Notes
+
+PURPOSE:
+Primary Florida title and registration application form.
+
+COMMON USE CASES:
+- Vehicle title transfer
+- New vehicle title
+- Registration processing
+- Out-of-state title transfer
+- Lien recording
+- Plate issuance
+- Dealer processing
+- Registration renewals
+- Duplicate title requests
+
+IMPORTANT TITLE CLERK NOTES:
+- This is one of the most important forms in dealership title work.
+- VIN accuracy is critical.
+- Owner information must exactly match supporting documents.
+- Odometer disclosure must be accurate.
+- Lienholder information must match lender instructions.
+- Insurance requirements may apply.
+- Plate transfer eligibility must be reviewed.
+- IRF applicability must be reviewed.
+
+COMMON ERRORS:
+- Missing signatures
+- Incorrect VIN
+- Incorrect lienholder ELT number
+- Missing odometer disclosure
+- Registration type mismatch
+- Missing insurance information
+- Owner name mismatch
+- Incomplete dealer reassignment
+
+AI TRAINING NOTES:
+Treat this form as:
+- Primary dealership title application
+- Registration workflow core form
+- Lien processing form
+- Plate transfer workflow form
+- IRF workflow reference
+
+END OF FILE

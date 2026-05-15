@@ -1,0 +1,35 @@
+DOCUMENT: HSMV-82092
+TITLE: Reassignment of a Motor Vehicle or Mobile Home Title Certificate
+SOURCE: https://www.flhsmv.gov/pdf/forms/82092.pdf
+DOCUMENT_TYPE: Operational Notes
+
+PURPOSE:
+Used for reassignment of motor vehicle or mobile home ownership.
+
+COMMON USE CASES:
+- Dealer reassignment
+- Wholesale transactions
+- Auction transfers
+- Inventory transfers
+- Ownership reassignment workflows
+
+IMPORTANT NOTES:
+- VIN accuracy is critical.
+- Reassignment sequence must remain valid.
+- Odometer disclosures must remain consistent.
+- Dealer information should match licensing records.
+
+COMMON ERRORS:
+- Incorrect VIN
+- Broken reassignment sequence
+- Missing signatures
+- Odometer inconsistencies
+- Dealer mismatch
+
+AI TRAINING NOTES:
+Treat this form as:
+- Ownership reassignment form
+- Dealer reassignment workflow form
+- Chain-of-title support form
+
+END OF FILE
