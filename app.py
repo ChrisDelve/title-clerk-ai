@@ -31,6 +31,68 @@ div[data-testid="stAlert"] {
     border: 1px solid #C9A227 !important;
     color: #F5F5F5 !important;
 }
+/* PROFESSIONAL TYPOGRAPHY */
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
+/* Entire App */
+html, body, [class*="css"] {
+    font-family: 'Inter', sans-serif;
+}
+
+/* Main Response Text */
+.response-text {
+    font-size: 18px;
+    line-height: 1.75;
+    color: #F5F5F5;
+    padding-top: 10px;
+}
+
+/* Section Headers */
+.response-text h1,
+.response-text h2,
+.response-text h3 {
+    margin-top: 28px;
+    margin-bottom: 14px;
+    font-weight: 700;
+    color: white;
+}
+
+/* Bullet Points */
+.response-text li {
+    margin-bottom: 10px;
+}
+
+/* Main Title */
+.main-title {
+    font-size: 52px;
+    font-weight: 800;
+    text-align: center;
+    margin-bottom: 8px;
+}
+
+/* Subtitle */
+.subtitle {
+    text-align: center;
+    font-size: 18px;
+    color: #CFCFCF;
+    margin-bottom: 30px;
+}
+
+/* Operational Guidance Header */
+.stSubheader {
+    margin-top: 40px !important;
+    margin-bottom: 20px !important;
+}
+
+/* Response Container */
+.response-container {
+    background-color: #111111;
+    border: 1px solid rgba(255, 215, 0, 0.18);
+    border-radius: 18px;
+    padding: 28px;
+    margin-top: 20px;
+}
 
 /* INFO TEXT */
 
@@ -535,7 +597,7 @@ Knowledge Base:
         # DISPLAY ANSWER
         # ----------------------------
 
-        st.subheader("AI Operational Response")
+        st.subheader("Operational Guidance")
 
         ai_answer = ai_answer.replace("`", "")
 
