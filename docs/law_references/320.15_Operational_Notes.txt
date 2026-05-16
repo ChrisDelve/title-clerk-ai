@@ -1,0 +1,209 @@
+STATUTE: 320.15
+TITLE: Refund of License Tax
+SOURCE: https://www.leg.state.fl.us/statutes/index.cfm?App_mode=Display_Statute&Search_String=&URL=0300-0399/0320/Sections/0320.15.html
+DOCUMENT_TYPE: Florida Law Reference / Operational Notes
+CATEGORY: REGISTRATION REFUND / LICENSE TAX CREDIT / SURRENDER PLATE / DESTROYED VEHICLE / REMOVED FROM STATE / ADVANCE RENEWAL REFUND
+
+============================================================
+PURPOSE
+============================================================
+
+This statute governs refund or credit of license tax in specific registration situations.
+
+It is the legal reference for:
+- credit for unexpired license period
+- vehicle destroyed
+- vehicle permanently removed from Florida
+- surrender of license plate or mobile home sticker
+- for-hire plate credit limitation
+- advance renewal refund
+- refund after surrender before renewal period ends
+
+============================================================
+PLAIN ENGLISH SUMMARY
+============================================================
+
+A resident owner of a motor vehicle or mobile home that has been destroyed or permanently removed from Florida may apply to the department for a credit toward registration of another vehicle in that owner’s name.
+
+The owner must surrender the license plate or mobile home sticker issued for the vehicle.
+
+The credit applies only if the amount is $3 or more and only for the unexpired portion of the license.
+
+For a surrendered for-hire plate, the credit may not exceed one-half of the annual license tax amount.
+
+The credit is not valid after the expiration date of the license plate current on the date of the credit.
+
+A motor vehicle registrant or mobile home owner who renewed during the advance renewal period and surrenders the plate before the end of the renewal period may apply for a refund of license taxes assessed under 320.08.
+
+============================================================
+TITLE CLERK IMPORTANCE
+============================================================
+
+320.15 is important when reviewing:
+- registration refund
+- license tax credit
+- destroyed vehicle
+- vehicle permanently removed from Florida
+- surrender plate
+- surrender mobile home sticker
+- advance renewal refund
+- for-hire plate credit limitation
+- customer refund questions
+
+============================================================
+COMMON WORKFLOW CONNECTIONS
+============================================================
+
+- Registration refund
+- License tax credit
+- Plate surrender
+- Mobile home sticker surrender
+- Vehicle destroyed
+- Vehicle moved out of state permanently
+- Advance renewal surrender
+- For-hire plate credit cap
+- Customer asks if registration money can be refunded
+
+============================================================
+OPERATIONAL RULES
+============================================================
+
+IF resident_owner_vehicle_destroyed = TRUE
+AND license_plate_or_mobile_home_sticker_surrendered = TRUE
+THEN license_tax_credit_review_required = TRUE
+
+IF resident_owner_vehicle_permanently_removed_from_state = TRUE
+AND license_plate_or_mobile_home_sticker_surrendered = TRUE
+THEN license_tax_credit_review_required = TRUE
+
+IF license_tax_credit_amount < 3
+THEN credit_not_available_under_320_15 = TRUE
+
+IF license_tax_credit_amount >= 3
+THEN credit_may_apply_to_registration_of_another_vehicle_in_owner_name = TRUE
+
+IF surrendered_plate_type = "for_hire"
+THEN credit_may_not_exceed_one_half_annual_license_tax_amount = TRUE
+
+IF credit_requested_after_current_plate_expiration_date = TRUE
+THEN credit_not_valid = TRUE
+
+IF registration_renewed_during_advance_renewal_period = TRUE
+AND plate_surrendered_before_end_of_renewal_period = TRUE
+THEN refund_of_320_08_license_taxes_review_required = TRUE
+
+============================================================
+COMMON DEALERSHIP ISSUES
+============================================================
+
+- Customer asks for refund after vehicle totaled/destroyed
+- Customer moved vehicle permanently out of Florida
+- Customer surrendered plate
+- Customer wants credit toward another vehicle
+- Customer renewed early then sold/traded vehicle before renewal period
+- Customer has for-hire plate and expects full credit
+- Refund/credit amount is under $3
+- Plate was not surrendered
+- Refund requested after plate expiration
+
+============================================================
+REJECTION PREVENTION
+============================================================
+
+High issue risk if:
+- plate or mobile home sticker was not surrendered
+- vehicle was not destroyed or permanently removed from Florida
+- customer is not resident owner
+- credit amount is under $3
+- credit is requested after license expiration
+- for-hire credit cap is ignored
+- advance renewal refund timing is not reviewed
+- refund/credit is promised without department review
+
+============================================================
+AI DECISION LOGIC
+============================================================
+
+IF user_question_mentions = "registration refund"
+OR user_question_mentions = "license tax refund"
+OR user_question_mentions = "plate surrender refund"
+OR user_question_mentions = "vehicle destroyed"
+OR user_question_mentions = "moved out of state"
+OR user_question_mentions = "advance renewal refund"
+THEN reference_320_15 = TRUE
+
+IF refund_or_credit_requested = TRUE
+THEN answer_should_check = "destroyed or permanently removed vehicle, plate/sticker surrender, amount at least $3, expiration date, advance renewal timing"
+
+IF for_hire_plate_refund_question = TRUE
+THEN answer_should_warn = "Credit may not exceed one-half annual license tax."
+
+============================================================
+DEALERSHIP WORKFLOW
+============================================================
+
+1. Identify refund/credit reason.
+- Vehicle destroyed
+- Vehicle permanently removed from Florida
+- Advance renewal surrendered before renewal period ends
+
+2. Verify surrender.
+- License plate surrendered.
+- Mobile home sticker surrendered if applicable.
+
+3. Confirm eligibility.
+- Resident owner.
+- Credit amount $3 or more.
+- Credit not expired.
+- For-hire limitation if applicable.
+
+4. Determine use.
+- Credit applies to registration of another vehicle in same owner’s name.
+- Refund may apply for advance renewal scenario.
+
+5. Hold/escalate if unclear.
+- Do not promise refund without confirming department requirements.
+
+============================================================
+COMMON CLERK ANSWER STYLE
+============================================================
+
+When answering a 320.15 question, the AI should explain:
+
+1. Whether refund or credit is being requested.
+2. Whether the vehicle was destroyed or permanently removed from Florida.
+3. Whether plate/sticker was surrendered.
+4. Whether amount and timing requirements are met.
+5. Whether advance renewal refund applies.
+6. Whether the customer should proceed through department/tax collector refund process.
+
+============================================================
+RELATED LOGIC MAPS
+============================================================
+
+- plate_registration_action_logic_map.txt
+- validation_logic_map.txt
+- rejection_prevention_logic_map.txt
+- forms_required_logic_map.txt
+
+============================================================
+RELATED PROCEDURE AREAS
+============================================================
+
+- Registration refund workflow
+- Plate surrender workflow
+- Advance renewal workflow
+- Registration fee workflow
+
+============================================================
+RELATED STATUTES
+============================================================
+
+- 320.07
+- 320.071
+- 320.08
+- 320.06
+
+============================================================
+END OF FILE
+============================================================

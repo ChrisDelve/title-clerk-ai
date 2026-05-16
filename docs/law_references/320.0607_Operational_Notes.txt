@@ -1,0 +1,260 @@
+STATUTE: 320.0607
+TITLE: Replacement License Plates, Validation Decal, or Mobile Home Sticker
+SOURCE: https://www.leg.state.fl.us/statutes/index.cfm?App_mode=Display_Statute&Search_String=&URL=0300-0399/0320/Sections/0320.0607.html
+DOCUMENT_TYPE: Florida Law Reference / Operational Notes
+CATEGORY: REPLACEMENT PLATE / REPLACEMENT DECAL / REPLACEMENT STICKER / LOST PLATE / STOLEN PLATE / DESTROYED PLATE / DAMAGED PLATE
+
+============================================================
+PURPOSE
+============================================================
+
+This statute governs replacement license plates, validation decals, and mobile home stickers.
+
+It is the legal reference for:
+- lost plate replacement
+- stolen plate replacement
+- destroyed plate replacement
+- damaged or defaced plate/decal replacement
+- lost-in-mail replacement
+- police report no-charge stolen replacement
+- original license plate issuance fee
+
+============================================================
+PLAIN ENGLISH SUMMARY
+============================================================
+
+Law enforcement or department inspectors may inspect license plates and validation decals for proper display and legibility.
+
+A damaged or defaced plate or decal may be required to be replaced.
+
+If a license plate, mobile home sticker, or validation decal is lost, stolen, or destroyed, the owner must apply to the department for replacement.
+
+The replacement application must include the plate/sticker/decal number being replaced and a statement that it was lost, stolen, or destroyed.
+
+If the application includes a police report for a stolen plate, sticker, or decal, it must be replaced at no charge.
+
+Otherwise, the replacement generally requires a $28 fee plus applicable service charges.
+
+A plate, sticker, or decal lost in the mail may be replaced at no charge if the replacement application includes the required statement, audit number, and date issued.
+
+============================================================
+TITLE CLERK IMPORTANCE
+============================================================
+
+320.0607 is important for:
+- replacement plate questions
+- stolen plate questions
+- lost plate questions
+- destroyed plate questions
+- damaged/defaced plate issues
+- validation decal replacement
+- mobile home sticker replacement
+- no-charge stolen replacement with police report
+- lost-in-mail replacement
+- original plate fee questions
+
+============================================================
+COMMON WORKFLOW CONNECTIONS
+============================================================
+
+- Replacement plate
+- Replacement decal
+- Replacement validation sticker
+- Mobile home sticker replacement
+- Lost plate
+- Stolen plate
+- Destroyed plate
+- Defaced plate
+- Damaged plate
+- Police report
+- Lost-in-mail plate/decal/sticker
+- Original license plate issuance
+
+============================================================
+OPERATIONAL RULES
+============================================================
+
+IF plate_or_decal_damaged_or_defaced = TRUE
+THEN replacement_may_be_required = TRUE
+
+IF license_plate_lost = TRUE
+THEN replacement_application_required = TRUE
+
+IF license_plate_stolen = TRUE
+THEN replacement_application_required = TRUE
+
+IF license_plate_destroyed = TRUE
+THEN replacement_application_required = TRUE
+
+IF validation_decal_lost_stolen_or_destroyed = TRUE
+THEN replacement_application_required = TRUE
+
+IF mobile_home_sticker_lost_stolen_or_destroyed = TRUE
+THEN replacement_application_required = TRUE
+
+IF replacement_application_submitted = TRUE
+THEN plate_sticker_or_decal_number_required = TRUE
+
+IF replacement_application_submitted = TRUE
+THEN statement_lost_stolen_or_destroyed_required = TRUE
+
+IF stolen_plate_sticker_or_decal = TRUE
+AND police_report_copy_provided = TRUE
+THEN replacement_at_no_charge_required = TRUE
+
+IF replacement_not_covered_by_no_charge_exception = TRUE
+THEN replacement_fee_28_plus_applicable_service_charges_required = TRUE
+
+IF plate_sticker_or_decal_lost_in_mail = TRUE
+THEN replacement_at_no_charge_may_apply = TRUE
+
+IF plate_sticker_or_decal_lost_in_mail = TRUE
+THEN audit_number_and_date_issued_required = TRUE
+
+IF original_license_plate_issued = TRUE
+THEN original_plate_fee_28_required = TRUE
+
+============================================================
+STOLEN / LOST / DAMAGED PLATE LOGIC
+============================================================
+
+IF customer_says_plate_stolen = TRUE
+THEN ask_for_police_report_review = TRUE
+
+IF stolen_plate_police_report_missing = TRUE
+THEN no_charge_replacement_not_supported = TRUE
+
+IF plate_damaged_or_defaced = TRUE
+THEN replacement_plate_review_required = TRUE
+
+IF validation_decal_unreadable = TRUE
+THEN replacement_decal_review_required = TRUE
+
+IF mobile_home_sticker_missing = TRUE
+THEN replacement_mobile_home_sticker_review_required = TRUE
+
+============================================================
+COMMON DEALERSHIP ISSUES
+============================================================
+
+- Customer lost plate
+- Customer says plate was stolen
+- Customer has police report for stolen plate
+- Plate is damaged or unreadable
+- Decal is damaged or unreadable
+- Plate or decal was lost in mail
+- Customer wants replacement sticker only
+- Mobile home sticker missing
+- Dealer quotes transfer when replacement is actually needed
+- Customer wants no-charge replacement but lacks police report/audit info
+
+============================================================
+REJECTION PREVENTION
+============================================================
+
+High rejection risk if:
+- replacement application lacks plate/sticker/decal number
+- lost/stolen/destroyed statement is missing
+- no police report is provided for stolen no-charge replacement
+- lost-in-mail audit number/date issued is missing
+- damaged/defaced plate issue is ignored
+- replacement and transfer workflows are confused
+- wrong fee/no-charge rule is quoted
+
+============================================================
+AI DECISION LOGIC
+============================================================
+
+IF user_question_mentions = "replacement plate"
+OR user_question_mentions = "lost plate"
+OR user_question_mentions = "stolen plate"
+OR user_question_mentions = "destroyed plate"
+OR user_question_mentions = "replacement decal"
+OR user_question_mentions = "replacement sticker"
+OR user_question_mentions = "lost in mail"
+THEN reference_320_0607 = TRUE
+
+IF stolen_plate = TRUE
+THEN answer_should_check = "police report for no-charge replacement"
+
+IF lost_in_mail = TRUE
+THEN answer_should_check = "audit number and date issued"
+
+IF plate_damaged_or_defaced = TRUE
+THEN answer_should_explain = "replacement may be required after inspection/legibility review"
+
+============================================================
+DEALERSHIP WORKFLOW
+============================================================
+
+1. Identify replacement item.
+- Plate
+- Validation decal
+- Mobile home sticker
+
+2. Identify reason.
+- Lost
+- Stolen
+- Destroyed
+- Damaged/defaced
+- Lost in mail
+
+3. Verify required documentation.
+- Item number
+- Lost/stolen/destroyed statement
+- Police report if stolen/no-charge
+- Audit number/date issued if lost in mail
+
+4. Determine fee.
+- No charge if stolen with police report.
+- No charge if lost in mail with required audit/date info.
+- Otherwise replacement fee plus service charges.
+
+5. Do not confuse replacement with transfer.
+- Replacement means the issued plate/decal/sticker is being replaced.
+- Transfer means moving a plate from old vehicle to replacement vehicle.
+
+============================================================
+COMMON CLERK ANSWER STYLE
+============================================================
+
+When answering a 320.0607 question, the AI should explain:
+
+1. Whether the issue is replacement plate, decal, or sticker.
+2. Whether it is lost, stolen, destroyed, damaged, or lost in mail.
+3. What documentation is required.
+4. Whether no-charge replacement applies.
+5. Whether replacement vs transfer is the correct workflow.
+
+============================================================
+RELATED LOGIC MAPS
+============================================================
+
+- plate_registration_action_logic_map.txt
+- validation_logic_map.txt
+- rejection_prevention_logic_map.txt
+- forms_required_logic_map.txt
+
+============================================================
+RELATED PROCEDURE AREAS
+============================================================
+
+- Replacement plate procedures
+- Replacement decal procedures
+- Mobile home sticker procedures
+- Plate transfer procedures
+- Registration renewal procedures
+
+============================================================
+RELATED STATUTES
+============================================================
+
+- 320.06
+- 320.0609
+- 320.07
+- 320.14
+- 320.131
+
+============================================================
+END OF FILE
+============================================================

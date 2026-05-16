@@ -1,0 +1,246 @@
+STATUTE: 320.05
+TITLE: Records of the Department; Inspection Procedure; Lists and Searches; Fees
+SOURCE: https://www.leg.state.fl.us/statutes/index.cfm?App_mode=Display_Statute&Search_String=&URL=0300-0399/0320/Sections/0320.05.html
+DOCUMENT_TYPE: Florida Law Reference / Operational Notes
+CATEGORY: REGISTRATION RECORDS / RECORD LOOKUP / PUBLIC RECORDS / RECORD SEARCH / CERTIFIED COPIES / DEALER ACCESS
+
+============================================================
+PURPOSE
+============================================================
+
+This statute governs department registration records, inspection procedures, record searches, lists, certified/noncertified copies, electronic access, fees, and identity requirements for access to registration information.
+
+============================================================
+PLAIN ENGLISH SUMMARY
+============================================================
+
+The department may release records as provided by law.
+
+When a registration application is received, the department registers the motor vehicle, vessel, or mobile home under the distinctive number assigned by the department.
+
+Electronic registration records are open for inspection during business hours, but motor vehicle or vessel registration information may not be released unless the person requesting the information provides positive proof of identification.
+
+Agencies furnishing motor vehicle or vessel registration information must record the name and address of the person requesting/receiving information and the name/address or identifying information of the subject of the inquiry.
+
+Inquiry records must be kept for 6 months.
+
+Certain businesses and professionals, including motor vehicle dealers, financial institutions, insurance companies, attorneys, and other right-to-know agencies may obtain records for professional/business use through department-approved telecommunications access if applicable fees are paid.
+
+The department may provide lists, searches, copies, certified copies, printouts, electronic access by tag/VIN/title/decal, and other records for statutory fees.
+
+============================================================
+TITLE CLERK IMPORTANCE
+============================================================
+
+320.05 matters when dealership staff need:
+- registration record lookup
+- tag/VIN/title/decal search
+- certified registration record
+- noncertified copy
+- proof of registration record
+- public record / privacy review
+- dealer business-use record access
+- inquiry/audit trail awareness
+- department record fees
+
+This is not usually a processing rule, but it supports lookup, verification, audit trail, and customer record requests.
+
+============================================================
+COMMON WORKFLOW CONNECTIONS
+============================================================
+
+- Registration lookup
+- Tag search
+- VIN search
+- Title number search
+- Decal number search
+- Certified registration copy
+- Noncertified registration copy
+- Dealer record access
+- Audit trail / inquiry record
+- Customer proof of registration
+- Public records/privacy issue
+- DMV/FLHSMV record request
+- Missing audit trail research
+
+============================================================
+OPERATIONAL RULES
+============================================================
+
+IF registration_application_received = TRUE
+THEN department_registers_vehicle_vessel_or_mobile_home_under_distinctive_number = TRUE
+
+IF registration_record_information_requested = TRUE
+THEN positive_proof_of_identification_required = TRUE
+
+IF agency_furnishes_registration_record_information = TRUE
+THEN requester_name_and_address_must_be_recorded = TRUE
+
+IF agency_furnishes_registration_record_information = TRUE
+THEN inquiry_subject_name_address_or_identifier_must_be_recorded = TRUE
+
+IF registration_record_inquiry_made = TRUE
+THEN inquiry_record_retention_required_for_6_months = TRUE
+
+IF motor_vehicle_dealer_requests_record_for_business_use = TRUE
+THEN professional_or_business_use_access_review_required = TRUE
+
+IF financial_institution_insurance_company_attorney_or_authorized_agency_requests_record = TRUE
+THEN right_to_know_business_use_access_review_required = TRUE
+
+IF electronic_access_requested_by_tag_VIN_title_or_decal = TRUE
+THEN electronic_record_access_fee_review_required = TRUE
+
+IF certified_record_copy_requested = TRUE
+THEN certified_record_fee_review_required = TRUE
+
+IF noncertified_copy_requested = TRUE
+THEN noncertified_copy_fee_review_required = TRUE
+
+IF court_or_governmental_entity_requests_information = TRUE
+THEN no_charge_review_required = TRUE
+
+============================================================
+RECORD SEARCH / AUDIT TRAIL LOGIC
+============================================================
+
+IF user_question_mentions = "record lookup"
+OR user_question_mentions = "tag search"
+OR user_question_mentions = "VIN search"
+OR user_question_mentions = "registration record"
+OR user_question_mentions = "certified copy"
+OR user_question_mentions = "audit trail"
+THEN reference_320_05 = TRUE
+
+IF missing_audit_trail = TRUE
+THEN record_search_and_inquiry_history_review_required = TRUE
+
+IF dealership_needs_registration_verification = TRUE
+THEN tag_VIN_title_or_decal_search_review_required = TRUE
+
+IF customer_requests_registration_record = TRUE
+THEN identification_and_record_release_review_required = TRUE
+
+============================================================
+COMMON DEALERSHIP ISSUES
+============================================================
+
+- Need to look up registration by tag
+- Need to verify registration record by VIN
+- Missing audit trail
+- Customer asks for registration proof
+- Dealer needs certified registration copy
+- Tag/decal/title number search needed
+- Customer privacy concern
+- Record access requires identification
+- Inquiry history or record request documentation needed
+- Store does not understand why some record information cannot be released casually
+
+============================================================
+REJECTION PREVENTION
+============================================================
+
+High rejection risk if:
+- registration record is assumed without lookup
+- tag/VIN/title/decal record is not verified
+- record request/privacy requirements are ignored
+- dealer lacks documentation for record-based claim
+- missing audit trail is not researched
+- certified/noncertified copy need is misunderstood
+
+============================================================
+AI DECISION LOGIC
+============================================================
+
+IF user_question_mentions = "registration record"
+OR user_question_mentions = "lookup"
+OR user_question_mentions = "tag search"
+OR user_question_mentions = "VIN search"
+OR user_question_mentions = "certified registration"
+OR user_question_mentions = "audit trail"
+THEN reference_320_05 = TRUE
+
+IF missing_audit_trail = TRUE
+THEN answer_should_check = "registration record search, inquiry history, tag/VIN/title/decal lookup, and supporting documentation"
+
+IF customer_record_request = TRUE
+THEN answer_should_warn = "Record release may require positive proof of identification and compliance with privacy/access rules."
+
+============================================================
+DEALERSHIP WORKFLOW
+============================================================
+
+1. Identify record need.
+- Tag lookup
+- VIN lookup
+- Title number lookup
+- Decal lookup
+- Certified copy
+- Noncertified copy
+- Audit trail support
+
+2. Verify access authority.
+- Dealer business use
+- Customer request
+- Tax collector / FLHSMV
+- Government/court request
+
+3. Confirm identity/privacy requirements.
+- Positive proof of identification may be required.
+- Record request/inquiry may need to be logged.
+
+4. Use record to support transaction.
+- Verify registration status.
+- Verify plate/decal assignment.
+- Confirm owner/vehicle relationship.
+- Support audit trail or correction.
+
+5. Hold/escalate if unclear.
+- Do not rely on unsupported assumptions.
+
+============================================================
+COMMON CLERK ANSWER STYLE
+============================================================
+
+When answering a 320.05 question, the AI should explain:
+
+1. What record needs to be searched.
+2. What identifier is available: tag, VIN, title number, decal number.
+3. Whether certified/noncertified copy is needed.
+4. Whether ID/privacy/access rules apply.
+5. Whether the record supports proceeding, holding, or escalating.
+
+============================================================
+RELATED LOGIC MAPS
+============================================================
+
+- validation_logic_map.txt
+- rejection_prevention_logic_map.txt
+- plate_registration_action_logic_map.txt
+- escalation_red_flags_logic_map.txt
+
+============================================================
+RELATED PROCEDURE AREAS
+============================================================
+
+- Registration lookup workflow
+- Audit trail workflow
+- Tag/decal verification
+- Customer record request workflow
+- DLRDMV rejection research
+
+============================================================
+RELATED STATUTES
+============================================================
+
+- 320.02
+- 320.03
+- 320.06
+- 320.0605
+- 320.0609
+- 119
+- 320.025
+
+============================================================
+END OF FILE
+============================================================

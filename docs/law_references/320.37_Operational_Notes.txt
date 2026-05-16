@@ -1,0 +1,236 @@
+STATUTE: 320.37
+TITLE: Registration Not to Apply to Nonresidents
+SOURCE: https://www.leg.state.fl.us/statutes/index.cfm?App_mode=Display_Statute&Search_String=&URL=0300-0399/0320/Sections/0320.37.html
+DOCUMENT_TYPE: Florida Law Reference / Operational Notes
+CATEGORY: NONRESIDENT REGISTRATION / OUT-OF-STATE REGISTRATION / NONRESIDENT EXEMPTION / COMMERCIAL VEHICLE / FOR-HIRE VEHICLE / RV / MOBILE HOME
+
+============================================================
+PURPOSE
+============================================================
+
+This statute explains when Florida registration requirements do not apply to a nonresident vehicle owner.
+
+It is the legal reference for:
+- nonresident registration exemption
+- out-of-state registered vehicles
+- foreign country / other state registration
+- display of out-of-state plate
+- nonresident exemption limits
+- commercial vehicle exclusion
+- for-hire vehicle exclusion
+- RV/mobile home 6-month Florida presence issue
+
+============================================================
+PLAIN ENGLISH SUMMARY
+============================================================
+
+A nonresident vehicle owner may be exempt from Florida registration if the vehicle is properly registered or licensed in the nonresident owner’s home state, territory, federal district, or foreign country, and the registration number is properly displayed.
+
+However, the exemption does not apply to:
+- a foreign corporation doing business in Florida
+- vehicles operated for hire
+- recreational vehicles or mobile homes located in Florida for at least 6 consecutive months
+- commercial vehicles as defined in Florida law
+
+============================================================
+TITLE CLERK IMPORTANCE
+============================================================
+
+320.37 is important when reviewing:
+- nonresident registration exemption
+- customer with out-of-state plate
+- customer temporarily in Florida
+- RV/mobile home in Florida for 6 months
+- commercial vehicle registered out of state
+- for-hire vehicle registered out of state
+- foreign corporation doing business in Florida
+- whether Florida registration is required
+
+============================================================
+COMMON WORKFLOW CONNECTIONS
+============================================================
+
+- Out-of-state customer
+- Nonresident customer
+- Out-of-state plate
+- Vehicle temporarily in Florida
+- RV in Florida for 6 months
+- Mobile home in Florida for 6 months
+- Commercial vehicle
+- For-hire vehicle
+- Foreign corporation doing business in Florida
+- Florida registration requirement review
+
+============================================================
+OPERATIONAL RULES
+============================================================
+
+IF vehicle_owner_is_nonresident = TRUE
+AND vehicle_properly_registered_in_owner_home_jurisdiction = TRUE
+AND registration_number_conspicuously_displayed = TRUE
+THEN Florida_registration_exemption_review_available = TRUE
+
+IF vehicle_owner_is_nonresident = TRUE
+AND home_jurisdiction_registration_not_valid_or_not_displayed = TRUE
+THEN Florida_registration_exemption_not_supported = TRUE
+
+IF owner_is_foreign_corporation_doing_business_in_Florida = TRUE
+THEN 320_37_nonresident_exemption_not_allowed = TRUE
+
+IF vehicle_operated_for_hire = TRUE
+THEN 320_37_nonresident_exemption_not_allowed = TRUE
+
+IF vehicle_used_transporting_agricultural_or_horticultural_products_or_supplies_for_hire = TRUE
+THEN 320_37_nonresident_exemption_not_allowed = TRUE
+
+IF recreational_vehicle_located_in_Florida_for_at_least_6_consecutive_months = TRUE
+THEN 320_37_nonresident_exemption_not_allowed = TRUE
+
+IF mobile_home_located_in_Florida_for_at_least_6_consecutive_months = TRUE
+THEN 320_37_nonresident_exemption_not_allowed = TRUE
+
+IF vehicle_is_commercial_vehicle = TRUE
+THEN 320_37_nonresident_exemption_not_allowed = TRUE
+
+============================================================
+NONRESIDENT EXEMPTION LOGIC
+============================================================
+
+IF customer_has_out_of_state_plate = TRUE
+AND customer_is_nonresident = TRUE
+THEN verify_home_state_registration_valid_and_displayed = TRUE
+
+IF customer_is_nonresident = TRUE
+AND vehicle_is_personal_noncommercial_not_for_hire = TRUE
+AND home_state_registration_valid_and_displayed = TRUE
+THEN Florida_registration_may_not_be_required_under_320_37 = TRUE
+
+IF nonresident_exemption_claimed = TRUE
+THEN check_320_38_employment_school_exception = TRUE
+
+IF vehicle_is_RV_or_mobile_home = TRUE
+THEN verify_Florida_presence_less_than_6_consecutive_months = TRUE
+
+IF vehicle_is_commercial_or_for_hire = TRUE
+THEN Florida_registration_requirement_review_required = TRUE
+
+============================================================
+COMMON DEALERSHIP ISSUES
+============================================================
+
+- Out-of-state customer asks if they need Florida registration
+- Customer has valid out-of-state plate
+- Customer is nonresident but vehicle is commercial
+- Customer is nonresident but vehicle is for hire
+- RV has been in Florida more than 6 months
+- Mobile home has been in Florida more than 6 months
+- Foreign corporation is doing business in Florida
+- Customer claims nonresident exemption but works in Florida
+- Dealer confuses nonresident exemption with temporary employment rule
+
+============================================================
+REJECTION PREVENTION
+============================================================
+
+High rejection/compliance risk if:
+- nonresident exemption is applied without valid out-of-state registration
+- out-of-state plate is not displayed
+- customer works or attends school in Florida and 320.38 applies
+- commercial vehicle is treated as exempt under 320.37
+- for-hire vehicle is treated as exempt under 320.37
+- RV/mobile home 6-month Florida presence is ignored
+- foreign corporation doing business in Florida is treated as exempt
+
+============================================================
+AI DECISION LOGIC
+============================================================
+
+IF user_question_mentions = "nonresident registration"
+OR user_question_mentions = "out-of-state plate"
+OR user_question_mentions = "do they need Florida registration"
+OR user_question_mentions = "RV in Florida"
+OR user_question_mentions = "mobile home in Florida"
+OR user_question_mentions = "commercial vehicle out of state"
+THEN reference_320_37 = TRUE
+
+IF nonresident_registration_exemption_question = TRUE
+THEN answer_should_check = "valid home jurisdiction registration, visible plate, commercial/for-hire exclusion, RV/mobile home 6-month limit, and 320.38 employment/school rule"
+
+IF commercial_vehicle = TRUE
+THEN answer_should_warn = "320.37 nonresident exemption does not apply to commercial vehicles."
+
+IF vehicle_for_hire = TRUE
+THEN answer_should_warn = "320.37 nonresident exemption does not apply to for-hire vehicles."
+
+============================================================
+DEALERSHIP WORKFLOW
+============================================================
+
+1. Confirm residency.
+- Florida resident
+- Nonresident
+
+2. Confirm home-state registration.
+- Valid current registration.
+- Properly displayed plate/registration number.
+
+3. Check exclusions.
+- Foreign corporation doing business in Florida.
+- For-hire vehicle.
+- Commercial vehicle.
+- RV/mobile home in Florida at least 6 consecutive months.
+
+4. Cross-check 320.38.
+- Employment in Florida.
+- Trade/profession/occupation in Florida.
+- Children in Florida public school.
+- Student exceptions.
+
+5. Decide proceed/hold/escalate.
+- If exemption does not apply, Florida registration review required.
+
+============================================================
+COMMON CLERK ANSWER STYLE
+============================================================
+
+When answering a 320.37 question, the AI should explain:
+
+1. Whether the owner is a nonresident.
+2. Whether the vehicle is properly registered in the owner’s home jurisdiction.
+3. Whether the plate/registration number is displayed.
+4. Whether any exclusion applies.
+5. Whether 320.38 removes the exemption.
+6. Whether Florida registration is required.
+
+============================================================
+RELATED LOGIC MAPS
+============================================================
+
+- plate_registration_action_logic_map.txt
+- validation_logic_map.txt
+- rejection_prevention_logic_map.txt
+- transaction_type_logic_map.txt
+- escalation_red_flags_logic_map.txt
+
+============================================================
+RELATED PROCEDURE AREAS
+============================================================
+
+- Nonresident registration workflow
+- Out-of-state registration workflow
+- Temporary employed registration workflow
+- Commercial vehicle workflow
+- RV/mobile home registration workflow
+
+============================================================
+RELATED STATUTES
+============================================================
+
+- 320.02
+- 320.1325
+- 320.38
+- 316.003
+
+============================================================
+END OF FILE
+============================================================

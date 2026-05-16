@@ -1,0 +1,246 @@
+STATUTE: 320.18
+TITLE: Withholding Registration
+SOURCE: https://www.leg.state.fl.us/statutes/index.cfm?App_mode=Display_Statute&Search_String=&URL=0300-0399/0320/Sections/0320.18.html
+DOCUMENT_TYPE: Florida Law Reference / Operational Notes
+CATEGORY: WITHHOLDING REGISTRATION / BACK TAX / DEAD STORAGE AFFIDAVIT / DISHONORED CHECK / WEIGHT OR SAFETY PENALTY / MOBILE HOME REPOSSESSION
+
+============================================================
+PURPOSE
+============================================================
+
+This statute governs withholding or canceling registration in certain back-tax, unpaid-fee, dishonored-check, unpaid-penalty, dead-storage, and mobile-home repossession situations.
+
+It is the legal reference for:
+- registration withheld for prior unpaid registration periods
+- back tax
+- dead storage affidavit exemption
+- cancellation due to dishonored check
+- cancellation due to unpaid weight/safety penalty
+- impound of commercial motor vehicle after canceled plate/fuel-use decal
+- mobile home repossession registration exemption
+
+============================================================
+PLAIN ENGLISH SUMMARY
+============================================================
+
+The department may withhold registration of a motor vehicle or mobile home if the owner or co-owner failed to register it for a previous period when registration should have been made, until the tax for that prior period is paid.
+
+The department may cancel a vehicle or vessel registration, driver license, identification card, or fuel-use tax decal if the owner/co-owner paid with a dishonored check or failed to pay certain weight or safety violation penalties.
+
+DOT and DHSMV may impound a commercial motor vehicle with a canceled plate or fuel-use tax decal until the tax liability, penalties, interest, license tax, fuel-use decal fee, and administrative fees are paid by certified funds.
+
+An owner may be exempt from paying license tax for prior periods if the owner presents a notarized or certified affidavit stating the vehicle was continuously maintained in dead storage and was not operated during the registration period claimed.
+
+In repossession, a mobile home is exempt from registration when the dwelling is not transferred or titled for occupancy.
+
+============================================================
+TITLE CLERK IMPORTANCE
+============================================================
+
+320.18 is important when reviewing:
+- registration withheld
+- back tax
+- prior period unpaid registration
+- dead storage / non-use affidavit
+- dishonored check cancellation
+- unpaid weight/safety penalty stop
+- commercial motor vehicle impound risk
+- mobile home repossession registration exemption
+
+============================================================
+COMMON WORKFLOW CONNECTIONS
+============================================================
+
+- Registration stop
+- Back tax
+- Customer did not register prior period
+- Vehicle in storage
+- Dead storage affidavit
+- Non-use affidavit
+- Dishonored check stop
+- Weight/safety violation unpaid
+- Commercial motor vehicle cancellation/impound
+- Mobile home repossession
+- Mobile home not titled/transferred for occupancy
+
+============================================================
+OPERATIONAL RULES
+============================================================
+
+IF owner_or_co_owner_failed_to_register_for_previous_period_when_required = TRUE
+THEN department_may_withhold_registration_until_prior_tax_paid = TRUE
+
+IF prior_period_registration_tax_unpaid = TRUE
+THEN back_tax_review_required = TRUE
+
+IF owner_claims_vehicle_was_not_operated = TRUE
+THEN dead_storage_affidavit_review_required = TRUE
+
+IF notarized_or_certified_affidavit_states_vehicle_continuously_maintained_in_dead_storage_and_not_operated = TRUE
+THEN prior_period_license_tax_exemption_review_required = TRUE
+
+IF dishonored_check_used_to_pay_registration_license_ID_decal_fee_or_tax = TRUE
+THEN department_cancellation_review_required = TRUE
+
+IF owner_or_motor_carrier_failed_to_pay_weight_or_safety_violation_penalty = TRUE
+THEN registration_or_decal_cancellation_review_required = TRUE
+
+IF commercial_motor_vehicle_has_cancelled_plate_or_fuel_use_tax_decal = TRUE
+THEN DOT_or_DHSMV_impound_review_required = TRUE
+
+IF commercial_motor_vehicle_impounded_due_to_cancelled_plate_or_decal = TRUE
+THEN certified_funds_payment_required_for_release_review = TRUE
+
+IF mobile_home_repossession = TRUE
+AND dwelling_not_transferred_or_titled_for_occupancy = TRUE
+THEN mobile_home_registration_exemption_review_required = TRUE
+
+============================================================
+DEAD STORAGE / NON-USE LOGIC
+============================================================
+
+IF customer_claims_no_back_tax_due_because_vehicle_not_used = TRUE
+THEN require_dead_storage_affidavit_review = TRUE
+
+IF dead_storage_affidavit_missing = TRUE
+THEN prior_period_license_tax_exemption_not_supported = TRUE
+
+IF vehicle_operated_during_claimed_storage_period = TRUE
+THEN dead_storage_exemption_not_supported = TRUE
+
+IF affidavit_not_notarized_or_certified = TRUE
+THEN dead_storage_affidavit_defect = TRUE
+
+============================================================
+COMMON DEALERSHIP ISSUES
+============================================================
+
+- Registration is withheld due to prior unpaid period
+- Customer says vehicle was parked/in storage
+- Customer needs dead storage affidavit
+- Back tax appears due
+- Dishonored check caused stop/cancellation
+- Commercial customer has unpaid DOT/DHSMV penalty
+- Commercial motor vehicle has canceled plate/fuel-use decal
+- Mobile home repossessed but not transferred/titled for occupancy
+- Customer thinks dealer can bypass withholding registration
+- Prior owner/co-owner registration issue blocks transaction
+
+============================================================
+REJECTION PREVENTION
+============================================================
+
+High rejection risk if:
+- back tax is ignored
+- prior registration period was missed
+- dead storage affidavit is missing or defective
+- vehicle was operated during claimed storage period
+- dishonored check stop is not resolved
+- unpaid weight/safety penalty is ignored
+- commercial vehicle canceled plate/decal is ignored
+- mobile home repossession exemption is misapplied
+- dealer promises registration despite department withholding condition
+
+============================================================
+AI DECISION LOGIC
+============================================================
+
+IF user_question_mentions = "withholding registration"
+OR user_question_mentions = "back tax"
+OR user_question_mentions = "dead storage"
+OR user_question_mentions = "storage exemption"
+OR user_question_mentions = "dishonored check"
+OR user_question_mentions = "unpaid penalty"
+OR user_question_mentions = "registration stop"
+THEN reference_320_18 = TRUE
+
+IF back_tax_due = TRUE
+THEN answer_should_warn = "Department may withhold registration until prior tax is paid."
+
+IF customer_claims_dead_storage = TRUE
+THEN answer_should_check = "notarized/certified affidavit stating continuous dead storage and no operation."
+
+IF dishonored_check_or_unpaid_penalty_stop = TRUE
+THEN answer_should_warn = "Cancellation/withholding must be resolved before registration proceeds."
+
+IF mobile_home_repossession = TRUE
+THEN answer_should_check = "whether dwelling is transferred or titled for occupancy."
+
+============================================================
+DEALERSHIP WORKFLOW
+============================================================
+
+1. Identify registration block.
+- Back tax
+- Prior period not registered
+- Dishonored check
+- Unpaid weight/safety penalty
+- Commercial vehicle canceled plate/fuel-use decal
+- Mobile home repossession exemption
+
+2. Determine if prior tax is due.
+- Was vehicle required to be registered for prior period?
+- Was it actually operated?
+
+3. Review dead storage claim.
+- Notarized/certified affidavit.
+- Continuous dead storage.
+- No operation during claimed period.
+
+4. Resolve cancellation/stop.
+- Dishonored check.
+- Certified funds if required.
+- Unpaid penalties.
+
+5. Mobile home repossession review.
+- Exempt only when dwelling is not transferred or titled for occupancy.
+
+6. Hold/escalate if unresolved.
+- Do not submit registration until withholding reason is resolved.
+
+============================================================
+COMMON CLERK ANSWER STYLE
+============================================================
+
+When answering a 320.18 question, the AI should explain:
+
+1. Why registration may be withheld.
+2. Whether prior-period tax/back tax applies.
+3. Whether dead storage affidavit exemption may apply.
+4. Whether dishonored check or unpaid penalty cancellation exists.
+5. Whether commercial impound risk exists.
+6. Whether transaction can proceed, hold, or escalate.
+
+============================================================
+RELATED LOGIC MAPS
+============================================================
+
+- plate_registration_action_logic_map.txt
+- validation_logic_map.txt
+- rejection_prevention_logic_map.txt
+- escalation_red_flags_logic_map.txt
+- forms_required_logic_map.txt
+
+============================================================
+RELATED PROCEDURE AREAS
+============================================================
+
+- Registration stop workflow
+- Back tax workflow
+- Dead storage affidavit workflow
+- Commercial registration workflow
+- Mobile home repossession workflow
+
+============================================================
+RELATED STATUTES
+============================================================
+
+- 320.02
+- 320.07
+- 320.08
+- 319.28
+- 207
+
+============================================================
+END OF FILE
+============================================================

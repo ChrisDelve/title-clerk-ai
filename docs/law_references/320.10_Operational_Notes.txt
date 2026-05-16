@@ -1,0 +1,276 @@
+STATUTE: 320.10
+TITLE: Exemptions
+SOURCE: https://www.leg.state.fl.us/statutes/index.cfm?App_mode=Display_Statute&Search_String=&URL=0300-0399/0320/Sections/0320.10.html
+DOCUMENT_TYPE: Florida Law Reference / Operational Notes
+CATEGORY: REGISTRATION EXEMPTIONS / LICENSE TAX EXEMPTIONS / MILITARY EXEMPTION / GOVERNMENT EXEMPTION / NONPROFIT EXEMPTION / EXEMPT PLATES
+
+============================================================
+PURPOSE
+============================================================
+
+This statute identifies certain vehicles and mobile homes that are exempt from the license taxes imposed under section 320.08.
+
+It is the legal reference for:
+- license tax exemptions
+- nonresident military exemption
+- federal government vehicle exemption
+- certain nonprofit / public service vehicle exemptions
+- exempt plate/sticker issuance
+- documentary proof required for exemption
+
+============================================================
+PLAIN ENGLISH SUMMARY
+============================================================
+
+Section 320.10 provides exemptions from section 320.08 license taxes for certain vehicles and mobile homes.
+
+Examples include:
+- certain nonresident United States Armed Forces members stationed in Florida under military orders
+- vehicles owned or operated exclusively by the Federal Government
+- certain nonprofit or public service organizations
+- church/temple/synagogue community service or religious transport vehicles
+- Civil Air Patrol and United States Coast Guard Auxiliary vehicles
+- nonprofit mobile blood bank units
+- mobile X-ray/public health vehicles
+- certain nonprofit school buses
+- search and rescue vehicles
+- certain transportation disadvantaged vehicles
+- exempt marine boat trailers under section 320.102
+
+Except for vehicles owned or operated exclusively by the Federal Government, exempt vehicles/mobile homes still receive a plate, validation sticker, or mobile home sticker after proper application and payment of $3.
+
+The applicant must provide sufficient documentary proof of exemption eligibility at initial issuance and each renewal period.
+
+============================================================
+TITLE CLERK IMPORTANCE
+============================================================
+
+320.10 is important when reviewing:
+- whether registration/license tax exemption applies
+- military exemption questions
+- federal government vehicle questions
+- nonprofit exemption claims
+- religious/community service van exemption
+- exempt plate issuance
+- $3 exempt plate/sticker cost
+- documentary proof needed for exemption
+- renewal of exempt registration
+
+============================================================
+COMMON WORKFLOW CONNECTIONS
+============================================================
+
+- Registration exemption
+- License tax exemption
+- Exempt plate
+- Military nonresident exemption
+- Government vehicle registration
+- Nonprofit vehicle registration
+- Church van / community service van
+- Search and rescue vehicle
+- Transportation disadvantaged vehicle
+- Exempt renewal documentation
+
+============================================================
+OPERATIONAL RULES
+============================================================
+
+IF exemption_claimed_under_320_10 = TRUE
+THEN documentary_proof_required = TRUE
+
+IF exemption_claimed_under_320_10 = TRUE
+THEN proof_required_at_initial_issuance_and_each_renewal = TRUE
+
+IF nonresident_US_Armed_Forces_member_stationed_in_Florida_under_orders = TRUE
+AND vehicle_owned_by_and_operated_exclusively_for_personal_use = TRUE
+THEN license_tax_exemption_review_required = TRUE
+
+IF vehicle_owned_or_operated_exclusively_by_Federal_Government = TRUE
+THEN license_tax_exemption_review_required = TRUE
+
+IF qualifying_nonprofit_or_public_service_vehicle = TRUE
+THEN license_tax_exemption_review_required = TRUE
+
+IF church_temple_or_synagogue_vehicle = TRUE
+AND used_exclusively_as_community_service_van_or_religious_transport_without_compensation = TRUE
+THEN license_tax_exemption_review_required = TRUE
+
+IF Civil_Air_Patrol_or_US_Coast_Guard_Auxiliary_vehicle = TRUE
+THEN license_tax_exemption_review_required = TRUE
+
+IF nonprofit_mobile_blood_bank_unit = TRUE
+THEN license_tax_exemption_review_required = TRUE
+
+IF public_health_mobile_Xray_truck_or_bus = TRUE
+THEN license_tax_exemption_review_required = TRUE
+
+IF nonprofit_school_bus = TRUE
+THEN license_tax_exemption_review_required = TRUE
+
+IF search_and_rescue_vehicle = TRUE
+THEN license_tax_exemption_review_required = TRUE
+
+IF transportation_disadvantaged_vehicle = TRUE
+THEN license_tax_exemption_review_required = TRUE
+
+IF marine_boat_trailer_exempt_under_320_102 = TRUE
+THEN license_tax_exemption_review_required = TRUE
+
+IF exempt_vehicle_not_federal_government = TRUE
+THEN exempt_plate_validation_sticker_or_mobile_home_sticker_issued_after_3_dollar_payment = TRUE
+
+IF exemption_documentation_missing = TRUE
+THEN exemption_not_ready_for_submission = TRUE
+
+============================================================
+MILITARY EXEMPTION LOGIC
+============================================================
+
+IF customer_claims_military_exemption = TRUE
+THEN verify_nonresident_status_military_orders_and_personal_use = TRUE
+
+IF military_member_is_Florida_resident = TRUE
+THEN 320_10_nonresident_military_exemption_not_applicable_review_required = TRUE
+
+IF vehicle_not_operated_exclusively_for_personal_use = TRUE
+THEN military_exemption_not_supported_under_this_rule = TRUE
+
+============================================================
+NONPROFIT / PUBLIC SERVICE EXEMPTION LOGIC
+============================================================
+
+IF nonprofit_exemption_claimed = TRUE
+THEN verify_organization_named_or_eligible_under_statute = TRUE
+
+IF nonprofit_exemption_claimed = TRUE
+THEN verify_current_articles_of_incorporation_and_not_for_profit_status = TRUE
+
+IF church_or_religious_entity_vehicle_exemption_claimed = TRUE
+THEN verify_exclusive_community_service_or_religious_transport_use_without_compensation = TRUE
+
+============================================================
+COMMON DEALERSHIP ISSUES
+============================================================
+
+- Customer claims military exemption
+- Customer is military but Florida resident
+- Customer lacks orders or proof of nonresident status
+- Nonprofit claims exemption but lacks documentation
+- Church van used for mixed purposes
+- Government vehicle exemption question
+- Exempt plate fee quoted incorrectly
+- Exemption claimed at renewal without updated proof
+- Dealer waives license tax without verifying statutory exemption
+
+============================================================
+REJECTION PREVENTION
+============================================================
+
+High rejection risk if:
+- exemption is claimed without documentary proof
+- military exemption is applied to a Florida resident without proper basis
+- military orders/nonresident status are not verified
+- nonprofit eligibility is assumed without proof
+- exempt plate/sticker issuance is confused with no registration action
+- $3 exempt plate/sticker cost is missed where applicable
+- exemption is not reviewed again at renewal
+- vehicle use does not match exemption category
+
+============================================================
+AI DECISION LOGIC
+============================================================
+
+IF user_question_mentions = "exempt registration"
+OR user_question_mentions = "license tax exemption"
+OR user_question_mentions = "military exemption"
+OR user_question_mentions = "government plate"
+OR user_question_mentions = "nonprofit exemption"
+OR user_question_mentions = "church van"
+THEN reference_320_10 = TRUE
+
+IF exemption_claimed = TRUE
+THEN answer_should_check = "specific exemption category and documentary proof"
+
+IF military_exemption_claimed = TRUE
+THEN answer_should_check = "nonresident military status, Florida stationing orders, ownership/use requirements"
+
+IF nonprofit_exemption_claimed = TRUE
+THEN answer_should_check = "statutory organization eligibility and not-for-profit proof"
+
+============================================================
+DEALERSHIP WORKFLOW
+============================================================
+
+1. Identify exemption category.
+- Military
+- Federal government
+- Nonprofit/public service
+- Religious/community service
+- Civil Air Patrol / Coast Guard Auxiliary
+- Public health
+- Search and rescue
+- Transportation disadvantaged
+- Marine boat trailer
+
+2. Verify eligibility.
+- Owner
+- Use
+- Organization status
+- Required documents
+
+3. Confirm documentary proof.
+- Required at initial issuance.
+- Required at each renewal period.
+
+4. Determine plate/sticker issuance.
+- Exempt vehicles may still need proper plate/sticker issuance.
+- $3 cost may apply unless federal government exception applies.
+
+5. Hold if unsupported.
+- Do not waive license tax without clear exemption proof.
+
+============================================================
+COMMON CLERK ANSWER STYLE
+============================================================
+
+When answering a 320.10 question, the AI should explain:
+
+1. Which exemption category is being claimed.
+2. Whether the vehicle owner/use matches the statute.
+3. What proof is needed.
+4. Whether plate/sticker issuance still applies.
+5. Whether the transaction can proceed, hold, or escalate.
+
+============================================================
+RELATED LOGIC MAPS
+============================================================
+
+- validation_logic_map.txt
+- plate_registration_action_logic_map.txt
+- rejection_prevention_logic_map.txt
+- forms_required_logic_map.txt
+- escalation_red_flags_logic_map.txt
+
+============================================================
+RELATED PROCEDURE AREAS
+============================================================
+
+- Registration exemption workflow
+- Military registration workflow
+- Government vehicle registration workflow
+- Nonprofit registration workflow
+- Exempt plate/sticker issuance
+
+============================================================
+RELATED STATUTES
+============================================================
+
+- 320.08
+- 320.0804
+- 320.06
+- 320.02
+- 320.102
+
+============================================================
+END OF FILE
+============================================================

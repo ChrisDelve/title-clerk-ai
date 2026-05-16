@@ -1,0 +1,198 @@
+STATUTE: 320.071
+TITLE: Advance Registration Renewal; Procedures
+SOURCE: https://www.leg.state.fl.us/statutes/index.cfm?App_mode=Display_Statute&Search_String=&URL=0300-0399/0320/Sections/0320.071.html
+DOCUMENT_TYPE: Florida Law Reference / Operational Notes
+CATEGORY: ADVANCE REGISTRATION RENEWAL / RENEWAL WINDOW / VALIDATION STICKER / MOBILE HOME STICKER / IRP ADVANCE RENEWAL
+
+============================================================
+PURPOSE
+============================================================
+
+This statute governs advance renewal of Florida motor vehicle and mobile home registrations.
+
+It is the legal reference for:
+- renewing registration before expiration
+- 3-month advance renewal period
+- maximum registration period
+- advance renewal for IRP/apportionable vehicles
+- issuance of validation sticker or mobile home sticker after advance renewal
+- unlawful sticker use
+
+============================================================
+PLAIN ENGLISH SUMMARY
+============================================================
+
+The owner of a currently registered Florida motor vehicle or mobile home may renew registration during the 3 months before the registration expires.
+
+The registration period may not exceed 27 months.
+
+The owner of an apportionable vehicle registered under the International Registration Plan may also file renewal during the 3 months before expiration.
+
+After application and payment of required license taxes, service charges, and additional fees, the department or agent issues the appropriate validation sticker or mobile home sticker.
+
+Using a validation sticker or mobile home sticker without lawful authority, or willfully violating department rules under this section, is a second-degree misdemeanor.
+
+============================================================
+TITLE CLERK IMPORTANCE
+============================================================
+
+320.071 is important when reviewing:
+- advance registration renewal
+- early renewal
+- renewal before expiration
+- 3-month renewal window
+- validation sticker issuance
+- mobile home sticker issuance
+- IRP advance renewal
+- unlawful use of sticker
+
+============================================================
+COMMON WORKFLOW CONNECTIONS
+============================================================
+
+- Customer wants to renew early
+- Dealer wants registration renewed before delivery
+- Mobile home renewal
+- IRP renewal
+- Validation sticker issuance
+- Renewal sticker timing
+- Registration period not exceeding 27 months
+- Wrongful sticker use
+
+============================================================
+OPERATIONAL RULES
+============================================================
+
+IF vehicle_currently_registered_in_Florida = TRUE
+AND advance_renewal_requested = TRUE
+THEN advance_renewal_review_required = TRUE
+
+IF advance_renewal_requested = TRUE
+THEN renewal_may_be_filed_during_3_months_before_expiration = TRUE
+
+IF advance_renewal_requested = TRUE
+THEN registration_period_may_not_exceed_27_months = TRUE
+
+IF apportionable_vehicle_registered_under_IRP = TRUE
+AND advance_renewal_requested = TRUE
+THEN IRP_advance_renewal_may_be_filed_during_3_months_before_expiration = TRUE
+
+IF renewal_application_filed = TRUE
+AND appropriate_license_tax_service_charges_and_required_fees_paid = TRUE
+THEN validation_sticker_or_mobile_home_sticker_issue_required = TRUE
+
+IF validation_sticker_or_mobile_home_sticker_used_without_lawful_authority = TRUE
+THEN misdemeanor_second_degree_risk = TRUE
+
+============================================================
+COMMON DEALERSHIP ISSUES
+============================================================
+
+- Customer wants to renew registration early
+- Dealer wants to renew before expiration/delivery
+- Customer outside renewal window
+- Registration period would exceed 27 months
+- Mobile home sticker renewal
+- IRP renewal timing question
+- Wrong sticker used or attached
+- Customer thinks sticker can be used before lawful issuance
+
+============================================================
+REJECTION PREVENTION
+============================================================
+
+High rejection risk if:
+- renewal is attempted outside the allowed advance window
+- registration period would exceed 27 months
+- required fees are not paid
+- wrong validation sticker/mobile home sticker is used
+- sticker is used without lawful authority
+- IRP advance renewal is treated exactly like non-IRP without review
+
+============================================================
+AI DECISION LOGIC
+============================================================
+
+IF user_question_mentions = "renew early"
+OR user_question_mentions = "advance registration"
+OR user_question_mentions = "renew before expiration"
+OR user_question_mentions = "3 months before"
+OR user_question_mentions = "early renewal"
+THEN reference_320_071 = TRUE
+
+IF advance_renewal_requested = TRUE
+THEN answer_should_check = "current Florida registration, 3-month window, fees, and 27-month maximum"
+
+IF sticker_used_without_authority = TRUE
+THEN answer_should_warn = "Unlawful sticker use risk exists."
+
+============================================================
+DEALERSHIP WORKFLOW
+============================================================
+
+1. Confirm current registration.
+- Vehicle/mobile home must be currently registered in Florida.
+
+2. Confirm renewal window.
+- Renewal may be filed during the 3 months before expiration.
+
+3. Confirm maximum registration period.
+- Registration period may not exceed 27 months.
+
+4. Collect correct fees.
+- License tax.
+- Service charges.
+- Additional required fees.
+
+5. Issue correct sticker.
+- Validation sticker or mobile home sticker.
+
+6. Hold/escalate if issue.
+- Outside renewal window.
+- Wrong sticker.
+- IRP/apportioned uncertainty.
+
+============================================================
+COMMON CLERK ANSWER STYLE
+============================================================
+
+When answering a 320.071 question, the AI should explain:
+
+1. Whether early/advance renewal is allowed.
+2. Whether the request is within the 3-month window.
+3. Whether the 27-month maximum applies.
+4. Whether validation/mobile home sticker should issue.
+5. Whether IRP special handling applies.
+
+============================================================
+RELATED LOGIC MAPS
+============================================================
+
+- plate_registration_action_logic_map.txt
+- validation_logic_map.txt
+- rejection_prevention_logic_map.txt
+- forms_required_logic_map.txt
+
+============================================================
+RELATED PROCEDURE AREAS
+============================================================
+
+- Registration renewal procedures
+- Advance renewal workflow
+- Validation sticker workflow
+- Mobile home sticker workflow
+- IRP renewal workflow
+
+============================================================
+RELATED STATUTES
+============================================================
+
+- 320.055
+- 320.06
+- 320.07
+- 320.08
+- 320.04
+
+============================================================
+END OF FILE
+============================================================

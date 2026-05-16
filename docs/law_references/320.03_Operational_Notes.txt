@@ -1,0 +1,241 @@
+STATUTE: 320.03
+TITLE: Registration; Duties of Tax Collectors; International Registration Plan
+SOURCE: https://www.leg.state.fl.us/statutes/index.cfm?App_mode=Display_Statute&Search_String=&URL=0300-0399/0320/Sections/0320.03.html
+DOCUMENT_TYPE: Florida Law Reference / Operational Notes
+CATEGORY: TAX COLLECTOR AUTHORITY / REGISTRATION ISSUANCE / FRVIS / DRIVER LICENSE STOP / LICENSE PLATES / VALIDATION STICKERS
+
+============================================================
+PURPOSE
+============================================================
+
+This statute governs the role of county tax collectors as authorized agents of the department for registration issuance.
+
+It also covers registration certificates, license plates, validation stickers, mobile home stickers, FRVIS / Florida Real Time Vehicle Information System, tax collector duties, and driver license stop checks during registration processing.
+
+============================================================
+PLAIN ENGLISH SUMMARY
+============================================================
+
+County tax collectors act as authorized agents of the department for issuing registration certificates, license plates, validation stickers, and mobile home stickers.
+
+Tax collectors must keep records and account for validation stickers, mobile home stickers, and other department property.
+
+Tax collectors, third parties contracted with a tax collector, or license tag agents with online access must follow department access requirements.
+
+When processing registration, unless the department issued a renewal notice, the tax collector or agent must check whether the applicant’s driver license has been canceled, suspended, or revoked.
+
+If the applicant has not surrendered the license when required, the tax collector must refuse to register the vehicle until the license is surrendered.
+
+FRVIS must be installed in tax collector/license tag agent offices according to department scheduling and funding.
+
+A 50-cent fee is charged on every license registration sold to help fund FRVIS.
+
+============================================================
+TITLE CLERK IMPORTANCE
+============================================================
+
+320.03 is important when the issue involves:
+- tax collector registration authority
+- registration issuance
+- tag office processing
+- FRVIS / system access
+- registration refusal due to driver license issue
+- validation stickers
+- license plate issuance
+- mobile home stickers
+- tax collector record/accountability
+- dealer/customer confusion about why registration cannot be issued
+
+============================================================
+COMMON WORKFLOW CONNECTIONS
+============================================================
+
+- Registration issuance
+- License plate issuance
+- Validation sticker issuance
+- Mobile home sticker issuance
+- Tax collector processing
+- Registration refusal
+- Driver license cancellation / suspension / revocation
+- License surrender issue
+- FRVIS system issue
+- Tag office authority
+- Registration stop / hold
+
+============================================================
+OPERATIONAL RULES
+============================================================
+
+IF tax_collector_processing_registration = TRUE
+THEN tax_collector_acts_as_authorized_agent_of_department = TRUE
+
+IF registration_application_processed = TRUE
+THEN registration_certificate_plate_and_validation_sticker_issuance_review_required = TRUE
+
+IF mobile_home_registration_processed = TRUE
+THEN mobile_home_sticker_issuance_review_required = TRUE
+
+IF tax_collector_or_license_tag_agent_has_online_access = TRUE
+THEN department_MOU_or_access_requirements_apply = TRUE
+
+IF registration_application_received = TRUE
+AND department_renewal_notice_not_issued = TRUE
+THEN driver_license_status_check_required = TRUE
+
+IF applicant_driver_license_cancelled_suspended_or_revoked = TRUE
+THEN surrender_status_review_required = TRUE
+
+IF applicant_required_to_surrender_driver_license = TRUE
+AND driver_license_not_surrendered = TRUE
+THEN tax_collector_must_refuse_registration = TRUE
+
+IF registration_refused_due_to_license_surrender_issue = TRUE
+THEN customer_must_surrender_license_before_registration = TRUE
+
+IF FRVIS_processing_required = TRUE
+THEN Florida_Real_Time_Vehicle_Information_System_review_required = TRUE
+
+IF license_registration_sold = TRUE
+THEN FRVIS_50_cent_fee_applies = TRUE
+
+============================================================
+TAX COLLECTOR / FRVIS LOGIC
+============================================================
+
+IF registration_issue_involves_tax_collector_authority = TRUE
+THEN reference_320_03 = TRUE
+
+IF issue_involves_validation_sticker_inventory_or_mobile_home_sticker = TRUE
+THEN tax_collector_record_accountability_review_required = TRUE
+
+IF issue_involves_tag_agent_system_access = TRUE
+THEN FRVIS_access_and_department_requirements_review_required = TRUE
+
+============================================================
+DRIVER LICENSE STOP / SURRENDER LOGIC
+============================================================
+
+IF applicant_license_cancelled_suspended_or_revoked = TRUE
+THEN registration_stop_review_required = TRUE
+
+IF license_surrender_required = TRUE
+AND license_not_surrendered = TRUE
+THEN registration_cannot_be_issued_by_tax_collector = TRUE
+
+IF customer_says_registration_blocked_at_tax_collector = TRUE
+THEN check_driver_license_status_and_surrender_issue = TRUE
+
+============================================================
+COMMON DEALERSHIP ISSUES
+============================================================
+
+- Tax collector refuses registration
+- Customer has suspended/canceled/revoked license
+- Customer has not surrendered license when required
+- Registration blocked at tag office
+- Tag office/FRVIS processing issue
+- Validation sticker issue
+- Mobile home sticker issue
+- Customer thinks dealer can override tax collector refusal
+- Registration renewal notice changes whether status check applies
+- Dealer does not understand why tag office refused registration
+
+============================================================
+REJECTION PREVENTION
+============================================================
+
+High rejection risk if:
+- applicant driver license issue is ignored
+- required license surrender has not occurred
+- dealer promises registration can be issued despite tax collector refusal condition
+- registration stop is not resolved
+- validation sticker/mobile home sticker issue is mishandled
+- tax collector/FRVIS system requirement is ignored
+
+============================================================
+AI DECISION LOGIC
+============================================================
+
+IF user_question_mentions = "tax collector"
+OR user_question_mentions = "tag office refused"
+OR user_question_mentions = "FRVIS"
+OR user_question_mentions = "registration blocked"
+OR user_question_mentions = "suspended license registration"
+OR user_question_mentions = "validation sticker"
+THEN reference_320_03 = TRUE
+
+IF tax_collector_refused_registration = TRUE
+THEN answer_should_check = "driver license cancellation/suspension/revocation and surrender requirement"
+
+IF applicant_license_not_surrendered_when_required = TRUE
+THEN answer_should_warn = "Tax collector must refuse registration until surrender issue is resolved."
+
+============================================================
+DEALERSHIP WORKFLOW
+============================================================
+
+1. Identify registration issue.
+- Tax collector refusal
+- Tag office stop
+- FRVIS/system issue
+- Validation sticker/mobile home sticker issue
+
+2. Check driver license status issue.
+- Canceled
+- Suspended
+- Revoked
+- Surrender requirement
+
+3. Determine whether refusal condition applies.
+- If license surrender required and not surrendered, registration cannot issue.
+
+4. Do not override.
+- Dealer should not promise registration can be completed if tax collector refusal condition exists.
+
+5. Hold/escalate.
+- Resolve stop/surrender issue before submission or delivery if registration is required.
+
+============================================================
+COMMON CLERK ANSWER STYLE
+============================================================
+
+When answering a 320.03 question, the AI should explain:
+
+1. Tax collector/tag office authority.
+2. Whether driver license status or surrender issue blocks registration.
+3. Whether FRVIS/tag office processing applies.
+4. Whether the dealer can proceed or must hold.
+5. Whether escalation to tax collector/FLHSMV is needed.
+
+============================================================
+RELATED LOGIC MAPS
+============================================================
+
+- validation_logic_map.txt
+- rejection_prevention_logic_map.txt
+- plate_registration_action_logic_map.txt
+- escalation_red_flags_logic_map.txt
+
+============================================================
+RELATED PROCEDURE AREAS
+============================================================
+
+- Registration procedures
+- Tax collector workflow
+- Registration stop workflow
+- Validation sticker procedures
+- Mobile home sticker procedures
+
+============================================================
+RELATED STATUTES
+============================================================
+
+- 320.02
+- 320.05
+- 320.06
+- 320.07
+- 322.251
+
+============================================================
+END OF FILE
+============================================================

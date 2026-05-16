@@ -1,0 +1,202 @@
+STATUTE: 320.0804
+TITLE: Surcharge on License Tax
+SOURCE: https://www.leg.state.fl.us/statutes/index.cfm?App_mode=Display_Statute&Search_String=&URL=0300-0399/0320/Sections/0320.0804.html
+DOCUMENT_TYPE: Florida Law Reference / Operational Notes
+CATEGORY: REGISTRATION FEES / STATE TRANSPORTATION SURCHARGE / LICENSE TAX SURCHARGE
+
+============================================================
+PURPOSE
+============================================================
+
+This statute governs the surcharge imposed on license taxes under section 320.08.
+
+It is a legal reference for registration fee calculations and should be cross-referenced with fee tables and raw fee notes before quoting a final total.
+
+============================================================
+PLAIN ENGLISH SUMMARY
+============================================================
+
+A surcharge applies to most license taxes imposed under section 320.08.
+
+The surcharge is currently $1.20 for applicable license tax categories.
+
+The surcharge does not apply to license taxes listed under section 320.08(11).
+
+The surcharge is collected in the same manner as the license tax.
+
+============================================================
+TITLE CLERK IMPORTANCE
+============================================================
+
+320.0804 is important when reviewing:
+- registration fee quotes
+- renewal fee quotes
+- new plate fee quotes
+- transfer plate fee quotes
+- license tax calculation
+- state transportation surcharge
+- raw fee table validation
+
+This statute should not be used by itself to quote a final total. It should be used with:
+- 320.08 license tax classification
+- fee procedures
+- raw fee tables
+- service charges
+- IRF review
+- plate/decal/sticker fees if applicable
+
+============================================================
+COMMON WORKFLOW CONNECTIONS
+============================================================
+
+- Registration fee calculation
+- Renewal fee calculation
+- New plate fee calculation
+- Transfer plate fee calculation
+- License tax classification
+- Raw fee table lookup
+- Fee quote validation
+- Dealer fee estimate review
+
+============================================================
+OPERATIONAL RULES
+============================================================
+
+IF license_tax_imposed_under_320_08 = TRUE
+THEN surcharge_review_required = TRUE
+
+IF license_tax_category = "320.08(11)"
+THEN surcharge_under_320_0804_not_applicable = TRUE
+
+IF surcharge_applicable = TRUE
+THEN surcharge_amount = "$1.20"
+
+IF surcharge_applicable = TRUE
+THEN surcharge_collected_same_manner_as_license_tax = TRUE
+
+IF exact_registration_fee_quote_requested = TRUE
+THEN reference_320_08_and_raw_fee_tables_required = TRUE
+
+IF exact_registration_fee_quote_requested = TRUE
+THEN do_not_quote_surcharge_alone_as_total_registration_fee = TRUE
+
+============================================================
+COMMON DEALERSHIP ISSUES
+============================================================
+
+- Fee quote missing surcharge
+- Clerk confuses license tax with total registration cost
+- Finance asks for registration total but only license tax is checked
+- New plate fee quote missing IRF/service charges/surcharges
+- Transfer plate fee quote missing surcharge or service charge review
+- Raw fee table not consulted before quoting final amount
+
+============================================================
+REJECTION PREVENTION
+============================================================
+
+High quote/rejection risk if:
+- surcharge is omitted from registration fee calculation
+- surcharge is quoted as the only registration fee
+- 320.08 classification is not reviewed
+- fee table is not reviewed
+- service charges, IRF, plate fees, or replacement fees are merged incorrectly
+- exempt license tax category is not identified
+
+============================================================
+AI DECISION LOGIC
+============================================================
+
+IF user_question_mentions = "surcharge"
+OR user_question_mentions = "state transportation surcharge"
+OR user_question_mentions = "registration surcharge"
+OR user_question_mentions = "license tax surcharge"
+THEN reference_320_0804 = TRUE
+
+IF user_question_mentions = "registration fee"
+OR user_question_mentions = "how much is registration"
+OR user_question_mentions = "tag fee"
+THEN reference_320_0804 = TRUE
+AND reference_320_08 = TRUE
+AND reference_fee_notes_or_raw_fee_tables = TRUE
+
+IF fee_question = TRUE
+THEN answer_should_not_merge_fee_amounts_together = TRUE
+
+IF fee_question = TRUE
+THEN answer_should_list_fee_components_separately = TRUE
+
+============================================================
+DEALERSHIP WORKFLOW
+============================================================
+
+1. Identify registration action.
+- New plate
+- Transfer plate
+- Renewal
+- Replacement
+- IRF review
+
+2. Identify vehicle classification.
+- Use 320.08 and raw fee tables.
+
+3. Review surcharge.
+- Determine whether 320.0804 surcharge applies.
+- Do not apply if excluded under 320.08(11).
+
+4. Add separate fee components.
+- License tax
+- Surcharge
+- Service charges
+- IRF if applicable
+- Plate/decal/sticker fees if applicable
+
+5. Quote carefully.
+- Do not combine fee amounts without explaining components.
+- Use raw fee tables for exact totals.
+
+============================================================
+COMMON CLERK ANSWER STYLE
+============================================================
+
+When answering a 320.0804 question, the AI should explain:
+
+1. The surcharge is part of registration fee calculation.
+2. It applies to most 320.08 license taxes unless excluded.
+3. It is not the complete registration fee by itself.
+4. Exact quotes require vehicle classification and raw fee table review.
+5. Fees should be listed separately.
+
+============================================================
+RELATED LOGIC MAPS
+============================================================
+
+- forms_required_logic_map.txt
+- validation_logic_map.txt
+- plate_registration_action_logic_map.txt
+- rejection_prevention_logic_map.txt
+
+============================================================
+RELATED PROCEDURE AREAS
+============================================================
+
+- Registration fee workflow
+- Raw fee table workflow
+- New plate fee workflow
+- Transfer plate fee workflow
+- Renewal fee workflow
+- IRF workflow
+
+============================================================
+RELATED STATUTES
+============================================================
+
+- 320.08
+- 320.072
+- 320.10
+- 320.06
+- 320.07
+
+============================================================
+END OF FILE
+============================================================

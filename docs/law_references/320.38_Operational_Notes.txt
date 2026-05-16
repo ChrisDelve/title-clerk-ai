@@ -1,0 +1,254 @@
+STATUTE: 320.38
+TITLE: When Nonresident Exemption Not Allowed
+SOURCE: https://www.leg.state.fl.us/statutes/index.cfm?App_mode=Display_Statute&Search_String=&URL=0300-0399/0320/Sections/0320.38.html
+DOCUMENT_TYPE: Florida Law Reference / Operational Notes
+CATEGORY: NONRESIDENT REGISTRATION / FLORIDA EMPLOYMENT / PUBLIC SCHOOL / STUDENT EXEMPTION / 10-DAY REGISTRATION REQUIREMENT
+
+============================================================
+PURPOSE
+============================================================
+
+This statute explains when the nonresident registration exemption under 320.37 does not apply.
+
+It is the legal reference for:
+- nonresident accepts employment in Florida
+- nonresident engages in trade, profession, or occupation in Florida
+- nonresident enters children into Florida public school
+- 10-day Florida registration requirement
+- migrant/seasonal farm worker exception
+- college/university student exemption
+- work-study student exemption
+
+============================================================
+PLAIN ENGLISH SUMMARY
+============================================================
+
+The nonresident exemption under 320.37 does not apply when a nonresident accepts employment or engages in a trade, profession, or occupation in Florida, except for a nonresident migrant or seasonal farm worker.
+
+If a nonresident accepts employment, engages in a trade/profession/occupation in Florida, or enters children into Florida public schools, the nonresident must register the motor vehicles in Florida within 10 days after the employment or education begins if the vehicles will be operated on Florida roads.
+
+Certain nonresident college/university students may be exempt:
+- a nonresident in a qualifying work-study program for up to 6 months with academic credits
+- a nonresident full-time student enrolled in such an institution for the duration of enrollment
+
+============================================================
+TITLE CLERK IMPORTANCE
+============================================================
+
+320.38 is important when reviewing:
+- nonresident customer with out-of-state plate
+- customer moved to Florida for work
+- customer working temporarily in Florida
+- customer started Florida employment
+- customer entered children in Florida public school
+- college student exemption
+- full-time student out-of-state plate
+- work-study student exemption
+- 10-day Florida registration requirement
+
+============================================================
+COMMON WORKFLOW CONNECTIONS
+============================================================
+
+- Nonresident registration
+- Out-of-state plate
+- Customer moved for job
+- Customer works in Florida
+- Customer has children in Florida public school
+- Student vehicle registration
+- Work-study program
+- Full-time college/university enrollment
+- 10-day registration requirement
+- Temporary employed registration under 320.1325
+
+============================================================
+OPERATIONAL RULES
+============================================================
+
+IF nonresident_accepts_employment_in_Florida = TRUE
+AND nonresident_is_not_migrant_or_seasonal_farm_worker = TRUE
+THEN 320_37_exemption_not_allowed = TRUE
+
+IF nonresident_engages_in_trade_profession_or_occupation_in_Florida = TRUE
+AND nonresident_is_not_migrant_or_seasonal_farm_worker = TRUE
+THEN 320_37_exemption_not_allowed = TRUE
+
+IF nonresident_enters_children_into_Florida_public_schools = TRUE
+THEN Florida_registration_required_within_10_days_if_vehicle_operated_on_Florida_roads = TRUE
+
+IF nonresident_accepts_employment_or_starts_public_school_trigger = TRUE
+AND vehicle_operated_on_Florida_roads = TRUE
+THEN Florida_registration_required_within_10_days = TRUE
+
+IF nonresident_is_migrant_or_seasonal_farm_worker = TRUE
+THEN 320_38_employment_trigger_exception_review_required = TRUE
+
+IF nonresident_student_in_qualifying_work_study_program = TRUE
+AND program_duration_up_to_6_months = TRUE
+AND vehicle_properly_registered_in_another_jurisdiction = TRUE
+THEN Florida_registration_not_required_for_duration_of_work_study_program = TRUE
+
+IF nonresident_full_time_student_enrolled_in_qualifying_institution = TRUE
+AND vehicle_properly_registered_in_another_jurisdiction = TRUE
+THEN Florida_registration_not_required_for_duration_of_enrollment = TRUE
+
+============================================================
+10-DAY REGISTRATION LOGIC
+============================================================
+
+IF nonresident_work_or_school_trigger_applies = TRUE
+THEN registration_deadline_days = 10
+
+IF days_since_employment_or_public_school_trigger > 10
+AND Florida_registration_not_completed = TRUE
+THEN registration_noncompliance_review_required = TRUE
+
+IF vehicle_will_not_be_operated_on_Florida_roads = TRUE
+THEN road_operation_registration_requirement_review_required = TRUE
+
+============================================================
+STUDENT EXEMPTION LOGIC
+============================================================
+
+IF nonresident_full_time_college_or_university_student = TRUE
+THEN student_exemption_review_required = TRUE
+
+IF nonresident_work_study_student = TRUE
+THEN work_study_exemption_review_required = TRUE
+
+IF student_vehicle_not_properly_registered_in_other_jurisdiction = TRUE
+THEN student_exemption_not_supported = TRUE
+
+IF work_study_program_not_for_academic_credit = TRUE
+THEN work_study_exemption_not_supported = TRUE
+
+IF work_study_program_exceeds_6_months = TRUE
+THEN work_study_exemption_not_supported_under_this_rule = TRUE
+
+============================================================
+COMMON DEALERSHIP ISSUES
+============================================================
+
+- Customer has out-of-state plate but works in Florida
+- Customer moved to Florida for job
+- Customer works in Florida temporarily
+- Customer enrolled children in Florida public school
+- Customer is a full-time college student
+- Customer is in a work-study program
+- Customer is seasonal/migrant farm worker
+- Customer says they are not resident but has Florida employment
+- Dealer assumes out-of-state plate is automatically okay
+- Customer is past 10 days after starting Florida employment
+
+============================================================
+REJECTION PREVENTION
+============================================================
+
+High compliance/rejection risk if:
+- nonresident employment in Florida is ignored
+- children in Florida public school trigger is ignored
+- 10-day registration requirement is missed
+- student exemption is applied without verifying full-time enrollment or qualifying work-study
+- vehicle is not properly registered in another jurisdiction
+- migrant/seasonal farm worker exception is assumed without support
+- temporary employment registration under 320.1325 is not considered when applicable
+
+============================================================
+AI DECISION LOGIC
+============================================================
+
+IF user_question_mentions = "nonresident works in Florida"
+OR user_question_mentions = "out-of-state plate working in Florida"
+OR user_question_mentions = "children in public school"
+OR user_question_mentions = "10 days to register"
+OR user_question_mentions = "college student out-of-state plate"
+OR user_question_mentions = "work-study"
+THEN reference_320_38 = TRUE
+
+IF nonresident_works_in_Florida = TRUE
+THEN answer_should_warn = "Florida registration may be required within 10 days if vehicle is operated on Florida roads."
+
+IF children_enrolled_in_Florida_public_school = TRUE
+THEN answer_should_warn = "Florida registration may be required within 10 days after education begins."
+
+IF full_time_nonresident_student = TRUE
+THEN answer_should_check = "student exemption and proper out-of-state registration."
+
+IF temporary_employment_scenario = TRUE
+THEN answer_should_cross_reference = "320.1325 temporary employment registration"
+
+============================================================
+DEALERSHIP WORKFLOW
+============================================================
+
+1. Identify nonresident status.
+- Confirm customer is not Florida resident.
+- Confirm out-of-state registration is valid.
+
+2. Check Florida triggers.
+- Employment.
+- Trade/profession/occupation.
+- Children in public school.
+
+3. Apply 10-day rule.
+- If trigger applies and vehicle is operated on Florida roads, Florida registration required within 10 days.
+
+4. Check exceptions.
+- Migrant/seasonal farm worker.
+- Full-time college/university student.
+- Work-study student up to 6 months with academic credits.
+
+5. Consider temporary employed registration.
+- If temporarily employed, review 320.1325.
+
+6. Hold/escalate if unclear.
+- Do not assume out-of-state plate remains valid for Florida registration purposes after work/school triggers.
+
+============================================================
+COMMON CLERK ANSWER STYLE
+============================================================
+
+When answering a 320.38 question, the AI should explain:
+
+1. Whether the customer is a nonresident.
+2. Whether employment, trade/occupation, or public school trigger applies.
+3. Whether the 10-day Florida registration requirement applies.
+4. Whether student or migrant/seasonal farm worker exception applies.
+5. Whether 320.1325 temporary employed registration should be reviewed.
+6. Whether the transaction can proceed, hold, or escalate.
+
+============================================================
+RELATED LOGIC MAPS
+============================================================
+
+- plate_registration_action_logic_map.txt
+- validation_logic_map.txt
+- rejection_prevention_logic_map.txt
+- transaction_type_logic_map.txt
+- escalation_red_flags_logic_map.txt
+- forms_required_logic_map.txt
+
+============================================================
+RELATED PROCEDURE AREAS
+============================================================
+
+- Nonresident registration workflow
+- Temporary employed registration workflow
+- Out-of-state registration workflow
+- Student exemption workflow
+- Insurance verification workflow
+- IRF workflow
+
+============================================================
+RELATED STATUTES
+============================================================
+
+- 320.02
+- 320.37
+- 320.1325
+- 316.003
+- 1005.02
+
+============================================================
+END OF FILE
+============================================================

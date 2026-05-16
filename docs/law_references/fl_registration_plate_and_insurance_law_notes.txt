@@ -1,0 +1,1606 @@
+DOCUMENT: FL_REGISTRATION_PLATE_AND_INSURANCE_LAW_NOTES
+TITLE: Florida Core Registration, Plate, Insurance, and Tag Law Reference
+DOCUMENT_TYPE: Consolidated Florida Law Reference / AI Routing Notes
+CATEGORY: REGISTRATION LAW / PLATE LAW / INSURANCE / IRF / TEMP TAGS / DEALER PLATES / NONRESIDENT REGISTRATION
+
+============================================================
+PURPOSE
+============================================================
+
+This file is a consolidated legal-reference layer for Florida registration, license plate, insurance, tag, temporary tag, dealer plate, transporter plate, registration fee, registration stop, and nonresident registration issues.
+
+It groups the most important Chapter 320 statutes related to:
+- registration requirements
+- insurance proof
+- VIN verification for registration
+- tax collector / FRVIS / registration stop issues
+- registration records and lookup
+- registration periods
+- license plates
+- validation stickers
+- registration certificate possession
+- replacement plates / decals / stickers
+- plate transfer
+- IRF / Initial Registration Fee
+- registration expiration
+- registration renewal
+- advance renewal
+- license tax classification
+- state transportation surcharge
+- license tax exemptions
+- dealer plates
+- temporary tags
+- temporary employed registration
+- transporter plates
+- registration refunds
+- withholding registration / back tax
+- nonresident registration exemptions
+- nonresident employment / school registration requirements
+
+This file is designed for AI retrieval and workflow routing.
+
+It does NOT replace individual detailed statute files.
+
+Use this file to help the AI determine which specific registration, plate, insurance, fee, or nonresident statute file should be retrieved next.
+
+============================================================
+IMPORTANT AI USE RULE
+============================================================
+
+This file should be treated as a MASTER REGISTRATION / PLATE / INSURANCE ROUTING FILE.
+
+When a user asks a broad registration, plate, tag, insurance, fee, temporary tag, dealer plate, transporter plate, or nonresident registration question, this file helps classify the issue and route to the correct detailed statute file.
+
+The AI should use this file to determine:
+1. Whether the issue is registration, insurance, plate transfer, replacement plate, IRF, temp tag, renewal, fee, exemption, stop, or nonresident related.
+2. Which individual statute file should be referenced.
+3. Which logic maps should be reviewed.
+4. Whether the issue involves proceed / hold / escalate.
+5. Whether the answer should warn about rejection, incorrect fee quote, or compliance risk.
+
+============================================================
+CORE STATUTES INCLUDED
+============================================================
+
+320.02 — Registration Required / Insurance / VIN Verification / False Information / Stops
+320.03 — Tax Collector Authority / FRVIS / Registration Refusal / Driver License Stop
+320.05 — Registration Records / Lookup / Public Records / Certified Copies
+320.055 — Registration Periods / Renewal Periods / Birth Month / Commercial Periods
+320.06 — Registration Certificates / License Plates / Validation Stickers / Replacement Cycle
+320.0605 — Registration Certificate Possession / Proof of Registration
+320.0607 — Replacement License Plate / Decal / Sticker
+320.0609 — Plate Transfer / Plate Exchange / Plate Issued to Owner
+320.07 — Registration Expiration / Renewal Required / Delinquent Fee
+320.071 — Advance Registration Renewal
+320.072 — Initial Registration Fee / IRF
+320.08 — License Tax Classification
+320.0804 — State Transportation Surcharge
+320.10 — License Tax Exemptions
+320.13 — Dealer and Manufacturer Plates
+320.131 — Temporary Tags
+320.1325 — Temporarily Employed Nonresident Temporary Registration
+320.133 — Transporter Plates
+320.15 — Registration Refund / License Tax Credit
+320.18 — Withholding Registration / Back Tax / Dead Storage / Stops
+320.37 — Nonresident Registration Exemption
+320.38 — When Nonresident Exemption Not Allowed
+
+============================================================
+STATUTE ROUTING INDEX
+============================================================
+
+IF user_question_mentions = "registration required"
+OR user_question_mentions = "insurance required"
+OR user_question_mentions = "no insurance"
+OR user_question_mentions = "VIN verification"
+OR user_question_mentions = "registration stop"
+OR user_question_mentions = "false registration"
+OR user_question_mentions = "imported vehicle registration"
+THEN reference_statute = "320.02"
+AND detailed_file = "320.02_Operational_Notes.txt"
+
+IF user_question_mentions = "tax collector"
+OR user_question_mentions = "tag office refused"
+OR user_question_mentions = "FRVIS"
+OR user_question_mentions = "registration blocked"
+OR user_question_mentions = "suspended license registration"
+OR user_question_mentions = "validation sticker"
+THEN reference_statute = "320.03"
+AND detailed_file = "320.03_Operational_Notes.txt"
+
+IF user_question_mentions = "registration record"
+OR user_question_mentions = "lookup"
+OR user_question_mentions = "tag search"
+OR user_question_mentions = "VIN search"
+OR user_question_mentions = "certified registration"
+OR user_question_mentions = "audit trail"
+THEN reference_statute = "320.05"
+AND detailed_file = "320.05_Operational_Notes.txt"
+
+IF user_question_mentions = "registration period"
+OR user_question_mentions = "renewal period"
+OR user_question_mentions = "birth month"
+OR user_question_mentions = "expiration date"
+OR user_question_mentions = "co-owner birthday"
+OR user_question_mentions = "six month registration"
+OR user_question_mentions = "commercial registration period"
+THEN reference_statute = "320.055"
+AND detailed_file = "320.055_Operational_Notes.txt"
+
+IF user_question_mentions = "license plate"
+OR user_question_mentions = "validation sticker"
+OR user_question_mentions = "renewal sticker"
+OR user_question_mentions = "plate replacement cycle"
+OR user_question_mentions = "10 year plate"
+OR user_question_mentions = "apportioned plate"
+THEN reference_statute = "320.06"
+AND detailed_file = "320.06_Operational_Notes.txt"
+
+IF user_question_mentions = "registration certificate"
+OR user_question_mentions = "proof of registration"
+OR user_question_mentions = "registration copy"
+OR user_question_mentions = "cab card"
+OR user_question_mentions = "rental documentation"
+OR user_question_mentions = "lease documentation"
+THEN reference_statute = "320.0605"
+AND detailed_file = "320.0605_Operational_Notes.txt"
+
+IF user_question_mentions = "replacement plate"
+OR user_question_mentions = "lost plate"
+OR user_question_mentions = "stolen plate"
+OR user_question_mentions = "destroyed plate"
+OR user_question_mentions = "replacement decal"
+OR user_question_mentions = "replacement sticker"
+OR user_question_mentions = "lost in mail"
+THEN reference_statute = "320.0607"
+AND detailed_file = "320.0607_Operational_Notes.txt"
+
+IF user_question_mentions = "transfer tag"
+OR user_question_mentions = "transfer plate"
+OR user_question_mentions = "tag not in customer name"
+OR user_question_mentions = "plate not in customer name"
+OR user_question_mentions = "use spouse plate"
+OR user_question_mentions = "plate exchange"
+THEN reference_statute = "320.0609"
+AND detailed_file = "320.0609_Operational_Notes.txt"
+
+IF user_question_mentions = "expired registration"
+OR user_question_mentions = "registration expired"
+OR user_question_mentions = "renewal required"
+OR user_question_mentions = "delinquent fee"
+OR user_question_mentions = "late registration"
+OR user_question_mentions = "birthday expiration"
+THEN reference_statute = "320.07"
+AND detailed_file = "320.07_Operational_Notes.txt"
+
+IF user_question_mentions = "renew early"
+OR user_question_mentions = "advance registration"
+OR user_question_mentions = "renew before expiration"
+OR user_question_mentions = "3 months before"
+OR user_question_mentions = "early renewal"
+THEN reference_statute = "320.071"
+AND detailed_file = "320.071_Operational_Notes.txt"
+
+IF user_question_mentions = "IRF"
+OR user_question_mentions = "initial registration fee"
+OR user_question_mentions = "$225"
+OR user_question_mentions = "new plate"
+OR user_question_mentions = "transfer tag"
+OR user_question_mentions = "plate not in customer name"
+OR user_question_mentions = "family transfer"
+THEN reference_statute = "320.072"
+AND detailed_file = "320.072_Operational_Notes.txt"
+
+IF user_question_mentions = "license tax"
+OR user_question_mentions = "registration fee"
+OR user_question_mentions = "tag fee"
+OR user_question_mentions = "truck fee"
+OR user_question_mentions = "private auto fee"
+OR user_question_mentions = "mobile home fee"
+THEN reference_statute = "320.08"
+AND detailed_file = "320.08_Operational_Notes.txt"
+
+IF user_question_mentions = "surcharge"
+OR user_question_mentions = "state transportation surcharge"
+OR user_question_mentions = "registration surcharge"
+OR user_question_mentions = "license tax surcharge"
+THEN reference_statute = "320.0804"
+AND detailed_file = "320.0804_Operational_Notes.txt"
+
+IF user_question_mentions = "exempt registration"
+OR user_question_mentions = "license tax exemption"
+OR user_question_mentions = "military exemption"
+OR user_question_mentions = "government plate"
+OR user_question_mentions = "nonprofit exemption"
+OR user_question_mentions = "church van"
+THEN reference_statute = "320.10"
+AND detailed_file = "320.10_Operational_Notes.txt"
+
+IF user_question_mentions = "dealer plate"
+OR user_question_mentions = "dealer tag"
+OR user_question_mentions = "demo plate"
+OR user_question_mentions = "manufacturer plate"
+OR user_question_mentions = "heavy truck dealer plate"
+OR user_question_mentions = "dealer plate misuse"
+THEN reference_statute = "320.13"
+AND detailed_file = "320.13_Operational_Notes.txt"
+
+IF user_question_mentions = "temporary tag"
+OR user_question_mentions = "temp tag"
+OR user_question_mentions = "paper tag"
+OR user_question_mentions = "third temp tag"
+OR user_question_mentions = "10 day tag"
+OR user_question_mentions = "60 day tag"
+OR user_question_mentions = "90 day tag"
+THEN reference_statute = "320.131"
+AND detailed_file = "320.131_Operational_Notes.txt"
+
+IF user_question_mentions = "temporarily employed"
+OR user_question_mentions = "temporary employment registration"
+OR user_question_mentions = "90 day registration"
+OR user_question_mentions = "nonresident working in Florida"
+OR user_question_mentions = "temporary registration plate"
+THEN reference_statute = "320.1325"
+AND detailed_file = "320.1325_Operational_Notes.txt"
+
+IF user_question_mentions = "transporter plate"
+OR user_question_mentions = "transport plate"
+OR user_question_mentions = "moving unregistered vehicle"
+OR user_question_mentions = "vehicle with no plate being transported"
+THEN reference_statute = "320.133"
+AND detailed_file = "320.133_Operational_Notes.txt"
+
+IF user_question_mentions = "registration refund"
+OR user_question_mentions = "license tax refund"
+OR user_question_mentions = "plate surrender refund"
+OR user_question_mentions = "vehicle destroyed"
+OR user_question_mentions = "moved out of state"
+OR user_question_mentions = "advance renewal refund"
+THEN reference_statute = "320.15"
+AND detailed_file = "320.15_Operational_Notes.txt"
+
+IF user_question_mentions = "withholding registration"
+OR user_question_mentions = "back tax"
+OR user_question_mentions = "dead storage"
+OR user_question_mentions = "storage exemption"
+OR user_question_mentions = "dishonored check"
+OR user_question_mentions = "unpaid penalty"
+OR user_question_mentions = "registration stop"
+THEN reference_statute = "320.18"
+AND detailed_file = "320.18_Operational_Notes.txt"
+
+IF user_question_mentions = "nonresident registration"
+OR user_question_mentions = "out-of-state plate"
+OR user_question_mentions = "do they need Florida registration"
+OR user_question_mentions = "RV in Florida"
+OR user_question_mentions = "mobile home in Florida"
+OR user_question_mentions = "commercial vehicle out of state"
+THEN reference_statute = "320.37"
+AND detailed_file = "320.37_Operational_Notes.txt"
+
+IF user_question_mentions = "nonresident works in Florida"
+OR user_question_mentions = "out-of-state plate working in Florida"
+OR user_question_mentions = "children in public school"
+OR user_question_mentions = "10 days to register"
+OR user_question_mentions = "college student out-of-state plate"
+OR user_question_mentions = "work-study"
+THEN reference_statute = "320.38"
+AND detailed_file = "320.38_Operational_Notes.txt"
+
+============================================================
+REGISTRATION REQUIREMENTS / INSURANCE LAW
+============================================================
+
+STATUTE:
+320.02
+
+CONTROLS:
+- Registration required
+- Insurance / financial responsibility proof
+- VIN verification for out-of-state vehicles
+- False registration information
+- Registration refusal
+- Registration stops
+- Imported vehicle federal compliance
+
+AI ROUTING:
+IF the issue involves whether registration is required, insurance proof, VIN verification, registration stop, false registration information, or imported vehicle registration, check 320.02.
+
+OPERATIONAL RULES:
+
+IF motor_vehicle_operated_on_Florida_roads = TRUE
+THEN Florida_registration_required = TRUE
+
+IF motor_vehicle_not_operated_on_Florida_roads_during_registration_period = TRUE
+THEN registration_not_required_for_that_period = TRUE
+
+IF vehicle_registered_outside_Florida_before_Florida_registration = TRUE
+THEN VIN_verification_required = TRUE
+
+IF required_insurance_or_financial_responsibility_proof_missing = TRUE
+THEN registration_must_be_refused = TRUE
+
+IF registration_obtained_by_false_or_fraudulent_representation = TRUE
+THEN plate_cancellation_review_required = TRUE
+
+IF owner_or_co_owner_driver_license_suspended_for_failure_to_pay_eligible_fines = TRUE
+THEN registration_or_reregistration_may_be_withheld = TRUE
+
+IF imported_vehicle_not_federally_compliant = TRUE
+THEN vehicle_cannot_be_sold_titled_and_registered_until_federal_certification_review_complete = TRUE
+
+COMMON USER QUESTIONS:
+- Can we register without insurance?
+- Does out-of-state vehicle need VIN verification?
+- Why is registration blocked?
+- Can customer register if insurance is missing?
+- Imported vehicle registration issue.
+
+============================================================
+TAX COLLECTOR / FRVIS / REGISTRATION REFUSAL LAW
+============================================================
+
+STATUTE:
+320.03
+
+CONTROLS:
+- Tax collector registration authority
+- Registration certificate / plate / sticker issuance
+- FRVIS
+- Driver license status check
+- Registration refusal due to license surrender issue
+
+AI ROUTING:
+IF the issue involves tag office/tax collector refusal, FRVIS, registration blocked at tag office, validation sticker, or license surrender issue, check 320.03.
+
+OPERATIONAL RULES:
+
+IF tax_collector_processing_registration = TRUE
+THEN tax_collector_acts_as_authorized_agent_of_department = TRUE
+
+IF registration_application_received = TRUE
+AND department_renewal_notice_not_issued = TRUE
+THEN driver_license_status_check_required = TRUE
+
+IF applicant_driver_license_cancelled_suspended_or_revoked = TRUE
+THEN surrender_status_review_required = TRUE
+
+IF applicant_required_to_surrender_driver_license = TRUE
+AND driver_license_not_surrendered = TRUE
+THEN tax_collector_must_refuse_registration = TRUE
+
+IF license_registration_sold = TRUE
+THEN FRVIS_50_cent_fee_applies = TRUE
+
+COMMON USER QUESTIONS:
+- Tag office refused registration.
+- Registration blocked because license issue.
+- Tax collector says they cannot issue.
+- Validation sticker issue.
+- FRVIS issue.
+
+============================================================
+REGISTRATION RECORDS / LOOKUP LAW
+============================================================
+
+STATUTE:
+320.05
+
+CONTROLS:
+- Registration records
+- Tag / VIN / title / decal lookup
+- Certified copies
+- Public records / privacy
+- Dealer business-use access
+- Inquiry/audit trail record
+
+AI ROUTING:
+IF the issue involves registration lookup, tag search, VIN search, certified registration record, missing audit trail, or record verification, check 320.05.
+
+OPERATIONAL RULES:
+
+IF registration_record_information_requested = TRUE
+THEN positive_proof_of_identification_required = TRUE
+
+IF agency_furnishes_registration_record_information = TRUE
+THEN requester_name_and_address_must_be_recorded = TRUE
+
+IF registration_record_inquiry_made = TRUE
+THEN inquiry_record_retention_required_for_6_months = TRUE
+
+IF motor_vehicle_dealer_requests_record_for_business_use = TRUE
+THEN professional_or_business_use_access_review_required = TRUE
+
+IF missing_audit_trail = TRUE
+THEN record_search_and_inquiry_history_review_required = TRUE
+
+COMMON USER QUESTIONS:
+- Missing audit trail.
+- Need to look up registration by tag.
+- Need VIN registration record.
+- Need certified registration copy.
+- Need record support for rejection.
+
+============================================================
+REGISTRATION PERIODS / RENEWAL PERIODS LAW
+============================================================
+
+STATUTE:
+320.055
+
+CONTROLS:
+- Registration period
+- Renewal period
+- Birth month expiration
+- Co-owner first-listed owner rule
+- Business/commercial registration periods
+- Six-month registration
+- Apportioned/commercial periods
+
+AI ROUTING:
+IF the issue involves registration period, birthday expiration, co-owner birthday, commercial registration period, six-month registration, or expiration timing, check 320.055.
+
+OPERATIONAL RULES:
+
+IF vehicle_owned_by_natural_person = TRUE
+AND vehicle_subject_to_birth_month_registration_period = TRUE
+THEN registration_period_begins_first_day_of_owner_birth_month = TRUE
+
+IF vehicle_registered_to_multiple_natural_persons = TRUE
+THEN first_owner_birth_month_controls_registration_period = TRUE
+
+IF birth_month_registration_period_applies = TRUE
+THEN renewal_period_ends_at_midnight_on_owner_date_of_birth = TRUE
+
+IF owner_license_suspended_for_DUI_related_reason = TRUE
+AND six_month_registration_required_for_reinstatement = TRUE
+THEN six_month_registration_required = TRUE
+
+IF short_term_rental_vehicle = TRUE
+THEN registration_period_begins_June_1_and_ends_May_31 = TRUE
+
+IF apportioned_registration = TRUE
+THEN department_designated_12_month_registration_period_applies = TRUE
+
+COMMON USER QUESTIONS:
+- Why does registration expire on birthday?
+- Which owner birthday controls?
+- Commercial registration period?
+- Six-month registration?
+- Renewal period question.
+
+============================================================
+LICENSE PLATE / VALIDATION STICKER LAW
+============================================================
+
+STATUTE:
+320.06
+
+CONTROLS:
+- Registration certificate issuance
+- License plate issuance
+- Validation sticker issuance
+- Plate replacement cycle
+- Sticker placement
+- Plate/state ownership
+- IRP 3-year plate cycle
+
+AI ROUTING:
+IF the issue involves license plate, renewal sticker, validation sticker, 10-year plate replacement, apportioned plate, or plate expiration display, check 320.06.
+
+OPERATIONAL RULES:
+
+IF initial_registration_application_approved = TRUE
+AND required_license_tax_and_fees_paid = TRUE
+THEN registration_certificate_and_license_plate_issue = TRUE
+
+IF license_plate_issued = TRUE
+THEN validation_sticker_issue_required = TRUE
+
+IF validation_sticker_issued = TRUE
+THEN sticker_should_be_placed_upper_right_corner_of_plate = TRUE
+
+IF standard_license_plate_issued = TRUE
+THEN plate_replacement_cycle_years = 10
+
+IF standard_license_plate_age_years >= 10
+THEN plate_replacement_required_on_renewal = TRUE
+
+IF apportioned_IRP_vehicle = TRUE
+THEN plate_replacement_cycle_years = 3
+
+IF license_plate_issued_under_chapter_320 = TRUE
+THEN plate_is_property_of_state = TRUE
+
+COMMON USER QUESTIONS:
+- Does customer need a new plate?
+- Why plate replacement?
+- Sticker placement?
+- Plate is 10 years old.
+- Apportioned plate replacement.
+
+============================================================
+REGISTRATION CERTIFICATE POSSESSION LAW
+============================================================
+
+STATUTE:
+320.0605
+
+CONTROLS:
+- Registration certificate possession
+- Proof of registration
+- Registration copy
+- Rental/lease documentation
+- Online renewal receipt
+- IRP cab card
+- Replacement vehicle 30-day exception
+
+AI ROUTING:
+IF the issue involves proof of registration, registration copy, cab card, rental/lease documentation, or what customer must keep in the vehicle, check 320.0605.
+
+OPERATIONAL RULES:
+
+IF vehicle_operated_on_Florida_roads = TRUE
+THEN registration_certificate_or_acceptable_substitute_must_be_carried = TRUE
+
+IF law_enforcement_or_department_agent_demands_registration = TRUE
+THEN operator_must_exhibit_registration_or_acceptable_substitute = TRUE
+
+IF electronic_copy_of_rental_or_lease_documentation_available = TRUE
+THEN possession_requirement_may_be_satisfied_for_rental_or_lease_vehicle = TRUE
+
+IF temporary_receipt_from_self_initiated_online_renewal_available = TRUE
+THEN possession_requirement_may_be_satisfied = TRUE
+
+IF IRP_cab_card_available = TRUE
+THEN possession_requirement_may_be_satisfied = TRUE
+
+IF replacement_vehicle_purchased_within_30_days = TRUE
+THEN 320_0605_possession_requirement_exception_applies = TRUE
+
+COMMON USER QUESTIONS:
+- Does customer need registration in the car?
+- Is copy okay?
+- Is electronic rental agreement okay?
+- Cab card question.
+- Replacement vehicle 30 days.
+
+============================================================
+REPLACEMENT PLATE / DECAL / STICKER LAW
+============================================================
+
+STATUTE:
+320.0607
+
+CONTROLS:
+- Replacement plate
+- Replacement decal
+- Replacement validation sticker
+- Lost / stolen / destroyed / damaged plate
+- Police report no-charge replacement
+- Lost-in-mail replacement
+
+AI ROUTING:
+IF the issue involves replacement plate, lost plate, stolen plate, destroyed plate, replacement decal, replacement sticker, or plate lost in mail, check 320.0607.
+
+OPERATIONAL RULES:
+
+IF license_plate_lost = TRUE
+THEN replacement_application_required = TRUE
+
+IF license_plate_stolen = TRUE
+THEN replacement_application_required = TRUE
+
+IF license_plate_destroyed = TRUE
+THEN replacement_application_required = TRUE
+
+IF replacement_application_submitted = TRUE
+THEN plate_sticker_or_decal_number_required = TRUE
+
+IF replacement_application_submitted = TRUE
+THEN statement_lost_stolen_or_destroyed_required = TRUE
+
+IF stolen_plate_sticker_or_decal = TRUE
+AND police_report_copy_provided = TRUE
+THEN replacement_at_no_charge_required = TRUE
+
+IF plate_sticker_or_decal_lost_in_mail = TRUE
+THEN audit_number_and_date_issued_required = TRUE
+
+COMMON USER QUESTIONS:
+- Customer lost plate.
+- Plate stolen.
+- Replacement decal.
+- Lost in mail.
+- Damaged plate.
+- Does police report make it free?
+
+============================================================
+PLATE TRANSFER / TAG NOT IN CUSTOMER NAME LAW
+============================================================
+
+STATUTE:
+320.0609
+
+CONTROLS:
+- Plate transfer
+- Plate exchange
+- Plate issued to owner
+- Plate remains in registered owner name
+- Same-classification transfer
+- Different-classification exchange
+- Plate removal at sale/trade/disposition
+- Transfer fee
+- Surviving spouse plate transfer
+- Dealer electronic transfer reporting
+
+AI ROUTING:
+IF the issue involves transfer tag, transfer plate, tag not in customer’s name, spouse/relative plate, plate exchange, same-classification transfer, or IRF due to no transferable plate, check 320.0609 and 320.072.
+
+OPERATIONAL RULES:
+
+IF registration_license_plate_issued = TRUE
+THEN plate_remains_in_name_of_registered_owner = TRUE
+
+IF plate_transfer_requested = TRUE
+THEN plate_owner_must_be_registered_owner = TRUE
+
+IF transfer_tag_not_in_customer_name = TRUE
+THEN plate_transfer_not_allowed_without_owner_authority_review = TRUE
+
+IF plate_owner_does_not_match_customer = TRUE
+THEN plate_transfer_eligibility_problem = TRUE
+
+IF owner_acquires_replacement_vehicle_same_classification = TRUE
+THEN plate_may_transfer_to_replacement_vehicle = TRUE
+
+IF replacement_vehicle_different_classification = TRUE
+THEN plate_exchange_for_appropriate_classification_review_required = TRUE
+
+IF vehicle_sold_traded_transferred_or_disposed = TRUE
+THEN owner_must_remove_license_plate = TRUE
+
+IF plate_temporarily_or_permanently_attached_to_replacement_vehicle = TRUE
+THEN plate_transfer_application_required = TRUE
+
+IF plate_transfer_application_required = TRUE
+THEN transfer_fee_4_50_required_unless_exception_applies = TRUE
+
+IF plate_transfer_not_allowed = TRUE
+THEN IRF_review_required = TRUE
+
+COMMON USER QUESTIONS:
+- Transfer tag not in customer’s name.
+- Can customer use spouse’s plate?
+- Can customer use parent’s plate?
+- Plate owner mismatch.
+- Same classification transfer?
+- New plate vs transfer plate?
+- IRF when tag cannot transfer?
+
+============================================================
+REGISTRATION EXPIRATION / DELINQUENT FEE LAW
+============================================================
+
+STATUTE:
+320.07
+
+CONTROLS:
+- Registration expiration
+- Renewal required
+- Expired registration penalties
+- 6-month expired threshold
+- Delinquent registration fee
+- Military/leased vehicle exceptions
+
+AI ROUTING:
+IF the issue involves expired registration, renewal required, late registration, delinquent fee, birthday expiration, or registration expired over 6 months, check 320.07.
+
+OPERATIONAL RULES:
+
+IF registration_period_expired = TRUE
+THEN registration_renewal_required = TRUE
+
+IF registration_expired = TRUE
+AND vehicle_operated_on_Florida_roads = TRUE
+THEN expired_registration_violation_risk = TRUE
+
+IF registration_expired_6_months_or_less = TRUE
+THEN noncriminal_nonmoving_infraction_risk = TRUE
+
+IF registration_expired_more_than_6_months = TRUE
+THEN increased_penalty_review_required = TRUE
+
+IF registration_not_renewed_before_end_of_due_month = TRUE
+THEN delinquent_fee_review_required = TRUE
+
+IF servicemember_registration_expired_while_on_active_duty = TRUE
+THEN military_waiver_review_required = TRUE
+
+COMMON USER QUESTIONS:
+- Registration expired.
+- Delinquent fee.
+- Expired over 6 months.
+- Can customer drive?
+- Transfer expired plate?
+- Military waiver?
+
+============================================================
+ADVANCE RENEWAL LAW
+============================================================
+
+STATUTE:
+320.071
+
+CONTROLS:
+- Advance registration renewal
+- 3-month early renewal window
+- 27-month maximum period
+- Validation sticker / mobile home sticker issuance
+- IRP advance renewal
+
+AI ROUTING:
+IF the issue involves renewing registration early, advance registration, 3 months before expiration, or early renewal sticker, check 320.071.
+
+OPERATIONAL RULES:
+
+IF vehicle_currently_registered_in_Florida = TRUE
+AND advance_renewal_requested = TRUE
+THEN advance_renewal_review_required = TRUE
+
+IF advance_renewal_requested = TRUE
+THEN renewal_may_be_filed_during_3_months_before_expiration = TRUE
+
+IF advance_renewal_requested = TRUE
+THEN registration_period_may_not_exceed_27_months = TRUE
+
+IF renewal_application_filed = TRUE
+AND appropriate_license_tax_service_charges_and_required_fees_paid = TRUE
+THEN validation_sticker_or_mobile_home_sticker_issue_required = TRUE
+
+COMMON USER QUESTIONS:
+- Can customer renew early?
+- How early can registration renew?
+- 3-month window?
+- Renewal sticker before expiration?
+
+============================================================
+INITIAL REGISTRATION FEE / IRF LAW
+============================================================
+
+STATUTE:
+320.072
+
+CONTROLS:
+- $225 Initial Registration Fee
+- New plate
+- Plate transfer exemption
+- Renewal exemption
+- Co-owner transfer exemption
+- Operation-of-law exemption
+- Immediate family same-household exemption
+- Military/government/antique exemptions
+- Storage/non-operational affidavit
+- IRF refund
+
+AI ROUTING:
+IF the issue involves IRF, $225 fee, new plate, transfer tag not in customer’s name, no transferable plate, family transfer, military exemption, or new registration fee, check 320.072.
+
+OPERATIONAL RULES:
+
+IF initial_application_for_registration = TRUE
+AND motor_vehicle_classified_under_320_08_2_3_or_9_c_d = TRUE
+THEN initial_registration_fee_225_review_required = TRUE
+
+IF registration_renewal_transaction = TRUE
+THEN IRF_not_applicable = TRUE
+
+IF plate_transfer_or_exchange_from_disposed_vehicle_to_newly_acquired_vehicle_under_320_0609 = TRUE
+THEN IRF_not_applicable = TRUE
+
+IF transfer_tag_not_in_customer_name = TRUE
+THEN plate_transfer_not_allowed_review_required = TRUE
+
+IF plate_transfer_not_allowed = TRUE
+THEN IRF_review_required = TRUE
+
+IF customer_has_no_valid_transferable_plate = TRUE
+AND new_plate_required = TRUE
+THEN IRF_likely_applies_unless_exemption = TRUE
+
+IF new_plate_issued = TRUE
+AND no_IRF_exemption_applies = TRUE
+THEN collect_IRF_225_review_required = TRUE
+
+COMMON USER QUESTIONS:
+- Does IRF apply?
+- New plate fee.
+- Transfer tag not in customer’s name.
+- Customer has no tag.
+- Family transfer exemption.
+- Military exemption.
+- Is $225 due?
+
+============================================================
+LICENSE TAX / REGISTRATION FEE CLASSIFICATION LAW
+============================================================
+
+STATUTE:
+320.08
+
+CONTROLS:
+- License tax classification
+- Registration taxes
+- Private auto weight class
+- Truck weight class
+- Heavy truck GVW
+- Motorcycle / moped
+- Mobile home
+- Trailer
+- Fee table routing
+
+AI ROUTING:
+IF the issue involves license tax, registration fee, tag fee, truck fee, private auto fee, mobile home fee, or exact fee quote, check 320.08 and raw fee tables.
+
+OPERATIONAL RULES:
+
+IF registration_or_renewal_requested = TRUE
+THEN license_tax_classification_required = TRUE
+
+IF vehicle_type = "private_auto"
+THEN private_auto_net_weight_classification_required = TRUE
+
+IF vehicle_type = "truck"
+THEN truck_net_weight_classification_required = TRUE
+
+IF heavy_truck_or_truck_tractor = TRUE
+THEN gross_vehicle_weight_classification_required = TRUE
+
+IF exact_fee_quote_requested = TRUE
+THEN reference_raw_fee_tables_and_fee_notes_required = TRUE
+
+IF license_tax_amount_needed = TRUE
+THEN do_not_guess_fee_amount = TRUE
+
+COMMON USER QUESTIONS:
+- How much is registration?
+- Truck registration fee?
+- Private auto fee?
+- Mobile home fee?
+- What classification?
+- Why is fee different?
+
+============================================================
+STATE TRANSPORTATION SURCHARGE LAW
+============================================================
+
+STATUTE:
+320.0804
+
+CONTROLS:
+- License tax surcharge
+- State transportation surcharge
+- Registration fee calculation
+- 320.08 fee cross-reference
+
+AI ROUTING:
+IF the issue involves surcharge, state transportation surcharge, registration fee calculation, or license tax surcharge, check 320.0804.
+
+OPERATIONAL RULES:
+
+IF license_tax_imposed_under_320_08 = TRUE
+THEN surcharge_review_required = TRUE
+
+IF license_tax_category = "320.08(11)"
+THEN surcharge_under_320_0804_not_applicable = TRUE
+
+IF surcharge_applicable = TRUE
+THEN surcharge_amount = "$1.20"
+
+IF exact_registration_fee_quote_requested = TRUE
+THEN reference_320_08_and_raw_fee_tables_required = TRUE
+
+COMMON USER QUESTIONS:
+- What is surcharge?
+- Registration surcharge?
+- Why extra $1.20?
+- Fee quote missing surcharge.
+
+============================================================
+LICENSE TAX EXEMPTION LAW
+============================================================
+
+STATUTE:
+320.10
+
+CONTROLS:
+- License tax exemptions
+- Military nonresident exemption
+- Federal government exemption
+- Nonprofit / public service exemption
+- Religious/community service vehicle exemption
+- Exempt plate/sticker issuance
+- Documentary proof
+
+AI ROUTING:
+IF the issue involves exempt registration, military exemption, government plate, nonprofit exemption, church van, or license tax exemption, check 320.10.
+
+OPERATIONAL RULES:
+
+IF exemption_claimed_under_320_10 = TRUE
+THEN documentary_proof_required = TRUE
+
+IF exemption_claimed_under_320_10 = TRUE
+THEN proof_required_at_initial_issuance_and_each_renewal = TRUE
+
+IF nonresident_US_Armed_Forces_member_stationed_in_Florida_under_orders = TRUE
+AND vehicle_owned_by_and_operated_exclusively_for_personal_use = TRUE
+THEN license_tax_exemption_review_required = TRUE
+
+IF vehicle_owned_or_operated_exclusively_by_Federal_Government = TRUE
+THEN license_tax_exemption_review_required = TRUE
+
+IF exemption_documentation_missing = TRUE
+THEN exemption_not_ready_for_submission = TRUE
+
+COMMON USER QUESTIONS:
+- Military registration exemption.
+- Government plate.
+- Nonprofit exemption.
+- Church van exemption.
+- Does exempt plate still cost something?
+- What proof is needed?
+
+============================================================
+DEALER / MANUFACTURER PLATE LAW
+============================================================
+
+STATUTE:
+320.13
+
+CONTROLS:
+- Dealer plates
+- Manufacturer plates
+- Inventory vehicle use
+- Demonstration use
+- Dealer business use
+- Not for hire
+- Tow truck / wrecker restrictions
+- Heavy truck dealer demo limits
+
+AI ROUTING:
+IF the issue involves dealer plate, dealer tag, demo plate, manufacturer plate, heavy truck dealer plate, or dealer plate misuse, check 320.13.
+
+OPERATIONAL RULES:
+
+IF dealer_plate_issued = TRUE
+AND vehicle_owned_by_dealer = TRUE
+AND vehicle_in_inventory_and_for_sale = TRUE
+THEN dealer_plate_use_may_be_valid = TRUE
+
+IF dealer_plate_issued = TRUE
+AND vehicle_operated_in_connection_with_dealer_business = TRUE
+THEN dealer_plate_use_may_be_valid = TRUE
+
+IF dealer_plate_used_for_hire = TRUE
+THEN dealer_plate_use_not_valid = TRUE
+
+IF dealer_plate_used_on_tow_truck_or_wrecker = TRUE
+AND tow_truck_or_wrecker_not_being_demonstrated_for_sale = TRUE
+THEN dealer_plate_use_not_valid = TRUE
+
+IF heavy_truck_dealer_plate_used_for_demonstration = TRUE
+THEN demonstration_period_must_not_exceed_24_hours = TRUE
+
+COMMON USER QUESTIONS:
+- Can we use dealer plate?
+- Demo plate question.
+- Dealer plate after sale?
+- Dealer plate on wrecker?
+- Heavy truck dealer plate.
+
+============================================================
+TEMPORARY TAG LAW
+============================================================
+
+STATUTE:
+320.131
+
+CONTROLS:
+- Temporary tags
+- Dealer temp tags
+- Private sale temp tags
+- 10-day tag
+- 30-day tag
+- 60-day tag
+- 90-day tag
+- Two-tag limit
+- Dealer electronic issuance
+- Temp tag misuse/fraud
+
+AI ROUTING:
+IF the issue involves temporary tag, temp tag, paper tag, third temp tag, 10-day tag, 60-day tag, 90-day tag, or temp tag misuse, check 320.131.
+
+OPERATIONAL RULES:
+
+IF vehicle_must_be_weighed_before_registration = TRUE
+THEN temporary_tag_validity_days = 10
+
+IF vehicle_must_be_emission_tested_before_registration = TRUE
+THEN temporary_tag_validity_days = 10
+
+IF vehicle_must_have_VIN_verified_before_registration = TRUE
+THEN temporary_tag_validity_days = 10
+
+IF existing_owner_submitted_application_to_transfer_valid_out_of_state_title_subject_to_lien = TRUE
+THEN temporary_tag_validity_days = 60
+
+IF personalized_or_specialty_plate_being_manufactured = TRUE
+THEN temporary_tag_validity_days = 90
+
+IF temporary_tag_issued_under_320_131 = TRUE
+AND no_specific_duration_exception_applies = TRUE
+THEN temporary_tag_validity_days = 30
+
+IF temporary_tag_issued_under_320_131 = TRUE
+AND no_specific_exception_allows_more = TRUE
+THEN no_more_than_two_temp_tags_same_person_same_vehicle = TRUE
+
+IF dealer_issues_temp_tag = TRUE
+THEN dealer_electronic_temp_tag_system_required = TRUE
+
+IF temporary_tag_abused_to_avoid_registration = TRUE
+THEN misdemeanor_first_degree_risk = TRUE
+
+COMMON USER QUESTIONS:
+- Can we issue temp tag?
+- Third temp tag?
+- 10-day VIN verification tag.
+- 60-day out-of-state title subject to lien tag.
+- 90-day specialty plate tag.
+- Temp tag expired.
+- Temp tag abuse.
+
+============================================================
+TEMPORARILY EMPLOYED REGISTRATION LAW
+============================================================
+
+STATUTE:
+320.1325
+
+CONTROLS:
+- Temporarily employed nonresident
+- 90-day temporary registration plate
+- One 90-day renewal
+- 180-day maximum
+- Permanent registration after 180 days
+- Commercial vehicle exclusion
+
+AI ROUTING:
+IF the issue involves nonresident temporarily employed in Florida, 90-day temporary registration, temporary employment registration, or nonresident working temporarily, check 320.1325.
+
+OPERATIONAL RULES:
+
+IF applicant_temporarily_employed_in_Florida = TRUE
+AND applicant_not_Florida_resident = TRUE
+AND applicant_owns_or_leases_motor_vehicle = TRUE
+THEN temporary_employment_registration_required = TRUE
+
+IF temporary_employment_registration_required = TRUE
+THEN temporary_registration_plate_validity_days = 90
+
+IF temporary_employment_registration_renewal_requested = TRUE
+AND prior_renewal_used = FALSE
+THEN one_additional_90_day_renewal_may_apply = TRUE
+
+IF temporary_employment_registration_days_used >= 180
+AND applicant_still_needs_to_remain_in_Florida = TRUE
+THEN permanent_registration_required = TRUE
+
+IF vehicle_is_commercial_motor_vehicle = TRUE
+THEN temporary_registration_under_320_1325_not_allowed = TRUE
+
+COMMON USER QUESTIONS:
+- Nonresident temporarily working in Florida.
+- 90-day temp registration.
+- Can they renew 90-day registration?
+- What happens after 180 days?
+- Commercial vehicle allowed?
+
+============================================================
+TRANSPORTER PLATE LAW
+============================================================
+
+STATUTE:
+320.133
+
+CONTROLS:
+- Transporter plates
+- Business transport of unregistered/unplated vehicles
+- Liability insurance
+- January-to-December period
+- No refund
+
+AI ROUTING:
+IF the issue involves transporter plate, moving unregistered vehicle, transport plate, or vehicle with no plate being transported, check 320.133.
+
+OPERATIONAL RULES:
+
+IF applicant_transports_motor_vehicles_incidental_to_business = TRUE
+AND vehicles_not_currently_registered_to_any_owner = TRUE
+AND vehicles_do_not_have_license_plates = TRUE
+THEN transporter_plate_review_available = TRUE
+
+IF transporter_plate_requested = TRUE
+THEN liability_insurance_100000_or_more_required = TRUE
+
+IF transporter_plate_issued = TRUE
+THEN valid_only_on_motor_vehicle_in_transporter_possession_while_transporting_in_course_of_business = TRUE
+
+IF transporter_plate_issued = TRUE
+THEN plate_validity_period = "January 1 through December 31"
+
+IF transporter_plate_issued = TRUE
+THEN no_refund_for_unexpired_license_period = TRUE
+
+COMMON USER QUESTIONS:
+- Transporter plate.
+- Moving unregistered vehicle.
+- Dealer plate vs transporter plate.
+- Transporter insurance requirement.
+- Refund for transporter plate?
+
+============================================================
+REGISTRATION REFUND / LICENSE TAX CREDIT LAW
+============================================================
+
+STATUTE:
+320.15
+
+CONTROLS:
+- Registration refund
+- License tax credit
+- Vehicle destroyed
+- Vehicle permanently removed from Florida
+- Plate/sticker surrender
+- Advance renewal refund
+- For-hire plate credit cap
+
+AI ROUTING:
+IF the issue involves registration refund, license tax refund, plate surrender refund, vehicle destroyed, moved out of state, or advance renewal refund, check 320.15.
+
+OPERATIONAL RULES:
+
+IF resident_owner_vehicle_destroyed = TRUE
+AND license_plate_or_mobile_home_sticker_surrendered = TRUE
+THEN license_tax_credit_review_required = TRUE
+
+IF resident_owner_vehicle_permanently_removed_from_state = TRUE
+AND license_plate_or_mobile_home_sticker_surrendered = TRUE
+THEN license_tax_credit_review_required = TRUE
+
+IF license_tax_credit_amount < 3
+THEN credit_not_available_under_320_15 = TRUE
+
+IF surrendered_plate_type = "for_hire"
+THEN credit_may_not_exceed_one_half_annual_license_tax_amount = TRUE
+
+IF registration_renewed_during_advance_renewal_period = TRUE
+AND plate_surrendered_before_end_of_renewal_period = TRUE
+THEN refund_of_320_08_license_taxes_review_required = TRUE
+
+COMMON USER QUESTIONS:
+- Customer wants registration refund.
+- Vehicle destroyed.
+- Vehicle moved out of Florida.
+- Plate surrendered.
+- Advance renewal refund.
+- For-hire plate credit.
+
+============================================================
+WITHHOLDING REGISTRATION / BACK TAX LAW
+============================================================
+
+STATUTE:
+320.18
+
+CONTROLS:
+- Withholding registration
+- Back tax
+- Prior period registration tax
+- Dead storage affidavit
+- Dishonored check cancellation
+- Unpaid weight/safety penalty
+- Commercial impound risk
+- Mobile home repossession exemption
+
+AI ROUTING:
+IF the issue involves withholding registration, back tax, dead storage, storage exemption, dishonored check, unpaid penalty, or registration stop, check 320.18.
+
+OPERATIONAL RULES:
+
+IF owner_or_co_owner_failed_to_register_for_previous_period_when_required = TRUE
+THEN department_may_withhold_registration_until_prior_tax_paid = TRUE
+
+IF prior_period_registration_tax_unpaid = TRUE
+THEN back_tax_review_required = TRUE
+
+IF owner_claims_vehicle_was_not_operated = TRUE
+THEN dead_storage_affidavit_review_required = TRUE
+
+IF notarized_or_certified_affidavit_states_vehicle_continuously_maintained_in_dead_storage_and_not_operated = TRUE
+THEN prior_period_license_tax_exemption_review_required = TRUE
+
+IF dishonored_check_used_to_pay_registration_license_ID_decal_fee_or_tax = TRUE
+THEN department_cancellation_review_required = TRUE
+
+IF mobile_home_repossession = TRUE
+AND dwelling_not_transferred_or_titled_for_occupancy = TRUE
+THEN mobile_home_registration_exemption_review_required = TRUE
+
+COMMON USER QUESTIONS:
+- Back tax due.
+- Registration withheld.
+- Vehicle in dead storage.
+- Dishonored check stop.
+- Unpaid penalty stop.
+- Mobile home repo registration exemption.
+
+============================================================
+NONRESIDENT REGISTRATION EXEMPTION LAW
+============================================================
+
+STATUTE:
+320.37
+
+CONTROLS:
+- Nonresident exemption
+- Out-of-state registration
+- Proper display
+- Commercial vehicle exclusion
+- For-hire exclusion
+- RV/mobile home 6-month Florida presence
+- Foreign corporation exclusion
+
+AI ROUTING:
+IF the issue involves nonresident registration, out-of-state plate, whether customer needs Florida registration, RV/mobile home in Florida, or commercial out-of-state vehicle, check 320.37 and 320.38.
+
+OPERATIONAL RULES:
+
+IF vehicle_owner_is_nonresident = TRUE
+AND vehicle_properly_registered_in_owner_home_jurisdiction = TRUE
+AND registration_number_conspicuously_displayed = TRUE
+THEN Florida_registration_exemption_review_available = TRUE
+
+IF vehicle_owner_is_nonresident = TRUE
+AND home_jurisdiction_registration_not_valid_or_not_displayed = TRUE
+THEN Florida_registration_exemption_not_supported = TRUE
+
+IF owner_is_foreign_corporation_doing_business_in_Florida = TRUE
+THEN 320_37_nonresident_exemption_not_allowed = TRUE
+
+IF vehicle_operated_for_hire = TRUE
+THEN 320_37_nonresident_exemption_not_allowed = TRUE
+
+IF recreational_vehicle_located_in_Florida_for_at_least_6_consecutive_months = TRUE
+THEN 320_37_nonresident_exemption_not_allowed = TRUE
+
+IF mobile_home_located_in_Florida_for_at_least_6_consecutive_months = TRUE
+THEN 320_37_nonresident_exemption_not_allowed = TRUE
+
+IF vehicle_is_commercial_vehicle = TRUE
+THEN 320_37_nonresident_exemption_not_allowed = TRUE
+
+COMMON USER QUESTIONS:
+- Nonresident with out-of-state plate.
+- Does customer need Florida registration?
+- RV in Florida 6 months.
+- Commercial out-of-state vehicle.
+- For-hire vehicle.
+- Foreign corporation.
+
+============================================================
+NONRESIDENT EMPLOYMENT / SCHOOL RULE
+============================================================
+
+STATUTE:
+320.38
+
+CONTROLS:
+- Nonresident exemption not allowed
+- Florida employment
+- Trade/profession/occupation in Florida
+- Children in Florida public school
+- 10-day registration requirement
+- Student exemption
+- Work-study exemption
+- Migrant/seasonal farm worker exception
+
+AI ROUTING:
+IF the issue involves nonresident working in Florida, out-of-state plate but works here, children in Florida public school, 10-day registration, college student, work-study, or nonresident exemption denial, check 320.38.
+
+OPERATIONAL RULES:
+
+IF nonresident_accepts_employment_in_Florida = TRUE
+AND nonresident_is_not_migrant_or_seasonal_farm_worker = TRUE
+THEN 320_37_exemption_not_allowed = TRUE
+
+IF nonresident_engages_in_trade_profession_or_occupation_in_Florida = TRUE
+AND nonresident_is_not_migrant_or_seasonal_farm_worker = TRUE
+THEN 320_37_exemption_not_allowed = TRUE
+
+IF nonresident_enters_children_into_Florida_public_schools = TRUE
+THEN Florida_registration_required_within_10_days_if_vehicle_operated_on_Florida_roads = TRUE
+
+IF nonresident_accepts_employment_or_starts_public_school_trigger = TRUE
+AND vehicle_operated_on_Florida_roads = TRUE
+THEN Florida_registration_required_within_10_days = TRUE
+
+IF nonresident_full_time_student_enrolled_in_qualifying_institution = TRUE
+AND vehicle_properly_registered_in_another_jurisdiction = TRUE
+THEN Florida_registration_not_required_for_duration_of_enrollment = TRUE
+
+COMMON USER QUESTIONS:
+- Customer has out-of-state plate but works in Florida.
+- Customer moved for job.
+- Children in Florida public school.
+- 10-day registration rule.
+- College student exemption.
+- Work-study exemption.
+
+============================================================
+CROSS-FILE AI DECISION LOGIC
+============================================================
+
+IF user_question_mentions = "transfer tag not in customer name"
+OR user_question_mentions = "plate not in customer name"
+THEN check_files = "320.0609_Operational_Notes.txt, 320.072_Operational_Notes.txt, plate_registration_action_logic_map.txt, rejection_prevention_logic_map.txt"
+
+IF user_question_mentions = "new plate"
+OR user_question_mentions = "no tag to transfer"
+THEN check_files = "320.072_Operational_Notes.txt, 320.08_Operational_Notes.txt, 320.06_Operational_Notes.txt, fee notes/raw fee tables"
+
+IF user_question_mentions = "replacement plate"
+OR user_question_mentions = "lost plate"
+OR user_question_mentions = "stolen plate"
+THEN check_files = "320.0607_Operational_Notes.txt, plate_registration_action_logic_map.txt, forms_required_logic_map.txt"
+
+IF user_question_mentions = "temp tag"
+OR user_question_mentions = "third temp tag"
+THEN check_files = "320.131_Operational_Notes.txt, validation_logic_map.txt, rejection_prevention_logic_map.txt, escalation_red_flags_logic_map.txt"
+
+IF user_question_mentions = "dealer plate"
+OR user_question_mentions = "dealer tag"
+THEN check_files = "320.13_Operational_Notes.txt, dealer workflow notes, escalation_red_flags_logic_map.txt"
+
+IF user_question_mentions = "insurance"
+OR user_question_mentions = "no insurance"
+THEN check_files = "320.02_Operational_Notes.txt, validation_logic_map.txt, rejection_prevention_logic_map.txt"
+
+IF user_question_mentions = "VIN verification"
+AND user_question_mentions = "registration"
+THEN check_files = "320.02_Operational_Notes.txt, 319.23_Operational_Notes.txt, validation_logic_map.txt"
+
+IF user_question_mentions = "registration expired"
+OR user_question_mentions = "delinquent fee"
+THEN check_files = "320.07_Operational_Notes.txt, 320.055_Operational_Notes.txt, fee notes/raw fee tables"
+
+IF user_question_mentions = "registration fee"
+OR user_question_mentions = "tag fee"
+OR user_question_mentions = "license tax"
+THEN check_files = "320.08_Operational_Notes.txt, 320.0804_Operational_Notes.txt, 320.072_Operational_Notes.txt, fee notes/raw fee tables"
+
+IF user_question_mentions = "registration stop"
+OR user_question_mentions = "back tax"
+OR user_question_mentions = "dead storage"
+THEN check_files = "320.18_Operational_Notes.txt, 320.03_Operational_Notes.txt, validation_logic_map.txt"
+
+IF user_question_mentions = "missing audit trail"
+OR user_question_mentions = "registration lookup"
+THEN check_files = "320.05_Operational_Notes.txt, validation_logic_map.txt, rejection_prevention_logic_map.txt"
+
+IF user_question_mentions = "nonresident"
+OR user_question_mentions = "out-of-state plate"
+OR user_question_mentions = "works in Florida"
+THEN check_files = "320.37_Operational_Notes.txt, 320.38_Operational_Notes.txt, 320.1325_Operational_Notes.txt"
+
+============================================================
+COMMON DEALERSHIP QUESTION ROUTING
+============================================================
+
+QUESTION:
+"Transfer tag is not in customer's name."
+
+ROUTE TO:
+- 320.0609_Operational_Notes.txt
+- 320.072_Operational_Notes.txt
+- plate_registration_action_logic_map.txt
+- rejection_prevention_logic_map.txt
+
+EXPECTED ANSWER:
+Do not process as a normal transfer tag. The plate remains in the registered owner’s name. Verify plate owner, vehicle classification, and transfer eligibility. If the customer is not the plate owner, review new plate and IRF.
+
+------------------------------------------------------------
+
+QUESTION:
+"Customer has no insurance."
+
+ROUTE TO:
+- 320.02_Operational_Notes.txt
+- validation_logic_map.txt
+- rejection_prevention_logic_map.txt
+
+EXPECTED ANSWER:
+Registration must be refused if required proof of insurance or financial responsibility is missing. Hold registration until valid proof is obtained.
+
+------------------------------------------------------------
+
+QUESTION:
+"Customer lost their plate."
+
+ROUTE TO:
+- 320.0607_Operational_Notes.txt
+- plate_registration_action_logic_map.txt
+- forms_required_logic_map.txt
+
+EXPECTED ANSWER:
+Replacement plate workflow. Confirm lost/stolen/destroyed status, plate number if available, required statement, and police report if stolen/no-charge replacement is claimed.
+
+------------------------------------------------------------
+
+QUESTION:
+"Customer needs a third temp tag."
+
+ROUTE TO:
+- 320.131_Operational_Notes.txt
+- rejection_prevention_logic_map.txt
+- escalation_red_flags_logic_map.txt
+
+EXPECTED ANSWER:
+Do not issue automatically. Most temporary tags are limited to no more than two for the same person/same vehicle unless an allowed exception or department consumer complaint situation applies.
+
+------------------------------------------------------------
+
+QUESTION:
+"Customer has out-of-state plate but works in Florida."
+
+ROUTE TO:
+- 320.37_Operational_Notes.txt
+- 320.38_Operational_Notes.txt
+- 320.1325_Operational_Notes.txt
+
+EXPECTED ANSWER:
+Nonresident exemption may not apply. If the customer works in Florida and operates the vehicle on Florida roads, Florida registration may be required within 10 days unless an exception applies.
+
+------------------------------------------------------------
+
+QUESTION:
+"Missing audit trail."
+
+ROUTE TO:
+- 320.05_Operational_Notes.txt
+- validation_logic_map.txt
+- rejection_prevention_logic_map.txt
+- dealership_workflows/missing_audit_trail_workflow.txt if available
+
+EXPECTED ANSWER:
+Treat as record verification/audit support issue. Search registration/title/tag/VIN/decal records, review inquiry history where available, gather supporting documents, and hold/escalate if record support is missing.
+
+------------------------------------------------------------
+
+QUESTION:
+"Registration expired over 6 months."
+
+ROUTE TO:
+- 320.07_Operational_Notes.txt
+- 320.055_Operational_Notes.txt
+- fee notes/raw fee tables
+
+EXPECTED ANSWER:
+Renewal required. Expiration over 6 months has higher penalty/compliance risk. Review delinquent fee, registration period, and whether any exception applies.
+
+============================================================
+REJECTION PREVENTION SUMMARY
+============================================================
+
+High rejection/compliance risk exists when:
+- registration is attempted without required insurance proof
+- VIN verification is missing for out-of-state vehicle registration
+- registration stop is ignored
+- tax collector refusal condition is ignored
+- customer driver license surrender issue blocks registration
+- registration record is not verified before relying on it
+- plate is not in customer’s name
+- plate transfer eligibility is assumed without owner match
+- IRF is skipped when new plate is required
+- plate classification mismatch is ignored
+- replacement plate documentation is missing
+- stolen plate police report is missing for no-charge replacement
+- registration expiration/delinquent fee is missed
+- advance renewal is attempted outside allowed window
+- exact fee is quoted without vehicle classification and fee table review
+- exemption is claimed without documentary proof
+- dealer plate is used outside allowed inventory/demo/business purpose
+- temporary tag is issued without statutory basis
+- more than two temp tags are issued without allowed exception
+- transporter plate is used like normal registration
+- refund/credit is promised without surrender/timing review
+- back tax/dead storage affidavit issue is ignored
+- nonresident exemption is applied despite Florida employment/public school/commercial/for-hire/RV/mobile home exceptions
+
+============================================================
+RELATED DETAILED LAW REFERENCE FILES
+============================================================
+
+- 320.02_Operational_Notes.txt
+- 320.03_Operational_Notes.txt
+- 320.05_Operational_Notes.txt
+- 320.055_Operational_Notes.txt
+- 320.06_Operational_Notes.txt
+- 320.0605_Operational_Notes.txt
+- 320.0607_Operational_Notes.txt
+- 320.0609_Operational_Notes.txt
+- 320.07_Operational_Notes.txt
+- 320.071_Operational_Notes.txt
+- 320.072_Operational_Notes.txt
+- 320.08_Operational_Notes.txt
+- 320.0804_Operational_Notes.txt
+- 320.10_Operational_Notes.txt
+- 320.13_Operational_Notes.txt
+- 320.131_Operational_Notes.txt
+- 320.1325_Operational_Notes.txt
+- 320.133_Operational_Notes.txt
+- 320.15_Operational_Notes.txt
+- 320.18_Operational_Notes.txt
+- 320.37_Operational_Notes.txt
+- 320.38_Operational_Notes.txt
+
+============================================================
+RELATED LOGIC MAPS
+============================================================
+
+- plate_registration_action_logic_map.txt
+- transaction_type_logic_map.txt
+- validation_logic_map.txt
+- rejection_prevention_logic_map.txt
+- forms_required_logic_map.txt
+- escalation_red_flags_logic_map.txt
+- ownership_signature_logic_map.txt
+
+============================================================
+RELATED DEALERSHIP WORKFLOW AREAS
+============================================================
+
+- Plate transfer workflow
+- Transfer tag not in customer name workflow
+- New plate / IRF workflow
+- Replacement plate workflow
+- Temporary tag workflow
+- Dealer plate workflow
+- Registration stop workflow
+- Insurance verification workflow
+- VIN verification workflow
+- Registration fee workflow
+- Missing audit trail workflow
+- Nonresident registration workflow
+- Back tax / dead storage workflow
+- Registration refund workflow
+
+============================================================
+IMPORTANT IMPLEMENTATION NOTE
+============================================================
+
+This file is a routing and consolidation file.
+
+When answering a specific registration, plate, insurance, tag, or fee question, the AI should:
+1. Use this file to classify the issue.
+2. Retrieve the specific individual statute note.
+3. Retrieve the matching logic map.
+4. Retrieve the matching dealership workflow note if available.
+5. Retrieve raw fee tables if exact fee amounts are involved.
+6. Give a practical dealership answer with proceed / hold / escalate guidance.
+7. Warn clearly when plate transfer, insurance, IRF, temp tag, or registration stop issues create rejection risk.
+
+============================================================
+END OF FILE
+============================================================

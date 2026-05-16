@@ -1,0 +1,246 @@
+STATUTE: 320.055
+TITLE: Registration Periods; Renewal Periods
+SOURCE: https://www.leg.state.fl.us/statutes/index.cfm?App_mode=Display_Statute&Search_String=&URL=0300-0399/0320/Sections/0320.055.html
+DOCUMENT_TYPE: Florida Law Reference / Operational Notes
+CATEGORY: REGISTRATION PERIODS / RENEWAL PERIODS / BIRTH MONTH / FLEET / APPORTIONED / COMMERCIAL / SHORT-TERM RENTAL
+
+============================================================
+PURPOSE
+============================================================
+
+This statute establishes Florida registration periods and renewal periods for different vehicle classes.
+
+It is the legal anchor for questions about registration expiration timing, renewal period, birth month registration, co-owner birth month rule, 6-month registration after DUI-related license reinstatement, calendar-year registration, June-to-May registration periods, and apportioned/commercial registration periods.
+
+============================================================
+PLAIN ENGLISH SUMMARY
+============================================================
+
+For many vehicles owned by a natural person, the registration period begins on the first day of the owner’s birth month and ends on the last day of the month immediately before the owner’s birth month the next year.
+
+If the vehicle is registered in more than one person’s name, the birth month of the person whose name first appears on the registration is used.
+
+For these vehicles, the renewal period is the 30-day period ending at midnight on the vehicle owner’s date of birth.
+
+Some vehicles are eligible for extended registration periods.
+
+Certain owners whose licenses were suspended for DUI-related reasons must obtain 6-month registration as a condition of reinstatement during the applicable financial responsibility period.
+
+Vehicles not owned by a natural person under certain classes may have January 1 through December 31 registration periods.
+
+Certain vehicle classes, short-term rental vehicles, and unspecified periods may run June 1 through May 31.
+
+Apportioned and certain commercial vehicles have separate registration periods assigned by the department.
+
+============================================================
+TITLE CLERK IMPORTANCE
+============================================================
+
+320.055 is important for:
+- registration expiration questions
+- renewal timing
+- birth month registration
+- multiple owners / first owner birth month
+- 6-month registration due to DUI-related financial responsibility
+- extended registration period
+- business-owned vehicle registration period
+- short-term rental registration period
+- apportioned/commercial registration period
+
+============================================================
+COMMON WORKFLOW CONNECTIONS
+============================================================
+
+- Registration renewal
+- Expired registration
+- Customer asks why registration expires on birthday
+- Co-owner registration expiration
+- Business-owned vehicle registration
+- Short-term rental vehicle
+- Commercial registration
+- Apportioned registration
+- 6-month registration
+- Renewal period / late fee review
+- Registration period correction
+
+============================================================
+OPERATIONAL RULES
+============================================================
+
+IF vehicle_owned_by_natural_person = TRUE
+AND vehicle_subject_to_birth_month_registration_period = TRUE
+THEN registration_period_begins_first_day_of_owner_birth_month = TRUE
+
+IF vehicle_owned_by_natural_person = TRUE
+AND vehicle_subject_to_birth_month_registration_period = TRUE
+THEN registration_period_ends_last_day_of_month_before_next_birth_month = TRUE
+
+IF vehicle_registered_to_multiple_natural_persons = TRUE
+THEN first_owner_birth_month_controls_registration_period = TRUE
+
+IF birth_month_registration_period_applies = TRUE
+THEN renewal_period_ends_at_midnight_on_owner_date_of_birth = TRUE
+
+IF vehicle_eligible_for_extended_registration_period = TRUE
+THEN extended_registration_period_review_required = TRUE
+
+IF owner_license_suspended_for_DUI_related_reason = TRUE
+AND six_month_registration_required_for_reinstatement = TRUE
+THEN six_month_registration_required = TRUE
+
+IF six_month_registration_required = TRUE
+THEN vehicle_not_eligible_for_extended_registration_period = TRUE
+
+IF vehicle_not_owned_by_natural_person = TRUE
+AND statute_class_requires_calendar_year_period = TRUE
+THEN registration_period_begins_January_1_and_ends_December_31 = TRUE
+
+IF short_term_rental_vehicle = TRUE
+THEN registration_period_begins_June_1_and_ends_May_31 = TRUE
+
+IF registration_period_not_otherwise_specified = TRUE
+THEN registration_period_begins_June_1_and_ends_May_31 = TRUE
+
+IF apportioned_registration = TRUE
+THEN department_designated_12_month_registration_period_applies = TRUE
+
+IF nonapportioned_commercial_registration_class_applies = TRUE
+THEN registration_period_begins_December_1_and_ends_November_30 = TRUE
+
+============================================================
+BIRTH MONTH / CO-OWNER LOGIC
+============================================================
+
+IF registration_has_multiple_owners = TRUE
+THEN first_owner_listed_controls_birth_month_expiration = TRUE
+
+IF customer_questions_expiration_date = TRUE
+THEN check_owner_birth_month_or_applicable_vehicle_class_period = TRUE
+
+IF first_owner_changed = TRUE
+THEN registration_period_review_required = TRUE
+
+============================================================
+COMMON DEALERSHIP ISSUES
+============================================================
+
+- Customer thinks registration expiration date is wrong
+- Co-owner birth month confusion
+- Customer wants renewal early/late
+- Business vehicle does not follow personal birth month rule
+- Short-term rental registration period confusion
+- Commercial/apportioned registration period confusion
+- Six-month DUI-related registration requirement
+- Extended registration eligibility confusion
+- Renewal period misunderstood
+- Registration expired before delivery or transfer
+
+============================================================
+REJECTION PREVENTION
+============================================================
+
+High rejection risk if:
+- registration period is assumed without reviewing vehicle class
+- co-owner birth month rule is ignored
+- business/commercial registration period is treated like personal registration
+- apportioned registration period is handled incorrectly
+- 6-month registration requirement is ignored
+- short-term rental period is missed
+- renewal/expiration date is misquoted to customer
+
+============================================================
+AI DECISION LOGIC
+============================================================
+
+IF user_question_mentions = "registration period"
+OR user_question_mentions = "renewal period"
+OR user_question_mentions = "birth month"
+OR user_question_mentions = "expiration date"
+OR user_question_mentions = "co-owner birthday"
+OR user_question_mentions = "six month registration"
+OR user_question_mentions = "commercial registration period"
+THEN reference_320_055 = TRUE
+
+IF personal_vehicle_registration = TRUE
+THEN answer_should_check = "owner birth month and first listed owner if multiple owners"
+
+IF business_vehicle_registration = TRUE
+THEN answer_should_check = "applicable statutory registration period, not birth month"
+
+IF commercial_or_apportioned_vehicle = TRUE
+THEN answer_should_warn = "Commercial/apportioned registration periods may differ from standard personal vehicle registration."
+
+============================================================
+DEALERSHIP WORKFLOW
+============================================================
+
+1. Identify vehicle/owner category.
+- Natural person
+- Multiple natural persons
+- Business/entity
+- Commercial/apportioned
+- Short-term rental
+- Mobile home or special class
+
+2. Determine registration period rule.
+- Birth month
+- Calendar year
+- June-to-May
+- December-to-November
+- Department-designated apportioned period
+- Six-month period
+
+3. Determine renewal period.
+- Birthday-based renewal
+- 31-day before expiration
+- Assigned commercial renewal period
+
+4. Confirm before quoting customer.
+- Do not assume every registration expires on birthday.
+
+5. Hold/escalate if unclear.
+- Commercial/apportioned or special class questions should be reviewed carefully.
+
+============================================================
+COMMON CLERK ANSWER STYLE
+============================================================
+
+When answering a 320.055 question, the AI should explain:
+
+1. What registration period category applies.
+2. Whether owner birth month controls.
+3. Whether first listed owner controls for co-owners.
+4. Whether business/commercial/apportioned rules differ.
+5. Whether the renewal/expiration date should be verified before quoting.
+
+============================================================
+RELATED LOGIC MAPS
+============================================================
+
+- transaction_type_logic_map.txt
+- plate_registration_action_logic_map.txt
+- validation_logic_map.txt
+- rejection_prevention_logic_map.txt
+
+============================================================
+RELATED PROCEDURE AREAS
+============================================================
+
+- Registration renewal procedures
+- Registration expiration workflow
+- Commercial registration procedures
+- Apportioned registration procedures
+- Renewal/late fee review
+
+============================================================
+RELATED STATUTES
+============================================================
+
+- 320.02
+- 320.07
+- 320.071
+- 320.08
+
+============================================================
+END OF FILE
+============================================================

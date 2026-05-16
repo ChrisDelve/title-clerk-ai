@@ -1,0 +1,242 @@
+STATUTE: 320.0605
+TITLE: Certificate of Registration; Possession Required; Exception
+SOURCE: https://www.leg.state.fl.us/statutes/index.cfm?App_mode=Display_Statute&Search_String=&URL=0300-0399/0320/Sections/0320.0605.html
+DOCUMENT_TYPE: Florida Law Reference / Operational Notes
+CATEGORY: REGISTRATION CERTIFICATE / PROOF OF REGISTRATION / RENTAL DOCUMENTS / LEASE DOCUMENTS / CAB CARD / POSSESSION REQUIRED
+
+============================================================
+PURPOSE
+============================================================
+
+This statute governs possession of the registration certificate or acceptable substitute documentation while a vehicle is operated on Florida roads.
+
+It is the legal reference for:
+- registration certificate possession
+- official copy / true copy
+- electronic copy of rental or lease documentation
+- temporary receipt from online renewal
+- IRP cab card
+- first 30 days after purchase of replacement vehicle exception
+- rental/lease documentation requirements
+
+============================================================
+PLAIN ENGLISH SUMMARY
+============================================================
+
+The vehicle operator must have the registration certificate or acceptable substitute document in possession or carried in the vehicle while the vehicle is used on Florida roads.
+
+Acceptable documents may include:
+- registration certificate
+- official copy
+- true copy
+- electronic copy of rental or lease documentation
+- temporary online renewal receipt
+- IRP cab card
+
+The document must be shown on demand to law enforcement or department agents.
+
+This requirement does not apply during the first 30 days after purchase of a replacement vehicle.
+
+A violation is a noncriminal traffic infraction punishable as a nonmoving violation.
+
+For rental/lease vehicles, electronic display of rental or lease documentation does not give law enforcement consent to access other information on the device.
+
+============================================================
+TITLE CLERK IMPORTANCE
+============================================================
+
+320.0605 is important when:
+- customer asks what registration proof must be in vehicle
+- customer only has electronic rental/lease docs
+- dealer issued temporary online renewal receipt
+- IRP cab card is used
+- replacement vehicle purchased within 30 days
+- rental/lease documentation is being used instead of registration certificate
+- customer receives citation for no registration proof
+
+============================================================
+COMMON WORKFLOW CONNECTIONS
+============================================================
+
+- Proof of registration
+- Registration certificate copy
+- Rental vehicle documentation
+- Lease vehicle documentation
+- Replacement vehicle first 30 days
+- Online registration renewal temporary receipt
+- IRP cab card
+- Customer registration paperwork questions
+- Delivery paperwork / customer instruction
+
+============================================================
+OPERATIONAL RULES
+============================================================
+
+IF vehicle_operated_on_Florida_roads = TRUE
+THEN registration_certificate_or_acceptable_substitute_must_be_carried = TRUE
+
+IF law_enforcement_or_department_agent_demands_registration = TRUE
+THEN operator_must_exhibit_registration_or_acceptable_substitute = TRUE
+
+IF registration_certificate_available = TRUE
+THEN possession_requirement_satisfied = TRUE
+
+IF official_copy_or_true_copy_of_registration_available = TRUE
+THEN possession_requirement_satisfied = TRUE
+
+IF electronic_copy_of_rental_or_lease_documentation_available = TRUE
+THEN possession_requirement_may_be_satisfied_for_rental_or_lease_vehicle = TRUE
+
+IF temporary_receipt_from_self_initiated_online_renewal_available = TRUE
+THEN possession_requirement_may_be_satisfied = TRUE
+
+IF IRP_cab_card_available = TRUE
+THEN possession_requirement_may_be_satisfied = TRUE
+
+IF replacement_vehicle_purchased_within_30_days = TRUE
+THEN 320_0605_possession_requirement_exception_applies = TRUE
+
+IF operator_fails_to_carry_required_registration_document = TRUE
+THEN noncriminal_nonmoving_infraction_risk = TRUE
+
+============================================================
+RENTAL / LEASE DOCUMENTATION LOGIC
+============================================================
+
+IF rental_or_lease_documentation_used = TRUE
+THEN documentation_must_include_date_and_time_of_rental = TRUE
+
+IF rental_or_lease_documentation_used = TRUE
+THEN rental_agreement_number_required = TRUE
+
+IF rental_or_lease_documentation_used = TRUE
+THEN rental_vehicle_VIN_required = TRUE
+
+IF rental_or_lease_documentation_used = TRUE
+THEN rental_vehicle_plate_number_and_state_required = TRUE
+
+IF rental_or_lease_documentation_used = TRUE
+THEN vehicle_make_model_and_color_required = TRUE
+
+IF rental_or_lease_documentation_used = TRUE
+THEN vehicle_mileage_required = TRUE
+
+IF rental_or_lease_documentation_used = TRUE
+THEN authorized_renter_name_required = TRUE
+
+IF electronic_device_shown_for_rental_or_lease_documentation = TRUE
+THEN device_access_consent_limited_to_displayed_documentation = TRUE
+
+============================================================
+COMMON DEALERSHIP ISSUES
+============================================================
+
+- Customer asks if registration must stay in vehicle
+- Customer only has a copy of registration
+- Customer renewed online and only has temporary receipt
+- Rental/lease customer asks what proof is needed
+- IRP vehicle uses cab card
+- Customer bought replacement vehicle within 30 days
+- Customer cited for no registration certificate
+- Dealer delivery packet missing registration copy
+- Customer thinks insurance card replaces registration proof
+
+============================================================
+REJECTION PREVENTION
+============================================================
+
+High risk / customer-service issue if:
+- dealer does not provide registration copy or proper temporary proof
+- customer is told insurance proof replaces registration proof
+- rental/lease documentation is incomplete
+- IRP cab card is missing
+- replacement vehicle exception is misunderstood
+- electronic document privacy/consent rule is misstated
+
+============================================================
+AI DECISION LOGIC
+============================================================
+
+IF user_question_mentions = "registration certificate"
+OR user_question_mentions = "proof of registration"
+OR user_question_mentions = "registration copy"
+OR user_question_mentions = "cab card"
+OR user_question_mentions = "rental documentation"
+OR user_question_mentions = "lease documentation"
+THEN reference_320_0605 = TRUE
+
+IF customer_asks_what_to_keep_in_vehicle = TRUE
+THEN answer_should_explain = "Registration certificate or acceptable substitute must be carried or possessed while vehicle is operated."
+
+IF replacement_vehicle_purchased_within_30_days = TRUE
+THEN answer_should_review = "first 30 days after replacement vehicle purchase exception"
+
+============================================================
+DEALERSHIP WORKFLOW
+============================================================
+
+1. Identify document type.
+- Registration certificate
+- Copy
+- Online renewal receipt
+- Rental/lease documentation
+- IRP cab card
+
+2. Determine vehicle situation.
+- Normal registration
+- Rental/lease
+- Replacement vehicle
+- IRP/apportioned
+
+3. Verify required document content.
+- Especially for rental/lease documentation.
+
+4. Give customer instruction.
+- Keep registration proof or acceptable substitute in vehicle/possession.
+- Show on demand to law enforcement or department agent.
+
+5. Escalate if unclear.
+- IRP, rental fleet, or replacement vehicle edge cases may need review.
+
+============================================================
+COMMON CLERK ANSWER STYLE
+============================================================
+
+When answering a 320.0605 question, the AI should explain:
+
+1. What proof is acceptable.
+2. Whether the vehicle is rental/lease/IRP/replacement.
+3. Whether the first 30-day replacement vehicle exception applies.
+4. Whether the customer needs to carry or display proof.
+5. Whether there is a nonmoving infraction risk.
+
+============================================================
+RELATED LOGIC MAPS
+============================================================
+
+- plate_registration_action_logic_map.txt
+- validation_logic_map.txt
+- rejection_prevention_logic_map.txt
+
+============================================================
+RELATED PROCEDURE AREAS
+============================================================
+
+- Registration certificate workflow
+- Rental/lease registration proof workflow
+- IRP cab card workflow
+- Delivery paperwork workflow
+
+============================================================
+RELATED STATUTES
+============================================================
+
+- 320.02
+- 320.03
+- 320.06
+- 320.055
+- 320.07
+
+============================================================
+END OF FILE
+============================================================

@@ -1,0 +1,270 @@
+STATUTE: 320.07
+TITLE: Expiration of Registration; Renewal Required; Penalties
+SOURCE: https://www.leg.state.fl.us/statutes/index.cfm?App_mode=Display_Statute&Search_String=&URL=0300-0399/0320/Sections/0320.07.html
+DOCUMENT_TYPE: Florida Law Reference / Operational Notes
+CATEGORY: REGISTRATION EXPIRATION / RENEWAL REQUIRED / EXPIRED REGISTRATION / DELINQUENT FEE / PENALTIES
+
+============================================================
+PURPOSE
+============================================================
+
+This statute governs registration expiration, renewal requirements, penalties for operating with expired registration, and delinquent registration fees.
+
+It is the legal reference for:
+- expired registration
+- renewal required
+- 6-month expired registration threshold
+- delinquent registration fees
+- registration renewal penalty
+- military/servicemember waiver situations
+- leased vehicle penalty responsibility
+- annual, semiannual, or biennial renewal
+
+============================================================
+PLAIN ENGLISH SUMMARY
+============================================================
+
+Motor vehicle or mobile home registration expires at midnight on the last day of the registration or extended registration period.
+
+For a natural person owner, registration generally expires at midnight on the owner’s birthday.
+
+A vehicle cannot be operated on Florida roads after the renewal period expires, or after midnight on the owner’s birthday for a natural person, unless registration has been renewed.
+
+Registration may be renewed semiannually, annually, or biennially depending on vehicle type and eligibility.
+
+If registration has been expired for 6 months or less, the violation is generally a noncriminal traffic infraction / nonmoving violation.
+
+If registration has been expired more than 6 months, penalties increase.
+
+A delinquent fee applies when registration is not renewed before the end of the month in which renewal is due, beginning on the 11th calendar day of the next month.
+
+Certain servicemember and leased-vehicle exceptions may apply.
+
+============================================================
+TITLE CLERK IMPORTANCE
+============================================================
+
+320.07 is important when reviewing:
+- expired registration
+- renewal timing
+- delinquent fee
+- whether customer can legally operate
+- whether renewal is late
+- whether registration can be renewed annually/biennially/semiannually
+- whether military waiver applies
+- leased vehicle penalty issue
+- registration penalty questions
+
+============================================================
+COMMON WORKFLOW CONNECTIONS
+============================================================
+
+- Registration renewal
+- Expired registration
+- Delinquent fee
+- Birthday expiration
+- Renewal period
+- Transfer tag with expired registration
+- Customer wants to drive before renewal
+- Leased vehicle registration issue
+- Military/servicemember renewal waiver
+- Commercial/semiannual registration review
+
+============================================================
+OPERATIONAL RULES
+============================================================
+
+IF registration_period_expired = TRUE
+THEN registration_renewal_required = TRUE
+
+IF natural_person_owner = TRUE
+THEN registration_expires_midnight_on_owner_birthday_or_applicable_period = TRUE
+
+IF registration_expired = TRUE
+AND vehicle_operated_on_Florida_roads = TRUE
+THEN expired_registration_violation_risk = TRUE
+
+IF registration_expired_6_months_or_less = TRUE
+THEN noncriminal_nonmoving_infraction_risk = TRUE
+
+IF registration_expired_more_than_6_months = TRUE
+AND first_offense = TRUE
+THEN increased_penalty_review_required = TRUE
+
+IF registration_expired_more_than_6_months = TRUE
+AND second_or_subsequent_offense = TRUE
+THEN misdemeanor_second_degree_risk = TRUE
+
+IF registration_not_renewed_before_end_of_due_month = TRUE
+THEN delinquent_fee_review_required = TRUE
+
+IF delinquent_fee_applies = TRUE
+THEN delinquent_fee_begins_11th_calendar_day_after_renewal_period_month = TRUE
+
+IF vehicle_not_required_to_be_registered_during_preceding_registration_period = TRUE
+THEN delinquent_fee_may_not_apply = TRUE
+
+IF servicemember_registration_expired_while_on_active_duty = TRUE
+THEN military_waiver_review_required = TRUE
+
+IF leased_vehicle_registered_in_lessee_name = TRUE
+THEN owner_penalty_responsibility_exception_review_required = TRUE
+
+IF IRP_or_apportioned_registration = TRUE
+THEN delinquent_fees_not_apportionable_under_IRP = TRUE
+
+============================================================
+DELINQUENT FEE LOGIC
+============================================================
+
+IF license_tax_amount > 5
+AND license_tax_amount <= 25
+THEN delinquent_fee = "$5 flat"
+
+IF license_tax_amount > 25
+AND license_tax_amount <= 50
+THEN delinquent_fee = "$10 flat"
+
+IF license_tax_amount > 50
+AND license_tax_amount <= 100
+THEN delinquent_fee = "$15 flat"
+
+IF license_tax_amount > 100
+AND license_tax_amount <= 400
+THEN delinquent_fee = "$50 flat"
+
+IF license_tax_amount > 400
+AND license_tax_amount <= 600
+THEN delinquent_fee = "$100 flat"
+
+IF license_tax_amount > 600
+THEN delinquent_fee = "$250 flat"
+
+============================================================
+COMMON DEALERSHIP ISSUES
+============================================================
+
+- Customer registration expired before delivery
+- Customer wants to transfer expired plate
+- Finance quotes renewal without delinquent fee
+- Registration expired over 6 months
+- Customer thinks birthday month gives extra time
+- Customer says vehicle was not being driven
+- Military customer asks about late renewal
+- Leased vehicle penalty issue
+- Dealer does not check registration expiration before transfer
+- Delinquent fee missed in quote
+
+============================================================
+REJECTION PREVENTION
+============================================================
+
+High rejection risk if:
+- expired registration status is ignored
+- delinquent fee is not quoted
+- registration is expired more than 6 months and penalty risk is not reviewed
+- customer is told they can legally operate without renewal
+- plate transfer is processed without checking registration validity
+- military/servicemember documentation is not reviewed
+- leased vehicle exception is misunderstood
+
+============================================================
+AI DECISION LOGIC
+============================================================
+
+IF user_question_mentions = "expired registration"
+OR user_question_mentions = "registration expired"
+OR user_question_mentions = "renewal required"
+OR user_question_mentions = "delinquent fee"
+OR user_question_mentions = "late registration"
+OR user_question_mentions = "birthday expiration"
+THEN reference_320_07 = TRUE
+
+IF registration_expired = TRUE
+THEN answer_should_warn = "Registration must be renewed before legal operation."
+
+IF registration_expired_more_than_6_months = TRUE
+THEN answer_should_warn = "Higher penalty/review risk applies."
+
+IF delinquent_fee_question = TRUE
+THEN answer_should_review = "license tax amount and delinquent fee schedule."
+
+============================================================
+DEALERSHIP WORKFLOW
+============================================================
+
+1. Identify registration status.
+- Current
+- Expired less than or equal to 6 months
+- Expired more than 6 months
+
+2. Identify owner/registration period.
+- Natural person birthday expiration
+- Business/commercial/special registration period
+- Extended registration
+
+3. Determine renewal requirement.
+- Annual
+- Biennial
+- Semiannual if eligible
+
+4. Review fees.
+- License tax
+- Service charges
+- Surcharges
+- Delinquent fee if late
+
+5. Review exception.
+- Military/servicemember waiver
+- Leased vehicle exception
+- Vehicle not required to be registered during prior period
+
+6. Decide proceed/hold/escalate.
+- Hold if expired status, fee, or exception documentation is unclear.
+
+============================================================
+COMMON CLERK ANSWER STYLE
+============================================================
+
+When answering a 320.07 question, the AI should explain:
+
+1. Whether registration is expired.
+2. Whether renewal is required.
+3. Whether 6-month threshold matters.
+4. Whether delinquent fee applies.
+5. Whether military/leased vehicle exceptions may apply.
+6. Whether the transaction can proceed, hold, or escalate.
+
+============================================================
+RELATED LOGIC MAPS
+============================================================
+
+- plate_registration_action_logic_map.txt
+- validation_logic_map.txt
+- rejection_prevention_logic_map.txt
+- transaction_type_logic_map.txt
+- forms_required_logic_map.txt
+
+============================================================
+RELATED PROCEDURE AREAS
+============================================================
+
+- Registration renewal procedures
+- Delinquent registration fee workflow
+- Plate transfer workflow
+- Registration expiration workflow
+- Military registration waiver workflow
+
+============================================================
+RELATED STATUTES
+============================================================
+
+- 320.02
+- 320.055
+- 320.071
+- 320.08
+- 320.18
+
+============================================================
+END OF FILE
+============================================================

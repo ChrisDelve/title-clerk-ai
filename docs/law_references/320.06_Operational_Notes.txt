@@ -1,0 +1,271 @@
+STATUTE: 320.06
+TITLE: Registration Certificates, License Plates, and Validation Stickers Generally
+SOURCE: https://www.leg.state.fl.us/statutes/index.cfm?App_mode=Display_Statute&Search_String=&URL=0300-0399/0320/Sections/0320.06.html
+DOCUMENT_TYPE: Florida Law Reference / Operational Notes
+CATEGORY: LICENSE PLATES / VALIDATION STICKERS / REGISTRATION CERTIFICATE / PLATE REPLACEMENT CYCLE / DECALS / APPORTIONED PLATES
+
+============================================================
+PURPOSE
+============================================================
+
+This statute governs issuance of Florida registration certificates, license plates, and validation stickers.
+
+It is a core legal reference for:
+- registration certificate issuance
+- license plate issuance
+- validation sticker issuance
+- plate replacement cycle
+- sticker placement
+- expiration display
+- apportioned plate replacement
+- plate/sticker retroreflection
+- license plate ownership by the state
+
+============================================================
+PLAIN ENGLISH SUMMARY
+============================================================
+
+When an initial registration application is accepted and required taxes/fees are paid, the department assigns a registration license number and issues the registration certificate and license plate.
+
+Most plates are issued for a 10-year period. At the end of the 10-year period, the plate is replaced upon renewal.
+
+A validation sticker is issued with the plate showing the owner’s birth month, plate number, and expiration year or renewal period.
+
+The validation sticker is placed on the upper right corner of the license plate.
+
+Registration plates with validation stickers generally expire at midnight on the last day of the registration period.
+
+Beginning July 1, 2024, vehicles registered under the International Registration Plan are issued plates for a 3-year period and must be replaced at the end of that period.
+
+All license plates issued under Chapter 320 are property of the state.
+
+============================================================
+TITLE CLERK IMPORTANCE
+============================================================
+
+320.06 is important when reviewing:
+- whether a plate/sticker should issue
+- plate replacement cycle
+- validation sticker expiration
+- sticker placement
+- registration period display
+- 10-year plate replacement
+- apportioned plate replacement
+- fleet sticker handling
+- plate/designation restrictions
+- state ownership of plates
+
+============================================================
+COMMON WORKFLOW CONNECTIONS
+============================================================
+
+- New plate issuance
+- Registration certificate issuance
+- Validation sticker issuance
+- Plate replacement after 10 years
+- Apportioned plate replacement after 3 years
+- Renewal sticker issuance
+- Expiration date questions
+- Fleet validation sticker handling
+- Plate condition / retroreflection issue
+- Plate ownership/surrender issue
+
+============================================================
+OPERATIONAL RULES
+============================================================
+
+IF initial_registration_application_approved = TRUE
+AND required_license_tax_and_fees_paid = TRUE
+THEN registration_certificate_and_license_plate_issue = TRUE
+
+IF license_plate_issued = TRUE
+THEN validation_sticker_issue_required = TRUE
+
+IF validation_sticker_issued = TRUE
+THEN sticker_shows_owner_birth_month_plate_number_and_expiration_year_or_renewal_period = TRUE
+
+IF validation_sticker_issued = TRUE
+THEN sticker_should_be_placed_upper_right_corner_of_plate = TRUE
+
+IF standard_license_plate_issued = TRUE
+THEN plate_replacement_cycle_years = 10
+
+IF standard_license_plate_age_years >= 10
+THEN plate_replacement_required_on_renewal = TRUE
+
+IF apportioned_IRP_vehicle = TRUE
+THEN plate_replacement_cycle_years = 3
+
+IF apportioned_IRP_vehicle = TRUE
+THEN cab_card_required_annually = TRUE
+
+IF license_plate_has_validation_sticker = TRUE
+AND standard_registration_period = TRUE
+THEN plate_expires_midnight_last_day_of_registration_period = TRUE
+
+IF license_plate_has_validation_sticker = TRUE
+AND extended_registration_period = TRUE
+THEN plate_expires_midnight_last_day_of_extended_registration_period = TRUE
+
+IF permanent_registration_period = TRUE
+AND annual_taxes_and_fees_not_paid = TRUE
+THEN permanent_plate_or_sticker_becomes_void = TRUE
+
+IF plate_or_sticker_issued_less_than_12_months = TRUE
+THEN prorated_license_tax_and_applicable_fee_review_required = TRUE
+
+IF plate_is_damaged_or_worn_for_IRP_vehicle = TRUE
+THEN free_replacement_may_apply_if_current_plate_surrendered = TRUE
+
+IF license_plate_issued_under_chapter_320 = TRUE
+THEN plate_is_property_of_state = TRUE
+
+============================================================
+VALIDATION STICKER LOGIC
+============================================================
+
+IF registration_renewed = TRUE
+THEN validation_sticker_review_required = TRUE
+
+IF validation_sticker_missing_or_wrong = TRUE
+THEN registration_display_issue = TRUE
+
+IF sticker_placement_wrong = TRUE
+THEN display_or_legibility_review_required = TRUE
+
+IF fleet_validation_sticker_transfer_question = TRUE
+THEN same_owner_name_and_address_review_required = TRUE
+
+============================================================
+COMMON DEALERSHIP ISSUES
+============================================================
+
+- Customer needs new plate
+- Customer needs renewal sticker
+- Plate is older than replacement cycle
+- Sticker expiration is wrong or confusing
+- Validation sticker placed incorrectly
+- Customer asks why plate must be replaced
+- Apportioned plate replacement period confusion
+- Dealer confuses plate replacement with plate transfer
+- Customer wants to keep plate but plate is expired/damaged
+- Plate/sticker does not match registration period
+- Fleet sticker assignment confusion
+
+============================================================
+REJECTION PREVENTION
+============================================================
+
+High rejection risk if:
+- registration certificate is issued without required taxes/fees
+- validation sticker is missing
+- sticker expiration period is incorrect
+- plate replacement cycle is ignored
+- apportioned/IRP rules are treated like standard plate rules
+- plate/sticker is assigned to wrong vehicle or owner
+- damaged/worn plate issue is ignored
+- fleet sticker transfer rules are assumed without owner/address verification
+
+============================================================
+AI DECISION LOGIC
+============================================================
+
+IF user_question_mentions = "license plate"
+OR user_question_mentions = "validation sticker"
+OR user_question_mentions = "renewal sticker"
+OR user_question_mentions = "plate replacement cycle"
+OR user_question_mentions = "10 year plate"
+OR user_question_mentions = "apportioned plate"
+THEN reference_320_06 = TRUE
+
+IF new_registration = TRUE
+THEN answer_should_check = "registration certificate, license plate, validation sticker, taxes/fees"
+
+IF plate_age_years >= 10
+THEN answer_should_warn = "Standard plate replacement cycle may apply."
+
+IF apportioned_IRP_vehicle = TRUE
+THEN answer_should_warn = "IRP plates follow a 3-year replacement cycle and annual cab card process."
+
+============================================================
+DEALERSHIP WORKFLOW
+============================================================
+
+1. Identify plate action.
+- New plate
+- Renewal sticker
+- Replacement plate
+- Apportioned plate
+- Fleet sticker
+
+2. Verify registration period.
+- Birth month / renewal period
+- Extended registration
+- Permanent registration
+- Apportioned/IRP period
+
+3. Verify plate/sticker requirements.
+- Correct plate classification
+- Sticker expiration
+- Sticker placement
+- Plate replacement cycle
+
+4. Confirm taxes/fees.
+- Required license tax
+- Replacement fees
+- Cab card fees if applicable
+
+5. Hold/escalate if mismatched.
+- Plate/sticker mismatch
+- Wrong classification
+- Damaged/expired plate
+- IRP/commercial uncertainty
+
+============================================================
+COMMON CLERK ANSWER STYLE
+============================================================
+
+When answering a 320.06 question, the AI should explain:
+
+1. Whether this is plate issuance, sticker issuance, renewal, or replacement.
+2. Whether registration taxes/fees are paid.
+3. Whether a validation sticker should issue and where it goes.
+4. Whether the 10-year or IRP 3-year replacement cycle applies.
+5. Whether the transaction can proceed, hold, or escalate.
+
+============================================================
+RELATED LOGIC MAPS
+============================================================
+
+- plate_registration_action_logic_map.txt
+- validation_logic_map.txt
+- rejection_prevention_logic_map.txt
+- transaction_type_logic_map.txt
+- forms_required_logic_map.txt
+
+============================================================
+RELATED PROCEDURE AREAS
+============================================================
+
+- Registration issuance procedures
+- Plate issuance procedures
+- Renewal sticker procedures
+- Replacement plate procedures
+- Apportioned registration procedures
+
+============================================================
+RELATED STATUTES
+============================================================
+
+- 320.02
+- 320.03
+- 320.055
+- 320.0605
+- 320.0607
+- 320.0609
+- 320.07
+- 320.0804
+
+============================================================
+END OF FILE
+============================================================

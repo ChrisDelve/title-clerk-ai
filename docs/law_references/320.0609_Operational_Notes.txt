@@ -1,0 +1,338 @@
+STATUTE: 320.0609
+TITLE: Transfer and Exchange of Registration License Plates; Transfer Fee
+SOURCE: https://www.leg.state.fl.us/statutes/index.cfm?App_mode=Display_Statute&Search_String=&URL=0300-0399/0320/Sections/0320.0609.html
+DOCUMENT_TYPE: Florida Law Reference / Operational Notes
+CATEGORY: PLATE TRANSFER / PLATE EXCHANGE / TRANSFER FEE / SAME CLASSIFICATION / PLATE OWNER / SALE TRADE DISPOSITION / SURVIVING SPOUSE
+
+============================================================
+PURPOSE
+============================================================
+
+This statute governs transfer and exchange of Florida registration license plates.
+
+It is the core legal reference for:
+- plate transfer
+- plate exchange
+- plate issued to owner
+- transfer to replacement vehicle
+- same-classification transfer
+- different-classification exchange
+- transfer fee
+- plate removal at sale/trade/disposition
+- surviving spouse plate transfer
+- dealer electronic transfer reporting
+
+============================================================
+PLAIN ENGLISH SUMMARY
+============================================================
+
+The registration license plate and certificate of registration are issued to and remain in the name of the owner of the registered vehicle.
+
+The owner may transfer the plate from the old vehicle to a newly acquired vehicle within the same classification.
+
+If the replacement vehicle is a different classification, the plate may need to be surrendered in exchange for the appropriate classification.
+
+When a vehicle is sold, traded, transferred, or otherwise disposed of, the owner must remove the plate and either return it or transfer it to a replacement vehicle.
+
+A plate cannot be attached to a replacement vehicle without filing a transfer application and paying the $4.50 transfer fee unless an exception applies.
+
+Plate transfer does not constitute a new registration.
+
+A surviving spouse may request transfer of the registration certificate and plate after presenting the death certificate or if the department/agent verifies death record information.
+
+When a dealer transfers a plate to a replacement/substitute vehicle, the dealer must timely provide transfer information to the department electronically unless department records are otherwise updated on the date of transfer.
+
+============================================================
+TITLE CLERK IMPORTANCE
+============================================================
+
+320.0609 is one of the most important statutes for dealership plate questions.
+
+Use this statute when reviewing:
+- transfer tag not in customer’s name
+- plate transfer eligibility
+- plate issued to individual owner
+- plate owner mismatch
+- same-classification transfer
+- different-classification exchange
+- plate removal after sale/trade
+- transfer fee
+- surviving spouse plate transfer
+- dealer electronic plate transfer reporting
+- IRF review when plate cannot transfer
+
+============================================================
+COMMON WORKFLOW CONNECTIONS
+============================================================
+
+- Transfer tag
+- Transfer plate
+- Tag not in customer’s name
+- Plate owner mismatch
+- Same classification
+- Different classification
+- New plate vs transfer
+- IRF review
+- Sale/trade/disposition
+- Dealer sale replacement vehicle
+- Surviving spouse plate transfer
+- Mobile home sticker exchange
+- Dealer recordkeeping for plate transfer
+
+============================================================
+OPERATIONAL RULES
+============================================================
+
+IF registration_license_plate_issued = TRUE
+THEN plate_remains_in_name_of_registered_owner = TRUE
+
+IF plate_transfer_requested = TRUE
+THEN plate_owner_must_be_registered_owner = TRUE
+
+IF transfer_tag_not_in_customer_name = TRUE
+THEN plate_transfer_not_allowed_without_owner_authority_review = TRUE
+
+IF plate_owner_does_not_match_customer = TRUE
+THEN plate_transfer_eligibility_problem = TRUE
+
+IF owner_acquires_replacement_vehicle_same_classification = TRUE
+THEN plate_may_transfer_to_replacement_vehicle = TRUE
+
+IF replacement_vehicle_different_classification = TRUE
+THEN plate_exchange_for_appropriate_classification_review_required = TRUE
+
+IF vehicle_sold_traded_transferred_or_disposed = TRUE
+THEN owner_must_remove_license_plate = TRUE
+
+IF vehicle_sold_traded_transferred_or_disposed = TRUE
+THEN owner_must_return_or_transfer_plate = TRUE
+
+IF plate_temporarily_or_permanently_attached_to_replacement_vehicle = TRUE
+THEN plate_transfer_application_required = TRUE
+
+IF plate_transfer_application_required = TRUE
+THEN transfer_fee_4_50_required_unless_exception_applies = TRUE
+
+IF plate_transfer_from_disposed_vehicle_to_newly_acquired_vehicle = TRUE
+THEN transfer_does_not_constitute_new_registration = TRUE
+
+IF replacement_vehicle_same_license_tax_amount = TRUE
+THEN only_transfer_fee_required_for_remaining_registration_period = TRUE
+
+IF replacement_vehicle_higher_license_tax_classification = TRUE
+THEN plate_surrender_exchange_and_prorated_tax_difference_required = TRUE
+
+IF mobile_home_sold_traded_transferred_or_disposed = TRUE
+THEN owner_must_remove_sticker = TRUE
+
+IF mobile_home_replacement = TRUE
+THEN sticker_exchange_may_apply_without_cost = TRUE
+
+IF surviving_spouse_requests_plate_transfer = TRUE
+THEN death_certificate_or_department_death_record_verification_required = TRUE
+
+IF dealer_transfers_plate_to_replacement_vehicle = TRUE
+THEN dealer_electronic_transfer_reporting_required = TRUE
+
+IF dealer_cannot_timely_report_due_to_system_connectivity_problem = TRUE
+THEN dealer_must_give_owner_written_notice_documenting_transfer = TRUE
+
+IF dealer_plate_transfer_records_required_by_department = TRUE
+THEN dealer_must_maintain_records_for_inspection = TRUE
+
+============================================================
+TRANSFER TAG NOT IN CUSTOMER NAME LOGIC
+============================================================
+
+IF customer_requests_transfer_tag = TRUE
+AND tag_not_in_customer_name = TRUE
+THEN plate_transfer_not_allowed = TRUE
+
+IF customer_requests_transfer_tag = TRUE
+AND plate_owner_does_not_match_customer = TRUE
+THEN new_plate_or_owner_authority_review_required = TRUE
+
+IF plate_belongs_to_spouse_or_relative_or_other_person = TRUE
+THEN plate_transfer_eligibility_problem = TRUE
+
+IF plate_transfer_not_allowed = TRUE
+THEN IRF_review_required = TRUE
+
+IF plate_transfer_not_allowed = TRUE
+THEN customer_should_not_be_quoted_transfer_only = TRUE
+
+IF customer_has_plate_but_not_registered_owner = TRUE
+THEN do_not_assume_plate_can_transfer = TRUE
+
+============================================================
+SAME / DIFFERENT CLASSIFICATION LOGIC
+============================================================
+
+IF replacement_vehicle_same_classification = TRUE
+THEN plate_transfer_may_be_possible = TRUE
+
+IF replacement_vehicle_different_classification = TRUE
+THEN plate_exchange_review_required = TRUE
+
+IF different_classification_requires_higher_tax = TRUE
+THEN prorated_tax_difference_required = TRUE
+
+IF plate_not_transferable_to_replacement_vehicle = TRUE
+THEN surrender_and_new_appropriate_plate_review_required = TRUE
+
+============================================================
+SURVIVING SPOUSE PLATE TRANSFER LOGIC
+============================================================
+
+IF registered_owner_deceased = TRUE
+AND surviving_spouse_requests_plate_transfer = TRUE
+THEN surviving_spouse_plate_transfer_review_required = TRUE
+
+IF surviving_spouse_plate_transfer_review_required = TRUE
+THEN death_certificate_or_death_record_verification_required = TRUE
+
+IF surviving_spouse_plate_transfer_approved = TRUE
+THEN registration_certificate_and_plate_transfer_review_required = TRUE
+
+============================================================
+COMMON DEALERSHIP ISSUES
+============================================================
+
+- Customer wants to transfer tag not in their name
+- Customer wants to use spouse’s plate
+- Customer wants to use parent/relative plate
+- Finance quotes transfer tag but plate belongs to another person
+- Plate classification does not match replacement vehicle
+- Trade-in plate not removed
+- Dealer attaches transfer plate before transfer application
+- Transfer fee not collected
+- IRF not reviewed when plate cannot transfer
+- Surviving spouse wants to transfer deceased spouse’s plate
+- Dealer electronic transfer reporting issue
+- System/connectivity issue prevents timely transfer reporting
+
+============================================================
+REJECTION PREVENTION
+============================================================
+
+High rejection risk if:
+- plate is not in customer’s name
+- plate owner does not match registrant
+- plate classification does not match vehicle
+- plate transfer application is missing
+- transfer fee is missing
+- plate is attached before transfer is filed
+- IRF is skipped when plate cannot transfer
+- dealer does not report transfer electronically where required
+- surviving spouse transfer lacks death proof/verification
+- plate/sticker was not removed after sale/trade/disposition
+
+============================================================
+AI DECISION LOGIC
+============================================================
+
+IF user_question_mentions = "transfer tag"
+OR user_question_mentions = "transfer plate"
+OR user_question_mentions = "tag not in customer name"
+OR user_question_mentions = "plate not in customer name"
+OR user_question_mentions = "use spouse plate"
+OR user_question_mentions = "same plate"
+OR user_question_mentions = "plate exchange"
+THEN reference_320_0609 = TRUE
+
+IF transfer_tag_not_in_customer_name = TRUE
+THEN answer_should_warn = "Plate transfer is not allowed unless ownership/authority requirements are satisfied; review new plate and IRF."
+
+IF plate_owner_does_not_match_customer = TRUE
+THEN answer_should_warn = "Do not process as transfer plate without correcting plate ownership/eligibility."
+
+IF replacement_vehicle_different_classification = TRUE
+THEN answer_should_review = "plate exchange and prorated tax difference"
+
+IF dealer_transfer_plate = TRUE
+THEN answer_should_check = "dealer electronic reporting and records"
+
+============================================================
+DEALERSHIP WORKFLOW
+============================================================
+
+1. Identify plate request.
+- Transfer old plate
+- New plate
+- Plate exchange
+- Surviving spouse transfer
+- Mobile home sticker exchange
+
+2. Verify plate owner.
+- Plate remains in name of registered owner.
+- Customer must match plate owner or have specific legal route/authority.
+
+3. Verify vehicle classification.
+- Same classification may transfer.
+- Different classification may require exchange.
+
+4. Verify application and fee.
+- Transfer application required.
+- $4.50 transfer fee unless exception applies.
+- Higher tax class may require prorated difference.
+
+5. Review IRF/new plate.
+- If plate cannot transfer, review new plate and IRF.
+
+6. Dealer reporting.
+- If dealer handles transfer, submit electronic transfer information or written notice if system issue.
+
+7. Hold/escalate if mismatch.
+- Do not transfer plate not in customer’s name without proper review.
+
+============================================================
+COMMON CLERK ANSWER STYLE
+============================================================
+
+When answering a 320.0609 question, the AI should explain:
+
+1. Plate belongs to and remains in name of registered owner.
+2. Whether the customer is the plate owner.
+3. Whether same-classification transfer is allowed.
+4. Whether a different-classification exchange is needed.
+5. Whether transfer application and fee are required.
+6. Whether IRF/new plate applies if transfer is not allowed.
+7. Whether the transaction can proceed, hold, or escalate.
+
+============================================================
+RELATED LOGIC MAPS
+============================================================
+
+- plate_registration_action_logic_map.txt
+- validation_logic_map.txt
+- rejection_prevention_logic_map.txt
+- transaction_type_logic_map.txt
+- forms_required_logic_map.txt
+- escalation_red_flags_logic_map.txt
+
+============================================================
+RELATED PROCEDURE AREAS
+============================================================
+
+- Plate transfer procedures
+- New plate procedures
+- IRF review workflow
+- Dealer registration workflow
+- Surviving spouse registration workflow
+- Replacement plate procedures
+
+============================================================
+RELATED STATUTES
+============================================================
+
+- 320.02
+- 320.06
+- 320.0607
+- 320.07
+- 320.072
+- 320.08
+- 320.14
+
+============================================================
+END OF FILE
+============================================================

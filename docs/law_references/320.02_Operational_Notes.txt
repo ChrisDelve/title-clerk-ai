@@ -1,0 +1,292 @@
+STATUTE: 320.02
+TITLE: Registration Required; Application for Registration; Forms
+SOURCE: https://www.leg.state.fl.us/statutes/index.cfm?App_mode=Display_Statute&Search_String=&URL=0300-0399/0320/Sections/0320.02.html
+DOCUMENT_TYPE: Florida Law Reference / Operational Notes
+CATEGORY: REGISTRATION REQUIREMENTS / INSURANCE / VIN VERIFICATION / FALSE INFORMATION / REGISTRATION STOPS
+
+============================================================
+PURPOSE
+============================================================
+
+This statute governs when Florida vehicle registration is required, what information is required on a registration application, insurance/financial responsibility proof, VIN verification for out-of-state vehicles, false registration information, registration withholding, and certain registration-related stops or refusal conditions.
+
+============================================================
+PLAIN ENGLISH SUMMARY
+============================================================
+
+Every owner or person in charge of a motor vehicle operated or driven on Florida roads must register the vehicle unless an exception applies.
+
+A vehicle not operated on Florida roads during the registration period does not require registration for that period.
+
+Registration applications require owner address and personal or business identification information.
+
+For vehicles registered outside Florida before Florida registration, VIN verification is generally required, unless an exception applies.
+
+Proof of required insurance or financial responsibility must be provided at registration when applicable. The issuing agent must refuse registration if required proof is not provided.
+
+False or fraudulent registration information can result in penalties and plate cancellation.
+
+The department may withhold registration or reregistration if the owner or co-owner has a driver license suspended for failure to pay certain fines.
+
+Imported vehicles not manufactured to federal standards must be certified by federal authorities before being sold, titled, and registered in Florida.
+
+============================================================
+TITLE CLERK IMPORTANCE
+============================================================
+
+320.02 is a foundational registration statute.
+
+Use this statute when reviewing:
+- whether registration is required
+- insurance proof requirement
+- out-of-state VIN verification
+- registration application identity information
+- false registration information
+- registration stop/withholding issue
+- imported/nonconforming vehicle registration
+- registration refusal conditions
+
+============================================================
+COMMON WORKFLOW CONNECTIONS
+============================================================
+
+- New Florida registration
+- Out-of-state registration transfer
+- VIN verification
+- Insurance verification
+- Registration stop
+- Registration refusal
+- Customer has no insurance
+- Customer has suspended license / unpaid fines stop
+- Imported vehicle review
+- Non-use / not operated on roads
+- Dealer registration submission
+- False affidavit / false registration info
+
+============================================================
+OPERATIONAL RULES
+============================================================
+
+IF motor_vehicle_operated_on_Florida_roads = TRUE
+THEN Florida_registration_required = TRUE
+
+IF motor_vehicle_not_operated_on_Florida_roads_during_registration_period = TRUE
+THEN registration_not_required_for_that_period = TRUE
+
+IF registration_application_submitted = TRUE
+THEN owner_address_required = TRUE
+
+IF individual_registration_applicant = TRUE
+THEN valid_driver_license_identification_card_or_passport_required = TRUE
+
+IF business_registration_applicant = TRUE
+THEN FEIN_or_business_authorization_or_business_license_required = TRUE
+
+IF vehicle_registered_outside_Florida_before_Florida_registration = TRUE
+THEN VIN_verification_required = TRUE
+
+IF new_vehicle_sold_in_Florida_by_licensed_dealer = TRUE
+THEN VIN_verification_not_required_under_320_02 = TRUE
+
+IF mobile_home = TRUE
+THEN VIN_verification_not_required_under_320_02 = TRUE
+
+IF trailer_or_semitrailer_net_weight < 2000
+THEN VIN_verification_not_required_under_320_02 = TRUE
+
+IF travel_trailer_or_camping_trailer = TRUE
+THEN VIN_verification_not_required_under_320_02 = TRUE
+
+IF required_insurance_or_financial_responsibility_proof_missing = TRUE
+THEN registration_must_be_refused = TRUE
+
+IF false_insurance_affidavit_used = TRUE
+THEN fraud_or_penalty_review_required = TRUE
+
+IF registration_obtained_by_false_or_fraudulent_representation = TRUE
+THEN plate_cancellation_review_required = TRUE
+
+IF owner_or_co_owner_driver_license_suspended_for_failure_to_pay_eligible_fines = TRUE
+THEN registration_or_reregistration_may_be_withheld = TRUE
+
+IF imported_vehicle_not_federally_compliant = TRUE
+THEN vehicle_cannot_be_sold_titled_and_registered_until_federal_certification_review_complete = TRUE
+
+IF imported_vehicle_certified_by_US_Customs_DOT_or_EPA = TRUE
+THEN federal_compliance_review_satisfied = TRUE
+
+IF imported_vehicle_registered_under_federal_compliance_subsection = TRUE
+THEN vehicle_not_titled_as_new_motor_vehicle = TRUE
+
+============================================================
+INSURANCE / FINANCIAL RESPONSIBILITY LOGIC
+============================================================
+
+IF motor_vehicle_subject_to_PIP_or_PDL_or_required_BI_coverage = TRUE
+THEN proof_of_insurance_required_at_registration = TRUE
+
+IF proof_of_required_insurance_missing = TRUE
+THEN issuing_agent_refuses_registration = TRUE
+
+IF insurance_card_policy_binder_certificate_or_affidavit_provided = TRUE
+THEN insurance_proof_review_required = TRUE
+
+IF insurance_affidavit_false = TRUE
+THEN false_affidavit_penalty_review_required = TRUE
+
+IF commercial_motor_vehicle_liability_insurance_cancelled = TRUE
+THEN registration_suspension_review_required = TRUE
+
+============================================================
+OUT-OF-STATE / VIN VERIFICATION LOGIC
+============================================================
+
+IF vehicle_registered_outside_Florida = TRUE
+AND Florida_registration_requested = TRUE
+THEN VIN_verification_required = TRUE
+
+IF VIN_verification_required = TRUE
+AND VIN_verification_missing = TRUE
+THEN reject_before_submission = TRUE
+
+IF VIN_on_affidavit_or_department_form_does_not_match_vehicle = TRUE
+THEN manual_review_required = TRUE
+
+============================================================
+COMMON DEALERSHIP ISSUES
+============================================================
+
+- Customer has no valid insurance
+- Insurance card does not match VIN
+- Finance wants registration processed before insurance is valid
+- Out-of-state vehicle missing VIN verification
+- Customer has a registration stop
+- Customer/co-owner license issue blocks registration
+- Business applicant missing FEIN or business proof
+- Imported vehicle lacks federal compliance proof
+- Customer provides false or questionable insurance affidavit
+- Customer wants vehicle registered but says it will not be driven
+- Registration application address or ID does not match
+
+============================================================
+REJECTION PREVENTION
+============================================================
+
+High rejection risk if:
+- proof of insurance is missing
+- insurance VIN does not match
+- VIN verification is required but missing
+- applicant ID or business authority is missing
+- false affidavit is used
+- imported vehicle federal compliance is not verified
+- registration stop is ignored
+- vehicle is registered using false/fraudulent information
+- issuing agent refusal condition exists
+
+============================================================
+AI DECISION LOGIC
+============================================================
+
+IF user_question_mentions = "registration required"
+OR user_question_mentions = "insurance required"
+OR user_question_mentions = "no insurance"
+OR user_question_mentions = "VIN verification"
+OR user_question_mentions = "registration stop"
+OR user_question_mentions = "false registration"
+OR user_question_mentions = "imported vehicle registration"
+THEN reference_320_02 = TRUE
+
+IF no_insurance = TRUE
+THEN answer_should_warn = "Registration cannot be issued if required proof of insurance is missing."
+
+IF out_of_state_vehicle = TRUE
+THEN answer_should_check = "VIN verification requirement."
+
+IF imported_vehicle = TRUE
+THEN answer_should_check = "Federal Clean Air Act / Motor Vehicle Safety Act compliance."
+
+IF registration_stop_exists = TRUE
+THEN answer_should_warn = "Registration or reregistration may be withheld until stop is resolved."
+
+============================================================
+DEALERSHIP WORKFLOW
+============================================================
+
+1. Determine if registration is required.
+- Is vehicle operated or driven on Florida roads?
+- Is this a non-use/not-operated situation?
+
+2. Verify applicant identity.
+- Individual ID / license / passport.
+- Business FEIN or business authority.
+
+3. Verify insurance.
+- PIP / PDL / required BI or financial responsibility.
+- Confirm VIN and vehicle match.
+
+4. Review VIN verification.
+- Required for vehicle registered outside Florida unless exception applies.
+
+5. Check registration stops.
+- Driver license suspension / unpaid fines.
+- Insurance cancellation.
+- Other department stops.
+
+6. Review imported vehicle issues.
+- Federal certification may be required before sale/title/registration.
+
+7. Decide proceed/hold/escalate.
+- Hold if insurance, VIN verification, ID, business authority, federal compliance, or stop issue is unresolved.
+
+============================================================
+COMMON CLERK ANSWER STYLE
+============================================================
+
+When answering a 320.02 question, the AI should explain:
+
+1. Whether registration is required.
+2. Whether insurance proof is required.
+3. Whether VIN verification is required.
+4. Whether ID/business authority is required.
+5. Whether a registration stop or refusal condition exists.
+6. Whether the transaction can proceed, hold, or escalate.
+
+============================================================
+RELATED LOGIC MAPS
+============================================================
+
+- transaction_type_logic_map.txt
+- validation_logic_map.txt
+- rejection_prevention_logic_map.txt
+- plate_registration_action_logic_map.txt
+- forms_required_logic_map.txt
+- escalation_red_flags_logic_map.txt
+
+============================================================
+RELATED PROCEDURE AREAS
+============================================================
+
+- Registration procedures
+- Out-of-state registration procedures
+- VIN verification procedures
+- Insurance verification workflow
+- Imported vehicle workflow
+- Registration stop workflow
+
+============================================================
+RELATED STATUTES
+============================================================
+
+- 319.23
+- 320.03
+- 320.05
+- 320.06
+- 320.055
+- 320.07
+- 320.072
+- 324.022
+- 627.733
+
+============================================================
+END OF FILE
+============================================================

@@ -1,0 +1,297 @@
+STATUTE: 320.072
+TITLE: Additional Fee Imposed on Certain Motor Vehicle Registration Transactions
+SOURCE: https://www.leg.state.fl.us/statutes/index.cfm?App_mode=Display_Statute&Search_String=&URL=0300-0399/0320/Sections/0320.072.html
+DOCUMENT_TYPE: Florida Law Reference / Operational Notes
+CATEGORY: INITIAL REGISTRATION FEE / IRF / NEW PLATE / PLATE TRANSFER EXEMPTION / FAMILY TRANSFER / MILITARY EXEMPTION / GOVERNMENT EXEMPTION
+
+============================================================
+PURPOSE
+============================================================
+
+This statute governs the Florida Initial Registration Fee, commonly called IRF.
+
+It is the legal reference for:
+- $225 initial registration fee
+- when IRF applies
+- when IRF does not apply
+- plate transfer exemption
+- co-owner transfer exemption
+- operation-of-law exemption
+- immediate family same-household exemption
+- military exemptions
+- government exemption
+- ancient/antique exemption
+- IRF refund
+- non-operational/storage affidavit exemption
+
+============================================================
+PLAIN ENGLISH SUMMARY
+============================================================
+
+A $225 fee is imposed on the initial application for registration of certain motor vehicles classified under 320.08(2), 320.08(3), and 320.08(9)(c) and (d).
+
+The fee does not apply to registration renewal transactions.
+
+The fee does not apply when a registration plate is transferred or exchanged from a disposed vehicle to a newly acquired vehicle under 320.0609.
+
+The fee does not apply to certain transfers between co-owners, operation-of-law transfers, or transfers to an immediate family member living in the same household.
+
+The fee does not apply to qualifying military, governmental, certain truck, ancient, or antique vehicle situations.
+
+A refund may be available if a person sells, transfers, or disposes of a qualifying vehicle within 3 months after paying the fee, if proof of payment is provided and the plate is surrendered.
+
+The fee does not apply if an approved affidavit shows the registration being transferred is from a vehicle that is not operational, is in storage, or will not be operated on Florida roads.
+
+============================================================
+TITLE CLERK IMPORTANCE
+============================================================
+
+320.072 is critical for dealership registration quotes.
+
+Use this statute when reviewing:
+- whether IRF applies
+- new plate vs transfer plate
+- transfer tag not in customer's name
+- customer has no transferable plate
+- plate transfer exemption
+- family transfer exemption
+- co-owner transfer exemption
+- operation-of-law exemption
+- military exemption
+- government exemption
+- IRF refund
+- storage/non-operational affidavit
+
+============================================================
+COMMON WORKFLOW CONNECTIONS
+============================================================
+
+- New plate
+- Transfer plate
+- Initial registration
+- IRF quote
+- Transfer tag not in customer name
+- Customer has no plate to transfer
+- Plate not transferable
+- Immediate family transfer
+- Co-owner title transfer
+- Operation of law/deceased/repo
+- Military customer
+- Antique/ancient vehicle
+- Non-operational/storage affidavit
+- Registration refund
+
+============================================================
+OPERATIONAL RULES
+============================================================
+
+IF initial_application_for_registration = TRUE
+AND motor_vehicle_classified_under_320_08_2_3_or_9_c_d = TRUE
+THEN initial_registration_fee_225_review_required = TRUE
+
+IF registration_renewal_transaction = TRUE
+THEN IRF_not_applicable = TRUE
+
+IF plate_transfer_or_exchange_from_disposed_vehicle_to_newly_acquired_vehicle_under_320_0609 = TRUE
+THEN IRF_not_applicable = TRUE
+
+IF initial_registration_results_from_transfer_between_co_owners_under_319_22 = TRUE
+THEN IRF_not_applicable = TRUE
+
+IF initial_registration_results_from_operation_of_law_under_319_28 = TRUE
+THEN IRF_not_applicable = TRUE
+
+IF title_transfer_to_immediate_family_member_same_household = TRUE
+THEN IRF_not_applicable = TRUE
+
+IF qualifying_nonresident_military_member_or_spouse_or_dependent = TRUE
+THEN IRF_not_applicable = TRUE
+
+IF qualifying_former_military_member_registers_within_6_months_after_discharge = TRUE
+THEN IRF_not_applicable = TRUE
+
+IF qualifying_military_reassignment_to_Florida = TRUE
+THEN IRF_not_applicable = TRUE
+
+IF surviving_spouse_or_dependent_of_deceased_or_MIA_service_member_qualifies = TRUE
+THEN IRF_not_applicable = TRUE
+
+IF government_owned_or_exclusively_operated_vehicle = TRUE
+THEN IRF_not_applicable = TRUE
+
+IF truck_defined_in_320_08_3_d = TRUE
+THEN IRF_not_applicable = TRUE
+
+IF ancient_or_antique_auto_or_truck_for_private_use = TRUE
+THEN IRF_not_applicable = TRUE
+
+IF vehicle_disposed_within_3_months_after_IRF_paid = TRUE
+AND proof_of_IRF_payment_provided = TRUE
+AND license_plate_surrendered = TRUE
+THEN IRF_refund_review_required = TRUE
+
+IF approved_affidavit_shows_transferred_registration_from_vehicle_not_operational_in_storage_or_not_operated_on_Florida_roads = TRUE
+THEN IRF_not_applicable = TRUE
+
+============================================================
+TRANSFER TAG / IRF LOGIC
+============================================================
+
+IF customer_has_transferable_plate = TRUE
+AND plate_transfer_allowed_under_320_0609 = TRUE
+THEN IRF_not_applicable_due_to_transfer = TRUE
+
+IF transfer_tag_not_in_customer_name = TRUE
+THEN plate_transfer_not_allowed_review_required = TRUE
+
+IF plate_transfer_not_allowed = TRUE
+THEN IRF_review_required = TRUE
+
+IF customer_has_no_valid_transferable_plate = TRUE
+AND new_plate_required = TRUE
+THEN IRF_likely_applies_unless_exemption = TRUE
+
+IF new_plate_issued = TRUE
+AND no_IRF_exemption_applies = TRUE
+THEN collect_IRF_225_review_required = TRUE
+
+============================================================
+COMMON DEALERSHIP ISSUES
+============================================================
+
+- Finance quotes transfer tag but tag is not in customer’s name
+- Customer has no plate to transfer
+- Customer plate cannot transfer due to ownership mismatch
+- IRF not collected on new plate deal
+- Immediate family same-household exemption misunderstood
+- Co-owner transfer exemption missed
+- Operation-of-law exemption missed
+- Military exemption not documented
+- Government/antique/truck exemption misunderstood
+- Customer asks for IRF refund
+- Storage/non-operational affidavit exemption question
+
+============================================================
+REJECTION PREVENTION
+============================================================
+
+High rejection risk if:
+- new plate issued but IRF not reviewed
+- plate transfer claimed but plate is not in customer’s name
+- transfer plate eligibility under 320.0609 is not verified
+- IRF exemption is claimed without supporting facts
+- immediate family/same household requirement is not reviewed
+- military exemption documentation is missing
+- refund request lacks proof of payment or surrendered plate
+- non-operational/storage affidavit is missing when used
+
+============================================================
+AI DECISION LOGIC
+============================================================
+
+IF user_question_mentions = "IRF"
+OR user_question_mentions = "initial registration fee"
+OR user_question_mentions = "$225"
+OR user_question_mentions = "new plate"
+OR user_question_mentions = "transfer tag"
+OR user_question_mentions = "plate not in customer name"
+OR user_question_mentions = "family transfer"
+THEN reference_320_072 = TRUE
+
+IF new_plate_required = TRUE
+THEN answer_should_check = "whether IRF applies or exemption exists"
+
+IF transfer_plate_requested = TRUE
+THEN answer_should_check = "plate transfer eligibility under 320.0609"
+
+IF transfer_tag_not_in_customer_name = TRUE
+THEN answer_should_warn = "Do not treat as transfer plate; review new plate and IRF."
+
+IF IRF_exemption_claimed = TRUE
+THEN answer_should_check = "specific statutory exemption and supporting documentation"
+
+============================================================
+DEALERSHIP WORKFLOW
+============================================================
+
+1. Identify registration action.
+- Renewal
+- Transfer plate
+- New plate
+- Initial registration
+
+2. Check vehicle classification.
+- Confirm whether vehicle class falls under IRF statute.
+
+3. Check plate transfer.
+- Is there a valid plate to transfer?
+- Is it in customer’s name?
+- Is it transferable under 320.0609?
+
+4. Check exemptions.
+- Renewal
+- Plate transfer
+- Co-owner transfer
+- Operation of law
+- Immediate family same household
+- Military
+- Government
+- Antique/ancient
+- Storage/non-operational affidavit
+
+5. Quote fees.
+- If new plate and no exemption, review $225 IRF.
+- Add normal registration/license taxes and service charges separately.
+
+6. Hold/escalate if unclear.
+- Do not waive IRF without a specific exemption.
+
+============================================================
+COMMON CLERK ANSWER STYLE
+============================================================
+
+When answering an IRF question, the AI should explain:
+
+1. Whether this is initial registration, renewal, transfer, or new plate.
+2. Whether a transferable plate exists.
+3. Whether IRF applies.
+4. Whether an exemption applies.
+5. What documentation supports exemption.
+6. Whether the deal should proceed, hold, or escalate.
+
+============================================================
+RELATED LOGIC MAPS
+============================================================
+
+- plate_registration_action_logic_map.txt
+- validation_logic_map.txt
+- rejection_prevention_logic_map.txt
+- forms_required_logic_map.txt
+- transaction_type_logic_map.txt
+
+============================================================
+RELATED PROCEDURE AREAS
+============================================================
+
+- IRF workflow
+- Plate transfer workflow
+- New plate workflow
+- Registration fee workflow
+- Military exemption workflow
+- Family transfer workflow
+
+============================================================
+RELATED STATUTES
+============================================================
+
+- 320.02
+- 320.06
+- 320.0609
+- 320.08
+- 319.22
+- 319.28
+- 657.002
+
+============================================================
+END OF FILE
+============================================================

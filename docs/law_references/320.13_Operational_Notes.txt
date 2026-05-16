@@ -1,0 +1,273 @@
+STATUTE: 320.13
+TITLE: Dealer and Manufacturer License Plates and Alternative Method of Registration
+SOURCE: https://www.leg.state.fl.us/statutes/index.cfm?App_mode=Display_Statute&Search_String=&URL=0300-0399/0320/Sections/0320.13.html
+DOCUMENT_TYPE: Florida Law Reference / Operational Notes
+CATEGORY: DEALER PLATES / MANUFACTURER PLATES / INVENTORY VEHICLES / DEMONSTRATION / DEALER BUSINESS USE / HEAVY TRUCK DEALER PLATES
+
+============================================================
+PURPOSE
+============================================================
+
+This statute governs dealer and manufacturer license plates and an alternative method of registration for licensed dealers, mobile home dealers, marine boat trailer dealers/manufacturers, heavy truck dealers, manufacturers, importers, and distributors.
+
+It is the legal reference for:
+- dealer plate use
+- manufacturer plate use
+- inventory vehicle use
+- demonstration vehicle use
+- dealer business use
+- dealer plate restrictions
+- heavy truck dealer demonstration limitations
+- dealer regular plate transfer between comparable vehicles
+
+============================================================
+PLAIN ENGLISH SUMMARY
+============================================================
+
+Licensed motor vehicle dealers and licensed mobile home dealers may obtain dealer plates after paying the required license tax.
+
+Dealer plates are valid for use on motor vehicles or mobile homes owned by the dealer while the units are in inventory and for sale, or while operated in connection with the dealer’s business.
+
+Dealer plates are not valid for use for hire.
+
+Dealer plates may not be used on a tow truck or wrecker unless the tow truck or wrecker is being demonstrated for sale.
+
+Dealer plates may not be used on a vehicle used to transport another motor vehicle for the dealer.
+
+Marine boat trailer dealers and manufacturers may obtain dealer plates for eligible boat trailers used in connection with their business, but not for hire.
+
+Heavy truck dealers may obtain dealer plates for heavy trucks in inventory and for sale, used in Florida only for demonstration purposes, for no more than 24 hours.
+
+Manufacturers, importers, and distributors may obtain manufacturer plates for vehicles owned by them while in inventory and for sale, demonstration, or business use, but not for hire.
+
+A dealer who registers a vehicle or boat trailer with a regular plate may, upon sale, transfer that plate to a comparable dealer-owned vehicle or boat trailer of the same weight series after paying the transfer fee and submitting application.
+
+============================================================
+TITLE CLERK IMPORTANCE
+============================================================
+
+320.13 is important when reviewing:
+- dealer plate use
+- whether dealer plate can be used on a vehicle
+- inventory/demo vehicle questions
+- dealer business use
+- tow truck/wrecker dealer plate restrictions
+- transport vehicle restrictions
+- heavy truck dealer demo limits
+- manufacturer/importer/distributor plates
+- dealer regular plate transfer between comparable units
+
+============================================================
+COMMON WORKFLOW CONNECTIONS
+============================================================
+
+- Dealer plate issuance
+- Dealer demo plate use
+- Inventory vehicle use
+- Dealer business use
+- Heavy truck demonstration
+- Manufacturer plate
+- Boat trailer dealer plate
+- Tow truck/wrecker restriction
+- Vehicle used to transport another vehicle
+- Regular dealer-owned plate transfer
+- Dealer compliance review
+
+============================================================
+OPERATIONAL RULES
+============================================================
+
+IF licensed_motor_vehicle_dealer_or_mobile_home_dealer = TRUE
+THEN dealer_plate_review_available = TRUE
+
+IF dealer_plate_issued = TRUE
+AND vehicle_owned_by_dealer = TRUE
+AND vehicle_in_inventory_and_for_sale = TRUE
+THEN dealer_plate_use_may_be_valid = TRUE
+
+IF dealer_plate_issued = TRUE
+AND vehicle_operated_in_connection_with_dealer_business = TRUE
+THEN dealer_plate_use_may_be_valid = TRUE
+
+IF dealer_plate_used_for_hire = TRUE
+THEN dealer_plate_use_not_valid = TRUE
+
+IF dealer_plate_used_on_tow_truck_or_wrecker = TRUE
+AND tow_truck_or_wrecker_not_being_demonstrated_for_sale = TRUE
+THEN dealer_plate_use_not_valid = TRUE
+
+IF dealer_plate_used_on_vehicle_to_transport_another_motor_vehicle_for_dealer = TRUE
+THEN dealer_plate_use_not_valid = TRUE
+
+IF marine_boat_trailer_dealer_or_manufacturer = TRUE
+THEN boat_trailer_dealer_plate_review_available = TRUE
+
+IF boat_trailer_dealer_plate_used_for_hire = TRUE
+THEN dealer_plate_use_not_valid = TRUE
+
+IF heavy_truck_dealer_plate = TRUE
+THEN heavy_truck_demo_limit_review_required = TRUE
+
+IF heavy_truck_dealer_plate_used_for_demonstration = TRUE
+THEN demonstration_period_must_not_exceed_24_hours = TRUE
+
+IF heavy_truck_dealer_plate_used_for_demonstration = TRUE
+THEN department_validation_form_must_be_retained_in_vehicle = TRUE
+
+IF manufacturer_importer_or_distributor_plate = TRUE
+THEN manufacturer_plate_use_review_required = TRUE
+
+IF manufacturer_plate_used_for_hire = TRUE
+THEN manufacturer_plate_use_not_valid = TRUE
+
+IF dealer_regular_plate_transfer_requested = TRUE
+THEN transfer_fee_4_50_required = TRUE
+
+IF dealer_regular_plate_transfer_requested = TRUE
+THEN comparable_vehicle_or_boat_trailer_same_weight_series_required = TRUE
+
+============================================================
+DEALER PLATE MISUSE LOGIC
+============================================================
+
+IF dealer_plate_on_customer_personal_use_vehicle = TRUE
+THEN dealer_plate_misuse_review_required = TRUE
+
+IF dealer_plate_on_sold_vehicle_after_delivery = TRUE
+THEN dealer_plate_misuse_review_required = TRUE
+
+IF dealer_plate_used_for_transport_for_hire = TRUE
+THEN dealer_plate_misuse_review_required = TRUE
+
+IF dealer_plate_used_on_wrecker_not_for_sale_demo = TRUE
+THEN dealer_plate_misuse_review_required = TRUE
+
+IF dealer_plate_question_involves_inventory_or_demo = TRUE
+THEN verify_dealer_ownership_inventory_status_and_business_use = TRUE
+
+============================================================
+COMMON DEALERSHIP ISSUES
+============================================================
+
+- Sales wants to use dealer plate on delivered vehicle
+- Customer test drive / demo vehicle
+- Dealer plate used on vehicle not in inventory
+- Dealer plate used for personal/non-business use
+- Dealer plate used for hire
+- Dealer plate on tow truck/wrecker
+- Dealer plate on vehicle transporting another vehicle
+- Heavy truck demo exceeds 24 hours
+- Heavy truck demo lacks required form in vehicle
+- Manufacturer plate vs dealer plate confusion
+- Regular plate transfer between dealer-owned vehicles
+
+============================================================
+REJECTION PREVENTION
+============================================================
+
+High compliance risk if:
+- dealer plate is used after sale/delivery improperly
+- dealer plate is used for hire
+- dealer plate is used on ineligible tow truck/wrecker
+- dealer plate is used to transport another vehicle
+- vehicle is not dealer-owned/in inventory/business use
+- heavy truck dealer plate exceeds 24-hour demonstration rule
+- heavy truck demo form is not retained in vehicle
+- dealer regular plate transfer is to non-comparable vehicle or wrong weight series
+
+============================================================
+AI DECISION LOGIC
+============================================================
+
+IF user_question_mentions = "dealer plate"
+OR user_question_mentions = "dealer tag"
+OR user_question_mentions = "demo plate"
+OR user_question_mentions = "manufacturer plate"
+OR user_question_mentions = "heavy truck dealer plate"
+OR user_question_mentions = "dealer plate misuse"
+THEN reference_320_13 = TRUE
+
+IF dealer_plate_use_question = TRUE
+THEN answer_should_check = "dealer ownership, inventory/for sale status, dealer business use, not for hire"
+
+IF dealer_plate_on_wrecker_or_transport_vehicle = TRUE
+THEN answer_should_warn = "Dealer plate restrictions apply."
+
+IF heavy_truck_dealer_plate_question = TRUE
+THEN answer_should_warn = "Demonstration use is limited and requires department validation form in vehicle."
+
+============================================================
+DEALERSHIP WORKFLOW
+============================================================
+
+1. Identify plate type.
+- Dealer plate
+- Manufacturer plate
+- Heavy truck dealer plate
+- Boat trailer dealer plate
+- Regular dealer-owned plate
+
+2. Verify ownership/use.
+- Dealer-owned
+- Inventory and for sale
+- Dealer business use
+- Demonstration
+
+3. Check restrictions.
+- Not for hire
+- Tow truck/wrecker restrictions
+- Transport vehicle restrictions
+- Heavy truck 24-hour demo limit
+
+4. Verify documentation.
+- License tax paid
+- Required validation form for heavy truck demo
+- Transfer application if regular plate transfer
+
+5. Hold/escalate if misuse risk.
+- Do not use dealer plate on ineligible vehicle or use case.
+
+============================================================
+COMMON CLERK ANSWER STYLE
+============================================================
+
+When answering a 320.13 question, the AI should explain:
+
+1. What type of dealer/manufacturer plate is involved.
+2. Whether the vehicle is dealer/manufacturer owned.
+3. Whether it is inventory/demo/business use.
+4. Whether restricted use applies.
+5. Whether the plate use is allowed, not allowed, or needs escalation.
+
+============================================================
+RELATED LOGIC MAPS
+============================================================
+
+- plate_registration_action_logic_map.txt
+- validation_logic_map.txt
+- rejection_prevention_logic_map.txt
+- escalation_red_flags_logic_map.txt
+
+============================================================
+RELATED PROCEDURE AREAS
+============================================================
+
+- Dealer plate workflow
+- Temporary tag workflow
+- Dealer compliance workflow
+- Inventory/demo vehicle workflow
+- Heavy truck dealer workflow
+
+============================================================
+RELATED STATUTES
+============================================================
+
+- 320.08
+- 320.131
+- 320.27
+- 320.77
+- 320.771
+
+============================================================
+END OF FILE
+============================================================

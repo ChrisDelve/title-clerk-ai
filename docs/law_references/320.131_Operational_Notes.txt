@@ -1,0 +1,349 @@
+STATUTE: 320.131
+TITLE: Temporary Tags
+SOURCE: https://www.leg.state.fl.us/statutes/index.cfm?App_mode=Display_Statute&Search_String=&URL=0300-0399/0320/Sections/0320.131.html
+DOCUMENT_TYPE: Florida Law Reference / Operational Notes
+CATEGORY: TEMPORARY TAGS / DEALER TEMP TAGS / PRIVATE SALE TEMP TAGS / 10-DAY TAG / 30-DAY TAG / 60-DAY TAG / 90-DAY TAG / TEMP TAG ABUSE
+
+============================================================
+PURPOSE
+============================================================
+
+This statute governs Florida temporary tags.
+
+It is the legal reference for:
+- when a temporary tag may be issued
+- dealer temporary tags
+- casual/private sale temporary tags
+- driveaway/common carrier temporary tags
+- financial institution repossession demonstration tags
+- out-of-state purchaser tags
+- VIN verification / weigh / emission test 10-day tags
+- lien/out-of-state title 60-day tags
+- deployed military 60-day tags
+- personalized/specialty plate 90-day tags
+- off-premise sales transport tags
+- temp tag limits, fees, display, misuse, and electronic issuance
+
+============================================================
+PLAIN ENGLISH SUMMARY
+============================================================
+
+The department may design, issue, and regulate temporary tags for specific authorized situations.
+
+Unless a specific exception says otherwise, a temporary tag under this section is generally valid for 30 days and no more than two may be issued to the same person for the same vehicle.
+
+A 10-day temporary tag applies where the vehicle must be weighed, emission tested, or have VIN verified before registration.
+
+A 60-day temporary tag applies when an existing owner has applied to transfer a valid out-of-state title subject to lien, and also for certain deployed active-duty military servicemembers with valid Florida driver licenses.
+
+A 90-day temporary tag applies while a personalized prestige or specialty plate is being manufactured.
+
+Temporary tags must be conspicuously displayed in the rear license plate bracket, or front location if the vehicle requires front plates.
+
+Temporary tag misuse has penalties, and willful abuse to avoid registration is a first-degree misdemeanor. Issuing a temporary tag to a fictitious person/entity to hide the true owner is a third-degree felony.
+
+Dealers must use the department’s electronic temporary tag system and may face license discipline for noncompliance.
+
+============================================================
+TITLE CLERK IMPORTANCE
+============================================================
+
+320.131 is critical for:
+- temp tag questions
+- whether a temp tag can be issued
+- dealer temp tag compliance
+- more than two temp tags issue
+- VIN verification temp tag
+- out-of-state lien/title temp tag
+- specialty/personalized plate temporary tag
+- military deployed temp tag
+- private sale temp tag
+- temp tag misuse/fraud prevention
+- electronic temp tag system requirements
+
+============================================================
+COMMON WORKFLOW CONNECTIONS
+============================================================
+
+- Dealer delivery
+- Temp tag issuance
+- Private/casual sale
+- Out-of-state purchaser
+- VIN verification required before registration
+- Vehicle needs to be weighed before registration
+- Out-of-state title subject to lien
+- Active-duty deployed servicemember
+- Personalized/specialty plate pending manufacture
+- Off-premise sale location transport
+- Repossession demonstration
+- More than two temp tags
+- Consumer complaint temp tag
+- Temp tag abuse/misuse
+
+============================================================
+OPERATIONAL RULES
+============================================================
+
+IF dealer_license_plate_may_not_be_lawfully_used = TRUE
+THEN temporary_tag_review_available = TRUE
+
+IF casual_or_private_sale = TRUE
+THEN temporary_tag_review_available = TRUE
+
+IF common_carrier_or_driveaway_company_transporting_for_others = TRUE
+THEN temporary_tag_review_available = TRUE
+
+IF bank_credit_union_or_financial_institution_demonstrating_repossession_for_sale = TRUE
+THEN temporary_tag_review_available = TRUE
+
+IF motor_vehicle_sold_in_Florida_to_out_of_state_resident_for_registration_elsewhere = TRUE
+AND vehicle_not_required_to_be_registered_under_320_38 = TRUE
+THEN temporary_tag_review_available = TRUE
+
+IF vehicle_must_be_weighed_before_registration = TRUE
+THEN temporary_tag_validity_days = 10
+
+IF vehicle_must_be_emission_tested_before_registration = TRUE
+THEN temporary_tag_validity_days = 10
+
+IF vehicle_must_have_VIN_verified_before_registration = TRUE
+THEN temporary_tag_validity_days = 10
+
+IF out_of_state_resident_subject_to_Florida_registration_must_secure_home_state_ownership_documentation = TRUE
+THEN temporary_tag_review_available = TRUE
+
+IF rental_car_company_has_motor_vehicle_dealer_license = TRUE
+THEN temporary_tag_review_available_under_department_rules = TRUE
+
+IF consumer_complaint_requires_more_than_two_temp_tags = TRUE
+THEN department_may_issue_more_than_two_temp_tags = TRUE
+
+IF personalized_or_specialty_plate_being_manufactured = TRUE
+THEN temporary_tag_validity_days = 90
+
+IF licensed_dealer_transports_vehicle_from_licensed_location_to_off_premise_sales_location_and_return = TRUE
+THEN dealer_off_premise_temp_tag_review_available = TRUE
+
+IF existing_owner_submitted_application_to_transfer_valid_out_of_state_title_subject_to_lien = TRUE
+THEN temporary_tag_validity_days = 60
+
+IF active_duty_military_with_valid_Florida_driver_license_deployed_outside_state = TRUE
+THEN temporary_tag_validity_days = 60
+
+IF temporary_tag_issued_under_320_131 = TRUE
+AND no_specific_duration_exception_applies = TRUE
+THEN temporary_tag_validity_days = 30
+
+IF temporary_tag_issued_under_320_131 = TRUE
+AND no_specific_exception_allows_more = TRUE
+THEN no_more_than_two_temp_tags_same_person_same_vehicle = TRUE
+
+IF temporary_tag_fee_required = TRUE
+THEN temporary_tag_fee = "$2"
+
+IF temporary_tag_expired_7_days_or_less = TRUE
+THEN noncriminal_nonmoving_infraction_risk = TRUE
+
+IF temporary_tag_unlawfully_issued_or_used = TRUE
+THEN noncriminal_moving_violation_risk = TRUE
+
+IF temporary_tag_abused_to_avoid_registration = TRUE
+THEN misdemeanor_first_degree_risk = TRUE
+
+IF temporary_tag_issued_to_fictitious_person_or_entity_to_hide_true_owner = TRUE
+THEN felony_third_degree_risk = TRUE
+
+IF temporary_tag_issuer_authorized = TRUE
+THEN required_records_must_be_maintained_and_open_to_department_inspection = TRUE
+
+IF dealer_issues_temp_tag = TRUE
+THEN dealer_electronic_temp_tag_system_required = TRUE
+
+IF electronic_temp_tag_system_outage = TRUE
+THEN backup_manual_issuance_method_and_timely_electronic_reporting_required = TRUE
+
+============================================================
+TEMP TAG DISPLAY LOGIC
+============================================================
+
+IF temporary_tag_issued = TRUE
+THEN tag_must_be_conspicuously_displayed = TRUE
+
+IF vehicle_requires_rear_plate_display = TRUE
+THEN temporary_tag_display_location = "rear license plate bracket"
+
+IF vehicle_requires_front_plate_display = TRUE
+THEN temporary_tag_display_location = "front plate location"
+
+IF temporary_tag_media_used = TRUE
+THEN media_must_maintain_structural_integrity_in_weather = TRUE
+
+============================================================
+DEALER TEMP TAG LOGIC
+============================================================
+
+IF dealer_issues_temp_tag = TRUE
+THEN authorized_temp_tag_scenario_required = TRUE
+
+IF dealer_issues_temp_tag = TRUE
+THEN electronic_temp_tag_system_required = TRUE
+
+IF dealer_fails_to_comply_with_electronic_temp_tag_requirements = TRUE
+THEN dealer_license_discipline_review_required = TRUE
+
+IF dealer_temp_tag_requested_more_than_two_times_same_person_same_vehicle = TRUE
+THEN consumer_complaint_or_department_exception_review_required = TRUE
+
+IF dealer_uses_temp_tag_to_avoid_registration = TRUE
+THEN temp_tag_abuse_escalation_required = TRUE
+
+============================================================
+COMMON DEALERSHIP ISSUES
+============================================================
+
+- Customer needs temp tag but permanent plate cannot issue yet
+- VIN verification needed before registration
+- Out-of-state title subject to lien
+- Customer wants third temp tag
+- Specialty plate is being manufactured
+- Dealer cannot legally use dealer plate
+- Temp tag expired
+- Temp tag printed/displayed incorrectly
+- Dealer system outage
+- Temp tag used to delay/avoid registration
+- Temp tag issued to wrong/fictitious person
+- Finance asks for temp tag when registration issue should block delivery
+- Dealer fails to keep temp tag records
+
+============================================================
+REJECTION PREVENTION
+============================================================
+
+High compliance/rejection risk if:
+- temp tag is issued without authorized statutory basis
+- more than two temp tags are issued without allowed exception
+- wrong duration is used
+- 10-day tag is not limited to weigh/emissions/VIN verification purpose
+- 60-day tag conditions are not met
+- 90-day specialty/personalized plate purpose is not met
+- temp tag is used to avoid registration
+- tag is issued to fictitious person/entity
+- dealer does not use electronic issuance system
+- dealer records are missing
+- temp tag not displayed correctly
+
+============================================================
+AI DECISION LOGIC
+============================================================
+
+IF user_question_mentions = "temporary tag"
+OR user_question_mentions = "temp tag"
+OR user_question_mentions = "paper tag"
+OR user_question_mentions = "third temp tag"
+OR user_question_mentions = "10 day tag"
+OR user_question_mentions = "60 day tag"
+OR user_question_mentions = "90 day tag"
+THEN reference_320_131 = TRUE
+
+IF temp_tag_requested = TRUE
+THEN answer_should_check = "authorized statutory reason, duration, limit, fee, display, and dealer electronic issuance"
+
+IF more_than_two_temp_tags_requested = TRUE
+THEN answer_should_warn = "No more than two temp tags for same person/same vehicle unless allowed exception/department consumer complaint situation applies."
+
+IF VIN_verification_needed_before_registration = TRUE
+THEN answer_should_review = "10-day temporary tag"
+
+IF valid_out_of_state_title_subject_to_lien_transfer_application_submitted = TRUE
+THEN answer_should_review = "60-day temporary tag"
+
+IF specialty_or_personalized_plate_pending_manufacture = TRUE
+THEN answer_should_review = "90-day temporary tag"
+
+============================================================
+DEALERSHIP WORKFLOW
+============================================================
+
+1. Identify reason for temp tag.
+- Dealer plate cannot be used
+- Private/casual sale
+- VIN verification / weigh / emissions
+- Out-of-state purchaser
+- Out-of-state title subject to lien
+- Deployed military
+- Specialty/personalized plate pending
+- Consumer complaint
+- Off-premise dealer transport
+
+2. Determine allowed duration.
+- 10 days
+- 30 days
+- 60 days
+- 90 days
+
+3. Check two-tag limit.
+- No more than two for same person/same vehicle unless exception applies.
+
+4. Verify display and issuance.
+- Proper location.
+- Proper media.
+- Electronic system if dealer.
+
+5. Check abuse/fraud risk.
+- Do not use temp tags to avoid registration.
+- Do not issue to fictitious person/entity.
+
+6. Hold/escalate if unclear.
+- Temp tag is not a workaround for unresolved registration/title blocks.
+
+============================================================
+COMMON CLERK ANSWER STYLE
+============================================================
+
+When answering a 320.131 question, the AI should explain:
+
+1. Whether a temporary tag is allowed.
+2. Which statutory reason applies.
+3. How long the tag is valid.
+4. Whether the two-tag limit applies.
+5. Whether dealer electronic issuance/records apply.
+6. Whether abuse/misuse or fraud risk exists.
+7. Whether transaction can proceed, hold, or escalate.
+
+============================================================
+RELATED LOGIC MAPS
+============================================================
+
+- plate_registration_action_logic_map.txt
+- validation_logic_map.txt
+- rejection_prevention_logic_map.txt
+- forms_required_logic_map.txt
+- escalation_red_flags_logic_map.txt
+- transaction_type_logic_map.txt
+
+============================================================
+RELATED PROCEDURE AREAS
+============================================================
+
+- Temporary tag workflow
+- Dealer delivery workflow
+- VIN verification workflow
+- Out-of-state title workflow
+- Specialty plate workflow
+- Dealer compliance workflow
+
+============================================================
+RELATED STATUTES
+============================================================
+
+- 320.02
+- 320.06
+- 320.13
+- 320.27
+- 320.38
+- 319.23
+- 319.24
+
+============================================================
+END OF FILE
+============================================================

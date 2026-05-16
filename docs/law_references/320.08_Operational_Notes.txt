@@ -1,0 +1,290 @@
+STATUTE: 320.08
+TITLE: License Taxes
+SOURCE: https://www.leg.state.fl.us/statutes/index.cfm?App_mode=Display_Statute&Search_String=&URL=0300-0399/0320/Sections/0320.08.html
+DOCUMENT_TYPE: Florida Law Reference / Operational Notes
+CATEGORY: LICENSE TAXES / REGISTRATION FEES / VEHICLE CLASSIFICATION / PRIVATE AUTO / TRUCK / MOTORCYCLE / MOBILE HOME / HEAVY TRUCK
+
+============================================================
+PURPOSE
+============================================================
+
+This statute establishes annual license taxes for operation of motor vehicles, mopeds, tri-vehicles, and mobile homes.
+
+It is the legal reference for:
+- license tax classification
+- private automobile license tax
+- motorcycle/moped license tax
+- truck license tax
+- heavy truck GVW license tax
+- mobile home license tax
+- vehicle class fee routing
+- fee table cross-reference
+
+============================================================
+PLAIN ENGLISH SUMMARY
+============================================================
+
+Florida imposes annual license taxes for registration or renewal of registration.
+
+The amount depends on the vehicle type and classification.
+
+Common categories include:
+- motorcycles and mopeds
+- automobiles or tri-vehicles for private use
+- trucks
+- heavy trucks / truck tractors by gross vehicle weight
+- wreckers
+- trailers
+- school buses
+- for-hire vehicles
+- mobile homes
+- dealer / manufacturer / transporter / transporter-related classes
+- recreational vehicles and other special classes
+
+This statute is a fee classification statute. It should be paired with official fee tables and raw fee notes before quoting exact total registration costs.
+
+============================================================
+TITLE CLERK IMPORTANCE
+============================================================
+
+320.08 is critical for:
+- registration fee questions
+- license tax classification
+- private auto vs truck classification
+- truck weight classification
+- commercial/heavy truck classification
+- motorcycle/moped registration
+- mobile home registration
+- trailer registration
+- fee calculation routing
+- IRF / surcharge / service charge cross-checking
+
+============================================================
+COMMON WORKFLOW CONNECTIONS
+============================================================
+
+- Registration fee quote
+- Renewal fee quote
+- New plate fee quote
+- Transfer plate fee quote
+- Replacement plate fee quote
+- Truck weight class review
+- GVW review
+- Mobile home decal/registration
+- Motorcycle/moped registration
+- Trailer registration
+- Commercial/heavy truck registration
+- Fee table routing
+
+============================================================
+OPERATIONAL RULES
+============================================================
+
+IF registration_or_renewal_requested = TRUE
+THEN license_tax_classification_required = TRUE
+
+IF vehicle_type = "motorcycle"
+THEN motorcycle_license_tax_review_required = TRUE
+
+IF vehicle_type = "moped"
+THEN moped_license_tax_review_required = TRUE
+
+IF vehicle_type = "private_auto"
+THEN private_auto_net_weight_classification_required = TRUE
+
+IF private_auto_net_weight < 2500
+THEN private_auto_license_tax_class = "less_than_2500_pounds"
+
+IF private_auto_net_weight >= 2500
+AND private_auto_net_weight < 3500
+THEN private_auto_license_tax_class = "2500_to_less_than_3500_pounds"
+
+IF private_auto_net_weight >= 3500
+THEN private_auto_license_tax_class = "3500_pounds_or_more"
+
+IF vehicle_type = "truck"
+THEN truck_net_weight_classification_required = TRUE
+
+IF truck_net_weight < 2000
+THEN truck_license_tax_class = "less_than_2000_pounds"
+
+IF truck_net_weight >= 2000
+AND truck_net_weight <= 3000
+THEN truck_license_tax_class = "2000_to_3000_pounds"
+
+IF truck_net_weight > 3000
+AND truck_net_weight <= 5000
+THEN truck_license_tax_class = "over_3000_to_5000_pounds"
+
+IF heavy_truck_or_truck_tractor = TRUE
+THEN gross_vehicle_weight_classification_required = TRUE
+
+IF mobile_home_registration = TRUE
+THEN mobile_home_license_tax_classification_required = TRUE
+
+IF trailer_registration = TRUE
+THEN trailer_license_tax_classification_required = TRUE
+
+IF for_hire_vehicle = TRUE
+THEN for_hire_license_tax_classification_required = TRUE
+
+IF exact_fee_quote_requested = TRUE
+THEN reference_raw_fee_tables_and_fee_notes_required = TRUE
+
+IF license_tax_amount_needed = TRUE
+THEN do_not_guess_fee_amount = TRUE
+
+============================================================
+PRIVATE AUTO / TRUCK CLASSIFICATION LOGIC
+============================================================
+
+IF user_question_mentions = "registration fee"
+OR user_question_mentions = "how much is registration"
+OR user_question_mentions = "license tax"
+THEN vehicle_classification_required_before_answer = TRUE
+
+IF vehicle_classification_unknown = TRUE
+THEN answer_should_request_or_identify_needed_vehicle_class = TRUE
+
+IF truck_weight_unknown = TRUE
+THEN answer_should_warn = "Truck registration tax depends on weight/classification."
+
+IF private_auto_weight_unknown = TRUE
+THEN answer_should_warn = "Private auto registration tax depends on net weight class."
+
+============================================================
+COMMON DEALERSHIP ISSUES
+============================================================
+
+- Finance asks registration fee without vehicle class
+- Truck weight class not checked
+- Private auto weight class not checked
+- Heavy truck/GVW not reviewed
+- Trailer fee quoted incorrectly
+- Mobile home fee confused with motor vehicle fee
+- Motorcycle/moped fee confused with private auto
+- IRF confused with license tax
+- State transportation surcharge omitted
+- Service charges omitted
+- Raw fee table not consulted before quoting final amount
+
+============================================================
+REJECTION PREVENTION
+============================================================
+
+High rejection risk / quote risk if:
+- vehicle classification is wrong
+- net weight/GVW is ignored
+- exact fee quoted without fee table support
+- IRF, surcharge, service charge, or plate fee is omitted
+- truck treated like private auto
+- mobile home/trailer/commercial class is misclassified
+- renewal/new plate/transfer fee components are merged incorrectly
+
+============================================================
+AI DECISION LOGIC
+============================================================
+
+IF user_question_mentions = "license tax"
+OR user_question_mentions = "registration fee"
+OR user_question_mentions = "tag fee"
+OR user_question_mentions = "truck fee"
+OR user_question_mentions = "private auto fee"
+OR user_question_mentions = "mobile home fee"
+THEN reference_320_08 = TRUE
+
+IF exact_fee_question = TRUE
+THEN answer_should_reference = "320.08 classification plus fee notes/raw fee tables"
+
+IF vehicle_classification_missing = TRUE
+THEN answer_should_warn = "Need vehicle type/classification/weight before exact registration tax can be quoted."
+
+IF fee_question = TRUE
+THEN answer_should_not_merge_fee_amounts_together = TRUE
+
+============================================================
+DEALERSHIP WORKFLOW
+============================================================
+
+1. Identify registration action.
+- New plate
+- Transfer plate
+- Renewal
+- Replacement
+- IRF review
+
+2. Identify vehicle class.
+- Private auto
+- Truck
+- Heavy truck
+- Motorcycle/moped
+- Trailer
+- Mobile home
+- For-hire
+- Commercial/apportioned
+
+3. Identify weight/classification.
+- Net weight for private auto/truck where applicable.
+- GVW for heavy truck/truck tractor.
+- Special class if applicable.
+
+4. Pull correct fee table.
+- Use raw fee tables and fee notes.
+- Add service charges/surcharges/IRF/plate fees separately where applicable.
+
+5. Quote carefully.
+- Do not combine unrelated fee amounts.
+- Identify each fee component separately.
+
+6. Hold/escalate if classification unclear.
+- Especially commercial/heavy truck/mobile home/trailer questions.
+
+============================================================
+COMMON CLERK ANSWER STYLE
+============================================================
+
+When answering a 320.08 question, the AI should explain:
+
+1. Registration taxes depend on vehicle classification.
+2. What classification appears to apply.
+3. What missing information is needed for exact quote.
+4. Which other fees may also apply.
+5. That raw fee tables should be used for exact fee amounts.
+6. Whether transaction can proceed or needs more classification review.
+
+============================================================
+RELATED LOGIC MAPS
+============================================================
+
+- plate_registration_action_logic_map.txt
+- validation_logic_map.txt
+- rejection_prevention_logic_map.txt
+- forms_required_logic_map.txt
+- transaction_type_logic_map.txt
+
+============================================================
+RELATED PROCEDURE AREAS
+============================================================
+
+- Registration fee workflow
+- Raw fee table workflow
+- IRF workflow
+- Plate transfer workflow
+- New plate workflow
+- Truck/commercial registration workflow
+- Mobile home registration workflow
+
+============================================================
+RELATED STATUTES
+============================================================
+
+- 320.02
+- 320.06
+- 320.07
+- 320.072
+- 320.0804
+- 320.10
+
+============================================================
+END OF FILE
+============================================================
