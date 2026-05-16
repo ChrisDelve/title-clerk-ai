@@ -411,6 +411,109 @@ EXPECTED ANSWER:
 If odometer cannot show same mileage after repair/replacement, it must be set to zero and written notice must be attached showing prior mileage and repair/replacement date. Review for fraud/tampering risk.
 
 ============================================================
+KILOMETERS VS MILES TITLE REVIEW
+============================================================
+
+IF title_or_supporting_document_shows_kilometers = TRUE
+THEN odometer_unit_discrepancy_review_required = TRUE
+
+IF odometer_unit_discrepancy_review_required = TRUE
+THEN compare_title_application_odometer_disclosure_vehicle_odometer_prior_title_and_supporting_documents = TRUE
+
+IF kilometers_shown_on_prior_title_or_foreign_document = TRUE
+THEN do_not_guess_or_manually_convert_without_supporting_review = TRUE
+
+IF mileage_unit_conversion_needed = TRUE
+THEN title_lead_tax_collector_or_FLHSMV_review_required = TRUE
+
+IF odometer_disclosure_must_be_corrected = TRUE
+THEN review_HSMV_82993_HSMV_82994_or_affidavit_requirements = TRUE
+
+IF dealer_error_caused_wrong_unit_or_mileage = TRUE
+THEN dealer_letterhead_affidavit_explaining_error_may_be_required = TRUE
+
+IF unit_discrepancy_unresolved = TRUE
+THEN transaction_hold_required = TRUE
+
+COMMON CLERK ANSWER:
+When a vehicle title or supporting document shows kilometers instead of miles, do not guess the conversion and do not submit as a normal clean mileage transaction. Verify the source document, compare all odometer disclosures, determine whether the unit issue came from a prior jurisdiction, foreign/import document, auction record, or dealer entry error, and escalate for title lead/tax collector/FLHSMV review before submission.
+
+============================================================
+ODOMETER DISCLOSURE AGE EXEMPTION RULE
+============================================================
+
+IF vehicle_model_year >= 2011
+THEN odometer_disclosure_exemption_applies_after_20_years = TRUE
+
+IF vehicle_model_year <= 2010
+THEN odometer_disclosure_exemption_applies_after_10_years = TRUE
+
+IF answer_mentions_odometer_age_exemption = TRUE
+THEN do_not_say_generally_under_10_years_only = TRUE
+
+COMMON CLERK ANSWER:
+Do not describe odometer disclosure as generally required only for vehicles under 10 years old. For model year 2011 and newer vehicles, odometer disclosure exemption is after 20 years. For model year 2010 and older vehicles, exemption is after 10 years.
+
+============================================================
+ODOMETER FORM CAUTION
+============================================================
+
+IF odometer_unit_discrepancy_or_mileage_correction_issue = TRUE
+THEN do_not_call_HSMV_82040_an_odometer_disclosure_statement = TRUE
+
+IF odometer_unit_discrepancy_or_mileage_correction_issue = TRUE
+THEN do_not_state_HSMV_82040_alone_corrects_the_odometer_issue = TRUE
+
+IF HSMV_82040_is_mentioned = TRUE
+THEN describe_as_title_application_not_odometer_disclosure_statement = TRUE
+
+IF odometer_disclosure_or_reassignment_needed = TRUE
+THEN review_HSMV_82993_HSMV_82994_HSMV_82995_HSMV_82996_or_applicable_title_correction_path = TRUE
+
+IF odometer_discrepancy_or_alteration_exists = TRUE
+THEN review_TL_09_odometer_discrepancy_correction_requirements = TRUE
+
+COMMON CLERK ANSWER:
+For mileage-unit discrepancies, review the correct odometer disclosure, reassignment, secure power of attorney, odometer affidavit, or title correction path. Do not assume one form alone fixes the issue. HSMV 82040 is a title application, not the standalone odometer disclosure statement. HSMV 82993 is the separate odometer disclosure statement. HSMV 82994 may apply for dealer reassignment. HSMV 82995 may apply for secure power of attorney/odometer disclosure. HSMV 82996 may apply for dealer/auction/customer odometer affidavit situations.
+
+============================================================
+INCORRECT MILEAGE BRAND REVIEW
+============================================================
+
+IF title_branded_with_incorrect_miles = TRUE
+THEN odometer_brand_review_required = TRUE
+
+IF mileage_brand_review_required = TRUE
+THEN do_not_process_as_normal_clean_title_transaction = TRUE
+
+IF mileage_brand_review_required = TRUE
+THEN compare_title_record_current_title_odometer_disclosure_prior_title_vehicle_odometer_and_supporting_documents = TRUE
+
+IF clerical_mileage_error_supported_by_documents = TRUE
+THEN title_correction_review_required = TRUE
+
+IF clerical_mileage_error_not_supported_by_documents = TRUE
+THEN transaction_hold_required = TRUE
+
+IF not_actual_mileage_brand_exists = TRUE
+THEN do_not_promise_brand_removal = TRUE
+
+IF mileage_brand_change_requested = TRUE
+THEN title_lead_tax_collector_or_FLHSMV_review_required = TRUE
+
+IF odometer_rollback_or_tampering_suspected = TRUE
+THEN fraud_escalation_required = TRUE
+
+IF odometer_disclosure_conflicts_with_title_brand = TRUE
+THEN transaction_hold_required = TRUE
+
+IF supporting_mileage_documents_missing = TRUE
+THEN transaction_hold_required = TRUE
+
+COMMON CLERK ANSWER:
+When a title is branded with incorrect miles, do not treat it as a simple typo. First determine whether the issue is a supported clerical error, a mileage discrepancy, a Not Actual Mileage brand, or possible odometer fraud/tampering. Compare the title record, current title, prior title, odometer disclosure, vehicle odometer, auction records, and supporting documents. Do not promise that a mileage brand can be removed or changed. Hold the transaction and escalate to the title lead, tax collector, or FLHSMV if the brand, proof, or mileage history is unclear.
+
+============================================================
 REJECTION PREVENTION SUMMARY
 ============================================================
 

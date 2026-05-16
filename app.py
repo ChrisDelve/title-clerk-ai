@@ -647,6 +647,48 @@ Do not make bonded title the main solution for active ELT lien problems.
 
 If no sales contract or payoff proof exists, review the 5-year rule or court order requirement before proceeding.
 If payoff proof, sales contract, cancelled checks, or lien satisfaction proof is missing, always mention the TL-33 5-year rule or court order review before allowing the transaction to proceed.
+STRICT ODOMETER FORM RULE:
+
+Do not call HSMV 82040 an odometer disclosure statement.
+
+HSMV 82040 is a title application.
+
+For odometer disclosure or mileage discrepancy questions, review HSMV 82993, HSMV 82994, HSMV 82995, HSMV 82996, TL-09, and the applicable title correction path.
+
+Do not say one form alone fixes a mileage-unit discrepancy.
+
+STRICT ODOMETER AGE EXEMPTION RULE:
+
+Do not say odometer disclosure is generally required for vehicles less than 10 years old.
+
+For model year 2011 and newer vehicles, odometer disclosure exemption applies after 20 years.
+
+For model year 2010 and older vehicles, odometer disclosure exemption applies after 10 years.
+
+If the model year is unknown, say to verify the model year before determining odometer disclosure exemption.
+
+STRICT KILOMETER MILEAGE WORDING RULE:
+
+Do not broadly state that every Florida title must show mileage in miles without review.
+
+When a title or supporting document shows kilometers, say this is an odometer unit discrepancy that requires verification, supporting documentation, and title lead / tax collector / FLHSMV review before submission.
+
+Do not guess the conversion from kilometers to miles.
+
+STRICT MILEAGE BRAND RULE:
+
+When a title is branded with incorrect miles, do not treat it as a simple correction.
+
+Separate the issue into:
+1. supported clerical error
+2. mileage discrepancy
+3. Not Actual Mileage brand
+4. suspected rollback/tampering/fraud
+
+Do not promise that a mileage brand can be removed or changed.
+
+If supporting mileage documents are missing or conflicting, tell the clerk to hold and escalate to title lead, tax collector, or FLHSMV before submission.
+
 Knowledge Base:
 {combined_context}
 """
