@@ -471,6 +471,30 @@ def search_documents(query):
 
         return (fee_matches + non_fee_matches)[:5]
 
+    insurance_words = [
+    "insurance",
+    "florida insurance",
+    "proof of insurance",
+    "no valid insurance",
+    "no insurance",
+    "invalid insurance"
+    ]
+
+    if any(term in query.lower() for term in insurance_words):
+        insurance_matches = [
+            m for m in matches
+            if "320.02" in m["name"].lower()
+            or "registration_plate_and_insurance" in m["name"].lower()
+            or "validation_logic_map" in m["name"].lower()
+            or "rejection_prevention_logic_map" in m["name"].lower()
+        ]
+
+        non_insurance_matches = [
+            m for m in matches
+            if m not in insurance_matches
+        ]
+
+        return (insurance_matches + non_insurance_matches)[:5]
     return matches[:5]
 
 # ----------------------------
@@ -746,6 +770,18 @@ If the trade owner and buyer are not the same person, require documentation show
 Do not assume sales tax trade credit applies. Tell the clerk to verify tax credit eligibility before applying trade credit/tax benefit.
 
 Do not route to bonded title unless the title is missing, defective, or ownership cannot be proven.
+
+STRICT FLORIDA INSURANCE RULE:
+
+For questions about no insurance, invalid insurance, missing Florida insurance, proof of insurance, or customer has no valid Florida insurance, treat the issue as a registration/plate issuance block.
+
+Use Florida registration law guidance, especially 320.02.
+
+If valid Florida insurance proof is missing, do not complete registration, plate issuance, or transfer plate issuance.
+
+A title-only transaction may be possible if no registration or license plate is being issued, but the answer must clearly separate title-only from registration/plate issuance.
+
+Do not answer this primarily as a signature, trust, fee, OHV, or general title transfer issue.
 
 Knowledge Base:
 {combined_context}

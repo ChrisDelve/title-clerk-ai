@@ -288,6 +288,42 @@ THEN reference_statute = "320.38"
 AND detailed_file = "320.38_Operational_Notes.txt"
 
 ============================================================
+NO VALID FLORIDA INSURANCE — STRICT WORKFLOW
+============================================================
+
+IF user_question_mentions = "no valid Florida insurance"
+OR user_question_mentions = "no insurance"
+OR user_question_mentions = "missing insurance"
+OR user_question_mentions = "invalid insurance"
+OR user_question_mentions = "proof of insurance"
+THEN insurance_registration_block_workflow_required = TRUE
+
+IF insurance_registration_block_workflow_required = TRUE
+THEN reference_320_02_required = TRUE
+
+IF valid_Florida_insurance_proof_missing = TRUE
+AND registration_or_plate_issuance_requested = TRUE
+THEN do_not_submit_registration_or_issue_plate = TRUE
+
+IF valid_Florida_insurance_proof_missing = TRUE
+AND transfer_plate_requested = TRUE
+THEN do_not_process_transfer_plate_until_valid_insurance_verified = TRUE
+
+IF valid_Florida_insurance_proof_missing = TRUE
+AND new_plate_requested = TRUE
+THEN do_not_issue_new_plate_until_valid_insurance_verified = TRUE
+
+IF title_only_transaction_requested = TRUE
+AND no_registration_or_plate_issuance_requested = TRUE
+THEN title_only_review_may_be_possible_without_registration_insurance_requirement = TRUE
+
+IF insurance_proof_disputed_or_unclear = TRUE
+THEN hold_transaction_and_escalate_to_title_lead_tax_collector_or_FLHSMV = TRUE
+
+COMMON CLERK ANSWER:
+If the customer has no valid Florida insurance, do not complete registration, new plate issuance, or transfer plate issuance. Verify valid Florida insurance proof before submitting the registration application. If the transaction is title-only and no plate or registration is being issued, it may be handled separately, but do not issue registration or plates without valid insurance proof. Hold and escalate if insurance validity, VIN, effective dates, or coverage proof is unclear.
+
+============================================================
 REGISTRATION REQUIREMENTS / INSURANCE LAW
 ============================================================
 
