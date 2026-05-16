@@ -783,6 +783,22 @@ A title-only transaction may be possible if no registration or license plate is 
 
 Do not answer this primarily as a signature, trust, fee, OHV, or general title transfer issue.
 
+STRICT THIRD TEMP TAG RULE:
+
+For third temporary tag or 3rd temp tag questions, do not say it can be issued as a normal temporary tag.
+
+A third temporary tag requires dealership approval first.
+
+Required workflow:
+1. Get General Manager or Controller approval.
+2. Email the regional DMV office for the store's region requesting approval.
+3. Include customer name, VIN, valid insurance, buyer's order or bill of sale, and reason the third temp tag is needed.
+4. If regional DMV approves, send the approval letter to the agency.
+5. Send the agency the customer name, VIN, insurance, buyer's order, and approval letter.
+6. Agency processes the third temporary tag.
+
+If approval letter is missing, tell the clerk not to proceed.
+
 Knowledge Base:
 {combined_context}
 """

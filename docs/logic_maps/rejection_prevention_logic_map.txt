@@ -141,6 +141,43 @@ AND transferable_plate_not_verified = TRUE
 THEN manual_review_required = TRUE
 
 ============================================================
+THIRD TEMPORARY TAG — DEALERSHIP APPROVAL WORKFLOW
+============================================================
+
+IF user_question_mentions = "third temporary tag"
+OR user_question_mentions = "third temp tag"
+OR user_question_mentions = "3rd temporary tag"
+OR user_question_mentions = "3rd temp tag"
+THEN third_temp_tag_workflow_required = TRUE
+
+IF third_temp_tag_workflow_required = TRUE
+THEN do_not_issue_third_temp_tag_as_normal_temp_tag = TRUE
+
+IF third_temp_tag_workflow_required = TRUE
+THEN general_manager_or_controller_approval_required = TRUE
+
+IF third_temp_tag_workflow_required = TRUE
+THEN regional_DMV_approval_letter_required = TRUE
+
+IF regional_DMV_approval_letter_missing = TRUE
+THEN do_not_send_to_agency_for_third_temp_processing = TRUE
+
+IF third_temp_tag_requested = TRUE
+THEN collect_customer_name_VIN_insurance_buyers_order_and_reason_for_third_temp = TRUE
+
+IF regional_DMV_approval_received = TRUE
+THEN send_approval_letter_customer_name_VIN_insurance_and_buyers_order_to_agency = TRUE
+
+IF agency_receives_required_approval_package = TRUE
+THEN agency_may_process_third_temp_tag = TRUE
+
+IF third_temp_reason_is_unclear = TRUE
+THEN hold_and_escalate_to_controller_or_general_manager = TRUE
+
+COMMON CLERK ANSWER:
+A third temporary tag is not processed like a normal temp tag. The dealership must first get General Manager or Controller approval. Then the dealership must request an approval letter from the regional DMV office for the store’s region. The email to the regional DMV office must include the customer name, VIN, valid insurance, buyer’s order or bill of sale, and the reason a third temporary tag is needed. If the regional DMV office approves it, send the approval letter to the agency along with the customer name, VIN, insurance, and buyer’s order. The agency then processes the third temporary tag. Do not issue or request a third temp without the approval package.s
+
+============================================================
 AUDIT TRAIL REJECTION PREVENTION
 ============================================================
 
