@@ -471,6 +471,33 @@ def search_documents(query):
 
         return (fee_matches + non_fee_matches)[:5]
 
+    third_temp_words = [
+        "third temporary tag",
+        "third temp tag",
+        "3rd temporary tag",
+        "3rd temp tag",
+        "regional dmv",
+        "approval letter",
+        "temporary tag approval"
+    ]
+
+    if any(term in query.lower() for term in third_temp_words):
+        third_temp_matches = [
+            m for m in matches
+            if "third_temp_tag" in m["name"].lower()
+            or "320.131" in m["name"].lower()
+            or "registration_plate_and_insurance" in m["name"].lower()
+            or "rejection_prevention_logic_map" in m["name"].lower()
+            or "validation_logic_map" in m["name"].lower()
+        ]
+
+        non_third_temp_matches = [
+            m for m in matches
+            if m not in third_temp_matches
+        ]
+
+        return (third_temp_matches + non_third_temp_matches)[:5]
+
     insurance_words = [
     "insurance",
     "florida insurance",

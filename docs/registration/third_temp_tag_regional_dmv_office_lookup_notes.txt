@@ -1,0 +1,217 @@
+DOCUMENT: THIRD_TEMP_TAG_REGIONAL_DMV_OFFICE_LOOKUP_NOTES
+TITLE: Third Temporary Tag Regional DMV Office Lookup
+SOURCE: https://www.flhsmv.gov/pdf/prvip/bdsregionaloffices.pdf
+DOCUMENT_TYPE: Operational Reference / Regional DMV Contact Lookup
+CATEGORY: THIRD TEMP TAG / REGIONAL DMV APPROVAL / PRVIP / DEALERSHIP WORKFLOW
+
+============================================================
+PURPOSE
+============================================================
+
+This file helps dealership clerks identify the correct FLHSMV Motor Vehicle Field Operations regional office when requesting approval for a third temporary tag.
+
+A third temporary tag should not be handled as a routine temporary tag issuance.
+
+The dealership must follow its approval workflow:
+1. Get General Manager or Controller approval.
+2. Identify the correct regional DMV office for the store’s region.
+3. Email the regional DMV office with the required approval package.
+4. Wait for written approval.
+5. Send the approval letter and required documents to the agency.
+6. Agency processes the third temporary tag.
+
+============================================================
+SOURCE SUMMARY
+============================================================
+
+The FLHSMV PDF is titled:
+
+DIVISION OF MOTORIST SERVICES
+BUREAU OF DEALER SERVICES
+MOTOR VEHICLE FIELD OPERATIONS REGIONAL OFFICES
+PRVIP PROGRAM
+
+The PDF lists regional DMV offices, addresses, phone numbers, fax numbers, emails, and the county each office is responsible for.
+
+The PDF revision shown is Rev. 6/2025.
+
+============================================================
+AI USE RULE
+============================================================
+
+IF user_question_mentions = "third temp tag"
+OR user_question_mentions = "third temporary tag"
+OR user_question_mentions = "3rd temp"
+OR user_question_mentions = "regional DMV"
+OR user_question_mentions = "approval letter"
+THEN use this file to explain that the clerk must identify the correct regional DMV office before requesting approval.
+
+Do not guess the region if the county/store location is unknown.
+
+If the store county is known, identify the matching region from this file.
+
+If the store county is unknown, tell the clerk to confirm the store county before emailing the regional DMV office.
+
+============================================================
+THIRD TEMP TAG APPROVAL PACKAGE
+============================================================
+
+When requesting third temporary tag approval from the regional DMV office, include:
+
+- Customer name
+- Vehicle Identification Number (VIN)
+- Valid Florida insurance
+- Buyer’s order or bill of sale
+- Clear reason why a third temporary tag is needed
+
+If approved, send the agency:
+
+- Regional DMV approval letter
+- Customer name
+- VIN
+- Valid Florida insurance
+- Buyer’s order or bill of sale
+
+The agency processes the third temporary tag only after receiving the required approval package.
+
+============================================================
+REGIONAL DMV OFFICE LOOKUP
+============================================================
+
+REGION 1
+Office: Motor Vehicle Field Operations
+Address: 1135 Banks Road, Margate, Florida 33063
+Telephone: (954) 969-4216
+Fax: (954) 969-4237
+Email: DmvRegion1@flhsmv.gov
+Responsible for: Broward County
+
+REGION 2
+Office: Motor Vehicle Field Operations
+Address: 318 Southeast 25th Avenue, Ocala, Florida 34471
+Telephone: (352) 732-1267
+Fax: (352) 732-1459
+Email: DmvRegion2@flhsmv.gov
+Responsible for: Marion County
+
+REGION 3
+Office: Motor Vehicle Field Operations
+Address: 9550 Regency Square Boulevard, Suite 100, Jacksonville, Florida 32225
+Telephone: (904) 365-2681
+Fax: (904) 723-2001
+Email: DmvRegion3@flhsmv.gov
+Responsible for: Duval County
+
+REGION 4
+Office: Motor Vehicle Field Operations
+Address: 1697 North Woodland Boulevard, Suite 111D, Deland, Florida 32720
+Telephone: (386) 327-9220
+Fax: (386) 736-5092
+Email: DmvRegion4@flhsmv.gov
+Responsible for: Volusia County
+
+REGION 5
+Office: Motor Vehicle Field Operations
+Address: 4101 Clarcona-Ocoee Road, Suite 160, Orlando, Florida 32810
+Telephone: (407) 445-7400
+Fax: (407) 445-7411
+Email: DmvRegion5@flhsmv.gov
+Responsible for: Orange County
+
+REGION 6
+Office: Motor Vehicle Field Operations
+Address: NET PARK, Suite 2228, 5701 East Hillsborough Avenue, Tampa, Florida 33610
+Telephone: (813) 612-7110
+Fax: (813) 612-7111
+Email: DmvRegion6@flhsmv.gov
+Responsible for: Hillsborough County
+
+REGION 7
+Office: Motor Vehicle Field Operations
+Address: Neil Kirkman Building, 2900 Apalachee Parkway, Room B-142, MS-76, Tallahassee, Florida 32399-0600
+Telephone: (850) 617-2999
+Fax: (850) 617-5180
+Email: DmvRegion7@flhsmv.gov
+Responsible for: Leon County
+
+REGION 71 — PANAMA CITY SUB-OFFICE
+Address: 6030 County Road 2321, Panama City, Florida 32404
+Telephone: (850) 767-3660
+Fax: (850) 872-7764
+Email: DmvRegion7@flhsmv.gov
+Responsible for: Bay County
+
+REGION 72 — PENSACOLA SUB-OFFICE
+Address: 100 Stumpfield Road, Pensacola, Florida 32503
+Telephone: (850) 475-5415
+Fax: (850) 475-5423
+Email: DmvRegion7@flhsmv.gov
+Responsible for: Escambia County
+
+REGION 8
+Office: Motor Vehicle Field Operations
+Address: 323 10th Avenue West, Suite 200, Palmetto, Florida 34221
+Telephone: (941) 723-4551
+Fax: (941) 723-4553
+Email: DmvRegion8@flhsmv.gov
+Responsible for: Manatee County
+
+REGION 9
+Office: Motor Vehicle Field Operations
+Address: 901 Northpoint Parkway, Suites 115 & 116, West Palm Beach, Florida 33407
+Telephone: (561) 640-6820
+Fax: (561) 640-6835
+Email: DmvRegion9@flhsmv.gov
+Responsible for: Palm Beach County
+
+REGION 10
+Office: Motor Vehicle Field Operations
+Address: 12601 NW 42 Avenue, Opa Locka, Florida 33054
+Telephone: (786) 804-4190
+Fax: (305) 953-3160
+Email: DmvRegion10@flhsmv.gov
+Responsible for: Miami-Dade County
+
+============================================================
+DEALERSHIP WORKFLOW
+============================================================
+
+1. Confirm a third temporary tag is actually being requested.
+2. Confirm GM or Controller approval before contacting DMV region.
+3. Identify the store’s county/region.
+4. Email the correct regional DMV office.
+5. Include:
+   - Customer name
+   - VIN
+   - Valid Florida insurance
+   - Buyer’s order or bill of sale
+   - Reason for third temporary tag
+6. Wait for written approval letter.
+7. Send approval package to agency:
+   - Approval letter
+   - Customer name
+   - VIN
+   - Insurance
+   - Buyer’s order or bill of sale
+8. Agency processes third temporary tag.
+9. Save approval letter and email trail in the deal file / audit trail.
+
+============================================================
+COMMON CLERK ANSWER
+============================================================
+
+A third temporary tag requires approval before the agency can process it. First get GM or Controller approval. Then identify the correct FLHSMV regional DMV office for the dealership’s county. Email that regional office with the customer name, VIN, valid Florida insurance, buyer’s order or bill of sale, and the reason a third temp tag is needed. If the regional DMV office approves it, send the approval letter plus the customer name, VIN, insurance, and buyer’s order to the agency. Keep the approval letter and email trail in the deal file.
+
+============================================================
+RELATED FILES
+============================================================
+
+- 320.131_Operational_Notes.txt
+- fl_registration_plate_and_insurance_law_notes.txt
+- rejection_prevention_logic_map.txt
+- validation_logic_map.txt
+- third_temp_tag_workflow_notes.txt if created
+
+============================================================
+END OF FILE
+============================================================

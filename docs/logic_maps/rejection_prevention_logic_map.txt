@@ -174,6 +174,13 @@ THEN agency_may_process_third_temp_tag = TRUE
 IF third_temp_reason_is_unclear = TRUE
 THEN hold_and_escalate_to_controller_or_general_manager = TRUE
 
+IF third_temp_tag_workflow_required = TRUE
+THEN reference_workflow_note = "third_temp_tag_regional_dmv_office_lookup_notes.txt"
+
+IF third_temp_tag_requested = TRUE
+AND regional_DMV_approval_letter_missing = TRUE
+THEN reject_before_submission = TRUE
+
 COMMON CLERK ANSWER:
 A third temporary tag is not processed like a normal temp tag. The dealership must first get General Manager or Controller approval. Then the dealership must request an approval letter from the regional DMV office for the store’s region. The email to the regional DMV office must include the customer name, VIN, valid insurance, buyer’s order or bill of sale, and the reason a third temporary tag is needed. If the regional DMV office approves it, send the approval letter to the agency along with the customer name, VIN, insurance, and buyer’s order. The agency then processes the third temporary tag. Do not issue or request a third temp without the approval package.s
 
