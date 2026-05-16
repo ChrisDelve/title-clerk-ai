@@ -1,0 +1,482 @@
+DOCUMENT: FL_ELECTRONIC_FILING_SYSTEM_EFS_LAW_NOTES
+TITLE: Florida Electronic Filing System (EFS) Master Notes
+SOURCE FILES:
+- fl_efs_01_electronic_filing_system_inventory_notes.txt
+- fl_efs_02_electronic_filing_system_records_retention_notes.txt
+
+DOCUMENT_TYPE: MASTER OPERATIONAL NOTES
+CATEGORY: EFS / ORION-EFS / INVENTORY / VOIDS / RECORDS RETENTION / DOCUMENT UPLOADS / AUDIT TRAIL / DEALERSHIP COMPLIANCE
+
+============================================================
+PURPOSE
+============================================================
+
+This master file combines the operational rules for Florida Electronic Filing System (EFS) inventory handling and EFS records retention.
+
+Use this file for dealership questions involving:
+
+- EFS transactions
+- ORION-EFS document uploads
+- EFS voids
+- EFS inventory status
+- Voided temp tags or plates
+- Buyer never took possession
+- Buyer returned vehicle
+- Financing fell through
+- Customer changed from new plate to transfer tag
+- Transaction stuck in initial status
+- Missing uploaded documents
+- EFS audit trail
+- EFS records retention
+- Paper document destruction
+- VOID / INVALID document marking
+- Five-year dealer record retention
+- Tax collector / license plate agency approval
+- Dealer compliance examiner review
+
+============================================================
+RELATED PROCEDURES
+============================================================
+
+EFS-01:
+Electronic Filing System Inventory
+
+Primary use:
+Explains how EFS inventory is handled when transactions are voided, corrected, returned, or reconciled.
+
+EFS-02:
+Electronic Filing System Records Retention
+
+Primary use:
+Explains EFS document scanning, ORION-EFS uploads, paper document destruction/voiding, and records retention requirements.
+
+============================================================
+AI USE RULE
+============================================================
+
+IF user_question_mentions = "EFS"
+OR user_question_mentions = "Electronic Filing System"
+OR user_question_mentions = "ORION"
+OR user_question_mentions = "ORION-EFS"
+OR user_question_mentions = "void EFS"
+OR user_question_mentions = "void transaction"
+OR user_question_mentions = "EFS inventory"
+OR user_question_mentions = "plate inventory"
+OR user_question_mentions = "inventory status"
+OR user_question_mentions = "RS"
+OR user_question_mentions = "RT"
+OR user_question_mentions = "RR"
+OR user_question_mentions = "PN"
+OR user_question_mentions = "transaction stuck in initial"
+OR user_question_mentions = "buyer never took possession"
+OR user_question_mentions = "buyer returned vehicle"
+OR user_question_mentions = "financing fell through"
+OR user_question_mentions = "new plate changed to transfer tag"
+OR user_question_mentions = "missing uploaded document"
+OR user_question_mentions = "uploaded documents"
+OR user_question_mentions = "records retention"
+OR user_question_mentions = "destroy documents"
+OR user_question_mentions = "mark documents void"
+OR user_question_mentions = "mark documents invalid"
+OR user_question_mentions = "audit trail"
+THEN use this file for EFS operational guidance.
+
+Do not answer EFS questions only as general title, plate, or registration questions.
+
+Always determine whether the issue is:
+1. EFS inventory / void / plate status issue, or
+2. EFS records retention / upload / audit trail issue, or
+3. Both.
+
+============================================================
+CORE EFS CONCEPT
+============================================================
+
+EFS allows authorized EFS agents, including dealerships and related entities, to electronically enter motor vehicle registration and title data through certified service provider systems.
+
+For dealership operations, EFS creates two major compliance responsibilities:
+
+1. Inventory responsibility:
+   The dealership must properly handle plate/registration inventory when transactions are voided, corrected, returned, or not completed.
+
+2. Records responsibility:
+   The dealership must properly scan, submit, retain, destroy, or mark paper documents according to EFS records retention rules.
+
+============================================================
+EFS-01 INVENTORY / VOID TRANSACTION RULES
+============================================================
+
+Use EFS-01 logic when the issue involves:
+
+- Voiding an EFS transaction
+- Plate inventory
+- Inventory status
+- Buyer never took possession
+- Buyer took delivery and financing fell through
+- Buyer returned vehicle
+- Customer changed from new plate to transfer tag
+- Transaction stuck in initial status
+- EFS void error
+- Wrong inventory status selected
+- Returned plate
+- Plate should or should not be reused
+
+============================================================
+EFS INVENTORY STATUS DEFINITIONS
+============================================================
+
+RS — RE-ISSUABLE
+
+Use when:
+- Buyer never took possession.
+- Plate was not placed on the vehicle.
+- Transaction was voided for correction and will be resubmitted.
+- Inventory may be reused after correction.
+
+Common clerk meaning:
+RS means the inventory can be reissued if the facts support reuse.
+
+------------------------------------------------------------
+
+RT — EFS RETURNED
+
+Use when:
+- Transaction is voided and inventory should not be reused by the dealership.
+- Plate was issued/placed or the transaction cannot be completed.
+- Inventory must be returned to the tax collector or license plate agency.
+
+Common clerk meaning:
+RT means the inventory is in returned status and should not be treated as available dealer inventory.
+
+------------------------------------------------------------
+
+RR — RETURN RECEIVED
+
+Use when:
+- The tax collector or license plate agency physically receives returned inventory.
+- Returned inventory is accepted and marked received.
+
+Common clerk meaning:
+RR means the agency/tax collector received the returned inventory.
+
+------------------------------------------------------------
+
+PN — PAID NOT RETURNED EFS PLATE
+
+Use when:
+- EFS agent does not return inventory.
+- Bureau of Accounting invoices the EFS agent.
+- The EFS agent pays for the non-returned inventory item.
+
+Common clerk meaning:
+PN means the plate/inventory was not returned and accounting/payment consequences may apply.
+
+------------------------------------------------------------
+
+IS — ISSUED
+
+Use when:
+- Void error occurs.
+- System is not updated.
+- Inventory remains issued.
+
+Common clerk meaning:
+If the void fails, do not assume inventory changed status. Contact the tax collector office.
+
+============================================================
+EFS VOID DECISION TREE
+============================================================
+
+IF buyer_never_took_possession = TRUE
+AND plate_was_not_placed_on_vehicle = TRUE
+THEN void_transaction_and_set_inventory_available = TRUE
+THEN inventory_status_should_be_RS = TRUE
+
+IF buyer_took_possession = TRUE
+AND plate_was_placed_on_vehicle = TRUE
+AND financing_fell_through = TRUE
+THEN void_transaction_and_return_plate_to_tax_collector = TRUE
+THEN do_not_reissue_plate_as_available_inventory = TRUE
+
+IF buyer_returned_vehicle = TRUE
+AND plate_was_placed_on_vehicle = TRUE
+THEN void_transaction_and_return_plate_to_tax_collector = TRUE
+THEN do_not_reissue_plate_as_available_inventory = TRUE
+
+IF customer_changed_from_new_plate_to_transfer_tag_after_delivery = TRUE
+THEN void_original_transaction = TRUE
+THEN return_new_plate_to_tax_collector = TRUE
+THEN reprocess_using_transfer_tag_workflow = TRUE
+
+IF transaction_stuck_in_initial_status = TRUE
+AND cannot_advance_to_complete = TRUE
+THEN determine_reason_for_stop_or_manual_processing = TRUE
+THEN return_voided_inventory_to_tax_collector_if_plate_placed_or_not_reusable = TRUE
+
+IF void_error_occurs = TRUE
+THEN system_may_not_update_inventory_status = TRUE
+THEN contact_tax_collector_office_for_assistance = TRUE
+
+IF wrong_inventory_status_selected = TRUE
+THEN corrective_action_required = TRUE
+THEN do_not_ignore_inventory_status_error = TRUE
+
+============================================================
+EFS INVENTORY COMMON CLERK ANSWER
+============================================================
+
+EFS inventory handling depends on what happened in the transaction. First determine whether the buyer took possession, whether the plate was placed on the vehicle, whether the vehicle left the dealership, and whether the transaction will be corrected and resubmitted. If the buyer never took possession and the plate was not placed on the vehicle, void the transaction and set inventory to available so the plate can become RS/re-issuable. If the plate was placed on the vehicle, the vehicle left the dealership, financing fell through, or the customer returned the vehicle, void the transaction and return the plate to the tax collector or license plate agency. Do not reuse plate inventory unless the facts support RS/re-issuable status. If an error occurs or the wrong inventory status was selected, contact the tax collector office or correct the transaction before proceeding.
+
+============================================================
+EFS-02 RECORDS RETENTION / DOCUMENT UPLOAD RULES
+============================================================
+
+Use EFS-02 logic when the issue involves:
+
+- ORION-EFS scanned documents
+- Missing uploaded document
+- EFS records retention
+- Paper document destruction
+- Paper document marked VOID / INVALID
+- Five-year dealer records
+- Audit trail review
+- Tax collector approval
+- License plate agent approval
+- Dealer compliance examiner review
+- Customer ID upload
+- Title application upload
+- MSO / MCO upload
+- Out-of-state title upload
+- Dealer reassignment upload
+- Power of attorney / odometer disclosure upload
+
+============================================================
+DOCUMENTS THAT MAY NEED TO BE SCANNED INTO ORION-EFS
+============================================================
+
+Depending on the transaction, EFS Agents must scan applicable documents into ORION-EFS and submit them to the tax collector or license plate agent.
+
+Documents may include:
+
+- HSMV 82040 MV
+- HSMV 82040 MH
+- HSMV 82040 VS
+- MSO / MCO
+- Customer identification, other than Florida driver license or Florida ID card
+- Florida Certificate of Title
+- HSMV Form 82250
+- Out-of-state title
+- HSMV 82994, dealer title reassignment supplement
+- HSMV 82995, power of attorney / odometer disclosure
+
+============================================================
+ORION-EFS UPLOAD CHECKLIST
+============================================================
+
+IF EFS_transaction_submitted = TRUE
+THEN verify_required_documents_scanned_into_ORION_EFS = TRUE
+
+IF title_application_used = TRUE
+THEN verify_HSMV_82040_scanned = TRUE
+
+IF MSO_or_MCO_used = TRUE
+THEN verify_MSO_or_MCO_scanned = TRUE
+
+IF non_Florida_ID_used = TRUE
+THEN verify_customer_ID_scanned = TRUE
+
+IF Florida_title_or_out_of_state_title_used = TRUE
+THEN verify_title_document_scanned = TRUE
+
+IF dealer_reassignment_supplement_used = TRUE
+THEN verify_HSMV_82994_scanned = TRUE
+
+IF POA_or_odometer_disclosure_used = TRUE
+THEN verify_HSMV_82995_scanned = TRUE
+
+IF uploaded_document_missing = TRUE
+THEN review_ORION_EFS_upload_history_submission_history_and_approval_status = TRUE
+
+IF required_document_not_scanned = TRUE
+THEN hold_and_escalate_before_resubmission = TRUE
+
+============================================================
+EFS RECORDS RETENTION RULES
+============================================================
+
+Licensed motor vehicle dealers must keep records of purchase, sale, exchange, or receipt for sale for 5 years.
+
+This matters for:
+- Audit trails
+- Ownership chain
+- Missing document issues
+- Dealer compliance reviews
+- Purchase/sale disputes
+- Title transfer support
+- Rejection prevention
+
+After scanned EFS documents are submitted and the transaction is approved by the tax collector or license plate agent, the EFS Agent must either:
+
+1. Destroy the paper documents; or
+2. Render the documents invalid.
+
+Deadline:
+This must be completed within 5 business days of approval.
+
+If destroyed:
+Documents should be shredded and disposed of securely to protect confidential information.
+
+If retained:
+Documents must be stamped or marked on the face of the document as VOID or INVALID.
+
+============================================================
+PAPER DOCUMENT RULE AFTER EFS APPROVAL
+============================================================
+
+IF EFS_transaction_approved_by_tax_collector_or_license_plate_agent = TRUE
+AND paper_documents_destroyed = TRUE
+THEN shred_and_dispose_securely = TRUE
+
+IF EFS_transaction_approved_by_tax_collector_or_license_plate_agent = TRUE
+AND paper_documents_retained = TRUE
+THEN mark_documents_VOID_or_INVALID_on_face_of_document = TRUE
+
+IF approved_paper_documents_not_destroyed_or_marked_VOID_INVALID_within_5_business_days = TRUE
+THEN compliance_risk_high = TRUE
+
+IF paper_documents_contain_confidential_information = TRUE
+THEN secure_disposal_required = TRUE
+
+============================================================
+MISSING UPLOADED DOCUMENT WORKFLOW
+============================================================
+
+IF agency_or_tax_collector_says_document_missing = TRUE
+THEN review_ORION_EFS_uploads_submission_history_and_transaction_status = TRUE
+
+IF required_document_missing_from_upload = TRUE
+THEN determine_if_original_or_scanned_copy_exists = TRUE
+
+IF original_document_destroyed_after_approval = TRUE
+AND upload_record_missing_or_unavailable = TRUE
+THEN escalate_to_title_lead_tax_collector_or_EFS_support = TRUE
+
+IF required_upload_missing_before_approval = TRUE
+THEN scan_and_submit_required_document_if_allowed = TRUE
+
+IF upload_history_conflicts_with_deal_file = TRUE
+THEN hold_transaction_and_escalate = TRUE
+
+============================================================
+EFS AUDIT TRAIL WORKFLOW
+============================================================
+
+IF audit_trail_issue_involves_EFS = TRUE
+THEN review_ORION_EFS_scanned_documents_submission_history_approval_status_and_retention_status = TRUE
+
+IF dealer_record_needed_for_audit = TRUE
+THEN confirm_purchase_sale_exchange_or_receipt_record_available_for_5_year_period = TRUE
+
+IF transaction_approved_and_paper_documents_retained = TRUE
+THEN verify_documents_marked_VOID_or_INVALID = TRUE
+
+IF transaction_approved_and_paper_documents_destroyed = TRUE
+THEN verify_secure_destruction_policy_followed = TRUE
+
+IF EFS_record_retention_unclear = TRUE
+THEN escalate_to_title_lead_controller_tax_collector_or_compliance_contact = TRUE
+
+============================================================
+EFS RECORDS RETENTION COMMON CLERK ANSWER
+============================================================
+
+For EFS records retention, verify that the required documents were scanned into ORION-EFS and submitted to the tax collector or license plate agent. Required uploads may include HSMV 82040, MSO/MCO, non-Florida customer ID, Florida title, out-of-state title, HSMV 82994, or HSMV 82995 depending on the transaction. After the EFS transaction is approved, paper documents must either be destroyed or marked VOID/INVALID within five business days. Dealers must also keep purchase, sale, exchange, or receipt-for-sale records for five years. If an uploaded document, approval status, or retention record is unclear, hold and escalate before resubmission or audit response.
+
+============================================================
+COMBINED EFS WORKFLOW
+============================================================
+
+1. Identify whether the issue is inventory, document upload, record retention, or audit trail.
+2. If inventory/void issue, determine:
+   - Did buyer take possession?
+   - Was plate placed on vehicle?
+   - Did vehicle leave dealership?
+   - Will transaction be corrected and resubmitted?
+   - Was inventory returned?
+   - What status applies: RS, RT, RR, PN, or IS?
+3. If document/upload issue, determine:
+   - Was transaction processed through ORION-EFS?
+   - Were all required documents scanned?
+   - Was the transaction approved?
+   - Is upload history available?
+4. If paper document issue, determine:
+   - Were paper documents destroyed after approval?
+   - Were paper documents marked VOID or INVALID?
+   - Was this completed within five business days?
+5. If audit trail issue, determine:
+   - Does the EFS history support the transaction?
+   - Does the deal file support the transaction?
+   - Are required dealer records retained for five years?
+6. If unclear, hold and escalate to:
+   - title lead
+   - controller
+   - tax collector
+   - license plate agency
+   - EFS support
+   - compliance contact
+
+============================================================
+REJECTION / AUDIT RISK
+============================================================
+
+IF EFS_inventory_status_does_not_match_actual_transaction = TRUE
+THEN audit_risk_high = TRUE
+
+IF plate_was_placed_on_vehicle_and_vehicle_left_dealership = TRUE
+THEN do_not_reissue_plate_as_available_inventory = TRUE
+
+IF buyer_never_took_possession_and_plate_not_placed_on_vehicle = TRUE
+THEN inventory_may_be_reissued_after_RS_status = TRUE
+
+IF voided_transaction_lacks_audit_trail = TRUE
+THEN rejection_or_audit_risk_high = TRUE
+
+IF returned_plate_not_documented = TRUE
+THEN accounting_or_inventory_risk_high = TRUE
+
+IF required_EFS_documents_not_scanned = TRUE
+THEN rejection_or_manual_review_risk_high = TRUE
+
+IF approved_EFS_paper_documents_not_destroyed_or_marked_VOID_INVALID = TRUE
+THEN compliance_risk_high = TRUE
+
+IF required_dealer_records_not_available_for_5_year_period = TRUE
+THEN audit_risk_high = TRUE
+
+IF customer_identification_required_to_be_scanned_but_missing = TRUE
+THEN audit_trail_risk_high = TRUE
+
+IF POA_or_odometer_disclosure_used_but_not_scanned = TRUE
+THEN rejection_or_audit_risk_high = TRUE
+
+============================================================
+COMMON CLERK ANSWER
+============================================================
+
+For EFS issues, first determine whether the problem involves inventory, a voided transaction, document uploads, records retention, or audit trail. If the issue involves EFS inventory, determine whether the buyer took possession, whether the plate was placed on the vehicle, whether the vehicle left the dealership, and whether the transaction will be corrected and resubmitted. Use RS only when the inventory is properly re-issuable. Use return workflows when the plate was placed, the vehicle left, financing fell through, or the customer returned the vehicle. If the issue involves EFS records, verify ORION-EFS uploads, submission history, approval status, and whether paper documents were destroyed or marked VOID/INVALID within five business days. Dealers must keep purchase/sale/exchange/receipt records for five years. If the EFS record, inventory status, uploaded document, or audit trail cannot be verified, hold and escalate before proceeding.
+
+============================================================
+RELATED FILES
+============================================================
+
+- fl_efs_01_electronic_filing_system_inventory_notes.txt
+- fl_efs_02_electronic_filing_system_records_retention_notes.txt
+- 320.131_Operational_Notes.txt
+- fl_registration_plate_and_insurance_law_notes.txt
+- validation_logic_map.txt
+- rejection_prevention_logic_map.txt
+- fl_title_ownership_and_transfer_law_notes.txt
+
+============================================================
+END OF FILE
+============================================================

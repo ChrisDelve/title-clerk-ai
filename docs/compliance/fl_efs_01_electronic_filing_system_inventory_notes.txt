@@ -1,0 +1,391 @@
+DOCUMENT: FL_EFS_01_ELECTRONIC_FILING_SYSTEM_INVENTORY_NOTES
+TITLE: Electronic Filing System (EFS) Inventory
+SOURCE: https://www.flhsmv.gov/pdf/proc/efs/efs-01.pdf
+PROCEDURE: EFS-01
+REVISION DATE: 06/25
+EFFECTIVE DATE: Immediately
+DOCUMENT_TYPE: FLHSMV Procedure Manual / Electronic Filing System
+CATEGORY: EFS / INVENTORY / VOID TRANSACTIONS / PLATE INVENTORY / DEALERSHIP AUDIT TRAIL
+
+============================================================
+PURPOSE
+============================================================
+
+This procedure explains how Electronic Filing System (EFS) inventory is handled when an EFS transaction must be voided, corrected, reconciled, or returned.
+
+This file is important for dealership workflows involving:
+
+- Voided EFS transactions
+- Plate inventory status
+- Dealer-issued plate problems
+- Tags issued but deal cancelled
+- Buyer never took possession
+- Buyer returned vehicle
+- Financing fell through
+- Customer changes from new plate to transfer tag
+- EFS transaction stuck in initial status
+- Stops preventing registration completion
+- Inventory returned to tax collector or agency
+- EFS audit trail and inventory reconciliation
+
+EFS allows certified service providers and EFS agents to enter motor vehicle registration and title data into the motor vehicle issuance system from their location through vendor applications. EFS agents include licensed motor vehicle/mobile home dealers, non-licensed motor vehicle/vessel dealers, salvage dealers, motor vehicle auction dealers, and insurance companies.
+
+============================================================
+AI USE RULE
+============================================================
+
+IF user_question_mentions = "EFS"
+OR user_question_mentions = "void transaction"
+OR user_question_mentions = "voided transaction"
+OR user_question_mentions = "inventory"
+OR user_question_mentions = "plate inventory"
+OR user_question_mentions = "RS"
+OR user_question_mentions = "RT"
+OR user_question_mentions = "RR"
+OR user_question_mentions = "buyer never took possession"
+OR user_question_mentions = "deal cancelled"
+OR user_question_mentions = "customer returned vehicle"
+OR user_question_mentions = "financing fell through"
+OR user_question_mentions = "tag change after delivery"
+OR user_question_mentions = "new plate changed to transfer tag"
+OR user_question_mentions = "transaction stuck in initial status"
+THEN use this file to explain the EFS inventory void/reconciliation workflow.
+
+Do not treat all voids the same.
+
+Always determine:
+1. Did the buyer take possession?
+2. Was the plate placed on the vehicle?
+3. Did the vehicle leave the dealership?
+4. Is the transaction being corrected and resubmitted?
+5. Is the transaction cancelled and not being resubmitted?
+6. Was inventory physically returned to the tax collector or license plate agency?
+7. What inventory status should apply: RS, RT, RR, or PN?
+
+============================================================
+KEY DEFINITIONS
+============================================================
+
+EFS:
+Electronic Filing System used by certified service providers and EFS agents to interface with the motor vehicle issuance system.
+
+CSP:
+Certified Service Provider.
+
+EFS Agent:
+An authorized entity using EFS, including dealerships, salvage dealers, auction dealers, insurance companies, and certain non-licensed dealers.
+
+Inventory:
+License plate or registration inventory associated with an EFS transaction.
+
+RS:
+Re-issuable inventory status.
+
+Use when the buyer never took possession or when the void is due to a correction that will be resubmitted, and the plate/inventory may be reused after correction.
+
+RT:
+EFS returned inventory status.
+
+Use when inventory was issued/placed or the transaction cannot complete, the item should not be reissued to another customer, and the plate must be returned to the tax collector or agency.
+
+RR:
+Return received inventory status.
+
+Use when the tax collector or license plate agency physically receives the returned inventory.
+
+PN:
+Paid not returned EFS plate status.
+
+Used when the EFS agent does not return the inventory item and the Bureau of Accounting invoices the EFS agent.
+
+IS:
+Issued status.
+
+If a void error occurs and the motor vehicle issuance system is not updated, the inventory remains issued.
+
+============================================================
+VOID REASON A — BUYER NEVER TOOK POSSESSION
+============================================================
+
+Scenario:
+The buyer never took possession of the vehicle.
+
+Operational rule:
+If the buyer never took possession, the plate was not placed on the vehicle and may be reissued to a different customer.
+
+Required action:
+The EFS agent should select:
+
+"set inventory to available"
+
+Expected result:
+The CSP transmits the void transaction to the motor vehicle issuance system.
+
+Inventory status should change to:
+
+RS — re-issuable
+
+If the status does not change correctly, the EFS agent may receive an error message.
+
+Common clerk answer:
+If the buyer never took possession and the plate was never placed on the vehicle, void the EFS transaction and set the inventory to available. The inventory should become RS/re-issuable and may be used again.
+
+============================================================
+VOID REASON B — BUYER COULD NOT OBTAIN FINANCING AFTER DELIVERY
+============================================================
+
+Scenario:
+The buyer took possession of the vehicle, the license plate was placed on the vehicle, and the vehicle left the dealership, but the buyer later could not obtain financing.
+
+Operational rule:
+The transaction must be voided.
+
+The license plate must be removed from the vehicle and turned in to the tax collector office.
+
+Common clerk answer:
+If the buyer took delivery and the plate was placed on the vehicle, do not treat the plate as reusable inventory. Void the transaction, remove the plate from the vehicle, and turn the plate in to the tax collector office.
+
+============================================================
+VOID REASON C — BUYER RETURNED VEHICLE / DECIDED NOT TO PURCHASE
+============================================================
+
+Scenario:
+The buyer returned the vehicle because they decided not to purchase it.
+
+Operational rule:
+The transaction must be voided.
+
+The license plate must be removed from the vehicle and turned in to the tax collector office.
+
+Common clerk answer:
+If the customer returns the vehicle after a plate was issued/placed, void the EFS transaction and turn the license plate in to the tax collector office. Do not reissue that plate as normal available inventory.
+
+============================================================
+VOID REASON D — CUSTOMER CHANGES FROM NEW PLATE TO TRANSFER TAG
+============================================================
+
+Scenario:
+The buyer requested a tag change after taking possession and after a new license plate was issued.
+
+The buyer returns the license plate to the EFS agent and says they have a license plate to transfer instead of buying a new plate.
+
+Operational rule:
+The transaction must be voided.
+
+The plate must be turned in to the tax collector office.
+
+Common clerk answer:
+If a customer was issued a new plate but later changes to a transfer tag after delivery, void the original transaction and turn the issued plate in to the tax collector office. Then reprocess correctly according to the transfer tag workflow.
+
+============================================================
+VOID REASON E — INITIAL STATUS CANNOT ADVANCE TO COMPLETE
+============================================================
+
+Scenario:
+An EFS transaction in initial status cannot be advanced to complete status.
+
+Possible causes:
+- Problem with the vehicle record
+- Stop on the customer
+- Stop on the vehicle
+- Stop on the registration
+- Registration must be processed manually
+
+Operational rule:
+If the license plate was already placed on the vehicle, the plate should not be reissued to another customer.
+
+Required action:
+The EFS agent should select:
+
+"Return voided inventory to Tax Collector"
+
+Expected result:
+The CSP transmits the void transaction to the motor vehicle issuance system.
+
+Inventory status should change to:
+
+RT — EFS returned
+
+Dealer action:
+Dealer returns the void plate to the tax collector or license plate agency.
+
+Tax collector or agency action:
+Tax collector or agency changes inventory status from RT to:
+
+RR — Return Received
+
+The tax collector or agency completes a void license plate report and submits the report and returned tags to the Bureau of Accounting.
+
+Common clerk answer:
+If an EFS transaction is stuck in initial status and cannot complete because of a vehicle, customer, registration, or stop issue, void the transaction using "Return voided inventory to Tax Collector." The inventory should become RT. The plate should be returned to the tax collector or license plate agency and should not be reissued to another customer.
+
+============================================================
+INVENTORY STATUS RULES
+============================================================
+
+RS — RE-ISSUABLE
+Use when:
+- Buyer never took possession.
+- Plate was not placed on vehicle.
+- Transaction is voided because a correction is needed and the transaction will be resubmitted.
+- Inventory may be reissued after correction.
+
+RT — RETURNED / EFS RETURNED
+Use when:
+- Transaction is voided and will not be resubmitted.
+- Inventory was not returned with the paperwork.
+- The plate should not be reused by the dealer as normal available inventory.
+- The paperwork should be returned to the dealership.
+
+RR — RETURN RECEIVED
+Use when:
+- Transaction is voided and will not be resubmitted.
+- The inventory was physically returned to the tax collector or license plate agency.
+- Tax collector or agency marks the inventory as returned received.
+
+PN — PAID NOT RETURNED EFS PLATE
+Use when:
+- Inventory was not returned to the tax collector.
+- Bureau of Accounting invoices the EFS agent.
+- EFS agent pays for the non-returned inventory item.
+
+IS — ISSUED
+Use when:
+- Void error occurs.
+- Motor vehicle issuance system is not updated.
+- Inventory status remains issued.
+
+============================================================
+ERROR MESSAGE DURING VOID
+============================================================
+
+IF error_message_received_during_void = TRUE
+THEN motor_vehicle_issuance_system_not_updated = TRUE
+
+IF motor_vehicle_issuance_system_not_updated = TRUE
+THEN inventory_status_remains_IS_issued = TRUE
+
+IF void_error_occurs = TRUE
+THEN EFS_agent_should_contact_tax_collector_office = TRUE
+
+IF tax_collector_assistance_needed = TRUE
+THEN tax_collector_contacts_department_for_assistance = TRUE
+
+Common clerk answer:
+If an error occurs while voiding an EFS transaction, the system may not update and inventory may remain in issued status. Contact the tax collector office so they can contact the Department for assistance. Do not assume the void or inventory status changed successfully.
+
+============================================================
+INCORRECT INVENTORY STATUS SELECTED
+============================================================
+
+IF incorrect_inventory_status_selected = TRUE
+THEN corrective_steps_required = TRUE
+
+Example:
+Inventory status was changed to RS but should have been changed to RT.
+
+Corrective action:
+The transaction should be re-entered in initial status and then voided again with the correct inventory status.
+
+Example:
+Inventory status was changed to RT but should have been changed to RS.
+
+Corrective action:
+EFS agent should contact the tax collector office so the tax collector can contact the Department for assistance.
+
+Common clerk answer:
+If the wrong inventory status was selected during a void, do not ignore it. Correct the status. If RS was selected but RT was required, re-enter the transaction in initial status and void again using the correct status. If RT was selected but RS was required, contact the tax collector office for Department assistance.
+
+============================================================
+CORRECTING A TRANSACTION AFTER REPORT TRANSMISSION
+============================================================
+
+IF EFS_transaction_already_transmitted_in_report_to_tax_collector = TRUE
+AND correction_needed = TRUE
+THEN transaction_must_be_voided_first = TRUE
+
+IF transaction_voided_for_correction = TRUE
+THEN transaction_may_be_reprocessed_correctly = TRUE
+
+Common clerk answer:
+If an EFS transaction already transmitted in a report to the tax collector and needs correction, void it first. Then reprocess the corrected transaction.
+
+============================================================
+VOID AFTER TRANSMITTED REPORT — PAPERWORK FLAGGING
+============================================================
+
+IF transaction_needs_to_be_voided_after_report_transmission = TRUE
+THEN flag_paperwork_submitted_to_tax_collector = TRUE
+
+IF void_after_report_transmission = TRUE
+THEN tax_collector_clerk_can_set_inventory_status = RS_RT_or_RR = TRUE
+
+Status decision:
+- RS if the void is for a correction and the transaction will be resubmitted.
+- RT if the transaction will not be resubmitted and the inventory was not returned with the paperwork.
+- RR if the transaction will not be resubmitted and the inventory was returned with the paperwork.
+
+Common clerk answer:
+If a transaction must be voided after the report was sent to the tax collector, flag the paperwork. The clerk may need to set inventory status to RS, RT, or RR depending on whether the transaction will be corrected/resubmitted and whether the inventory was returned.
+
+============================================================
+DEALERSHIP WORKFLOW
+============================================================
+
+1. Identify why the EFS transaction needs to be voided.
+2. Determine if the buyer took possession.
+3. Determine if the license plate was placed on the vehicle.
+4. Determine if the vehicle left the dealership.
+5. Determine if the transaction will be corrected and resubmitted.
+6. Determine whether the plate/inventory was returned.
+7. Select the correct inventory status:
+   - RS if reusable/reissuable or correction/resubmission applies.
+   - RT if returned workflow applies and inventory should not be reissued.
+   - RR if tax collector/agency received returned inventory.
+   - PN if inventory was not returned and was invoiced/paid.
+8. If an error occurs during void, contact tax collector office.
+9. If wrong inventory status was selected, correct the transaction or contact tax collector as required.
+10. Keep a clear audit trail of void reason, plate status, returned inventory, error messages, and tax collector/agency communication.
+
+============================================================
+REJECTION / AUDIT RISK
+============================================================
+
+IF EFS_inventory_status_does_not_match_actual_transaction_status = TRUE
+THEN audit_risk_high = TRUE
+
+IF plate_was_placed_on_vehicle_and_vehicle_left_dealership = TRUE
+THEN do_not_reissue_plate_as_available_inventory = TRUE
+
+IF buyer_never_took_possession_and_plate_was_not_placed_on_vehicle = TRUE
+THEN inventory_may_be_reissued_after_RS_status = TRUE
+
+IF voided_transaction_lacks_audit_trail = TRUE
+THEN rejection_or_audit_risk_high = TRUE
+
+IF returned_plate_not_documented = TRUE
+THEN accounting_or_inventory_risk_high = TRUE
+
+IF EFS_agent_does_not_return_inventory = TRUE
+THEN Bureau_of_Accounting_invoice_possible = TRUE
+
+============================================================
+COMMON CLERK ANSWER
+============================================================
+
+EFS inventory voids depend on what happened in the deal. First determine whether the buyer took possession, whether the plate was placed on the vehicle, whether the vehicle left the dealership, and whether the transaction will be corrected/resubmitted. If the buyer never took possession and the plate was never placed on the vehicle, void and set inventory to available so the inventory becomes RS/re-issuable. If the plate was placed on the vehicle, the vehicle left, financing fell through, or the customer returned the vehicle, void the transaction and turn the plate in to the tax collector office. If the transaction is stuck in initial status and must be processed manually, use the return-to-tax-collector workflow and do not reissue the plate. If an error occurs or the wrong inventory status is selected, contact the tax collector office or correct the transaction before proceeding.
+
+============================================================
+RELATED FILES
+============================================================
+
+- fl_electronic_filing_system_efs_law_notes.txt
+- fl_efs_02_electronic_filing_system_records_retention_notes.txt
+- 320.131_Operational_Notes.txt
+- fl_registration_plate_and_insurance_law_notes.txt
+- validation_logic_map.txt
+- rejection_prevention_logic_map.txt
+
+============================================================
+END OF FILE
+============================================================

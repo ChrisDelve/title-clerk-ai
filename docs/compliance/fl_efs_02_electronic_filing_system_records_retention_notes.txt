@@ -1,0 +1,328 @@
+DOCUMENT: FL_EFS_02_ELECTRONIC_FILING_SYSTEM_RECORDS_RETENTION_NOTES
+TITLE: Electronic Filing System (EFS) Records Retention
+SOURCE: https://www.flhsmv.gov/pdf/proc/efs/efs-02.pdf
+PROCEDURE: EFS-02
+REVISION DATE: 10/23
+EFFECTIVE DATE: Immediately
+DOCUMENT_TYPE: FLHSMV Procedure Manual / Electronic Filing System
+CATEGORY: EFS / RECORDS RETENTION / SCANNED DOCUMENTS / ORION-EFS / TAX COLLECTOR APPROVAL / DEALERSHIP AUDIT TRAIL
+
+============================================================
+PURPOSE
+============================================================
+
+This procedure explains records retention and destruction requirements for EFS Agents.
+
+This file is important for dealership workflows involving:
+
+- EFS document uploads
+- ORION-EFS scanned documents
+- Records retention
+- Audit trail review
+- Missing uploaded documents
+- Paper document destruction after approval
+- Voiding or invalidating retained paper documents
+- Customer ID documentation
+- Title application records
+- MSO/MCO records
+- Out-of-state title records
+- Dealer reassignment records
+- Power of attorney / odometer disclosure records
+- Dealer compliance examiner review
+
+============================================================
+LEGAL AUTHORITY
+============================================================
+
+Section 319.23, Florida Statutes:
+Application for and issuance of title.
+
+Section 319.35, Florida Statutes:
+Title Certificates.
+
+Section 320.27, Florida Statutes:
+Motor Vehicle Dealers.
+
+Section 320.03(10), Florida Statutes:
+Registrations; duties of tax collectors; International Registration Plan.
+
+============================================================
+DESCRIPTION AND USE
+============================================================
+
+This procedure provides information and instructions on records retention and destruction requirements for EFS Agents.
+
+EFS Agents include:
+
+- Licensed motor vehicle and mobile home dealers
+- Non-licensed motor vehicle and vessel dealers
+- Salvage dealers
+- Motor vehicle auction dealers
+- Insurance companies
+
+============================================================
+AI USE RULE
+============================================================
+
+IF user_question_mentions = "EFS records"
+OR user_question_mentions = "records retention"
+OR user_question_mentions = "EFS retention"
+OR user_question_mentions = "document retention"
+OR user_question_mentions = "scanned documents"
+OR user_question_mentions = "ORION"
+OR user_question_mentions = "ORION-EFS"
+OR user_question_mentions = "uploaded documents"
+OR user_question_mentions = "missing uploaded document"
+OR user_question_mentions = "audit trail"
+OR user_question_mentions = "destroy documents"
+OR user_question_mentions = "shred documents"
+OR user_question_mentions = "void paper documents"
+OR user_question_mentions = "mark documents invalid"
+OR user_question_mentions = "how long keep records"
+THEN use this file to explain the EFS records retention workflow.
+
+For EFS record questions, always determine:
+1. Was the transaction submitted through ORION-EFS?
+2. Were the required documents scanned and submitted?
+3. Has the tax collector or license plate agent approved the transaction?
+4. Are paper documents being destroyed or retained?
+5. If retained, were they marked VOID or INVALID?
+6. Is the dealership maintaining required purchase/sale/exchange records for 5 years?
+7. Is there enough audit trail support for compliance review?
+
+============================================================
+FIVE-YEAR DEALER RECORD RETENTION RULE
+============================================================
+
+Florida law requires licensed motor vehicle dealers to keep a record of the purchase, sale, exchange, or receipt for sale for 5 years.
+
+Operational meaning:
+Dealerships must maintain records supporting vehicle acquisition, sale, exchange, and receipt for sale.
+
+This matters for:
+- Audit trail review
+- Missing ownership documentation
+- Dealer compliance examiners
+- Purchase/sale disputes
+- Title transfer support
+- Rejection prevention
+- Ownership chain review
+
+COMMON CLERK ANSWER:
+Licensed motor vehicle dealers must keep records of purchase, sale, exchange, or receipt for sale for 5 years. If there is an audit trail or document retention issue, confirm the dealership can produce the required records supporting the transaction.
+
+============================================================
+ELECTRONIC RECORDS
+============================================================
+
+Licensed motor vehicle dealers may maintain electronic records as required by Chapter 319 for purchasers who will title and register the motor vehicle in Florida.
+
+Operational meaning:
+Electronic records may be used, but the dealership must still ensure required documents are properly scanned, submitted, approved, and retained according to procedure.
+
+COMMON CLERK ANSWER:
+Electronic records may be maintained, but the dealership must still verify that all required title and registration documents were scanned into ORION-EFS and submitted to the tax collector or license plate agent as required.
+
+============================================================
+DOCUMENTS REQUIRED TO BE SCANNED INTO ORION-EFS
+============================================================
+
+EFS Agents are required to scan applicable documents into ORION-EFS and submit them to the Tax Collector or License Plate Agent.
+
+Documents include, as applicable:
+
+1. One of the following:
+   - HSMV 82040 MV
+   - HSMV 82040 MH
+   - HSMV 82040 VS
+
+2. Manufacturer’s Statement of Origin (MSO) or Manufacturer’s Certificate of Origin (MCO).
+
+3. Customer identification, other than a Florida driver license or Florida identification card.
+
+4. Florida Certificate of Title, HSMV Form 82250, or out-of-state title.
+
+5. HSMV Form 82994:
+   Application for Motor Vehicle Dealer Title Reassignment Supplement.
+
+6. HSMV Form 82995:
+   Application for Motor Vehicle Power of Attorney / Odometer Disclosure.
+
+============================================================
+SCAN / UPLOAD CHECKLIST
+============================================================
+
+IF EFS_transaction_submitted = TRUE
+THEN verify_required_documents_scanned_into_ORION_EFS = TRUE
+
+IF title_application_required = TRUE
+THEN scan_HSMV_82040_MV_MH_or_VS_as_applicable = TRUE
+
+IF MSO_or_MCO_used = TRUE
+THEN scan_MSO_or_MCO = TRUE
+
+IF customer_ID_is_not_Florida_driver_license_or_Florida_ID = TRUE
+THEN scan_customer_identification = TRUE
+
+IF Florida_title_or_out_of_state_title_used = TRUE
+THEN scan_title_document = TRUE
+
+IF dealer_reassignment_supplement_used = TRUE
+THEN scan_HSMV_82994 = TRUE
+
+IF POA_or_odometer_disclosure_used = TRUE
+THEN scan_HSMV_82995 = TRUE
+
+COMMON CLERK ANSWER:
+For EFS submissions, verify that all applicable documents were scanned into ORION-EFS before submission. This may include HSMV 82040, MSO/MCO, non-Florida ID, Florida or out-of-state title, HSMV 82994, and HSMV 82995 depending on the transaction.
+
+============================================================
+AFTER TAX COLLECTOR OR LICENSE PLATE AGENT APPROVAL
+============================================================
+
+After scanned documents are submitted and the transaction is approved by the Tax Collector or License Plate Agent, the EFS Agent must destroy or otherwise render the documents invalid.
+
+Deadline:
+This must be done within five (5) business days of approval.
+
+If destroyed:
+Documents should be shredded and disposed of properly to protect confidential information.
+
+If retained:
+The paper documents must be stamped or otherwise marked on the face of the document to render it VOID or INVALID.
+
+COMMON CLERK ANSWER:
+After the tax collector or license plate agent approves the EFS transaction, the dealership must either destroy the paper documents or render them invalid within five business days. If destroyed, shred them properly. If retained, stamp or mark the face of the document VOID or INVALID.
+
+============================================================
+DO NOT LEAVE APPROVED PAPER DOCUMENTS ACTIVE
+============================================================
+
+IF EFS_transaction_approved_by_tax_collector_or_license_plate_agent = TRUE
+AND paper_documents_are_retained = TRUE
+THEN paper_documents_must_be_marked_VOID_or_INVALID = TRUE
+
+IF approved_paper_documents_not_destroyed_or_marked_invalid_within_5_business_days = TRUE
+THEN compliance_risk_high = TRUE
+
+IF paper_documents_destroyed = TRUE
+THEN shred_and_dispose_securely_to_protect_confidential_information = TRUE
+
+COMMON CLERK ANSWER:
+Once an EFS transaction is approved, do not keep active original paper documents sitting in the deal file without marking them void or invalid. The dealership must destroy them or mark them VOID/INVALID within five business days of approval.
+
+============================================================
+COMPLIANCE EXAMINER REVIEW
+============================================================
+
+Compliance with this procedure may be verified by Department Compliance Examiners during dealer visits.
+
+This means the dealership should be able to show:
+- Required documents were scanned/submitted.
+- Paper documents were destroyed or marked invalid after approval.
+- Dealer records are maintained as required.
+- Audit trail supports the transaction.
+- Confidential information was protected.
+
+COMMON CLERK ANSWER:
+FLHSMV compliance examiners may verify EFS records retention during dealer visits. Keep a clear audit trail showing the required documents were scanned, the transaction was approved, and paper documents were destroyed or marked VOID/INVALID as required.
+
+============================================================
+MISSING UPLOADED DOCUMENT WORKFLOW
+============================================================
+
+IF agency_or_tax_collector_says_document_missing = TRUE
+THEN review_ORION_EFS_uploads_and_submission_history = TRUE
+
+IF uploaded_document_missing_from_EFS = TRUE
+THEN locate_original_or_scanned_copy_before_resubmission = TRUE
+
+IF required_document_was_not_scanned = TRUE
+THEN scan_and_submit_required_document_if_allowed = TRUE
+
+IF paper_document_was_destroyed_after_approval = TRUE
+AND upload_record_is_missing_or_unavailable = TRUE
+THEN escalate_to_title_lead_tax_collector_or_EFS_support = TRUE
+
+COMMON CLERK ANSWER:
+If a tax collector, license plate agency, or internal reviewer says an uploaded EFS document is missing, review the ORION-EFS upload and submission history first. Confirm whether the document was required, whether it was scanned, and whether approval occurred. If the required document cannot be located, hold and escalate before resubmission.
+
+============================================================
+AUDIT TRAIL / RECORD RETENTION WORKFLOW
+============================================================
+
+IF audit_trail_issue_involves_EFS = TRUE
+THEN review_ORION_EFS_scanned_documents_submission_history_and_approval_status = TRUE
+
+IF dealer_record_needed_for_audit = TRUE
+THEN confirm_purchase_sale_exchange_or_receipt_record_available_for_5_year_retention_period = TRUE
+
+IF transaction_approved_and_paper_documents_retained = TRUE
+THEN verify_documents_marked_VOID_or_INVALID = TRUE
+
+IF transaction_approved_and_paper_documents_destroyed = TRUE
+THEN verify_secure_destruction_policy_followed = TRUE
+
+IF EFS_record_retention_unclear = TRUE
+THEN escalate_to_title_lead_controller_or_compliance_contact = TRUE
+
+COMMON CLERK ANSWER:
+For an EFS audit trail issue, review the ORION-EFS scanned documents, submission history, and approval status. Confirm the dealership still has required dealer records for the five-year retention period. If paper documents were retained after approval, they should be marked VOID or INVALID. If records are missing or retention status is unclear, escalate before proceeding.
+
+============================================================
+DEALERSHIP WORKFLOW
+============================================================
+
+1. Confirm the transaction was processed through EFS / ORION-EFS.
+2. Identify which documents were required for the transaction.
+3. Confirm all required documents were scanned and submitted.
+4. Confirm tax collector or license plate agent approval.
+5. If transaction approved, determine whether paper documents were destroyed or retained.
+6. If destroyed, confirm they were shredded/disposed of securely.
+7. If retained, confirm the documents were marked VOID or INVALID on the face of the document.
+8. Confirm dealership retains required purchase/sale/exchange/receipt records for 5 years.
+9. If an uploaded document is missing or the audit trail is incomplete, review ORION-EFS history and escalate.
+10. Maintain compliance support for possible FLHSMV Compliance Examiner review.
+
+============================================================
+REJECTION / AUDIT RISK
+============================================================
+
+IF required_EFS_documents_not_scanned = TRUE
+THEN rejection_or_manual_review_risk_high = TRUE
+
+IF EFS_transaction_approved_but_paper_documents_not_destroyed_or_marked_invalid = TRUE
+THEN compliance_risk_high = TRUE
+
+IF required_dealer_records_not_available_for_5_year_period = TRUE
+THEN audit_risk_high = TRUE
+
+IF customer_identification_required_to_be_scanned_but_missing = TRUE
+THEN audit_trail_risk_high = TRUE
+
+IF title_or_MSO_MCO_not_scanned_when_required = TRUE
+THEN rejection_or_audit_risk_high = TRUE
+
+IF POA_or_odometer_disclosure_form_missing_from_upload_when_used = TRUE
+THEN rejection_or_audit_risk_high = TRUE
+
+============================================================
+COMMON CLERK ANSWER
+============================================================
+
+For EFS records retention, verify that the required documents were scanned into ORION-EFS and submitted to the tax collector or license plate agent. Required scans may include HSMV 82040, MSO/MCO, non-Florida customer ID, Florida or out-of-state title, HSMV 82994, and HSMV 82995 depending on the transaction. After the transaction is approved, paper documents must either be destroyed or marked VOID/INVALID within five business days. Licensed motor vehicle dealers must also keep records of purchase, sale, exchange, or receipt for sale for 5 years. If any uploaded document, approval status, or retention record is unclear, hold and escalate before resubmission or audit response.
+
+============================================================
+RELATED FILES
+============================================================
+
+- fl_electronic_filing_system_efs_law_notes.txt
+- fl_efs_01_electronic_filing_system_inventory_notes.txt
+- validation_logic_map.txt
+- rejection_prevention_logic_map.txt
+- fl_title_ownership_and_transfer_law_notes.txt
+- fl_registration_plate_and_insurance_law_notes.txt
+
+============================================================
+END OF FILE
+============================================================
