@@ -598,6 +598,32 @@ def search_documents(query):
 
         return (efs_initial_status_matches + non_efs_initial_status_matches)[:5]
     
+    financing_fell_through_words = [
+        "buyer took delivery but financing fell through after plate was issued",
+        "financing fell through after plate was issued",
+        "buyer could not obtain financing after delivery",
+        "customer took delivery then financing fell through",
+        "plate issued then financing fell through",
+        "spot delivery financing fell through after plate issued"
+    ]
+
+    if any(term in query.lower() for term in financing_fell_through_words):
+        financing_fell_through_matches = [
+            m for m in matches
+            if "efs_01" in m["name"].lower()
+            or "electronic_filing_system_efs" in m["name"].lower()
+            or "registration_plate_and_insurance" in m["name"].lower()
+            or "rejection_prevention_logic_map" in m["name"].lower()
+            or "validation_logic_map" in m["name"].lower()
+        ]
+
+        non_financing_fell_through_matches = [
+            m for m in matches
+            if m not in financing_fell_through_matches
+        ]
+
+        return (financing_fell_through_matches + non_financing_fell_through_matches)[:5]
+    
     buyer_never_possession_words = [
         "buyer never took possession but new plate was issued",
         "buyer never took possession",
@@ -1022,6 +1048,23 @@ Required workflow:
 7. In that case, use the return-voided-inventory-to-tax-collector workflow.
 8. Document possession status, plate placement, void reason, and inventory status.
 9. Escalate if the void fails or inventory status does not update.
+
+STRICT FINANCING FELL THROUGH AFTER DELIVERY / PLATE ISSUED RULE:
+
+For questions where the buyer took delivery and financing later fell through after a plate was issued, do not answer as a generic title transfer, bonded title, or normal plate transfer issue.
+
+Treat this first as an EFS inventory void and return issue.
+
+Required workflow:
+1. Verify the buyer took possession.
+2. Verify the vehicle left the dealership.
+3. Verify the plate was issued or placed on the vehicle.
+4. If buyer took delivery and the plate was issued/placed, do not set inventory to RS/re-issuable.
+5. Void the EFS transaction.
+6. Return the issued plate to the tax collector or license plate agency.
+7. Inventory should move to RT.
+8. Once the tax collector/license plate agency receives the returned inventory, status should move to RR.
+9. Escalate if the plate cannot be recovered, the void fails, or inventory status does not update.
 
 Knowledge Base:
 {combined_context}
