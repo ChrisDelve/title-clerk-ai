@@ -141,6 +141,46 @@ AND transferable_plate_not_verified = TRUE
 THEN manual_review_required = TRUE
 
 ============================================================
+NEW PLATE CHANGED TO TRANSFER TAG AFTER DELIVERY — STRICT EFS WORKFLOW
+============================================================
+
+IF user_question_mentions = "changed from new plate to transfer tag"
+OR user_question_mentions = "new plate to transfer tag after delivery"
+OR user_question_mentions = "customer wants to switch from new plate to transfer tag"
+OR user_question_mentions = "issued new plate but customer has tag to transfer"
+OR user_question_mentions = "new plate was issued and customer wants transfer tag"
+THEN new_plate_to_transfer_tag_after_delivery_workflow_required = TRUE
+
+IF new_plate_to_transfer_tag_after_delivery_workflow_required = TRUE
+THEN treat_as_EFS_inventory_void_and_reprocess_issue = TRUE
+
+IF new_plate_to_transfer_tag_after_delivery_workflow_required = TRUE
+THEN verify_new_plate_was_issued_or_placed_on_vehicle = TRUE
+
+IF new_plate_was_issued_or_placed_on_vehicle = TRUE
+AND customer_changed_to_transfer_tag_after_delivery = TRUE
+THEN original_EFS_transaction_must_be_voided = TRUE
+
+IF new_plate_was_issued_or_placed_on_vehicle = TRUE
+AND customer_changed_to_transfer_tag_after_delivery = TRUE
+THEN issued_plate_must_be_returned_to_tax_collector_or_license_plate_agency = TRUE
+
+IF customer_has_plate_to_transfer = TRUE
+THEN verify_transfer_plate_eligibility_before_reprocessing = TRUE
+
+IF transfer_plate_owner_does_not_match_customer_or_valid_exception = TRUE
+THEN do_not_reprocess_as_transfer_tag = TRUE
+
+IF transfer_plate_not_eligible = TRUE
+THEN process_as_new_plate_and_IRF_review_required = TRUE
+
+IF EFS_void_or_inventory_status_unclear = TRUE
+THEN escalate_to_title_lead_tax_collector_or_license_plate_agency = TRUE
+
+COMMON CLERK ANSWER:
+If a new plate was issued and after delivery the customer wants to change to a transfer tag, do not handle it as a normal plate transfer. First verify whether the new plate was issued, placed on the vehicle, or left the dealership. If the new plate was already issued/placed after delivery, the original EFS transaction must be voided and the issued plate must be returned to the tax collector or license plate agency. Then verify the customer’s transfer plate eligibility before reprocessing the transaction as a transfer tag. If the transfer plate is not eligible, process as a new plate and review IRF. Hold and escalate if the EFS void, plate inventory status, or transfer tag eligibility is unclear.
+
+============================================================
 THIRD TEMPORARY TAG — DEALERSHIP APPROVAL WORKFLOW
 ============================================================
 

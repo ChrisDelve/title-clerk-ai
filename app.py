@@ -541,8 +541,36 @@ def search_documents(query):
             m for m in matches
             if m not in spouse_plate_matches
         ]
-
+    
         return (spouse_plate_matches + non_spouse_plate_matches)[:5]
+    
+    new_plate_to_transfer_words = [
+        "changed from new plate to transfer tag",
+        "new plate to transfer tag after delivery",
+        "customer wants to switch from new plate to transfer tag",
+        "issued new plate but customer has tag to transfer",
+        "new plate was issued and customer wants transfer tag",
+        "customer changed from new plate to transfer tag after delivery"
+    ]
+
+    if any(term in query.lower() for term in new_plate_to_transfer_words):
+        new_plate_to_transfer_matches = [
+            m for m in matches
+            if "efs_01" in m["name"].lower()
+            or "electronic_filing_system_efs" in m["name"].lower()
+            or "320.0609" in m["name"].lower()
+            or "registration_plate_and_insurance" in m["name"].lower()
+            or "plate_registration_action_logic_map" in m["name"].lower()
+            or "rejection_prevention_logic_map" in m["name"].lower()
+            or "validation_logic_map" in m["name"].lower()
+        ]
+
+        non_new_plate_to_transfer_matches = [
+            m for m in matches
+            if m not in new_plate_to_transfer_matches
+        ]
+
+        return (new_plate_to_transfer_matches + non_new_plate_to_transfer_matches)[:5]
     insurance_words = [
         "insurance",
         "florida insurance",
@@ -886,6 +914,25 @@ Always verify:
 6. signatures and ID for any party being added or relied on
 
 If the spouse owns the plate but is not an owner or registrant on the new vehicle, tell the clerk to process as new plate and review IRF unless a valid exception or tax collector guidance applies.
+
+STRICT NEW PLATE TO TRANSFER TAG AFTER DELIVERY RULE:
+
+For questions where a customer was issued a new plate but later wants to change to a transfer tag after delivery, do not answer only as a normal plate transfer.
+
+Treat this first as an EFS inventory and void workflow issue.
+
+Required workflow:
+1. Verify whether the new plate was issued.
+2. Verify whether the plate was placed on the vehicle.
+3. Verify whether the vehicle left the dealership.
+4. If the plate was issued/placed after delivery, void the original EFS transaction.
+5. Return the issued plate to the tax collector or license plate agency.
+6. Verify the customer’s transfer plate eligibility.
+7. Reprocess correctly as a transfer tag only if the plate is eligible.
+8. If the transfer plate is not eligible, process as new plate and review IRF.
+9. Escalate if EFS inventory status, returned plate status, or transfer eligibility is unclear.
+
+Do not say this is only a normal plate transfer.
 
 Knowledge Base:
 {combined_context}
