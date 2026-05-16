@@ -1405,6 +1405,35 @@ OR user_question_mentions = "works in Florida"
 THEN check_files = "320.37_Operational_Notes.txt, 320.38_Operational_Notes.txt, 320.1325_Operational_Notes.txt"
 
 ============================================================
+TRANSFER TAG NOT IN CUSTOMER NAME — STRICT WORKFLOW
+============================================================
+
+IF customer_requests_transfer_tag = TRUE
+AND tag_registered_owner_does_not_match_customer = TRUE
+THEN do_not_process_as_transfer_tag = TRUE
+
+IF tag_registered_owner_does_not_match_customer = TRUE
+THEN new_plate_review_required = TRUE
+
+IF new_plate_required = TRUE
+THEN IRF_review_required = TRUE
+
+IF customer_is_title_owner_but_not_plate_owner = TRUE
+THEN plate_transfer_still_not_allowed_without_valid_plate_owner_authority_or_statutory_exception = TRUE
+
+IF plate_belongs_to_spouse_parent_relative_friend_or_business = TRUE
+THEN do_not_assume_plate_can_transfer = TRUE
+
+IF plate_owner_mismatch = TRUE
+THEN verify_registration_record_plate_owner_vehicle_classification_and_available_exemption = TRUE
+
+IF plate_owner_mismatch_unresolved = TRUE
+THEN transaction_hold_required = TRUE
+
+COMMON CLERK ANSWER:
+If the transfer tag is not in the customer's name, do not process it as a normal transfer tag. A Florida plate stays with the registered owner. First verify the plate record, registered owner, vehicle classification, and whether any valid statutory exception or authority applies. If the customer is not the plate owner and no valid exception applies, process the deal as a new plate and review IRF instead of transfer tag.
+
+============================================================
 COMMON DEALERSHIP QUESTION ROUTING
 ============================================================
 
