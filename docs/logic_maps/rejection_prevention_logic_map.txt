@@ -141,6 +141,52 @@ AND transferable_plate_not_verified = TRUE
 THEN manual_review_required = TRUE
 
 ============================================================
+TRANSFER TAG FROM DECEASED SPOUSE — STRICT WORKFLOW
+============================================================
+
+IF user_question_mentions = "transfer tag from deceased spouse"
+OR user_question_mentions = "transfer plate from deceased spouse"
+OR user_question_mentions = "deceased spouse tag"
+OR user_question_mentions = "deceased spouse plate"
+OR user_question_mentions = "husband passed away transfer tag"
+OR user_question_mentions = "wife passed away transfer tag"
+OR user_question_mentions = "spouse died and customer wants to use tag"
+THEN deceased_spouse_plate_transfer_workflow_required = TRUE
+
+IF deceased_spouse_plate_transfer_workflow_required = TRUE
+THEN verify_registered_owner_of_plate = TRUE
+
+IF deceased_spouse_plate_transfer_workflow_required = TRUE
+THEN verify_surviving_spouse_authority = TRUE
+
+IF deceased_spouse_plate_transfer_workflow_required = TRUE
+THEN death_certificate_required = TRUE
+
+IF deceased_spouse_plate_transfer_workflow_required = TRUE
+THEN review_deceased_owner_title_workflow_required = TRUE
+
+IF plate_registered_to_deceased_spouse = TRUE
+THEN do_not_assume_plate_transfer_is_automatic = TRUE
+
+IF plate_registered_to_deceased_spouse = TRUE
+THEN verify_FLHSMV_or_tax_collector_allows_transfer_under_surviving_spouse_or_estate_rules = TRUE
+
+IF power_of_attorney_used_after_death = TRUE
+THEN do_not_accept_POA_as_authority_after_death = TRUE
+
+IF surviving_spouse_not_registered_owner_or_authorized_party = TRUE
+THEN do_not_process_as_normal_plate_transfer = TRUE
+
+IF authority_or_probate_status_unclear = TRUE
+THEN hold_and_escalate_to_title_lead_tax_collector_or_FLHSMV = TRUE
+
+IF plate_transfer_not_allowed = TRUE
+THEN process_new_plate_and_IRF_review_required = TRUE
+
+COMMON CLERK ANSWER:
+A plate/tag from a deceased spouse should not be treated as an automatic normal transfer. First verify the current registered owner of the plate, confirm the spouse is deceased, obtain the death certificate, and review whether the surviving spouse has proper authority under the deceased owner workflow. A power of attorney is generally not valid after death. If the surviving spouse is not an authorized party or the plate cannot legally transfer, process a new plate and review Initial Registration Fee requirements. Hold and escalate to the title lead, tax collector, or FLHSMV if probate, ownership, or authority is unclear.
+
+============================================================
 NEW PLATE CHANGED TO TRANSFER TAG AFTER DELIVERY — STRICT EFS WORKFLOW
 ============================================================
 

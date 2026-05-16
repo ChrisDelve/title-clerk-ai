@@ -544,6 +544,37 @@ def search_documents(query):
     
         return (spouse_plate_matches + non_spouse_plate_matches)[:5]
     
+    deceased_spouse_plate_words = [
+        "transfer tag from deceased spouse",
+        "transfer plate from deceased spouse",
+        "deceased spouse tag",
+        "deceased spouse plate",
+        "husband passed away transfer tag",
+        "wife passed away transfer tag",
+        "spouse died and customer wants to use tag",
+        "spouse died transfer plate",
+        "spouse passed away transfer plate"
+    ]
+
+    if any(term in query.lower() for term in deceased_spouse_plate_words):
+        deceased_spouse_plate_matches = [
+            m for m in matches
+            if "deceased_owner" in m["name"].lower()
+            or "320.0609" in m["name"].lower()
+            or "registration_plate_and_insurance" in m["name"].lower()
+            or "plate_registration_action_logic_map" in m["name"].lower()
+            or "rejection_prevention_logic_map" in m["name"].lower()
+            or "validation_logic_map" in m["name"].lower()
+            or "title_ownership_and_transfer" in m["name"].lower()
+        ]
+
+        non_deceased_spouse_plate_matches = [
+            m for m in matches
+            if m not in deceased_spouse_plate_matches
+        ]
+
+        return (deceased_spouse_plate_matches + non_deceased_spouse_plate_matches)[:5]
+    
     new_plate_to_transfer_words = [
         "changed from new plate to transfer tag",
         "new plate to transfer tag after delivery",
@@ -1065,6 +1096,20 @@ Required workflow:
 7. Inventory should move to RT.
 8. Once the tax collector/license plate agency receives the returned inventory, status should move to RR.
 9. Escalate if the plate cannot be recovered, the void fails, or inventory status does not update.
+
+STRICT DECEASED SPOUSE PLATE TRANSFER RULE:
+
+For questions where a customer wants to transfer a tag or plate from a deceased spouse, do not answer as a normal spouse plate transfer only.
+
+Required workflow:
+1. Verify the registered owner of the plate.
+2. Confirm the spouse is deceased.
+3. Obtain/review death certificate requirements.
+4. Review deceased owner title workflow and surviving spouse authority.
+5. Do not accept power of attorney as authority after death unless a specific lawful exception applies.
+6. Verify whether the surviving spouse is legally allowed to transfer/use the plate.
+7. If authority, probate, estate, or ownership status is unclear, hold and escalate.
+8. If the plate cannot legally transfer, process as new plate and review IRF.
 
 Knowledge Base:
 {combined_context}
