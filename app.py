@@ -571,6 +571,59 @@ def search_documents(query):
         ]
 
         return (new_plate_to_transfer_matches + non_new_plate_to_transfer_matches)[:5]
+    efs_initial_status_words = [
+        "efs transaction stuck in initial status",
+        "transaction stuck in initial status",
+        "efs stuck in initial",
+        "cannot advance efs transaction to complete",
+        "efs transaction will not complete",
+        "initial status cannot complete",
+        "stuck in initial status"
+    ]
+
+    if any(term in query.lower() for term in efs_initial_status_words):
+        efs_initial_status_matches = [
+            m for m in matches
+            if "efs_01" in m["name"].lower()
+            or "electronic_filing_system_efs" in m["name"].lower()
+            or "registration_plate_and_insurance" in m["name"].lower()
+            or "rejection_prevention_logic_map" in m["name"].lower()
+            or "validation_logic_map" in m["name"].lower()
+        ]
+
+        non_efs_initial_status_matches = [
+            m for m in matches
+            if m not in efs_initial_status_matches
+        ]
+
+        return (efs_initial_status_matches + non_efs_initial_status_matches)[:5]
+    
+    buyer_never_possession_words = [
+        "buyer never took possession but new plate was issued",
+        "buyer never took possession",
+        "customer never took possession but plate was issued",
+        "new plate issued but buyer never took possession",
+        "plate issued but customer never took delivery",
+        "vehicle never left dealership but plate was issued",
+        "never took delivery but plate was issued"
+    ]
+
+    if any(term in query.lower() for term in buyer_never_possession_words):
+        buyer_never_possession_matches = [
+            m for m in matches
+            if "efs_01" in m["name"].lower()
+            or "electronic_filing_system_efs" in m["name"].lower()
+            or "registration_plate_and_insurance" in m["name"].lower()
+            or "rejection_prevention_logic_map" in m["name"].lower()
+            or "validation_logic_map" in m["name"].lower()
+        ]
+
+        non_buyer_never_possession_matches = [
+            m for m in matches
+            if m not in buyer_never_possession_matches
+        ]
+
+        return (buyer_never_possession_matches + non_buyer_never_possession_matches)[:5]
     insurance_words = [
         "insurance",
         "florida insurance",
@@ -933,6 +986,42 @@ Required workflow:
 9. Escalate if EFS inventory status, returned plate status, or transfer eligibility is unclear.
 
 Do not say this is only a normal plate transfer.
+
+STRICT EFS INITIAL STATUS RULE:
+
+For EFS transactions stuck in initial status, do not answer as only a generic title, lien, or audit trail issue.
+
+Treat this first as an EFS inventory/manual processing issue.
+
+Required workflow:
+1. Confirm the transaction is stuck in initial status.
+2. Identify why it cannot advance to complete status.
+3. Check for vehicle, customer, registration, or stop issues.
+4. Determine whether a plate was issued or placed on the vehicle.
+5. If a plate was issued/placed and the transaction cannot complete, do not reuse the plate as available inventory.
+6. Use the Return Voided Inventory to Tax Collector workflow.
+7. Inventory should move to RT.
+8. Once the tax collector or agency receives the returned inventory, status should move to RR.
+9. If a void error occurs or inventory status does not update, contact the tax collector office for Department assistance.
+
+For EFS inventory status, do not say RS means issued. RS means re-issuable. IS means issued. RT means EFS returned. RR means return received.
+
+STRICT BUYER NEVER TOOK POSSESSION / NEW PLATE ISSUED RULE:
+
+For questions where a buyer never took possession but a new plate was issued, do not answer as a normal plate transfer or generic title issue.
+
+Treat this first as an EFS inventory void issue.
+
+Required workflow:
+1. Verify whether the buyer truly never took possession.
+2. Verify whether the vehicle ever left the dealership.
+3. Verify whether the new plate was physically placed on the vehicle.
+4. If the buyer never took possession and the plate was not placed on the vehicle, void the EFS transaction and set inventory to available.
+5. Inventory should become RS / re-issuable.
+6. If the plate was placed on the vehicle or the vehicle left the dealership, do not reuse the plate as available inventory.
+7. In that case, use the return-voided-inventory-to-tax-collector workflow.
+8. Document possession status, plate placement, void reason, and inventory status.
+9. Escalate if the void fails or inventory status does not update.
 
 Knowledge Base:
 {combined_context}

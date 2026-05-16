@@ -181,6 +181,53 @@ COMMON CLERK ANSWER:
 If a new plate was issued and after delivery the customer wants to change to a transfer tag, do not handle it as a normal plate transfer. First verify whether the new plate was issued, placed on the vehicle, or left the dealership. If the new plate was already issued/placed after delivery, the original EFS transaction must be voided and the issued plate must be returned to the tax collector or license plate agency. Then verify the customer’s transfer plate eligibility before reprocessing the transaction as a transfer tag. If the transfer plate is not eligible, process as a new plate and review IRF. Hold and escalate if the EFS void, plate inventory status, or transfer tag eligibility is unclear.
 
 ============================================================
+EFS TRANSACTION STUCK IN INITIAL STATUS — STRICT WORKFLOW
+============================================================
+
+DO NOT describe RS as issued. RS means re-issuable. IS means issued. For stuck initial status with issued/placed inventory, use RT return workflow, then RR after agency/tax collector receipt.
+
+IF user_question_mentions = "EFS transaction stuck in initial status"
+OR user_question_mentions = "transaction stuck in initial status"
+OR user_question_mentions = "EFS stuck in initial"
+OR user_question_mentions = "cannot advance EFS transaction to complete"
+OR user_question_mentions = "EFS transaction will not complete"
+OR user_question_mentions = "initial status cannot complete"
+THEN EFS_initial_status_workflow_required = TRUE
+
+IF EFS_initial_status_workflow_required = TRUE
+THEN treat_as_EFS_inventory_and_manual_processing_issue = TRUE
+
+IF EFS_initial_status_workflow_required = TRUE
+THEN identify_reason_transaction_cannot_complete = TRUE
+
+IF EFS_initial_status_workflow_required = TRUE
+THEN check_for_vehicle_customer_registration_or_stop_issue = TRUE
+
+IF EFS_initial_status_workflow_required = TRUE
+THEN determine_if_plate_was_issued_or_placed_on_vehicle = TRUE
+
+IF EFS_transaction_cannot_advance_to_complete = TRUE
+AND plate_was_issued_or_placed_on_vehicle = TRUE
+THEN do_not_reissue_plate_as_available_inventory = TRUE
+
+IF EFS_transaction_cannot_advance_to_complete = TRUE
+AND plate_was_issued_or_placed_on_vehicle = TRUE
+THEN return_voided_inventory_to_tax_collector_required = TRUE
+
+IF return_voided_inventory_to_tax_collector_required = TRUE
+THEN inventory_status_should_be_RT = TRUE
+
+IF tax_collector_or_license_plate_agency_receives_returned_inventory = TRUE
+THEN inventory_status_should_be_RR = TRUE
+
+IF EFS_void_error_occurs = TRUE
+OR inventory_status_does_not_update = TRUE
+THEN contact_tax_collector_for_department_assistance = TRUE
+
+COMMON CLERK ANSWER:
+If an EFS transaction is stuck in initial status and cannot be advanced to complete, do not treat it as a normal title problem first. Determine why it cannot complete, such as a vehicle stop, customer stop, registration stop, or manual-processing issue. Then verify whether a plate was issued or placed on the vehicle. If a plate was issued or placed and the transaction cannot complete, do not reuse that plate as available inventory. Use the Return Voided Inventory to Tax Collector workflow so the inventory moves to RT, and the tax collector or license plate agency can mark it RR once received. If the void fails or inventory status does not update, contact the tax collector office for Department assistance before proceeding.
+
+============================================================
 THIRD TEMPORARY TAG — DEALERSHIP APPROVAL WORKFLOW
 ============================================================
 
