@@ -141,6 +141,48 @@ AND transferable_plate_not_verified = TRUE
 THEN manual_review_required = TRUE
 
 ============================================================
+TRANSFER TAG BUT TITLE STILL IN SELLER'S NAME — STRICT WORKFLOW
+============================================================
+
+IF user_question_mentions = "transfer tag but title is still in seller's name"
+OR user_question_mentions = "transfer plate but title is still in seller's name"
+OR user_question_mentions = "title still in seller's name"
+OR user_question_mentions = "seller name on title but customer wants tag transfer"
+OR user_question_mentions = "customer wants to transfer tag before title transfer"
+OR user_question_mentions = "tag transfer before title is in customer name"
+OR user_question_mentions = "title not in customer's name but wants transfer tag"
+THEN seller_title_plate_transfer_workflow_required = TRUE
+
+IF seller_title_plate_transfer_workflow_required = TRUE
+THEN verify_title_assignment_to_customer = TRUE
+
+IF seller_title_plate_transfer_workflow_required = TRUE
+THEN verify_registered_owner_of_plate = TRUE
+
+IF seller_title_plate_transfer_workflow_required = TRUE
+THEN do_not_process_as_normal_plate_transfer_until_ownership_established = TRUE
+
+IF title_still_in_seller_name = TRUE
+AND title_not_properly_assigned_to_customer = TRUE
+THEN reject_or_hold_before_submission = TRUE
+
+IF title_still_in_seller_name = TRUE
+AND customer_not_registered_plate_owner = TRUE
+THEN do_not_transfer_existing_plate = TRUE
+
+IF title_still_in_seller_name = TRUE
+THEN complete_title_transfer_or_assignment_first = TRUE
+
+IF customer_has_no_transferable_plate_in_customer_name = TRUE
+THEN process_new_plate_and_IRF_review_required = TRUE
+
+IF title_assignment_incomplete_open_title_or_missing_signatures = TRUE
+THEN hold_and_escalate_to_title_lead_or_tax_collector = TRUE
+
+COMMON CLERK ANSWER:
+Do not process a transfer tag as a normal plate transfer if the title is still in the seller’s name and ownership has not been properly assigned to the customer. First verify the title assignment, seller/buyer signatures, odometer disclosure if required, lien status, and customer identity. Then verify whether the plate being transferred is registered to the customer or a valid statutory exception applies. If the customer does not own the plate or ownership is not established, process as a new plate with Initial Registration Fee review. Hold and escalate if the title is open, incomplete, unsigned, or still shows the seller without proper assignment.
+
+============================================================
 TRANSFER TAG FROM DECEASED SPOUSE — STRICT WORKFLOW
 ============================================================
 

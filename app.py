@@ -497,6 +497,46 @@ def search_documents(query):
         ]
 
         return (third_temp_matches + non_third_temp_matches)[:5]
+    
+    seller_title_transfer_tag_words = [
+        "transfer tag but title is still in seller's name",
+        "transfer tag but title is still in seller’s name",
+        "transfer plate but title is still in seller's name",
+        "transfer plate but title is still in seller’s name",
+        "title still in seller's name",
+        "title still in seller’s name",
+        "title still in sellers name",
+        "seller name on title but customer wants tag transfer",
+        "seller's name on title but customer wants tag transfer",
+        "seller’s name on title but customer wants tag transfer",
+        "customer wants to transfer tag before title transfer",
+        "tag transfer before title is in customer name",
+        "title not in customer's name but wants transfer tag",
+        "title not in customer’s name but wants transfer tag",
+        "title not in customer name transfer tag",
+        "title still in seller name transfer tag"
+    ]
+
+    if any(term in query.lower() for term in seller_title_transfer_tag_words):
+        seller_title_transfer_tag_matches = [
+            m for m in matches
+            if "title_ownership_and_transfer" in m["name"].lower()
+            or "tl_11" in m["name"].lower()
+            or "320.0609" in m["name"].lower()
+            or "registration_plate_and_insurance" in m["name"].lower()
+            or "plate_registration_action_logic_map" in m["name"].lower()
+            or "rejection_prevention_logic_map" in m["name"].lower()
+            or "validation_logic_map" in m["name"].lower()
+            or "tl_01" in m["name"].lower()
+        ]
+
+        non_seller_title_transfer_tag_matches = [
+            m for m in matches
+            if m not in seller_title_transfer_tag_matches
+        ]
+
+        return (seller_title_transfer_tag_matches + non_seller_title_transfer_tag_matches)[:5]
+
     spouse_plate_words = [
         "transfer a plate from their spouse",
         "transfer a plate from spouse",
@@ -1157,6 +1197,19 @@ Required workflow:
 6. Verify estate authority, court order, surviving spouse authority, or tax collector/FLHSMV-approved authority.
 7. If authority is unclear, hold and escalate.
 8. If the tag cannot legally transfer, process as new plate and review IRF.
+
+STRICT TITLE STILL IN SELLER'S NAME / TRANSFER TAG RULE:
+
+For questions where a customer wants to transfer a tag but the vehicle title is still in the seller’s name, do not answer as a normal plate transfer only.
+
+Required workflow:
+1. Verify whether the title has been properly assigned from seller to customer.
+2. Verify seller and buyer signatures, printed names, odometer disclosure if required, and lien status.
+3. Verify the registered owner of the plate being transferred.
+4. Do not process a normal transfer tag until customer ownership and plate eligibility are established.
+5. If the title is open, incomplete, unsigned, or still in seller’s name without proper assignment, hold before submission.
+6. If the plate is not registered to the customer and no valid exception applies, process as new plate with IRF review.
+7. Escalate if title ownership, signatures, liens, or plate ownership are unclear.
 
 Knowledge Base:
 {combined_context}
