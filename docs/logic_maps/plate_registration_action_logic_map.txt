@@ -28,5 +28,41 @@ IF plate_transfer_not_allowed = TRUE
 THEN customer_should_not_be_quoted_plate_transfer_only = TRUE
 
 ============================================================
+SPOUSE PLATE TRANSFER — STRICT WORKFLOW
+============================================================
+
+IF user_question_mentions = "transfer plate from spouse"
+OR user_question_mentions = "transfer tag from spouse"
+OR user_question_mentions = "use spouse plate"
+OR user_question_mentions = "wife's tag"
+OR user_question_mentions = "husband's tag"
+THEN spouse_plate_transfer_workflow_required = TRUE
+
+IF spouse_plate_transfer_workflow_required = TRUE
+THEN verify_registered_owner_of_plate = TRUE
+
+IF spouse_plate_transfer_workflow_required = TRUE
+THEN verify_new_vehicle_owner_and_registrant = TRUE
+
+IF plate_registered_owner_is_spouse = TRUE
+AND spouse_is_not_owner_or_registrant_on_new_vehicle = TRUE
+THEN do_not_process_as_normal_plate_transfer = TRUE
+
+IF customer_is_married_to_plate_owner = TRUE
+THEN do_not_assume_plate_can_transfer_based_only_on_marriage = TRUE
+
+IF plate_owner_does_not_match_new_vehicle_owner_or_registrant = TRUE
+THEN new_plate_and_IRF_review_required = TRUE
+
+IF spouse_will_be_added_as_owner_or_co_registrant = TRUE
+THEN ownership_signature_and_insurance_review_required = TRUE
+
+IF spouse_plate_transfer_authority_unclear = TRUE
+THEN hold_and_escalate_to_title_lead_or_tax_collector = TRUE
+
+COMMON CLERK ANSWER:
+A spouse’s plate should not be treated as automatically transferable just because the parties are married. First verify the registered owner of the plate, the titled owner/applicant of the new vehicle, and who will be listed as the registrant. If the plate is registered to the spouse but the spouse is not an owner or registrant on the new vehicle, do not process it as a normal transfer tag. Process as a new plate and review IRF unless a valid statutory exception or tax collector guidance applies. If the spouse will be added as an owner or co-registrant, verify signatures, ID, insurance, ownership documents, and registration eligibility before proceeding.
+
+============================================================
 END OF FILE
 ============================================================

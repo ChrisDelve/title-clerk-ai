@@ -522,6 +522,46 @@ def search_documents(query):
         ]
 
         return (insurance_matches + non_insurance_matches)[:5]
+    
+    spouse_plate_words = [
+        "transfer a plate from their spouse",
+        "transfer a plate from spouse",
+        "transfer plate from spouse",
+        "transfer tag from spouse",
+        "plate from their spouse",
+        "tag from their spouse",
+        "spouse plate",
+        "spouse tag",
+        "wife plate",
+        "wife tag",
+        "wife's plate",
+        "wife's tag",
+        "husband plate",
+        "husband tag",
+        "husband's plate",
+        "husband's tag",
+        "use spouse plate",
+        "use spouse tag"
+    ]
+
+    if any(term in query.lower() for term in spouse_plate_words):
+        spouse_plate_matches = [
+            m for m in matches
+            if "320.0609" in m["name"].lower()
+            or "320.072" in m["name"].lower()
+            or "registration_plate_and_insurance" in m["name"].lower()
+            or "plate_registration_action_logic_map" in m["name"].lower()
+            or "rejection_prevention_logic_map" in m["name"].lower()
+            or "validation_logic_map" in m["name"].lower()
+        ]
+
+        non_spouse_plate_matches = [
+            m for m in matches
+            if m not in spouse_plate_matches
+        ]
+
+        return (spouse_plate_matches + non_spouse_plate_matches)[:5]
+
     return matches[:5]
 
 # ----------------------------
@@ -825,6 +865,20 @@ Required workflow:
 6. Agency processes the third temporary tag.
 
 If approval letter is missing, tell the clerk not to proceed.
+
+STRICT SPOUSE PLATE TRANSFER RULE:
+
+For spouse plate transfer questions, do not say the plate can transfer automatically because the customer is married.
+
+Always verify:
+1. registered owner of the plate
+2. titled owner/applicant of the new vehicle
+3. who will be listed as registrant
+4. whether the spouse is being added as owner or co-registrant
+5. valid Florida insurance
+6. signatures and ID for any party being added or relied on
+
+If the spouse owns the plate but is not an owner or registrant on the new vehicle, tell the clerk to process as new plate and review IRF unless a valid exception or tax collector guidance applies.
 
 Knowledge Base:
 {combined_context}
