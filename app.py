@@ -497,32 +497,6 @@ def search_documents(query):
         ]
 
         return (third_temp_matches + non_third_temp_matches)[:5]
-
-    insurance_words = [
-    "insurance",
-    "florida insurance",
-    "proof of insurance",
-    "no valid insurance",
-    "no insurance",
-    "invalid insurance"
-    ]
-
-    if any(term in query.lower() for term in insurance_words):
-        insurance_matches = [
-            m for m in matches
-            if "320.02" in m["name"].lower()
-            or "registration_plate_and_insurance" in m["name"].lower()
-            or "validation_logic_map" in m["name"].lower()
-            or "rejection_prevention_logic_map" in m["name"].lower()
-        ]
-
-        non_insurance_matches = [
-            m for m in matches
-            if m not in insurance_matches
-        ]
-
-        return (insurance_matches + non_insurance_matches)[:5]
-    
     spouse_plate_words = [
         "transfer a plate from their spouse",
         "transfer a plate from spouse",
@@ -542,6 +516,13 @@ def search_documents(query):
         "husband's tag",
         "use spouse plate",
         "use spouse tag"
+        "insurance is in spouse's name",
+        "insurance in spouse name",
+        "insurance is in wife name",
+        "insurance is in husband's name",
+        "insurance in husband's name",
+        "insurance in wife's name",
+        "transfer tag but insurance is in spouse"
     ]
 
     if any(term in query.lower() for term in spouse_plate_words):
@@ -553,6 +534,7 @@ def search_documents(query):
             or "plate_registration_action_logic_map" in m["name"].lower()
             or "rejection_prevention_logic_map" in m["name"].lower()
             or "validation_logic_map" in m["name"].lower()
+            or "320.02" in m["name"].lower()
         ]
 
         non_spouse_plate_matches = [
@@ -561,6 +543,31 @@ def search_documents(query):
         ]
 
         return (spouse_plate_matches + non_spouse_plate_matches)[:5]
+    insurance_words = [
+        "insurance",
+        "florida insurance",
+        "proof of insurance",
+        "no valid insurance",
+        "no insurance",
+        "invalid insurance"
+    ]
+
+    if any(term in query.lower() for term in insurance_words):
+        insurance_matches = [
+            m for m in matches
+            if "320.02" in m["name"].lower()
+            or "registration_plate_and_insurance" in m["name"].lower()
+            or "validation_logic_map" in m["name"].lower()
+            or "rejection_prevention_logic_map" in m["name"].lower()
+        ]
+
+        non_insurance_matches = [
+            m for m in matches
+            if m not in insurance_matches
+        ]
+
+        return (insurance_matches + non_insurance_matches)[:5]
+    
 
     return matches[:5]
 
