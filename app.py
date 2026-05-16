@@ -575,6 +575,39 @@ def search_documents(query):
 
         return (deceased_spouse_plate_matches + non_deceased_spouse_plate_matches)[:5]
     
+    deceased_parent_plate_words = [
+        "use deceased parent's tag",
+        "use deceased parents tag",
+        "transfer deceased parent's tag",
+        "transfer tag from deceased parent",
+        "deceased parent tag",
+        "deceased parent's plate",
+        "father passed away use his tag",
+        "mother passed away use her tag",
+        "parent died and customer wants to use tag",
+        "dad passed away use his tag",
+        "mom passed away use her tag"
+    ]
+
+    if any(term in query.lower() for term in deceased_parent_plate_words):
+        deceased_parent_plate_matches = [
+            m for m in matches
+            if "deceased_owner" in m["name"].lower()
+            or "320.0609" in m["name"].lower()
+            or "registration_plate_and_insurance" in m["name"].lower()
+            or "plate_registration_action_logic_map" in m["name"].lower()
+            or "rejection_prevention_logic_map" in m["name"].lower()
+            or "validation_logic_map" in m["name"].lower()
+            or "title_ownership_and_transfer" in m["name"].lower()
+        ]
+
+        non_deceased_parent_plate_matches = [
+            m for m in matches
+            if m not in deceased_parent_plate_matches
+        ]
+
+        return (deceased_parent_plate_matches + non_deceased_parent_plate_matches)[:5]
+    
     new_plate_to_transfer_words = [
         "changed from new plate to transfer tag",
         "new plate to transfer tag after delivery",
@@ -1110,6 +1143,20 @@ Required workflow:
 6. Verify whether the surviving spouse is legally allowed to transfer/use the plate.
 7. If authority, probate, estate, or ownership status is unclear, hold and escalate.
 8. If the plate cannot legally transfer, process as new plate and review IRF.
+
+STRICT DECEASED PARENT TAG RULE:
+
+For questions where a customer wants to use or transfer a deceased parent’s tag, do not answer as a normal family transfer, spouse transfer, or generic estate issue.
+
+Required workflow:
+1. Verify the registered owner of the plate.
+2. Confirm the parent is deceased and obtain death certificate requirements.
+3. Review deceased owner title workflow.
+4. Do not accept power of attorney as authority after death unless a specific lawful exception applies.
+5. Do not assume a child or relative can use the deceased parent’s tag.
+6. Verify estate authority, court order, surviving spouse authority, or tax collector/FLHSMV-approved authority.
+7. If authority is unclear, hold and escalate.
+8. If the tag cannot legally transfer, process as new plate and review IRF.
 
 Knowledge Base:
 {combined_context}

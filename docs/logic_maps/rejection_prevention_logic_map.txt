@@ -187,6 +187,51 @@ COMMON CLERK ANSWER:
 A plate/tag from a deceased spouse should not be treated as an automatic normal transfer. First verify the current registered owner of the plate, confirm the spouse is deceased, obtain the death certificate, and review whether the surviving spouse has proper authority under the deceased owner workflow. A power of attorney is generally not valid after death. If the surviving spouse is not an authorized party or the plate cannot legally transfer, process a new plate and review Initial Registration Fee requirements. Hold and escalate to the title lead, tax collector, or FLHSMV if probate, ownership, or authority is unclear.
 
 ============================================================
+USE DECEASED PARENT'S TAG — STRICT WORKFLOW
+============================================================
+
+IF user_question_mentions = "use deceased parent's tag"
+OR user_question_mentions = "use deceased parents tag"
+OR user_question_mentions = "transfer deceased parent's tag"
+OR user_question_mentions = "transfer tag from deceased parent"
+OR user_question_mentions = "deceased parent tag"
+OR user_question_mentions = "deceased parent's plate"
+OR user_question_mentions = "father passed away use his tag"
+OR user_question_mentions = "mother passed away use her tag"
+OR user_question_mentions = "parent died and customer wants to use tag"
+THEN deceased_parent_plate_workflow_required = TRUE
+
+IF deceased_parent_plate_workflow_required = TRUE
+THEN verify_registered_owner_of_plate = TRUE
+
+IF deceased_parent_plate_workflow_required = TRUE
+THEN death_certificate_required = TRUE
+
+IF deceased_parent_plate_workflow_required = TRUE
+THEN review_deceased_owner_title_workflow_required = TRUE
+
+IF deceased_parent_plate_workflow_required = TRUE
+THEN verify_estate_or_legal_authority = TRUE
+
+IF customer_is_child_or_relative_only = TRUE
+THEN do_not_assume_plate_transfer_allowed = TRUE
+
+IF power_of_attorney_used_after_death = TRUE
+THEN do_not_accept_POA_as_authority_after_death = TRUE
+
+IF customer_has_no_surviving_spouse_authority_estate_authority_or_court_order = TRUE
+THEN do_not_process_as_normal_plate_transfer = TRUE
+
+IF deceased_parent_plate_transfer_not_allowed = TRUE
+THEN process_new_plate_and_IRF_review_required = TRUE
+
+IF probate_estate_authority_or_ownership_unclear = TRUE
+THEN hold_and_escalate_to_title_lead_tax_collector_or_FLHSMV = TRUE
+
+COMMON CLERK ANSWER:
+A deceased parent’s tag is not automatically transferable to a child or relative. First verify the registered owner of the plate, obtain the death certificate, and review the deceased owner workflow. A power of attorney generally becomes void at death and should not be accepted as authority after death. Unless the customer has valid surviving-spouse authority, estate authority, court order, or tax collector/FLHSMV-approved authority to use or transfer the plate, do not process it as a normal plate transfer. Process as a new plate with Initial Registration Fee review if the tag cannot legally transfer. Hold and escalate if probate, estate authority, ownership, or plate eligibility is unclear.
+
+============================================================
 NEW PLATE CHANGED TO TRANSFER TAG AFTER DELIVERY — STRICT EFS WORKFLOW
 ============================================================
 
