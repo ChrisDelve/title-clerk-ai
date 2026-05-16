@@ -1,0 +1,299 @@
+STATUTE: 319.225
+TITLE: Transfer and Reassignment Forms; Odometer Disclosure Statements
+SOURCE: https://www.leg.state.fl.us/statutes/index.cfm?App_mode=Display_Statute&Search_String=&URL=0300-0399/0319/Sections/0319.225.html
+DOCUMENT_TYPE: Florida Law Reference / Operational Notes
+CATEGORY: ODOMETER DISCLOSURE / TITLE TRANSFER / DEALER REASSIGNMENT / SECURE POWER OF ATTORNEY / AUCTION / ELT
+
+============================================================
+PURPOSE
+============================================================
+
+This statute governs odometer disclosure requirements during transfer or reassignment of title.
+
+It is the core Florida law reference for:
+- odometer disclosure statements
+- dealer reassignment odometer disclosure
+- secure power of attorney for odometer disclosure
+- lienholder-held titles
+- lost or unavailable titles
+- electronic title reassignment
+- auction notation requirements
+- odometer disclosure exemptions
+
+============================================================
+PLAIN ENGLISH SUMMARY
+============================================================
+
+Florida certificates of title must contain odometer disclosure language and odometer disclosure fields.
+
+When a used motor vehicle is transferred or reassigned, the transferor must complete the odometer disclosure statement and the transferee must acknowledge the disclosure by signing and printing their name.
+
+The department may not issue title unless required odometer disclosure rules are satisfied.
+
+Dealer reassignment forms must contain odometer disclosure statements and dealer copies must be retained for 5 years.
+
+If title is physically held by a lienholder, or if title is lost or otherwise unavailable, the transferor may use a department-authorized power of attorney for odometer disclosure.
+
+If a title is electronic and the transferee agrees to keep it electronic, transferor and transferee must complete a secure reassignment document with odometer disclosure at the tax collector or license plate agency.
+
+============================================================
+TITLE CLERK IMPORTANCE
+============================================================
+
+319.225 is critical for:
+- odometer disclosure on title transfer
+- reassignment forms
+- dealer reassignment overflow
+- secure odometer power of attorney
+- lienholder-held title situations
+- lost/unavailable title situations
+- auction sales
+- ELT / electronic title reassignment
+- mileage disclosure rejection prevention
+
+============================================================
+COMMON WORKFLOW CONNECTIONS
+============================================================
+
+- Title transfer
+- Dealer reassignment
+- Duplicate with transfer
+- Trade-in title work
+- Auction purchases
+- Lienholder-held title
+- Missing title with odometer disclosure
+- Secure POA
+- ELT title transfer
+- Odometer brand review
+- Mileage discrepancy review
+
+============================================================
+OPERATIONAL RULES
+============================================================
+
+IF used_motor_vehicle_transfer_or_reassignment = TRUE
+THEN odometer_disclosure_required = TRUE
+
+IF odometer_disclosure_required = TRUE
+THEN transferor_must_complete_odometer_statement = TRUE
+
+IF odometer_disclosure_required = TRUE
+THEN transferee_must_acknowledge_by_signing_and_printing_name = TRUE
+
+IF odometer_disclosure_not_completed = TRUE
+THEN department_may_not_issue_title = TRUE
+
+IF odometer_disclosure_false_or_missing = TRUE
+THEN rejection_and_penalty_risk = TRUE
+
+IF dealer_reassignment_forms_on_title_filled = TRUE
+THEN separate_department_dealer_reassignment_form_required = TRUE
+
+IF separate_dealer_reassignment_form_used = TRUE
+THEN dealer_copy_retention_required_for_5_years = TRUE
+
+IF title_physically_held_by_lienholder = TRUE
+THEN secure_power_of_attorney_for_odometer_disclosure_may_apply = TRUE
+
+IF title_lost_or_unavailable = TRUE
+THEN secure_power_of_attorney_for_odometer_disclosure_may_apply = TRUE
+
+IF secure_power_of_attorney_used = TRUE
+THEN department_authorized_form_required = TRUE
+
+IF secure_power_of_attorney_used = TRUE
+THEN original_POA_submission_or_delivery_rules_apply = TRUE
+
+IF vehicle_title_held_electronically = TRUE
+AND transferee_agrees_to_maintain_electronic_title = TRUE
+THEN secure_reassignment_document_required_at_tax_collector_or_license_plate_agency = TRUE
+
+IF auction_sale_involved = TRUE
+THEN auction_information_notation_required = TRUE
+
+IF auction_reassignment_information_missing = TRUE
+THEN title_issuance_rejection_risk = TRUE
+
+============================================================
+ODOMETER EXEMPTION LOGIC
+============================================================
+
+IF vehicle_gross_vehicle_weight_rating > 16000
+THEN odometer_disclosure_exempt_review_required = TRUE
+
+IF vehicle_not_self_propelled = TRUE
+THEN odometer_disclosure_exempt_review_required = TRUE
+
+IF vehicle_exempt_from_odometer_disclosure = TRUE
+THEN odometer_disclosure_not_required = TRUE
+
+IF vehicle_model_year >= 2011
+AND vehicle_age_years > 20
+THEN odometer_disclosure_exempt_review_required = TRUE
+
+IF vehicle_model_year <= 2010
+AND vehicle_age_years > 10
+THEN odometer_disclosure_exempt_review_required = TRUE
+
+============================================================
+SECURE POWER OF ATTORNEY LOGIC
+============================================================
+
+IF title_held_by_lienholder = TRUE
+AND odometer_disclosure_needed = TRUE
+THEN secure_POA_review_required = TRUE
+
+IF title_lost_or_unavailable = TRUE
+AND odometer_disclosure_needed = TRUE
+THEN secure_POA_review_required = TRUE
+
+IF secure_POA_used = TRUE
+THEN mileage_on_title_must_match_POA_mileage_exactly = TRUE
+
+IF dealer_sells_to_retail_purchaser_after_secure_POA = TRUE
+THEN original_POA_must_be_submitted_with_title_application = TRUE
+
+IF dealer_sells_to_out_of_state_resident_or_dealer = TRUE
+AND secure_POA_applies = TRUE
+THEN completed_POA_copy_must_be_mailed_to_department_within_5_business_days = TRUE
+
+============================================================
+COMMON DEALERSHIP ISSUES
+============================================================
+
+- Odometer disclosure missing
+- Transferee did not sign/print name
+- Transferor did not complete mileage
+- Mileage entered differently from secure POA
+- Dealer reassignment spaces full
+- Dealer failed to keep reassignment copy
+- Secure POA used incorrectly
+- Title held by lienholder and mileage disclosure incomplete
+- Title lost/unavailable and mileage disclosure not handled correctly
+- Electronic title reassignment not completed at proper office
+- Auction information missing
+- Odometer exemption applied incorrectly
+- Mileage discrepancy between title, POA, buyer order, and application
+
+============================================================
+REJECTION PREVENTION
+============================================================
+
+High rejection risk if:
+- odometer disclosure is blank
+- transferor mileage statement is missing
+- transferee acknowledgment/signature is missing
+- dealer reassignment form is incomplete
+- secure POA is missing when required
+- mileage copied from POA does not match exactly
+- auction information is missing
+- odometer exemption is applied incorrectly
+- electronic reassignment process is skipped
+- dealer fails to submit or retain required POA/reassignment documents
+
+============================================================
+AI DECISION LOGIC
+============================================================
+
+IF user_question_mentions = "odometer disclosure"
+OR user_question_mentions = "mileage disclosure"
+OR user_question_mentions = "reassignment"
+OR user_question_mentions = "secure POA"
+OR user_question_mentions = "title held by lienholder"
+OR user_question_mentions = "dealer reassignment full"
+OR user_question_mentions = "auction"
+THEN reference_319_225 = TRUE
+
+IF used_motor_vehicle_transfer = TRUE
+THEN answer_should_check = "transferor odometer disclosure and transferee acknowledgment"
+
+IF secure_POA_used = TRUE
+THEN answer_should_warn = "Mileage entered on title must match secure POA disclosure exactly."
+
+IF dealer_reassignment_spaces_full = TRUE
+THEN answer_should_review = "department dealer reassignment form and 5-year dealer copy retention"
+
+IF electronic_title_reassignment = TRUE
+THEN answer_should_review = "secure reassignment document at tax collector/license plate agency"
+
+============================================================
+DEALERSHIP WORKFLOW
+============================================================
+
+1. Determine whether odometer disclosure is required.
+- Used motor vehicle transfer or reassignment
+- Check exemptions by vehicle type, GVWR, self-propelled status, and model year age
+
+2. Verify disclosure.
+- Transferor completes mileage disclosure
+- Transferee signs and prints name
+- Mileage is clear and consistent
+
+3. Review reassignment.
+- Check dealer reassignment spaces
+- Use department reassignment form if needed
+- Retain dealer copy as required
+
+4. Review secure POA if title is unavailable.
+- Lienholder-held title
+- Lost/unavailable title
+- Mileage on title must match POA exactly
+
+5. Review ELT/electronic reassignment.
+- Secure reassignment document may be required at tax collector/license plate agency
+
+6. Hold/escalate if inconsistent.
+- Mileage mismatch
+- missing disclosure
+- incorrect exemption
+- questionable odometer reading
+
+============================================================
+COMMON CLERK ANSWER STYLE
+============================================================
+
+When answering an odometer disclosure question, the AI should explain:
+
+1. Whether odometer disclosure is required.
+2. Who must disclose and who must acknowledge.
+3. Whether an exemption applies.
+4. Whether secure POA or dealer reassignment applies.
+5. Whether mileage mismatch creates rejection risk.
+6. Whether transaction should proceed, hold, or escalate.
+
+============================================================
+RELATED LOGIC MAPS
+============================================================
+
+- validation_logic_map.txt
+- rejection_prevention_logic_map.txt
+- forms_required_logic_map.txt
+- transaction_type_logic_map.txt
+- dealer_reassignment_and_trade_logic_map.txt
+- escalation_red_flags_logic_map.txt
+
+============================================================
+RELATED PROCEDURE AREAS
+============================================================
+
+- Odometer disclosure procedures
+- Secure power of attorney procedures
+- Dealer reassignment procedures
+- Duplicate with transfer procedures
+- ELT reassignment procedures
+- Auction title procedures
+
+============================================================
+RELATED STATUTES
+============================================================
+
+- 319.23
+- 319.24
+- 319.324
+- 319.35
+- 320.02
+- 49 C.F.R. Part 580
+
+============================================================
+END OF FILE
+============================================================

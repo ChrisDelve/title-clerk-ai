@@ -1,0 +1,50 @@
+DOCUMENT: FORMS_REQUIRED_LOGIC_MAP
+
+PURPOSE:
+- Form routing
+- Required document detection
+- Supporting document identification
+- Missing paperwork prevention
+- Title and registration workflow support
+
+============================================================
+DEFUNCT LIENHOLDER FORM LOGIC
+============================================================
+
+IF lienholder_out_of_business = TRUE
+AND lien_release_unavailable = TRUE
+THEN HSMV_82139_review_required = TRUE
+
+IF lien_satisfaction_or_lien_release_requested = TRUE
+THEN lien_satisfaction_documentation_required = TRUE
+
+IF ELT_lien_exists = TRUE
+AND lien_release_problem = TRUE
+THEN ELT_supporting_documentation_required = TRUE
+
+IF lienholder_out_of_business = TRUE
+THEN supporting_documents_may_include = "payoff proof, cancelled check, bank statement, successor lienholder letter, registered agent documentation, corporate dissolution records"
+
+IF active_lien_exists = TRUE
+AND lien_release_missing = TRUE
+THEN form_and_document_review_required = TRUE
+
+============================================================
+TL-33 ALTERNATE LIEN REMOVAL FORM LOGIC
+============================================================
+
+IF alternate_lien_removal_requested = TRUE
+THEN required_form_review = "HSMV 82040 MV/MH/VS or HSMV 82101"
+
+IF lien_satisfaction_needed = TRUE
+THEN HSMV_82260_review_required = TRUE
+
+IF lien_sold_or_assigned_to_another_lender = TRUE
+THEN HSMV_82139_review_required = TRUE
+
+IF active_ELT_lien_exists = TRUE
+AND HSMV_82260_provided = TRUE
+THEN HSMV_82260_not_sufficient_for_active_ELT = TRUE
+
+IF alternate_lien_removal_requested = TRUE
+THEN supporting_documents_required = "certified mail proof, payoff proof, title if available, title fees"

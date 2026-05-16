@@ -1,0 +1,171 @@
+STATUTE: 319.20
+TITLE: Application of Law
+SOURCE: https://www.leg.state.fl.us/statutes/index.cfm?App_mode=Display_Statute&Search_String=&URL=0300-0399/0319/Sections/0319.20.html
+DOCUMENT_TYPE: Florida Law Reference / Operational Notes
+CATEGORY: TITLE LAW / TITLE APPLICABILITY / MOTOR VEHICLES / MOBILE HOMES / EXEMPTIONS
+
+============================================================
+PURPOSE
+============================================================
+
+This statute defines what Chapter 319 title certificate laws apply to.
+
+It establishes that Chapter 319 applies to motor vehicles and mobile homes required to be registered and licensed under Florida law.
+
+It also clarifies important exclusions, including mopeds and trailers/semitrailers with net weight under 2,000 pounds.
+
+============================================================
+PLAIN ENGLISH SUMMARY
+============================================================
+
+Florida title certificate law generally applies to:
+- motor vehicles
+- mobile homes required to be registered/licensed
+- residential manufactured buildings placed on mobile home lots
+- recreational vehicle-type units
+- certain mobile homes classified and taxed as real property
+
+Florida title certificate law generally does NOT apply to:
+- mopeds
+- trailers or semitrailers with net weight under 2,000 pounds
+
+The statute also states that no title, lien, or other interest in qualifying vehicles or mobile homes is valid unless evidenced according to Chapter 319.
+
+============================================================
+TITLE CLERK IMPORTANCE
+============================================================
+
+319.20 is a foundational applicability statute.
+
+Use it to determine whether Florida title certificate law applies before processing a title transaction.
+
+This is especially important for:
+- trailers under 2,000 pounds
+- mopeds
+- mobile homes
+- recreational vehicle-type units
+- real-property mobile homes
+- title requirement questions
+
+============================================================
+COMMON WORKFLOW CONNECTIONS
+============================================================
+
+- Title requirement review
+- Trailer title requirement review
+- Moped title exemption review
+- Mobile home title processing
+- Recreational vehicle-type unit title processing
+- Real property mobile home title/lien review
+- Ownership/lien validity questions
+- Registration vs title distinction questions
+
+============================================================
+OPERATIONAL RULES
+============================================================
+
+IF vehicle_type = "motor_vehicle"
+THEN chapter_319_title_law_applies = TRUE
+
+IF vehicle_type = "mobile_home"
+AND registration_required = TRUE
+THEN chapter_319_title_law_applies = TRUE
+
+IF residential_manufactured_building_placed_on_mobile_home_lot = TRUE
+THEN treat_as_mobile_home_for_chapter_319 = TRUE
+
+IF vehicle_type = "moped"
+THEN chapter_319_title_law_applies = FALSE
+
+IF vehicle_type = "trailer"
+AND trailer_net_weight < 2000
+THEN chapter_319_title_law_applies = FALSE
+
+IF vehicle_type = "semitrailer"
+AND semitrailer_net_weight < 2000
+THEN chapter_319_title_law_applies = FALSE
+
+IF vehicle_type = "recreational_vehicle_type_unit"
+THEN title_certificate_provisions_apply = TRUE
+
+IF mobile_home_classified_and_taxed_as_real_property = TRUE
+THEN title_certificate_provisions_apply = TRUE
+
+IF chapter_319_applies = TRUE
+THEN title_lien_or_interest_must_be_evidenced_under_chapter_319 = TRUE
+
+============================================================
+REJECTION PREVENTION
+============================================================
+
+High rejection risk if:
+- clerk attempts to title an exempt moped
+- clerk attempts to title a trailer under 2,000 pounds when title is not required
+- clerk treats a mobile home title/lien interest outside Chapter 319 requirements
+- clerk ignores recreational vehicle-type unit title requirements
+- clerk gives incorrect title requirement guidance based only on registration status
+
+============================================================
+AI DECISION LOGIC
+============================================================
+
+IF user_question_mentions = "does this need a title"
+OR user_question_mentions = "trailer under 2000"
+OR user_question_mentions = "moped title"
+OR user_question_mentions = "mobile home title"
+THEN reference_319_20 = TRUE
+
+IF vehicle_type = "moped"
+THEN answer_should_warn = "Mopeds are excluded from Chapter 319 title certificate law."
+
+IF vehicle_type = "trailer"
+AND trailer_net_weight < 2000
+THEN answer_should_warn = "Trailers or semitrailers under 2,000 pounds are excluded from Chapter 319 title certificate law."
+
+IF vehicle_type = "mobile_home"
+THEN answer_should_review = "Mobile home title treatment under Chapter 319."
+
+============================================================
+COMMON CLERK ANSWER STYLE
+============================================================
+
+When answering a title applicability question, the AI should explain:
+
+1. Whether Chapter 319 applies.
+2. Whether the unit is excluded from title certificate law.
+3. Whether title, lien, or ownership interest must be evidenced under Chapter 319.
+4. Whether another procedure applies for registration-only processing.
+5. Whether the issue should be cross-checked with trailer, moped, mobile home, or RV procedure notes.
+
+============================================================
+RELATED LOGIC MAPS
+============================================================
+
+- transaction_type_logic_map.txt
+- validation_logic_map.txt
+- rejection_prevention_logic_map.txt
+- forms_required_logic_map.txt
+
+============================================================
+RELATED PROCEDURE AREAS
+============================================================
+
+- Trailer registration procedures
+- Moped registration procedures
+- Mobile home title procedures
+- Recreational vehicle title procedures
+- Real property mobile home procedures
+
+============================================================
+RELATED STATUTES
+============================================================
+
+- 319.21
+- 319.22
+- 319.23
+- 320.0815
+- 553.382
+
+============================================================
+END OF FILE
+============================================================

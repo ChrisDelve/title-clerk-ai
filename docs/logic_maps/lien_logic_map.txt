@@ -66,4 +66,164 @@ THEN lien_satisfaction_required = TRUE
 IF lien_release_document_provided = TRUE
 THEN lien_release_review_required = TRUE
 
+============================================================
+DEFUNCT / OUT OF BUSINESS LIENHOLDER RESOLUTION LOGIC
+============================================================
+
+IF lienholder_out_of_business = TRUE
+THEN successor_lienholder_search_required = TRUE
+
+IF lienholder_out_of_business = TRUE
+THEN business_status_verification_required = TRUE
+
+IF lienholder_out_of_business = TRUE
+THEN registered_agent_search_required = TRUE
+
+IF lienholder_out_of_business = TRUE
+THEN secretary_of_state_or_corporate_records_review_required = TRUE
+
+IF defunct_lienholder_was_bank_or_credit_union = TRUE
+THEN successor_financial_institution_search_required = TRUE
+
+IF defunct_lienholder_was_acquired_or_merged = TRUE
+THEN successor_lienholder_may_release_lien = TRUE
+
+IF successor_lienholder_found = TRUE
+THEN lien_release_request_should_be_sent_to_successor = TRUE
+
+IF successor_lienholder_not_found = TRUE
+THEN alternate_lien_satisfaction_proof_required = TRUE
+
+IF payoff_proof_available = TRUE
+THEN lien_satisfaction_review_required = TRUE
+
+IF payoff_proof_missing = TRUE
+AND lienholder_out_of_business = TRUE
+THEN manual_FLHSMV_or_tax_collector_review_required = TRUE
+
+IF ELT_lien_exists = TRUE
+AND lienholder_out_of_business = TRUE
+THEN ELT_provider_contact_review_required = TRUE
+
+IF third_party_ELT_provider_known = TRUE
+THEN contact_ELT_provider_for_release_options = TRUE
+
+IF lienholder_out_of_business = TRUE
+AND no_successor_or_agent_found = TRUE
+THEN HSMV_82139_review_required = TRUE
+
+IF lienholder_out_of_business = TRUE
+AND lien_release_unavailable = TRUE
+THEN do_not_process_as_clean_title_transfer = TRUE
+
+============================================================
+LIENHOLDER UNAVAILABLE / CERTIFIED MAIL / 5-YEAR REVIEW LOGIC
+============================================================
+
+IF lien_active = TRUE
+AND lienholder_cannot_be_contacted = TRUE
+THEN lien_satisfaction_alternative_procedure_review_required = TRUE
+
+IF lienholder_unavailable = TRUE
+THEN certified_mail_review_required = TRUE
+
+IF lienholder_unresponsive = TRUE
+THEN certified_mail_documentation_required = TRUE
+
+IF lien_age_review_required = TRUE
+THEN determine_whether_5_year_rule_applies = TRUE
+
+IF lienholder_out_of_business = TRUE
+THEN certified_mail_and_5_year_rule_review_required = TRUE
+
+IF lienholder_out_of_business = TRUE
+AND lien_satisfaction_missing = TRUE
+THEN HSMV_82139_review_required = TRUE
+
+IF certified_mail_returned_or_unanswered = TRUE
+THEN alternate_lien_satisfaction_review_required = TRUE
+
+IF 5_year_rule_applies = TRUE
+AND required_certified_mail_documentation_present = TRUE
+THEN lien_satisfaction_alternative_path_may_apply = TRUE
+
+IF 5_year_rule_does_not_apply = TRUE
+THEN manual_FLHSMV_or_tax_collector_review_required = TRUE
+
+============================================================
+TL-33 CERTIFIED MAIL / 5-YEAR / ELT LIMITATION LOGIC
+============================================================
+
+IF lienholder_unavailable = TRUE
+OR lienholder_unresponsive = TRUE
+OR lienholder_out_of_business = TRUE
+THEN TL_33_alternate_lien_removal_review_required = TRUE
+
+IF lien_paid = TRUE
+AND lienholder_unavailable = TRUE
+THEN certified_mail_proof_required = TRUE
+
+IF alternate_lien_removal_requested = TRUE
+THEN certified_mail_proof_required = TRUE
+
+IF alternate_lien_removal_requested = TRUE
+THEN payoff_proof_required = TRUE
+
+IF certified_mail_used = TRUE
+THEN certified_letter_must_be_mailed_at_least_20_days_before_application = TRUE
+
+IF no_sales_contract = TRUE
+AND no_payoff_record = TRUE
+THEN five_year_rule_or_court_order_review_required = TRUE
+
+IF lien_age_over_5_years = TRUE
+AND payoff_proof_unavailable = TRUE
+THEN alternate_lien_removal_may_be_reviewed = TRUE
+
+IF lien_age_under_5_years = TRUE
+AND payoff_proof_unavailable = TRUE
+THEN court_order_or_manual_review_required = TRUE
+
+IF title_status = "electronic_title"
+AND lien_active = TRUE
+THEN alternate_method_not_normally_available = TRUE
+
+IF active_ELT_lien_exists = TRUE
+THEN lien_must_be_released_electronically = TRUE
+
+IF customer_provides_HSMV_82260_for_active_ELT_lien = TRUE
+THEN reject_transaction = TRUE
+
+IF active_ELT_lien_exists = TRUE
+AND lienholder_out_of_business = TRUE
+THEN FLHSMV_or_tax_collector_escalation_required = TRUE
+
+============================================================
+ACTIVE ELT LIEN PRIORITY LOGIC
+============================================================
+
+IF active_ELT_lien_exists = TRUE
+THEN TL_33_lien_satisfaction_review_required = TRUE
+
+IF active_ELT_lien_exists = TRUE
+THEN bonded_title_should_not_be_primary_recommendation = TRUE
+
+IF active_ELT_lien_exists = TRUE
+AND lienholder_out_of_business = TRUE
+THEN do_not_jump_to_bonded_title_without_TL_33_review = TRUE
+
+IF active_ELT_lien_exists = TRUE
+AND lienholder_out_of_business = TRUE
+THEN review_certified_mail_20_day_rule = TRUE
+
+IF active_ELT_lien_exists = TRUE
+AND lienholder_out_of_business = TRUE
+THEN review_5_year_rule_or_court_order_if_payoff_proof_missing = TRUE
+
+IF active_ELT_lien_exists = TRUE
+AND lienholder_out_of_business = TRUE
+THEN explain_ELT_alternate_method_limitation = TRUE
+
+============================================================
 END OF FILE
+============================================================

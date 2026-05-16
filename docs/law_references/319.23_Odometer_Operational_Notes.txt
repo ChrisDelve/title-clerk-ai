@@ -1,0 +1,192 @@
+STATUTE: 319.23(3)(b)
+TITLE: Odometer Reading Verification for Used Car Original Title Applications
+SOURCE: https://www.leg.state.fl.us/statutes/index.cfm?App_mode=Display_Statute&Search_String=&URL=0300-0399/0319/Sections/0319.23.html
+DOCUMENT_TYPE: Florida Law Reference / Odometer-Specific Operational Notes
+CATEGORY: USED CAR ORIGINAL / ODOMETER AFFIDAVIT / OUT-OF-STATE TITLE / TITLE APPLICATION
+
+============================================================
+PURPOSE
+============================================================
+
+This file isolates the odometer-specific portion of 319.23 for cleaner AI retrieval.
+
+It applies when a used vehicle is coming into Florida and being titled in Florida for the first time.
+
+============================================================
+PLAIN ENGLISH SUMMARY
+============================================================
+
+For a used car original, the title application must include a sworn affidavit from the owner verifying that the odometer reading shown on the affidavit is identical to the odometer reading shown on the motor vehicle at the time the title application is made.
+
+A used car original means a used vehicle coming into and being titled in Florida for the first time.
+
+============================================================
+TITLE CLERK IMPORTANCE
+============================================================
+
+This is important for:
+- out-of-state title transfers
+- used vehicles being titled in Florida for the first time
+- mileage mismatch review
+- odometer affidavit requirements
+- title application rejection prevention
+
+============================================================
+COMMON WORKFLOW CONNECTIONS
+============================================================
+
+- Out-of-state title transfer
+- Used car original
+- VIN verification
+- Odometer affidavit
+- Mileage discrepancy
+- Imported vehicle / out-of-country vehicle review
+- Kilometer vs miles review
+- Odometer brand review
+
+============================================================
+OPERATIONAL RULES
+============================================================
+
+IF used_vehicle_coming_into_Florida_for_first_title = TRUE
+THEN transaction_type = "used_car_original"
+
+IF transaction_type = "used_car_original"
+THEN odometer_affidavit_required = TRUE
+
+IF used_car_original = TRUE
+THEN owner_sworn_affidavit_verifying_odometer_required = TRUE
+
+IF odometer_reading_on_affidavit_does_not_match_vehicle = TRUE
+THEN title_application_hold_required = TRUE
+
+IF odometer_affidavit_missing = TRUE
+AND used_car_original = TRUE
+THEN reject_before_submission = TRUE
+
+IF vehicle_previously_titled_or_registered_outside_Florida = TRUE
+THEN out_of_state_title_application_review_required = TRUE
+
+IF odometer_unit = "kilometers"
+THEN odometer_unit_conversion_review_required = TRUE
+
+IF odometer_unit_mismatch_detected = TRUE
+THEN manual_review_required = TRUE
+
+============================================================
+COMMON DEALERSHIP ISSUES
+============================================================
+
+- Out-of-state title brought into Florida with mileage issue
+- Odometer affidavit missing
+- Mileage on title/application does not match vehicle
+- Vehicle titled in kilometers
+- Customer says mileage was entered wrong
+- Imported vehicle with non-mile odometer
+- Odometer brand conflicts with current reading
+- Used car original processed without odometer affidavit
+
+============================================================
+REJECTION PREVENTION
+============================================================
+
+High rejection risk if:
+- used car original is missing odometer affidavit
+- affidavit mileage does not match actual vehicle mileage
+- kilometers/miles issue is not reviewed
+- out-of-state title mileage conflicts with application
+- odometer disclosure is incomplete
+- clerk ignores mileage discrepancy
+
+============================================================
+AI DECISION LOGIC
+============================================================
+
+IF user_question_mentions = "used car original"
+OR user_question_mentions = "out of state title mileage"
+OR user_question_mentions = "odometer affidavit"
+OR user_question_mentions = "kilometers"
+OR user_question_mentions = "mileage mismatch"
+THEN reference_319_23_3_b = TRUE
+
+IF used_car_original = TRUE
+THEN answer_should_check = "sworn owner odometer affidavit"
+
+IF odometer_affidavit_missing = TRUE
+THEN answer_should_warn = "Used car original title application is not ready."
+
+IF odometer_unit_kilometers = TRUE
+THEN answer_should_warn = "Mileage unit conversion/review required before submission."
+
+============================================================
+DEALERSHIP WORKFLOW
+============================================================
+
+1. Determine if this is a used car original.
+- Used vehicle
+- First time being titled in Florida
+
+2. Verify odometer affidavit.
+- Owner sworn affidavit required
+- Reading must match the vehicle
+
+3. Compare mileage across documents.
+- Out-of-state title
+- Application
+- Odometer affidavit
+- Vehicle odometer
+- Dealer paperwork
+
+4. Review unit issues.
+- Miles vs kilometers
+- Imported/out-of-country vehicle
+- Odometer brand
+
+5. Hold/escalate if inconsistent.
+- Do not submit if mileage evidence conflicts.
+
+============================================================
+COMMON CLERK ANSWER STYLE
+============================================================
+
+When answering a used car original mileage question, the AI should explain:
+
+1. Whether it is a used car original.
+2. Whether odometer affidavit is required.
+3. Whether the affidavit matches the vehicle.
+4. Whether kilometers/mileage unit issue exists.
+5. Whether transaction can proceed, hold, or escalate.
+
+============================================================
+RELATED LOGIC MAPS
+============================================================
+
+- validation_logic_map.txt
+- rejection_prevention_logic_map.txt
+- transaction_type_logic_map.txt
+- forms_required_logic_map.txt
+- escalation_red_flags_logic_map.txt
+
+============================================================
+RELATED PROCEDURE AREAS
+============================================================
+
+- Out-of-state title procedures
+- Odometer disclosure procedures
+- VIN verification procedures
+- Imported vehicle workflow
+- Mileage correction workflow
+
+============================================================
+RELATED STATUTES
+============================================================
+
+- 319.225
+- 319.24
+- 319.324
+- 319.35
+- 320.02
+
+============================================================
+END OF FILE
+============================================================

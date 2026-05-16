@@ -1,0 +1,226 @@
+STATUTE: 319.001
+TITLE: Definitions
+SOURCE: https://www.leg.state.fl.us/statutes/index.cfm?App_mode=Display_Statute&Search_String=&URL=0300-0399/0319/Sections/0319.001.html
+DOCUMENT_TYPE: Florida Law Reference / Operational Notes
+CATEGORY: DEFINITIONS / CERTIFICATE OF TITLE / LIEN SATISFACTION / LICENSED DEALER / NEW VEHICLE / USED VEHICLE
+
+============================================================
+PURPOSE
+============================================================
+
+This statute defines key terms used throughout Chapter 319.
+
+For lien and lien satisfaction workflows, the most important definition is:
+
+319.001(11) — Satisfaction of lien
+
+This statute also defines certificate of title, department, licensed dealer, new mobile home, new motor vehicle, used motor vehicle, and valid passport.
+
+============================================================
+IMPORTANT CORRECTION
+============================================================
+
+The lien satisfaction definition is currently located at:
+
+319.001(11)
+
+NOT 319.001(5).
+
+319.001(5) currently defines motorcycle body assembly.
+
+Use 319.001(11) for lien satisfaction logic.
+
+============================================================
+PLAIN ENGLISH SUMMARY
+============================================================
+
+A certificate of title means the record that evidences ownership of a vehicle, whether paper or electronic in the department’s database.
+
+The department means the Department of Highway Safety and Motor Vehicles.
+
+A licensed dealer generally means a motor vehicle dealer, mobile home dealer, or recreational vehicle dealer licensed under the applicable Florida dealer statutes.
+
+A new mobile home is a mobile home whose legal or equitable title has never been transferred by manufacturer, distributor, importer, or dealer to an ultimate purchaser.
+
+A new motor vehicle is a motor vehicle whose legal or equitable title has never been transferred by manufacturer, distributor, importer, or dealer to an ultimate purchaser, subject to the returned conditional sale/lease written notice rule.
+
+Satisfaction of lien means full payment of a debt or release of a debtor from a lien by the lienholder.
+
+A used motor vehicle means any motor vehicle that is not a new motor vehicle.
+
+============================================================
+TITLE CLERK IMPORTANCE
+============================================================
+
+319.001 is important because it defines terms that control how other title laws are interpreted.
+
+For lien workflows, 319.001(11) is the key definition because it tells the AI and clerk what "satisfaction of lien" means.
+
+Use this file when the question involves:
+- what a certificate of title is
+- paper vs electronic title
+- satisfaction of lien
+- licensed dealer meaning
+- new motor vehicle vs used motor vehicle
+- new mobile home
+- valid passport / ID support
+
+============================================================
+OPERATIONAL RULES
+============================================================
+
+IF record_evidences_vehicle_ownership = TRUE
+AND record_is_paper_or_electronic = TRUE
+THEN certificate_of_title_definition_applies = TRUE
+
+IF title_record_stored_electronically_in_department_database = TRUE
+THEN electronic_certificate_of_title_definition_applies = TRUE
+
+IF lien_paid_in_full = TRUE
+THEN satisfaction_of_lien_review_required = TRUE
+
+IF debtor_released_from_lien_by_lienholder = TRUE
+THEN satisfaction_of_lien_exists = TRUE
+
+IF debt_not_paid_in_full = TRUE
+AND lienholder_has_not_released_debtor = TRUE
+THEN satisfaction_of_lien_not_established = TRUE
+
+IF lienholder_releases_debtor_from_lien = TRUE
+THEN satisfaction_of_lien_may_exist = TRUE
+
+IF motor_vehicle_is_not_new_motor_vehicle = TRUE
+THEN used_motor_vehicle_definition_applies = TRUE
+
+IF dealer_status_question_exists = TRUE
+THEN licensed_dealer_definition_review_required = TRUE
+
+IF passport_used_for_title_application_ID = TRUE
+THEN valid_passport_definition_review_required = TRUE
+
+============================================================
+LIEN SATISFACTION DEFINITION LOGIC
+============================================================
+
+IF user_question_mentions = "satisfaction of lien"
+OR user_question_mentions = "lien satisfied"
+OR user_question_mentions = "paid off lien"
+OR user_question_mentions = "release of lien"
+OR user_question_mentions = "lienholder released"
+THEN reference_319_001_11 = TRUE
+
+IF full_payment_of_debt_confirmed = TRUE
+THEN lien_satisfaction_possible = TRUE
+
+IF lienholder_released_debtor_from_lien = TRUE
+THEN lien_satisfaction_possible = TRUE
+
+IF customer_claims_paid_off = TRUE
+AND proof_of_full_payment_missing = TRUE
+AND lienholder_release_missing = TRUE
+THEN satisfaction_of_lien_not_proven = TRUE
+
+IF satisfaction_of_lien_not_proven = TRUE
+THEN lien_removal_or_clean_title_processing_hold_required = TRUE
+
+============================================================
+COMMON DEALERSHIP ISSUES
+============================================================
+
+- Customer says lien is paid but no satisfaction exists
+- Customer has payoff statement but no release
+- Lienholder says debt paid but no electronic release sent
+- Clerk confuses payoff proof with satisfaction of lien
+- Active lien still showing after payoff
+- Paper title vs electronic title confusion
+- Dealer status / licensed dealer terminology confusion
+- New vs used vehicle classification issue
+- Valid passport / ID issue on title application
+
+============================================================
+REJECTION PREVENTION
+============================================================
+
+High rejection risk if:
+- customer claims lien is satisfied but no full-payment proof or lienholder release exists
+- active lien remains on record
+- payoff proof is treated as automatic lien satisfaction without proper review
+- electronic title status is ignored
+- paper certificate and electronic title record are confused
+- dealer status affects title rules and is not reviewed
+- valid passport/ID requirement is ignored
+
+============================================================
+AI DECISION LOGIC
+============================================================
+
+IF user_question_mentions = "what is lien satisfaction"
+OR user_question_mentions = "satisfaction of lien"
+OR user_question_mentions = "paid off lien"
+OR user_question_mentions = "lien release"
+THEN reference_319_001_11 = TRUE
+
+IF user_question_mentions = "electronic title"
+OR user_question_mentions = "paper title"
+OR user_question_mentions = "certificate of title"
+THEN reference_319_001_1 = TRUE
+
+IF user_question_mentions = "licensed dealer"
+OR user_question_mentions = "dealer"
+THEN reference_319_001_4 = TRUE
+
+IF user_question_mentions = "new motor vehicle"
+OR user_question_mentions = "used motor vehicle"
+THEN reference_319_001_9_and_319_001_12 = TRUE
+
+IF lien_satisfaction_question = TRUE
+THEN answer_should_explain = "Satisfaction of lien means full payment of the debt or release of debtor from lien by lienholder."
+
+IF lien_satisfaction_claimed = TRUE
+AND supporting_proof_missing = TRUE
+THEN answer_should_warn = "Satisfaction of lien has not been proven."
+
+============================================================
+COMMON CLERK ANSWER STYLE
+============================================================
+
+When answering a lien satisfaction definition question, the AI should explain:
+
+1. Satisfaction of lien means full payment of debt or release by lienholder.
+2. Payoff proof and lienholder release must be reviewed.
+3. Customer statement alone is not enough.
+4. Active lien still showing means lien workflow is not complete.
+5. TL-33 and lien logic should be reviewed for removal/release steps.
+
+============================================================
+RELATED LOGIC MAPS
+============================================================
+
+- lien_logic_map.txt
+- validation_logic_map.txt
+- rejection_prevention_logic_map.txt
+- forms_required_logic_map.txt
+- transaction_type_logic_map.txt
+
+============================================================
+RELATED PROCEDURE AREAS
+============================================================
+
+- TL-33 lien satisfaction procedures
+- ELT lien release procedures
+- Notice of lien procedures
+- Lien add/delete/reassign procedures
+- Duplicate title procedures
+
+============================================================
+RELATED STATUTES
+============================================================
+
+- 319.24
+- 319.241
+- 319.27
+- 319.235
+
+============================================================
+END OF FILE
+============================================================

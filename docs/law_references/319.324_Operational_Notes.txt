@@ -1,0 +1,198 @@
+STATUTE: 319.324
+TITLE: Odometer Fraud Prevention and Detection; Funding
+SOURCE: https://www.leg.state.fl.us/statutes/index.cfm?App_mode=Display_Statute&Search_String=&URL=0300-0399/0319/Sections/0319.324.html
+DOCUMENT_TYPE: Florida Law Reference / Operational Notes
+CATEGORY: ODOMETER FRAUD PREVENTION / MILEAGE DISCREPANCY / INVESTIGATION FUNDING / DEALER REPORTING
+
+============================================================
+PURPOSE
+============================================================
+
+This statute establishes funding for odometer fraud prevention and detection.
+
+It supports the department’s efforts to investigate alleged odometer mileage discrepancies reported by licensed motor vehicle dealers, auctions, or purchasers.
+
+============================================================
+PLAIN ENGLISH SUMMARY
+============================================================
+
+Certain title-related fees are deposited into the Highway Safety Operating Trust Fund.
+
+The funds are used to implement and maintain efforts to prevent and detect odometer fraud.
+
+This includes prompt investigation of alleged odometer mileage discrepancies reported by:
+- licensed motor vehicle dealers
+- auctions
+- purchasers of motor vehicles
+
+============================================================
+TITLE CLERK IMPORTANCE
+============================================================
+
+319.324 is not a normal processing workflow statute.
+
+It is important because it confirms that odometer mileage discrepancies are serious enough to support fraud-prevention and investigation activity.
+
+Use this statute when:
+- mileage discrepancy exists
+- odometer fraud is suspected
+- auction/dealer/purchaser reports mileage issue
+- title clerk needs escalation language for odometer concern
+
+============================================================
+COMMON WORKFLOW CONNECTIONS
+============================================================
+
+- Mileage discrepancy
+- Odometer fraud concern
+- Auction mileage issue
+- Dealer-reported odometer issue
+- Purchaser-reported odometer issue
+- Incorrect miles brand
+- Not actual mileage concern
+- Odometer rollback suspicion
+- Mileage correction workflow
+
+============================================================
+OPERATIONAL RULES
+============================================================
+
+IF odometer_mileage_discrepancy_reported = TRUE
+THEN odometer_fraud_prevention_review_required = TRUE
+
+IF licensed_dealer_reports_mileage_discrepancy = TRUE
+THEN odometer_discrepancy_investigation_context_applies = TRUE
+
+IF auction_reports_mileage_discrepancy = TRUE
+THEN odometer_discrepancy_investigation_context_applies = TRUE
+
+IF purchaser_reports_mileage_discrepancy = TRUE
+THEN odometer_discrepancy_investigation_context_applies = TRUE
+
+IF odometer_fraud_suspected = TRUE
+THEN escalation_required = TRUE
+
+IF mileage_discrepancy_unresolved = TRUE
+THEN title_submission_hold_required = TRUE
+
+============================================================
+COMMON DEALERSHIP ISSUES
+============================================================
+
+- Auction announces mileage discrepancy
+- Customer claims mileage is incorrect
+- Dealer discovers prior title mileage is higher
+- Carfax/autocheck shows mileage issue
+- Purchaser reports mileage rollback concern
+- Title branded incorrect miles
+- Odometer reading conflicts with title record
+- Deal paperwork mileage does not match vehicle
+- Mileage correction requested without proof
+
+============================================================
+REJECTION PREVENTION
+============================================================
+
+High rejection risk if:
+- mileage discrepancy is ignored
+- title is submitted with conflicting mileage
+- customer explanation is accepted without proof
+- odometer brand issue is not escalated
+- suspected fraud is treated as normal correction
+- auction/dealer/purchaser discrepancy report is not reviewed
+
+============================================================
+AI DECISION LOGIC
+============================================================
+
+IF user_question_mentions = "mileage discrepancy"
+OR user_question_mentions = "odometer fraud"
+OR user_question_mentions = "rollback"
+OR user_question_mentions = "auction mileage issue"
+OR user_question_mentions = "incorrect miles brand"
+THEN reference_319_324 = TRUE
+
+IF odometer_discrepancy_reported = TRUE
+THEN answer_should_warn = "Odometer discrepancy should be treated as fraud-prevention/escalation issue."
+
+IF odometer_fraud_suspected = TRUE
+THEN answer_should_warn = "Do not process as simple title correction without review."
+
+============================================================
+DEALERSHIP WORKFLOW
+============================================================
+
+1. Identify discrepancy source.
+- Dealer
+- Auction
+- Purchaser
+- Title record
+- Vehicle odometer
+- History report
+
+2. Compare documents.
+- Title
+- Odometer disclosure
+- Buyer order
+- Deal jacket
+- Auction announcement
+- Prior title/registration records
+
+3. Determine severity.
+- Clerical mileage error
+- Odometer brand issue
+- Not actual mileage concern
+- Possible fraud/rollback
+
+4. Escalate if unresolved.
+- Title lead
+- Supervisor
+- Tax collector / FLHSMV review if needed
+
+5. Hold submission.
+- Do not submit until discrepancy is explained and supported.
+
+============================================================
+COMMON CLERK ANSWER STYLE
+============================================================
+
+When answering odometer discrepancy questions, the AI should explain:
+
+1. Mileage discrepancies are serious.
+2. Determine source of discrepancy.
+3. Compare all supporting documents.
+4. Do not treat possible fraud as simple correction.
+5. Escalate unresolved or suspicious issues.
+6. Hold transaction if proof is missing.
+
+============================================================
+RELATED LOGIC MAPS
+============================================================
+
+- validation_logic_map.txt
+- rejection_prevention_logic_map.txt
+- escalation_red_flags_logic_map.txt
+- transaction_type_logic_map.txt
+
+============================================================
+RELATED PROCEDURE AREAS
+============================================================
+
+- Odometer disclosure procedures
+- Mileage correction workflow
+- Auction title workflow
+- Title correction procedures
+- Fraud escalation workflow
+
+============================================================
+RELATED STATUTES
+============================================================
+
+- 319.225
+- 319.23
+- 319.24
+- 319.35
+
+============================================================
+END OF FILE
+============================================================

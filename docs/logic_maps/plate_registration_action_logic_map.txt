@@ -26,3 +26,7 @@ THEN IRF_review_required = TRUE
 
 IF plate_transfer_not_allowed = TRUE
 THEN customer_should_not_be_quoted_plate_transfer_only = TRUE
+
+============================================================
+END OF FILE
+============================================================

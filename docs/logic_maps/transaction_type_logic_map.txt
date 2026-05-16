@@ -104,3 +104,24 @@ THEN tax_exemption_or_tax_due_review_required = TRUE
 
 IF gifted_trade = TRUE
 THEN supporting_gift_documentation_review_required = TRUE
+
+============================================================
+ACTIVE ELT LIENHOLDER OUT OF BUSINESS TRANSACTION LOGIC
+============================================================
+
+IF active_ELT_lien_exists = TRUE
+AND lienholder_out_of_business = TRUE
+THEN transaction_type = "active_ELT_lien_resolution"
+
+IF transaction_type = "active_ELT_lien_resolution"
+THEN primary_procedure_review = "TL-33"
+
+IF transaction_type = "active_ELT_lien_resolution"
+THEN lien_logic_map_review_required = TRUE
+
+IF transaction_type = "active_ELT_lien_resolution"
+THEN rejection_prevention_logic_map_review_required = TRUE
+
+============================================================
+END OF FILE
+============================================================

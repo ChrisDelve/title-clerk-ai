@@ -1,0 +1,534 @@
+DOCUMENT: FL_LIEN_AND_LIEN_SATISFACTION_LAW_NOTES
+TITLE: Florida Core Lien and Lien Satisfaction Law Reference
+DOCUMENT_TYPE: Consolidated Florida Law Reference / AI Routing Notes
+CATEGORY: LIEN LAW / LIEN RECORDING / LIEN SATISFACTION / LIEN REMOVAL / ELT / CO-OWNER LIEN / TITLE DELIVERY
+
+============================================================
+PURPOSE
+============================================================
+
+This file is a consolidated legal-reference layer for Florida lien and lien satisfaction issues.
+
+It groups the most important Chapter 319 statutes related to:
+- lien definition and satisfaction
+- notice of lien
+- lien recording
+- lien notation on title
+- lien priority
+- out-of-state liens
+- lien assignment and lienholder substitution
+- co-owner lien authority
+- lienholder title delivery
+- lien satisfaction
+- title after payoff
+- old lien removal
+- certified mail lien removal
+- 5-year lien rule
+- ELT lien transmission
+
+This file is designed for AI retrieval and workflow routing.
+
+It does NOT replace individual detailed statute files.
+
+Use this file to help the AI determine which specific lien statute, procedure note, logic map, or dealership workflow should be retrieved next.
+
+============================================================
+IMPORTANT AI USE RULE
+============================================================
+
+This file should be treated as a MASTER LIEN LAW ROUTING FILE.
+
+When a user asks a broad lien/lienholder/payoff/lien satisfaction question, this file helps classify the issue and route to the correct detailed statute file.
+
+The AI should use this file to determine:
+1. Whether the issue is lien recording, lien satisfaction, lien removal, lien assignment, ELT, co-owner lien authority, or title delivery.
+2. Which individual statute file should be referenced.
+3. Which logic maps should be reviewed.
+4. Whether TL-33 should be cross-referenced.
+5. Whether active ELT limitations apply.
+6. Whether the transaction can proceed, should hold, or requires escalation.
+
+============================================================
+CORE STATUTES INCLUDED
+============================================================
+
+319.001(11) — Satisfaction of Lien Definition
+319.24 — Title Delivery / Lien Delivery / Lien Satisfaction / Duplicate and Corrected Titles
+319.241 — Removal of Lien from Records / 5-Year Rule / Certified Mail / Protest Period
+319.27 — Notice of Lien / Lien Recording / Lien Priority / Lien Assignment / ELT
+319.235 — Encumbrance of Co-Owned Motor Vehicle or Mobile Home
+
+============================================================
+STATUTE ROUTING INDEX
+============================================================
+
+IF user_question_mentions = "satisfaction of lien"
+OR user_question_mentions = "lien satisfied"
+OR user_question_mentions = "paid off lien"
+OR user_question_mentions = "release of lien"
+THEN reference_statute = "319.001(11)"
+AND detailed_file = "319.001_Operational_Notes.txt"
+
+IF user_question_mentions = "title after payoff"
+OR user_question_mentions = "lienholder has title"
+OR user_question_mentions = "first lienholder"
+OR user_question_mentions = "subsequent lien"
+OR user_question_mentions = "title delivery"
+OR user_question_mentions = "clean title after lien"
+THEN reference_statute = "319.24"
+AND detailed_file = "319.24_Operational_Notes.txt"
+
+IF user_question_mentions = "old lien"
+OR user_question_mentions = "5-year lien"
+OR user_question_mentions = "5 year lien"
+OR user_question_mentions = "certified mail"
+OR user_question_mentions = "lienholder unavailable"
+OR user_question_mentions = "lienholder unresponsive"
+OR user_question_mentions = "lienholder out of business"
+OR user_question_mentions = "cannot get lien release"
+THEN reference_statute = "319.241"
+AND detailed_file = "319.241_Operational_Notes.txt"
+
+IF user_question_mentions = "notice of lien"
+OR user_question_mentions = "record lien"
+OR user_question_mentions = "add lien"
+OR user_question_mentions = "out of state lien"
+OR user_question_mentions = "lien assignment"
+OR user_question_mentions = "ELT"
+OR user_question_mentions = "electronic lien"
+THEN reference_statute = "319.27"
+AND detailed_file = "319.27_Operational_Notes.txt"
+
+IF user_question_mentions = "co-owner lien"
+OR user_question_mentions = "AND lien"
+OR user_question_mentions = "OR lien"
+OR user_question_mentions = "one owner add lien"
+OR user_question_mentions = "both owners sign for lien"
+THEN reference_statute = "319.235"
+AND detailed_file = "319.235_Operational_Notes.txt"
+
+============================================================
+LIEN SATISFACTION DEFINITION LAW
+============================================================
+
+STATUTE:
+319.001(11)
+
+CONTROLS:
+- Meaning of satisfaction of lien
+- Full payment of debt
+- Release of debtor by lienholder
+
+AI ROUTING:
+IF the user asks what counts as lien satisfaction or says a lien is paid, check 319.001(11) and TL-33.
+
+OPERATIONAL RULES:
+
+IF lien_paid_in_full = TRUE
+THEN satisfaction_of_lien_review_required = TRUE
+
+IF debtor_released_from_lien_by_lienholder = TRUE
+THEN satisfaction_of_lien_exists = TRUE
+
+IF customer_claims_paid_off = TRUE
+AND proof_of_full_payment_missing = TRUE
+AND lienholder_release_missing = TRUE
+THEN satisfaction_of_lien_not_proven = TRUE
+
+IF satisfaction_of_lien_not_proven = TRUE
+THEN lien_removal_or_clean_title_processing_hold_required = TRUE
+
+COMMON USER QUESTIONS:
+- What counts as lien satisfaction?
+- Customer says lien is paid off.
+- Is payoff proof enough?
+- Does lienholder need to release debtor?
+- Can we remove lien if customer says paid?
+
+============================================================
+TITLE DELIVERY / LIEN DELIVERY / LIEN SATISFACTION LAW
+============================================================
+
+STATUTE:
+319.24
+
+CONTROLS:
+- Title delivery when liens exist
+- First lienholder title retention
+- Subsequent lien handling
+- Lien satisfaction after demand
+- Dealer payoff timing
+- Title after lien satisfaction
+- ELT title issuance waiver
+- Duplicate/corrected title lien display
+
+AI ROUTING:
+IF the issue involves who gets title, lienholder title possession, title after payoff, subsequent lien, duplicate/corrected title with lien, or dealer payoff, check 319.24.
+
+OPERATIONAL RULES:
+
+IF title_record_has_lien = TRUE
+THEN title_delivery_review_required = TRUE
+
+IF first_lienholder_possesses_title = TRUE
+THEN first_lienholder_may_retain_title_until_lien_satisfied = TRUE
+
+IF subsequent_lien_requested = TRUE
+AND title_in_first_lienholder_possession = TRUE
+THEN written_request_to_first_lienholder_required = TRUE
+
+IF lien_satisfied = TRUE
+THEN lienholder_must_provide_satisfaction_after_demand = TRUE
+
+IF dealer_acquires_vehicle_with_outstanding_purchase_money_lien = TRUE
+THEN dealer_must_satisfy_lien_within_10_working_days = TRUE
+
+IF lienholder_receives_final_payment = TRUE
+THEN lienholder_must_deliver_lien_satisfaction_and_title_or_notify_title_unavailable_within_10_working_days = TRUE
+
+IF electronic_lien_transmission_used = TRUE
+THEN title_issuance_may_be_waived_until_last_lien_satisfied = TRUE
+
+COMMON USER QUESTIONS:
+- Who gets the title if there is a lien?
+- Can lienholder keep the title?
+- What if dealer has not paid off trade?
+- What if lienholder cannot provide title?
+- What if there is a subsequent lien?
+- Can clean title issue after lien payoff?
+
+============================================================
+OLD LIEN REMOVAL / CERTIFIED MAIL / 5-YEAR LAW
+============================================================
+
+STATUTE:
+319.241
+
+CONTROLS:
+- Removal of lien from records
+- 5-year lien age requirement
+- Certified mail notice
+- 20-day certified mail timing
+- Department 10-day protest period
+- Lienholder protest
+- Judgment lien certificate replacement
+- Derelict motor vehicle record lien removal
+
+AI ROUTING:
+IF the user asks about an old lien, unavailable lienholder, out-of-business lienholder, cannot get lien release, certified mail, or 5-year rule, check 319.241 and TL-33.
+
+OPERATIONAL RULES:
+
+IF lien_on_record_period_years >= 5
+THEN 319_241_lien_removal_review_required = TRUE
+
+IF lien_on_record_period_years < 5
+THEN 319_241_lien_removal_not_ready_without_other_authority = TRUE
+
+IF owner_requests_lien_removal_under_319_241 = TRUE
+THEN written_application_required = TRUE
+
+IF owner_requests_lien_removal_under_319_241 = TRUE
+THEN certified_mail_notice_to_lienholder_required = TRUE
+
+IF certified_mail_notice_to_lienholder_required = TRUE
+THEN notice_must_be_sent_at_least_20_days_before_application = TRUE
+
+IF department_receives_lien_removal_application = TRUE
+THEN department_10_day_protest_waiting_period_applies = TRUE
+
+IF lienholder_protest_not_received_within_10_days = TRUE
+THEN department_may_remove_lien_review_required = TRUE
+
+IF lienholder_files_statement_lien_still_outstanding_within_10_days = TRUE
+THEN lien_must_not_be_removed_until_satisfaction_of_lien_presented = TRUE
+
+COMMON USER QUESTIONS:
+- Lienholder is out of business.
+- Lienholder will not respond.
+- Old lien still showing.
+- Can certified mail remove lien?
+- What is the 5-year lien rule?
+- What if lienholder protests?
+
+============================================================
+NOTICE OF LIEN / LIEN RECORDING / ELT LAW
+============================================================
+
+STATUTE:
+319.27
+
+CONTROLS:
+- Notice of lien
+- Lien notation on Florida title
+- Lien recording
+- Lien perfection
+- Out-of-state liens
+- Lien priority
+- Lien assignment/substitution
+- Electronic lien transmission
+- Electronic lien satisfactions
+
+AI ROUTING:
+IF the issue involves lien add, notice of lien, recording lien, out-of-state lien, lien priority, lien assignment, or ELT, check 319.27.
+
+OPERATIONAL RULES:
+
+IF Florida_certificate_of_title_exists = TRUE
+AND lien_mortgage_or_encumbrance_exists = TRUE
+THEN lien_must_be_noted_on_certificate_of_title = TRUE
+
+IF notice_of_lien_filed = TRUE
+THEN constructive_notice_created = TRUE
+
+IF notice_of_lien_submitted = TRUE
+THEN lien_date_required = TRUE
+
+IF notice_of_lien_submitted = TRUE
+THEN registered_owner_name_and_address_required = TRUE
+
+IF notice_of_lien_submitted = TRUE
+THEN vehicle_description_make_type_VIN_required = TRUE
+
+IF notice_of_lien_submitted = TRUE
+THEN lienholder_name_and_address_required = TRUE
+
+IF first_Florida_title_issued_for_out_of_state_vehicle = TRUE
+THEN note_liens_shown_on_application = TRUE
+
+IF first_Florida_title_issued_for_out_of_state_vehicle = TRUE
+THEN note_liens_filed_with_department = TRUE
+
+IF first_Florida_title_issued_for_out_of_state_vehicle = TRUE
+THEN note_liens_shown_on_existing_out_of_state_title = TRUE
+
+IF multiple_liens_exist = TRUE
+THEN lien_priority_based_on_order_noted_by_department = TRUE
+
+IF original_lienholder_assigns_lien_to_another_person = TRUE
+THEN lienholder_substitution_review_required = TRUE
+
+IF electronic_titling_program_applies = TRUE
+THEN lienholder_must_electronically_transmit_liens_and_lien_satisfactions = TRUE
+
+COMMON USER QUESTIONS:
+- How do we add lien?
+- What is notice of lien?
+- What information is required for lien?
+- What if out-of-state title shows lien?
+- What if lien was assigned?
+- Does lienholder need ELT?
+
+============================================================
+CO-OWNER LIEN / ENCUMBRANCE LAW
+============================================================
+
+STATUTE:
+319.235
+
+CONTROLS:
+- Co-owner authority to place lien
+- AND ownership lien signature requirement
+- OR ownership lien signature rule
+- Notice of lien for co-owned vehicle/mobile home
+
+AI ROUTING:
+IF the issue involves adding lien to a co-owned vehicle/mobile home, check 319.235.
+
+OPERATIONAL RULES:
+
+IF ownership_type = "OR"
+AND lien_or_encumbrance_requested = TRUE
+THEN one_co_owner_signature_sufficient_for_notice_of_lien = TRUE
+
+IF ownership_type = "AND"
+AND lien_or_encumbrance_requested = TRUE
+THEN all_co_owner_signatures_required_for_lien = TRUE
+
+IF ownership_type = "AND"
+AND one_co_owner_signature_missing = TRUE
+THEN lien_or_encumbrance_cannot_be_placed = TRUE
+
+IF ownership_connector_unknown = TRUE
+THEN ownership_signature_review_required = TRUE
+
+COMMON USER QUESTIONS:
+- Can one co-owner add lien?
+- Does AND require both signatures for lien?
+- Does OR require both signatures for lien?
+- Can finance add lien if only one owner signed?
+
+============================================================
+CROSS-FILE AI DECISION LOGIC
+============================================================
+
+IF user_question_mentions = "paid off lien"
+OR user_question_mentions = "satisfaction of lien"
+THEN check_files = "319.001_Operational_Notes.txt, TL-33 notes, lien_logic_map.txt"
+
+IF user_question_mentions = "title after payoff"
+OR user_question_mentions = "lienholder has title"
+OR user_question_mentions = "subsequent lien"
+THEN check_files = "319.24_Operational_Notes.txt, 319.27_Operational_Notes.txt, TL-33 notes"
+
+IF user_question_mentions = "lienholder out of business"
+OR user_question_mentions = "cannot get lien release"
+OR user_question_mentions = "certified mail"
+OR user_question_mentions = "5-year lien"
+THEN check_files = "319.241_Operational_Notes.txt, TL-33 notes, lien_logic_map.txt, rejection_prevention_logic_map.txt"
+
+IF user_question_mentions = "add lien"
+OR user_question_mentions = "notice of lien"
+OR user_question_mentions = "record lien"
+THEN check_files = "319.27_Operational_Notes.txt, 319.235_Operational_Notes.txt, lien_logic_map.txt"
+
+IF user_question_mentions = "ELT"
+OR user_question_mentions = "electronic lien"
+THEN check_files = "319.27_Operational_Notes.txt, TL-33 notes, lien_logic_map.txt"
+
+IF user_question_mentions = "AND lien"
+OR user_question_mentions = "OR lien"
+OR user_question_mentions = "co-owner lien"
+THEN check_files = "319.235_Operational_Notes.txt, ownership_signature_logic_map.txt, lien_logic_map.txt"
+
+============================================================
+COMMON DEALERSHIP QUESTION ROUTING
+============================================================
+
+QUESTION:
+"Customer says lien was paid but still shows."
+
+ROUTE TO:
+- 319.001_Operational_Notes.txt
+- 319.24_Operational_Notes.txt
+- TL-33 lien satisfaction notes
+- lien_logic_map.txt
+
+EXPECTED ANSWER:
+Do not process as clean title until satisfaction of lien is proven. Review payoff proof, lienholder release, ELT status, and TL-33 requirements.
+
+------------------------------------------------------------
+
+QUESTION:
+"Lienholder is out of business and customer cannot get lien release."
+
+ROUTE TO:
+- 319.241_Operational_Notes.txt
+- TL-33 lien satisfaction notes
+- lien_logic_map.txt
+- rejection_prevention_logic_map.txt
+
+EXPECTED ANSWER:
+Review old lien/alternate removal path. Certified mail may be required, 20-day timing applies, 5-year rule/court order may apply if payoff proof is missing, and active ELT limitations must be reviewed.
+
+------------------------------------------------------------
+
+QUESTION:
+"How do we add lien?"
+
+ROUTE TO:
+- 319.27_Operational_Notes.txt
+- lien_logic_map.txt
+- forms_required_logic_map.txt
+
+EXPECTED ANSWER:
+Verify lien date, owner name/address, vehicle make/type/VIN, lienholder name/address, title status, ELT requirement, and whether lien must be noted on title.
+
+------------------------------------------------------------
+
+QUESTION:
+"Can one AND owner add a lien?"
+
+ROUTE TO:
+- 319.235_Operational_Notes.txt
+- ownership_signature_logic_map.txt
+- lien_logic_map.txt
+
+EXPECTED ANSWER:
+If ownership is AND, each co-owner must sign to place lien/encumbrance. If OR, one co-owner may generally execute the lien.
+
+------------------------------------------------------------
+
+QUESTION:
+"Out-of-state title shows a lien."
+
+ROUTE TO:
+- 319.27_Operational_Notes.txt
+- 319.23_Operational_Notes.txt
+- lien_logic_map.txt
+
+EXPECTED ANSWER:
+Review out-of-state lien. When Florida title is first issued, liens shown on application, filed with department, or shown on existing out-of-state title must be reviewed/noted.
+
+============================================================
+REJECTION PREVENTION SUMMARY
+============================================================
+
+High rejection risk exists when:
+- active lien is not resolved
+- lien satisfaction is missing
+- payoff proof is treated as automatic lien satisfaction without release review
+- certified mail proof is missing for old lien removal
+- 20-day certified mail timing is not satisfied
+- 10-day protest period is ignored
+- lienholder protests lien removal
+- ELT status is ignored
+- active ELT lien is treated as paper lien
+- HSMV 82260 is submitted for active ELT lien
+- lienholder name/address is missing
+- vehicle/VIN information is missing on notice of lien
+- out-of-state lien is ignored
+- lien assignment documentation is missing
+- AND co-owner lien lacks all required signatures
+- lien priority/order is not reviewed
+
+============================================================
+RELATED DETAILED LAW REFERENCE FILES
+============================================================
+
+- 319.001_Operational_Notes.txt
+- 319.24_Operational_Notes.txt
+- 319.241_Operational_Notes.txt
+- 319.27_Operational_Notes.txt
+- 319.235_Operational_Notes.txt
+
+============================================================
+RELATED LOGIC MAPS
+============================================================
+
+- lien_logic_map.txt
+- validation_logic_map.txt
+- rejection_prevention_logic_map.txt
+- forms_required_logic_map.txt
+- escalation_red_flags_logic_map.txt
+- ownership_signature_logic_map.txt
+- transaction_type_logic_map.txt
+
+============================================================
+RELATED PROCEDURES
+============================================================
+
+- TL-33 lien satisfactions and alternate methods
+- ELT procedures
+- Notice of lien procedures
+- Lien add/delete/reassign procedures
+- Out-of-state title procedures
+- Duplicate title procedures
+
+============================================================
+IMPORTANT IMPLEMENTATION NOTE
+============================================================
+
+This file is a routing and consolidation file.
+
+When answering a specific lien question, the AI should:
+1. Use this file to classify the lien category.
+2. Retrieve the specific individual statute note.
+3. Retrieve TL-33 when lien satisfaction, lien release, unavailable lienholder, or ELT is involved.
+4. Retrieve the matching lien logic map.
+5. Retrieve rejection-prevention logic if missing documents, ELT conflicts, or unavailable lienholder issues exist.
+6. Give a practical title-clerk answer with proceed / hold / escalate guidance.
+
+============================================================
+END OF FILE
+============================================================

@@ -1,0 +1,314 @@
+STATUTE: 319.28
+TITLE: Transfer of Ownership by Operation of Law
+SOURCE: https://www.leg.state.fl.us/statutes/index.cfm?App_mode=Display_Statute&Search_String=&URL=0300-0399/0319/Sections/0319.28.html
+DOCUMENT_TYPE: Florida Law Reference / Operational Notes
+CATEGORY: OPERATION OF LAW / DECEASED OWNER / INHERITANCE / REPOSSESSION / STORAGE OR REPAIR SALE / COURT ORDER / BANKRUPTCY
+
+============================================================
+PURPOSE
+============================================================
+
+This statute governs title transfer when ownership passes by operation of law rather than a normal sale.
+
+It applies to situations such as inheritance, devise or bequest, bankruptcy, insolvency, replevin, attachment, execution, judicial sale, engine replacement, storage/repair sale, and repossession.
+
+============================================================
+PLAIN ENGLISH SUMMARY
+============================================================
+
+When ownership of a motor vehicle or mobile home transfers by operation of law, the department may issue a certificate of title after proper proof, application, fees, and surrender of prior title if possible.
+
+If prior title cannot be surrendered, satisfactory proof of ownership and right of possession may be used.
+
+For intestate deceased-owner situations, an heir may not need probate court order if an affidavit is provided stating the estate is not indebted and heirs/surviving spouse agree.
+
+For testate deceased-owner situations, the application generally needs a certified copy or sworn copy of the will plus affidavit regarding estate solvency/not indebted, unless the Florida attorney affidavit route applies.
+
+A surviving spouse disposing of a vehicle may assign the decedent’s title to the transferee without first obtaining title in the surviving spouse’s name, with required supporting documentation.
+
+Repossession has its own affidavit/proof requirements and subsequent lienholder notice rules.
+
+============================================================
+TITLE CLERK IMPORTANCE
+============================================================
+
+319.28 is critical for:
+- deceased owner transactions
+- inheritance title transfers
+- surviving spouse transactions
+- repossessions
+- storage/repair lien sales
+- court order transfers
+- bankruptcy/judicial sale transfers
+- transfer when prior title cannot be surrendered
+- operation-of-law title issuance
+
+This is a high-risk area requiring careful document review.
+
+============================================================
+COMMON WORKFLOW CONNECTIONS
+============================================================
+
+- Deceased owner title transfer
+- Surviving spouse transfer
+- Heir transfer
+- Estate not indebted affidavit
+- Will / testate estate review
+- Florida attorney affidavit
+- Repossession title
+- Subsequent lienholder notice
+- Storage or repair sale
+- Court order transfer
+- Bankruptcy/insolvency/replevin/attachment/execution
+- Missing prior title
+- Proof of right of possession
+
+============================================================
+OPERATIONAL RULES
+============================================================
+
+IF ownership_transfers_by_operation_of_law = TRUE
+THEN transaction_type = "operation_of_law_transfer"
+
+IF prior_certificate_of_title_available = TRUE
+THEN prior_title_surrender_required = TRUE
+
+IF prior_certificate_of_title_not_available = TRUE
+THEN satisfactory_proof_of_ownership_and_right_of_possession_required = TRUE
+
+IF application_for_title_by_heir = TRUE
+AND previous_owner_died_intestate = TRUE
+THEN estate_not_indebted_and_heir_agreement_affidavit_review_required = TRUE
+
+IF previous_owner_died_testate = TRUE
+AND will_probated = TRUE
+THEN certified_copy_of_will_and_estate_solvency_affidavit_review_required = TRUE
+
+IF previous_owner_died_testate = TRUE
+AND will_not_probated = TRUE
+THEN sworn_copy_of_will_and_estate_not_indebted_affidavit_review_required = TRUE
+
+IF Florida_attorney_affidavit_provided = TRUE
+AND previous_owner_died_testate = TRUE
+THEN attorney_affidavit_may_establish_presumption_of_ownership_and_possession = TRUE
+
+IF surviving_spouse_disposes_vehicle_instead_of_retaining = TRUE
+THEN surviving_spouse_may_assign_decedent_title_to_transferee_review_required = TRUE
+
+IF mobile_home_repossessed = TRUE
+AND mobile_home_not_transferred_or_titled_for_occupancy = TRUE
+THEN mobile_home_registration_exemption_review_required = TRUE
+
+IF repossession = TRUE
+THEN repossession_affidavit_required = TRUE
+
+IF repossession = TRUE
+AND subsequent_lienholder_named_on_last_title = TRUE
+THEN certified_mail_notice_to_subsequent_lienholder_required_before_sale = TRUE
+
+IF repossession = TRUE
+AND certified_mail_notice_to_subsequent_lienholder_sent = TRUE
+AND no_protest_within_15_days = TRUE
+THEN title_may_issue_showing_no_liens_review_required = TRUE
+
+IF repossession = TRUE
+AND former_owner_or_subsequent_lienholder_files_sworn_protest = TRUE
+THEN department_should_not_issue_title_for_10_days = TRUE
+
+IF injunction_or_court_order_served_within_10_day_period = TRUE
+THEN title_delivery_hold_required = TRUE
+
+IF applicant_cannot_produce_satisfactory_proof = TRUE
+THEN department_evidence_sufficiency_review_required = TRUE
+
+============================================================
+DECEASED OWNER / HEIR LOGIC
+============================================================
+
+IF owner_deceased = TRUE
+THEN operation_of_law_review_required = TRUE
+
+IF deceased_owner_intestate = TRUE
+THEN no_probate_order_may_be_required_if_affidavit_requirements_met = TRUE
+
+IF deceased_owner_testate = TRUE
+THEN will_and_affidavit_review_required = TRUE
+
+IF surviving_spouse = TRUE
+AND spouse_selling_vehicle = TRUE
+THEN surviving_spouse_assignment_without_retitle_review_required = TRUE
+
+IF heir_claims_vehicle = TRUE
+THEN proof_of_heirship_or_affidavit_review_required = TRUE
+
+============================================================
+REPOSSESSION LOGIC
+============================================================
+
+IF repossession = TRUE
+THEN proof_of_repossession_and_right_of_possession_required = TRUE
+
+IF repossession_under_security_agreement = TRUE
+THEN repossession_affidavit_may_be_satisfactory_proof = TRUE
+
+IF repossessed_vehicle_sale_pending = TRUE
+AND subsequent_lienholder_exists = TRUE
+THEN certified_mail_notice_required_at_least_5_days_before_sale = TRUE
+
+IF subsequent_lienholder_protest_received_within_15_days = TRUE
+THEN title_issuance_delay_required = TRUE
+
+IF no_injunction_or_court_order_after_required_waiting_period = TRUE
+THEN title_may_be_delivered_per_application_review = TRUE
+
+IF lienholder_repossessed_vehicle_in_florida = TRUE
+THEN Florida_tax_collector_or_department_title_application_required = TRUE
+
+============================================================
+COMMON DEALERSHIP ISSUES
+============================================================
+
+- Customer says owner died but has no estate documents
+- AND owner deceased and surviving owner cannot sign alone
+- Heirs disagree or estate debt status unknown
+- Surviving spouse wants to sell without retitling
+- Will exists but is not probated
+- Probate documents missing
+- Attorney affidavit used for testate estate
+- Repossession packet missing affidavit
+- Subsequent lienholder not notified before repo sale
+- Prior title cannot be surrendered
+- Customer has court order but no application/title fees
+- Storage/repair sale documentation incomplete
+
+============================================================
+REJECTION PREVENTION
+============================================================
+
+High rejection risk if:
+- deceased owner documents are missing
+- estate affidavit does not address required facts
+- heirs/surviving spouse agreement is unclear
+- will/certified copy/sworn copy requirements are not reviewed
+- surviving spouse assignment lacks required supporting documentation
+- repossession affidavit is missing
+- subsequent lienholder certified mail notice is missing
+- protest/waiting periods are ignored
+- right of possession is not documented
+- prior title unavailable and proof is insufficient
+- court order/instrument is missing when required
+
+============================================================
+AI DECISION LOGIC
+============================================================
+
+IF user_question_mentions = "deceased owner"
+OR user_question_mentions = "owner died"
+OR user_question_mentions = "heir"
+OR user_question_mentions = "surviving spouse"
+OR user_question_mentions = "inheritance"
+THEN reference_319_28 = TRUE
+
+IF user_question_mentions = "repo"
+OR user_question_mentions = "repossession"
+OR user_question_mentions = "storage lien"
+OR user_question_mentions = "repair lien sale"
+OR user_question_mentions = "court order"
+THEN reference_319_28 = TRUE
+
+IF owner_deceased = TRUE
+THEN answer_should_warn = "Operation of law/deceased owner documentation review is required."
+
+IF repossession = TRUE
+THEN answer_should_warn = "Repossession affidavit and subsequent lienholder notice requirements must be reviewed."
+
+IF prior_title_missing = TRUE
+AND operation_of_law_transfer = TRUE
+THEN answer_should_warn = "Satisfactory proof of ownership and right of possession is required."
+
+============================================================
+DEALERSHIP WORKFLOW
+============================================================
+
+1. Identify whether this is operation of law.
+- Death/inheritance
+- Repossession
+- Court order
+- Bankruptcy/judicial sale
+- Storage/repair sale
+- Other legal transfer
+
+2. Determine whether prior title is available.
+- If available, surrender/review title.
+- If unavailable, obtain satisfactory proof of ownership and right of possession.
+
+3. For deceased owner cases:
+- Determine intestate vs testate.
+- Review surviving spouse/heir documents.
+- Review will/probate/affidavit/attorney affidavit as applicable.
+
+4. For repossession:
+- Confirm repossession affidavit.
+- Review security agreement/default basis.
+- Check subsequent lienholders.
+- Confirm certified mail notice and waiting periods.
+
+5. Validate application and fees.
+- Title application required.
+- Fees required.
+- Supporting legal instrument required if applicable.
+
+6. Hold/escalate if unclear.
+- Escalate estate disputes, missing proof, lienholder protests, unclear right of possession, or court-order issues.
+
+============================================================
+COMMON CLERK ANSWER STYLE
+============================================================
+
+When answering an operation-of-law question, the AI should explain:
+
+1. Whether 319.28 applies.
+2. What legal event caused ownership transfer.
+3. What proof of ownership/right of possession is required.
+4. Whether prior title is available.
+5. Whether special deceased/repo requirements apply.
+6. Whether the transaction should proceed, hold, or escalate.
+
+============================================================
+RELATED LOGIC MAPS
+============================================================
+
+- transaction_type_logic_map.txt
+- ownership_signature_logic_map.txt
+- lien_logic_map.txt
+- validation_logic_map.txt
+- rejection_prevention_logic_map.txt
+- forms_required_logic_map.txt
+- escalation_red_flags_logic_map.txt
+
+============================================================
+RELATED PROCEDURE AREAS
+============================================================
+
+- Deceased owner procedures
+- Operation of law procedures
+- Repossession procedures
+- Storage and repair lien procedures
+- Court order title procedures
+- Duplicate title procedures
+- Lienholder notice procedures
+
+============================================================
+RELATED STATUTES
+============================================================
+
+- 319.22
+- 319.24
+- 319.27
+- 319.29
+- 319.323
+- 493.6101
+
+============================================================
+END OF FILE
+============================================================

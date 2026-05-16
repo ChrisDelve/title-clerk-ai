@@ -416,9 +416,43 @@ def search_documents(query):
             })
 
     matches = sorted(matches, key=lambda x: x["score"], reverse=True)
+    # Force TL-33 / lien logic priority for ELT + unavailable lienholder questions
+    lien_priority_terms = [
+        "elt",
+        "electronic lien",
+        "electronic title",
+        "lienholder out of business",
+        "lien holder out of business",
+        "lienholder unavailable",
+        "lienholder unresponsive",
+        "cannot get lien release",
+        "can't get lien release",
+        "active lien",
+        "certified mail",
+        "5 year",
+        "5-year",
+        "tl-33"
+    ]
 
-    # If question is about fees/cost/pricing, force fee documents to the top
-    matches = sorted(matches, key=lambda x: x["score"], reverse=True)
+    if any(term in query.lower() for term in lien_priority_terms):
+        priority_matches = [
+            m for m in matches
+            if (
+                "tl_33" in m["name"].lower()
+                or "tl-33" in m["name"].lower()
+                or "lien_satisfactions" in m["name"].lower()
+                or "lien_logic_map" in m["name"].lower()
+                or "rejection_prevention_logic_map" in m["name"].lower()
+                or "forms_required_logic_map" in m["name"].lower()
+            )
+        ]
+
+        non_priority_matches = [
+            m for m in matches
+            if m not in priority_matches
+        ]
+
+        return (priority_matches + non_priority_matches)[:5]
 
     # If question is about fees/cost/pricing, force fee documents to the top
     fee_words = ["fee", "fees", "cost", "price", "how much", "amount"]
@@ -435,9 +469,9 @@ def search_documents(query):
             if m not in fee_matches
         ]
 
-        return (fee_matches + non_fee_matches)[:4]
+        return (fee_matches + non_fee_matches)[:5]
 
-    return matches[:4]
+    return matches[:5]
 
 # ----------------------------
 # USER INPUT
@@ -510,6 +544,10 @@ CRITICAL BEHAVIOR RULES:
 - out of state transfer
 - divorce transfer
 - title correction
+- probate transfer
+- registration transfer
+- salvage title
+- non-title transfer
 
 3. In INTAKE MODE:
 - Ask concise dealership-style operational intake questions.
@@ -582,7 +620,33 @@ Requirements:
 - Use clean plain text formatting
 - Do NOT use italic formatting
 - Do NOT merge fee amounts together
+STRICT TL-33 RESPONSE RULE:
 
+When the user asks about:
+- ELT
+- active lien
+- lienholder out of business
+- lienholder unavailable
+- lienholder unresponsive
+- cannot get lien release
+- paid off lien still showing
+
+The answer must include a TL-33 review section with these exact operational checks:
+
+1. Active ELT liens must normally be released electronically.
+2. Alternate lien removal is not normally available for active ELT liens.
+3. Certified mail proof may be required if lienholder is unavailable or unresponsive.
+4. Certified letter must be mailed at least 20 days before application.
+5. Payoff proof is required if using an alternate lien removal path.
+6. If no sales contract and no payoff record exist, review the 5-year rule or court order requirement.
+7. HSMV 82260 is not sufficient for an active ELT lien.
+8. HSMV 82139 should only be discussed when lien assignment, successor lienholder, or lien reassignment is involved.
+9. Escalate to title lead, tax collector, or FLHSMV before submission.
+
+Do not make bonded title the main solution for active ELT lien problems.
+
+If no sales contract or payoff proof exists, review the 5-year rule or court order requirement before proceeding.
+If payoff proof, sales contract, cancelled checks, or lien satisfaction proof is missing, always mention the TL-33 5-year rule or court order review before allowing the transaction to proceed.
 Knowledge Base:
 {combined_context}
 """

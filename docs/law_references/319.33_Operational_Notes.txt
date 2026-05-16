@@ -1,0 +1,318 @@
+STATUTE: 319.33
+TITLE: Offenses Involving Vehicle Identification Numbers, Applications, Certificates, Papers; Penalty
+SOURCE: https://www.leg.state.fl.us/statutes/index.cfm?App_mode=Display_Statute&Search_String=&URL=0300-0399/0319/Sections/0319.33.html
+DOCUMENT_TYPE: Florida Law Reference / Operational Notes
+CATEGORY: FRAUD / VIN OFFENSES / FORGED TITLE / FALSE APPLICATION / STOLEN VEHICLE / CONTRABAND / TITLE DOCUMENT OFFENSES
+
+============================================================
+PURPOSE
+============================================================
+
+This statute identifies criminal offenses involving Florida titles, VINs, applications, assignments, lien cancellations, bills of sale, sworn ownership statements, identification plates, counterfeit documents, stolen vehicles, and related fraudulent title activity.
+
+It is a legal anchor for rejection prevention, fraud detection, VIN discrepancy escalation, title-document integrity review, and suspicious ownership-document workflows.
+
+============================================================
+PLAIN ENGLISH SUMMARY
+============================================================
+
+It is unlawful to alter, forge, retain, or use a forged certificate of title, title assignment, or lien cancellation.
+
+It is unlawful to obtain or attempt to obtain/pass title documents when the person knows or has reason to believe the vehicle or mobile home is stolen.
+
+It is unlawful to possess, sell, offer for sale, conceal, or dispose of a vehicle/mobile home or major component part when the manufacturer/state VIN or motor number has been destroyed, removed, covered, altered, or defaced, with knowledge of that condition.
+
+It is unlawful to use a false/fictitious name or address, make false statements in title applications, affidavits, bills of sale, sworn statements of ownership, or commit fraud in an application.
+
+It is unlawful to knowingly obtain goods, services, credit, or money using invalid, duplicate, fictitious, forged, counterfeit, stolen, or unlawfully obtained ownership/title/registration documents.
+
+It is unlawful to knowingly and with intent to defraud possess, sell, offer, counterfeit, or supply blank/forged/fictitious/counterfeit/stolen/fraudulent ownership documents.
+
+Counterfeit VIN/serial plates or decals are also prohibited.
+
+Violations are third-degree felonies, and vehicles used in violations may be treated as contraband and subject to forfeiture.
+
+If all identifying numbers are missing/destroyed/altered/defaced or the vehicle identity cannot be determined, the vehicle/mobile home may be contraband and may not be operated unless a court orders the department to assign a replacement VIN.
+
+============================================================
+TITLE CLERK IMPORTANCE
+============================================================
+
+319.33 is a high-risk fraud and compliance statute.
+
+Use this statute when dealing with:
+- altered title
+- forged title
+- suspicious assignment
+- forged lien release
+- altered VIN
+- missing VIN
+- VIN plate tampering
+- false name/address
+- false affidavit
+- suspicious bill of sale
+- sworn ownership statement issues
+- stolen vehicle concern
+- counterfeit documents
+- title fraud
+- identity/ownership mismatch
+- major component part VIN issues
+
+============================================================
+COMMON WORKFLOW CONNECTIONS
+============================================================
+
+- VIN mismatch
+- VIN alteration
+- Missing VIN plate
+- Imported vehicle VIN issue
+- Rebuilt/salvage component review
+- Suspicious title assignment
+- Suspicious lien cancellation
+- Forged lien release
+- False bill of sale
+- False sworn ownership statement
+- Title fraud investigation
+- Stolen vehicle suspicion
+- Customer identity mismatch
+- Ownership chain fraud
+- Dealer audit trail issue
+- Law enforcement escalation
+
+============================================================
+OPERATIONAL RULES
+============================================================
+
+IF certificate_of_title_altered_or_forged = TRUE
+THEN fraud_escalation_required = TRUE
+
+IF title_assignment_altered_or_forged = TRUE
+THEN fraud_escalation_required = TRUE
+
+IF lien_cancellation_altered_or_forged = TRUE
+THEN fraud_escalation_required = TRUE
+
+IF customer_uses_forged_or_altered_title_document = TRUE
+THEN reject_before_submission = TRUE
+
+IF vehicle_suspected_stolen = TRUE
+THEN law_enforcement_or_FLHSMV_escalation_required = TRUE
+
+IF VIN_destroyed_removed_covered_altered_or_defaced = TRUE
+THEN manual_review_required = TRUE
+
+IF VIN_tampering_known_or_suspected = TRUE
+THEN law_enforcement_or_FLHSMV_escalation_required = TRUE
+
+IF false_name_or_false_address_used = TRUE
+THEN fraud_review_required = TRUE
+
+IF false_statement_in_application_or_affidavit = TRUE
+THEN fraud_review_required = TRUE
+
+IF false_statement_in_bill_of_sale_or_sworn_ownership_statement = TRUE
+THEN fraud_review_required = TRUE
+
+IF invalid_duplicate_fictitious_forged_counterfeit_stolen_or_unlawful_title_used_to_obtain_value = TRUE
+THEN fraud_escalation_required = TRUE
+
+IF counterfeit_VIN_plate_or_serial_plate_detected = TRUE
+THEN law_enforcement_or_FLHSMV_escalation_required = TRUE
+
+IF all_identifying_numbers_missing_or_altered = TRUE
+THEN vehicle_may_be_contraband_review_required = TRUE
+
+IF real_identity_of_vehicle_cannot_be_determined = TRUE
+THEN vehicle_may_be_contraband_review_required = TRUE
+
+IF vehicle_identity_cannot_be_determined = TRUE
+THEN do_not_process_normal_title_transaction = TRUE
+
+IF court_order_for_replacement_VIN_missing = TRUE
+AND identifying_numbers_missing_or_destroyed = TRUE
+THEN title_registration_processing_hold_required = TRUE
+
+============================================================
+VIN / IDENTIFICATION ESCALATION LOGIC
+============================================================
+
+IF VIN_mismatch_detected = TRUE
+THEN manual_review_required = TRUE
+
+IF VIN_plate_missing = TRUE
+THEN replacement_VIN_or_identification_review_required = TRUE
+
+IF VIN_plate_altered_or_defaced = TRUE
+THEN fraud_escalation_required = TRUE
+
+IF vehicle_identity_uncertain = TRUE
+THEN title_lead_or_FLHSMV_review_required = TRUE
+
+IF major_component_part_identifying_numbers_removed = TRUE
+THEN contraband_or_forfeiture_risk_review_required = TRUE
+
+============================================================
+TITLE DOCUMENT FRAUD LOGIC
+============================================================
+
+IF title_document_suspected_forged = TRUE
+THEN reject_before_submission = TRUE
+
+IF assignment_suspected_forged = TRUE
+THEN reject_before_submission = TRUE
+
+IF lien_release_suspected_forged = TRUE
+THEN reject_before_submission = TRUE
+
+IF bill_of_sale_suspected_false = TRUE
+THEN manual_review_required = TRUE
+
+IF customer_information_false_or_inconsistent = TRUE
+THEN identity_validation_required = TRUE
+
+IF ownership_document_integrity_questionable = TRUE
+THEN transaction_hold_required = TRUE
+
+============================================================
+COMMON DEALERSHIP ISSUES
+============================================================
+
+- Title appears altered
+- White-out or correction on title assignment
+- Signature looks suspicious
+- Lien release looks fake
+- Customer gives inconsistent address/name
+- Bill of sale does not match title
+- VIN on title does not match vehicle
+- VIN plate appears altered
+- Imported/rebuilt vehicle has identification issues
+- Major component part numbers removed
+- Customer claims title but documents look counterfeit
+- Duplicate title used suspiciously
+- Missing audit trail creates ownership fraud concern
+- Dealership receives questionable title from auction/trade
+
+============================================================
+REJECTION PREVENTION
+============================================================
+
+High rejection risk if:
+- forged/altered title is submitted
+- VIN mismatch is ignored
+- lien cancellation/release appears altered
+- false or inconsistent applicant information is used
+- customer relies on suspicious bill of sale
+- ownership statement appears false
+- vehicle identity cannot be confirmed
+- title assignment chain appears fraudulent
+- major component identification is altered or missing
+- dealer submits questionable documents without escalation
+
+============================================================
+AI DECISION LOGIC
+============================================================
+
+IF user_question_mentions = "forged title"
+OR user_question_mentions = "altered title"
+OR user_question_mentions = "fake title"
+OR user_question_mentions = "VIN altered"
+OR user_question_mentions = "VIN missing"
+OR user_question_mentions = "false bill of sale"
+OR user_question_mentions = "stolen vehicle"
+OR user_question_mentions = "counterfeit"
+THEN reference_319_33 = TRUE
+
+IF VIN_mismatch_detected = TRUE
+THEN answer_should_warn = "Do not proceed as normal; VIN/identity issue requires manual review."
+
+IF forged_document_suspected = TRUE
+THEN answer_should_warn = "Do not submit; escalate for fraud/title integrity review."
+
+IF false_statement_or_false_identity_detected = TRUE
+THEN answer_should_warn = "Fraud review required."
+
+IF vehicle_identity_cannot_be_determined = TRUE
+THEN answer_should_warn = "Vehicle may require FLHSMV/law enforcement/court review before processing."
+
+============================================================
+DEALERSHIP WORKFLOW
+============================================================
+
+1. Identify the suspicious issue.
+- Altered title
+- Forged assignment
+- Forged lien release
+- VIN issue
+- False bill of sale
+- False ownership statement
+- Stolen vehicle concern
+
+2. Stop normal processing.
+- Do not submit questionable documents.
+- Do not rely on altered or suspicious ownership evidence.
+
+3. Verify documents.
+- Compare title, VIN, bill of sale, lien release, customer ID, and audit trail.
+- Confirm ownership chain and document integrity.
+
+4. Escalate.
+- Title lead / supervisor
+- FLHSMV
+- Tax collector
+- Law enforcement if theft/VIN tampering/fraud concern exists
+
+5. Hold transaction.
+- Do not finalize title/registration until identity and document integrity are resolved.
+
+============================================================
+COMMON CLERK ANSWER STYLE
+============================================================
+
+When answering a fraud/VIN/title-document concern, the AI should explain:
+
+1. This is not a normal processing question.
+2. What document or VIN issue creates risk.
+3. Why normal submission should stop.
+4. What verification is needed.
+5. Who should review/escalate.
+6. What rejection/fraud risk exists.
+
+============================================================
+RELATED LOGIC MAPS
+============================================================
+
+- validation_logic_map.txt
+- rejection_prevention_logic_map.txt
+- escalation_red_flags_logic_map.txt
+- transaction_type_logic_map.txt
+- lien_logic_map.txt
+
+============================================================
+RELATED PROCEDURE AREAS
+============================================================
+
+- VIN verification procedures
+- Replacement VIN procedures
+- Title fraud review
+- Rebuilt/salvage inspections
+- Dealer audit trail review
+- Lien satisfaction fraud review
+- Law enforcement escalation
+
+============================================================
+RELATED STATUTES
+============================================================
+
+- 319.23
+- 319.30
+- 319.34
+- 320.27
+- 775.082
+- 775.083
+- 775.084
+- 932.701
+- 932.704
+
+============================================================
+END OF FILE
+============================================================

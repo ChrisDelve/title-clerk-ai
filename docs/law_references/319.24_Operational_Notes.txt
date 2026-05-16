@@ -1,0 +1,305 @@
+STATUTE: 319.24
+TITLE: Issuance in Duplicate; Delivery; Liens and Encumbrances
+SOURCE: https://www.leg.state.fl.us/statutes/index.cfm?App_mode=Display_Statute&Search_String=&URL=0300-0399/0319/Sections/0319.24.html
+DOCUMENT_TYPE: Florida Law Reference / Operational Notes
+CATEGORY: TITLE DELIVERY / DUPLICATE TITLE / LIEN DELIVERY / LIEN SATISFACTION / SUBSEQUENT LIEN / ELT
+
+============================================================
+PURPOSE
+============================================================
+
+This statute governs certificate of title issuance, duplicate/corrected certificate handling, delivery of title when liens exist, lienholder title retention, subsequent lien handling, lien satisfaction duties, duplicate title without liens after lien satisfaction, and electronic lien transmission.
+
+============================================================
+PLAIN ENGLISH SUMMARY
+============================================================
+
+The department assigns a number to each certificate of title and corrected title.
+
+If no liens or encumbrances exist, the certificate may be delivered to the applicant or another directed person.
+
+If liens or encumbrances exist, title delivery depends on the notice of lien and department records.
+
+If lienholder information conflicts between the application and department records, the department may withhold issuance and notify affected parties by certified mail.
+
+The first lienholder may retain title until the first lien is satisfied.
+
+When a lien is satisfied, the owner or person satisfying the lien may demand lien satisfaction.
+
+A lienholder who fails/refuses to furnish satisfaction after demand may be liable for costs, damages, expenses, and attorney fees.
+
+A dealer acquiring a vehicle with an outstanding purchase money lien must pay and satisfy the lien within 10 working days.
+
+Electronic lien transmission may allow title issuance to be waived until the last lien is satisfied and clear title is issued.
+
+============================================================
+TITLE CLERK IMPORTANCE
+============================================================
+
+319.24 is critical for:
+- duplicate title questions
+- corrected title questions
+- title delivery questions
+- lienholder title delivery
+- first lienholder vs owner title possession
+- subsequent lien processing
+- lien satisfaction issues
+- dealer payoff timing
+- ELT lien processing
+- active lien conflicts
+- clean title after lien payoff
+
+This statute should be cross-referenced heavily with TL-33.
+
+============================================================
+COMMON WORKFLOW CONNECTIONS
+============================================================
+
+- Duplicate title
+- Corrected title
+- Dealer duplicate title request
+- Odometer reading on duplicate title
+- First lienholder title delivery
+- Owner-held title with lien
+- Subsequent lien add
+- Judgment lien handling
+- Lien satisfaction
+- Dealer payoff
+- Active lien conflict
+- Duplicate title after lien paid
+- ELT transmission
+- Clear title issuance after last lien satisfied
+
+============================================================
+OPERATIONAL RULES
+============================================================
+
+IF duplicate_title_requested_by_dealer = TRUE
+THEN dealer_license_number_required = TRUE
+
+IF duplicate_title_application = TRUE
+THEN current_odometer_reading_required = TRUE
+
+IF title_application_has_no_liens = TRUE
+THEN title_may_be_delivered_to_applicant_or_authorized_person = TRUE
+
+IF title_record_has_lien = TRUE
+THEN title_delivery_review_required = TRUE
+
+IF first_lienholder_on_application_differs_from_department_record = TRUE
+THEN lien_conflict_notice_required = TRUE
+
+IF lien_conflict_exists = TRUE
+THEN certificate_should_not_issue_until_conflict_process_completed = TRUE
+
+IF first_lienholder_possesses_title = TRUE
+THEN first_lienholder_may_retain_title_until_lien_satisfied = TRUE
+
+IF subsequent_lien_requested = TRUE
+AND title_in_first_lienholder_possession = TRUE
+THEN written_request_to_first_lienholder_required = TRUE
+
+IF first_lienholder_or_owner_refuses_to_forward_title_for_subsequent_lien = TRUE
+THEN department_demand_or_void_replacement_process_review_required = TRUE
+
+IF lien_satisfied = TRUE
+THEN lienholder_must_provide_satisfaction_after_demand = TRUE
+
+IF lienholder_fails_to_provide_satisfaction_after_demand = TRUE
+THEN legal_liability_review_required = TRUE
+
+IF dealer_acquires_vehicle_with_outstanding_purchase_money_lien = TRUE
+THEN dealer_must_satisfy_lien_within_10_working_days = TRUE
+
+IF lienholder_receives_final_payment = TRUE
+THEN lienholder_must_deliver_lien_satisfaction_and_title_or_notify_title_unavailable_within_10_working_days = TRUE
+
+IF lienholder_cannot_provide_title = TRUE
+THEN lienholder_must_provide_lien_satisfaction_and_cover_duplicate_title_cost_review = TRUE
+
+IF electronic_lien_transmission_used = TRUE
+THEN title_issuance_may_be_waived_until_last_lien_satisfied = TRUE
+
+============================================================
+DUPLICATE / CORRECTED TITLE LOGIC
+============================================================
+
+IF duplicate_certificate_or_corrected_certificate_issued = TRUE
+THEN title_should_show_only_application_liens_and_subsequently_filed_outstanding_liens = TRUE
+
+IF original_certificate_cannot_be_returned_by_lienholder = TRUE
+AND satisfactory_evidence_all_liens_satisfied = TRUE
+THEN duplicate_title_without_liens_may_be_issued = TRUE
+
+IF dealer_applies_for_duplicate_title = TRUE
+THEN dealer_license_number_required = TRUE
+
+IF duplicate_title_application = TRUE
+THEN odometer_reading_required = TRUE
+
+============================================================
+LIEN SATISFACTION / DELIVERY LOGIC
+============================================================
+
+IF first_lien_satisfied = TRUE
+AND no_subsequent_liens_exist = TRUE
+THEN corrected_certificate_showing_no_liens_review_required = TRUE
+
+IF first_lien_satisfied = TRUE
+AND subsequent_lien_exists = TRUE
+THEN reissued_title_should_show_subsequent_lienholder_as_first_lienholder = TRUE
+
+IF owner_holds_title_with_lien = TRUE
+AND lien_satisfied = TRUE
+THEN owner_must_deliver_title_to_lienholder_for_satisfaction_entry = TRUE
+
+IF lienholder_receives_final_payment = TRUE
+THEN lien_satisfaction_timing_review_required = TRUE
+
+============================================================
+COMMON DEALERSHIP ISSUES
+============================================================
+
+- Dealer duplicate title request missing dealer license number
+- Duplicate title application missing current odometer reading
+- Title record shows active lien but customer says lien is paid
+- Lienholder name on application does not match department records
+- First lienholder still holds paper title
+- Subsequent lienholder wants lien added but title is with first lienholder
+- Dealer has not satisfied trade payoff within required timing
+- Lienholder cannot provide title after payoff
+- Customer requests clean duplicate but lien satisfaction is not documented
+- ELT title not printed until last lien satisfied
+- Confusion between lien satisfaction and duplicate title issuance
+
+============================================================
+REJECTION PREVENTION
+============================================================
+
+High rejection risk if:
+- duplicate title application lacks odometer reading
+- dealer duplicate title lacks dealer license number
+- active lien conflict is ignored
+- first lienholder mismatch is not resolved
+- lien satisfaction proof is missing
+- title delivery direction is not reviewed
+- customer requests clean title while department record still shows lien
+- subsequent lien process is skipped
+- ELT status is ignored
+- dealer payoff status is not verified
+
+============================================================
+AI DECISION LOGIC
+============================================================
+
+IF user_question_mentions = "duplicate title"
+OR user_question_mentions = "corrected title"
+OR user_question_mentions = "title delivery"
+OR user_question_mentions = "first lienholder"
+OR user_question_mentions = "lien satisfaction"
+OR user_question_mentions = "subsequent lien"
+THEN reference_319_24 = TRUE
+
+IF duplicate_title_requested = TRUE
+THEN answer_should_check = "odometer reading, owner record, lien status, ELT status"
+
+IF dealer_duplicate_title_request = TRUE
+THEN answer_should_check = "dealer license number"
+
+IF lien_satisfied = TRUE
+THEN answer_should_check = "proper lien satisfaction and title delivery rules"
+
+IF active_lien_conflict = TRUE
+THEN answer_should_warn = "Do not issue/process as clean title until lien conflict is resolved."
+
+IF electronic_lien_transmission_used = TRUE
+THEN answer_should_explain = "Title issuance may be waived until last lien is satisfied."
+
+============================================================
+DEALERSHIP WORKFLOW
+============================================================
+
+1. Identify title action.
+- Original title
+- Duplicate title
+- Corrected title
+- Lien add/delete/reassign
+- Clean title after lien satisfaction
+
+2. Review lien status.
+- No lien
+- First lienholder
+- Subsequent lienholder
+- Judgment lien
+- ELT lien
+
+3. Verify delivery path.
+- Applicant/owner
+- First lienholder
+- Owner per notice of lien
+- Department conflict process
+
+4. Review duplicate requirements.
+- Current odometer reading.
+- Dealer license number if dealer duplicate.
+- Existing liens shown on record.
+
+5. Review lien satisfaction.
+- Has lienholder provided satisfaction?
+- Is title available?
+- Are subsequent liens present?
+- Is ELT involved?
+
+6. Decide proceed/hold/escalate.
+- Proceed only if title delivery, lien, odometer, and application requirements are satisfied.
+- Escalate if lien conflict, active ELT issue, missing satisfaction, or department record mismatch exists.
+
+============================================================
+COMMON CLERK ANSWER STYLE
+============================================================
+
+When answering a 319.24-related question, the AI should explain:
+
+1. Whether this is title delivery, duplicate title, corrected title, or lien satisfaction.
+2. Whether liens exist and who should receive/retain the title.
+3. Whether odometer/dealer license number requirements apply.
+4. Whether lien satisfaction or conflict resolution is required.
+5. Whether ELT status changes the workflow.
+6. Whether the deal should proceed, hold, or escalate.
+
+============================================================
+RELATED LOGIC MAPS
+============================================================
+
+- transaction_type_logic_map.txt
+- lien_logic_map.txt
+- validation_logic_map.txt
+- rejection_prevention_logic_map.txt
+- forms_required_logic_map.txt
+
+============================================================
+RELATED PROCEDURE AREAS
+============================================================
+
+- TL-33 Lien satisfactions and alternate methods
+- Duplicate title procedures
+- Corrected title procedures
+- ELT procedures
+- Notice of lien procedures
+- Dealer payoff workflow
+
+============================================================
+RELATED STATUTES
+============================================================
+
+- 319.22
+- 319.225
+- 319.27
+- 319.29
+- 319.323
+- 55.202
+- 674.215
+
+============================================================
+END OF FILE
+============================================================

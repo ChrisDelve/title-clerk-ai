@@ -185,3 +185,130 @@ IF gifted_trade = TRUE
 AND tax_exemption_claimed = TRUE
 AND exemption_support_missing = TRUE
 THEN manual_review_required = TRUE
+
+============================================================
+DEFUNCT LIENHOLDER REJECTION PREVENTION
+============================================================
+
+IF title_record_shows_active_lien = TRUE
+AND lienholder_out_of_business = TRUE
+AND no_lien_release_documentation = TRUE
+THEN likely_rejection_reason = "Active lien unresolved"
+
+IF ELT_lien_exists = TRUE
+AND lienholder_out_of_business = TRUE
+AND ELT_release_not_obtained = TRUE
+THEN reject_before_submission = TRUE
+
+IF successor_lienholder_search_not_completed = TRUE
+AND lienholder_out_of_business = TRUE
+THEN manual_review_required = TRUE
+
+IF registered_agent_search_not_completed = TRUE
+AND lienholder_out_of_business = TRUE
+THEN manual_review_required = TRUE
+
+IF payoff_proof_missing = TRUE
+AND lienholder_out_of_business = TRUE
+THEN transaction_hold_required = TRUE
+
+IF customer_cannot_prove_lien_satisfied = TRUE
+THEN deal_cannot_be_finalized = TRUE
+
+IF finance_attempts_delivery_with_unresolved_active_lien = TRUE
+THEN rejection_risk = "HIGH"
+
+============================================================
+CERTIFIED MAIL / 5-YEAR LIEN RELEASE REJECTION PREVENTION
+============================================================
+
+IF active_lien_exists = TRUE
+AND lienholder_unavailable = TRUE
+AND certified_mail_documentation_missing = TRUE
+THEN likely_rejection_reason = "Missing certified mail documentation for unavailable lienholder"
+
+IF lienholder_out_of_business = TRUE
+AND 5_year_rule_review_not_completed = TRUE
+THEN manual_review_required = TRUE
+
+IF HSMV_82139_required = TRUE
+AND HSMV_82139_missing = TRUE
+THEN reject_before_submission = TRUE
+
+IF alternate_lien_satisfaction_path_used = TRUE
+AND supporting_documents_missing = TRUE
+THEN reject_before_submission = TRUE
+
+============================================================
+TL-33 ALTERNATE LIEN REMOVAL REJECTION PREVENTION
+============================================================
+
+IF alternate_lien_removal_requested = TRUE
+AND certified_mail_proof_missing = TRUE
+THEN likely_rejection_reason = "Missing certified mail proof"
+
+IF alternate_lien_removal_requested = TRUE
+AND certified_mail_20_day_wait_not_met = TRUE
+THEN reject_before_submission = TRUE
+
+IF alternate_lien_removal_requested = TRUE
+AND payoff_proof_missing = TRUE
+AND five_year_rule_review_not_completed = TRUE
+THEN manual_review_required = TRUE
+
+IF no_sales_contract = TRUE
+AND no_payoff_record = TRUE
+AND lien_age_under_5_years = TRUE
+THEN likely_rejection_reason = "Lien not eligible for alternate removal without court order"
+
+IF active_ELT_lien_exists = TRUE
+AND manual_lien_release_attempted = TRUE
+THEN reject_before_submission = TRUE
+
+IF active_ELT_lien_exists = TRUE
+AND HSMV_82260_submitted_as_release = TRUE
+THEN reject_before_submission = TRUE
+
+============================================================
+ACTIVE ELT LIEN WRONG WORKFLOW PREVENTION
+============================================================
+
+IF active_ELT_lien_exists = TRUE
+AND bonded_title_recommended_before_TL_33_review = TRUE
+THEN answer_quality_warning = "Bonded title should not be primary workflow before TL-33 lien satisfaction review"
+
+IF active_ELT_lien_exists = TRUE
+AND certified_mail_20_day_rule_not_reviewed = TRUE
+THEN answer_missing_required_TL_33_detail = TRUE
+
+IF active_ELT_lien_exists = TRUE
+AND lienholder_out_of_business = TRUE
+AND five_year_rule_or_court_order_not_reviewed = TRUE
+THEN answer_missing_required_TL_33_detail = TRUE
+
+============================================================
+BONDED TITLE MISROUTING PREVENTION
+============================================================
+
+IF active_ELT_lien_exists = TRUE
+AND bonded_title_recommended_as_primary_solution = TRUE
+THEN answer_quality_issue = "Bonded title incorrectly recommended before TL-33 lien satisfaction review"
+
+IF active_ELT_lien_exists = TRUE
+AND lienholder_out_of_business = TRUE
+AND TL_33_not_referenced = TRUE
+THEN answer_incomplete = TRUE
+
+IF active_ELT_lien_exists = TRUE
+AND lienholder_out_of_business = TRUE
+AND certified_mail_20_day_rule_not_mentioned = TRUE
+THEN answer_missing_required_TL_33_detail = TRUE
+
+IF active_ELT_lien_exists = TRUE
+AND lienholder_out_of_business = TRUE
+AND five_year_rule_or_court_order_not_mentioned = TRUE
+THEN answer_missing_required_TL_33_detail = TRUE
+
+============================================================
+END OF FILE
+============================================================

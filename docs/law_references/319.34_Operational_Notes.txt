@@ -1,0 +1,280 @@
+STATUTE: 319.34
+TITLE: Transfer Without Delivery of Certificate; Operation or Use Without Certificate; Failure to Surrender; Other Violations
+SOURCE: https://www.leg.state.fl.us/statutes/index.cfm?App_mode=Display_Statute&Search_String=&URL=0300-0399/0319/Sections/0319.34.html
+DOCUMENT_TYPE: Florida Law Reference / Operational Notes
+CATEGORY: TRANSFER WITHOUT TITLE / TITLE DELIVERY / OPERATING WITHOUT TITLE / FAILURE TO SURRENDER / CANCELLED TITLE / DISMANTLED VEHICLE
+
+============================================================
+PURPOSE
+============================================================
+
+This statute establishes penalties for selling/transferring a motor vehicle or mobile home without delivering a properly assigned certificate of title, operating/using a vehicle or mobile home that requires title without obtaining title, failing to surrender canceled titles/registrations/plates/stickers, failing to surrender title when a vehicle/mobile home is destroyed/dismantled/changed, and violating Chapter 319 or lawful rules adopted under it.
+
+============================================================
+PLAIN ENGLISH SUMMARY
+============================================================
+
+A person generally may not sell or transfer a motor vehicle or mobile home without delivering a properly assigned certificate of title to the purchaser/transferee.
+
+A person generally may not operate or use a motor vehicle or mobile home in Florida when a certificate of title is required but has not been obtained, or when the title has been canceled.
+
+A person must surrender title, registration, license plate, or sticker after cancellation when required by the department.
+
+A person must surrender title when the vehicle/mobile home is destroyed, dismantled, or changed so that it is no longer the same vehicle/mobile home described in the title.
+
+Violations may result in a fine up to $500, imprisonment up to 6 months, or both, for each offense.
+
+============================================================
+TITLE CLERK IMPORTANCE
+============================================================
+
+319.34 is important for:
+- selling without title
+- transferring without properly assigned title
+- title jumping
+- missing assigned title
+- use/operation without required certificate of title
+- canceled title issues
+- failure to surrender title/registration/plate/sticker
+- dismantled/destroyed vehicle title surrender
+- COD/salvage/dismantling workflows
+- compliance warnings
+
+This statute supports rejection-prevention and escalation warnings when title delivery or surrender requirements are ignored.
+
+============================================================
+COMMON WORKFLOW CONNECTIONS
+============================================================
+
+- Customer selling without title
+- Dealer trade without title
+- Private party title jumping
+- Missing assigned title
+- Vehicle transferred without certificate
+- Canceled title
+- Failure to surrender title after cancellation
+- Failure to surrender plate/registration/sticker after cancellation
+- Destroyed vehicle
+- Dismantled vehicle
+- Vehicle changed so title no longer describes vehicle
+- Certificate of destruction / salvage workflow
+- Title delivery compliance
+
+============================================================
+OPERATIONAL RULES
+============================================================
+
+IF vehicle_sold_or_transferred = TRUE
+AND properly_assigned_certificate_of_title_not_delivered = TRUE
+THEN transfer_without_title_violation_review_required = TRUE
+
+IF vehicle_requires_certificate_of_title = TRUE
+AND certificate_of_title_not_obtained = TRUE
+AND vehicle_operated_or_used_in_Florida = TRUE
+THEN operation_without_title_violation_review_required = TRUE
+
+IF certificate_of_title_cancelled = TRUE
+AND vehicle_operated_or_used_in_Florida = TRUE
+THEN canceled_title_violation_review_required = TRUE
+
+IF department_cancelled_title_registration_plate_or_sticker = TRUE
+AND customer_failed_to_surrender_required_items = TRUE
+THEN failure_to_surrender_review_required = TRUE
+
+IF vehicle_destroyed_or_dismantled = TRUE
+AND title_not_surrendered_to_department = TRUE
+THEN failure_to_surrender_title_review_required = TRUE
+
+IF vehicle_changed_so_title_no_longer_describes_vehicle = TRUE
+AND title_not_surrendered = TRUE
+THEN failure_to_surrender_title_review_required = TRUE
+
+IF title_delivery_missing = TRUE
+THEN title_transfer_rejection_risk = TRUE
+
+IF properly_assigned_title_missing = TRUE
+THEN title_transfer_cannot_be_completed = TRUE
+
+============================================================
+SELLING / TRANSFERRING WITHOUT TITLE LOGIC
+============================================================
+
+IF customer_wants_to_sell_vehicle_without_title = TRUE
+THEN duplicate_title_or_proper_title_workflow_required = TRUE
+
+IF dealer_accepts_trade_without_title = TRUE
+THEN title_obtainment_workflow_required = TRUE
+
+IF private_sale_without_title = TRUE
+THEN transfer_not_ready_for_submission = TRUE
+
+IF title_jumping_suspected = TRUE
+THEN rejection_and_fraud_review_required = TRUE
+
+IF assigned_title_not_delivered_to_buyer = TRUE
+THEN compliance_risk = TRUE
+
+============================================================
+CANCELLED TITLE / SURRENDER LOGIC
+============================================================
+
+IF certificate_of_title_cancelled = TRUE
+THEN normal_operation_or_use_not_allowed_review_required = TRUE
+
+IF title_registration_plate_or_sticker_cancelled_by_department = TRUE
+THEN surrender_required = TRUE
+
+IF customer_fails_to_surrender_cancelled_items = TRUE
+THEN compliance_issue = TRUE
+
+============================================================
+DESTROYED / DISMANTLED / CHANGED VEHICLE LOGIC
+============================================================
+
+IF vehicle_destroyed = TRUE
+OR vehicle_dismantled = TRUE
+OR vehicle_changed_so_title_description_no_longer_matches = TRUE
+THEN title_surrender_review_required = TRUE
+
+IF destroyed_or_dismantled_vehicle_title_not_surrendered = TRUE
+THEN compliance_issue = TRUE
+
+IF vehicle_changed_significantly = TRUE
+THEN title_description_review_required = TRUE
+
+============================================================
+COMMON DEALERSHIP ISSUES
+============================================================
+
+- Customer does not have title for trade
+- Seller says title will come later
+- Dealer accepts trade with missing title
+- Customer bought vehicle but seller never gave title
+- Title assignment missing or incomplete
+- Private sale/title jumping issue
+- Canceled title on record
+- Registration/plate/sticker canceled but not surrendered
+- Vehicle dismantled or destroyed without title surrender
+- Salvage/COD workflow skipped
+- Vehicle identity changed but title not corrected/surrendered
+
+============================================================
+REJECTION PREVENTION
+============================================================
+
+High rejection risk if:
+- properly assigned title is missing
+- title was not delivered to purchaser/transferee
+- title assignment chain is incomplete
+- vehicle is used/operated without required certificate of title
+- canceled title issue is ignored
+- required surrender items were not surrendered
+- destroyed/dismantled vehicle title was not surrendered
+- clerk processes transfer based only on bill of sale when title is required
+- title jumping is not escalated
+
+============================================================
+AI DECISION LOGIC
+============================================================
+
+IF user_question_mentions = "sold without title"
+OR user_question_mentions = "seller never gave title"
+OR user_question_mentions = "no title"
+OR user_question_mentions = "title jumping"
+OR user_question_mentions = "missing assigned title"
+OR user_question_mentions = "canceled title"
+OR user_question_mentions = "failed to surrender title"
+THEN reference_319_34 = TRUE
+
+IF properly_assigned_title_missing = TRUE
+THEN answer_should_warn = "A proper title delivery/assignment issue exists and the transaction should not be treated as ready."
+
+IF customer_wants_to_sell_or_trade_without_title = TRUE
+THEN answer_should_explain = "Duplicate title or proper title-obtainment workflow is required before normal transfer."
+
+IF canceled_title_exists = TRUE
+THEN answer_should_warn = "Do not process as normal title transfer without resolving canceled title issue."
+
+IF vehicle_destroyed_or_dismantled = TRUE
+THEN answer_should_review = "Title surrender / salvage / COD workflow may apply."
+
+============================================================
+DEALERSHIP WORKFLOW
+============================================================
+
+1. Identify title delivery issue.
+- Was title delivered?
+- Was title properly assigned?
+- Is title missing?
+- Is title canceled?
+
+2. Determine transaction type.
+- Trade-in
+- Private sale
+- Dealer sale
+- Duplicate title before transfer
+- Salvage/COD/dismantled vehicle
+
+3. Verify title ownership chain.
+- Confirm seller is owner of record.
+- Confirm assignment is complete.
+- Confirm purchaser/transferee is properly listed.
+
+4. Hold if title is missing.
+- Do not submit as normal transfer.
+- Review duplicate title/title-obtainment workflow.
+
+5. Escalate high-risk cases.
+- Canceled title
+- Title jumping
+- Destroyed/dismantled vehicle
+- Failure to surrender title/plate/sticker
+- Fraud concern
+
+============================================================
+COMMON CLERK ANSWER STYLE
+============================================================
+
+When answering a 319.34-related question, the AI should explain:
+
+1. Whether a proper title delivery issue exists.
+2. Whether the seller/transferor delivered a duly assigned certificate of title.
+3. Whether the transaction must hold until title is obtained.
+4. Whether canceled title/surrender/destruction/dismantling rules apply.
+5. Whether rejection or compliance risk exists.
+6. What workflow should happen before submission.
+
+============================================================
+RELATED LOGIC MAPS
+============================================================
+
+- transaction_type_logic_map.txt
+- validation_logic_map.txt
+- rejection_prevention_logic_map.txt
+- escalation_red_flags_logic_map.txt
+- forms_required_logic_map.txt
+
+============================================================
+RELATED PROCEDURE AREAS
+============================================================
+
+- Title transfer procedures
+- Duplicate title procedures
+- Dealer trade-in procedures
+- Salvage / certificate of destruction procedures
+- Title surrender procedures
+- Rejection prevention workflow
+
+============================================================
+RELATED STATUTES
+============================================================
+
+- 319.22
+- 319.23
+- 319.29
+- 319.30
+- 319.33
+
+============================================================
+END OF FILE
+============================================================

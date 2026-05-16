@@ -1,0 +1,1002 @@
+DOCUMENT: FL_TITLE_OWNERSHIP_AND_TRANSFER_LAW_NOTES
+TITLE: Florida Core Title Ownership and Transfer Law Reference
+DOCUMENT_TYPE: Consolidated Florida Law Reference / AI Routing Notes
+CATEGORY: TITLE LAW / OWNERSHIP / TRANSFER / TITLE APPLICATION / DUPLICATE TITLE / OPERATION OF LAW / LIENS / FRAUD / TITLE DELIVERY
+
+============================================================
+PURPOSE
+============================================================
+
+This file is a consolidated legal-reference layer for Florida title ownership and transfer issues.
+
+It groups the most important Chapter 319 statutes related to:
+- title applicability
+- ownership evidence
+- certificate of origin
+- title application
+- title transfer
+- AND / OR ownership
+- lien/title delivery
+- operation of law
+- deceased owner transactions
+- repossession
+- duplicate title
+- title fraud
+- VIN/title offenses
+- transfer without title
+- selling without title
+
+This file is designed for AI retrieval and workflow routing.
+
+It does NOT replace individual detailed statute files.
+
+Use this file to help the AI determine which specific law reference, procedure note, logic map, or dealership workflow should be retrieved next.
+
+============================================================
+IMPORTANT AI USE RULE
+============================================================
+
+This file should be treated as a MASTER TITLE LAW ROUTING FILE.
+
+When a user asks a broad title/ownership/transfer question, this file helps classify the issue and route to the correct detailed statute file.
+
+The AI should use this file to determine:
+1. What legal category the question belongs to.
+2. Which individual statute file should be referenced.
+3. Which logic maps should be reviewed.
+4. Whether the issue is title, lien, ownership, fraud, transfer, duplicate, operation-of-law, or validation related.
+5. Whether the transaction can proceed, should hold, or requires escalation.
+
+============================================================
+CORE STATUTES INCLUDED
+============================================================
+
+319.20 — Application of Law / Title Applicability
+319.21 — Manufacturer’s Statement of Origin / Certificate of Title Requirement
+319.22 — Transfer of Title / Ownership Transfer / AND / OR Ownership
+319.23 — Application for and Issuance of Certificate of Title
+319.235 — Encumbrance of Co-Owned Motor Vehicle or Mobile Home
+319.24 — Title Issuance / Delivery / Liens / Duplicate and Corrected Titles
+319.28 — Transfer of Ownership by Operation of Law
+319.29 — Lost or Destroyed Certificates / Duplicate Title
+319.33 — Title Fraud / VIN Offenses / False Documents
+319.34 — Transfer Without Title / Failure to Surrender / Selling Without Title
+
+============================================================
+STATUTE ROUTING INDEX
+============================================================
+
+IF user_question_mentions = "does this need a title"
+OR user_question_mentions = "trailer under 2000"
+OR user_question_mentions = "moped title"
+OR user_question_mentions = "mobile home title"
+THEN reference_statute = "319.20"
+AND detailed_file = "319.20_Operational_Notes.txt"
+
+IF user_question_mentions = "MCO"
+OR user_question_mentions = "MSO"
+OR user_question_mentions = "manufacturer statement of origin"
+OR user_question_mentions = "certificate of origin"
+OR user_question_mentions = "new vehicle title"
+THEN reference_statute = "319.21"
+AND detailed_file = "319.21_Operational_Notes.txt"
+
+IF user_question_mentions = "title transfer"
+OR user_question_mentions = "AND ownership"
+OR user_question_mentions = "OR ownership"
+OR user_question_mentions = "co-owner"
+OR user_question_mentions = "seller not on title"
+OR user_question_mentions = "title jumping"
+OR user_question_mentions = "notice of sale"
+THEN reference_statute = "319.22"
+AND detailed_file = "319.22_Operational_Notes.txt"
+
+IF user_question_mentions = "title application"
+OR user_question_mentions = "out of state title"
+OR user_question_mentions = "VIN verification"
+OR user_question_mentions = "used car original"
+OR user_question_mentions = "dealer responsibility"
+OR user_question_mentions = "bonded title"
+OR user_question_mentions = "valid ID"
+THEN reference_statute = "319.23"
+AND detailed_file = "319.23_Operational_Notes.txt"
+
+IF user_question_mentions = "add lien"
+OR user_question_mentions = "notice of lien"
+OR user_question_mentions = "co-owner lien"
+OR user_question_mentions = "AND lien"
+OR user_question_mentions = "OR lien"
+THEN reference_statute = "319.235"
+AND detailed_file = "319.235_Operational_Notes.txt"
+
+IF user_question_mentions = "title delivery"
+OR user_question_mentions = "lienholder has title"
+OR user_question_mentions = "first lienholder"
+OR user_question_mentions = "subsequent lien"
+OR user_question_mentions = "corrected title"
+OR user_question_mentions = "title after payoff"
+THEN reference_statute = "319.24"
+AND detailed_file = "319.24_Operational_Notes.txt"
+
+IF user_question_mentions = "deceased owner"
+OR user_question_mentions = "owner died"
+OR user_question_mentions = "heir"
+OR user_question_mentions = "surviving spouse"
+OR user_question_mentions = "inheritance"
+OR user_question_mentions = "repo"
+OR user_question_mentions = "repossession"
+OR user_question_mentions = "court order"
+OR user_question_mentions = "storage lien"
+OR user_question_mentions = "repair lien"
+THEN reference_statute = "319.28"
+AND detailed_file = "319.28_Operational_Notes.txt"
+
+IF user_question_mentions = "lost title"
+OR user_question_mentions = "destroyed title"
+OR user_question_mentions = "duplicate title"
+OR user_question_mentions = "replacement title"
+OR user_question_mentions = "lost in transit"
+THEN reference_statute = "319.29"
+AND detailed_file = "319.29_Operational_Notes.txt"
+
+IF user_question_mentions = "forged title"
+OR user_question_mentions = "altered title"
+OR user_question_mentions = "fake title"
+OR user_question_mentions = "VIN altered"
+OR user_question_mentions = "VIN missing"
+OR user_question_mentions = "false bill of sale"
+OR user_question_mentions = "stolen vehicle"
+OR user_question_mentions = "counterfeit"
+THEN reference_statute = "319.33"
+AND detailed_file = "319.33_Operational_Notes.txt"
+
+IF user_question_mentions = "sold without title"
+OR user_question_mentions = "seller never gave title"
+OR user_question_mentions = "no title"
+OR user_question_mentions = "transfer without title"
+OR user_question_mentions = "canceled title"
+OR user_question_mentions = "failed to surrender title"
+THEN reference_statute = "319.34"
+AND detailed_file = "319.34_Operational_Notes.txt"
+
+============================================================
+TITLE APPLICABILITY LAW
+============================================================
+
+STATUTE:
+319.20
+
+CONTROLS:
+- Whether Chapter 319 title law applies
+- Motor vehicle title applicability
+- Mobile home title applicability
+- Moped title exclusion
+- Trailer/semitrailer under 2,000 pounds title exclusion
+- Recreational vehicle-type title treatment
+- Real-property mobile home title treatment
+
+AI ROUTING:
+IF the user asks whether something needs a title, check 319.20 first.
+
+OPERATIONAL RULES:
+
+IF vehicle_type = "motor_vehicle"
+THEN chapter_319_title_law_applies = TRUE
+
+IF vehicle_type = "mobile_home"
+AND registration_required = TRUE
+THEN chapter_319_title_law_applies = TRUE
+
+IF vehicle_type = "moped"
+THEN chapter_319_title_law_applies = FALSE
+
+IF vehicle_type = "trailer"
+AND trailer_net_weight < 2000
+THEN chapter_319_title_law_applies = FALSE
+
+IF vehicle_type = "semitrailer"
+AND semitrailer_net_weight < 2000
+THEN chapter_319_title_law_applies = FALSE
+
+IF chapter_319_applies = TRUE
+THEN ownership_lien_or_title_interest_must_be_evidenced_under_chapter_319 = TRUE
+
+COMMON USER QUESTIONS:
+- Does this trailer need a title?
+- Does a moped get titled?
+- Does a mobile home need a title?
+- Does Chapter 319 apply to this unit?
+
+============================================================
+CERTIFICATE OF ORIGIN / MCO / MSO LAW
+============================================================
+
+STATUTE:
+319.21
+
+CONTROLS:
+- Manufacturer’s Statement of Origin
+- Manufacturer’s Certificate of Origin
+- New vehicle title evidence
+- New mobile home title evidence
+- Multi-stage manufacturer statements
+- Dealer MCO/MSO processing
+- Initial Florida registration eligibility
+
+AI ROUTING:
+IF the issue involves a new vehicle, MCO, MSO, certificate of origin, or missing manufacturer document, check 319.21.
+
+OPERATIONAL RULES:
+
+IF new_motor_vehicle = TRUE
+THEN MCO_or_MSO_review_required = TRUE
+
+IF new_mobile_home = TRUE
+THEN MCO_or_MSO_review_required = TRUE
+
+IF new_motor_vehicle = TRUE
+AND MCO_or_MSO_missing = TRUE
+THEN title_application_cannot_be_completed = TRUE
+
+IF new_mobile_home = TRUE
+AND MCO_or_MSO_missing = TRUE
+THEN title_application_cannot_be_completed = TRUE
+
+IF MCO_or_MSO_assignments_missing = TRUE
+THEN ownership_chain_incomplete = TRUE
+
+IF MCO_or_MSO_does_not_show_title_in_purchaser = TRUE
+THEN title_application_rejection_risk = TRUE
+
+IF vehicle_built_in_two_or_more_stages = TRUE
+THEN MSO_required_for_each_stage = TRUE
+
+IF initial_registration_requested = TRUE
+AND 319_21_not_satisfied = TRUE
+THEN initial_registration_not_allowed = TRUE
+
+COMMON USER QUESTIONS:
+- What if the MCO is missing?
+- What if the MSO is not assigned correctly?
+- Can we title a new car without MCO?
+- Can we register if title/MCO requirements are not satisfied?
+
+============================================================
+TRANSFER OF TITLE / OWNERSHIP LAW
+============================================================
+
+STATUTE:
+319.22
+
+CONTROLS:
+- Title transfer
+- Marketable title
+- Ownership recognition by certificate of title
+- AND ownership
+- OR ownership
+- Co-owner endorsement
+- Notice of sale
+- Seller owner-of-record requirement
+- Sales price on title
+- Fraudulent transfer where purchaser name is missing
+
+AI ROUTING:
+IF the issue involves ownership transfer, AND/OR signatures, title jumping, seller not owner of record, notice of sale, or missing purchaser name, check 319.22.
+
+OPERATIONAL RULES:
+
+IF ownership_transferring = TRUE
+THEN transaction_type = "title_transfer"
+
+IF ownership_type = "OR"
+THEN any_co_owner_signature_may_transfer = TRUE
+
+IF ownership_type = "AND"
+THEN all_co_owner_signatures_required = TRUE
+
+IF ownership_type = "AND"
+AND all_owners_not_signed = TRUE
+THEN title_transfer_cannot_be_completed = TRUE
+
+IF private_or_casual_sale = TRUE
+AND seller_not_shown_as_owner_on_face_of_title = TRUE
+THEN title_transfer_not_acceptable = TRUE
+
+IF sale_transfer_completed = TRUE
+AND private_or_casual_sale = TRUE
+THEN seller_notice_to_department_due_within_30_days = TRUE
+
+IF title_has_sales_price_field = TRUE
+AND sales_price_missing = TRUE
+AND transaction_not_licensed_dealer_transfer = TRUE
+THEN title_transfer_rejection_risk = TRUE
+
+IF purchaser_name_not_on_title = TRUE
+AND fraud_intent_possible = TRUE
+THEN fraudulent_transfer_review_required = TRUE
+
+COMMON USER QUESTIONS:
+- What if title says AND?
+- What if title says OR?
+- Does both owners need to sign?
+- What if seller is not on the title?
+- What if buyer name is blank?
+- Is this title jumping?
+
+============================================================
+TITLE APPLICATION / ISSUANCE LAW
+============================================================
+
+STATUTE:
+319.23
+
+CONTROLS:
+- Title application requirements
+- Required title application form
+- Title fee
+- Prior title assignment/reassignment
+- Out-of-state title conversion
+- Used car original
+- VIN verification
+- Odometer affidavit
+- Dealer responsibility to obtain title
+- Late title fee
+- Trade-in notice of sale
+- Bonded title review
+- Applicant ID
+- Business applicant verification
+- Taxes/registration before title issuance
+
+AI ROUTING:
+IF the issue involves title application completeness, out-of-state title, VIN verification, dealer title responsibility, bonded title, valid ID, or business applicant validation, check 319.23.
+
+OPERATIONAL RULES:
+
+IF title_application_submitted = TRUE
+THEN department_form_required = TRUE
+
+IF title_application_submitted = TRUE
+THEN title_fee_required = TRUE
+
+IF Florida_title_previously_issued = TRUE
+THEN assigned_or_reassigned_title_required = TRUE
+
+IF vehicle_not_previously_titled_in_Florida = TRUE
+THEN prior_jurisdiction_ownership_evidence_required = TRUE
+
+IF vehicle_not_previously_titled_in_Florida = TRUE
+AND motor_vehicle = TRUE
+THEN VIN_verification_review_required = TRUE
+
+IF used_car_original = TRUE
+THEN odometer_affidavit_required = TRUE
+
+IF licensed_dealer_sells_to_Florida_general_purchaser = TRUE
+THEN dealer_must_obtain_title_in_purchaser_name = TRUE
+
+IF title_or_corrected_title_or_assignment_or_reassignment_application_late_over_30_days = TRUE
+THEN twenty_dollar_late_title_fee_required = TRUE
+
+IF licensed_dealer_acquires_trade_in = TRUE
+THEN dealer_notice_of_sale_due_within_30_days = TRUE
+
+IF applicant_cannot_provide_prior_title_assigning_prior_owner_interest = TRUE
+THEN bonded_title_review_required = TRUE
+
+IF bonded_title_review_required = TRUE
+THEN bond_amount_must_equal_two_times_vehicle_value = TRUE
+
+IF title_issuance_requested = TRUE
+AND sales_or_use_tax_due_not_paid = TRUE
+THEN title_cannot_issue = TRUE
+
+IF individual_title_applicant = TRUE
+THEN valid_driver_license_identification_card_or_passport_required = TRUE
+
+IF business_title_applicant = TRUE
+THEN FEIN_or_business_authorization_or_business_license_required = TRUE
+
+IF active_lien_known_or_recorded = TRUE
+THEN bonded_title_should_not_be_used_to_bypass_lien_resolution = TRUE
+
+COMMON USER QUESTIONS:
+- What do we need for an out-of-state title?
+- Is VIN verification required?
+- What if customer has no valid ID?
+- What if business buyer has no FEIN?
+- When does bonded title apply?
+- Can dealer sell without titling in buyer name?
+
+============================================================
+CO-OWNER LIEN / ENCUMBRANCE LAW
+============================================================
+
+STATUTE:
+319.235
+
+CONTROLS:
+- Co-owner authority to place lien
+- AND ownership lien signatures
+- OR ownership lien signatures
+- Notice of lien by co-owner
+- Encumbrance authority
+
+AI ROUTING:
+IF the issue involves adding a lien to a co-owned vehicle/mobile home, check 319.235.
+
+OPERATIONAL RULES:
+
+IF ownership_type = "OR"
+AND lien_or_encumbrance_requested = TRUE
+THEN one_co_owner_signature_sufficient_for_notice_of_lien = TRUE
+
+IF ownership_type = "AND"
+AND lien_or_encumbrance_requested = TRUE
+THEN all_co_owner_signatures_required_for_lien = TRUE
+
+IF ownership_type = "AND"
+AND one_co_owner_signature_missing = TRUE
+THEN lien_or_encumbrance_cannot_be_placed = TRUE
+
+IF ownership_connector_unknown = TRUE
+THEN ownership_signature_review_required = TRUE
+
+COMMON USER QUESTIONS:
+- Can one owner add a lien?
+- Does AND require both owners to sign for lien?
+- Does OR require both owners for lien?
+- Can finance add lien if only one co-owner signed?
+
+============================================================
+TITLE DELIVERY / LIEN DELIVERY / DUPLICATE AND CORRECTED TITLE LAW
+============================================================
+
+STATUTE:
+319.24
+
+CONTROLS:
+- Title delivery
+- Duplicate title
+- Corrected title
+- Odometer reading on duplicate title
+- Dealer duplicate title license number
+- Title delivery to owner or lienholder
+- First lienholder title possession
+- Subsequent lien process
+- Lien satisfaction
+- Dealer payoff timing
+- ELT title issuance waiver
+- Clean title after lien satisfaction
+
+AI ROUTING:
+IF the issue involves who gets title, lienholder title retention, duplicate/corrected title, lien satisfaction, subsequent lien, dealer payoff, or ELT title delivery, check 319.24.
+
+OPERATIONAL RULES:
+
+IF duplicate_title_application = TRUE
+THEN current_odometer_reading_required = TRUE
+
+IF dealer_applies_for_duplicate_title = TRUE
+THEN dealer_license_number_required = TRUE
+
+IF title_application_has_no_liens = TRUE
+THEN title_may_be_delivered_to_applicant_or_authorized_person = TRUE
+
+IF title_record_has_lien = TRUE
+THEN title_delivery_review_required = TRUE
+
+IF first_lienholder_on_application_differs_from_department_record = TRUE
+THEN lien_conflict_notice_required = TRUE
+
+IF first_lienholder_possesses_title = TRUE
+THEN first_lienholder_may_retain_title_until_lien_satisfied = TRUE
+
+IF subsequent_lien_requested = TRUE
+AND title_in_first_lienholder_possession = TRUE
+THEN written_request_to_first_lienholder_required = TRUE
+
+IF lien_satisfied = TRUE
+THEN lienholder_must_provide_satisfaction_after_demand = TRUE
+
+IF dealer_acquires_vehicle_with_outstanding_purchase_money_lien = TRUE
+THEN dealer_must_satisfy_lien_within_10_working_days = TRUE
+
+IF lienholder_receives_final_payment = TRUE
+THEN lienholder_must_deliver_lien_satisfaction_and_title_or_notify_title_unavailable_within_10_working_days = TRUE
+
+IF electronic_lien_transmission_used = TRUE
+THEN title_issuance_may_be_waived_until_last_lien_satisfied = TRUE
+
+COMMON USER QUESTIONS:
+- Who gets the title if there is a lien?
+- Can lienholder keep the title?
+- What if first lienholder differs from record?
+- What if title is needed for subsequent lien?
+- What if lienholder cannot provide title?
+- What if dealer has not paid off trade?
+
+============================================================
+OPERATION OF LAW / DECEASED / REPOSSESSION LAW
+============================================================
+
+STATUTE:
+319.28
+
+CONTROLS:
+- Transfer by operation of law
+- Deceased owner
+- Inheritance
+- Surviving spouse
+- Testate estate
+- Intestate estate
+- Will / affidavit paths
+- Repossession
+- Storage or repair sale
+- Judicial sale
+- Bankruptcy
+- Court order
+- Prior title unavailable
+- Proof of right of possession
+
+AI ROUTING:
+IF the issue involves death, inheritance, surviving spouse, repossession, court order, storage/repair sale, bankruptcy, judicial sale, or prior title unavailable through legal transfer, check 319.28.
+
+OPERATIONAL RULES:
+
+IF ownership_transfers_by_operation_of_law = TRUE
+THEN transaction_type = "operation_of_law_transfer"
+
+IF prior_certificate_of_title_available = TRUE
+THEN prior_title_surrender_required = TRUE
+
+IF prior_certificate_of_title_not_available = TRUE
+THEN satisfactory_proof_of_ownership_and_right_of_possession_required = TRUE
+
+IF owner_deceased = TRUE
+THEN operation_of_law_review_required = TRUE
+
+IF deceased_owner_intestate = TRUE
+THEN affidavit_and_heir_surviving_spouse_review_required = TRUE
+
+IF deceased_owner_testate = TRUE
+THEN will_and_affidavit_review_required = TRUE
+
+IF surviving_spouse_disposes_vehicle_instead_of_retaining = TRUE
+THEN surviving_spouse_assignment_without_retitle_review_required = TRUE
+
+IF repossession = TRUE
+THEN repossession_affidavit_required = TRUE
+
+IF repossession = TRUE
+AND subsequent_lienholder_named_on_last_title = TRUE
+THEN certified_mail_notice_to_subsequent_lienholder_required_before_sale = TRUE
+
+IF repossession = TRUE
+AND former_owner_or_subsequent_lienholder_files_sworn_protest = TRUE
+THEN department_should_not_issue_title_for_10_days = TRUE
+
+COMMON USER QUESTIONS:
+- What if owner is deceased?
+- What if one AND owner died?
+- Can surviving spouse sell the vehicle?
+- What if no probate?
+- What do we need for repo title?
+- What if prior title cannot be surrendered?
+
+============================================================
+DUPLICATE TITLE / LOST TITLE LAW
+============================================================
+
+STATUTE:
+319.29
+
+CONTROLS:
+- Lost title
+- Destroyed title
+- Duplicate title
+- Lost in transit
+- Owner or lienholder duplicate title application
+- Duplicate-copy marking
+- Recovered original title cancellation
+- Address mismatch verification
+
+AI ROUTING:
+IF the issue involves duplicate title, lost title, destroyed title, replacement title, title lost in mail, or recovered original title, check 319.29.
+
+OPERATIONAL RULES:
+
+IF title_lost = TRUE
+THEN transaction_type = "duplicate_title"
+
+IF title_destroyed = TRUE
+THEN transaction_type = "duplicate_title"
+
+IF duplicate_title_requested = TRUE
+THEN application_to_department_required = TRUE
+
+IF duplicate_title_requested = TRUE
+THEN department_prescribed_form_required = TRUE
+
+IF duplicate_title_requested = TRUE
+THEN required_fee_required = TRUE
+
+IF duplicate_title_requested = TRUE
+THEN applicant_signature_and_oath_required = TRUE
+
+IF duplicate_title_issued = TRUE
+THEN title_must_be_marked_duplicate_copy = TRUE
+
+IF original_title_recovered_after_duplicate = TRUE
+THEN original_title_must_be_surrendered_to_department_for_cancellation = TRUE
+
+IF title_lost_in_transit = TRUE
+AND days_since_title_issuance <= 180
+THEN title_reissuance_review_required = TRUE
+
+IF duplicate_title_application_address_differs_from_department_record = TRUE
+THEN authorized_applicant_signature_verification_required = TRUE
+
+IF duplicate_title_requested = TRUE
+AND active_lien_exists = TRUE
+THEN lienholder_review_required = TRUE
+
+IF duplicate_title_requested = TRUE
+AND title_status = "electronic_title"
+THEN ELT_status_review_required = TRUE
+
+COMMON USER QUESTIONS:
+- Customer lost title, what do we do?
+- Can lienholder request duplicate?
+- What if title was lost in mail?
+- What if original title is found after duplicate?
+- Can we duplicate if lien is active?
+- Can we duplicate an ELT title?
+
+============================================================
+FRAUD / VIN / FALSE DOCUMENT LAW
+============================================================
+
+STATUTE:
+319.33
+
+CONTROLS:
+- Forged title
+- Altered title
+- False applications
+- False affidavit
+- False bill of sale
+- VIN alteration
+- VIN removal
+- Missing VIN
+- Counterfeit documents
+- Stolen vehicle title documents
+- Fraudulent lien cancellation
+- Contraband / forfeiture risk
+
+AI ROUTING:
+IF the issue involves suspicious documents, VIN tampering, fake title, false bill of sale, forged lien release, or vehicle identity uncertainty, check 319.33.
+
+OPERATIONAL RULES:
+
+IF certificate_of_title_altered_or_forged = TRUE
+THEN fraud_escalation_required = TRUE
+
+IF title_assignment_altered_or_forged = TRUE
+THEN fraud_escalation_required = TRUE
+
+IF lien_cancellation_altered_or_forged = TRUE
+THEN fraud_escalation_required = TRUE
+
+IF vehicle_suspected_stolen = TRUE
+THEN law_enforcement_or_FLHSMV_escalation_required = TRUE
+
+IF VIN_destroyed_removed_covered_altered_or_defaced = TRUE
+THEN manual_review_required = TRUE
+
+IF VIN_tampering_known_or_suspected = TRUE
+THEN law_enforcement_or_FLHSMV_escalation_required = TRUE
+
+IF false_name_or_false_address_used = TRUE
+THEN fraud_review_required = TRUE
+
+IF false_statement_in_application_or_affidavit = TRUE
+THEN fraud_review_required = TRUE
+
+IF counterfeit_VIN_plate_or_serial_plate_detected = TRUE
+THEN law_enforcement_or_FLHSMV_escalation_required = TRUE
+
+IF vehicle_identity_cannot_be_determined = TRUE
+THEN do_not_process_normal_title_transaction = TRUE
+
+COMMON USER QUESTIONS:
+- What if VIN does not match?
+- What if title looks altered?
+- What if lien release looks fake?
+- What if customer has false bill of sale?
+- What if VIN plate is missing?
+- What if vehicle identity cannot be verified?
+
+============================================================
+TRANSFER WITHOUT TITLE / SELLING WITHOUT TITLE LAW
+============================================================
+
+STATUTE:
+319.34
+
+CONTROLS:
+- Transfer without properly assigned title
+- Selling without title
+- Operating/using vehicle without required title
+- Canceled title
+- Failure to surrender title/registration/plate/sticker
+- Destroyed/dismantled vehicle title surrender
+- Vehicle changed so title no longer describes it
+
+AI ROUTING:
+IF the issue involves no title, seller never gave title, selling without title, missing assigned title, canceled title, or failure to surrender title, check 319.34.
+
+OPERATIONAL RULES:
+
+IF vehicle_sold_or_transferred = TRUE
+AND properly_assigned_certificate_of_title_not_delivered = TRUE
+THEN transfer_without_title_violation_review_required = TRUE
+
+IF vehicle_requires_certificate_of_title = TRUE
+AND certificate_of_title_not_obtained = TRUE
+AND vehicle_operated_or_used_in_Florida = TRUE
+THEN operation_without_title_violation_review_required = TRUE
+
+IF certificate_of_title_cancelled = TRUE
+AND vehicle_operated_or_used_in_Florida = TRUE
+THEN canceled_title_violation_review_required = TRUE
+
+IF department_cancelled_title_registration_plate_or_sticker = TRUE
+AND customer_failed_to_surrender_required_items = TRUE
+THEN failure_to_surrender_review_required = TRUE
+
+IF vehicle_destroyed_or_dismantled = TRUE
+AND title_not_surrendered_to_department = TRUE
+THEN failure_to_surrender_title_review_required = TRUE
+
+IF properly_assigned_title_missing = TRUE
+THEN title_transfer_cannot_be_completed = TRUE
+
+IF customer_wants_to_sell_vehicle_without_title = TRUE
+THEN duplicate_title_or_proper_title_workflow_required = TRUE
+
+IF title_jumping_suspected = TRUE
+THEN rejection_and_fraud_review_required = TRUE
+
+COMMON USER QUESTIONS:
+- Can customer sell without title?
+- What if seller never gave title?
+- Can dealer take trade without title?
+- What if title is canceled?
+- What if vehicle is dismantled?
+- Is a bill of sale enough?
+
+============================================================
+CROSS-FILE AI DECISION LOGIC
+============================================================
+
+IF user_question_mentions = "title transfer"
+THEN check_files = "319.22_Operational_Notes.txt, 319.23_Operational_Notes.txt, transaction_type_logic_map.txt, validation_logic_map.txt"
+
+IF user_question_mentions = "AND ownership"
+OR user_question_mentions = "OR ownership"
+THEN check_files = "319.22_Operational_Notes.txt, ownership_signature_logic_map.txt, rejection_prevention_logic_map.txt"
+
+IF user_question_mentions = "lien"
+AND user_question_mentions = "co-owner"
+THEN check_files = "319.235_Operational_Notes.txt, lien_logic_map.txt, ownership_signature_logic_map.txt"
+
+IF user_question_mentions = "lien satisfaction"
+OR user_question_mentions = "lienholder"
+OR user_question_mentions = "paid off"
+THEN check_files = "319.24_Operational_Notes.txt, TL-33 notes, lien_logic_map.txt, rejection_prevention_logic_map.txt"
+
+IF user_question_mentions = "out of state title"
+THEN check_files = "319.23_Operational_Notes.txt, transaction_type_logic_map.txt, validation_logic_map.txt, forms_required_logic_map.txt"
+
+IF user_question_mentions = "duplicate title"
+THEN check_files = "319.29_Operational_Notes.txt, 319.24_Operational_Notes.txt, forms_required_logic_map.txt"
+
+IF user_question_mentions = "deceased owner"
+OR user_question_mentions = "repo"
+THEN check_files = "319.28_Operational_Notes.txt, escalation_red_flags_logic_map.txt, forms_required_logic_map.txt"
+
+IF user_question_mentions = "forged"
+OR user_question_mentions = "VIN mismatch"
+OR user_question_mentions = "altered title"
+THEN check_files = "319.33_Operational_Notes.txt, validation_logic_map.txt, escalation_red_flags_logic_map.txt"
+
+IF user_question_mentions = "no title"
+OR user_question_mentions = "seller never gave title"
+OR user_question_mentions = "selling without title"
+THEN check_files = "319.34_Operational_Notes.txt, 319.29_Operational_Notes.txt, rejection_prevention_logic_map.txt"
+
+============================================================
+COMMON DEALERSHIP QUESTION ROUTING
+============================================================
+
+QUESTION:
+"What if the title says AND?"
+
+ROUTE TO:
+- 319.22_Operational_Notes.txt
+- ownership_signature_logic_map.txt
+- rejection_prevention_logic_map.txt
+
+EXPECTED ANSWER:
+All owners generally must sign. If one owner is deceased, unavailable, or lacks authority, hold and review operation-of-law or POA rules.
+
+------------------------------------------------------------
+
+QUESTION:
+"Customer lost title."
+
+ROUTE TO:
+- 319.29_Operational_Notes.txt
+- forms_required_logic_map.txt
+- lien_logic_map.txt
+
+EXPECTED ANSWER:
+Duplicate title workflow. Verify owner/lienholder entitlement, lien/ELT status, required duplicate title form, signature/oath, and fee.
+
+------------------------------------------------------------
+
+QUESTION:
+"Customer moved from another state."
+
+ROUTE TO:
+- 319.23_Operational_Notes.txt
+- transaction_type_logic_map.txt
+- validation_logic_map.txt
+- forms_required_logic_map.txt
+
+EXPECTED ANSWER:
+Out-of-state title application workflow. Review prior ownership evidence, VIN verification, title surrender, odometer, brands, liens, and ID.
+
+------------------------------------------------------------
+
+QUESTION:
+"Vehicle has active lien and customer says it is paid."
+
+ROUTE TO:
+- 319.24_Operational_Notes.txt
+- TL-33 lien satisfaction notes
+- lien_logic_map.txt
+- rejection_prevention_logic_map.txt
+
+EXPECTED ANSWER:
+Do not process as clean title until lien satisfaction/ELT release is verified. Review lien satisfaction procedure and supporting documents.
+
+------------------------------------------------------------
+
+QUESTION:
+"Seller never gave customer a title."
+
+ROUTE TO:
+- 319.34_Operational_Notes.txt
+- 319.22_Operational_Notes.txt
+- 319.29_Operational_Notes.txt
+- validation_logic_map.txt
+
+EXPECTED ANSWER:
+Transfer is not ready. Proper assigned title or duplicate/title-obtainment workflow is required. Bill of sale alone may not be enough when title is required.
+
+------------------------------------------------------------
+
+QUESTION:
+"VIN does not match title."
+
+ROUTE TO:
+- 319.33_Operational_Notes.txt
+- 319.23_Operational_Notes.txt
+- validation_logic_map.txt
+- escalation_red_flags_logic_map.txt
+
+EXPECTED ANSWER:
+Stop normal processing. VIN mismatch/vehicle identity issue requires manual review and possible FLHSMV/tax collector/law enforcement escalation.
+
+------------------------------------------------------------
+
+QUESTION:
+"Owner died and family wants to sell vehicle."
+
+ROUTE TO:
+- 319.28_Operational_Notes.txt
+- ownership_signature_logic_map.txt
+- forms_required_logic_map.txt
+- escalation_red_flags_logic_map.txt
+
+EXPECTED ANSWER:
+Operation-of-law/deceased owner workflow. Determine testate/intestate, surviving spouse/heir authority, required affidavit/will/probate/court documents, and title availability.
+
+============================================================
+REJECTION PREVENTION SUMMARY
+============================================================
+
+High rejection risk exists when:
+- ownership evidence is missing
+- assigned title is missing
+- title says AND but not all required owners signed
+- seller is not owner of record
+- purchaser name is missing from title assignment
+- MCO/MSO is missing for new vehicle/mobile home
+- VIN verification is missing when required
+- VIN mismatch exists
+- active lien is not resolved
+- ELT status is ignored
+- lien satisfaction is missing
+- duplicate title applicant is not entitled to receive title
+- deceased owner documents are incomplete
+- repossession affidavit or lienholder notice is missing
+- title appears altered or forged
+- customer relies only on bill of sale when title is required
+- canceled title issue is ignored
+- destroyed/dismantled vehicle title surrender issue exists
+- bonded title is used incorrectly to bypass known lien or ownership defects
+
+============================================================
+RELATED DETAILED LAW REFERENCE FILES
+============================================================
+
+- 319.20_Operational_Notes.txt
+- 319.21_Operational_Notes.txt
+- 319.22_Operational_Notes.txt
+- 319.23_Operational_Notes.txt
+- 319.235_Operational_Notes.txt
+- 319.24_Operational_Notes.txt
+- 319.28_Operational_Notes.txt
+- 319.29_Operational_Notes.txt
+- 319.33_Operational_Notes.txt
+- 319.34_Operational_Notes.txt
+
+============================================================
+RELATED LOGIC MAPS
+============================================================
+
+- transaction_type_logic_map.txt
+- ownership_signature_logic_map.txt
+- lien_logic_map.txt
+- validation_logic_map.txt
+- rejection_prevention_logic_map.txt
+- forms_required_logic_map.txt
+- escalation_red_flags_logic_map.txt
+- plate_registration_action_logic_map.txt
+
+============================================================
+RELATED DEALERSHIP WORKFLOW AREAS
+============================================================
+
+- Title transfer workflow
+- Duplicate title workflow
+- Out-of-state transfer workflow
+- Lien satisfaction workflow
+- ELT lien workflow
+- Deceased owner workflow
+- Repossession workflow
+- Dealer reassignment workflow
+- VIN mismatch workflow
+- Missing title workflow
+- Bonded title review workflow
+- Fraud escalation workflow
+
+============================================================
+IMPORTANT IMPLEMENTATION NOTE
+============================================================
+
+This file is a routing and consolidation file.
+
+When answering a specific question, the AI should:
+1. Use this file to classify the law category.
+2. Retrieve the specific individual statute note.
+3. Retrieve the matching procedure file.
+4. Retrieve the matching logic map.
+5. Retrieve any dealership workflow note if available.
+6. Give a practical title-clerk answer with proceed / hold / escalate guidance.
+
+============================================================
+END OF FILE
+============================================================

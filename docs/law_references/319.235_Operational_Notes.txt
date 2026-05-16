@@ -1,0 +1,191 @@
+STATUTE: 319.235
+TITLE: Encumbrance of Co-Owned Motor Vehicle or Mobile Home
+SOURCE: https://www.leg.state.fl.us/statutes/index.cfm?App_mode=Display_Statute&Search_String=&URL=0300-0399/0319/Sections/0319.235.html
+DOCUMENT_TYPE: Florida Law Reference / Operational Notes
+CATEGORY: CO-OWNERSHIP / LIEN PLACEMENT / AND OWNERSHIP / OR OWNERSHIP / NOTICE OF LIEN
+
+============================================================
+PURPOSE
+============================================================
+
+This statute governs when one co-owner may place a lien or encumbrance on a motor vehicle or mobile home.
+
+It is directly tied to AND/OR ownership logic and lien placement authority.
+
+============================================================
+PLAIN ENGLISH SUMMARY
+============================================================
+
+If a motor vehicle or mobile home is registered to two or more co-owners using "OR," either co-owner is treated as having authority to place a lien or encumbrance on the vehicle or mobile home.
+
+If a motor vehicle or mobile home is registered to two or more co-owners using "AND," each co-owner must sign to place a lien or encumbrance on the vehicle or mobile home.
+
+============================================================
+TITLE CLERK IMPORTANCE
+============================================================
+
+319.235 is important when reviewing:
+- lien placement
+- notice of lien
+- co-owner authority
+- AND ownership
+- OR ownership
+- one-owner signature issues
+- refinance lien add
+- title correction involving lien placement
+- dealership lien paperwork
+
+This is not mainly a title transfer statute. It is a lien-encumbrance authority statute.
+
+============================================================
+COMMON WORKFLOW CONNECTIONS
+============================================================
+
+- Lien add
+- Refinance lien
+- Notice of lien
+- Co-owner lien authorization
+- AND ownership review
+- OR ownership review
+- Missing co-owner signature
+- Dealer finance lien placement
+- Customer Maintenance / title record review
+
+============================================================
+OPERATIONAL RULES
+============================================================
+
+IF ownership_type = "OR"
+AND lien_or_encumbrance_requested = TRUE
+THEN one_co_owner_signature_sufficient_for_notice_of_lien = TRUE
+
+IF ownership_type = "AND"
+AND lien_or_encumbrance_requested = TRUE
+THEN all_co_owner_signatures_required_for_lien = TRUE
+
+IF ownership_type = "AND"
+AND one_co_owner_signature_missing = TRUE
+THEN lien_or_encumbrance_cannot_be_placed = TRUE
+
+IF ownership_type = "OR"
+AND one_co_owner_signed_notice_of_lien = TRUE
+THEN lien_or_encumbrance_signature_requirement_satisfied = TRUE
+
+IF ownership_connector_unknown = TRUE
+THEN ownership_signature_review_required = TRUE
+
+============================================================
+COMMON DEALERSHIP ISSUES
+============================================================
+
+- Finance paperwork has one owner signature but title record shows AND
+- Dealer attempts to add lien with only one AND owner signed
+- Clerk confuses OR lien authority with AND lien authority
+- Customer says spouse/co-owner does not need to sign
+- Lien add rejected because ownership connector required both signatures
+- Co-owner unavailable during refinance or lien add
+- Incorrect assumption that one co-owner can always authorize lien placement
+
+============================================================
+REJECTION PREVENTION
+============================================================
+
+High rejection risk if:
+- title record shows AND and not all co-owners signed lien paperwork
+- ownership connector is not reviewed before lien add
+- lien placement is processed based on only one AND owner signature
+- finance paperwork does not match ownership record
+- clerk assumes OR and AND have same signature rules
+
+============================================================
+AI DECISION LOGIC
+============================================================
+
+IF user_question_mentions = "add lien"
+OR user_question_mentions = "notice of lien"
+OR user_question_mentions = "co-owner lien"
+OR user_question_mentions = "AND lien"
+OR user_question_mentions = "OR lien"
+THEN reference_319_235 = TRUE
+
+IF ownership_type = "OR"
+AND lien_add_requested = TRUE
+THEN answer_should_explain = "One co-owner may generally execute notice of lien."
+
+IF ownership_type = "AND"
+AND lien_add_requested = TRUE
+THEN answer_should_explain = "Each co-owner must sign to place lien or encumbrance."
+
+IF ownership_type = "AND"
+AND all_owners_not_signed = TRUE
+THEN answer_should_warn = "Lien add or encumbrance placement is not ready for submission."
+
+============================================================
+DEALERSHIP WORKFLOW
+============================================================
+
+1. Review ownership connector.
+- Determine if title record says AND or OR.
+- Do not rely only on what customer says.
+
+2. Determine action.
+- Is this a lien add?
+- Is this a refinance?
+- Is this another encumbrance?
+
+3. Apply signature rule.
+- OR: one co-owner may generally execute the notice of lien.
+- AND: each co-owner must sign.
+
+4. Validate paperwork.
+- Confirm lienholder information.
+- Confirm all required owner signatures.
+- Confirm owner names match the title record.
+
+5. Hold or escalate if unclear.
+- If connector is unclear or signatures are missing, do not submit.
+
+============================================================
+COMMON CLERK ANSWER STYLE
+============================================================
+
+When answering a co-owner lien question, the AI should explain:
+
+1. Whether the issue is lien placement, not title transfer.
+2. Whether ownership is AND or OR.
+3. Whether one or all co-owner signatures are required.
+4. Whether the lien add can proceed or must be held.
+5. Whether rejection risk exists.
+
+============================================================
+RELATED LOGIC MAPS
+============================================================
+
+- ownership_signature_logic_map.txt
+- lien_logic_map.txt
+- validation_logic_map.txt
+- rejection_prevention_logic_map.txt
+- forms_required_logic_map.txt
+
+============================================================
+RELATED PROCEDURE AREAS
+============================================================
+
+- Notice of lien procedures
+- Lien add procedures
+- ELT procedures
+- Ownership signature procedures
+- Finance lien workflow
+
+============================================================
+RELATED STATUTES
+============================================================
+
+- 319.22
+- 319.24
+- 319.27
+- 319.225
+
+============================================================
+END OF FILE
+============================================================

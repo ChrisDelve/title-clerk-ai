@@ -41,6 +41,23 @@ KEYWORDS:
 - judgment lien
 - lien reassignment
 - electronic lien
+- ELT lienholder out of business
+- lienholder out of business
+- defunct lienholder
+- lienholder unavailable
+- lienholder unresponsive
+- cannot get lien released
+- active ELT lien
+- certified mail lien release
+- 20-day certified mail rule
+- 5-year lien rule
+- old lien removal
+- alternate lien removal
+- lienholder cannot be contacted
+- lien paid but still showing
+- lien satisfaction unavailable
+- electronic lien cannot be manually released
+- active ELT lien cannot use HSMV 82260
 
 COMMON USER QUESTIONS:
 - "How do I remove a lien?"

@@ -1,0 +1,280 @@
+STATUTE: 319.29
+TITLE: Lost or Destroyed Certificates
+SOURCE: https://www.leg.state.fl.us/statutes/index.cfm?App_mode=Display_Statute&Search_String=&URL=0300-0399/0319/Sections/0319.29.html
+DOCUMENT_TYPE: Florida Law Reference / Operational Notes
+CATEGORY: DUPLICATE TITLE / LOST TITLE / DESTROYED TITLE / LOST IN TRANSIT / OWNERSHIP VERIFICATION
+
+============================================================
+PURPOSE
+============================================================
+
+This statute governs duplicate certificates of title when a Florida certificate of title has been lost or destroyed.
+
+It also governs reissuance when an original, duplicate, or corrected title was issued but lost in transit before delivery.
+
+============================================================
+PLAIN ENGLISH SUMMARY
+============================================================
+
+If a certificate of title is lost or destroyed, the owner of the motor vehicle/mobile home or the lienholder may apply to the department for a duplicate title on the department-prescribed form.
+
+The application must include the required fee and must be signed and sworn to by the applicant.
+
+The department issues the duplicate title to the person entitled to receive the certificate of title under Chapter 319.
+
+Duplicate titles and later titles in that duplicate-originated chain must be plainly marked “duplicate copy.”
+
+If the original title is later recovered, the owner must surrender the original title to the department for cancellation.
+
+If a title is lost in transit and not delivered to the addressee, the owner or lienholder may apply for reissuance within 180 days from the date of issuance, and no additional fee may be charged for that reissuance.
+
+The department must verify that an application is signed by a person authorized to receive the duplicate title if the address on the application is different from the department’s records.
+
+============================================================
+TITLE CLERK IMPORTANCE
+============================================================
+
+319.29 is the legal anchor for:
+- duplicate title requests
+- lost title situations
+- destroyed title situations
+- duplicate title before transfer
+- duplicate title with lienholder involvement
+- lost-in-transit title issues
+- duplicate title fraud prevention
+- address mismatch verification
+- original title recovered after duplicate issuance
+
+============================================================
+COMMON WORKFLOW CONNECTIONS
+============================================================
+
+- Duplicate title
+- Duplicate with transfer
+- Lost Florida title
+- Destroyed Florida title
+- Lost-in-transit title
+- Active lien review
+- ELT review
+- Lienholder duplicate request
+- Owner duplicate request
+- Address mismatch review
+- Fraud prevention review
+- Recovered original title cancellation
+
+============================================================
+OPERATIONAL RULES
+============================================================
+
+IF title_lost = TRUE
+THEN transaction_type = "duplicate_title"
+
+IF title_destroyed = TRUE
+THEN transaction_type = "duplicate_title"
+
+IF duplicate_title_requested = TRUE
+THEN application_to_department_required = TRUE
+
+IF duplicate_title_requested = TRUE
+THEN department_prescribed_form_required = TRUE
+
+IF duplicate_title_requested = TRUE
+THEN required_fee_required = TRUE
+
+IF duplicate_title_requested = TRUE
+THEN applicant_signature_and_oath_required = TRUE
+
+IF duplicate_title_requested = TRUE
+THEN determine_person_entitled_to_receive_title = TRUE
+
+IF duplicate_title_issued = TRUE
+THEN title_must_be_marked_duplicate_copy = TRUE
+
+IF subsequent_title_in_duplicate_chain = TRUE
+THEN title_must_be_marked_duplicate_copy = TRUE
+
+IF purchaser_requests_indemnity_from_seller = TRUE
+THEN seller_indemnity_review_required = TRUE
+
+IF original_title_recovered_after_duplicate = TRUE
+THEN original_title_must_be_surrendered_to_department_for_cancellation = TRUE
+
+IF title_lost_in_transit = TRUE
+AND days_since_title_issuance <= 180
+THEN title_reissuance_review_required = TRUE
+
+IF title_lost_in_transit = TRUE
+AND days_since_title_issuance <= 180
+THEN additional_department_or_tax_collector_fee_not_allowed = TRUE
+
+IF duplicate_title_application_address_differs_from_department_record = TRUE
+THEN authorized_applicant_signature_verification_required = TRUE
+
+============================================================
+DUPLICATE TITLE / LIEN REVIEW LOGIC
+============================================================
+
+IF duplicate_title_requested = TRUE
+AND active_lien_exists = TRUE
+THEN lienholder_review_required = TRUE
+
+IF duplicate_title_requested = TRUE
+AND title_status = "electronic_title"
+THEN ELT_status_review_required = TRUE
+
+IF duplicate_title_requested = TRUE
+AND active_ELT_lien_exists = TRUE
+THEN duplicate_title_should_not_be_processed_as_normal_paper_title = TRUE
+
+IF duplicate_title_requested = TRUE
+AND lien_satisfaction_missing = TRUE
+AND active_lien_exists = TRUE
+THEN transaction_hold_required = TRUE
+
+IF lienholder_requests_duplicate_title = TRUE
+THEN lienholder_entitlement_review_required = TRUE
+
+============================================================
+COMMON DEALERSHIP ISSUES
+============================================================
+
+- Customer lost Florida title
+- Customer says title was destroyed
+- Customer wants duplicate title before trading vehicle
+- Dealer needs duplicate title to complete trade
+- Active lien still appears on record
+- Customer says lien is paid but lien still shows
+- ELT title issue confused with paper duplicate title
+- Original title found after duplicate title issued
+- Title mailed but never received
+- Duplicate title application uses different address from record
+- Applicant is not clearly entitled to receive title
+- Duplicate with transfer paperwork incomplete
+
+============================================================
+REJECTION PREVENTION
+============================================================
+
+High rejection risk if:
+- applicant is not owner/lienholder/person entitled to receive title
+- application is not signed/sworn properly
+- required duplicate title form is missing or incomplete
+- active lien status is ignored
+- ELT status is ignored
+- address mismatch is not reviewed
+- duplicate title requested by unauthorized party
+- original recovered title is not surrendered for cancellation
+- lost-in-transit reissuance is requested outside 180-day window
+- duplicate with transfer is processed without complete transfer documents
+
+============================================================
+AI DECISION LOGIC
+============================================================
+
+IF user_question_mentions = "lost title"
+OR user_question_mentions = "destroyed title"
+OR user_question_mentions = "duplicate title"
+OR user_question_mentions = "replacement title"
+OR user_question_mentions = "lost in transit"
+THEN reference_319_29 = TRUE
+
+IF duplicate_title_requested = TRUE
+THEN answer_should_identify_transaction_type = "duplicate_title"
+
+IF duplicate_title_requested = TRUE
+THEN answer_should_check = "owner/lienholder entitlement, required form, fee, signature/oath, lien status, ELT status"
+
+IF original_title_recovered_after_duplicate = TRUE
+THEN answer_should_warn = "Original title must be surrendered to the department for cancellation."
+
+IF title_lost_in_transit = TRUE
+AND within_180_days = TRUE
+THEN answer_should_explain = "Reissuance may be available without additional department/tax collector fee."
+
+IF application_address_differs_from_department_record = TRUE
+THEN answer_should_warn = "Authorized applicant signature verification is required."
+
+============================================================
+DEALERSHIP WORKFLOW
+============================================================
+
+1. Identify the duplicate title reason.
+- Lost title
+- Destroyed title
+- Lost in transit
+- Original recovered after duplicate
+- Duplicate with transfer
+
+2. Verify applicant authority.
+- Owner
+- Lienholder
+- Person entitled to receive title
+
+3. Review lien/ELT status.
+- Active lien
+- Satisfied lien
+- ELT
+- Paper lien
+
+4. Confirm required paperwork.
+- Department duplicate title form
+- Signature/oath
+- Fee
+- Transfer documents if duplicate with transfer
+
+5. Check address issue.
+- If application address differs from department record, review authorization/signature verification.
+
+6. Decide proceed/hold/escalate.
+- Hold if applicant authority, lien status, ELT status, signature, or address verification is unclear.
+
+============================================================
+COMMON CLERK ANSWER STYLE
+============================================================
+
+When answering a duplicate-title question, the AI should explain:
+
+1. Whether this is a duplicate title workflow under 319.29.
+2. Who may apply.
+3. Whether fee/signature/oath/form requirements apply.
+4. Whether lien/ELT review is required.
+5. Whether lost-in-transit reissuance applies.
+6. Whether original recovered title must be surrendered.
+7. Whether the transaction should proceed, hold, or escalate.
+
+============================================================
+RELATED LOGIC MAPS
+============================================================
+
+- transaction_type_logic_map.txt
+- lien_logic_map.txt
+- validation_logic_map.txt
+- rejection_prevention_logic_map.txt
+- forms_required_logic_map.txt
+- escalation_red_flags_logic_map.txt
+
+============================================================
+RELATED PROCEDURE AREAS
+============================================================
+
+- Duplicate title procedures
+- Duplicate with transfer procedures
+- ELT procedures
+- Lien satisfaction procedures
+- Title delivery procedures
+- Fraud prevention workflow
+
+============================================================
+RELATED STATUTES
+============================================================
+
+- 319.22
+- 319.23
+- 319.24
+- 319.27
+- 319.33
+- 319.34
+
+============================================================
+END OF FILE
+============================================================

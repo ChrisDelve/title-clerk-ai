@@ -1,0 +1,191 @@
+STATUTE: 319.24(1) / 319.24(2)
+TITLE: Odometer Reading in Title Activity and Duplicate Title Applications
+SOURCE: https://www.leg.state.fl.us/statutes/index.cfm?App_mode=Display_Statute&Search_String=&URL=0300-0399/0319/Sections/0319.24.html
+DOCUMENT_TYPE: Florida Law Reference / Odometer-Specific Operational Notes
+CATEGORY: TITLE ACTIVITY / DUPLICATE TITLE / ODOMETER READING / DEALER DUPLICATE TITLE
+
+============================================================
+PURPOSE
+============================================================
+
+This file isolates the odometer-related portions of 319.24 for cleaner AI retrieval.
+
+It applies to:
+- title activity odometer record maintenance
+- duplicate title applications
+- dealer duplicate title requests
+- odometer reading required on duplicate title applications
+
+============================================================
+PLAIN ENGLISH SUMMARY
+============================================================
+
+The department records and maintains a current odometer reading for vehicles covered by 319.225(4) at the time of title activity.
+
+When a dealer applies for or receives a duplicate title, the motor vehicle dealer license number must be submitted.
+
+The current odometer reading must be submitted on an application for duplicate title.
+
+============================================================
+TITLE CLERK IMPORTANCE
+============================================================
+
+This matters when:
+- duplicate title is requested
+- dealer requests duplicate title
+- title activity updates mileage record
+- odometer reading is missing on duplicate title application
+- duplicate title is connected to trade, transfer, or lien issue
+
+============================================================
+COMMON WORKFLOW CONNECTIONS
+============================================================
+
+- Duplicate title
+- Duplicate with transfer
+- Dealer duplicate title
+- Trade-in missing title
+- Current odometer reading
+- Title activity
+- Odometer record maintenance
+- Mileage discrepancy review
+
+============================================================
+OPERATIONAL RULES
+============================================================
+
+IF title_activity_occurs = TRUE
+AND vehicle_covered_by_319_225_4 = TRUE
+THEN department_current_odometer_record_required = TRUE
+
+IF duplicate_title_application = TRUE
+THEN current_odometer_reading_required = TRUE
+
+IF duplicate_title_application = TRUE
+AND current_odometer_reading_missing = TRUE
+THEN duplicate_title_application_not_ready = TRUE
+
+IF dealer_applies_for_duplicate_title = TRUE
+THEN dealer_license_number_required = TRUE
+
+IF dealer_receives_duplicate_title = TRUE
+THEN dealer_license_number_required = TRUE
+
+IF duplicate_title_requested_for_trade = TRUE
+THEN current_odometer_reading_review_required = TRUE
+
+IF duplicate_with_transfer_requested = TRUE
+THEN odometer_disclosure_and_duplicate_title_requirements_both_apply = TRUE
+
+============================================================
+COMMON DEALERSHIP ISSUES
+============================================================
+
+- Duplicate title application missing current odometer reading
+- Dealer duplicate title missing dealer license number
+- Trade-in title missing and mileage not verified
+- Customer cannot provide current mileage
+- Duplicate with transfer missing odometer disclosure
+- Mileage on duplicate application conflicts with vehicle or deal paperwork
+- Dealer assumes duplicate title does not need mileage
+
+============================================================
+REJECTION PREVENTION
+============================================================
+
+High rejection risk if:
+- current odometer reading is missing from duplicate title application
+- dealer license number is missing for dealer duplicate title
+- duplicate with transfer does not satisfy odometer disclosure requirements
+- mileage conflicts with other title documents
+- mileage is estimated or guessed
+- customer cannot verify current odometer reading
+
+============================================================
+AI DECISION LOGIC
+============================================================
+
+IF user_question_mentions = "duplicate title mileage"
+OR user_question_mentions = "duplicate title odometer"
+OR user_question_mentions = "dealer duplicate title"
+OR user_question_mentions = "missing title trade mileage"
+THEN reference_319_24_odometer = TRUE
+
+IF duplicate_title_application = TRUE
+THEN answer_should_check = "current odometer reading"
+
+IF dealer_duplicate_title_request = TRUE
+THEN answer_should_check = "dealer license number and current odometer reading"
+
+IF duplicate_with_transfer = TRUE
+THEN answer_should_warn = "Duplicate and transfer odometer rules may both apply."
+
+============================================================
+DEALERSHIP WORKFLOW
+============================================================
+
+1. Identify duplicate title type.
+- Customer duplicate
+- Dealer duplicate
+- Duplicate with transfer
+- Lost in transit
+
+2. Verify mileage requirement.
+- Current odometer reading required on duplicate application
+- Do not guess mileage
+
+3. Verify dealer information if dealer duplicate.
+- Dealer license number required
+
+4. Compare mileage.
+- Application
+- Vehicle odometer
+- Deal paperwork
+- Prior title if available
+
+5. Hold/escalate if inconsistent.
+- Missing or conflicting mileage should be reviewed before submission.
+
+============================================================
+COMMON CLERK ANSWER STYLE
+============================================================
+
+When answering duplicate title mileage questions, the AI should explain:
+
+1. Current odometer reading is required.
+2. Dealer duplicate title requires dealer license number.
+3. Duplicate with transfer may require additional odometer disclosure.
+4. Mileage should not be guessed.
+5. Conflicts create rejection risk.
+
+============================================================
+RELATED LOGIC MAPS
+============================================================
+
+- validation_logic_map.txt
+- rejection_prevention_logic_map.txt
+- forms_required_logic_map.txt
+- transaction_type_logic_map.txt
+
+============================================================
+RELATED PROCEDURE AREAS
+============================================================
+
+- Duplicate title procedures
+- Duplicate with transfer procedures
+- Odometer disclosure procedures
+- Dealer duplicate title workflow
+
+============================================================
+RELATED STATUTES
+============================================================
+
+- 319.225
+- 319.23
+- 319.29
+- 319.324
+- 319.35
+
+============================================================
+END OF FILE
+============================================================

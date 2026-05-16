@@ -1,0 +1,289 @@
+STATUTE: 319.35
+TITLE: Unlawful Acts in Connection with Motor Vehicle Odometer Readings; Penalties
+SOURCE: https://www.leg.state.fl.us/statutes/index.cfm?App_mode=Display_Statute&Search_String=&URL=0300-0399/0319/Sections/0319.35.html
+DOCUMENT_TYPE: Florida Law Reference / Operational Notes
+CATEGORY: ODOMETER TAMPERING / FALSE MILEAGE / ODOMETER FRAUD / CONTRABAND / TITLE BRAND
+
+============================================================
+PURPOSE
+============================================================
+
+This statute governs unlawful acts connected to motor vehicle odometer readings.
+
+It is the core Florida legal reference for:
+- odometer tampering
+- rollback
+- false mileage statements
+- knowingly bringing altered odometer vehicles into Florida
+- knowingly selling/possessing vehicles with tampered odometers
+- odometer replacement notice requirements
+- title/registration stamping when displayed mileage is inaccurate
+- contraband and forfeiture risk
+
+============================================================
+PLAIN ENGLISH SUMMARY
+============================================================
+
+It is unlawful to knowingly tamper with, adjust, alter, set back, disconnect, or fail to connect an odometer so that it reflects lower mileage than the vehicle has actually been driven.
+
+It is unlawful to knowingly provide a false written odometer statement or a statement based on an altered/tampered odometer.
+
+It is unlawful to knowingly bring into Florida a motor vehicle with an illegally altered odometer.
+
+It is unlawful to knowingly provide false odometer information required by title or registration statutes.
+
+It is unlawful to knowingly possess, sell, offer for sale, conceal, or dispose of a motor vehicle with a tampered odometer showing lower mileage, except under limited statutory conditions.
+
+Odometer repair/replacement is allowed only if the mileage remains the same. If it cannot show the same mileage, the odometer must be set to zero and a written notice must be attached to the door frame showing prior mileage and repair/replacement date.
+
+A vehicle with an odometer tampered to show lower mileage may not be knowingly operated unless title and registration are conspicuously stamped to indicate displayed mileage is inaccurate and written notice is placed on the vehicle.
+
+Intentional violation is a third-degree felony.
+
+============================================================
+TITLE CLERK IMPORTANCE
+============================================================
+
+319.35 is critical when:
+- odometer fraud is suspected
+- odometer rollback is suspected
+- mileage statement appears false
+- vehicle is imported/brought into Florida with altered odometer
+- odometer was replaced
+- title needs inaccurate mileage indication
+- mileage discrepancy may involve fraud
+- customer wants incorrect mileage corrected
+- title is branded with incorrect / not actual mileage
+- odometer notice is missing after replacement
+
+============================================================
+COMMON WORKFLOW CONNECTIONS
+============================================================
+
+- Mileage correction
+- Incorrect mileage brand
+- Not actual mileage
+- Odometer rollback
+- Odometer replacement
+- Odometer set to zero
+- Door frame notice
+- False mileage disclosure
+- Out-of-state/imported vehicle mileage issue
+- Auction mileage announcement
+- Title fraud review
+- Contraband/forfeiture risk
+
+============================================================
+OPERATIONAL RULES
+============================================================
+
+IF odometer_tampered_to_show_lower_mileage = TRUE
+THEN odometer_fraud_escalation_required = TRUE
+
+IF odometer_set_back_or_altered = TRUE
+THEN odometer_fraud_escalation_required = TRUE
+
+IF false_written_odometer_statement_provided = TRUE
+THEN fraud_review_required = TRUE
+
+IF written_odometer_statement_based_on_tampered_odometer = TRUE
+THEN fraud_review_required = TRUE
+
+IF vehicle_brought_into_Florida_with_illegally_altered_odometer = TRUE
+THEN fraud_escalation_required = TRUE
+
+IF false_information_provided_on_required_odometer_reading = TRUE
+THEN fraud_review_required = TRUE
+
+IF person_knowingly_possesses_or_sells_vehicle_with_tampered_odometer = TRUE
+THEN contraband_or_forfeiture_risk_review_required = TRUE
+
+IF odometer_service_repair_or_replacement_completed = TRUE
+AND odometer_can_register_same_mileage_as_before = TRUE
+THEN odometer_must_remain_same_mileage = TRUE
+
+IF odometer_service_repair_or_replacement_completed = TRUE
+AND odometer_cannot_register_same_mileage_as_before = TRUE
+THEN odometer_must_be_adjusted_to_zero = TRUE
+
+IF odometer_adjusted_to_zero_after_repair_or_replacement = TRUE
+THEN written_notice_on_door_frame_required = TRUE
+
+IF written_notice_on_door_frame_required = TRUE
+THEN notice_must_show_prior_mileage_and_repair_or_replacement_date = TRUE
+
+IF odometer_tampered_vehicle_operated = TRUE
+THEN title_and_registration_must_be_stamped_displayed_mileage_inaccurate = TRUE
+
+IF displayed_mileage_inaccurate = TRUE
+THEN written_notice_on_vehicle_required = TRUE
+
+IF intentional_odometer_violation = TRUE
+THEN felony_risk = TRUE
+
+============================================================
+MILEAGE CORRECTION / BRAND LOGIC
+============================================================
+
+IF mileage_correction_requested = TRUE
+AND odometer_tampering_suspected = TRUE
+THEN do_not_process_as_simple_correction = TRUE
+
+IF title_branded_incorrect_mileage = TRUE
+THEN odometer_brand_review_required = TRUE
+
+IF not_actual_mileage_brand_exists = TRUE
+THEN title_lead_or_FLHSMV_review_required = TRUE
+
+IF customer_requests_brand_removal = TRUE
+THEN manual_review_required = TRUE
+
+IF supporting_mileage_documents_missing = TRUE
+THEN transaction_hold_required = TRUE
+
+IF odometer_disclosure_conflicts_with_title_record = TRUE
+THEN reject_before_submission = TRUE
+
+============================================================
+COMMON DEALERSHIP ISSUES
+============================================================
+
+- Customer says title mileage is wrong
+- Title branded Not Actual Mileage
+- Customer wants mileage brand removed
+- Prior dealer entered mileage wrong
+- Odometer replaced but no door frame notice
+- Odometer displays lower mileage than prior record
+- Mileage on title/application/disclosure does not match
+- Vehicle imported with kilometers or altered odometer concern
+- Auction announced mileage discrepancy
+- Customer provides false or questionable odometer statement
+- Mileage correction request lacks proof
+- Odometer rollback concern
+
+============================================================
+REJECTION PREVENTION
+============================================================
+
+High rejection risk if:
+- mileage discrepancy is ignored
+- odometer tampering is suspected
+- false odometer statement is submitted
+- odometer replacement notice is missing
+- title/registration inaccurate mileage stamping issue is ignored
+- customer requests brand removal without authority/proof
+- odometer disclosure conflicts with title record
+- imported/out-of-state mileage issue is not reviewed
+- possible fraud is treated as normal title correction
+
+============================================================
+AI DECISION LOGIC
+============================================================
+
+IF user_question_mentions = "odometer rollback"
+OR user_question_mentions = "tampered odometer"
+OR user_question_mentions = "false mileage"
+OR user_question_mentions = "not actual mileage"
+OR user_question_mentions = "incorrect miles brand"
+OR user_question_mentions = "mileage correction"
+OR user_question_mentions = "odometer replaced"
+THEN reference_319_35 = TRUE
+
+IF odometer_tampering_suspected = TRUE
+THEN answer_should_warn = "Stop normal processing and escalate."
+
+IF mileage_brand_change_requested = TRUE
+THEN answer_should_warn = "Do not promise brand removal; manual FLHSMV/tax collector/title lead review required."
+
+IF odometer_replaced = TRUE
+THEN answer_should_check = "whether mileage remained same or zero/reset notice requirements apply"
+
+IF false_odometer_statement_suspected = TRUE
+THEN answer_should_warn = "Fraud and felony risk may exist."
+
+============================================================
+DEALERSHIP WORKFLOW
+============================================================
+
+1. Identify the mileage issue.
+- Discrepancy
+- Incorrect entry
+- Odometer replacement
+- Not actual mileage
+- Rollback/tampering concern
+- Kilometer/miles issue
+
+2. Compare all records.
+- Title
+- Odometer disclosure
+- Buyer order
+- Prior title records
+- Auction announcement
+- Vehicle odometer
+- Repair records
+
+3. Determine risk level.
+- Clerical correction
+- Unclear mileage
+- Brand issue
+- Fraud/tampering concern
+
+4. Escalate if serious.
+- Title lead
+- Supervisor
+- Tax collector / FLHSMV
+- Law enforcement if fraud/tampering is suspected
+
+5. Hold submission if unresolved.
+- Do not submit conflicting mileage documents.
+- Do not promise brand removal.
+
+============================================================
+COMMON CLERK ANSWER STYLE
+============================================================
+
+When answering an odometer fraud/mileage brand question, the AI should explain:
+
+1. Whether this is disclosure, correction, replacement, brand, or fraud issue.
+2. Whether records conflict.
+3. Whether odometer tampering or false statement risk exists.
+4. What proof is required.
+5. Whether escalation is required.
+6. Whether transaction should proceed, hold, or stop.
+
+============================================================
+RELATED LOGIC MAPS
+============================================================
+
+- validation_logic_map.txt
+- rejection_prevention_logic_map.txt
+- escalation_red_flags_logic_map.txt
+- forms_required_logic_map.txt
+- transaction_type_logic_map.txt
+
+============================================================
+RELATED PROCEDURE AREAS
+============================================================
+
+- Odometer disclosure procedures
+- Mileage correction workflow
+- Title correction procedures
+- Fraud escalation workflow
+- Imported vehicle workflow
+- Out-of-state title workflow
+
+============================================================
+RELATED STATUTES
+============================================================
+
+- 319.225
+- 319.23
+- 319.24
+- 319.324
+- 320.02
+- 932.701
+- 932.704
+
+============================================================
+END OF FILE
+============================================================

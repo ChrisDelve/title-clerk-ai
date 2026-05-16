@@ -1,0 +1,357 @@
+STATUTE: 319.27
+TITLE: Notice of Lien on Motor Vehicles or Mobile Homes; Notation on Certificate; Recording of Lien
+SOURCE: https://www.leg.state.fl.us/statutes/index.cfm?App_mode=Display_Statute&Search_String=&URL=0300-0399/0319/Sections/0319.27.html
+DOCUMENT_TYPE: Florida Law Reference / Operational Notes
+CATEGORY: NOTICE OF LIEN / LIEN RECORDING / LIEN PERFECTION / OUT-OF-STATE LIEN / LIEN ASSIGNMENT / ELT
+
+============================================================
+PURPOSE
+============================================================
+
+This statute governs notice of lien, notation of liens on Florida certificates of title, lien perfection, recording of liens on motor vehicles and mobile homes, out-of-state lien recording before Florida title issuance, lien priority, assignment of lien, and electronic lien transmission.
+
+It is a core legal reference for lien add, lien recording, lienholder substitution, lien assignment, ELT requirements, and lien priority.
+
+============================================================
+PLAIN ENGLISH SUMMARY
+============================================================
+
+Each lien, mortgage, or encumbrance on a motor vehicle or mobile home titled in Florida must be noted on the Florida certificate of title or on a duplicate/corrected copy.
+
+A lien or nonpossessory lien is generally not enforceable against creditors or subsequent purchasers without notice unless a sworn notice of lien has been filed with the department and the lien is noted on the certificate of title.
+
+The notice of lien must include:
+- date of lien
+- name and address of registered owner
+- vehicle/mobile home description including make, type, and VIN
+- lienholder name and address
+
+A notice of lien may be filed before the security agreement is executed.
+
+For secured-party rights, perfection occurs when the notice of lien is filed with the department, tax collector, or agents, with a 15-day relation-back rule if filed within 15 days after debtor receives possession and executes the security agreement.
+
+For vehicles/mobile homes previously titled or registered outside Florida where no Florida title has been issued, lienholders may file sworn notice of lien with the department.
+
+When Florida title is first issued on an out-of-state vehicle/mobile home, the department notes:
+- liens shown on the Florida title application
+- liens previously filed with the department
+- liens shown on the existing out-of-state title
+
+Liens take priority according to the order in which they are noted, except the lien shown on an original title application takes priority over later-filed liens.
+
+Lien assignments may be substituted on the certificate of title after delivering original title and a sworn statement of assignment.
+
+The department must administer an electronic titling program, and lienholders must electronically transmit liens and lien satisfactions unless exempt.
+
+============================================================
+TITLE CLERK IMPORTANCE
+============================================================
+
+319.27 is critical for:
+- lien add
+- notice of lien
+- lien recording
+- lienholder information
+- lien priority
+- out-of-state lien review
+- lien assignment / reassignment
+- ELT lien transmission
+- security interest perfection
+- child support lien and nonpossessory lien review
+- corrected/duplicate title lien notation
+
+============================================================
+COMMON WORKFLOW CONNECTIONS
+============================================================
+
+- Add lien
+- Record lien
+- Notice of lien
+- Lienholder missing from title
+- Out-of-state title with lien
+- Out-of-state lien not on Florida title
+- Substitute lienholder after assignment
+- Lien sold to another lender
+- HSMV 82139 review
+- ELT lien add/release
+- Lien priority dispute
+- Child support lien
+- Nonpossessory lien
+- Security agreement / finance lien
+
+============================================================
+OPERATIONAL RULES
+============================================================
+
+IF Florida_certificate_of_title_exists = TRUE
+AND lien_mortgage_or_encumbrance_exists = TRUE
+THEN lien_must_be_noted_on_certificate_of_title = TRUE
+
+IF notice_of_lien_missing = TRUE
+AND lien_is_nonpossessory = TRUE
+THEN lien_enforceability_against_creditors_or_subsequent_purchasers_review_required = TRUE
+
+IF notice_of_lien_filed = TRUE
+THEN constructive_notice_created = TRUE
+
+IF notice_of_lien_submitted = TRUE
+THEN lien_date_required = TRUE
+
+IF notice_of_lien_submitted = TRUE
+THEN registered_owner_name_and_address_required = TRUE
+
+IF notice_of_lien_submitted = TRUE
+THEN vehicle_description_make_type_VIN_required = TRUE
+
+IF notice_of_lien_submitted = TRUE
+THEN lienholder_name_and_address_required = TRUE
+
+IF lien_notice_filed_before_security_agreement_execution = TRUE
+THEN pre_security_agreement_notice_review_required = TRUE
+
+IF notice_of_lien_filed_within_15_days_after_debtor_receives_possession_and_executes_security_agreement = TRUE
+THEN lien_perfection_date_may_relate_back_to_security_agreement_date = TRUE
+
+IF vehicle_previously_titled_or_registered_outside_Florida = TRUE
+AND no_Florida_title_issued = TRUE
+AND lienholder_files_sworn_notice_of_lien = TRUE
+THEN out_of_state_lien_recording_review_required = TRUE
+
+IF first_Florida_title_issued_for_out_of_state_vehicle = TRUE
+THEN note_liens_shown_on_application = TRUE
+
+IF first_Florida_title_issued_for_out_of_state_vehicle = TRUE
+THEN note_liens_filed_with_department = TRUE
+
+IF first_Florida_title_issued_for_out_of_state_vehicle = TRUE
+THEN note_liens_shown_on_existing_out_of_state_title = TRUE
+
+IF lien_valid_in_prior_state_but_not_filed_and_noted_on_Florida_title_after_Florida_title_issued = TRUE
+THEN Florida_validity_review_required = TRUE
+
+IF multiple_liens_exist = TRUE
+THEN lien_priority_based_on_order_noted_by_department = TRUE
+
+IF lien_shown_on_original_title_application = TRUE
+THEN lien_has_priority_over_later_filed_liens = TRUE
+
+IF original_lienholder_assigns_lien_to_another_person = TRUE
+THEN lienholder_substitution_review_required = TRUE
+
+IF lienholder_assignment_substitution_requested = TRUE
+THEN original_certificate_of_title_and_sworn_assignment_statement_required = TRUE
+
+IF owner_retained_title_and_receives_sworn_assignment_statement = TRUE
+THEN owner_must_deliver_original_title_and_assignment_statement_to_department = TRUE
+
+IF electronic_titling_program_applies = TRUE
+THEN lienholder_must_electronically_transmit_liens_and_lien_satisfactions = TRUE
+
+IF individual_or_lienholder_not_normally_financing_vehicles = TRUE
+THEN ELT_requirement_exemption_review_required = TRUE
+
+============================================================
+NOTICE OF LIEN DATA REQUIREMENTS
+============================================================
+
+IF notice_of_lien_missing_lien_date = TRUE
+THEN notice_of_lien_incomplete = TRUE
+
+IF notice_of_lien_missing_owner_name_or_address = TRUE
+THEN notice_of_lien_incomplete = TRUE
+
+IF notice_of_lien_missing_make_type_or_VIN = TRUE
+THEN notice_of_lien_incomplete = TRUE
+
+IF notice_of_lien_missing_lienholder_name_or_address = TRUE
+THEN notice_of_lien_incomplete = TRUE
+
+============================================================
+OUT-OF-STATE LIEN LOGIC
+============================================================
+
+IF out_of_state_title_shows_lien = TRUE
+THEN lien_must_be_reviewed_for_Florida_title = TRUE
+
+IF Florida_title_first_issued_from_out_of_state = TRUE
+THEN all_application_filed_and_existing_out_of_state_liens_must_be_reviewed = TRUE
+
+IF lien_valid_in_prior_state = TRUE
+AND Florida_title_issued = TRUE
+AND lien_not_filed_or_noted_under_Florida_process = TRUE
+THEN lien_validity_in_Florida_review_required = TRUE
+
+============================================================
+LIEN ASSIGNMENT / SUBSTITUTION LOGIC
+============================================================
+
+IF lien_sold_or_assigned_to_new_lender = TRUE
+THEN lien_assignment_review_required = TRUE
+
+IF lien_assignment_review_required = TRUE
+THEN original_title_delivery_required = TRUE
+
+IF lien_assignment_review_required = TRUE
+THEN sworn_statement_of_assignment_required = TRUE
+
+IF lienholder_substitution_complete = TRUE
+THEN title_delivery_to_assignee_or_owner_as_directed_required = TRUE
+
+============================================================
+ELT LOGIC
+============================================================
+
+IF lienholder_required_to_participate_in_ELT = TRUE
+THEN lien_and_lien_satisfaction_must_be_transmitted_electronically = TRUE
+
+IF lienholder_exempt_from_ELT = TRUE
+THEN non_ELT_handling_review_required = TRUE
+
+IF active_ELT_lien_exists = TRUE
+THEN TL_33_ELT_lien_satisfaction_review_required = TRUE
+
+============================================================
+COMMON DEALERSHIP ISSUES
+============================================================
+
+- Lienholder information missing or incorrect
+- Lien not added correctly
+- Out-of-state title shows lien but Florida application does not
+- Lien assignment to successor lender not documented
+- Customer says lienholder changed names
+- Bank merger or acquisition
+- HSMV 82139 assignment/reassignment question
+- Active ELT lien still showing
+- Wrong lienholder entered
+- Lien priority confusion
+- Child support lien or nonpossessory lien issue
+- Finance manager fails to verify lienholder info
+- Title clerk receives incomplete notice of lien
+- Vehicle coming from out of state with prior lien
+
+============================================================
+REJECTION PREVENTION
+============================================================
+
+High rejection risk if:
+- lienholder name/address is missing
+- owner information is missing
+- vehicle description or VIN is missing
+- out-of-state lien is ignored
+- lien assignment documentation is missing
+- original title is not provided for lienholder substitution where required
+- sworn assignment statement is missing
+- ELT requirement is ignored
+- active ELT lien is treated as paper lien
+- lien priority/order is not reviewed
+- Florida title is issued without noting required liens
+
+============================================================
+AI DECISION LOGIC
+============================================================
+
+IF user_question_mentions = "notice of lien"
+OR user_question_mentions = "add lien"
+OR user_question_mentions = "record lien"
+OR user_question_mentions = "lienholder"
+OR user_question_mentions = "out of state lien"
+OR user_question_mentions = "lien assignment"
+OR user_question_mentions = "ELT"
+THEN reference_319_27 = TRUE
+
+IF lien_add_requested = TRUE
+THEN answer_should_check = "owner, vehicle/VIN, lienholder name/address, lien date, ELT status"
+
+IF out_of_state_title_has_lien = TRUE
+THEN answer_should_warn = "Out-of-state lien must be reviewed when issuing Florida title."
+
+IF lien_assigned_to_new_lender = TRUE
+THEN answer_should_review = "lien assignment / substitution documentation"
+
+IF active_ELT_lien_exists = TRUE
+THEN answer_should_cross_reference = "TL-33 and ELT release requirements"
+
+============================================================
+DEALERSHIP WORKFLOW
+============================================================
+
+1. Identify lien transaction.
+- Add lien
+- Record lien
+- Out-of-state lien
+- Lien assignment
+- ELT lien
+- Child support or nonpossessory lien
+
+2. Verify lien data.
+- Lien date
+- Owner name and address
+- Vehicle make/type/VIN
+- Lienholder name and address
+
+3. Review title status.
+- Florida title already exists
+- First Florida title from out of state
+- Duplicate/corrected title
+- ELT
+
+4. Review assignment/substitution.
+- If lien sold/assigned, verify original title and sworn assignment statement as required.
+
+5. Confirm ELT handling.
+- If lienholder is ELT, transmit lien/lien satisfaction electronically.
+- If exempt, review non-ELT handling.
+
+6. Hold or escalate.
+- Hold if lien data, out-of-state lien, assignment, ELT, or priority conflict is unclear.
+
+============================================================
+COMMON CLERK ANSWER STYLE
+============================================================
+
+When answering a 319.27 lien-recording question, the AI should explain:
+
+1. Whether this is lien add, notice of lien, out-of-state lien, or lien assignment.
+2. What lien information is required.
+3. Whether lien must be noted on Florida title.
+4. Whether out-of-state lien rules apply.
+5. Whether lien assignment/substitution documentation is needed.
+6. Whether ELT requirements apply.
+7. Whether transaction can proceed, hold, or escalate.
+
+============================================================
+RELATED LOGIC MAPS
+============================================================
+
+- lien_logic_map.txt
+- validation_logic_map.txt
+- rejection_prevention_logic_map.txt
+- forms_required_logic_map.txt
+- escalation_red_flags_logic_map.txt
+- transaction_type_logic_map.txt
+
+============================================================
+RELATED PROCEDURE AREAS
+============================================================
+
+- Notice of lien procedures
+- Lien add/delete/reassign procedures
+- ELT procedures
+- TL-33 lien satisfaction procedures
+- Out-of-state title procedures
+- Lien assignment procedures
+
+============================================================
+RELATED STATUTES
+============================================================
+
+- 319.001(11)
+- 319.24
+- 319.235
+- 319.241
+- 319.32
+- 679.1021
+
+============================================================
+END OF FILE
+============================================================

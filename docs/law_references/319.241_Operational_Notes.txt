@@ -1,0 +1,259 @@
+STATUTE: 319.241
+TITLE: Removal of Lien from Records
+SOURCE: https://www.leg.state.fl.us/statutes/index.cfm?App_mode=Display_Statute&Search_String=&URL=0300-0399/0319/Sections/0319.241.html
+DOCUMENT_TYPE: Florida Law Reference / Operational Notes
+CATEGORY: LIEN REMOVAL / OLD LIEN / 5-YEAR LIEN RULE / CERTIFIED MAIL / LIENHOLDER PROTEST
+
+============================================================
+PURPOSE
+============================================================
+
+This statute governs removal of a lien from department records or from a certificate of title when the lien has been filed with the department or noted on a certificate of title for a period of 5 years.
+
+It is a core legal reference for old lien removal, unavailable lienholder issues, certified mail proof, and lienholder protest review.
+
+============================================================
+PLAIN ENGLISH SUMMARY
+============================================================
+
+If a lien has been filed with the department or noted on a certificate of title for 5 years, the owner may apply in writing for the lien to be removed from department files or from the certificate of title.
+
+The application must include satisfactory evidence that the applicant notified the lienholder by certified mail at least 20 days before the application date.
+
+After receiving the application, the department may remove the lien after 10 days if no written protest is received from the lienholder.
+
+If the lienholder files a written statement within the 10-day period saying the lien is still outstanding, or that a second judgment lien certificate has been filed with the Department of State, the department must not remove the lien until the lienholder presents satisfaction of lien.
+
+If a second judgment lien certificate was filed, the department removes the first judgment lien notice and adds the second judgment lien certificate notation at the end of all noted liens.
+
+============================================================
+TITLE CLERK IMPORTANCE
+============================================================
+
+319.241 is critical for:
+- old lien removal
+- lienholder unavailable situations
+- lienholder unresponsive situations
+- certified mail proof
+- 5-year lien review
+- protest period review
+- alternate lien removal review
+- judgment lien certificate replacement
+- derelict motor vehicle lien removal
+
+This statute should be cross-referenced with TL-33 lien satisfaction and alternate lien removal procedures.
+
+============================================================
+COMMON WORKFLOW CONNECTIONS
+============================================================
+
+- Lienholder unavailable
+- Lienholder out of business
+- Cannot get lien release
+- Old lien still showing
+- Customer says vehicle was paid off years ago
+- Certified mail lien removal
+- 5-year lien rule
+- Lienholder protest
+- Judgment lien certificate replacement
+- Derelict motor vehicle lien removal
+
+============================================================
+OPERATIONAL RULES
+============================================================
+
+IF lien_on_record_period_years >= 5
+THEN 319_241_lien_removal_review_required = TRUE
+
+IF lien_on_record_period_years < 5
+THEN 319_241_lien_removal_not_ready_without_other_authority = TRUE
+
+IF owner_requests_lien_removal_under_319_241 = TRUE
+THEN written_application_required = TRUE
+
+IF owner_requests_lien_removal_under_319_241 = TRUE
+THEN certified_mail_notice_to_lienholder_required = TRUE
+
+IF certified_mail_notice_to_lienholder_required = TRUE
+THEN notice_must_be_sent_at_least_20_days_before_application = TRUE
+
+IF certified_mail_notice_missing = TRUE
+THEN lien_removal_application_not_ready = TRUE
+
+IF department_receives_lien_removal_application = TRUE
+THEN department_10_day_protest_waiting_period_applies = TRUE
+
+IF lienholder_protest_not_received_within_10_days = TRUE
+THEN department_may_remove_lien_review_required = TRUE
+
+IF lienholder_files_statement_lien_still_outstanding_within_10_days = TRUE
+THEN lien_must_not_be_removed_until_satisfaction_of_lien_presented = TRUE
+
+IF lienholder_files_statement_second_judgment_lien_certificate_exists = TRUE
+THEN second_judgment_lien_certificate_review_required = TRUE
+
+IF second_judgment_lien_certificate_exists = TRUE
+THEN remove_first_judgment_lien_notice_and_add_second_judgment_lien_notation = TRUE
+
+IF derelict_motor_vehicle_certificate_application_received = TRUE
+AND lienholder_notified = TRUE
+AND lienholder_no_protest_within_10_days = TRUE
+THEN lien_may_be_removed_from_derelict_motor_vehicle_record = TRUE
+
+============================================================
+CERTIFIED MAIL / 20-DAY / 10-DAY LOGIC
+============================================================
+
+IF lien_removal_requested = TRUE
+AND lien_age_over_5_years = TRUE
+THEN certified_mail_notice_required = TRUE
+
+IF certified_mail_notice_sent_less_than_20_days_before_application = TRUE
+THEN application_timing_defect = TRUE
+
+IF certified_mail_notice_sent_at_least_20_days_before_application = TRUE
+THEN certified_mail_timing_requirement_satisfied = TRUE
+
+IF department_10_day_waiting_period_not_completed = TRUE
+THEN lien_removal_not_final = TRUE
+
+IF lienholder_protests_within_10_days = TRUE
+THEN lien_removal_blocked_until_satisfaction_presented = TRUE
+
+============================================================
+COMMON DEALERSHIP ISSUES
+============================================================
+
+- Customer says old lien was paid but lien still shows
+- Lienholder no longer responds
+- Lienholder out of business
+- Customer has no lien release
+- Customer has no payoff records
+- Old paper lien still on record
+- Certified mail was not sent
+- Certified mail was sent too recently
+- Clerk forgets 20-day certified mail timing
+- Clerk forgets department 10-day protest period
+- Lienholder protests removal
+- Judgment lien certificate issue exists
+- Customer thinks 5-year age automatically removes lien
+
+============================================================
+REJECTION PREVENTION
+============================================================
+
+High rejection risk if:
+- lien has not been on record for 5 years
+- certified mail proof is missing
+- certified mail was not sent at least 20 days before application
+- department 10-day protest period is ignored
+- lienholder filed written protest
+- lienholder says lien is still outstanding
+- second judgment lien certificate issue is ignored
+- clerk treats 5-year rule as automatic lien release
+- active ELT lien limitation is ignored
+
+============================================================
+AI DECISION LOGIC
+============================================================
+
+IF user_question_mentions = "5 year lien"
+OR user_question_mentions = "5-year lien"
+OR user_question_mentions = "old lien"
+OR user_question_mentions = "certified mail"
+OR user_question_mentions = "lienholder unavailable"
+OR user_question_mentions = "lienholder unresponsive"
+OR user_question_mentions = "lienholder out of business"
+OR user_question_mentions = "cannot get lien release"
+THEN reference_319_241 = TRUE
+
+IF lien_age_over_5_years = TRUE
+THEN answer_should_review = "319.241 lien removal process"
+
+IF certified_mail_missing = TRUE
+THEN answer_should_warn = "Certified mail notice to lienholder is required."
+
+IF certified_mail_sent_less_than_20_days_before_application = TRUE
+THEN answer_should_warn = "20-day certified mail timing requirement is not satisfied."
+
+IF lienholder_protested_removal = TRUE
+THEN answer_should_warn = "Lien cannot be removed until satisfaction of lien is presented."
+
+IF active_ELT_lien_exists = TRUE
+THEN answer_should_cross_reference = "TL-33 active ELT limitations"
+
+============================================================
+DEALERSHIP WORKFLOW
+============================================================
+
+1. Confirm lien age.
+- Determine how long the lien has been filed or noted.
+- If under 5 years, do not treat 319.241 as available without other authority.
+
+2. Confirm lienholder status.
+- Available
+- Unavailable
+- Unresponsive
+- Out of business
+- Successor lienholder possible
+
+3. Confirm certified mail.
+- Certified mail notice must be sent to lienholder.
+- Notice must be mailed at least 20 days before application.
+
+4. Check protest period.
+- Department may remove lien after 10 days if no written protest is received.
+- If protest is received, lien removal is blocked until lienholder presents satisfaction.
+
+5. Cross-check ELT status.
+- If active ELT lien exists, review TL-33 ELT limitations before recommending alternate removal.
+
+6. Hold or escalate.
+- Escalate unclear lienholder, active ELT, protest, judgment lien, or missing proof issues.
+
+============================================================
+COMMON CLERK ANSWER STYLE
+============================================================
+
+When answering a 319.241 lien removal question, the AI should explain:
+
+1. Whether the lien has been recorded/noted for at least 5 years.
+2. Whether certified mail notice was sent.
+3. Whether the notice was sent at least 20 days before application.
+4. Whether the department 10-day protest period applies.
+5. Whether the lienholder protested.
+6. Whether active ELT limitations or TL-33 review applies.
+7. Whether the transaction can proceed, hold, or escalate.
+
+============================================================
+RELATED LOGIC MAPS
+============================================================
+
+- lien_logic_map.txt
+- rejection_prevention_logic_map.txt
+- validation_logic_map.txt
+- forms_required_logic_map.txt
+- escalation_red_flags_logic_map.txt
+
+============================================================
+RELATED PROCEDURE AREAS
+============================================================
+
+- TL-33 lien satisfactions and alternate methods
+- ELT lien release procedures
+- Judgment lien procedures
+- Derelict motor vehicle certificate procedures
+
+============================================================
+RELATED STATUTES
+============================================================
+
+- 319.001(11)
+- 319.24
+- 319.27
+- 319.235
+- 55.202
+
+============================================================
+END OF FILE
+============================================================

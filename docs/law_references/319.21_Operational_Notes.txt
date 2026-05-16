@@ -1,0 +1,233 @@
+STATUTE: 319.21
+TITLE: Necessity of Manufacturer’s Statement of Origin and Certificate of Title
+SOURCE: https://www.leg.state.fl.us/statutes/index.cfm?App_mode=Display_Statute&Search_String=&URL=0300-0399/0319/Sections/0319.21.html
+DOCUMENT_TYPE: Florida Law Reference / Operational Notes
+CATEGORY: TITLE LAW / MCO / MSO / CERTIFICATE OF ORIGIN / TITLE REQUIREMENTS / NEW VEHICLES / MOBILE HOMES
+
+============================================================
+PURPOSE
+============================================================
+
+This statute governs when a Manufacturer’s Statement of Origin / Manufacturer’s Certificate of Origin and certificate of title are required.
+
+It is a core legal reference for new vehicle titling, new mobile home titling, dealer title workflows, ownership evidence, and initial registration eligibility.
+
+============================================================
+PLAIN ENGLISH SUMMARY
+============================================================
+
+A new motor vehicle or new mobile home generally cannot be sold, disposed of, purchased, acquired, or brought into Florida for sale without a properly executed Manufacturer’s Statement of Origin.
+
+The MSO/MCO must show the assignments needed to establish title in the purchaser.
+
+The statement of origin must be in English and must identify/describe the vehicle or mobile home and show the name/address of the original purchaser from the manufacturer.
+
+If a vehicle is built in two or more stages, each manufacturer must provide a statement of origin for each stage.
+
+A person generally may not sell or dispose of a motor vehicle or mobile home without delivering a certificate of title properly assigned to show title in the purchaser, unless a statutory dealer/MSO exception applies.
+
+A licensed dealer may reassign an existing title instead of titling in the dealer’s name, except as otherwise limited by odometer/reassignment rules.
+
+A new motor vehicle or mobile home is not eligible for initial Florida registration unless this section has been complied with.
+
+============================================================
+TITLE CLERK IMPORTANCE
+============================================================
+
+319.21 is one of the most important title statutes for dealership processing.
+
+Use this statute when reviewing:
+- new vehicle MCO/MSO transactions
+- new mobile home MCO/MSO transactions
+- dealer acquisition and resale
+- missing certificate of origin problems
+- incomplete assignment chain problems
+- multi-stage vehicle documentation
+- initial registration eligibility
+- attempts to sell/transfer without title or MCO
+
+============================================================
+COMMON WORKFLOW CONNECTIONS
+============================================================
+
+- New vehicle title application
+- New mobile home title application
+- MCO/MSO processing
+- Dealer title workflow
+- Dealer reassignment review
+- Initial Florida title issuance
+- Initial Florida registration review
+- Multi-stage vehicle title processing
+- Ownership chain validation
+- Missing assignment review
+- Certificate of origin review
+- Out-of-state new vehicle purchase review
+
+============================================================
+OPERATIONAL RULES
+============================================================
+
+IF new_motor_vehicle = TRUE
+THEN MCO_or_MSO_review_required = TRUE
+
+IF new_mobile_home = TRUE
+THEN MCO_or_MSO_review_required = TRUE
+
+IF new_motor_vehicle = TRUE
+AND MCO_or_MSO_missing = TRUE
+THEN title_application_cannot_be_completed = TRUE
+
+IF new_mobile_home = TRUE
+AND MCO_or_MSO_missing = TRUE
+THEN title_application_cannot_be_completed = TRUE
+
+IF MCO_or_MSO_not_in_English = TRUE
+THEN manual_review_required = TRUE
+
+IF MCO_or_MSO_assignments_missing = TRUE
+THEN ownership_chain_incomplete = TRUE
+
+IF MCO_or_MSO_does_not_show_title_in_purchaser = TRUE
+THEN title_application_rejection_risk = TRUE
+
+IF vehicle_built_in_two_or_more_stages = TRUE
+THEN MSO_required_for_each_stage = TRUE
+
+IF certificate_of_title_missing = TRUE
+AND vehicle_is_not_new_MCO_transaction = TRUE
+THEN title_transfer_review_required = TRUE
+
+IF licensed_dealer_acquires_vehicle_for_resale = TRUE
+THEN dealer_reassignment_review_required = TRUE
+
+IF licensed_dealer_selling_new_vehicle_with_MCO = TRUE
+THEN dealer_must_attach_MCO_to_purchaser_title_application = TRUE
+
+IF MSO_reissued_to_update_model_year = TRUE
+THEN prohibited_update_review_required = TRUE
+
+IF initial_registration_requested = TRUE
+AND 319_21_not_satisfied = TRUE
+THEN initial_registration_not_allowed = TRUE
+
+============================================================
+DEALER / MCO RULES
+============================================================
+
+IF dealer_sells_new_motor_vehicle = TRUE
+THEN MCO_must_support_purchaser_title_application = TRUE
+
+IF dealer_sells_new_mobile_home = TRUE
+THEN MCO_must_support_purchaser_title_application = TRUE
+
+IF dealer_uses_MCO_for_new_vehicle = TRUE
+THEN dealer_should_certify_new_vehicle_status_on_title_application = TRUE
+
+IF dealer_uses_MCO_for_new_vehicle = TRUE
+THEN dealer_should_disclose_manufacturer_distributor_or_source = TRUE
+
+IF dealer_reassigns_existing_title = TRUE
+THEN odometer_and_reassignment_rules_must_be_reviewed = TRUE
+
+============================================================
+COMMON DEALERSHIP ISSUES
+============================================================
+
+- Missing MCO/MSO
+- MCO/MSO not properly assigned
+- MCO/MSO not in English
+- MCO/MSO does not support purchaser ownership
+- VIN mismatch between MCO and title application
+- Multi-stage vehicle missing one manufacturer statement
+- Dealer forgot to attach MCO to initial title application
+- Incorrect purchaser listed on MCO assignment
+- New mobile home paperwork missing certificate of origin
+- Attempt to initially register without satisfying title/MCO requirements
+- Attempt to update model year using reissued MSO/MCO
+
+============================================================
+REJECTION PREVENTION
+============================================================
+
+High rejection risk if:
+- MCO/MSO is missing
+- MCO/MSO assignments are incomplete
+- VIN/description does not match title application
+- purchaser is not supported by assignment chain
+- multi-stage vehicle lacks all required manufacturer statements
+- dealer fails to attach MCO/MSO to purchaser title application
+- initial registration is attempted before title evidence requirements are satisfied
+- MCO/MSO appears altered or used to misrepresent model year
+
+============================================================
+AI DECISION LOGIC
+============================================================
+
+IF user_question_mentions = "MCO"
+OR user_question_mentions = "MSO"
+OR user_question_mentions = "manufacturer statement of origin"
+OR user_question_mentions = "certificate of origin"
+THEN reference_319_21 = TRUE
+
+IF user_question_mentions = "new vehicle title"
+OR user_question_mentions = "new mobile home title"
+THEN reference_319_21 = TRUE
+
+IF MCO_or_MSO_missing = TRUE
+THEN answer_should_warn = "New vehicle/mobile home title issuance normally requires proper MCO/MSO ownership evidence."
+
+IF MCO_or_MSO_assignment_incomplete = TRUE
+THEN answer_should_warn = "Ownership chain is incomplete."
+
+IF initial_registration_requested = TRUE
+AND MCO_or_title_requirements_not_satisfied = TRUE
+THEN answer_should_warn = "Initial registration may not be allowed until 319.21 requirements are satisfied."
+
+============================================================
+COMMON CLERK ANSWER STYLE
+============================================================
+
+When answering a MCO/MSO question, the AI should explain:
+
+1. Whether this is a new vehicle/mobile home MCO transaction.
+2. Whether MCO/MSO is required.
+3. Whether assignments show title in the purchaser.
+4. Whether VIN/description matches the application.
+5. Whether dealer certification/attachment is needed.
+6. Whether initial registration is blocked until proper documentation is provided.
+
+============================================================
+RELATED LOGIC MAPS
+============================================================
+
+- transaction_type_logic_map.txt
+- validation_logic_map.txt
+- rejection_prevention_logic_map.txt
+- forms_required_logic_map.txt
+- dealer_reassignment_and_trade_logic_map.txt
+
+============================================================
+RELATED PROCEDURE AREAS
+============================================================
+
+- Title application procedures
+- New vehicle title procedures
+- Dealer reassignment procedures
+- Odometer disclosure procedures
+- Initial registration procedures
+- Multi-stage vehicle procedures
+
+============================================================
+RELATED STATUTES
+============================================================
+
+- 319.20
+- 319.22
+- 319.23
+- 319.225
+- 319.28
+- 320.27
+
+============================================================
+END OF FILE
+============================================================

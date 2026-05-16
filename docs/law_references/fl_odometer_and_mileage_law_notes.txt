@@ -1,0 +1,486 @@
+DOCUMENT: FL_ODOMETER_AND_MILEAGE_LAW_NOTES
+TITLE: Florida Core Odometer and Mileage Law Reference
+DOCUMENT_TYPE: Consolidated Florida Law Reference / AI Routing Notes
+CATEGORY: ODOMETER LAW / MILEAGE DISCLOSURE / MILEAGE CORRECTION / ODOMETER FRAUD / USED CAR ORIGINAL / DUPLICATE TITLE
+
+============================================================
+PURPOSE
+============================================================
+
+This file is a consolidated legal-reference layer for Florida odometer and mileage issues.
+
+It groups the most important Florida law references related to:
+- odometer disclosure
+- mileage disclosure on title transfer
+- dealer reassignment odometer disclosure
+- secure odometer power of attorney
+- lienholder-held titles
+- lost/unavailable titles
+- electronic title reassignment
+- used car original odometer affidavit
+- duplicate title odometer reading
+- odometer fraud prevention
+- mileage discrepancy investigation
+- odometer tampering
+- false mileage statements
+- odometer replacement notice requirements
+- inaccurate mileage title/registration stamping
+
+This file is designed for AI retrieval and workflow routing.
+
+It does NOT replace individual detailed statute files.
+
+Use this file to help the AI determine which specific odometer statute, procedure note, logic map, or dealership workflow should be retrieved next.
+
+============================================================
+IMPORTANT AI USE RULE
+============================================================
+
+This file should be treated as a MASTER ODOMETER AND MILEAGE LAW ROUTING FILE.
+
+When a user asks a broad mileage, odometer, incorrect miles, odometer brand, rollback, duplicate title mileage, or odometer disclosure question, this file helps classify the issue and route to the correct detailed file.
+
+The AI should use this file to determine:
+1. Whether the issue is odometer disclosure, odometer affidavit, duplicate title mileage, fraud, tampering, mileage correction, or title brand related.
+2. Which individual statute file should be referenced.
+3. Which logic maps should be reviewed.
+4. Whether title correction or fraud escalation workflow applies.
+5. Whether the transaction can proceed, should hold, or requires escalation.
+
+============================================================
+CORE STATUTES INCLUDED
+============================================================
+
+319.225 — Transfer and Reassignment Forms; Odometer Disclosure Statements
+319.23(3)(b) — Odometer Reading Verification for Used Car Original Title Applications
+319.24(1) / 319.24(2) — Odometer Reading in Title Activity and Duplicate Title Applications
+319.324 — Odometer Fraud Prevention and Detection; Funding
+319.35 — Unlawful Acts in Connection with Motor Vehicle Odometer Readings; Penalties
+
+============================================================
+STATUTE ROUTING INDEX
+============================================================
+
+IF user_question_mentions = "odometer disclosure"
+OR user_question_mentions = "mileage disclosure"
+OR user_question_mentions = "dealer reassignment"
+OR user_question_mentions = "secure POA"
+OR user_question_mentions = "title held by lienholder"
+OR user_question_mentions = "auction mileage"
+THEN reference_statute = "319.225"
+AND detailed_file = "319.225_Operational_Notes.txt"
+
+IF user_question_mentions = "used car original"
+OR user_question_mentions = "out of state mileage"
+OR user_question_mentions = "odometer affidavit"
+OR user_question_mentions = "kilometers"
+OR user_question_mentions = "first Florida title"
+THEN reference_statute = "319.23(3)(b)"
+AND detailed_file = "319.23_Odometer_Operational_Notes.txt"
+
+IF user_question_mentions = "duplicate title mileage"
+OR user_question_mentions = "duplicate title odometer"
+OR user_question_mentions = "dealer duplicate title"
+OR user_question_mentions = "current odometer reading"
+THEN reference_statute = "319.24"
+AND detailed_file = "319.24_Odometer_Operational_Notes.txt"
+
+IF user_question_mentions = "mileage discrepancy"
+OR user_question_mentions = "odometer fraud prevention"
+OR user_question_mentions = "auction discrepancy"
+OR user_question_mentions = "dealer reported mileage issue"
+THEN reference_statute = "319.324"
+AND detailed_file = "319.324_Operational_Notes.txt"
+
+IF user_question_mentions = "odometer rollback"
+OR user_question_mentions = "tampered odometer"
+OR user_question_mentions = "false mileage"
+OR user_question_mentions = "not actual mileage"
+OR user_question_mentions = "incorrect miles brand"
+OR user_question_mentions = "odometer replaced"
+THEN reference_statute = "319.35"
+AND detailed_file = "319.35_Operational_Notes.txt"
+
+============================================================
+ODOMETER DISCLOSURE / TRANSFER LAW
+============================================================
+
+STATUTE:
+319.225
+
+CONTROLS:
+- Odometer disclosure during transfer or reassignment
+- Transferor disclosure
+- Transferee acknowledgment
+- Dealer reassignment forms
+- Secure power of attorney
+- Lienholder-held title
+- Lost/unavailable title
+- Electronic title reassignment
+- Auction notation
+- Odometer disclosure exemptions
+
+AI ROUTING:
+IF the issue involves transfer/reassignment mileage disclosure, secure POA, dealer reassignment, or auction odometer handling, check 319.225.
+
+OPERATIONAL RULES:
+
+IF used_motor_vehicle_transfer_or_reassignment = TRUE
+THEN odometer_disclosure_required = TRUE
+
+IF odometer_disclosure_required = TRUE
+THEN transferor_must_complete_odometer_statement = TRUE
+
+IF odometer_disclosure_required = TRUE
+THEN transferee_must_acknowledge_by_signing_and_printing_name = TRUE
+
+IF odometer_disclosure_not_completed = TRUE
+THEN department_may_not_issue_title = TRUE
+
+IF dealer_reassignment_forms_on_title_filled = TRUE
+THEN separate_department_dealer_reassignment_form_required = TRUE
+
+IF title_physically_held_by_lienholder = TRUE
+THEN secure_power_of_attorney_for_odometer_disclosure_may_apply = TRUE
+
+IF title_lost_or_unavailable = TRUE
+THEN secure_power_of_attorney_for_odometer_disclosure_may_apply = TRUE
+
+IF secure_power_of_attorney_used = TRUE
+THEN mileage_on_title_must_match_POA_mileage_exactly = TRUE
+
+IF vehicle_title_held_electronically = TRUE
+AND transferee_agrees_to_maintain_electronic_title = TRUE
+THEN secure_reassignment_document_required_at_tax_collector_or_license_plate_agency = TRUE
+
+============================================================
+USED CAR ORIGINAL ODOMETER AFFIDAVIT LAW
+============================================================
+
+STATUTE:
+319.23(3)(b)
+
+CONTROLS:
+- Used car original
+- First Florida title for used vehicle
+- Owner sworn odometer affidavit
+- Out-of-state vehicle mileage review
+
+AI ROUTING:
+IF the issue involves a used vehicle coming into Florida for the first time, out-of-state mileage, odometer affidavit, or kilometers, check 319.23(3)(b).
+
+OPERATIONAL RULES:
+
+IF used_vehicle_coming_into_Florida_for_first_title = TRUE
+THEN transaction_type = "used_car_original"
+
+IF transaction_type = "used_car_original"
+THEN odometer_affidavit_required = TRUE
+
+IF used_car_original = TRUE
+THEN owner_sworn_affidavit_verifying_odometer_required = TRUE
+
+IF odometer_reading_on_affidavit_does_not_match_vehicle = TRUE
+THEN title_application_hold_required = TRUE
+
+IF odometer_affidavit_missing = TRUE
+AND used_car_original = TRUE
+THEN reject_before_submission = TRUE
+
+IF odometer_unit = "kilometers"
+THEN odometer_unit_conversion_review_required = TRUE
+
+============================================================
+DUPLICATE TITLE ODOMETER LAW
+============================================================
+
+STATUTE:
+319.24(1) / 319.24(2)
+
+CONTROLS:
+- Odometer reading during title activity
+- Duplicate title current odometer reading
+- Dealer duplicate title license number
+
+AI ROUTING:
+IF the issue involves duplicate title mileage, dealer duplicate title, or current odometer reading on duplicate title application, check 319.24 odometer notes.
+
+OPERATIONAL RULES:
+
+IF title_activity_occurs = TRUE
+AND vehicle_covered_by_319_225_4 = TRUE
+THEN department_current_odometer_record_required = TRUE
+
+IF duplicate_title_application = TRUE
+THEN current_odometer_reading_required = TRUE
+
+IF duplicate_title_application = TRUE
+AND current_odometer_reading_missing = TRUE
+THEN duplicate_title_application_not_ready = TRUE
+
+IF dealer_applies_for_duplicate_title = TRUE
+THEN dealer_license_number_required = TRUE
+
+IF duplicate_with_transfer_requested = TRUE
+THEN odometer_disclosure_and_duplicate_title_requirements_both_apply = TRUE
+
+============================================================
+ODOMETER FRAUD PREVENTION LAW
+============================================================
+
+STATUTE:
+319.324
+
+CONTROLS:
+- Odometer fraud prevention
+- Odometer discrepancy investigation
+- Dealer/auction/purchaser-reported mileage discrepancy
+
+AI ROUTING:
+IF the issue involves reported mileage discrepancy, odometer fraud prevention, auction discrepancy, or dealer/purchaser mileage complaint, check 319.324.
+
+OPERATIONAL RULES:
+
+IF odometer_mileage_discrepancy_reported = TRUE
+THEN odometer_fraud_prevention_review_required = TRUE
+
+IF licensed_dealer_reports_mileage_discrepancy = TRUE
+THEN odometer_discrepancy_investigation_context_applies = TRUE
+
+IF auction_reports_mileage_discrepancy = TRUE
+THEN odometer_discrepancy_investigation_context_applies = TRUE
+
+IF purchaser_reports_mileage_discrepancy = TRUE
+THEN odometer_discrepancy_investigation_context_applies = TRUE
+
+IF odometer_fraud_suspected = TRUE
+THEN escalation_required = TRUE
+
+IF mileage_discrepancy_unresolved = TRUE
+THEN title_submission_hold_required = TRUE
+
+============================================================
+ODOMETER TAMPERING / FALSE MILEAGE LAW
+============================================================
+
+STATUTE:
+319.35
+
+CONTROLS:
+- Odometer tampering
+- Odometer rollback
+- False odometer statements
+- Odometer replacement
+- Door frame notice
+- Inaccurate mileage stamping
+- Contraband / forfeiture risk
+- Felony penalty risk
+
+AI ROUTING:
+IF the issue involves rollback, tampering, false mileage, not actual mileage, incorrect miles brand, odometer replacement, or odometer fraud, check 319.35.
+
+OPERATIONAL RULES:
+
+IF odometer_tampered_to_show_lower_mileage = TRUE
+THEN odometer_fraud_escalation_required = TRUE
+
+IF false_written_odometer_statement_provided = TRUE
+THEN fraud_review_required = TRUE
+
+IF vehicle_brought_into_Florida_with_illegally_altered_odometer = TRUE
+THEN fraud_escalation_required = TRUE
+
+IF odometer_service_repair_or_replacement_completed = TRUE
+AND odometer_can_register_same_mileage_as_before = TRUE
+THEN odometer_must_remain_same_mileage = TRUE
+
+IF odometer_service_repair_or_replacement_completed = TRUE
+AND odometer_cannot_register_same_mileage_as_before = TRUE
+THEN odometer_must_be_adjusted_to_zero = TRUE
+
+IF odometer_adjusted_to_zero_after_repair_or_replacement = TRUE
+THEN written_notice_on_door_frame_required = TRUE
+
+IF written_notice_on_door_frame_required = TRUE
+THEN notice_must_show_prior_mileage_and_repair_or_replacement_date = TRUE
+
+IF mileage_correction_requested = TRUE
+AND odometer_tampering_suspected = TRUE
+THEN do_not_process_as_simple_correction = TRUE
+
+IF title_branded_incorrect_mileage = TRUE
+THEN odometer_brand_review_required = TRUE
+
+IF not_actual_mileage_brand_exists = TRUE
+THEN title_lead_or_FLHSMV_review_required = TRUE
+
+============================================================
+CROSS-FILE AI DECISION LOGIC
+============================================================
+
+IF user_question_mentions = "odometer disclosure"
+OR user_question_mentions = "mileage disclosure"
+THEN check_files = "319.225_Operational_Notes.txt, validation_logic_map.txt, rejection_prevention_logic_map.txt"
+
+IF user_question_mentions = "used car original"
+OR user_question_mentions = "out-of-state mileage"
+OR user_question_mentions = "kilometers"
+THEN check_files = "319.23_Odometer_Operational_Notes.txt, validation_logic_map.txt, escalation_red_flags_logic_map.txt"
+
+IF user_question_mentions = "duplicate title mileage"
+OR user_question_mentions = "dealer duplicate title"
+THEN check_files = "319.24_Odometer_Operational_Notes.txt, forms_required_logic_map.txt, rejection_prevention_logic_map.txt"
+
+IF user_question_mentions = "mileage discrepancy"
+OR user_question_mentions = "auction mileage"
+THEN check_files = "319.324_Operational_Notes.txt, 319.35_Operational_Notes.txt, escalation_red_flags_logic_map.txt"
+
+IF user_question_mentions = "rollback"
+OR user_question_mentions = "tampered odometer"
+OR user_question_mentions = "not actual mileage"
+OR user_question_mentions = "incorrect miles brand"
+THEN check_files = "319.35_Operational_Notes.txt, validation_logic_map.txt, rejection_prevention_logic_map.txt, escalation_red_flags_logic_map.txt"
+
+============================================================
+COMMON DEALERSHIP QUESTION ROUTING
+============================================================
+
+QUESTION:
+"Vehicle titled in kilometers instead of miles."
+
+ROUTE TO:
+- 319.23_Odometer_Operational_Notes.txt
+- 319.225_Operational_Notes.txt
+- validation_logic_map.txt
+- escalation_red_flags_logic_map.txt
+
+EXPECTED ANSWER:
+Review odometer unit issue before submission. Compare title, application, odometer affidavit, vehicle odometer, and supporting documents. Hold/escalate if mileage unit conversion or disclosure is unclear.
+
+------------------------------------------------------------
+
+QUESTION:
+"Title branded with incorrect miles."
+
+ROUTE TO:
+- 319.35_Operational_Notes.txt
+- 319.324_Operational_Notes.txt
+- validation_logic_map.txt
+- escalation_red_flags_logic_map.txt
+
+EXPECTED ANSWER:
+Do not promise brand removal. Determine whether this is clerical error, not actual mileage, odometer discrepancy, or fraud/tampering concern. Escalate title brand changes.
+
+------------------------------------------------------------
+
+QUESTION:
+"Dealer reassignment spaces are full."
+
+ROUTE TO:
+- 319.225_Operational_Notes.txt
+- dealer_reassignment_and_trade_logic_map.txt
+- forms_required_logic_map.txt
+
+EXPECTED ANSWER:
+Use department dealer reassignment form if applicable and ensure odometer disclosure is completed. Dealer copy retention may apply.
+
+------------------------------------------------------------
+
+QUESTION:
+"Duplicate title needs mileage."
+
+ROUTE TO:
+- 319.24_Odometer_Operational_Notes.txt
+- 319.29_Operational_Notes.txt
+- forms_required_logic_map.txt
+
+EXPECTED ANSWER:
+Current odometer reading is required on duplicate title application. Dealer duplicate also requires dealer license number.
+
+------------------------------------------------------------
+
+QUESTION:
+"Customer says odometer was replaced."
+
+ROUTE TO:
+- 319.35_Operational_Notes.txt
+- validation_logic_map.txt
+- rejection_prevention_logic_map.txt
+
+EXPECTED ANSWER:
+If odometer cannot show same mileage after repair/replacement, it must be set to zero and written notice must be attached showing prior mileage and repair/replacement date. Review for fraud/tampering risk.
+
+============================================================
+REJECTION PREVENTION SUMMARY
+============================================================
+
+High rejection risk exists when:
+- odometer disclosure is missing
+- transferor did not complete mileage statement
+- transferee did not acknowledge disclosure
+- secure POA is missing or misused
+- mileage from POA does not match title exactly
+- used car original lacks odometer affidavit
+- duplicate title application lacks current odometer reading
+- dealer duplicate title lacks dealer license number
+- mileage discrepancy is ignored
+- kilometers/miles issue is not reviewed
+- not actual mileage brand is treated as simple correction
+- odometer tampering is suspected
+- false odometer statement is submitted
+- odometer replacement notice is missing
+- customer requests mileage brand removal without authority/proof
+- auction/dealer/purchaser mileage discrepancy is unresolved
+
+============================================================
+RELATED DETAILED LAW REFERENCE FILES
+============================================================
+
+- 319.225_Operational_Notes.txt
+- 319.23_Odometer_Operational_Notes.txt
+- 319.24_Odometer_Operational_Notes.txt
+- 319.324_Operational_Notes.txt
+- 319.35_Operational_Notes.txt
+
+============================================================
+RELATED LOGIC MAPS
+============================================================
+
+- validation_logic_map.txt
+- rejection_prevention_logic_map.txt
+- escalation_red_flags_logic_map.txt
+- forms_required_logic_map.txt
+- transaction_type_logic_map.txt
+- dealer_reassignment_and_trade_logic_map.txt
+
+============================================================
+RELATED DEALERSHIP WORKFLOW AREAS
+============================================================
+
+- Mileage correction workflow
+- Incorrect miles brand workflow
+- Odometer disclosure workflow
+- Secure POA workflow
+- Dealer reassignment workflow
+- Duplicate title workflow
+- Out-of-state title workflow
+- Imported vehicle workflow
+- Fraud escalation workflow
+
+============================================================
+IMPORTANT IMPLEMENTATION NOTE
+============================================================
+
+This file is a routing and consolidation file.
+
+When answering a specific odometer/mileage question, the AI should:
+1. Use this file to classify the odometer category.
+2. Retrieve the specific individual statute note.
+3. Retrieve the matching procedure file.
+4. Retrieve validation/rejection/escalation logic.
+5. Retrieve dealership workflow notes if available.
+6. Give a practical title-clerk answer with proceed / hold / escalate guidance.
+
+============================================================
+END OF FILE
+============================================================

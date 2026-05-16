@@ -1,0 +1,463 @@
+STATUTE: 319.23
+TITLE: Application for, and Issuance of, Certificate of Title
+SOURCE: https://www.leg.state.fl.us/statutes/index.cfm?App_mode=Display_Statute&Search_String=&URL=0300-0399/0319/Sections/0319.23.html
+DOCUMENT_TYPE: Florida Law Reference / Operational Notes
+CATEGORY: TITLE APPLICATION / TITLE ISSUANCE / OUT-OF-STATE TITLE / VIN VERIFICATION / DEALER RESPONSIBILITY / BONDED TITLE / ID REQUIREMENTS
+
+============================================================
+PURPOSE
+============================================================
+
+This statute governs applications for Florida certificates of title and the conditions required before the department may issue title.
+
+It is one of the most important legal anchors for:
+- title applications
+- title issuance
+- out-of-state title conversions
+- used vehicle originals
+- VIN verification
+- odometer verification
+- dealer responsibility to obtain title
+- trade-in notice of sale
+- bonded title review
+- applicant ID/business verification
+- taxes and registration requirements before title issuance
+
+============================================================
+PLAIN ENGLISH SUMMARY
+============================================================
+
+A Florida title application must be filed on the department’s required form and accompanied by required fees.
+
+If a Florida title was previously issued, the application generally must include the assigned/reassigned title unless another Chapter 319 rule provides otherwise.
+
+If the vehicle or mobile home is new and requires Manufacturer’s Statements of Origin under 319.21, all required MSO/MCO documents must be included.
+
+Applicants must disclose certain vehicle uses/brands, including taxicab, police vehicle, lease vehicle, rebuilt vehicle, and rebuilt mobile home/RV-type units when applicable.
+
+If the vehicle/mobile home was not previously titled in Florida, the application generally requires evidence of ownership from the prior jurisdiction and may require VIN verification and odometer verification.
+
+Out-of-state title applications must show previous registration/title information and surrender foreign/out-of-state evidence in the applicant’s possession or control.
+
+Licensed dealers selling to Florida purchasers must obtain title in the purchaser’s name.
+
+Title/corrected title/assignment/reassignment applications must be filed within 30 days after delivery or mobile home sale completion, or a $20 fee applies in addition to other fees/penalties.
+
+If a licensed dealer acquires a vehicle/mobile home as a trade-in, the dealer must file a notice of sale within 30 days.
+
+If an applicant cannot provide prior title assigning ownership, bonded title review may apply if statutory bond and affidavit requirements are satisfied.
+
+The department will not issue title until required taxes, registration, RP/mobile home notification, and odometer/title disclosure rules are satisfied.
+
+The application/title must contain applicant identity information, and individuals must provide valid ID/passport. Business applicants must provide FEIN or business authorization/license information.
+
+============================================================
+TITLE CLERK IMPORTANCE
+============================================================
+
+319.23 is a core title-application statute.
+
+Use this statute whenever the issue involves:
+- whether a title application is complete
+- what documents must accompany a title application
+- out-of-state title conversion
+- used vehicle original
+- VIN verification
+- odometer verification
+- dealer failure to obtain title
+- late title filing
+- trade-in notice of sale
+- bonded title possibility
+- applicant ID or business verification
+- title issuance blocked by missing taxes/registration/compliance
+
+============================================================
+COMMON WORKFLOW CONNECTIONS
+============================================================
+
+- Florida title application
+- Out-of-state title transfer
+- Used vehicle original title
+- New vehicle MCO/MSO title
+- VIN verification
+- Odometer disclosure
+- Dealer sale to general purchaser
+- Dealer out-of-state purchaser sale
+- Trade-in notice of sale
+- Late title application penalty
+- Bonded title review
+- Applicant ID validation
+- Business applicant validation
+- Mobile home identification number assignment
+- Title record support document retention
+- RP mobile home/recreational vehicle-type unit review
+
+============================================================
+OPERATIONAL RULES
+============================================================
+
+IF title_application_submitted = TRUE
+THEN department_form_required = TRUE
+
+IF title_application_submitted = TRUE
+THEN title_fee_required = TRUE
+
+IF Florida_title_previously_issued = TRUE
+THEN assigned_or_reassigned_title_required = TRUE
+
+IF new_motor_vehicle = TRUE
+AND MCO_or_MSO_required_under_319_21 = TRUE
+THEN all_required_MCO_or_MSO_documents_required = TRUE
+
+IF new_mobile_home = TRUE
+AND MCO_or_MSO_required_under_319_21 = TRUE
+THEN all_required_MCO_or_MSO_documents_required = TRUE
+
+IF vehicle_use = "taxicab"
+OR vehicle_use = "police_vehicle"
+OR vehicle_use = "lease_vehicle"
+OR vehicle_brand_status = "rebuilt"
+THEN title_application_brand_or_use_disclosure_required = TRUE
+
+IF vehicle_not_previously_titled_in_Florida = TRUE
+THEN prior_jurisdiction_ownership_evidence_required = TRUE
+
+IF vehicle_not_previously_titled_in_Florida = TRUE
+AND motor_vehicle = TRUE
+THEN VIN_verification_review_required = TRUE
+
+IF used_car_original = TRUE
+THEN odometer_affidavit_required = TRUE
+
+IF ancient_or_antique_vehicle_title_application = TRUE
+THEN antique_ownership_document_review_required = TRUE
+
+IF new_motor_vehicle = TRUE
+THEN VIN_verification_not_required_under_319_23 = TRUE
+
+IF mobile_home = TRUE
+THEN VIN_verification_not_required_under_319_23 = TRUE
+
+IF trailer_or_semitrailer_net_weight < 2000
+THEN VIN_verification_not_required_under_319_23 = TRUE
+
+IF travel_trailer_or_camping_trailer_or_truck_camper_or_fifth_wheel = TRUE
+THEN VIN_verification_not_required_under_319_23 = TRUE
+
+IF vehicle_previously_titled_or_registered_outside_Florida = TRUE
+THEN out_of_state_title_information_required_on_application = TRUE
+
+IF vehicle_previously_titled_or_registered_outside_Florida = TRUE
+THEN surrender_out_of_state_title_registration_or_foreign_evidence_if_in_possession_required = TRUE
+
+IF Florida_dealer_sells_to_Florida_general_purchaser = TRUE
+THEN dealer_must_obtain_title_in_purchaser_name = TRUE
+
+IF title_or_corrected_title_or_assignment_or_reassignment_application_late_over_30_days = TRUE
+THEN twenty_dollar_late_title_fee_required = TRUE
+
+IF licensed_dealer_sells_to_out_of_state_or_out_of_country_purchaser = TRUE
+THEN Florida_title_application_not_required_by_dealer = TRUE
+
+IF licensed_dealer_sells_to_out_of_state_or_out_of_country_purchaser = TRUE
+THEN dealer_must_transfer_ownership_and_reassign_title_or_MCO_to_purchaser = TRUE
+
+IF out_of_state_or_out_of_country_purchaser = TRUE
+THEN purchaser_affidavit_to_title_and_register_elsewhere_required = TRUE
+
+IF licensed_dealer_acquires_trade_in = TRUE
+THEN dealer_notice_of_sale_due_within_30_days = TRUE
+
+IF applicant_cannot_provide_prior_title_assigning_prior_owner_interest = TRUE
+THEN bonded_title_review_required = TRUE
+
+IF bonded_title_review_required = TRUE
+THEN bond_amount_must_equal_two_times_vehicle_value = TRUE
+
+IF bonded_title_review_required = TRUE
+THEN prescribed_affidavit_required = TRUE
+
+IF bonded_title_review_required = TRUE
+THEN affidavit_must_explain_acquisition_ownership_possession_and_no_known_liens = TRUE
+
+IF title_issuance_requested = TRUE
+AND sales_or_use_tax_due_not_paid = TRUE
+THEN title_cannot_issue = TRUE
+
+IF title_issuance_requested = TRUE
+AND required_registration_not_obtained = TRUE
+AND vehicle_required_to_be_registered = TRUE
+THEN title_cannot_issue = TRUE
+
+IF mobile_home_or_RV_type_unit_classified_as_real_property = TRUE
+AND RP_series_sticker_issued = TRUE
+THEN property_appraiser_site_notification_required = TRUE
+
+IF individual_title_applicant = TRUE
+THEN valid_driver_license_identification_card_or_passport_required = TRUE
+
+IF business_title_applicant = TRUE
+THEN FEIN_or_business_authorization_or_business_license_required = TRUE
+
+IF license_plate_number_unavailable_or_vehicle_not_to_be_operated_on_public_highways = TRUE
+THEN non_operation_affidavit_review_required = TRUE
+
+IF mobile_home_has_no_identification_or_serial_number = TRUE
+THEN department_assigned_identification_number_review_required = TRUE
+
+============================================================
+OUT-OF-STATE TITLE / USED VEHICLE ORIGINAL LOGIC
+============================================================
+
+IF vehicle_previously_titled_or_registered_outside_Florida = TRUE
+THEN transaction_type = "out_of_state_title_application"
+
+IF used_vehicle_entering_Florida_for_first_title = TRUE
+THEN transaction_type = "used_car_original"
+
+IF out_of_state_title_application = TRUE
+THEN prior_state_or_country_information_required = TRUE
+
+IF out_of_state_title_application = TRUE
+THEN surrender_foreign_or_out_of_state_evidence_required_if_available = TRUE
+
+IF used_car_original = TRUE
+THEN odometer_affidavit_required = TRUE
+
+IF out_of_state_motor_vehicle = TRUE
+THEN VIN_verification_review_required = TRUE
+
+IF out_of_state_title_brand_exists = TRUE
+THEN title_brand_review_required = TRUE
+
+============================================================
+DEALER RESPONSIBILITY LOGIC
+============================================================
+
+IF licensed_dealer_sells_to_general_Florida_purchaser = TRUE
+THEN dealer_responsible_to_obtain_title_in_purchaser_name = TRUE
+
+IF dealer_title_application_filed_late_after_30_days = TRUE
+THEN late_title_fee_required = TRUE
+
+IF dealer_acquires_trade_in = TRUE
+THEN notice_of_sale_required_within_30_days = TRUE
+
+IF dealer_sells_to_out_of_state_or_out_of_country_purchaser = TRUE
+THEN dealer_must_reassign_title_or_MCO_to_purchaser = TRUE
+
+IF dealer_sells_to_out_of_state_or_out_of_country_purchaser = TRUE
+THEN purchaser_must_sign_out_of_state_title_registration_affidavit = TRUE
+
+============================================================
+BONDED TITLE LOGIC
+============================================================
+
+IF applicant_cannot_provide_prior_title_assigning_ownership = TRUE
+THEN bonded_title_may_be_reviewed = TRUE
+
+IF bonded_title_may_be_reviewed = TRUE
+THEN prior_owner_interest_document_gap_exists = TRUE
+
+IF bonded_title_may_be_reviewed = TRUE
+THEN bond_and_affidavit_required = TRUE
+
+IF bond_required = TRUE
+THEN bond_amount_equals_two_times_vehicle_value = TRUE
+
+IF bonded_title_affidavit_required = TRUE
+THEN affidavit_must_state_acquisition_facts_and_right_to_title = TRUE
+
+IF bonded_title_affidavit_required = TRUE
+THEN affidavit_must_disclose_no_known_liens_security_interests_or_encumbrances = TRUE
+
+IF active_lien_known_or_recorded = TRUE
+THEN bonded_title_should_not_be_used_to_bypass_lien_resolution = TRUE
+
+============================================================
+APPLICANT IDENTIFICATION / BUSINESS VALIDATION LOGIC
+============================================================
+
+IF individual_applicant = TRUE
+THEN full_name_date_of_birth_sex_and_plate_number_required = TRUE
+
+IF individual_applicant = TRUE
+THEN valid_ID_driver_license_or_passport_required = TRUE
+
+IF business_applicant = TRUE
+THEN FEIN_or_business_authorization_or_city_county_business_license_required = TRUE
+
+IF applicant_valid_ID_missing = TRUE
+THEN title_application_cannot_be_completed = TRUE
+
+IF business_authority_missing = TRUE
+THEN title_application_hold_required = TRUE
+
+============================================================
+COMMON DEALERSHIP ISSUES
+============================================================
+
+- Missing title application form
+- Missing assigned/reassigned prior title
+- Missing MCO/MSO for new vehicle or mobile home
+- Out-of-state title not surrendered when available
+- VIN verification missing on out-of-state motor vehicle
+- Used car original missing odometer affidavit
+- Brand/use not disclosed correctly
+- Dealer late title application over 30 days
+- Dealer did not obtain title in purchaser’s name
+- Dealer acquired trade but did not file notice of sale
+- Out-of-state purchaser affidavit missing
+- Bonded title incorrectly suggested when active lien exists
+- Missing valid ID for individual applicant
+- Missing FEIN or business authority for business applicant
+- Taxes or required registration not satisfied before title issuance
+- RP mobile home/property appraiser notification issue
+- Mobile home missing serial/identification number
+
+============================================================
+REJECTION PREVENTION
+============================================================
+
+High rejection risk if:
+- required ownership evidence is missing
+- assigned/reassigned title is missing
+- MCO/MSO is missing for new vehicle/mobile home
+- VIN verification is missing when required
+- odometer affidavit is missing for used car original
+- dealer misses 30-day filing requirement
+- out-of-state documentation is incomplete
+- applicant identification is missing or invalid
+- business applicant authority is missing
+- sales/use taxes are not paid
+- registration requirement is not satisfied
+- title brand/use information is missing or wrong
+- bonded title is attempted despite known active lien
+- applicant cannot explain ownership/possession path
+
+============================================================
+AI DECISION LOGIC
+============================================================
+
+IF user_question_mentions = "title application"
+OR user_question_mentions = "out of state title"
+OR user_question_mentions = "VIN verification"
+OR user_question_mentions = "used car original"
+OR user_question_mentions = "dealer title responsibility"
+OR user_question_mentions = "bonded title"
+OR user_question_mentions = "valid ID"
+THEN reference_319_23 = TRUE
+
+IF out_of_state_title_application = TRUE
+THEN answer_should_check = "prior state/country title or registration evidence, VIN verification, odometer affidavit if used car original, brand history, required surrender documents"
+
+IF dealer_sale_to_Florida_purchaser = TRUE
+THEN answer_should_warn = "Dealer must obtain title in purchaser’s name."
+
+IF title_application_late_over_30_days = TRUE
+THEN answer_should_warn = "$20 late title fee may apply."
+
+IF applicant_valid_ID_missing = TRUE
+THEN answer_should_warn = "Valid ID/passport or business authority is required before title can be issued."
+
+IF bonded_title_requested = TRUE
+AND active_lien_exists = TRUE
+THEN answer_should_warn = "Bonded title should not be used to bypass active lien resolution."
+
+============================================================
+DEALERSHIP WORKFLOW
+============================================================
+
+1. Identify title application type.
+- New MCO/MSO
+- Florida title transfer
+- Out-of-state title
+- Used car original
+- Dealer sale
+- Trade-in
+- Bonded title review
+
+2. Verify ownership evidence.
+- Prior Florida title assigned/reassigned
+- MCO/MSO
+- Out-of-state title/registration evidence
+- Bill of sale/sworn ownership statement where applicable
+
+3. Verify required supporting documentation.
+- VIN verification if required
+- Odometer affidavit if used car original
+- Brand/use disclosure
+- Valid ID/business authority
+- Taxes and registration requirements
+
+4. Review dealer obligations.
+- Dealer title application within required timing
+- Trade-in notice of sale
+- Out-of-state purchaser affidavit if applicable
+
+5. Review bonded title only when appropriate.
+- Prior title assigning ownership cannot be provided
+- No known liens/security interests/encumbrances
+- Bond and affidavit requirements satisfied
+
+6. Decide proceed/hold/escalate.
+- Hold if ownership evidence, VIN verification, ID, lien, tax, or registration requirements are missing.
+
+============================================================
+COMMON CLERK ANSWER STYLE
+============================================================
+
+When answering a 319.23-related question, the AI should explain:
+
+1. What kind of title application this is.
+2. What ownership evidence must support the application.
+3. Whether VIN/odometer/brand/use disclosure applies.
+4. Whether dealer responsibility or 30-day timing applies.
+5. Whether applicant ID/business authority is required.
+6. Whether bonded title is appropriate or blocked by known liens.
+7. Whether the transaction can proceed, hold, or escalate.
+
+============================================================
+RELATED LOGIC MAPS
+============================================================
+
+- transaction_type_logic_map.txt
+- validation_logic_map.txt
+- rejection_prevention_logic_map.txt
+- forms_required_logic_map.txt
+- plate_registration_action_logic_map.txt
+- lien_logic_map.txt
+- dealer_reassignment_and_trade_logic_map.txt
+
+============================================================
+RELATED PROCEDURE AREAS
+============================================================
+
+- Title application procedures
+- Out-of-state title procedures
+- VIN verification procedures
+- Odometer disclosure procedures
+- Dealer reassignment procedures
+- Bonded title procedures
+- MCO/MSO title procedures
+- Mobile home title procedures
+
+============================================================
+RELATED STATUTES
+============================================================
+
+- 319.20
+- 319.21
+- 319.22
+- 319.225
+- 319.24
+- 319.28
+- 319.29
+- 319.33
+- 319.34
+- 320.02
+- 320.27
+
+============================================================
+END OF FILE
+============================================================
