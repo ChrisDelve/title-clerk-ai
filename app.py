@@ -732,6 +732,21 @@ The answer must verify:
 
 If the audit trail cannot be reconstructed, tell the clerk to hold and escalate before submission.
 
+STRICT GIFTED TRADE RULE:
+
+For "gifted trade" or "third-party trade" questions, do not treat the issue only as a normal title transfer to dealer inventory.
+
+Always identify three parties:
+1. titled owner of the trade vehicle
+2. buyer of the new vehicle
+3. person receiving the trade credit
+
+If the trade owner and buyer are not the same person, require documentation showing the trade owner authorizes the trade value or trade credit to be used for the buyer.
+
+Do not assume sales tax trade credit applies. Tell the clerk to verify tax credit eligibility before applying trade credit/tax benefit.
+
+Do not route to bonded title unless the title is missing, defective, or ownership cannot be proven.
+
 Knowledge Base:
 {combined_context}
 """

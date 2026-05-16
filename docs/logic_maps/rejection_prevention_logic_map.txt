@@ -186,6 +186,45 @@ AND tax_exemption_claimed = TRUE
 AND exemption_support_missing = TRUE
 THEN manual_review_required = TRUE
 
+IF user_question_mentions = "gifted trade"
+OR user_question_mentions = "gifted trade-in"
+OR user_question_mentions = "trade is in someone else's name"
+OR user_question_mentions = "third party trade"
+THEN gifted_trade_workflow_required = TRUE
+
+IF gifted_trade_workflow_required = TRUE
+THEN identify_trade_owner_new_vehicle_buyer_and_person_receiving_trade_credit = TRUE
+
+IF trade_owner_does_not_match_new_vehicle_buyer = TRUE
+THEN third_party_trade_review_required = TRUE
+
+IF trade_owner_does_not_match_new_vehicle_buyer = TRUE
+THEN do_not_apply_trade_credit_or_tax_credit_until_authority_and_documentation_are_verified = TRUE
+
+IF trade_owner_is_gifting_trade_value_to_buyer = TRUE
+THEN verify_gift_or_trade_authorization_documentation_required = TRUE
+
+IF trade_title_not_properly_assigned_by_actual_titled_owner = TRUE
+THEN transaction_hold_required = TRUE
+
+IF title_owner_signature_missing_or_invalid = TRUE
+THEN transaction_hold_required = TRUE
+
+IF lien_exists_on_trade = TRUE
+THEN lien_release_or_payoff_verification_required = TRUE
+
+IF trade_credit_tax_benefit_requested = TRUE
+THEN verify_tax_credit_eligibility_before_applying = TRUE
+
+IF audit_trail_does_not_show_trade_owner_authorized_trade_credit_to_buyer = TRUE
+THEN transaction_hold_required = TRUE
+
+IF gifted_trade_documentation_missing = TRUE
+THEN escalate_to_title_lead_controller_or_tax_collector_before_submission = TRUE
+
+COMMON CLERK ANSWER:
+A gifted trade or third-party trade must be handled as a documentation and authority issue. First identify the titled owner of the trade, the buyer of the new vehicle, and who is receiving the trade credit. If the trade owner is not the buyer, do not assume the trade or tax credit can be applied. The titled owner must properly assign the title, valid ID/signatures must be verified, lien/payoff must be cleared if applicable, and the deal file must include documentation showing the trade owner authorized the trade value to be used for the buyer. Hold and escalate if ownership, signatures, lien release, trade authorization, or tax credit eligibility is unclear.
+
 ============================================================
 DEFUNCT LIENHOLDER REJECTION PREVENTION
 ============================================================
