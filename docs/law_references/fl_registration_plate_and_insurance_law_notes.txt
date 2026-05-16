@@ -1405,6 +1405,46 @@ OR user_question_mentions = "works in Florida"
 THEN check_files = "320.37_Operational_Notes.txt, 320.38_Operational_Notes.txt, 320.1325_Operational_Notes.txt"
 
 ============================================================
+MISSING AUDIT TRAIL — STRICT WORKFLOW
+============================================================
+
+IF missing_audit_trail = TRUE
+THEN transaction_hold_required = TRUE
+
+IF missing_audit_trail = TRUE
+THEN do_not_submit_until_chain_of_ownership_and_supporting_documents_are_verified = TRUE
+
+IF missing_audit_trail = TRUE
+THEN verify_title_record_current_title_prior_title_reassignments_bill_of_sale_purchase_agreement_customer_ID_and_dealer_documents = TRUE
+
+IF dealer_reassignment_chain_missing = TRUE
+THEN rejection_risk_high = TRUE
+
+IF reassignment_signatures_missing_or_incomplete = TRUE
+THEN rejection_risk_high = TRUE
+
+IF title_assignment_chain_does_not_match_deal_documents = TRUE
+THEN transaction_hold_required = TRUE
+
+IF lien_release_or_ELT_confirmation_missing = TRUE
+THEN lien_logic_review_required = TRUE
+
+IF odometer_disclosure_missing_or_conflicting = TRUE
+THEN odometer_logic_review_required = TRUE
+
+IF power_of_attorney_used = TRUE
+THEN verify_POA_validity_scope_signature_authority_and_documentation = TRUE
+
+IF audit_trail_missing_due_to_DLRDMV_or_system_issue = TRUE
+THEN verify_uploaded_documents_rejection_notes_transaction_history_and_submission_package = TRUE
+
+IF audit_trail_cannot_be_reconstructed = TRUE
+THEN escalate_to_title_lead_tax_collector_or_FLHSMV_before_submission = TRUE
+
+COMMON CLERK ANSWER:
+A missing audit trail means the dealership cannot clearly prove the chain of ownership, reassignment, lien release, odometer disclosure, or supporting deal documents needed for the title/registration transaction. Do not submit as-is. Reconstruct the file by verifying the title record, current title, prior title if needed, reassignment chain, bill of sale/purchase agreement, customer identity, lien release or ELT status, odometer disclosure, POA if used, and all DLRDMV uploaded documents or rejection notes. If the missing document cannot be located or the chain does not match, hold the transaction and escalate before submission.
+
+============================================================
 TRANSFER TAG NOT IN CUSTOMER NAME — STRICT WORKFLOW
 ============================================================
 
@@ -1432,6 +1472,8 @@ THEN transaction_hold_required = TRUE
 
 COMMON CLERK ANSWER:
 If the transfer tag is not in the customer's name, do not process it as a normal transfer tag. A Florida plate stays with the registered owner. First verify the plate record, registered owner, vehicle classification, and whether any valid statutory exception or authority applies. If the customer is not the plate owner and no valid exception applies, process the deal as a new plate and review IRF instead of transfer tag.
+
+
 
 ============================================================
 COMMON DEALERSHIP QUESTION ROUTING

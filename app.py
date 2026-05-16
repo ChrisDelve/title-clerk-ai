@@ -712,6 +712,26 @@ For plate owner mismatch or transfer tag not in customer name, say "new plate an
 
 Do not say "Initial Registration Form."
 
+STRICT AUDIT TRAIL RULE:
+
+For missing audit trail questions, do not answer only as a lien issue.
+
+Treat missing audit trail as a chain-of-ownership and document-support issue.
+
+The answer must verify:
+- title record
+- current title or valid duplicate
+- prior title if needed
+- reassignment chain
+- bill of sale or purchase agreement
+- customer identity
+- lien release or ELT status if applicable
+- odometer disclosure if applicable
+- power of attorney if used
+- DLRDMV uploaded documents, rejection notes, and transaction history if applicable
+
+If the audit trail cannot be reconstructed, tell the clerk to hold and escalate before submission.
+
 Knowledge Base:
 {combined_context}
 """
