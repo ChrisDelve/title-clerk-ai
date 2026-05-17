@@ -584,6 +584,54 @@ def search_documents(query):
         ]
 
         return (unique_expired_registration_transfer_tag_matches + non_expired_registration_transfer_tag_matches)[:5]
+    
+    out_of_state_title_florida_tag_words = [
+        "out-of-state title and wants to transfer their florida tag",
+        "out of state title and wants to transfer their florida tag",
+        "out-of-state title transfer florida tag",
+        "out of state title transfer florida plate",
+        "customer has out-of-state title and florida tag",
+        "customer has out of state title and florida tag",
+        "transfer florida tag with out-of-state title",
+        "transfer florida tag with out of state title",
+        "florida tag transfer with out-of-state title",
+        "florida tag transfer with out of state title"
+    ]
+
+    if any(term in query.lower() for term in out_of_state_title_florida_tag_words):
+        priority_names = [
+            "registration_plate_and_insurance",
+            "320.0609",
+            "320.02",
+            "319.23",
+            "plate_registration_action_logic_map",
+            "rejection_prevention_logic_map",
+            "validation_logic_map",
+            "title_ownership_and_transfer",
+            "tl_11",
+            "tl_01"
+        ]
+
+        out_of_state_title_florida_tag_matches = [
+            m for name in priority_names
+            for m in matches
+            if name in m["name"].lower()
+        ]
+
+        unique_out_of_state_title_florida_tag_matches = []
+        seen_names = set()
+
+        for m in out_of_state_title_florida_tag_matches:
+            if m["name"] not in seen_names:
+                unique_out_of_state_title_florida_tag_matches.append(m)
+                seen_names.add(m["name"])
+
+        non_out_of_state_title_florida_tag_matches = [
+            m for m in matches
+            if m["name"] not in seen_names
+        ]
+
+        return (unique_out_of_state_title_florida_tag_matches + non_out_of_state_title_florida_tag_matches)[:5]
 
     spouse_plate_words = [
         "transfer a plate from their spouse",
@@ -1258,6 +1306,26 @@ Required workflow:
 5. If the title is open, incomplete, unsigned, or still in seller’s name without proper assignment, hold before submission.
 6. If the plate is not registered to the customer and no valid exception applies, process as new plate with IRF review.
 7. Escalate if title ownership, signatures, liens, or plate ownership are unclear.
+
+STRICT OUT-OF-STATE TITLE WITH FLORIDA TAG TRANSFER RULE:
+
+For questions where a customer has an out-of-state title and wants to transfer a Florida tag, do not answer as a trust, bankruptcy, bonded title, or generic title-only issue.
+
+Treat this as:
+1. Florida title application from an out-of-state title, and
+2. Florida plate transfer eligibility.
+
+Required workflow:
+1. Verify original out-of-state title is available.
+2. Verify title is properly assigned to the customer.
+3. Verify seller/buyer signatures and odometer disclosure if required.
+4. Verify VIN verification requirement for Florida title/registration.
+5. Verify valid Florida insurance.
+6. Verify the Florida plate is registered to the customer.
+7. If the Florida plate is not registered to the customer, process as new plate and review IRF.
+8. If the out-of-state title shows lien or ELT issues, review lien release/TL-33 logic.
+9. Do not make TL-33 the primary answer unless lien or ELT issue is present.
+10. Hold and escalate if title assignment, VIN verification, lien status, insurance, or plate ownership is unclear.
 
 Knowledge Base:
 {combined_context}

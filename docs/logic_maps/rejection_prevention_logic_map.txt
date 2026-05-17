@@ -236,6 +236,64 @@ COMMON CLERK ANSWER:
 An expired registration does not automatically disqualify the plate from transfer if the plate is registered to the customer and the customer is otherwise eligible to transfer it. However, registration completion cannot occur until valid Florida insurance is verified and all required renewal, delinquent, transfer, and registration fees are collected. First verify the registered plate owner, valid Florida insurance, vehicle ownership/title status, and any registration stops or unpaid fees. If the plate is not registered to the customer, process as a new plate with IRF review. If insurance is missing, fees are unclear, or registration stops exist, hold and escalate before submission.
 
 ============================================================
+OUT-OF-STATE TITLE WITH FLORIDA TAG TRANSFER — STRICT WORKFLOW
+============================================================
+
+IF user_question_mentions = "out-of-state title and wants to transfer their Florida tag"
+OR user_question_mentions = "out of state title and wants to transfer Florida tag"
+OR user_question_mentions = "out-of-state title transfer Florida tag"
+OR user_question_mentions = "out of state title transfer Florida plate"
+OR user_question_mentions = "customer has out-of-state title and Florida tag"
+OR user_question_mentions = "transfer Florida tag with out-of-state title"
+OR user_question_mentions = "Florida tag transfer with out-of-state title"
+THEN out_of_state_title_florida_tag_transfer_workflow_required = TRUE
+
+IF out_of_state_title_florida_tag_transfer_workflow_required = TRUE
+THEN verify_out_of_state_title_is_original_available_and_properly_assigned = TRUE
+
+IF out_of_state_title_florida_tag_transfer_workflow_required = TRUE
+THEN verify_VIN_verification_requirement = TRUE
+
+IF out_of_state_title_florida_tag_transfer_workflow_required = TRUE
+THEN verify_registered_owner_of_Florida_plate = TRUE
+
+IF out_of_state_title_florida_tag_transfer_workflow_required = TRUE
+THEN verify_valid_Florida_insurance = TRUE
+
+IF out_of_state_title_florida_tag_transfer_workflow_required = TRUE
+THEN verify_title_application_HSMV_82040_required = TRUE
+
+IF out_of_state_title_florida_tag_transfer_workflow_required = TRUE
+THEN reference_319_23_title_application_rules = TRUE
+
+IF out_of_state_title_florida_tag_transfer_workflow_required = TRUE
+THEN reference_320_02_registration_insurance_and_VIN_rules = TRUE
+
+IF out_of_state_title_florida_tag_transfer_workflow_required = TRUE
+THEN reference_320_0609_plate_transfer_rules = TRUE
+
+IF Florida_plate_owner_does_not_match_customer = TRUE
+THEN do_not_process_as_normal_transfer_tag = TRUE
+
+IF Florida_plate_owner_does_not_match_customer = TRUE
+THEN process_new_plate_and_IRF_review_required = TRUE
+
+IF out_of_state_title_missing_incomplete_unsigned_or_not_properly_assigned = TRUE
+THEN hold_and_escalate_before_submission = TRUE
+
+IF lien_is_shown_on_out_of_state_title = TRUE
+THEN lien_release_or_lienholder_verification_required = TRUE
+
+IF lien_issue_or_ELT_issue_present = TRUE
+THEN TL_33_lien_review_required = TRUE
+
+IF lien_issue_or_ELT_issue_not_present = TRUE
+THEN do_not_make_TL_33_the_primary_answer = TRUE
+
+COMMON CLERK ANSWER:
+When a customer has an out-of-state title and wants to transfer a Florida tag, treat it as both a Florida title application and a Florida plate transfer eligibility issue. First verify the original out-of-state title is available, properly assigned, signed, and includes odometer disclosure if required. Complete HSMV 82040 and verify whether VIN verification is required for Florida title/registration. Then verify the Florida tag is registered to the customer and that valid Florida insurance is on file. If the Florida tag is not registered to the customer and no valid exception applies, process as a new plate with IRF review. Only route to TL-33 if the out-of-state title shows a lien, ELT issue, missing lien release, or lienholder problem. Hold and escalate if title assignment, VIN verification, lien status, insurance, or plate ownership is unclear.
+
+============================================================
 TRANSFER TAG FROM DECEASED SPOUSE — STRICT WORKFLOW
 ============================================================
 
