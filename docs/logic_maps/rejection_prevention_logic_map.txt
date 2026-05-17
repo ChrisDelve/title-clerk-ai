@@ -398,6 +398,49 @@ COMMON CLERK ANSWER:
 For vehicle registration, a customer must provide a valid Florida/out-of-state driver license or ID, or a valid passport. An unexpired U.S. passport or U.S. passport card may qualify. A foreign passport must be unexpired and supported by lawful-presence documentation such as a DHS stamp/mark, unexpired I-94, current permanent resident card, or unexpired immigrant visa. A foreign passport alone is not enough for registration. This rule applies to registration/plate issuance, not title-only applications. Hold the registration if required ID/passport documentation is missing or expired.
 
 ============================================================
+REGISTRATION STOP — CUSTOMER WANTS DEALER TO SUBMIT ANYWAY
+============================================================
+
+IF user_question_mentions = "customer has a registration stop and wants the dealer to submit anyway"
+OR user_question_mentions = "registration stop submit anyway"
+OR user_question_mentions = "customer has registration stop"
+OR user_question_mentions = "registration hold wants dealer to submit"
+OR user_question_mentions = "registration block wants dealer to submit"
+OR user_question_mentions = "customer wants dealer to bypass registration stop"
+OR user_question_mentions = "submit with registration stop"
+THEN registration_stop_submission_workflow_required = TRUE
+
+IF registration_stop_submission_workflow_required = TRUE
+THEN do_not_submit_registration_or_plate_issuance_until_stop_cleared = TRUE
+
+IF active_registration_stop_exists = TRUE
+THEN dealer_cannot_bypass_override_or_force_registration_submission = TRUE
+
+IF active_registration_stop_exists = TRUE
+THEN identify_stop_reason_before_proceeding = TRUE
+
+IF stop_reason = "insurance"
+THEN valid_Florida_insurance_or_stop_clearance_required = TRUE
+
+IF stop_reason = "unpaid_fees_fines_taxes"
+THEN customer_must_resolve_with_tax_collector_or_FLHSMV = TRUE
+
+IF stop_reason = "title_lien_ownership"
+THEN title_lien_or_ownership_issue_must_be_resolved_before_registration = TRUE
+
+IF customer_insists_submit_anyway = TRUE
+THEN advise_registration_cannot_be_completed_until_stop_is_cleared = TRUE
+
+IF stop_reason_unclear_or_disputed = TRUE
+THEN escalate_to_title_lead_tax_collector_or_FLHSMV = TRUE
+
+IF registration_stop_cannot_be_cleared = TRUE
+THEN title_only_exception_review_may_apply_if_no_registration_or_plate_issued = TRUE
+
+COMMON CLERK ANSWER:
+If a customer has an active registration stop, do not submit registration, plate issuance, or transfer tag work as if the stop does not exist. First identify the reason for the stop. The customer must clear the stop with the tax collector or FLHSMV, or provide proof the stop has been resolved, before registration or plate issuance can be completed. The dealer cannot bypass or override an active registration stop just because the customer wants the transaction submitted. If the stop is insurance-related, valid Florida insurance or stop clearance is required. If the stop is fees, fines, title, lien, or ownership related, resolve that issue first. If the stop cannot be cleared and no plate or registration will be issued, review whether a title-only exception workflow applies with required approvals.
+
+============================================================
 DEALER TITLE-ONLY REQUEST — STRICT SUPERVISOR EXCEPTION WORKFLOW
 ============================================================
 

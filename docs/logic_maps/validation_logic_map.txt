@@ -82,6 +82,37 @@ COMMON VALIDATION ANSWER:
 For registration or plate issuance, validate whether the customer has a Florida/out-of-state DL or ID, or a valid passport. For a U.S. passport/passport card, confirm it is unexpired. For a foreign passport, confirm it is unexpired and supported by lawful-presence documentation: DHS stamp/mark, unexpired I-94, current permanent resident card, or unexpired immigrant visa. If those documents are missing or expired, hold registration. If the transaction is title-only with no registration, Rule 15C-1.015 does not apply.
 
 ============================================================
+REGISTRATION STOP VALIDATION
+============================================================
+
+IF user_question_mentions = "registration stop"
+OR user_question_mentions = "registration hold"
+OR user_question_mentions = "registration block"
+OR user_question_mentions = "submit anyway"
+THEN validate_registration_stop_before_submission = TRUE
+
+IF validate_registration_stop_before_submission = TRUE
+THEN verify_stop_reason = TRUE
+
+IF active_registration_stop_exists = TRUE
+THEN validation_failed_for_registration_or_plate_issuance = TRUE
+
+IF active_registration_stop_exists = TRUE
+THEN hold_registration_or_plate_submission_until_stop_cleared = TRUE
+
+IF stop_clearance_proof_missing = TRUE
+THEN hold_before_submission = TRUE
+
+IF customer_requests_bypass = TRUE
+THEN deny_bypass_and_escalate_if_needed = TRUE
+
+IF stop_reason_unclear = TRUE
+THEN escalate_to_title_lead_tax_collector_or_FLHSMV = TRUE
+
+COMMON VALIDATION ANSWER:
+Validate the stop before submission. If an active registration stop exists, registration, plate issuance, or transfer tag work should be held until the stop is cleared. The customer must resolve the stop with the tax collector or FLHSMV or provide proof of clearance. Do not bypass the stop or submit as if it does not exist.
+
+============================================================
 TRANSFER TAG VALIDATION LOGIC
 ============================================================
 

@@ -710,6 +710,50 @@ def search_documents(query):
 
         return (unique_expired_registration_transfer_tag_matches + non_expired_registration_transfer_tag_matches)[:5]
     
+    registration_stop_words = [
+        "customer has a registration stop and wants the dealer to submit anyway",
+        "registration stop submit anyway",
+        "customer has registration stop",
+        "registration hold wants dealer to submit",
+        "registration block wants dealer to submit",
+        "customer wants dealer to bypass registration stop",
+        "submit with registration stop",
+        "registration stop",
+        "registration hold",
+        "registration block"
+    ]
+
+    if any(term in query.lower() for term in registration_stop_words):
+        priority_names = [
+            "registration_plate_and_insurance",
+            "320.02",
+            "plate_registration_action_logic_map",
+            "rejection_prevention_logic_map",
+            "validation_logic_map",
+            "title_ownership_and_transfer"
+        ]
+
+        registration_stop_matches = [
+            m for name in priority_names
+            for m in matches
+            if name in m["name"].lower()
+        ]
+
+        unique_registration_stop_matches = []
+        seen_names = set()
+
+        for m in registration_stop_matches:
+            if m["name"] not in seen_names:
+                unique_registration_stop_matches.append(m)
+                seen_names.add(m["name"])
+
+        non_registration_stop_matches = [
+            m for m in matches
+            if m["name"] not in seen_names
+        ]
+
+        return (unique_registration_stop_matches + non_registration_stop_matches)[:5]
+
     dealer_title_only_words = [
         "customer wants title-only",
         "customer wants title only",
@@ -1781,6 +1825,20 @@ Normally acceptable title-only reasons are limited to:
 Do not describe title-only as a normal customer preference. A customer simply saying they do not want to register is not enough by itself.
 
 The Intent to Title Only letter gives the customer 10 days to respond before the dealership proceeds with the title-only exception workflow.
+
+STRICT REGISTRATION STOP RULE:
+
+For questions where a customer has a registration stop, registration hold, or registration block and wants the dealer to submit anyway, do not say the dealer can submit around the stop.
+
+Required answer:
+1. Identify the reason for the registration stop.
+2. Do not submit registration, plate issuance, validation sticker, or transfer tag work until the stop is cleared.
+3. The dealer cannot bypass, override, or force a registration transaction through an active stop.
+4. Customer must resolve the stop with the tax collector or FLHSMV or provide proof of clearance.
+5. If stop is insurance-related, valid Florida insurance or stop clearance is required.
+6. If stop is fee/fine/tax/title/lien/ownership-related, resolve the underlying issue first.
+7. Escalate if stop reason is unclear, disputed, or cannot be cleared.
+8. If no registration or plate will be issued, title-only exception workflow may be reviewed with required approvals.
 
 Knowledge Base:
 {combined_context}
