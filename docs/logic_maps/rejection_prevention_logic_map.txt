@@ -127,6 +127,55 @@ IF customer_identity_cannot_be_verified = TRUE
 THEN transaction_hold_required = TRUE
 
 ============================================================
+PASSPORT / VALID REGISTRATION IDENTIFICATION — REJECTION PREVENTION
+============================================================
+
+IF user_question_mentions = "passport"
+OR user_question_mentions = "foreign passport"
+OR user_question_mentions = "customer only has passport"
+OR user_question_mentions = "passport but no Florida ID"
+OR user_question_mentions = "passport but no driver license"
+OR user_question_mentions = "valid passport for registration"
+OR user_question_mentions = "can customer register with passport"
+OR user_question_mentions = "foreign customer registration"
+THEN passport_registration_ID_workflow_required = TRUE
+
+IF passport_registration_ID_workflow_required = TRUE
+THEN reference_workflow_note = "fl_info_24_023_rule_15c_1_015_valid_passport_registration_notes.txt"
+
+IF passport_registration_ID_workflow_required = TRUE
+THEN determine_if_transaction_is_registration_or_title_only = TRUE
+
+IF registration_or_plate_issuance_requested = TRUE
+THEN valid_DL_ID_or_valid_passport_documentation_required = TRUE
+
+IF title_only_transaction = TRUE
+AND no_registration_or_plate_issuance_requested = TRUE
+THEN Rule_15C_1_015_does_not_apply_to_title_application = TRUE
+
+IF customer_provides_US_passport_or_passport_card = TRUE
+AND passport_is_unexpired = TRUE
+THEN valid_passport_requirement_may_be_satisfied_for_registration = TRUE
+
+IF customer_provides_foreign_passport = TRUE
+AND foreign_passport_is_unexpired = TRUE
+AND lawful_presence_documentation_provided = TRUE
+THEN valid_passport_requirement_may_be_satisfied_for_registration = TRUE
+
+IF customer_provides_foreign_passport = TRUE
+AND lawful_presence_documentation_missing = TRUE
+THEN reject_or_hold_before_registration_submission = TRUE
+
+IF passport_expired = TRUE
+THEN reject_or_hold_before_registration_submission = TRUE
+
+IF dealer_submits_registration_without_required_ID_or_valid_passport_documentation = TRUE
+THEN rejection_risk_high = TRUE
+
+COMMON CLERK ANSWER:
+For vehicle registration, a customer must provide a valid Florida/out-of-state driver license or ID, or a valid passport. An unexpired U.S. passport or U.S. passport card may qualify. A foreign passport must be unexpired and supported by lawful-presence documentation such as a DHS stamp/mark, unexpired I-94, current permanent resident card, or unexpired immigrant visa. A foreign passport alone is not enough for registration. This rule applies to registration/plate issuance, not title-only applications. Hold the registration if required ID/passport documentation is missing or expired.
+
+============================================================
 TRANSFER TAG REJECTION PREVENTION
 ============================================================
 

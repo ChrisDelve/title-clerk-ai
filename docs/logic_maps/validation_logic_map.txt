@@ -28,6 +28,59 @@ THEN manual_review_required = TRUE
 
 IF valid_identification_missing = TRUE
 THEN likely_rejection_reason = "Missing valid identification"
+
+============================================================
+VALID PASSPORT REGISTRATION IDENTIFICATION VALIDATION
+============================================================
+
+IF user_question_mentions = "passport"
+OR user_question_mentions = "foreign passport"
+OR user_question_mentions = "customer only has passport"
+OR user_question_mentions = "passport but no Florida ID"
+OR user_question_mentions = "valid passport for registration"
+THEN validate_passport_registration_identification = TRUE
+
+IF validate_passport_registration_identification = TRUE
+THEN identify_transaction_type = TRUE
+
+IF transaction_type_involves_registration_or_plate_issuance = TRUE
+THEN Rule_15C_1_015_valid_passport_check_required = TRUE
+
+IF transaction_type_is_title_only = TRUE
+AND no_registration_or_plate_issuance_requested = TRUE
+THEN Rule_15C_1_015_valid_passport_check_not_required_for_title_only = TRUE
+
+IF customer_uses_US_passport = TRUE
+THEN verify_US_passport_unexpired = TRUE
+
+IF customer_uses_US_passport_card = TRUE
+THEN verify_US_passport_card_unexpired = TRUE
+
+IF customer_uses_foreign_passport = TRUE
+THEN verify_foreign_passport_unexpired = TRUE
+
+IF customer_uses_foreign_passport = TRUE
+THEN verify_lawful_presence_documentation = TRUE
+
+IF customer_uses_foreign_passport = TRUE
+AND no_DHS_stamp_or_mark = TRUE
+AND no_unexpired_I_94 = TRUE
+AND no_current_permanent_resident_card = TRUE
+AND no_unexpired_immigrant_visa = TRUE
+THEN validation_failed_registration_ID = TRUE
+
+IF passport_or_supporting_lawful_presence_documentation_expired = TRUE
+THEN validation_failed_registration_ID = TRUE
+
+IF validation_failed_registration_ID = TRUE
+THEN hold_registration_application = TRUE
+
+IF validation_failed_registration_ID = TRUE
+THEN request_valid_DL_ID_or_required_passport_lawful_presence_documentation = TRUE
+
+COMMON VALIDATION ANSWER:
+For registration or plate issuance, validate whether the customer has a Florida/out-of-state DL or ID, or a valid passport. For a U.S. passport/passport card, confirm it is unexpired. For a foreign passport, confirm it is unexpired and supported by lawful-presence documentation: DHS stamp/mark, unexpired I-94, current permanent resident card, or unexpired immigrant visa. If those documents are missing or expired, hold registration. If the transaction is title-only with no registration, Rule 15C-1.015 does not apply.
+
 ============================================================
 TRANSFER TAG VALIDATION LOGIC
 ============================================================

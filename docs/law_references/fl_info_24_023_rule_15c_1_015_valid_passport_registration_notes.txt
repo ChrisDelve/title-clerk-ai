@@ -1,0 +1,344 @@
+DOCUMENT: FL_INFO_24_023_RULE_15C_1_015_VALID_PASSPORT_REGISTRATION_NOTES
+TITLE: INFO 24-023 — Rule 15C-1.015, FAC — Vehicle Registration Information / Valid Passport
+SOURCE: https://www.flada.org/wp-content/uploads/2024/09/INFO-24-023-Rule-15C-1.015-Vehicle-Registration-Information.pdf
+DOCUMENT_TYPE: FLHSMV Information Notice / Operational Registration Identification Notes
+CATEGORY: REGISTRATION IDENTIFICATION / VALID PASSPORT / FOREIGN PASSPORT / LAWFUL PRESENCE / 320.02 / RS-01 / CUSTOMER ID
+
+============================================================
+PURPOSE
+============================================================
+
+This file explains FLHSMV Information Notice INFO 24-023 regarding Rule 15C-1.015, Florida Administrative Code.
+
+The rule defines what counts as a "valid passport" when an individual applies to register a motor vehicle in Florida under section 320.02(2)(a), Florida Statutes.
+
+This file is important for dealership workflows involving:
+
+- Customer has a passport
+- Customer only has a passport
+- Customer has a foreign passport
+- Customer does not have a Florida driver license
+- Customer does not have a Florida ID card
+- Customer does not have an out-of-state driver license or ID
+- Registration application identification requirements
+- Registration held because valid ID/passport support is missing
+- Foreign passport lawful presence documentation
+- Title-only vs registration distinction
+- RS-01 registration procedure questions
+
+============================================================
+SOURCE SUMMARY
+============================================================
+
+FLHSMV issued Information Notice INFO 24-023 on 09/05/2024.
+
+Subject:
+New Rule 15C-1.015, FAC — Vehicle Registration Information.
+
+The notice explains that Rule 15C-1.015 defines a "valid passport" for vehicle registration applications under section 320.02(2)(a), Florida Statutes.
+
+Section 320.02(2)(a), Florida Statutes, requires an individual applicant filing for vehicle registration to provide one of the following:
+
+- Valid Florida driver license
+- Valid Florida identification card
+- Valid driver license or identification card issued by another state
+- Valid passport
+
+Rule 15C-1.015 defines what qualifies as a valid passport for registration purposes.
+
+IMPORTANT:
+This rule applies to vehicle registration applications.
+This rule does NOT apply to title applications.
+
+============================================================
+AI USE RULE
+============================================================
+
+IF user_question_mentions = "passport"
+OR user_question_mentions = "foreign passport"
+OR user_question_mentions = "customer has passport"
+OR user_question_mentions = "customer only has passport"
+OR user_question_mentions = "passport but no Florida ID"
+OR user_question_mentions = "passport but no driver license"
+OR user_question_mentions = "valid passport for registration"
+OR user_question_mentions = "can customer register with passport"
+OR user_question_mentions = "can we register with foreign passport"
+OR user_question_mentions = "foreign customer registration"
+OR user_question_mentions = "I-94"
+OR user_question_mentions = "green card"
+OR user_question_mentions = "permanent resident card"
+OR user_question_mentions = "immigrant visa"
+OR user_question_mentions = "lawful presence"
+THEN use this file for registration identification guidance.
+
+For passport questions, always determine:
+1. Is the transaction title-only or registration/plate issuance?
+2. Is the passport U.S. or foreign?
+3. Is the passport unexpired?
+4. If foreign passport, is lawful-presence documentation provided?
+5. Is the dealer submitting the registration application on behalf of the customer?
+6. If valid passport documentation is missing, should the application be held or should the customer obtain Florida DL/ID?
+
+============================================================
+CORE RULE
+============================================================
+
+For an individual vehicle registration application under section 320.02(2)(a), Florida Statutes, the customer must provide one of the following:
+
+- Valid driver license or identification card issued by Florida
+- Valid driver license or identification card issued by another state
+- Valid passport
+
+Rule 15C-1.015 defines what "valid passport" means for this purpose.
+
+============================================================
+VALID U.S. PASSPORT RULE
+============================================================
+
+IF customer_provides_US_passport = TRUE
+AND US_passport_is_unexpired = TRUE
+THEN passport_may_satisfy_valid_passport_requirement_for_registration = TRUE
+
+IF customer_provides_US_passport_card = TRUE
+AND US_passport_card_is_unexpired = TRUE
+THEN passport_card_may_satisfy_valid_passport_requirement_for_registration = TRUE
+
+IF US_passport_or_passport_card_expired = TRUE
+THEN valid_passport_requirement_not_met = TRUE
+
+COMMON CLERK ANSWER:
+An unexpired U.S. passport or unexpired U.S. passport card can meet the valid passport requirement for an individual vehicle registration application.
+
+============================================================
+VALID FOREIGN PASSPORT RULE
+============================================================
+
+A foreign passport must be unexpired AND must include or be accompanied by required lawful-presence documentation.
+
+IF customer_provides_foreign_passport = TRUE
+AND foreign_passport_is_unexpired = TRUE
+AND DHS_stamp_or_mark_evidencing_lawful_presence_is_affixed = TRUE
+THEN foreign_passport_may_satisfy_valid_passport_requirement_for_registration = TRUE
+
+IF customer_provides_foreign_passport = TRUE
+AND foreign_passport_is_unexpired = TRUE
+AND unexpired_I_94_provided = TRUE
+THEN foreign_passport_may_satisfy_valid_passport_requirement_for_registration = TRUE
+
+IF customer_provides_foreign_passport = TRUE
+AND foreign_passport_is_unexpired = TRUE
+AND current_permanent_resident_card_provided = TRUE
+THEN foreign_passport_may_satisfy_valid_passport_requirement_for_registration = TRUE
+
+IF customer_provides_foreign_passport = TRUE
+AND foreign_passport_is_unexpired = TRUE
+AND unexpired_immigrant_visa_provided = TRUE
+THEN foreign_passport_may_satisfy_valid_passport_requirement_for_registration = TRUE
+
+IF customer_provides_foreign_passport = TRUE
+AND lawful_presence_documentation_missing = TRUE
+THEN valid_passport_requirement_not_met_for_registration = TRUE
+
+IF customer_provides_foreign_passport = TRUE
+AND foreign_passport_expired = TRUE
+THEN valid_passport_requirement_not_met_for_registration = TRUE
+
+COMMON CLERK ANSWER:
+A foreign passport by itself is not enough for Florida vehicle registration. The foreign passport must be unexpired and must include a DHS stamp/mark showing lawful presence, or be accompanied by an unexpired I-94, current permanent resident card, or unexpired immigrant visa.
+
+============================================================
+DEALER SUBMISSION RULE
+============================================================
+
+Dealers submitting applications on behalf of an individual to register a vehicle must provide a copy of either:
+
+1. A valid driver license or identification card issued by Florida or another state; OR
+2. The valid passport information required by Rule 15C-1.015.
+
+IF dealer_submits_registration_application_for_individual = TRUE
+THEN dealer_must_provide_valid_DL_ID_or_valid_passport_documentation = TRUE
+
+IF dealer_submits_registration_application_for_individual = TRUE
+AND customer_uses_foreign_passport = TRUE
+THEN dealer_must_provide_foreign_passport_plus_required_lawful_presence_documentation = TRUE
+
+IF required_ID_or_passport_documentation_missing = TRUE
+THEN registration_application_not_ready_for_submission = TRUE
+
+COMMON CLERK ANSWER:
+If the dealership is submitting a registration application for an individual customer, the deal file must include a valid Florida/out-of-state DL or ID, or qualifying passport documentation under Rule 15C-1.015.
+
+============================================================
+TITLE-ONLY DISTINCTION
+============================================================
+
+Rule 15C-1.015 applies to vehicle registration applications.
+
+The FLHSMV notice states this rule does NOT apply to title applications.
+
+IF transaction_type = "registration"
+OR transaction_type = "title with registration"
+OR transaction_type = "plate issuance"
+OR transaction_type = "transfer plate"
+THEN Rule_15C_1_015_passport_registration_requirement_applies = TRUE
+
+IF transaction_type = "title only"
+AND no_registration_or_plate_issuance_requested = TRUE
+THEN Rule_15C_1_015_does_not_apply_to_title_application = TRUE
+
+COMMON CLERK ANSWER:
+This passport rule applies to registration applications, not title-only applications. If the customer is applying for registration or plate issuance, apply Rule 15C-1.015. If the transaction is truly title-only with no registration or plate issuance, this specific passport rule does not apply.
+
+============================================================
+CUSTOMER DOES NOT HAVE REQUIRED DOCUMENTS
+============================================================
+
+IF customer_has_foreign_passport = TRUE
+AND required_lawful_presence_documentation_missing = TRUE
+THEN customer_may_be_directed_to_obtain_Florida_driver_license_or_identification_card = TRUE
+
+IF customer_lacks_valid_DL_ID_or_valid_passport_documentation = TRUE
+THEN hold_registration_application = TRUE
+
+IF customer_lacks_valid_DL_ID_or_valid_passport_documentation = TRUE
+THEN do_not_submit_registration_until_identification_requirement_resolved = TRUE
+
+COMMON CLERK ANSWER:
+If the customer does not have a valid Florida/out-of-state DL or ID, and does not have qualifying passport documentation, hold the registration application. The customer may need to obtain a Florida driver license or Florida identification card and then resubmit.
+
+============================================================
+DOCUMENTATION CHECKLIST
+============================================================
+
+For U.S. passport:
+
+- Unexpired U.S. passport; OR
+- Unexpired U.S. passport card
+
+For foreign passport:
+
+- Unexpired foreign passport; AND one of the following:
+  - DHS stamp or mark on passport showing lawful presence in the United States
+  - Unexpired I-94
+  - Current permanent resident card
+  - Unexpired immigrant visa
+
+For dealer submission:
+
+- Copy of valid Florida/out-of-state DL or ID; OR
+- Copy/supporting documentation showing valid passport qualification under Rule 15C-1.015
+
+============================================================
+REGISTRATION WORKFLOW
+============================================================
+
+1. Identify transaction type.
+   - Title-only
+   - Title with registration
+   - Registration only
+   - New plate
+   - Transfer plate
+
+2. If registration or plate issuance is involved, verify identification requirement.
+   - Florida DL/ID
+   - Out-of-state DL/ID
+   - Valid passport
+
+3. If U.S. passport:
+   - Confirm it is unexpired.
+   - U.S. passport card is also acceptable if unexpired.
+
+4. If foreign passport:
+   - Confirm it is unexpired.
+   - Confirm lawful-presence documentation exists:
+     - DHS stamp/mark
+     - unexpired I-94
+     - current permanent resident card
+     - unexpired immigrant visa
+
+5. If documentation is missing:
+   - Hold registration application.
+   - Advise customer to provide required documentation or obtain Florida DL/ID.
+
+6. If title-only:
+   - Do not apply Rule 15C-1.015 as a registration requirement.
+   - Still follow all other title identification/signature requirements.
+
+============================================================
+REJECTION / HOLD RISK
+============================================================
+
+IF registration_application_submitted_without_valid_DL_ID_or_valid_passport_documentation = TRUE
+THEN rejection_risk_high = TRUE
+
+IF foreign_passport_submitted_without_lawful_presence_documentation = TRUE
+THEN rejection_risk_high = TRUE
+
+IF expired_passport_submitted_for_registration = TRUE
+THEN rejection_risk_high = TRUE
+
+IF dealer_submits_registration_without_required_identification_copy = TRUE
+THEN rejection_risk_high = TRUE
+
+IF title_only_transaction_misclassified_as_registration = TRUE
+THEN workflow_confusion_risk = TRUE
+
+IF registration_transaction_misclassified_as_title_only = TRUE
+THEN rejection_risk_high = TRUE
+
+============================================================
+COMMON DEALERSHIP QUESTIONS
+============================================================
+
+QUESTION:
+Customer only has a U.S. passport. Can we register?
+
+ANSWER:
+Yes, an unexpired U.S. passport or U.S. passport card may satisfy the valid passport requirement for vehicle registration.
+
+------------------------------------------------------------
+
+QUESTION:
+Customer has a foreign passport. Can we register?
+
+ANSWER:
+Only if the foreign passport is unexpired and includes required lawful-presence documentation, such as a DHS stamp/mark, unexpired I-94, current permanent resident card, or unexpired immigrant visa.
+
+------------------------------------------------------------
+
+QUESTION:
+Customer has a foreign passport but no I-94, green card, immigrant visa, or DHS stamp. Can we register?
+
+ANSWER:
+Do not submit the registration application as-is. A foreign passport alone is not enough. Hold the registration application and request required lawful-presence documentation or have the customer obtain Florida DL/ID.
+
+------------------------------------------------------------
+
+QUESTION:
+Does this passport rule apply to title-only?
+
+ANSWER:
+No. INFO 24-023 states this new rule does not apply to title applications. It applies to vehicle registration applications.
+
+------------------------------------------------------------
+
+QUESTION:
+Customer has passport but no Florida ID. Can we issue a plate?
+
+ANSWER:
+Possibly. If it is an unexpired U.S. passport/passport card, it may satisfy the passport requirement. If it is a foreign passport, it must be unexpired and supported by required lawful-presence documentation. If registration/plate issuance is involved, do not proceed unless the required identification/passport documentation is present.
+
+============================================================
+RELATED FILES
+============================================================
+
+- 320.02_Operational_Notes.txt
+- fl_registration_plate_and_insurance_law_notes.txt
+- validation_logic_map.txt
+- rejection_prevention_logic_map.txt
+- fl_title_ownership_and_transfer_law_notes.txt
+- fl_tl_01_signature_requirements_operational_notes.txt
+
+============================================================
+END OF FILE
+============================================================
