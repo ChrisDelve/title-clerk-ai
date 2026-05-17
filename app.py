@@ -20,6 +20,37 @@ st.markdown("""
     color: #EAEAEA;
 }
 
+.scope-note {
+    max-width: 900px;
+    margin: 1.25rem auto 1.2rem auto;
+    padding: 0.85rem 1rem;
+    border: 1px solid rgba(255, 204, 64, 0.28);
+    border-radius: 10px;
+    background: rgba(255, 204, 64, 0.06);
+    color: rgba(255, 255, 255, 0.72);
+    font-size: 0.86rem;
+    line-height: 1.45;
+    text-align: left;
+}
+
+.scope-note strong {
+    color: rgba(255, 218, 95, 0.95);
+    font-weight: 700;
+}
+
+.app-subtext {
+    max-width: 900px;
+    margin: 1.15rem auto 0.25rem auto;
+    padding: 0 0.15rem;
+    color: rgba(255, 255, 255, 1);
+    font-size: 1.65rem;
+    font-weight: 900;
+    line-height: 1.32;
+    letter-spacing: -0.35px;
+    text-align: center;
+    text-shadow: 0 1px 10px rgba(0, 0, 0, 0.35);
+}
+            
 /* Hide Streamlit header/footer/menu */
 #MainMenu {visibility: hidden;}
 footer {visibility: hidden;}
@@ -168,10 +199,13 @@ h1, h2, h3, h4, h5, h6, p, label, span {
 }
 
 /* Logo container */
-..logo-wrap {
+.logo-wrap {
     display: flex;
     justify-content: center;
-    margin-bottom: 0.4rem;
+    align-items: center;
+    margin-top: 0.5rem;
+    margin-bottom: 1.1rem;
+    transform: translateX(70px);
 }
 
 /* Logo sizing */
@@ -272,31 +306,27 @@ client = OpenAI(
 # ----------------------------
 
 st.markdown('<div class="logo-wrap">', unsafe_allow_html=True)
-st.image("logo.png", width=700)
+st.image("logo.png", width=850)
 st.markdown('</div>', unsafe_allow_html=True)
+
 
 st.markdown(
     """
-    <h1 style='
-        text-align:center;
-        font-size:2.5rem;
-        font-weight:700;
-        letter-spacing:-1px;
-        line-height:1.1;
-        margin-bottom:0.8rem;
-        font-family: Inter, sans-serif;
-        color:white;
-    '>
-        Instant Title & Registration Assistant
-    </h1>
+    <div class="scope-note">
+        <strong>Scope Note:</strong> This assistant provides dealership title and registration workflow guidance
+        based on uploaded Florida statutes, FLHSMV procedures, and internal operational notes.
+        It is not legal advice and does not replace FLHSMV, tax collector, lender, controller,
+        management, or compliance approval. When ownership, lien, odometer, fraud, legal authority,
+        or registration issues are unclear, hold and escalate before submission.
+    </div>
     """,
     unsafe_allow_html=True
 )
 
 st.markdown(
     """
-    <p class='subtext' style='text-align:center; max-width:700px; margin:auto; line-height:1.8;'>
-    Ask about duplicate titles, ELT, lien releases, registration transfers, fees, & title procedures.
+    <p class="app-subtext">
+        Ask about duplicate titles, ELT, lien releases, registrations, fees, title procedures, and rejection prevention.
     </p>
     """,
     unsafe_allow_html=True
