@@ -536,6 +536,54 @@ def search_documents(query):
         ]
 
         return (seller_title_transfer_tag_matches + non_seller_title_transfer_tag_matches)[:5]
+    
+    expired_registration_transfer_tag_words = [
+        "transfer tag but registration is expired",
+        "transfer plate but registration is expired",
+        "expired registration transfer tag",
+        "expired registration transfer plate",
+        "expired tag transfer",
+        "expired plate transfer",
+        "customer wants to transfer expired tag",
+        "customer wants to transfer expired plate",
+        "customer has expired registration but wants to transfer plate",
+        "customer has expired registration but wants to transfer tag",
+        "registration expired but wants transfer tag",
+        "registration expired but wants transfer plate"
+    ]
+
+    if any(term in query.lower() for term in expired_registration_transfer_tag_words):
+        priority_names = [
+            "registration_plate_and_insurance",
+            "320.0609",
+            "320.02",
+            "plate_registration_action_logic_map",
+            "rejection_prevention_logic_map",
+            "fees_01",
+            "validation_logic_map",
+            "title_ownership_and_transfer"
+        ]
+
+        expired_registration_transfer_tag_matches = [
+            m for name in priority_names
+            for m in matches
+            if name in m["name"].lower()
+        ]
+
+        unique_expired_registration_transfer_tag_matches = []
+        seen_names = set()
+
+        for m in expired_registration_transfer_tag_matches:
+            if m["name"] not in seen_names:
+                unique_expired_registration_transfer_tag_matches.append(m)
+                seen_names.add(m["name"])
+
+        non_expired_registration_transfer_tag_matches = [
+            m for m in matches
+            if m["name"] not in seen_names
+        ]
+
+        return (unique_expired_registration_transfer_tag_matches + non_expired_registration_transfer_tag_matches)[:5]
 
     spouse_plate_words = [
         "transfer a plate from their spouse",
