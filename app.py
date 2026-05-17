@@ -375,6 +375,78 @@ for root, dirs, files in os.walk(docs_path):
 # SEARCH FUNCTION
 # ----------------------------
 
+def clean_source_name(filename):
+    """
+    Converts internal TXT file names into cleaner display names for the app UI.
+    This does NOT rename the actual files. It only changes how sources appear to users.
+    """
+
+    source_labels = {
+        # Core logic maps
+        "rejection_prevention_logic_map.txt": "Rejection Prevention Logic Map",
+        "validation_logic_map.txt": "Validation Logic Map",
+        "plate_registration_action_logic_map.txt": "Plate / Registration Action Logic Map",
+        "forms_required_logic_map.txt": "Required Forms Logic Map",
+        "lien_logic_map.txt": "Lien Logic Map",
+
+        # Registration / plates / insurance
+        "fl_registration_plate_and_insurance_law_notes.txt": "Registration / Plate / Insurance Law Notes",
+        "320.02_Operational_Notes.txt": "Florida Statute 320.02 — Registration / Insurance Requirements",
+        "320.0609_Operational_Notes.txt": "Florida Statute 320.0609 — Plate Transfer / Plate Owner Rules",
+        "320.131_Operational_Notes.txt": "Florida Statute 320.131 — Temporary Tags",
+        "320.072_Operational_Notes.txt": "Florida Statute 320.072 — Initial Registration Fee",
+        "320.07_Operational_Notes.txt": "Florida Statute 320.07 — Expiration / Delinquent Registration",
+        "320.03_Operational_Notes.txt": "Florida Statute 320.03 — Tax Collector / Registration Processing",
+
+        # Title ownership / transfer
+        "fl_title_ownership_and_transfer_law_notes.txt": "Title Ownership / Transfer Law Notes",
+        "fl_tl_11_transfer_of_florida_certificate_of_title_operational_notes.txt": "TL-11 — Transfer of Florida Certificate of Title",
+        "fl_tl_01_signature_requirements_operational_notes.txt": "TL-01 — Signature Requirements",
+        "fl_tl_05_duplicate_titles_operational_notes.txt": "TL-05 — Duplicate Titles",
+        "fl_tl_18_deceased_owner_workflow_notes.txt": "TL-18 — Deceased Owner Workflow",
+        "fl_tl_52_mark_title_sold_notes.txt": "TL-52 — Mark Title Sold / Dealer Trade Workflow",
+
+        # Title statutes
+        "319.20_Operational_Notes.txt": "Florida Statute 319.20 — Title Requirements",
+        "319.21_Operational_Notes.txt": "Florida Statute 319.21 — Certificate of Origin / Owner Name",
+        "319.22_Operational_Notes.txt": "Florida Statute 319.22 — Transfer of Title / Ownership",
+        "319.23_Operational_Notes.txt": "Florida Statute 319.23 — Application for Title",
+        "319.24_Operational_Notes.txt": "Florida Statute 319.24 — Title Delivery / Lien Delivery",
+        "319.27_Operational_Notes.txt": "Florida Statute 319.27 — Liens",
+        "319.28_Operational_Notes.txt": "Florida Statute 319.28 — Operation of Law / Deceased / Repossession",
+        "319.29_Operational_Notes.txt": "Florida Statute 319.29 — Duplicate Title",
+        "319.33_Operational_Notes.txt": "Florida Statute 319.33 — Fraud / False Statements / VIN Offenses",
+        "319.34_Operational_Notes.txt": "Florida Statute 319.34 — Transfer Without Title Delivery",
+        "319.235_Operational_Notes.txt": "Florida Statute 319.235 — Encumbrances / Liens",
+
+        # Odometer / mileage
+        "fl_odometer_and_mileage_law_notes.txt": "Odometer / Mileage Law Notes",
+        "319.225_Operational_Notes.txt": "Florida Statute 319.225 — Odometer Disclosure",
+        "319.23_Odometer_Operational_Notes.txt": "Florida Statute 319.23 — Odometer / Title Application",
+        "319.24_Odometer_Operational_Notes.txt": "Florida Statute 319.24 — Odometer / Title Delivery",
+        "319.324_Operational_Notes.txt": "Florida Statute 319.324 — Odometer Verification",
+        "319.35_Operational_Notes.txt": "Florida Statute 319.35 — Odometer / Title Certificates",
+
+        # Liens / ELT
+        "fl_lien_and_lien_satisfaction_law_notes.txt": "Lien / Lien Satisfaction Law Notes",
+        "fl_tl_33_lien_satisfactions_and_alternate_methods_of_removal_of_recorded_liens_notes.txt": "TL-33 — Lien Satisfaction / Alternate Lien Removal",
+        "319.241_Operational_Notes.txt": "Florida Statute 319.241 — Electronic Liens / ELT",
+
+        # EFS
+        "fl_efs_01_electronic_filing_system_inventory_notes.txt": "EFS-01 — Electronic Filing System Inventory",
+        "fl_efs_02_electronic_filing_system_records_retention_notes.txt": "EFS-02 — EFS Records Retention",
+        "fl_electronic_filing_system_efs_law_notes.txt": "Electronic Filing System / EFS Master Notes",
+        "third_temp_tag_regional_dmv_office_lookup_notes.txt": "Third Temp Tag — Regional DMV Office Lookup",
+
+        # Passport / registration ID
+        "fl_info_24_023_rule_15c_1_015_valid_passport_registration_notes.txt": "INFO 24-023 / Rule 15C-1.015 — Valid Passport for Registration",
+
+        # Forms
+        "HSMV-82040_Operational_Notes.txt": "HSMV 82040 — Application for Certificate of Title With/Without Registration",
+    }
+
+    return source_labels.get(filename, filename)
+
 def search_documents(query):
 
     query_words = query.lower().split()
@@ -1870,7 +1942,7 @@ Knowledge Base:
 
         for result in results:
 
-            with st.expander(result["name"]):
+            with st.expander(clean_source_name(result["name"])):
 
                 st.caption(f"Match Score: {result['score']}")
 
