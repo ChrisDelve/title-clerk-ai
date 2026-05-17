@@ -98,6 +98,71 @@ THEN new_plate_or_correct_owner_review_required = TRUE
 IF plate_transfer_requested = TRUE
 AND ownership_match_missing = TRUE
 THEN reject_before_submission = TRUE
+
+============================================================
+TITLE-ONLY DEALER EXCEPTION VALIDATION — SUPERVISOR WORKFLOW
+============================================================
+
+IF user_question_mentions = "title-only"
+OR user_question_mentions = "title only"
+OR user_question_mentions = "does not want to register"
+OR user_question_mentions = "no registration"
+THEN validate_title_only_exception = TRUE
+
+IF validate_title_only_exception = TRUE
+THEN determine_if_dealer_sale_transaction = TRUE
+
+IF dealer_sale_transaction = TRUE
+THEN default_workflow_should_be_title_and_registration = TRUE
+
+IF validate_title_only_exception = TRUE
+THEN verify_reason_for_title_only = TRUE
+
+IF reason_for_title_only = "customer unresponsive"
+THEN title_only_exception_reason_valid_for_review = TRUE
+
+IF reason_for_title_only = "customer cannot meet state requirements"
+THEN title_only_exception_reason_valid_for_review = TRUE
+
+IF reason_for_title_only = "customer simply does not want to register"
+THEN title_only_reason_not_sufficient_without_management_exception = TRUE
+
+IF validate_title_only_exception = TRUE
+THEN controller_approval_required = TRUE
+
+IF financed_or_lienholder_involved = TRUE
+THEN bank_approval_scanned_in_required_if_applicable = TRUE
+
+IF validate_title_only_exception = TRUE
+THEN intent_to_title_only_letter_required = TRUE
+
+IF intent_to_title_only_letter_sent = TRUE
+THEN ten_day_customer_response_period_required = TRUE
+
+IF validate_title_only_exception = TRUE
+THEN verify_no_plate_registration_or_transfer_tag_issued = TRUE
+
+IF title_only_in_customer_state_possible = TRUE
+THEN prefer_customer_state_title_only_review = TRUE
+
+IF Florida_title_only_used = TRUE
+THEN Florida_tax_due_review_required = TRUE
+
+IF Florida_tax_paid = TRUE
+THEN DR_123_available_to_show_taxes_paid_to_Florida = TRUE
+
+IF financed_title_only = TRUE
+THEN customer_may_need_state_to_state_title_transfer = TRUE
+
+IF controller_approval_missing = TRUE
+THEN validation_failed_hold_before_submission = TRUE
+
+IF intent_to_title_only_letter_missing = TRUE
+THEN validation_failed_hold_before_submission = TRUE
+
+COMMON VALIDATION ANSWER:
+For a dealer sale, title-only must be validated as an exception workflow. The normal process is title and registration. Acceptable reasons are normally customer unresponsive or customer cannot meet their state requirements. Confirm controller approval, bank approval if financed/applicable, and that the Intent to Title Only letter was sent with a 10-day response period. Confirm no plate, registration, or transfer tag will be issued. If title-only is processed in Florida, review Florida taxes due and DR-123. If financed, warn that state-to-state title transfer may be needed later.
+
 ============================================================
 AUDIT TRAIL VALIDATION LOGIC
 ============================================================

@@ -710,6 +710,51 @@ def search_documents(query):
 
         return (unique_expired_registration_transfer_tag_matches + non_expired_registration_transfer_tag_matches)[:5]
     
+    dealer_title_only_words = [
+        "customer wants title-only",
+        "customer wants title only",
+        "customer does not want to register",
+        "title only no registration",
+        "title-only transaction",
+        "customer wants title only and no plate",
+        "dealer title only",
+        "no registration title only",
+        "title only no plate"
+    ]
+
+    if any(term in query.lower() for term in dealer_title_only_words):
+        priority_names = [
+            "registration_plate_and_insurance",
+            "320.02",
+            "title_ownership_and_transfer",
+            "rejection_prevention_logic_map",
+            "validation_logic_map",
+            "tl_11",
+            "319.23",
+            "lien_and_lien_satisfaction"
+        ]
+
+        dealer_title_only_matches = [
+            m for name in priority_names
+            for m in matches
+            if name in m["name"].lower()
+        ]
+
+        unique_dealer_title_only_matches = []
+        seen_names = set()
+
+        for m in dealer_title_only_matches:
+            if m["name"] not in seen_names:
+                unique_dealer_title_only_matches.append(m)
+                seen_names.add(m["name"])
+
+        non_dealer_title_only_matches = [
+            m for m in matches
+            if m["name"] not in seen_names
+        ]
+
+        return (unique_dealer_title_only_matches + non_dealer_title_only_matches)[:5]
+
     out_of_state_title_florida_tag_words = [
         "out-of-state title and wants to transfer their florida tag",
         "out of state title and wants to transfer their florida tag",
@@ -1703,6 +1748,39 @@ Required answer:
 4. Do not say an affidavit is an automatic substitute unless title lead, tax collector, or FLHSMV procedure allows it.
 5. Check for mileage conflicts, brands, unit issues, or suspected tampering.
 6. Hold and escalate if the odometer disclosure cannot be completed cleanly or conflicts with the deal file/title record.
+
+STRICT DEALER TITLE-ONLY EXCEPTION RULE:
+
+For questions where a customer wants title-only and does not want to register the vehicle, do not answer as if title-only is always a normal customer choice in a dealer sale.
+
+STRICT DEALER TITLE-ONLY SUPERVISOR WORKFLOW RULE:
+
+For questions where a customer wants title-only and does not want to register the vehicle, do not answer as if title-only is a normal customer preference.
+
+Dealership operational rule:
+1. In a normal dealer sale, the expected workflow is title AND registration.
+2. Title-only is an exception workflow.
+3. Normally acceptable reasons are:
+   - customer becomes unresponsive, or
+   - customer cannot meet their state requirements.
+4. Do not process title-only automatically just because the customer does not want to register.
+5. Controller approval is required.
+6. If financed or lienholder/bank involved, bank approval must be scanned in if applicable.
+7. Send an Intent to Title Only letter and allow the customer 10 days to respond.
+8. Title only in the customer’s state if possible.
+9. If title-only is processed in Florida, Florida taxes are due.
+10. If Florida taxes are paid, provide DR-123 to show taxes paid to Florida.
+11. If financed, customer may need to complete a state-to-state title transfer.
+12. Do not issue a plate, registration, sticker, or transfer tag on a title-only transaction.
+13. If the customer responds after title-only is completed, help walk them through next steps.
+
+Normally acceptable title-only reasons are limited to:
+1. Customer becomes unresponsive, or
+2. Customer cannot meet their state’s title/registration requirements.
+
+Do not describe title-only as a normal customer preference. A customer simply saying they do not want to register is not enough by itself.
+
+The Intent to Title Only letter gives the customer 10 days to respond before the dealership proceeds with the title-only exception workflow.
 
 Knowledge Base:
 {combined_context}

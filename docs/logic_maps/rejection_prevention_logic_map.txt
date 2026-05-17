@@ -398,6 +398,85 @@ COMMON CLERK ANSWER:
 For vehicle registration, a customer must provide a valid Florida/out-of-state driver license or ID, or a valid passport. An unexpired U.S. passport or U.S. passport card may qualify. A foreign passport must be unexpired and supported by lawful-presence documentation such as a DHS stamp/mark, unexpired I-94, current permanent resident card, or unexpired immigrant visa. A foreign passport alone is not enough for registration. This rule applies to registration/plate issuance, not title-only applications. Hold the registration if required ID/passport documentation is missing or expired.
 
 ============================================================
+DEALER TITLE-ONLY REQUEST — STRICT SUPERVISOR EXCEPTION WORKFLOW
+============================================================
+
+IF user_question_mentions = "customer wants title-only"
+OR user_question_mentions = "customer wants title only"
+OR user_question_mentions = "customer does not want to register"
+OR user_question_mentions = "title only no registration"
+OR user_question_mentions = "title-only transaction"
+OR user_question_mentions = "customer wants title only and no plate"
+OR user_question_mentions = "dealer title only"
+OR user_question_mentions = "no registration title only"
+OR user_question_mentions = "title only no plate"
+THEN dealer_title_only_exception_workflow_required = TRUE
+
+IF dealer_title_only_exception_workflow_required = TRUE
+THEN do_not_treat_title_only_as_normal_customer_preference = TRUE
+
+IF dealer_sale_transaction = TRUE
+THEN default_dealer_workflow_is_title_and_registration = TRUE
+
+IF dealer_title_only_exception_workflow_required = TRUE
+THEN acceptable_reasons_are_customer_unresponsive_or_customer_cannot_meet_state_requirements = TRUE
+
+IF customer_simply_does_not_want_to_register = TRUE
+THEN title_only_not_automatically_allowed = TRUE
+
+IF title_only_exception_workflow_required = TRUE
+THEN controller_approval_required = TRUE
+
+IF financed_or_lienholder_involved = TRUE
+THEN bank_approval_scanned_in_required_if_applicable = TRUE
+
+IF title_only_exception_workflow_required = TRUE
+THEN intent_to_title_only_letter_required = TRUE
+
+IF intent_to_title_only_letter_sent = TRUE
+THEN allow_customer_10_days_to_respond = TRUE
+
+IF title_only_exception_workflow_required = TRUE
+THEN attempt_title_only_in_customer_state_if_possible = TRUE
+
+IF title_only_processed_in_Florida = TRUE
+THEN Florida_taxes_due_review_required = TRUE
+
+IF Florida_taxes_paid = TRUE
+THEN DR_123_may_be_given_to_customer_to_show_taxes_paid_to_Florida = TRUE
+
+IF financed_transaction_title_only = TRUE
+THEN customer_may_need_state_to_state_title_transfer = TRUE
+
+IF title_only_approved = TRUE
+THEN do_not_issue_plate_registration_or_transfer_tag = TRUE
+
+IF registration_or_plate_issuance_later_requested = TRUE
+THEN valid_Florida_insurance_and_registration_requirements_apply = TRUE
+
+IF customer_responds_after_title_only_completed = TRUE
+THEN assist_customer_with_next_steps_for_registration_or_state_to_state_transfer = TRUE
+
+IF title_only_exception_workflow_required = TRUE
+THEN answer_must_state_acceptable_reasons_customer_unresponsive_or_cannot_meet_state_requirements = TRUE
+
+IF customer_simply_prefers_no_registration = TRUE
+THEN not_sufficient_reason_for_title_only_without_supervisor_exception_review = TRUE
+
+IF intent_to_title_only_letter_sent = TRUE
+THEN customer_has_10_days_to_respond_before_title_only_exception_proceeds = TRUE
+
+IF customer_responds_within_10_days = TRUE
+THEN review_updated_customer_requirements_before_title_only = TRUE
+
+IF customer_does_not_respond_after_10_days = TRUE
+THEN proceed_only_if_controller_bank_approvals_and_title_only_documentation_are_complete = TRUE
+
+COMMON CLERK ANSWER:
+For a dealership sale, title-only is not a normal customer preference. The standard workflow is title and registration. Title-only should normally be used only when the customer becomes unresponsive or the customer cannot meet their state’s requirements. Before processing title-only, obtain controller approval. If financed or a lienholder is involved, scan in bank approval if applicable. Send the customer an Intent to Title Only letter and allow 10 days for the customer to respond. If possible, title only in the customer’s state. If the dealership titles only in Florida, Florida taxes are due, and the customer may be given a DR-123 showing taxes paid to Florida. If financed, the customer may later need to complete a state-to-state title transfer. Do not issue a plate, registration, or transfer tag on a title-only transaction. If the customer later responds, help walk them through the next steps. COMMON CLERK ANSWER:
+For a dealer sale, title-only is not a normal customer preference. The standard workflow is title and registration. Title-only should normally be used only when the customer becomes unresponsive or the customer cannot meet their state’s requirements. Before proceeding, obtain controller approval. If the transaction is financed or a lienholder is involved, scan in bank/lienholder approval if applicable. Send the customer an Intent to Title Only letter and allow 10 days for response. If the customer responds, review the updated requirements before proceeding. If the customer does not respond, proceed only if approvals and documentation are complete. Title only in the customer’s state if possible. If title-only is processed in Florida, Florida taxes are due and DR-123 may be given to show taxes paid to Florida. Do not issue a plate, registration, sticker, or transfer tag.
+
+============================================================
 TRANSFER TAG REJECTION PREVENTION
 ============================================================
 
