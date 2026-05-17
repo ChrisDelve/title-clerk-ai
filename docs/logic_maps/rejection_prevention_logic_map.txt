@@ -31,6 +31,59 @@ AND all_owners_not_signed = TRUE
 THEN reject_before_submission = TRUE
 
 ============================================================
+SELLER SIGNED WRONG AREA ON TITLE — STRICT WORKFLOW
+============================================================
+
+IF user_question_mentions = "seller signed the wrong area on the title"
+OR user_question_mentions = "seller signed wrong spot on title"
+OR user_question_mentions = "seller signed in wrong place"
+OR user_question_mentions = "signature in wrong area on title"
+OR user_question_mentions = "seller signed buyer section"
+OR user_question_mentions = "seller signed wrong box"
+THEN seller_wrong_signature_area_workflow_required = TRUE
+
+IF seller_wrong_signature_area_workflow_required = TRUE
+THEN do_not_submit_title_as_is_until_signature_error_reviewed = TRUE
+
+IF seller_wrong_signature_area_workflow_required = TRUE
+THEN verify_seller_signature_printed_name_buyer_assignment_odometer_and_lien_sections = TRUE
+
+IF seller_signed_wrong_area_but_correct_assignment_can_be_completed = TRUE
+THEN seller_re_sign_or_correct_assignment_review_required = TRUE
+
+IF signature_error_affects_ownership_transfer_or_odometer_disclosure = TRUE
+THEN hold_and_escalate_before_submission = TRUE
+
+IF seller_available_to_correct = TRUE
+THEN obtain_corrected_signature_assignment_or_required_correction_documentation = TRUE
+
+IF seller_unavailable_or_error_cannot_be_corrected = TRUE
+THEN duplicate_title_or_tax_collector_guidance_review_required = TRUE
+
+IF fraud_forgery_alteration_or_whiteout_suspected = TRUE
+THEN fraud_escalation_required = TRUE
+
+DO NOT automatically say duplicate title is always required. First determine whether the signature error can be corrected through proper re-signature, assignment correction, affidavit/correction support, or tax collector guidance.
+
+IF seller_signed_wrong_line_or_wrong_area_on_title = TRUE
+THEN correction_affidavit_required = TRUE
+
+IF seller_signed_wrong_line_or_wrong_area_on_title = TRUE
+THEN affidavit_should_state_seller_signed_on_incorrect_line_in_error = TRUE
+
+IF correction_affidavit_missing = TRUE
+THEN hold_before_submission = TRUE
+
+IF wrong_signature_line_can_be_corrected = TRUE
+THEN obtain_correct_signature_and_correction_affidavit = TRUE
+
+COMMON DEALERSHIP PROCEDURE:
+If the seller signed on the wrong line or wrong area of the title, require a correction affidavit stating substantially: "Seller signed on incorrect line in error." Do not submit the title as-is without the correction affidavit and proper signature review. If the seller can correctly sign the proper section, obtain the corrected signature and keep the affidavit with the title package. If the signature error affects odometer disclosure, ownership transfer, or cannot be cleanly corrected, escalate to the title lead or tax collector before submission.
+
+CCOMMON CLERK ANSWER:
+If the seller signed the wrong line or wrong area on the title, do not submit the title as-is. First identify exactly where the seller signed and whether the correct seller assignment, printed name, buyer information, odometer disclosure, and lien sections are still usable. The dealership correction procedure should include a correction affidavit stating substantially: "Seller signed on incorrect line in error." If the seller is available, obtain the correct signature in the proper section and keep the affidavit with the title package. If the error affects odometer disclosure, ownership transfer, or cannot be corrected cleanly, hold and escalate to the title lead or tax collector. A duplicate title may be needed only if the title cannot be corrected or tax collector/FLHSMV guidance requires it.
+
+============================================================
 ACTIVE LIEN LOGIC
 ============================================================
 

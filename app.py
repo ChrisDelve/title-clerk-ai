@@ -498,6 +498,48 @@ def search_documents(query):
 
         return (third_temp_matches + non_third_temp_matches)[:5]
     
+    wrong_signature_area_words = [
+        "seller signed the wrong area on the title",
+        "seller signed wrong spot on title",
+        "seller signed in wrong place",
+        "signature in wrong area on title",
+        "seller signed buyer section",
+        "seller signed wrong box",
+        "seller signature wrong area",
+        "seller signed wrong area"
+    ]
+
+    if any(term in query.lower() for term in wrong_signature_area_words):
+        priority_names = [
+            "tl_11",
+            "tl_01",
+            "title_ownership_and_transfer",
+            "validation_logic_map",
+            "rejection_prevention_logic_map",
+            "tl_05"
+        ]
+
+        wrong_signature_area_matches = [
+            m for name in priority_names
+            for m in matches
+            if name in m["name"].lower()
+        ]
+
+        unique_wrong_signature_area_matches = []
+        seen_names = set()
+
+        for m in wrong_signature_area_matches:
+            if m["name"] not in seen_names:
+                unique_wrong_signature_area_matches.append(m)
+                seen_names.add(m["name"])
+
+        non_wrong_signature_area_matches = [
+            m for m in matches
+            if m["name"] not in seen_names
+        ]
+
+        return (unique_wrong_signature_area_matches + non_wrong_signature_area_matches)[:5]
+    
     seller_title_transfer_tag_words = [
         "transfer tag but title is still in seller's name",
         "transfer tag but title is still in seller’s name",
@@ -1528,6 +1570,32 @@ Valid title authority may include:
 5. authorized reassignment or other approved title documentation.
 
 If the title is missing and ownership/lien authority cannot be verified, hold and escalate before submission.
+
+STRICT WRONG SIGNATURE AREA ON TITLE RULE:
+
+For questions where a seller signed the wrong area on the title, do not automatically say a duplicate title is required.
+
+Required workflow:
+1. Do not submit the title as-is until reviewed.
+2. Identify exactly where the seller signed.
+3. Verify the correct assignment section, printed name, buyer section, odometer disclosure, lien section, and any alterations.
+4. If the seller is available and the correct assignment can still be completed, review proper re-signature or correction documentation.
+5. If the error affects ownership transfer, odometer disclosure, or cannot be corrected cleanly, hold and escalate to title lead or tax collector.
+6. Use duplicate title only when the title cannot be corrected or tax collector/FLHSMV guidance requires it.
+7. Escalate immediately if fraud, forgery, alteration, or whiteout is suspected.
+
+STRICT WRONG SIGNATURE LINE AFFIDAVIT RULE:
+
+For questions where a seller signed on the wrong line or wrong area of the title, include the dealership correction affidavit requirement.
+
+The answer must say:
+1. Do not submit the title as-is.
+2. Identify exactly where the seller signed.
+3. Require a correction affidavit stating substantially: "Seller signed on incorrect line in error."
+4. If the seller is available, obtain the correct signature in the proper assignment section.
+5. Keep the correction affidavit with the title package/audit trail.
+6. Escalate if odometer disclosure, ownership transfer, alteration, fraud, or correction acceptability is unclear.
+7. Do not jump straight to duplicate title unless the title cannot be corrected or tax collector/FLHSMV guidance requires it.
 
 Knowledge Base:
 {combined_context}
