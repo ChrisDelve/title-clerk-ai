@@ -540,6 +540,47 @@ def search_documents(query):
 
         return (unique_wrong_signature_area_matches + non_wrong_signature_area_matches)[:5]
     
+    and_ownership_signature_words = [
+        "florida title shows and between owners but only one owner signed",
+        "and title only one owner signed",
+        "title says and but one owner signed",
+        "only one owner signed and title says and",
+        "joint owners and only one signature",
+        "missing owner signature and title",
+        "and ownership only one signature",
+        "and ownership missing signature"
+    ]
+
+    if any(term in query.lower() for term in and_ownership_signature_words):
+        priority_names = [
+            "tl_11",
+            "tl_01",
+            "title_ownership_and_transfer",
+            "validation_logic_map",
+            "rejection_prevention_logic_map"
+        ]
+
+        and_ownership_signature_matches = [
+            m for name in priority_names
+            for m in matches
+            if name in m["name"].lower()
+        ]
+
+        unique_and_ownership_signature_matches = []
+        seen_names = set()
+
+        for m in and_ownership_signature_matches:
+            if m["name"] not in seen_names:
+                unique_and_ownership_signature_matches.append(m)
+                seen_names.add(m["name"])
+
+        non_and_ownership_signature_matches = [
+            m for m in matches
+            if m["name"] not in seen_names
+        ]
+
+        return (unique_and_ownership_signature_matches + non_and_ownership_signature_matches)[:5]
+
     seller_title_transfer_tag_words = [
         "transfer tag but title is still in seller's name",
         "transfer tag but title is still in seller’s name",
@@ -1596,6 +1637,18 @@ The answer must say:
 5. Keep the correction affidavit with the title package/audit trail.
 6. Escalate if odometer disclosure, ownership transfer, alteration, fraud, or correction acceptability is unclear.
 7. Do not jump straight to duplicate title unless the title cannot be corrected or tax collector/FLHSMV guidance requires it.
+
+STRICT AND OWNERSHIP SIGNATURE RULE:
+
+For questions where a Florida title shows "AND" between owners but only one owner signed, do not treat one signature as sufficient.
+
+Required answer:
+1. "AND" ownership means all listed owners must sign.
+2. Do not submit as-is if one required owner signature is missing.
+3. Obtain the missing owner signature or valid legal authority before submission.
+4. If POA is used, verify it is valid, specific enough, properly executed, and the principal is alive.
+5. POA cannot be used after death.
+6. Escalate if an owner is unavailable, refuses to sign, is deceased, or ownership authority is unclear.
 
 Knowledge Base:
 {combined_context}
