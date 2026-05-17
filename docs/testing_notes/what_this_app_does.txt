@@ -1,0 +1,156 @@
+DOCUMENT: WHAT_THIS_APP_DOES
+TITLE: What the Florida Title and Registration Assistant Does
+DOCUMENT_TYPE: Demo Explanation / Product Summary
+CATEGORY: DEALERSHIP DEMO / MVP POSITIONING / INTERNAL SUMMARY
+
+============================================================
+SHORT VERSION
+============================================================
+
+Delve AI is a Florida dealership title and registration workflow assistant.
+
+It helps dealership staff answer practical title, registration, plate, lien, insurance, odometer, EFS, ID, and rejection-prevention questions using uploaded Florida statutes, FLHSMV procedures, and internal operational notes.
+
+It is designed to help clerks, F&I managers, controllers, office managers, and dealership staff understand:
+
+- What workflow applies
+- What documents are required
+- Whether the transaction should be held
+- Whether the issue needs escalation
+- Whether the issue is title-only, registration, plate transfer, new plate, lien, odometer, EFS, or audit-trail related
+- Which internal source files were used to generate the answer
+
+============================================================
+WHAT PROBLEM IT SOLVES
+============================================================
+
+Dealership title and registration questions are repetitive, time-sensitive, and often depend on specific Florida rules, FLHSMV procedures, dealership workflow, and tax collector expectations.
+
+Common issues include:
+
+- Transfer tag questions
+- Expired registration
+- No valid Florida insurance
+- Foreign passport or ID issues
+- Out-of-state titles
+- Missing VIN verification
+- Active liens or ELT issues
+- Blank odometer disclosures
+- Seller signed in the wrong area
+- AND ownership with missing signatures
+- Title-only exceptions
+- Registration stops
+- EFS plate inventory issues
+- Third temporary tag approval workflows
+
+This assistant gives dealership staff a fast operational answer instead of forcing them to search through statutes, PDFs, procedure manuals, notes, or ask the title office repeatedly.
+
+============================================================
+WHAT THE APP DOES
+============================================================
+
+The assistant reviews the user’s question and searches the dealership knowledge base.
+
+It then provides:
+
+1. Operational Guidance
+   A practical explanation of how the dealership should handle the issue.
+
+2. Required Documents
+   A checklist of forms, title documents, insurance, ID, lien releases, odometer disclosures, approvals, or supporting documents when applicable.
+
+3. Compliance Concerns
+   Warnings about issues that may cause rejection, audit problems, fraud exposure, or improper processing.
+
+4. Escalation Situations
+   When the issue should be held and escalated to the title lead, controller, tax collector, FLHSMV, lender, or management.
+
+5. Sources Used
+   The internal statutes, FLHSMV procedures, law notes, operational notes, and logic maps used to generate the answer.
+
+============================================================
+WHAT MAKES IT DIFFERENT FROM GENERIC AI
+============================================================
+
+This is not a general chatbot.
+
+It is built around Florida dealership title and registration workflows.
+
+The app uses:
+
+- Florida statute notes
+- FLHSMV procedure notes
+- EFS procedure notes
+- Operational dealership notes
+- Rejection-prevention logic maps
+- Validation logic maps
+- Real title clerk testing scenarios
+
+It is designed to answer the way a dealership title clerk needs the answer:
+
+- Can we process this?
+- Should we hold it?
+- What document is missing?
+- Is this a plate transfer or new plate issue?
+- Does IRF apply?
+- Is insurance required?
+- Is this title-only or registration?
+- Does this need tax collector, FLHSMV, lender, controller, or manager approval?
+- What source files support the answer?
+
+============================================================
+CURRENT VALIDATION STATUS
+============================================================
+
+The assistant has been tested against 30 dealership workflow issues.
+
+These tests include real-world issues involving:
+
+- Transfer tags
+- Insurance mismatches
+- Foreign passports
+- U.S. passports
+- Out-of-state titles
+- VIN verification
+- ELT liens
+- Paper lien satisfactions
+- Lost trade titles
+- Wrong seller signature line
+- AND ownership signatures
+- Blank odometer disclosures
+- Title-only workflows
+- Registration stops
+- EFS inventory workflows
+- Third temporary tags
+
+The passed tests are tracked in:
+
+docs/testing_notes/passed_issue_tests.txt
+
+============================================================
+SCOPE NOTE
+============================================================
+
+This assistant supports dealership workflow guidance.
+
+It does not replace:
+
+- FLHSMV
+- Tax collector guidance
+- Lender approval
+- Controller approval
+- Management approval
+- Compliance review
+- Legal advice
+
+When ownership, lien, odometer, fraud, legal authority, registration stops, or compliance issues are unclear, the transaction should be held and escalated before submission.
+
+============================================================
+ONE-PARAGRAPH DEMO SCRIPT
+============================================================
+
+Delve AI is a Florida title and registration assistant built for dealership workflows. It helps staff quickly understand how to handle title, tag, registration, lien, odometer, insurance, ID, EFS, and rejection-prevention issues. The app searches internal FLHSMV procedure notes, Florida statute notes, dealership workflow notes, and validation logic maps, then gives a clerk-ready answer with required documents, compliance concerns, escalation points, and sources used. It is meant to reduce repeated title office questions, prevent avoidable rejections, and help new or non-title staff understand the correct workflow before submitting a deal.
+
+============================================================
+END OF FILE
+============================================================
