@@ -1,0 +1,419 @@
+DOCUMENT: DEMO_QUESTION_LIST
+TITLE: Demo Question List for Florida Title and Registration Assistant
+DOCUMENT_TYPE: Testing Notes / Demo Script
+CATEGORY: DEALERSHIP DEMO / MVP VALIDATION / TITLE CLERK ASSISTANT
+
+============================================================
+PURPOSE
+============================================================
+
+This file contains clean, dealership-realistic demo questions that have already been validated or are based on validated workflow patterns.
+
+Use these questions when demonstrating the Florida Title and Registration Assistant to a title clerk, controller, F&I manager, office manager, or dealership leadership.
+
+The goal is to show that the assistant can:
+
+- Identify the correct title/registration issue
+- Explain the dealership workflow
+- Warn when a transaction should be held
+- Identify when escalation is required
+- Separate title-only vs registration/plate issuance
+- Use the correct source files
+- Give a practical clerk-ready answer
+
+============================================================
+DEMO QUESTION SET — CORE DEALERSHIP WORKFLOWS
+============================================================
+
+DEMO QUESTION 001
+Question:
+Customer wants to transfer tag but title is still in seller's name
+
+Why this is useful:
+Shows that the assistant understands that title ownership must be established before plate/registration work is treated as ready.
+
+Expected pattern:
+- Verify title assignment first
+- Verify seller/buyer signatures
+- Verify odometer disclosure if required
+- Verify plate owner
+- Do not process transfer tag if ownership or plate eligibility is unclear
+- New plate / IRF review if plate is not transferable
+
+------------------------------------------------------------
+
+DEMO QUESTION 002
+Question:
+Customer wants to transfer tag but registration is expired
+
+Why this is useful:
+Shows the assistant can separate plate transfer eligibility from registration renewal/completion requirements.
+
+Expected pattern:
+- Expired registration does not automatically disqualify plate transfer eligibility
+- Registration must be renewed/current before completion
+- Valid Florida insurance required
+- Delinquent fees/renewal fees must be resolved
+- Plate owner must match customer
+- Escalate unclear fees or stops
+
+------------------------------------------------------------
+
+DEMO QUESTION 003
+Question:
+Customer has no valid Florida insurance
+
+Why this is useful:
+Shows the assistant understands the registration/plate issuance block and title-only distinction.
+
+Expected pattern:
+- No valid Florida insurance = no registration/plate issuance
+- Do not issue new plate or transfer plate
+- Title-only may be separate if no registration/plate is issued
+- Escalate unclear insurance proof
+
+------------------------------------------------------------
+
+DEMO QUESTION 004
+Question:
+Customer only has a foreign passport and wants to register the vehicle
+
+Why this is useful:
+Shows the assistant can answer a common registration ID question using Rule 15C-1.015 / INFO 24-023.
+
+Expected pattern:
+- Foreign passport alone is not enough for registration
+- Passport must be unexpired
+- Lawful-presence documentation required
+- Examples: DHS stamp/mark, unexpired I-94, current permanent resident card, unexpired immigrant visa
+- Rule applies to registration/plate issuance, not title-only
+
+------------------------------------------------------------
+
+DEMO QUESTION 005
+Question:
+Customer has a US passport but no Florida ID and wants to register
+
+Why this is useful:
+Shows the assistant can distinguish U.S. passport rules from foreign passport rules.
+
+Expected pattern:
+- Unexpired U.S. passport or passport card may satisfy registration ID requirement
+- Valid Florida insurance still required
+- Ownership/title documents still required
+- Title-only distinction still applies
+
+------------------------------------------------------------
+
+DEMO QUESTION 006
+Question:
+Customer wants a third temporary tag
+
+Why this is useful:
+Shows real dealership-specific workflow, not generic DMV language.
+
+Expected pattern:
+- Third temp is not routine
+- GM/controller approval required
+- Regional DMV approval letter required
+- Email regional DMV with customer name, VIN, insurance, buyer’s order/bill of sale, and reason
+- If approved, send approval package to agency
+- Agency processes third temp
+
+------------------------------------------------------------
+
+DEMO QUESTION 007
+Question:
+Customer changed from new plate to transfer tag after delivery
+
+Why this is useful:
+Shows EFS inventory/void logic and proves the assistant understands operational plate inventory handling.
+
+Expected pattern:
+- Not a simple plate transfer
+- EFS inventory/void issue
+- Verify new plate was issued/placed
+- Void original EFS transaction
+- Return issued plate to tax collector/license plate agency
+- Verify transfer tag eligibility before reprocessing
+
+------------------------------------------------------------
+
+DEMO QUESTION 008
+Question:
+Buyer never took possession but new plate was issued
+
+Why this is useful:
+Shows the assistant understands the difference between RS/re-issuable inventory and return workflow.
+
+Expected pattern:
+- Verify buyer never took possession
+- Verify vehicle did not leave dealership
+- Verify plate was not placed on vehicle
+- If plate not placed, void and set inventory available
+- Inventory should become RS / re-issuable
+- If plate was placed or vehicle left, do not reuse; use return workflow
+
+------------------------------------------------------------
+
+DEMO QUESTION 009
+Question:
+EFS transaction stuck in initial status
+
+Why this is useful:
+Shows EFS manual-processing and inventory status logic.
+
+Expected pattern:
+- Treat as EFS inventory/manual processing issue
+- Identify why transaction cannot complete
+- Check vehicle/customer/registration stop
+- Determine if plate was issued/placed
+- If issued/placed, do not reuse
+- Use RT return workflow, then RR after agency/tax collector receipt
+- Escalate if void/status does not update
+
+------------------------------------------------------------
+
+DEMO QUESTION 010
+Question:
+Customer has an out-of-state title but no VIN verification
+
+Why this is useful:
+Shows out-of-state title conversion and VIN verification requirement.
+
+Expected pattern:
+- Original out-of-state title required
+- Proper assignment/signatures required
+- VIN verification required before Florida title/registration submission
+- HSMV 82042 or authorized VIN verification method
+- Hold if VIN verification missing
+- Escalate VIN mismatch or tampering
+- Insurance required if registration/plate issuance involved
+
+------------------------------------------------------------
+
+DEMO QUESTION 011
+Question:
+Customer has an out-of-state title and wants to transfer their Florida tag
+
+Why this is useful:
+Shows combined workflow: out-of-state title into Florida plus Florida plate transfer eligibility.
+
+Expected pattern:
+- Florida title application from out-of-state title
+- Verify out-of-state title assignment
+- VIN verification
+- Valid Florida insurance
+- Florida tag must be registered to customer
+- New plate / IRF review if tag is not transferable
+- Lien/TL-33 only if lien issue exists
+
+------------------------------------------------------------
+
+DEMO QUESTION 012
+Question:
+Customer has an out-of-state title with a lien showing but says it is paid off
+
+Why this is useful:
+Shows that verbal lien payoff statements are not enough.
+
+Expected pattern:
+- Do not accept verbal statement
+- Require official lien release/satisfaction
+- Lienholder name must match title
+- Out-of-state lien is not automatically Florida ELT
+- Hold/escalate if lien release is missing or unclear
+- TL-33 only if lien release/removal issue applies
+
+------------------------------------------------------------
+
+DEMO QUESTION 013
+Question:
+Customer has an active ELT lien but brought a paper lien satisfaction
+
+Why this is useful:
+Shows ELT-specific lien logic.
+
+Expected pattern:
+- Paper lien satisfaction alone is not enough for active ELT lien
+- Verify active ELT status
+- Electronic release required
+- TL-33 review only if applicable
+- Do not rely on HSMV 82260 for active ELT lien removal
+- Escalate if electronic release is missing or unresolved
+
+------------------------------------------------------------
+
+DEMO QUESTION 014
+Question:
+Customer traded a vehicle but lost the title
+
+Why this is useful:
+Shows duplicate title / trade title authority workflow.
+
+Expected pattern:
+- Trade title work is not title-ready until valid authority is resolved
+- Lost paper title usually requires duplicate title
+- Electronic title/ELT requires release or reassignment
+- Verify lien status
+- Hold/escalate if ownership or title authority is unclear
+
+------------------------------------------------------------
+
+DEMO QUESTION 015
+Question:
+Seller signed the wrong area on the title
+
+Why this is useful:
+Shows the assistant knows your dealership correction-affidavit procedure.
+
+Expected pattern:
+- Do not submit title as-is
+- Identify exactly where seller signed
+- Require correction affidavit stating substantially: “Seller signed on incorrect line in error”
+- Obtain corrected signature if possible
+- Escalate if odometer, ownership, fraud, alteration, or correction acceptability is unclear
+- Duplicate title only if correction is not possible or guidance requires it
+
+------------------------------------------------------------
+
+DEMO QUESTION 016
+Question:
+Florida title shows AND between owners but only one owner signed
+
+Why this is useful:
+Shows ownership conjunction and signature authority logic.
+
+Expected pattern:
+- AND ownership means all owners must sign
+- One signature is not enough
+- Obtain missing signature or valid legal authority
+- Verify POA if used
+- POA invalid after death
+- Escalate if owner unavailable, refuses, deceased, or authority unclear
+
+------------------------------------------------------------
+
+DEMO QUESTION 017
+Question:
+Odometer disclosure is blank on the title
+
+Why this is useful:
+Shows odometer disclosure validation and rejection prevention.
+
+Expected pattern:
+- Verify model year / odometer exemption
+- If non-exempt, do not submit blank
+- Seller or authorized party must complete required disclosure
+- Affidavit is not automatic substitute
+- Escalate mileage conflict, brand, unit issue, tampering, or incomplete disclosure
+
+------------------------------------------------------------
+
+DEMO QUESTION 018
+Question:
+Customer wants title-only and does not want to register the vehicle
+
+Why this is useful:
+Shows dealership-specific supervisor exception workflow.
+
+Expected pattern:
+- Dealer sale normally means title and registration
+- Title-only is an exception, not normal customer preference
+- Acceptable reasons normally customer unresponsive or cannot meet state requirements
+- Controller approval required
+- Bank/lienholder approval if financed/applicable
+- Intent to Title Only letter
+- 10-day response window
+- No plate, registration, sticker, or transfer tag
+- Florida taxes due if titled in Florida
+- DR-123 may show taxes paid
+
+------------------------------------------------------------
+
+DEMO QUESTION 019
+Question:
+Customer has a registration stop and wants the dealer to submit anyway
+
+Why this is useful:
+Shows stop/block handling and protects against bad submissions.
+
+Expected pattern:
+- Dealer cannot bypass or override registration stop
+- Do not submit registration/plate/transfer tag while active stop exists
+- Identify stop reason
+- Customer must clear stop with tax collector/FLHSMV
+- Valid Florida insurance if insurance stop
+- Title-only exception only if no registration/plate issued and approvals exist
+
+------------------------------------------------------------
+
+DEMO QUESTION 020
+Question:
+Missing audit trail
+
+Why this is useful:
+Shows general rejection-prevention workflow for incomplete deal documentation.
+
+Expected pattern:
+- Hold transaction
+- Reconstruct chain of ownership
+- Verify reassignment chain
+- Review DLRDMV uploads, rejection notes, and transaction history
+- Verify dealer docs, buyer/seller docs, ID, title record
+- Review lien/odometer/POA only if applicable
+- Escalate if chain cannot be proven
+
+============================================================
+SHORT DEMO SET — BEST 10 QUESTIONS
+============================================================
+
+Use these if you only have a few minutes to demo the app.
+
+1. Customer wants a third temporary tag
+2. Customer only has a foreign passport and wants to register the vehicle
+3. Customer wants to transfer tag but insurance is in spouse's name
+4. Customer changed from new plate to transfer tag after delivery
+5. EFS transaction stuck in initial status
+6. Customer has an out-of-state title but no VIN verification
+7. Customer has an active ELT lien but brought a paper lien satisfaction
+8. Seller signed the wrong area on the title
+9. Customer wants title-only and does not want to register the vehicle
+10. Customer has a registration stop and wants the dealer to submit anyway
+
+============================================================
+DEMO TALKING POINTS
+============================================================
+
+This assistant is designed for dealership title and registration workflows.
+
+It does not just answer from general DMV knowledge. It uses:
+
+- FLHSMV procedures
+- Florida statutes
+- dealership operational notes
+- rejection prevention logic
+- validation rules
+- real title clerk workflows
+
+The assistant is strongest when asked practical questions like:
+
+- Can we process this?
+- What documents are missing?
+- Should we hold or submit?
+- Does this require escalation?
+- Is this title-only or registration?
+- Is this a plate transfer or new plate / IRF issue?
+- Does this need lien, odometer, EFS, or audit trail review?
+
+============================================================
+DEMO CAUTION
+============================================================
+
+The assistant should support dealership title/registration decision-making, but final decisions should still follow dealership policy, tax collector guidance, FLHSMV procedure, management approval, and legal/compliance review when needed.
+
+Use the assistant to identify the workflow, likely blockers, required documents, and escalation points.
+
+============================================================
+END OF FILE
+============================================================
