@@ -676,6 +676,52 @@ def search_documents(query):
         ]
 
         return (unique_out_of_state_no_vin_matches + non_out_of_state_no_vin_matches)[:5]
+    
+    out_of_state_lien_paid_words = [
+        "out-of-state title with a lien showing but says it is paid off",
+        "out of state title with a lien showing but says it is paid off",
+        "out-of-state title shows lien but customer says paid",
+        "out of state title shows lien but customer says paid",
+        "title has lien showing but customer says paid off",
+        "lien showing on out-of-state title",
+        "lien showing on out of state title",
+        "out-of-state title lien paid off",
+        "out of state title lien paid off"
+    ]
+
+    if any(term in query.lower() for term in out_of_state_lien_paid_words):
+        priority_names = [
+            "lien_and_lien_satisfaction",
+            "tl_33",
+            "319.24",
+            "319.27",
+            "title_ownership_and_transfer",
+            "rejection_prevention_logic_map",
+            "validation_logic_map",
+            "registration_plate_and_insurance",
+            "320.02"
+        ]
+
+        out_of_state_lien_paid_matches = [
+            m for name in priority_names
+            for m in matches
+            if name in m["name"].lower()
+        ]
+
+        unique_out_of_state_lien_paid_matches = []
+        seen_names = set()
+
+        for m in out_of_state_lien_paid_matches:
+            if m["name"] not in seen_names:
+                unique_out_of_state_lien_paid_matches.append(m)
+                seen_names.add(m["name"])
+
+        non_out_of_state_lien_paid_matches = [
+            m for m in matches
+            if m["name"] not in seen_names
+        ]
+
+        return (unique_out_of_state_lien_paid_matches + non_out_of_state_lien_paid_matches)[:5]
 
     spouse_plate_words = [
         "transfer a plate from their spouse",
@@ -1454,6 +1500,19 @@ Required workflow:
 6. If VIN verification is missing, hold before submission.
 7. If VIN does not match the title or appears altered/tampered with, escalate before proceeding.
 8. If registration or plate issuance is involved, verify valid Florida insurance.
+
+STRICT OUT-OF-STATE TITLE LIEN SHOWING RULE:
+
+For questions where an out-of-state title shows a lien but the customer says it is paid off, do not accept the customer’s verbal statement as proof of lien satisfaction.
+
+Required workflow:
+1. Verify the original out-of-state title and lienholder shown.
+2. Require acceptable lien release or lien satisfaction documentation.
+3. Verify the lienholder name matches the title/record.
+4. Verify title assignment and ownership chain.
+5. If lien release is missing, unclear, electronic, out-of-state, or cannot be verified, hold and escalate.
+6. Do not automatically say Florida ELT release is required unless the issue involves a Florida ELT or active Florida electronic lien.
+7. Use TL-33 only when lien release/removal, unavailable lienholder, ELT issue, certified mail, 5-year rule, or court order review is actually involved.
 
 Knowledge Base:
 {combined_context}

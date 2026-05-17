@@ -107,6 +107,48 @@ COMMON CLERK ANSWER:
 For an out-of-state title, do not submit the Florida title/registration package without VIN verification. First verify the original out-of-state title is available and properly assigned, including signatures and odometer disclosure if required. Then complete VIN verification using HSMV 82042 or another authorized VIN verification method. If VIN verification is missing, hold the transaction before submission. If the VIN does not match the title or appears altered/tampered with, escalate to the title lead, tax collector, or FLHSMV before proceeding. If registration or plate issuance is involved, valid Florida insurance is also required.
 
 ============================================================
+OUT-OF-STATE TITLE SHOWS LIEN BUT CUSTOMER SAYS PAID — STRICT WORKFLOW
+============================================================
+
+IF user_question_mentions = "out-of-state title with a lien showing but says it is paid off"
+OR user_question_mentions = "out of state title with lien showing but paid off"
+OR user_question_mentions = "out-of-state title shows lien but customer says paid"
+OR user_question_mentions = "out of state title shows lien but customer says paid"
+OR user_question_mentions = "title has lien showing but customer says paid off"
+OR user_question_mentions = "lien showing on out-of-state title"
+THEN out_of_state_title_lien_showing_paid_workflow_required = TRUE
+
+IF out_of_state_title_lien_showing_paid_workflow_required = TRUE
+THEN do_not_accept_customer_verbal_statement_as_lien_satisfaction = TRUE
+
+IF out_of_state_title_lien_showing_paid_workflow_required = TRUE
+THEN require_lien_release_or_lien_satisfaction_documentation = TRUE
+
+IF out_of_state_title_lien_showing_paid_workflow_required = TRUE
+THEN verify_lienholder_name_matches_title_or_record = TRUE
+
+IF out_of_state_title_lien_showing_paid_workflow_required = TRUE
+THEN verify_out_of_state_title_assignment_and_ownership_chain = TRUE
+
+IF lien_release_missing_or_unclear = TRUE
+THEN hold_before_submission = TRUE
+
+IF issuing_state_lien_record_or_title_status_unclear = TRUE
+THEN hold_and_escalate_to_title_lead_tax_collector_or_FLHSMV = TRUE
+
+IF lien_is_Florida_ELT_or_active_Florida_ELT_issue = TRUE
+THEN electronic_lien_release_required_review = TRUE
+
+IF lien_is_out_of_state_or_issuing_state_record_unclear = TRUE
+THEN do_not_assume_Florida_ELT_release_process_applies = TRUE
+
+IF lienholder_unavailable_unresponsive_or_out_of_business = TRUE
+THEN TL_33_or_tax_collector_guidance_review_required = TRUE
+
+COMMON CLERK ANSWER:
+If an out-of-state title shows a lien, do not accept the customer’s statement that it is paid off without lien satisfaction documentation. Verify the lienholder shown on the title, obtain an acceptable lien release or satisfaction, and confirm the out-of-state title is properly assigned. If the lien is electronic, out-of-state, unclear, or cannot be verified, hold and escalate before submission. Do not automatically treat every out-of-state lien as a Florida ELT release issue. Use TL-33 or tax collector guidance only when the lien release problem, unavailable lienholder, ELT issue, or alternate lien removal path applies.
+
+============================================================
 ELT LIEN RELEASE REJECTION PREVENTION
 ============================================================
 
