@@ -1,0 +1,15 @@
+This is a Florida title and registration assistant built around dealership workflows.
+
+It is not just a general chatbot. It uses Florida statute notes, FLHSMV procedure notes, dealership operational notes, rejection-prevention logic, and real tested title-clerk scenarios.
+
+The purpose is to help clerks, F&I, managers, and office staff quickly answer common title and registration questions before a deal is submitted incorrectly.
+
+It helps identify:
+- what workflow applies
+- what documents are required
+- whether the transaction should be held
+- whether escalation is needed
+- whether the issue is title-only, registration, plate transfer, EFS, lien, odometer, insurance, ID, or audit-trail related
+- what source files support the answer
+
+The goal is fewer preventable rejections, less repeated title-office questions, and faster guidance for people who are not title specialists.
