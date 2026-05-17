@@ -570,6 +570,52 @@ def search_documents(query):
 
         return (unique_duplicate_title_fee_matches + non_duplicate_title_fee_matches)[:5]
     
+    out_of_state_original_title_fee_words = [
+        "how much is an original title from out of state",
+        "original title from out of state fee",
+        "out of state original title fee",
+        "out-of-state original title fee",
+        "how much to title an out of state vehicle",
+        "how much to title an out-of-state vehicle",
+        "previously titled in another state fee",
+        "previously registered in another state fee",
+        "original title previously titled in another state",
+        "original title previously registered in another state"
+    ]
+
+    if any(term in query.lower() for term in out_of_state_original_title_fee_words):
+        priority_names = [
+            "fees01_raw_fee_table",
+            "fees-01_ai_logic_map",
+            "fees_01_schedule",
+            "319.23",
+            "registration_plate_and_insurance",
+            "320.02",
+            "validation_logic_map",
+            "rejection_prevention_logic_map"
+        ]
+
+        out_of_state_original_title_fee_matches = [
+            m for name in priority_names
+            for m in matches
+            if name in m["name"].lower().replace(" ", "_")
+        ]
+
+        unique_out_of_state_original_title_fee_matches = []
+        seen_names = set()
+
+        for m in out_of_state_original_title_fee_matches:
+            if m["name"] not in seen_names:
+                unique_out_of_state_original_title_fee_matches.append(m)
+                seen_names.add(m["name"])
+
+        non_out_of_state_original_title_fee_matches = [
+            m for m in matches
+            if m["name"] not in seen_names
+        ]
+
+        return (unique_out_of_state_original_title_fee_matches + non_out_of_state_original_title_fee_matches)[:5]
+
     transfer_title_fee_words = [
         "how much is a transfer title",
         "transfer title fee",
@@ -2056,6 +2102,29 @@ Do not answer "$75.25" as the dealership default for a duplicate title unless cl
 If the user specifically asks for the full FLHSMV fee table, then show electronic record only, printed paper title, and Fast Title options.
 For duplicate title workflow wording, do not say broadly that "duplicate titles cannot be processed for active electronic titles." Instead say: If the title is electronic or there is an active lien/ELT issue, do not use the normal owner duplicate-title workflow until title/lien authority is verified. Active lien or ELT issues require special handling, lienholder authority, ELT print/release review, or escalation before processing.
 
+OUT-OF-STATE ORIGINAL TITLE FEE RULE:
+
+For questions asking "How much is an original title from out of state?", "out-of-state original title fee", or "how much to title an out-of-state vehicle", do not answer "$85.25" as the fee.
+
+Use the FEES-01 row:
+Original Title - Previously Titled or Registered in Another State or Country.
+
+For dealership processing, use Fast Title as the default.
+
+For out-of-state original title workflow wording, do not say "sworn odometer affidavit" as the default requirement. Say: Odometer disclosure/statement is required if applicable based on the vehicle’s model year and exemption status.
+
+For out-of-state original title fee answers, do not use the phrase "sworn odometer affidavit" unless the user specifically asks about affidavits or a source requires that exact form. Use this wording instead: "Odometer disclosure/statement is required if applicable based on the vehicle’s model year and exemption status."
+
+Original Florida title from out-of-state / previously titled or registered in another state or country:
+- No lien: $95.25 Fast Title total, plus any agency/service fee
+- One lien: $97.25 Fast Title total, plus any agency/service fee
+
+Do not answer "$85.25" for this issue. The $85.25 amount is the Fast Title amount for a transfer title or duplicate title with no lien, not an out-of-state original title.
+
+If the user specifically asks for the full FLHSMV fee table, then show:
+- No lien: $85.25 electronic, $87.75 printed paper, $95.25 fast title
+- One lien: $87.25 electronic, $89.75 printed paper, $97.25 fast title
+
 TRANSFER TITLE FEE RULE:
 
 For questions asking "How much is a transfer title?", "transfer title fee", or "title transfer fee", do not give "$77.25" as the general answer.
@@ -2091,6 +2160,10 @@ Knowledge Base:
         ai_answer = ai_answer.replace("```", "")
         ai_answer = ai_answer.replace("`", "")
         ai_answer = ai_answer.replace("$", r"\$")
+        ai_answer = ai_answer.replace(
+            "For used vehicles coming into Florida for the first time, a sworn odometer affidavit or proper odometer disclosure is required per 319.23(3)(b).",
+            "Odometer disclosure/statement is required if applicable based on the vehicle’s model year and exemption status."
+        )
 
         st.markdown(ai_answer, unsafe_allow_html=False)
 

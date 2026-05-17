@@ -221,4 +221,67 @@ THEN explain_77_25_is_electronic_record_only_with_one_lien_not_general_transfer_
 COMMON TRANSFER TITLE FEE ANSWER:
 For dealership processing, a Florida motor vehicle/mobile home transfer title should be quoted using the Fast Title amount by default. Transfer of Title - No Lien is $85.25 Fast Title total. Transfer of Title - 1 Lien is $87.25 Fast Title total. Agency/service fees may be added on top depending on the agency or processing office. Do not answer "$77.25" as the general transfer title fee; $77.25 is the electronic-record-only amount when one lien is involved, not the dealership Fast Title default. If the user asks for the full FLHSMV table, explain electronic, printed paper, and Fast Title options.
 
+============================================================
+ORIGINAL TITLE FROM OUT OF STATE — DEALERSHIP FAST TITLE DEFAULT
+============================================================
+
+IF user_question_mentions = "how much is an original title from out of state"
+OR user_question_mentions = "original title from out of state fee"
+OR user_question_mentions = "out of state original title fee"
+OR user_question_mentions = "out-of-state original title fee"
+OR user_question_mentions = "how much to title an out of state vehicle"
+OR user_question_mentions = "how much to title an out-of-state vehicle"
+OR user_question_mentions = "previously titled in another state fee"
+OR user_question_mentions = "previously registered in another state fee"
+THEN out_of_state_original_title_fee_lookup_required = TRUE
+
+IF out_of_state_original_title_fee_lookup_required = TRUE
+THEN use_FEES_01_original_title_previously_titled_or_registered_out_of_state_fee_table = TRUE
+
+IF out_of_state_original_title_fee_lookup_required = TRUE
+THEN dealership_default_title_processing_type = "fast_title"
+
+IF out_of_state_original_title_fee_lookup_required = TRUE
+THEN answer_with_fast_title_amount_first = TRUE
+
+IF out_of_state_original_title_fee_lookup_required = TRUE
+AND lien_status_unknown = TRUE
+THEN provide_no_lien_and_one_lien_fast_title_amounts = TRUE
+
+IF out_of_state_original_title_fee_lookup_required = TRUE
+AND vehicle_type = "motor_vehicle_or_mobile_home"
+AND lien_count = 0
+AND dealership_default_title_processing_type = "fast_title"
+THEN out_of_state_original_title_dealership_default_fee = 95.25
+
+IF out_of_state_original_title_fee_lookup_required = TRUE
+AND vehicle_type = "motor_vehicle_or_mobile_home"
+AND lien_count = 1
+AND dealership_default_title_processing_type = "fast_title"
+THEN out_of_state_original_title_dealership_default_fee = 97.25
+
+IF out_of_state_original_title_fee_lookup_required = TRUE
+THEN agency_fee_may_apply_on_top = TRUE
+
+IF out_of_state_original_title_fee_lookup_required = TRUE
+THEN do_not_answer_out_of_state_original_title_fee_as_85_25 = TRUE
+
+IF out_of_state_original_title_fee_lookup_required = TRUE
+THEN explain_85_25_is_transfer_title_or_duplicate_title_no_lien_fast_title_not_out_of_state_original_title = TRUE
+
+IF out_of_state_original_title_fee_lookup_required = TRUE
+THEN do_not_default_to_sworn_odometer_affidavit_wording = TRUE
+
+IF out_of_state_original_title_fee_lookup_required = TRUE
+THEN say_odometer_disclosure_statement_required_if_applicable_based_on_model_year_and_exemption_status = TRUE
+
+IF out_of_state_original_title_fee_lookup_required = TRUE
+THEN avoid_sworn_odometer_affidavit_language_unless_affidavit_specifically_requested = TRUE
+
+IF out_of_state_original_title_fee_lookup_required = TRUE
+THEN preferred_odometer_wording = "Odometer disclosure/statement is required if applicable based on the vehicle’s model year and exemption status."
+
+COMMON OUT-OF-STATE ORIGINAL TITLE FEE ANSWER:
+For dealership processing, an original Florida title for a vehicle previously titled or registered in another state or country should be quoted using the Fast Title amount by default. Original Title - Previously Titled or Registered in Another State or Country - No Lien is $95.25 Fast Title total. With 1 Lien, the Fast Title total is $97.25. Agency/service fees may be added on top depending on the agency or processing office. Do not answer "$85.25" as the out-of-state original title fee; $85.25 is the Fast Title amount for a transfer title or duplicate title with no lien, not the out-of-state original title row. Odometer disclosure/statement is required if applicable based on the vehicle’s model year and exemption status.
+
 END OF LOGIC MAP

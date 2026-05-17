@@ -1,3 +1,9 @@
+AI ANSWER STYLE NOTE:
+For general out-of-state original title fee questions, do not phrase the odometer requirement as "sworn odometer affidavit" unless the user specifically asks about affidavits or the exact procedural form requirement.
+
+Preferred wording:
+Odometer disclosure/statement is required if applicable based on the vehicle’s model year and exemption status.
+
 STATUTE: 319.23(3)(b)
 TITLE: Odometer Reading Verification for Used Car Original Title Applications
 SOURCE: https://www.leg.state.fl.us/statutes/index.cfm?App_mode=Display_Statute&Search_String=&URL=0300-0399/0319/Sections/0319.23.html
