@@ -1514,6 +1514,21 @@ Required workflow:
 6. Do not automatically say Florida ELT release is required unless the issue involves a Florida ELT or active Florida electronic lien.
 7. Use TL-33 only when lien release/removal, unavailable lienholder, ELT issue, certified mail, 5-year rule, or court order review is actually involved.
 
+STRICT LOST TRADE TITLE WORDING RULE:
+
+For questions where a customer traded a vehicle but lost the title, do not say the dealership cannot physically accept the vehicle at all.
+
+Say the dealership should not complete the trade title transfer, submit the title work, or treat the trade as title-ready until valid title authority is resolved.
+
+Valid title authority may include:
+1. original title,
+2. duplicate title,
+3. electronic title release/reassignment,
+4. lien release,
+5. authorized reassignment or other approved title documentation.
+
+If the title is missing and ownership/lien authority cannot be verified, hold and escalate before submission.
+
 Knowledge Base:
 {combined_context}
 """
