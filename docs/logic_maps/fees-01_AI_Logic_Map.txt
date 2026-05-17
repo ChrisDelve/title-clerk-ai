@@ -170,4 +170,55 @@ AI PURPOSE:
 - Future API integration
 - LLM retrieval support
 
+============================================================
+TRANSFER TITLE FEE — DEALERSHIP FAST TITLE DEFAULT
+============================================================
+
+IF user_question_mentions = "how much is a transfer title"
+OR user_question_mentions = "transfer title fee"
+OR user_question_mentions = "title transfer fee"
+OR user_question_mentions = "how much to transfer title"
+OR user_question_mentions = "fee to transfer title"
+THEN transfer_title_fee_lookup_required = TRUE
+
+IF transfer_title_fee_lookup_required = TRUE
+THEN use_FEES_01_transfer_title_fee_table = TRUE
+
+IF transfer_title_fee_lookup_required = TRUE
+THEN dealership_default_title_processing_type = "fast_title"
+
+IF transfer_title_fee_lookup_required = TRUE
+THEN answer_with_fast_title_amount_first = TRUE
+
+IF transfer_title_fee_lookup_required = TRUE
+AND lien_status_unknown = TRUE
+THEN provide_no_lien_and_one_lien_fast_title_amounts = TRUE
+
+IF transfer_title_fee_lookup_required = TRUE
+AND vehicle_type = "motor_vehicle_or_mobile_home"
+AND lien_count = 0
+AND dealership_default_title_processing_type = "fast_title"
+THEN transfer_title_dealership_default_fee = 85.25
+
+IF transfer_title_fee_lookup_required = TRUE
+AND vehicle_type = "motor_vehicle_or_mobile_home"
+AND lien_count = 1
+AND dealership_default_title_processing_type = "fast_title"
+THEN transfer_title_dealership_default_fee = 87.25
+
+IF transfer_title_fee_lookup_required = TRUE
+THEN agency_fee_may_apply_on_top = TRUE
+
+IF transfer_title_fee_lookup_required = TRUE
+THEN do_not_answer_transfer_title_fee_as_only_77_25 = TRUE
+
+IF transfer_title_fee_lookup_required = TRUE
+THEN explain_75_25_is_electronic_record_only_no_lien_not_dealership_fast_title_default = TRUE
+
+IF transfer_title_fee_lookup_required = TRUE
+THEN explain_77_25_is_electronic_record_only_with_one_lien_not_general_transfer_title_default = TRUE
+
+COMMON TRANSFER TITLE FEE ANSWER:
+For dealership processing, a Florida motor vehicle/mobile home transfer title should be quoted using the Fast Title amount by default. Transfer of Title - No Lien is $85.25 Fast Title total. Transfer of Title - 1 Lien is $87.25 Fast Title total. Agency/service fees may be added on top depending on the agency or processing office. Do not answer "$77.25" as the general transfer title fee; $77.25 is the electronic-record-only amount when one lien is involved, not the dealership Fast Title default. If the user asks for the full FLHSMV table, explain electronic, printed paper, and Fast Title options.
+
 END OF LOGIC MAP

@@ -570,6 +570,48 @@ def search_documents(query):
 
         return (unique_duplicate_title_fee_matches + non_duplicate_title_fee_matches)[:5]
     
+    transfer_title_fee_words = [
+        "how much is a transfer title",
+        "transfer title fee",
+        "title transfer fee",
+        "how much to transfer title",
+        "fee to transfer title",
+        "cost of transfer title",
+        "how much is title transfer"
+    ]
+
+    if any(term in query.lower() for term in transfer_title_fee_words):
+        priority_names = [
+            "fees01_raw_fee_table",
+            "fees-01_ai_logic_map",
+            "fees_01_schedule",
+            "tl_11",
+            "319.22",
+            "rejection_prevention_logic_map",
+            "validation_logic_map"
+        ]
+
+        transfer_title_fee_matches = [
+            m for name in priority_names
+            for m in matches
+            if name in m["name"].lower().replace(" ", "_")
+        ]
+
+        unique_transfer_title_fee_matches = []
+        seen_names = set()
+
+        for m in transfer_title_fee_matches:
+            if m["name"] not in seen_names:
+                unique_transfer_title_fee_matches.append(m)
+                seen_names.add(m["name"])
+
+        non_transfer_title_fee_matches = [
+            m for m in matches
+            if m["name"] not in seen_names
+        ]
+
+        return (unique_transfer_title_fee_matches + non_transfer_title_fee_matches)[:5]
+
     lien_priority_terms = [
         "elt",
         "electronic lien",
@@ -2013,6 +2055,22 @@ Do not answer "$75.25" as the dealership default for a duplicate title unless cl
 
 If the user specifically asks for the full FLHSMV fee table, then show electronic record only, printed paper title, and Fast Title options.
 For duplicate title workflow wording, do not say broadly that "duplicate titles cannot be processed for active electronic titles." Instead say: If the title is electronic or there is an active lien/ELT issue, do not use the normal owner duplicate-title workflow until title/lien authority is verified. Active lien or ELT issues require special handling, lienholder authority, ELT print/release review, or escalation before processing.
+
+TRANSFER TITLE FEE RULE:
+
+For questions asking "How much is a transfer title?", "transfer title fee", or "title transfer fee", do not give "$77.25" as the general answer.
+
+For dealership processing, use Fast Title as the default.
+
+Transfer of Florida motor vehicle/mobile home title:
+- No lien: $85.25 Fast Title total, plus any agency/service fee
+- One lien: $87.25 Fast Title total, plus any agency/service fee
+
+Do not answer "$77.25" as the general transfer title fee. The $77.25 amount is the electronic-record-only amount when one lien is involved, not the dealership Fast Title default.
+
+If the user specifically asks for the full FLHSMV fee table, then show:
+- No lien: $75.25 electronic, $77.75 printed paper, $85.25 fast title
+- One lien: $77.25 electronic, $79.75 printed paper, $87.25 fast title
 
 Knowledge Base:
 {combined_context}
