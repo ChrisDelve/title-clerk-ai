@@ -1,3 +1,27 @@
+AI ROUTING KEYWORDS:
+customer only has a foreign passport and wants to register the vehicle
+foreign passport and wants to register
+only has a foreign passport
+customer only has foreign passport
+foreign passport registration
+can customer register with foreign passport
+passport but no Florida ID
+passport but no driver license
+valid passport for registration
+I-94
+unexpired I-94
+permanent resident card
+current permanent resident card
+immigrant visa
+unexpired immigrant visa
+DHS stamp
+DHS mark
+lawful presence
+Rule 15C-1.015
+INFO 24-023
+320.02(2)(a)
+registration identification
+
 DOCUMENT: FL_INFO_24_023_RULE_15C_1_015_VALID_PASSPORT_REGISTRATION_NOTES
 TITLE: INFO 24-023 — Rule 15C-1.015, FAC — Vehicle Registration Information / Valid Passport
 SOURCE: https://www.flada.org/wp-content/uploads/2024/09/INFO-24-023-Rule-15C-1.015-Vehicle-Registration-Information.pdf

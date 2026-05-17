@@ -66,6 +66,47 @@ AND required_documents_missing = TRUE
 THEN likely_rejection_reason = "Missing out-of-state documentation"
 
 ============================================================
+OUT-OF-STATE TITLE WITH NO VIN VERIFICATION — STRICT WORKFLOW
+============================================================
+
+IF user_question_mentions = "out-of-state title but no VIN verification"
+OR user_question_mentions = "out of state title but no VIN verification"
+OR user_question_mentions = "out-of-state title no VIN verification"
+OR user_question_mentions = "out of state title no VIN verification"
+OR user_question_mentions = "customer has out-of-state title but no VIN verification"
+OR user_question_mentions = "customer has out of state title but no VIN verification"
+OR user_question_mentions = "missing VIN verification"
+OR user_question_mentions = "VIN verification missing"
+THEN out_of_state_title_VIN_verification_workflow_required = TRUE
+
+IF out_of_state_title_VIN_verification_workflow_required = TRUE
+THEN verify_original_out_of_state_title_available = TRUE
+
+IF out_of_state_title_VIN_verification_workflow_required = TRUE
+THEN verify_title_assignment_signatures_and_odometer_if_required = TRUE
+
+IF out_of_state_title_VIN_verification_workflow_required = TRUE
+THEN VIN_verification_required_before_submission = TRUE
+
+IF out_of_state_title_VIN_verification_workflow_required = TRUE
+THEN HSMV_82042_or_authorized_VIN_verification_required = TRUE
+
+IF VIN_verification_missing = TRUE
+THEN hold_before_title_or_registration_submission = TRUE
+
+IF VIN_on_vehicle_does_not_match_out_of_state_title = TRUE
+THEN fraud_or_identity_escalation_required = TRUE
+
+IF VIN_tampering_or_alteration_suspected = TRUE
+THEN fraud_or_FLHSMV_escalation_required = TRUE
+
+IF registration_or_plate_issuance_requested = TRUE
+THEN valid_Florida_insurance_required = TRUE
+
+COMMON CLERK ANSWER:
+For an out-of-state title, do not submit the Florida title/registration package without VIN verification. First verify the original out-of-state title is available and properly assigned, including signatures and odometer disclosure if required. Then complete VIN verification using HSMV 82042 or another authorized VIN verification method. If VIN verification is missing, hold the transaction before submission. If the VIN does not match the title or appears altered/tampered with, escalate to the title lead, tax collector, or FLHSMV before proceeding. If registration or plate issuance is involved, valid Florida insurance is also required.
+
+============================================================
 ELT LIEN RELEASE REJECTION PREVENTION
 ============================================================
 

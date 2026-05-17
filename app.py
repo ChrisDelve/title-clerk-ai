@@ -633,6 +633,50 @@ def search_documents(query):
 
         return (unique_out_of_state_title_florida_tag_matches + non_out_of_state_title_florida_tag_matches)[:5]
 
+    out_of_state_no_vin_words = [
+        "out-of-state title but no vin verification",
+        "out of state title but no vin verification",
+        "out-of-state title no vin verification",
+        "out of state title no vin verification",
+        "customer has out-of-state title but no vin verification",
+        "customer has out of state title but no vin verification",
+        "missing vin verification",
+        "vin verification missing",
+        "no vin verification"
+    ]
+
+    if any(term in query.lower() for term in out_of_state_no_vin_words):
+        priority_names = [
+            "319.23_operational_notes",
+            "320.02",
+            "registration_plate_and_insurance",
+            "validation_logic_map",
+            "rejection_prevention_logic_map",
+            "title_ownership_and_transfer",
+            "tl_01"
+        ]
+
+        out_of_state_no_vin_matches = [
+            m for name in priority_names
+            for m in matches
+            if name in m["name"].lower()
+        ]
+
+        unique_out_of_state_no_vin_matches = []
+        seen_names = set()
+
+        for m in out_of_state_no_vin_matches:
+            if m["name"] not in seen_names:
+                unique_out_of_state_no_vin_matches.append(m)
+                seen_names.add(m["name"])
+
+        non_out_of_state_no_vin_matches = [
+            m for m in matches
+            if m["name"] not in seen_names
+        ]
+
+        return (unique_out_of_state_no_vin_matches + non_out_of_state_no_vin_matches)[:5]
+
     spouse_plate_words = [
         "transfer a plate from their spouse",
         "transfer a plate from spouse",
@@ -850,6 +894,57 @@ def search_documents(query):
         ]
 
         return (buyer_never_possession_matches + non_buyer_never_possession_matches)[:5]
+    
+    passport_registration_words = [
+        "foreign passport and wants to register",
+        "only has a foreign passport",
+        "customer only has a foreign passport",
+        "customer has a foreign passport",
+        "foreign passport registration",
+        "can customer register with foreign passport",
+        "passport but no florida id",
+        "passport but no driver license",
+        "valid passport for registration",
+        "customer only has passport",
+        "customer has passport and wants to register",
+        "i-94",
+        "permanent resident card",
+        "immigrant visa",
+        "lawful presence"
+    ]
+
+    if any(term in query.lower() for term in passport_registration_words):
+        priority_names = [
+            "info_24_023",
+            "15c_1_015",
+            "passport_registration",
+            "320.02",
+            "registration_plate_and_insurance",
+            "validation_logic_map",
+            "rejection_prevention_logic_map"
+        ]
+
+        passport_registration_matches = [
+            m for name in priority_names
+            for m in matches
+            if name in m["name"].lower()
+        ]
+
+        unique_passport_registration_matches = []
+        seen_names = set()
+
+        for m in passport_registration_matches:
+            if m["name"] not in seen_names:
+                unique_passport_registration_matches.append(m)
+                seen_names.add(m["name"])
+
+        non_passport_registration_matches = [
+            m for m in matches
+            if m["name"] not in seen_names
+        ]
+
+        return (unique_passport_registration_matches + non_passport_registration_matches)[:5]
+
     insurance_words = [
         "insurance",
         "florida insurance",
@@ -1326,6 +1421,39 @@ Required workflow:
 8. If the out-of-state title shows lien or ELT issues, review lien release/TL-33 logic.
 9. Do not make TL-33 the primary answer unless lien or ELT issue is present.
 10. Hold and escalate if title assignment, VIN verification, lien status, insurance, or plate ownership is unclear.
+
+STRICT FOREIGN PASSPORT REGISTRATION RULE:
+
+For questions where a customer only has a foreign passport and wants to register a vehicle, do not answer as a generic title, fee, odometer, trust, or general ID issue.
+
+Use Rule 15C-1.015 / INFO 24-023.
+
+Required answer:
+1. Determine whether registration or plate issuance is involved.
+2. A foreign passport alone is not enough for registration.
+3. The foreign passport must be unexpired.
+4. The customer must also provide lawful-presence documentation:
+   - DHS stamp or mark showing lawful presence, OR
+   - unexpired I-94, OR
+   - current permanent resident card, OR
+   - unexpired immigrant visa.
+5. If required lawful-presence documentation is missing, hold the registration application.
+6. This rule applies to vehicle registration applications, not title-only applications.
+7. Do not suggest consular ID, utility bills, lease agreements, or foreign driver license as substitutes for the Rule 15C-1.015 valid passport requirement unless a separate FLHSMV procedure specifically supports that issue.
+
+STRICT OUT-OF-STATE TITLE / VIN VERIFICATION RULE:
+
+For questions where a customer has an out-of-state title but no VIN verification, do not answer as a bonded title, trust, bankruptcy, or generic title issue.
+
+Required workflow:
+1. Verify the original out-of-state title is available.
+2. Verify the title is properly assigned to the customer.
+3. Verify seller/buyer signatures and odometer disclosure if required.
+4. Require VIN verification before Florida title/registration submission.
+5. Use HSMV 82042 or another authorized VIN verification method.
+6. If VIN verification is missing, hold before submission.
+7. If VIN does not match the title or appears altered/tampered with, escalate before proceeding.
+8. If registration or plate issuance is involved, verify valid Florida insurance.
 
 Knowledge Base:
 {combined_context}
