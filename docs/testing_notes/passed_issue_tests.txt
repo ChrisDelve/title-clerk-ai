@@ -1,0 +1,404 @@
+DOCUMENT: PASSED_ISSUE_TESTS
+TITLE: Passed Issue Tests for Florida Title and Registration Assistant
+DOCUMENT_TYPE: Testing Notes / Validation Log
+CATEGORY: APP TESTING / DEALERSHIP WORKFLOW VALIDATION / MVP READINESS
+
+============================================================
+PURPOSE
+============================================================
+
+This file tracks real dealership issue tests that passed after app validation.
+
+Each passed test confirms the assistant can identify the correct workflow, route to the correct source files, and provide usable dealership guidance.
+
+============================================================
+PASSED TESTS
+============================================================
+
+PASSED TEST 001
+Issue:
+Vehicle titled in kilometers instead of miles
+
+Validates:
+- Odometer/mileage unit issue
+- Mileage brand review
+- Kilometer vs mile distinction
+- Hold/escalate workflow
+
+------------------------------------------------------------
+
+PASSED TEST 002
+Issue:
+Title branded with incorrect miles
+
+Validates:
+- Incorrect mileage brand
+- Odometer correction workflow
+- Mileage discrepancy escalation
+
+------------------------------------------------------------
+
+PASSED TEST 003
+Issue:
+Transfer tag not in customer’s name
+
+Validates:
+- Plate owner mismatch
+- 320.0609 plate transfer rule
+- New plate / IRF review
+- Hold/escalate if plate ownership unclear
+
+------------------------------------------------------------
+
+PASSED TEST 004
+Issue:
+Missing audit trail
+
+Validates:
+- Chain of ownership
+- Dealer documents
+- DLRDMV uploads
+- Rejection notes / transaction history
+- Hold/escalate if audit trail cannot be reconstructed
+
+------------------------------------------------------------
+
+PASSED TEST 005
+Issue:
+Missing valid identification
+
+Validates:
+- Customer ID requirement
+- Hold if valid ID missing
+- POA is not substitute for identity
+- Fraud/altered ID escalation
+
+------------------------------------------------------------
+
+PASSED TEST 006
+Issue:
+Gifted trade
+
+Validates:
+- Third-party trade
+- Trade owner vs new vehicle buyer
+- Trade credit recipient
+- Gift/trade authorization
+- Tax credit eligibility review
+
+------------------------------------------------------------
+
+PASSED TEST 007
+Issue:
+Customer has no valid Florida insurance
+
+Validates:
+- Registration/plate issuance block
+- 320.02 insurance requirement
+- Title-only distinction
+- No plate/registration without valid Florida insurance
+
+------------------------------------------------------------
+
+PASSED TEST 008
+Issue:
+Customer wants a third temporary tag
+
+Validates:
+- Third temp tag approval workflow
+- GM/controller approval
+- Regional DMV approval letter
+- Required approval package
+- Agency processing
+
+------------------------------------------------------------
+
+PASSED TEST 009
+Issue:
+Customer wants to transfer a plate from their spouse
+
+Validates:
+- Spouse plate transfer is not automatic
+- Registered plate owner verification
+- Registrant/co-registrant review
+- New plate / IRF review if not eligible
+
+------------------------------------------------------------
+
+PASSED TEST 010
+Issue:
+Customer wants to transfer tag but insurance is in spouse’s name
+
+Validates:
+- Plate transfer + insurance alignment
+- Registrant/co-registrant insurance issue
+- Spouse insurance not automatically sufficient
+- New plate / IRF review if mismatch
+
+------------------------------------------------------------
+
+PASSED TEST 011
+Issue:
+Customer changed from new plate to transfer tag after delivery
+
+Validates:
+- EFS inventory correction
+- Void original new plate transaction
+- Return issued plate to tax collector/license plate agency
+- Transfer tag eligibility before reprocessing
+
+------------------------------------------------------------
+
+PASSED TEST 012
+Issue:
+EFS transaction stuck in initial status
+
+Validates:
+- EFS initial status workflow
+- Stop/manual processing review
+- RT / RR inventory workflow
+- Do not reuse issued/placed inventory
+
+------------------------------------------------------------
+
+PASSED TEST 013
+Issue:
+Buyer never took possession but new plate was issued
+
+Validates:
+- EFS buyer-never-took-possession branch
+- RS / re-issuable inventory logic
+- Plate placement vs vehicle delivery distinction
+
+------------------------------------------------------------
+
+PASSED TEST 014
+Issue:
+Buyer took delivery but financing fell through after plate was issued
+
+Validates:
+- EFS financing fallout after delivery
+- Do not set issued/placed plate to RS
+- Void transaction
+- Return plate to tax collector/license plate agency
+- RT / RR workflow
+
+------------------------------------------------------------
+
+PASSED TEST 015
+Issue:
+Customer wants to transfer tag from deceased spouse
+
+Validates:
+- Deceased spouse plate workflow
+- Death certificate / authority review
+- POA invalid after death
+- Surviving spouse / estate authority
+- New plate / IRF review if not transferable
+
+------------------------------------------------------------
+
+PASSED TEST 016
+Issue:
+Customer wants to use deceased parent’s tag
+
+Validates:
+- Deceased parent tag not automatically transferable
+- Estate/probate/court authority review
+- POA invalid after death
+- New plate / IRF review if no valid authority
+
+------------------------------------------------------------
+
+PASSED TEST 017
+Issue:
+Customer wants to transfer tag but title is still in seller’s name
+
+Validates:
+- Title ownership must be established first
+- Plate owner verification
+- Seller assignment/signature review
+- New plate / IRF review if plate not registered to customer
+
+------------------------------------------------------------
+
+PASSED TEST 018
+Issue:
+Customer wants to transfer tag but registration is expired
+
+Validates:
+- Expired registration does not automatically disqualify plate transfer
+- Registration completion requires valid insurance and fees
+- Plate owner verification
+- Delinquent/renewal fee review
+- Registration stop/block escalation
+
+------------------------------------------------------------
+
+PASSED TEST 019
+Issue:
+Customer has an out-of-state title and wants to transfer their Florida tag
+
+Validates:
+- Out-of-state title into Florida
+- Florida tag transfer eligibility
+- VIN verification
+- Valid Florida insurance
+- Plate owner must match customer
+- Lien/TL-33 only if lien issue exists
+
+------------------------------------------------------------
+
+PASSED TEST 020
+Issue:
+Customer only has a foreign passport and wants to register the vehicle
+
+Validates:
+- Rule 15C-1.015 passport registration ID
+- Foreign passport alone insufficient
+- Lawful-presence documentation required
+- Registration vs title-only distinction
+
+------------------------------------------------------------
+
+PASSED TEST 021
+Issue:
+Customer has a US passport but no Florida ID and wants to register
+
+Validates:
+- U.S. passport registration identification
+- Unexpired U.S. passport/passport card acceptable
+- Valid Florida insurance still required
+- Registration vs title-only distinction
+
+------------------------------------------------------------
+
+PASSED TEST 022
+Issue:
+Customer has an out-of-state title but no VIN verification
+
+Validates:
+- Out-of-state title VIN verification
+- HSMV 82042
+- Hold before submission if VIN verification missing
+- Escalate VIN mismatch/tampering
+- Insurance required if registration/plate issuance
+
+------------------------------------------------------------
+
+PASSED TEST 023
+Issue:
+Customer has an out-of-state title with a lien showing but says it is paid off
+
+Validates:
+- Verbal lien payoff statement not enough
+- Official lien release/satisfaction required
+- Out-of-state lien not automatically Florida ELT
+- TL-33 only if lien release/removal issue applies
+
+------------------------------------------------------------
+
+PASSED TEST 024
+Issue:
+Customer has an active ELT lien but brought a paper lien satisfaction
+
+Validates:
+- Active ELT lien release requirements
+- Paper lien satisfaction alone insufficient
+- Electronic lien release required
+- TL-33 alternate review only when applicable
+
+------------------------------------------------------------
+
+PASSED TEST 025
+Issue:
+Customer traded a vehicle but lost the title
+
+Validates:
+- Lost trade title workflow
+- Duplicate title / ELT reassignment
+- Trade title work not title-ready until authority resolved
+- Lien release and ownership verification
+
+------------------------------------------------------------
+
+PASSED TEST 026
+Issue:
+Seller signed the wrong area on the title
+
+Validates:
+- Wrong signature line correction
+- Correction affidavit stating seller signed on incorrect line in error
+- Do not submit as-is
+- Duplicate title only if correction not possible or required
+
+------------------------------------------------------------
+
+PASSED TEST 027
+Issue:
+Florida title shows AND between owners but only one owner signed
+
+Validates:
+- AND ownership requires all owners to sign
+- One signature insufficient
+- POA validation if used
+- POA invalid after death
+- Hold/escalate if owner unavailable/refuses/deceased
+
+------------------------------------------------------------
+
+PASSED TEST 028
+Issue:
+Odometer disclosure is blank on the title
+
+Validates:
+- Odometer exemption review
+- Blank odometer disclosure hold
+- Seller/authorized party must complete disclosure
+- Affidavit not automatic substitute
+- Mileage conflict/tampering escalation
+
+------------------------------------------------------------
+
+PASSED TEST 029
+Issue:
+Customer wants title-only and does not want to register the vehicle
+
+Validates:
+- Dealer title-only exception workflow
+- Not normal customer preference
+- Customer unresponsive / cannot meet state requirements
+- Controller approval
+- Intent to Title Only letter
+- 10-day response window
+- No plate/registration/sticker/transfer tag
+
+------------------------------------------------------------
+
+PASSED TEST 030
+Issue:
+Customer has a registration stop and wants the dealer to submit anyway
+
+Validates:
+- Registration stop/block workflow
+- Dealer cannot bypass or override stop
+- Customer must clear stop with tax collector/FLHSMV
+- No registration/plate/sticker/transfer tag until cleared
+- Title-only exception review if no registration/plate issued
+
+============================================================
+CURRENT STATUS
+============================================================
+
+Total passed tests:
+30
+
+MVP testing milestone:
+Reached 30 passed dealership workflow tests.
+
+Next recommended phase:
+Create demo-ready question list, clean source display, and prepare controlled dealership demo workflow.
+
+============================================================
+END OF FILE
+============================================================
