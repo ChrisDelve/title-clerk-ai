@@ -32,6 +32,136 @@ THEN use vessel fee schedule
 IF vehicle_type = "off_highway_vehicle"
 THEN use OHV fee schedule
 
+============================================================
+DEALERSHIP FAST TITLE DEFAULT — TITLE PRINT / DUPLICATE / ELT PRINT FEES
+============================================================
+
+IF user_question_mentions = "how much is a duplicate title"
+OR user_question_mentions = "duplicate title fee"
+OR user_question_mentions = "lost title fee"
+OR user_question_mentions = "replacement title fee"
+OR user_question_mentions = "print title"
+OR user_question_mentions = "paper title"
+OR user_question_mentions = "ELT print"
+OR user_question_mentions = "electronic title print"
+OR user_question_mentions = "fast title"
+THEN dealership_title_fee_default_review_required = TRUE
+
+IF dealership_title_fee_default_review_required = TRUE
+THEN dealership_default_title_processing_type = "fast_title"
+
+IF dealership_title_fee_default_review_required = TRUE
+THEN use_fast_title_fee_as_dealership_default = TRUE
+
+IF dealership_title_fee_default_review_required = TRUE
+THEN agency_fee_may_apply_on_top = TRUE
+
+IF dealership_title_fee_default_review_required = TRUE
+THEN do_not_use_electronic_record_only_fee_as_default_customer_answer = TRUE
+
+IF dealership_title_fee_default_review_required = TRUE
+THEN do_not_use_regular_printed_paper_title_fee_as_default_customer_answer = TRUE
+
+IF user_specifically_requests_FLHSMV_fee_table_options = TRUE
+THEN show_electronic_printed_and_fast_title_fee_options = TRUE
+
+IF user_specifically_requests_electronic_record_only_fee = TRUE
+THEN electronic_record_only_fee_may_be_answered = TRUE
+
+IF user_specifically_requests_printed_paper_title_fee_without_fast_title = TRUE
+THEN regular_printed_paper_title_fee_may_be_answered = TRUE
+
+COMMON DEALERSHIP FEE ANSWER:
+For dealership processing, printed titles, duplicate titles, ELT prints, and similar title print transactions are handled as Fast Title by default. Use the Fast Title amount as the dealership-facing default unless the user specifically asks for the full FLHSMV fee table or electronic-only amount. Agency/service fees may be added on top of the Fast Title amount depending on the agency or processing office.
+
+============================================================
+DUPLICATE TITLE FEE — DEALERSHIP FAST TITLE DEFAULT
+============================================================
+
+IF user_question_mentions = "how much is a duplicate title"
+OR user_question_mentions = "how much is duplicate title"
+OR user_question_mentions = "duplicate title fee"
+OR user_question_mentions = "lost title fee"
+OR user_question_mentions = "replacement title fee"
+THEN duplicate_title_fee_lookup_required = TRUE
+
+IF duplicate_title_fee_lookup_required = TRUE
+THEN use_FEES_01_duplicate_title_fee_table = TRUE
+
+IF duplicate_title_fee_lookup_required = TRUE
+THEN dealership_default_title_processing_type = "fast_title"
+
+IF duplicate_title_fee_lookup_required = TRUE
+THEN answer_with_fast_title_amount_first = TRUE
+
+IF duplicate_title_fee_lookup_required = TRUE
+AND lien_status_unknown = TRUE
+THEN provide_no_lien_and_one_lien_fast_title_amounts = TRUE
+
+IF duplicate_title_fee_lookup_required = TRUE
+AND vehicle_type = "motor_vehicle_or_mobile_home"
+AND lien_count = 0
+AND dealership_default_title_processing_type = "fast_title"
+THEN duplicate_title_dealership_default_fee = 85.25
+
+IF duplicate_title_fee_lookup_required = TRUE
+AND vehicle_type = "motor_vehicle_or_mobile_home"
+AND lien_count = 1
+AND dealership_default_title_processing_type = "fast_title"
+THEN duplicate_title_dealership_default_fee = 87.25
+
+IF duplicate_title_fee_lookup_required = TRUE
+THEN agency_fee_may_apply_on_top = TRUE
+
+IF duplicate_title_fee_lookup_required = TRUE
+THEN do_not_answer_duplicate_title_fee_as_2_dollars = TRUE
+
+IF duplicate_title_fee_lookup_required = TRUE
+THEN do_not_answer_duplicate_title_fee_as_only_75_25_for_dealership_default = TRUE
+
+IF duplicate_title_fee_lookup_required = TRUE
+THEN explain_75_25_is_electronic_record_only_no_lien_not_dealership_fast_title_default = TRUE
+
+IF fee_component = "lien_fee"
+AND fee_amount = 2.00
+THEN do_not_treat_as_total_duplicate_title_fee = TRUE
+
+COMMON FEE ANSWER:
+For dealership processing, a duplicate Florida motor vehicle/mobile home title should be quoted using the Fast Title amount by default. Duplicate Title - No Lien is $85.25 Fast Title total. Duplicate Title - 1 Lien is $87.25 Fast Title total. Agency/service fees may be added on top depending on the agency or processing office. Do not answer "$2.00" as the duplicate title fee; that is only a lien fee component. Do not answer "$75.25" as the dealership default unless clearly explaining it is the electronic record only / no lien amount, not the normal dealership fast-title amount. If the title is electronic or there is an active lien/ELT issue, do not use the normal owner duplicate-title workflow until title/lien authority is verified.
+
+============================================================
+FULL DUPLICATE TITLE FEE TABLE — REFERENCE ONLY
+============================================================
+
+IF user_specifically_requests_full_fee_table = TRUE
+OR user_specifically_requests_all_duplicate_title_fee_options = TRUE
+THEN provide_full_duplicate_title_fee_table = TRUE
+
+Duplicate Title - No Lien:
+- Electronic Record Only Total: $75.25
+- Printed Paper Title Total: $77.75
+- Fast Title Total: $85.25
+
+Duplicate Title - For Hire, No Lien:
+- Electronic Record Only Total: $54.25
+- Printed Paper Title Total: $56.75
+- Fast Title Total: $64.25
+
+Duplicate Title - 1 Lien:
+- Electronic Record Only Total: $77.25
+- Printed Paper Title Total: $79.75
+- Fast Title Total: $87.25
+
+Duplicate Title - For Hire, 1 Lien:
+- Electronic Record Only Total: $56.25
+- Printed Paper Title Total: $58.75
+- Fast Title Total: $66.25
+
+Duplicate Lost In Transit:
+- Electronic Record Only Total: $0.00
+- Printed Paper Title Total: N/A
+- Fast Title Total: $10.00
+
 AI PURPOSE:
 - Fee automation
 - Dealer workflow automation

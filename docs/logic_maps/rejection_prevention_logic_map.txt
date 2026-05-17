@@ -126,6 +126,39 @@ COMMON CLERK ANSWER:
 If a Florida title shows "AND" between owners, all listed owners must sign the title assignment to transfer ownership. Do not submit the title with only one owner signature. Obtain the missing owner’s signature or valid legal authority before submission. If a POA is used, verify it is valid, specific enough, properly executed, and that the owner/principal is alive. A POA cannot be used after death. If the missing owner is unavailable, refuses to sign, is deceased, or ownership authority is unclear, hold and escalate to the title lead or tax collector before proceeding.
 
 ============================================================
+FEE ANSWER DEFAULT — DEALERSHIP FAST TITLE PROCESSING
+============================================================
+
+IF user_question_mentions = "duplicate title fee"
+OR user_question_mentions = "how much is a duplicate title"
+OR user_question_mentions = "lost title fee"
+OR user_question_mentions = "replacement title fee"
+OR user_question_mentions = "print title"
+OR user_question_mentions = "ELT print"
+OR user_question_mentions = "paper title"
+OR user_question_mentions = "fast title"
+THEN dealership_fast_title_fee_default_required = TRUE
+
+IF dealership_fast_title_fee_default_required = TRUE
+THEN answer_using_fast_title_fee_first = TRUE
+
+IF dealership_fast_title_fee_default_required = TRUE
+THEN agency_fee_may_apply_on_top = TRUE
+
+IF dealership_fast_title_fee_default_required = TRUE
+THEN do_not_default_to_electronic_record_only_fee = TRUE
+
+IF dealership_fast_title_fee_default_required = TRUE
+THEN do_not_default_to_standard_printed_paper_fee = TRUE
+
+IF user_asks_general_fee_question = TRUE
+AND title_print_duplicate_or_ELT_print_involved = TRUE
+THEN use_fast_title_as_dealership_default = TRUE
+
+COMMON CLERK ANSWER:
+For dealership fee questions involving printed titles, duplicate titles, ELT prints, and similar title print transactions, use the Fast Title fee as the default dealership-facing amount. Agency or service fees may be added on top. Do not default to the electronic record only fee unless the user specifically asks for electronic-only processing or the transaction is truly electronic-only.
+
+============================================================
 ACTIVE LIEN LOGIC
 ============================================================
 

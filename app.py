@@ -471,6 +471,14 @@ def clean_source_name(filename):
         # Passport / registration ID
         "fl_info_24_023_rule_15c_1_015_valid_passport_registration_notes.txt": "INFO 24-023 / Rule 15C-1.015 — Valid Passport for Registration",
 
+        # Fees
+        "fl_fees_01_schedule_of_title_and_lien_fees_notes.txt": "FEES-01 — Schedule of Title and Lien Fees",
+        "fl_fees01_Raw_Fee_Table .txt": "FEES-01 — Raw Title / Lien Fee Table",
+        "fees-01_AI_Logic_Map.txt": "FEES-01 — Title / Lien Fee Logic Map",
+        "fees-02_AI_Logic_Map.txt": "FEES-02 — Registration Fee Logic Map",
+        "fees-03_AI_Logic_Map.txt": "FEES-03 — Motor Vehicle Class Code / Fee Chart",
+        "fees-04_AI_Logic_Map.txt": "FEES-04 — Vessel Registration Fee Chart",
+
         # Forms
         "HSMV-82040_Operational_Notes.txt": "HSMV 82040 — Application for Certificate of Title With/Without Registration",
     }
@@ -519,6 +527,49 @@ def search_documents(query):
 
     matches = sorted(matches, key=lambda x: x["score"], reverse=True)
     # Force TL-33 / lien logic priority for ELT + unavailable lienholder questions
+    duplicate_title_fee_words = [
+        "how much is a duplicate title",
+        "how much is duplicate title",
+        "duplicate title fee",
+        "lost title fee",
+        "replacement title fee",
+        "how much for duplicate title",
+        "cost of duplicate title",
+        "fee for duplicate title"
+    ]
+
+    if any(term in query.lower() for term in duplicate_title_fee_words):
+        priority_names = [
+            "fees01_raw_fee_table",
+            "fees-01_ai_logic_map",
+            "fees_01_schedule",
+            "tl_05",
+            "319.29",
+            "rejection_prevention_logic_map",
+            "validation_logic_map"
+        ]
+
+        duplicate_title_fee_matches = [
+            m for name in priority_names
+            for m in matches
+            if name in m["name"].lower().replace(" ", "_")
+        ]
+
+        unique_duplicate_title_fee_matches = []
+        seen_names = set()
+
+        for m in duplicate_title_fee_matches:
+            if m["name"] not in seen_names:
+                unique_duplicate_title_fee_matches.append(m)
+                seen_names.add(m["name"])
+
+        non_duplicate_title_fee_matches = [
+            m for m in matches
+            if m["name"] not in seen_names
+        ]
+
+        return (unique_duplicate_title_fee_matches + non_duplicate_title_fee_matches)[:5]
+    
     lien_priority_terms = [
         "elt",
         "electronic lien",
@@ -1942,6 +1993,27 @@ Required answer:
 7. Escalate if stop reason is unclear, disputed, or cannot be cleared.
 8. If no registration or plate will be issued, title-only exception workflow may be reviewed with required approvals.
 
+STRICT DEALERSHIP FAST TITLE FEE DEFAULT RULE:
+
+For fee questions involving printed titles, duplicate titles, ELT prints, replacement titles, lost titles, or similar title print transactions, use the dealership operational default: Fast Title.
+
+The dealership does not normally quote electronic-record-only or regular printed-paper title totals as the default for these title print transactions.
+
+Agency/service fees may be added on top of the Fast Title amount.
+
+For a general question like "How much is a duplicate title?", answer with the dealership Fast Title amounts first:
+
+Duplicate Florida motor vehicle/mobile home title:
+- No lien: $85.25 Fast Title total, plus any agency/service fee
+- One lien: $87.25 Fast Title total, plus any agency/service fee
+
+Do not answer "$2.00" as the duplicate title fee. The $2.00 amount is a lien fee component, not the total duplicate title fee.
+
+Do not answer "$75.25" as the dealership default for a duplicate title unless clearly explaining that $75.25 is the electronic-record-only / no-lien amount and not the dealership Fast Title default.
+
+If the user specifically asks for the full FLHSMV fee table, then show electronic record only, printed paper title, and Fast Title options.
+For duplicate title workflow wording, do not say broadly that "duplicate titles cannot be processed for active electronic titles." Instead say: If the title is electronic or there is an active lien/ELT issue, do not use the normal owner duplicate-title workflow until title/lien authority is verified. Active lien or ELT issues require special handling, lienholder authority, ELT print/release review, or escalation before processing.
+
 Knowledge Base:
 {combined_context}
 """
@@ -1958,9 +2030,11 @@ Knowledge Base:
 
         st.subheader("Operational Guidance")
 
+        ai_answer = ai_answer.replace("```", "")
         ai_answer = ai_answer.replace("`", "")
+        ai_answer = ai_answer.replace("$", r"\$")
 
-        st.markdown(ai_answer.replace("`", ""), unsafe_allow_html=False)
+        st.markdown(ai_answer, unsafe_allow_html=False)
 
         st.divider()
 
