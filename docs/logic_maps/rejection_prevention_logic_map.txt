@@ -84,6 +84,48 @@ CCOMMON CLERK ANSWER:
 If the seller signed the wrong line or wrong area on the title, do not submit the title as-is. First identify exactly where the seller signed and whether the correct seller assignment, printed name, buyer information, odometer disclosure, and lien sections are still usable. The dealership correction procedure should include a correction affidavit stating substantially: "Seller signed on incorrect line in error." If the seller is available, obtain the correct signature in the proper section and keep the affidavit with the title package. If the error affects odometer disclosure, ownership transfer, or cannot be corrected cleanly, hold and escalate to the title lead or tax collector. A duplicate title may be needed only if the title cannot be corrected or tax collector/FLHSMV guidance requires it.
 
 ============================================================
+AND OWNERSHIP — ONLY ONE OWNER SIGNED — STRICT WORKFLOW
+============================================================
+
+IF user_question_mentions = "Florida title shows AND between owners but only one owner signed"
+OR user_question_mentions = "AND title only one owner signed"
+OR user_question_mentions = "title says AND but one owner signed"
+OR user_question_mentions = "only one owner signed and title says AND"
+OR user_question_mentions = "joint owners AND only one signature"
+OR user_question_mentions = "missing owner signature AND title"
+THEN and_ownership_missing_signature_workflow_required = TRUE
+
+IF and_ownership_missing_signature_workflow_required = TRUE
+THEN all_owners_must_sign = TRUE
+
+IF ownership_conjunction = "AND"
+AND only_one_owner_signed = TRUE
+THEN do_not_submit_as_is = TRUE
+
+IF ownership_conjunction = "AND"
+AND required_owner_signature_missing = TRUE
+THEN hold_before_submission = TRUE
+
+IF ownership_conjunction = "AND"
+AND required_owner_signature_missing = TRUE
+THEN obtain_missing_owner_signature_or_valid_legal_authority = TRUE
+
+IF POA_used_for_missing_owner = TRUE
+THEN verify_POA_valid_specific_properly_executed_and_principal_alive = TRUE
+
+IF owner_is_deceased = TRUE
+THEN POA_not_valid_after_death = TRUE
+
+IF missing_owner_unavailable_refuses_or_deceased = TRUE
+THEN escalate_to_title_lead_tax_collector_or_FLHSMV = TRUE
+
+IF ownership_conjunction_unclear = TRUE
+THEN hold_and_verify_before_submission = TRUE
+
+COMMON CLERK ANSWER:
+If a Florida title shows "AND" between owners, all listed owners must sign the title assignment to transfer ownership. Do not submit the title with only one owner signature. Obtain the missing owner’s signature or valid legal authority before submission. If a POA is used, verify it is valid, specific enough, properly executed, and that the owner/principal is alive. A POA cannot be used after death. If the missing owner is unavailable, refuses to sign, is deceased, or ownership authority is unclear, hold and escalate to the title lead or tax collector before proceeding.
+
+============================================================
 ACTIVE LIEN LOGIC
 ============================================================
 
@@ -248,6 +290,50 @@ THEN manual_review_required = TRUE
 
 IF odometer_disclosure_incomplete = TRUE
 THEN reject_before_submission = TRUE
+
+============================================================
+BLANK ODOMETER DISCLOSURE ON TITLE — STRICT WORKFLOW
+============================================================
+
+IF user_question_mentions = "odometer disclosure is blank on the title"
+OR user_question_mentions = "blank odometer disclosure"
+OR user_question_mentions = "odometer left blank"
+OR user_question_mentions = "mileage blank on title"
+OR user_question_mentions = "seller left odometer blank"
+OR user_question_mentions = "title missing odometer"
+THEN blank_odometer_disclosure_workflow_required = TRUE
+
+IF blank_odometer_disclosure_workflow_required = TRUE
+THEN determine_if_vehicle_is_odometer_exempt = TRUE
+
+IF blank_odometer_disclosure_workflow_required = TRUE
+THEN verify_model_year_and_odometer_exemption_status = TRUE
+
+IF vehicle_is_not_odometer_exempt = TRUE
+AND odometer_disclosure_blank = TRUE
+THEN do_not_submit_title_as_is = TRUE
+
+IF vehicle_is_not_odometer_exempt = TRUE
+AND odometer_disclosure_blank = TRUE
+THEN obtain_required_odometer_disclosure_from_seller_or_authorized_party = TRUE
+
+IF vehicle_is_not_odometer_exempt = TRUE
+AND odometer_disclosure_blank = TRUE
+THEN hold_before_submission = TRUE
+
+IF odometer_disclosure_cannot_be_completed_cleanly = TRUE
+THEN escalate_to_title_lead_tax_collector_or_FLHSMV = TRUE
+
+IF odometer_disclosure_conflicts_with_deal_documents_title_record_or_mileage_brand = TRUE
+THEN mileage_discrepancy_review_required = TRUE
+
+IF odometer_tampering_or_rollback_suspected = TRUE
+THEN fraud_escalation_required = TRUE
+
+DO NOT tell the clerk to use an affidavit as an automatic substitute for a blank odometer disclosure. First determine whether disclosure is required and whether the proper seller/authorized party can complete the required disclosure.
+
+COMMON CLERK ANSWER:
+If the odometer disclosure is blank on the title, first determine whether the vehicle is odometer-exempt based on model year. If the vehicle is not exempt, do not submit the title as-is. The required odometer disclosure must be completed by the seller or authorized party on the title or proper reassignment/disclosure document before submission. Do not treat an affidavit as an automatic substitute unless title lead, tax collector, or FLHSMV procedure allows it. Hold and escalate if the disclosure cannot be completed cleanly, if mileage conflicts with the deal file or title record, or if tampering/fraud is suspected.
 
 ============================================================
 VALID IDENTIFICATION REJECTION PREVENTION

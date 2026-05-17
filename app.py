@@ -498,6 +498,48 @@ def search_documents(query):
 
         return (third_temp_matches + non_third_temp_matches)[:5]
     
+    blank_odometer_words = [
+        "odometer disclosure is blank on the title",
+        "blank odometer disclosure",
+        "odometer left blank",
+        "mileage blank on title",
+        "seller left odometer blank",
+        "title missing odometer",
+        "odometer disclosure blank"
+    ]
+
+    if any(term in query.lower() for term in blank_odometer_words):
+        priority_names = [
+            "odometer_and_mileage_law_notes",
+            "319.225",
+            "319.23_odometer",
+            "validation_logic_map",
+            "rejection_prevention_logic_map",
+            "tl_11",
+            "tl_01"
+        ]
+
+        blank_odometer_matches = [
+            m for name in priority_names
+            for m in matches
+            if name in m["name"].lower()
+        ]
+
+        unique_blank_odometer_matches = []
+        seen_names = set()
+
+        for m in blank_odometer_matches:
+            if m["name"] not in seen_names:
+                unique_blank_odometer_matches.append(m)
+                seen_names.add(m["name"])
+
+        non_blank_odometer_matches = [
+            m for m in matches
+            if m["name"] not in seen_names
+        ]
+
+        return (unique_blank_odometer_matches + non_blank_odometer_matches)[:5]
+
     wrong_signature_area_words = [
         "seller signed the wrong area on the title",
         "seller signed wrong spot on title",
@@ -1649,6 +1691,18 @@ Required answer:
 4. If POA is used, verify it is valid, specific enough, properly executed, and the principal is alive.
 5. POA cannot be used after death.
 6. Escalate if an owner is unavailable, refuses to sign, is deceased, or ownership authority is unclear.
+
+STRICT BLANK ODOMETER DISCLOSURE RULE:
+
+For questions where the odometer disclosure is blank on the title, do not answer as a generic title transfer or duplicate title issue.
+
+Required answer:
+1. Verify model year and determine if the vehicle is odometer-exempt.
+2. If not exempt, do not submit the title as-is with blank odometer disclosure.
+3. Require the seller or authorized party to complete the required odometer disclosure on the title or proper reassignment/disclosure document.
+4. Do not say an affidavit is an automatic substitute unless title lead, tax collector, or FLHSMV procedure allows it.
+5. Check for mileage conflicts, brands, unit issues, or suspected tampering.
+6. Hold and escalate if the odometer disclosure cannot be completed cleanly or conflicts with the deal file/title record.
 
 Knowledge Base:
 {combined_context}
