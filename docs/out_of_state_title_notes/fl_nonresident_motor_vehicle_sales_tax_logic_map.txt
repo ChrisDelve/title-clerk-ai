@@ -1,0 +1,493 @@
+DOCUMENT: FL_NONRESIDENT_MOTOR_VEHICLE_SALES_TAX_LOGIC_MAP
+TITLE: Florida Nonresident Motor Vehicle Sales Tax / DR-123 Logic Map
+SOURCE: https://floridarevenue.com/taxes/tips/Documents/TIP_25A01-01.pdf
+SOURCE_TITLE: Florida DOR TIP 25A01-01R — Motor Vehicle Sales Tax Rates by State
+DATE_REVISED: January 31, 2025
+DOCUMENT_TYPE: Tax Logic Map
+CATEGORY: FLORIDA DEALER SALE TO OUT-OF-STATE CUSTOMER / NONRESIDENT SALES TAX / DR-123 / 45 DAY HOME STATE LICENSING / PARTIAL EXEMPTION / NO-CREDIT STATES
+
+============================================================
+PURPOSE
+============================================================
+
+This logic map routes questions about Florida sales tax when a Florida dealership sells a motor vehicle to an out-of-state resident.
+
+Use this file when the user asks:
+
+- How much tax do I charge an out-of-state customer?
+- Does the customer need DR-123?
+- Do we collect Florida tax or their state tax?
+- What tax rate for a customer from another state?
+- Does Florida cap the tax at 6%?
+- Does the customer have to remove the vehicle from Florida?
+- What if the customer is from Arkansas, Mississippi, West Virginia, or Oklahoma?
+- Does trade-in credit apply for their state?
+- What if the customer’s state has no tax?
+- What if the customer is a corporation or partnership?
+
+============================================================
+HIGH PRIORITY ROUTING
+============================================================
+
+IF user_question_mentions_tax = TRUE
+AND customer_is_out_of_state_resident = TRUE
+AND vehicle_sold_in_Florida = TRUE
+THEN use_this_logic_map = TRUE
+
+IF user_question_mentions_DR_123 = TRUE
+THEN use_this_logic_map = TRUE
+
+IF user_question_mentions_partial_exemption = TRUE
+THEN use_this_logic_map = TRUE
+
+IF user_question_mentions_sales_tax_for_out_of_state_customer = TRUE
+THEN use_this_logic_map = TRUE
+
+IF user_question_mentions_customer_state_tax_rate = TRUE
+THEN use_fl_motor_vehicle_sales_tax_rates_by_state_tip_25A01_01_notes = TRUE
+
+============================================================
+CORE FLORIDA NONRESIDENT TAX RULE
+============================================================
+
+IF Florida_dealer_sells_new_or_used_motor_vehicle = TRUE
+AND purchaser_is_resident_of_another_state = TRUE
+THEN Florida_nonresident_motor_vehicle_tax_rule_applies = TRUE
+
+IF Florida_nonresident_motor_vehicle_tax_rule_applies = TRUE
+THEN Florida_collects_tax_based_on_purchaser_home_state_rate_subject_to_6_percent_cap = TRUE
+
+IF purchaser_home_state_tax_rate >= 6_percent
+THEN Florida_sales_tax_collected = 6_percent
+
+IF purchaser_home_state_tax_rate < 6_percent
+THEN Florida_sales_tax_collected = purchaser_home_state_tax_rate_if_DR_123_completed = TRUE
+
+IF purchaser_home_state_tax_rate = 0_percent
+THEN Florida_sales_tax_collected = 0_percent_if_DR_123_completed = TRUE
+
+IF purchaser_home_state_tax_rate_is_None = TRUE
+THEN Florida_sales_tax_collected = 0_percent_if_DR_123_completed = TRUE
+
+============================================================
+DR-123 REQUIREMENT
+============================================================
+
+IF purchaser_home_state_tax_rate < 6_percent
+THEN DR_123_required_for_partial_exemption = TRUE
+
+IF purchaser_home_state_tax_rate = 0_percent
+THEN DR_123_required_for_partial_exemption = TRUE
+
+IF DR_123_required_for_partial_exemption = TRUE
+THEN DR_123_must_be_completed_at_time_of_sale = TRUE
+
+IF DR_123_required_for_partial_exemption = TRUE
+THEN purchaser_must_declare_intent_to_license_vehicle_in_home_state_within_45_days = TRUE
+
+IF DR_123_required_for_partial_exemption = TRUE
+AND DR_123_not_completed_at_time_of_sale = TRUE
+THEN full_Florida_6_percent_sales_tax_review_required = TRUE
+
+IF purchaser_licenses_vehicle_in_home_state_within_45_days = TRUE
+THEN vehicle_does_not_have_to_be_removed_from_Florida = TRUE
+
+============================================================
+45-DAY LICENSING RULE
+============================================================
+
+IF DR_123_used = TRUE
+THEN customer_must_license_vehicle_in_home_state_within_45_days = TRUE
+
+IF customer_licenses_vehicle_in_home_state_within_45_days = TRUE
+THEN no_Florida_removal_requirement = TRUE
+
+IF customer_does_not_intend_to_license_in_home_state_within_45_days = TRUE
+THEN DR_123_partial_exemption_not_safe_to_apply = TRUE
+
+IF customer_intent_unclear = TRUE
+THEN hold_and_escalate_to_controller_or_tax_lead = TRUE
+
+============================================================
+ENTITY PURCHASER RULE
+============================================================
+
+IF purchaser_type IN ["corporation", "partnership"]
+AND purchaser_is_nonresident = TRUE
+THEN nonresident_entity_review_required = TRUE
+
+IF purchaser_type = "corporation"
+AND officer_is_Florida_resident = TRUE
+THEN partial_exemption_not_allowed_by_default = TRUE
+
+IF purchaser_type = "corporation"
+AND stockholder_owning_at_least_10_percent_is_Florida_resident = TRUE
+THEN partial_exemption_not_allowed_by_default = TRUE
+
+IF purchaser_type = "partnership"
+AND partner_owning_at_least_10_percent_is_Florida_resident = TRUE
+THEN partial_exemption_not_allowed_by_default = TRUE
+
+IF nonresident_entity_has_Florida_resident_owner_or_officer_issue = TRUE
+AND vehicle_removed_from_Florida_within_45_days = TRUE
+AND vehicle_remains_outside_Florida_for_at_least_180_days = TRUE
+THEN partial_exemption_may_be_allowed_review_required = TRUE
+
+IF nonresident_entity_has_Florida_resident_owner_or_officer_issue = TRUE
+THEN escalate_to_controller_or_tax_lead_before_sale = TRUE
+
+============================================================
+NO-CREDIT / DOUBLE-TAX STATES
+============================================================
+
+IF customer_state = "Arkansas"
+THEN no_credit_state_warning_required = TRUE
+
+IF customer_state = "Mississippi"
+THEN no_credit_state_warning_required = TRUE
+
+IF customer_state = "West Virginia"
+THEN no_credit_state_warning_required = TRUE
+
+IF no_credit_state_warning_required = TRUE
+THEN tell_user_customer_may_pay_Florida_tax_and_home_state_tax = TRUE
+
+IF customer_state IN ["Arkansas", "Mississippi", "West Virginia"]
+THEN customer_should_be_informed_home_state_does_not_allow_credit_for_taxes_paid_to_Florida = TRUE
+
+IF customer_state = "Oklahoma"
+THEN Oklahoma_special_tax_refund_warning_required = TRUE
+
+IF Oklahoma_special_tax_refund_warning_required = TRUE
+THEN tell_user_Oklahoma_requires_tax_and_excise_tax_when_titled_or_registered_in_Oklahoma = TRUE
+
+IF Oklahoma_special_tax_refund_warning_required = TRUE
+THEN tell_user_Oklahoma_may_allow_refund_up_to_amount_of_Florida_sales_tax_paid = TRUE
+
+============================================================
+STATE RATE ROUTING
+============================================================
+
+IF customer_state = "Alabama"
+THEN home_state_rate = 2_percent
+AND Florida_tax_to_collect = 2_percent_if_DR_123_completed
+
+IF customer_state = "Alaska"
+THEN home_state_rate = 0_percent
+AND Florida_tax_to_collect = 0_percent_if_DR_123_completed
+
+IF customer_state = "Arizona"
+THEN home_state_rate = 5.6_percent
+AND Florida_tax_to_collect = 5.6_percent_if_DR_123_completed
+
+IF customer_state = "Arkansas"
+THEN home_state_rate = 6.5_percent
+AND Florida_tax_to_collect = 6_percent
+AND no_credit_state_warning_required = TRUE
+
+IF customer_state = "California"
+THEN home_state_rate = 7.25_percent
+AND Florida_tax_to_collect = 6_percent
+AND no_trade_in_credit_for_California = TRUE
+
+IF customer_state = "Colorado"
+THEN home_state_rate = 2.9_percent
+AND Florida_tax_to_collect = 2.9_percent_if_DR_123_completed
+
+IF customer_state = "Connecticut"
+THEN home_state_rate_review_required = TRUE
+AND Florida_tax_to_collect = 6_percent_for_6.35_or_7.75_percent_transactions
+AND active_duty_nonresident_rate_review_required = TRUE
+
+IF customer_state = "Delaware"
+THEN home_state_rate = 0_percent
+AND Florida_tax_to_collect = 0_percent_if_DR_123_completed
+
+IF customer_state = "District of Columbia"
+THEN home_state_rate = 0_percent
+AND Florida_tax_to_collect = 0_percent_if_DR_123_completed
+
+IF customer_state = "Georgia"
+THEN Georgia_TAVT_review_required = TRUE
+AND Florida_tax_to_collect = 0_percent_for_motorized_motor_vehicle_if_DR_123_completed
+AND Florida_tax_to_collect = 4_percent_for_non_motorized_motor_vehicle_if_DR_123_completed
+
+IF customer_state = "Hawaii"
+THEN home_state_rate = 4_percent
+AND Florida_tax_to_collect = 4_percent_if_DR_123_completed
+
+IF customer_state = "Idaho"
+THEN home_state_rate = 6_percent
+AND Florida_tax_to_collect = 6_percent
+
+IF customer_state = "Illinois"
+THEN home_state_rate = 6.25_percent
+AND Florida_tax_to_collect = 6_percent
+
+IF customer_state = "Indiana"
+THEN home_state_rate = 7_percent
+AND Florida_tax_to_collect = 6_percent
+
+IF customer_state = "Iowa"
+THEN home_state_rate = 0_percent
+AND Florida_tax_to_collect = 0_percent_if_DR_123_completed
+AND Iowa_5_percent_one_time_registration_fee_review_required = TRUE
+
+IF customer_state = "Kansas"
+THEN home_state_rate = 6.5_percent
+AND Florida_tax_to_collect = 6_percent
+
+IF customer_state = "Kentucky"
+THEN home_state_rate = 6_percent
+AND Florida_tax_to_collect = 6_percent
+
+IF customer_state = "Louisiana"
+THEN home_state_rate = 5_percent
+AND Florida_tax_to_collect = 5_percent_if_DR_123_completed
+
+IF customer_state = "Maine"
+THEN home_state_rate = 5.5_percent
+AND Florida_tax_to_collect = 5.5_percent_if_DR_123_completed
+
+IF customer_state = "Maryland"
+THEN home_state_rate = 0_percent
+AND Florida_tax_to_collect = 0_percent_if_DR_123_completed
+AND Maryland_motor_vehicle_excise_tax_review_required = TRUE
+
+IF customer_state = "Massachusetts"
+THEN home_state_rate = 6.25_percent
+AND Florida_tax_to_collect = 6_percent
+
+IF customer_state = "Michigan"
+THEN home_state_rate = 6_percent
+AND Florida_tax_to_collect = 6_percent
+AND Michigan_trade_in_credit_limit_review_required = TRUE
+
+IF customer_state = "Minnesota"
+THEN home_state_rate = 6.875_percent
+AND Florida_tax_to_collect = 6_percent
+
+IF customer_state = "Mississippi"
+THEN Mississippi_rate_review_required = TRUE
+AND no_credit_state_warning_required = TRUE
+
+IF customer_state = "Mississippi"
+AND vehicle_type IN ["motor vehicle", "light truck"]
+AND vehicle_weight_10000_lbs_or_less = TRUE
+THEN Florida_tax_to_collect = 5_percent_if_DR_123_completed
+AND no_credit_state_warning_required = TRUE
+
+IF customer_state = "Mississippi"
+AND vehicle_type IN ["semi-trailer", "truck"]
+AND vehicle_weight_over_10000_lbs = TRUE
+THEN Florida_tax_to_collect = 3_percent_if_DR_123_completed
+AND no_credit_state_warning_required = TRUE
+
+IF customer_state = "Mississippi"
+AND vehicle_type = "motorcycle"
+THEN Florida_tax_to_collect = 6_percent
+AND no_credit_state_warning_required = TRUE
+
+IF customer_state = "Missouri"
+THEN home_state_rate = 4.225_percent
+AND Florida_tax_to_collect = 4.225_percent_if_DR_123_completed
+
+IF customer_state = "Montana"
+THEN home_state_rate = 0_percent
+AND Florida_tax_to_collect = 0_percent_if_DR_123_completed
+
+IF customer_state = "Nebraska"
+THEN Nebraska_Good_Life_District_review_required = TRUE
+AND Florida_tax_to_collect = 2.75_percent_or_5.5_percent_if_DR_123_completed_depending_on_location
+
+IF customer_state = "Nevada"
+THEN home_state_rate = 6.85_percent
+AND Florida_tax_to_collect = 6_percent
+
+IF customer_state = "New Hampshire"
+THEN home_state_rate = 0_percent
+AND Florida_tax_to_collect = 0_percent_if_DR_123_completed
+
+IF customer_state = "New Jersey"
+THEN home_state_rate = 6.625_percent
+AND Florida_tax_to_collect = 6_percent
+
+IF customer_state = "New Mexico"
+THEN home_state_rate = 0_percent
+AND Florida_tax_to_collect = 0_percent_if_DR_123_completed
+AND New_Mexico_4_percent_motor_vehicle_excise_tax_review_required = TRUE
+
+IF customer_state = "New York"
+THEN home_state_rate = 4_percent
+AND Florida_tax_to_collect = 4_percent_if_DR_123_completed
+
+IF customer_state = "North Carolina"
+THEN home_state_rate = 0_percent
+AND Florida_tax_to_collect = 0_percent_if_DR_123_completed
+AND North_Carolina_highway_use_tax_review_required = TRUE
+
+IF customer_state = "North Dakota"
+THEN home_state_rate = 0_percent
+AND Florida_tax_to_collect = 0_percent_if_DR_123_completed
+AND North_Dakota_5_percent_motor_vehicle_excise_tax_review_required = TRUE
+
+IF customer_state = "Ohio"
+THEN home_state_rate = 5.75_percent
+AND Florida_tax_to_collect = 5.75_percent_if_DR_123_completed
+
+IF customer_state = "Oklahoma"
+THEN home_state_rate = 1.25_percent
+AND Florida_tax_to_collect = 1.25_percent_if_DR_123_completed
+AND Oklahoma_special_tax_refund_warning_required = TRUE
+
+IF customer_state = "Oregon"
+THEN home_state_rate = 0_percent
+AND Florida_tax_to_collect = 0_percent_if_DR_123_completed
+AND Oregon_vehicle_use_tax_review_required = TRUE
+
+IF customer_state = "Pennsylvania"
+THEN home_state_rate = 6_percent
+AND Florida_tax_to_collect = 6_percent
+
+IF customer_state = "Rhode Island"
+THEN home_state_rate = 7_percent
+AND Florida_tax_to_collect = 6_percent
+
+IF customer_state = "South Carolina"
+THEN home_state_rate = 5_percent_not_to_exceed_500
+AND Florida_tax_to_collect = 5_percent_not_to_exceed_500_if_DR_123_completed
+
+IF customer_state = "South Dakota"
+THEN home_state_rate = 0_percent
+AND Florida_tax_to_collect = 0_percent_if_DR_123_completed
+AND South_Dakota_4_percent_motor_vehicle_excise_tax_review_required = TRUE
+
+IF customer_state = "Tennessee"
+THEN home_state_rate = 7_percent
+AND Florida_tax_to_collect = 6_percent
+
+IF customer_state = "Texas"
+THEN home_state_rate = 6.25_percent
+AND Florida_tax_to_collect = 6_percent
+
+IF customer_state = "Utah"
+THEN home_state_rate = 4.85_percent
+AND Florida_tax_to_collect = 4.85_percent_if_DR_123_completed
+
+IF customer_state = "Vermont"
+THEN home_state_rate = 6_percent
+AND Florida_tax_to_collect = 6_percent
+
+IF customer_state = "Virginia"
+THEN home_state_rate = 4.15_percent_with_75_dollar_minimum
+AND Florida_tax_to_collect = 4.15_percent_with_75_dollar_minimum_if_DR_123_completed
+
+IF customer_state = "Washington"
+THEN home_state_rate = 6.8_percent
+AND Florida_tax_to_collect = 6_percent
+
+IF customer_state = "West Virginia"
+THEN West_Virginia_rate_review_required = TRUE
+AND no_credit_state_warning_required = TRUE
+
+IF customer_state = "West Virginia"
+AND vehicle_price_over_500 = TRUE
+THEN Florida_tax_to_collect = 6_percent
+AND no_credit_state_warning_required = TRUE
+
+IF customer_state = "West Virginia"
+AND vehicle_price_under_500 = TRUE
+THEN Florida_tax_to_collect = 30_dollars
+AND no_credit_state_warning_required = TRUE
+
+IF customer_state = "Wisconsin"
+THEN home_state_rate = 5_percent
+AND Florida_tax_to_collect = 5_percent_if_DR_123_completed
+
+IF customer_state = "Wyoming"
+THEN home_state_rate = 4_percent
+AND Florida_tax_to_collect = 4_percent_if_DR_123_completed
+
+============================================================
+ANSWER STRUCTURE
+============================================================
+
+When answering a nonresident sales tax question, use this structure:
+
+1. State the Florida tax rate to collect.
+2. State whether DR-123 is required.
+3. State the 45-day home-state licensing rule.
+4. State whether special no-credit/double-tax warning applies.
+5. State trade-in credit issue if important.
+6. State that final tax handling should be verified with controller/tax lead if unclear.
+
+============================================================
+COMMON ANSWER — NORMAL OUT-OF-STATE CUSTOMER
+============================================================
+
+For a Florida dealer sale to an out-of-state resident, Florida generally collects the customer’s home-state motor vehicle tax rate, capped at Florida’s 6% state sales tax rate. If the customer’s home-state rate is less than 6%, Form DR-123 must be completed at the time of sale for the partial exemption. DR-123 means the customer declares they intend to license the vehicle in their home state within 45 days. If they license it in their home state within 45 days, the vehicle does not have to be removed from Florida. Verify trade-in treatment and state-specific tax issues before finalizing.
+
+============================================================
+COMMON ANSWER — 6% CAP STATE
+============================================================
+
+Because the customer’s home-state rate is 6% or higher, Florida collects 6% Florida sales tax. The tax collected is Florida sales tax and is paid to the Florida Department of Revenue. Review the home-state titling notes for any additional tax, credit, or registration exposure when the vehicle is titled in the customer’s state.
+
+============================================================
+COMMON ANSWER — BELOW 6% STATE
+============================================================
+
+Because the customer’s home-state rate is below Florida’s 6% rate, Florida may collect the lower home-state rate only if Form DR-123 is completed at the time of sale. The customer must declare intent to license the vehicle in their home state within 45 days. If DR-123 is not completed when required, review whether full Florida 6% sales tax must be collected.
+
+============================================================
+COMMON ANSWER — NO-TAX STATE
+============================================================
+
+Because the customer’s home state has no listed state motor vehicle sales tax rate, Florida may collect 0% only if the DR-123 partial exemption workflow is completed at the time of sale and the customer declares intent to license the vehicle in their home state within 45 days. Verify the customer’s state-specific title, registration, excise, or use-tax requirements separately.
+
+============================================================
+COMMON ANSWER — ARKANSAS / MISSISSIPPI / WEST VIRGINIA
+============================================================
+
+Florida DOR specifically warns that Arkansas, Mississippi, and West Virginia impose motor vehicle tax but do not allow credit for taxes paid to Florida. That means the customer may have to pay Florida tax at the applicable home-state rate when buying the vehicle in Florida and may also owe tax again when licensing the vehicle in their home state. This should be clearly disclosed and escalated to the controller or tax lead before finalizing.
+
+============================================================
+COMMON ANSWER — OKLAHOMA
+============================================================
+
+For an Oklahoma customer, Florida collects the Oklahoma rate under the DR-123 nonresident workflow, but Florida DOR warns that Oklahoma also requires residents to pay sales tax and excise tax when the vehicle is titled or registered in Oklahoma. Oklahoma may allow a refund in the amount of Florida sales tax paid, up to the amount of sales tax paid in Oklahoma. Escalate Oklahoma tax handling before finalizing.
+
+============================================================
+ESCALATION RULES
+============================================================
+
+Escalate before finalizing when:
+
+- Customer state is Arkansas, Mississippi, West Virginia, or Oklahoma.
+- Customer is a corporation or partnership with Florida resident ownership/officer issue.
+- DR-123 is missing or incomplete.
+- Customer will not title/license in home state within 45 days.
+- Customer state rate depends on vehicle type, weight, use, location, or price.
+- Trade-in credit treatment changes taxable amount.
+- Customer claims exemption.
+- Customer is military, business, trust, nonresident entity, or commercial carrier.
+- There is uncertainty about tax credit in the customer’s home state.
+- Deal involves local tax, excise tax, use tax, highway use tax, TAVT, IMF, or other state-specific fee.
+
+============================================================
+RELATED FILES
+============================================================
+
+- fl_motor_vehicle_sales_tax_rates_by_state_tip_25A01_01_notes.txt
+- out_of_state_customer_title_master_logic_map.txt
+- validation_logic_map.txt
+- rejection_prevention_logic_map.txt
+- rejection_prevention_tax_logic_map.txt
+- arkansas_customer_titling_requirements_notes.txt
+- mississippi_customer_titling_requirements_notes.txt
+- west_virginia_customer_titling_requirements_notes.txt
+- oklahoma_customer_titling_requirements_notes.txt
+
+============================================================
+END OF FILE
+============================================================

@@ -1,0 +1,298 @@
+DOCUMENT: PENNSYLVANIA_CUSTOMER_TITLING_REQUIREMENTS_NOTES
+TITLE: Pennsylvania Customer Titling / Registration Requirements for Out-of-State Dealer Sale
+STATE: Pennsylvania
+SOURCE: https://www.pa.gov/content/dam/copapwp-pagov/en/penndot/documents/public/dvspubsforms/bmv/bmv-fact-sheets/fs-toos.pdf
+SOURCE_TITLE: PennDOT Fact Sheet — How to Title and Register Your Out-of-State Vehicle in Pennsylvania
+SOURCE_REVISION: February 2025
+DOCUMENT_TYPE: Out-of-State Customer Titling / Registration Requirements
+CATEGORY: FLORIDA DEALER SALE TO PENNSYLVANIA CUSTOMER / PENNSYLVANIA TITLE / PENNSYLVANIA REGISTRATION / MV-1 / OUT-OF-STATE TITLE / LIENHOLDER / VIN TRACING / TEMPORARY PLATE
+
+============================================================
+PURPOSE
+============================================================
+
+This file helps a Florida dealership understand what may be needed when a customer buys a vehicle from the dealership and wants the vehicle titled and/or registered in Pennsylvania.
+
+Use this file for questions like:
+
+- What do I need to title this customer in Pennsylvania?
+- Pennsylvania customer bought from our Florida dealership.
+- What is Pennsylvania MV-1?
+- What if the out-of-state title is held by lienholder?
+- Can Pennsylvania issue a temporary registration plate?
+- Does Pennsylvania require VIN tracing?
+- Does Pennsylvania require proof of sales tax?
+
+============================================================
+WHEN TO USE THIS FILE
+============================================================
+
+Use this file when:
+
+IF customer_state = "Pennsylvania"
+AND customer_is_buying_vehicle_from_dealer = TRUE
+AND vehicle_will_be_titled_or_registered_in_customer_state = TRUE
+THEN use_pennsylvania_customer_titling_requirements_notes = TRUE
+
+Do NOT use this file as the primary source for:
+- Customer bringing Pennsylvania title into Florida for Florida title
+- Florida resident titling/registering in Florida
+- Florida tag transfer workflow
+
+For Florida titling/registration, use Florida title and registration notes.
+
+============================================================
+PENNSYLVANIA SOURCE SUMMARY
+============================================================
+
+PennDOT Fact Sheet says:
+
+General title rule:
+- Out-of-state certificate of title must be surrendered to PennDOT when applicant submits Form MV-1.
+- Pennsylvania Certificate of Title will only be issued when the out-of-state title is submitted with completed MV-1 and processed by PennDOT.
+- Temporary Pennsylvania registration plates may be issued only when the out-of-state title is submitted with completed MV-1.
+
+If out-of-state title is attached:
+- Temporary registration plate may be issued by issuing agent.
+- Form MV-1 must be completed.
+- Check or money order payable to Commonwealth of Pennsylvania attached for all title, lien, registration fees, and sales tax if applicable.
+- Lienholder listed on out-of-state title must be listed on MV-1 unless lien was satisfied on out-of-state title.
+- If refinanced, new lienholder must be listed on MV-1.
+- Fee required to record lien.
+
+If out-of-state lienholder will not release title to owner but will release to PennDOT:
+- Vehicle owner must contact PennDOT Call Center to request letter to lienholder asking title be sent to PennDOT.
+- Authorized agent may not complete MV-1 until PennDOT receives out-of-state certificate of title.
+- Once PennDOT receives title, customer receives letter and provides copy to authorized agent.
+- Agent contacts PennDOT representative listed in letter.
+- PennDOT representative faxes copy of out-of-state title to agent so MV-1 can be completed.
+- This is the only time an authorized agent may accept photocopy of certificate of title to complete MV-1.
+- Temporary registration plate may be issued.
+- MV-1 completed with check/money order for title, lien, registration fees, and sales tax if applicable.
+- Out-of-state lienholder name, address, and FIN if lienholder participates in ELT must be listed on MV-1.
+- Agent submits all documents to PennDOT representative so original out-of-state title can be attached.
+- Agent retains customer letter and faxed title copy.
+
+If lienholder refuses to release title to owner or PennDOT:
+- No temporary registration plate may be issued by issuing agent.
+- Vehicle owner must comply with out-of-state lienholder requirements to obtain title.
+- Out-of-state registration plate must be valid for vehicle to continue operating on Pennsylvania roadways.
+
+Special VIN instructions:
+- Section A of MV-1 must verify VIN matches out-of-state certificate of title and vehicle VIN plate.
+- VIN plate tracing must be attached to reverse side of white copy of all MV-1 applications for PA Certificates of Title for:
+  - All trucks or truck tractors
+  - All motor homes
+  - All vehicles previously titled in another state
+- If VIN tracing is not possible, certified inspection mechanic or notary public employed by motor vehicle dealer/issuing agent may visually verify.
+- If vehicle is physically outside Pennsylvania, VIN must be visually verified by police officer, mechanic employed by motor vehicle dealer, Armed Forces installation provost marshal, or motor transportation officer using Form MV-41.
+
+Sales tax:
+- If vehicle titled in applicant's name for at least six months, proof of sales tax paid is not required.
+- If less than six months, applicant must provide proof of sales tax paid or remit Pennsylvania sales tax.
+- Some exceptions apply for construction contractors and military personnel whose home of record/residency was Pennsylvania when purchased.
+
+============================================================
+PENNSYLVANIA REQUIRED DOCUMENT LOGIC
+============================================================
+
+IF Pennsylvania_customer_title_or_registration_requested = TRUE
+THEN Pennsylvania_Form_MV_1_required = TRUE
+
+IF Pennsylvania_title_requested = TRUE
+THEN out_of_state_certificate_of_title_must_be_surrendered_to_PennDOT = TRUE
+
+IF Pennsylvania_title_requested = TRUE
+AND out_of_state_title_not_submitted = TRUE
+THEN Pennsylvania_title_will_not_be_issued = TRUE
+
+IF Pennsylvania_temp_plate_requested = TRUE
+THEN out_of_state_title_submitted_with_completed_MV_1_required = TRUE
+
+IF out_of_state_title_attached = TRUE
+THEN temporary_registration_plate_may_be_issued = TRUE
+
+IF out_of_state_title_attached = TRUE
+THEN check_or_money_order_to_Commonwealth_for_title_lien_registration_fees_and_sales_tax_required = TRUE
+
+IF lienholder_listed_on_out_of_state_title = TRUE
+AND lien_not_satisfied_on_out_of_state_title = TRUE
+THEN lienholder_must_be_listed_on_MV_1 = TRUE
+
+IF refinanced_vehicle = TRUE
+THEN new_lienholder_must_be_listed_on_MV_1 = TRUE
+
+IF lien_recorded_on_MV_1 = TRUE
+THEN lien_recording_fee_required = TRUE
+
+============================================================
+PENNSYLVANIA LIENHOLDER / TITLE HELD BY LIENHOLDER LOGIC
+============================================================
+
+IF out_of_state_lienholder_will_release_title_to_PennDOT_but_not_owner = TRUE
+THEN owner_must_contact_PennDOT_Call_Center_for_lienholder_letter = TRUE
+
+IF PennDOT_has_not_received_out_of_state_title_from_lienholder = TRUE
+THEN authorized_agent_may_not_complete_MV_1 = TRUE
+
+IF PennDOT_receives_out_of_state_title_from_lienholder = TRUE
+THEN customer_receives_letter_to_take_to_authorized_agent = TRUE
+
+IF authorized_agent_receives_PennDOT_letter = TRUE
+THEN agent_contacts_PennDOT_representative_for_faxed_title_copy = TRUE
+
+IF PennDOT_faxed_title_copy_used = TRUE
+THEN this_is_only_time_authorized_agent_may_accept_title_photocopy_for_MV_1 = TRUE
+
+IF PennDOT_faxed_title_copy_used = TRUE
+THEN agent_retains_customer_letter_and_faxed_title_copy = TRUE
+
+IF out_of_state_lienholder_refuses_to_release_title_to_owner_or_PennDOT = TRUE
+THEN no_temporary_registration_plate_may_be_issued = TRUE
+
+IF out_of_state_lienholder_refuses_to_release_title_to_owner_or_PennDOT = TRUE
+THEN owner_must_comply_with_lienholder_requirements_to_obtain_title = TRUE
+
+IF out_of_state_title_not_released = TRUE
+THEN out_of_state_registration_plate_must_be_valid_to_continue_operating_in_PA = TRUE
+
+============================================================
+PENNSYLVANIA VIN VERIFICATION / TRACING LOGIC
+============================================================
+
+IF Pennsylvania_MV_1_completed = TRUE
+THEN Section_A_VIN_must_match_out_of_state_title_and_vehicle_VIN_plate = TRUE
+
+IF vehicle_type IN ["truck", "truck tractor", "motor home"]
+OR vehicle_previously_titled_in_another_state = TRUE
+THEN VIN_plate_tracing_required_on_reverse_of_white_copy_MV_1 = TRUE
+
+IF VIN_plate_tracing_not_possible = TRUE
+THEN certified_inspection_mechanic_or_authorized_notary_visual_verification_required = TRUE
+
+IF vehicle_physically_outside_Pennsylvania = TRUE
+THEN Pennsylvania_Form_MV_41_VIN_verification_required = TRUE
+
+IF vehicle_physically_outside_Pennsylvania = TRUE
+THEN VIN_verification_by_police_officer_dealer_mechanic_or_Armed_Forces_authorized_officer_required = TRUE
+
+============================================================
+PENNSYLVANIA TAX LOGIC
+============================================================
+
+IF vehicle_titled_in_applicant_name_for_at_least_six_months = TRUE
+THEN proof_of_sales_tax_paid_not_required_for_general_rule = TRUE
+
+IF vehicle_titled_in_applicant_name_less_than_six_months = TRUE
+THEN proof_of_sales_tax_paid_or_PA_sales_tax_required = TRUE
+
+IF customer_is_construction_contractor_or_PA_home_record_military_exception = TRUE
+THEN Pennsylvania_tax_exception_review_required = TRUE
+
+============================================================
+FLORIDA DEALER WORKFLOW FOR PENNSYLVANIA CUSTOMER
+============================================================
+
+When a Florida dealership sells a vehicle to a Pennsylvania customer and the customer wants Pennsylvania title/registration:
+
+1. Prepare dealer ownership package:
+   - Original title/MCO or properly assigned out-of-state title
+   - Dealer reassignment if applicable
+   - Buyer’s order / bill of sale
+   - Odometer disclosure/statement if applicable
+   - Lienholder information if financed
+
+2. Pennsylvania-specific items to review:
+   - Form MV-1
+   - Out-of-state title surrender to PennDOT
+   - Temporary plate availability only if out-of-state title submitted with MV-1
+   - Check/money order for title, lien, registration fees, and sales tax if applicable
+   - Lienholder listed on MV-1
+   - FIN if lienholder participates in ELT
+   - VIN tracing or MV-41 verification if vehicle outside Pennsylvania
+   - Proof of sales tax paid if required
+
+3. If lienholder holds title:
+   - Determine whether lienholder will release title to owner, PennDOT, or neither.
+   - If lienholder releases only to PennDOT, owner must contact PennDOT Call Center and wait for PennDOT title receipt before agent completes MV-1.
+   - If lienholder refuses to release title to owner or PennDOT, no temporary registration plate may be issued.
+   - Do not promise PA title or temp plate until lienholder/title release path is clear.
+
+4. If vehicle is outside Pennsylvania:
+   - Use MV-41 VIN verification by authorized verifier if tracing cannot be completed or vehicle outside PA.
+   - Do not assume Florida VIN/photo is enough unless Pennsylvania source allows.
+
+5. If tax issue:
+   - Review whether vehicle has been titled in applicant’s name for at least six months.
+   - If less than six months, proof of tax paid or PA tax may be required.
+
+============================================================
+TAX / RECIPROCITY NOTES
+============================================================
+
+For Florida dealer sale to Pennsylvania resident:
+
+- Review Florida DOR out-of-state resident sales tax / DR-123 workflow.
+- Pennsylvania fact sheet says if vehicle has been titled in applicant’s name less than six months, proof of sales tax paid or PA sales tax is required.
+- Verify tax handling with controller, agency, lender, PennDOT authorized agent, or PennDOT before finalizing.
+
+Use related file:
+fl_motor_vehicle_sales_tax_rates_by_state_tip_25a01_01_notes.txt
+
+============================================================
+REJECTION / DELAY RISKS
+============================================================
+
+High risk if:
+
+- Out-of-state title is not surrendered.
+- MV-1 is completed before PennDOT receives lienholder-held title.
+- Temporary plate issued without out-of-state title submitted with MV-1.
+- Lienholder refuses to release title to owner or PennDOT.
+- Lienholder/FIN not listed correctly on MV-1.
+- VIN tracing missing.
+- MV-41 missing when vehicle is outside Pennsylvania and visual verification is required.
+- Sales tax proof missing when vehicle titled in applicant’s name less than six months.
+- Agent uses photocopy of title outside the one PennDOT-authorized lienholder scenario.
+- Tax/DR-123 handling unclear.
+
+============================================================
+AI ROUTING KEYWORDS
+============================================================
+
+Pennsylvania customer
+title customer in Pennsylvania
+register customer in Pennsylvania
+Pennsylvania title requirements
+Pennsylvania registration requirements
+Pennsylvania out of state dealer sale
+Florida dealer Pennsylvania customer
+Pennsylvania MV-1
+PennDOT out of state title
+Pennsylvania lienholder holds title
+Pennsylvania temporary registration plate
+Pennsylvania VIN tracing
+Pennsylvania MV-41
+Pennsylvania sales tax proof
+what do I need to title in Pennsylvania
+
+============================================================
+COMMON CLERK ANSWER
+============================================================
+
+For a Pennsylvania customer buying from a Florida dealership, Pennsylvania requires Form MV-1 and surrender of the out-of-state title to PennDOT. A Pennsylvania title is only issued when the out-of-state title is submitted with completed MV-1 and processed. Temporary Pennsylvania registration plates may be issued only when the out-of-state title is submitted with MV-1. If the out-of-state lienholder will release the title only to PennDOT, the owner must contact PennDOT and the authorized agent cannot complete MV-1 until PennDOT receives the title. If the lienholder refuses to release the title to the owner or PennDOT, no temporary plate may be issued. Pennsylvania also requires VIN tracing for vehicles previously titled in another state, with MV-41 visual verification if the vehicle is physically outside Pennsylvania. Prepare the dealer package, odometer disclosure/statement if applicable, lienholder information, and review Florida DR-123/PA tax handling. Escalate if title surrender, lienholder release, MV-1, VIN tracing/MV-41, temp plate, or tax handling is unclear.
+
+============================================================
+RELATED FILES
+============================================================
+
+- out_of_state_customer_title_master_logic_map.txt
+- fl_motor_vehicle_sales_tax_rates_by_state_tip_25a01_01_notes.txt
+- validation_logic_map.txt
+- rejection_prevention_logic_map.txt
+- fl_title_ownership_and_transfer_law_notes.txt
+- fl_lien_and_lien_satisfaction_law_notes.txt
+
+============================================================
+END OF FILE
+============================================================

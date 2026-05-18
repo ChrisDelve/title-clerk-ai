@@ -1,0 +1,185 @@
+DOCUMENT: ARIZONA_CUSTOMER_TITLING_REQUIREMENTS_NOTES
+TITLE: Arizona Customer Titling / Registration Requirements for Out-of-State Dealer Sale
+STATE: Arizona
+SOURCE: https://azdot.gov/mvd/services/vehicle-services/title-and-registration/out-state-vehicles
+DOCUMENT_TYPE: Out-of-State Customer Titling / Registration Requirements
+CATEGORY: FLORIDA DEALER SALE TO ARIZONA CUSTOMER / ARIZONA TITLE / ARIZONA REGISTRATION / EMISSIONS / LIEN CLEARANCE / LEASED VEHICLE
+
+============================================================
+PURPOSE
+============================================================
+
+This file helps a Florida dealership understand what may be needed when a customer buys a vehicle from the dealership and wants the vehicle titled and/or registered in Arizona.
+
+Use this file for questions like:
+
+- What do I need to title this customer in Arizona?
+- Arizona customer bought from our Florida dealership.
+- Does Arizona need emissions?
+- What does Arizona need if the title is held by lienholder?
+- What does Arizona need for a leased vehicle?
+- What forms are required for Arizona title/registration?
+
+============================================================
+WHEN TO USE THIS FILE
+============================================================
+
+Use this file when:
+
+IF customer_state = "Arizona"
+AND customer_is_buying_vehicle_from_dealer = TRUE
+AND vehicle_will_be_titled_or_registered_in_customer_state = TRUE
+THEN use_arizona_customer_titling_requirements_notes = TRUE
+
+Do NOT use this file as the primary source for:
+- Customer bringing Arizona title into Florida for Florida title
+- Florida resident titling/registering in Florida
+- Florida tag transfer workflow
+
+For Florida titling/registration, use Florida title and registration notes.
+
+============================================================
+ARIZONA SOURCE SUMMARY
+============================================================
+
+Arizona ADOT says the following are required to obtain Arizona title, registration, and license plate for a vehicle previously titled or registered in another state:
+
+- Completed, signed Title and Registration Application
+- Emissions compliance form for Phoenix and Tucson areas only
+- Out-of-state title, or registration if title is held by lienholder
+- Lien clearance, if applicable
+- Power of Attorney from lessor, original or certified copy, if leased vehicle
+- Payment of applicable title and registration fees
+
+Arizona fee estimate section shows:
+- Registration Fee: $8.00
+- Title Fee: $4.00
+- Air Quality Research Fee: $1.50
+- Additional postage may be required
+
+============================================================
+ARIZONA REQUIRED DOCUMENT LOGIC
+============================================================
+
+IF Arizona_customer_title_or_registration_requested = TRUE
+THEN Arizona_title_and_registration_application_required = TRUE
+
+IF Arizona_customer_title_or_registration_requested = TRUE
+THEN completed_signed_application_required = TRUE
+
+IF Arizona_registration_area = "Phoenix"
+OR Arizona_registration_area = "Tucson"
+THEN Arizona_emissions_compliance_form_required = TRUE
+
+IF Arizona_title_held_by_lienholder = TRUE
+THEN Arizona_may_accept_registration_if_title_held_by_lienholder_for_Arizona_process = TRUE
+
+IF Arizona_lien_exists = TRUE
+THEN lien_clearance_required = TRUE
+
+IF Arizona_vehicle_is_leased = TRUE
+THEN original_or_certified_lessor_power_of_attorney_required = TRUE
+
+IF Arizona_customer_title_or_registration_requested = TRUE
+THEN Arizona_title_registration_fees_required = TRUE
+
+============================================================
+FLORIDA DEALER WORKFLOW FOR ARIZONA CUSTOMER
+============================================================
+
+When a Florida dealership sells a vehicle to an Arizona customer and the customer wants Arizona title/registration:
+
+1. Prepare ownership package:
+   - MCO/MSO or properly assigned title
+   - Dealer reassignment if applicable
+   - Bill of sale / buyer’s order
+   - Odometer disclosure/statement if applicable
+   - Lienholder information if financed
+
+2. Arizona-specific requirements to review:
+   - Arizona Title and Registration Application
+   - Emissions compliance form if customer is in Phoenix/Tucson area
+   - Out-of-state title or registration if title is held by lienholder
+   - Lien clearance if applicable
+   - Original or certified lessor POA if leased
+
+3. If financed:
+   - Confirm lender/lienholder instructions.
+   - Confirm whether Arizona title will be sent to lienholder.
+   - Confirm lien clearance or lienholder documentation if a prior lien exists.
+
+4. If leased:
+   - Obtain original or certified copy of lessor POA.
+   - Verify lease company/titleholder information matches documents.
+
+5. If registering in Arizona:
+   - Arizona emissions may be required in Phoenix/Tucson areas.
+   - Do not assume Florida insurance/title requirements replace Arizona requirements.
+   - Confirm Arizona insurance/registration requirements with agency or Arizona MVD if unclear.
+
+============================================================
+TAX / RECIPROCITY NOTES
+============================================================
+
+For Florida dealer sale to Arizona resident:
+
+- Review Florida DOR out-of-state resident sales tax / DR-123 workflow.
+- Review customer state tax rate and Florida partial exemption rules.
+- Verify tax handling with controller, tax collector, agency, or lender before finalizing.
+
+Use related file:
+fl_motor_vehicle_sales_tax_rates_by_state_tip_25a01_01_notes.txt
+
+============================================================
+REJECTION / DELAY RISKS
+============================================================
+
+High risk if:
+
+- Arizona Title and Registration Application is missing or unsigned.
+- Phoenix/Tucson emissions compliance form is missing when applicable.
+- Title is held by lienholder and supporting registration/lienholder documents are unclear.
+- Lien clearance is missing.
+- Leased vehicle lacks original/certified lessor POA.
+- Tax/DR-123 handling is unclear.
+- Lender instructions conflict with Arizona requirements.
+
+============================================================
+AI ROUTING KEYWORDS
+============================================================
+
+Arizona customer
+title customer in Arizona
+register customer in Arizona
+Arizona title requirements
+Arizona registration requirements
+Arizona out of state dealer sale
+Florida dealer Arizona customer
+Arizona emissions compliance
+Phoenix emissions
+Tucson emissions
+Arizona lien clearance
+Arizona title held by lienholder
+Arizona leased vehicle POA
+what do I need to title in Arizona
+
+============================================================
+COMMON CLERK ANSWER
+============================================================
+
+For an Arizona customer buying from a Florida dealership, Arizona requires a completed signed Title and Registration Application, out-of-state title or registration if the title is held by lienholder, lien clearance if applicable, lessor POA if leased, and payment of applicable fees. If the customer is in the Phoenix or Tucson emissions area, an emissions compliance form may be required. Prepare the dealer ownership package, buyer’s order, odometer disclosure/statement if applicable, lienholder documents if financed, and review Florida DR-123/tax handling. Escalate if emissions, lien clearance, lessor POA, or tax handling is unclear.
+
+============================================================
+RELATED FILES
+============================================================
+
+- out_of_state_customer_title_master_logic_map.txt
+- fl_motor_vehicle_sales_tax_rates_by_state_tip_25a01_01_notes.txt
+- validation_logic_map.txt
+- rejection_prevention_logic_map.txt
+- fl_title_ownership_and_transfer_law_notes.txt
+- fl_lien_and_lien_satisfaction_law_notes.txt
+
+============================================================
+END OF FILE
+============================================================

@@ -1,0 +1,208 @@
+DOCUMENT: TENNESSEE_CUSTOMER_TITLING_REQUIREMENTS_NOTES
+TITLE: Tennessee Customer Titling / Registration Requirements for Out-of-State Dealer Sale
+STATE: Tennessee
+SOURCE: https://www.tn.gov/revenue/title-and-registration/vehicle-titling/titling-a-vehicle.html
+DOCUMENT_TYPE: Out-of-State Customer Titling / Registration Requirements
+CATEGORY: FLORIDA DEALER SALE TO TENNESSEE CUSTOMER / TENNESSEE TITLE / TENNESSEE REGISTRATION / COUNTY CLERK / MSO / INVOICE / ODOMETER / PLATE TRANSFER
+
+============================================================
+PURPOSE
+============================================================
+
+This file helps a Florida dealership understand what may be needed when a customer buys a vehicle from the dealership and wants the vehicle titled and/or registered in Tennessee.
+
+Use this file for questions like:
+
+- What do I need to title this customer in Tennessee?
+- Tennessee customer bought from our Florida dealership.
+- What does Tennessee need for a new vehicle title?
+- What does Tennessee need for a used vehicle title?
+- Does Tennessee need proof of identification/residency?
+- Does Tennessee need an MSO?
+- Does Tennessee need odometer disclosure?
+- What if customer transfers their Tennessee plate?
+
+============================================================
+WHEN TO USE THIS FILE
+============================================================
+
+Use this file when:
+
+IF customer_state = "Tennessee"
+AND customer_is_buying_vehicle_from_dealer = TRUE
+AND vehicle_will_be_titled_or_registered_in_customer_state = TRUE
+THEN use_tennessee_customer_titling_requirements_notes = TRUE
+
+Do NOT use this file as the primary source for:
+- Customer bringing Tennessee title into Florida for Florida title
+- Florida resident titling/registering in Florida
+- Florida tag transfer workflow
+
+For Florida titling/registration, use Florida title and registration notes.
+
+============================================================
+TENNESSEE SOURCE SUMMARY
+============================================================
+
+Tennessee Department of Revenue says:
+
+Current Tennessee residents can obtain titles for new and used vehicles from their county clerk’s office.
+
+For new vehicle titles, applicants must bring:
+- Proof of identification and proof of residency
+- Manufacturer’s Statement of Origin
+- New vehicle’s invoice
+- Copy of current registration if transferring license plate
+
+For used vehicle titles, applicants must bring:
+- Proof of identification and proof of residency
+- Valid certificate of title
+- Odometer disclosure statement, if applicable
+- Copy of current registration if transferring license plate
+- Affidavit of Non-Dealer Transfers for gift, low selling, or lineal relative vehicle transfers
+
+============================================================
+TENNESSEE REQUIRED DOCUMENT LOGIC
+============================================================
+
+IF Tennessee_customer_title_or_registration_requested = TRUE
+THEN county_clerk_processing_required = TRUE
+
+IF Tennessee_new_vehicle_title_requested = TRUE
+THEN proof_of_identification_and_residency_required = TRUE
+
+IF Tennessee_new_vehicle_title_requested = TRUE
+THEN Manufacturer_Statement_of_Origin_required = TRUE
+
+IF Tennessee_new_vehicle_title_requested = TRUE
+THEN new_vehicle_invoice_required = TRUE
+
+IF Tennessee_new_vehicle_title_requested = TRUE
+AND Tennessee_plate_transfer_requested = TRUE
+THEN copy_of_current_registration_required = TRUE
+
+IF Tennessee_used_vehicle_title_requested = TRUE
+THEN proof_of_identification_and_residency_required = TRUE
+
+IF Tennessee_used_vehicle_title_requested = TRUE
+THEN valid_certificate_of_title_required = TRUE
+
+IF Tennessee_used_vehicle_title_requested = TRUE
+AND odometer_disclosure_applicable = TRUE
+THEN odometer_disclosure_statement_required = TRUE
+
+IF Tennessee_used_vehicle_title_requested = TRUE
+AND Tennessee_plate_transfer_requested = TRUE
+THEN copy_of_current_registration_required = TRUE
+
+IF transfer_type IN ["gift", "low selling", "lineal relative"]
+THEN Tennessee_Affidavit_of_Non_Dealer_Transfers_required = TRUE
+
+============================================================
+FLORIDA DEALER WORKFLOW FOR TENNESSEE CUSTOMER
+============================================================
+
+When a Florida dealership sells a vehicle to a Tennessee customer and the customer wants Tennessee title/registration:
+
+1. Determine whether vehicle is:
+   - New vehicle
+   - Used vehicle
+   - Plate transfer involved
+   - Gift/low-selling/lineal relative transfer issue
+   - Financed/lienholder involved
+
+2. Prepare dealer ownership package:
+   - MSO/MCO for new vehicle
+   - Valid certificate of title for used vehicle
+   - Dealer reassignment if applicable
+   - New vehicle invoice if new
+   - Buyer’s order / bill of sale
+   - Odometer disclosure/statement if applicable
+   - Lienholder information if financed
+
+3. Tennessee-specific items to review:
+   - Proof of identification and proof of residency
+   - County clerk processing
+   - Copy of current registration if transferring Tennessee plate
+   - Affidavit of Non-Dealer Transfers only for gift/low-selling/lineal relative transfer scenarios
+   - Tennessee title/registration taxes and fees
+
+4. If financed:
+   - Confirm lienholder/title handling.
+   - Confirm county clerk/lender requirements.
+   - Confirm lien notation documentation if applicable.
+
+5. If plate transfer:
+   - Obtain copy of current registration.
+   - Verify plate transfer eligibility with Tennessee county clerk/agency.
+
+============================================================
+TAX / RECIPROCITY NOTES
+============================================================
+
+For Florida dealer sale to Tennessee resident:
+
+- Review Florida DOR out-of-state resident sales tax / DR-123 workflow.
+- Review Tennessee title/registration tax and fee requirements with county clerk/agency.
+- Verify tax handling with controller, agency, lender, or Tennessee county clerk before finalizing.
+
+Use related file:
+fl_motor_vehicle_sales_tax_rates_by_state_tip_25a01_01_notes.txt
+
+============================================================
+REJECTION / DELAY RISKS
+============================================================
+
+High risk if:
+
+- Proof of identification/residency is missing.
+- MSO/MCO missing for new vehicle.
+- New vehicle invoice missing.
+- Valid certificate of title missing for used vehicle.
+- Odometer disclosure missing when applicable.
+- Copy of current registration missing when transferring Tennessee plate.
+- Affidavit of Non-Dealer Transfers omitted when applicable to gift/low-selling/lineal relative transfer.
+- Lienholder/title handling unclear.
+- County clerk fee/tax handling unclear.
+- Tax/DR-123 handling unclear.
+
+============================================================
+AI ROUTING KEYWORDS
+============================================================
+
+Tennessee customer
+title customer in Tennessee
+register customer in Tennessee
+Tennessee title requirements
+Tennessee registration requirements
+Tennessee out of state dealer sale
+Florida dealer Tennessee customer
+Tennessee county clerk
+Tennessee MSO
+Tennessee new vehicle invoice
+Tennessee odometer disclosure
+Tennessee plate transfer
+Tennessee current registration copy
+Tennessee Affidavit of Non-Dealer Transfers
+what do I need to title in Tennessee
+
+============================================================
+COMMON CLERK ANSWER
+============================================================
+
+For a Tennessee customer buying from a Florida dealership, Tennessee titles are handled through the county clerk. For a new vehicle, Tennessee requires proof of identification/residency, manufacturer’s statement of origin, new vehicle invoice, and current registration copy if transferring a plate. For a used vehicle, Tennessee requires proof of identification/residency, valid certificate of title, odometer disclosure statement if applicable, and current registration copy if transferring a plate. Prepare the dealer ownership package, buyer’s order, MSO/MCO or title, odometer disclosure/statement if applicable, lienholder information if financed, and review Florida DR-123/Tennessee tax handling. Escalate if proof of residency, MSO/title, invoice, plate transfer registration, lienholder, county clerk, or tax handling is unclear.
+
+============================================================
+RELATED FILES
+============================================================
+
+- out_of_state_customer_title_master_logic_map.txt
+- fl_motor_vehicle_sales_tax_rates_by_state_tip_25a01_01_notes.txt
+- validation_logic_map.txt
+- rejection_prevention_logic_map.txt
+- fl_title_ownership_and_transfer_law_notes.txt
+- fl_lien_and_lien_satisfaction_law_notes.txt
+
+============================================================
+END OF FILE
+============================================================

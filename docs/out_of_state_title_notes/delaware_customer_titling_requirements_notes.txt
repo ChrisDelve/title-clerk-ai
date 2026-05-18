@@ -1,0 +1,205 @@
+DOCUMENT: DELAWARE_CUSTOMER_TITLING_REQUIREMENTS_NOTES
+TITLE: Delaware Customer Titling / Registration Requirements for Out-of-State Dealer Sale
+STATE: Delaware
+SOURCE: https://dmv.de.gov/VehicleServices/titles/index.shtml?dc=ve_title_outstate
+DOCUMENT_TYPE: Out-of-State Customer Titling / Registration Requirements
+CATEGORY: FLORIDA DEALER SALE TO DELAWARE CUSTOMER / DELAWARE TITLE / DELAWARE REGISTRATION / VIN VERIFICATION / INSPECTION / DELAWARE INSURANCE
+
+============================================================
+PURPOSE
+============================================================
+
+This file helps a Florida dealership understand what may be needed when a customer buys a vehicle from the dealership and wants the vehicle titled and/or registered in Delaware.
+
+Use this file for questions like:
+
+- What do I need to title this customer in Delaware?
+- Delaware customer bought from our Florida dealership.
+- Does Delaware need inspection?
+- Does Delaware need VIN verification?
+- Does Delaware require Delaware insurance?
+- Does Delaware need notarized title documents?
+
+============================================================
+WHEN TO USE THIS FILE
+============================================================
+
+Use this file when:
+
+IF customer_state = "Delaware"
+AND customer_is_buying_vehicle_from_dealer = TRUE
+AND vehicle_will_be_titled_or_registered_in_customer_state = TRUE
+THEN use_delaware_customer_titling_requirements_notes = TRUE
+
+Do NOT use this file as the primary source for:
+- Customer bringing Delaware title into Florida for Florida title
+- Florida resident titling/registering in Florida
+- Florida tag transfer workflow
+
+For Florida titling/registration, use Florida title and registration notes.
+
+============================================================
+DELAWARE SOURCE SUMMARY
+============================================================
+
+Delaware DMV says for vehicles purchased out of state:
+
+Step 1:
+- All seven-model-year or newer vehicles purchased out of state must have VIN verified.
+- Present vehicle at any DMV recheck inspection lane.
+- New car dealers are authorized to perform this verification on new vehicles and must provide Application for Title MV212.
+- All other vehicles are required to be inspected at any DMV Inspection Lane before Delaware title can be issued.
+
+Step 2:
+- At the Inspection Lane, customer receives application for Delaware title.
+- Required documents include:
+  - Certificate of Origin or existing title with odometer disclosure
+  - Bill of sale if purchased from dealer
+  - Proof of valid Delaware liability insurance
+  - Delaware driver license or other accepted proof of residency
+  - Signatures of all owners on Delaware application and existing title/certificate of origin
+  - Check whether state of purchase requires title-related documents to be notarized
+
+Step 3:
+- Delaware title/document fees, document fee, registration fees, and other fees may apply.
+- Delaware references a 5.25% document fee based on sale price or current NADA average trade-in value, whichever is higher.
+- If out-of-state registration expired, Delaware may issue a 5-day temporary tag with required proof and fee.
+
+============================================================
+DELAWARE REQUIRED DOCUMENT LOGIC
+============================================================
+
+IF Delaware_customer_title_or_registration_requested = TRUE
+AND vehicle_purchased_out_of_state = TRUE
+THEN Delaware_out_of_state_purchase_workflow_required = TRUE
+
+IF vehicle_model_year_within_seven_model_years = TRUE
+THEN Delaware_VIN_verification_required = TRUE
+
+IF vehicle_is_new_vehicle = TRUE
+AND new_car_dealer_authorized_to_verify = TRUE
+THEN Delaware_MV212_application_for_title_review_required = TRUE
+
+IF vehicle_not_new_or_not_dealer_verified = TRUE
+THEN Delaware_DMV_inspection_lane_required_before_title = TRUE
+
+IF Delaware_title_application_required = TRUE
+THEN certificate_of_origin_or_existing_title_with_odometer_disclosure_required = TRUE
+
+IF purchased_from_dealer = TRUE
+THEN dealer_bill_of_sale_required = TRUE
+
+IF Delaware_registration_requested = TRUE
+THEN proof_of_valid_Delaware_liability_insurance_required = TRUE
+
+IF Delaware_title_or_registration_requested = TRUE
+THEN Delaware_driver_license_or_accepted_residency_proof_required = TRUE
+
+IF Delaware_title_or_registration_requested = TRUE
+THEN all_owner_signatures_required_on_Delaware_application_and_title_or_MCO = TRUE
+
+IF state_of_purchase_requires_notary = TRUE
+THEN notarized_title_related_documents_review_required = TRUE
+
+============================================================
+FLORIDA DEALER WORKFLOW FOR DELAWARE CUSTOMER
+============================================================
+
+When a Florida dealership sells a vehicle to a Delaware customer and the customer wants Delaware title/registration:
+
+1. Prepare ownership package:
+   - MCO/MSO or properly assigned title
+   - Dealer reassignment if applicable
+   - Bill of sale / buyer’s order
+   - Odometer disclosure/statement if applicable
+   - Lienholder information if financed
+
+2. Delaware-specific items to review:
+   - VIN verification or DMV inspection lane requirement
+   - MV212 if new car dealer verification applies
+   - Delaware liability insurance if registration requested
+   - Delaware driver license or accepted proof of residency
+   - All owner signatures
+   - Notary requirement if Florida/dealer purchase documents require notarization for Delaware acceptance
+
+3. If vehicle is seven model years or newer:
+   - Delaware VIN verification required.
+   - Confirm whether dealer verification/MV212 is acceptable or DMV recheck lane is needed.
+
+4. If vehicle is older or not eligible for dealer verification:
+   - Delaware may require DMV Inspection Lane before title issuance.
+
+5. If financed:
+   - Confirm lienholder instructions.
+   - Confirm title/lienholder information required by Delaware.
+   - Confirm whether lienholder receives title.
+
+============================================================
+TAX / RECIPROCITY NOTES
+============================================================
+
+For Florida dealer sale to Delaware resident:
+
+- Review Florida DOR out-of-state resident sales tax / DR-123 workflow.
+- Review customer state tax rate and Florida partial exemption rules.
+- Verify tax handling with controller, tax collector, agency, or lender before finalizing.
+- Delaware document fee may apply under Delaware DMV rules.
+
+Use related file:
+fl_motor_vehicle_sales_tax_rates_by_state_tip_25a01_01_notes.txt
+
+============================================================
+REJECTION / DELAY RISKS
+============================================================
+
+High risk if:
+
+- Delaware VIN verification/inspection is missing.
+- Vehicle is seven-model-year or newer and VIN verification was not completed.
+- Dealer bill of sale is missing.
+- Delaware insurance is missing when registration is requested.
+- Delaware driver license or residency proof is missing.
+- All owners did not sign required documents.
+- Notary requirement from purchase state is ignored.
+- Tax/document fee handling is unclear.
+- Lienholder instructions are unclear.
+
+============================================================
+AI ROUTING KEYWORDS
+============================================================
+
+Delaware customer
+title customer in Delaware
+register customer in Delaware
+Delaware title requirements
+Delaware registration requirements
+Delaware out of state dealer sale
+Florida dealer Delaware customer
+Delaware VIN verification
+Delaware inspection lane
+Delaware MV212
+Delaware liability insurance
+Delaware document fee
+Delaware driver license residency proof
+what do I need to title in Delaware
+
+============================================================
+COMMON CLERK ANSWER
+============================================================
+
+For a Delaware customer buying from a Florida dealership, Delaware requires VIN verification for seven-model-year-or-newer out-of-state vehicles and inspection at a Delaware DMV Inspection Lane for other vehicles before Delaware title issuance. Required documents include certificate of origin or existing title with odometer disclosure, dealer bill of sale, Delaware liability insurance if registering, Delaware driver license or accepted residency proof, and signatures of all owners. Check whether title-related documents need notarization. Prepare the dealer package and review Florida DR-123/tax handling. Escalate if Delaware inspection/VIN verification, insurance, residency proof, signatures, lienholder instructions, or tax handling is unclear.
+
+============================================================
+RELATED FILES
+============================================================
+
+- out_of_state_customer_title_master_logic_map.txt
+- fl_motor_vehicle_sales_tax_rates_by_state_tip_25a01_01_notes.txt
+- validation_logic_map.txt
+- rejection_prevention_logic_map.txt
+- fl_title_ownership_and_transfer_law_notes.txt
+- fl_lien_and_lien_satisfaction_law_notes.txt
+
+============================================================
+END OF FILE
+============================================================

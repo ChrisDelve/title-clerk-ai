@@ -1,0 +1,274 @@
+DOCUMENT: OREGON_CUSTOMER_TITLING_REQUIREMENTS_NOTES
+TITLE: Oregon Customer Titling / Registration Requirements for Out-of-State Dealer Sale
+STATE: Oregon
+SOURCE: https://www.oregon.gov/odot/forms/dmv/6603.pdf
+SOURCE_TITLE: Oregon DMV Title and Registration Instructions for Vehicles New to Oregon, Form 735-6603
+SOURCE_REVISION: 5-25
+DOCUMENT_TYPE: Out-of-State Customer Titling / Registration Requirements
+CATEGORY: FLORIDA DEALER SALE TO OREGON CUSTOMER / OREGON TITLE / OREGON REGISTRATION / FORM 735-226 / VIN INSPECTION / LEV / DEQ / SECURITY INTEREST HOLDER / USE TAX
+
+============================================================
+PURPOSE
+============================================================
+
+This file helps a Florida dealership understand what may be needed when a customer buys a vehicle from the dealership and wants the vehicle titled and/or registered in Oregon.
+
+Use this file for questions like:
+
+- What do I need to title this customer in Oregon?
+- Oregon customer bought from our Florida dealership.
+- Does Oregon require VIN inspection?
+- What is Oregon Form 735-226?
+- Does Oregon require Low Emissions Vehicle compliance?
+- Does Oregon require DEQ emissions?
+- What if the security interest holder has the title?
+- Does Oregon require use tax certificate?
+
+============================================================
+WHEN TO USE THIS FILE
+============================================================
+
+Use this file when:
+
+IF customer_state = "Oregon"
+AND customer_is_buying_vehicle_from_dealer = TRUE
+AND vehicle_will_be_titled_or_registered_in_customer_state = TRUE
+THEN use_oregon_customer_titling_requirements_notes = TRUE
+
+Do NOT use this file as the primary source for:
+- Customer bringing Oregon title into Florida for Florida title
+- Florida resident titling/registering in Florida
+- Florida tag transfer workflow
+
+For Florida titling/registration, use Florida title and registration notes.
+
+============================================================
+OREGON SOURCE SUMMARY
+============================================================
+
+Oregon DMV Form 735-6603 says to apply for title and registration for vehicles new to Oregon:
+
+- Complete and sign Application for Title and Registration, Form 735-226.
+- Include odometer reading and all security interest holders.
+- Submit the out-of-state title, Manufacturer's Certificate of Origin, or other original ownership document.
+- Do not mail the application to DMV without the title or it will be returned unprocessed.
+- Get a VIN inspection if the vehicle has an out-of-state or out-of-country title, salvage title, or ownership document.
+- VIN inspection can be done at DMV; fee is $9 when done in Oregon.
+- If vehicle is out of state, inspection can be done by the state’s DMV or law enforcement officer.
+- Provide proof of Low Emissions Vehicle compliance if applicable.
+- LEV applies to passenger vehicles model year 2009 or newer with 7,500 miles or less unless exempt.
+- Electric, hybrid, and government-owned vehicles are exempt from LEV requirement.
+- Submit DEQ emissions certificate if living in Portland Metro Area or Medford and required.
+- Pay title, registration, and plate fees.
+
+For out-of-country title or ownership documents, Oregon also requires:
+- Proof vehicle meets U.S. Federal Vehicle Standards.
+- Certification of Liens on an Imported Vehicle, Form 735-6436.
+
+Security interest holder/title held by lender:
+- If security interest holder is holding the title, send completed documents, fees, and Security Interest Holder letter Form 735-6603L to the holder.
+- The letter asks the security interest holder to send the title, documents, and fees to DMV.
+- Do not mail application without title.
+
+Additional Oregon notes:
+- Purchased from out-of-state dealer and vehicle is brand new or has 7,500 miles or less: Use Tax Certificate may be needed.
+- Damaged vehicles may carry damage brand.
+- DMV will not issue title for junk title, junk certificate, similar ownership document, or NMVTIS history showing crushed, junk, parts-only, or scrapped.
+- Certain older diesel-powered trucks in Clackamas, Multnomah, or Washington County may require diesel retrofit compliance.
+
+============================================================
+OREGON REQUIRED DOCUMENT LOGIC
+============================================================
+
+IF Oregon_customer_title_or_registration_requested = TRUE
+THEN Oregon_Form_735_226_required = TRUE
+
+IF Oregon_Form_735_226_required = TRUE
+THEN odometer_reading_and_security_interest_holders_required = TRUE
+
+IF Oregon_customer_title_or_registration_requested = TRUE
+THEN original_out_of_state_title_MCO_or_original_ownership_document_required = TRUE
+
+IF Oregon_application_submitted_without_title = TRUE
+THEN Oregon_application_returned_unprocessed = TRUE
+
+IF Oregon_vehicle_has_out_of_state_title = TRUE
+OR Oregon_vehicle_has_out_of_country_title = TRUE
+OR Oregon_vehicle_has_salvage_title = TRUE
+OR Oregon_vehicle_has_out_of_state_ownership_document = TRUE
+THEN Oregon_VIN_inspection_required = TRUE
+
+IF Oregon_VIN_inspection_required = TRUE
+AND vehicle_out_of_state = TRUE
+THEN inspection_by_state_DMV_or_law_enforcement_allowed = TRUE
+
+IF Oregon_VIN_inspection_required = TRUE
+AND inspection_done_in_Oregon = TRUE
+THEN Oregon_VIN_inspection_fee_9_dollars_review_required = TRUE
+
+IF Oregon_passenger_vehicle_model_year_2009_or_newer = TRUE
+AND vehicle_mileage_7500_or_less = TRUE
+THEN Oregon_LEV_compliance_or_exemption_required = TRUE
+
+IF vehicle_type IN ["electric", "hybrid", "government_owned"]
+THEN Oregon_LEV_exemption_review_required = TRUE
+
+IF Oregon_customer_lives_in_Portland_Metro_or_Medford = TRUE
+AND DEQ_emissions_required = TRUE
+THEN Oregon_DEQ_emissions_certificate_required = TRUE
+
+IF out_of_country_title_or_ownership_document = TRUE
+THEN proof_vehicle_meets_US_Federal_Vehicle_Standards_required = TRUE
+
+IF out_of_country_title_or_ownership_document = TRUE
+THEN Oregon_Form_735_6436_Certification_of_Liens_on_Imported_Vehicle_required = TRUE
+
+============================================================
+OREGON SECURITY INTEREST HOLDER / LIEN LOGIC
+============================================================
+
+IF security_interest_holder_holding_title = TRUE
+THEN Oregon_Form_735_6603L_security_interest_holder_letter_required = TRUE
+
+IF security_interest_holder_holding_title = TRUE
+THEN completed_documents_fees_and_letter_sent_to_security_interest_holder = TRUE
+
+IF security_interest_holder_holding_title = TRUE
+THEN security_interest_holder_sends_title_documents_and_fees_to_DMV = TRUE
+
+IF title_not_submitted_to_Oregon_DMV = TRUE
+THEN Oregon_application_returned_unprocessed_or_delayed = TRUE
+
+============================================================
+OREGON SPECIAL COMPLIANCE LOGIC
+============================================================
+
+IF purchased_from_out_of_state_dealer = TRUE
+AND (brand_new_vehicle = TRUE OR vehicle_mileage_7500_or_less = TRUE)
+THEN Oregon_Use_Tax_Certificate_review_required = TRUE
+
+IF damaged_vehicle_documents_show_damage = TRUE
+THEN Oregon_damage_brand_review_required = TRUE
+
+IF ownership_document_is_junk_title_junk_certificate_or_similar = TRUE
+THEN Oregon_title_not_issued_review_required = TRUE
+
+IF NMVTIS_history IN ["crushed", "junk", "parts only", "scrapped"]
+THEN Oregon_title_not_issued_review_required = TRUE
+
+IF Oregon_address_county IN ["Clackamas", "Multnomah", "Washington"]
+AND older_diesel_powered_truck = TRUE
+THEN Oregon_diesel_retrofit_review_required = TRUE
+
+============================================================
+FLORIDA DEALER WORKFLOW FOR OREGON CUSTOMER
+============================================================
+
+When a Florida dealership sells a vehicle to an Oregon customer and the customer wants Oregon title/registration:
+
+1. Prepare dealer ownership package:
+   - Original MCO/MSO or properly assigned original title
+   - Dealer reassignment if applicable
+   - Buyer’s order / bill of sale
+   - Odometer disclosure/statement if applicable
+   - Security interest holder/lienholder information if financed
+
+2. Oregon-specific items to review:
+   - Oregon Form 735-226 Application for Title and Registration
+   - Original title/MCO/original ownership document
+   - VIN inspection for out-of-state/out-of-country/salvage ownership document
+   - LEV compliance if model year 2009 or newer passenger vehicle with 7,500 miles or less
+   - DEQ emissions certificate if customer is in Portland Metro Area or Medford and emissions applies
+   - Oregon Use Tax Certificate if brand new or 7,500 miles or less from out-of-state dealer
+   - Security Interest Holder letter 735-6603L if lender/titleholder has title
+
+3. If financed:
+   - Confirm whether security interest holder is holding title.
+   - Send completed documents, fees, and 735-6603L to security interest holder if required.
+   - Do not submit package without title unless Oregon process specifically directs lender/titleholder handling.
+
+4. If imported/out-of-country:
+   - Review proof of U.S. Federal Vehicle Standards.
+   - Review Oregon Form 735-6436 Certification of Liens on Imported Vehicle.
+   - Escalate if federal import/ownership documents are incomplete.
+
+5. If customer is in emissions/LEV area:
+   - Confirm LEV compliance or exemption.
+   - Confirm DEQ certificate if applicable.
+   - Escalate if emissions/LEV proof is missing.
+
+============================================================
+TAX / RECIPROCITY NOTES
+============================================================
+
+For Florida dealer sale to Oregon resident:
+
+- Review Florida DOR out-of-state resident sales tax / DR-123 workflow.
+- Oregon may require a Use Tax Certificate for brand-new vehicles or vehicles with 7,500 miles or less purchased from an out-of-state dealer.
+- Verify Oregon use tax/title/registration handling with controller, agency, lender, or Oregon DMV before finalizing.
+
+Use related file:
+fl_motor_vehicle_sales_tax_rates_by_state_tip_25a01_01_notes.txt
+
+============================================================
+REJECTION / DELAY RISKS
+============================================================
+
+High risk if:
+
+- Original out-of-state title/MCO/original ownership document is missing.
+- Oregon application is mailed without title.
+- VIN inspection missing.
+- VIN inspection completed by unauthorized party.
+- LEV compliance/exemption missing for 2009-or-newer passenger vehicle with 7,500 miles or less.
+- DEQ emissions certificate missing when required.
+- Security interest holder/title path unclear.
+- 735-6603L missing when security interest holder holds title.
+- Use Tax Certificate issue missed.
+- Imported/out-of-country Federal Standards or 735-6436 missing.
+- Damaged/junk/NMVTIS brand issue not reviewed.
+- Oregon diesel retrofit issue not reviewed.
+- Tax/DR-123 handling unclear.
+
+============================================================
+AI ROUTING KEYWORDS
+============================================================
+
+Oregon customer
+title customer in Oregon
+register customer in Oregon
+Oregon title requirements
+Oregon registration requirements
+Oregon out of state dealer sale
+Florida dealer Oregon customer
+Oregon Form 735-226
+Oregon VIN inspection
+Oregon LEV
+Oregon Low Emissions Vehicle
+Oregon DEQ
+Oregon Use Tax Certificate
+Oregon 735-6603L
+Oregon security interest holder
+Oregon 735-6436
+what do I need to title in Oregon
+
+============================================================
+COMMON CLERK ANSWER
+============================================================
+
+For an Oregon customer buying from a Florida dealership, Oregon requires Form 735-226, the original out-of-state title/MCO/original ownership document, VIN inspection for out-of-state or out-of-country title/ownership documents, LEV compliance if applicable, DEQ emissions certificate if required, and title/registration/plate fees. Oregon warns not to mail the application without the title or it will be returned unprocessed. If the security interest holder has the title, use Oregon Form 735-6603L and send completed documents/fees to the holder so the title package can be sent to DMV. If the vehicle is brand new or has 7,500 miles or less from an out-of-state dealer, review Oregon Use Tax Certificate requirements. Prepare the dealer ownership package, odometer disclosure/statement if applicable, lienholder information if financed, and review Florida DR-123/tax handling. Escalate if title possession, VIN inspection, LEV/DEQ, use tax, imported vehicle, damaged/junk brand, or tax handling is unclear.
+
+============================================================
+RELATED FILES
+============================================================
+
+- out_of_state_customer_title_master_logic_map.txt
+- fl_motor_vehicle_sales_tax_rates_by_state_tip_25a01_01_notes.txt
+- validation_logic_map.txt
+- rejection_prevention_logic_map.txt
+- fl_title_ownership_and_transfer_law_notes.txt
+- fl_lien_and_lien_satisfaction_law_notes.txt
+
+============================================================
+END OF FILE
+============================================================

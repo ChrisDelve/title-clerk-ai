@@ -1,0 +1,235 @@
+DOCUMENT: MARYLAND_CUSTOMER_TITLING_REQUIREMENTS_NOTES
+TITLE: Maryland Customer Titling / Registration Requirements for Out-of-State Dealer Sale
+STATE: Maryland
+SOURCE: https://mva.maryland.gov/your-mva-guide/new-maryland-residents/title-register-your-vehicle
+DOCUMENT_TYPE: Out-of-State Customer Titling / Registration Requirements
+CATEGORY: FLORIDA DEALER SALE TO MARYLAND CUSTOMER / MARYLAND TITLE / MARYLAND REGISTRATION / SAFETY INSPECTION / MARYLAND INSURANCE / VR-005 / VR-470 / LIENHOLDER
+
+============================================================
+PURPOSE
+============================================================
+
+This file helps a Florida dealership understand what may be needed when a customer buys a vehicle from the dealership and wants the vehicle titled and/or registered in Maryland.
+
+Use this file for questions like:
+
+- What do I need to title this customer in Maryland?
+- Maryland customer bought from our Florida dealership.
+- Does Maryland require safety inspection?
+- Does Maryland require Maryland insurance?
+- What is VR-005?
+- What is VR-470?
+- What if the vehicle has lien or lease?
+
+============================================================
+WHEN TO USE THIS FILE
+============================================================
+
+Use this file when:
+
+IF customer_state = "Maryland"
+AND customer_is_buying_vehicle_from_dealer = TRUE
+AND vehicle_will_be_titled_or_registered_in_customer_state = TRUE
+THEN use_maryland_customer_titling_requirements_notes = TRUE
+
+Do NOT use this file as the primary source for:
+- Customer bringing Maryland title into Florida for Florida title
+- Florida resident titling/registering in Florida
+- Florida tag transfer workflow
+
+For Florida titling/registration, use Florida title and registration notes.
+
+============================================================
+MARYLAND SOURCE SUMMARY
+============================================================
+
+Maryland MVA says:
+
+- Vehicle title and registration must be updated within 60 days of moving to Maryland.
+- Failure to meet the deadline disqualifies customer from a tax credit for titling tax paid in another state and may cause citation for out-of-state registration.
+- New Maryland residents that already own a vehicle or purchased a vehicle out of state must title and register it in Maryland.
+- Valid Maryland Safety Inspection Certificate is required to title and register vehicle in Maryland.
+- Safety inspection must be performed by authorized Maryland inspection station.
+- If returning to Maryland with a vehicle previously titled in Maryland in customer’s name, safety inspection is not required; complete VR-018 Duplicate Certificate of Title application.
+- Emissions/VEIP testing is not done at safety inspection; VEIP notice is sent about three months after registration.
+
+Documents for titling appointment include:
+- Valid Maryland driver license or proof of valid Maryland residential address
+- Out-of-state title
+- If leased or has lien: fax number, account number and mailing information for lienholder, and registration card
+- Completed VR-005 if pre-application was not completed
+- Maryland insurance information:
+  - Insurance company name
+  - Policy or binder number
+  - Agent name if applicable
+- VR-470 Restricted Power of Attorney if required signatures are missing, with proper identification
+- Check or money order for payment
+- Excise tax is paid when titling/registering; amount depends on vehicle age and tax paid in previous state
+
+============================================================
+MARYLAND REQUIRED DOCUMENT LOGIC
+============================================================
+
+IF Maryland_customer_title_or_registration_requested = TRUE
+THEN Maryland_60_day_title_registration_review_required = TRUE
+
+IF Maryland_customer_title_or_registration_requested = TRUE
+THEN Maryland_safety_inspection_certificate_required = TRUE
+
+IF Maryland_safety_inspection_certificate_required = TRUE
+THEN authorized_Maryland_inspection_station_required = TRUE
+
+IF vehicle_previously_titled_in_Maryland_in_customer_name = TRUE
+THEN Maryland_safety_inspection_may_not_be_required_and_VR_018_review_required = TRUE
+
+IF Maryland_customer_title_or_registration_requested = TRUE
+THEN valid_Maryland_driver_license_or_proof_of_Maryland_residential_address_required = TRUE
+
+IF Maryland_customer_title_or_registration_requested = TRUE
+THEN out_of_state_title_required = TRUE
+
+IF Maryland_vehicle_leased_or_has_lien = TRUE
+THEN lienholder_fax_account_mailing_information_and_registration_card_required = TRUE
+
+IF Maryland_pre_application_not_completed = TRUE
+THEN VR_005_required = TRUE
+
+IF Maryland_registration_requested = TRUE
+THEN Maryland_insurance_information_required = TRUE
+
+IF Maryland_insurance_information_required = TRUE
+THEN insurance_company_policy_or_binder_number_and_agent_name_if_applicable_required = TRUE
+
+IF required_signatures_missing = TRUE
+THEN VR_470_restricted_power_of_attorney_required_with_proper_identification = TRUE
+
+IF Maryland_customer_title_or_registration_requested = TRUE
+THEN check_or_money_order_payment_required = TRUE
+
+IF Maryland_title_registration_after_60_days = TRUE
+THEN tax_credit_loss_and_citation_risk_review_required = TRUE
+
+============================================================
+MARYLAND SAFETY INSPECTION / EMISSIONS NOTES
+============================================================
+
+IF Maryland_title_or_registration_requested = TRUE
+THEN valid_Maryland_safety_inspection_certificate_required = TRUE
+
+IF Maryland_safety_inspection_certificate_needed = TRUE
+THEN inspection_must_be_done_by_authorized_Maryland_inspection_station = TRUE
+
+IF customer_asks_about_emissions = TRUE
+THEN explain_VEIP_emissions_testing_not_done_at_safety_inspection_and_notice_sent_later = TRUE
+
+============================================================
+FLORIDA DEALER WORKFLOW FOR MARYLAND CUSTOMER
+============================================================
+
+When a Florida dealership sells a vehicle to a Maryland customer and the customer wants Maryland title/registration:
+
+1. Prepare dealer ownership package:
+   - MCO/MSO or properly assigned title
+   - Dealer reassignment if applicable
+   - Buyer’s order / bill of sale
+   - Odometer disclosure/statement if applicable
+   - Lienholder information if financed
+
+2. Maryland-specific items to review:
+   - Maryland safety inspection certificate
+   - Out-of-state title
+   - Maryland DL or proof of Maryland residential address
+   - Maryland insurance information
+   - VR-005 if pre-application was not completed
+   - VR-470 if required signatures are missing
+   - Lienholder fax/account/mailing info and registration card if leased/lien
+   - Check or money order for payment
+
+3. If financed or leased:
+   - Confirm lienholder or lessor instructions.
+   - Provide fax number, account number, mailing information, and registration card if required.
+   - Confirm title/lienholder path.
+
+4. If customer has not completed Maryland safety inspection:
+   - Do not promise Maryland title/registration can complete.
+   - Escalate or advise customer/agency that Maryland inspection is required.
+
+5. If tax credit involved:
+   - Maryland deadline matters.
+   - Failure to title/register within 60 days may disqualify tax credit for taxes paid to another state.
+
+============================================================
+TAX / RECIPROCITY NOTES
+============================================================
+
+For Florida dealer sale to Maryland resident:
+
+- Review Florida DOR out-of-state resident sales tax / DR-123 workflow.
+- Maryland excise tax may depend on vehicle age and tax paid in prior state.
+- Maryland says failure to meet 60-day deadline disqualifies tax credit for titling tax paid in another state.
+- Verify tax handling with controller, agency, lender, or Maryland MVA before finalizing.
+
+Use related file:
+fl_motor_vehicle_sales_tax_rates_by_state_tip_25a01_01_notes.txt
+
+============================================================
+REJECTION / DELAY RISKS
+============================================================
+
+High risk if:
+
+- Maryland safety inspection certificate missing.
+- Inspection not performed by authorized Maryland inspection station.
+- Maryland DL or proof of Maryland residential address missing.
+- Out-of-state title missing.
+- Lienholder fax/account/mailing information missing for lien/lease.
+- Registration card missing for lien/lease.
+- VR-005 missing when pre-application not completed.
+- Maryland insurance information incomplete.
+- VR-470 missing when required signatures are missing.
+- Payment method incorrect.
+- 60-day tax credit deadline missed.
+- Tax/DR-123 handling unclear.
+
+============================================================
+AI ROUTING KEYWORDS
+============================================================
+
+Maryland customer
+title customer in Maryland
+register customer in Maryland
+Maryland title requirements
+Maryland registration requirements
+Maryland out of state dealer sale
+Florida dealer Maryland customer
+Maryland safety inspection
+Maryland Safety Inspection Certificate
+Maryland authorized inspection station
+Maryland insurance information
+Maryland VR-005
+Maryland VR-470
+Maryland lienholder fax account mailing information
+Maryland 60 day title registration
+Maryland excise tax
+what do I need to title in Maryland
+
+============================================================
+COMMON CLERK ANSWER
+============================================================
+
+For a Maryland customer buying from a Florida dealership, Maryland requires title and registration within 60 days for new Maryland residents or vehicles purchased out of state. Maryland requires a valid Maryland Safety Inspection Certificate from an authorized Maryland inspection station before title/registration. Required documents include Maryland driver license or proof of Maryland residential address, out-of-state title, Maryland insurance information, VR-005 if pre-application was not completed, and VR-470 Restricted POA if required signatures are missing. If the vehicle is leased or has a lien, bring lienholder fax number, account number, mailing information, and registration card. Prepare the dealer ownership package and review Florida DR-123/Maryland excise tax handling. Escalate if inspection, lienholder, insurance, VR forms, 60-day tax credit, or tax handling is unclear.
+
+============================================================
+RELATED FILES
+============================================================
+
+- out_of_state_customer_title_master_logic_map.txt
+- fl_motor_vehicle_sales_tax_rates_by_state_tip_25a01_01_notes.txt
+- validation_logic_map.txt
+- rejection_prevention_logic_map.txt
+- fl_title_ownership_and_transfer_law_notes.txt
+- fl_lien_and_lien_satisfaction_law_notes.txt
+
+============================================================
+END OF FILE
+============================================================

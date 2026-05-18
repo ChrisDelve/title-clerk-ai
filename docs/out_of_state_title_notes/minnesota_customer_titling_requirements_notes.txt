@@ -1,0 +1,256 @@
+DOCUMENT: MINNESOTA_CUSTOMER_TITLING_REQUIREMENTS_NOTES
+TITLE: Minnesota Customer Titling / Registration Requirements for Out-of-State Dealer Sale
+STATE: Minnesota
+SOURCE: https://dps.mn.gov/divisions/dvs/vehicle/vehicle-registration/vehicle-registration-new-mn-resident
+DOCUMENT_TYPE: Out-of-State Customer Titling / Registration Requirements
+CATEGORY: FLORIDA DEALER SALE TO MINNESOTA CUSTOMER / MINNESOTA TITLE / MINNESOTA REGISTRATION / 60 DAY REGISTRATION / INSURANCE / LEASED VEHICLE / OUT-OF-STATE TITLE
+
+============================================================
+PURPOSE
+============================================================
+
+This file helps a Florida dealership understand what may be needed when a customer buys a vehicle from the dealership and wants the vehicle titled and/or registered in Minnesota.
+
+Use this file for questions like:
+
+- What do I need to title this customer in Minnesota?
+- Minnesota customer bought from our Florida dealership.
+- Does Minnesota have a 60-day registration rule?
+- What does Minnesota require for a leased vehicle?
+- What if the bank is holding the physical title?
+- What title proof can Minnesota accept?
+
+============================================================
+WHEN TO USE THIS FILE
+============================================================
+
+Use this file when:
+
+IF customer_state = "Minnesota"
+AND customer_is_buying_vehicle_from_dealer = TRUE
+AND vehicle_will_be_titled_or_registered_in_customer_state = TRUE
+THEN use_minnesota_customer_titling_requirements_notes = TRUE
+
+Do NOT use this file as the primary source for:
+- Customer bringing Minnesota title into Florida for Florida title
+- Florida resident titling/registering in Florida
+- Florida tag transfer workflow
+
+For Florida titling/registration, use Florida title and registration notes.
+
+============================================================
+MINNESOTA SOURCE SUMMARY
+============================================================
+
+Minnesota DPS says:
+
+- If customer recently moved to Minnesota, they have 60 days to register a passenger vehicle, motorcycle, utility trailer, or house trailer.
+- Vehicle must be registered immediately if registration is expired or if it is a commercial trailer or truck.
+- Customer may register at a deputy registrar office by mailing in completed Application to Title/Register a Vehicle with fees.
+
+To register in Minnesota, customer must provide:
+
+- Name and address of any lienholders
+- Current odometer reading
+- Driver’s license or acceptable identification
+- Name of insurance company, policy number, and policy expiration date
+
+For leased vehicles, provide:
+- Registration card or copy of title showing leasing company as owner
+- Lessee designation form signed by authorized agent of leasing company
+- If leasing company provides POA, customer may sign lessee designation form
+- Application to title/register a vehicle completed and signed by leasing company
+- If leasing company provides POA, customer may sign application to title/register
+
+For U.S. state or jurisdiction vehicles:
+- Customer must also provide current vehicle title, Manufacturer’s Certificate of Origin, or Manufacturer’s Statement of Origin.
+- Minnesota title will only be issued when the most current out-of-state title is submitted.
+- The following can also be used to register a motor vehicle:
+  - Most recent registration card issued from U.S. state/jurisdiction, if not expired more than one year
+  - Copy of out-of-state title clearly marked “COPY”
+  - Confirmation of Ownership issued when bank is holding physical title
+  - Title Application Receipt issued by titling state
+  - Web Dealer Title issued by titling state
+  - Title Summary issued by titling state
+  - Electronic Title Copy
+
+For out-of-country vehicles, federal forms may be required:
+- CBP Form 7501 or CBP Form 3461
+- EPA Form 3520
+- NHTSA Form HS-7
+- Additional compliance documentation may be needed
+
+============================================================
+MINNESOTA REQUIRED DOCUMENT LOGIC
+============================================================
+
+IF Minnesota_customer_registration_requested = TRUE
+THEN Minnesota_60_day_registration_review_required = TRUE
+
+IF registration_expired = TRUE
+OR vehicle_type IN ["commercial_trailer", "commercial_truck"]
+THEN Minnesota_immediate_registration_required = TRUE
+
+IF Minnesota_customer_title_or_registration_requested = TRUE
+THEN lienholder_name_and_address_required = TRUE
+
+IF Minnesota_customer_title_or_registration_requested = TRUE
+THEN current_odometer_reading_required = TRUE
+
+IF Minnesota_customer_title_or_registration_requested = TRUE
+THEN driver_license_or_acceptable_ID_required = TRUE
+
+IF Minnesota_registration_requested = TRUE
+THEN insurance_company_policy_number_and_expiration_date_required = TRUE
+
+IF Minnesota_vehicle_is_leased = TRUE
+THEN registration_card_or_copy_of_title_showing_leasing_company_as_owner_required = TRUE
+
+IF Minnesota_vehicle_is_leased = TRUE
+THEN lessee_designation_form_required = TRUE
+
+IF Minnesota_vehicle_is_leased = TRUE
+THEN application_to_title_register_completed_and_signed_by_leasing_company_required = TRUE
+
+IF leasing_company_provides_POA = TRUE
+THEN lessee_may_sign_lessee_designation_and_application_per_Minnesota_source = TRUE
+
+IF vehicle_from_US_state_or_jurisdiction = TRUE
+THEN current_vehicle_title_MCO_or_MSO_required_for_title = TRUE
+
+IF Minnesota_title_requested = TRUE
+THEN most_current_out_of_state_title_required_for_Minnesota_title_issuance = TRUE
+
+IF registration_only_possible_due_to_bank_holding_title = TRUE
+THEN alternate_title_proof_review_required = TRUE
+
+IF out_of_country_vehicle = TRUE
+THEN CBP_EPA_NHTSA_import_forms_required = TRUE
+
+============================================================
+MINNESOTA ALTERNATE PROOF FOR REGISTRATION
+============================================================
+
+IF Minnesota_registration_requested = TRUE
+AND most_current_out_of_state_title_not_available = TRUE
+THEN one_of_following_alternate_documents_may_be_used_for_registration = TRUE
+
+Alternate documents listed by Minnesota source:
+- Most recent registration card from U.S. state/jurisdiction, if not expired more than one year
+- Copy of out-of-state title clearly marked “COPY”
+- Confirmation of Ownership issued when bank is holding physical title
+- Title Application Receipt issued by titling state
+- Web Dealer Title issued by titling state
+- Title Summary issued by titling state
+- Electronic Title Copy
+
+IF Minnesota_title_requested = TRUE
+AND most_current_out_of_state_title_not_submitted = TRUE
+THEN Minnesota_title_will_not_be_issued = TRUE
+
+============================================================
+FLORIDA DEALER WORKFLOW FOR MINNESOTA CUSTOMER
+============================================================
+
+When a Florida dealership sells a vehicle to a Minnesota customer and the customer wants Minnesota title/registration:
+
+1. Prepare dealer ownership package:
+   - MCO/MSO or properly assigned title
+   - Dealer reassignment if applicable
+   - Buyer’s order / bill of sale
+   - Odometer disclosure/statement if applicable
+   - Lienholder name and address if financed
+
+2. Minnesota-specific items to review:
+   - Application to title/register vehicle
+   - Current title, MCO, or MSO if title issuance requested
+   - Most current out-of-state title required for Minnesota title
+   - Driver license or acceptable ID
+   - Insurance company, policy number, and expiration date
+   - Current odometer reading
+   - Lienholder name and address
+   - 60-day registration timing / immediate registration if expired or commercial
+
+3. If title is held by bank/lienholder:
+   - Review alternate proof for registration only.
+   - Understand that Minnesota title will only issue when most current out-of-state title is submitted.
+   - Escalate if customer expects title but bank holds physical title.
+
+4. If leased:
+   - Obtain registration card or copy of title showing leasing company as owner.
+   - Obtain lessee designation form signed by lessor/authorized agent or signed under POA.
+   - Obtain title/register application completed and signed by leasing company or POA.
+
+5. If imported/out-of-country:
+   - Review CBP, EPA, NHTSA forms and additional compliance documents.
+
+============================================================
+TAX / RECIPROCITY NOTES
+============================================================
+
+For Florida dealer sale to Minnesota resident:
+
+- Review Florida DOR out-of-state resident sales tax / DR-123 workflow.
+- Review Minnesota tax/title/registration requirements.
+- Verify tax handling with controller, agency, lender, or Minnesota DVS before finalizing.
+
+Use related file:
+fl_motor_vehicle_sales_tax_rates_by_state_tip_25a01_01_notes.txt
+
+============================================================
+REJECTION / DELAY RISKS
+============================================================
+
+High risk if:
+
+- Most current out-of-state title is missing when Minnesota title is expected.
+- Customer only has registration/alternate proof but expects Minnesota title issuance.
+- Insurance company/policy/expiration missing.
+- Lienholder name/address missing.
+- Current odometer reading missing.
+- Driver license/ID missing.
+- Leased vehicle lessor documents are missing.
+- 60-day or immediate registration timing is missed.
+- Imported vehicle federal documents are missing.
+- Tax/DR-123 handling unclear.
+
+============================================================
+AI ROUTING KEYWORDS
+============================================================
+
+Minnesota customer
+title customer in Minnesota
+register customer in Minnesota
+Minnesota title requirements
+Minnesota registration requirements
+Minnesota out of state dealer sale
+Florida dealer Minnesota customer
+Minnesota 60 day registration
+Minnesota Application to Title Register
+Minnesota leased vehicle
+Minnesota lessee designation form
+Minnesota Confirmation of Ownership
+Minnesota Web Dealer Title
+Minnesota Electronic Title Copy
+what do I need to title in Minnesota
+
+============================================================
+COMMON CLERK ANSWER
+============================================================
+
+For a Minnesota customer buying from a Florida dealership, Minnesota requires lienholder name/address if applicable, current odometer reading, driver license or acceptable ID, and insurance company/policy/expiration information. For a U.S. state vehicle, Minnesota requires current title, MCO, or MSO for title issuance, and Minnesota title will only be issued when the most current out-of-state title is submitted. If the bank holds the title, certain alternate documents may support registration, but not title issuance. Leased vehicles require lessor ownership proof, lessee designation form, and title/register application signed by the leasing company or under POA. Prepare the dealer title package, buyer’s order, odometer disclosure/statement if applicable, lienholder information, and review Florida DR-123/tax handling. Escalate if title possession, leased documents, insurance, odometer, registration timing, or tax handling is unclear.
+
+============================================================
+RELATED FILES
+============================================================
+
+- out_of_state_customer_title_master_logic_map.txt
+- fl_motor_vehicle_sales_tax_rates_by_state_tip_25a01_01_notes.txt
+- validation_logic_map.txt
+- rejection_prevention_logic_map.txt
+- fl_title_ownership_and_transfer_law_notes.txt
+- fl_lien_and_lien_satisfaction_law_notes.txt
+
+============================================================
+END OF FILE
+============================================================

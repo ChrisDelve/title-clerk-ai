@@ -1,0 +1,855 @@
+DOCUMENT: FL_MOTOR_VEHICLE_SALES_TAX_RATES_BY_STATE_TIP_25A01_01_NOTES
+TITLE: Florida DOR TIP 25A01-01R — Motor Vehicle Sales Tax Rates by State
+SOURCE: https://floridarevenue.com/taxes/tips/Documents/TIP_25A01-01.pdf
+SOURCE_TITLE: Motor Vehicle Sales Tax Rates by State
+SOURCE_PUBLICATION: Florida Department of Revenue Tax Information Publication TIP 25A01-01R
+DATE_ISSUED: January 15, 2025
+DATE_REVISED: January 31, 2025
+DOCUMENT_TYPE: Florida Nonresident Motor Vehicle Sales Tax / DR-123 / State Rate Chart
+CATEGORY: FLORIDA DEALER SALE TO OUT-OF-STATE RESIDENT / NONRESIDENT SALES TAX / DR-123 / PARTIAL EXEMPTION / HOME STATE TAX RATE / TRADE-IN CREDIT / NO-CREDIT STATES
+
+============================================================
+PURPOSE
+============================================================
+
+This file helps a Florida dealership determine Florida sales tax treatment when selling a new or used motor vehicle in Florida to a purchaser who is a resident of another state.
+
+Use this file for questions like:
+
+- How much Florida sales tax do we collect from an out-of-state customer?
+- Does this out-of-state customer need DR-123?
+- What tax rate do we charge for a customer from Alabama?
+- Does Florida cap nonresident vehicle sales tax at 6%?
+- Which states do not allow credit for Florida tax?
+- Does Arkansas get taxed twice?
+- Does Mississippi get taxed twice?
+- Does West Virginia get taxed twice?
+- How does Oklahoma work?
+- Does the customer’s state allow trade-in credit?
+- Does the customer’s state have no sales tax?
+- What happens if the customer titles the vehicle in their home state within 45 days?
+
+============================================================
+SOURCE SUMMARY
+============================================================
+
+Florida law allows a partial sales tax exemption on the sale of a new or used motor vehicle in Florida to a resident of another state.
+
+The amount of Florida sales tax collected from the nonresident purchaser is the amount of sales tax that would be imposed by the purchaser’s home state if the vehicle were purchased in that state.
+
+If the purchaser’s home-state sales tax rate is greater than or equal to Florida’s 6% state sales tax rate, Florida collects 6%.
+
+If the purchaser’s home-state sales tax rate is less than Florida’s 6% state sales tax rate, the purchaser may claim a partial exemption from Florida sales tax.
+
+For the partial exemption to apply, the nonresident purchaser must complete Form DR-123, Affidavit for Partial Exemption of Motor Vehicle Sold to a Resident of Another State.
+
+Form DR-123 declares the purchaser’s intent to license the vehicle in the purchaser’s home state within 45 days of the date of purchase.
+
+Form DR-123 must be completed at the time of sale and provided to the selling dealer.
+
+If the nonresident purchaser licenses the vehicle in their home state within 45 days from the date of purchase, there is no requirement that the motor vehicle be removed from Florida.
+
+The tax collected is Florida sales tax and must be paid to the Florida Department of Revenue.
+
+============================================================
+DR-123 / PARTIAL EXEMPTION RULES
+============================================================
+
+IF customer_is_nonresident = TRUE
+AND vehicle_sold_in_Florida = TRUE
+AND vehicle_will_be_licensed_in_customer_home_state = TRUE
+THEN Florida_nonresident_motor_vehicle_sales_tax_rules_apply = TRUE
+
+IF customer_home_state_tax_rate >= 6_percent
+THEN Florida_sales_tax_rate_collected = 6_percent
+
+IF customer_home_state_tax_rate < 6_percent
+THEN customer_may_claim_partial_exemption = TRUE
+
+IF customer_may_claim_partial_exemption = TRUE
+THEN DR_123_required = TRUE
+
+IF DR_123_required = TRUE
+THEN DR_123_must_be_completed_at_time_of_sale = TRUE
+
+IF DR_123_required = TRUE
+THEN customer_must_declare_intent_to_license_vehicle_in_home_state_within_45_days = TRUE
+
+IF customer_licenses_vehicle_in_home_state_within_45_days = TRUE
+THEN vehicle_does_not_have_to_be_removed_from_Florida = TRUE
+
+IF customer_does_not_complete_DR_123_when_required = TRUE
+THEN full_Florida_6_percent_sales_tax_review_required = TRUE
+
+============================================================
+NONRESIDENT ENTITY / CORPORATION / PARTNERSHIP RULE
+============================================================
+
+The partial exemption for a motor vehicle sold in Florida to a nonresident purchaser does not apply to a nonresident corporation or partnership when:
+
+- An officer of the corporation is a Florida resident
+- A stockholder who owns at least 10% of the corporation is a Florida resident
+- A partner who has at least 10% ownership in the partnership is a Florida resident
+
+However, the partial exemption may be allowed for corporations or partnerships if the vehicle is removed from Florida within 45 days after purchase and remains outside Florida for a minimum of 180 days, regardless of residency of owners or stockholders.
+
+IF purchaser_is_nonresident_corporation_or_partnership = TRUE
+AND officer_stockholder_10_percent_or_partner_10_percent_is_Florida_resident = TRUE
+THEN DR_123_partial_exemption_not_allowed_by_default = TRUE
+
+IF purchaser_is_nonresident_corporation_or_partnership = TRUE
+AND Florida_resident_owner_or_officer_issue_exists = TRUE
+AND vehicle_removed_from_Florida_within_45_days = TRUE
+AND vehicle_remains_outside_Florida_for_180_days = TRUE
+THEN partial_exemption_may_be_allowed_review_required = TRUE
+
+============================================================
+SPECIAL DOUBLE-TAX / NO-CREDIT WARNING STATES
+============================================================
+
+Florida DOR specifically warns:
+
+Arkansas, Mississippi, and West Virginia impose a sales tax on motor vehicles but do not allow a credit for taxes paid to Florida.
+
+Oklahoma requires residents to pay sales tax and excise tax on a motor vehicle purchased in Florida when titling or registering the vehicle in Oklahoma, but Oklahoma will allow a refund in the amount of sales tax paid to Florida, up to the amount of sales tax paid in Oklahoma.
+
+Residents of Arkansas, Mississippi, West Virginia, and Oklahoma should be informed that they must pay sales tax to Florida at the rate imposed by their home state when they purchase a vehicle in Florida and will also be required to pay tax to their home state when the vehicle is licensed in their home state.
+
+IF customer_state IN ["Arkansas", "Mississippi", "West Virginia"]
+THEN warn_customer_home_state_does_not_allow_credit_for_Florida_tax = TRUE
+
+IF customer_state IN ["Arkansas", "Mississippi", "West Virginia"]
+THEN customer_may_pay_Florida_tax_and_home_state_tax = TRUE
+
+IF customer_state = "Oklahoma"
+THEN warn_customer_Oklahoma_requires_sales_tax_and_excise_tax_at_title_or_registration = TRUE
+
+IF customer_state = "Oklahoma"
+THEN Oklahoma_may_allow_refund_up_to_Florida_sales_tax_paid_review_required = TRUE
+
+============================================================
+FLORIDA USE TAX FOR VEHICLES PURCHASED OUTSIDE FLORIDA
+============================================================
+
+Florida’s use tax rate of 6% generally applies to motor vehicles purchased outside Florida and later titled, registered, or licensed in Florida.
+
+Florida allows credit to reduce Florida use tax when a like tax was lawfully imposed and paid in another state, the District of Columbia, or a U.S. territory.
+
+Credit can apply to tax paid to another state, county, or city.
+
+If the amount paid to the other jurisdiction is equal to or greater than the Florida tax due, no additional Florida sales tax is due.
+
+If the amount paid to the other jurisdiction is less than the Florida tax due, only the difference is due.
+
+A vehicle used in another state, District of Columbia, or U.S. territory for six months or longer before being brought into Florida is presumed to have been purchased for use outside Florida. If the owner provides documentation showing use outside Florida for six months or longer before Florida registration, no Florida use tax is due.
+
+============================================================
+STATE RATE CHART — NONRESIDENT MOTOR VEHICLE SALES
+============================================================
+
+Use this chart to determine the Florida tax rate to collect from a nonresident purchaser, subject to Florida’s 6% cap and DR-123 rules.
+
+IMPORTANT:
+- The listed state sales tax rate does not include local taxes.
+- If the home-state rate is above 6%, Florida collects 6%.
+- If the home-state rate is below 6%, DR-123 partial exemption workflow applies.
+- Comments may affect trade-in credit, special tax base, or exemptions.
+- Verify with the home-state taxing authority if the transaction depends on credit/refund treatment.
+
+============================================================
+ALABAMA
+============================================================
+
+STATE: Alabama
+STATE_RATE: 2%
+FLORIDA_CREDIT_FOR_TAX_PAID_IN_ANOTHER_STATE: YES
+OCCASIONAL_OR_ISOLATED_SALE_EXEMPTION: NO
+FLORIDA_TAX_TO_COLLECT_FROM_ALABAMA_RESIDENT: 2% if DR-123 applies
+TRADE_IN_CREDIT: YES, when sold through a dealer
+COMMENT: Tax is calculated on the sales price of a new or used motor vehicle, less credit for trade-in when sold through a dealer.
+
+============================================================
+ALASKA
+============================================================
+
+STATE: Alaska
+STATE_RATE: None
+FLORIDA_CREDIT_FOR_TAX_PAID_IN_ANOTHER_STATE: NO
+OCCASIONAL_OR_ISOLATED_SALE_EXEMPTION: N/A
+FLORIDA_TAX_TO_COLLECT_FROM_ALASKA_RESIDENT: 0% if DR-123 applies
+COMMENT: State sales tax rate is none.
+
+============================================================
+ARIZONA
+============================================================
+
+STATE: Arizona
+STATE_RATE: 5.6%
+FLORIDA_CREDIT_FOR_TAX_PAID_IN_ANOTHER_STATE: YES
+OCCASIONAL_OR_ISOLATED_SALE_EXEMPTION: YES
+FLORIDA_TAX_TO_COLLECT_FROM_ARIZONA_RESIDENT: 5.6% if DR-123 applies
+TRADE_IN_CREDIT: YES
+COMMENT: Tax is calculated on the sales price of a new or used motor vehicle, less credit for trade-in.
+
+============================================================
+ARKANSAS
+============================================================
+
+STATE: Arkansas
+STATE_RATE: 6.5%
+FLORIDA_CREDIT_FOR_TAX_PAID_IN_ANOTHER_STATE: YES
+OCCASIONAL_OR_ISOLATED_SALE_EXEMPTION: NO
+FLORIDA_TAX_TO_COLLECT_FROM_ARKANSAS_RESIDENT: 6%
+SPECIAL_WARNING: Arkansas does not allow credit for taxes paid to Florida.
+COMMENT:
+- Tax on the sale of a used motor vehicle, trailer, or semitrailer:
+  - If total price is less than $4,000, no tax collected.
+  - If total price is at least $4,000 but less than $10,000, gross price taxed at reduced state tax rate of 3.5%.
+  - If total price is $10,000 or more, vehicle taxed at 6.5%.
+- Florida collects 6% because Arkansas rate exceeds Florida’s 6% cap.
+- Customer should be warned Arkansas may still require tax when licensed in Arkansas.
+
+============================================================
+CALIFORNIA
+============================================================
+
+STATE: California
+STATE_RATE: 7.25%
+FLORIDA_CREDIT_FOR_TAX_PAID_IN_ANOTHER_STATE: YES
+OCCASIONAL_OR_ISOLATED_SALE_EXEMPTION: NO
+FLORIDA_TAX_TO_COLLECT_FROM_CALIFORNIA_RESIDENT: 6%
+TRADE_IN_CREDIT: NO
+COMMENT:
+- Tax is calculated on the sales price of a new or used motor vehicle.
+- No credit is allowed for trade-in.
+- Transfers to certain revocable trusts and non-dealer transfers between family members are generally exempt.
+
+============================================================
+COLORADO
+============================================================
+
+STATE: Colorado
+STATE_RATE: 2.9%
+FLORIDA_CREDIT_FOR_TAX_PAID_IN_ANOTHER_STATE: YES
+OCCASIONAL_OR_ISOLATED_SALE_EXEMPTION: NO
+FLORIDA_TAX_TO_COLLECT_FROM_COLORADO_RESIDENT: 2.9% if DR-123 applies
+TRADE_IN_CREDIT: YES
+COMMENT: Tax is calculated on the sales price of a new or used motor vehicle excluding the fair market value of any trade-in.
+
+============================================================
+CONNECTICUT
+============================================================
+
+STATE: Connecticut
+STATE_RATE:
+- 6.35% on motor vehicles with sales price of $50,000 or less
+- 6.35% on certain vehicles over $50,000 depending on GVWR and commercial use
+- 7.75% on motor vehicles with sales price over $50,000 except listed exceptions
+- 4.5% for qualifying nonresident U.S. Armed Forces full-time active duty member or member/spouse jointly
+FLORIDA_CREDIT_FOR_TAX_PAID_IN_ANOTHER_STATE: YES
+OCCASIONAL_OR_ISOLATED_SALE_EXEMPTION: NO
+FLORIDA_TAX_TO_COLLECT_FROM_CONNECTICUT_RESIDENT: 6% if home-state rate is 6.35% or 7.75%; 4.5% if qualifying active-duty nonresident rate applies and DR-123 applies
+TRADE_IN_CREDIT: YES when purchased from licensed motor vehicle dealer
+COMMENT:
+- Tax is calculated on sales price less credit for trade-in when purchased from a licensed motor vehicle dealer.
+- Rate is determined by sales price before trade-in credit.
+- Certain commercial trucks, truck tractors, tractors, semi-trailers, and motor buses/commercial vehicles are exempt.
+
+============================================================
+DELAWARE
+============================================================
+
+STATE: Delaware
+STATE_RATE: None
+FLORIDA_CREDIT_FOR_TAX_PAID_IN_ANOTHER_STATE: YES, for motor vehicle document fee paid
+OCCASIONAL_OR_ISOLATED_SALE_EXEMPTION: Not listed
+FLORIDA_TAX_TO_COLLECT_FROM_DELAWARE_RESIDENT: 0% if DR-123 applies
+COMMENT: Delaware has no state sales tax rate listed for motor vehicles, but Florida may allow credit for Delaware motor vehicle document fee paid when vehicle is later brought into Florida.
+
+============================================================
+DISTRICT OF COLUMBIA
+============================================================
+
+STATE: District of Columbia
+STATE_RATE: None
+FLORIDA_CREDIT_FOR_TAX_PAID_IN_ANOTHER_STATE: NO
+OCCASIONAL_OR_ISOLATED_SALE_EXEMPTION: NO
+FLORIDA_TAX_TO_COLLECT_FROM_DC_RESIDENT: 0% if DR-123 applies
+COMMENT:
+- An excise tax is imposed on every original certificate of title for a motor vehicle based on class.
+- Florida does not give credit for this excise tax.
+
+============================================================
+GEORGIA
+============================================================
+
+STATE: Georgia
+STATE_RATE:
+- None for motorized motor vehicles titled in Georgia, such as car, truck, motorcycle, RV
+- 4% for non-motorized motor vehicles, such as tow-behind campers and trailers
+FLORIDA_CREDIT_FOR_TAX_PAID_IN_ANOTHER_STATE:
+- YES on non-motorized motor vehicles
+- NO credit against Georgia Title Ad Valorem Tax, TAVT
+OCCASIONAL_OR_ISOLATED_SALE_EXEMPTION: YES
+FLORIDA_TAX_TO_COLLECT_FROM_GEORGIA_RESIDENT:
+- 0% for motorized motor vehicles if DR-123 applies
+- 4% for non-motorized motor vehicles if DR-123 applies
+COMMENT:
+- Sales tax is calculated on the sales price of non-motorized motor vehicles, such as tow-behind trailers and campers.
+- Credit is allowed in Florida for sales tax paid in Georgia on non-motorized motor vehicles.
+
+============================================================
+HAWAII
+============================================================
+
+STATE: Hawaii
+STATE_RATE: 4%
+FLORIDA_CREDIT_FOR_TAX_PAID_IN_ANOTHER_STATE: YES
+OCCASIONAL_OR_ISOLATED_SALE_EXEMPTION: YES
+FLORIDA_TAX_TO_COLLECT_FROM_HAWAII_RESIDENT: 4% if DR-123 applies
+TRADE_IN_CREDIT: YES
+COMMENT: Tax is calculated on the sales price of a motor vehicle, less credit for trade-in.
+
+============================================================
+IDAHO
+============================================================
+
+STATE: Idaho
+STATE_RATE: 6%
+FLORIDA_CREDIT_FOR_TAX_PAID_IN_ANOTHER_STATE: YES
+OCCASIONAL_OR_ISOLATED_SALE_EXEMPTION: NO
+FLORIDA_TAX_TO_COLLECT_FROM_IDAHO_RESIDENT: 6%
+TRADE_IN_CREDIT: YES when sold through a dealer
+COMMENT:
+- Tax is calculated on sales price of new or used motor vehicle, less trade-in credit, when sold through a dealer.
+- Sales of motor vehicles with maximum gross registered weight rating over 26,000 lbs registered under IRP and used as part of a fleet with over 10% of miles outside Idaho are exempt.
+
+============================================================
+ILLINOIS
+============================================================
+
+STATE: Illinois
+STATE_RATE: 6.25%
+FLORIDA_CREDIT_FOR_TAX_PAID_IN_ANOTHER_STATE: YES
+OCCASIONAL_OR_ISOLATED_SALE_EXEMPTION: NO
+FLORIDA_TAX_TO_COLLECT_FROM_ILLINOIS_RESIDENT: 6%
+COMMENT:
+- Illinois imposes a Private Party Vehicle Use Tax.
+- Tables A and B are used to compute tax due for private-party vehicle use tax.
+- Private Party Vehicle Use Tax is based on purchase price or fair market value.
+- Trade-in deduction is not allowed on the Private Party Vehicle Use Tax.
+
+============================================================
+INDIANA
+============================================================
+
+STATE: Indiana
+STATE_RATE: 7%
+FLORIDA_CREDIT_FOR_TAX_PAID_IN_ANOTHER_STATE: YES
+OCCASIONAL_OR_ISOLATED_SALE_EXEMPTION: NO
+FLORIDA_TAX_TO_COLLECT_FROM_INDIANA_RESIDENT: 6%
+TRADE_IN_CREDIT: YES
+COMMENT: Tax is calculated on the sales price of a new or used motor vehicle, less credit for trade-in.
+
+============================================================
+IOWA
+============================================================
+
+STATE: Iowa
+STATE_RATE: None
+FLORIDA_CREDIT_FOR_TAX_PAID_IN_ANOTHER_STATE: YES, for registration fee/use tax paid
+OCCASIONAL_OR_ISOLATED_SALE_EXEMPTION: NO
+FLORIDA_TAX_TO_COLLECT_FROM_IOWA_RESIDENT: 0% if DR-123 applies
+COMMENT: A statewide 5% one-time fee for new registration is imposed on the vehicle sales price.
+
+============================================================
+KANSAS
+============================================================
+
+STATE: Kansas
+STATE_RATE: 6.5%
+FLORIDA_CREDIT_FOR_TAX_PAID_IN_ANOTHER_STATE: YES
+OCCASIONAL_OR_ISOLATED_SALE_EXEMPTION: NO
+FLORIDA_TAX_TO_COLLECT_FROM_KANSAS_RESIDENT: 6%
+TRADE_IN_CREDIT: YES
+COMMENT: Tax is calculated on the sales price of a new or used motor vehicle, less credit for trade-in.
+
+============================================================
+KENTUCKY
+============================================================
+
+STATE: Kentucky
+STATE_RATE: 6%
+FLORIDA_CREDIT_FOR_TAX_PAID_IN_ANOTHER_STATE: YES
+OCCASIONAL_OR_ISOLATED_SALE_EXEMPTION: YES
+FLORIDA_TAX_TO_COLLECT_FROM_KENTUCKY_RESIDENT: 6%
+
+============================================================
+LOUISIANA
+============================================================
+
+STATE: Louisiana
+STATE_RATE: 5%
+FLORIDA_CREDIT_FOR_TAX_PAID_IN_ANOTHER_STATE: YES
+OCCASIONAL_OR_ISOLATED_SALE_EXEMPTION: NO
+FLORIDA_TAX_TO_COLLECT_FROM_LOUISIANA_RESIDENT: 5% if DR-123 applies
+TRADE_IN_CREDIT: YES
+COMMENT:
+- Tax is calculated on the sales price of a new or used motor vehicle, less credit for trade-in.
+- Trucks and trailers over 26,000 lbs and used 80% of the time in interstate commerce are exempt.
+- This TIP was revised because the January 15, 2025 version contained incorrect Louisiana information.
+
+============================================================
+MAINE
+============================================================
+
+STATE: Maine
+STATE_RATE: 5.5%
+FLORIDA_CREDIT_FOR_TAX_PAID_IN_ANOTHER_STATE: YES
+OCCASIONAL_OR_ISOLATED_SALE_EXEMPTION: NO
+FLORIDA_TAX_TO_COLLECT_FROM_MAINE_RESIDENT: 5.5% if DR-123 applies
+TRADE_IN_CREDIT: YES
+COMMENT: Tax is calculated on the sales price of a new or used motor vehicle, less credit for trade-in.
+
+============================================================
+MARYLAND
+============================================================
+
+STATE: Maryland
+STATE_RATE: None
+FLORIDA_CREDIT_FOR_TAX_PAID_IN_ANOTHER_STATE: YES, for motor vehicle excise tax paid
+OCCASIONAL_OR_ISOLATED_SALE_EXEMPTION: NO
+FLORIDA_TAX_TO_COLLECT_FROM_MARYLAND_RESIDENT: 0% if DR-123 applies
+COMMENT: Maryland has no state sales tax rate listed for this chart, but motor vehicle excise tax may be relevant.
+
+============================================================
+MASSACHUSETTS
+============================================================
+
+STATE: Massachusetts
+STATE_RATE: 6.25%
+FLORIDA_CREDIT_FOR_TAX_PAID_IN_ANOTHER_STATE: YES
+OCCASIONAL_OR_ISOLATED_SALE_EXEMPTION: NO
+FLORIDA_TAX_TO_COLLECT_FROM_MASSACHUSETTS_RESIDENT: 6%
+TRADE_IN_CREDIT: YES when sold through a dealer
+COMMENT:
+- Tax is calculated on sales price of new or used motor vehicle, less credit for trade-in, when sold through a dealer.
+- For casual/isolated sales, tax is calculated on sales price or clean trade-in book value, whichever is greater.
+
+============================================================
+MICHIGAN
+============================================================
+
+STATE: Michigan
+STATE_RATE: 6%
+FLORIDA_CREDIT_FOR_TAX_PAID_IN_ANOTHER_STATE: YES
+OCCASIONAL_OR_ISOLATED_SALE_EXEMPTION: YES
+FLORIDA_TAX_TO_COLLECT_FROM_MICHIGAN_RESIDENT: 6%
+TRADE_IN_CREDIT: LIMITED
+COMMENT:
+- Tax is calculated on sales price of new or used motor vehicle, less allowable trade-in credit, when sold by dealer.
+- 2024 trade-in credit: lesser of $10,000 or agreed-upon value of trade-in.
+- 2025 trade-in credit: lesser of $11,000 or agreed-upon value of trade-in.
+- Certain concrete mixing trucks and certain interstate motor carrier commercial motor vehicles are exempt.
+- Occasional/isolated sale: seller may be exempt from remitting tax, but purchaser is liable for tax based on retail dollar value.
+
+============================================================
+MINNESOTA
+============================================================
+
+STATE: Minnesota
+STATE_RATE: 6.875%
+FLORIDA_CREDIT_FOR_TAX_PAID_IN_ANOTHER_STATE: YES
+OCCASIONAL_OR_ISOLATED_SALE_EXEMPTION: NO
+FLORIDA_TAX_TO_COLLECT_FROM_MINNESOTA_RESIDENT: 6%
+TRADE_IN_CREDIT: YES
+COMMENT:
+- Tax is calculated on sales price of new or used motor vehicle, less credit for trade-in.
+- A $10 tax applies instead of Motor Vehicle Sales Tax if vehicle is 10 years or older and sales price/average value is less than $3,000.
+
+============================================================
+MISSISSIPPI
+============================================================
+
+STATE: Mississippi
+STATE_RATE:
+- 5% motor vehicles and light trucks 10,000 lbs or less
+- 3% semi-trailers and trucks over 10,000 lbs
+- 7% motorcycles
+FLORIDA_CREDIT_FOR_TAX_PAID_IN_ANOTHER_STATE: YES
+OCCASIONAL_OR_ISOLATED_SALE_EXEMPTION: YES, limited to trailers and motor vehicles sold 10 or more years after date of manufacture
+FLORIDA_TAX_TO_COLLECT_FROM_MISSISSIPPI_RESIDENT:
+- 5% for motor vehicles/light trucks 10,000 lbs or less if DR-123 applies
+- 3% for semi-trailers/trucks over 10,000 lbs if DR-123 applies
+- 6% for motorcycles because Mississippi motorcycle rate exceeds Florida 6% cap
+SPECIAL_WARNING: Mississippi does not allow credit for taxes paid to Florida.
+TRADE_IN_CREDIT: YES
+COMMENT:
+- Tax is calculated on sales price of new or used motor vehicle, less credit for trade-in.
+- Customer should be warned Mississippi may still require tax when licensed in Mississippi.
+
+============================================================
+MISSOURI
+============================================================
+
+STATE: Missouri
+STATE_RATE: 4.225%
+FLORIDA_CREDIT_FOR_TAX_PAID_IN_ANOTHER_STATE: YES
+OCCASIONAL_OR_ISOLATED_SALE_EXEMPTION: NO
+FLORIDA_TAX_TO_COLLECT_FROM_MISSOURI_RESIDENT: 4.225% if DR-123 applies
+TRADE_IN_CREDIT: YES, special timing rules
+COMMENT:
+- Tax is calculated on sales price of new or used motor vehicle, less credit for trade-in.
+- Trade-in credit applies at time vehicle is titled on vehicles sold 180 days before or after purchase, and on rebates.
+
+============================================================
+MONTANA
+============================================================
+
+STATE: Montana
+STATE_RATE: None
+FLORIDA_CREDIT_FOR_TAX_PAID_IN_ANOTHER_STATE: NO
+OCCASIONAL_OR_ISOLATED_SALE_EXEMPTION: N/A
+FLORIDA_TAX_TO_COLLECT_FROM_MONTANA_RESIDENT: 0% if DR-123 applies
+
+============================================================
+NEBRASKA
+============================================================
+
+STATE: Nebraska
+STATE_RATE:
+- 2.75% Good Life District within city boundaries
+- 5.5% outside Good Life District
+FLORIDA_CREDIT_FOR_TAX_PAID_IN_ANOTHER_STATE: YES
+OCCASIONAL_OR_ISOLATED_SALE_EXEMPTION: NO
+FLORIDA_TAX_TO_COLLECT_FROM_NEBRASKA_RESIDENT:
+- 2.75% if Good Life District within city boundaries and DR-123 applies
+- 5.5% outside Good Life District and DR-123 applies
+TRADE_IN_CREDIT: YES
+COMMENT: Tax is calculated on sales price of new or used motor vehicle, less credit for trade-in.
+
+============================================================
+NEVADA
+============================================================
+
+STATE: Nevada
+STATE_RATE: 6.85%
+FLORIDA_CREDIT_FOR_TAX_PAID_IN_ANOTHER_STATE: YES
+OCCASIONAL_OR_ISOLATED_SALE_EXEMPTION: YES
+FLORIDA_TAX_TO_COLLECT_FROM_NEVADA_RESIDENT: 6%
+TRADE_IN_CREDIT: YES
+COMMENT: Tax is calculated on sales price of new or used motor vehicle, less credit for trade-in.
+
+============================================================
+NEW HAMPSHIRE
+============================================================
+
+STATE: New Hampshire
+STATE_RATE: None
+FLORIDA_CREDIT_FOR_TAX_PAID_IN_ANOTHER_STATE: NO
+OCCASIONAL_OR_ISOLATED_SALE_EXEMPTION: N/A
+FLORIDA_TAX_TO_COLLECT_FROM_NEW_HAMPSHIRE_RESIDENT: 0% if DR-123 applies
+
+============================================================
+NEW JERSEY
+============================================================
+
+STATE: New Jersey
+STATE_RATE: 6.625%
+FLORIDA_CREDIT_FOR_TAX_PAID_IN_ANOTHER_STATE: YES
+OCCASIONAL_OR_ISOLATED_SALE_EXEMPTION: NO
+FLORIDA_TAX_TO_COLLECT_FROM_NEW_JERSEY_RESIDENT: 6%
+TRADE_IN_CREDIT: YES
+COMMENT:
+- Tax is calculated on sales price of new or used motor vehicle, less credit for trade-in.
+- Tax-exempt commercial vehicles include:
+  - Vehicles with gross weight rating greater than 26,000 lbs.
+  - Vehicles operated actively and exclusively for carriage of interstate freight.
+  - Registered farm vehicles with weight rating greater than 18,000 lbs.
+
+============================================================
+NEW MEXICO
+============================================================
+
+STATE: New Mexico
+STATE_RATE: None
+FLORIDA_CREDIT_FOR_TAX_PAID_IN_ANOTHER_STATE: YES, for 4% motor vehicle excise tax paid
+OCCASIONAL_OR_ISOLATED_SALE_EXEMPTION: NO
+FLORIDA_TAX_TO_COLLECT_FROM_NEW_MEXICO_RESIDENT: 0% if DR-123 applies
+COMMENT: New Mexico has no state sales tax rate listed for this chart, but motor vehicle excise tax may be relevant.
+
+============================================================
+NEW YORK
+============================================================
+
+STATE: New York
+STATE_RATE: 4%
+FLORIDA_CREDIT_FOR_TAX_PAID_IN_ANOTHER_STATE: YES
+OCCASIONAL_OR_ISOLATED_SALE_EXEMPTION: NO
+FLORIDA_TAX_TO_COLLECT_FROM_NEW_YORK_RESIDENT: 4% if DR-123 applies
+TRADE_IN_CREDIT: YES
+COMMENT: Tax is calculated on sales price of new or used motor vehicle, less credit for trade-in.
+
+============================================================
+NORTH CAROLINA
+============================================================
+
+STATE: North Carolina
+STATE_RATE: None
+FLORIDA_CREDIT_FOR_TAX_PAID_IN_ANOTHER_STATE: YES, for highway use tax paid
+OCCASIONAL_OR_ISOLATED_SALE_EXEMPTION: NO
+FLORIDA_TAX_TO_COLLECT_FROM_NORTH_CAROLINA_RESIDENT: 0% if DR-123 applies
+COMMENT: North Carolina highway use tax may be relevant.
+
+============================================================
+NORTH DAKOTA
+============================================================
+
+STATE: North Dakota
+STATE_RATE: None
+FLORIDA_CREDIT_FOR_TAX_PAID_IN_ANOTHER_STATE: YES, for motor vehicle excise tax paid
+OCCASIONAL_OR_ISOLATED_SALE_EXEMPTION: NO
+FLORIDA_TAX_TO_COLLECT_FROM_NORTH_DAKOTA_RESIDENT: 0% if DR-123 applies
+COMMENT: A 5% motor vehicle excise tax is imposed on the purchase price of any motor vehicle purchased or acquired in or out of state for use on the streets and highways of North Dakota.
+
+============================================================
+OHIO
+============================================================
+
+STATE: Ohio
+STATE_RATE: 5.75%
+FLORIDA_CREDIT_FOR_TAX_PAID_IN_ANOTHER_STATE: YES
+OCCASIONAL_OR_ISOLATED_SALE_EXEMPTION: NO
+FLORIDA_TAX_TO_COLLECT_FROM_OHIO_RESIDENT: 5.75% if DR-123 applies
+TRADE_IN_CREDIT: LIMITED
+COMMENT:
+- Tax is calculated on sales price of new or used motor vehicles.
+- Credit for trade-in is allowed only when the motor vehicle is traded with a new motor vehicle dealer for a new motor vehicle.
+
+============================================================
+OKLAHOMA
+============================================================
+
+STATE: Oklahoma
+STATE_RATE: 1.25%
+FLORIDA_CREDIT_FOR_TAX_PAID_IN_ANOTHER_STATE: YES, for sales tax or excise taxes paid
+OCCASIONAL_OR_ISOLATED_SALE_EXEMPTION: NO
+FLORIDA_TAX_TO_COLLECT_FROM_OKLAHOMA_RESIDENT: 1.25% if DR-123 applies
+TRADE_IN_CREDIT: YES
+SPECIAL_WARNING: Oklahoma requires residents to pay sales tax and excise tax when titling/registering in Oklahoma but may allow refund up to amount of Florida sales tax paid.
+COMMENT: Tax is calculated on sales price of new or used motor vehicle, less credit for trade-in.
+
+============================================================
+OREGON
+============================================================
+
+STATE: Oregon
+STATE_RATE: None
+FLORIDA_CREDIT_FOR_TAX_PAID_IN_ANOTHER_STATE: YES, for vehicle use tax paid
+OCCASIONAL_OR_ISOLATED_SALE_EXEMPTION: YES
+FLORIDA_TAX_TO_COLLECT_FROM_OREGON_RESIDENT: 0% if DR-123 applies
+
+============================================================
+PENNSYLVANIA
+============================================================
+
+STATE: Pennsylvania
+STATE_RATE: 6%
+FLORIDA_CREDIT_FOR_TAX_PAID_IN_ANOTHER_STATE: YES
+OCCASIONAL_OR_ISOLATED_SALE_EXEMPTION: NO
+FLORIDA_TAX_TO_COLLECT_FROM_PENNSYLVANIA_RESIDENT: 6%
+TRADE_IN_CREDIT: YES
+COMMENT: Tax is calculated on sales price of new or used motor vehicle, less credit for trade-in.
+
+============================================================
+RHODE ISLAND
+============================================================
+
+STATE: Rhode Island
+STATE_RATE: 7%
+FLORIDA_CREDIT_FOR_TAX_PAID_IN_ANOTHER_STATE: YES
+OCCASIONAL_OR_ISOLATED_SALE_EXEMPTION: NO
+FLORIDA_TAX_TO_COLLECT_FROM_RHODE_ISLAND_RESIDENT: 6%
+TRADE_IN_CREDIT: LIMITED
+COMMENT:
+- Tax is calculated on sales price of new or used motor vehicles.
+- Trade-in credit is allowed on automobiles and motor homes, and a motorcycle traded in for purchase of a motorcycle.
+
+============================================================
+SOUTH CAROLINA
+============================================================
+
+STATE: South Carolina
+STATE_RATE: 5%, not to exceed $500
+FLORIDA_CREDIT_FOR_TAX_PAID_IN_ANOTHER_STATE: YES
+OCCASIONAL_OR_ISOLATED_SALE_EXEMPTION: NO
+FLORIDA_TAX_TO_COLLECT_FROM_SOUTH_CAROLINA_RESIDENT: 5%, not to exceed $500, if DR-123 applies
+TRADE_IN_CREDIT: YES
+COMMENT: Tax is calculated on sales price of new or used motor vehicle, less credit for trade-in.
+
+============================================================
+SOUTH DAKOTA
+============================================================
+
+STATE: South Dakota
+STATE_RATE: None
+FLORIDA_CREDIT_FOR_TAX_PAID_IN_ANOTHER_STATE: YES, for Motor Vehicle Excise Tax paid
+OCCASIONAL_OR_ISOLATED_SALE_EXEMPTION: NO
+FLORIDA_TAX_TO_COLLECT_FROM_SOUTH_DAKOTA_RESIDENT: 0% if DR-123 applies
+COMMENT:
+- South Dakota Motor Vehicle Excise Tax rate is 4%.
+- Tax is calculated on sales price of new or used motor vehicle, less credit for trade-in.
+- South Dakota does not charge sales tax on vehicle sales.
+
+============================================================
+TENNESSEE
+============================================================
+
+STATE: Tennessee
+STATE_RATE: 7%
+FLORIDA_CREDIT_FOR_TAX_PAID_IN_ANOTHER_STATE: YES, for state sales tax only
+OCCASIONAL_OR_ISOLATED_SALE_EXEMPTION: NO
+FLORIDA_TAX_TO_COLLECT_FROM_TENNESSEE_RESIDENT: 6%
+TRADE_IN_CREDIT: YES
+COMMENT:
+- Tax is calculated on sales price of new or used motor vehicle, less credit for trade-in.
+- Qualified common or contract carriers may purchase certain qualifying motor vehicles exempt from sales tax.
+
+============================================================
+TEXAS
+============================================================
+
+STATE: Texas
+STATE_RATE: 6.25%
+FLORIDA_CREDIT_FOR_TAX_PAID_IN_ANOTHER_STATE: YES
+OCCASIONAL_OR_ISOLATED_SALE_EXEMPTION: NO
+FLORIDA_TAX_TO_COLLECT_FROM_TEXAS_RESIDENT: 6%
+TRADE_IN_CREDIT: YES
+COMMENT:
+- Tax is calculated on sales price of new or used motor vehicle, less credit for trade-in.
+- Used vehicles not purchased from licensed vehicle dealer are subject to tax on higher of purchase price or standard presumptive value.
+
+============================================================
+UTAH
+============================================================
+
+STATE: Utah
+STATE_RATE: 4.85%
+FLORIDA_CREDIT_FOR_TAX_PAID_IN_ANOTHER_STATE: YES
+OCCASIONAL_OR_ISOLATED_SALE_EXEMPTION: NO
+FLORIDA_TAX_TO_COLLECT_FROM_UTAH_RESIDENT: 4.85% if DR-123 applies
+TRADE_IN_CREDIT: YES
+COMMENT: Tax is calculated on sales price of new or used motor vehicle, less credit for trade-in.
+
+============================================================
+VERMONT
+============================================================
+
+STATE: Vermont
+STATE_RATE: 6%
+FLORIDA_CREDIT_FOR_TAX_PAID_IN_ANOTHER_STATE: YES
+OCCASIONAL_OR_ISOLATED_SALE_EXEMPTION: NO
+FLORIDA_TAX_TO_COLLECT_FROM_VERMONT_RESIDENT: 6%
+TRADE_IN_CREDIT: YES
+COMMENT: Tax is calculated on purchase price or average trade-in value, whichever is greater, less credit for trade-in.
+
+============================================================
+VIRGINIA
+============================================================
+
+STATE: Virginia
+STATE_RATE: 4.15%, $75 minimum
+FLORIDA_CREDIT_FOR_TAX_PAID_IN_ANOTHER_STATE: YES
+OCCASIONAL_OR_ISOLATED_SALE_EXEMPTION: NO
+FLORIDA_TAX_TO_COLLECT_FROM_VIRGINIA_RESIDENT: 4.15%, $75 minimum, if DR-123 applies
+TRADE_IN_CREDIT: NO
+COMMENT:
+- Tax is calculated on sales price of new or used motor vehicle.
+- No credit allowed for trade-in.
+- Trucks, tractor trucks, trailers, or semi-trailers with GVWR of 26,001 lbs or more are exempt.
+
+============================================================
+WASHINGTON
+============================================================
+
+STATE: Washington
+STATE_RATE: 6.8%
+FLORIDA_CREDIT_FOR_TAX_PAID_IN_ANOTHER_STATE: YES
+OCCASIONAL_OR_ISOLATED_SALE_EXEMPTION: NO
+FLORIDA_TAX_TO_COLLECT_FROM_WASHINGTON_RESIDENT: 6%
+TRADE_IN_CREDIT: YES, limited
+COMMENT:
+- Tax is calculated on sales price of new or used motor vehicle, less credit for trade-in of a motor vehicle.
+- Trade-in credit cannot exceed sales price.
+
+============================================================
+WEST VIRGINIA
+============================================================
+
+STATE: West Virginia
+STATE_RATE:
+- 6% on motor vehicles over $500
+- $30 on motor vehicles less than $500
+FLORIDA_CREDIT_FOR_TAX_PAID_IN_ANOTHER_STATE: YES, when sale is made through motor vehicle dealer
+OCCASIONAL_OR_ISOLATED_SALE_EXEMPTION: NO
+FLORIDA_TAX_TO_COLLECT_FROM_WEST_VIRGINIA_RESIDENT:
+- 6% on motor vehicles over $500
+- $30 on motor vehicles less than $500
+SPECIAL_WARNING: West Virginia does not allow credit for taxes paid to Florida.
+TRADE_IN_CREDIT: LIMITED
+COMMENT:
+- Tax is imposed on sales price of new and used motor vehicles when sold by a vehicle dealer and the vehicle traded in was previously titled in West Virginia in the purchaser’s name.
+- Customer should be warned West Virginia may still require tax when licensed in West Virginia.
+
+============================================================
+WISCONSIN
+============================================================
+
+STATE: Wisconsin
+STATE_RATE: 5%
+FLORIDA_CREDIT_FOR_TAX_PAID_IN_ANOTHER_STATE: YES
+OCCASIONAL_OR_ISOLATED_SALE_EXEMPTION: NO
+FLORIDA_TAX_TO_COLLECT_FROM_WISCONSIN_RESIDENT: 5% if DR-123 applies
+TRADE_IN_CREDIT: YES
+COMMENT: Tax is calculated on sales price of new or used motor vehicle, less credit for trade-in.
+
+============================================================
+WYOMING
+============================================================
+
+STATE: Wyoming
+STATE_RATE: 4%
+FLORIDA_CREDIT_FOR_TAX_PAID_IN_ANOTHER_STATE: YES
+OCCASIONAL_OR_ISOLATED_SALE_EXEMPTION: NO
+FLORIDA_TAX_TO_COLLECT_FROM_WYOMING_RESIDENT: 4% if DR-123 applies
+TRADE_IN_CREDIT: YES
+COMMENT: Tax is calculated on sales price of new or used motor vehicle, less credit for trade-in.
+
+============================================================
+GENERAL ANSWER TEMPLATE
+============================================================
+
+For a Florida dealer sale to an out-of-state resident, Florida collects the amount of sales tax that would be imposed by the purchaser’s home state, capped at Florida’s 6% state sales tax rate. If the purchaser’s home-state rate is below 6%, Form DR-123 is required at the time of sale for the partial exemption. The customer must declare intent to license the vehicle in their home state within 45 days. If licensed in the home state within 45 days, the vehicle does not have to be removed from Florida. Always verify special state rules, trade-in treatment, no-credit states, and tax/refund exposure before finalizing.
+
+============================================================
+NO-CREDIT / DOUBLE-TAX ANSWER TEMPLATE
+============================================================
+
+Florida DOR specifically warns that Arkansas, Mississippi, and West Virginia impose motor vehicle tax but do not allow credit for taxes paid to Florida. Customers from those states should be warned that they may pay Florida tax at the home-state rate when purchasing in Florida and may also owe tax again when licensing the vehicle in their home state. Oklahoma is also special: Oklahoma requires sales tax and excise tax at title/registration but may allow a refund up to the Florida sales tax paid.
+
+============================================================
+RELATED FILES
+============================================================
+
+- fl_nonresident_motor_vehicle_sales_tax_logic_map.txt
+- out_of_state_customer_title_master_logic_map.txt
+- validation_logic_map.txt
+- rejection_prevention_logic_map.txt
+- arkansas_customer_titling_requirements_notes.txt
+- mississippi_customer_titling_requirements_notes.txt
+- west_virginia_customer_titling_requirements_notes.txt
+- oklahoma_customer_titling_requirements_notes.txt
+
+============================================================
+END OF FILE
+============================================================

@@ -1,0 +1,218 @@
+DOCUMENT: IDAHO_CUSTOMER_TITLING_REQUIREMENTS_NOTES
+TITLE: Idaho Customer Titling / Registration Requirements for Out-of-State Dealer Sale
+STATE: Idaho
+SOURCE: https://itd.idaho.gov/dmv/registrations-plates-titles/vehicle-titles/
+DOCUMENT_TYPE: Out-of-State Customer Titling / Registration Requirements
+CATEGORY: FLORIDA DEALER SALE TO IDAHO CUSTOMER / IDAHO TITLE / IDAHO REGISTRATION / VIN INSPECTION / ODOMETER / OUT-OF-STATE DEALER / 30 DAY FILING
+
+============================================================
+PURPOSE
+============================================================
+
+This file helps a Florida dealership understand what may be needed when a customer buys a vehicle from the dealership and wants the vehicle titled and/or registered in Idaho.
+
+Use this file for questions like:
+
+- What do I need to title this customer in Idaho?
+- Idaho customer bought from our Florida dealership.
+- Does Idaho need VIN inspection?
+- Does Idaho require odometer disclosure?
+- Can an out-of-state dealer file Idaho title application?
+- What is Idaho’s 30-day filing rule?
+
+============================================================
+WHEN TO USE THIS FILE
+============================================================
+
+Use this file when:
+
+IF customer_state = "Idaho"
+AND customer_is_buying_vehicle_from_dealer = TRUE
+AND vehicle_will_be_titled_or_registered_in_customer_state = TRUE
+THEN use_idaho_customer_titling_requirements_notes = TRUE
+
+Do NOT use this file as the primary source for:
+- Customer bringing Idaho title into Florida for Florida title
+- Florida resident titling/registering in Florida
+- Florida tag transfer workflow
+
+For Florida titling/registration, use Florida title and registration notes.
+
+============================================================
+IDAHO SOURCE SUMMARY
+============================================================
+
+Idaho ITD says:
+
+If bought from an Idaho dealer:
+- Dealer prepares title application and files it with ITD or county motor vehicle office.
+- Dealer must file within 30 days of delivery.
+
+If bought from an out-of-state dealer:
+- Dealer may prepare the application for title and file it with ITD.
+- If dealer does not, buyer must file required documents with county motor vehicle office within 30 days of transfer to avoid $20 late-filing penalty.
+
+Required titling documents include:
+- Existing title with proper signatures releasing interest from previous owner or lienholder, if bought used from private party
+- Odometer Disclosure for vehicles newer than 2010, weighing under 16,000 lbs.
+- VIN inspection by law enforcement officer, DMV employee, military police officer, or Idaho licensed vehicle dealer if vehicle is coming from another state or has never been titled in Idaho
+- Applicable fees
+- Optional Title Application — out-of-state dealers, lienholders, and leasing companies may prepare this
+- Power of Attorney if applying for title by mail through county assessor’s office
+- Bill of Sale may be used when properly released title cannot be obtained, but requires additional steps
+
+Idaho fees listed:
+- Duplicate title: $14
+- Penalty for late title filing more than 30 days after transfer: $20
+- Rush processing optional additional fee: $26
+- Release of Liability: $3.50
+- Title Stop: $21
+- Transitional Ownership Document: $26
+- County title/admin fees may vary by county
+
+============================================================
+IDAHO REQUIRED DOCUMENT LOGIC
+============================================================
+
+IF Idaho_customer_bought_from_out_of_state_dealer = TRUE
+THEN out_of_state_dealer_may_prepare_and_file_Idaho_title_application = TRUE
+
+IF Idaho_customer_bought_from_out_of_state_dealer = TRUE
+AND dealer_does_not_file_application = TRUE
+THEN customer_must_file_with_county_motor_vehicle_office_within_30_days = TRUE
+
+IF Idaho_title_application_filed_after_30_days = TRUE
+THEN Idaho_late_title_filing_penalty_may_apply = TRUE
+
+IF Idaho_vehicle_coming_from_another_state = TRUE
+THEN Idaho_VIN_inspection_required = TRUE
+
+IF Idaho_vehicle_never_titled_in_Idaho_before = TRUE
+THEN Idaho_VIN_inspection_required = TRUE
+
+IF Idaho_VIN_inspection_required = TRUE
+THEN authorized_Idaho_VIN_inspector_required = TRUE
+
+IF vehicle_newer_than_2010 = TRUE
+AND vehicle_weight_under_16000_lbs = TRUE
+THEN Idaho_odometer_disclosure_required = TRUE
+
+IF Idaho_title_by_mail_through_county_assessor = TRUE
+THEN Idaho_power_of_attorney_required = TRUE
+
+IF properly_released_title_cannot_be_obtained = TRUE
+THEN Idaho_bill_of_sale_and_conditional_title_review_required = TRUE
+
+============================================================
+IDAHO VIN INSPECTION NOTES
+============================================================
+
+Idaho source says VIN inspection may be completed by:
+
+- Officer of the law
+- DMV employee
+- Military police officer
+- Idaho licensed vehicle dealer
+
+IF Idaho_VIN_inspection_required = TRUE
+THEN do_not_submit_without_authorized_VIN_inspection = TRUE
+
+============================================================
+FLORIDA DEALER WORKFLOW FOR IDAHO CUSTOMER
+============================================================
+
+When a Florida dealership sells a vehicle to an Idaho customer and the customer wants Idaho title/registration:
+
+1. Determine whether dealership will file Idaho title application:
+   - Idaho allows out-of-state dealer to prepare and file application.
+   - If not, customer must file with Idaho county motor vehicle office within 30 days.
+
+2. Prepare ownership package:
+   - MCO/MSO or properly assigned title
+   - Dealer reassignment if applicable
+   - Bill of sale / buyer’s order
+   - Odometer disclosure if vehicle newer than 2010 and under 16,000 lbs.
+   - Lienholder information if financed
+
+3. Idaho-specific items:
+   - VIN inspection if vehicle is coming from another state or never titled in Idaho
+   - Authorized VIN inspector
+   - Idaho title application if dealership/lender/lease company prepares it
+   - POA if applying by mail through county assessor
+   - Conditional title steps if properly released title cannot be obtained
+
+4. If financed:
+   - Confirm lienholder instructions.
+   - Confirm whether lienholder or out-of-state dealer is preparing title application.
+   - Confirm title/lien filing within 30 days.
+
+5. If customer handles filing:
+   - Warn customer about Idaho 30-day filing requirement and possible $20 late penalty.
+
+============================================================
+TAX / RECIPROCITY NOTES
+============================================================
+
+For Florida dealer sale to Idaho resident:
+
+- Review Florida DOR out-of-state resident sales tax / DR-123 workflow.
+- Review customer state tax rate and Florida partial exemption rules.
+- Verify tax handling with controller, tax collector, agency, or lender before finalizing.
+
+Use related file:
+fl_motor_vehicle_sales_tax_rates_by_state_tip_25a01_01_notes.txt
+
+============================================================
+REJECTION / DELAY RISKS
+============================================================
+
+High risk if:
+
+- Idaho title application is not filed within 30 days.
+- VIN inspection is missing.
+- VIN inspection completed by unauthorized party.
+- Odometer disclosure is missing for newer-than-2010 / under-16,000-lb vehicle.
+- POA is missing for title-by-mail through county assessor.
+- Properly released title cannot be obtained and conditional title steps are not followed.
+- Lienholder/dealer/customer filing responsibility is unclear.
+- Tax/DR-123 handling is unclear.
+
+============================================================
+AI ROUTING KEYWORDS
+============================================================
+
+Idaho customer
+title customer in Idaho
+register customer in Idaho
+Idaho title requirements
+Idaho registration requirements
+Idaho out of state dealer sale
+Florida dealer Idaho customer
+Idaho VIN inspection
+Idaho 30 day filing
+Idaho late title filing penalty
+Idaho odometer disclosure
+Idaho title application
+Idaho county motor vehicle office
+what do I need to title in Idaho
+
+============================================================
+COMMON CLERK ANSWER
+============================================================
+
+For an Idaho customer buying from a Florida dealership, Idaho allows an out-of-state dealer to prepare and file the title application with ITD. If the dealer does not file it, the customer must file required documents with the county motor vehicle office within 30 days of transfer to avoid a $20 late-filing penalty. Idaho requires VIN inspection for vehicles coming from another state or never titled in Idaho, and odometer disclosure for vehicles newer than 2010 weighing under 16,000 lbs. Prepare the dealer package, title application if filing, buyer’s order, odometer disclosure if applicable, lienholder information if financed, and review Florida DR-123/tax handling. Escalate if VIN inspection, 30-day filing responsibility, conditional title, lienholder instructions, or tax handling is unclear.
+
+============================================================
+RELATED FILES
+============================================================
+
+- out_of_state_customer_title_master_logic_map.txt
+- fl_motor_vehicle_sales_tax_rates_by_state_tip_25a01_01_notes.txt
+- validation_logic_map.txt
+- rejection_prevention_logic_map.txt
+- fl_title_ownership_and_transfer_law_notes.txt
+- fl_lien_and_lien_satisfaction_law_notes.txt
+
+============================================================
+END OF FILE
+============================================================

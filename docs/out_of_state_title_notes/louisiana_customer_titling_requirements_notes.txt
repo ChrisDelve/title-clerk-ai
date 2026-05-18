@@ -1,0 +1,243 @@
+DOCUMENT: LOUISIANA_CUSTOMER_TITLING_REQUIREMENTS_NOTES
+TITLE: Louisiana Customer Titling / Registration Requirements for Out-of-State Dealer Sale
+STATE: Louisiana
+SOURCE: https://public.powerdms.com/ladpsc/documents/370218
+SOURCE_TITLE: Louisiana OMV Policy 48.00 Out-of-State Transfers and Reciprocity With Other States
+SOURCE_REVISION: Revised 01/08/2026
+DOCUMENT_TYPE: Out-of-State Customer Titling / Registration Requirements
+CATEGORY: FLORIDA DEALER SALE TO LOUISIANA CUSTOMER / LOUISIANA TITLE / LOUISIANA REGISTRATION / DPSMV1799 / OUT OF STATE DECLARATION / ROAD USE TAX / LIENHOLDER / INSURANCE
+
+============================================================
+PURPOSE
+============================================================
+
+This file helps a Florida dealership understand what may be needed when a customer buys a vehicle from the dealership and wants the vehicle titled and/or registered in Louisiana.
+
+Use this file for questions like:
+
+- What do I need to title this customer in Louisiana?
+- Louisiana customer bought from our Florida dealership.
+- What is Louisiana DPSMV1799?
+- Does Louisiana need an out-of-state declaration?
+- What if the title is held by a lienholder?
+- Does Louisiana require Louisiana-authorized insurance?
+- What Louisiana taxes or credits may apply?
+
+============================================================
+WHEN TO USE THIS FILE
+============================================================
+
+Use this file when:
+
+IF customer_state = "Louisiana"
+AND customer_is_buying_vehicle_from_dealer = TRUE
+AND vehicle_will_be_titled_or_registered_in_customer_state = TRUE
+THEN use_louisiana_customer_titling_requirements_notes = TRUE
+
+Do NOT use this file as the primary source for:
+- Customer bringing Louisiana title into Florida for Florida title
+- Florida resident titling/registering in Florida
+- Florida tag transfer workflow
+
+For Florida titling/registration, use Florida title and registration notes.
+
+============================================================
+LOUISIANA SOURCE SUMMARY
+============================================================
+
+Louisiana OMV Policy 48.00 covers out-of-state transfers and reciprocity.
+
+For vehicles already titled/registered in the applicant’s name in another state, Louisiana requires:
+
+- Vehicle Application DPSMV1799 completed and signed by owner
+- Section F: Out of State Declaration on page 2 of DPSMV1799
+- Original out-of-state certificate of title if no lien is recorded
+- If original title is held by lienholder, a copy of the title or vehicle registration showing lienholder information
+- Current driver license or ID for each vehicle owner
+- Louisiana credential: copy of front
+- Out-of-state or U.S. territory credential: copy of front and back
+- Active duty military ID must be physically verified and not photocopied
+- Proof of current liability insurance if requesting a license plate
+- Insurance company must be authorized to do business in Louisiana
+- Applicable tax, title, and license fees
+
+Louisiana fees listed in Policy 48.00:
+
+- $68.50 title fee
+- $8.00 handling fee
+- License plate fee, if applicable
+- Mortgage/lien recordation fee if lien applies:
+  - $10.00 if original out-of-state title indicates outstanding lien
+  - $15.00 if UCC-1 is presented to record lien
+  - $10.00 for another security agreement
+
+Louisiana road use tax notes:
+
+- Road use tax is required before issuance of Louisiana title or registration.
+- Louisiana state and local use taxes may be limited to not more than $90.00 for qualifying new residents if conditions are met.
+- If titled/registered in Louisiana after 90 days of bringing the vehicle into Louisiana, road use tax may be assessed on vehicle value.
+- Louisiana tax credit may depend on proof of tax paid to another state and Louisiana reciprocity rules.
+
+============================================================
+LOUISIANA REQUIRED DOCUMENT LOGIC
+============================================================
+
+IF Louisiana_customer_title_or_registration_requested = TRUE
+THEN DPSMV1799_vehicle_application_required = TRUE
+
+IF DPSMV1799_required = TRUE
+THEN section_F_out_of_state_declaration_required = TRUE
+
+IF Louisiana_vehicle_no_lien_recorded = TRUE
+THEN original_out_of_state_certificate_of_title_required = TRUE
+
+IF Louisiana_title_held_by_lienholder = TRUE
+THEN copy_of_title_or_registration_showing_lienholder_required = TRUE
+
+IF Louisiana_customer_title_or_registration_requested = TRUE
+THEN current_driver_license_or_ID_for_each_owner_required = TRUE
+
+IF owner_ID_is_Louisiana_credential = TRUE
+THEN copy_front_of_credential_required = TRUE
+
+IF owner_ID_is_out_of_state_or_US_territory_credential = TRUE
+THEN copy_front_and_back_of_credential_required = TRUE
+
+IF owner_uses_active_duty_military_ID = TRUE
+THEN military_ID_must_be_physically_verified_and_not_photocopied = TRUE
+
+IF Louisiana_plate_requested = TRUE
+THEN proof_of_current_liability_insurance_required = TRUE
+
+IF Louisiana_plate_requested = TRUE
+THEN insurance_company_must_be_authorized_to_do_business_in_Louisiana = TRUE
+
+IF lien_recorded_or_mortgage_fee_applies = TRUE
+THEN Louisiana_mortgage_fee_review_required = TRUE
+
+============================================================
+LOUISIANA TAX / ROAD USE TAX LOGIC
+============================================================
+
+IF Louisiana_customer_title_or_registration_requested = TRUE
+THEN Louisiana_road_use_tax_review_required = TRUE
+
+IF Louisiana_new_resident_qualifies_for_90_dollar_tax_limit = TRUE
+THEN Louisiana_new_resident_tax_cap_review_required = TRUE
+
+IF vehicle_registered_after_90_days_brought_into_Louisiana = TRUE
+THEN road_use_tax_based_on_vehicle_value_review_required = TRUE
+
+IF taxes_paid_to_other_state = TRUE
+THEN Louisiana_tax_credit_chart_review_required = TRUE
+
+IF proof_of_taxes_paid_to_other_state_missing = TRUE
+THEN Louisiana_tax_credit_may_not_be_allowed = TRUE
+
+============================================================
+FLORIDA DEALER WORKFLOW FOR LOUISIANA CUSTOMER
+============================================================
+
+When a Florida dealership sells a vehicle to a Louisiana customer and the customer wants Louisiana title/registration:
+
+1. Prepare dealer ownership package:
+   - MCO/MSO or properly assigned title
+   - Dealer reassignment if applicable
+   - Buyer’s order / bill of sale
+   - Odometer disclosure/statement if applicable
+   - Lienholder information if financed
+
+2. Louisiana-specific items to review:
+   - DPSMV1799 Vehicle Application
+   - Section F Out of State Declaration
+   - Original out-of-state title if no lien
+   - Copy of title or registration showing lienholder if title held by lienholder
+   - Owner IDs
+   - Liability insurance from Louisiana-authorized insurer if plate requested
+   - Louisiana title/handling/license/mortgage fees
+   - Road use tax and reciprocity/tax credit
+
+3. If financed:
+   - Confirm lienholder/title handling.
+   - Confirm whether copy of title or registration showing lienholder is acceptable.
+   - Review mortgage/lien recordation fee.
+
+4. If plate requested:
+   - Confirm Louisiana-authorized liability insurance.
+   - Do not treat Florida insurance as automatically satisfying Louisiana plate requirements.
+
+5. If tax/reciprocity involved:
+   - Review Florida DR-123 handling and Louisiana tax credit/road use tax.
+   - Escalate to controller/tax/title agency if tax credit or road use tax is unclear.
+
+============================================================
+TAX / RECIPROCITY NOTES
+============================================================
+
+For Florida dealer sale to Louisiana resident:
+
+- Review Florida DOR out-of-state resident sales tax / DR-123 workflow.
+- Review Louisiana road use tax and reciprocity credit rules.
+- Louisiana Policy 48.00 includes a tax credit reference chart and proof requirements.
+- Verify tax handling with controller, agency, lender, or Louisiana OMV before finalizing.
+
+Use related file:
+fl_motor_vehicle_sales_tax_rates_by_state_tip_25a01_01_notes.txt
+
+============================================================
+REJECTION / DELAY RISKS
+============================================================
+
+High risk if:
+
+- DPSMV1799 is missing or unsigned.
+- Section F Out of State Declaration is missing.
+- Original out-of-state title is missing when no lien exists.
+- Title held by lienholder but title copy/registration showing lienholder is missing.
+- Owner ID copies are incomplete.
+- Active duty military ID is photocopied instead of verified with notation.
+- Louisiana-authorized liability insurance is missing when plate requested.
+- Mortgage/lien fee is missed.
+- Road use tax / reciprocity credit is unclear.
+- Florida DR-123 and Louisiana tax treatment are not reconciled.
+
+============================================================
+AI ROUTING KEYWORDS
+============================================================
+
+Louisiana customer
+title customer in Louisiana
+register customer in Louisiana
+Louisiana title requirements
+Louisiana registration requirements
+Louisiana out of state dealer sale
+Florida dealer Louisiana customer
+Louisiana DPSMV1799
+Louisiana Section F Out of State Declaration
+Louisiana road use tax
+Louisiana title held by lienholder
+Louisiana liability insurance
+Louisiana mortgage fee
+Louisiana tax credit
+what do I need to title in Louisiana
+
+============================================================
+COMMON CLERK ANSWER
+============================================================
+
+For a Louisiana customer buying from a Florida dealership, review Louisiana OMV Policy 48.00. Louisiana requires DPSMV1799 with Section F Out of State Declaration, original out-of-state title if no lien, or title copy/registration showing lienholder if the title is held by a lienholder. Each owner needs current ID, and if a plate is requested, proof of current liability insurance from a company authorized to do business in Louisiana is required. Louisiana title, handling, plate, mortgage/lien, and road use tax rules may apply. Prepare the dealer title package, buyer’s order, odometer disclosure/statement if applicable, lienholder information if financed, and review Florida DR-123 plus Louisiana road use tax/reciprocity before submission. Escalate if DPSMV1799, lienholder title, insurance, military ID, or tax credit handling is unclear.
+
+============================================================
+RELATED FILES
+============================================================
+
+- out_of_state_customer_title_master_logic_map.txt
+- fl_motor_vehicle_sales_tax_rates_by_state_tip_25a01_01_notes.txt
+- validation_logic_map.txt
+- rejection_prevention_logic_map.txt
+- fl_title_ownership_and_transfer_law_notes.txt
+- fl_lien_and_lien_satisfaction_law_notes.txt
+
+============================================================
+END OF FILE
+============================================================

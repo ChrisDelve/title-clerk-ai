@@ -1,0 +1,213 @@
+DOCUMENT: NEW_MEXICO_CUSTOMER_TITLING_REQUIREMENTS_NOTES
+TITLE: New Mexico Customer Titling / Registration Requirements for Out-of-State Dealer Sale
+STATE: New Mexico
+SOURCE: https://www.mvd.newmexico.gov/vehicles/vehicle-registration/vehicle-titles/
+DOCUMENT_TYPE: Out-of-State Customer Titling / Registration Requirements
+CATEGORY: FLORIDA DEALER SALE TO NEW MEXICO CUSTOMER / NEW MEXICO TITLE / NEW MEXICO REGISTRATION / VIN INSPECTION / LIENHOLDER / MVET / PLATE TO OWNER
+
+============================================================
+PURPOSE
+============================================================
+
+This file helps a Florida dealership understand what may be needed when a customer buys a vehicle from the dealership and wants the vehicle titled and/or registered in New Mexico.
+
+Use this file for questions like:
+
+- What do I need to title this customer in New Mexico?
+- New Mexico customer bought from our Florida dealership.
+- Does New Mexico require VIN inspection?
+- What if the title is held by lienholder?
+- Does New Mexico give tax credit for tax paid to another state?
+- What is New Mexico Motor Vehicle Excise Tax?
+
+============================================================
+WHEN TO USE THIS FILE
+============================================================
+
+Use this file when:
+
+IF customer_state = "New Mexico"
+AND customer_is_buying_vehicle_from_dealer = TRUE
+AND vehicle_will_be_titled_or_registered_in_customer_state = TRUE
+THEN use_new_mexico_customer_titling_requirements_notes = TRUE
+
+Do NOT use this file as the primary source for:
+- Customer bringing New Mexico title into Florida for Florida title
+- Florida resident titling/registering in Florida
+- Florida tag transfer workflow
+
+For Florida titling/registration, use Florida title and registration notes.
+
+============================================================
+NEW MEXICO SOURCE SUMMARY
+============================================================
+
+New Mexico MVD says:
+
+- Vehicles requiring a New Mexico Certificate of Title generally include passenger vehicles, trucks, motorcycles, recreational vehicles, motor homes, buses, manufactured/mobile homes, trailers, and off-highway vehicles.
+- If customer only has a Certificate of Title, vehicle cannot be driven until registered, plated, and insured.
+- If vehicle is from out of state, customer must take vehicle to MVD for VIN inspection or obtain VIN inspection from a Certified VIN Inspector.
+- If vehicle is currently titled in another state and there is a lien, MVD must order the vehicle title from lienholder.
+- Customer must provide MVD with lienholder name and address.
+- New Mexico titling system checks NCIC for stolen/wanted vehicle records.
+- NCIC must come back no record or clear before MVD proceeds with titling.
+- New Mexico is a plate-to-owner state.
+- Motor Vehicle Excise Tax applies to every motor vehicle that must be registered in New Mexico.
+- MVET is 4% of price paid less trade-in credit.
+- If purchased through dealer, dealer may handle application and collect tax.
+- If vehicle acquired out of state and similar tax was paid to another state, amount paid may be credited against New Mexico MVET due.
+- Penalty of 50% of MVET may apply if New Mexico resident fails to apply for title within 90 days of accepting transfer in New Mexico or within 90 days of bringing vehicle into New Mexico after accepting transfer outside the state.
+
+============================================================
+NEW MEXICO REQUIRED DOCUMENT LOGIC
+============================================================
+
+IF New_Mexico_customer_title_or_registration_requested = TRUE
+THEN New_Mexico_certificate_of_title_review_required = TRUE
+
+IF vehicle_from_out_of_state = TRUE
+THEN New_Mexico_VIN_inspection_required = TRUE
+
+IF New_Mexico_VIN_inspection_required = TRUE
+THEN inspection_by_MVD_or_Certified_VIN_Inspector_required = TRUE
+
+IF vehicle_titled_in_another_state_and_lien_exists = TRUE
+THEN New_Mexico_MVD_must_order_title_from_lienholder = TRUE
+
+IF vehicle_titled_in_another_state_and_lien_exists = TRUE
+THEN lienholder_name_and_address_required = TRUE
+
+IF New_Mexico_title_requested = TRUE
+THEN NCIC_clear_or_no_record_required_before_titling = TRUE
+
+IF New_Mexico_registration_requested = TRUE
+THEN vehicle_must_be_registered_plated_and_insured_before_operation = TRUE
+
+IF New_Mexico_vehicle_sold_traded_gifted = TRUE
+THEN New_Mexico_plate_to_owner_review_required = TRUE
+
+============================================================
+NEW MEXICO TAX / MVET LOGIC
+============================================================
+
+IF New_Mexico_customer_title_or_registration_requested = TRUE
+THEN New_Mexico_MVET_review_required = TRUE
+
+IF New_Mexico_MVET_applies = TRUE
+THEN MVET_rate = 4_percent_of_price_paid_less_trade_in_credit = TRUE
+
+IF vehicle_acquired_out_of_state_and_similar_tax_paid_to_another_state = TRUE
+THEN New_Mexico_tax_credit_against_MVET_may_apply = TRUE
+
+IF New_Mexico_resident_accepts_transfer_and_fails_to_apply_for_title_within_90_days = TRUE
+THEN MVET_50_percent_penalty_review_required = TRUE
+
+IF New_Mexico_resident_accepts_transfer_outside_state_and_fails_to_apply_within_90_days_of_bringing_vehicle_into_New_Mexico = TRUE
+THEN MVET_50_percent_penalty_review_required = TRUE
+
+============================================================
+FLORIDA DEALER WORKFLOW FOR NEW MEXICO CUSTOMER
+============================================================
+
+When a Florida dealership sells a vehicle to a New Mexico customer and the customer wants New Mexico title/registration:
+
+1. Prepare dealer ownership package:
+   - MCO/MSO or properly assigned title
+   - Dealer reassignment if applicable
+   - Buyer’s order / bill of sale
+   - Odometer disclosure/statement if applicable
+   - Lienholder information if financed
+   - Trade-in documentation if tax credit/trade credit applies
+
+2. New Mexico-specific items to review:
+   - VIN inspection by MVD or Certified VIN Inspector
+   - Registration, plates, and insurance before vehicle operation
+   - NCIC clear/no record requirement
+   - Lienholder name/address if title is held by lienholder
+   - MVET calculation and potential credit for similar tax paid to another state
+   - 90-day timing/penalty issue
+
+3. If financed:
+   - Confirm lienholder name and address.
+   - Confirm New Mexico MVD title ordering process from lienholder.
+   - Do not assume title can complete without lienholder/title coordination.
+
+4. If registering:
+   - Confirm insurance required for operation/registration.
+   - Do not treat Florida insurance as automatically satisfying New Mexico registration/insurance requirements unless agency confirms.
+
+5. If tax question:
+   - Review Florida DR-123/nonresident sale handling.
+   - Review New Mexico MVET and possible credit for similar tax paid to another state.
+   - Escalate to controller, title agency, lender, or New Mexico MVD if unclear.
+
+============================================================
+TAX / RECIPROCITY NOTES
+============================================================
+
+For Florida dealer sale to New Mexico resident:
+
+- Review Florida DOR out-of-state resident sales tax / DR-123 workflow.
+- New Mexico MVET is generally 4% of price paid less trade-in credit.
+- New Mexico may credit similar tax paid to another state against MVET due.
+- Verify tax handling with controller, agency, lender, or New Mexico MVD before finalizing.
+
+Use related file:
+fl_motor_vehicle_sales_tax_rates_by_state_tip_25a01_01_notes.txt
+
+============================================================
+REJECTION / DELAY RISKS
+============================================================
+
+High risk if:
+
+- New Mexico VIN inspection is missing.
+- Inspection not completed by MVD or Certified VIN Inspector.
+- Lienholder name/address missing when lien exists.
+- Title held by lienholder and title ordering path is unclear.
+- NCIC check issue prevents titling.
+- Customer tries to operate with title only and no registration/plates/insurance.
+- MVET/tax credit handling unclear.
+- 90-day timing penalty not reviewed.
+- Florida DR-123 and New Mexico MVET handling are not reconciled.
+
+============================================================
+AI ROUTING KEYWORDS
+============================================================
+
+New Mexico customer
+title customer in New Mexico
+register customer in New Mexico
+New Mexico title requirements
+New Mexico registration requirements
+New Mexico out of state dealer sale
+Florida dealer New Mexico customer
+New Mexico VIN inspection
+Certified VIN Inspector
+New Mexico lienholder title
+New Mexico MVET
+New Mexico Motor Vehicle Excise Tax
+New Mexico NCIC
+New Mexico plate to owner
+what do I need to title in New Mexico
+
+============================================================
+COMMON CLERK ANSWER
+============================================================
+
+For a New Mexico customer buying from a Florida dealership, New Mexico requires VIN inspection for out-of-state vehicles by MVD or a Certified VIN Inspector. If the vehicle is titled in another state and there is a lien, New Mexico MVD must order the title from the lienholder and the customer must provide lienholder name and address. The vehicle cannot be operated with title only; it must be registered, plated, and insured. New Mexico also performs NCIC checks before titling. Prepare the dealer ownership package, buyer’s order, odometer disclosure/statement if applicable, lienholder information if financed, and review Florida DR-123 plus New Mexico MVET/tax-credit handling. Escalate if VIN inspection, lienholder title ordering, insurance/registration, NCIC, or tax handling is unclear.
+
+============================================================
+RELATED FILES
+============================================================
+
+- out_of_state_customer_title_master_logic_map.txt
+- fl_motor_vehicle_sales_tax_rates_by_state_tip_25a01_01_notes.txt
+- validation_logic_map.txt
+- rejection_prevention_logic_map.txt
+- fl_title_ownership_and_transfer_law_notes.txt
+- fl_lien_and_lien_satisfaction_law_notes.txt
+
+============================================================
+END OF FILE
+============================================================

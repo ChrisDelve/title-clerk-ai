@@ -1,0 +1,232 @@
+DOCUMENT: NORTH_CAROLINA_CUSTOMER_TITLING_REQUIREMENTS_NOTES
+TITLE: North Carolina Customer Titling / Registration Requirements for Out-of-State Dealer Sale
+STATE: North Carolina
+SOURCE: https://www.ncdot.gov/dmv/title-registration/vehicle/Pages/requirements.aspx
+DOCUMENT_TYPE: Out-of-State Customer Titling / Registration Requirements
+CATEGORY: FLORIDA DEALER SALE TO NORTH CAROLINA CUSTOMER / NORTH CAROLINA TITLE / NORTH CAROLINA REGISTRATION / NC LICENSE / TEMPORARY DRIVING CERTIFICATE / LIABILITY INSURANCE / NONRESIDENT / MVR-614
+
+============================================================
+PURPOSE
+============================================================
+
+This file helps a Florida dealership understand what may be needed when a customer buys a vehicle from the dealership and wants the vehicle titled and/or registered in North Carolina.
+
+Use this file for questions like:
+
+- What do I need to title this customer in North Carolina?
+- North Carolina customer bought from our Florida dealership.
+- Does North Carolina require NC license?
+- What if customer is a new NC resident?
+- What if customer is not a North Carolina resident?
+- Does North Carolina require NC insurance?
+- What is MVR-614?
+
+============================================================
+WHEN TO USE THIS FILE
+============================================================
+
+Use this file when:
+
+IF customer_state = "North Carolina"
+AND customer_is_buying_vehicle_from_dealer = TRUE
+AND vehicle_will_be_titled_or_registered_in_customer_state = TRUE
+THEN use_north_carolina_customer_titling_requirements_notes = TRUE
+
+Do NOT use this file as the primary source for:
+- Customer bringing North Carolina title into Florida for Florida title
+- Florida resident titling/registering in Florida
+- Florida tag transfer workflow
+
+For Florida titling/registration, use Florida title and registration notes.
+
+============================================================
+NORTH CAROLINA SOURCE SUMMARY
+============================================================
+
+North Carolina NCDMV title requirements page says:
+
+General requirements:
+- The individual titling the vehicle must have a valid North Carolina driver license or ID.
+- Some exceptions for non-North Carolina residents apply.
+- For new North Carolina residents, a valid out-of-state driver license and North Carolina Temporary Driving Certificate are required.
+- For vehicles owned by more than one individual, all signatures on required documents must be notarized and accompanied by a black-and-white copy of alternate owner’s valid driver license or ID.
+- Alternatively, Power of Attorney can sign for co-owners; if paperwork is signed by POA, black-and-white copy of owner’s valid driver license is required.
+- If mailing paperwork, individual titling the vehicle must provide black-and-white copy of valid North Carolina driver license.
+- Property taxes for vehicle being registered must be paid.
+
+Special requirements:
+- Additional requirements may apply for other vehicle types such as antiques, replicas, mobile homes, mopeds, motorcycles, trailers.
+- Special cases include leased, salvaged, abandoned vehicles, owner without proof of ownership, or vehicle in a trust.
+
+New and non-North Carolina residents:
+- New residents or nonresidents who recently acquired a vehicle must get the vehicle titled in North Carolina before registering it.
+- In addition to driver license, non-North Carolina residents must provide one of:
+  - Military ID for active-duty military stationed in North Carolina
+  - Student ID showing enrollment in North Carolina college or university
+  - Form MVR-614 documenting vehicle is garaged in North Carolina for at least six months each year
+  - Court-ordered sale of vehicle
+  - Registration for a motor home
+
+Proof of liability insurance:
+- North Carolina law requires continuous liability insurance provided by a North Carolina-licensed provider on all vehicles titled and registered in North Carolina.
+- Insurance is required prior to titling a vehicle.
+
+============================================================
+NORTH CAROLINA REQUIRED DOCUMENT LOGIC
+============================================================
+
+IF North_Carolina_customer_title_or_registration_requested = TRUE
+THEN North_Carolina_driver_license_or_ID_required = TRUE
+
+IF new_North_Carolina_resident = TRUE
+THEN valid_out_of_state_driver_license_and_North_Carolina_Temporary_Driving_Certificate_required = TRUE
+
+IF vehicle_owned_by_more_than_one_individual = TRUE
+THEN all_signatures_on_required_documents_must_be_notarized = TRUE
+
+IF vehicle_owned_by_more_than_one_individual = TRUE
+THEN black_and_white_copy_of_alternate_owner_valid_driver_license_or_ID_required = TRUE
+
+IF POA_signs_for_co_owner = TRUE
+THEN black_and_white_copy_of_owner_valid_driver_license_required = TRUE
+
+IF paperwork_mailed = TRUE
+THEN black_and_white_copy_of_valid_North_Carolina_driver_license_required = TRUE
+
+IF North_Carolina_registration_requested = TRUE
+THEN vehicle_property_taxes_must_be_paid = TRUE
+
+IF new_or_non_North_Carolina_resident_recently_acquired_vehicle = TRUE
+THEN vehicle_must_be_titled_in_North_Carolina_before_registration = TRUE
+
+IF non_North_Carolina_resident_title_or_registration_requested = TRUE
+THEN qualifying_nonresident_proof_required = TRUE
+
+IF qualifying_nonresident_proof_required = TRUE
+THEN acceptable_proof_may_include_military_ID_student_ID_MVR_614_court_ordered_sale_or_motor_home_registration = TRUE
+
+IF North_Carolina_title_or_registration_requested = TRUE
+THEN North_Carolina_licensed_provider_liability_insurance_required_prior_to_titling = TRUE
+
+============================================================
+NORTH CAROLINA NONRESIDENT / NEW RESIDENT LOGIC
+============================================================
+
+IF customer_is_new_North_Carolina_resident = TRUE
+THEN valid_out_of_state_DL_and_NC_Temporary_Driving_Certificate_required = TRUE
+
+IF customer_is_non_North_Carolina_resident = TRUE
+AND customer_does_not_have_qualifying_exception = TRUE
+THEN North_Carolina_title_registration_hold_required = TRUE
+
+IF MVR_614_used = TRUE
+THEN vehicle_garaged_in_North_Carolina_at_least_six_months_each_year_must_be_documented = TRUE
+
+============================================================
+FLORIDA DEALER WORKFLOW FOR NORTH CAROLINA CUSTOMER
+============================================================
+
+When a Florida dealership sells a vehicle to a North Carolina customer and the customer wants North Carolina title/registration:
+
+1. Prepare dealer ownership package:
+   - MCO/MSO or properly assigned title
+   - Dealer reassignment if applicable
+   - Buyer’s order / bill of sale
+   - Odometer disclosure/statement if applicable
+   - Lienholder information if financed
+
+2. North Carolina-specific items to review:
+   - Valid North Carolina driver license or ID, unless new/nonresident exception applies
+   - For new resident: valid out-of-state driver license and North Carolina Temporary Driving Certificate
+   - North Carolina-licensed provider liability insurance before titling
+   - Property taxes for registration
+   - Notarized signatures for multiple owners
+   - Black-and-white ID copies when required
+   - MVR-614 or other qualifying nonresident proof if nonresident
+   - Title-before-registration rule
+
+3. If multiple owners:
+   - Ensure required signatures are notarized.
+   - Include black-and-white copy of alternate owner’s valid DL/ID.
+   - If POA signs, include black-and-white copy of owner’s valid DL.
+
+4. If customer is nonresident:
+   - Confirm qualifying exception: military, student, MVR-614, court-ordered sale, or motor home registration.
+   - Escalate if no qualifying proof.
+
+5. If registering:
+   - Verify NC-licensed provider liability insurance.
+   - Verify property tax requirement.
+
+============================================================
+TAX / RECIPROCITY NOTES
+============================================================
+
+For Florida dealer sale to North Carolina resident:
+
+- Review Florida DOR out-of-state resident sales tax / DR-123 workflow.
+- Review North Carolina title/registration taxes and property tax requirements.
+- Verify tax handling with controller, agency, lender, or NCDMV before finalizing.
+
+Use related file:
+fl_motor_vehicle_sales_tax_rates_by_state_tip_25a01_01_notes.txt
+
+============================================================
+REJECTION / DELAY RISKS
+============================================================
+
+High risk if:
+
+- North Carolina driver license/ID missing.
+- New resident lacks valid out-of-state DL and NC Temporary Driving Certificate.
+- Nonresident lacks qualifying proof.
+- North Carolina liability insurance from NC-licensed provider missing.
+- Multiple owner signatures are not notarized.
+- Required black-and-white ID copies missing.
+- POA used without owner ID copy.
+- Property tax requirement not reviewed.
+- Vehicle not titled before registration.
+- Special vehicle/special case not reviewed.
+- Tax/DR-123 handling unclear.
+
+============================================================
+AI ROUTING KEYWORDS
+============================================================
+
+North Carolina customer
+title customer in North Carolina
+register customer in North Carolina
+North Carolina title requirements
+North Carolina registration requirements
+North Carolina out of state dealer sale
+Florida dealer North Carolina customer
+NC title requirements
+NC registration requirements
+North Carolina Temporary Driving Certificate
+North Carolina liability insurance
+NC licensed insurance provider
+North Carolina MVR-614
+North Carolina nonresident vehicle
+North Carolina notarized signatures
+what do I need to title in North Carolina
+
+============================================================
+COMMON CLERK ANSWER
+============================================================
+
+For a North Carolina customer buying from a Florida dealership, North Carolina generally requires the person titling the vehicle to have a valid North Carolina driver license or ID. New North Carolina residents need a valid out-of-state driver license and a North Carolina Temporary Driving Certificate. Nonresidents must qualify under a listed exception such as active-duty military ID, student ID, MVR-614 showing the vehicle is garaged in North Carolina at least six months each year, court-ordered sale, or motor home registration. North Carolina requires liability insurance from a North Carolina-licensed provider before titling. Multiple-owner documents require notarized signatures and black-and-white ID copies. Prepare the dealer ownership package, buyer’s order, odometer disclosure/statement if applicable, lienholder information, and review Florida DR-123/tax handling. Escalate if NC ID, insurance, nonresident proof, notarization, property tax, or tax handling is unclear.
+
+============================================================
+RELATED FILES
+============================================================
+
+- out_of_state_customer_title_master_logic_map.txt
+- fl_motor_vehicle_sales_tax_rates_by_state_tip_25a01_01_notes.txt
+- validation_logic_map.txt
+- rejection_prevention_logic_map.txt
+- fl_title_ownership_and_transfer_law_notes.txt
+- fl_lien_and_lien_satisfaction_law_notes.txt
+
+============================================================
+END OF FILE
+============================================================

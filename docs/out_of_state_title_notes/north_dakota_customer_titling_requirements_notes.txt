@@ -1,0 +1,226 @@
+DOCUMENT: NORTH_DAKOTA_CUSTOMER_TITLING_REQUIREMENTS_NOTES
+TITLE: North Dakota Customer Titling / Registration Requirements for Out-of-State Dealer Sale
+STATE: North Dakota
+SOURCE: https://www.dot.nd.gov/motor-vehicle/motor-vehicle-dealer-resources-including-out-state-dealers
+DOCUMENT_TYPE: Out-of-State Customer Titling / Registration Requirements
+CATEGORY: FLORIDA DEALER SALE TO NORTH DAKOTA CUSTOMER / NORTH DAKOTA TITLE / NORTH DAKOTA REGISTRATION / OUT-OF-STATE DEALER / SFN 2872 / SFN 18609 / ODOMETER / DEALER BILL OF SALE
+
+============================================================
+PURPOSE
+============================================================
+
+This file helps a Florida dealership understand what may be needed when a customer buys a vehicle from the dealership and wants the vehicle titled and/or registered in North Dakota.
+
+Use this file for questions like:
+
+- What do I need to title this customer in North Dakota?
+- North Dakota customer bought from our Florida dealership.
+- What does North Dakota require from an out-of-state dealer?
+- Does North Dakota need a damage disclosure?
+- What is North Dakota SFN 2872?
+- What is North Dakota SFN 18609?
+- Does North Dakota require odometer disclosure?
+
+============================================================
+WHEN TO USE THIS FILE
+============================================================
+
+Use this file when:
+
+IF customer_state = "North Dakota"
+AND customer_is_buying_vehicle_from_dealer = TRUE
+AND vehicle_will_be_titled_or_registered_in_customer_state = TRUE
+THEN use_north_dakota_customer_titling_requirements_notes = TRUE
+
+Do NOT use this file as the primary source for:
+- Customer bringing North Dakota title into Florida for Florida title
+- Florida resident titling/registering in Florida
+- Florida tag transfer workflow
+
+For Florida titling/registration, use Florida title and registration notes.
+
+============================================================
+NORTH DAKOTA SOURCE SUMMARY
+============================================================
+
+North Dakota DOT out-of-state dealer resources state:
+
+Requirements to apply for North Dakota title with an out-of-state title or MCO:
+
+- Application for certificate of title must be made by owner using legal name evidenced by valid state-issued driver license, nondriver ID card, or other document confirming true identity.
+- Nonresidents and military personnel must provide paper copy of current driver license card or nondriver ID card with certificate of title application.
+- A business, trust, partnership, or corporation must provide paper copy document confirming legal name.
+- Original out-of-state title completed by seller and buyer is required.
+- If new vehicle, MCO completed by seller and buyer is required.
+- If purchased from dealership, copy of Dealer Bill of Sale is required.
+- Dealer Bill of Sale must include:
+  - Seller information
+  - Buyer information
+  - Purchase price
+  - Date of sale
+  - Vehicle information including make, model, and VIN
+- If vehicle is 2011 or newer, odometer information must be completed within reassignment on title or Odometer Disclosure for Retail Sale on MCO, with seller and buyer signatures.
+- If vehicle is less than 9 years old, SFN 18609 Damage Disclosure Statement must be completed by seller.
+- SFN 2872 Application for Certificate of Title and Registration of a Vehicle must be completed in full and signed by buyer.
+- Tax is due on 5% of purchase price.
+- Certificate of title fee is $5.00.
+- Abandoned Vehicle Disposal fee is $1.50.
+- Registration fees are based on first year registered and vehicle weight.
+
+============================================================
+NORTH DAKOTA REQUIRED DOCUMENT LOGIC
+============================================================
+
+IF North_Dakota_customer_title_or_registration_requested = TRUE
+THEN owner_legal_name_identity_document_required = TRUE
+
+IF customer_is_nonresident_or_military = TRUE
+THEN paper_copy_current_driver_license_or_nondriver_ID_required = TRUE
+
+IF owner_is_business_trust_partnership_or_corporation = TRUE
+THEN paper_copy_document_confirming_legal_name_required = TRUE
+
+IF used_vehicle_with_out_of_state_title = TRUE
+THEN original_out_of_state_title_completed_by_seller_and_buyer_required = TRUE
+
+IF new_vehicle_with_MCO = TRUE
+THEN MCO_completed_by_seller_and_buyer_required = TRUE
+
+IF purchased_from_dealership = TRUE
+THEN North_Dakota_dealer_bill_of_sale_required = TRUE
+
+IF North_Dakota_dealer_bill_of_sale_required = TRUE
+THEN bill_of_sale_must_include_seller_buyer_purchase_price_sale_date_make_model_and_VIN = TRUE
+
+IF vehicle_model_year >= 2011
+THEN odometer_information_completed_with_seller_and_buyer_signatures_required = TRUE
+
+IF vehicle_less_than_9_years_old = TRUE
+THEN SFN_18609_Damage_Disclosure_Statement_required = TRUE
+
+IF North_Dakota_customer_title_or_registration_requested = TRUE
+THEN SFN_2872_application_required = TRUE
+
+IF SFN_2872_required = TRUE
+THEN SFN_2872_completed_in_full_and_signed_by_buyer_required = TRUE
+
+============================================================
+NORTH DAKOTA FEE / TAX LOGIC
+============================================================
+
+IF North_Dakota_customer_title_or_registration_requested = TRUE
+THEN North_Dakota_tax_due_on_5_percent_purchase_price_review_required = TRUE
+
+IF North_Dakota_customer_title_requested = TRUE
+THEN North_Dakota_title_fee = 5.00
+
+IF North_Dakota_customer_title_requested = TRUE
+THEN abandoned_vehicle_disposal_fee = 1.50
+
+IF North_Dakota_registration_requested = TRUE
+THEN registration_fees_based_on_first_year_registered_and_weight = TRUE
+
+============================================================
+FLORIDA DEALER WORKFLOW FOR NORTH DAKOTA CUSTOMER
+============================================================
+
+When a Florida dealership sells a vehicle to a North Dakota customer and the customer wants North Dakota title/registration:
+
+1. Prepare dealer ownership package:
+   - Original out-of-state title completed by seller and buyer, or MCO completed by seller and buyer
+   - Dealer reassignment if applicable
+   - Dealer Bill of Sale with seller, buyer, purchase price, date of sale, make, model, and VIN
+   - Odometer disclosure/statement if 2011 or newer
+   - Lienholder information if financed
+
+2. North Dakota-specific items to review:
+   - Owner legal-name identity document
+   - Paper copy of current DL/ID for nonresident or military
+   - Business/trust/entity legal-name document if applicable
+   - SFN 2872 completed and signed by buyer
+   - SFN 18609 damage disclosure if vehicle is less than 9 years old
+   - 5% tax on purchase price
+   - $5 title fee
+   - $1.50 abandoned vehicle disposal fee
+   - Registration fees based on weight/year
+
+3. If financed:
+   - Confirm lienholder/title instructions.
+   - Confirm lienholder information is included where required.
+   - Verify whether title will be sent to lienholder.
+
+4. If vehicle is 2011 or newer:
+   - Confirm odometer information is completed in reassignment/title or MCO odometer retail sale section with seller and buyer signatures.
+
+5. If vehicle is less than 9 years old:
+   - Confirm SFN 18609 damage disclosure is completed by seller.
+
+============================================================
+TAX / RECIPROCITY NOTES
+============================================================
+
+For Florida dealer sale to North Dakota resident:
+
+- Review Florida DOR out-of-state resident sales tax / DR-123 workflow.
+- North Dakota source says tax is due on 5% of purchase price.
+- Verify tax handling with controller, agency, lender, or North Dakota DOT before finalizing.
+
+Use related file:
+fl_motor_vehicle_sales_tax_rates_by_state_tip_25a01_01_notes.txt
+
+============================================================
+REJECTION / DELAY RISKS
+============================================================
+
+High risk if:
+
+- Original out-of-state title or MCO is not completed by seller and buyer.
+- Dealer Bill of Sale is missing or incomplete.
+- SFN 2872 is missing or unsigned.
+- Odometer information missing for 2011-or-newer vehicle.
+- SFN 18609 damage disclosure missing for vehicle less than 9 years old.
+- Nonresident/military paper ID copy missing.
+- Business/trust/entity legal-name proof missing.
+- Tax/DR-123 handling unclear.
+- Registration weight/year fee calculation unclear.
+- Lienholder/title instructions unclear.
+
+============================================================
+AI ROUTING KEYWORDS
+============================================================
+
+North Dakota customer
+title customer in North Dakota
+register customer in North Dakota
+North Dakota title requirements
+North Dakota registration requirements
+North Dakota out of state dealer sale
+Florida dealer North Dakota customer
+North Dakota SFN 2872
+North Dakota SFN 18609
+North Dakota damage disclosure
+North Dakota dealer bill of sale
+North Dakota 5 percent tax
+North Dakota odometer 2011
+what do I need to title in North Dakota
+
+============================================================
+COMMON CLERK ANSWER
+============================================================
+
+For a North Dakota customer buying from a Florida dealership, North Dakota requires the original out-of-state title or MCO completed by seller and buyer, SFN 2872 completed and signed by the buyer, and a dealer bill of sale if purchased from a dealership. The dealer bill of sale must include seller, buyer, purchase price, sale date, and vehicle information including make, model, and VIN. If the vehicle is 2011 or newer, odometer information must be completed with seller and buyer signatures. If the vehicle is less than 9 years old, SFN 18609 Damage Disclosure Statement is required. North Dakota tax is due on 5% of purchase price, plus title and other applicable fees. Prepare the dealer package and review Florida DR-123/tax handling. Escalate if SFN forms, odometer, damage disclosure, identity copy, lienholder, or tax handling is unclear.
+
+============================================================
+RELATED FILES
+============================================================
+
+- out_of_state_customer_title_master_logic_map.txt
+- fl_motor_vehicle_sales_tax_rates_by_state_tip_25a01_01_notes.txt
+- validation_logic_map.txt
+- rejection_prevention_logic_map.txt
+- fl_title_ownership_and_transfer_law_notes.txt
+- fl_lien_and_lien_satisfaction_law_notes.txt
+
+============================================================
+END OF FILE
+============================================================

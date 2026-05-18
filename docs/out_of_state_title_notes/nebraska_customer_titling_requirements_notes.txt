@@ -1,0 +1,226 @@
+DOCUMENT: NEBRASKA_CUSTOMER_TITLING_REQUIREMENTS_NOTES
+TITLE: Nebraska Customer Titling / Registration Requirements for Out-of-State Dealer Sale
+STATE: Nebraska
+SOURCE: https://dmv.nebraska.gov/dvr/title/out-state-titles
+DOCUMENT_TYPE: Out-of-State Customer Titling / Registration Requirements
+CATEGORY: FLORIDA DEALER SALE TO NEBRASKA CUSTOMER / NEBRASKA TITLE / NEBRASKA REGISTRATION / COUNTY TREASURER / SHERIFF INSPECTION / OUT-OF-STATE TITLE / FORM 6 / BILL OF SALE
+
+============================================================
+PURPOSE
+============================================================
+
+This file helps a Florida dealership understand what may be needed when a customer buys a vehicle from the dealership and wants the vehicle titled and/or registered in Nebraska.
+
+Use this file for questions like:
+
+- What do I need to title this customer in Nebraska?
+- Nebraska customer bought from our Florida dealership.
+- Does Nebraska require sheriff’s inspection?
+- Does Nebraska require original title/MSO?
+- What if prior state was not title-issuing?
+- What is Nebraska Form 6?
+- What does Nebraska require for foreign vehicles?
+
+============================================================
+WHEN TO USE THIS FILE
+============================================================
+
+Use this file when:
+
+IF customer_state = "Nebraska"
+AND customer_is_buying_vehicle_from_dealer = TRUE
+AND vehicle_will_be_titled_or_registered_in_customer_state = TRUE
+THEN use_nebraska_customer_titling_requirements_notes = TRUE
+
+Do NOT use this file as the primary source for:
+- Customer bringing Nebraska title into Florida for Florida title
+- Florida resident titling/registering in Florida
+- Florida tag transfer workflow
+
+For Florida titling/registration, use Florida title and registration notes.
+
+============================================================
+NEBRASKA SOURCE SUMMARY
+============================================================
+
+Nebraska DMV says:
+
+Motor vehicles, motorboats, ATVs, minibikes, and UTVs coming into Nebraska from another state are required to obtain a Nebraska Certificate of Title unless they fall into exempt categories.
+
+To obtain Nebraska title, the following documentation, properly assigned, must be surrendered to a County Treasurer office:
+
+Proof of ownership, such as:
+- Manufacturer's Statement of Origin (MSO) or Importer's Certificate for new vehicles
+- Certificate of Title from vehicle's previous location for used vehicles
+- Vehicle's last registration and Bill of Sale for used vehicles if previous location was not a title-issuing state
+- U.S. Military Registration Document for vehicles registered by U.S. Military
+- U.S. Department of State Certificate of Title for vehicles sold by U.S. Government
+- For vehicles registered in foreign country: current registration certificate and/or bill of sale, foreign country ownership documents, and import papers
+- Court Order
+
+Additional Nebraska requirements:
+- Application for Certificate of Title
+- $10.00 title fee
+- Sheriff's Inspection
+- If transfer of ownership is occurring at same time, seller must provide buyer with Bill of Sale or Nebraska Department of Revenue Form 6, Nebraska Sales/Use Tax and Tire Fee Statement for Motor Vehicle and Trailer Sales.
+- County Treasurer retains all documentation presented for title issuance.
+- Once documentation is verified, Nebraska Certificate of Title will be issued.
+
+============================================================
+NEBRASKA REQUIRED DOCUMENT LOGIC
+============================================================
+
+IF Nebraska_customer_title_or_registration_requested = TRUE
+THEN Nebraska_Certificate_of_Title_required_unless_exempt = TRUE
+
+IF Nebraska_customer_title_requested = TRUE
+THEN properly_assigned_ownership_documents_surrendered_to_County_Treasurer_required = TRUE
+
+IF Nebraska_new_vehicle = TRUE
+THEN MSO_or_Importer_Certificate_required = TRUE
+
+IF Nebraska_used_vehicle_from_title_issuing_location = TRUE
+THEN certificate_of_title_from_previous_location_required = TRUE
+
+IF Nebraska_used_vehicle_from_non_title_issuing_location = TRUE
+THEN last_registration_and_bill_of_sale_required = TRUE
+
+IF vehicle_registered_by_US_Military = TRUE
+THEN US_Military_Registration_Document_required = TRUE
+
+IF vehicle_sold_by_US_Government = TRUE
+THEN US_Department_of_State_Certificate_of_Title_required = TRUE
+
+IF vehicle_registered_in_foreign_country = TRUE
+THEN foreign_registration_bill_of_sale_ownership_documents_and_import_papers_required = TRUE
+
+IF court_order_title_basis = TRUE
+THEN court_order_required = TRUE
+
+IF Nebraska_customer_title_requested = TRUE
+THEN Nebraska_Application_for_Certificate_of_Title_required = TRUE
+
+IF Nebraska_customer_title_requested = TRUE
+THEN Nebraska_title_fee_10_dollars_required = TRUE
+
+IF Nebraska_customer_title_requested = TRUE
+THEN Nebraska_sheriffs_inspection_required = TRUE
+
+IF transfer_of_ownership_occurring_same_time = TRUE
+THEN Nebraska_bill_of_sale_or_DOR_Form_6_required = TRUE
+
+============================================================
+NEBRASKA INSPECTION NOTES
+============================================================
+
+IF vehicle_coming_into_Nebraska_from_another_state = TRUE
+THEN Nebraska_sheriffs_inspection_required = TRUE
+
+IF Nebraska_sheriffs_inspection_missing = TRUE
+THEN Nebraska_title_delay_or_rejection_risk = TRUE
+
+============================================================
+FLORIDA DEALER WORKFLOW FOR NEBRASKA CUSTOMER
+============================================================
+
+When a Florida dealership sells a vehicle to a Nebraska customer and the customer wants Nebraska title/registration:
+
+1. Prepare dealer ownership package:
+   - MCO/MSO for new vehicle, or properly assigned title for used vehicle
+   - Dealer reassignment if applicable
+   - Buyer’s order / bill of sale
+   - Odometer disclosure/statement if applicable
+   - Lienholder information if financed
+
+2. Nebraska-specific items to review:
+   - Nebraska Application for Certificate of Title
+   - Properly assigned ownership documents surrendered to County Treasurer
+   - Sheriff’s Inspection
+   - $10 title fee
+   - Bill of Sale or Nebraska DOR Form 6 if transfer of ownership occurs at same time
+   - Last registration and bill of sale if prior location was not title-issuing
+   - Import papers if foreign country registration/ownership history exists
+
+3. If financed:
+   - Confirm lienholder/title handling.
+   - Confirm County Treasurer title/lien recording requirements.
+
+4. If prior location was non-title-issuing:
+   - Nebraska requires last registration and Bill of Sale.
+   - Escalate if customer lacks either.
+
+5. If foreign/imported vehicle:
+   - Review foreign registration, bill of sale, ownership documents, and import papers.
+   - Escalate before submission if import chain is incomplete.
+
+============================================================
+TAX / RECIPROCITY NOTES
+============================================================
+
+For Florida dealer sale to Nebraska resident:
+
+- Review Florida DOR out-of-state resident sales tax / DR-123 workflow.
+- Review Nebraska sales/use tax and tire fee requirements.
+- Nebraska source references Nebraska Department of Revenue Form 6 for Sales/Use Tax and Tire Fee Statement.
+- Verify tax handling with controller, agency, lender, Nebraska County Treasurer, or Nebraska Department of Revenue before finalizing.
+
+Use related file:
+fl_motor_vehicle_sales_tax_rates_by_state_tip_25a01_01_notes.txt
+
+============================================================
+REJECTION / DELAY RISKS
+============================================================
+
+High risk if:
+
+- Proper ownership document is missing.
+- Ownership document is not properly assigned.
+- Nebraska Application for Certificate of Title missing.
+- Sheriff’s Inspection missing.
+- Prior non-title state/location issue lacks last registration and bill of sale.
+- Bill of Sale or Nebraska DOR Form 6 missing when transfer of ownership occurs at same time.
+- Foreign ownership/import documents missing.
+- County Treasurer requirements not verified.
+- Tax/DR-123/Form 6 handling unclear.
+- Lienholder/title handling unclear.
+
+============================================================
+AI ROUTING KEYWORDS
+============================================================
+
+Nebraska customer
+title customer in Nebraska
+register customer in Nebraska
+Nebraska title requirements
+Nebraska registration requirements
+Nebraska out of state dealer sale
+Florida dealer Nebraska customer
+Nebraska sheriff inspection
+Nebraska County Treasurer
+Nebraska Application for Certificate of Title
+Nebraska Form 6
+Nebraska Sales Use Tax Tire Fee Statement
+Nebraska non-title issuing state
+Nebraska MSO
+what do I need to title in Nebraska
+
+============================================================
+COMMON CLERK ANSWER
+============================================================
+
+For a Nebraska customer buying from a Florida dealership, Nebraska generally requires vehicles coming from another state to obtain a Nebraska Certificate of Title unless exempt. The customer must surrender properly assigned ownership documents to the County Treasurer, such as MSO/importer certificate for new vehicles or prior title for used vehicles. Nebraska also requires an Application for Certificate of Title, $10 title fee, and Sheriff’s Inspection. If transfer of ownership is occurring at the same time, the seller must provide a Bill of Sale or Nebraska Department of Revenue Form 6. If the prior location was not title-issuing, Nebraska requires last registration and bill of sale. Prepare the dealer ownership package, odometer disclosure/statement if applicable, lienholder information if financed, and review Florida DR-123 plus Nebraska Form 6/tax handling. Escalate if sheriff inspection, ownership proof, non-title-state proof, import documents, lienholder, or tax handling is unclear.
+
+============================================================
+RELATED FILES
+============================================================
+
+- out_of_state_customer_title_master_logic_map.txt
+- fl_motor_vehicle_sales_tax_rates_by_state_tip_25a01_01_notes.txt
+- validation_logic_map.txt
+- rejection_prevention_logic_map.txt
+- fl_title_ownership_and_transfer_law_notes.txt
+- fl_lien_and_lien_satisfaction_law_notes.txt
+
+============================================================
+END OF FILE
+============================================================

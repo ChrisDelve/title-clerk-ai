@@ -1,0 +1,291 @@
+DOCUMENT: NEVADA_CUSTOMER_TITLING_REQUIREMENTS_NOTES
+TITLE: Nevada Customer Titling / Registration Requirements for Out-of-State Dealer Sale
+STATE: Nevada
+SOURCE: https://dmv.nv.gov/regoutofstate.htm
+DOCUMENT_TYPE: Out-of-State Customer Titling / Registration Requirements
+CATEGORY: FLORIDA DEALER SALE TO NEVADA CUSTOMER / NEVADA TITLE / NEVADA REGISTRATION / OUT-OF-STATE DEALER / VIN INSPECTION / VP 015 / NEVADA INSURANCE / EMISSIONS / ELT
+
+============================================================
+PURPOSE
+============================================================
+
+This file helps a Florida dealership understand what may be needed when a customer buys a vehicle from the dealership and wants the vehicle titled and/or registered in Nevada.
+
+Use this file for questions like:
+
+- What do I need to title this customer in Nevada?
+- Nevada customer bought from our Florida dealership.
+- Does Nevada require VIN inspection?
+- What is Nevada VP 015?
+- Does Nevada accept out-of-state insurance?
+- Does Nevada require emissions?
+- What documents does Nevada need from an out-of-state dealer?
+- Does Nevada require ELT number for liens?
+
+============================================================
+WHEN TO USE THIS FILE
+============================================================
+
+Use this file when:
+
+IF customer_state = "Nevada"
+AND customer_is_buying_vehicle_from_dealer = TRUE
+AND vehicle_will_be_titled_or_registered_in_customer_state = TRUE
+THEN use_nevada_customer_titling_requirements_notes = TRUE
+
+Do NOT use this file as the primary source for:
+- Customer bringing Nevada title into Florida for Florida title
+- Florida resident titling/registering in Florida
+- Florida tag transfer workflow
+
+For Florida titling/registration, use Florida title and registration notes.
+
+============================================================
+NEVADA SOURCE SUMMARY
+============================================================
+
+Nevada DMV has a dedicated out-of-state dealer registration page.
+
+Nevada source says:
+
+Out-of-state dealers must comply with their own state’s laws regarding sales to non-residents.
+
+Sales tax and title:
+- Out-of-state dealer may or may not collect sales tax.
+- Nevada DMV may call dealer to verify whether taxes were paid.
+- If amount remitted is more than due, Nevada DMV processes refund.
+- If amount remitted is less than due, entire transaction is returned to dealer.
+- Nevada dealers/tax questions may contact Nevada Title Section.
+- Nevada uses Electronic Lien and Title (ELT).
+- Any dealer or financial institution that creates a lien on a vehicle must supply a Nevada ELT number.
+
+Odometer:
+- Odometer disclosure required on all 2011 and newer vehicles.
+- Must be completed on secure form such as title, dealer reassignment, or secure power of attorney.
+- NHTSA odometer disclosure requirement applies until vehicles are 20 years old beginning with 2011 model year.
+
+Movement permits:
+- Customer must have movement permit and insurance to drive any vehicle on public streets.
+- If driving vehicle to Nevada, permit must allow travel across state lines.
+- If dealer permit expires before registration, customer can obtain movement permit at DMV with sales contract or proof of ownership.
+
+Registration:
+- Customer must register vehicle at DMV office before expiration date of movement permit, or 30 days maximum.
+- Customer must bring all dealer documents and Nevada documents.
+
+Dealer documents:
+- Invoice or Bill of Sale, and one of:
+  - Title
+  - Manufacturer’s Certificate of Origin
+  - Security Agreement
+  - Lease Agreement
+  - Purchase Order
+- Odometer Disclosure Statement, if needed
+
+Nevada documents:
+- Nevada Evidence of Insurance
+- Nevada Emissions Vehicle Inspection Report, if needed
+- Current Odometer Reading
+- Vehicle Inspection Certificate VP 015
+- Tax exemption number/forms, if any
+- Current registration if transferring plates
+- License plates from current vehicle if surrendering for fee credit
+- Plate forms for personalized/specialty plates
+
+Insurance:
+- Liability insurance must be from a Nevada-licensed carrier.
+- Insurance must be in exact name(s) that will be on registration/title.
+- Effective date must be equal to or before registration date.
+- Out-of-state insurance is not accepted.
+
+VIN inspection:
+- Required on all vehicles never registered or titled in Nevada.
+- DMV offices conduct inspections.
+- Sworn law enforcement officer may complete inspection and VP 015.
+
+Third party registration:
+- Third party may register vehicle with VP 222 signed by owner, or notarized original/certified POA VP 136 or general POA.
+
+============================================================
+NEVADA REQUIRED DOCUMENT LOGIC
+============================================================
+
+IF Nevada_customer_title_or_registration_requested = TRUE
+THEN dealer_invoice_or_bill_of_sale_required = TRUE
+
+IF Nevada_customer_title_or_registration_requested = TRUE
+THEN one_of_title_MCO_security_agreement_lease_agreement_purchase_order_required = TRUE
+
+IF vehicle_model_year >= 2011
+THEN Nevada_secure_odometer_disclosure_required = TRUE
+
+IF Nevada_registration_requested = TRUE
+THEN Nevada_Evidence_of_Insurance_required = TRUE
+
+IF Nevada_registration_requested = TRUE
+THEN Nevada_insurance_must_be_from_Nevada_licensed_carrier = TRUE
+
+IF Nevada_registration_requested = TRUE
+THEN out_of_state_insurance_not_accepted = TRUE
+
+IF Nevada_registration_requested = TRUE
+THEN insurance_name_must_match_registration_and_title_names = TRUE
+
+IF Nevada_registration_requested = TRUE
+THEN insurance_effective_date_must_be_equal_or_before_registration_date = TRUE
+
+IF Nevada_emissions_required_by_county_or_vehicle = TRUE
+THEN Nevada_Emissions_Vehicle_Inspection_Report_required = TRUE
+
+IF Nevada_registration_requested = TRUE
+THEN current_odometer_reading_required = TRUE
+
+IF vehicle_never_registered_or_titled_in_Nevada = TRUE
+THEN Nevada_VIN_inspection_required = TRUE
+
+IF Nevada_VIN_inspection_required = TRUE
+THEN Nevada_VP_015_required = TRUE
+
+IF lien_created_on_vehicle = TRUE
+THEN Nevada_ELT_number_required = TRUE
+
+IF third_party_registering_vehicle = TRUE
+THEN Nevada_VP_222_or_notarized_POA_required = TRUE
+
+============================================================
+NEVADA TAX / SALES TAX HANDLING LOGIC
+============================================================
+
+IF Florida_dealer_collected_estimated_Nevada_tax = TRUE
+THEN Nevada_DMV_may_verify_tax_payment_with_dealer = TRUE
+
+IF amount_remitted_to_Nevada_more_than_due = TRUE
+THEN Nevada_DMV_refund_may_process = TRUE
+
+IF amount_remitted_to_Nevada_less_than_due = TRUE
+THEN Nevada_transaction_returned_to_dealer = TRUE
+
+IF Nevada_tax_exemption_requested = TRUE
+THEN exemption_must_be_applied_at_time_of_registration = TRUE
+
+IF Nevada_tax_exemption_missed = TRUE
+THEN Nevada_will_not_refund_or_apply_exemption_retroactively_per_source = TRUE
+
+============================================================
+FLORIDA DEALER WORKFLOW FOR NEVADA CUSTOMER
+============================================================
+
+When a Florida dealership sells a vehicle to a Nevada customer and the customer wants Nevada title/registration:
+
+1. Prepare dealer package:
+   - Invoice or Bill of Sale
+   - Title, MCO, security agreement, lease agreement, or purchase order as applicable
+   - Odometer disclosure/statement if applicable
+   - Lienholder/security agreement if financed
+   - Lease agreement if leased
+
+2. Nevada-specific items to review:
+   - Nevada Evidence of Insurance
+   - Nevada emissions report if required
+   - Current odometer reading
+   - VP 015 Vehicle Inspection Certificate
+   - Nevada VIN inspection if vehicle never titled/registered in Nevada
+   - Nevada ELT number if lien created
+   - Tax exemption number/forms if applicable
+   - Plate transfer/surrender documents if transferring plates
+   - Personalized/specialty plate forms if applicable
+
+3. If financed:
+   - Confirm Nevada ELT number for lienholder.
+   - Confirm lienholder/title paperwork.
+   - Confirm security agreement details.
+
+4. If registering:
+   - Verify Nevada insurance is from Nevada-licensed carrier.
+   - Verify insurance names match title/registration names.
+   - Verify out-of-state insurance is not used.
+
+5. If customer is driving to Nevada:
+   - Confirm movement permit covers interstate travel.
+   - Customer must have movement permit and insurance to drive on public streets.
+
+6. If tax collected/remitted:
+   - Verify Nevada tax calculation carefully.
+   - If remitted amount is short, Nevada may return entire transaction to dealer.
+
+============================================================
+TAX / RECIPROCITY NOTES
+============================================================
+
+For Florida dealer sale to Nevada resident:
+
+- Review Florida DOR out-of-state resident sales tax / DR-123 workflow.
+- Review Nevada sales/use tax and county rate.
+- Nevada DMV may verify tax paid with dealer.
+- If dealer remits too little, Nevada may return entire transaction.
+- Verify tax handling with controller, agency, lender, or Nevada DMV before finalizing.
+
+Use related file:
+fl_motor_vehicle_sales_tax_rates_by_state_tip_25a01_01_notes.txt
+
+============================================================
+REJECTION / DELAY RISKS
+============================================================
+
+High risk if:
+
+- Nevada Evidence of Insurance is missing.
+- Insurance is not from Nevada-licensed carrier.
+- Insurance name does not match registration/title.
+- Out-of-state insurance is used.
+- VP 015 VIN inspection missing.
+- Vehicle never titled/registered in Nevada and VIN inspection not completed.
+- Emissions report missing when required.
+- Nevada ELT number missing when lien is created.
+- Odometer disclosure missing for 2011-or-newer vehicle.
+- Movement permit expires before registration.
+- Tax remittance is short and Nevada returns transaction.
+- Tax exemption not applied at time of registration.
+- Third party registration lacks VP 222 or notarized POA.
+
+============================================================
+AI ROUTING KEYWORDS
+============================================================
+
+Nevada customer
+title customer in Nevada
+register customer in Nevada
+Nevada title requirements
+Nevada registration requirements
+Nevada out of state dealer sale
+Florida dealer Nevada customer
+Nevada VP 015
+Nevada VIN inspection
+Nevada Evidence of Insurance
+Nevada emissions inspection
+Nevada ELT number
+Nevada movement permit
+Nevada out of state insurance not accepted
+Nevada tax returned to dealer
+what do I need to title in Nevada
+
+============================================================
+COMMON CLERK ANSWER
+============================================================
+
+For a Nevada customer buying from a Florida dealership, Nevada requires the dealer documents plus Nevada-specific registration documents. Dealer documents include invoice or bill of sale and one of title, MCO, security agreement, lease agreement, or purchase order, plus odometer disclosure if needed. Nevada documents include Nevada Evidence of Insurance, Nevada emissions report if required, current odometer reading, and VP 015 Vehicle Inspection Certificate. Nevada requires VIN inspection for vehicles never titled or registered in Nevada, and out-of-state insurance is not accepted; insurance must be from a Nevada-licensed carrier and match the title/registration names. If a lien is created, Nevada requires an ELT number. Review Florida DR-123/tax handling and Nevada tax carefully because if the amount remitted is short, Nevada may return the transaction to the dealer. Escalate if insurance, VP 015/VIN inspection, emissions, ELT, movement permit, or tax handling is unclear.
+
+============================================================
+RELATED FILES
+============================================================
+
+- out_of_state_customer_title_master_logic_map.txt
+- fl_motor_vehicle_sales_tax_rates_by_state_tip_25a01_01_notes.txt
+- validation_logic_map.txt
+- rejection_prevention_logic_map.txt
+- fl_title_ownership_and_transfer_law_notes.txt
+- fl_lien_and_lien_satisfaction_law_notes.txt
+
+============================================================
+END OF FILE
+============================================================

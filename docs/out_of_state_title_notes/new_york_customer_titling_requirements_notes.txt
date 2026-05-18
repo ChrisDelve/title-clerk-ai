@@ -1,0 +1,273 @@
+DOCUMENT: NEW_YORK_CUSTOMER_TITLING_REQUIREMENTS_NOTES
+TITLE: New York Customer Titling / Registration Requirements for Out-of-State Dealer Sale
+STATE: New York
+SOURCE: https://dmv.ny.gov/registration/register-an-out-of-state-vehicle
+DOCUMENT_TYPE: Out-of-State Customer Titling / Registration Requirements
+CATEGORY: FLORIDA DEALER SALE TO NEW YORK CUSTOMER / NEW YORK TITLE / NEW YORK REGISTRATION / MV-82 / ORIGINAL OWNERSHIP PROOF / NY INSURANCE / LIENHOLDER / INSPECTION EXTENSION
+
+============================================================
+PURPOSE
+============================================================
+
+This file helps a Florida dealership understand what may be needed when a customer buys a vehicle from the dealership and wants the vehicle titled and/or registered in New York.
+
+Use this file for questions like:
+
+- What do I need to title this customer in New York?
+- New York customer bought from our Florida dealership.
+- What is MV-82?
+- Does New York require original proof of ownership?
+- Does New York require NY insurance?
+- What if title is held by lienholder?
+- What proof of ownership does New York need from an out-of-state dealer?
+
+============================================================
+WHEN TO USE THIS FILE
+============================================================
+
+Use this file when:
+
+IF customer_state = "New York"
+AND customer_is_buying_vehicle_from_dealer = TRUE
+AND vehicle_will_be_titled_or_registered_in_customer_state = TRUE
+THEN use_new_york_customer_titling_requirements_notes = TRUE
+
+Do NOT use this file as the primary source for:
+- Customer bringing New York title into Florida for Florida title
+- Florida resident titling/registering in Florida
+- Florida tag transfer workflow
+
+For Florida titling/registration, use Florida title and registration notes.
+
+============================================================
+NEW YORK SOURCE SUMMARY
+============================================================
+
+New York DMV says:
+
+- A person must register vehicle in New York if they move to New York and become a resident.
+- Vehicle must be registered in New York within 30 days of becoming a resident.
+- New York resident who gets a vehicle from another state and will drive it on New York roadways must register it in New York within 30 days.
+- Nonresident registration from state of residence is valid in New York.
+- Customer can apply for New York registration and title certificate by mail from outside New York.
+
+Items to mail to local DMV office:
+- Completed Vehicle Registration/Title Application, MV-82
+- Proof of ownership; must be original, no photocopies
+- Proof of NY State automobile liability insurance
+- Proof of identity and age; photocopies should be sent, not original documents
+- Payment for sales tax
+
+After processing:
+- New York sends registration documents, vehicle plates, and 10-day Inspection Extension Sticker VS-1077.
+- Customer puts VS-1077 on vehicle when entering New York, not before, marks date of entry.
+- Title certificate is sent separately and may take up to 90 days.
+- New vehicle title cannot be mailed to a different address than mailing address on registration application.
+
+Proof of ownership if title is not in customer’s name:
+- New vehicle from out-of-state dealer:
+  - Manufacturer’s Certificate of Origin
+  - Dealer’s bill of sale
+- Used vehicle from out-of-state dealer:
+  - Out-of-state title certificate or transferable registration transferred to dealer
+  - Dealer’s bill of sale transferring ownership to customer
+- Private owner:
+  - Bill of sale
+  - Title certificate or transferable registration transferred to customer
+
+Lienholder/title held by lienholder:
+- If lien appears on out-of-state title, NY DMV records lien on New York title record and certificate.
+- To remove lien, proof of lien satisfaction required.
+- If title is held by lienholder, customer must provide:
+  - Copy of title certificate with customer’s name from lienholder
+  - Certification from lienholder that title certificate is copy of original certificate; copy and certification must be on same piece of paper
+  - Statement on lienholder letterhead with owner, year, make, VIN; statement that lienholder holds original title and knows owner will use documents to register in New York State; no request to notify lienholder when vehicle is registered because NY DMV ignores that request
+
+============================================================
+NEW YORK REQUIRED DOCUMENT LOGIC
+============================================================
+
+IF New_York_customer_title_or_registration_requested = TRUE
+THEN MV_82_required = TRUE
+
+IF New_York_customer_title_or_registration_requested = TRUE
+THEN original_proof_of_ownership_required_no_photocopies = TRUE
+
+IF New_York_registration_requested = TRUE
+THEN NY_State_automobile_liability_insurance_required = TRUE
+
+IF New_York_customer_title_or_registration_requested = TRUE
+THEN proof_of_identity_and_age_required = TRUE
+
+IF New_York_customer_title_or_registration_requested = TRUE
+THEN sales_tax_payment_required = TRUE
+
+IF new_vehicle_purchased_from_out_of_state_dealer = TRUE
+THEN MCO_and_dealer_bill_of_sale_required = TRUE
+
+IF used_vehicle_purchased_from_out_of_state_dealer = TRUE
+THEN out_of_state_title_or_transferable_registration_transferred_to_dealer_required = TRUE
+
+IF used_vehicle_purchased_from_out_of_state_dealer = TRUE
+THEN dealer_bill_of_sale_transferring_ownership_to_customer_required = TRUE
+
+IF New_York_resident_gets_vehicle_from_another_state = TRUE
+THEN New_York_30_day_registration_deadline_review_required = TRUE
+
+IF New_York_title_certificate_issued = TRUE
+THEN title_mailing_address_must_match_registration_application_mailing_address = TRUE
+
+============================================================
+NEW YORK LIENHOLDER / TITLE HELD BY LIENHOLDER LOGIC
+============================================================
+
+IF lien_on_out_of_state_title = TRUE
+THEN New_York_records_lien_on_NY_title_record_and_certificate = TRUE
+
+IF customer_requests_lien_removed = TRUE
+THEN proof_of_lien_satisfaction_required = TRUE
+
+IF title_held_by_lienholder = TRUE
+THEN copy_of_title_certificate_with_customer_name_from_lienholder_required = TRUE
+
+IF title_held_by_lienholder = TRUE
+THEN lienholder_certification_that_copy_is_copy_of_original_required = TRUE
+
+IF lienholder_certification_required = TRUE
+THEN copy_and_certification_must_be_on_same_piece_of_paper = TRUE
+
+IF title_held_by_lienholder = TRUE
+THEN lienholder_letterhead_statement_required = TRUE
+
+IF lienholder_letterhead_statement_required = TRUE
+THEN statement_must_include_owner_year_make_VIN_and_lienholder_holds_original_title = TRUE
+
+IF lienholder_letterhead_statement_required = TRUE
+THEN do_not_include_request_to_notify_lienholder_when_registered = TRUE
+
+============================================================
+NEW YORK INSPECTION EXTENSION LOGIC
+============================================================
+
+IF New_York_registration_processed_by_mail_out_of_state = TRUE
+THEN New_York_sends_10_day_inspection_extension_sticker_VS_1077 = TRUE
+
+IF VS_1077_received = TRUE
+THEN customer_places_sticker_on_vehicle_when_entering_New_York_not_before = TRUE
+
+IF VS_1077_used = TRUE
+THEN customer_marks_box_and_date_entered_New_York = TRUE
+
+============================================================
+FLORIDA DEALER WORKFLOW FOR NEW YORK CUSTOMER
+============================================================
+
+When a Florida dealership sells a vehicle to a New York customer and the customer wants New York title/registration:
+
+1. Prepare dealer ownership package:
+   - MCO for new vehicle, or properly assigned/transferable ownership for used vehicle
+   - Dealer bill of sale
+   - Dealer reassignment if applicable
+   - Odometer disclosure/statement if applicable
+   - Lienholder information if financed
+
+2. New York-specific items to review:
+   - MV-82 Vehicle Registration/Title Application
+   - Original proof of ownership; no photocopies
+   - NY State automobile liability insurance
+   - Proof of identity and age
+   - Sales tax payment
+   - Dealer bill of sale
+   - MCO for new vehicle from out-of-state dealer
+   - Used out-of-state title/transferrable registration transferred to dealer for used vehicle
+
+3. If financed/lienholder title:
+   - Provide lienholder title copy with customer’s name.
+   - Provide lienholder certification on same page as title copy.
+   - Provide lienholder letterhead statement with owner, year, make, VIN, and statement that lienholder holds original title and knows customer will use documents to register in New York.
+   - Do not ask NY DMV to notify lienholder when registered.
+
+4. If mailing package:
+   - Original proof of ownership must be mailed.
+   - Proof of identity/age should be photocopies, not originals.
+   - Customer should allow time for registration/plates and up to 90 days for title.
+   - Title cannot be mailed to a different address.
+
+5. If registering:
+   - New York insurance is required.
+   - Inspection extension sticker VS-1077 is issued; customer uses it only when entering New York.
+
+============================================================
+TAX / RECIPROCITY NOTES
+============================================================
+
+For Florida dealer sale to New York resident:
+
+- Review Florida DOR out-of-state resident sales tax / DR-123 workflow.
+- New York requires payment for sales tax with application.
+- Verify tax handling with controller, agency, lender, or New York DMV before finalizing.
+
+Use related file:
+fl_motor_vehicle_sales_tax_rates_by_state_tip_25a01_01_notes.txt
+
+============================================================
+REJECTION / DELAY RISKS
+============================================================
+
+High risk if:
+
+- MV-82 missing.
+- Proof of ownership is a photocopy instead of original.
+- NY State liability insurance missing.
+- Proof of identity/age missing.
+- Sales tax payment missing.
+- MCO missing for new out-of-state dealer purchase.
+- Used out-of-state title/transferrable registration not transferred to dealer.
+- Dealer bill of sale missing.
+- Lienholder copy/certification/letterhead statement missing.
+- Lienholder certification not on same page as title copy.
+- Title mailed to alternate address.
+- 30-day registration deadline missed.
+- Tax/DR-123 handling unclear.
+
+============================================================
+AI ROUTING KEYWORDS
+============================================================
+
+New York customer
+title customer in New York
+register customer in New York
+New York title requirements
+New York registration requirements
+New York out of state dealer sale
+Florida dealer New York customer
+NY DMV
+New York MV-82
+NY State automobile liability insurance
+New York original proof of ownership
+New York MCO
+New York dealer bill of sale
+New York lienholder letterhead
+New York VS-1077
+what do I need to title in New York
+
+============================================================
+COMMON CLERK ANSWER
+============================================================
+
+For a New York customer buying from a Florida dealership, New York requires MV-82, original proof of ownership, NY State automobile liability insurance, proof of identity and age, and sales-tax payment. For a new vehicle from an out-of-state dealer, provide the MCO and dealer bill of sale. For a used vehicle from an out-of-state dealer, provide the out-of-state title certificate or transferable registration transferred to the dealer plus dealer bill of sale transferring ownership to the customer. If the title is held by a lienholder, New York requires a copy of title with customer’s name, lienholder certification on the same page, and lienholder letterhead statement with owner, year, make, VIN, and acknowledgement that lienholder holds the original title. Prepare the dealer package and review Florida DR-123/tax handling. Escalate if original ownership proof, NY insurance, lienholder documentation, sales tax, or mailing/title address handling is unclear.
+
+============================================================
+RELATED FILES
+============================================================
+
+- out_of_state_customer_title_master_logic_map.txt
+- fl_motor_vehicle_sales_tax_rates_by_state_tip_25a01_01_notes.txt
+- validation_logic_map.txt
+- rejection_prevention_logic_map.txt
+- fl_title_ownership_and_transfer_law_notes.txt
+- fl_lien_and_lien_satisfaction_law_notes.txt
+
+============================================================
+END OF FILE
+============================================================

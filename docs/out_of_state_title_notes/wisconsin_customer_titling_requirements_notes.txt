@@ -1,0 +1,296 @@
+DOCUMENT: WISCONSIN_CUSTOMER_TITLING_REQUIREMENTS_NOTES
+TITLE: Wisconsin Customer Titling / Registration Requirements for Out-of-State Dealer Sale
+STATE: Wisconsin
+SOURCE: https://wisconsindot.gov/pages/online-srvcs/title-vehicle/emvpublicdefault.aspx
+DOCUMENT_TYPE: Out-of-State Customer Titling / Registration Requirements
+CATEGORY: FLORIDA DEALER SALE TO WISCONSIN CUSTOMER / WISCONSIN TITLE / WISCONSIN REGISTRATION / EMV PUBLIC / MV1 / ORIGINAL TITLE / ODOMETER / LIEN RELEASE / TEMPORARY PLATE
+
+============================================================
+PURPOSE
+============================================================
+
+This file helps a Florida dealership understand what may be needed when a customer buys a vehicle from the dealership and wants the vehicle titled and/or registered in Wisconsin.
+
+Use this file for questions like:
+
+- What do I need to title this customer in Wisconsin?
+- Wisconsin customer bought from our Florida dealership.
+- Can Wisconsin process an out-of-state title online?
+- Does Wisconsin require original title?
+- Does Wisconsin require odometer disclosure?
+- Does Wisconsin require lien release?
+- When does Wisconsin require plates or temporary plate?
+- What is Wisconsin eMV Public?
+- What is Wisconsin MV1?
+
+============================================================
+WHEN TO USE THIS FILE
+============================================================
+
+Use this file when:
+
+IF customer_state = "Wisconsin"
+AND customer_is_buying_vehicle_from_dealer = TRUE
+AND vehicle_will_be_titled_or_registered_in_customer_state = TRUE
+THEN use_wisconsin_customer_titling_requirements_notes = TRUE
+
+Do NOT use this file as the primary source for:
+- Customer bringing Wisconsin title into Florida for Florida title
+- Florida resident titling/registering in Florida
+- Florida tag transfer workflow
+
+For Florida titling/registration, use Florida title and registration notes.
+
+============================================================
+WISCONSIN SOURCE SUMMARY
+============================================================
+
+Wisconsin DOT says:
+
+- When a customer purchases a vehicle, receives it as a gift, or becomes a new Wisconsin resident, they must immediately apply for a new Certificate of Title in their name.
+- Certificate of Title proves ownership.
+- Customer should never buy a vehicle without receiving a title signed by the previous owner.
+- If purchased through a licensed Wisconsin dealer, the dealer submits title and registration paperwork.
+- Customer must display Wisconsin license plates or a temporary plate within two business days of purchase to legally operate the vehicle.
+- Wisconsin and out-of-state titles can be used to apply online through eMV Public.
+- Customer can apply online for both Wisconsin title and new plates.
+- Customer can apply online for Wisconsin title and transfer existing plates, but a temporary plate cannot be issued in that workflow.
+- Customer can apply online for title only if no plates are needed, but title-only does not allow legal operation on Wisconsin roads and customer is not eligible for temporary plate.
+
+For online title/new plate application, Wisconsin source says customer should have:
+- Printer with 8.5 x 11 paper to print temporary plate if applicable and eApplication/Receipt
+- Valid email address
+- Wisconsin Driver License or ID card, last four digits of SSN, and date of birth
+- If non-individual customer, full legal business name, zip code, and FEIN
+- Vehicle title signed by seller(s)
+- For vehicles model year 2011 and newer, odometer reading from date of sale written by seller on back of title
+- Lien release if lienholder listed on front of title and loan is paid off
+- Payment information
+
+After online transaction, customer must mail:
+- Title and License Plate eApplication/Receipt
+- Valid original title signed by seller
+- Statement of Intent MV2489 if there are alterations on title
+- Valid original lien release if vehicle currently has a lien
+
+For in-person title and plates, Wisconsin source says customer should have:
+- Certificate of Title, not photocopy, signed by seller(s)
+- Odometer reading completed by seller(s) on back of title for vehicles less than 20 model years old
+- Lien release if lienholder listed on front of title and loan is paid off
+- Driver license/ID as proof of identity
+- Payment information
+- Optional pre-filled MV1 Application
+
+For mail-in application, Wisconsin source says:
+- Certificate of Title, not photocopy, signed by previous owner
+- Odometer reading completed by seller(s) on back of title for vehicles less than 20 model years old
+- Statement of Intent MV2489 if alterations are on title
+
+Wisconsin restrictions/warnings:
+- Junk vehicles are not eligible for Wisconsin title or registration.
+- Salvage vehicles are eligible for title only.
+- If VIN error occurs online, customer should mail in application.
+- Fees are not refundable after online transaction.
+
+============================================================
+WISCONSIN REQUIRED DOCUMENT LOGIC
+============================================================
+
+IF Wisconsin_customer_title_or_registration_requested = TRUE
+THEN Wisconsin_title_application_required_immediately = TRUE
+
+IF Wisconsin_customer_title_or_registration_requested = TRUE
+THEN valid_original_title_signed_by_seller_required = TRUE
+
+IF Wisconsin_online_eMV_Public_used = TRUE
+THEN eApplication_Receipt_must_be_printed_and_mailed_to_DMV = TRUE
+
+IF Wisconsin_online_eMV_Public_used = TRUE
+THEN valid_email_address_required = TRUE
+
+IF Wisconsin_online_eMV_Public_used = TRUE
+THEN Wisconsin_driver_license_or_ID_last_four_SSN_and_DOB_required = TRUE
+
+IF non_individual_customer = TRUE
+THEN legal_business_name_zip_code_and_FEIN_required = TRUE
+
+IF Wisconsin_title_or_registration_requested = TRUE
+AND vehicle_model_year >= 2011
+THEN seller_odometer_reading_from_date_of_sale_required_on_back_of_title = TRUE
+
+IF Wisconsin_in_person_or_mail_transaction = TRUE
+AND vehicle_less_than_20_model_years_old = TRUE
+THEN seller_odometer_reading_required_on_back_of_title = TRUE
+
+IF lienholder_listed_on_front_of_title
+AND loan_paid_off = TRUE
+THEN valid_original_lien_release_required = TRUE
+
+IF title_has_alterations = TRUE
+THEN Wisconsin_Statement_of_Intent_MV2489_required = TRUE
+
+IF Wisconsin_in_person_title_and_plates = TRUE
+THEN driver_license_or_ID_as_proof_of_identity_required = TRUE
+
+IF Wisconsin_MV1_used = TRUE
+THEN MV1_application_review_required = TRUE
+
+============================================================
+WISCONSIN PLATE / TEMPORARY PLATE LOGIC
+============================================================
+
+IF Wisconsin_vehicle_legally_operated_after_purchase = TRUE
+THEN Wisconsin_license_plates_or_temporary_plate_required_within_two_business_days = TRUE
+
+IF Wisconsin_online_title_and_new_plates = TRUE
+THEN temporary_plate_may_be_printed_if_vehicle_type_eligible = TRUE
+
+IF Wisconsin_online_title_and_plate_transfer = TRUE
+THEN temporary_plate_cannot_be_issued = TRUE
+
+IF Wisconsin_title_only_requested = TRUE
+THEN no_new_plates_or_plate_transfer_allowed_in_title_only_workflow = TRUE
+
+IF Wisconsin_title_only_requested = TRUE
+THEN vehicle_cannot_be_legally_operated_on_Wisconsin_roads = TRUE
+
+IF Wisconsin_title_only_requested = TRUE
+THEN customer_not_eligible_for_temporary_plate = TRUE
+
+============================================================
+WISCONSIN SPECIAL TITLE STATUS LOGIC
+============================================================
+
+IF vehicle_status = "junk"
+THEN Wisconsin_title_or_registration_not_eligible = TRUE
+
+IF vehicle_status = "salvage"
+THEN Wisconsin_title_only_eligible = TRUE
+
+IF Wisconsin_online_VIN_error = TRUE
+THEN mail_in_application_required = TRUE
+
+IF Wisconsin_online_transaction_completed = TRUE
+THEN fees_nonrefundable = TRUE
+
+============================================================
+FLORIDA DEALER WORKFLOW FOR WISCONSIN CUSTOMER
+============================================================
+
+When a Florida dealership sells a vehicle to a Wisconsin customer and the customer wants Wisconsin title/registration:
+
+1. Prepare dealer ownership package:
+   - Valid original title or MCO/MSO
+   - Dealer reassignment if applicable
+   - Buyer’s order / bill of sale
+   - Odometer disclosure/statement if applicable
+   - Lienholder information if financed
+   - Original lien release if prior lien is listed and paid off
+
+2. Wisconsin-specific items to review:
+   - eMV Public or MV1 process
+   - Valid original title signed by seller
+   - Odometer requirement based on model year / 20-model-year rule
+   - Wisconsin DL/ID, SSN last four, DOB, or business FEIN if applicable
+   - Original lien release if lienholder listed and paid off
+   - MV2489 if title has alterations
+   - Wisconsin plates or temporary plate within two business days if vehicle will be operated
+   - Title-only workflow if vehicle will not be driven
+
+3. If customer wants title and new plates:
+   - Wisconsin and out-of-state titles can be used online.
+   - Temporary plate may be printable if vehicle type is eligible.
+   - eApplication/Receipt and original title documents still must be mailed.
+
+4. If customer wants to transfer Wisconsin plates:
+   - Wisconsin online plate transfer may be available.
+   - Temporary plate cannot be issued in this workflow.
+
+5. If customer wants title-only:
+   - Wisconsin title-only workflow does not issue plates or temp plate.
+   - Vehicle cannot be legally operated on Wisconsin roads.
+
+6. If financed:
+   - Confirm lienholder information.
+   - Confirm prior lien release if previous lien is listed and paid off.
+   - Confirm lienholder/title instructions.
+
+7. If title has alterations:
+   - Complete/review Wisconsin MV2489 Statement of Intent.
+   - Escalate if title alteration creates ownership or fraud concern.
+
+============================================================
+TAX / RECIPROCITY NOTES
+============================================================
+
+For Florida dealer sale to Wisconsin resident:
+
+- Review Florida DOR out-of-state resident sales tax / DR-123 workflow.
+- Review Wisconsin title/registration tax and fee requirements.
+- Verify tax handling with controller, agency, lender, or Wisconsin DOT before finalizing.
+
+Use related file:
+fl_motor_vehicle_sales_tax_rates_by_state_tip_25a01_01_notes.txt
+
+============================================================
+REJECTION / DELAY RISKS
+============================================================
+
+High risk if:
+
+- Valid original title is missing.
+- Seller signature is missing.
+- Odometer reading is missing when required.
+- Original lien release missing when lienholder is listed and loan is paid off.
+- Title has alterations and MV2489 is missing.
+- Customer tries to operate vehicle without Wisconsin plates or temporary plate within two business days.
+- Customer chooses title-only but expects to drive vehicle.
+- Junk vehicle submitted for title/registration.
+- Salvage vehicle submitted for registration instead of title-only.
+- eApplication/Receipt or original title documents not mailed after online application.
+- Wisconsin DL/ID or business FEIN information missing.
+- Tax/DR-123 handling unclear.
+
+============================================================
+AI ROUTING KEYWORDS
+============================================================
+
+Wisconsin customer
+title customer in Wisconsin
+register customer in Wisconsin
+Wisconsin title requirements
+Wisconsin registration requirements
+Wisconsin out of state dealer sale
+Florida dealer Wisconsin customer
+Wisconsin eMV Public
+Wisconsin MV1
+Wisconsin temporary plate
+Wisconsin two business days
+Wisconsin original title
+Wisconsin lien release
+Wisconsin MV2489
+Wisconsin Statement of Intent
+Wisconsin odometer 2011
+Wisconsin odometer 20 model years
+what do I need to title in Wisconsin
+
+============================================================
+COMMON CLERK ANSWER
+============================================================
+
+For a Wisconsin customer buying from a Florida dealership, Wisconsin says the customer must immediately apply for a new Certificate of Title and must display Wisconsin plates or a temporary plate within two business days of purchase to legally operate the vehicle. Wisconsin and out-of-state titles can be used through eMV Public. Required items generally include the valid original title signed by seller, Wisconsin DL/ID information, odometer reading when required, lien release if a lienholder is listed and the loan is paid off, and payment. After online submission, the customer must mail the eApplication/Receipt, valid original title, and original lien release if applicable. If the title has alterations, Wisconsin requires MV2489 Statement of Intent. Title-only is available but does not allow legal operation and does not provide a temporary plate. Prepare the dealer package, buyer’s order, odometer disclosure/statement if applicable, lienholder documents if financed, and review Florida DR-123/Wisconsin tax handling. Escalate if original title, odometer, lien release, MV2489, title-only vs registration, salvage/junk status, or tax handling is unclear.
+
+============================================================
+RELATED FILES
+============================================================
+
+- out_of_state_customer_title_master_logic_map.txt
+- fl_motor_vehicle_sales_tax_rates_by_state_tip_25a01_01_notes.txt
+- validation_logic_map.txt
+- rejection_prevention_logic_map.txt
+- fl_title_ownership_and_transfer_law_notes.txt
+- fl_lien_and_lien_satisfaction_law_notes.txt
+
+============================================================
+END OF FILE
+============================================================

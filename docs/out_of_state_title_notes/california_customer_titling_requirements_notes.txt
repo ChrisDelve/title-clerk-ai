@@ -1,0 +1,378 @@
+DOCUMENT: CALIFORNIA_CUSTOMER_TITLING_REQUIREMENTS_NOTES
+TITLE: California Customer Titling / Registration Requirements for Out-of-State Dealer Sale
+STATE: California
+SOURCE: https://www.dmv.ca.gov/portal/vehicle-registration/new-registration/registering-a-vehicle-purchased-from-a-dealer/
+DOCUMENT_TYPE: Out-of-State Customer Titling / Registration Requirements
+CATEGORY: FLORIDA DEALER SALE TO CALIFORNIA CUSTOMER / CALIFORNIA TITLE / CALIFORNIA REGISTRATION / REG 343 / REG 227 / REG 262 / REG 256 / SMOG / REG 139 / USE TAX / DEALER PURCHASE
+
+============================================================
+PURPOSE
+============================================================
+
+This file helps a Florida dealership understand what may be needed when a customer buys a vehicle from the dealership and wants the vehicle titled and/or registered in California.
+
+Use this file for questions like:
+
+- What do I need to title this customer in California?
+- California customer bought from our Florida dealership.
+- What does California need for a dealer-purchased vehicle?
+- Does California need REG 343?
+- Does California need REG 262?
+- Does California need smog?
+- Does California need use tax?
+- What if the California title or out-of-state title is lost or damaged?
+- Does California require registration in person?
+
+============================================================
+WHEN TO USE THIS FILE
+============================================================
+
+Use this file when:
+
+IF customer_state = "California"
+AND customer_is_buying_vehicle_from_dealer = TRUE
+AND vehicle_will_be_titled_or_registered_in_customer_state = TRUE
+THEN use_california_customer_titling_requirements_notes = TRUE
+
+Do NOT use this file as the primary source for:
+- Customer bringing California title into Florida for Florida title
+- Florida resident titling/registering in Florida
+- Florida tag transfer workflow
+
+For Florida titling/registration, use Florida title and registration notes.
+
+============================================================
+CALIFORNIA SOURCE SUMMARY
+============================================================
+
+California DMV says buying a vehicle from a dealership often means at least some registration process may be handled by the dealer.
+
+Many dealers are authorized to:
+- Transfer titles
+- Issue temporary registration to use until permanent registration and stickers arrive by mail
+
+If the dealer does not provide registration services:
+- Customer must register the vehicle themselves.
+
+California DMV says to register a vehicle/vessel purchased from a dealer, customer will always need:
+
+- If vehicle is new: completed Application for Title or Registration, REG 343
+- If vehicle is used: California Certificate of Title, or out-of-state title if currently registered in another state
+- If title is lost or damaged: Application for Replacement or Transfer of Title, REG 227, to request a copy
+- Signature(s) of seller(s) and/or lienholder on Certificate of Title
+- Buyer/customer signature on Certificate of Title
+- Applicable title transfer fees or use tax
+
+California DMV page also lists items under “You may also need.” For dealership workflow purposes, review these as required review items, except REG 4008 commercial GVW/CGW, which is conditional for commercial vehicles only:
+
+Required review items:
+- Vehicle/Vessel Transfer and Reassignment, REG 262
+  - REG 262 cannot be downloaded because it contains security features
+  - Customer must visit DMV field office in person to get the form
+- Statement of Facts, REG 256
+- Smog certification
+- Vehicle Emission System Statement, REG 139
+- Use tax and/or other fees
+
+Conditional commercial-only item:
+- Declaration of Gross Vehicle Weight / Combined Gross Vehicle Weight, REG 4008, only if purchasing a commercial vehicle
+
+California DMV says to complete registration, customer should visit a DMV field office in person.
+
+Smog FAQ:
+- If gas-powered vehicle is less than 4 years old, smog certification is not needed, but smog abatement fee is due.
+- If gas-powered vehicle is more than 4 years old, dealer must get smog certification before selling, unless vehicle was smog certified within last 90 days.
+- Smog inspections are not required for:
+  - Diesel-powered vehicles weighing more than 14,000 pounds
+  - Electric-powered vehicles
+  - Natural gas-powered vehicles
+  - Motorcycles
+  - Trailers
+  - Special equipment, such as construction or farm vehicles
+  - Off-highway vehicles
+
+Fees FAQ:
+- DMV calculates fees when application is submitted.
+- Fees may include title transfer fees.
+- Use tax is 7.25% to 10.25% based on new registered owner’s city and county of residence.
+- Transfer fees must be paid within 10 days of sale.
+- If missed, late penalty is charged after 30 days.
+- If registering more than one vehicle/vessel, separate transfer fee required for each vehicle/vessel.
+
+California dealer/consumer notes:
+- California dealers must show customer a National Motor Vehicle Title Information System, NMVTIS, report.
+- Customer should review purchase contract, warranty, and safety recalls.
+- If co-owners are joined by “or,” one owner can sell without other owner’s consent.
+- If co-owners are joined by slash “/” or “and,” both owner signatures are required.
+- California DMV notes there are restrictions on buying a vehicle/vessel from another state.
+
+============================================================
+CALIFORNIA REQUIRED DOCUMENT LOGIC
+============================================================
+
+IF California_customer_title_or_registration_requested = TRUE
+THEN California_registration_completion_at_DMV_field_office_review_required = TRUE
+
+IF California_new_vehicle = TRUE
+THEN REG_343_Application_for_Title_or_Registration_required = TRUE
+
+IF California_used_vehicle = TRUE
+THEN California_Certificate_of_Title_or_out_of_state_title_required = TRUE
+
+IF California_used_vehicle_currently_registered_in_another_state = TRUE
+THEN out_of_state_title_required = TRUE
+
+IF title_lost_or_damaged = TRUE
+THEN REG_227_Application_for_Replacement_or_Transfer_of_Title_required = TRUE
+
+IF California_customer_title_or_registration_requested = TRUE
+THEN seller_or_lienholder_signature_on_Certificate_of_Title_required = TRUE
+
+IF California_customer_title_or_registration_requested = TRUE
+THEN buyer_signature_on_Certificate_of_Title_required = TRUE
+
+IF California_customer_title_or_registration_requested = TRUE
+THEN title_transfer_fees_or_use_tax_required = TRUE
+
+IF California_customer_title_or_registration_requested = TRUE
+THEN REG_262_review_required = TRUE
+
+IF REG_262_required = TRUE
+THEN REG_262_must_be_obtained_from_DMV_field_office_because_security_form_not_downloadable = TRUE
+
+IF California_customer_title_or_registration_requested = TRUE
+THEN REG_256_Statement_of_Facts_review_required = TRUE
+
+IF California_customer_title_or_registration_requested = TRUE
+THEN smog_certification_review_required = TRUE
+
+IF California_customer_title_or_registration_requested = TRUE
+THEN REG_139_Vehicle_Emission_System_Statement_review_required = TRUE
+
+IF California_customer_title_or_registration_requested = TRUE
+THEN use_tax_and_other_fees_review_required = TRUE
+
+IF California_commercial_vehicle = TRUE
+THEN REG_4008_GVW_CGW_required = TRUE
+
+IF California_commercial_vehicle = FALSE
+THEN REG_4008_GVW_CGW_not_required_by_default = TRUE
+
+============================================================
+CALIFORNIA SMOG / EMISSIONS LOGIC
+============================================================
+
+IF California_vehicle_gas_powered = TRUE
+AND vehicle_age_less_than_4_years = TRUE
+THEN smog_certification_not_required_but_smog_abatement_fee_due = TRUE
+
+IF California_vehicle_gas_powered = TRUE
+AND vehicle_age_more_than_4_years = TRUE
+THEN dealer_must_get_smog_certification_before_selling_unless_certified_within_last_90_days = TRUE
+
+IF California_vehicle_smog_certified_within_last_90_days = TRUE
+THEN new_smog_certification_may_not_be_required_review = TRUE
+
+IF vehicle_type IN ["electric-powered vehicle", "motorcycle", "trailer", "special equipment", "off-highway vehicle"]
+THEN California_smog_inspection_not_required = TRUE
+
+IF vehicle_fuel_type = "diesel"
+AND vehicle_weight_over_14000_pounds = TRUE
+THEN California_smog_inspection_not_required = TRUE
+
+IF vehicle_fuel_type = "natural gas"
+THEN California_smog_inspection_not_required = TRUE
+
+IF smog_requirement_unclear = TRUE
+THEN hold_and_verify_with_California_DMV_or_title_agency = TRUE
+
+============================================================
+CALIFORNIA FEE / TAX LOGIC
+============================================================
+
+IF California_customer_title_or_registration_requested = TRUE
+THEN California_DMV_calculates_final_fees_when_application_submitted = TRUE
+
+IF California_title_transfer_requested = TRUE
+THEN California_title_transfer_fees_required = TRUE
+
+IF California_use_tax_applies = TRUE
+THEN use_tax_rate_based_on_new_registered_owner_city_and_county = TRUE
+
+IF California_use_tax_applies = TRUE
+THEN use_tax_range_per_California_DMV_source = "7.25% to 10.25%"
+
+IF California_transfer_fees_due = TRUE
+THEN transfer_fees_due_within_10_days_of_sale = TRUE
+
+IF California_transfer_fees_paid_late_after_30_days = TRUE
+THEN California_late_penalty_review_required = TRUE
+
+IF multiple_vehicles_or_vessels_registered = TRUE
+THEN separate_transfer_fee_required_for_each_vehicle_or_vessel = TRUE
+
+============================================================
+CALIFORNIA DEALER / TEMPORARY REGISTRATION LOGIC
+============================================================
+
+IF California_dealer_authorized_to_process_registration = TRUE
+THEN dealer_may_transfer_title_and_issue_temporary_registration = TRUE
+
+IF California_dealer_issues_temporary_registration = TRUE
+THEN temporary_registration_used_until_permanent_registration_and_stickers_arrive_by_mail = TRUE
+
+IF Florida_dealer_does_not_provide_California_registration_services = TRUE
+THEN customer_must_register_vehicle_themselves = TRUE
+
+IF customer_must_register_vehicle_themselves = TRUE
+THEN California_DMV_field_office_visit_required_review = TRUE
+
+============================================================
+CALIFORNIA CO-OWNER SIGNATURE LOGIC
+============================================================
+
+IF California_ownership_joined_by_OR = TRUE
+THEN one_owner_may_sell_vehicle_without_other_owner_consent = TRUE
+
+IF California_ownership_joined_by_AND = TRUE
+OR California_ownership_joined_by_slash = TRUE
+THEN both_owner_signatures_required = TRUE
+
+============================================================
+FLORIDA DEALER WORKFLOW FOR CALIFORNIA CUSTOMER
+============================================================
+
+When a Florida dealership sells a vehicle to a California customer and the customer wants California title/registration:
+
+1. Prepare dealer ownership package:
+   - MCO/MSO for new vehicle
+   - California Certificate of Title or out-of-state title for used vehicle
+   - Dealer reassignment if applicable
+   - Buyer’s order / bill of sale
+   - Odometer disclosure/statement if applicable
+   - Lienholder information if financed
+   - Seller/lienholder signatures on title
+   - Buyer signature on title
+
+2. California-specific items to review:
+   - REG 343 for new vehicle
+   - REG 227 if title is lost or damaged
+   - REG 262 Vehicle/Vessel Transfer and Reassignment
+   - REG 256 Statement of Facts
+   - Smog certification
+   - REG 139 Vehicle Emission System Statement
+   - Use tax and other fees
+   - REG 4008 only if commercial vehicle
+   - DMV field office visit if customer must complete registration themselves
+
+3. If used vehicle:
+   - Confirm out-of-state title if vehicle is currently registered in another state.
+   - Confirm all seller/lienholder and buyer signatures.
+   - Confirm whether REG 262 is needed.
+   - Confirm odometer disclosure/statement if applicable.
+
+4. If new vehicle:
+   - Complete/review REG 343.
+   - Include MCO/MSO and dealer sales documents.
+   - Confirm use tax and fees.
+
+5. If smog applies:
+   - For gas-powered vehicles more than 4 years old, confirm dealer smog certification before sale unless certified within last 90 days.
+   - For gas-powered vehicles less than 4 years old, review smog abatement fee.
+   - Confirm exemptions for electric, natural gas, motorcycles, trailers, special equipment, off-highway vehicles, and qualifying diesel vehicles over 14,000 pounds.
+
+6. If commercial vehicle:
+   - Review REG 4008 Declaration of Gross Vehicle Weight / Combined Gross Vehicle Weight.
+   - Do not request REG 4008 as default for non-commercial vehicles.
+
+7. If California registration is not handled by dealer:
+   - Customer must register vehicle themselves.
+   - California DMV source says to complete registration, customer should visit a DMV field office in person.
+
+8. If financed:
+   - Confirm lienholder signature and lienholder/title instructions.
+   - Confirm whether lienholder information is required on California title/registration forms.
+
+============================================================
+TAX / RECIPROCITY NOTES
+============================================================
+
+For Florida dealer sale to California resident:
+
+- Review Florida DOR out-of-state resident sales tax / DR-123 workflow.
+- California DMV says use tax may range from 7.25% to 10.25% based on the new registered owner’s city and county of residence.
+- Transfer fees must be paid within 10 days of sale; late penalty applies after 30 days if missed.
+- Verify tax handling with controller, agency, lender, California DMV, or California registration service before finalizing.
+
+Use related file:
+fl_motor_vehicle_sales_tax_rates_by_state_tip_25a01_01_notes.txt
+
+============================================================
+REJECTION / DELAY RISKS
+============================================================
+
+High risk if:
+
+- REG 343 missing for new vehicle.
+- Used vehicle title or out-of-state title missing.
+- REG 227 missing when title is lost or damaged.
+- Seller/lienholder signature missing on title.
+- Buyer signature missing on title.
+- REG 262 not reviewed.
+- REG 256 not reviewed.
+- Smog certification or smog abatement fee issue not reviewed.
+- REG 139 not reviewed.
+- Use tax or title transfer fees not reviewed.
+- Transfer fees not paid within 10 days.
+- Late penalty after 30 days not reviewed.
+- REG 4008 omitted for commercial vehicle.
+- REG 4008 requested unnecessarily for non-commercial vehicle.
+- Customer assumes Florida dealer handled California registration when dealer did not.
+- DMV field office visit not planned.
+- Co-owner signature logic misunderstood.
+- Tax/DR-123 handling unclear.
+
+============================================================
+AI ROUTING KEYWORDS
+============================================================
+
+California customer
+title customer in California
+register customer in California
+California title requirements
+California registration requirements
+California out of state dealer sale
+Florida dealer California customer
+California REG 343
+California REG 227
+California REG 262
+California REG 256
+California smog certification
+California REG 139
+California REG 4008
+California use tax
+California title transfer fees
+California DMV field office
+California dealer temporary registration
+what do I need to title in California
+
+============================================================
+COMMON CLERK ANSWER
+============================================================
+
+For a California customer buying from a Florida dealership, California requires REG 343 if the vehicle is new, or the California Certificate of Title/out-of-state title if the vehicle is used and currently registered in another state. The title must have required seller/lienholder signatures and buyer signature. If the title is lost or damaged, REG 227 is needed. For dealership workflow, also review REG 262, REG 256, smog certification, REG 139, use tax, and other fees. REG 4008 is only required for commercial vehicles, not as a default for non-commercial vehicles. California DMV says use tax can range from 7.25% to 10.25% based on the new registered owner’s city/county, and transfer fees must be paid within 10 days of sale, with late penalty after 30 days. If the dealer does not handle California registration, the customer must complete registration themselves and should visit a DMV field office. Prepare the dealer package, buyer’s order, odometer disclosure/statement if applicable, lienholder information if financed, and review Florida DR-123/California tax handling. Escalate if title signatures, REG forms, smog, use tax, field office completion, commercial GVW, lienholder, or tax handling is unclear.
+
+============================================================
+RELATED FILES
+============================================================
+
+- out_of_state_customer_title_master_logic_map.txt
+- fl_motor_vehicle_sales_tax_rates_by_state_tip_25a01_01_notes.txt
+- validation_logic_map.txt
+- rejection_prevention_logic_map.txt
+- fl_title_ownership_and_transfer_law_notes.txt
+- fl_lien_and_lien_satisfaction_law_notes.txt
+
+============================================================
+END OF FILE
+============================================================

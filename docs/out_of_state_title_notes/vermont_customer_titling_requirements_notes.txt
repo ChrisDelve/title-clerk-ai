@@ -1,0 +1,227 @@
+DOCUMENT: VERMONT_CUSTOMER_TITLING_REQUIREMENTS_NOTES
+TITLE: Vermont Customer Titling / Registration Requirements for Out-of-State Dealer Sale
+STATE: Vermont
+SOURCE: https://dmv.vermont.gov/registrations/new
+SOURCE_STATUS: Official Vermont DMV page could not be fully fetched during note creation. Verify source directly before treating this file as complete.
+DOCUMENT_TYPE: Out-of-State Customer Titling / Registration Requirements
+CATEGORY: FLORIDA DEALER SALE TO VERMONT CUSTOMER / VERMONT TITLE / VERMONT REGISTRATION / SOURCE-LIMITED / REGISTRATION TAX TITLE APPLICATION / INSURANCE / INSPECTION
+
+============================================================
+PURPOSE
+============================================================
+
+This file helps a Florida dealership understand what may be needed when a customer buys a vehicle from the dealership and wants the vehicle titled and/or registered in Vermont.
+
+Use this file for questions like:
+
+- What do I need to title this customer in Vermont?
+- Vermont customer bought from our Florida dealership.
+- What form does Vermont need for registration/title?
+- Does Vermont require insurance?
+- Does Vermont require title or MCO?
+- Does Vermont require inspection after registration?
+- Does Vermont require tax/title/registration application?
+
+============================================================
+WHEN TO USE THIS FILE
+============================================================
+
+Use this file when:
+
+IF customer_state = "Vermont"
+AND customer_is_buying_vehicle_from_dealer = TRUE
+AND vehicle_will_be_titled_or_registered_in_customer_state = TRUE
+THEN use_vermont_customer_titling_requirements_notes = TRUE
+
+Do NOT use this file as the primary source for:
+- Customer bringing Vermont title into Florida for Florida title
+- Florida resident titling/registering in Florida
+- Florida tag transfer workflow
+
+For Florida titling/registration, use Florida title and registration notes.
+
+============================================================
+SOURCE LIMITATION
+============================================================
+
+The official Vermont DMV new registration page could not be fully fetched during note creation.
+
+Before using this note as final, verify directly from Vermont DMV:
+- Current Vermont Registration/Tax/Title Application form name and number
+- Title/MCO requirements
+- Insurance requirements
+- VIN verification requirements, if any
+- Inspection requirements
+- Purchase/use tax requirements
+- Dealer submission requirements
+- Lienholder requirements
+
+============================================================
+VERMONT SOURCE-LIMITED SUMMARY
+============================================================
+
+Use this as a cautious operational checklist only until Vermont DMV source is verified.
+
+Likely Vermont customer title/registration items to verify:
+- Vermont Registration/Tax/Title Application
+- Original title or MCO/MSO depending on new/used vehicle
+- Dealer bill of sale / purchase agreement
+- Odometer disclosure/statement if applicable
+- Proof of insurance if registration is requested
+- Lienholder information if financed
+- Vermont registration/title fees
+- Vermont purchase and use tax handling
+- Inspection requirement after registration
+- Any VIN verification requirement based on vehicle/document status
+
+============================================================
+VERMONT REQUIRED DOCUMENT LOGIC
+============================================================
+
+IF Vermont_customer_title_or_registration_requested = TRUE
+THEN Vermont_source_verification_required = TRUE
+
+IF Vermont_customer_title_or_registration_requested = TRUE
+THEN Vermont_Registration_Tax_Title_Application_review_required = TRUE
+
+IF Vermont_new_vehicle = TRUE
+THEN MCO_MSO_review_required = TRUE
+
+IF Vermont_used_vehicle = TRUE
+THEN assigned_title_or_acceptable_ownership_document_review_required = TRUE
+
+IF Vermont_customer_title_or_registration_requested = TRUE
+THEN dealer_bill_of_sale_or_purchase_agreement_review_required = TRUE
+
+IF odometer_disclosure_applicable = TRUE
+THEN odometer_disclosure_statement_required = TRUE
+
+IF Vermont_registration_requested = TRUE
+THEN Vermont_insurance_requirement_review_required = TRUE
+
+IF Vermont_vehicle_financed = TRUE
+THEN lienholder_information_required = TRUE
+
+IF Vermont_registration_completed = TRUE
+THEN Vermont_inspection_requirement_review_required = TRUE
+
+IF Vermont_purchase_use_tax_applies = TRUE
+THEN Vermont_purchase_and_use_tax_review_required = TRUE
+
+============================================================
+VERMONT SOURCE VERIFICATION RULE
+============================================================
+
+IF user_question_mentions = "Vermont"
+AND customer_is_buying_vehicle_from_dealer = TRUE
+THEN answer_must_state_source_verification_if_uncertain = TRUE
+
+IF Vermont_specific_requirement_not_confirmed_from_official_source = TRUE
+THEN do_not_present_as_absolute = TRUE
+
+COMMON SOURCE WARNING:
+The Vermont DMV source must be verified directly before final submission. Do not treat this note as complete if the customer’s deal depends on a Vermont-specific inspection, VIN verification, tax, lienholder, or form requirement.
+
+============================================================
+FLORIDA DEALER WORKFLOW FOR VERMONT CUSTOMER
+============================================================
+
+When a Florida dealership sells a vehicle to a Vermont customer and the customer wants Vermont title/registration:
+
+1. Prepare dealer ownership package:
+   - MCO/MSO for new vehicle or properly assigned title for used vehicle
+   - Dealer reassignment if applicable
+   - Buyer’s order / bill of sale
+   - Odometer disclosure/statement if applicable
+   - Lienholder information if financed
+
+2. Vermont-specific items to verify before submission:
+   - Current Vermont Registration/Tax/Title Application
+   - Title or MCO/MSO requirements
+   - Vermont insurance requirement
+   - Vermont purchase/use tax requirement
+   - Vermont inspection requirement
+   - VIN verification requirement, if applicable
+   - Lienholder/title mailing requirements if financed
+
+3. If financed:
+   - Confirm lienholder information.
+   - Confirm title/lien recording requirements.
+   - Confirm whether lienholder receives title.
+
+4. If registering:
+   - Verify Vermont insurance and inspection requirements.
+   - Do not assume Florida insurance satisfies Vermont registration requirements unless Vermont DMV/agency confirms.
+
+5. If source cannot be verified:
+   - Hold and escalate to title lead, agency, lender, or Vermont DMV before promising completion.
+
+============================================================
+TAX / RECIPROCITY NOTES
+============================================================
+
+For Florida dealer sale to Vermont resident:
+
+- Review Florida DOR out-of-state resident sales tax / DR-123 workflow.
+- Verify Vermont purchase/use tax requirements directly with Vermont DMV, title agency, lender, or controller.
+- Do not finalize Vermont tax treatment based only on this source-limited note.
+
+Use related file:
+fl_motor_vehicle_sales_tax_rates_by_state_tip_25a01_01_notes.txt
+
+============================================================
+REJECTION / DELAY RISKS
+============================================================
+
+High risk if:
+
+- Vermont official source is not verified.
+- Registration/Tax/Title Application is missing or outdated.
+- Title or MCO/MSO requirement is misunderstood.
+- Odometer disclosure missing when applicable.
+- Insurance requirement is unclear.
+- Inspection requirement is unclear.
+- VIN verification requirement is unclear.
+- Lienholder/title mailing instructions are unclear.
+- Vermont purchase/use tax and Florida DR-123 handling are not reconciled.
+
+============================================================
+AI ROUTING KEYWORDS
+============================================================
+
+Vermont customer
+title customer in Vermont
+register customer in Vermont
+Vermont title requirements
+Vermont registration requirements
+Vermont out of state dealer sale
+Florida dealer Vermont customer
+Vermont Registration Tax Title Application
+Vermont insurance
+Vermont inspection
+Vermont purchase and use tax
+Vermont lienholder
+VT title requirements
+VT registration requirements
+what do I need to title in Vermont
+
+============================================================
+COMMON CLERK ANSWER
+============================================================
+
+For a Vermont customer buying from a Florida dealership, verify the current Vermont DMV requirements directly because the official source page could not be fully fetched during note creation. At minimum, prepare the dealer ownership package, MCO/MSO or properly assigned title, buyer’s order/bill of sale, odometer disclosure/statement if applicable, lienholder information if financed, and review the current Vermont Registration/Tax/Title Application, insurance, inspection, purchase/use tax, and VIN verification requirements. Do not present any Vermont-specific requirement as final until confirmed through Vermont DMV, a title agency, lender, or title lead. Escalate if the Vermont application, title/MCO, insurance, inspection, VIN verification, lienholder, or tax handling is unclear.
+
+============================================================
+RELATED FILES
+============================================================
+
+- out_of_state_customer_title_master_logic_map.txt
+- fl_motor_vehicle_sales_tax_rates_by_state_tip_25a01_01_notes.txt
+- validation_logic_map.txt
+- rejection_prevention_logic_map.txt
+- fl_title_ownership_and_transfer_law_notes.txt
+- fl_lien_and_lien_satisfaction_law_notes.txt
+
+============================================================
+END OF FILE
+============================================================

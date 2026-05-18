@@ -1,0 +1,261 @@
+DOCUMENT: GEORGIA_CUSTOMER_TITLING_REQUIREMENTS_NOTES
+TITLE: Georgia Customer Titling / Registration Requirements for Out-of-State Dealer Sale
+STATE: Georgia
+SOURCE: https://dor.georgia.gov/transfer-title-and-license-plate-another-state-or-country
+DOCUMENT_TYPE: Out-of-State Customer Titling / Registration Requirements
+CATEGORY: FLORIDA DEALER SALE TO GEORGIA CUSTOMER / GEORGIA TITLE / GEORGIA REGISTRATION / MV-1 / T-22B / GEORGIA INSURANCE / EMISSIONS / TAVT
+
+============================================================
+PURPOSE
+============================================================
+
+This file helps a Florida dealership understand what may be needed when a customer buys a vehicle from the dealership and wants the vehicle titled and/or registered in Georgia.
+
+Use this file for questions like:
+
+- What do I need to title this customer in Georgia?
+- Georgia customer bought from our Florida dealership.
+- Does Georgia require inspection?
+- What is Georgia T-22B?
+- Does Georgia need Georgia insurance?
+- Does Georgia require MV-1?
+- Does Georgia require emissions?
+- What if the title is held by financial institution?
+
+============================================================
+WHEN TO USE THIS FILE
+============================================================
+
+Use this file when:
+
+IF customer_state = "Georgia"
+AND customer_is_buying_vehicle_from_dealer = TRUE
+AND vehicle_will_be_titled_or_registered_in_customer_state = TRUE
+THEN use_georgia_customer_titling_requirements_notes = TRUE
+
+Do NOT use this file as the primary source for:
+- Customer bringing Georgia title into Florida for Florida title
+- Florida resident titling/registering in Florida
+- Florida tag transfer workflow
+
+For Florida titling/registration, use Florida title and registration notes.
+
+============================================================
+GEORGIA SOURCE SUMMARY
+============================================================
+
+Georgia DOR says titles and license plates for vehicles titled in another state or country can be obtained at the County Tag Office.
+
+Georgia required items include:
+
+- Completed and signed MV-1 Title/Tag Application
+- Original valid title issued in applicant’s name or properly assigned
+- Out-of-state/country valid registration certificate, if applicable
+- Completed and signed Form T-22B Certification of Inspection
+- Georgia liability insurance reported by the insurance company and on record with the Department
+- Emission Inspection Certificate, if applicable
+- English translation of each document not printed in English
+- Copy of Georgia driver’s license or ID
+- Payment of all fees and/or taxes due:
+  - $20.00 license plate fee
+  - $18.00 title fee
+  - Title Ad Valorem Tax
+  - Any penalties due
+
+Georgia notes:
+- If title is held by financial institution or leasing company, County Tag Office Agent processing application will contact the financial institution/leasing company requesting out-of-state title before Georgia title application can be processed.
+- If a 1986 or newer vehicle and previous state/country does not issue titles, additional requirements apply, including T-22B by Georgia law enforcement officer and current out-of-state registration.
+- Vehicles from Massachusetts, Mississippi, or Minnesota require certification from the appropriate motor vehicle agency indicating vehicle was not titled in that state.
+- 1963-1985 model vehicle last registered in state/country that does not issue titles will not be issued a Georgia title.
+- Imported vehicle exceptions may require CBP, DOT HS-7, and EPA 3520-1 documents.
+
+============================================================
+GEORGIA REQUIRED DOCUMENT LOGIC
+============================================================
+
+IF Georgia_customer_title_or_registration_requested = TRUE
+THEN Georgia_MV_1_title_tag_application_required = TRUE
+
+IF Georgia_customer_title_or_registration_requested = TRUE
+THEN original_valid_title_or_properly_assigned_title_required = TRUE
+
+IF out_of_state_or_country_registration_applicable = TRUE
+THEN valid_registration_certificate_required = TRUE
+
+IF Georgia_customer_title_or_registration_requested = TRUE
+THEN Georgia_T_22B_certification_of_inspection_required = TRUE
+
+IF Georgia_registration_requested = TRUE
+THEN Georgia_liability_insurance_on_record_required = TRUE
+
+IF Georgia_emissions_area_or_vehicle_applicable = TRUE
+THEN Georgia_emission_inspection_certificate_required = TRUE
+
+IF document_not_in_English = TRUE
+THEN English_translation_required = TRUE
+
+IF Georgia_customer_title_or_registration_requested = TRUE
+THEN Georgia_driver_license_or_ID_copy_required = TRUE
+
+IF Georgia_customer_title_or_registration_requested = TRUE
+THEN Georgia_fees_taxes_TAVT_review_required = TRUE
+
+============================================================
+GEORGIA LIEN / LEASE / TITLE HELD BY FINANCIAL INSTITUTION
+============================================================
+
+IF Georgia_title_held_by_financial_institution_or_leasing_company = TRUE
+THEN county_tag_office_agent_contacts_financial_institution_or_leasing_company_for_title = TRUE
+
+IF Georgia_title_held_by_financial_institution_or_leasing_company = TRUE
+THEN do_not_assume_Georgia_title_application_can_process_without_out_of_state_title = TRUE
+
+IF financed_or_leased_Georgia_customer = TRUE
+THEN lienholder_or_lease_company_title_request_review_required = TRUE
+
+============================================================
+GEORGIA NON-TITLE STATE / SPECIAL YEAR MODEL LOGIC
+============================================================
+
+IF vehicle_model_year >= 1986
+AND previous_state_or_country_does_not_issue_titles = TRUE
+THEN Georgia_non_title_state_requirements_apply = TRUE
+
+IF Georgia_non_title_state_requirements_apply = TRUE
+THEN T_22B_must_be_completed_by_Georgia_law_enforcement_officer = TRUE
+
+IF Georgia_non_title_state_requirements_apply = TRUE
+THEN current_out_of_state_registration_required = TRUE
+
+IF Georgia_non_title_state_requirements_apply = TRUE
+AND assignment_spaces_not_provided = TRUE
+THEN signed_bill_of_sale_required = TRUE
+
+IF vehicle_purchased_from_state IN ["Massachusetts", "Mississippi", "Minnesota"]
+THEN certification_from_motor_vehicle_agency_that_vehicle_was_not_titled_required = TRUE
+
+IF vehicle_model_year >= 1963
+AND vehicle_model_year <= 1985
+AND prior_state_or_country_does_not_issue_titles = TRUE
+THEN Georgia_title_will_not_be_issued_per_source = TRUE
+
+============================================================
+GEORGIA IMPORTED VEHICLE LOGIC
+============================================================
+
+IF motor_vehicle_imported_into_US = TRUE
+AND not_trailer_or_vehicle_imported_from_Puerto_Rico = TRUE
+THEN Georgia_import_exception_review_required = TRUE
+
+IF CBP_7501_does_not_reflect_VIN_manufactured_for_US_sale = TRUE
+THEN DOT_HS_7_and_EPA_3520_1_required = TRUE
+
+IF imported_vehicle_documents_required = TRUE
+THEN original_and_copy_required_for_federal_forms = TRUE
+
+============================================================
+FLORIDA DEALER WORKFLOW FOR GEORGIA CUSTOMER
+============================================================
+
+When a Florida dealership sells a vehicle to a Georgia customer and the customer wants Georgia title/registration:
+
+1. Prepare ownership package:
+   - MCO/MSO or properly assigned title
+   - Dealer reassignment if applicable
+   - Bill of sale / buyer’s order
+   - Odometer disclosure/statement if applicable
+   - Lienholder information if financed
+
+2. Georgia-specific items to review:
+   - MV-1 Title/Tag Application
+   - T-22B Certification of Inspection
+   - Georgia liability insurance on record
+   - Georgia emissions certificate if applicable
+   - Georgia DL/ID copy
+   - English translations for non-English documents
+   - TAVT and Georgia fees
+
+3. If title held by financial institution/leasing company:
+   - Georgia County Tag Office may need to contact lienholder/lessor for title.
+   - Do not assume title can process until title request/lienholder path is clear.
+
+4. If state/country does not issue titles:
+   - Apply Georgia special non-title-state rules.
+   - Escalate if Massachusetts, Mississippi, or Minnesota certification is needed.
+
+5. If imported vehicle:
+   - Review CBP, DOT HS-7, EPA 3520-1 requirements.
+   - Escalate before submission if federal import documents are missing.
+
+============================================================
+TAX / RECIPROCITY NOTES
+============================================================
+
+For Florida dealer sale to Georgia resident:
+
+- Review Florida DOR out-of-state resident sales tax / DR-123 workflow.
+- Review customer state tax rate and Florida partial exemption rules.
+- Verify tax handling with controller, tax collector, agency, or lender before finalizing.
+- Georgia Title Ad Valorem Tax may apply under Georgia rules.
+
+Use related file:
+fl_motor_vehicle_sales_tax_rates_by_state_tip_25a01_01_notes.txt
+
+============================================================
+REJECTION / DELAY RISKS
+============================================================
+
+High risk if:
+
+- MV-1 is missing or unsigned.
+- T-22B inspection is missing.
+- Georgia insurance is not on record.
+- Georgia emissions certificate missing when applicable.
+- Georgia DL/ID copy missing.
+- Title held by lienholder/lease company and Georgia has not received title.
+- Non-English documents lack translation.
+- Non-title-state vehicle lacks required registration/certification.
+- Massachusetts/Mississippi/Minnesota certification required but missing.
+- Imported vehicle lacks CBP/DOT/EPA documents.
+- Tax/TAVT/DR-123 handling is unclear.
+
+============================================================
+AI ROUTING KEYWORDS
+============================================================
+
+Georgia customer
+title customer in Georgia
+register customer in Georgia
+Georgia title requirements
+Georgia registration requirements
+Georgia out of state dealer sale
+Florida dealer Georgia customer
+Georgia MV-1
+Georgia T-22B
+Georgia Certification of Inspection
+Georgia liability insurance
+Georgia emissions certificate
+Georgia TAVT
+Georgia county tag office
+what do I need to title in Georgia
+
+============================================================
+COMMON CLERK ANSWER
+============================================================
+
+For a Georgia customer buying from a Florida dealership, Georgia requires a completed signed MV-1, original valid title or properly assigned title, out-of-state registration if applicable, completed T-22B Certification of Inspection, Georgia liability insurance on record, emissions certificate if applicable, English translations if needed, Georgia DL/ID copy, and payment of Georgia fees/taxes including title fee, plate fee, and TAVT. If title is held by a financial institution or leasing company, Georgia County Tag Office will request the title before processing. Prepare the dealer package and review Florida DR-123/tax handling. Escalate if T-22B, insurance, emissions, title possession, lienholder, non-title-state, import, or tax handling is unclear.
+
+============================================================
+RELATED FILES
+============================================================
+
+- out_of_state_customer_title_master_logic_map.txt
+- fl_motor_vehicle_sales_tax_rates_by_state_tip_25a01_01_notes.txt
+- validation_logic_map.txt
+- rejection_prevention_logic_map.txt
+- fl_title_ownership_and_transfer_law_notes.txt
+- fl_lien_and_lien_satisfaction_law_notes.txt
+
+============================================================
+END OF FILE
+============================================================

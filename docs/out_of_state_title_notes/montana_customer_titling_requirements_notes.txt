@@ -1,0 +1,181 @@
+DOCUMENT: MONTANA_CUSTOMER_TITLING_REQUIREMENTS_NOTES
+TITLE: Montana Customer Titling / Registration Requirements for Out-of-State Dealer Sale
+STATE: Montana
+SOURCE: https://www.gallatinmt.gov/motor-vehicle-department/webforms/what-do-i-need-bring
+DOCUMENT_TYPE: Out-of-State Customer Titling / Registration Requirements
+CATEGORY: FLORIDA DEALER SALE TO MONTANA CUSTOMER / MONTANA TITLE / MONTANA REGISTRATION / ORIGINAL TITLE / FULL VIN / MONTANA ID / PROOF OF RESIDENCY
+
+============================================================
+PURPOSE
+============================================================
+
+This file helps a Florida dealership understand what may be needed when a customer buys a vehicle from the dealership and wants the vehicle titled and/or registered in Montana.
+
+Use this file for questions like:
+
+- What do I need to title this customer in Montana?
+- Montana customer bought from our Florida dealership.
+- Does Montana require physical original title?
+- Will Montana accept electronic title, memo title, copy, or registration copy?
+- What ID does Montana require?
+- What if customer does not have a Montana driver license?
+
+============================================================
+WHEN TO USE THIS FILE
+============================================================
+
+Use this file when:
+
+IF customer_state = "Montana"
+AND customer_is_buying_vehicle_from_dealer = TRUE
+AND vehicle_will_be_titled_or_registered_in_customer_state = TRUE
+THEN use_montana_customer_titling_requirements_notes = TRUE
+
+Do NOT use this file as the primary source for:
+- Customer bringing Montana title into Florida for Florida title
+- Florida resident titling/registering in Florida
+- Florida tag transfer workflow
+
+For Florida titling/registration, use Florida title and registration notes.
+
+============================================================
+MONTANA SOURCE SUMMARY
+============================================================
+
+Gallatin County, Montana says:
+
+For all title and registration transactions, customer should bring:
+
+- Full VIN of vehicle being titled/registered
+- Montana driver license or ID
+- If multiple people are on the title, picture of their driver license is needed
+- Physical original title
+- Montana source says it does not accept copies, memorandum titles, electronic titles, or a copy of a registration to transfer ownership
+
+If customer does not have Montana driver license:
+- Valid government-issued ID is required
+  - Examples include out-of-state driver license, passport, passport card, foreign driver license
+- Proof of residency is required
+
+============================================================
+MONTANA REQUIRED DOCUMENT LOGIC
+============================================================
+
+IF Montana_customer_title_or_registration_requested = TRUE
+THEN full_VIN_required = TRUE
+
+IF Montana_customer_title_or_registration_requested = TRUE
+THEN Montana_driver_license_or_ID_required = TRUE
+
+IF multiple_people_on_title = TRUE
+THEN picture_of_each_driver_license_required = TRUE
+
+IF Montana_customer_title_or_registration_requested = TRUE
+THEN physical_original_title_required = TRUE
+
+IF ownership_transfer_to_Montana_customer = TRUE
+THEN Montana_does_not_accept_copies_memo_titles_electronic_titles_or_registration_copy_to_transfer_ownership = TRUE
+
+IF customer_does_not_have_Montana_driver_license = TRUE
+THEN valid_government_issued_ID_required = TRUE
+
+IF customer_does_not_have_Montana_driver_license = TRUE
+THEN proof_of_residency_required = TRUE
+
+============================================================
+FLORIDA DEALER WORKFLOW FOR MONTANA CUSTOMER
+============================================================
+
+When a Florida dealership sells a vehicle to a Montana customer and the customer wants Montana title/registration:
+
+1. Prepare dealer ownership package:
+   - Physical original MCO/MSO or properly assigned physical original title
+   - Dealer reassignment if applicable
+   - Buyer’s order / bill of sale
+   - Odometer disclosure/statement if applicable
+   - Lienholder information if financed
+   - Full VIN
+
+2. Montana-specific items to review:
+   - Physical original title is required for ownership transfer.
+   - Montana source says copies, memorandum titles, electronic titles, and registration copies are not accepted to transfer ownership.
+   - Montana driver license/ID is needed.
+   - If customer lacks Montana driver license, valid government-issued ID plus proof of residency is required.
+   - If multiple owners, picture of each driver license may be needed.
+
+3. If financed:
+   - Confirm lienholder/title handling.
+   - Because Montana source says physical original title is required, do not assume electronic title/copy/memo title will work.
+   - Escalate if lender, ELT, or title possession conflicts with Montana original-title requirement.
+
+4. If customer only has copy/electronic title/memo title:
+   - Hold and escalate before promising Montana title/registration.
+   - Obtain physical original title path or agency confirmation.
+
+============================================================
+TAX / RECIPROCITY NOTES
+============================================================
+
+For Florida dealer sale to Montana resident:
+
+- Review Florida DOR out-of-state resident sales tax / DR-123 workflow.
+- Review Montana title/registration tax/fee requirements.
+- Verify tax handling with controller, agency, lender, or Montana county office before finalizing.
+
+Use related file:
+fl_motor_vehicle_sales_tax_rates_by_state_tip_25a01_01_notes.txt
+
+============================================================
+REJECTION / DELAY RISKS
+============================================================
+
+High risk if:
+
+- Physical original title is missing.
+- Dealer only has copy, memo title, electronic title, or registration copy.
+- Full VIN is missing.
+- Montana driver license/ID missing.
+- Multiple owners and ID copies/pictures missing.
+- Customer lacks Montana driver license and proof of residency is missing.
+- Lienholder/title possession conflicts with original title requirement.
+- Tax/DR-123 handling unclear.
+
+============================================================
+AI ROUTING KEYWORDS
+============================================================
+
+Montana customer
+title customer in Montana
+register customer in Montana
+Montana title requirements
+Montana registration requirements
+Montana out of state dealer sale
+Florida dealer Montana customer
+Montana physical original title
+Montana does not accept electronic title
+Montana memorandum title
+Montana proof of residency
+Montana full VIN
+Montana driver license ID
+what do I need to title in Montana
+
+============================================================
+COMMON CLERK ANSWER
+============================================================
+
+For a Montana customer buying from a Florida dealership, Montana/Gallatin County guidance says all title and registration transactions need the full VIN, Montana driver license or ID, and the physical original title. The source specifically says copies, memorandum titles, electronic titles, or registration copies are not accepted to transfer ownership. If the customer does not have a Montana driver license, they need valid government-issued ID and proof of residency. Prepare the dealer ownership package, physical original title or MCO/MSO, buyer’s order, odometer disclosure/statement if applicable, lienholder information if financed, and review Florida DR-123/tax handling. Escalate if the title is electronic, held by lienholder, only a copy/memo title is available, or residency/ID/tax handling is unclear.
+
+============================================================
+RELATED FILES
+============================================================
+
+- out_of_state_customer_title_master_logic_map.txt
+- fl_motor_vehicle_sales_tax_rates_by_state_tip_25a01_01_notes.txt
+- validation_logic_map.txt
+- rejection_prevention_logic_map.txt
+- fl_title_ownership_and_transfer_law_notes.txt
+- fl_lien_and_lien_satisfaction_law_notes.txt
+
+============================================================
+END OF FILE
+============================================================

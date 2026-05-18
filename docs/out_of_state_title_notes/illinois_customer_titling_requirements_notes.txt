@@ -1,0 +1,198 @@
+DOCUMENT: ILLINOIS_CUSTOMER_TITLING_REQUIREMENTS_NOTES
+TITLE: Illinois Customer Titling / Registration Requirements for Out-of-State Dealer Sale
+STATE: Illinois
+SOURCE: https://www.ilsos.gov/departments/vehicles/title-and-registration/title-reg-checklist/new-il.html
+DOCUMENT_TYPE: Out-of-State Customer Titling / Registration Requirements
+CATEGORY: FLORIDA DEALER SALE TO ILLINOIS CUSTOMER / ILLINOIS TITLE / ILLINOIS REGISTRATION / ELECTRONIC REGISTRATION AND TITLE / INSURANCE / TAX FORM / ODOMETER
+
+============================================================
+PURPOSE
+============================================================
+
+This file helps a Florida dealership understand what may be needed when a customer buys a vehicle from the dealership and wants the vehicle titled and/or registered in Illinois.
+
+Use this file for questions like:
+
+- What do I need to title this customer in Illinois?
+- Illinois customer bought from our Florida dealership.
+- Does Illinois need an online ERT transaction?
+- What does Illinois need for an out-of-state title?
+- Does Illinois need insurance proof?
+- Does Illinois need a tax form?
+- Does Illinois require odometer review?
+
+============================================================
+WHEN TO USE THIS FILE
+============================================================
+
+Use this file when:
+
+IF customer_state = "Illinois"
+AND customer_is_buying_vehicle_from_dealer = TRUE
+AND vehicle_will_be_titled_or_registered_in_customer_state = TRUE
+THEN use_illinois_customer_titling_requirements_notes = TRUE
+
+Do NOT use this file as the primary source for:
+- Customer bringing Illinois title into Florida for Florida title
+- Florida resident titling/registering in Florida
+- Florida tag transfer workflow
+
+For Florida titling/registration, use Florida title and registration notes.
+
+============================================================
+ILLINOIS SOURCE SUMMARY
+============================================================
+
+Illinois Secretary of State title/registration checklist for out-of-state title shows:
+
+Next steps:
+- Start Electronic Registration and Title transaction online.
+- Gather documents and payment method.
+- Submit application/payment by mail or bring to a DMV facility.
+
+Documents listed:
+- Out-of-state title
+- If vehicle is 2011 or newer, verify odometer reading on vehicle with the assignment on the title and application
+- Proof of insurance
+- Printed document from Electronic Title and Registration transaction
+- Loan information for vehicle, if applicable
+- Tax form
+
+Payment listed:
+- Check or money order to Illinois Secretary of State for title and registration fees
+- Check or money order to Illinois Department of Revenue for taxes
+- Cash is not accepted for mailed transactions
+
+Illinois notes:
+- All presented documents must be valid and correct.
+- Photocopies are not accepted.
+
+============================================================
+ILLINOIS REQUIRED DOCUMENT LOGIC
+============================================================
+
+IF Illinois_customer_title_or_registration_requested = TRUE
+THEN Illinois_Electronic_Registration_and_Title_transaction_review_required = TRUE
+
+IF Illinois_customer_title_or_registration_requested = TRUE
+THEN out_of_state_title_required = TRUE
+
+IF Illinois_vehicle_model_year >= 2011
+THEN Illinois_odometer_reading_verification_required = TRUE
+
+IF Illinois_registration_requested = TRUE
+THEN proof_of_insurance_required = TRUE
+
+IF Illinois_Electronic_Registration_and_Title_transaction_started = TRUE
+THEN printed_ERT_transaction_document_required = TRUE
+
+IF Illinois_vehicle_has_loan = TRUE
+THEN loan_information_required = TRUE
+
+IF Illinois_customer_title_or_registration_requested = TRUE
+THEN Illinois_tax_form_required = TRUE
+
+IF mailed_transaction = TRUE
+THEN check_or_money_order_required = TRUE
+
+IF documents_are_photocopies = TRUE
+THEN Illinois_document_rejection_risk = TRUE
+
+============================================================
+FLORIDA DEALER WORKFLOW FOR ILLINOIS CUSTOMER
+============================================================
+
+When a Florida dealership sells a vehicle to an Illinois customer and the customer wants Illinois title/registration:
+
+1. Prepare dealer ownership package:
+   - MCO/MSO or properly assigned title
+   - Dealer reassignment if applicable
+   - Buyer’s order / bill of sale
+   - Odometer disclosure/statement if applicable
+   - Lienholder/loan information if financed
+
+2. Illinois-specific items to review:
+   - Illinois Electronic Registration and Title transaction
+   - Printed ERT transaction document
+   - Illinois proof of insurance
+   - Illinois tax form
+   - Loan information if financed
+   - Odometer verification for 2011-or-newer vehicle
+   - Originals/valid documents, not photocopies
+
+3. If financed:
+   - Confirm lienholder/loan information required for Illinois package.
+   - Confirm lender/title mailing instructions.
+
+4. If mailed:
+   - Confirm checks/money orders are correct for Illinois SOS and Illinois Department of Revenue.
+   - Do not tell customer cash can be mailed.
+
+============================================================
+TAX / RECIPROCITY NOTES
+============================================================
+
+For Florida dealer sale to Illinois resident:
+
+- Review Florida DOR out-of-state resident sales tax / DR-123 workflow.
+- Review customer state tax rate and Florida partial exemption rules.
+- Verify tax handling with controller, tax collector, agency, or lender before finalizing.
+- Illinois tax form/payment may be required under Illinois process.
+
+Use related file:
+fl_motor_vehicle_sales_tax_rates_by_state_tip_25a01_01_notes.txt
+
+============================================================
+REJECTION / DELAY RISKS
+============================================================
+
+High risk if:
+
+- Out-of-state title is missing.
+- ERT transaction document is missing.
+- Proof of Illinois insurance is missing.
+- Tax form is missing.
+- Loan/lien information is missing.
+- Odometer verification for 2011-or-newer vehicle is not reviewed.
+- Documents are photocopies rather than valid originals/correct documents.
+- Payment to Illinois SOS or Illinois Department of Revenue is wrong.
+- Tax/DR-123 handling is unclear.
+
+============================================================
+AI ROUTING KEYWORDS
+============================================================
+
+Illinois customer
+title customer in Illinois
+register customer in Illinois
+Illinois title requirements
+Illinois registration requirements
+Illinois out of state dealer sale
+Florida dealer Illinois customer
+Illinois Electronic Registration and Title
+Illinois ERT transaction
+Illinois proof of insurance
+Illinois tax form
+Illinois odometer 2011
+what do I need to title in Illinois
+
+============================================================
+COMMON CLERK ANSWER
+============================================================
+
+For an Illinois customer buying from a Florida dealership, Illinois may require the customer to start an Electronic Registration and Title transaction, then submit the out-of-state title, proof of insurance, printed ERT document, tax form, loan information if financed, and payment for title/registration fees and taxes. For 2011-or-newer vehicles, Illinois says to verify the odometer reading on the vehicle with the title assignment and application. Prepare the dealer title package, buyer’s order, odometer disclosure/statement if applicable, lienholder information if financed, and review Florida DR-123/tax handling. Escalate if the ERT document, tax form, insurance, loan information, odometer verification, or payment handling is unclear.
+
+============================================================
+RELATED FILES
+============================================================
+
+- out_of_state_customer_title_master_logic_map.txt
+- fl_motor_vehicle_sales_tax_rates_by_state_tip_25a01_01_notes.txt
+- validation_logic_map.txt
+- rejection_prevention_logic_map.txt
+- fl_title_ownership_and_transfer_law_notes.txt
+- fl_lien_and_lien_satisfaction_law_notes.txt
+
+============================================================
+END OF FILE
+============================================================

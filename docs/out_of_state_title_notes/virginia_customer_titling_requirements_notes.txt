@@ -1,0 +1,262 @@
+DOCUMENT: VIRGINIA_CUSTOMER_TITLING_REQUIREMENTS_NOTES
+TITLE: Virginia Customer Titling / Registration Requirements for Out-of-State Dealer Sale
+STATE: Virginia
+SOURCE: https://www.dmv.virginia.gov/vehicles/title
+DOCUMENT_TYPE: Out-of-State Customer Titling / Registration Requirements
+CATEGORY: FLORIDA DEALER SALE TO VIRGINIA CUSTOMER / VIRGINIA TITLE / VIRGINIA REGISTRATION / APPLICATION FOR TITLE AND REGISTRATION / PROOF OF ADDRESS / PURCHASE PRICE / ODOMETER / ELECTRONIC TITLE
+
+============================================================
+PURPOSE
+============================================================
+
+This file helps a Florida dealership understand what may be needed when a customer buys a vehicle from the dealership and wants the vehicle titled and/or registered in Virginia.
+
+Use this file for questions like:
+
+- What do I need to title this customer in Virginia?
+- Virginia customer bought from our Florida dealership.
+- Does Virginia need proof of address?
+- What does Virginia need for an out-of-state title?
+- Does Virginia need purchase price proof?
+- What if the out-of-state title has no assignment section?
+- Does Virginia allow electronic title or paper title?
+
+============================================================
+WHEN TO USE THIS FILE
+============================================================
+
+Use this file when:
+
+IF customer_state = "Virginia"
+AND customer_is_buying_vehicle_from_dealer = TRUE
+AND vehicle_will_be_titled_or_registered_in_customer_state = TRUE
+THEN use_virginia_customer_titling_requirements_notes = TRUE
+
+Do NOT use this file as the primary source for:
+- Customer bringing Virginia title into Florida for Florida title
+- Florida resident titling/registering in Florida
+- Florida tag transfer workflow
+
+For Florida titling/registration, use Florida title and registration notes.
+
+============================================================
+VIRGINIA SOURCE SUMMARY
+============================================================
+
+Virginia DMV says:
+
+For out-of-state vehicles or trailers, customer must present:
+
+- Completed online or paper Application for Title and Registration
+- Proof of address
+- One of the following:
+  - Title or registration card from previous state of residence
+  - Previous owner's out-of-state title signed over to customer
+  - Ownership document issued by U.S. Armed Forces showing customer as owner
+
+If purchased within the last 12 months, provide one of the following:
+
+- Proof of purchase price, such as buyer's order, bill of sale, or seller's declared sale price on title
+- Vehicle Price Certification signed by seller or purchaser
+
+Virginia title fees/taxes:
+
+- $15 title fee
+- Sales and Use Tax unless exempt
+- If exempt, bring proof of exemption or complete Purchaser's Statement of Tax Exemption
+
+Odometer:
+
+- When vehicle is sold or transferred, seller must record odometer reading in assignment section of title.
+- Buyer must record odometer reading on Application for Title and Registration.
+- If out-of-state title does not have an assignment section, seller may record mileage on Odometer Disclosure Statement.
+- If out-of-state title does not have assignment section and odometer reading is not actual/current, seller must disclose the correct status on Odometer Disclosure Statement.
+- If out-of-state title shows vehicle was exempt from odometer disclosure, no odometer disclosure is required for Virginia title; present the out-of-state title showing exemption.
+
+Electronic / paper title:
+
+- Customer can choose paper title or have DMV keep electronic record of title.
+- If no lien ever existed and no paper title was previously issued, one-time paper title may be issued at no fee.
+- If lien existed or paper title was previously printed, substitute title fee applies.
+
+Dealer processing:
+
+- Virginia DMV says if customer recently purchased from dealer and dealer is processing work, it may take up to 30 days for transaction to process and vehicle to appear in DMV record.
+- Leased vehicles will not show in customer's DMV record.
+
+============================================================
+VIRGINIA REQUIRED DOCUMENT LOGIC
+============================================================
+
+IF Virginia_customer_title_or_registration_requested = TRUE
+THEN Virginia_Application_for_Title_and_Registration_required = TRUE
+
+IF Virginia_customer_title_or_registration_requested = TRUE
+THEN proof_of_address_required = TRUE
+
+IF Virginia_out_of_state_vehicle_or_trailer = TRUE
+THEN one_of_title_registration_card_assigned_out_of_state_title_or_US_Armed_Forces_ownership_document_required = TRUE
+
+IF vehicle_purchased_within_last_12_months = TRUE
+THEN proof_of_purchase_price_required = TRUE
+
+IF proof_of_purchase_price_required = TRUE
+THEN acceptable_proof_may_include_buyers_order_bill_of_sale_declared_sale_price_or_vehicle_price_certification = TRUE
+
+IF Virginia_title_requested = TRUE
+THEN Virginia_title_fee_15_dollars_required = TRUE
+
+IF Virginia_title_requested = TRUE
+THEN Virginia_sales_and_use_tax_review_required = TRUE
+
+IF Virginia_tax_exemption_claimed = TRUE
+THEN proof_of_exemption_or_Purchaser_Statement_of_Tax_Exemption_required = TRUE
+
+============================================================
+VIRGINIA ODOMETER LOGIC
+============================================================
+
+IF Virginia_vehicle_sold_or_transferred = TRUE
+THEN seller_must_record_odometer_in_assignment_section_of_title = TRUE
+
+IF Virginia_customer_title_or_registration_requested = TRUE
+THEN buyer_must_record_odometer_on_Application_for_Title_and_Registration = TRUE
+
+IF out_of_state_title_has_no_assignment_section = TRUE
+THEN seller_may_use_Odometer_Disclosure_Statement = TRUE
+
+IF out_of_state_title_has_no_assignment_section
+AND odometer_reading_not_actual_or_current = TRUE
+THEN seller_must_disclose_non_actual_status_on_Odometer_Disclosure_Statement = TRUE
+
+IF out_of_state_title_shows_odometer_exempt = TRUE
+THEN no_additional_odometer_disclosure_required_for_Virginia_title = TRUE
+
+============================================================
+VIRGINIA ELECTRONIC / PAPER TITLE LOGIC
+============================================================
+
+IF Virginia_title_requested = TRUE
+THEN customer_may_select_paper_or_electronic_title = TRUE
+
+IF Virginia_electronic_title_selected = TRUE
+THEN DMV_keeps_electronic_record_of_title = TRUE
+
+IF paper_title_requested_later
+AND no_lien_ever_existed
+AND no_paper_title_previously_issued = TRUE
+THEN one_time_paper_title_no_fee_review_required = TRUE
+
+IF paper_title_requested_later
+AND lien_existed_or_paper_title_previously_printed = TRUE
+THEN substitute_title_fee_required = TRUE
+
+============================================================
+FLORIDA DEALER WORKFLOW FOR VIRGINIA CUSTOMER
+============================================================
+
+When a Florida dealership sells a vehicle to a Virginia customer and the customer wants Virginia title/registration:
+
+1. Prepare dealer ownership package:
+   - MCO/MSO for new vehicle or properly assigned title for used vehicle
+   - Dealer reassignment if applicable
+   - Buyer’s order / bill of sale
+   - Purchase price proof
+   - Odometer disclosure/statement if applicable
+   - Lienholder information if financed
+
+2. Virginia-specific items to review:
+   - Virginia Application for Title and Registration
+   - Proof of Virginia address
+   - Prior title/registration/ownership document
+   - Purchase price proof if purchased within last 12 months
+   - Sales and Use Tax or exemption proof
+   - Odometer disclosure on title/application or separate Odometer Disclosure Statement if title lacks assignment section
+   - Paper vs electronic title selection
+
+3. If financed:
+   - Confirm lienholder/title instructions.
+   - Confirm whether Virginia electronic title or paper title is selected.
+   - Confirm lienholder information is included.
+
+4. If odometer issue:
+   - If out-of-state title lacks assignment section, use Odometer Disclosure Statement.
+   - If mileage is non-actual, ensure proper non-actual status is marked.
+   - If title shows odometer exemption, retain proof of exemption.
+
+5. If tax issue:
+   - Review Virginia sales/use tax and exemption rules.
+   - Review Florida DR-123/nonresident sale workflow before finalizing.
+
+============================================================
+TAX / RECIPROCITY NOTES
+============================================================
+
+For Florida dealer sale to Virginia resident:
+
+- Review Florida DOR out-of-state resident sales tax / DR-123 workflow.
+- Virginia requires Sales and Use Tax unless exempt.
+- If exempt, Virginia requires exemption proof or Purchaser's Statement of Tax Exemption.
+- Verify tax handling with controller, agency, lender, or Virginia DMV before finalizing.
+
+Use related file:
+fl_motor_vehicle_sales_tax_rates_by_state_tip_25a01_01_notes.txt
+
+============================================================
+REJECTION / DELAY RISKS
+============================================================
+
+High risk if:
+
+- Virginia Application for Title and Registration missing.
+- Proof of address missing.
+- Out-of-state title/registration/ownership document missing.
+- Purchase price proof missing for vehicle purchased within last 12 months.
+- Sales/use tax or exemption proof missing.
+- Odometer reading missing on title/application.
+- Out-of-state title lacks assignment section and Odometer Disclosure Statement not used.
+- Non-actual mileage status not disclosed.
+- Lienholder/title instructions unclear.
+- Paper/electronic title selection unclear.
+- Tax/DR-123 handling unclear.
+
+============================================================
+AI ROUTING KEYWORDS
+============================================================
+
+Virginia customer
+title customer in Virginia
+register customer in Virginia
+Virginia title requirements
+Virginia registration requirements
+Virginia out of state dealer sale
+Florida dealer Virginia customer
+Virginia Application for Title and Registration
+Virginia proof of address
+Virginia purchase price proof
+Virginia Vehicle Price Certification
+Virginia Odometer Disclosure Statement
+Virginia electronic title
+Virginia paper title
+what do I need to title in Virginia
+
+============================================================
+COMMON CLERK ANSWER
+============================================================
+
+For a Virginia customer buying from a Florida dealership, Virginia requires a completed Application for Title and Registration, proof of address, and ownership proof such as prior title/registration, assigned out-of-state title, or eligible U.S. Armed Forces ownership document. If the vehicle was purchased within the last 12 months, Virginia also requires proof of purchase price such as buyer’s order, bill of sale, declared sale price on title, or Vehicle Price Certification. Virginia charges a title fee and Sales and Use Tax unless exempt. Odometer must be recorded by the seller on the title assignment and by the buyer on the application; if the out-of-state title has no assignment section, use Virginia’s Odometer Disclosure Statement. Prepare the dealer title package, buyer’s order, odometer disclosure/statement if applicable, lienholder information if financed, and review Florida DR-123/Virginia tax handling. Escalate if proof of address, purchase price, odometer, lienholder, electronic/paper title, or tax handling is unclear.
+
+============================================================
+RELATED FILES
+============================================================
+
+- out_of_state_customer_title_master_logic_map.txt
+- fl_motor_vehicle_sales_tax_rates_by_state_tip_25a01_01_notes.txt
+- validation_logic_map.txt
+- rejection_prevention_logic_map.txt
+- fl_title_ownership_and_transfer_law_notes.txt
+- fl_lien_and_lien_satisfaction_law_notes.txt
+
+============================================================
+END OF FILE
+============================================================

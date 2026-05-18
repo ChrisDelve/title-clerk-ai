@@ -1,0 +1,254 @@
+DOCUMENT: RHODE_ISLAND_CUSTOMER_TITLING_REQUIREMENTS_NOTES
+TITLE: Rhode Island Customer Titling / Registration Requirements for Out-of-State Dealer Sale
+STATE: Rhode Island
+SOURCE: https://dmv.ri.gov/registrations-plates-titles/titles
+DOCUMENT_TYPE: Out-of-State Customer Titling / Registration Requirements
+CATEGORY: FLORIDA DEALER SALE TO RHODE ISLAND CUSTOMER / RHODE ISLAND TITLE / RHODE ISLAND REGISTRATION / VIN INSPECTION / LOCAL MUNICIPAL POLICE / TR-1 / SALES TAX FORM / TITLE LAW CHANGE
+
+============================================================
+PURPOSE
+============================================================
+
+This file helps a Florida dealership understand what may be needed when a customer buys a vehicle from the dealership and wants the vehicle titled and/or registered in Rhode Island.
+
+Use this file for questions like:
+
+- What do I need to title this customer in Rhode Island?
+- Rhode Island customer bought from our Florida dealership.
+- Does Rhode Island require VIN inspection?
+- Does Rhode Island require police VIN check?
+- What changed with Rhode Island title law in 2024?
+- What is Rhode Island TR-1?
+- Does Rhode Island require title even if customer does not register?
+
+============================================================
+WHEN TO USE THIS FILE
+============================================================
+
+Use this file when:
+
+IF customer_state = "Rhode Island"
+AND customer_is_buying_vehicle_from_dealer = TRUE
+AND vehicle_will_be_titled_or_registered_in_customer_state = TRUE
+THEN use_rhode_island_customer_titling_requirements_notes = TRUE
+
+Do NOT use this file as the primary source for:
+- Customer bringing Rhode Island title into Florida for Florida title
+- Florida resident titling/registering in Florida
+- Florida tag transfer workflow
+
+For Florida titling/registration, use Florida title and registration notes.
+
+============================================================
+RHODE ISLAND SOURCE SUMMARY
+============================================================
+
+Rhode Island DMV says Rhode Island title law changed effective January 1, 2024:
+
+- All used vehicles coming into Rhode Island from out of state, regardless of model year, require VIN Inspection from a local municipal police department.
+- If an out-of-state used vehicle is being registered in Rhode Island and the state from which the vehicle is coming required a title for that vehicle:
+  - That title must be in the name of the seller.
+  - The title must be properly assigned to the buyer.
+  - The title must be presented with VIN Inspection at time of sales tax payment or registration at RI DMV.
+- If an out-of-state used vehicle is being registered in Rhode Island and the state from which the vehicle is coming did not require a title:
+  - Valid proof of ownership, such as old registration or paid sales tax form, in the name of seller must be presented.
+  - VIN Inspection must also be presented at time of sales tax payment or registration at RI DMV.
+- All used vehicles, regardless of model year, will now be issued a Rhode Island Certificate of Title upon payment of Sales Tax and/or Registration.
+
+Taxes and titles:
+- When purchasing a vehicle in Rhode Island, customer is required to pay sales tax and obtain title in their own name even if they do not register the vehicle.
+- Customer must complete both:
+  - Sales Tax form
+  - Application for Registration TR-1
+- For out-of-state vehicles, VIN check from police department is required.
+- Transaction may be processed by mail to Rhode Island DMV in Cranston.
+- Costs are listed in DMV Title Fee Table.
+
+Previously non-titled vehicles:
+- Prior to January 1, 2024, Rhode Island did not title model year 2000 and older vehicles.
+- Effective January 1, 2024, all vehicles are now eligible for title, including model year 2000 and older previously registered under old law.
+- To obtain title for a previously untitled vehicle registered in customer’s name, present valid registration, expired registration, or stamped paid sales tax form and completed TR-2/TR-9 with payment.
+
+Lien notes:
+- Rhode Island does not require a person to apply for a new title once lien is satisfied.
+- RI requires lien to be released by lienholder signing off on title or providing lien release letter to attach to title.
+- Duplicate title can only be issued to owner listed on original title.
+- If there is still a lien, lienholder can apply.
+- If original title was issued with lienholder listed, original lien release is needed to receive lien-free title.
+
+============================================================
+RHODE ISLAND REQUIRED DOCUMENT LOGIC
+============================================================
+
+IF Rhode_Island_customer_title_or_registration_requested = TRUE
+THEN Rhode_Island_title_law_2024_review_required = TRUE
+
+IF used_vehicle_coming_into_Rhode_Island_from_out_of_state = TRUE
+THEN local_municipal_police_VIN_inspection_required = TRUE
+
+IF out_of_state_used_vehicle_from_title_state = TRUE
+THEN title_in_seller_name_required = TRUE
+
+IF out_of_state_used_vehicle_from_title_state = TRUE
+THEN title_properly_assigned_to_buyer_required = TRUE
+
+IF out_of_state_used_vehicle_from_title_state = TRUE
+THEN title_and_VIN_inspection_presented_at_sales_tax_payment_or_registration_required = TRUE
+
+IF out_of_state_used_vehicle_from_non_title_state = TRUE
+THEN valid_proof_of_ownership_in_seller_name_required = TRUE
+
+IF out_of_state_used_vehicle_from_non_title_state = TRUE
+THEN VIN_inspection_presented_at_sales_tax_payment_or_registration_required = TRUE
+
+IF Rhode_Island_vehicle_purchased = TRUE
+THEN Rhode_Island_sales_tax_form_required = TRUE
+
+IF Rhode_Island_vehicle_purchased = TRUE
+THEN Rhode_Island_TR_1_application_for_registration_required = TRUE
+
+IF out_of_state_vehicle_to_Rhode_Island = TRUE
+THEN police_department_VIN_check_required = TRUE
+
+IF Rhode_Island_title_requested_without_registration = TRUE
+THEN sales_tax_and_title_in_customer_name_still_required = TRUE
+
+============================================================
+RHODE ISLAND PREVIOUSLY NON-TITLED VEHICLE LOGIC
+============================================================
+
+IF vehicle_model_year_2000_or_older_previously_not_titled_under_old_RI_law = TRUE
+THEN Rhode_Island_all_vehicles_eligible_for_title_after_2024_review_required = TRUE
+
+IF previously_untitled_vehicle_registered_in_customer_name = TRUE
+THEN valid_registration_expired_registration_or_stamped_paid_sales_tax_form_required = TRUE
+
+IF previously_untitled_vehicle_title_requested = TRUE
+THEN Rhode_Island_TR_2_TR_9_required = TRUE
+
+============================================================
+RHODE ISLAND LIEN LOGIC
+============================================================
+
+IF lien_satisfied_on_Rhode_Island_title = TRUE
+THEN lienholder_signoff_or_lien_release_letter_attached_to_title_required = TRUE
+
+IF duplicate_title_requested = TRUE
+AND active_lien_exists = TRUE
+THEN lienholder_may_apply_for_duplicate_title = TRUE
+
+IF duplicate_title_requested = TRUE
+AND applicant_not_owner_listed_on_original_title = TRUE
+THEN duplicate_title_not_allowed_review_required = TRUE
+
+IF lien_free_title_requested_and_original_title_had_lienholder = TRUE
+THEN original_lien_release_required = TRUE
+
+============================================================
+FLORIDA DEALER WORKFLOW FOR RHODE ISLAND CUSTOMER
+============================================================
+
+When a Florida dealership sells a vehicle to a Rhode Island customer and the customer wants Rhode Island title/registration:
+
+1. Prepare dealer ownership package:
+   - MCO/MSO for new vehicle or properly assigned title for used vehicle
+   - Dealer reassignment if applicable
+   - Buyer’s order / bill of sale
+   - Odometer disclosure/statement if applicable
+   - Lienholder information if financed
+
+2. Rhode Island-specific items to review:
+   - Local municipal police VIN inspection for all used vehicles coming into RI from out of state
+   - Title in seller’s name and properly assigned to buyer if prior state required title
+   - Valid proof of ownership in seller’s name if prior state did not require title
+   - Sales Tax form
+   - TR-1 Application for Registration
+   - VIN check from police department for out-of-state vehicle
+   - Title required even if customer does not register
+   - RI DMV mail-in option if applicable
+
+3. If used vehicle:
+   - Do not ignore VIN inspection due to model year.
+   - Since January 1, 2024, all used out-of-state vehicles require VIN inspection from local municipal police department.
+
+4. If non-title state history:
+   - Verify old registration, paid sales tax form, or other valid proof of ownership in seller’s name.
+   - Escalate if ownership proof does not match seller.
+
+5. If financed/lienholder:
+   - Confirm lienholder information.
+   - Confirm lien release handling if prior title has lienholder.
+   - Escalate if active lien or lien release is unclear.
+
+============================================================
+TAX / RECIPROCITY NOTES
+============================================================
+
+For Florida dealer sale to Rhode Island resident:
+
+- Review Florida DOR out-of-state resident sales tax / DR-123 workflow.
+- Rhode Island source says sales tax must be paid and title obtained in customer’s name even if vehicle is not registered.
+- Verify tax handling with controller, agency, lender, or Rhode Island DMV before finalizing.
+
+Use related file:
+fl_motor_vehicle_sales_tax_rates_by_state_tip_25a01_01_notes.txt
+
+============================================================
+REJECTION / DELAY RISKS
+============================================================
+
+High risk if:
+
+- Local municipal police VIN inspection is missing.
+- Dealer assumes older used vehicle is exempt from title/VIN inspection.
+- Title is not in seller’s name.
+- Title is not properly assigned to buyer.
+- Prior non-title-state proof of ownership is not in seller’s name.
+- Sales Tax form missing.
+- TR-1 missing.
+- Police VIN check missing.
+- Lien release missing.
+- Customer thinks title is not required if not registering.
+- Tax/DR-123 handling unclear.
+
+============================================================
+AI ROUTING KEYWORDS
+============================================================
+
+Rhode Island customer
+title customer in Rhode Island
+register customer in Rhode Island
+Rhode Island title requirements
+Rhode Island registration requirements
+Rhode Island out of state dealer sale
+Florida dealer Rhode Island customer
+Rhode Island VIN inspection
+Rhode Island police VIN check
+Rhode Island local municipal police
+Rhode Island TR-1
+Rhode Island Sales Tax form
+Rhode Island title law changed 2024
+RI title requirements
+RI registration requirements
+what do I need to title in Rhode Island
+
+============================================================
+COMMON CLERK ANSWER
+============================================================
+
+For a Rhode Island customer buying from a Florida dealership, Rhode Island’s title law changed effective January 1, 2024. All used vehicles coming into Rhode Island from out of state, regardless of model year, require VIN inspection from a local municipal police department. If the prior state required a title, the title must be in the seller’s name, properly assigned to the buyer, and presented with VIN inspection at the time of sales tax payment or registration. If the prior state did not require a title, valid proof of ownership such as old registration or paid sales tax form in the seller’s name must be presented with VIN inspection. Rhode Island requires both a Sales Tax form and TR-1 Application for Registration, and requires sales tax/title in the customer’s name even if the vehicle is not registered. Prepare the dealer package, odometer disclosure/statement if applicable, lienholder information if financed, and review Florida DR-123/tax handling. Escalate if VIN inspection, ownership proof, TR-1, sales tax form, lien release, or tax handling is unclear.
+
+============================================================
+RELATED FILES
+============================================================
+
+- out_of_state_customer_title_master_logic_map.txt
+- fl_motor_vehicle_sales_tax_rates_by_state_tip_25a01_01_notes.txt
+- validation_logic_map.txt
+- rejection_prevention_logic_map.txt
+- fl_title_ownership_and_transfer_law_notes.txt
+- fl_lien_and_lien_satisfaction_law_notes.txt
+
+============================================================
+END OF FILE
+============================================================

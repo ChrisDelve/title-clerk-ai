@@ -1,0 +1,244 @@
+DOCUMENT: NEW_JERSEY_CUSTOMER_TITLING_REQUIREMENTS_NOTES
+TITLE: New Jersey Customer Titling / Registration Requirements for Out-of-State Dealer Sale
+STATE: New Jersey
+SOURCE: https://www.nj.gov/mvc/drivertopics/movetonj.htm
+DOCUMENT_TYPE: Out-of-State Customer Titling / Registration Requirements
+CATEGORY: FLORIDA DEALER SALE TO NEW JERSEY CUSTOMER / NEW JERSEY TITLE / NEW JERSEY REGISTRATION / OS-SS-UTA / BA-49 / OS-SS-54 / INSURANCE / LIENHOLDER / EIN
+
+============================================================
+PURPOSE
+============================================================
+
+This file helps a Florida dealership understand what may be needed when a customer buys a vehicle from the dealership and wants the vehicle titled and/or registered in New Jersey.
+
+Use this file for questions like:
+
+- What do I need to title this customer in New Jersey?
+- New Jersey customer bought from our Florida dealership.
+- What is OS/SS-UTA?
+- What is BA-49?
+- What is OS/SS-54?
+- What if the vehicle is financed or leased?
+- What does New Jersey need for business-owned vehicles?
+
+============================================================
+WHEN TO USE THIS FILE
+============================================================
+
+Use this file when:
+
+IF customer_state = "New Jersey"
+AND customer_is_buying_vehicle_from_dealer = TRUE
+AND vehicle_will_be_titled_or_registered_in_customer_state = TRUE
+THEN use_new_jersey_customer_titling_requirements_notes = TRUE
+
+Do NOT use this file as the primary source for:
+- Customer bringing New Jersey title into Florida for Florida title
+- Florida resident titling/registering in Florida
+- Florida tag transfer workflow
+
+For Florida titling/registration, use Florida title and registration notes.
+
+============================================================
+NEW JERSEY SOURCE SUMMARY
+============================================================
+
+New Jersey MVC says:
+
+- If recently moved to New Jersey, customer must transfer out-of-state license and vehicle title/registration within 60 days of move or before current license/registration expires, whichever occurs first.
+- Customer may transfer license and registration in one transaction by appointment.
+- For vehicle title/registration transfer:
+  - Make New Title or Registration appointment
+  - Bring proof of identification, usually valid driver license
+  - Original title
+  - Insurance information
+  - Completed Universal Title Application, Form OS/SS-UTA
+  - Completed Vehicle Registration Application, Form BA-49
+  - If vehicle is owned by business, apply for Entity Identification Number, EIN / formerly CorpCode
+  - If vehicle is financed or leased, send completed Application for Release of Title from Lienholder, Form OS/SS-54
+  - Once NJMVC receives title, customer will be notified to return to complete process
+
+New Jersey title transfer fees:
+- $60 standard vehicle
+- $85 financed vehicle with one lien
+- $110 financed vehicle with two liens
+
+New Jersey notes:
+- All lienholders and leasing companies must have EIN.
+- Titles without liens are given to customer with plates, registration card, and temporary inspection card unless mailing address is PO Box; PO Box title held for 10 days then mailed.
+- Titles with liens and leased-vehicle titles are mailed to leasing company or lienholder.
+- Customer receives title receipt, vehicle registration, license plates, and temporary inspection card.
+- If transferring from state that does not issue titles, use non-title-state guidelines.
+- Out-of-country vehicles use foreign vehicle instructions.
+
+============================================================
+NEW JERSEY REQUIRED DOCUMENT LOGIC
+============================================================
+
+IF New_Jersey_customer_title_or_registration_requested = TRUE
+THEN New_Jersey_60_day_transfer_review_required = TRUE
+
+IF New_Jersey_customer_title_or_registration_requested = TRUE
+THEN proof_of_identification_required = TRUE
+
+IF New_Jersey_customer_title_or_registration_requested = TRUE
+THEN original_title_required = TRUE
+
+IF New_Jersey_registration_requested = TRUE
+THEN insurance_information_required = TRUE
+
+IF New_Jersey_title_requested = TRUE
+THEN OS_SS_UTA_Universal_Title_Application_required = TRUE
+
+IF New_Jersey_registration_requested = TRUE
+THEN BA_49_Vehicle_Registration_Application_required = TRUE
+
+IF vehicle_owned_by_business = TRUE
+THEN New_Jersey_Entity_Identification_Number_required = TRUE
+
+IF vehicle_financed_or_leased = TRUE
+THEN OS_SS_54_Application_for_Release_of_Title_from_Lienholder_required = TRUE
+
+IF vehicle_financed_or_leased = TRUE
+THEN lienholder_or_leasing_company_EIN_required = TRUE
+
+IF title_has_no_lien = TRUE
+THEN New_Jersey_title_may_be_given_to_customer_with_plates_registration_and_temp_inspection_card = TRUE
+
+IF title_has_lien_or_vehicle_leased = TRUE
+THEN New_Jersey_title_mailed_to_lienholder_or_leasing_company = TRUE
+
+IF title_from_non_title_state = TRUE
+THEN New_Jersey_non_title_state_guidelines_review_required = TRUE
+
+IF out_of_country_vehicle = TRUE
+THEN New_Jersey_foreign_vehicle_instructions_review_required = TRUE
+
+============================================================
+NEW JERSEY FEE LOGIC
+============================================================
+
+IF New_Jersey_title_transfer_standard_vehicle = TRUE
+THEN New_Jersey_title_transfer_fee = 60.00
+
+IF New_Jersey_title_transfer_financed_one_lien = TRUE
+THEN New_Jersey_title_transfer_fee = 85.00
+
+IF New_Jersey_title_transfer_financed_two_liens = TRUE
+THEN New_Jersey_title_transfer_fee = 110.00
+
+IF New_Jersey_registration_requested = TRUE
+THEN New_Jersey_registration_fee_review_required = TRUE
+
+============================================================
+FLORIDA DEALER WORKFLOW FOR NEW JERSEY CUSTOMER
+============================================================
+
+When a Florida dealership sells a vehicle to a New Jersey customer and the customer wants New Jersey title/registration:
+
+1. Prepare dealer ownership package:
+   - MCO/MSO or properly assigned original title
+   - Dealer reassignment if applicable
+   - Buyer’s order / bill of sale
+   - Odometer disclosure/statement if applicable
+   - Lienholder information if financed
+   - Lease documents if leased
+
+2. New Jersey-specific items to review:
+   - Original title
+   - Proof of identification
+   - Insurance information
+   - OS/SS-UTA Universal Title Application
+   - BA-49 Vehicle Registration Application
+   - EIN if business-owned
+   - OS/SS-54 if financed or leased
+   - Lienholder/leasing company EIN if financed or leased
+   - Title transfer fee based on lien status
+
+3. If financed or leased:
+   - Complete/review OS/SS-54 Application for Release of Title from Lienholder.
+   - Confirm lienholder or leasing company EIN.
+   - Understand NJMVC may need to receive title before customer completes process.
+   - Title will be mailed to lienholder/leasing company; customer receives title receipt, registration, plates, and temporary inspection card.
+
+4. If business-owned:
+   - Entity Identification Number required.
+
+5. If title from non-title state or out-of-country:
+   - Use New Jersey non-title-state or foreign vehicle instructions.
+   - Escalate if ownership proof is unclear.
+
+============================================================
+TAX / RECIPROCITY NOTES
+============================================================
+
+For Florida dealer sale to New Jersey resident:
+
+- Review Florida DOR out-of-state resident sales tax / DR-123 workflow.
+- Review New Jersey sales tax/title/registration requirements.
+- New Jersey source says tax will not be charged if eligible for sales tax exemption.
+- Verify tax handling with controller, agency, lender, or NJ MVC before finalizing.
+
+Use related file:
+fl_motor_vehicle_sales_tax_rates_by_state_tip_25a01_01_notes.txt
+
+============================================================
+REJECTION / DELAY RISKS
+============================================================
+
+High risk if:
+
+- Original title is missing.
+- OS/SS-UTA missing.
+- BA-49 missing.
+- Insurance information missing.
+- Proof of identification missing.
+- OS/SS-54 missing for financed/leased vehicle.
+- Lienholder/leasing company EIN missing.
+- Business EIN/CorpCode missing.
+- Customer misses 60-day transfer timing.
+- Non-title-state or foreign vehicle rules needed but not reviewed.
+- Tax/DR-123 handling unclear.
+
+============================================================
+AI ROUTING KEYWORDS
+============================================================
+
+New Jersey customer
+title customer in New Jersey
+register customer in New Jersey
+New Jersey title requirements
+New Jersey registration requirements
+New Jersey out of state dealer sale
+Florida dealer New Jersey customer
+NJ MVC
+New Jersey OS/SS-UTA
+New Jersey BA-49
+New Jersey OS/SS-54
+New Jersey EIN
+New Jersey CorpCode
+New Jersey financed vehicle title
+New Jersey leased vehicle title
+New Jersey title transfer fee
+what do I need to title in New Jersey
+
+============================================================
+COMMON CLERK ANSWER
+============================================================
+
+For a New Jersey customer buying from a Florida dealership, New Jersey requires proof of identification, original title, insurance information, completed Universal Title Application OS/SS-UTA, and Vehicle Registration Application BA-49. If the vehicle is financed or leased, New Jersey requires OS/SS-54 Application for Release of Title from Lienholder, and lienholders/leasing companies must have an EIN. Business-owned vehicles also require an Entity Identification Number. New Jersey title transfer fees are $60 standard, $85 with one lien, and $110 with two liens. Prepare the dealer ownership package, buyer’s order, odometer disclosure/statement if applicable, lienholder/lease information, and review Florida DR-123/tax handling. Escalate if original title, OS/SS forms, EIN, lienholder release, non-title-state, foreign vehicle, or tax handling is unclear.
+
+============================================================
+RELATED FILES
+============================================================
+
+- out_of_state_customer_title_master_logic_map.txt
+- fl_motor_vehicle_sales_tax_rates_by_state_tip_25a01_01_notes.txt
+- validation_logic_map.txt
+- rejection_prevention_logic_map.txt
+- fl_title_ownership_and_transfer_law_notes.txt
+- fl_lien_and_lien_satisfaction_law_notes.txt
+
+============================================================
+END OF FILE
+============================================================

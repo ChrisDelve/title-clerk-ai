@@ -1,0 +1,236 @@
+DOCUMENT: OKLAHOMA_CUSTOMER_TITLING_REQUIREMENTS_NOTES
+TITLE: Oklahoma Customer Titling / Registration Requirements for Out-of-State Dealer Sale
+STATE: Oklahoma
+SOURCE: https://oklahoma.gov/service/all-services/auto-vehicle/title-transfers.html
+DOCUMENT_TYPE: Out-of-State Customer Titling / Registration Requirements
+CATEGORY: FLORIDA DEALER SALE TO OKLAHOMA CUSTOMER / OKLAHOMA TITLE / OKLAHOMA REGISTRATION / 701-6 / 722-1 / OKLAHOMA INSURANCE / LICENSED OPERATOR / LIENHOLDER
+
+============================================================
+PURPOSE
+============================================================
+
+This file helps a Florida dealership understand what may be needed when a customer buys a vehicle from the dealership and wants the vehicle titled and/or registered in Oklahoma.
+
+Use this file for questions like:
+
+- What do I need to title this customer in Oklahoma?
+- Oklahoma customer bought from our Florida dealership.
+- What is Oklahoma Form 701-6?
+- What is Oklahoma Form 722-1?
+- Does Oklahoma require Oklahoma insurance?
+- What if the vehicle has a lien?
+- Where does Oklahoma send title?
+
+============================================================
+WHEN TO USE THIS FILE
+============================================================
+
+Use this file when:
+
+IF customer_state = "Oklahoma"
+AND customer_is_buying_vehicle_from_dealer = TRUE
+AND vehicle_will_be_titled_or_registered_in_customer_state = TRUE
+THEN use_oklahoma_customer_titling_requirements_notes = TRUE
+
+Do NOT use this file as the primary source for:
+- Customer bringing Oklahoma title into Florida for Florida title
+- Florida resident titling/registering in Florida
+- Florida tag transfer workflow
+
+For Florida titling/registration, use Florida title and registration notes.
+
+============================================================
+OKLAHOMA SOURCE SUMMARY
+============================================================
+
+Service Oklahoma says:
+
+After moving to Oklahoma or purchasing a vehicle from out of state, customer must visit Service Oklahoma on N Classen in Oklahoma City or a Licensed Operator location to process tag, title, and tax to receive vehicle registration.
+
+For out-of-state purchase from private seller or dealer, required documents include:
+
+- Appropriately assigned out-of-state title
+- 701-6 Form — Application for Oklahoma Certificate of Title
+- Valid driver license
+- Proof of Oklahoma insurance
+- The vehicle being registered
+- Purchase Agreement or 722-1 Form — Declaration of Vehicle Purchase Price
+
+Registration process:
+- Gather documents.
+- Visit Service Oklahoma or Licensed Operator location.
+- Fees are finalized at visit.
+- Once payment is made and documents are processed, customer receives standard license plate and decal.
+- In case of lien, title is sent to lienholder.
+- If no lien, title is mailed to customer within 2 business days as part of registration.
+- Specialty plate may be ordered and mailed later.
+- Oklahoma recommends making copies because originals may not be returned.
+
+Taxes and fees:
+- Fees vary by vehicle type, year, and other variables.
+- Taxes owed can be estimated using Sales & Excise Tax Calculator.
+- Estimate is based on NADA listed pricing and may vary.
+- Estimate does not include other fees due at registration.
+
+============================================================
+OKLAHOMA REQUIRED DOCUMENT LOGIC
+============================================================
+
+IF Oklahoma_customer_out_of_state_purchase_title_or_registration_requested = TRUE
+THEN appropriately_assigned_out_of_state_title_required = TRUE
+
+IF Oklahoma_customer_title_or_registration_requested = TRUE
+THEN Oklahoma_Form_701_6_required = TRUE
+
+IF Oklahoma_customer_title_or_registration_requested = TRUE
+THEN valid_driver_license_required = TRUE
+
+IF Oklahoma_registration_requested = TRUE
+THEN proof_of_Oklahoma_insurance_required = TRUE
+
+IF Oklahoma_registration_requested = TRUE
+THEN vehicle_being_registered_required = TRUE
+
+IF Oklahoma_out_of_state_purchase = TRUE
+THEN purchase_agreement_or_Form_722_1_required = TRUE
+
+IF Oklahoma_title_or_registration_processed = TRUE
+THEN originals_may_not_be_returned_make_copies_recommended = TRUE
+
+IF Oklahoma_vehicle_has_lien = TRUE
+THEN Oklahoma_title_sent_to_lienholder = TRUE
+
+IF Oklahoma_vehicle_has_no_lien = TRUE
+THEN Oklahoma_title_mailed_to_customer_within_2_business_days_after_registration = TRUE
+
+============================================================
+OKLAHOMA LICENSED OPERATOR / SERVICE LOCATION LOGIC
+============================================================
+
+IF Oklahoma_customer_title_or_registration_requested = TRUE
+THEN customer_must_visit_Service_Oklahoma_or_Licensed_Operator_location = TRUE
+
+IF customer_asks_what_is_Licensed_Operator = TRUE
+THEN explain_Licensed_Operator_previously_Tag_Agent_approved_to_provide_services_for_State_Oklahoma = TRUE
+
+============================================================
+OKLAHOMA TAX / FEE LOGIC
+============================================================
+
+IF Oklahoma_customer_title_or_registration_requested = TRUE
+THEN Oklahoma_fees_finalized_at_visit = TRUE
+
+IF Oklahoma_tax_estimate_requested = TRUE
+THEN Sales_and_Excise_Tax_Calculator_may_be_used_but_final_tax_may_vary = TRUE
+
+IF Oklahoma_tax_estimate_requested = TRUE
+THEN estimate_based_on_NADA_and_does_not_include_other_fees_due_at_registration = TRUE
+
+============================================================
+FLORIDA DEALER WORKFLOW FOR OKLAHOMA CUSTOMER
+============================================================
+
+When a Florida dealership sells a vehicle to an Oklahoma customer and the customer wants Oklahoma title/registration:
+
+1. Prepare dealer ownership package:
+   - Appropriately assigned out-of-state title or MCO/MSO as applicable
+   - Dealer reassignment if applicable
+   - Purchase Agreement / buyer’s order
+   - Odometer disclosure/statement if applicable
+   - Lienholder information if financed
+
+2. Oklahoma-specific items to review:
+   - 701-6 Application for Oklahoma Certificate of Title
+   - Valid driver license
+   - Proof of Oklahoma insurance
+   - Vehicle must be presented/registered
+   - Purchase Agreement or 722-1 Declaration of Vehicle Purchase Price
+   - Visit Service Oklahoma or Licensed Operator
+   - Copies of originals because originals may not be returned
+
+3. If financed:
+   - Confirm lienholder information.
+   - Oklahoma sends title to lienholder if lien exists.
+   - Confirm lender/title mailing instructions.
+
+4. If no lien:
+   - Oklahoma mails title to customer within 2 business days after registration.
+
+5. If tax/fee question:
+   - Fees finalized at visit.
+   - Oklahoma Sales & Excise Tax Calculator is estimate only.
+   - Review Florida DR-123/tax handling and Oklahoma tax/excise exposure.
+
+============================================================
+TAX / RECIPROCITY NOTES
+============================================================
+
+For Florida dealer sale to Oklahoma resident:
+
+- Review Florida DOR out-of-state resident sales tax / DR-123 workflow.
+- Service Oklahoma says taxes may be estimated with Sales & Excise Tax Calculator, but final amount may vary and does not include all fees due at registration.
+- Florida DOR TIP has special Oklahoma language that should be reviewed because Oklahoma may require tax/excise tax at title/registration and may allow refund up to Florida tax paid in certain situations.
+- Verify tax handling with controller, agency, lender, or Service Oklahoma before finalizing.
+
+Use related file:
+fl_motor_vehicle_sales_tax_rates_by_state_tip_25a01_01_notes.txt
+
+============================================================
+REJECTION / DELAY RISKS
+============================================================
+
+High risk if:
+
+- Out-of-state title is not appropriately assigned.
+- Form 701-6 is missing.
+- Valid driver license is missing.
+- Oklahoma insurance is missing.
+- Vehicle being registered is not available when required.
+- Purchase Agreement or 722-1 is missing.
+- Originals are sent without copies and are not returned.
+- Lienholder information is missing.
+- Customer expects title but lien exists and title is sent to lienholder.
+- Tax/excise estimate is treated as final.
+- Florida DR-123 and Oklahoma tax/refund handling unclear.
+
+============================================================
+AI ROUTING KEYWORDS
+============================================================
+
+Oklahoma customer
+title customer in Oklahoma
+register customer in Oklahoma
+Oklahoma title requirements
+Oklahoma registration requirements
+Oklahoma out of state dealer sale
+Florida dealer Oklahoma customer
+Oklahoma 701-6
+Oklahoma 722-1
+Oklahoma Declaration of Vehicle Purchase Price
+Oklahoma proof of insurance
+Oklahoma Licensed Operator
+Oklahoma Tag Agent
+Oklahoma lienholder title
+Oklahoma Sales Excise Tax Calculator
+what do I need to title in Oklahoma
+
+============================================================
+COMMON CLERK ANSWER
+============================================================
+
+For an Oklahoma customer buying from a Florida dealership, Service Oklahoma requires an appropriately assigned out-of-state title, Form 701-6 Application for Oklahoma Certificate of Title, valid driver license, proof of Oklahoma insurance, the vehicle being registered, and either a purchase agreement or Form 722-1 Declaration of Vehicle Purchase Price. The customer must visit Service Oklahoma or a Licensed Operator location, where fees are finalized and plates/decals are issued after processing. If there is a lien, Oklahoma sends the title to the lienholder; if there is no lien, title is mailed to the customer within 2 business days as part of registration. Prepare the dealer title package, buyer’s order, odometer disclosure/statement if applicable, lienholder information if financed, and review Florida DR-123 plus Oklahoma tax/excise handling. Escalate if title assignment, Oklahoma insurance, 701-6, 722-1, lienholder, vehicle presentation, or tax handling is unclear.
+
+============================================================
+RELATED FILES
+============================================================
+
+- out_of_state_customer_title_master_logic_map.txt
+- fl_motor_vehicle_sales_tax_rates_by_state_tip_25a01_01_notes.txt
+- validation_logic_map.txt
+- rejection_prevention_logic_map.txt
+- fl_title_ownership_and_transfer_law_notes.txt
+- fl_lien_and_lien_satisfaction_law_notes.txt
+
+============================================================
+END OF FILE
+============================================================

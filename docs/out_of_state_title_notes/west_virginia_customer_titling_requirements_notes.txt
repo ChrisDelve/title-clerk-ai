@@ -1,0 +1,309 @@
+DOCUMENT: WEST_VIRGINIA_CUSTOMER_TITLING_REQUIREMENTS_NOTES
+TITLE: West Virginia Customer Titling / Registration Requirements for Out-of-State Dealer Sale
+STATE: West Virginia
+SOURCE: https://transportation.wv.gov/DMV/Vehicle-Services/Titles/Pages/default.aspx
+DOCUMENT_TYPE: Out-of-State Customer Titling / Registration Requirements
+CATEGORY: FLORIDA DEALER SALE TO WEST VIRGINIA CUSTOMER / WEST VIRGINIA TITLE / WEST VIRGINIA REGISTRATION / DMV-1-TR / ODOMETER / 6 PERCENT TAX / NO TAX CREDIT / LIEN / BILL OF SALE
+
+============================================================
+PURPOSE
+============================================================
+
+This file helps a Florida dealership understand what may be needed when a customer buys a vehicle from the dealership and wants the vehicle titled and/or registered in West Virginia.
+
+Use this file for questions like:
+
+- What do I need to title this customer in West Virginia?
+- West Virginia customer bought from our Florida dealership.
+- What is West Virginia DMV-1-TR?
+- Does West Virginia credit tax paid to another state?
+- What does West Virginia require for a used vehicle?
+- Does West Virginia require odometer disclosure?
+- What if the title price and bill of sale price conflict?
+- What if there is a lien?
+
+============================================================
+WHEN TO USE THIS FILE
+============================================================
+
+Use this file when:
+
+IF customer_state = "West Virginia"
+AND customer_is_buying_vehicle_from_dealer = TRUE
+AND vehicle_will_be_titled_or_registered_in_customer_state = TRUE
+THEN use_west_virginia_customer_titling_requirements_notes = TRUE
+
+Do NOT use this file as the primary source for:
+- Customer bringing West Virginia title into Florida for Florida title
+- Florida resident titling/registering in Florida
+- Florida tag transfer workflow
+
+For Florida titling/registration, use Florida title and registration notes.
+
+============================================================
+WEST VIRGINIA SOURCE SUMMARY
+============================================================
+
+West Virginia DMV says:
+
+Used vehicle purchases:
+- If vehicle purchased is used, previous owner's title must be properly reassigned to buyer, whether West Virginia title or out-of-state title.
+- For West Virginia title, both seller and buyer must sign the back of the title.
+- For out-of-state title, previous owner must sign the title and name/address of new owner should appear on title.
+- New owner submits out-of-state title with Application for Certificate of Title for a Motor Vehicle, DMV-1-TR.
+- See Odometer Statement section for mileage disclosure requirements based on vehicle class.
+
+Used vehicle fees:
+- $15 title fee
+- 6% titling sales tax on vehicles with net purchase price over $500
+- $30 tax on vehicles with net purchase price under $500
+- $10 lien fee if applicable
+- Registration fee and/or registration transfer fee
+
+Tax:
+- If trade-in is involved, 6% titling sales tax is based on purchase price minus trade-in.
+- Trade-in must be titled in West Virginia and in applicant's name to receive credit.
+- Rebates are taxable.
+- West Virginia does not charge nonresidents the 6% tax since the vehicle is not being titled in West Virginia.
+- Some states collect taxes on nonresident vehicle purchases.
+- West Virginia says customer does not get credit for taxes paid to another state.
+
+Bill of sale / purchase price:
+- If purchased from individual and purchase price is below 50% of current NADA Clean Loan Book value, notarized bill of sale must accompany title application or tax assessed on NADA value.
+- If purchased from individual and purchase price is above 50%, tax assessed on that price.
+- Vehicle not purchased from registered dealer and two years old or less taxed on NADA Clean Loan Book value despite purchase price; notarized bill of sale not accepted.
+- Titles submitted listing purchase price and accompanied by bill of sale showing different price will not be accepted.
+- If price conflict, original owner must apply for duplicate title and begin process over; if duplicate unavailable, tax assessed on book value.
+- All notarized bills of sale or DMV-7-TR must be accompanied by copies of both buyer and seller driver licenses.
+
+Titles and liens:
+- Vehicles without liens may be titled and registered by mail or in person at DMV regional office or privately-owned license service.
+- If title has lien and final payment is made, lienholder sends title to vehicle owner with lien released.
+- DMV is not notified when lien is released; lien remains on file unless vehicle owner applies for clear title.
+- If title lost and lien still on record, lien release by original lienholder required before clear duplicate title can be issued.
+
+Odometer:
+- When motor vehicle is sold/transferred, odometer reading must be recorded in assignment section of title by seller.
+- If title lacks odometer section, seller may record mileage on DMV-TM-1.
+- Odometer disclosure is mandatory at time of ownership transfer for listed classes.
+- WV notes federal odometer disclosure required for 2011 and newer vehicles for 20 years from manufacture.
+- WV says it does not recognize age as an exemption; exemption applies only to appropriate vehicle class.
+- Required odometer statuses include Actual Mileage, Not Actual Mileage, Mileage Exceeds Mechanical Limits, or Exempt only if applicable category.
+
+============================================================
+WEST VIRGINIA REQUIRED DOCUMENT LOGIC
+============================================================
+
+IF West_Virginia_customer_title_or_registration_requested = TRUE
+THEN DMV_1_TR_Application_for_Certificate_of_Title_required = TRUE
+
+IF West_Virginia_used_vehicle_purchase = TRUE
+THEN previous_owner_title_properly_reassigned_required = TRUE
+
+IF out_of_state_title_used_for_West_Virginia = TRUE
+THEN previous_owner_signature_and_new_owner_name_address_on_title_required = TRUE
+
+IF West_Virginia_customer_title_or_registration_requested = TRUE
+THEN out_of_state_title_submitted_with_DMV_1_TR_required = TRUE
+
+IF West_Virginia_vehicle_has_lien = TRUE
+THEN West_Virginia_lien_fee_10_dollars_review_required = TRUE
+
+IF West_Virginia_vehicle_without_lien = TRUE
+THEN title_registration_by_mail_or_in_person_possible = TRUE
+
+IF lien_released_but_WV_record_not_updated = TRUE
+THEN clear_title_application_review_required = TRUE
+
+IF title_lost_and_lien_on_record = TRUE
+THEN original_lienholder_lien_release_required_before_clear_duplicate_title = TRUE
+
+============================================================
+WEST VIRGINIA FEE / TAX LOGIC
+============================================================
+
+IF West_Virginia_title_requested = TRUE
+THEN West_Virginia_title_fee_15_dollars_required = TRUE
+
+IF net_purchase_price_over_500 = TRUE
+THEN West_Virginia_titling_sales_tax_6_percent_required = TRUE
+
+IF net_purchase_price_under_500 = TRUE
+THEN West_Virginia_tax_30_dollars_required = TRUE
+
+IF West_Virginia_lien_recording_applicable = TRUE
+THEN West_Virginia_lien_fee_10_dollars_required = TRUE
+
+IF West_Virginia_registration_requested = TRUE
+THEN registration_fee_or_registration_transfer_fee_required = TRUE
+
+IF trade_in_involved = TRUE
+THEN West_Virginia_trade_credit_requires_trade_titled_in_WV_and_in_applicant_name = TRUE
+
+IF rebate_involved = TRUE
+THEN West_Virginia_rebates_taxable = TRUE
+
+IF taxes_paid_to_another_state = TRUE
+THEN West_Virginia_no_credit_for_taxes_paid_to_another_state = TRUE
+
+IF Florida_dealer_sale_to_West_Virginia_customer = TRUE
+THEN Florida_DR_123_and_WV_no_tax_credit_review_required = TRUE
+
+============================================================
+WEST VIRGINIA BILL OF SALE / PRICE LOGIC
+============================================================
+
+IF purchase_from_individual = TRUE
+AND purchase_price_below_50_percent_NADA_Clean_Loan_Book = TRUE
+THEN notarized_bill_of_sale_required_or_tax_assessed_on_NADA_value = TRUE
+
+IF vehicle_not_purchased_from_registered_dealer
+AND vehicle_two_years_old_or_less = TRUE
+THEN tax_based_on_NADA_Clean_Loan_Book_value_regardless_of_purchase_price = TRUE
+
+IF title_purchase_price_conflicts_with_bill_of_sale_price = TRUE
+THEN West_Virginia_title_application_not_accepted = TRUE
+
+IF title_purchase_price_conflicts_with_bill_of_sale_price = TRUE
+THEN original_owner_duplicate_title_or_book_value_tax_review_required = TRUE
+
+IF notarized_bill_of_sale_or_DMV_7_TR_used = TRUE
+THEN buyer_and_seller_driver_license_copies_required = TRUE
+
+============================================================
+WEST VIRGINIA ODOMETER LOGIC
+============================================================
+
+IF West_Virginia_vehicle_sold_or_transferred = TRUE
+THEN seller_must_record_odometer_in_assignment_section_of_title = TRUE
+
+IF title_lacks_odometer_section = TRUE
+THEN seller_may_use_DMV_TM_1_Odometer_Disclosure_Statement = TRUE
+
+IF vehicle_class_requires_odometer_disclosure = TRUE
+THEN odometer_disclosure_mandatory_at_transfer = TRUE
+
+IF vehicle_model_year >= 2011
+THEN federal_20_year_odometer_disclosure_review_required = TRUE
+
+IF vehicle_age_used_as_only_odometer_exemption_reason = TRUE
+THEN West_Virginia_does_not_recognize_age_as_exemption_by_itself = TRUE
+
+IF odometer_disclosure_required = TRUE
+THEN mileage_status_must_be_actual_not_actual_exceeds_mechanical_limits_or_exempt_if_applicable = TRUE
+
+============================================================
+FLORIDA DEALER WORKFLOW FOR WEST VIRGINIA CUSTOMER
+============================================================
+
+When a Florida dealership sells a vehicle to a West Virginia customer and the customer wants West Virginia title/registration:
+
+1. Prepare dealer ownership package:
+   - Properly assigned title or MCO/MSO
+   - Dealer reassignment if applicable
+   - Buyer’s order / bill of sale
+   - Odometer disclosure/statement if applicable
+   - Lienholder information if financed
+   - Purchase price documentation
+
+2. West Virginia-specific items to review:
+   - DMV-1-TR Application for Certificate of Title
+   - Out-of-state title properly reassigned
+   - Previous owner signature and new owner name/address on out-of-state title
+   - Odometer disclosure based on WV class rules
+   - $15 title fee
+   - 6% titling sales tax or $30 minimum tax rule
+   - $10 lien fee if applicable
+   - Registration/registration transfer fees
+   - No credit for tax paid to another state
+   - Trade credit only if trade titled in WV and applicant’s name
+   - Purchase price/title/bill-of-sale consistency
+
+3. If financed/lien exists:
+   - Confirm lienholder information.
+   - Confirm lien fee.
+   - Confirm lien release if prior lien is shown.
+   - If lien released but WV record not updated, clear title application may be needed.
+
+4. If bill of sale used:
+   - Ensure purchase price does not conflict with title.
+   - If notarized bill of sale or DMV-7-TR is used, include buyer and seller driver license copies.
+   - Escalate if price is below 50% NADA or title/bill of sale conflict.
+
+5. If tax question:
+   - West Virginia does not credit taxes paid to another state.
+   - Review Florida DR-123/nonresident tax workflow carefully before finalizing.
+
+============================================================
+TAX / RECIPROCITY NOTES
+============================================================
+
+For Florida dealer sale to West Virginia resident:
+
+- Review Florida DOR out-of-state resident sales tax / DR-123 workflow.
+- West Virginia source says taxes paid to another state are not credited toward West Virginia tax.
+- Florida DOR TIP also identifies West Virginia as a state that imposes motor vehicle sales tax but does not allow credit for taxes paid to Florida.
+- Verify tax handling with controller, agency, lender, or WV DMV before finalizing.
+
+Use related file:
+fl_motor_vehicle_sales_tax_rates_by_state_tip_25a01_01_notes.txt
+
+============================================================
+REJECTION / DELAY RISKS
+============================================================
+
+High risk if:
+
+- DMV-1-TR missing.
+- Out-of-state title not properly reassigned.
+- Previous owner signature missing.
+- New owner name/address missing on title.
+- Odometer disclosure missing or wrong WV class/exemption logic used.
+- Title purchase price conflicts with bill of sale.
+- Driver license copies missing with notarized bill of sale or DMV-7-TR.
+- Prior lien release missing.
+- Lien fee omitted.
+- WV no-credit tax rule missed.
+- Trade credit assumed when trade not titled in WV and applicant’s name.
+- Tax/DR-123 handling unclear.
+
+============================================================
+AI ROUTING KEYWORDS
+============================================================
+
+West Virginia customer
+title customer in West Virginia
+register customer in West Virginia
+West Virginia title requirements
+West Virginia registration requirements
+West Virginia out of state dealer sale
+Florida dealer West Virginia customer
+WV title requirements
+WV registration requirements
+West Virginia DMV-1-TR
+West Virginia DMV-TM-1
+West Virginia no tax credit
+West Virginia 6 percent titling tax
+West Virginia bill of sale price conflict
+what do I need to title in West Virginia
+
+============================================================
+COMMON CLERK ANSWER
+============================================================
+
+For a West Virginia customer buying from a Florida dealership, West Virginia requires the out-of-state title to be properly reassigned, with the previous owner signing the title and the new owner’s name/address appearing on the title. The customer submits the out-of-state title with DMV-1-TR. Fees include a title fee, 6% titling sales tax on vehicles over $500 net purchase price or a $30 tax under $500, lien fee if applicable, and registration/transfer fees. West Virginia does not credit taxes paid to another state, so Florida DR-123/WV tax handling must be reviewed carefully. Odometer disclosure is required based on West Virginia class rules, and WV says age alone is not recognized as an odometer exemption. If title price and bill of sale price conflict, WV says the title application will not be accepted. Prepare the dealer package, buyer’s order, odometer disclosure/statement if applicable, lienholder information if financed, and escalate if title assignment, price conflict, lien release, odometer, or tax handling is unclear.
+
+============================================================
+RELATED FILES
+============================================================
+
+- out_of_state_customer_title_master_logic_map.txt
+- fl_motor_vehicle_sales_tax_rates_by_state_tip_25a01_01_notes.txt
+- validation_logic_map.txt
+- rejection_prevention_logic_map.txt
+- fl_title_ownership_and_transfer_law_notes.txt
+- fl_lien_and_lien_satisfaction_law_notes.txt
+
+============================================================
+END OF FILE
+============================================================

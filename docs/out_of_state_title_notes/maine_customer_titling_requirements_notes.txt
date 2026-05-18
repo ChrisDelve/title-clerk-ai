@@ -1,0 +1,227 @@
+DOCUMENT: MAINE_CUSTOMER_TITLING_REQUIREMENTS_NOTES
+TITLE: Maine Customer Titling / Registration Requirements for Out-of-State Dealer Sale
+STATE: Maine
+SOURCE: https://www.maine.gov/sos/bmv/vehicles/register-a-passenger-vehicle
+DOCUMENT_TYPE: Out-of-State Customer Titling / Registration Requirements
+CATEGORY: FLORIDA DEALER SALE TO MAINE CUSTOMER / MAINE TITLE / MAINE REGISTRATION / EXCISE TAX / BLUE TITLE APPLICATION / INSURANCE / BILL OF SALE
+
+============================================================
+PURPOSE
+============================================================
+
+This file helps a Florida dealership understand what may be needed when a customer buys a vehicle from the dealership and wants the vehicle titled and/or registered in Maine.
+
+Use this file for questions like:
+
+- What do I need to title this customer in Maine?
+- Maine customer bought from our Florida dealership.
+- Does Maine require excise tax?
+- Does Maine need a bill of sale?
+- Does Maine require proof of insurance?
+- What is the Maine blue title application?
+- Does Maine require title for older vehicles?
+
+============================================================
+WHEN TO USE THIS FILE
+============================================================
+
+Use this file when:
+
+IF customer_state = "Maine"
+AND customer_is_buying_vehicle_from_dealer = TRUE
+AND vehicle_will_be_titled_or_registered_in_customer_state = TRUE
+THEN use_maine_customer_titling_requirements_notes = TRUE
+
+Do NOT use this file as the primary source for:
+- Customer bringing Maine title into Florida for Florida title
+- Florida resident titling/registering in Florida
+- Florida tag transfer workflow
+
+For Florida titling/registration, use Florida title and registration notes.
+
+============================================================
+MAINE SOURCE SUMMARY
+============================================================
+
+Maine BMV passenger vehicle registration page states:
+
+When purchased from a dealer:
+- Customer must pay excise/municipal tax at town office.
+- If vehicle is new, tax collector requires manufacturer’s suggested retail price sticker / Monroney label or copy.
+- If local municipal office does not issue registrations, customer can register at BMV branch after paying tax at municipal office.
+- Required items include:
+  - Bill of sale or sales agreement from dealer
+  - Blue title application for vehicle models 25 years old and newer
+  - Proof of insurance
+  - White and yellow copies of registration application and excise tax receipt
+- Registration fee for plate if needed
+
+When purchased from a private sale or out-of-state dealer:
+- Customer must pay excise/municipal tax at town office.
+- Required items include:
+  - Signed bill of sale
+  - Title signed from previous owner to current owner for vehicle models 25 years old and newer
+  - Proof of insurance
+  - White and yellow copies of registration application and excise tax receipt
+- Maine sales tax is 5.5% on purchase price.
+- Title application fee is $33 on vehicle models 25 years old and newer.
+- Registration fees apply for plate if needed.
+
+New Maine residents:
+- Have 30 days after establishing residency to convert registrations and titles.
+- Need out-of-state title for vehicle models 25 years old and newer.
+- Need name/address of lienholders if applicable.
+- Need out-of-state registration certificate.
+- Need proof of insurance.
+- Need white/yellow registration application and excise tax receipt.
+- Maine use tax form may prove exemption from sales tax when showing out-of-state registration.
+
+============================================================
+MAINE REQUIRED DOCUMENT LOGIC
+============================================================
+
+IF Maine_customer_bought_from_dealer = TRUE
+THEN dealer_bill_of_sale_or_sales_agreement_required = TRUE
+
+IF Maine_vehicle_model_year_25_years_old_or_newer = TRUE
+THEN Maine_blue_title_application_required = TRUE
+
+IF Maine_registration_requested = TRUE
+THEN proof_of_insurance_required = TRUE
+
+IF Maine_registration_requested = TRUE
+THEN white_and_yellow_registration_application_and_excise_tax_receipt_copies_required = TRUE
+
+IF Maine_registration_requested = TRUE
+THEN excise_municipal_tax_required_at_town_office = TRUE
+
+IF new_vehicle = TRUE
+THEN Monroney_label_or_copy_required_for_excise_tax = TRUE
+
+IF purchased_from_private_sale_or_out_of_state_dealer = TRUE
+THEN signed_bill_of_sale_required = TRUE
+
+IF purchased_from_private_sale_or_out_of_state_dealer = TRUE
+AND Maine_vehicle_model_year_25_years_old_or_newer = TRUE
+THEN title_signed_from_previous_owner_to_current_owner_required = TRUE
+
+IF Maine_sales_tax_applies = TRUE
+THEN Maine_sales_tax_rate = 5.5
+
+IF Maine_vehicle_model_year_25_years_old_or_newer = TRUE
+THEN Maine_title_application_fee = 33.00
+
+IF new_Maine_resident = TRUE
+THEN convert_registration_and_title_within_30_days_review_required = TRUE
+
+IF new_Maine_resident = TRUE
+AND lienholder_exists = TRUE
+THEN lienholder_name_and_address_required = TRUE
+
+============================================================
+FLORIDA DEALER WORKFLOW FOR MAINE CUSTOMER
+============================================================
+
+When a Florida dealership sells a vehicle to a Maine customer and the customer wants Maine title/registration:
+
+1. Prepare dealer ownership package:
+   - MCO/MSO or properly assigned title
+   - Dealer reassignment if applicable
+   - Dealer bill of sale / sales agreement
+   - Buyer’s order
+   - Odometer disclosure/statement if applicable
+   - Lienholder information if financed
+
+2. Maine-specific items to review:
+   - Customer must pay excise/municipal tax at town office.
+   - Blue title application if vehicle is 25 years old or newer.
+   - Proof of insurance.
+   - White/yellow registration application and excise tax receipt copies.
+   - Monroney label/copy if vehicle is new.
+   - Signed title from prior owner to current owner for out-of-state dealer/private sale and 25-years-or-newer vehicle.
+   - Maine title fee and sales tax.
+
+3. If financed:
+   - Provide lienholder name and address.
+   - Confirm lender/title mailing instructions.
+   - Confirm whether Maine title application needs lienholder details.
+
+4. If customer is new Maine resident:
+   - 30-day conversion rule may apply.
+   - Use tax exemption form may apply if showing out-of-state registration.
+
+5. If registering:
+   - Maine proof of insurance required.
+   - Do not assume Florida insurance satisfies Maine registration requirements.
+
+============================================================
+TAX / RECIPROCITY NOTES
+============================================================
+
+For Florida dealer sale to Maine resident:
+
+- Review Florida DOR out-of-state resident sales tax / DR-123 workflow.
+- Maine source says Maine sales tax is 5.5% on purchase price for private sale/out-of-state dealer purchase.
+- Customer must pay excise/municipal tax at town office.
+- Verify tax handling with controller, tax collector, agency, or lender before finalizing.
+
+Use related file:
+fl_motor_vehicle_sales_tax_rates_by_state_tip_25a01_01_notes.txt
+
+============================================================
+REJECTION / DELAY RISKS
+============================================================
+
+High risk if:
+
+- Dealer bill of sale or sales agreement is missing.
+- Blue title application is missing for 25-years-or-newer vehicle.
+- Proof of insurance is missing.
+- Excise/municipal tax not paid at town office.
+- White/yellow registration application and excise tax receipt copies missing.
+- Monroney label missing for new vehicle excise tax.
+- Signed title from previous owner missing when required.
+- Lienholder name/address missing.
+- Maine sales tax / Florida DR-123 handling unclear.
+
+============================================================
+AI ROUTING KEYWORDS
+============================================================
+
+Maine customer
+title customer in Maine
+register customer in Maine
+Maine title requirements
+Maine registration requirements
+Maine out of state dealer sale
+Florida dealer Maine customer
+Maine excise tax
+Maine municipal tax
+Maine blue title application
+Maine bill of sale
+Maine proof of insurance
+Maine 25 years old title
+Maine Monroney label
+Maine title application fee
+what do I need to title in Maine
+
+============================================================
+COMMON CLERK ANSWER
+============================================================
+
+For a Maine customer buying from a Florida dealership, Maine requires the customer to pay excise/municipal tax at the town office. For a dealer purchase, Maine lists a bill of sale or sales agreement from the dealer, blue title application for vehicles 25 years old and newer, proof of insurance, and white/yellow registration application plus excise-tax receipt copies. If purchased from an out-of-state dealer, Maine also references signed bill of sale and signed title for 25-years-or-newer vehicles. Prepare the dealer ownership package, buyer’s order, odometer disclosure/statement if applicable, lienholder name/address if financed, and review Florida DR-123 plus Maine sales/excise tax handling. Escalate if title age, excise tax, insurance, bill of sale, lienholder, or tax handling is unclear.
+
+============================================================
+RELATED FILES
+============================================================
+
+- out_of_state_customer_title_master_logic_map.txt
+- fl_motor_vehicle_sales_tax_rates_by_state_tip_25a01_01_notes.txt
+- validation_logic_map.txt
+- rejection_prevention_logic_map.txt
+- fl_title_ownership_and_transfer_law_notes.txt
+- fl_lien_and_lien_satisfaction_law_notes.txt
+
+============================================================
+END OF FILE
+============================================================

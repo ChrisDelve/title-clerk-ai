@@ -1,0 +1,321 @@
+DOCUMENT: HAWAII_CUSTOMER_TITLING_REQUIREMENTS_NOTES
+TITLE: Hawaiʻi Customer Titling / Registration Requirements for Out-of-State Dealer Sale
+STATE: Hawaiʻi
+SOURCE: https://www.vrl.hawaiicounty.gov/motor-vehicle-registration/transfering-an-out-of-state-vehicle-registration
+SOURCE_TITLE: Hawaiʻi County Vehicle Registration & Licensing — Transferring an Out-of-State Vehicle Registration
+DOCUMENT_TYPE: Out-of-State Customer Titling / Registration Requirements
+CATEGORY: FLORIDA DEALER SALE TO HAWAII CUSTOMER / HAWAII TITLE / HAWAII REGISTRATION / HAWAII COUNTY / OUT-OF-STATE REGISTRATION / BILL OF LADING / SAFETY INSPECTION / G-27 / WEIGHT SLIP / FMVSS
+
+============================================================
+PURPOSE
+============================================================
+
+This file helps a Florida dealership understand what may be needed when a customer buys a vehicle from the dealership and wants the vehicle titled and/or registered in Hawaiʻi, specifically Hawaiʻi County.
+
+Use this file for questions like:
+
+- What do I need to title this customer in Hawaiʻi?
+- Hawaiʻi customer bought from our Florida dealership.
+- What does Hawaiʻi County need for an out-of-state vehicle?
+- Does Hawaiʻi need a bill of lading?
+- Does Hawaiʻi need safety inspection?
+- What is Hawaiʻi Form G-27?
+- Does Hawaiʻi need a weight slip?
+- Can off-road or non-FMVSS vehicles be registered in Hawaiʻi County?
+
+============================================================
+WHEN TO USE THIS FILE
+============================================================
+
+Use this file when:
+
+IF customer_state = "Hawaiʻi"
+AND customer_is_buying_vehicle_from_dealer = TRUE
+AND vehicle_will_be_titled_or_registered_in_customer_state = TRUE
+THEN use_hawaii_customer_titling_requirements_notes = TRUE
+
+Use especially when:
+
+IF destination_county = "Hawaiʻi County"
+THEN use_hawaii_county_out_of_state_registration_requirements = TRUE
+
+Do NOT use this file as the primary source for:
+- Customer bringing Hawaiʻi title into Florida for Florida title
+- Florida resident titling/registering in Florida
+- Florida tag transfer workflow
+
+For Florida titling/registration, use Florida title and registration notes.
+
+============================================================
+HAWAIʻI COUNTY SOURCE SUMMARY
+============================================================
+
+Hawaiʻi County Vehicle Registration & Licensing states that the following are required to switch from out-of-state license plates to Hawaiʻi license plates and obtain Hawaiʻi County registration:
+
+- Submit the last issued out-of-state certificate of registration.
+  - It cannot be laminated.
+  - It cannot be a photocopy.
+
+- Submit the last issued out-of-state certificate of title if customer is listed as the lienholder.
+  - It cannot be laminated.
+  - It cannot be a photocopy.
+
+- Submit a bill of lading or shipping receipt showing the date the vehicle arrived in Hawaiʻi County.
+
+- Submit a current Hawaiʻi certificate of safety inspection.
+  - A temporary safety inspection failed for “Registration” is acceptable to register the vehicle.
+
+- If vehicle’s model year is previous, current, or subsequent year, submit State of Hawaiʻi Form G-27 with any required attachments.
+  - Form G-27 may be obtained from the State of Hawaiʻi Department of Taxation.
+  - Questions regarding Form G-27 should be directed to the Hawaiʻi District Tax Office at 808-974-6321.
+
+- If the vehicle weight as established by the manufacturer is not available, vehicle may be required to be weighed at a state-certified scale.
+  - A weight slip is required for vehicle models 2016 and newer.
+
+- Registration personnel determine required fees.
+
+- All vehicles applying for registration in the County of Hawaiʻi must comply with all applicable Federal Motor Vehicle Safety Standards, FMVSS, as of the date of manufacture as required by Hawaiʻi Revised Statutes 286-42.
+
+- Non-compliant vehicles may not be registered in Hawaiʻi County, including:
+  - Off-road motorcycles
+  - Off-road motor vehicles, including ATVs
+  - Military vehicles
+  - Imported vehicles
+  - Kit cars
+  - Modified vehicles
+
+- Motor Vehicle Control Inspectors may be contacted at 808-640-7339 or 808-640-7342 for more information or assistance.
+
+============================================================
+HAWAIʻI REQUIRED DOCUMENT LOGIC
+============================================================
+
+IF Hawaii_customer_title_or_registration_requested = TRUE
+THEN Hawaii_county_registration_review_required = TRUE
+
+IF Hawaii_County_registration_requested = TRUE
+THEN last_issued_out_of_state_certificate_of_registration_required = TRUE
+
+IF last_issued_out_of_state_certificate_of_registration_required = TRUE
+THEN registration_cannot_be_laminated_or_photocopy = TRUE
+
+IF customer_listed_as_lienholder = TRUE
+THEN last_issued_out_of_state_certificate_of_title_required = TRUE
+
+IF last_issued_out_of_state_certificate_of_title_required = TRUE
+THEN title_cannot_be_laminated_or_photocopy = TRUE
+
+IF Hawaii_County_registration_requested = TRUE
+THEN bill_of_lading_or_shipping_receipt_required = TRUE
+
+IF bill_of_lading_or_shipping_receipt_required = TRUE
+THEN arrival_date_in_Hawaii_County_must_be_shown = TRUE
+
+IF Hawaii_County_registration_requested = TRUE
+THEN current_Hawaii_certificate_of_safety_inspection_required = TRUE
+
+IF Hawaii_safety_inspection_failed_for_registration_only = TRUE
+THEN temporary_safety_inspection_failed_for_registration_is_acceptable_for_registration = TRUE
+
+IF vehicle_model_year_is_previous_current_or_subsequent_year = TRUE
+THEN Hawaii_Form_G_27_required_with_required_attachments = TRUE
+
+IF vehicle_weight_established_by_manufacturer_unavailable = TRUE
+THEN state_certified_scale_weight_slip_may_be_required = TRUE
+
+IF vehicle_model_year >= 2016
+THEN weight_slip_required = TRUE
+
+IF Hawaii_County_registration_requested = TRUE
+THEN registration_personnel_determine_required_fees = TRUE
+
+============================================================
+HAWAIʻI SAFETY INSPECTION LOGIC
+============================================================
+
+IF Hawaii_County_registration_requested = TRUE
+THEN current_Hawaii_certificate_of_safety_inspection_required = TRUE
+
+IF customer_has_temporary_safety_inspection_failed_for_registration = TRUE
+THEN acceptable_to_register_vehicle_per_Hawaii_County_source = TRUE
+
+IF safety_inspection_missing = TRUE
+THEN hold_and_escalate_before_promising_Hawaii_registration = TRUE
+
+============================================================
+HAWAIʻI SHIPPING / ARRIVAL DATE LOGIC
+============================================================
+
+IF vehicle_shipped_to_Hawaii_County = TRUE
+THEN bill_of_lading_or_shipping_receipt_required = TRUE
+
+IF bill_of_lading_or_shipping_receipt_missing_arrival_date = TRUE
+THEN Hawaii_registration_delay_or_rejection_risk = TRUE
+
+============================================================
+HAWAIʻI FORM G-27 LOGIC
+============================================================
+
+IF vehicle_model_year_is_previous_current_or_subsequent_year = TRUE
+THEN Hawaii_G_27_tax_form_review_required = TRUE
+
+IF Hawaii_G_27_required = TRUE
+THEN required_attachments_review_required = TRUE
+
+IF Hawaii_G_27_question = TRUE
+THEN refer_to_Hawaii_District_Tax_Office_808_974_6321 = TRUE
+
+============================================================
+HAWAIʻI WEIGHT SLIP LOGIC
+============================================================
+
+IF vehicle_model_year >= 2016
+THEN Hawaii_weight_slip_required = TRUE
+
+IF manufacturer_weight_not_available = TRUE
+THEN vehicle_weighed_at_state_certified_scale_required = TRUE
+
+IF weight_slip_required = TRUE
+AND weight_slip_missing = TRUE
+THEN Hawaii_registration_delay_or_rejection_risk = TRUE
+
+============================================================
+HAWAIʻI FMVSS / NON-COMPLIANT VEHICLE LOGIC
+============================================================
+
+IF Hawaii_County_registration_requested = TRUE
+THEN FMVSS_compliance_required_as_of_date_of_manufacture = TRUE
+
+IF vehicle_non_compliant_with_FMVSS = TRUE
+THEN Hawaii_County_registration_not_allowed = TRUE
+
+IF vehicle_type IN ["off-road motorcycle", "off-road motor vehicle", "ATV", "military vehicle", "imported vehicle", "kit car", "modified vehicle"]
+THEN Hawaii_County_registration_may_not_be_allowed_if_non_compliant = TRUE
+
+IF FMVSS_or_vehicle_compliance_unclear = TRUE
+THEN contact_Hawaii_County_Motor_Vehicle_Control_Inspectors_required = TRUE
+
+============================================================
+FLORIDA DEALER WORKFLOW FOR HAWAIʻI CUSTOMER
+============================================================
+
+When a Florida dealership sells a vehicle to a Hawaiʻi customer and the customer wants Hawaiʻi title/registration:
+
+1. Prepare dealer ownership package:
+   - MCO/MSO for new vehicle or properly assigned title for used vehicle
+   - Dealer reassignment if applicable
+   - Buyer’s order / bill of sale
+   - Odometer disclosure/statement if applicable
+   - Lienholder information if financed
+   - Original registration/title documents if applicable
+
+2. Hawaiʻi County-specific items to review:
+   - Last issued out-of-state certificate of registration
+   - Last issued out-of-state certificate of title if customer is listed as lienholder
+   - Bill of lading or shipping receipt showing arrival date in Hawaiʻi County
+   - Current Hawaiʻi certificate of safety inspection
+   - Temporary failed safety inspection for “Registration” if applicable
+   - Form G-27 if vehicle model year is previous, current, or subsequent year
+   - Weight slip if model year 2016 or newer, or if manufacturer weight is unavailable
+   - FMVSS compliance
+
+3. If financed:
+   - Confirm lienholder/title instructions.
+   - Confirm whether lienholder documents are needed.
+   - Confirm title mailing/lien recording path.
+
+4. If vehicle is being shipped:
+   - Make sure the customer gets a bill of lading or shipping receipt.
+   - Confirm it shows the date the vehicle arrived in Hawaiʻi County.
+
+5. If registration is being processed:
+   - Do not use laminated or photocopied out-of-state registration/title documents where originals are required.
+   - Confirm Hawaiʻi safety inspection.
+   - Confirm fees will be determined by registration personnel.
+
+6. If vehicle is imported, modified, kit, off-road, ATV, military, or potentially non-FMVSS compliant:
+   - Hold and escalate.
+   - Contact Hawaiʻi County Motor Vehicle Control Inspectors before promising registration.
+
+============================================================
+TAX / RECIPROCITY NOTES
+============================================================
+
+For Florida dealer sale to Hawaiʻi resident:
+
+- Review Florida DOR out-of-state resident sales tax / DR-123 workflow.
+- Hawaiʻi County may require State of Hawaiʻi Form G-27 when the vehicle model year is previous, current, or subsequent year.
+- Questions about G-27 should be directed to the Hawaiʻi District Tax Office at 808-974-6321.
+- Verify tax/title/registration handling with controller, agency, lender, Hawaiʻi County VRL, or Hawaiʻi District Tax Office before finalizing.
+
+Use related file:
+fl_motor_vehicle_sales_tax_rates_by_state_tip_25a01_01_notes.txt
+
+============================================================
+REJECTION / DELAY RISKS
+============================================================
+
+High risk if:
+
+- Last issued out-of-state certificate of registration is missing.
+- Out-of-state registration is laminated or a photocopy.
+- Last issued out-of-state title is required but missing.
+- Out-of-state title is laminated or a photocopy.
+- Bill of lading or shipping receipt is missing.
+- Bill of lading or shipping receipt does not show arrival date in Hawaiʻi County.
+- Current Hawaiʻi safety inspection is missing.
+- G-27 is required but missing.
+- Required G-27 attachments are missing.
+- Weight slip is required but missing.
+- Vehicle is 2016 or newer and weight slip is missing.
+- FMVSS compliance is unclear.
+- Vehicle is off-road, ATV, military, imported, kit, modified, or otherwise non-compliant.
+- Fees are assumed instead of determined by registration personnel.
+- Tax/DR-123/G-27 handling is unclear.
+
+============================================================
+AI ROUTING KEYWORDS
+============================================================
+
+Hawaii customer
+Hawaiʻi customer
+title customer in Hawaii
+title customer in Hawaiʻi
+register customer in Hawaii
+register customer in Hawaiʻi
+Hawaii County registration
+Hawaiʻi County registration
+Hawaii out of state dealer sale
+Florida dealer Hawaii customer
+Hawaii bill of lading
+Hawaii shipping receipt
+Hawaii safety inspection
+Hawaii temporary failed safety inspection registration
+Hawaii G-27
+Hawaii District Tax Office
+Hawaii weight slip
+Hawaii FMVSS
+Hawaii out of state certificate of registration
+Hawaii out of state certificate of title
+what do I need to title in Hawaii
+
+============================================================
+COMMON CLERK ANSWER
+============================================================
+
+For a Hawaiʻi customer buying from a Florida dealership, Hawaiʻi County requires the last issued out-of-state certificate of registration, not laminated and not a photocopy, plus the last issued out-of-state certificate of title if the customer is listed as the lienholder. The customer also needs a bill of lading or shipping receipt showing the date the vehicle arrived in Hawaiʻi County and a current Hawaiʻi certificate of safety inspection. A temporary safety inspection failed for “Registration” is acceptable for registration. If the vehicle model year is the previous, current, or subsequent year, Hawaiʻi Form G-27 with required attachments may be required. A weight slip is required for 2016-and-newer vehicles, or if manufacturer weight is unavailable. Hawaiʻi County also requires FMVSS compliance and may not register non-compliant vehicles such as off-road motorcycles, ATVs, military vehicles, imported vehicles, kit cars, or modified vehicles. Prepare the dealer package, buyer’s order, odometer disclosure/statement if applicable, lienholder information if financed, and review Florida DR-123/Hawaiʻi tax handling. Escalate if shipping receipt, safety inspection, G-27, weight slip, FMVSS compliance, lienholder/title, or tax handling is unclear.
+
+============================================================
+RELATED FILES
+============================================================
+
+- out_of_state_customer_title_master_logic_map.txt
+- fl_motor_vehicle_sales_tax_rates_by_state_tip_25a01_01_notes.txt
+- validation_logic_map.txt
+- rejection_prevention_logic_map.txt
+- fl_title_ownership_and_transfer_law_notes.txt
+- fl_lien_and_lien_satisfaction_law_notes.txt
+
+============================================================
+END OF FILE
+============================================================

@@ -1,0 +1,201 @@
+DOCUMENT: NEW_HAMPSHIRE_CUSTOMER_TITLING_REQUIREMENTS_NOTES
+TITLE: New Hampshire Customer Titling / Registration Requirements for Out-of-State Dealer Sale
+STATE: New Hampshire
+SOURCE: https://www.dmv.nh.gov/vehicles-boats-or-titles/vehicle-registrations
+SUPPORTING_SOURCE_1: https://www.dmv.nh.gov/vehicles-boats-or-titles/vehicle-registrations/new-resident-new-hampshire
+SUPPORTING_SOURCE_2: https://www.dmv.nh.gov/tabbed-content/new-registrations
+SOURCE_STATUS: Official NH DMV page returned 403 during review; official NH DMV search snippets used. Verify page directly before treating as complete.
+DOCUMENT_TYPE: Out-of-State Customer Titling / Registration Requirements
+CATEGORY: FLORIDA DEALER SALE TO NEW HAMPSHIRE CUSTOMER / NEW HAMPSHIRE TITLE / NEW HAMPSHIRE REGISTRATION / VIN PROOF / RESIDENCY / MSO / 60 DAY REGISTRATION
+
+============================================================
+PURPOSE
+============================================================
+
+This file helps a Florida dealership understand what may be needed when a customer buys a vehicle from the dealership and wants the vehicle titled and/or registered in New Hampshire.
+
+Use this file for questions like:
+
+- What do I need to title this customer in New Hampshire?
+- New Hampshire customer bought from our Florida dealership.
+- Does New Hampshire require proof of VIN?
+- What can be used as proof of VIN?
+- Does New Hampshire require proof of residency?
+- How long does a new resident have to register?
+- What does New Hampshire require for a brand-new vehicle?
+
+============================================================
+WHEN TO USE THIS FILE
+============================================================
+
+Use this file when:
+
+IF customer_state = "New Hampshire"
+AND customer_is_buying_vehicle_from_dealer = TRUE
+AND vehicle_will_be_titled_or_registered_in_customer_state = TRUE
+THEN use_new_hampshire_customer_titling_requirements_notes = TRUE
+
+Do NOT use this file as the primary source for:
+- Customer bringing New Hampshire title into Florida for Florida title
+- Florida resident titling/registering in Florida
+- Florida tag transfer workflow
+
+For Florida titling/registration, use Florida title and registration notes.
+
+============================================================
+SOURCE LIMITATION
+============================================================
+
+The main New Hampshire DMV vehicle registration page could not be fully fetched during note creation.
+
+Official NH DMV search result snippets indicate:
+- Proof of VIN is needed.
+- Proof of VIN can be original or copy of title, previous or copy of New Hampshire registration, or properly completed VIN verification form.
+- Brand-new vehicle registrations require Manufacturer’s Statement of Origin (MSO).
+- Proof of residency is required if not already provided.
+- New residents have a maximum of 60 days to register vehicles after establishing residency.
+
+Verify the New Hampshire DMV page directly before treating this file as complete.
+
+============================================================
+NEW HAMPSHIRE SOURCE SUMMARY
+============================================================
+
+New Hampshire DMV official search snippets indicate:
+
+- New residents have a maximum of 60 days to register vehicles after establishing New Hampshire residency.
+- New registrations may require proof of VIN.
+- Proof of VIN may be:
+  - Original or copy of title
+  - Previous or copy of New Hampshire registration
+  - Properly completed VIN verification form
+- For brand-new vehicles, Manufacturer’s Statement of Origin is required.
+- Proof of residency is required if not already provided.
+
+============================================================
+NEW HAMPSHIRE REQUIRED DOCUMENT LOGIC
+============================================================
+
+IF New_Hampshire_customer_title_or_registration_requested = TRUE
+THEN New_Hampshire_residency_review_required = TRUE
+
+IF new_resident_to_New_Hampshire = TRUE
+THEN New_Hampshire_60_day_registration_review_required = TRUE
+
+IF New_Hampshire_registration_requested = TRUE
+THEN proof_of_VIN_required = TRUE
+
+IF proof_of_VIN_required = TRUE
+THEN acceptable_proof_may_include_title_NH_registration_or_VIN_verification_form = TRUE
+
+IF brand_new_vehicle = TRUE
+THEN MSO_required_for_New_Hampshire_registration = TRUE
+
+IF proof_of_residency_not_already_provided = TRUE
+THEN New_Hampshire_proof_of_residency_required = TRUE
+
+IF New_Hampshire_source_verification_needed = TRUE
+THEN verify_directly_with_NH_DMV_or_town_city_clerk = TRUE
+
+============================================================
+FLORIDA DEALER WORKFLOW FOR NEW HAMPSHIRE CUSTOMER
+============================================================
+
+When a Florida dealership sells a vehicle to a New Hampshire customer and the customer wants New Hampshire title/registration:
+
+1. Prepare dealer ownership package:
+   - MCO/MSO for brand-new vehicle
+   - Properly assigned title for used vehicle
+   - Dealer reassignment if applicable
+   - Buyer’s order / bill of sale
+   - Odometer disclosure/statement if applicable
+   - Lienholder information if financed
+   - Full VIN
+
+2. New Hampshire-specific items to review:
+   - Proof of VIN
+   - Proof of residency if not already provided
+   - MSO for brand-new vehicle
+   - 60-day registration timing for new residents
+   - New Hampshire DMV/town clerk requirements
+
+3. If proof of VIN is needed:
+   - Review whether original/copy of title is enough.
+   - Review whether previous/copy of New Hampshire registration applies.
+   - Otherwise, obtain properly completed VIN verification form.
+
+4. If financed:
+   - Confirm lienholder/title handling.
+   - Confirm whether title copy/lienholder information can support VIN/title proof.
+
+5. Because source was limited:
+   - Verify directly with NH DMV, town/city clerk, title agency, or lender before final submission.
+
+============================================================
+TAX / RECIPROCITY NOTES
+============================================================
+
+For Florida dealer sale to New Hampshire resident:
+
+- Review Florida DOR out-of-state resident sales tax / DR-123 workflow.
+- Review New Hampshire title/registration fee requirements.
+- Verify tax handling with controller, agency, lender, NH DMV, or town/city clerk before finalizing.
+
+Use related file:
+fl_motor_vehicle_sales_tax_rates_by_state_tip_25a01_01_notes.txt
+
+============================================================
+REJECTION / DELAY RISKS
+============================================================
+
+High risk if:
+
+- Proof of VIN is missing.
+- VIN verification form is needed but not completed.
+- MSO missing for brand-new vehicle.
+- Proof of residency missing.
+- New resident 60-day timing is missed.
+- Lienholder/title handling unclear.
+- Source limitation not verified before final submission.
+- Tax/DR-123 handling unclear.
+
+============================================================
+AI ROUTING KEYWORDS
+============================================================
+
+New Hampshire customer
+title customer in New Hampshire
+register customer in New Hampshire
+New Hampshire title requirements
+New Hampshire registration requirements
+New Hampshire out of state dealer sale
+Florida dealer New Hampshire customer
+New Hampshire proof of VIN
+New Hampshire VIN verification
+New Hampshire proof of residency
+New Hampshire MSO
+New Hampshire 60 day registration
+NH title requirements
+NH registration requirements
+what do I need to title in New Hampshire
+
+============================================================
+COMMON CLERK ANSWER
+============================================================
+
+For a New Hampshire customer buying from a Florida dealership, verify directly with NH DMV or the customer’s town/city clerk because the official source page could not be fully fetched during note creation. Official NH DMV search results indicate New Hampshire may require proof of VIN, which can include an original or copy of title, previous or copy of New Hampshire registration, or a properly completed VIN verification form. Brand-new vehicles require an MSO, proof of residency may be required, and new residents generally have a maximum of 60 days to register vehicles after establishing residency. Prepare the dealer ownership package, buyer’s order, odometer disclosure/statement if applicable, lienholder information if financed, and review Florida DR-123/tax handling. Escalate if VIN proof, residency, MSO, lienholder, source verification, or tax handling is unclear.
+
+============================================================
+RELATED FILES
+============================================================
+
+- out_of_state_customer_title_master_logic_map.txt
+- fl_motor_vehicle_sales_tax_rates_by_state_tip_25a01_01_notes.txt
+- validation_logic_map.txt
+- rejection_prevention_logic_map.txt
+- fl_title_ownership_and_transfer_law_notes.txt
+- fl_lien_and_lien_satisfaction_law_notes.txt
+
+============================================================
+END OF FILE
+============================================================

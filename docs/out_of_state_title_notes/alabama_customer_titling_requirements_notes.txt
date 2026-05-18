@@ -1,0 +1,262 @@
+DOCUMENT: ALABAMA_CUSTOMER_TITLING_REQUIREMENTS_NOTES
+TITLE: Alabama Customer Titling / Registration Requirements for Out-of-State Dealer Sale
+STATE: Alabama
+SOURCE: https://www.madisoncountyal.gov/departments/license-department/tags-title/instructions-for-licensing-out-of-state-vehicle
+DOCUMENT_TYPE: Out-of-State Customer Titling / Registration Requirements
+CATEGORY: FLORIDA DEALER SALE TO ALABAMA CUSTOMER / ALABAMA TITLE / ALABAMA REGISTRATION / VIN CERTIFICATION / MILEAGE CERTIFICATION / LIEN / LEASED VEHICLE
+
+============================================================
+PURPOSE
+============================================================
+
+This file helps a Florida dealership understand what may be needed when a customer buys a vehicle from the dealership and wants the vehicle titled and/or registered in Alabama.
+
+Use this file for questions like:
+
+- What do I need to title this customer in Alabama?
+- Alabama customer bought from our Florida dealership.
+- Does Alabama need an inspection?
+- Does Alabama require VIN certification?
+- Does Alabama require mileage certification?
+- What does Alabama need if there is a lien?
+- What does Alabama need for a leased vehicle?
+
+============================================================
+WHEN TO USE THIS FILE
+============================================================
+
+Use this file when:
+
+IF customer_state = "Alabama"
+AND customer_is_buying_vehicle_from_dealer = TRUE
+AND vehicle_will_be_titled_or_registered_in_customer_state = TRUE
+THEN use_alabama_customer_titling_requirements_notes = TRUE
+
+Do NOT use this file as the primary source for:
+- Customer bringing Alabama title into Florida for Florida title
+- Florida resident titling/registering in Florida
+- Florida tag transfer workflow
+- Florida VIN verification as the main issue
+
+For Florida titling/registration, use Florida title and registration notes.
+
+============================================================
+ALABAMA SOURCE SUMMARY
+============================================================
+
+Alabama guidance from Madison County separates requirements by:
+
+1. Vehicle with a lien
+2. Vehicle with a clear title or no lien
+3. Leased vehicle
+
+For Alabama registration/title procedures, the source says the vehicle must be brought in at the time of registering so the VIN number and mileage can be certified.
+
+Alabama also requires proof of Alabama insurance for Alabama registration.
+
+============================================================
+ALABAMA — VEHICLE WITH LIEN
+============================================================
+
+Alabama source says a vehicle with a lien requires:
+
+- Legible copy of original Certificate of Title; OR
+- Previous out-of-state registration with title number listed
+- Valid driver license for all parties
+- Proof of Alabama insurance
+- Vehicle brought in at time of registering for VIN number and mileage certification
+- Last registration from previous state
+
+IF Alabama_customer_vehicle_has_lien = TRUE
+THEN Alabama_lien_vehicle_document_review_required = TRUE
+
+IF Alabama_customer_vehicle_has_lien = TRUE
+THEN copy_of_original_certificate_of_title_or_prior_registration_with_title_number_required = TRUE
+
+IF Alabama_customer_vehicle_has_lien = TRUE
+THEN proof_of_Alabama_insurance_required = TRUE
+
+IF Alabama_customer_vehicle_has_lien = TRUE
+THEN Alabama_VIN_and_mileage_certification_required = TRUE
+
+IF Alabama_customer_vehicle_has_lien = TRUE
+THEN last_registration_from_previous_state_required = TRUE
+
+Alabama source notes that certain states send the valid original title to the owner and not to the lienholder. Applicants from those states must surrender the title.
+
+States listed:
+AZ, KS, KY, ME, MD, MN, NJ, NY, OK, WI
+
+States Alabama says may sometimes give original title to either lienholder or owner:
+MI, MT, SD, WY
+
+IF customer_has_original_title_from_state_that_sends_title_to_owner_despite_lien = TRUE
+THEN Alabama_may_require_title_surrender_at_application = TRUE
+
+============================================================
+ALABAMA — CLEAR TITLE / NO LIEN
+============================================================
+
+Alabama source says clear title/no lien vehicle requires:
+
+- Original title
+- Valid driver license for all parties
+- Proof of Alabama insurance
+- Vehicle brought in at time of registering for VIN number and mileage certification
+- Power of Attorney if one party cannot appear for title procedures
+- Last registration from previous state
+
+IF Alabama_customer_vehicle_clear_title_or_no_lien = TRUE
+THEN original_title_required = TRUE
+
+IF Alabama_customer_vehicle_clear_title_or_no_lien = TRUE
+THEN valid_driver_license_for_all_parties_required = TRUE
+
+IF Alabama_customer_vehicle_clear_title_or_no_lien = TRUE
+THEN proof_of_Alabama_insurance_required = TRUE
+
+IF Alabama_customer_vehicle_clear_title_or_no_lien = TRUE
+THEN Alabama_VIN_and_mileage_certification_required = TRUE
+
+IF one_party_unable_to_appear_for_Alabama_title_procedure = TRUE
+THEN notarized_power_of_attorney_required_by_Alabama_source = TRUE
+
+IF Alabama_customer_vehicle_clear_title_or_no_lien = TRUE
+THEN last_registration_from_previous_state_required = TRUE
+
+============================================================
+ALABAMA — LEASED VEHICLE
+============================================================
+
+Alabama source says leased vehicles require:
+
+- Original Certificate of Title
+- Original Power of Attorney from the lease company
+- Valid driver license for all parties
+- Proof of Alabama insurance
+- Name-change documentation if title is in former name
+- Overseas registration if involved
+- Last registration from previous state
+- Vehicle information including make, model, year, color, body type, cylinders, mileage, and current address
+
+IF Alabama_customer_vehicle_is_leased = TRUE
+THEN original_certificate_of_title_required = TRUE
+
+IF Alabama_customer_vehicle_is_leased = TRUE
+THEN original_power_of_attorney_from_lease_company_required = TRUE
+
+IF Alabama_customer_vehicle_is_leased = TRUE
+THEN proof_of_Alabama_insurance_required = TRUE
+
+IF Alabama_customer_vehicle_titled_in_former_name = TRUE
+THEN marriage_certificate_or_decree_copy_required_for_name_change_review = TRUE
+
+IF overseas_registration_involved = TRUE
+THEN overseas_registration_required_by_Alabama_source = TRUE
+
+============================================================
+FLORIDA DEALER WORKFLOW FOR ALABAMA CUSTOMER
+============================================================
+
+When a Florida dealership sells a vehicle to an Alabama customer and the customer wants Alabama title/registration:
+
+1. Determine Alabama transaction type:
+   - Clear title / no lien
+   - Vehicle with lien
+   - Leased vehicle
+
+2. Prepare dealership documents:
+   - Properly assigned title or MCO/MSO
+   - Dealer reassignment if applicable
+   - Bill of sale / buyer’s order
+   - Odometer disclosure/statement if applicable
+   - Lienholder information if financed
+   - Lease company POA if leased
+
+3. Tell customer Alabama may require:
+   - Proof of Alabama insurance
+   - Valid driver licenses
+   - Vehicle brought in for VIN and mileage certification
+   - Last registration from previous state
+   - Original title or copy/registration support depending on lien status
+
+4. If customer cannot physically bring vehicle to Alabama office for VIN/mileage certification:
+   - Do not assume Alabama will waive inspection.
+   - Escalate to title lead, agency, or Alabama licensing office.
+
+5. If financed:
+   - Verify lienholder instructions.
+   - Confirm whether Alabama will accept dealer/lienholder title package.
+   - Review whether original title/MSO goes to Alabama, lienholder, or agency.
+
+6. If registering in Alabama:
+   - Alabama insurance is required by Alabama source.
+   - Florida insurance rules do not replace Alabama insurance requirements.
+
+============================================================
+TAX / RECIPROCITY NOTES
+============================================================
+
+For Florida dealer sale to Alabama resident:
+
+- Review Florida DOR out-of-state resident sales tax / DR-123 workflow.
+- Review customer state tax rate and Florida partial exemption rules.
+- Verify tax handling with controller, tax collector, agency, or lender before finalizing.
+
+Use related file:
+fl_motor_vehicle_sales_tax_rates_by_state_tip_25a01_01_notes.txt
+
+============================================================
+REJECTION / DELAY RISKS
+============================================================
+
+High risk if:
+
+- Customer does not have Alabama insurance.
+- Vehicle cannot be brought for Alabama VIN/mileage certification.
+- Lien/title possession is unclear.
+- Original title is missing when Alabama requires it.
+- Leased vehicle lacks original lease company POA.
+- Last registration from previous state is missing.
+- POA is missing or not notarized when required.
+- Name-change documentation is missing.
+- Tax/DR-123 handling is unclear.
+
+============================================================
+AI ROUTING KEYWORDS
+============================================================
+
+Alabama customer
+title customer in Alabama
+register customer in Alabama
+Alabama title requirements
+Alabama registration requirements
+Alabama out of state dealer sale
+Florida dealer Alabama customer
+Alabama VIN certification
+Alabama mileage certification
+Alabama insurance required
+Alabama leased vehicle title
+Alabama vehicle with lien
+what do I need to title in Alabama
+
+============================================================
+COMMON CLERK ANSWER
+============================================================
+
+For an Alabama customer buying from a Florida dealership, first determine whether the vehicle has a lien, clear title/no lien, or is leased. Alabama guidance says the vehicle must be brought in at registration for VIN and mileage certification and requires proof of Alabama insurance. Clear title/no lien vehicles require the original title; lien vehicles may require a copy of the original title or prior registration with title number; leased vehicles require original title and original lease company POA. Prepare the dealer title package, buyer’s order, lienholder information, odometer disclosure/statement if applicable, and review Florida DR-123/tax handling. Escalate if Alabama inspection, lienholder, lease POA, or tax handling is unclear.
+
+============================================================
+RELATED FILES
+============================================================
+
+- out_of_state_customer_title_master_logic_map.txt
+- fl_motor_vehicle_sales_tax_rates_by_state_tip_25a01_01_notes.txt
+- validation_logic_map.txt
+- rejection_prevention_logic_map.txt
+- fl_title_ownership_and_transfer_law_notes.txt
+- fl_lien_and_lien_satisfaction_law_notes.txt
+
+============================================================
+END OF FILE
+============================================================

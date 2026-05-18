@@ -1,0 +1,201 @@
+DOCUMENT: IOWA_CUSTOMER_TITLING_REQUIREMENTS_NOTES
+TITLE: Iowa Customer Titling / Registration Requirements for Out-of-State Dealer Sale
+STATE: Iowa
+SOURCE: https://www.polkcountyiowa.gov/treasurer/vehicle/new-iowa-residents/
+SUPPORTING_SOURCE_1: https://iowadot.gov/registration-plates/vehicle-registration-titles/register-vehicle
+SUPPORTING_SOURCE_2: https://iowadot.gov/registration-plates/vehicle-registration-titles/title-vehicle
+SOURCE_STATUS: Polk County page was not directly accessible during review; Iowa DOT official sources used for required document logic.
+DOCUMENT_TYPE: Out-of-State Customer Titling / Registration Requirements
+CATEGORY: FLORIDA DEALER SALE TO IOWA CUSTOMER / IOWA TITLE / IOWA REGISTRATION / FORM 411007 / ODOMETER / DAMAGE DISCLOSURE / SECURITY INTEREST
+
+============================================================
+PURPOSE
+============================================================
+
+This file helps a Florida dealership understand what may be needed when a customer buys a vehicle from the dealership and wants the vehicle titled and/or registered in Iowa.
+
+Use this file for questions like:
+
+- What do I need to title this customer in Iowa?
+- Iowa customer bought from our Florida dealership.
+- Does Iowa require Form 411007?
+- Does Iowa need odometer statement?
+- Does Iowa need damage disclosure?
+- What if there is a lien/security interest?
+- Does Iowa have a 30-day rule?
+
+============================================================
+WHEN TO USE THIS FILE
+============================================================
+
+Use this file when:
+
+IF customer_state = "Iowa"
+AND customer_is_buying_vehicle_from_dealer = TRUE
+AND vehicle_will_be_titled_or_registered_in_customer_state = TRUE
+THEN use_iowa_customer_titling_requirements_notes = TRUE
+
+Do NOT use this file as the primary source for:
+- Customer bringing Iowa title into Florida for Florida title
+- Florida resident titling/registering in Florida
+- Florida tag transfer workflow
+
+For Florida titling/registration, use Florida title and registration notes.
+
+============================================================
+IOWA SOURCE SUMMARY
+============================================================
+
+Iowa DOT registration page says vehicle registration requires:
+- Current ownership document / certificate of title
+- Completed Application for Iowa Certificate of Title and/or Registration
+- Application must be signed by all owners
+- If lien exists, it should be noted on the application
+
+Iowa DOT title page says for newly purchased used vehicle with out-of-state/non-Iowa title, customer needs:
+- Signed title from previous owner/dealer
+- Sales tax receipt, bill of sale, or purchase agreement
+- Completed Application for Iowa Certificate of Title, Form 411007
+- Cancellation of Security Interest, Form 411168, if an uncancelled lien is showing on front of title
+- Odometer Statement completed on back of title
+- If mileage is not noted on back of title for vehicles model year 2011 or newer, use Form 411077
+- Damage Disclosure, Form 411108, for vehicles 8 years old or newer
+
+Iowa DOT also states motor vehicle must be titled and registered with county treasurer within 30 days from date residency is established.
+
+============================================================
+IOWA REQUIRED DOCUMENT LOGIC
+============================================================
+
+IF Iowa_customer_title_or_registration_requested = TRUE
+THEN current_ownership_document_required = TRUE
+
+IF Iowa_customer_title_or_registration_requested = TRUE
+THEN Iowa_Form_411007_required = TRUE
+
+IF Iowa_Form_411007_required = TRUE
+THEN all_owner_signatures_required = TRUE
+
+IF Iowa_vehicle_has_lien = TRUE
+THEN lien_should_be_noted_on_application = TRUE
+
+IF Iowa_out_of_state_used_vehicle_title = TRUE
+THEN signed_title_from_previous_owner_or_dealer_required = TRUE
+
+IF Iowa_out_of_state_used_vehicle_title = TRUE
+THEN sales_tax_receipt_bill_of_sale_or_purchase_agreement_required = TRUE
+
+IF uncancelled_lien_showing_on_title = TRUE
+THEN Iowa_Form_411168_cancellation_of_security_interest_required = TRUE
+
+IF vehicle_model_year >= 2011
+AND mileage_not_noted_on_back_of_title = TRUE
+THEN Iowa_Form_411077_odometer_statement_required = TRUE
+
+IF vehicle_8_years_old_or_newer = TRUE
+THEN Iowa_Form_411108_damage_disclosure_required = TRUE
+
+IF customer_established_Iowa_residency = TRUE
+THEN Iowa_30_day_title_registration_review_required = TRUE
+
+============================================================
+FLORIDA DEALER WORKFLOW FOR IOWA CUSTOMER
+============================================================
+
+When a Florida dealership sells a vehicle to an Iowa customer and the customer wants Iowa title/registration:
+
+1. Prepare dealer ownership package:
+   - MCO/MSO or properly assigned title
+   - Dealer reassignment if applicable
+   - Buyer’s order / bill of sale / purchase agreement
+   - Odometer disclosure/statement if applicable
+   - Lienholder information if financed
+
+2. Iowa-specific items to review:
+   - Iowa Form 411007 Application for Certificate of Title and/or Registration
+   - All owners sign application
+   - Security interest/lien noted on application
+   - Form 411168 if uncancelled lien shows on title
+   - Form 411077 if 2011-or-newer mileage not on back of title
+   - Form 411108 damage disclosure for vehicles 8 years old or newer
+   - 30-day title/registration timing if residency established
+
+3. If financed:
+   - Confirm lienholder/security interest information.
+   - Confirm Iowa title/lien notation requirements.
+
+4. If used/out-of-state title:
+   - Ensure prior owner/dealer signed title.
+   - Include sales tax receipt, bill of sale, or purchase agreement.
+   - Confirm odometer and damage disclosure requirements.
+
+============================================================
+TAX / RECIPROCITY NOTES
+============================================================
+
+For Florida dealer sale to Iowa resident:
+
+- Review Florida DOR out-of-state resident sales tax / DR-123 workflow.
+- Review customer state tax rate and Florida partial exemption rules.
+- Verify tax handling with controller, tax collector, agency, or lender before finalizing.
+- Iowa may require sales tax receipt, bill of sale, or purchase agreement as part of title package.
+
+Use related file:
+fl_motor_vehicle_sales_tax_rates_by_state_tip_25a01_01_notes.txt
+
+============================================================
+REJECTION / DELAY RISKS
+============================================================
+
+High risk if:
+
+- Form 411007 is missing or not signed by all owners.
+- Signed title from previous owner/dealer is missing.
+- Sales tax receipt, bill of sale, or purchase agreement is missing.
+- Uncancelled lien shows and Form 411168 is missing.
+- Odometer statement is missing for 2011-or-newer vehicle when mileage not on title.
+- Damage Disclosure Form 411108 is missing for vehicle 8 years old or newer.
+- Iowa 30-day timing issue is ignored.
+- Tax/DR-123 handling is unclear.
+
+============================================================
+AI ROUTING KEYWORDS
+============================================================
+
+Iowa customer
+title customer in Iowa
+register customer in Iowa
+Iowa title requirements
+Iowa registration requirements
+Iowa out of state dealer sale
+Florida dealer Iowa customer
+Iowa Form 411007
+Iowa Form 411077
+Iowa Form 411108
+Iowa Form 411168
+Iowa damage disclosure
+Iowa odometer statement
+Iowa security interest
+Iowa 30 day registration
+what do I need to title in Iowa
+
+============================================================
+COMMON CLERK ANSWER
+============================================================
+
+For an Iowa customer buying from a Florida dealership, Iowa generally needs the current ownership document, completed Form 411007 signed by all owners, and for a used out-of-state title, the signed title from previous owner/dealer plus sales tax receipt, bill of sale, or purchase agreement. If an uncancelled lien shows, Iowa Form 411168 may be needed. If the vehicle is 2011 or newer and mileage is not on the title, use Form 411077. If the vehicle is 8 years old or newer, Iowa Damage Disclosure Form 411108 may be required. Prepare the dealer package, lienholder information if financed, and review Florida DR-123/tax handling. Escalate if lien/security interest, odometer, damage disclosure, timing, or tax handling is unclear.
+
+============================================================
+RELATED FILES
+============================================================
+
+- out_of_state_customer_title_master_logic_map.txt
+- fl_motor_vehicle_sales_tax_rates_by_state_tip_25a01_01_notes.txt
+- validation_logic_map.txt
+- rejection_prevention_logic_map.txt
+- fl_title_ownership_and_transfer_law_notes.txt
+- fl_lien_and_lien_satisfaction_law_notes.txt
+
+============================================================
+END OF FILE
+============================================================

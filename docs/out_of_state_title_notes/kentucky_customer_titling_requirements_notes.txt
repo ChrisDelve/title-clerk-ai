@@ -1,0 +1,217 @@
+DOCUMENT: KENTUCKY_CUSTOMER_TITLING_REQUIREMENTS_NOTES
+TITLE: Kentucky Customer Titling / Registration Requirements for Out-of-State Dealer Sale
+STATE: Kentucky
+SOURCE: https://drive.ky.gov/Vehicles/Pages/Vehicle-Titling.aspx
+DOCUMENT_TYPE: Out-of-State Customer Titling / Registration Requirements
+CATEGORY: FLORIDA DEALER SALE TO KENTUCKY CUSTOMER / KENTUCKY TITLE / KENTUCKY REGISTRATION / TC96-182 / KENTUCKY INSURANCE / NOTARY / LIEN STATEMENT / COUNTY CLERK
+
+============================================================
+PURPOSE
+============================================================
+
+This file helps a Florida dealership understand what may be needed when a customer buys a vehicle from the dealership and wants the vehicle titled and/or registered in Kentucky.
+
+Use this file for questions like:
+
+- What do I need to title this customer in Kentucky?
+- Kentucky customer bought from our Florida dealership.
+- Does Kentucky require notarized signatures?
+- Does Kentucky require Kentucky insurance?
+- What is Kentucky TC96-182?
+- What if the prior state only issues registration or bill of sale?
+- What if lienholder has the title?
+
+============================================================
+WHEN TO USE THIS FILE
+============================================================
+
+Use this file when:
+
+IF customer_state = "Kentucky"
+AND customer_is_buying_vehicle_from_dealer = TRUE
+AND vehicle_will_be_titled_or_registered_in_customer_state = TRUE
+THEN use_kentucky_customer_titling_requirements_notes = TRUE
+
+Do NOT use this file as the primary source for:
+- Customer bringing Kentucky title into Florida for Florida title
+- Florida resident titling/registering in Florida
+- Florida tag transfer workflow
+
+For Florida titling/registration, use Florida title and registration notes.
+
+============================================================
+KENTUCKY SOURCE SUMMARY
+============================================================
+
+Kentucky DRIVE says for out-of-state vehicles, take the following to the local County Clerk to apply for title:
+
+- Proof of Kentucky Insurance, issue date within 45 days
+- Kentucky Driver's License, Kentucky ID Card, or Social Security card
+- Completed TC96-182 form and signed-over title
+- If prior state only issues registration or bill of sale, bring those in place of signed-over title
+- Signatures must be notarized
+- If name on title differs from name on ID, provide affidavit showing they are same person; marriage license or divorce decree is an example
+- Business vehicles licensed by Secretary of State titled using FEIN
+
+Kentucky also says:
+- Title Lien Statements must be submitted to County Clerk.
+- County Clerk processes title and registration.
+- County Clerk may request title from lienholder.
+- Do not use liquid paper/white-out, scratch through, mark out, erase, or mutilate title.
+- Provide affidavit with new information signed and notarized.
+
+============================================================
+KENTUCKY REQUIRED DOCUMENT LOGIC
+============================================================
+
+IF Kentucky_customer_title_or_registration_requested = TRUE
+THEN Kentucky_county_clerk_title_application_required = TRUE
+
+IF Kentucky_customer_title_or_registration_requested = TRUE
+THEN proof_of_Kentucky_insurance_required = TRUE
+
+IF proof_of_Kentucky_insurance_required = TRUE
+THEN insurance_issue_date_must_be_within_45_days = TRUE
+
+IF Kentucky_customer_title_or_registration_requested = TRUE
+THEN Kentucky_DL_ID_or_SSN_card_required = TRUE
+
+IF Kentucky_customer_title_or_registration_requested = TRUE
+THEN TC96_182_required = TRUE
+
+IF prior_state_issues_title = TRUE
+THEN signed_over_title_required = TRUE
+
+IF prior_state_only_issues_registration_or_bill_of_sale = TRUE
+THEN registration_or_bill_of_sale_accepted_in_place_of_signed_title_review_required = TRUE
+
+IF Kentucky_title_or_application_signature_required = TRUE
+THEN notarized_signatures_required = TRUE
+
+IF name_on_title_differs_from_ID = TRUE
+THEN affidavit_or_name_change_document_required = TRUE
+
+IF vehicle_owned_by_business_licensed_by_secretary_of_state = TRUE
+THEN FEIN_used_for_Kentucky_title = TRUE
+
+IF Kentucky_lien_statement_needed = TRUE
+THEN title_lien_statement_submitted_to_county_clerk = TRUE
+
+IF title_held_by_lienholder = TRUE
+THEN Kentucky_county_clerk_may_request_title_from_lienholder = TRUE
+
+============================================================
+KENTUCKY TITLE CORRECTION / ALTERATION WARNING
+============================================================
+
+IF Kentucky_title_has_whiteout_scratchout_markout_erasure_or_mutilation = TRUE
+THEN high_rejection_risk = TRUE
+
+IF new_information_needed_on_title = TRUE
+THEN notarized_affidavit_required = TRUE
+
+COMMON WARNING:
+Do not use white-out, scratch through, mark out, erase, or mutilate a Kentucky title. Kentucky guidance says to provide an affidavit with new information signed and notarized.
+
+============================================================
+FLORIDA DEALER WORKFLOW FOR KENTUCKY CUSTOMER
+============================================================
+
+When a Florida dealership sells a vehicle to a Kentucky customer and the customer wants Kentucky title/registration:
+
+1. Prepare dealer ownership package:
+   - MCO/MSO or properly assigned title
+   - Dealer reassignment if applicable
+   - Buyer’s order / bill of sale
+   - Odometer disclosure/statement if applicable
+   - Lienholder information if financed
+
+2. Kentucky-specific items to review:
+   - TC96-182 completed
+   - Signed-over title, or registration/bill of sale if prior state only issues those
+   - Notarized signatures
+   - Proof of Kentucky insurance issued within 45 days
+   - Kentucky DL/ID or SSN card
+   - Name affidavit if title name differs from ID
+   - FEIN if business vehicle
+   - Title lien statement if financed/lien involved
+
+3. If financed:
+   - Confirm lienholder instructions.
+   - County Clerk may request title from lienholder.
+   - Confirm title/lienholder path before promising completion.
+
+4. If corrections/alterations:
+   - Do not use white-out or scratch-outs.
+   - Obtain notarized affidavit for new information.
+   - Escalate if title condition is questionable.
+
+============================================================
+TAX / RECIPROCITY NOTES
+============================================================
+
+For Florida dealer sale to Kentucky resident:
+
+- Review Florida DOR out-of-state resident sales tax / DR-123 workflow.
+- Review customer state tax rate and Florida partial exemption rules.
+- Verify tax handling with controller, tax collector, agency, or lender before finalizing.
+
+Use related file:
+fl_motor_vehicle_sales_tax_rates_by_state_tip_25a01_01_notes.txt
+
+============================================================
+REJECTION / DELAY RISKS
+============================================================
+
+High risk if:
+
+- Kentucky insurance missing or issue date older than 45 days.
+- TC96-182 missing.
+- Signatures not notarized.
+- Signed-over title missing when prior state issues titles.
+- Registration/bill of sale substitution used without confirming prior state only issues those.
+- Name on title differs from ID without affidavit/name document.
+- Title has white-out, scratch-out, mark-out, erasure, or mutilation.
+- Title/lienholder held title path is unclear.
+- Business title lacks FEIN review.
+- Tax/DR-123 handling is unclear.
+
+============================================================
+AI ROUTING KEYWORDS
+============================================================
+
+Kentucky customer
+title customer in Kentucky
+register customer in Kentucky
+Kentucky title requirements
+Kentucky registration requirements
+Kentucky out of state dealer sale
+Florida dealer Kentucky customer
+Kentucky TC96-182
+Kentucky insurance 45 days
+Kentucky notarized signatures
+Kentucky county clerk
+Kentucky title lien statement
+Kentucky name affidavit
+what do I need to title in Kentucky
+
+============================================================
+COMMON CLERK ANSWER
+============================================================
+
+For a Kentucky customer buying from a Florida dealership, Kentucky requires proof of Kentucky insurance issued within 45 days, Kentucky DL/ID or SSN card, completed TC96-182, and a signed-over title. If the prior state only issues registration or bill of sale, Kentucky says to bring those in place of the signed title. Signatures must be notarized. If the title name differs from the customer’s ID, an affidavit or name-change document is needed. Title lien statements go through the County Clerk, and the clerk may request the title from the lienholder. Do not use white-out or scratch-outs on the title; use a signed/notarized affidavit for new information. Escalate if insurance timing, notarization, lienholder title, name mismatch, title alteration, or tax handling is unclear.
+
+============================================================
+RELATED FILES
+============================================================
+
+- out_of_state_customer_title_master_logic_map.txt
+- fl_motor_vehicle_sales_tax_rates_by_state_tip_25a01_01_notes.txt
+- validation_logic_map.txt
+- rejection_prevention_logic_map.txt
+- fl_title_ownership_and_transfer_law_notes.txt
+- fl_lien_and_lien_satisfaction_law_notes.txt
+
+============================================================
+END OF FILE
+============================================================

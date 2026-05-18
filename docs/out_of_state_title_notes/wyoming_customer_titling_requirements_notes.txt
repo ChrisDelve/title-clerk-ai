@@ -1,0 +1,231 @@
+DOCUMENT: WYOMING_CUSTOMER_TITLING_REQUIREMENTS_NOTES
+TITLE: Wyoming Customer Titling / Registration Requirements for Out-of-State Dealer Sale
+STATE: Wyoming
+SOURCE: https://www.tetoncountywy.gov/317/Transferring-Your-Out-of-State-Vehicle-t
+DOCUMENT_TYPE: Out-of-State Customer Titling / Registration Requirements
+CATEGORY: FLORIDA DEALER SALE TO WYOMING CUSTOMER / WYOMING TITLE / WYOMING REGISTRATION / VIN INSPECTION / LOCAL LAW ENFORCEMENT / LENDER REQUEST FORM / PROOF OF INSURANCE / OUT-OF-STATE REGISTRATION
+
+============================================================
+PURPOSE
+============================================================
+
+This file helps a Florida dealership understand what may be needed when a customer buys a vehicle from the dealership and wants the vehicle titled and/or registered in Wyoming.
+
+Use this file for questions like:
+
+- What do I need to title this customer in Wyoming?
+- Wyoming customer bought from our Florida dealership.
+- Does Wyoming require VIN inspection?
+- Who does the Wyoming VIN inspection?
+- Does Wyoming require proof of insurance?
+- What if the bank holds the title?
+- What is the Wyoming Lender Request Form?
+- Does Wyoming have a 30-day registration rule?
+
+============================================================
+WHEN TO USE THIS FILE
+============================================================
+
+Use this file when:
+
+IF customer_state = "Wyoming"
+AND customer_is_buying_vehicle_from_dealer = TRUE
+AND vehicle_will_be_titled_or_registered_in_customer_state = TRUE
+THEN use_wyoming_customer_titling_requirements_notes = TRUE
+
+Do NOT use this file as the primary source for:
+- Customer bringing Wyoming title into Florida for Florida title
+- Florida resident titling/registering in Florida
+- Florida tag transfer workflow
+
+For Florida titling/registration, use Florida title and registration notes.
+
+============================================================
+WYOMING SOURCE SUMMARY
+============================================================
+
+Teton County, Wyoming says:
+
+- If customer recently moved to Wyoming and is employed, they are required to register vehicle within 30 days of arrival.
+- Customer must have vehicle VIN inspected by local law enforcement.
+- Local law enforcement has the Wyoming VIN inspection form and completes it.
+- VIN inspection cost listed by source: $10.
+- Customer brings VIN inspection form to county office with:
+  - Vehicle Title
+  - Current out-of-state registration
+  - Proof of Insurance
+- If customer is making payments on vehicle and has title, customer also needs loan agreement with bank.
+- If bank holds title, customer should fill out Lender Request Form and email or fax it to county office.
+- Once county receives Lender Request Form, county sends it to bank to request title.
+- Once title is received, county contacts customer to complete transfer.
+- If customer does not have Vehicle Title, current out-of-state registration, or proof of insurance, customer should contact county office for help obtaining Wyoming plates and registration.
+
+============================================================
+WYOMING REQUIRED DOCUMENT LOGIC
+============================================================
+
+IF Wyoming_customer_title_or_registration_requested = TRUE
+THEN Wyoming_VIN_inspection_required = TRUE
+
+IF Wyoming_VIN_inspection_required = TRUE
+THEN VIN_inspection_by_local_law_enforcement_required = TRUE
+
+IF Wyoming_VIN_inspection_required = TRUE
+THEN Wyoming_VIN_inspection_form_completed_by_law_enforcement_required = TRUE
+
+IF Wyoming_VIN_inspection_required = TRUE
+THEN Wyoming_VIN_inspection_fee_10_dollars_review_required = TRUE
+
+IF Wyoming_customer_title_or_registration_requested = TRUE
+THEN vehicle_title_required = TRUE
+
+IF Wyoming_customer_title_or_registration_requested = TRUE
+THEN current_out_of_state_registration_required = TRUE
+
+IF Wyoming_registration_requested = TRUE
+THEN proof_of_insurance_required = TRUE
+
+IF customer_recently_moved_to_Wyoming_and_is_employed = TRUE
+THEN Wyoming_30_day_registration_deadline_review_required = TRUE
+
+============================================================
+WYOMING LIEN / BANK HOLDS TITLE LOGIC
+============================================================
+
+IF customer_making_payments_on_vehicle = TRUE
+AND customer_has_vehicle_title = TRUE
+THEN bank_loan_agreement_required = TRUE
+
+IF bank_holds_vehicle_title = TRUE
+THEN Wyoming_Lender_Request_Form_required = TRUE
+
+IF bank_holds_vehicle_title = TRUE
+THEN Lender_Request_Form_must_be_emailed_or_faxed_to_county_office = TRUE
+
+IF county_receives_Lender_Request_Form = TRUE
+THEN county_sends_form_to_bank_to_request_title = TRUE
+
+IF county_receives_title_from_bank = TRUE
+THEN county_contacts_customer_to_complete_transfer = TRUE
+
+IF bank_holds_vehicle_title = TRUE
+THEN do_not_promise_completion_until_title_received_by_county = TRUE
+
+============================================================
+WYOMING MISSING DOCUMENT LOGIC
+============================================================
+
+IF customer_missing_vehicle_title
+OR customer_missing_current_out_of_state_registration
+OR customer_missing_proof_of_insurance = TRUE
+THEN contact_county_office_for_alternate_guidance_before_submission = TRUE
+
+============================================================
+FLORIDA DEALER WORKFLOW FOR WYOMING CUSTOMER
+============================================================
+
+When a Florida dealership sells a vehicle to a Wyoming customer and the customer wants Wyoming title/registration:
+
+1. Prepare dealer ownership package:
+   - Vehicle title or MCO/MSO
+   - Dealer reassignment if applicable
+   - Buyer’s order / bill of sale
+   - Odometer disclosure/statement if applicable
+   - Lienholder/bank information if financed
+   - Loan agreement if customer is making payments and has title
+
+2. Wyoming-specific items to review:
+   - VIN inspection by local law enforcement
+   - Wyoming VIN inspection form
+   - Vehicle title
+   - Current out-of-state registration
+   - Proof of insurance
+   - 30-day registration deadline if customer recently moved to Wyoming and is employed
+   - Lender Request Form if bank holds title
+
+3. If financed:
+   - Determine whether customer has title or bank holds title.
+   - If customer has title and is making payments, include loan agreement.
+   - If bank holds title, complete/review Lender Request Form and send to county office.
+   - Do not promise transfer completion until county receives title from bank.
+
+4. If customer lacks title/registration/insurance:
+   - Hold and escalate.
+   - Contact county office/title agency before promising Wyoming plates/registration.
+
+5. If registering:
+   - Verify proof of insurance.
+   - Confirm county-specific registration fees and requirements.
+
+============================================================
+TAX / RECIPROCITY NOTES
+============================================================
+
+For Florida dealer sale to Wyoming resident:
+
+- Review Florida DOR out-of-state resident sales tax / DR-123 workflow.
+- Review Wyoming title/registration tax and fee requirements with county office.
+- Verify tax handling with controller, agency, lender, or Wyoming county office before finalizing.
+
+Use related file:
+fl_motor_vehicle_sales_tax_rates_by_state_tip_25a01_01_notes.txt
+
+============================================================
+REJECTION / DELAY RISKS
+============================================================
+
+High risk if:
+
+- VIN inspection missing.
+- VIN inspection not completed by local law enforcement.
+- Vehicle title missing.
+- Current out-of-state registration missing.
+- Proof of insurance missing.
+- Bank holds title and Lender Request Form is missing.
+- County has not yet received title from bank.
+- Customer is making payments and loan agreement is missing.
+- 30-day registration deadline missed.
+- Tax/DR-123 handling unclear.
+- County-specific requirement not verified.
+
+============================================================
+AI ROUTING KEYWORDS
+============================================================
+
+Wyoming customer
+title customer in Wyoming
+register customer in Wyoming
+Wyoming title requirements
+Wyoming registration requirements
+Wyoming out of state dealer sale
+Florida dealer Wyoming customer
+Wyoming VIN inspection
+Wyoming local law enforcement VIN inspection
+Wyoming Lender Request Form
+Wyoming bank holds title
+Wyoming loan agreement
+Wyoming proof of insurance
+Wyoming 30 day registration
+Teton County Wyoming title
+what do I need to title in Wyoming
+
+============================================================
+COMMON CLERK ANSWER
+============================================================
+
+For a Wyoming customer buying from a Florida dealership, Wyoming/Teton County says the customer needs a VIN inspection by local law enforcement, then must bring the completed VIN inspection form, vehicle title, current out-of-state registration, and proof of insurance to the county office. If the customer recently moved to Wyoming and is employed, they must register within 30 days of arrival. If the customer is making payments and has the title, they also need the loan agreement. If the bank holds the title, the customer must complete the Lender Request Form and send it to the county office so the county can request the title from the bank. Prepare the dealer ownership package, buyer’s order, odometer disclosure/statement if applicable, lienholder/bank information if financed, and review Florida DR-123/Wyoming tax handling. Escalate if VIN inspection, title, out-of-state registration, insurance, lender request, loan agreement, or tax handling is unclear.
+
+============================================================
+RELATED FILES
+============================================================
+
+- out_of_state_customer_title_master_logic_map.txt
+- fl_motor_vehicle_sales_tax_rates_by_state_tip_25a01_01_notes.txt
+- validation_logic_map.txt
+- rejection_prevention_logic_map.txt
+- fl_title_ownership_and_transfer_law_notes.txt
+- fl_lien_and_lien_satisfaction_law_notes.txt
+
+============================================================
+END OF FILE
+============================================================

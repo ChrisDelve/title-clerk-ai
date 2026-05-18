@@ -1,0 +1,183 @@
+DOCUMENT: INDIANA_CUSTOMER_TITLING_REQUIREMENTS_NOTES
+TITLE: Indiana Customer Titling / Registration Requirements for Out-of-State Dealer Sale
+STATE: Indiana
+SOURCE: https://faqs.in.gov/hc/en-us/articles/4409233093524-My-vehicle-is-titled-in-another-state-Can-I-still-register-my-vehicle-in-Indiana-if-I-m-not-a-resident-of-Indiana
+DOCUMENT_TYPE: Out-of-State Customer Titling / Registration Requirements
+CATEGORY: FLORIDA DEALER SALE TO INDIANA CUSTOMER / INDIANA TITLE / INDIANA REGISTRATION / NONRESIDENT / PHYSICAL INSPECTION / INSURANCE / ADDRESS PROOF
+
+============================================================
+PURPOSE
+============================================================
+
+This file helps a Florida dealership understand what may be needed when a customer buys a vehicle from the dealership and wants the vehicle titled and/or registered in Indiana.
+
+Use this file for questions like:
+
+- What do I need to title this customer in Indiana?
+- Indiana customer bought from our Florida dealership.
+- Can a nonresident register in Indiana?
+- Does Indiana require a physical inspection?
+- What ID/address/insurance does Indiana require?
+
+============================================================
+WHEN TO USE THIS FILE
+============================================================
+
+Use this file when:
+
+IF customer_state = "Indiana"
+AND customer_is_buying_vehicle_from_dealer = TRUE
+AND vehicle_will_be_titled_or_registered_in_customer_state = TRUE
+THEN use_indiana_customer_titling_requirements_notes = TRUE
+
+Do NOT use this file as the primary source for:
+- Customer bringing Indiana title into Florida for Florida title
+- Florida resident titling/registering in Florida
+- Florida tag transfer workflow
+
+For Florida titling/registration, use Florida title and registration notes.
+
+============================================================
+INDIANA SOURCE SUMMARY
+============================================================
+
+Indiana FAQ says:
+
+A vehicle may be registered in Indiana, but it must first be titled in Indiana.
+
+Requirements listed:
+- Proof of valid Social Security number; OR
+- Proof of lawful status I-94 with Social Security Number Ineligibility Letter issued by Social Security Administration, dated within past 60 days of transaction
+- Two proofs of address dated within past 60 days
+- Valid and current title for the vehicle
+- Physical inspection
+- Proof of current insurance
+
+============================================================
+INDIANA REQUIRED DOCUMENT LOGIC
+============================================================
+
+IF Indiana_registration_requested = TRUE
+THEN Indiana_title_first_required = TRUE
+
+IF Indiana_title_or_registration_requested = TRUE
+THEN valid_current_title_required = TRUE
+
+IF Indiana_title_or_registration_requested = TRUE
+THEN physical_inspection_required = TRUE
+
+IF Indiana_title_or_registration_requested = TRUE
+THEN proof_of_current_insurance_required = TRUE
+
+IF Indiana_customer_has_valid_SSN = TRUE
+THEN proof_of_valid_SSN_required = TRUE
+
+IF Indiana_customer_lacks_valid_SSN = TRUE
+THEN I_94_lawful_status_and_SSA_ineligibility_letter_required = TRUE
+
+IF SSA_ineligibility_letter_used = TRUE
+THEN letter_must_be_within_60_days_of_transaction = TRUE
+
+IF Indiana_title_or_registration_requested = TRUE
+THEN two_proofs_of_address_within_60_days_required = TRUE
+
+============================================================
+FLORIDA DEALER WORKFLOW FOR INDIANA CUSTOMER
+============================================================
+
+When a Florida dealership sells a vehicle to an Indiana customer and the customer wants Indiana title/registration:
+
+1. Confirm whether Indiana title and registration are both requested.
+   - Indiana FAQ says vehicle must first be titled in Indiana before registration.
+
+2. Prepare dealer ownership package:
+   - MCO/MSO or properly assigned title
+   - Dealer reassignment if applicable
+   - Buyer’s order / bill of sale
+   - Odometer disclosure/statement if applicable
+   - Lienholder information if financed
+
+3. Indiana-specific items to tell customer/agency to verify:
+   - Valid/current title
+   - Physical inspection
+   - Proof of current insurance
+   - Proof of valid SSN or lawful-status/I-94 + SSA ineligibility letter
+   - Two proofs of address dated within past 60 days
+
+4. If customer is not Indiana resident:
+   - Use the Indiana nonresident FAQ carefully.
+   - Escalate if residency/address requirements are unclear.
+   - Do not promise Indiana registration without title-first review.
+
+5. If financed:
+   - Confirm lender/lienholder instructions.
+   - Confirm Indiana title/lien recording requirements.
+
+============================================================
+TAX / RECIPROCITY NOTES
+============================================================
+
+For Florida dealer sale to Indiana customer:
+
+- Review Florida DOR out-of-state resident sales tax / DR-123 workflow.
+- Review customer state tax rate and Florida partial exemption rules.
+- Verify tax handling with controller, tax collector, agency, or lender before finalizing.
+
+Use related file:
+fl_motor_vehicle_sales_tax_rates_by_state_tip_25a01_01_notes.txt
+
+============================================================
+REJECTION / DELAY RISKS
+============================================================
+
+High risk if:
+
+- Indiana title-first requirement is missed.
+- Physical inspection is not completed.
+- Proof of current insurance is missing.
+- Two proofs of address are missing or older than 60 days.
+- SSN or lawful-status/I-94 + SSA ineligibility letter is missing.
+- SSA ineligibility letter is older than 60 days.
+- Valid/current title is missing.
+- Customer’s Indiana/nonresident eligibility is unclear.
+- Tax/DR-123 handling is unclear.
+
+============================================================
+AI ROUTING KEYWORDS
+============================================================
+
+Indiana customer
+title customer in Indiana
+register customer in Indiana
+Indiana title requirements
+Indiana registration requirements
+Indiana out of state dealer sale
+Florida dealer Indiana customer
+Indiana nonresident registration
+Indiana physical inspection
+Indiana proof of current insurance
+Indiana two proofs of address
+Indiana I-94
+Indiana SSN ineligibility letter
+what do I need to title in Indiana
+
+============================================================
+COMMON CLERK ANSWER
+============================================================
+
+For an Indiana customer buying from a Florida dealership, Indiana says the vehicle must first be titled in Indiana before it can be registered. The Indiana FAQ lists requirements including valid/current title, physical inspection, proof of current insurance, proof of valid SSN or lawful-status/I-94 plus SSA ineligibility letter dated within 60 days, and two proofs of address dated within 60 days. Prepare the dealer title package, buyer’s order, odometer disclosure/statement if applicable, lienholder information if financed, and review Florida DR-123/tax handling. Escalate if physical inspection, address/identity documents, nonresident eligibility, insurance, or tax handling is unclear.
+
+============================================================
+RELATED FILES
+============================================================
+
+- out_of_state_customer_title_master_logic_map.txt
+- fl_motor_vehicle_sales_tax_rates_by_state_tip_25a01_01_notes.txt
+- validation_logic_map.txt
+- rejection_prevention_logic_map.txt
+- fl_title_ownership_and_transfer_law_notes.txt
+- fl_lien_and_lien_satisfaction_law_notes.txt
+
+============================================================
+END OF FILE
+============================================================

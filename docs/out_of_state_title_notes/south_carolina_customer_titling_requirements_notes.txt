@@ -1,0 +1,294 @@
+DOCUMENT: SOUTH_CAROLINA_CUSTOMER_TITLING_REQUIREMENTS_NOTES
+TITLE: South Carolina Customer Titling / Registration Requirements for Out-of-State Dealer Sale
+STATE: South Carolina
+SOURCE: https://dmv.sc.gov/vehicle-owners/moving-to-sc
+DOCUMENT_TYPE: Out-of-State Customer Titling / Registration Requirements
+CATEGORY: FLORIDA DEALER SALE TO SOUTH CAROLINA CUSTOMER / SOUTH CAROLINA TITLE / SOUTH CAROLINA REGISTRATION / FORM 400 / PROPERTY TAX / IMF / SC INSURANCE / LIEN / TI-006
+
+============================================================
+PURPOSE
+============================================================
+
+This file helps a Florida dealership understand what may be needed when a customer buys a vehicle from the dealership and wants the vehicle titled and/or registered in South Carolina.
+
+Use this file for questions like:
+
+- What do I need to title this customer in South Carolina?
+- South Carolina customer bought from our Florida dealership.
+- Does South Carolina require property tax paid first?
+- What is South Carolina Form 400?
+- What is South Carolina IMF?
+- Does South Carolina require SC insurance?
+- What if the vehicle has a lien?
+- What if the customer does not have an SC license?
+
+============================================================
+WHEN TO USE THIS FILE
+============================================================
+
+Use this file when:
+
+IF customer_state = "South Carolina"
+AND customer_is_buying_vehicle_from_dealer = TRUE
+AND vehicle_will_be_titled_or_registered_in_customer_state = TRUE
+THEN use_south_carolina_customer_titling_requirements_notes = TRUE
+
+Do NOT use this file as the primary source for:
+- Customer bringing South Carolina title into Florida for Florida title
+- Florida resident titling/registering in Florida
+- Florida tag transfer workflow
+
+For Florida titling/registration, use Florida title and registration notes.
+
+============================================================
+SOUTH CAROLINA SOURCE SUMMARY
+============================================================
+
+South Carolina SCDMV says:
+
+Before title and registration transfer:
+- Customer should get an SC driver license.
+- Customer must pay vehicle property taxes with county treasurer before registration.
+- Customer cannot receive new SC title by mail until out-of-state title clears through NMVTIS.
+- Registration may be received before title clearance is complete.
+
+Steps for first-time SC title/registration:
+- Update vehicle insurance company with new SC address.
+- Insurance company must be licensed to do business in South Carolina.
+- Contact county auditor with VIN and most recent registration card.
+- County auditor generates property tax bill.
+- Property tax bill must be paid to county treasurer before registration.
+- Original paid property tax receipt must be brought to SCDMV.
+
+Documents/items listed by SCDMV:
+- Completed Title Application, SCDMV Form 400
+- Out-of-state vehicle title and/or registration
+- If lien exists: lienholder company name and address; valid current registration
+- Acceptable identification
+- Liability insurance company information
+- Power of Attorney if leasing and Form 400 is signed by lessee on behalf of lessor
+- Original paid vehicle property tax receipt from county treasurer
+- $250 Infrastructure Maintenance Fee (IMF)
+- Title and registration fees
+
+Fee note:
+- Most regular passenger vehicles titled and registered in SC pay $305 to SCDMV:
+  - $250 IMF
+  - $15 title fee
+  - $40 registration/license plate fee
+- This does not include county property tax.
+- Registration/plate fee is paid every two years.
+
+No SC license:
+- If customer does not have valid SC beginner’s permit, driver license, or ID, complete Statement of Vehicle Operation, Form TI-006.
+- TI-006 applies if active duty military in SC, enrolled in SC school, or vehicle kept in SC at least six months a year.
+
+Vehicles with lien:
+- Need Form 400
+- Form TI-006
+- Out-of-state registration
+- Original paid property tax receipt
+- SC beginner’s permit, driver license, or ID
+- Title and registration fees
+- If registration is expired, information must be sent to lienholder and lienholder mails it to SCDMV with title.
+
+Vehicles without lien:
+- Need Form 400
+- Form TI-006
+- Out-of-state title
+- Original paid property tax receipt
+- SC beginner’s permit, driver license, or ID
+- Title and registration fees
+
+Registering without title:
+- SCDMV may register out-of-state vehicle without title depending on vehicle year and year other state started titling vehicles.
+- Original bill of sale may be required.
+
+============================================================
+SOUTH CAROLINA REQUIRED DOCUMENT LOGIC
+============================================================
+
+IF South_Carolina_customer_title_or_registration_requested = TRUE
+THEN SCDMV_Form_400_required = TRUE
+
+IF South_Carolina_customer_title_or_registration_requested = TRUE
+THEN out_of_state_title_and_or_registration_required = TRUE
+
+IF South_Carolina_registration_requested = TRUE
+THEN original_paid_county_property_tax_receipt_required = TRUE
+
+IF South_Carolina_registration_requested = TRUE
+THEN liability_insurance_company_information_required = TRUE
+
+IF South_Carolina_registration_requested = TRUE
+THEN insurance_company_must_be_licensed_in_South_Carolina = TRUE
+
+IF South_Carolina_customer_title_or_registration_requested = TRUE
+THEN acceptable_identification_required = TRUE
+
+IF South_Carolina_registration_requested = TRUE
+THEN infrastructure_maintenance_fee_required = TRUE
+
+IF South_Carolina_registration_requested = TRUE
+THEN title_and_registration_fees_required = TRUE
+
+IF South_Carolina_vehicle_leased = TRUE
+AND lessee_signs_Form_400_for_lessor = TRUE
+THEN power_of_attorney_required = TRUE
+
+IF customer_lacks_SC_license_permit_or_ID = TRUE
+THEN SCDMV_Form_TI_006_required = TRUE
+
+IF South_Carolina_vehicle_has_lien = TRUE
+THEN lienholder_name_and_address_required = TRUE
+
+IF South_Carolina_vehicle_has_lien = TRUE
+THEN valid_current_registration_required = TRUE
+
+IF South_Carolina_vehicle_has_lien = TRUE
+AND registration_expired = TRUE
+THEN lienholder_must_mail_title_package_to_SCDMV_review_required = TRUE
+
+IF South_Carolina_vehicle_no_lien = TRUE
+THEN out_of_state_title_required = TRUE
+
+IF South_Carolina_registering_without_title_possible = TRUE
+THEN vehicle_year_and_other_state_titling_start_year_review_required = TRUE
+
+IF South_Carolina_registering_without_title_possible = TRUE
+THEN original_bill_of_sale_may_be_required = TRUE
+
+============================================================
+SOUTH CAROLINA FEE LOGIC
+============================================================
+
+IF South_Carolina_regular_passenger_vehicle_titled_and_registered = TRUE
+THEN estimated_SCDMV_amount = 305.00
+
+IF South_Carolina_regular_passenger_vehicle_titled_and_registered = TRUE
+THEN infrastructure_maintenance_fee = 250.00
+
+IF South_Carolina_regular_passenger_vehicle_titled_and_registered = TRUE
+THEN title_fee = 15.00
+
+IF South_Carolina_regular_passenger_vehicle_titled_and_registered = TRUE
+THEN registration_plate_fee = 40.00
+
+IF South_Carolina_county_property_tax_due = TRUE
+THEN property_tax_not_included_in_305_SCDMV_amount = TRUE
+
+============================================================
+FLORIDA DEALER WORKFLOW FOR SOUTH CAROLINA CUSTOMER
+============================================================
+
+When a Florida dealership sells a vehicle to a South Carolina customer and the customer wants South Carolina title/registration:
+
+1. Prepare dealer ownership package:
+   - MCO/MSO or properly assigned title
+   - Dealer reassignment if applicable
+   - Buyer’s order / bill of sale
+   - Odometer disclosure/statement if applicable
+   - Lienholder information if financed
+
+2. South Carolina-specific items to review:
+   - Form 400 Title Application
+   - Out-of-state title and/or registration
+   - County property tax paid before registration
+   - Original paid property tax receipt
+   - SC-address insurance with company licensed in SC
+   - Liability insurance company information
+   - Acceptable ID
+   - IMF and title/registration fees
+   - TI-006 if customer does not have SC license/permit/ID
+   - POA if leased and lessee signs for lessor
+
+3. If financed/lien exists:
+   - Provide lienholder name and address.
+   - Confirm valid current registration.
+   - If registration is expired, review SCDMV lienholder/title-mailing requirement.
+   - Do not promise registration completion until lienholder/title route is clear.
+
+4. If no lien:
+   - Out-of-state title is required.
+
+5. If customer does not have SC license/permit/ID:
+   - Complete/review TI-006 and applicable qualifying reason.
+
+6. If vehicle may be registered without title:
+   - Review vehicle year and other state’s title-start year.
+   - Original bill of sale may be required.
+   - Escalate before submission.
+
+============================================================
+TAX / RECIPROCITY NOTES
+============================================================
+
+For Florida dealer sale to South Carolina resident:
+
+- Review Florida DOR out-of-state resident sales tax / DR-123 workflow.
+- South Carolina requires county property tax before registration.
+- South Carolina IMF applies to most title/registration transactions.
+- Verify tax/IMF/property tax handling with controller, agency, lender, county auditor/treasurer, or SCDMV before finalizing.
+
+Use related file:
+fl_motor_vehicle_sales_tax_rates_by_state_tip_25a01_01_notes.txt
+
+============================================================
+REJECTION / DELAY RISKS
+============================================================
+
+High risk if:
+
+- County property tax not paid.
+- Original paid property tax receipt missing.
+- SC insurance/company information missing.
+- Insurance company is not licensed in SC.
+- Form 400 missing.
+- Out-of-state title/registration missing.
+- Customer lacks SC license/permit/ID and TI-006 is missing.
+- Lienholder name/address missing.
+- Registration expired on lien vehicle and lienholder/title mailing path unclear.
+- Lease POA missing.
+- IMF/fees not reviewed.
+- Registering-without-title issue not reviewed.
+- Tax/DR-123/property tax handling unclear.
+
+============================================================
+AI ROUTING KEYWORDS
+============================================================
+
+South Carolina customer
+title customer in South Carolina
+register customer in South Carolina
+South Carolina title requirements
+South Carolina registration requirements
+South Carolina out of state dealer sale
+Florida dealer South Carolina customer
+SCDMV Form 400
+South Carolina IMF
+South Carolina property tax receipt
+South Carolina TI-006
+South Carolina insurance licensed in SC
+South Carolina lienholder title
+what do I need to title in South Carolina
+
+============================================================
+COMMON CLERK ANSWER
+============================================================
+
+For a South Carolina customer buying from a Florida dealership, South Carolina requires Form 400, out-of-state title and/or registration, acceptable ID, liability insurance company information, original paid county property tax receipt, IMF, and title/registration fees. The customer must pay county property tax before registration. Insurance must be updated to the SC address and the insurer must be licensed to do business in South Carolina. If there is a lien, provide lienholder name/address and current registration; if registration is expired, the lienholder/title mailing path must be reviewed. If the customer lacks an SC license, permit, or ID, Form TI-006 may be required. Prepare the dealer package, buyer’s order, odometer disclosure/statement if applicable, lienholder information if financed, and review Florida DR-123/SC IMF/property tax handling. Escalate if property tax, insurance, lienholder title, TI-006, lease POA, or tax handling is unclear.
+
+============================================================
+RELATED FILES
+============================================================
+
+- out_of_state_customer_title_master_logic_map.txt
+- fl_motor_vehicle_sales_tax_rates_by_state_tip_25a01_01_notes.txt
+- validation_logic_map.txt
+- rejection_prevention_logic_map.txt
+- fl_title_ownership_and_transfer_law_notes.txt
+- fl_lien_and_lien_satisfaction_law_notes.txt
+
+============================================================
+END OF FILE
+============================================================

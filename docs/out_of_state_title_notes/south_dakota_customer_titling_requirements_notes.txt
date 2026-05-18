@@ -1,0 +1,277 @@
+DOCUMENT: SOUTH_DAKOTA_CUSTOMER_TITLING_REQUIREMENTS_NOTES
+TITLE: South Dakota Customer Titling / Registration Requirements for Out-of-State Dealer Sale
+STATE: South Dakota
+SOURCE: https://dor.sd.gov/individuals/motor-vehicle/
+DOCUMENT_TYPE: Out-of-State Customer Titling / Registration Requirements
+CATEGORY: FLORIDA DEALER SALE TO SOUTH DAKOTA CUSTOMER / SOUTH DAKOTA TITLE / SOUTH DAKOTA REGISTRATION / COUNTY TREASURER / 45 DAY REQUIREMENT / ORIGINAL TITLE / ELT / PLATE WITH OWNER
+
+============================================================
+PURPOSE
+============================================================
+
+This file helps a Florida dealership understand what may be needed when a customer buys a vehicle from the dealership and wants the vehicle titled and/or registered in South Dakota.
+
+Use this file for questions like:
+
+- What do I need to title this customer in South Dakota?
+- South Dakota customer bought from our Florida dealership.
+- Does South Dakota have a 45-day title/registration rule?
+- What does South Dakota need from an out-of-state resident?
+- Does South Dakota keep plates with owner?
+- Is South Dakota an ELT state?
+- What if the vehicle has a lien?
+
+============================================================
+WHEN TO USE THIS FILE
+============================================================
+
+Use this file when:
+
+IF customer_state = "South Dakota"
+AND customer_is_buying_vehicle_from_dealer = TRUE
+AND vehicle_will_be_titled_or_registered_in_customer_state = TRUE
+THEN use_south_dakota_customer_titling_requirements_notes = TRUE
+
+Do NOT use this file as the primary source for:
+- Customer bringing South Dakota title into Florida for Florida title
+- Florida resident titling/registering in Florida
+- Florida tag transfer workflow
+
+For Florida titling/registration, use Florida title and registration notes.
+
+============================================================
+SOUTH DAKOTA SOURCE SUMMARY
+============================================================
+
+South Dakota DOR says:
+
+General:
+- Motor vehicle titling and registration is handled through local county treasurer’s office.
+- Motor Vehicle or Boat Title & Registration Application must be signed by record owner(s) or authorized agent.
+- In addition to title, seller should provide Bill of Sale to purchaser.
+
+Timing:
+- Vehicle owners have 45 days to apply for title and registration of an acquired vehicle.
+- There is no extension on the 45-day requirement.
+- Interest and penalties accrue on motor vehicle excise tax.
+- Fees are assessed from purchase date regardless of application date.
+- Interest is 1% or $5, whichever is greater, for first month and 1% per month thereafter.
+- One-time penalty equal to 10% of tax or $10, whichever is greater, applies against applications made after 60 days from purchase date.
+- Title late fees accrue at $1 per week up to 24 weeks, then max at $50.
+
+Out-of-state resident registering in South Dakota:
+- Customer should know their state may prohibit registering vehicle in another state.
+- Required items listed:
+  - Original out-of-state titles
+  - Copy of state driver license
+  - Social Security number
+  - Motor Vehicle and Boat Title & Registration Application
+- Take paperwork to local county treasurer’s office.
+- County treasurer gives appropriate fees for that county.
+
+Moving to South Dakota:
+- Customer has 90 days from date of arrival to title and license vehicle in South Dakota.
+- If vehicle titled/licensed in another state, reciprocity applies.
+- If prior state tax rate is above South Dakota’s tax rate, no additional tax.
+- If prior state has no tax or lower tax rate than South Dakota, customer pays additional tax to match.
+
+Plate rule:
+- South Dakota is a plate-with-owner state.
+- Plates are retained by owner.
+- When purchasing new vehicle, owner transfers old plates to newly acquired vehicle through local county treasurer.
+
+ELT:
+- South Dakota has been an ELT state since October 2012.
+- If lienholder is on vehicle loan, title remains electronic until lienholder releases interest.
+- When paid off and lienholder releases, paper title is printed and mailed to location indicated by lienholder.
+- If lender does not use provider and there is current title document, title plus loan contract and $10 lien fee is submitted to county treasurer.
+- If title is already electronic, loan contract and $10 fee is remitted to county treasurer and lien is noted.
+
+Damage disclosure:
+- State law requires seller to provide completed Damage Disclosure Statement upon sale/transfer/trade.
+- If motor vehicle or large boat titled in another jurisdiction is to be titled in South Dakota, importer must also complete Damage Disclosure Statement.
+- Effective July 1, 2015, damage disclosure is no longer mandated, but damage disclosure remains noted on titles issued before July 1, 2015.
+
+============================================================
+SOUTH DAKOTA REQUIRED DOCUMENT LOGIC
+============================================================
+
+IF South_Dakota_customer_title_or_registration_requested = TRUE
+THEN local_county_treasurer_processing_required = TRUE
+
+IF South_Dakota_customer_title_or_registration_requested = TRUE
+THEN Motor_Vehicle_or_Boat_Title_and_Registration_Application_required = TRUE
+
+IF South_Dakota_application_required = TRUE
+THEN application_signed_by_record_owner_or_authorized_agent_required = TRUE
+
+IF vehicle_sold_to_customer = TRUE
+THEN bill_of_sale_should_be_provided_to_purchaser = TRUE
+
+IF South_Dakota_vehicle_acquired = TRUE
+THEN South_Dakota_45_day_title_registration_deadline_required = TRUE
+
+IF South_Dakota_application_after_45_days = TRUE
+THEN excise_tax_interest_and_title_late_fees_review_required = TRUE
+
+IF South_Dakota_application_after_60_days = TRUE
+THEN one_time_penalty_review_required = TRUE
+
+IF customer_is_out_of_state_resident_registering_in_South_Dakota = TRUE
+THEN original_out_of_state_titles_copy_state_DL_SSN_and_application_required = TRUE
+
+IF customer_moving_to_South_Dakota = TRUE
+THEN South_Dakota_90_day_title_license_deadline_review_required = TRUE
+
+IF South_Dakota_registration_requested = TRUE
+THEN county_treasurer_fee_review_required = TRUE
+
+============================================================
+SOUTH DAKOTA TAX / RECIPROCITY LOGIC
+============================================================
+
+IF customer_moving_to_South_Dakota = TRUE
+AND vehicle_previously_titled_and_licensed_in_another_state = TRUE
+THEN South_Dakota_tax_reciprocity_review_required = TRUE
+
+IF prior_state_tax_rate_above_South_Dakota_tax_rate = TRUE
+THEN no_additional_South_Dakota_tax_due_per_source = TRUE
+
+IF prior_state_no_tax_or_lower_tax_than_South_Dakota = TRUE
+THEN additional_tax_to_match_South_Dakota_rate_due = TRUE
+
+IF South_Dakota_title_registration_late = TRUE
+THEN motor_vehicle_excise_tax_interest_penalty_review_required = TRUE
+
+============================================================
+SOUTH DAKOTA PLATE / ELT / LIEN LOGIC
+============================================================
+
+IF South_Dakota_customer_has_old_SD_plates = TRUE
+THEN plate_with_owner_transfer_review_required = TRUE
+
+IF South_Dakota_vehicle_has_lien = TRUE
+THEN South_Dakota_ELT_review_required = TRUE
+
+IF South_Dakota_vehicle_has_lien = TRUE
+THEN title_remains_electronic_until_lien_release = TRUE
+
+IF lienholder_releases_lien = TRUE
+THEN paper_title_printed_and_mailed_to_location_indicated_by_lienholder = TRUE
+
+IF lender_not_using_ELT_provider_AND_current_title_document_exists = TRUE
+THEN title_loan_contract_and_10_dollar_lien_fee_submitted_to_county_treasurer = TRUE
+
+IF title_already_electronic_AND_lender_not_using_provider = TRUE
+THEN loan_contract_and_10_dollar_fee_remitted_to_county_treasurer = TRUE
+
+============================================================
+FLORIDA DEALER WORKFLOW FOR SOUTH DAKOTA CUSTOMER
+============================================================
+
+When a Florida dealership sells a vehicle to a South Dakota customer and the customer wants South Dakota title/registration:
+
+1. Prepare dealer ownership package:
+   - Original out-of-state title or MCO/MSO
+   - Dealer reassignment if applicable
+   - Bill of Sale / buyer’s order
+   - Odometer disclosure/statement if applicable
+   - Lienholder information and loan contract if financed
+
+2. South Dakota-specific items to review:
+   - Motor Vehicle or Boat Title & Registration Application
+   - Application signed by record owner(s) or authorized agent
+   - Local county treasurer processing
+   - 45-day title/registration deadline from purchase date
+   - Original out-of-state title
+   - Copy of state driver license and SSN if out-of-state resident registration scenario
+   - Plate-with-owner transfer if customer has existing SD plate
+   - ELT/lien process if financed
+   - Damage disclosure history if applicable
+
+3. If financed:
+   - Confirm whether lienholder participates in ELT.
+   - Confirm whether title will remain electronic.
+   - Confirm loan contract and lien fee handling if lender does not use provider.
+
+4. If customer is moving to South Dakota:
+   - Review 90-day title/license requirement.
+   - Review tax reciprocity.
+
+5. If customer is out-of-state resident trying to register in South Dakota:
+   - Warn that their home state may prohibit registering in another state.
+   - Confirm original titles, DL copy, SSN, and application.
+   - Escalate if residency/eligibility is unclear.
+
+============================================================
+TAX / RECIPROCITY NOTES
+============================================================
+
+For Florida dealer sale to South Dakota resident:
+
+- Review Florida DOR out-of-state resident sales tax / DR-123 workflow.
+- South Dakota has reciprocity rules for vehicles titled/licensed in another state before moving to SD.
+- If prior state tax rate is lower/no tax, customer may owe additional tax to match SD.
+- Verify tax handling with controller, agency, lender, county treasurer, or South Dakota DOR before finalizing.
+
+Use related file:
+fl_motor_vehicle_sales_tax_rates_by_state_tip_25a01_01_notes.txt
+
+============================================================
+REJECTION / DELAY RISKS
+============================================================
+
+High risk if:
+
+- Original out-of-state title missing.
+- Application not signed by record owner or authorized agent.
+- Bill of sale missing.
+- 45-day deadline missed and penalties not reviewed.
+- County treasurer fee/tax handling unclear.
+- Lienholder/ELT process misunderstood.
+- Loan contract or lien fee missing when required.
+- Customer expects paper title while lien exists/ELT applies.
+- Plate-with-owner transfer not reviewed.
+- Out-of-state resident eligibility unclear.
+- Tax/DR-123/reciprocity handling unclear.
+
+============================================================
+AI ROUTING KEYWORDS
+============================================================
+
+South Dakota customer
+title customer in South Dakota
+register customer in South Dakota
+South Dakota title requirements
+South Dakota registration requirements
+South Dakota out of state dealer sale
+Florida dealer South Dakota customer
+South Dakota 45 day title registration
+South Dakota county treasurer
+South Dakota original out of state title
+South Dakota ELT
+South Dakota plate with owner
+South Dakota tax reciprocity
+South Dakota 90 day moving
+what do I need to title in South Dakota
+
+============================================================
+COMMON CLERK ANSWER
+============================================================
+
+For a South Dakota customer buying from a Florida dealership, South Dakota title/registration is handled through the local county treasurer. The Motor Vehicle or Boat Title & Registration Application must be signed by the record owner(s) or authorized agent, and the seller should provide a bill of sale. South Dakota gives buyers 45 days to apply for title and registration; late applications accrue interest, penalties, and title late fees. If the customer is registering in South Dakota as an out-of-state resident, the source lists original out-of-state title, copy of state driver license, SSN, and application, but warns the customer’s home state may prohibit registration elsewhere. South Dakota is a plate-with-owner state and an ELT state. Prepare the dealer package, original title/MCO, buyer’s order, odometer disclosure/statement if applicable, lienholder documents if financed, and review Florida DR-123/SD tax handling. Escalate if original title, county treasurer fees, ELT/lien, residency eligibility, timing, or tax handling is unclear.
+
+============================================================
+RELATED FILES
+============================================================
+
+- out_of_state_customer_title_master_logic_map.txt
+- fl_motor_vehicle_sales_tax_rates_by_state_tip_25a01_01_notes.txt
+- validation_logic_map.txt
+- rejection_prevention_logic_map.txt
+- fl_title_ownership_and_transfer_law_notes.txt
+- fl_lien_and_lien_satisfaction_law_notes.txt
+
+============================================================
+END OF FILE
+============================================================

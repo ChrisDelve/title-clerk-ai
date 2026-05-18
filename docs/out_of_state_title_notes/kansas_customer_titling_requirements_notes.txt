@@ -1,0 +1,259 @@
+DOCUMENT: KANSAS_CUSTOMER_TITLING_REQUIREMENTS_NOTES
+TITLE: Kansas Customer Titling / Registration Requirements for Out-of-State Dealer Sale
+STATE: Kansas
+SOURCE: https://www.ksrevenue.gov/dovtitleused.html
+DOCUMENT_TYPE: Out-of-State Customer Titling / Registration Requirements
+CATEGORY: FLORIDA DEALER SALE TO KANSAS CUSTOMER / KANSAS TITLE / KANSAS REGISTRATION / MVE-1 / VEHICLE INSPECTION / LIEN RELEASE / E-TITLE / INSURANCE / SALES TAX
+
+============================================================
+PURPOSE
+============================================================
+
+This file helps a Florida dealership understand what may be needed when a customer buys a vehicle from the dealership and wants the vehicle titled and/or registered in Kansas.
+
+Use this file for questions like:
+
+- What do I need to title this customer in Kansas?
+- Kansas customer bought from our Florida dealership.
+- Does Kansas require vehicle inspection?
+- What is Kansas MVE-1?
+- Does Kansas require lien release?
+- What if Kansas title is electronic?
+- Does Kansas require proof of insurance?
+- Does Kansas have a 60-day timing rule?
+
+============================================================
+WHEN TO USE THIS FILE
+============================================================
+
+Use this file when:
+
+IF customer_state = "Kansas"
+AND customer_is_buying_vehicle_from_dealer = TRUE
+AND vehicle_will_be_titled_or_registered_in_customer_state = TRUE
+THEN use_kansas_customer_titling_requirements_notes = TRUE
+
+Do NOT use this file as the primary source for:
+- Customer bringing Kansas title into Florida for Florida title
+- Florida resident titling/registering in Florida
+- Florida tag transfer workflow
+
+For Florida titling/registration, use Florida title and registration notes.
+
+============================================================
+KANSAS SOURCE SUMMARY
+============================================================
+
+Kansas DOR says:
+
+- Application for certificate of title and registration must be made through the county treasurer’s office in the county where the vehicle is garaged.
+- To avoid penalty, vehicle registration must be made within 60 days from date of purchase.
+
+Required vehicle information includes:
+- Title assigned to new owner
+- Back of title completed with purchase price, date of sale, odometer reading, printed names and signatures of seller(s) and buyer(s)
+- If more than one owner:
+  - AND = all persons listed must sign
+  - OR = either person may sign
+  - No connection listed defaults to AND/all parties must sign
+- Lien release if lienholder recorded on title
+- Vehicle inspection required if title was issued from another state or bill of sale is from out-of-state owner
+- Vehicle and title must be taken to Kansas motor vehicle inspection station
+- MVE-1 issued before application for title/registration
+- Pink copy of MVE-1 submitted to treasurer
+- Current proof of insurance
+- Sales tax receipt if dealer purchase; if tax paid to another state and there is a difference, customer is responsible for difference
+- Property tax paid at registration unless applying for temporary plate
+
+Kansas E-title notes:
+- Required documents as above
+- For 60-day permit with e-title, need TR-39A Electronic Title Sales Agreement, copy of seller’s current registration receipt, and proof of insurance
+- Lien release required to get clear paper title
+- Seller must provide lien release or clear paper title before registration can be completed
+- TR-40 may allow buyer to complete assignment after lien release and clear title received
+- TR-128 required if lien not being paid off and lienholder consents to transfer ownership
+
+============================================================
+KANSAS REQUIRED DOCUMENT LOGIC
+============================================================
+
+IF Kansas_customer_title_or_registration_requested = TRUE
+THEN Kansas_county_treasurer_application_required = TRUE
+
+IF Kansas_customer_title_or_registration_requested = TRUE
+THEN Kansas_60_day_registration_timing_review_required = TRUE
+
+IF Kansas_used_vehicle_title = TRUE
+THEN assigned_title_required = TRUE
+
+IF Kansas_used_vehicle_title = TRUE
+THEN purchase_price_date_of_sale_odometer_printed_names_and_signatures_required = TRUE
+
+IF Kansas_title_owner_connection = "AND"
+THEN all_owners_must_sign = TRUE
+
+IF Kansas_title_owner_connection = "OR"
+THEN either_owner_may_sign = TRUE
+
+IF Kansas_title_owner_connection_blank = TRUE
+THEN default_to_AND_all_parties_sign = TRUE
+
+IF lienholder_recorded_on_Kansas_title = TRUE
+THEN lien_release_required = TRUE
+
+IF title_issued_from_another_state = TRUE
+OR bill_of_sale_from_out_of_state_owner = TRUE
+THEN Kansas_vehicle_inspection_required = TRUE
+
+IF Kansas_vehicle_inspection_required = TRUE
+THEN Kansas_MVE_1_required = TRUE
+
+IF Kansas_MVE_1_required = TRUE
+THEN pink_copy_MVE_1_submitted_to_treasurer_required = TRUE
+
+IF Kansas_registration_requested = TRUE
+THEN current_proof_of_insurance_required = TRUE
+
+IF Kansas_vehicle_purchased_from_dealer = TRUE
+THEN sales_tax_receipt_required = TRUE
+
+IF tax_paid_to_another_state_less_than_Kansas_due = TRUE
+THEN Kansas_tax_difference_due_review_required = TRUE
+
+IF Kansas_registration_requested = TRUE
+AND temporary_plate_not_requested = TRUE
+THEN property_tax_due_at_registration = TRUE
+
+============================================================
+KANSAS E-TITLE LOGIC
+============================================================
+
+IF Kansas_title_is_electronic = TRUE
+THEN Kansas_E_title_review_required = TRUE
+
+IF Kansas_E_title = TRUE
+AND customer_wants_60_day_permit = TRUE
+THEN TR_39A_Electronic_Title_Sales_Agreement_required = TRUE
+
+IF Kansas_E_title = TRUE
+AND customer_wants_60_day_permit = TRUE
+THEN seller_current_registration_receipt_copy_required = TRUE
+
+IF Kansas_E_title = TRUE
+THEN proof_of_insurance_required = TRUE
+
+IF Kansas_clear_paper_title_needed = TRUE
+THEN lien_release_required = TRUE
+
+IF Kansas_E_title_assignment_after_lien_release = TRUE
+THEN TR_40_POA_purchase_price_odometer_disclosure_for_electronic_title_review_required = TRUE
+
+IF Kansas_lien_not_paid_off_and_lienholder_consents_to_transfer = TRUE
+THEN TR_128_lienholder_consent_to_transfer_required = TRUE
+
+============================================================
+FLORIDA DEALER WORKFLOW FOR KANSAS CUSTOMER
+============================================================
+
+When a Florida dealership sells a vehicle to a Kansas customer and the customer wants Kansas title/registration:
+
+1. Prepare dealer ownership package:
+   - MCO/MSO or properly assigned title
+   - Dealer reassignment if applicable
+   - Buyer’s order / bill of sale
+   - Odometer disclosure/statement if applicable
+   - Lienholder information if financed
+
+2. Kansas-specific items to review:
+   - Assigned title with purchase price, date of sale, odometer, printed names and signatures
+   - Ownership conjunction AND/OR signature rules
+   - Lien release if lienholder recorded
+   - Vehicle inspection/MVE-1 if out-of-state title or bill of sale from out-of-state owner
+   - Current proof of insurance
+   - Sales tax receipt
+   - Property tax at registration unless temporary plate
+   - 60-day registration timing
+
+3. If title/e-title/lien issue:
+   - Review TR-39A for e-title 60-day permit.
+   - Review TR-40 for POA/purchase price/odometer disclosure after lien release.
+   - Review TR-128 if lienholder consents without payoff.
+   - Do not promise registration if lien release or clear paper title is missing.
+
+4. If inspection not completed:
+   - Kansas requires vehicle/title inspection and MVE-1 before title/registration.
+   - Escalate to agency or Kansas county treasurer.
+
+============================================================
+TAX / RECIPROCITY NOTES
+============================================================
+
+For Florida dealer sale to Kansas resident:
+
+- Review Florida DOR out-of-state resident sales tax / DR-123 workflow.
+- Review customer state tax rate and Florida partial exemption rules.
+- Kansas source says if sales tax was paid to another state and there is a difference, customer is responsible for the difference.
+- Verify tax handling with controller, tax collector, agency, or lender before finalizing.
+
+Use related file:
+fl_motor_vehicle_sales_tax_rates_by_state_tip_25a01_01_notes.txt
+
+============================================================
+REJECTION / DELAY RISKS
+============================================================
+
+High risk if:
+
+- Kansas MVE-1 inspection is missing.
+- Title assignment lacks purchase price, sale date, odometer, names, or signatures.
+- AND/OR owner signatures handled incorrectly.
+- Lien release missing.
+- E-title process misunderstood.
+- TR-39A, TR-40, or TR-128 missing when applicable.
+- Proof of insurance missing.
+- Sales tax receipt missing.
+- Tax difference/DR-123 handling unclear.
+- 60-day timing missed.
+- Property tax at registration not reviewed.
+
+============================================================
+AI ROUTING KEYWORDS
+============================================================
+
+Kansas customer
+title customer in Kansas
+register customer in Kansas
+Kansas title requirements
+Kansas registration requirements
+Kansas out of state dealer sale
+Florida dealer Kansas customer
+Kansas MVE-1
+Kansas vehicle inspection
+Kansas e-title
+Kansas TR-39A
+Kansas TR-40
+Kansas TR-128
+Kansas lien release
+Kansas 60 day registration
+what do I need to title in Kansas
+
+============================================================
+COMMON CLERK ANSWER
+============================================================
+
+For a Kansas customer buying from a Florida dealership, Kansas requires county treasurer title/registration processing in the county where the vehicle is garaged and generally requires registration within 60 days of purchase to avoid penalty. The title assignment must include purchase price, sale date, odometer, printed names, and seller/buyer signatures. If the title is out of state or bill of sale is from an out-of-state owner, Kansas requires vehicle inspection and MVE-1. Current proof of insurance, sales tax receipt, lien release if applicable, and property tax review are also needed. For Kansas e-title issues, review TR-39A, TR-40, or TR-128 as applicable. Escalate if MVE-1, lien release, e-title, tax, insurance, or timing issues are unclear.
+
+============================================================
+RELATED FILES
+============================================================
+
+- out_of_state_customer_title_master_logic_map.txt
+- fl_motor_vehicle_sales_tax_rates_by_state_tip_25a01_01_notes.txt
+- validation_logic_map.txt
+- rejection_prevention_logic_map.txt
+- fl_title_ownership_and_transfer_law_notes.txt
+- fl_lien_and_lien_satisfaction_law_notes.txt
+
+============================================================
+END OF FILE
+============================================================

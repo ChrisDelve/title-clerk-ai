@@ -1,0 +1,270 @@
+DOCUMENT: MISSOURI_CUSTOMER_TITLING_REQUIREMENTS_NOTES
+TITLE: Missouri Customer Titling / Registration Requirements for Out-of-State Dealer Sale
+STATE: Missouri
+SOURCE: https://dor.mo.gov/motor-vehicle/titling-registration/#newresident
+DOCUMENT_TYPE: Out-of-State Customer Titling / Registration Requirements
+CATEGORY: FLORIDA DEALER SALE TO MISSOURI CUSTOMER / MISSOURI TITLE / MISSOURI REGISTRATION / FORM 108 / ID OD INSPECTION / SAFETY INSPECTION / EMISSIONS / LIENHOLDER / INSURANCE
+
+============================================================
+PURPOSE
+============================================================
+
+This file helps a Florida dealership understand what may be needed when a customer buys a vehicle from the dealership and wants the vehicle titled and/or registered in Missouri.
+
+Use this file for questions like:
+
+- What do I need to title this customer in Missouri?
+- Missouri customer bought from our Florida dealership.
+- Does Missouri require ID/OD inspection?
+- Does Missouri require safety inspection?
+- Does Missouri require emissions?
+- What if the lienholder has the out-of-state title?
+- What is Missouri Form 108?
+
+============================================================
+WHEN TO USE THIS FILE
+============================================================
+
+Use this file when:
+
+IF customer_state = "Missouri"
+AND customer_is_buying_vehicle_from_dealer = TRUE
+AND vehicle_will_be_titled_or_registered_in_customer_state = TRUE
+THEN use_missouri_customer_titling_requirements_notes = TRUE
+
+Do NOT use this file as the primary source for:
+- Customer bringing Missouri title into Florida for Florida title
+- Florida resident titling/registering in Florida
+- Florida tag transfer workflow
+
+For Florida titling/registration, use Florida title and registration notes.
+
+============================================================
+MISSOURI SOURCE SUMMARY
+============================================================
+
+Missouri DOR says:
+
+For Missouri resident titling:
+- Customer has 30 days from date of purchase to title and pay sales tax.
+- Late titling penalty begins on the 31st day after purchase.
+- Required documents include:
+  - Certificate of Title properly signed over, or Manufacturer's Statement of Origin (MSO)
+  - Signed Application for Missouri Title and License, Form 108
+  - Identification number and odometer inspection (ID/OD), if ownership transferred on title issued by another state or country
+  - Safety inspection not more than 60 days old may satisfy ID/OD inspection
+  - Odometer Disclosure Statement, Form 3019, if applicable
+  - Notarized Lien Release, Form 4809, if applicable
+  - Additional documentation may be requested at titling
+
+For new resident/out-of-state title registration:
+- Customer has 30 days from becoming Missouri resident to title vehicle.
+- If lienholder has out-of-state title, customer may use Owner Out-of-State Title Request, Form 5834.
+- If lienholder refuses/unable to release title, Missouri may allow one-year registration with acceptable proof, but Missouri title is not issued and one-year registration is not renewable until out-of-state title is received.
+- Required documents include:
+  - Original title or proof of ownership according to prior state law
+  - Form 108
+  - ID/OD inspection
+  - Current insurance card or other proof of financial responsibility
+  - Statement of non-assessment from Missouri county/city assessor, or military LES if applicable
+  - Missouri safety inspection not more than 60 days old
+  - Emissions inspection not more than 60 days old if resident of St. Louis City, Jefferson, St. Charles, or St. Louis County, if applicable
+
+Missouri fees/taxes listed:
+- $8.50 title fee
+- $9.00 processing fee
+- $2.00 electronic transmission fee may be collected, if applicable
+- Registration/plate fees based on taxable horsepower or weight
+- State tax 4.225% plus local sales tax, less trade-in allowance, if any
+- If vehicle owned/operated in another state for at least 90 days before titling/registering in Missouri, no additional sales tax is due
+- If owned less than 90 days and tax paid to another state is less than Missouri state/local tax, proof of tax paid is required and difference is due
+
+============================================================
+MISSOURI REQUIRED DOCUMENT LOGIC
+============================================================
+
+IF Missouri_customer_title_or_registration_requested = TRUE
+THEN Missouri_Form_108_required = TRUE
+
+IF Missouri_customer_title_or_registration_requested = TRUE
+THEN certificate_of_title_or_MSO_required = TRUE
+
+IF title_issued_by_another_state_or_country = TRUE
+THEN Missouri_ID_OD_inspection_required = TRUE
+
+IF Missouri_safety_inspection_completed_within_60_days = TRUE
+THEN safety_inspection_may_satisfy_ID_OD_requirement = TRUE
+
+IF odometer_disclosure_applicable = TRUE
+THEN Missouri_Form_3019_odometer_disclosure_required = TRUE
+
+IF lien_release_applicable = TRUE
+THEN notarized_Missouri_Form_4809_lien_release_required = TRUE
+
+IF Missouri_registration_requested = TRUE
+THEN current_insurance_card_or_financial_responsibility_required = TRUE
+
+IF Missouri_registration_requested = TRUE
+THEN statement_of_non_assessment_or_military_LES_required = TRUE
+
+IF Missouri_registration_requested = TRUE
+THEN Missouri_safety_inspection_not_more_than_60_days_old_required_unless_exempt = TRUE
+
+IF Missouri_residence_area IN ["St. Louis City", "Jefferson County", "St. Charles County", "St. Louis County"]
+THEN Missouri_emissions_inspection_not_more_than_60_days_old_required_if_applicable = TRUE
+
+IF Missouri_title_or_sales_tax_paid_late_after_30_days = TRUE
+THEN Missouri_title_penalty_review_required = TRUE
+
+============================================================
+MISSOURI LIENHOLDER / TITLE HELD BY LIENHOLDER LOGIC
+============================================================
+
+IF Missouri_customer_out_of_state_title_held_by_lienholder = TRUE
+THEN Missouri_Form_5834_owner_out_of_state_title_request_review_required = TRUE
+
+IF lienholder_releases_out_of_state_title = TRUE
+THEN submit_original_out_of_state_title_with_application = TRUE
+
+IF lienholder_refuses_or_unable_to_release_out_of_state_title = TRUE
+THEN Missouri_one_year_registration_only_review_required = TRUE
+
+IF Missouri_one_year_registration_only_due_to_lienholder_title = TRUE
+THEN Missouri_title_not_issued_until_out_of_state_title_received = TRUE
+
+IF Missouri_one_year_registration_only_due_to_lienholder_title = TRUE
+THEN one_year_registration_not_renewable_until_out_of_state_title_received = TRUE
+
+IF lienholder_refuses_or_unable_to_release_title = TRUE
+THEN acceptable_proof_may_include_copy_front_and_back_title_or_electronic_title_receipt_or_lienholder_statement = TRUE
+
+============================================================
+MISSOURI INSPECTION / EMISSIONS NOTES
+============================================================
+
+IF title_issued_by_another_state_or_country = TRUE
+THEN Missouri_ID_OD_inspection_required = TRUE
+
+IF Missouri_safety_inspection_completed_not_more_than_60_days_old = TRUE
+THEN safety_inspection_can_satisfy_ID_OD = TRUE
+
+IF Missouri_vehicle_first_ten_years_after_model_year
+AND odometer_less_than_150000_miles = TRUE
+THEN Missouri_safety_inspection_exemption_review_required = TRUE
+
+IF Missouri_emissions_county_applies = TRUE
+THEN Missouri_emissions_inspection_required_if_applicable = TRUE
+
+============================================================
+FLORIDA DEALER WORKFLOW FOR MISSOURI CUSTOMER
+============================================================
+
+When a Florida dealership sells a vehicle to a Missouri customer and the customer wants Missouri title/registration:
+
+1. Prepare dealer ownership package:
+   - MCO/MSO or properly assigned title
+   - Dealer reassignment if applicable
+   - Buyer’s order / bill of sale
+   - Odometer disclosure/statement if applicable
+   - Lienholder information if financed
+
+2. Missouri-specific items to review:
+   - Missouri Form 108
+   - ID/OD inspection
+   - Safety inspection not more than 60 days old
+   - Emissions inspection if customer resides in applicable Missouri emissions area
+   - Proof of financial responsibility/insurance
+   - Statement of non-assessment or military LES if applicable
+   - Form 3019 if odometer disclosure applies
+   - Form 4809 lien release if lien release applies
+
+3. If financed or title held by lienholder:
+   - Review Form 5834 title request.
+   - Confirm whether lienholder will release out-of-state title.
+   - If lienholder will not release title, Missouri may issue one-year registration only; Missouri title is not issued until title is received.
+   - Escalate if customer expects full title but lienholder/title possession blocks issuance.
+
+4. If registering:
+   - Verify Missouri insurance/financial responsibility.
+   - Verify inspection and emissions requirements.
+
+5. If tax question:
+   - Review 30-day timing and Missouri state/local tax rules.
+   - Review Florida DR-123 / out-of-state resident sales tax workflow.
+
+============================================================
+TAX / RECIPROCITY NOTES
+============================================================
+
+For Florida dealer sale to Missouri resident:
+
+- Review Florida DOR out-of-state resident sales tax / DR-123 workflow.
+- Missouri source says state tax is 4.225% plus local tax, less trade-in allowance, if any.
+- If vehicle was owned/operated in another state for at least 90 days before Missouri titling/registration, no additional sales tax is due.
+- If owned less than 90 days and sales tax paid to another state is less than Missouri state/local tax, customer must show proof of payment and pay the difference.
+- Verify tax handling with controller, agency, lender, or Missouri DOR before finalizing.
+
+Use related file:
+fl_motor_vehicle_sales_tax_rates_by_state_tip_25a01_01_notes.txt
+
+============================================================
+REJECTION / DELAY RISKS
+============================================================
+
+High risk if:
+
+- Form 108 missing or unsigned.
+- ID/OD inspection missing.
+- Missouri safety inspection missing or older than 60 days.
+- Emissions inspection missing for applicable area.
+- Insurance/financial responsibility missing.
+- Statement of non-assessment missing.
+- Lien release missing when applicable.
+- Form 5834 not used when lienholder holds out-of-state title.
+- Lienholder refuses title and customer expects Missouri title instead of one-year registration only.
+- Odometer disclosure missing when applicable.
+- 30-day titling/tax deadline missed.
+- Tax/DR-123 handling unclear.
+
+============================================================
+AI ROUTING KEYWORDS
+============================================================
+
+Missouri customer
+title customer in Missouri
+register customer in Missouri
+Missouri title requirements
+Missouri registration requirements
+Missouri out of state dealer sale
+Florida dealer Missouri customer
+Missouri Form 108
+Missouri ID OD inspection
+Missouri safety inspection
+Missouri emissions inspection
+Missouri Form 3019
+Missouri Form 4809
+Missouri Form 5834
+Missouri statement of non-assessment
+Missouri lienholder holds title
+what do I need to title in Missouri
+
+============================================================
+COMMON CLERK ANSWER
+============================================================
+
+For a Missouri customer buying from a Florida dealership, Missouri generally requires Form 108, title/MSO or acceptable ownership proof, ID/OD inspection for out-of-state titles, odometer disclosure if applicable, lien release if applicable, insurance/financial responsibility, statement of non-assessment, and safety inspection not more than 60 days old. Emissions inspection may be required for St. Louis City, Jefferson, St. Charles, or St. Louis County residents. If the lienholder holds the out-of-state title, review Form 5834; if the lienholder will not release title, Missouri may issue one-year registration only and will not issue Missouri title until the title is received. Prepare the dealer ownership package and review Florida DR-123/Missouri tax handling. Escalate if inspections, lienholder title, emissions, insurance, non-assessment, or tax handling is unclear.
+
+============================================================
+RELATED FILES
+============================================================
+
+- out_of_state_customer_title_master_logic_map.txt
+- fl_motor_vehicle_sales_tax_rates_by_state_tip_25a01_01_notes.txt
+- validation_logic_map.txt
+- rejection_prevention_logic_map.txt
+- fl_title_ownership_and_transfer_law_notes.txt
+- fl_lien_and_lien_satisfaction_law_notes.txt
+
+============================================================
+END OF FILE
+============================================================

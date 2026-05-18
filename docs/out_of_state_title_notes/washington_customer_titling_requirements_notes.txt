@@ -1,0 +1,202 @@
+DOCUMENT: WASHINGTON_CUSTOMER_TITLING_REQUIREMENTS_NOTES
+TITLE: Washington Customer Titling / Registration Requirements for Out-of-State Dealer Sale
+STATE: Washington
+SOURCE: https://dol.wa.gov/moving-washington/vehicle-registration-and-plates
+DOCUMENT_TYPE: Out-of-State Customer Titling / Registration Requirements
+CATEGORY: FLORIDA DEALER SALE TO WASHINGTON CUSTOMER / WASHINGTON TITLE / WASHINGTON REGISTRATION / WASHINGTON DRIVER LICENSE / CURRENT TITLE / ODOMETER / BANK HELD TITLE / VEHICLE LICENSING OFFICE
+
+============================================================
+PURPOSE
+============================================================
+
+This file helps a Florida dealership understand what may be needed when a customer buys a vehicle from the dealership and wants the vehicle titled and/or registered in Washington.
+
+Use this file for questions like:
+
+- What do I need to title this customer in Washington?
+- Washington customer bought from our Florida dealership.
+- Does Washington require Washington driver license before registration?
+- How long does a new Washington resident have to register?
+- What if the bank holds the title?
+- Does Washington need current title?
+- Does Washington need odometer mileage?
+
+============================================================
+WHEN TO USE THIS FILE
+============================================================
+
+Use this file when:
+
+IF customer_state = "Washington"
+AND customer_is_buying_vehicle_from_dealer = TRUE
+AND vehicle_will_be_titled_or_registered_in_customer_state = TRUE
+THEN use_washington_customer_titling_requirements_notes = TRUE
+
+Do NOT use this file as the primary source for:
+- Customer bringing Washington title into Florida for Florida title
+- Florida resident titling/registering in Florida
+- Florida tag transfer workflow
+
+For Florida titling/registration, use Florida title and registration notes.
+
+============================================================
+WASHINGTON SOURCE SUMMARY
+============================================================
+
+Washington DOL says:
+
+- Customer must get Washington driver license before registering vehicle(s).
+- Driver licensing and vehicle licensing are done at separate locations.
+- Customer has 30 days after moving to Washington to get driver license and register vehicle.
+- If unsure what steps/documents/fees are needed, customer should contact a vehicle licensing office.
+- Customer should bring current title to any vehicle licensing office for assistance.
+- Customer should write down odometer mileage before going into office.
+- To complete transaction by mail, customer should call vehicle licensing office for forms and fees.
+- If bank currently holds title, customer should call vehicle licensing office to get fax number so bank can fax copy of title.
+- If customer goes to office, plates are issued right away.
+- If application is submitted by mail, plates may take up to 3 weeks from date application is received.
+- Washington may provide open safety recall information at first registration or renewal.
+
+============================================================
+WASHINGTON REQUIRED DOCUMENT LOGIC
+============================================================
+
+IF Washington_registration_requested = TRUE
+THEN Washington_driver_license_required_before_vehicle_registration = TRUE
+
+IF customer_moving_to_Washington = TRUE
+THEN Washington_30_day_driver_license_and_vehicle_registration_deadline_review_required = TRUE
+
+IF Washington_customer_title_or_registration_requested = TRUE
+THEN current_title_required_for_vehicle_licensing_office_review = TRUE
+
+IF Washington_customer_title_or_registration_requested = TRUE
+THEN odometer_mileage_should_be_recorded_before_office_visit = TRUE
+
+IF Washington_transaction_by_mail = TRUE
+THEN customer_must_call_vehicle_licensing_office_for_forms_and_fees = TRUE
+
+IF bank_holds_title = TRUE
+THEN customer_must_call_vehicle_licensing_office_for_fax_number = TRUE
+
+IF bank_holds_title = TRUE
+THEN bank_must_fax_copy_of_title_to_vehicle_licensing_office = TRUE
+
+IF Washington_customer_title_or_registration_requested = TRUE
+THEN contact_vehicle_licensing_office_if_document_or_fee_unclear = TRUE
+
+============================================================
+WASHINGTON PLATE / MAIL LOGIC
+============================================================
+
+IF Washington_customer_goes_to_vehicle_licensing_office = TRUE
+THEN Washington_plates_issued_right_away = TRUE
+
+IF Washington_application_submitted_by_mail = TRUE
+THEN Washington_plates_may_take_up_to_3_weeks_after_application_received = TRUE
+
+============================================================
+FLORIDA DEALER WORKFLOW FOR WASHINGTON CUSTOMER
+============================================================
+
+When a Florida dealership sells a vehicle to a Washington customer and the customer wants Washington title/registration:
+
+1. Prepare dealer ownership package:
+   - Current title or MCO/MSO
+   - Dealer reassignment if applicable
+   - Buyer’s order / bill of sale
+   - Odometer disclosure/statement if applicable
+   - Current odometer mileage
+   - Lienholder information if financed
+
+2. Washington-specific items to review:
+   - Washington driver license required before vehicle registration
+   - 30-day driver license and vehicle registration deadline after moving to Washington
+   - Current title for vehicle licensing office
+   - Odometer mileage
+   - Vehicle licensing office forms and fees
+   - Bank-held title fax process
+   - Mailing timeline if application processed by mail
+
+3. If financed / bank holds title:
+   - Customer should call vehicle licensing office for fax number.
+   - Bank needs to fax copy of title.
+   - Confirm lender/titleholder instructions before promising completion.
+
+4. If registering by mail:
+   - Customer or agency should call vehicle licensing office for exact forms and fees.
+   - Warn plates may take up to 3 weeks after application received.
+
+5. If customer recently moved:
+   - Confirm Washington driver license status.
+   - Confirm 30-day deadline.
+
+============================================================
+TAX / RECIPROCITY NOTES
+============================================================
+
+For Florida dealer sale to Washington resident:
+
+- Review Florida DOR out-of-state resident sales tax / DR-123 workflow.
+- Review Washington use tax, title, registration, and licensing office fee requirements.
+- Verify tax handling with controller, agency, lender, or Washington vehicle licensing office before finalizing.
+
+Use related file:
+fl_motor_vehicle_sales_tax_rates_by_state_tip_25a01_01_notes.txt
+
+============================================================
+REJECTION / DELAY RISKS
+============================================================
+
+High risk if:
+
+- Customer does not have Washington driver license before registration.
+- 30-day moving deadline is missed.
+- Current title is missing.
+- Odometer mileage not recorded.
+- Bank holds title and fax process is not arranged.
+- Vehicle licensing office forms/fees are not confirmed.
+- Mail transaction is submitted without correct forms or fees.
+- Customer expects immediate plates from mail application.
+- Lienholder/title instructions unclear.
+- Tax/DR-123 handling unclear.
+
+============================================================
+AI ROUTING KEYWORDS
+============================================================
+
+Washington customer
+title customer in Washington
+register customer in Washington
+Washington title requirements
+Washington registration requirements
+Washington out of state dealer sale
+Florida dealer Washington customer
+Washington driver license required
+Washington 30 day registration
+Washington current title
+Washington bank holds title
+Washington vehicle licensing office
+Washington odometer mileage
+what do I need to title in Washington
+
+============================================================
+COMMON CLERK ANSWER
+============================================================
+
+For a Washington customer buying from a Florida dealership, Washington says the customer must get a Washington driver license before registering vehicles and has 30 days after moving to Washington to get their license and register. The customer should bring the current title to a vehicle licensing office and write down the odometer mileage before going. If the bank holds the title, the customer should call the vehicle licensing office for a fax number so the bank can fax a copy of the title. If processing by mail, the customer should call the vehicle licensing office for required forms and fees; plates may take up to 3 weeks after the application is received. Prepare the dealer ownership package, buyer’s order, odometer disclosure/statement if applicable, lienholder information if financed, and review Florida DR-123/Washington tax handling. Escalate if Washington license, current title, bank-held title fax, mail forms/fees, lienholder, or tax handling is unclear.
+
+============================================================
+RELATED FILES
+============================================================
+
+- out_of_state_customer_title_master_logic_map.txt
+- fl_motor_vehicle_sales_tax_rates_by_state_tip_25a01_01_notes.txt
+- validation_logic_map.txt
+- rejection_prevention_logic_map.txt
+- fl_title_ownership_and_transfer_law_notes.txt
+- fl_lien_and_lien_satisfaction_law_notes.txt
+
+============================================================
+END OF FILE
+============================================================

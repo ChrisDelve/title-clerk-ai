@@ -1,0 +1,287 @@
+DOCUMENT: ARKANSAS_CUSTOMER_TITLING_REQUIREMENTS_NOTES
+TITLE: Arkansas Customer Titling / Registration Requirements for Out-of-State Dealer Sale
+STATE: Arkansas
+SOURCE: https://airsdsmvpub.dfa.arkansas.gov
+SOURCE_TITLE: Arkansas myDMV Vehicle Registration and Title
+SOURCE_STATUS: Source reviewed from user-provided Arkansas myDMV screenshots because the page was not directly accessible during note creation.
+DOCUMENT_TYPE: Out-of-State Customer Titling / Registration Requirements
+CATEGORY: FLORIDA DEALER SALE TO ARKANSAS CUSTOMER / ARKANSAS TITLE / ARKANSAS REGISTRATION / INSURANCE CARD / FEDERAL ODOMETER STATEMENT / PPAN / LIEN CONTRACT / COUNTY TAX ASSESSMENT / PAID TAX RECEIPT / ONLINE REGISTRATION
+
+============================================================
+PURPOSE
+============================================================
+
+This file helps a Florida dealership understand what may be needed when a customer buys a vehicle from the dealership and wants the vehicle titled and/or registered in Arkansas.
+
+Use this file for questions like:
+
+- What do I need to title this customer in Arkansas?
+- Arkansas customer bought from our Florida dealership.
+- What does Arkansas need for title and registration?
+- Does Arkansas need insurance?
+- Does Arkansas need odometer statement?
+- What is Arkansas PPAN?
+- Does Arkansas need property tax information?
+- Can Arkansas registration be completed online?
+- What if the customer only wants title purpose only?
+
+============================================================
+WHEN TO USE THIS FILE
+============================================================
+
+Use this file when:
+
+IF customer_state = "Arkansas"
+AND customer_is_buying_vehicle_from_dealer = TRUE
+AND vehicle_will_be_titled_or_registered_in_customer_state = TRUE
+THEN use_arkansas_customer_titling_requirements_notes = TRUE
+
+Do NOT use this file as the primary source for:
+- Customer bringing Arkansas title into Florida for Florida title
+- Florida resident titling/registering in Florida
+- Florida tag transfer workflow
+
+For Florida titling/registration, use Florida title and registration notes.
+
+============================================================
+ARKANSAS SOURCE SUMMARY
+============================================================
+
+Arkansas myDMV Vehicle Registration and Title page states:
+
+Customer completes the application by entering personal information and vehicle information.
+
+After all required information is provided:
+- Customer pays fees online.
+- After application is submitted, customer receives email notifications of title status.
+- Once application is accepted, customer receives plate and registration in the mail.
+- Title will not be mailed until all documents have been received and processed.
+
+What customer needs for Registration and Title:
+
+Primary documents:
+- Arkansas Title
+- Bill of Sale
+- Manufacturer Statement of Origin
+- Out-of-State Title
+
+Other required items:
+- Insurance Card
+- Federal Odometer Statement
+
+Customer may need:
+- Personal Property Tax Number, PPAN, assigned from county assessor
+- Lien Contract / Security Agreement
+- Current Year County Tax Assessment
+- Proof of paid tax receipt
+
+Arkansas page warning:
+- Customer should have primary documents and insurance card ready before starting the process.
+- Information from those documents is needed to complete the process.
+- If transferring a plate, registration must be current.
+
+Eligibility requirements:
+- Customers can only register passenger cars online.
+- This includes personal cars, pickup trucks, vans, and motor homes.
+- Customers applying for or using a Title Purpose Only Certificate cannot register online.
+- A TPOC does not require proof of insurance.
+- No license plate will be issued with TPOC.
+- Only a title is received with TPOC.
+
+============================================================
+ARKANSAS REQUIRED DOCUMENT LOGIC
+============================================================
+
+IF Arkansas_customer_title_or_registration_requested = TRUE
+THEN Arkansas_primary_ownership_document_required = TRUE
+
+IF Arkansas_primary_ownership_document_required = TRUE
+THEN acceptable_primary_document_may_include_Arkansas_Title_Bill_of_Sale_Manufacturer_Statement_of_Origin_or_Out_of_State_Title = TRUE
+
+IF Arkansas_registration_requested = TRUE
+THEN insurance_card_required = TRUE
+
+IF odometer_disclosure_applicable = TRUE
+THEN Federal_Odometer_Statement_required = TRUE
+
+IF Arkansas_customer_title_or_registration_requested = TRUE
+THEN customer_should_have_primary_documents_and_insurance_ready_before_starting_online_process = TRUE
+
+IF Arkansas_plate_transfer_requested = TRUE
+THEN registration_must_be_current = TRUE
+
+IF Arkansas_title_or_registration_submitted_online = TRUE
+THEN customer_receives_email_notifications_of_title_status = TRUE
+
+IF Arkansas_application_accepted = TRUE
+THEN plate_and_registration_mailed_to_customer = TRUE
+
+IF Arkansas_title_documents_not_received_or_processed = TRUE
+THEN Arkansas_title_not_mailed_until_documents_received_and_processed = TRUE
+
+============================================================
+ARKANSAS MAY-BE-NEEDED DOCUMENT LOGIC
+============================================================
+
+IF Arkansas_property_tax_review_required = TRUE
+THEN Personal_Property_Tax_Number_PPAN_may_be_required = TRUE
+
+IF Arkansas_property_tax_review_required = TRUE
+THEN PPAN_assigned_from_county_assessor_review_required = TRUE
+
+IF Arkansas_vehicle_has_lien_or_financing = TRUE
+THEN lien_contract_or_security_agreement_may_be_required = TRUE
+
+IF Arkansas_registration_or_tax_review_required = TRUE
+THEN current_year_county_tax_assessment_may_be_required = TRUE
+
+IF Arkansas_registration_or_tax_review_required = TRUE
+THEN proof_of_paid_tax_receipt_may_be_required = TRUE
+
+============================================================
+ARKANSAS ONLINE ELIGIBILITY LOGIC
+============================================================
+
+IF Arkansas_online_registration_requested = TRUE
+THEN passenger_car_online_eligibility_review_required = TRUE
+
+IF vehicle_type IN ["personal car", "pickup truck", "van", "motor home"]
+THEN Arkansas_online_registration_may_be_allowed = TRUE
+
+IF vehicle_type NOT IN ["personal car", "pickup truck", "van", "motor home"]
+THEN Arkansas_online_registration_not_supported_by_source = TRUE
+
+IF Arkansas_Title_Purpose_Only_Certificate_requested = TRUE
+THEN Arkansas_online_registration_not_available = TRUE
+
+IF Arkansas_Title_Purpose_Only_Certificate_requested = TRUE
+THEN proof_of_insurance_not_required_for_TPOC = TRUE
+
+IF Arkansas_Title_Purpose_Only_Certificate_requested = TRUE
+THEN no_license_plate_issued = TRUE
+
+IF Arkansas_Title_Purpose_Only_Certificate_requested = TRUE
+THEN title_only_received = TRUE
+
+============================================================
+FLORIDA DEALER WORKFLOW FOR ARKANSAS CUSTOMER
+============================================================
+
+When a Florida dealership sells a vehicle to an Arkansas customer and the customer wants Arkansas title/registration:
+
+1. Prepare dealer ownership package:
+   - MCO/MSO for new vehicle, or properly assigned out-of-state title for used vehicle
+   - Dealer reassignment if applicable
+   - Bill of Sale / buyer’s order
+   - Federal odometer statement or odometer disclosure/statement if applicable
+   - Lien contract / security agreement if financed
+   - Lienholder information if financed
+
+2. Arkansas-specific items to review:
+   - Primary ownership document
+   - Insurance card if registration is requested
+   - Federal odometer statement if applicable
+   - PPAN if property tax review is required
+   - Current year county tax assessment if required
+   - Proof of paid tax receipt if required
+   - Current registration if customer is transferring a plate
+
+3. If financed:
+   - Include lien contract / security agreement.
+   - Confirm lienholder/title instructions.
+   - Confirm whether Arkansas title will be mailed to lienholder or customer depending on lien status.
+
+4. If registering online:
+   - Confirm vehicle is eligible for online registration.
+   - Arkansas source says online registration is only for passenger cars, including personal cars, pickup trucks, vans, and motor homes.
+   - Customer should have all primary documents and insurance card ready before starting.
+
+5. If customer asks for Title Purpose Only Certificate:
+   - Do not treat it as registration.
+   - TPOC does not require proof of insurance.
+   - No license plate is issued.
+   - Customer receives title only.
+   - Arkansas online registration is not available for TPOC.
+
+6. If plate transfer:
+   - Confirm the registration is current before attempting transfer.
+
+============================================================
+TAX / RECIPROCITY NOTES
+============================================================
+
+For Florida dealer sale to Arkansas resident:
+
+- Review Florida DOR out-of-state resident sales tax / DR-123 workflow.
+- Arkansas may require property tax information, including PPAN, current year county tax assessment, and proof of paid tax receipt.
+- Verify Arkansas tax/title/registration handling with controller, agency, lender, Arkansas DFA, or county assessor/collector before finalizing.
+
+Use related file:
+fl_motor_vehicle_sales_tax_rates_by_state_tip_25a01_01_notes.txt
+
+============================================================
+REJECTION / DELAY RISKS
+============================================================
+
+High risk if:
+
+- Primary ownership document is missing.
+- Out-of-state title or MSO/MCO is missing.
+- Bill of sale is missing.
+- Insurance card is missing when registration is requested.
+- Federal odometer statement is missing when applicable.
+- PPAN is required but missing.
+- Current year county tax assessment is required but missing.
+- Proof of paid tax receipt is required but missing.
+- Lien contract/security agreement is missing when financed.
+- Customer tries to transfer a plate but registration is not current.
+- Customer tries to register online with a vehicle not eligible for online registration.
+- Customer uses Title Purpose Only Certificate but expects plate/registration.
+- Title documents are not submitted/processed, delaying mailing of title.
+
+============================================================
+AI ROUTING KEYWORDS
+============================================================
+
+Arkansas customer
+title customer in Arkansas
+register customer in Arkansas
+Arkansas title requirements
+Arkansas registration requirements
+Arkansas out of state dealer sale
+Florida dealer Arkansas customer
+Arkansas myDMV
+Arkansas Vehicle Registration and Title
+Arkansas insurance card
+Arkansas Federal Odometer Statement
+Arkansas PPAN
+Arkansas Personal Property Tax Number
+Arkansas county tax assessment
+Arkansas proof of paid tax receipt
+Arkansas lien contract
+Arkansas security agreement
+Arkansas Title Purpose Only Certificate
+Arkansas TPOC
+Arkansas online registration
+what do I need to title in Arkansas
+
+============================================================
+COMMON CLERK ANSWER
+============================================================
+
+For an Arkansas customer buying from a Florida dealership, Arkansas myDMV says the customer needs a primary ownership document such as an Arkansas title, bill of sale, Manufacturer Statement of Origin, or out-of-state title, plus an insurance card and Federal Odometer Statement if applicable. The customer may also need a PPAN assigned by the county assessor, lien contract/security agreement if financed, current year county tax assessment, and proof of paid tax receipt. If transferring a plate, the registration must be current. Arkansas online registration is limited to passenger cars, including personal cars, pickup trucks, vans, and motor homes. If the customer is applying for or using a Title Purpose Only Certificate, they cannot register online; TPOC does not require proof of insurance, no license plate is issued, and only a title is received. Prepare the dealer package, buyer’s order, odometer disclosure/statement if applicable, lien documents if financed, and review Florida DR-123/Arkansas tax handling. Escalate if PPAN, county tax assessment, paid tax receipt, lien/security agreement, online eligibility, TPOC, or tax handling is unclear.
+
+============================================================
+RELATED FILES
+============================================================
+
+- out_of_state_customer_title_master_logic_map.txt
+- fl_motor_vehicle_sales_tax_rates_by_state_tip_25a01_01_notes.txt
+- validation_logic_map.txt
+- rejection_prevention_logic_map.txt
+- fl_title_ownership_and_transfer_law_notes.txt
+- fl_lien_and_lien_satisfaction_law_notes.txt
+
+============================================================
+END OF FILE
+============================================================

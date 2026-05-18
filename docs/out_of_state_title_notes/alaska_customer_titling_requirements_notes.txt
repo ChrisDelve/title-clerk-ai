@@ -1,0 +1,211 @@
+DOCUMENT: ALASKA_CUSTOMER_TITLING_REQUIREMENTS_NOTES
+TITLE: Alaska Customer Titling / Registration Requirements for Out-of-State Dealer Sale
+STATE: Alaska
+SOURCE: https://dmv.alaska.gov/vehicle-services/transfer-my-vehicle-from-another-state/
+DOCUMENT_TYPE: Out-of-State Customer Titling / Registration Requirements
+CATEGORY: FLORIDA DEALER SALE TO ALASKA CUSTOMER / ALASKA TITLE / ALASKA REGISTRATION / FORM V1 / LIEN / REGISTRATION ONLY
+
+============================================================
+PURPOSE
+============================================================
+
+This file helps a Florida dealership understand what may be needed when a customer buys a vehicle from the dealership and wants the vehicle titled and/or registered in Alaska.
+
+Use this file for questions like:
+
+- What do I need to title this customer in Alaska?
+- Alaska customer bought from our Florida dealership.
+- Does Alaska need a state form?
+- What is Alaska Form V1?
+- What if the Alaska customer has a lien?
+- What if the title is not signed yet?
+- Can Alaska process if lien is unreleased?
+
+============================================================
+WHEN TO USE THIS FILE
+============================================================
+
+Use this file when:
+
+IF customer_state = "Alaska"
+AND customer_is_buying_vehicle_from_dealer = TRUE
+AND vehicle_will_be_titled_or_registered_in_customer_state = TRUE
+THEN use_alaska_customer_titling_requirements_notes = TRUE
+
+Do NOT use this file as the primary source for:
+- Customer bringing Alaska title into Florida for Florida title
+- Florida resident titling/registering in Florida
+- Florida tag transfer workflow
+
+For Florida titling/registration, use Florida title and registration notes.
+
+============================================================
+ALASKA SOURCE SUMMARY
+============================================================
+
+Alaska DMV says that when a person recently moved to Alaska or is bringing a vehicle from another state, they need to transfer the out-of-state title and register the vehicle in Alaska.
+
+Alaska requires:
+
+- Most current out-of-state title
+- Form V1 — Vehicle Transaction Application
+- Payment of fees
+
+Alaska notes:
+- If the vehicle is already titled in the customer’s name, the customer does not need to sign the title before transfer.
+- If the vehicle was recently purchased, the title must be properly assigned and signed over by the previous owner.
+- If there is an unreleased lien, the customer may only be eligible for registration only.
+- If the vehicle has a lien, the title will be mailed directly to the lienholder after processing.
+- Lien release is required once the loan is paid off.
+- Alaska title fee listed by source: $15
+- Alaska lienholder recording fee if recording a lien for the first time: $15
+- Registration and plate fees vary by vehicle type.
+
+============================================================
+ALASKA REQUIRED DOCUMENT LOGIC
+============================================================
+
+IF Alaska_customer_title_or_registration_requested = TRUE
+THEN most_current_out_of_state_title_required = TRUE
+
+IF Alaska_customer_title_or_registration_requested = TRUE
+THEN Alaska_Form_V1_vehicle_transaction_application_required = TRUE
+
+IF Alaska_customer_title_or_registration_requested = TRUE
+THEN Alaska_fees_required = TRUE
+
+IF Alaska_vehicle_already_titled_in_customer_name = TRUE
+THEN customer_does_not_need_to_sign_title_before_transfer_per_Alaska_source = TRUE
+
+IF Alaska_vehicle_recently_purchased = TRUE
+THEN title_must_be_properly_assigned_and_signed_over_by_previous_owner = TRUE
+
+IF Alaska_vehicle_has_unreleased_lien = TRUE
+THEN Alaska_registration_only_review_required = TRUE
+
+IF Alaska_vehicle_has_lien = TRUE
+THEN Alaska_title_may_be_mailed_to_lienholder_after_processing = TRUE
+
+IF Alaska_lien_paid_off_later = TRUE
+THEN lien_release_required_once_loan_paid_off = TRUE
+
+============================================================
+ALASKA FORM V1 NOTES
+============================================================
+
+Alaska Form V1 is the Vehicle Transaction Application.
+
+Alaska source states:
+- Form V1 is used for both titling and registration.
+- All applicable sections should be filled out.
+- It must be signed in ink.
+
+IF Alaska_Form_V1_required = TRUE
+THEN ensure_all_applicable_sections_completed = TRUE
+
+IF Alaska_Form_V1_required = TRUE
+THEN signature_in_ink_required = TRUE
+
+============================================================
+FLORIDA DEALER WORKFLOW FOR ALASKA CUSTOMER
+============================================================
+
+When a Florida dealership sells a vehicle to an Alaska customer and the customer wants Alaska title/registration:
+
+1. Prepare ownership package:
+   - MCO/MSO or assigned title
+   - Dealer reassignment if applicable
+   - Buyer’s order / bill of sale
+   - Odometer disclosure/statement if applicable
+   - Lienholder information if financed
+
+2. Determine whether:
+   - Vehicle is being titled to Alaska customer for first time.
+   - Vehicle is financed with lienholder.
+   - Alaska will issue title to lienholder.
+   - Customer may only be eligible for registration only due to unreleased lien.
+
+3. Include Alaska-specific form:
+   - Alaska Form V1 Vehicle Transaction Application
+   - Ensure applicable sections are completed and signed in ink.
+
+4. Fees:
+   - Alaska source lists title fee as $15.
+   - Alaska source lists first-time lienholder recording fee as $15.
+   - Registration and plate fees vary by vehicle type.
+
+5. If financed:
+   - Confirm lender/lienholder instructions.
+   - Confirm where Alaska title should be mailed.
+   - Review if lienholder recording fee applies.
+
+6. If unreleased lien exists:
+   - Do not promise clean Alaska title without lienholder/lien review.
+   - Escalate to title lead, lender, agency, or Alaska DMV.
+
+============================================================
+TAX / RECIPROCITY NOTES
+============================================================
+
+For Florida dealer sale to Alaska resident:
+
+- Review Florida DOR out-of-state resident sales tax / DR-123 workflow.
+- Review customer state tax rate and Florida partial exemption rules.
+- Verify tax handling with controller, tax collector, agency, or lender before finalizing.
+
+Use related file:
+fl_motor_vehicle_sales_tax_rates_by_state_tip_25a01_01_notes.txt
+
+============================================================
+REJECTION / DELAY RISKS
+============================================================
+
+High risk if:
+
+- Most current out-of-state title is missing.
+- Title is not properly assigned for a recently purchased vehicle.
+- Alaska Form V1 is missing, incomplete, or not signed in ink.
+- Unreleased lien exists and title eligibility is unclear.
+- Lienholder recording information is missing.
+- Lender instructions conflict with Alaska DMV requirements.
+- Registration-only issue is misunderstood as clean title eligibility.
+- Tax/DR-123 handling is unclear.
+
+============================================================
+AI ROUTING KEYWORDS
+============================================================
+
+Alaska customer
+title customer in Alaska
+register customer in Alaska
+Alaska title requirements
+Alaska registration requirements
+Alaska out of state dealer sale
+Florida dealer Alaska customer
+Alaska Form V1
+V1 Vehicle Transaction Application
+Alaska unreleased lien
+Alaska registration only
+Alaska lienholder recording
+what do I need to title in Alaska
+
+============================================================
+COMMON CLERK ANSWER
+============================================================
+
+For an Alaska customer buying from a Florida dealership, Alaska requires the most current out-of-state title, Form V1 Vehicle Transaction Application, and applicable fees. If the vehicle was recently purchased, the title must be properly assigned and signed over by the previous owner. If there is an unreleased lien, Alaska says the customer may only be eligible for registration only. If there is a lien, the Alaska title may be mailed directly to the lienholder after processing. Prepare the dealer title package, completed Alaska Form V1, buyer’s order, odometer disclosure/statement if applicable, and lienholder information if financed. Escalate if lien status, registration-only eligibility, Form V1, or tax handling is unclear.
+
+============================================================
+RELATED FILES
+============================================================
+
+- out_of_state_customer_title_master_logic_map.txt
+- fl_motor_vehicle_sales_tax_rates_by_state_tip_25a01_01_notes.txt
+- validation_logic_map.txt
+- rejection_prevention_logic_map.txt
+- fl_title_ownership_and_transfer_law_notes.txt
+- fl_lien_and_lien_satisfaction_law_notes.txt
+
+============================================================
+END OF FILE
+============================================================

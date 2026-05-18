@@ -1,0 +1,207 @@
+DOCUMENT: MICHIGAN_CUSTOMER_TITLING_REQUIREMENTS_NOTES
+TITLE: Michigan Customer Titling / Registration Requirements for Out-of-State Dealer Sale
+STATE: Michigan
+SOURCE: https://www.michigan.gov/sos/vehicle/titles
+DOCUMENT_TYPE: Out-of-State Customer Titling / Registration Requirements
+CATEGORY: FLORIDA DEALER SALE TO MICHIGAN CUSTOMER / MICHIGAN TITLE / MICHIGAN REGISTRATION / NO-FAULT INSURANCE / OUT-OF-STATE TITLE / LIENHOLDER / FOREIGN OWNERSHIP REGISTRATION ONLY
+
+============================================================
+PURPOSE
+============================================================
+
+This file helps a Florida dealership understand what may be needed when a customer buys a vehicle from the dealership and wants the vehicle titled and/or registered in Michigan.
+
+Use this file for questions like:
+
+- What do I need to title this customer in Michigan?
+- Michigan customer bought from our Florida dealership.
+- Does Michigan require No-Fault insurance?
+- What if the out-of-state title is held by lienholder?
+- What is Michigan Foreign Ownership-Registration Only?
+- Does Michigan need lien termination?
+
+============================================================
+WHEN TO USE THIS FILE
+============================================================
+
+Use this file when:
+
+IF customer_state = "Michigan"
+AND customer_is_buying_vehicle_from_dealer = TRUE
+AND vehicle_will_be_titled_or_registered_in_customer_state = TRUE
+THEN use_michigan_customer_titling_requirements_notes = TRUE
+
+Do NOT use this file as the primary source for:
+- Customer bringing Michigan title into Florida for Florida title
+- Florida resident titling/registering in Florida
+- Florida tag transfer workflow
+
+For Florida titling/registration, use Florida title and registration notes.
+
+============================================================
+MICHIGAN SOURCE SUMMARY
+============================================================
+
+Michigan SOS says vehicles purchased and titled out-of-state can be converted to a Michigan title by presenting the following at a Secretary of State office:
+
+- Out-of-state vehicle title
+- Driver’s license or ID
+- Michigan No-Fault insurance
+- Out-of-state vehicle registration if it was registered in another state
+- Lien termination statement or title signed by lienholder
+
+If the title is held by an out-of-state lienholder, Michigan says to also provide one of the following:
+
+- Photocopy or fax of out-of-state title
+- Memo title
+- Recently validated title application
+- Vehicle record printed on the issuing state’s DMV letterhead verifying the vehicle is titled in that state
+
+Michigan notes:
+- If title is held by out-of-state lienholder, Michigan will issue a Foreign Ownership-Registration Only registration, also known as memo registration.
+- A Michigan title is not issued in that case.
+- The out-of-state title remains the ownership document.
+
+Michigan FAQ also says proof of title can include:
+- Fax copy or photocopy of title
+- Memo title
+- Recently validated title application
+- Vehicle record on state government letterhead verifying vehicle is titled in that state
+- Electronic Lien and Title record issued by the state’s ELT vendor such as DealerTrack, VINTek, Premier eTitleLien, PDP, or DMVDesk containing the title number
+- Title number cannot be handwritten
+
+============================================================
+MICHIGAN REQUIRED DOCUMENT LOGIC
+============================================================
+
+IF Michigan_customer_title_or_registration_requested = TRUE
+THEN out_of_state_vehicle_title_required = TRUE
+
+IF Michigan_customer_title_or_registration_requested = TRUE
+THEN driver_license_or_ID_required = TRUE
+
+IF Michigan_registration_requested = TRUE
+THEN Michigan_No_Fault_insurance_required = TRUE
+
+IF vehicle_registered_in_another_state = TRUE
+THEN out_of_state_vehicle_registration_required = TRUE
+
+IF prior_lien_exists = TRUE
+THEN lien_termination_statement_or_title_signed_by_lienholder_required = TRUE
+
+IF title_held_by_out_of_state_lienholder = TRUE
+THEN Michigan_foreign_ownership_registration_only_review_required = TRUE
+
+IF title_held_by_out_of_state_lienholder = TRUE
+THEN Michigan_title_not_issued_and_out_of_state_title_remains_ownership_document = TRUE
+
+IF title_held_by_out_of_state_lienholder = TRUE
+THEN one_of_following_proof_of_title_required = TRUE
+
+IF Michigan_proof_of_title_needed = TRUE
+THEN acceptable_proof_may_include_fax_copy_photocopy_memo_title_recently_validated_title_application_vehicle_record_or_ELT_record = TRUE
+
+IF ELT_record_used = TRUE
+THEN title_number_cannot_be_handwritten = TRUE
+
+============================================================
+FLORIDA DEALER WORKFLOW FOR MICHIGAN CUSTOMER
+============================================================
+
+When a Florida dealership sells a vehicle to a Michigan customer and the customer wants Michigan title/registration:
+
+1. Prepare dealer ownership package:
+   - MCO/MSO or properly assigned title
+   - Dealer reassignment if applicable
+   - Buyer’s order / bill of sale
+   - Odometer disclosure/statement if applicable
+   - Lienholder information if financed
+
+2. Michigan-specific items to review:
+   - Michigan No-Fault insurance if registration is requested
+   - Driver license or ID
+   - Out-of-state title
+   - Out-of-state registration if vehicle was registered in another state
+   - Lien termination statement or title signed by lienholder if lien exists
+
+3. If title is held by out-of-state lienholder:
+   - Review Michigan Foreign Ownership-Registration Only workflow.
+   - Michigan may register only and not issue Michigan title.
+   - Provide acceptable proof of title such as copy/fax title, memo title, validated title application, state DMV record, or ELT vendor record with title number.
+   - Confirm title number is not handwritten.
+
+4. If financed:
+   - Confirm lender/titleholder instructions.
+   - Confirm whether Michigan title will be issued or if foreign ownership registration-only applies.
+
+5. If registering:
+   - Michigan No-Fault insurance is required.
+   - Do not treat Florida insurance as satisfying Michigan registration requirements unless Michigan/agency confirms.
+
+============================================================
+TAX / RECIPROCITY NOTES
+============================================================
+
+For Florida dealer sale to Michigan resident:
+
+- Review Florida DOR out-of-state resident sales tax / DR-123 workflow.
+- Review customer state tax rate and Florida partial exemption rules.
+- Verify tax handling with controller, agency, lender, or Michigan SOS before finalizing.
+
+Use related file:
+fl_motor_vehicle_sales_tax_rates_by_state_tip_25a01_01_notes.txt
+
+============================================================
+REJECTION / DELAY RISKS
+============================================================
+
+High risk if:
+
+- Michigan No-Fault insurance is missing.
+- Out-of-state title is missing.
+- Lien termination statement or title signed by lienholder is missing.
+- Title held by out-of-state lienholder and proof of title is incomplete.
+- ELT record lacks printed/non-handwritten title number.
+- Michigan Foreign Ownership-Registration Only is misunderstood as Michigan title issuance.
+- Out-of-state registration is missing when required.
+- Tax/DR-123 handling is unclear.
+
+============================================================
+AI ROUTING KEYWORDS
+============================================================
+
+Michigan customer
+title customer in Michigan
+register customer in Michigan
+Michigan title requirements
+Michigan registration requirements
+Michigan out of state dealer sale
+Florida dealer Michigan customer
+Michigan No-Fault insurance
+Michigan lienholder title
+Michigan Foreign Ownership Registration Only
+Michigan memo registration
+Michigan memo title
+Michigan ELT record
+what do I need to title in Michigan
+
+============================================================
+COMMON CLERK ANSWER
+============================================================
+
+For a Michigan customer buying from a Florida dealership, Michigan requires the out-of-state title, driver license or ID, Michigan No-Fault insurance if registering, out-of-state registration if the vehicle was registered in another state, and lien termination or title signed by lienholder if a lien exists. If the title is held by an out-of-state lienholder, Michigan may issue Foreign Ownership-Registration Only registration instead of a Michigan title, and the out-of-state title remains the ownership document. Acceptable proof may include copy/fax title, memo title, recently validated title application, state DMV vehicle record, or ELT vendor record with printed title number. Prepare the dealer ownership package, lienholder documents, odometer disclosure/statement if applicable, and review Florida DR-123/tax handling. Escalate if Michigan No-Fault, lienholder title, ELT proof, foreign ownership registration, or tax handling is unclear.
+
+============================================================
+RELATED FILES
+============================================================
+
+- out_of_state_customer_title_master_logic_map.txt
+- fl_motor_vehicle_sales_tax_rates_by_state_tip_25a01_01_notes.txt
+- validation_logic_map.txt
+- rejection_prevention_logic_map.txt
+- fl_title_ownership_and_transfer_law_notes.txt
+- fl_lien_and_lien_satisfaction_law_notes.txt
+
+============================================================
+END OF FILE
+============================================================

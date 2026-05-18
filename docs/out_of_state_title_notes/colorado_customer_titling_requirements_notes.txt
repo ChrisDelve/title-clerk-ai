@@ -1,0 +1,181 @@
+DOCUMENT: COLORADO_CUSTOMER_TITLING_REQUIREMENTS_NOTES
+TITLE: Colorado Customer Titling / Registration Requirements for Out-of-State Dealer Sale
+STATE: Colorado
+SOURCE: https://dmv.colorado.gov/out-state-titles
+SUPPORTING_SOURCE: https://dmv.colorado.gov/sites/dmv/files/documents/DR%202698_e_wo%20%281%29.pdf
+SOURCE_STATUS: Main Colorado page may require JavaScript verification; official Colorado DMV search result and DR 2698 form used for VIN verification logic.
+DOCUMENT_TYPE: Out-of-State Customer Titling / Registration Requirements
+CATEGORY: FLORIDA DEALER SALE TO COLORADO CUSTOMER / COLORADO TITLE / COLORADO REGISTRATION / DR 2698 / VIN VERIFICATION / OUT-OF-STATE TITLE
+
+============================================================
+PURPOSE
+============================================================
+
+This file helps a Florida dealership understand what may be needed when a customer buys a vehicle from the dealership and wants the vehicle titled and/or registered in Colorado.
+
+Use this file for questions like:
+
+- What do I need to title this customer in Colorado?
+- Colorado customer bought from our Florida dealership.
+- Does Colorado require VIN verification?
+- What is Colorado DR 2698?
+- Who can complete Colorado VIN verification?
+
+============================================================
+WHEN TO USE THIS FILE
+============================================================
+
+Use this file when:
+
+IF customer_state = "Colorado"
+AND customer_is_buying_vehicle_from_dealer = TRUE
+AND vehicle_will_be_titled_or_registered_in_customer_state = TRUE
+THEN use_colorado_customer_titling_requirements_notes = TRUE
+
+Do NOT use this file as the primary source for:
+- Customer bringing Colorado title into Florida for Florida title
+- Florida resident titling/registering in Florida
+- Florida tag transfer workflow
+
+For Florida titling/registration, use Florida title and registration notes.
+
+============================================================
+COLORADO SOURCE SUMMARY
+============================================================
+
+Colorado DMV search result states:
+- If a vehicle was titled in another state, Colorado requires Verification of Vehicle Identification Number form DR 2698.
+
+Colorado DR 2698 form includes:
+- Reason for inspection: Out of State
+- Vehicle Identification Number verification
+- Colorado Dealer Statement Concerning an Out of State Vehicle
+- Dealer certification that vehicle was free and clear of liens/encumbrances, not stolen, dealership has sure and adequate title, and dealership has authority to sell/transfer
+- Verification may be completed by authorized parties listed on the form, including:
+  - Licensed Colorado dealer
+  - Colorado law enforcement
+  - Licensed Colorado emission station
+  - County clerk or assessor at their discretion
+  - Other authorized personnel as listed on form
+
+============================================================
+COLORADO REQUIRED DOCUMENT LOGIC
+============================================================
+
+IF Colorado_customer_title_or_registration_requested = TRUE
+AND vehicle_titled_in_another_state = TRUE
+THEN Colorado_DR_2698_VIN_verification_required = TRUE
+
+IF Colorado_DR_2698_required = TRUE
+THEN physical_VIN_inspection_required = TRUE
+
+IF Colorado_DR_2698_required = TRUE
+THEN authorized_verifier_required = TRUE
+
+IF Florida_dealer_is_helping_Colorado_customer = TRUE
+THEN review_Colorado_dealer_statement_on_DR_2698_if_applicable = TRUE
+
+IF Colorado_vehicle_financed = TRUE
+THEN lienholder_information_review_required = TRUE
+
+IF Colorado_registration_requested = TRUE
+THEN Colorado_insurance_registration_requirements_review_required = TRUE
+
+============================================================
+FLORIDA DEALER WORKFLOW FOR COLORADO CUSTOMER
+============================================================
+
+When a Florida dealership sells a vehicle to a Colorado customer and the customer wants Colorado title/registration:
+
+1. Prepare ownership package:
+   - MCO/MSO or properly assigned title
+   - Dealer reassignment if applicable
+   - Bill of sale / buyer’s order
+   - Odometer disclosure/statement if applicable
+   - Lienholder information if financed
+
+2. Colorado-specific requirements to review:
+   - Colorado DR 2698 VIN Verification for out-of-state title
+   - Authorized VIN verifier requirements
+   - Colorado dealer statement if applicable
+   - Colorado insurance/registration requirements if registering
+
+3. If financed:
+   - Confirm lender/lienholder instructions.
+   - Confirm lienholder/title mailing requirements.
+   - Confirm whether Colorado county office or agency needs lien documentation.
+
+4. If customer cannot complete Colorado VIN verification:
+   - Do not assume Colorado will waive DR 2698.
+   - Escalate to title lead, agency, or Colorado county motor vehicle office.
+
+5. If registering in Colorado:
+   - Verify Colorado insurance requirements.
+   - Out-of-state insurance may not be enough unless accepted under Colorado law.
+   - Confirm with Colorado county office if unclear.
+
+============================================================
+TAX / RECIPROCITY NOTES
+============================================================
+
+For Florida dealer sale to Colorado resident:
+
+- Review Florida DOR out-of-state resident sales tax / DR-123 workflow.
+- Review customer state tax rate and Florida partial exemption rules.
+- Verify tax handling with controller, tax collector, agency, or lender before finalizing.
+
+Use related file:
+fl_motor_vehicle_sales_tax_rates_by_state_tip_25a01_01_notes.txt
+
+============================================================
+REJECTION / DELAY RISKS
+============================================================
+
+High risk if:
+
+- DR 2698 VIN verification is missing.
+- VIN verification completed by unauthorized party.
+- Colorado dealer statement is required but incomplete.
+- Lienholder/title mailing instructions are unclear.
+- Colorado insurance/registration requirements are unclear.
+- Tax/DR-123 handling is unclear.
+- Ownership package lacks proper assignment or odometer disclosure/statement if applicable.
+
+============================================================
+AI ROUTING KEYWORDS
+============================================================
+
+Colorado customer
+title customer in Colorado
+register customer in Colorado
+Colorado title requirements
+Colorado registration requirements
+Colorado out of state dealer sale
+Florida dealer Colorado customer
+Colorado DR 2698
+DR 2698 VIN verification
+Colorado VIN verification
+Colorado out of state title
+Colorado dealer statement
+what do I need to title in Colorado
+
+============================================================
+COMMON CLERK ANSWER
+============================================================
+
+For a Colorado customer buying from a Florida dealership, Colorado generally requires VIN verification on DR 2698 when the vehicle was titled in another state. Prepare the dealer ownership package, buyer’s order, odometer disclosure/statement if applicable, lienholder documents if financed, and review whether DR 2698 must be completed by an authorized verifier. If registration is involved, verify Colorado insurance/registration requirements. Escalate if DR 2698, lienholder/title mailing, Colorado county requirements, or tax handling is unclear.
+
+============================================================
+RELATED FILES
+============================================================
+
+- out_of_state_customer_title_master_logic_map.txt
+- fl_motor_vehicle_sales_tax_rates_by_state_tip_25a01_01_notes.txt
+- validation_logic_map.txt
+- rejection_prevention_logic_map.txt
+- fl_title_ownership_and_transfer_law_notes.txt
+- fl_lien_and_lien_satisfaction_law_notes.txt
+
+============================================================
+END OF FILE
+============================================================

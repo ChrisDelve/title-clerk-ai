@@ -1,0 +1,255 @@
+DOCUMENT: OHIO_CUSTOMER_TITLING_REQUIREMENTS_NOTES
+TITLE: Ohio Customer Titling / Registration Requirements for Out-of-State Dealer Sale
+STATE: Ohio
+SOURCE: https://www.loraincountyohio.gov/378/Auto-Title-Information-and-Forms
+DOCUMENT_TYPE: Out-of-State Customer Titling / Registration Requirements
+CATEGORY: FLORIDA DEALER SALE TO OHIO CUSTOMER / OHIO TITLE / OHIO REGISTRATION / NOTARY / SALES TAX / LATE FILING / MEMORANDUM TITLE / LIEN
+
+============================================================
+PURPOSE
+============================================================
+
+This file helps a Florida dealership understand what may be needed when a customer buys a vehicle from the dealership and wants the vehicle titled and/or registered in Ohio.
+
+Use this file for questions like:
+
+- What do I need to title this customer in Ohio?
+- Ohio customer bought from our Florida dealership.
+- Does Ohio require notarized signatures?
+- Does Ohio charge late title fee?
+- Does Ohio require sales tax before title application?
+- What is an Ohio memorandum title?
+- What are Ohio title/lien fees?
+
+============================================================
+WHEN TO USE THIS FILE
+============================================================
+
+Use this file when:
+
+IF customer_state = "Ohio"
+AND customer_is_buying_vehicle_from_dealer = TRUE
+AND vehicle_will_be_titled_or_registered_in_customer_state = TRUE
+THEN use_ohio_customer_titling_requirements_notes = TRUE
+
+Do NOT use this file as the primary source for:
+- Customer bringing Ohio title into Florida for Florida title
+- Florida resident titling/registering in Florida
+- Florida tag transfer workflow
+
+For Florida titling/registration, use Florida title and registration notes.
+
+============================================================
+OHIO SOURCE SUMMARY
+============================================================
+
+Lorain County, Ohio Clerk of Courts title page states:
+
+Fees:
+- Certificate of Title: $18
+- Duplicate Title: $15
+- Replacement Title: $15
+- Notation of Lien: $15
+- Memorandum of Title: $5
+- Title, Lien, Memorandum: $15 if done as one transaction
+- Fees do not include late fees, sales tax, or notary fees
+
+When buying a motor vehicle:
+- Certificate of title is proof of ownership.
+- Alterations or erasures on a title will void the document.
+- No part of assignment or application should be filled in until in presence of notary public or other authorized personnel.
+- All signatures must be notarized.
+- Physical inspection of vehicle/VIN should be made to confirm VIN corresponds with title.
+
+Late filing:
+- Ohio Revised Code section 4505.09 requires additional $5 late fee if new certificate of title is not obtained within 30 days from date of assignment.
+
+When selling:
+- Buyer’s full name, address, purchase price, and mileage must be provided before seller signs assignment.
+- All signatures must be affirmed/sworn before notary or authorized person.
+- Initials are not acceptable.
+
+Power of Attorney:
+- No person may sign on another person’s behalf without properly executed and notarized POA.
+- Original POA should be brought to title office if using POA.
+
+Sales tax:
+- Ohio sales tax must be collected and paid to Clerk of Courts before an application for motor vehicle/watercraft title can be accepted.
+
+Federal odometer:
+- Federal and state law require completed odometer disclosure statement from seller of motor vehicle.
+- Odometer may be completed on reverse of certificate of title.
+- Odometer statements are not required for watercraft, manufactured homes, ATVs, off-road motorcycles, or vehicles over 16,000 pounds.
+
+Car loans:
+- If applying for loan using car as collateral, customer should insist on memorandum title to obtain plates if applicable.
+- Upon satisfaction of loan, customer may receive original title with lien canceled by Clerk of Courts.
+- If lender opted to electronically title vehicle, customer must apply to Title office for physical certificate of title before transferring ownership, unless trading vehicle to automobile dealer.
+
+============================================================
+OHIO REQUIRED DOCUMENT LOGIC
+============================================================
+
+IF Ohio_customer_title_or_registration_requested = TRUE
+THEN Ohio_certificate_of_title_review_required = TRUE
+
+IF Ohio_title_assignment_or_application_signature_required = TRUE
+THEN notarized_signature_required = TRUE
+
+IF Ohio_title_has_alteration_or_erasure = TRUE
+THEN title_void_or_replacement_title_review_required = TRUE
+
+IF Ohio_title_application_after_30_days_from_assignment = TRUE
+THEN Ohio_5_dollar_late_fee_required = TRUE
+
+IF Ohio_title_application_requested = TRUE
+THEN Ohio_sales_tax_must_be_paid_to_Clerk_before_application_accepted = TRUE
+
+IF POA_used_for_Ohio_title = TRUE
+THEN properly_executed_and_notarized_POA_required = TRUE
+
+IF POA_used_for_Ohio_title = TRUE
+THEN original_POA_required_at_title_office = TRUE
+
+IF Ohio_motor_vehicle_sale = TRUE
+THEN buyer_full_name_address_purchase_price_and_mileage_required_on_assignment = TRUE
+
+IF Ohio_odometer_required = TRUE
+THEN seller_completed_odometer_disclosure_required = TRUE
+
+IF vehicle_type IN ["watercraft", "manufactured_home", "ATV", "off-road motorcycle"]
+OR vehicle_weight_over_16000_lbs = TRUE
+THEN Ohio_odometer_statement_not_required_per_source = TRUE
+
+IF Ohio_vehicle_financed = TRUE
+THEN Ohio_memorandum_title_review_required_for_plates = TRUE
+
+IF Ohio_electronic_title_lien_vehicle_transfer = TRUE
+THEN physical_certificate_of_title_required_before_transfer_unless_trade_to_auto_dealer = TRUE
+
+============================================================
+OHIO FEE LOGIC
+============================================================
+
+IF Ohio_certificate_of_title_requested = TRUE
+THEN Ohio_certificate_of_title_fee = 18.00
+
+IF Ohio_duplicate_title_requested = TRUE
+THEN Ohio_duplicate_title_fee = 15.00
+
+IF Ohio_replacement_title_requested = TRUE
+THEN Ohio_replacement_title_fee = 15.00
+
+IF Ohio_lien_notation_requested = TRUE
+THEN Ohio_lien_notation_fee = 15.00
+
+IF Ohio_memorandum_title_requested = TRUE
+THEN Ohio_memorandum_title_fee = 5.00
+
+IF Ohio_title_lien_memorandum_done_as_one_transaction = TRUE
+THEN Ohio_title_lien_memorandum_fee = 15.00
+
+============================================================
+FLORIDA DEALER WORKFLOW FOR OHIO CUSTOMER
+============================================================
+
+When a Florida dealership sells a vehicle to an Ohio customer and the customer wants Ohio title/registration:
+
+1. Prepare dealer ownership package:
+   - MCO/MSO or properly assigned title
+   - Dealer reassignment if applicable
+   - Buyer’s order / bill of sale
+   - Odometer disclosure/statement if applicable
+   - Lienholder information if financed
+   - POA if someone signs on customer’s behalf
+
+2. Ohio-specific items to review:
+   - All signatures requiring notarization
+   - Title assignment/application should be completed in presence of notary/authorized person
+   - No alterations or erasures
+   - Buyer full name, address, purchase price, and mileage on assignment
+   - Odometer disclosure if required
+   - Ohio sales tax paid to Clerk before title application acceptance
+   - 30-day late fee rule
+   - Memorandum title if financed and needed for plates
+   - Original notarized POA if POA used
+
+3. If financed:
+   - Confirm lien notation.
+   - Confirm whether memorandum title is needed for plate/registration.
+   - Confirm if electronic title/lien process requires physical title before future transfer.
+
+4. If title has corrections/alterations:
+   - Hold and escalate.
+   - Ohio source says alterations or erasures void the document and replacement title may be needed.
+
+============================================================
+TAX / RECIPROCITY NOTES
+============================================================
+
+For Florida dealer sale to Ohio resident:
+
+- Review Florida DOR out-of-state resident sales tax / DR-123 workflow.
+- Ohio source says sales tax must be paid to Clerk of Courts before title application can be accepted.
+- Verify tax handling with controller, agency, lender, Ohio Clerk of Courts, or Ohio BMV before finalizing.
+
+Use related file:
+fl_motor_vehicle_sales_tax_rates_by_state_tip_25a01_01_notes.txt
+
+============================================================
+REJECTION / DELAY RISKS
+============================================================
+
+High risk if:
+
+- Signatures are not notarized.
+- Assignment/application completed incorrectly outside notary process.
+- Title has alteration or erasure.
+- Buyer full name, address, purchase price, or mileage missing.
+- Ohio sales tax not paid to Clerk before title application.
+- Title application after 30 days and late fee not reviewed.
+- POA used but not properly executed/notarized or original POA missing.
+- Lien notation or memorandum title omitted when financed.
+- Odometer disclosure missing when required.
+- Tax/DR-123 handling unclear.
+
+============================================================
+AI ROUTING KEYWORDS
+============================================================
+
+Ohio customer
+title customer in Ohio
+register customer in Ohio
+Ohio title requirements
+Ohio registration requirements
+Ohio out of state dealer sale
+Florida dealer Ohio customer
+Ohio notarized title
+Ohio sales tax Clerk of Courts
+Ohio memorandum title
+Ohio lien notation
+Ohio 30 day late fee
+Ohio title alteration
+Ohio title erasure
+what do I need to title in Ohio
+
+============================================================
+COMMON CLERK ANSWER
+============================================================
+
+For an Ohio customer buying from a Florida dealership, Ohio title work requires notarized signatures, and title assignment/application sections should be completed before a notary or authorized person. Alterations or erasures can void the title. Buyer name, address, purchase price, and mileage must be completed before the seller signs. Ohio charges a $5 late fee if a new title is not obtained within 30 days from assignment, and Ohio sales tax must be paid to the Clerk of Courts before the title application is accepted. Prepare the dealer package, title/MCO, buyer’s order, odometer disclosure/statement if applicable, lienholder information, and review Florida DR-123/Ohio tax handling. Escalate if notarization, title alteration, sales tax, POA, lien/memorandum title, or timing is unclear.
+
+============================================================
+RELATED FILES
+============================================================
+
+- out_of_state_customer_title_master_logic_map.txt
+- fl_motor_vehicle_sales_tax_rates_by_state_tip_25a01_01_notes.txt
+- validation_logic_map.txt
+- rejection_prevention_logic_map.txt
+- fl_title_ownership_and_transfer_law_notes.txt
+- fl_lien_and_lien_satisfaction_law_notes.txt
+
+============================================================
+END OF FILE
+============================================================

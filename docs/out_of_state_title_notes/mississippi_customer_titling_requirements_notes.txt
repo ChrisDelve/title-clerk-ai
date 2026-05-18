@@ -1,0 +1,251 @@
+DOCUMENT: MISSISSIPPI_CUSTOMER_TITLING_REQUIREMENTS_NOTES
+TITLE: Mississippi Customer Titling / Registration Requirements for Out-of-State Dealer Sale
+STATE: Mississippi
+SOURCE: https://www.dor.ms.gov/motor-vehicle/motor-vehicle-frequently-asked-questions
+DOCUMENT_TYPE: Out-of-State Customer Titling / Registration Requirements
+CATEGORY: FLORIDA DEALER SALE TO MISSISSIPPI CUSTOMER / MISSISSIPPI TITLE / MISSISSIPPI REGISTRATION / ODOMETER / MCO / SALES TAX / NO TAX CREDIT / LIABILITY INSURANCE / NO EMISSIONS
+
+============================================================
+PURPOSE
+============================================================
+
+This file helps a Florida dealership understand what may be needed when a customer buys a vehicle from the dealership and wants the vehicle titled and/or registered in Mississippi.
+
+Use this file for questions like:
+
+- What do I need to title this customer in Mississippi?
+- Mississippi customer bought from our Florida dealership.
+- Does Mississippi require emissions?
+- Does Mississippi require odometer disclosure?
+- Does Mississippi credit tax paid to Florida?
+- Does Mississippi require liability insurance?
+- What if the prior state did not title the vehicle?
+
+============================================================
+WHEN TO USE THIS FILE
+============================================================
+
+Use this file when:
+
+IF customer_state = "Mississippi"
+AND customer_is_buying_vehicle_from_dealer = TRUE
+AND vehicle_will_be_titled_or_registered_in_customer_state = TRUE
+THEN use_mississippi_customer_titling_requirements_notes = TRUE
+
+Do NOT use this file as the primary source for:
+- Customer bringing Mississippi title into Florida for Florida title
+- Florida resident titling/registering in Florida
+- Florida tag transfer workflow
+
+For Florida titling/registration, use Florida title and registration notes.
+
+============================================================
+MISSISSIPPI SOURCE SUMMARY
+============================================================
+
+Mississippi DOR FAQ says:
+
+Registering a vehicle purchased in another state:
+- Customer must provide title from other state and odometer disclosure statement.
+- If vehicle is not titled in the other state, customer needs Manufacturer’s Certificate of Origin.
+
+Titling a new vehicle purchased in another state:
+- To register and title vehicle in Mississippi, customer must provide title from previous state.
+- Odometer disclosure statement is required.
+- If vehicle was not titled in previous state, customer needs Manufacturer’s Statement of Origin.
+
+Sales tax:
+- General sales tax rate is 5% on net purchase price after dealer discounts and trade-ins.
+- Manufacturer rebates are not excluded.
+- 5% applies to cars, vans, buses, and trucks under 10,000 pounds GVW.
+- 3% applies to trucks over 10,000 pounds used for carrying property.
+- If sales tax was paid to another state, it will not be credited toward Mississippi tax when registering the vehicle.
+
+Insurance:
+- Mississippi requires motor vehicle liability insurance.
+- Insurance is not enforced through vehicle registration.
+- Insurance card must be in vehicle as proof of liability insurance complying with state limits.
+
+Emissions:
+- Mississippi does not require emissions testing for motor vehicles as a condition of registration.
+
+Moving to Mississippi:
+- 30 days to register vehicles after moving if current registration/valid license plate from previous state.
+- Failure to register within 30 days results in standard late penalties and $250 penalty.
+- Legislative Tag Credit not available if out-of-state plate expired or vehicle was never registered in previous state.
+- Customer must visit county Tax Collector office, complete Mississippi title/registration application, pay taxes/fees, and provide current valid vehicle registration/license plate receipt from previous state.
+- If title is held by lienholder or vehicle leased, may include registration receipt or duplicate title from another state.
+- If lien exists, Mississippi DOR holds title application until title is received from other state.
+- If title is held by another state, valid license plate receipt is proof of ownership, and Mississippi DOR coordinates with lienholder/other state to surrender title.
+- If title is not surrendered, application will not be processed and customer cannot renew license plate.
+- Mississippi Driver License is required per source.
+
+============================================================
+MISSISSIPPI REQUIRED DOCUMENT LOGIC
+============================================================
+
+IF Mississippi_customer_bought_vehicle_in_another_state = TRUE
+THEN title_from_other_state_required = TRUE
+
+IF Mississippi_customer_bought_vehicle_in_another_state = TRUE
+THEN odometer_disclosure_statement_required = TRUE
+
+IF vehicle_not_titled_in_other_state = TRUE
+THEN Manufacturer_Certificate_or_Statement_of_Origin_required = TRUE
+
+IF Mississippi_registration_requested = TRUE
+THEN Mississippi_liability_insurance_required_but_not_enforced_through_registration = TRUE
+
+IF Mississippi_registration_requested = TRUE
+THEN insurance_card_must_be_in_vehicle = TRUE
+
+IF Mississippi_registration_requested = TRUE
+THEN emissions_testing_not_required = TRUE
+
+IF Mississippi_sales_tax_review_required = TRUE
+THEN Mississippi_general_sales_tax_rate = 5_percent_on_net_purchase_price_for_cars_vans_buses_trucks_under_10000_GVW = TRUE
+
+IF Mississippi_vehicle_truck_over_10000_GVW_used_for_carrying_property = TRUE
+THEN Mississippi_sales_tax_rate = 3_percent = TRUE
+
+IF sales_tax_paid_to_another_state = TRUE
+THEN Mississippi_does_not_credit_other_state_tax_when_registering_vehicle = TRUE
+
+============================================================
+MISSISSIPPI NEW RESIDENT / TITLE HELD BY LIENHOLDER LOGIC
+============================================================
+
+IF customer_moving_to_Mississippi = TRUE
+THEN Mississippi_30_day_registration_requirement_review_required = TRUE
+
+IF customer_fails_to_register_within_30_days = TRUE
+THEN Mississippi_standard_late_penalties_and_250_dollar_penalty_review_required = TRUE
+
+IF out_of_state_plate_expired = TRUE
+OR vehicle_never_registered_in_previous_state = TRUE
+THEN Mississippi_Legislative_Tag_Credit_not_available = TRUE
+
+IF title_held_by_lienholder_or_vehicle_leased = TRUE
+THEN registration_receipt_or_duplicate_title_from_another_state_may_be_required = TRUE
+
+IF lien_exists = TRUE
+THEN Mississippi_DOR_holds_title_application_until_title_received_from_other_state = TRUE
+
+IF title_held_by_another_state = TRUE
+THEN valid_license_plate_receipt_as_proof_of_ownership_required = TRUE
+
+IF title_not_surrendered = TRUE
+THEN Mississippi_application_not_processed_and_plate_cannot_be_renewed = TRUE
+
+IF Mississippi_registration_requested = TRUE
+THEN Mississippi_driver_license_required_by_source = TRUE
+
+============================================================
+FLORIDA DEALER WORKFLOW FOR MISSISSIPPI CUSTOMER
+============================================================
+
+When a Florida dealership sells a vehicle to a Mississippi customer and the customer wants Mississippi title/registration:
+
+1. Prepare dealer ownership package:
+   - MCO/MSO or properly assigned title
+   - Dealer reassignment if applicable
+   - Buyer’s order / bill of sale
+   - Odometer disclosure/statement
+   - Lienholder information if financed
+
+2. Mississippi-specific items to review:
+   - Title from previous/other state
+   - Odometer disclosure statement
+   - MCO/MSO if prior state did not title vehicle
+   - Mississippi liability insurance requirement
+   - No emissions testing for registration
+   - Mississippi sales tax and no credit for tax paid to another state
+   - Mississippi Driver License if registration/new resident issue
+
+3. If financed or leased:
+   - Confirm title/lienholder instructions.
+   - If title is held by lienholder/another state, Mississippi may hold title application until title is received.
+   - If title is not surrendered, application will not process and plate cannot be renewed.
+
+4. If tax question:
+   - Mississippi says no credit for sales tax paid to another state when registering.
+   - This is critical for Florida DR-123/tax handling.
+   - Escalate to controller/agency before finalizing.
+
+5. If customer asks about emissions:
+   - Mississippi does not require emissions testing for motor vehicle registration.
+
+============================================================
+TAX / RECIPROCITY NOTES
+============================================================
+
+For Florida dealer sale to Mississippi resident:
+
+- Mississippi source says if sales tax was paid to another state, it will not be credited toward Mississippi tax when registering the vehicle.
+- Florida DOR TIP also identifies Mississippi as a state that imposes motor vehicle sales tax but does not allow credit for taxes paid to Florida.
+- Review Florida DR-123 and nonresident tax workflow carefully.
+- Escalate to controller, agency, lender, or Mississippi DOR before finalizing tax treatment.
+
+Use related file:
+fl_motor_vehicle_sales_tax_rates_by_state_tip_25a01_01_notes.txt
+
+============================================================
+REJECTION / DELAY RISKS
+============================================================
+
+High risk if:
+
+- Title from previous state is missing.
+- Odometer disclosure statement is missing.
+- MCO/MSO missing when previous state did not title vehicle.
+- Mississippi tax/no-credit rule is missed.
+- Customer expects Mississippi credit for Florida tax paid.
+- Lienholder/other state holds title and surrender path is unclear.
+- Mississippi DOR does not receive title from other state.
+- Customer lacks current/valid registration/license plate receipt when needed.
+- Mississippi Driver License requirement is overlooked.
+- Liability insurance requirement is misunderstood.
+- Legislative Tag Credit is assumed when out-of-state plate expired or vehicle never registered.
+- Tax/DR-123 handling unclear.
+
+============================================================
+AI ROUTING KEYWORDS
+============================================================
+
+Mississippi customer
+title customer in Mississippi
+register customer in Mississippi
+Mississippi title requirements
+Mississippi registration requirements
+Mississippi out of state dealer sale
+Florida dealer Mississippi customer
+Mississippi title from other state
+Mississippi odometer disclosure statement
+Mississippi Manufacturer Statement of Origin
+Mississippi no tax credit
+Mississippi sales tax paid to another state
+Mississippi emissions testing
+Mississippi liability insurance
+Mississippi lienholder holds title
+what do I need to title in Mississippi
+
+============================================================
+COMMON CLERK ANSWER
+============================================================
+
+For a Mississippi customer buying from a Florida dealership, Mississippi requires the title from the previous/other state and an odometer disclosure statement. If the vehicle was not titled in the previous state, Mississippi requires the Manufacturer’s Certificate/Statement of Origin. Mississippi does not require emissions testing for motor vehicle registration. Mississippi requires liability insurance, though the source says it is not enforced through vehicle registration, and an insurance card must be in the vehicle. Mississippi is critical for tax handling because the DOR source says sales tax paid to another state will not be credited toward Mississippi tax when registering the vehicle. Prepare the dealer ownership package, buyer’s order, odometer disclosure/statement, lienholder information if financed, and review Florida DR-123 plus Mississippi no-credit tax issue before finalizing. Escalate if title, odometer, MCO/MSO, lienholder title surrender, Mississippi license, or tax handling is unclear.
+
+============================================================
+RELATED FILES
+============================================================
+
+- out_of_state_customer_title_master_logic_map.txt
+- fl_motor_vehicle_sales_tax_rates_by_state_tip_25a01_01_notes.txt
+- validation_logic_map.txt
+- rejection_prevention_logic_map.txt
+- fl_title_ownership_and_transfer_law_notes.txt
+- fl_lien_and_lien_satisfaction_law_notes.txt
+
+============================================================
+END OF FILE
+============================================================

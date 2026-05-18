@@ -1,0 +1,217 @@
+DOCUMENT: UTAH_CUSTOMER_TITLING_REQUIREMENTS_NOTES
+TITLE: Utah Customer Titling / Registration Requirements for Out-of-State Dealer Sale
+STATE: Utah
+SOURCE: https://dmv.utah.gov/titles-overview/transfer-outofstate/
+DOCUMENT_TYPE: Out-of-State Customer Titling / Registration Requirements
+CATEGORY: FLORIDA DEALER SALE TO UTAH CUSTOMER / UTAH TITLE / UTAH REGISTRATION / TC-656 / ORIGINAL TITLE / LIEN RELEASE / EMISSIONS / GOVERNMENT ID
+
+============================================================
+PURPOSE
+============================================================
+
+This file helps a Florida dealership understand what may be needed when a customer buys a vehicle from the dealership and wants the vehicle titled and/or registered in Utah.
+
+Use this file for questions like:
+
+- What do I need to title this customer in Utah?
+- Utah customer bought from our Florida dealership.
+- What is Utah Form TC-656?
+- Does Utah require original title?
+- Does Utah require emissions?
+- Does Utah require lienholder release?
+- What if prior lienholder is printed on the title?
+
+============================================================
+WHEN TO USE THIS FILE
+============================================================
+
+Use this file when:
+
+IF customer_state = "Utah"
+AND customer_is_buying_vehicle_from_dealer = TRUE
+AND vehicle_will_be_titled_or_registered_in_customer_state = TRUE
+THEN use_utah_customer_titling_requirements_notes = TRUE
+
+Do NOT use this file as the primary source for:
+- Customer bringing Utah title into Florida for Florida title
+- Florida resident titling/registering in Florida
+- Florida tag transfer workflow
+
+For Florida titling/registration, use Florida title and registration notes.
+
+============================================================
+UTAH SOURCE SUMMARY
+============================================================
+
+Utah DMV says that every title situation is unique, but for transfer of an out-of-state title the customer usually needs:
+
+- Certificate of Title
+- Seller must provide original certificate of title
+- VIN/HIN on document should match VIN/HIN on vehicle
+- Seller must sign where necessary to release ownership
+- Previous lienholder, if printed on the face of the title, must sign to release lien
+- Purchase date and purchase price must be correctly filled in
+- Application for Utah Title, Form TC-656, Application for Utah Title and Registration
+- Form TC-656 must be completed by the new vehicle owners
+- All owners listed on the application must provide government-issued identification
+- Driver license
+- Emissions Inspection Certificates if registering and customer lives in Salt Lake, Davis, Weber, Cache, or Utah County
+
+============================================================
+UTAH REQUIRED DOCUMENT LOGIC
+============================================================
+
+IF Utah_customer_title_or_registration_requested = TRUE
+THEN original_certificate_of_title_required = TRUE
+
+IF Utah_original_title_required = TRUE
+THEN VIN_or_HIN_on_title_must_match_vehicle = TRUE
+
+IF Utah_original_title_required = TRUE
+THEN seller_signature_to_release_ownership_required = TRUE
+
+IF prior_lienholder_printed_on_title = TRUE
+THEN prior_lienholder_signature_release_required = TRUE
+
+IF Utah_original_title_required = TRUE
+THEN purchase_date_and_purchase_price_required = TRUE
+
+IF Utah_customer_title_or_registration_requested = TRUE
+THEN Utah_Form_TC_656_required = TRUE
+
+IF Utah_Form_TC_656_required = TRUE
+THEN all_new_owners_must_complete_application = TRUE
+
+IF Utah_Form_TC_656_required = TRUE
+THEN government_issued_ID_required_for_all_owners_listed = TRUE
+
+IF Utah_customer_title_or_registration_requested = TRUE
+THEN driver_license_required = TRUE
+
+IF Utah_registration_requested = TRUE
+AND customer_county IN ["Salt Lake", "Davis", "Weber", "Cache", "Utah"]
+THEN Utah_emissions_inspection_certificate_may_be_required = TRUE
+
+============================================================
+UTAH LIENHOLDER / TITLE RELEASE LOGIC
+============================================================
+
+IF prior_lienholder_printed_on_title = TRUE
+THEN do_not_process_without_lienholder_release_signature_or_acceptable_release = TRUE
+
+IF lienholder_release_missing = TRUE
+THEN hold_and_escalate_before_submission = TRUE
+
+IF title_assignment_incomplete = TRUE
+THEN hold_and_escalate_before_submission = TRUE
+
+============================================================
+FLORIDA DEALER WORKFLOW FOR UTAH CUSTOMER
+============================================================
+
+When a Florida dealership sells a vehicle to a Utah customer and the customer wants Utah title/registration:
+
+1. Prepare dealer ownership package:
+   - Original title or MCO/MSO
+   - Dealer reassignment if applicable
+   - Buyer’s order / bill of sale
+   - Odometer disclosure/statement if applicable
+   - Lienholder information if financed
+   - Purchase date and price
+
+2. Utah-specific items to review:
+   - Original certificate of title
+   - VIN/HIN matches vehicle
+   - Seller signed to release ownership
+   - Prior lienholder signed/released if printed on title
+   - Utah Form TC-656
+   - Government-issued ID for all owners listed on application
+   - Driver license
+   - Emissions certificate if registering in Salt Lake, Davis, Weber, Cache, or Utah County
+
+3. If financed:
+   - Confirm lienholder/title instructions.
+   - Confirm new lienholder information for Utah title package.
+   - Confirm prior lien release if prior lien appears on title.
+
+4. If registration is involved:
+   - Confirm emissions requirement by Utah county.
+   - Do not assume no emissions unless county is verified.
+
+5. If title has prior lienholder:
+   - Do not submit until lien release/signature issue is resolved.
+   - Escalate if prior lienholder release is missing or unclear.
+
+============================================================
+TAX / RECIPROCITY NOTES
+============================================================
+
+For Florida dealer sale to Utah resident:
+
+- Review Florida DOR out-of-state resident sales tax / DR-123 workflow.
+- Review Utah sales/use tax and title/registration fee requirements.
+- Verify tax handling with controller, agency, lender, county office, or Utah DMV before finalizing.
+
+Use related file:
+fl_motor_vehicle_sales_tax_rates_by_state_tip_25a01_01_notes.txt
+
+============================================================
+REJECTION / DELAY RISKS
+============================================================
+
+High risk if:
+
+- Original certificate of title is missing.
+- VIN/HIN on title does not match vehicle.
+- Seller signature missing.
+- Prior lienholder release/signature missing.
+- Purchase date or purchase price missing.
+- TC-656 missing or incomplete.
+- Government-issued ID missing for any owner listed on application.
+- Emissions certificate missing in applicable county.
+- Tax/DR-123 handling unclear.
+- Lienholder/title instructions unclear.
+
+============================================================
+AI ROUTING KEYWORDS
+============================================================
+
+Utah customer
+title customer in Utah
+register customer in Utah
+Utah title requirements
+Utah registration requirements
+Utah out of state dealer sale
+Florida dealer Utah customer
+Utah TC-656
+Utah Application for Utah Title and Registration
+Utah original certificate of title
+Utah lienholder release
+Utah emissions inspection
+Salt Lake emissions
+Davis emissions
+Weber emissions
+Cache emissions
+Utah County emissions
+what do I need to title in Utah
+
+============================================================
+COMMON CLERK ANSWER
+============================================================
+
+For a Utah customer buying from a Florida dealership, Utah usually requires the original certificate of title, seller signature releasing ownership, purchase date and purchase price, and prior lienholder release if a lienholder is printed on the title. Utah also requires Form TC-656 Application for Utah Title and Registration, government-issued ID for all owners listed on the application, and driver license. If registration is requested and the customer lives in Salt Lake, Davis, Weber, Cache, or Utah County, an emissions inspection certificate may be required. Prepare the dealer ownership package, buyer’s order, odometer disclosure/statement if applicable, lienholder information if financed, and review Florida DR-123/Utah tax handling. Escalate if original title, lienholder release, TC-656, ID, emissions, or tax handling is unclear.
+
+============================================================
+RELATED FILES
+============================================================
+
+- out_of_state_customer_title_master_logic_map.txt
+- fl_motor_vehicle_sales_tax_rates_by_state_tip_25a01_01_notes.txt
+- validation_logic_map.txt
+- rejection_prevention_logic_map.txt
+- fl_title_ownership_and_transfer_law_notes.txt
+- fl_lien_and_lien_satisfaction_law_notes.txt
+
+============================================================
+END OF FILE
+============================================================

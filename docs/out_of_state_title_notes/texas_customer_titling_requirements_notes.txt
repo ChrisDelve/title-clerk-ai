@@ -1,0 +1,303 @@
+DOCUMENT: TEXAS_CUSTOMER_TITLING_REQUIREMENTS_NOTES
+TITLE: Texas Customer Titling / Registration Requirements for Out-of-State Dealer Sale
+STATE: Texas
+SOURCE: https://www.txdmv.gov/motorists/buying-or-selling-a-vehicle/out-of-state-and-foreign-vehicles
+DOCUMENT_TYPE: Out-of-State Customer Titling / Registration Requirements
+CATEGORY: FLORIDA DEALER SALE TO TEXAS CUSTOMER / TEXAS TITLE / TEXAS REGISTRATION / FORM 130-U / INSPECTION / EMISSIONS / SALES TAX / ORIGINAL TITLE
+
+============================================================
+PURPOSE
+============================================================
+
+This file helps a Florida dealership understand what may be needed when a customer buys a vehicle from the dealership and wants the vehicle titled and/or registered in Texas.
+
+Use this file for questions like:
+
+- What do I need to title this customer in Texas?
+- Texas customer bought from our Florida dealership.
+- Does Texas require inspection?
+- Does Texas require emissions?
+- What is Texas Form 130-U?
+- Does Texas require original out-of-state title?
+- What are the Texas title/registration fees?
+
+============================================================
+WHEN TO USE THIS FILE
+============================================================
+
+Use this file when:
+
+IF customer_state = "Texas"
+AND customer_is_buying_vehicle_from_dealer = TRUE
+AND vehicle_will_be_titled_or_registered_in_customer_state = TRUE
+THEN use_texas_customer_titling_requirements_notes = TRUE
+
+Do NOT use this file as the primary source for:
+- Customer bringing Texas title into Florida for Florida title
+- Florida resident titling/registering in Florida
+- Florida tag transfer workflow
+
+For Florida titling/registration, use Florida title and registration notes.
+
+============================================================
+TEXAS SOURCE SUMMARY
+============================================================
+
+Texas DMV says:
+
+- A vehicle must be titled in the owner’s name within 30 days of the date of sale to avoid delinquent transfer penalties.
+- A vehicle must be registered within 30 days of bringing the vehicle to Texas.
+
+Inspection:
+- All commercial vehicles must obtain a passing safety inspection before registration, regardless of county of residence.
+- Non-commercial vehicles registered in certain emissions counties are not required to obtain a passing safety inspection but are required to obtain a passing emissions inspection before registration.
+
+Texas emissions counties listed by source:
+- Brazoria
+- Collin
+- Dallas
+- Denton
+- El Paso
+- Ellis
+- Fort Bend
+- Galveston
+- Harris
+- Johnson
+- Kaufman
+- Montgomery
+- Parker
+- Rockwall
+- Tarrant
+- Travis
+- Williamson
+
+Required items after applicable inspection:
+- Proof of Inspection, Vehicle Inspection Report, if applicable
+- Proof of liability insurance meeting Texas minimum requirements
+- Vehicle odometer reading if required
+- Original out-of-state title or other valid ownership evidence
+- Proof of sales tax payment or current foreign/military ownership document
+- Completed Application for Texas Title and/or Registration, Form 130-U
+- If the vehicle is not subject to commercial or emissions inspection, self-certify VIN on Form 130-U
+
+Fees listed by Texas source:
+- Registration base fee of $50.75 for passenger vehicles and light trucks
+- Title application fee of $28 or $33 depending on county
+- State portion of vehicle inspection fee up to $30.75
+- Local county fees up to $31.50
+- 6.25% vehicle sales tax
+- $1 insurance verification fee
+- $4.75 processing and handling fee
+
+Imported vehicles:
+- Vehicle must meet federal and state importation requirements before Texas title/registration.
+- Imported vehicles may require FMVSS/DOT/customs compliance, Form HS-7 or other customs/federal safety documentation, bond release if under bond, Texas inspection, VTR-68-A VIN inspection by trained auto theft investigator, and certified English translations for non-English documents.
+
+============================================================
+TEXAS REQUIRED DOCUMENT LOGIC
+============================================================
+
+IF Texas_customer_title_or_registration_requested = TRUE
+THEN Texas_30_day_title_deadline_review_required = TRUE
+
+IF Texas_vehicle_brought_to_Texas = TRUE
+THEN Texas_30_day_registration_deadline_review_required = TRUE
+
+IF Texas_customer_title_or_registration_requested = TRUE
+THEN Texas_Form_130_U_required = TRUE
+
+IF Texas_customer_title_or_registration_requested = TRUE
+THEN original_out_of_state_title_or_valid_ownership_evidence_required = TRUE
+
+IF Texas_registration_requested = TRUE
+THEN proof_of_Texas_liability_insurance_required = TRUE
+
+IF odometer_reading_required = TRUE
+THEN Texas_odometer_reading_required = TRUE
+
+IF Texas_registration_requested = TRUE
+THEN proof_of_sales_tax_payment_or_current_foreign_military_ownership_document_required = TRUE
+
+IF Texas_inspection_required = TRUE
+THEN Vehicle_Inspection_Report_required = TRUE
+
+IF Texas_vehicle_not_subject_to_commercial_or_emissions_inspection = TRUE
+THEN VIN_self_certification_on_Form_130_U_required = TRUE
+
+============================================================
+TEXAS INSPECTION / EMISSIONS LOGIC
+============================================================
+
+IF Texas_vehicle_is_commercial = TRUE
+THEN Texas_passing_safety_inspection_required_before_registration = TRUE
+
+IF Texas_vehicle_is_non_commercial = TRUE
+AND Texas_registration_county IN ["Brazoria", "Collin", "Dallas", "Denton", "El Paso", "Ellis", "Fort Bend", "Galveston", "Harris", "Johnson", "Kaufman", "Montgomery", "Parker", "Rockwall", "Tarrant", "Travis", "Williamson"]
+THEN Texas_emissions_inspection_required_before_registration = TRUE
+
+IF Texas_inspection_required = TRUE
+THEN proof_of_vehicle_insurance_required_at_inspection = TRUE
+
+============================================================
+TEXAS FEE / TAX LOGIC
+============================================================
+
+IF Texas_passenger_vehicle_or_light_truck_registration_requested = TRUE
+THEN Texas_base_registration_fee = 50.75
+
+IF Texas_title_application_requested = TRUE
+THEN Texas_title_application_fee = "28 or 33 depending on county"
+
+IF Texas_inspection_fee_applies = TRUE
+THEN Texas_state_inspection_fee_up_to = 30.75
+
+IF Texas_local_county_fee_applies = TRUE
+THEN Texas_local_county_fees_up_to = 31.50
+
+IF Texas_vehicle_sales_tax_applies = TRUE
+THEN Texas_vehicle_sales_tax_rate = 6.25
+
+IF Texas_registration_requested = TRUE
+THEN Texas_insurance_verification_fee = 1.00
+
+IF Texas_registration_requested = TRUE
+THEN Texas_processing_and_handling_fee = 4.75
+
+============================================================
+TEXAS IMPORTED VEHICLE LOGIC
+============================================================
+
+IF Texas_vehicle_imported_from_outside_US = TRUE
+THEN Texas_imported_vehicle_review_required = TRUE
+
+IF Texas_imported_vehicle_review_required = TRUE
+THEN federal_and_state_importation_requirements_must_be_met_before_title_registration = TRUE
+
+IF Texas_imported_vehicle_review_required = TRUE
+THEN FMVSS_DOT_customs_compliance_review_required = TRUE
+
+IF Texas_imported_vehicle_review_required = TRUE
+THEN Form_HS_7_or_customs_entry_clearance_safety_compliance_document_required = TRUE
+
+IF imported_vehicle_under_bond = TRUE
+THEN original_DOT_bond_release_letter_required = TRUE
+
+IF Texas_imported_vehicle_review_required = TRUE
+THEN VTR_68_A_law_enforcement_auto_theft_unit_VIN_inspection_required = TRUE
+
+IF ownership_document_not_in_English = TRUE
+THEN certified_English_translation_required = TRUE
+
+============================================================
+FLORIDA DEALER WORKFLOW FOR TEXAS CUSTOMER
+============================================================
+
+When a Florida dealership sells a vehicle to a Texas customer and the customer wants Texas title/registration:
+
+1. Prepare dealer ownership package:
+   - Original title or MCO/MSO / valid ownership evidence
+   - Dealer reassignment if applicable
+   - Buyer’s order / bill of sale
+   - Odometer disclosure/statement if applicable
+   - Lienholder information if financed
+   - Proof of sales tax/payment support if applicable
+
+2. Texas-specific items to review:
+   - Form 130-U Application for Texas Title and/or Registration
+   - Texas liability insurance
+   - Applicable inspection / emissions requirements
+   - Vehicle Inspection Report if applicable
+   - Odometer reading if required
+   - 30-day title deadline from date of sale
+   - 30-day registration deadline after bringing vehicle to Texas
+   - Texas title/registration fees and 6.25% sales tax
+
+3. If customer’s Texas county is an emissions county:
+   - Confirm emissions inspection before registration.
+   - Verify proof of insurance for inspection.
+
+4. If commercial vehicle:
+   - Confirm passing safety inspection before registration.
+
+5. If vehicle is imported/foreign:
+   - Review FMVSS, DOT, customs, HS-7, bond release, VTR-68-A, and English translation requirements.
+   - Escalate before submission if import documents are incomplete.
+
+6. If financed:
+   - Confirm lienholder/title instructions.
+   - Confirm lienholder information is included on Texas title package.
+
+============================================================
+TAX / RECIPROCITY NOTES
+============================================================
+
+For Florida dealer sale to Texas resident:
+
+- Review Florida DOR out-of-state resident sales tax / DR-123 workflow.
+- Texas source lists 6.25% vehicle sales tax.
+- Verify tax handling with controller, agency, lender, county tax office, or Texas DMV before finalizing.
+
+Use related file:
+fl_motor_vehicle_sales_tax_rates_by_state_tip_25a01_01_notes.txt
+
+============================================================
+REJECTION / DELAY RISKS
+============================================================
+
+High risk if:
+
+- Form 130-U is missing or incomplete.
+- Original out-of-state title / ownership evidence is missing.
+- Texas liability insurance is missing.
+- Inspection/emissions requirement is missed.
+- Vehicle Inspection Report missing when applicable.
+- VIN self-certification missing when applicable.
+- Odometer reading missing when required.
+- 30-day title/registration timing missed.
+- Texas sales tax / fee calculation unclear.
+- Imported vehicle lacks FMVSS/DOT/customs/HS-7/VTR-68-A documents.
+- Certified English translation missing for non-English documents.
+- Tax/DR-123 handling unclear.
+
+============================================================
+AI ROUTING KEYWORDS
+============================================================
+
+Texas customer
+title customer in Texas
+register customer in Texas
+Texas title requirements
+Texas registration requirements
+Texas out of state dealer sale
+Florida dealer Texas customer
+Texas Form 130-U
+Texas Vehicle Inspection Report
+Texas emissions inspection
+Texas commercial safety inspection
+Texas 30 day title deadline
+Texas 30 day registration deadline
+Texas 6.25 sales tax
+Texas imported vehicle
+Texas VTR-68-A
+what do I need to title in Texas
+
+============================================================
+COMMON CLERK ANSWER
+============================================================
+
+For a Texas customer buying from a Florida dealership, Texas requires title within 30 days of sale and registration within 30 days of bringing the vehicle to Texas. The customer/title package generally needs Form 130-U, original out-of-state title or valid ownership evidence, proof of Texas liability insurance, odometer reading if required, proof of inspection if applicable, proof of sales tax payment, and Texas fees/taxes. Commercial vehicles require safety inspection before registration, and non-commercial vehicles in listed emissions counties require emissions inspection. Prepare the dealer ownership package, buyer’s order, odometer disclosure/statement if applicable, lienholder information if financed, and review Florida DR-123/Texas tax handling. Escalate if inspection, emissions, imported vehicle documents, Form 130-U, original title, insurance, or tax handling is unclear.
+
+============================================================
+RELATED FILES
+============================================================
+
+- out_of_state_customer_title_master_logic_map.txt
+- fl_motor_vehicle_sales_tax_rates_by_state_tip_25a01_01_notes.txt
+- validation_logic_map.txt
+- rejection_prevention_logic_map.txt
+- fl_title_ownership_and_transfer_law_notes.txt
+- fl_lien_and_lien_satisfaction_law_notes.txt
+
+============================================================
+END OF FILE
+============================================================
