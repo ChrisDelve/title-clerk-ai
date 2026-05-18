@@ -240,6 +240,28 @@ Georgia county tag office
 what do I need to title in Georgia
 
 ============================================================
+DEALERSHIP / VENDOR WORKFLOW WORDING
+============================================================
+
+For Florida dealership sales to Georgia customers, answer using dealership/vendor workflow.
+
+The dealership prepares the Georgia out-of-state customer title package and submits the completed package to the dealership’s Georgia title vendor or approved title agency.
+
+Do not answer as if the dealership only gives the customer paperwork to file themselves unless the deal-specific instruction says customer self-filing applies.
+
+For new vehicles:
+- Reassign MSO/MCO to buyer.
+- Complete buyer information.
+- Complete lienholder information if financed.
+- Complete odometer section if applicable.
+- Collect wet signatures required by dealership/vendor workflow.
+- Collect two notarized Powers of Attorney when required by dealership/vendor workflow.
+- Collect two odometer disclosure statements when required by dealership/vendor workflow.
+- If signing by POA, authorized signer signs by POA and provides driver license copy when required.
+
+Georgia-specific forms should be described as vendor/state-required forms, not guessed as universal requirements unless clearly confirmed.
+
+============================================================
 COMMON CLERK ANSWER
 ============================================================
 

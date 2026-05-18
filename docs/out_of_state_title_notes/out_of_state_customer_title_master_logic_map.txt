@@ -1,0 +1,80 @@
+============================================================
+DEALERSHIP OUT-OF-STATE CUSTOMER TITLING WORKFLOW
+============================================================
+
+For out-of-state customer titling, the dealership does not simply hand documents to the customer and tell the customer to file.
+
+Dealership operational workflow:
+
+- Dealer prepares the out-of-state title package for the customer’s destination state.
+- Dealer collects wet signatures on required documents.
+- Dealer collects two notarized Powers of Attorney when required by dealership/title-vendor workflow.
+- Dealer collects two odometer disclosure statements when required by dealership/title-vendor workflow.
+- For new vehicles, dealer reassigns the Manufacturer Statement of Origin / Manufacturer Certificate of Origin to the buyer.
+- Dealer completes buyer information, lienholder information, and odometer section on the MSO/MCO when applicable.
+- Dealer may sign title/MSO reassignment documents by Power of Attorney when authorized.
+- The person signing by POA must provide their driver license copy when required by dealership/title-vendor workflow.
+- Dealer prepares the buyer’s order / bill of sale, odometer disclosure/statement if applicable, lienholder information if financed, and state-specific title/registration documents.
+- Dealer submits the completed package to the vendor/title agency in the customer’s destination state.
+- The vendor/title agency handles submission to the customer’s state DMV/county/tag/title office.
+- Dealer must not describe the process as only “give the customer paperwork and customer files it” unless that is the actual deal-specific instruction from management/vendor.
+
+IF customer_is_out_of_state = TRUE
+AND customer_wants_title_or_registration_in_customer_state = TRUE
+THEN dealer_vendor_submission_workflow_applies = TRUE
+
+IF dealer_vendor_submission_workflow_applies = TRUE
+THEN answer_should_say_dealer_prepares_package_and_submits_to_state_vendor = TRUE
+
+IF new_vehicle = TRUE
+THEN MSO_MCO_reassignment_to_buyer_required = TRUE
+
+IF new_vehicle = TRUE
+AND lien_exists = TRUE
+THEN lienholder_information_completed_on_MSO_MCO_required = TRUE
+
+IF odometer_disclosure_applicable = TRUE
+THEN odometer_section_or_odometer_disclosure_statement_required = TRUE
+
+IF dealership_workflow_requires_two_POAs = TRUE
+THEN two_notarized_POAs_required = TRUE
+
+IF dealership_workflow_requires_two_odometer_statements = TRUE
+THEN two_odometer_disclosure_statements_required = TRUE
+
+IF signing_by_POA = TRUE
+THEN authorized_POA_signature_required = TRUE
+
+IF signing_by_POA = TRUE
+THEN signer_driver_license_copy_required_by_dealership_vendor_workflow = TRUE
+
+IF destination_state_vendor_used = TRUE
+THEN completed_package_submitted_to_vendor_in_customer_state = TRUE
+
+============================================================
+ANSWER WORDING RULE
+============================================================
+
+For out-of-state customer titling answers, do NOT say:
+
+- “The customer is responsible for submitting everything themselves.”
+- “The dealership only provides documents to the customer.”
+- “The dealership processes a Florida title first.”
+
+Instead say:
+
+- “The dealership prepares the out-of-state title package and submits it to the vendor/title agency for the customer’s destination state.”
+- “For a new vehicle, the dealership reassigns the MSO/MCO to the buyer and completes lienholder and odometer information when applicable.”
+- “The dealership collects wet signatures, including two notarized POAs and two odometer disclosure statements when required by dealership/vendor workflow.”
+- “If signing by POA, the authorized signer signs by POA and provides driver license copy when required.”
+
+Do not overstate state-specific forms as universally required unless the state-specific note clearly confirms them.
+
+For destination-state paperwork, say:
+- “state-specific forms required by the vendor/title agency”
+- “Georgia/state-specific title and registration forms”
+- “forms such as MV-1 or inspection forms if required by the Georgia vendor/county”
+
+Do not say:
+- “Georgia requires MV-1 and T-22B in every case”
+unless the source note clearly supports that exact requirement.

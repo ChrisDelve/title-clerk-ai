@@ -1,3 +1,4 @@
+from annotated_types import doc
 import streamlit as st
 from openai import OpenAI
 import os
@@ -369,9 +370,17 @@ DOCUMENTS = []
 
 docs_path = "docs"
 
+EXCLUDED_SOURCE_FILES = {
+    "passed_issue_tests.txt",
+    "demo_question_list.txt",
+}
+
 for root, dirs, files in os.walk(docs_path):
 
     for file in files:
+
+        if file in EXCLUDED_SOURCE_FILES:
+            continue
 
         filepath = os.path.join(root, file)
 
@@ -392,6 +401,7 @@ for root, dirs, files in os.walk(docs_path):
 
                     DOCUMENTS.append({
                         "name": file,
+                        "path": filepath,
                         "content": content
                     })
 
@@ -487,9 +497,22 @@ def clean_source_name(filename):
 
 def search_documents(query):
 
-    query_words = query.lower().split()
+    query_lower = query.lower()
+    query_words = query_lower.split()
 
     matches = []
+
+    out_of_state_customer_keywords = [
+        "title in",
+        "register in",
+        "customer wants to title in",
+        "customer wants to register in",
+        "out of state customer",
+        "out-of-state customer",
+        "customer from",
+        "what do i need to title this customer in",
+        "what do i need to register this customer in",
+    ]
 
     for doc in DOCUMENTS:
 
@@ -497,8 +520,69 @@ def search_documents(query):
 
         content_lower = doc["content"].lower()
         doc_name_lower = doc["name"].lower()
-        query_lower = query.lower()
+        doc_path_lower = doc.get("path", "").lower()
 
+        state_names = [
+            "alabama", "alaska", "arizona", "arkansas", "california",
+            "colorado", "delaware", "georgia", "hawaii", "idaho",
+            "illinois", "indiana", "iowa", "kansas", "kentucky",
+            "louisiana", "maine", "maryland", "massachusetts", "michigan",
+            "minnesota", "mississippi", "missouri", "montana", "nebraska",
+            "nevada", "new hampshire", "new jersey", "new mexico",
+            "new york", "north carolina", "north dakota", "ohio",
+            "oklahoma", "oregon", "pennsylvania", "rhode island",
+            "south carolina", "south dakota", "tennessee", "texas",
+            "utah", "vermont", "virginia", "washington",
+            "west virginia", "wisconsin", "wyoming"
+        ]
+
+        matched_states = [state for state in state_names if state in query_lower]
+
+        for state in matched_states:
+            state_file_name = state.replace(" ", "_") + "_customer_titling_requirements_notes"
+
+            if state_file_name in doc_name_lower:
+                score += 200
+
+            elif "customer_titling_requirements_notes" in doc_name_lower:
+                score -= 50
+
+        # Strongly route out-of-state customer titling questions to state-specific notes
+        if any(phrase in query_lower for phrase in out_of_state_customer_keywords):
+            if "out_of_state_customer_title_notes" in doc.get("path", "").lower():
+                score += 20
+            if "customer_titling_requirements_notes" in doc_name_lower:
+                score += 20
+            if "out_of_state_customer_title_master_logic_map" in doc_name_lower:
+                score += 15
+            if "fl_motor_vehicle_sales_tax_rates_by_state" in doc_name_lower:
+                score += 10
+            if "fl_nonresident_motor_vehicle_sales_tax_logic_map" in doc_name_lower:
+                score += 10
+
+        
+
+        # Penalize general Florida-only title law sources for this question type
+            if "florida statute 319" in doc_name_lower:
+                score -= 10
+
+            if "title ownership" in doc_name_lower:
+                score -= 8
+
+            if "florida statute 319" in doc_name_lower:
+                score -= 10
+
+            if "trust" not in query_lower and "trust" in doc_name_lower:
+                score -= 200
+
+        if "title ownership" in doc_name_lower:
+            score -= 8    
+        if "passed_issue_tests" in doc_name_lower:
+            score -= 100
+        if "demo_question_list" in doc_name_lower:
+            score -= 100
+        
+        
         for word in query_words:
             if word in content_lower:
                 score += 1
@@ -1132,6 +1216,7 @@ def search_documents(query):
 
         return (unique_out_of_state_no_vin_matches + non_out_of_state_no_vin_matches)[:5]
     
+    
     out_of_state_lien_paid_words = [
         "out-of-state title with a lien showing but says it is paid off",
         "out of state title with a lien showing but says it is paid off",
@@ -1177,6 +1262,18 @@ def search_documents(query):
         ]
 
         return (unique_out_of_state_lien_paid_matches + non_out_of_state_lien_paid_matches)[:5]
+
+    out_of_state_customer_keywords = [
+        "title in",
+        "register in",
+        "customer wants to title in",
+        "customer wants to register in",
+        "out of state customer",
+        "out-of-state customer",
+        "customer from",
+        "what do i need to title this customer in",
+        "what do i need to register this customer in",
+    ]
 
     spouse_plate_words = [
         "transfer a plate from their spouse",
