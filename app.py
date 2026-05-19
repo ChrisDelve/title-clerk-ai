@@ -522,6 +522,302 @@ def search_documents(query):
         doc_name_lower = doc["name"].lower()
         doc_path_lower = doc.get("path", "").lower()
 
+        if "trust" not in query_lower and "trust" in doc_name_lower:
+            continue
+
+        if "guardian" not in query_lower and "guardianship" in doc_name_lower:
+            continue
+
+        if "replevin" not in query_lower and "repossession" not in query_lower and "replevin" in doc_name_lower:
+            continue
+
+        if "bonded" not in query_lower and "bond" not in query_lower and "bonded" in doc_name_lower:
+            continue
+
+        if (
+            "duplicate" not in query_lower
+            and "lost title" not in query_lower
+            and "replacement title" not in query_lower
+            and "lost-in-transit" not in query_lower
+            and "lost in transit" not in query_lower
+            and (
+                "duplicate" in doc_name_lower
+                or "tl_05" in doc_name_lower
+            )
+        ):
+            continue
+
+        if (
+            "divorce" not in query_lower
+            and "dissolution" not in query_lower
+            and "marriage" not in query_lower
+            and (
+                "dissolution_of_marriage" in doc_name_lower
+                or "tl_17" in doc_name_lower
+            )
+        ):
+            continue
+
+        if (
+            "pawn" not in query_lower
+            and "pawnbroker" not in query_lower
+            and "title pledge" not in query_lower
+            and (
+                "pawnbroker" in doc_name_lower
+                or "pawnbrokers" in doc_name_lower
+                or "tl_47" in doc_name_lower
+            )
+        ):
+            continue
+        
+        if (
+            "antique" not in query_lower
+            and "ancient" not in query_lower
+            and "vessel" not in query_lower
+            and (
+                "antique" in doc_name_lower
+                or "ancient" in doc_name_lower
+            )
+        ):
+            continue
+
+        if (
+            "rebuilt" not in query_lower
+            and "rebuild" not in query_lower
+            and "salvage" not in query_lower
+            and "branded" not in query_lower
+            and "total loss" not in query_lower
+            and "rebuilt_vehicle" in doc_name_lower
+        ):
+            continue
+
+        if (
+            "total loss" not in query_lower
+            and "derelict" not in query_lower
+            and "junk" not in query_lower
+            and "salvage" not in query_lower
+            and (
+                "total_loss" in doc_name_lower
+                or "derelict" in doc_name_lower
+                or "junked" in doc_name_lower
+            )
+        ):
+            continue
+
+        if "title loan" not in query_lower and "title_loan" in doc_name_lower:
+            continue
+
+        # ------------------------------------------------------------
+        # IMPORT / EXPORT / CANADA ROUTING
+        # ------------------------------------------------------------
+
+        foreign_import_keywords = [
+            "from another country",
+            "out of country",
+            "out-of-country",
+            "foreign vehicle",
+            "foreign title",
+            "foreign registration",
+            "customs",
+            "cbp",
+            "epa form",
+            "3520-1",
+            "dot form",
+            "hs-7",
+            "port of entry",
+            "import documents",
+            "nonconforming vehicle",
+            "not manufactured for u.s.",
+            "not manufactured for us",
+            "imported from canada",
+            "imported from mexico",
+            "imported from overseas",
+            "imported into the united states",
+        ]
+
+        florida_import_keywords = [
+            "importing a vehicle into florida",
+            "import vehicle into florida",
+            "bringing a vehicle into florida",
+            "bring vehicle into florida",
+            "out of state title into florida",
+            "out-of-state title into florida",
+            "title an out of state vehicle in florida",
+            "title an out-of-state vehicle in florida",
+            "register an out of state vehicle in florida",
+            "register an out-of-state vehicle in florida",
+            "vehicle coming into florida",
+            "customer moved to florida",
+        ]
+
+        export_keywords = [
+            "export vehicle",
+            "exporting a vehicle",
+            "exporting vehicle",
+            "shipping vehicle out of the country",
+            "ship vehicle out of the country",
+            "vehicle leaving the united states",
+            "vehicle leaving the u.s.",
+            "foreign buyer shipping vehicle",
+            "cbp export",
+            "customs export",
+            "72 hours prior to export",
+            "present vehicle to customs",
+            "port of export",
+            "export documents",
+        ]
+
+        canada_keywords = [
+            "canada",
+            "canadian",
+            "cbsa",
+            "transport canada",
+            "riv",
+            "registrar of imported vehicles",
+            "cmvss",
+            "import into canada",
+            "export to canada",
+            "taking vehicle to canada",
+            "shipping vehicle to canada",
+            "canadian customer",
+        ]
+
+        foreign_import_question = (
+            any(phrase in query_lower for phrase in foreign_import_keywords)
+            or (
+                "import" in query_lower
+                and any(word in query_lower for word in ["country", "foreign", "customs", "cbp", "epa", "dot", "hs-7", "3520"])
+            )
+        )
+
+        florida_import_question = (
+            any(phrase in query_lower for phrase in florida_import_keywords)
+            and not foreign_import_question
+        )
+
+        export_question = any(phrase in query_lower for phrase in export_keywords)
+
+        canada_question = any(phrase in query_lower for phrase in canada_keywords)
+
+        if (
+            "import" in query_lower
+            or "export" in query_lower
+            or "canada" in query_lower
+            or "canadian" in query_lower
+            or "foreign" in query_lower
+            or "customs" in query_lower
+            or "cbp" in query_lower
+        ):
+            if "import_export_vehicle_logic_map" in doc_name_lower:
+                score += 200
+
+        # Canadian customer / Canada import routing
+        if canada_question:
+            if "canada_cbsa_importing_vehicle_notes" in doc_name_lower:
+                score += 250
+
+            if "us_cbp_exporting_motor_vehicle_notes" in doc_name_lower:
+                score += 120
+
+            if "us_cbp_importing_motor_vehicle_notes" in doc_name_lower:
+                score -= 50
+
+            if "customer_titling_requirements_notes" in doc_name_lower:
+                score -= 75
+
+            if "out_of_state_customer_title_notes" in doc_path_lower:
+                score -= 75
+
+        # Vehicle exported out of the United States
+        if export_question and not canada_question:
+            if "us_cbp_exporting_motor_vehicle_notes" in doc_name_lower:
+                score += 250
+
+            if "us_cbp_importing_motor_vehicle_notes" in doc_name_lower:
+                score -= 50
+
+            if "canada_cbsa_importing_vehicle_notes" in doc_name_lower:
+                score -= 50
+
+            if "customer_titling_requirements_notes" in doc_name_lower:
+                score -= 75
+
+            if "out_of_state_customer_title_notes" in doc_path_lower:
+                score -= 75
+
+            if "fees" in doc_path_lower or "fees" in doc_name_lower:
+                score -= 100
+
+            if "customer_service_center" in doc_name_lower or "title_support" in doc_name_lower:
+                score -= 100
+
+        # Vehicle imported from another country into the U.S. / Florida
+        if foreign_import_question and not canada_question:
+            if "us_cbp_importing_motor_vehicle_notes" in doc_name_lower:
+                score += 250
+
+            if "fl_tl_10" in doc_name_lower:
+                score += 80
+
+            if "original_certificate_of_title_operational_notes" in doc_name_lower:
+                score += 100
+
+            if "82040" in content_lower:
+                score += 40
+
+            if "82042" in content_lower:
+                score += 40
+
+            if "canada_cbsa_importing_vehicle_notes" in doc_name_lower:
+                score -= 50    
+
+            if "customer_titling_requirements_notes" in doc_name_lower:
+                score -= 75
+
+            if "out_of_state_customer_title_notes" in doc_path_lower:
+                score -= 75
+
+        # Normal U.S. out-of-state vehicle coming into Florida
+        if florida_import_question:
+            if "out_of_state_customer_title_notes" in doc_path_lower:
+                score -= 150
+
+            if "customer_titling_requirements_notes" in doc_name_lower:
+                score -= 150
+
+            if "us_cbp_importing_motor_vehicle_notes" in doc_name_lower:
+                score -= 50
+
+            if "us_cbp_exporting_motor_vehicle_notes" in doc_name_lower:
+                score -= 50
+
+            if "canada_cbsa_importing_vehicle_notes" in doc_name_lower:
+                score -= 50
+
+            if "fl_tl_10" in doc_name_lower:
+                score += 80
+
+            if "original_certificate_of_title_operational_notes" in doc_name_lower:
+                score += 100 
+
+            if "original" in doc_name_lower and "title" in doc_name_lower:
+                score += 50
+
+            if "vin" in doc_name_lower:
+                score += 50
+
+            if "82042" in content_lower:
+                score += 50
+
+            if "82040" in content_lower:
+                score += 50
+
+            if "odometer" in doc_name_lower:
+                score += 30
+
+            if "electronic_lien" in doc_name_lower or "elt" in doc_name_lower:
+                score += 20
+        
         state_names = [
             "alabama", "alaska", "arizona", "arkansas", "california",
             "colorado", "delaware", "georgia", "hawaii", "idaho",
@@ -1694,6 +1990,27 @@ Avoid generic legal disclaimers unless escalation is required.
 - court order ambiguity
 
 10. Powers of attorney become void upon death unless specifically allowed by Florida procedure.
+
+CANADIAN CUSTOMER / EXPORT TO CANADA HARD RULE:
+If the user asks about a Canadian customer, taking a vehicle to Canada, exporting to Canada, importing into Canada, CBSA, RIV, or Transport Canada:
+
+Do NOT default to saying:
+- Complete Florida title application HSMV 82040
+- Process the Florida title application as usual
+- Process the title transfer through EFS as usual
+- Submit to the Florida tax collector as the default workflow
+
+Instead say:
+- Prepare the dealership ownership/export package.
+- Do not default to Florida title application, Florida registration, or Florida plate issuance unless the customer is actually titling/registering the vehicle in Florida.
+- The package should include MSO/MCO or properly assigned title, buyer’s order/bill of sale, odometer disclosure/statement if applicable, lienholder information or lien release if financed, and any dealership-required POA/wet-signature documents if applicable.
+- Because the vehicle is leaving the United States, U.S. CBP export requirements should be reviewed.
+- Required export documentation must be submitted to CBP at least 72 hours prior to export, and the vehicle must be presented to CBP at the port of export.
+- Because the vehicle is entering Canada, CBSA / Transport Canada / RIV requirements must be reviewed.
+- Not every U.S. vehicle is admissible into Canada.
+- Escalate to title lead, controller, lienholder, CBP, CBSA, RIV, export broker, freight forwarder, or Canadian provincial authority if title, lien, export, import, tax/duty, or admissibility is unclear.
+
+Only mention HSMV 82040 if the customer is actually applying for Florida title/registration.
 
 Your job is to behave like an experienced Florida title clerk performing procedural intake before processing.
 """

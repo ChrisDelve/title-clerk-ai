@@ -1,0 +1,443 @@
+DOCUMENT: CANADA_CBSA_IMPORTING_VEHICLE_NOTES
+TITLE: Canada Border Services Agency — Importing Vehicles into Canada
+SOURCE: https://www.cbsa-asfc.gc.ca/publications/dm-md/d19/d19-12-1-eng.html
+SOURCE_TITLE: CBSA Memorandum D19-12-1: Importing Vehicles into Canada
+SOURCE_DATE: May 4, 2026
+DOCUMENT_TYPE: Canadian Vehicle Import / CBSA / Transport Canada / RIV / Canada Customer Export-Import Guidance
+CATEGORY: CANADIAN CUSTOMER / VEHICLE IMPORTED INTO CANADA / EXPORT FROM UNITED STATES TO CANADA / CBSA / TRANSPORT CANADA / RIV / CMVSS / FMVSS / CERTIFICATE OF TITLE / CERTIFICATE OF ORIGIN / BILL OF SALE
+
+============================================================
+PURPOSE
+============================================================
+
+This file helps a Florida dealership understand Canadian import considerations when a customer is buying a vehicle from the dealership and intends to take, ship, export, or import the vehicle into Canada.
+
+Use this file for questions like:
+
+- Canadian customer is buying a vehicle and taking it to Canada.
+- Customer wants to import the vehicle into Canada.
+- What does Canada require to import a vehicle?
+- What is CBSA D19-12-1?
+- What is the RIV Program?
+- What is Transport Canada?
+- What is CMVSS?
+- What is FMVSS?
+- What ownership documents are needed to import a vehicle into Canada?
+- Can a U.S. vehicle be imported into Canada?
+- Does the customer need original title or MSO?
+- What if the vehicle is not admissible into Canada?
+- What if the vehicle is being exported from the U.S. to Canada?
+
+============================================================
+WHEN TO USE THIS FILE
+============================================================
+
+Use this file when:
+
+IF customer_is_Canadian = TRUE
+AND customer_intends_to_take_vehicle_to_Canada = TRUE
+THEN use_canada_cbsa_importing_vehicle_notes = TRUE
+
+IF vehicle_destination_country = "Canada"
+THEN use_canada_cbsa_importing_vehicle_notes = TRUE
+
+IF user_question_mentions IN ["Canada", "Canadian", "CBSA", "Transport Canada", "RIV", "Registrar of Imported Vehicles", "CMVSS", "import into Canada", "export to Canada"]
+THEN use_canada_cbsa_importing_vehicle_notes = TRUE
+
+Use with this related file when vehicle is leaving the United States:
+
+- us_cbp_exporting_motor_vehicle_notes.txt
+
+Do NOT use this file as the main source when:
+
+- Customer is titling/registering in Florida only.
+- Customer is titling/registering in another U.S. state only.
+- Vehicle is being imported into Florida from another country but not Canada-specific.
+- Question is only about duplicate title, transfer title, Florida lien release, or Florida registration.
+
+============================================================
+CORE DISTINCTION
+============================================================
+
+A Canadian customer buying a vehicle from a Florida dealership may involve multiple workflows:
+
+1. FLORIDA DEALERSHIP SALE DOCUMENTS
+
+Dealer may need:
+- MCO/MSO for new vehicle or properly assigned title for used vehicle
+- Dealer reassignment if applicable
+- Bill of sale / buyer’s order
+- Odometer disclosure/statement if applicable
+- Lienholder information if financed
+- Wet signatures / POA documents if required by dealership workflow
+
+2. U.S. EXPORT REVIEW
+
+If the vehicle is leaving the United States, CBP export requirements may apply.
+
+Use:
+- us_cbp_exporting_motor_vehicle_notes.txt
+
+3. CANADIAN IMPORT REVIEW
+
+If the vehicle is entering Canada, CBSA / Transport Canada / RIV requirements must be reviewed.
+
+Use:
+- canada_cbsa_importing_vehicle_notes.txt
+
+Do not treat a Canadian export/import deal as only a normal Florida title transaction.
+
+============================================================
+CBSA SOURCE SUMMARY
+============================================================
+
+CBSA Memorandum D19-12-1 explains Canada’s requirements for importing vehicles into Canada.
+
+CBSA assists Transport Canada with the administration of the Motor Vehicle Safety Act and Motor Vehicle Safety Regulations.
+
+CBSA also assists other Canadian government agencies, including:
+- Canadian Food Inspection Agency, for plant pests / soil and related matter on used vehicles
+- Environment and Climate Change Canada, for emissions standards
+
+Before importation:
+- Importer is responsible for ensuring all aspects of importation have been researched.
+- Importer should contact insurance provider and provincial or territorial licensing authority for provincial requirements.
+- Importer is responsible for researching whether the vehicle is eligible for importation before arriving at the border.
+- Not all vehicles purchased or acquired in the United States or Mexico qualify for importation or can be modified to comply with Canadian Motor Vehicle Safety Standards.
+- Transport Canada publishes the Vehicle Import Compatibility List, VIC List, for guidance.
+- Importer should verify eligibility with the vehicle manufacturer before importation.
+
+Importer declaration:
+- Importer is responsible for making a declaration by completing applicable forms or electronic submission.
+- Applicable documents may include:
+  - Transport Canada Vehicle Import Form — Form 1
+  - RIV e-Form 1
+  - Vehicle Imported for Parts Only — Form 3
+  - RIV e-Form 3
+  - Single Window Initiative / Integrated Import Declaration if applicable
+
+At the border:
+- Before releasing a vehicle at the border, CBSA verifies that the importer’s declaration complies with applicable legislative provisions.
+
+After entry:
+- Once vehicle is released, importer must comply with the terms of entry, which may include additional requirements.
+
+============================================================
+TRANSPORT CANADA / RIV SUMMARY
+============================================================
+
+Transport Canada import requirements apply to regulated classes of vehicles that are less than 15 years old and to buses manufactured on or after January 1, 1971.
+
+To be eligible for importation, vehicles must qualify under one of two principles:
+
+1. Vehicles required to be registered in the RIV Program:
+   - U.S.-specification vehicles sold at retail level in the United States
+   - Prescribed vehicles from Mexico
+
+2. Vehicles not required to be registered in the RIV Program:
+   - Canadian Motor Vehicle Safety Standards vehicles
+   - Age-exempt vehicles
+   - Non-regulated vehicles
+   - Temporarily imported vehicles
+
+Vehicles that do not qualify under one of these options are inadmissible and cannot be imported into Canada.
+
+The RIV Program helps ensure eligible U.S./Mexico vehicles meet Canadian requirements and that:
+- Vehicle was originally designed and certified to U.S. FMVSS
+- Vehicle has no outstanding manufacturer safety recalls
+- Required modifications are performed to meet Canadian Motor Vehicle Safety Regulations
+- Vehicle is inspected in Canada by an official RIV authorized inspection center within the required time before provincial/territorial registration
+
+If vehicle fails RIV inspection, it cannot remain permanently in Canada and must be exported.
+
+============================================================
+RIV ELIGIBILITY LOGIC
+============================================================
+
+IF vehicle_entering_Canada = TRUE
+THEN Canadian_import_review_required = TRUE
+
+IF vehicle_is_less_than_15_years_old = TRUE
+OR vehicle_is_bus_manufactured_on_or_after_1971_01_01 = TRUE
+THEN Transport_Canada_MVSA_MVSR_review_required = TRUE
+
+IF vehicle_is_US_specification_vehicle_sold_at_retail_level_in_US = TRUE
+THEN RIV_program_review_required = TRUE
+
+IF vehicle_is_prescribed_vehicle_from_Mexico = TRUE
+THEN RIV_program_review_required = TRUE
+
+IF vehicle_is_CMVSS_vehicle = TRUE
+THEN RIV_may_not_be_required_review_required = TRUE
+
+IF vehicle_is_age_exempt = TRUE
+THEN RIV_may_not_be_required_review_required = TRUE
+
+IF vehicle_is_non_regulated = TRUE
+THEN RIV_may_not_be_required_review_required = TRUE
+
+IF vehicle_is_temporarily_imported = TRUE
+THEN temporary_import_rules_review_required = TRUE
+
+IF vehicle_does_not_qualify_for_Canadian_importation = TRUE
+THEN vehicle_inadmissible_to_Canada = TRUE
+
+IF vehicle_inadmissible_to_Canada = TRUE
+THEN do_not_tell_customer_vehicle_can_be_imported_to_Canada = TRUE
+
+============================================================
+RIV PROGRAM ELIGIBILITY REQUIREMENTS
+============================================================
+
+To be eligible for registration in the RIV Program, vehicle must meet all applicable requirements, including:
+
+- Belong to a prescribed class of regulated vehicles, or be a prescribed vehicle from Mexico
+- Be less than 15 years old on date of importation, or bus manufactured on or after January 1, 1971
+- Have been sold at retail level in the United States or Mexico, whichever applies
+- Not be identified as inadmissible on the Vehicle Import Compatibility List
+- Be certified by original manufacturer to comply with U.S. FMVSS
+- Have American compliance label or manufacturer statement confirming FMVSS compliance
+- For staged/incomplete vehicle, evidence of FMVSS certification by final-stage manufacturer
+- For snowmobile, compliance with Snowmobile Safety Certification Committee or CMVSS
+- For restricted-use vehicle, valid 17-digit VIN and CMVSS 108 compliance
+- Vehicle must not have been modified in a way that compromises manufacturer certification
+
+IF RIV_program_review_required = TRUE
+THEN check_vehicle_import_compatibility_list_required = TRUE
+
+IF RIV_program_review_required = TRUE
+THEN original_manufacturer_FMVSS_certification_required = TRUE
+
+IF American_compliance_label_missing = TRUE
+THEN manufacturer_statement_confirming_FMVSS_compliance_review_required = TRUE
+
+IF vehicle_has_outstanding_safety_recall = TRUE
+THEN RIV_import_problem_review_required = TRUE
+
+IF vehicle_modified_in_way_that_compromises_certification = TRUE
+THEN RIV_inadmissible_or_failure_risk = TRUE
+
+IF vehicle_fails_RIV_inspection = TRUE
+THEN vehicle_cannot_remain_permanently_in_Canada = TRUE
+
+============================================================
+PROOF OF OWNERSHIP REQUIREMENTS
+============================================================
+
+For vehicles that must be registered in the RIV Program, CBSA says proof of ownership is required.
+
+Proof of ownership may include:
+
+- Original valid U.S. state-issued Certificate of Title or equivalent
+- For prescribed vehicle from Mexico, valid vehicle registration documentation from Mexico
+- For new FMVSS vehicle sold at retail level in the United States:
+  - Manufacturer’s Statement or Certificate of Origin
+  - Valid bill of sale
+
+IF vehicle_imported_to_Canada_from_US = TRUE
+THEN original_valid_US_state_Certificate_of_Title_or_equivalent_required = TRUE
+
+IF new_FMVSS_vehicle_sold_at_retail_level_in_US = TRUE
+THEN MSO_MCO_and_valid_bill_of_sale_review_required = TRUE
+
+IF prescribed_vehicle_from_Mexico = TRUE
+THEN valid_Mexico_registration_documentation_required = TRUE
+
+IF ownership_document_missing = TRUE
+THEN hold_and_escalate_before_customer_exports_to_Canada = TRUE
+
+============================================================
+DEALERSHIP WORKFLOW — CANADIAN CUSTOMER
+============================================================
+
+When a Canadian customer buys a vehicle from a Florida dealership and intends to import it into Canada:
+
+1. Clarify customer intent:
+   - Is the vehicle being titled/registered in Florida?
+   - Is it being shipped/exported to Canada?
+   - Is the customer personally driving it to Canada?
+   - Is a freight forwarder, export broker, or shipping company involved?
+   - Is the vehicle new or used?
+   - Is there a lien?
+   - Is the vehicle U.S.-specification, Canadian-specification, or nonconforming?
+
+2. Prepare Florida dealership ownership package:
+   - MSO/MCO for new vehicle or properly assigned title for used vehicle
+   - Dealer reassignment if applicable
+   - Buyer’s order / bill of sale
+   - Odometer disclosure/statement if applicable
+   - Lienholder information if financed
+   - POA/wet-signature documents if required by dealership workflow
+   - Do not describe this as “process the Florida title application normally” unless the deal is actually being titled/registered in Florida. For a Canadian export/import deal, describe it as preparing the dealership ownership/export package and following title-only/export-support workflow when applicable.
+
+3. Review U.S. export requirements:
+   - If vehicle is leaving the United States, use CBP export workflow.
+   - Required documentation may need to be submitted to U.S. Customs before export.
+   - Vehicle may need to be presented to Customs at export.
+   - Verify with CBP port/export broker.
+
+4. Review Canadian import requirements:
+   - CBSA / Transport Canada import admissibility
+   - RIV Program if applicable
+   - Vehicle Import Compatibility List
+   - Proof of ownership
+   - FMVSS / CMVSS / compliance label
+   - Safety recall status
+   - RIV inspection requirement after entry if applicable
+   - Provincial/territorial licensing and insurance requirements
+   - Duties, GST, taxes, and fees
+   - CFIA/soil/plant pest issues for used vehicles
+   - ECCC emissions issues if applicable
+
+5. Escalate before promising importability:
+   - Title lead
+   - Controller if tax/sale/export handling is unclear
+   - U.S. CBP port of export
+   - CBSA / Transport Canada / RIV
+   - Export broker / freight forwarder
+   - Canadian provincial licensing authority
+   - Lienholder if vehicle is financed
+
+============================================================
+TAX / DUTY / FEE REVIEW
+============================================================
+
+CBSA memorandum includes duties and taxes as part of the import review.
+
+For dealership workflow, do not quote a final Canadian tax/duty total unless confirmed by the appropriate authority.
+
+IF vehicle_imported_to_Canada = TRUE
+THEN Canadian_duties_taxes_GST_fees_review_required = TRUE
+
+IF customer_asks_final_Canada_tax_or_duty = TRUE
+THEN escalate_to_CBSA_import_broker_or_controller = TRUE
+
+IF vehicle_sale_tax_structure_unclear = TRUE
+THEN escalate_to_controller_before_finalizing = TRUE
+
+============================================================
+REJECTION / DELAY RISKS
+============================================================
+
+High risk if:
+
+- Customer is Canadian and dealership treats deal like normal Florida registration only.
+- Vehicle is leaving the United States and U.S. CBP export process is not reviewed.
+- Vehicle is entering Canada and CBSA / Transport Canada / RIV process is not reviewed.
+- Vehicle is inadmissible under Canadian import rules.
+- Vehicle is missing original title, MSO/MCO, or valid bill of sale.
+- Vehicle is less than 15 years old and RIV / Transport Canada requirements are not reviewed.
+- Vehicle is not on VIC List or eligibility is unclear.
+- American compliance label is missing.
+- Manufacturer FMVSS compliance statement is missing when needed.
+- Vehicle has outstanding safety recall.
+- Vehicle has been modified in a way that compromises certification.
+- RIV inspection is not completed after entry when required.
+- Vehicle is financed and lienholder/export authorization is unclear.
+- Customer expects Canadian import clearance based only on Florida dealership paperwork.
+- Customer expects final Canadian duties/taxes without broker/CBSA review.
+- Provincial licensing/insurance requirements are not reviewed.
+
+============================================================
+ANSWER WORDING RULE
+============================================================
+
+============================================================
+HARD WORDING RULE — CANADIAN CUSTOMER EXPORT TO CANADA
+============================================================
+
+For Canadian customer export-to-Canada answers, NEVER say:
+
+- “Process the Florida title application as usual.”
+- “Prepare the dealership ownership/export package. Do not default to Florida title/registration unless the customer is actually titling or registering the vehicle in Florida.”
+- “The customer must present the vehicle and documents to CBP at least 72 hours prior to export.”
+- “The vehicle must be presented to CBP at least 72 hours prior to export.”
+
+Use this wording instead:
+
+- Prepare the dealership ownership/export package.
+- Do not default to Florida registration or plate issuance unless the customer is actually registering the vehicle in Florida.
+- Required export documentation must be submitted to CBP at least 72 hours prior to export.
+- The vehicle must be presented to CBP at the port of export.
+- The 72-hour timing applies to export documentation submission, not vehicle presentation.
+
+For Canadian customer export/import answers, do not say:
+
+"Process the Florida title application as usual."
+
+Use this wording instead:
+
+Prepare the dealership ownership/export package. Do not default to Florida registration or plate issuance unless the customer is actually registering the vehicle in Florida.
+
+For Canadian customer export/import answers, do not say:
+
+"The customer must present the vehicle and documents to CBP at least 72 hours before export."
+
+Use this wording instead:
+
+Required export documentation must be submitted to CBP at least 72 hours prior to export.
+
+The 72-hour timing applies to export documentation submission. 
+
+For Canadian customer / export-to-Canada questions, do not say the vehicle and documents must both be presented to CBP at least 72 hours prior to export.
+
+Correct wording:
+
+Required export documentation must be submitted to CBP at least 72 hours prior to export, and the vehicle must be presented to CBP at the port of export.
+
+The 72-hour timing applies to export documentation submission. The vehicle must be presented to CBP at the port of export.
+
+If the user asks about a Canadian customer or importing/exporting a vehicle to Canada, do not answer only as a Florida title question.
+
+Answer should say:
+
+- This involves both U.S. export review and Canadian import review.
+- For the Canadian side, CBSA / Transport Canada / RIV requirements must be reviewed.
+- Not every U.S. vehicle is admissible into Canada.
+- RIV may apply for U.S.-specification vehicles sold at retail in the United States.
+- Proof of ownership such as original U.S. title or MSO/MCO plus bill of sale may be required.
+- The customer/importer must verify admissibility, recall status, compliance label, RIV, and provincial licensing requirements before import.
+- Escalate if title, lien, export, import, RIV, tax/duty, or admissibility is unclear.
+
+Do not say:
+- “Just give the customer the title.”
+- “Prepare the dealership ownership/export package. Do not default to Florida title/registration unless the customer is actually titling or registering the vehicle in Florida.”
+- “This is only a Florida DMV issue.”
+- “The vehicle can definitely be imported into Canada.”
+- “RIV is always required.”
+- “RIV is never required.”
+
+============================================================
+COMMON CLERK ANSWER
+============================================================
+
+For a Canadian customer buying from a Florida dealership and taking or shipping the vehicle to Canada, do not treat it as only a normal Florida title or registration transaction. Prepare the dealership ownership/export package. Do not default to Florida registration or plate issuance unless the customer is actually registering the vehicle in Florida.
+
+The dealership package should include the MSO/MCO for a new vehicle or properly assigned title for a used vehicle, buyer’s order/bill of sale, odometer disclosure/statement if applicable, lienholder information or lien release if financed, and any dealership-required POA/wet-signature documents if applicable.
+
+Because the vehicle is leaving the United States, U.S. CBP export requirements should be reviewed. Required export documentation must be submitted to CBP at least 72 hours prior to export, and the vehicle must be presented to CBP at the port of export. CBP, the port of export, shipping company, or export broker may require additional documents depending on the export path.
+
+Because the vehicle is entering Canada, CBSA / Transport Canada / RIV requirements must also be reviewed. Not every U.S. vehicle is admissible into Canada. The customer/importer should verify the Vehicle Import Compatibility List, FMVSS/CMVSS compliance, compliance label, recall status, proof of ownership, RIV inspection requirements, duties/taxes, and provincial licensing rules before import.
+
+Escalate to title lead, controller, lienholder, CBP, CBSA, RIV, export broker, freight forwarder, or Canadian provincial authority if title, lien, export, import, tax/duty, or admissibility is unclear.
+
+============================================================
+END COMMON CLERK ANSWER
+============================================================
+
+============================================================
+RELATED FILES
+============================================================
+
+- us_cbp_exporting_motor_vehicle_notes.txt
+- us_cbp_importing_motor_vehicle_notes.txt
+- fl_tl_10_original_certificate_of_title_notes.txt
+- fl_tl_69_electronic_lien_and_title_elt_program_notes.txt
+- fl_title_ownership_and_transfer_law_notes.txt
+- fl_odometer_disclosure_notes.txt
+- validation_logic_map.txt
+- rejection_prevention_logic_map.txt
+
+============================================================
+END OF FILE
+============================================================

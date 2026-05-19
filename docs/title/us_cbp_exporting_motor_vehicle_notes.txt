@@ -1,0 +1,284 @@
+DOCUMENT: US_CBP_EXPORTING_MOTOR_VEHICLE_NOTES
+TITLE: U.S. Customs and Border Protection — Exporting a Motor Vehicle
+SOURCE: https://www.cbp.gov/trade/basic-import-export/export-docs/motor-vehicle
+SOURCE_TITLE: U.S. Customs and Border Protection — Exporting a Motor Vehicle
+SOURCE_STATUS: Official CBP source. Direct page fetch may be blocked, but official CBP search result confirms 72-hour document submission and vehicle presentation requirements.
+DOCUMENT_TYPE: Federal Vehicle Export / Customs / CBP / Out-of-Country Vehicle Export
+CATEGORY: EXPORTING VEHICLE FROM UNITED STATES / OUT OF COUNTRY VEHICLE EXPORT / CBP / CUSTOMS / 72 HOUR RULE / VEHICLE PRESENTATION / ORIGINAL TITLE / OWNERSHIP DOCUMENTS
+
+============================================================
+PURPOSE
+============================================================
+
+This file helps distinguish a vehicle being exported from the United States from normal Florida title/registration work.
+
+Use this file for questions like:
+
+- Customer is exporting a vehicle.
+- Customer is shipping a vehicle out of the country.
+- Vehicle is leaving the United States.
+- What does CBP need to export a vehicle?
+- Does CBP require documents before export?
+- Does the vehicle need to be presented to Customs?
+- What if the customer wants to export a vehicle bought from our dealership?
+- What does a dealership need to know before giving export guidance?
+
+============================================================
+WHEN TO USE THIS FILE
+============================================================
+
+Use this file when:
+
+IF user_question_mentions_exporting_vehicle = TRUE
+AND vehicle_is_leaving_United_States = TRUE
+THEN use_us_cbp_exporting_motor_vehicle_notes = TRUE
+
+Use this file when the question includes:
+
+- export vehicle
+- exporting a vehicle
+- shipping vehicle out of the country
+- vehicle leaving the United States
+- foreign buyer shipping vehicle
+- CBP export
+- customs export
+- 72 hours prior to export
+- present vehicle to Customs
+- port of export
+- original title for export
+- export documents
+
+Do NOT use this file as the main source when:
+
+- Vehicle is being imported into Florida.
+- Vehicle is coming from another U.S. state.
+- Customer is titling/registering in Florida only.
+- Customer is titling/registering in another U.S. state only.
+- Customer is asking normal duplicate title, transfer title, lien release, or plate questions.
+
+For importing a vehicle from another country into the United States, use:
+us_cbp_importing_motor_vehicle_notes.txt
+
+============================================================
+CORE DISTINCTION
+============================================================
+
+There are three different workflows:
+
+1. OUT-OF-STATE VEHICLE INTO FLORIDA
+
+This means the vehicle was already titled/registered in another U.S. state and is being titled/registered in Florida.
+
+Use Florida title/VIN/odometer/lien notes.
+
+2. OUT-OF-COUNTRY VEHICLE IMPORTED INTO THE UNITED STATES / FLORIDA
+
+This means the vehicle entered the United States from another country.
+
+Use CBP importing notes, EPA Form 3520-1, DOT Form HS-7, customs/federal compliance review, and Florida title notes.
+
+3. VEHICLE EXPORTED OUT OF THE UNITED STATES
+
+This means the vehicle is leaving the United States and CBP export requirements must be reviewed.
+
+Use this file.
+
+============================================================
+CBP SOURCE SUMMARY
+============================================================
+
+CBP guidance for exporting a motor vehicle requires export documentation review before the vehicle leaves the United States.
+
+Official CBP search result summary indicates:
+- Required documentation must be submitted to Customs at least 72 hours prior to export.
+- The vehicle must be presented to Customs at export.
+
+Because CBP export procedures can be port-specific and document-specific, dealership staff should verify requirements with CBP, the port of export, freight forwarder, shipping company, export broker, or title lead before advising that a vehicle is cleared for export.
+
+============================================================
+CBP EXPORT DOCUMENT LOGIC
+============================================================
+
+IF vehicle_exported_from_United_States = TRUE
+THEN CBP_export_document_review_required = TRUE
+
+IF vehicle_exported_from_United_States = TRUE
+THEN required_documentation_must_be_submitted_to_Customs_at_least_72_hours_prior_to_export_review_required = TRUE
+
+IF vehicle_exported_from_United_States = TRUE
+THEN vehicle_must_be_presented_to_Customs_at_export_review_required = TRUE
+
+IF export_documents_missing = TRUE
+THEN hold_and_escalate_before_export_guidance = TRUE
+
+IF port_of_export_requirements_unclear = TRUE
+THEN contact_CBP_port_of_export_or_export_broker_required = TRUE
+
+IF ownership_documents_unclear = TRUE
+THEN hold_and_escalate_before_export = TRUE
+
+IF lien_exists = TRUE
+THEN lienholder_export_authorization_or_lien_release_review_required = TRUE
+
+IF vehicle_title_is_electronic = TRUE
+THEN paper_title_or_export_ownership_document_path_review_required = TRUE
+
+IF vehicle_title_is_missing = TRUE
+THEN duplicate_or_replacement_title_review_required_before_export = TRUE
+
+IF customer_wants_to_export_without_title = TRUE
+THEN CBP_and_title_lead_review_required = TRUE
+
+============================================================
+DEALERSHIP EXPORT WORKFLOW
+============================================================
+
+When a customer is buying or has bought a vehicle from the dealership and plans to export it out of the United States:
+
+1. Clarify the scenario:
+   - Is the vehicle leaving the United States?
+   - What country is it going to?
+   - What port of export will be used?
+   - Is the vehicle titled yet?
+   - Is there an active lien?
+   - Is the title paper or electronic?
+   - Is a shipping company/export broker/freight forwarder involved?
+
+2. Review ownership documents:
+   - Original title or appropriate ownership document
+   - MCO/MSO if new and not yet titled
+   - Dealer reassignment if applicable
+   - Bill of sale / buyer’s order
+   - Odometer disclosure/statement if applicable
+   - Lien release or lienholder export authorization if financed or lien exists
+
+3. Review CBP export timing:
+   - Required documentation must be submitted to Customs at least 72 hours prior to export.
+   - Vehicle must be presented to Customs at export.
+   - Verify exact port/export requirements with CBP or export broker.
+
+4. Do not treat export as normal title/registration:
+   - Export is a federal Customs issue in addition to any Florida/dealership title paperwork.
+   - Do not tell customer the vehicle is export-ready unless CBP/export broker requirements are confirmed.
+
+5. Escalate:
+   - Title lead
+   - Controller if tax/sale structure is unclear
+   - Lienholder if financed
+   - CBP port of export
+   - Export broker/freight forwarder
+   - Shipping company
+
+============================================================
+FLORIDA TITLE / DEALERSHIP DOCUMENT REVIEW
+============================================================
+
+Export questions may still require Florida dealership title review.
+
+IF vehicle_sold_by_Florida_dealership = TRUE
+THEN dealership_sale_documents_required = TRUE
+
+IF new_vehicle_exported = TRUE
+THEN MCO_MSO_reassignment_review_required = TRUE
+
+IF used_vehicle_exported = TRUE
+THEN title_assignment_review_required = TRUE
+
+IF odometer_disclosure_applicable = TRUE
+THEN odometer_disclosure_statement_required = TRUE
+
+IF vehicle_has_lien = TRUE
+THEN lienholder_authority_lien_release_or_export_permission_required = TRUE
+
+IF title_is_electronic_or_ELT = TRUE
+THEN ELT_lienholder_and_paper_title_export_path_review_required = TRUE
+
+IF paperwork_signed_by_POA = TRUE
+THEN POA_authority_and_signer_driver_license_copy_review_required = TRUE
+
+============================================================
+REJECTION / DELAY RISKS
+============================================================
+
+High risk if:
+
+- User says “export” but destination/port/timing is not clarified.
+- Required documents are not submitted to Customs at least 72 hours before export.
+- Vehicle is not presented to Customs at export.
+- Original title or ownership documents are missing.
+- Title is electronic and export requires paper ownership evidence.
+- Active lien exists and lienholder authorization/release is missing.
+- Vehicle is financed and export permission is unclear.
+- MCO/MSO reassignment is incomplete.
+- Dealer reassignment is incomplete.
+- Odometer disclosure is missing when applicable.
+- Buyer/exporter identity or authority is unclear.
+- Export broker, shipping company, or port requirements are not verified.
+- Customer assumes dealership title paperwork alone clears CBP export.
+- Tax, sale structure, nonresident, or shipping/export documentation is unclear.
+
+============================================================
+ANSWER WORDING RULE
+============================================================
+
+For export-only questions, use this exact timing wording:
+
+Required export documentation must be submitted to CBP at least 72 hours prior to export, and the vehicle must be presented to CBP at the port of export.
+
+Do not say:
+
+"The vehicle must be presented to CBP at least 72 hours prior to export."
+
+The 72-hour timing applies to export documentation submission. The vehicle must be presented to CBP at the port of export.
+
+For export-only questions, do not default to EPA Form 3520-1 or DOT Form HS-7.
+
+Use this wording instead:
+
+CBP, the port of export, shipping company, or export broker may require additional documents depending on the export path.
+
+If a user asks:
+
+“Customer is exporting a vehicle”
+or
+“Customer is shipping a vehicle out of the country”
+
+Do not answer only as a normal Florida title transfer.
+
+Answer should include:
+
+- Exporting a vehicle from the United States requires CBP/export review.
+- Required documents must be submitted to Customs at least 72 hours prior to export.
+- The vehicle must be presented to Customs at export.
+- Ownership documents, title/MSO, lien status, and export broker/port requirements must be verified.
+- If there is an active lien, electronic title, missing title, or unclear ownership, hold and escalate before export.
+- Dealership paperwork does not replace CBP export clearance.
+
+Do not say:
+- “Just give the customer the title.”
+- “Just complete HSMV 82040.”
+- “This is only a Florida title issue.”
+
+============================================================
+COMMON CLERK ANSWER
+============================================================
+
+If a customer is exporting a vehicle out of the United States, do not treat it like a normal Florida title or registration question. CBP export requirements must be reviewed. Required documentation must be submitted to Customs at least 72 hours prior to export. The dealership should verify ownership documents, original title or MSO/MCO, dealer reassignment, bill of sale, odometer disclosure/statement if applicable, lienholder release or export authorization if financed, and any port/export broker requirements. If the title is electronic, missing, liened, or the export documents are unclear, hold and escalate to the title lead, lienholder, CBP port of export, export broker, or shipping company before advising the customer that the vehicle can be exported.
+
+Do not tell the customer that the vehicle itself must be presented 72 hours before export unless CBP, the port of export, or export broker specifically confirms that requirement for that port/export path.
+
+============================================================
+RELATED FILES
+============================================================
+
+- us_cbp_importing_motor_vehicle_notes.txt
+- fl_tl_10_original_certificate_of_title_notes.txt
+- fl_tl_69_electronic_lien_and_title_elt_program_notes.txt
+- fl_title_ownership_and_transfer_law_notes.txt
+- fl_odometer_disclosure_notes.txt
+- validation_logic_map.txt
+- rejection_prevention_logic_map.txt
+
+============================================================
+END OF FILE
+============================================================

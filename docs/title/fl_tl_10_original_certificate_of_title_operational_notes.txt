@@ -20,6 +20,34 @@ This procedure governs:
 
 This is a CORE dealership titling procedure.
 
+============================================================
+IMPORTANT WORDING RULE — IMPORTING INTO FLORIDA
+============================================================
+
+When a user says “importing a vehicle into Florida,” first distinguish whether the vehicle is:
+
+1. Coming into Florida from another U.S. state, or
+2. Imported into the United States from another country.
+
+For another U.S. state:
+Use the normal Florida out-of-state title workflow:
+- Properly assigned out-of-state title or MCO/MSO
+- HSMV 82040
+- VIN verification / HSMV 82042 if required
+- Odometer disclosure/statement if applicable
+- Lien release or lienholder information if financed
+- Florida insurance if registration is requested
+
+For another country:
+Do not treat the transaction as a normal U.S. out-of-state title until federal import documents are reviewed.
+Use the CBP importing vehicle notes.
+Review customs/CBP documents, EPA Form 3520-1, DOT Form HS-7, foreign ownership documents, federal emissions/safety compliance, VIN consistency, and translation needs before Florida title submission.
+
+Answer should say:
+“First confirm whether this is a U.S. out-of-state vehicle coming into Florida or an out-of-country import.”
+
+Escalate out-of-country imports before submission if customs, EPA, DOT, ownership, VIN, lien, or compliance documents are unclear.
+
 ==================================================
 CORE TITLE RULE
 ==================================================

@@ -1,0 +1,436 @@
+DOCUMENT: IMPORT_EXPORT_VEHICLE_LOGIC_MAP
+TITLE: Import / Export / Canada Vehicle Workflow Logic Map
+DOCUMENT_TYPE: Logic Map
+CATEGORY: VEHICLE IMPORT / VEHICLE EXPORT / CANADIAN CUSTOMER / OUT-OF-COUNTRY VEHICLE / OUT-OF-STATE INTO FLORIDA / CBP / CBSA / RIV / FLORIDA TITLE
+
+============================================================
+PURPOSE
+============================================================
+
+This logic map helps the AI distinguish between different meanings of “importing” and “exporting” vehicles.
+
+Use this file when the user asks about:
+
+- Importing a vehicle into Florida
+- Importing a vehicle from another country
+- Foreign title
+- Foreign vehicle
+- Out-of-country vehicle
+- Customs documents
+- CBP
+- EPA Form 3520-1
+- DOT Form HS-7
+- Exporting a vehicle
+- Shipping a vehicle out of the United States
+- Canadian customer buying a vehicle
+- Customer taking vehicle to Canada
+- Importing vehicle into Canada
+- CBSA
+- Transport Canada
+- RIV
+
+============================================================
+CORE DECISION TREE
+============================================================
+
+IF user_question_mentions_importing_vehicle = TRUE
+THEN first_determine_origin_required = TRUE
+
+IF user_question_mentions_importing_vehicle = TRUE
+THEN ask_or_answer_with_distinction_between_US_out_of_state_and_out_of_country = TRUE
+
+There are four major workflows:
+
+1. Vehicle coming into Florida from another U.S. state
+2. Vehicle imported into Florida / United States from another country
+3. Vehicle exported out of the United States
+4. Canadian customer buying vehicle and taking/importing it into Canada
+
+============================================================
+WORKFLOW 1 — U.S. OUT-OF-STATE VEHICLE INTO FLORIDA
+============================================================
+
+Use this workflow when:
+
+IF vehicle_origin_is_another_US_state = TRUE
+AND destination_state = "Florida"
+THEN use_Florida_out_of_state_title_workflow = TRUE
+
+Use this workflow when the question says:
+
+- out-of-state title into Florida
+- customer moved to Florida
+- title an out-of-state vehicle in Florida
+- register an out-of-state vehicle in Florida
+- vehicle coming into Florida from Georgia
+- vehicle coming into Florida from another state
+- customer has out-of-state title and wants Florida title
+
+Primary source files:
+
+- fl_tl_10_original_certificate_of_title_operational_notes.txt
+- fl_odometer_disclosure_notes.txt
+- VIN verification / HSMV 82042 notes if available
+- fl_tl_69_electronic_lien_and_title_elt_program_notes.txt if lien/ELT issue exists
+- FEES-01 title fee notes if cost is asked
+
+Expected answer should include:
+
+- Properly assigned out-of-state title or MCO/MSO
+- HSMV 82040 title application
+- VIN verification / HSMV 82042 if required
+- Odometer disclosure/statement if applicable
+- Lien release or lienholder information if financed
+- Florida insurance if registration or plate issuance is requested
+- Florida title/registration fees and taxes if asked
+- Escalation for VIN mismatch, missing ownership chain, lien issues, odometer conflicts, altered documents, or fraud concerns
+
+Do NOT use as primary source:
+
+- us_cbp_importing_motor_vehicle_notes.txt
+- us_cbp_exporting_motor_vehicle_notes.txt
+- canada_cbsa_importing_vehicle_notes.txt
+- out-of-state customer destination-state notes such as Georgia, California, Texas, etc.
+
+============================================================
+WORKFLOW 2 — OUT-OF-COUNTRY VEHICLE IMPORTED INTO U.S. / FLORIDA
+============================================================
+
+Use this workflow when:
+
+IF vehicle_origin_country_is_not_United_States = TRUE
+AND vehicle_is_entering_United_States_or_Florida = TRUE
+THEN use_CBP_import_workflow = TRUE
+
+Use this workflow when the question says:
+
+- imported from another country
+- out of country
+- foreign vehicle
+- foreign title
+- customs
+- CBP
+- EPA Form 3520-1
+- DOT Form HS-7
+- imported from overseas
+- imported from Canada into Florida
+- imported from Mexico into Florida
+- vehicle not manufactured for U.S. market
+- nonconforming vehicle
+
+Primary source files:
+
+- us_cbp_importing_motor_vehicle_notes.txt
+- fl_tl_10_original_certificate_of_title_operational_notes.txt
+- fl_odometer_disclosure_notes.txt
+- fl_tl_69_electronic_lien_and_title_elt_program_notes.txt if lien/ELT issue exists
+
+Expected answer should include:
+
+- First confirm the vehicle came from another country, not just another U.S. state.
+- Federal import/customs review is required.
+- CBP/customs entry documents must be reviewed.
+- EPA Form 3520-1 may be required.
+- DOT Form HS-7 may be required.
+- Foreign title/registration/ownership documents must be reviewed.
+- Federal emissions and safety compliance must be clear.
+- VIN must match all foreign/customs/title documents.
+- English translation may be needed if foreign documents are not in English.
+- Florida title/registration should not proceed like a normal U.S. out-of-state title until federal import compliance is clear.
+- Then Florida title workflow applies: HSMV 82040, VIN verification, odometer disclosure if applicable, lienholder documents if financed, Florida insurance if registration is requested.
+
+Escalate if:
+
+- CBP documents missing
+- EPA Form 3520-1 missing or unclear
+- DOT Form HS-7 missing or unclear
+- Foreign ownership documents unclear
+- VIN mismatch
+- Nonconforming vehicle
+- Federal safety/emissions compliance unclear
+- Foreign language documents not translated
+- Lienholder/export/import authority unclear
+
+============================================================
+WORKFLOW 3 — VEHICLE EXPORTED OUT OF THE UNITED STATES
+============================================================
+
+For export-only questions, do not default to EPA Form 3520-1 or DOT Form HS-7.
+
+Use this wording instead:
+
+CBP, the port of export, shipping company, or export broker may require additional documents depending on the export path.
+
+Use this workflow when:
+
+IF vehicle_is_leaving_United_States = TRUE
+THEN use_CBP_export_workflow = TRUE
+
+Use this workflow when the question says:
+
+- export vehicle
+- exporting a vehicle
+- shipping vehicle out of the country
+- vehicle leaving the United States
+- foreign buyer shipping vehicle
+- CBP export
+- customs export
+- 72 hours prior to export
+- present vehicle to Customs
+- port of export
+- export documents
+
+Primary source files:
+
+- us_cbp_exporting_motor_vehicle_notes.txt
+- fl_tl_10_original_certificate_of_title_operational_notes.txt
+- fl_tl_69_electronic_lien_and_title_elt_program_notes.txt if lien/ELT issue exists
+- fl_odometer_disclosure_notes.txt if applicable
+
+Expected answer should include:
+
+- Exporting a vehicle from the United States requires CBP/export review.
+- Required documents must be submitted to Customs at least 72 hours prior to export.
+- Ownership documents, title/MSO, dealer reassignment, bill of sale, lien status, and export broker/port requirements must be verified.
+- If there is an active lien, electronic title, missing title, or unclear ownership, hold and escalate.
+- Dealership title paperwork does not replace CBP export clearance.
+
+Escalate if:
+
+- Original title/MSO missing
+- Title is electronic and export requires paper ownership evidence
+- Active lien exists
+- Lienholder authorization/release unclear
+- Port of export requirements unclear
+- Export broker/shipping company instructions unclear
+- Customer expects dealership paperwork alone to clear export
+
+============================================================
+WORKFLOW 4 — CANADIAN CUSTOMER / VEHICLE IMPORTED INTO CANADA
+============================================================
+
+Use this workflow when:
+
+IF customer_is_Canadian = TRUE
+OR destination_country = "Canada"
+OR vehicle_is_being_imported_into_Canada = TRUE
+THEN use_Canada_CBSA_import_workflow = TRUE
+
+Use this workflow when the question says:
+
+- Canadian customer
+- customer taking vehicle to Canada
+- export to Canada
+- import into Canada
+- CBSA
+- Transport Canada
+- RIV
+- Registrar of Imported Vehicles
+- CMVSS
+- Canadian import
+- Canada vehicle requirements
+
+Primary source files:
+
+- canada_cbsa_importing_vehicle_notes.txt
+- us_cbp_exporting_motor_vehicle_notes.txt
+- fl_tl_10_original_certificate_of_title_operational_notes.txt
+- fl_odometer_disclosure_notes.txt
+- fl_tl_69_electronic_lien_and_title_elt_program_notes.txt if lien/ELT issue exists
+
+Expected answer should include:
+
+- This is not only a Florida title/registration issue.
+- This involves both U.S. export review and Canadian import review.
+- U.S. CBP export requirements should be reviewed because the vehicle is leaving the United States.
+- Canadian CBSA / Transport Canada / RIV requirements must be reviewed because the vehicle is entering Canada.
+- Not every U.S. vehicle is admissible into Canada.
+- RIV may apply for U.S.-specification vehicles sold at retail in the United States.
+- Proof of ownership such as original U.S. title or MSO/MCO plus bill of sale may be required.
+- Customer/importer must verify admissibility, recall status, compliance label, RIV, and provincial licensing requirements before import.
+- Prepare Florida dealership documents: MSO/MCO or properly assigned title, buyer’s order/bill of sale, odometer disclosure/statement if applicable, lienholder information if financed, and dealership-required POA/wet-signature documents if applicable.
+
+Escalate if:
+
+- Vehicle admissibility is unclear
+- RIV eligibility unclear
+- Vehicle Import Compatibility List not reviewed
+- FMVSS/CMVSS compliance unclear
+- Compliance label missing
+- Recall status unclear
+- Title/MSO/bill of sale missing
+- Vehicle is financed/lienholder authorization unclear
+- Duties/taxes/GST unclear
+- Provincial licensing/insurance unclear
+- U.S. export broker/CBP process unclear
+
+============================================================
+AMBIGUOUS IMPORT QUESTION RULE
+============================================================
+
+If the user says only:
+
+“Customer is importing a vehicle into Florida”
+
+without saying whether it is from another U.S. state or another country, answer with the distinction first.
+
+The answer should say:
+
+“First confirm whether the vehicle is coming from another U.S. state or was imported from another country.”
+
+Then provide both pathways briefly:
+
+U.S. out-of-state into Florida:
+- Out-of-state title or MCO/MSO
+- HSMV 82040
+- VIN verification / HSMV 82042 if required
+- Odometer disclosure if applicable
+- Lienholder documents if financed
+- Florida insurance if registering
+
+Out-of-country import:
+- CBP/customs documents
+- EPA Form 3520-1
+- DOT Form HS-7
+- Foreign title/ownership documents
+- Federal emissions/safety compliance
+- VIN consistency
+- Translation if needed
+- Then Florida title workflow after federal compliance is clear
+
+Do not answer as if ambiguous “importing” only means a normal out-of-state title.
+
+Do not answer as if ambiguous “importing” only means a foreign import.
+
+============================================================
+SOURCE ROUTING RULES
+============================================================
+
+IF question_mentions_Canada_or_Canadian = TRUE
+THEN prioritize canada_cbsa_importing_vehicle_notes.txt
+
+IF question_mentions_Canada_or_Canadian = TRUE
+THEN also_consider us_cbp_exporting_motor_vehicle_notes.txt
+
+IF question_mentions_export_or_shipping_out_of_country = TRUE
+THEN prioritize us_cbp_exporting_motor_vehicle_notes.txt
+
+IF question_mentions_foreign_import_or_customs_or_CBP_or_EPA_or_DOT_or_HS7 = TRUE
+THEN prioritize us_cbp_importing_motor_vehicle_notes.txt
+
+IF question_mentions_out_of_state_vehicle_into_Florida = TRUE
+THEN prioritize fl_tl_10_original_certificate_of_title_operational_notes.txt
+
+IF question_mentions_importing_into_Florida_but_origin_unclear = TRUE
+THEN use import_export_vehicle_logic_map.txt
+AND use fl_tl_10_original_certificate_of_title_operational_notes.txt
+AND consider us_cbp_importing_motor_vehicle_notes.txt for out-of-country distinction
+
+IF question_is_about_customer_titling_in_another_US_state = TRUE
+THEN use out_of_state_customer_title_notes/state_customer_titling_requirements_notes
+
+IF question_is_about_vehicle_coming_into_Florida = TRUE
+THEN do_not_use_destination_state_customer_titling_notes_as_primary_sources
+
+============================================================
+DO NOT CONFUSE THESE
+============================================================
+
+Do not confuse:
+
+- Customer wants title in Georgia
+WITH
+- Customer has Georgia title and wants Florida title
+
+Do not confuse:
+
+- Customer is importing vehicle into Florida from another U.S. state
+WITH
+- Customer is importing vehicle into Florida from another country
+
+Do not confuse:
+
+- Canadian customer buying and taking vehicle to Canada
+WITH
+- Customer bringing Canadian vehicle into Florida
+
+Do not confuse:
+
+- Exporting vehicle out of the United States
+WITH
+- Out-of-state customer titling in another U.S. state
+
+============================================================
+COMMON ANSWER — AMBIGUOUS IMPORT INTO FLORIDA
+============================================================
+
+If a customer is “importing a vehicle into Florida,” first confirm whether the vehicle is coming from another U.S. state or was imported from another country. If it is coming from another U.S. state, use the normal Florida out-of-state title workflow: properly assigned out-of-state title or MCO/MSO, HSMV 82040, VIN verification/HSMV 82042 if required, odometer disclosure/statement if applicable, lienholder documents if financed, and Florida insurance if registration is requested. If the vehicle was imported from another country, do not treat it like a normal U.S. out-of-state title until federal import documents are reviewed. Review CBP/customs documents, EPA Form 3520-1, DOT Form HS-7, foreign ownership documents, federal emissions/safety compliance, VIN consistency, and translation needs before Florida title submission. Escalate if origin, customs, EPA, DOT, ownership, VIN, lien, or compliance documents are unclear.
+
+============================================================
+HARD WORDING RULE — CANADIAN CUSTOMER
+============================================================
+
+For Canadian customer export-to-Canada answers, NEVER say:
+
+- “Process the Florida title application as usual.”
+- “Complete Florida title application HSMV 82040.”
+- “The customer must present the vehicle and documents to CBP at least 72 hours prior to export.”
+- “The vehicle must be presented to CBP at least 72 hours prior to export.”
+
+Use this wording instead:
+
+- Prepare the dealership ownership/export package.
+- Do not default to Florida registration or plate issuance unless the customer is actually registering the vehicle in Florida.
+- Required export documentation must be submitted to CBP at least 72 hours prior to export.
+- The vehicle must be presented to CBP at the port of export.
+- The 72-hour timing applies to export documentation submission, not vehicle presentation.
+
+============================================================
+COMMON ANSWER — CANADIAN CUSTOMER
+============================================================
+
+For a Canadian customer buying from a Florida dealership and taking or shipping the vehicle to Canada, do not treat it as only a normal Florida title or registration transaction. Prepare the dealership ownership/export package. Do not default to Florida registration or plate issuance unless the customer is actually registering the vehicle in Florida.
+
+The dealership package should include the MSO/MCO for a new vehicle or properly assigned title for a used vehicle, buyer’s order/bill of sale, odometer disclosure/statement if applicable, lienholder information or lien release if financed, and any dealership-required POA/wet-signature documents if applicable.
+
+Because the vehicle is leaving the United States, U.S. CBP export requirements should be reviewed. Required export documentation must be submitted to CBP at least 72 hours prior to export, and the vehicle must be presented to CBP at the port of export.
+
+Because the vehicle is entering Canada, CBSA / Transport Canada / RIV requirements must also be reviewed. Not every U.S. vehicle is admissible into Canada. The customer/importer should verify the Vehicle Import Compatibility List, FMVSS/CMVSS compliance, compliance label, recall status, proof of ownership, RIV inspection requirements, duties/taxes, and provincial licensing rules before import.
+
+Escalate to title lead, controller, lienholder, CBP, CBSA, RIV, export broker, freight forwarder, or Canadian provincial authority if title, lien, export, import, tax/duty, or admissibility is unclear.
+
+============================================================
+COMMON ANSWER — EXPORT OUT OF UNITED STATES
+============================================================
+
+If a customer is exporting a vehicle out of the United States, do not treat it as only a Florida title question. CBP export requirements must be reviewed.
+
+Required export documentation must be submitted to CBP at least 72 hours prior to export.
+
+The vehicle must be presented to CBP at the port of export.
+
+Do not say the vehicle must be presented to CBP at least 72 hours before export. The 72-hour timing applies to export document submission, not vehicle presentation.
+
+CBP, the port of export, shipping company, or export broker may require additional documents depending on the export path.
+
+Verify original title or MSO/MCO, dealer reassignment, bill of sale, odometer disclosure/statement if applicable, lienholder release or export authorization if financed, and port/export broker requirements.
+
+Escalate if the title is electronic, missing, liened, or if export documents or port requirements are unclear.
+
+============================================================
+RELATED FILES
+============================================================
+
+- us_cbp_importing_motor_vehicle_notes.txt
+- us_cbp_exporting_motor_vehicle_notes.txt
+- canada_cbsa_importing_vehicle_notes.txt
+- fl_tl_10_original_certificate_of_title_operational_notes.txt
+- fl_tl_69_electronic_lien_and_title_elt_program_notes.txt
+- fl_title_ownership_and_transfer_law_notes.txt
+- fl_odometer_disclosure_notes.txt
+- validation_logic_map.txt
+- rejection_prevention_logic_map.txt
+
+============================================================
+END OF FILE
+============================================================

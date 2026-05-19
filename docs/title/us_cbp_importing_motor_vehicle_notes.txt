@@ -1,0 +1,273 @@
+DOCUMENT: US_CBP_IMPORTING_MOTOR_VEHICLE_NOTES
+TITLE: U.S. Customs and Border Protection — Importing a Motor Vehicle
+SOURCE: https://www.cbp.gov/trade/basic-import-export/importing-car
+SOURCE_TITLE: U.S. Customs and Border Protection — Importing a Motor Vehicle
+SOURCE_STATUS: Official CBP source. Direct page fetch may be blocked, but source is official CBP.
+DOCUMENT_TYPE: Federal Vehicle Import / Customs / EPA / DOT / Out-of-Country Vehicle Import
+CATEGORY: IMPORTING VEHICLE INTO UNITED STATES / OUT OF COUNTRY VEHICLE / FOREIGN VEHICLE / CBP / EPA 3520-1 / DOT HS-7 / CUSTOMS ENTRY / FEDERAL COMPLIANCE
+
+============================================================
+PURPOSE
+============================================================
+
+This file helps distinguish a vehicle imported into Florida from another country from a vehicle brought into Florida from another U.S. state.
+
+Use this file for questions like:
+
+- Customer is importing a vehicle into Florida from another country.
+- Customer has a foreign title.
+- Vehicle is coming from outside the United States.
+- What customs documents are needed to title an imported vehicle?
+- What is EPA Form 3520-1?
+- What is DOT Form HS-7?
+- What do we need for an out-of-country vehicle?
+- Can we title a vehicle imported from another country in Florida?
+
+============================================================
+WHEN TO USE THIS FILE
+============================================================
+
+Use this file when:
+
+IF user_question_mentions_importing_vehicle = TRUE
+AND vehicle_origin_country_is_not_United_States = TRUE
+THEN use_us_cbp_importing_motor_vehicle_notes = TRUE
+
+Use this file when the question includes:
+
+- imported from another country
+- out of country
+- foreign vehicle
+- foreign title
+- customs
+- CBP
+- EPA form
+- DOT form
+- HS-7
+- 3520-1
+- port of entry
+- import documents
+- nonconforming vehicle
+- vehicle not manufactured for U.S. market
+
+Do NOT use this file as the main source when:
+
+- Vehicle is only coming from another U.S. state.
+- Customer has a normal out-of-state U.S. title.
+- Customer moved from another U.S. state to Florida.
+- Question is only about VIN verification for an out-of-state U.S. title.
+
+For normal U.S. out-of-state-to-Florida title work, use Florida TL/original title/VIN verification notes.
+
+============================================================
+CORE DISTINCTION
+============================================================
+
+There are two different workflows:
+
+1. OUT-OF-STATE VEHICLE INTO FLORIDA
+
+This means the vehicle was already titled/registered in another U.S. state.
+
+Typical Florida title workflow may involve:
+- Original out-of-state title
+- HSMV 82040
+- VIN verification / HSMV 82042
+- Odometer disclosure/statement if applicable
+- Lien release or lienholder information if applicable
+- Florida insurance if registration is requested
+- Florida fees/taxes
+
+2. OUT-OF-COUNTRY VEHICLE IMPORTED INTO THE UNITED STATES / FLORIDA
+
+This means the vehicle entered the United States from another country.
+
+This requires federal import review before Florida title/registration can safely proceed.
+
+Federal import review may involve:
+- CBP entry/import documents
+- EPA Form 3520-1
+- DOT Form HS-7
+- Proof vehicle complies with U.S. EPA emissions requirements
+- Proof vehicle complies with U.S. DOT / FMVSS safety requirements
+- Foreign ownership/title documents
+- Customs release/entry paperwork
+- English translations if documents are not in English
+- Registered Importer / Independent Commercial Importer review if nonconforming
+- Escalation before Florida title submission
+
+============================================================
+CBP SOURCE SUMMARY
+============================================================
+
+U.S. Customs and Border Protection guidance for importing a motor vehicle states that parties responsible for imported vehicles must submit proper documents to CBP at the time entry is made.
+
+The key federal forms include:
+
+- EPA Form 3520-1
+- DOT Form HS-7
+
+These forms relate to federal emissions and safety compliance.
+
+A vehicle imported from outside the United States should not be treated like a normal out-of-state U.S. title transaction until import/customs/EPA/DOT compliance documents are reviewed.
+
+============================================================
+FEDERAL IMPORT DOCUMENT LOGIC
+============================================================
+
+IF vehicle_imported_from_outside_United_States = TRUE
+THEN CBP_import_document_review_required = TRUE
+
+IF vehicle_imported_from_outside_United_States = TRUE
+THEN EPA_Form_3520_1_required_review = TRUE
+
+IF vehicle_imported_from_outside_United_States = TRUE
+THEN DOT_Form_HS_7_required_review = TRUE
+
+IF vehicle_imported_from_outside_United_States = TRUE
+THEN federal_EPA_emissions_compliance_review_required = TRUE
+
+IF vehicle_imported_from_outside_United_States = TRUE
+THEN federal_DOT_FMVSS_safety_compliance_review_required = TRUE
+
+IF foreign_title_or_foreign_registration_presented = TRUE
+THEN foreign_ownership_document_review_required = TRUE
+
+IF foreign_document_not_in_English = TRUE
+THEN certified_English_translation_review_required = TRUE
+
+IF CBP_entry_documents_missing = TRUE
+THEN hold_and_escalate_before_Florida_title_submission = TRUE
+
+IF EPA_3520_1_missing = TRUE
+THEN hold_and_escalate_before_Florida_title_submission = TRUE
+
+IF DOT_HS_7_missing = TRUE
+THEN hold_and_escalate_before_Florida_title_submission = TRUE
+
+IF federal_compliance_unclear = TRUE
+THEN hold_and_escalate_before_Florida_title_submission = TRUE
+
+============================================================
+NONCONFORMING VEHICLE LOGIC
+============================================================
+
+IF vehicle_not_manufactured_for_US_market = TRUE
+THEN nonconforming_vehicle_review_required = TRUE
+
+IF vehicle_does_not_meet_EPA_or_DOT_requirements = TRUE
+THEN Florida_title_registration_should_not_proceed_until_federal_compliance_resolved = TRUE
+
+IF vehicle_requires_registered_importer_or_independent_commercial_importer = TRUE
+THEN escalation_required_before_title_submission = TRUE
+
+IF vehicle_has_customs_release_but_EPA_or_DOT_compliance_unclear = TRUE
+THEN escalation_required_before_title_submission = TRUE
+
+============================================================
+FLORIDA DEALERSHIP WORKFLOW — OUT-OF-COUNTRY IMPORT
+============================================================
+
+When a customer is importing a vehicle into Florida from another country:
+
+1. Determine origin:
+   - Ask whether the vehicle came from another U.S. state or another country.
+   - If another country, use CBP/federal import workflow before normal Florida title workflow.
+
+2. Review federal import documents:
+   - CBP entry/import documents
+   - EPA Form 3520-1
+   - DOT Form HS-7
+   - Foreign title/registration/ownership documents
+   - Customs release documents
+   - English translations if applicable
+   - Proof of federal safety/emissions compliance if required
+
+3. Review Florida title documents:
+   - HSMV 82040 title application
+   - VIN verification / HSMV 82042 if required
+   - Odometer disclosure/statement if applicable
+   - Lienholder documents if financed
+   - Florida insurance if registration/plate issuance is requested
+   - Florida fees/taxes
+
+4. Do not submit as a normal out-of-state title transaction until:
+   - Federal import documents are reviewed
+   - EPA/DOT compliance is clear
+   - Ownership chain is clear
+   - VIN and document chain match
+   - Any foreign-language documents are translated if required
+   - Title lead/controller/tax collector/vendor confirms path
+
+============================================================
+REJECTION / DELAY RISKS
+============================================================
+
+High risk if:
+
+- User says “importing” but origin country/state is not clarified.
+- Vehicle came from another country and app treats it like a normal U.S. out-of-state title.
+- EPA Form 3520-1 is missing.
+- DOT Form HS-7 is missing.
+- CBP/customs entry documents are missing.
+- Foreign ownership/title documents are incomplete.
+- Foreign documents are not in English and no translation is provided.
+- VIN on foreign/customs documents does not match vehicle.
+- Vehicle is nonconforming or not manufactured for U.S. market.
+- EPA/DOT/FMVSS compliance is unclear.
+- Customer expects Florida title/registration before federal import compliance is resolved.
+- Lienholder/financing documents are unclear.
+- Tax/customs/title handling is unclear.
+
+============================================================
+ANSWER WORDING RULE
+============================================================
+
+If a user asks:
+
+“Customer is importing a vehicle into Florida”
+
+Do not assume it is only an out-of-state U.S. title.
+
+First distinguish:
+
+- Is the vehicle coming from another U.S. state?
+- Or was it imported from another country?
+
+If imported from another country, answer should include:
+
+- Federal import/customs review is required.
+- CBP import documents must be reviewed.
+- EPA Form 3520-1 and DOT Form HS-7 may be required.
+- Foreign title/ownership documents must be reviewed.
+- Florida title/registration cannot be treated like a normal out-of-state title until federal import compliance is clear.
+- Escalate before submission if customs, EPA, DOT, VIN, ownership, or foreign-document issues are unclear.
+
+Do not say only:
+
+- “Use HSMV 82040 and VIN verification.”
+
+That is incomplete for an out-of-country import.
+
+============================================================
+COMMON CLERK ANSWER
+============================================================
+
+If a customer is importing a vehicle into Florida, first determine whether the vehicle is coming from another U.S. state or from another country. If it is from another U.S. state, use the normal Florida out-of-state title workflow: properly assigned out-of-state title or MCO, HSMV 82040, VIN verification/HSMV 82042 if required, odometer disclosure/statement if applicable, lienholder documents if financed, and Florida insurance if registration is requested.
+
+If the vehicle is imported from another country, do not treat it like a normal out-of-state U.S. title. Review CBP/customs entry documents, EPA Form 3520-1, DOT Form HS-7, foreign title/ownership documents, federal emissions/safety compliance, VIN consistency, and English translation needs before Florida title submission. Hold and escalate to title lead, controller, tax collector, CBP/import specialist, or FLHSMV if customs, EPA, DOT, ownership, VIN, or compliance documents are missing or unclear.
+
+============================================================
+RELATED FILES
+============================================================
+
+- fl_tl_10_original_certificate_of_title_notes.txt
+- fl_tl_69_electronic_lien_and_title_elt_program_notes.txt
+- fl_title_ownership_and_transfer_law_notes.txt
+- fl_odometer_disclosure_notes.txt
+- validation_logic_map.txt
+- rejection_prevention_logic_map.txt
+
+============================================================
+END OF FILE
+============================================================
