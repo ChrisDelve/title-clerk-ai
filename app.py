@@ -522,6 +522,98 @@ def search_documents(query):
         doc_name_lower = doc["name"].lower()
         doc_path_lower = doc.get("path", "").lower()
 
+        # ------------------------------------------------------------
+        # GOLF CART / LOW-SPEED VEHICLE ROUTING
+        # ------------------------------------------------------------
+
+        golf_cart_keywords = [
+            "golf cart",
+            "golfcart",
+            "low speed vehicle",
+            "low-speed vehicle",
+            "lsv",
+            "converted golf cart",
+            "street legal golf cart",
+            "street-legal golf cart",
+            "hsmv 86064",
+            "hsmv 84490",
+        ]
+
+        golf_cart_question = any(phrase in query_lower for phrase in golf_cart_keywords)
+
+        if golf_cart_question:
+            if "fl_golf_cart_low_speed_vehicle_lsv_notes" in doc_name_lower:
+                score += 300
+
+            if "import_export_vehicle_logic_map" in doc_name_lower:
+                score -= 150
+
+            if "us_cbp_" in doc_name_lower:
+                score -= 200
+
+            if "canada_cbsa" in doc_name_lower:
+                score -= 200
+
+            if "customer_titling_requirements_notes" in doc_name_lower:
+                score -= 150
+
+            if "out_of_state_customer_title_notes" in doc_path_lower:
+                score -= 150
+
+            if "mississippi" in doc_name_lower or "west_virginia" in doc_name_lower:
+                score -= 200
+            
+        if (
+            "off highway" not in query_lower
+            and "off-highway" not in query_lower
+            and "ohv" not in query_lower
+            and "atv" not in query_lower
+            and "dirt bike" not in query_lower
+            and "all-terrain" not in query_lower
+            and (
+                "off_highway" in doc_name_lower
+                or "ohv" in doc_name_lower
+            )
+        ):
+            continue
+
+        if (
+            "export" not in query_lower
+            and "exporting" not in query_lower
+            and "ship out" not in query_lower
+            and "shipping out" not in query_lower
+            and "out of the country" not in query_lower
+            and "leaving the united states" not in query_lower
+            and "leaving the u.s." not in query_lower
+            and "port of export" not in query_lower
+            and "cbp" not in query_lower
+            and "customs" not in query_lower
+            and "canada" not in query_lower
+            and "canadian" not in query_lower
+            and "us_cbp_exporting_motor_vehicle_notes" in doc_name_lower
+        ):
+            continue
+
+        if (
+            "power of attorney" not in query_lower
+            and "poa" not in query_lower
+            and (
+                "power_of_attorney" in doc_name_lower
+                or "tl_02" in doc_name_lower
+            )
+        ):
+            continue
+
+        if (
+            "canada" not in query_lower
+            and "canadian" not in query_lower
+            and "cbsa" not in query_lower
+            and "riv" not in query_lower
+            and "transport canada" not in query_lower
+            and "canada_cbsa" in doc_name_lower
+        ):
+            continue
+
         if "trust" not in query_lower and "trust" in doc_name_lower:
             continue
 
@@ -546,6 +638,23 @@ def search_documents(query):
             )
         ):
             continue
+
+        fee_question_keywords = [
+            "fee",
+            "fees",
+            "cost",
+            "how much",
+            "price",
+            "charge",
+            "pay",
+            "amount",
+        ]
+
+        fee_question = any(phrase in query_lower for phrase in fee_question_keywords)
+
+        if not fee_question:
+            if "fees" in doc_path_lower or "fees" in doc_name_lower or "fees-" in doc_name_lower or "fees_" in doc_name_lower:
+                score -= 100
 
         if (
             "divorce" not in query_lower
@@ -2009,6 +2118,57 @@ Instead say:
 - Because the vehicle is entering Canada, CBSA / Transport Canada / RIV requirements must be reviewed.
 - Not every U.S. vehicle is admissible into Canada.
 - Escalate to title lead, controller, lienholder, CBP, CBSA, RIV, export broker, freight forwarder, or Canadian provincial authority if title, lien, export, import, tax/duty, or admissibility is unclear.
+
+GOLF CART / LOW-SPEED VEHICLE HARD RULE:
+If the user asks about a golf cart, low-speed vehicle, LSV, converted golf cart, street-legal golf cart, HSMV 86064, or HSMV 84490:
+
+Do NOT answer as if all golf carts are title/register eligible.
+
+Always start by distinguishing:
+- Standard golf cart
+- Existing low-speed vehicle / LSV
+- Golf cart converted to a low-speed vehicle
+
+Use this wording:
+- A standard golf cart is not the same as an LSV.
+- A standard golf cart is not processed like a normal titled/registered motor vehicle.
+- An LSV or converted golf cart may require title/registration if it meets LSV requirements.
+- For a converted golf cart, Regional Office inspection and VIN assignment are required before title/registration.
+
+Do NOT soften converted golf cart VIN assignment by saying:
+- “if VIN assignment is needed”
+- “VIN verification or assignment if applicable”
+- “coordinate with Regional Office if needed”
+
+For converted golf carts, say clearly:
+- Regional Office inspection and VIN assignment are required before title/registration.
+
+Escalate if classification, top speed, VIN, street-legal status, HSMV 86064, HSMV 84490, conversion receipts, certified weight slip, or insurance is unclear.
+
+CALIFORNIA CUSTOMER TITLING HARD RULE:
+If the user asks about a customer titling or registering a vehicle in California, California customer, title in California, register in California, or Florida dealer sale to California customer:
+
+Use these California form labels exactly:
+- REG 343 = Application for Title or Registration
+- REG 227 = Application for Replacement or Transfer of Title
+- REG 262 = Vehicle/Vessel Transfer and Reassignment
+- REG 256 = Statement of Facts
+- REG 139 = Vehicle Emission System Statement
+- REG 4008 = Declaration of Gross Vehicle Weight / Combined Gross Vehicle Weight, commercial vehicles only
+
+Do NOT say:
+- REG 139 is a Power of Attorney
+- REG 256 is a Power of Attorney
+- REG 227 is a Statement of Facts
+- REG 4008 is required for non-commercial vehicles
+
+If power of attorney is needed, describe it generically as power of attorney documentation required by dealership/vendor workflow. Do not assign a California REG number to power of attorney unless the source explicitly supports it.
+
+For odometer wording, say:
+- Odometer disclosure/statement is required if applicable based on the vehicle’s model year and exemption status.
+
+Do NOT say:
+- California requires odometer disclosure only for vehicles less than 10 years old.
 
 Only mention HSMV 82040 if the customer is actually applying for Florida title/registration.
 

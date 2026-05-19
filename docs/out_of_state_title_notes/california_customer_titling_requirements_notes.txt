@@ -3,7 +3,7 @@ TITLE: California Customer Titling / Registration Requirements for Out-of-State 
 STATE: California
 SOURCE: https://www.dmv.ca.gov/portal/vehicle-registration/new-registration/registering-a-vehicle-purchased-from-a-dealer/
 DOCUMENT_TYPE: Out-of-State Customer Titling / Registration Requirements
-CATEGORY: FLORIDA DEALER SALE TO CALIFORNIA CUSTOMER / CALIFORNIA TITLE / CALIFORNIA REGISTRATION / REG 343 / REG 227 / REG 262 / REG 256 / SMOG / REG 139 / USE TAX / DEALER PURCHASE
+CATEGORY: FLORIDA DEALER SALE TO CALIFORNIA CUSTOMER / CALIFORNIA TITLE / CALIFORNIA REGISTRATION / REG 343 / REG 227 / REG 262 / REG 256 / SMOG / REG 139 — Vehicle Emission System Statement / USE TAX / DEALER PURCHASE
 
 ============================================================
 PURPOSE
@@ -249,7 +249,7 @@ When a Florida dealership sells a vehicle to a California customer and the custo
    - California Certificate of Title or out-of-state title for used vehicle
    - Dealer reassignment if applicable
    - Buyer’s order / bill of sale
-   - Odometer disclosure/statement if applicable
+   - Odometer disclosure statement
    - Lienholder information if financed
    - Seller/lienholder signatures on title
    - Buyer signature on title
@@ -269,7 +269,7 @@ When a Florida dealership sells a vehicle to a California customer and the custo
    - Confirm out-of-state title if vehicle is currently registered in another state.
    - Confirm all seller/lienholder and buyer signatures.
    - Confirm whether REG 262 is needed.
-   - Confirm odometer disclosure/statement if applicable.
+   - Confirm odometer disclosure statement.
 
 4. If new vehicle:
    - Complete/review REG 343.
@@ -321,7 +321,7 @@ High risk if:
 - REG 262 not reviewed.
 - REG 256 not reviewed.
 - Smog certification or smog abatement fee issue not reviewed.
-- REG 139 not reviewed.
+- REG 139 — Vehicle Emission System Statement not reviewed.
 - Use tax or title transfer fees not reviewed.
 - Transfer fees not paid within 10 days.
 - Late penalty after 30 days not reviewed.
@@ -331,6 +331,37 @@ High risk if:
 - DMV field office visit not planned.
 - Co-owner signature logic misunderstood.
 - Tax/DR-123 handling unclear.
+
+============================================================
+CALIFORNIA FORM WORDING RULE
+============================================================
+
+Do not identify REG 139 as a Power of Attorney.
+
+For California customer titling answers:
+- REG 139 is the Vehicle Emission System Statement.
+- REG 262 is the Vehicle/Vessel Transfer and Reassignment form.
+- REG 256 is the Statement of Facts.
+- REG 343 is the Application for Title or Registration.
+- REG 4008 is the Declaration of Gross Vehicle Weight / Combined Gross Vehicle Weight and should only be discussed for commercial vehicles.
+
+For REG 139 wording, use:
+
+REG 139 — Vehicle Emission System Statement, review if emissions/smog documentation is required.
+
+Do not say REG 139 is always required for every California customer title package unless the deal facts support that requirement.
+
+If power of attorney is needed, describe it generically as POA or power of attorney documentation required by vendor/dealership workflow. Do not call REG 139 a Power of Attorney.
+
+============================================================
+ODOMETER WORDING RULE
+============================================================
+
+For California customer titling answers, do not default to saying odometer disclosure is required only for vehicles less than 10 years old.
+
+Use this wording instead:
+
+Odometer disclosure/statement is required.
 
 ============================================================
 AI ROUTING KEYWORDS
@@ -348,7 +379,7 @@ California REG 227
 California REG 262
 California REG 256
 California smog certification
-California REG 139
+California REG 139 — Vehicle Emission System Statement
 California REG 4008
 California use tax
 California title transfer fees
@@ -360,7 +391,7 @@ what do I need to title in California
 COMMON CLERK ANSWER
 ============================================================
 
-For a California customer buying from a Florida dealership, California requires REG 343 if the vehicle is new, or the California Certificate of Title/out-of-state title if the vehicle is used and currently registered in another state. The title must have required seller/lienholder signatures and buyer signature. If the title is lost or damaged, REG 227 is needed. For dealership workflow, also review REG 262, REG 256, smog certification, REG 139, use tax, and other fees. REG 4008 is only required for commercial vehicles, not as a default for non-commercial vehicles. California DMV says use tax can range from 7.25% to 10.25% based on the new registered owner’s city/county, and transfer fees must be paid within 10 days of sale, with late penalty after 30 days. If the dealer does not handle California registration, the customer must complete registration themselves and should visit a DMV field office. Prepare the dealer package, buyer’s order, odometer disclosure/statement if applicable, lienholder information if financed, and review Florida DR-123/California tax handling. Escalate if title signatures, REG forms, smog, use tax, field office completion, commercial GVW, lienholder, or tax handling is unclear.
+For a California customer buying from a Florida dealership, California requires REG 343 if the vehicle is new, or the California Certificate of Title/out-of-state title if the vehicle is used and currently registered in another state. The title must have required seller/lienholder signatures and buyer signature. If the title is lost or damaged, REG 227 is needed. For dealership workflow, also review REG 262, REG 256, smog certification, REG 139 — Vehicle Emission System Statement, use tax, and other fees. REG 4008 is only required for commercial vehicles, not as a default for non-commercial vehicles. California DMV says use tax can range from 7.25% to 10.25% based on the new registered owner’s city/county, and transfer fees must be paid within 10 days of sale, with late penalty after 30 days. If the dealer does not handle California registration, the customer must complete registration themselves and should visit a DMV field office. Prepare the dealer package, buyer’s order, odometer disclosure statement, lienholder information if financed, and review Florida DR-123/California tax handling. Escalate if title signatures, REG forms, smog, use tax, field office completion, commercial GVW, lienholder, or tax handling is unclear.
 
 ============================================================
 RELATED FILES

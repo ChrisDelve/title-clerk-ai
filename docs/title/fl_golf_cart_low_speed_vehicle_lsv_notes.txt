@@ -1,0 +1,297 @@
+DOCUMENT: FL_GOLF_CART_LOW_SPEED_VEHICLE_LSV_NOTES
+TITLE: Florida Golf Cart / Low-Speed Vehicle / Converted Golf Cart Title and Registration Notes
+SOURCE_1: https://www.flhsmv.gov/safety-center/consumer-education/low-speed-vehicles/
+SOURCE_2: https://www.flhsmv.gov/pdf/mv/lowspeedvehicles.pdf
+SOURCE_3: Florida Statute 320.01 — Definitions
+SOURCE_4: HSMV Form 86064 — Affidavit for Golf Cart Modified to a Low Speed Vehicle
+DOCUMENT_TYPE: Florida Golf Cart / Low-Speed Vehicle / Converted Golf Cart Operational Notes
+CATEGORY: GOLF CART / LOW-SPEED VEHICLE / LSV / CONVERTED GOLF CART / TITLE / REGISTRATION / VIN ASSIGNMENT / MOTORIST SERVICES REGIONAL OFFICE / HSMV 86064 / HSMV 84490 / STREET-LEGAL
+
+============================================================
+PURPOSE
+============================================================
+
+This file helps a Florida dealership answer questions about whether a golf cart can be titled and registered in Florida.
+
+Use this file for questions like:
+
+- Customer wants to title/register a golf cart.
+- Can we register a golf cart in Florida?
+- Can a golf cart get a tag?
+- Is this a golf cart or low-speed vehicle?
+- Customer converted a golf cart to a low-speed vehicle.
+- What do we need for a converted golf cart?
+- Does a golf cart need a title?
+- Does an LSV need a title and registration?
+- What is HSMV 86064?
+- What is HSMV 84490?
+- Does the golf cart need a VIN assignment?
+- Does it need to go to a Regional Office?
+
+============================================================
+CORE DISTINCTION
+============================================================
+
+Do not treat every golf cart as title/register eligible.
+
+First determine whether the vehicle is:
+
+1. A golf cart
+2. A low-speed vehicle, LSV
+3. A golf cart modified/converted to a low-speed vehicle
+
+A standard golf cart and a low-speed vehicle are not the same for title/registration purposes.
+
+============================================================
+DEFINITIONS
+============================================================
+
+GOLF CART:
+
+Florida Statute 320.01 defines golf cart as a motor vehicle designed and manufactured for operation on a golf course for sporting or recreational purposes and not capable of exceeding 20 miles per hour.
+
+LOW-SPEED VEHICLE / LSV:
+
+Florida Statute 320.01 defines low-speed vehicle as a four-wheeled vehicle whose top speed is greater than 20 miles per hour but not greater than 25 miles per hour, including neighborhood electric vehicles.
+
+Low-speed vehicles must comply with federal safety standards in 49 C.F.R. 571.500 and Florida LSV requirements.
+
+============================================================
+GENERAL RULE
+============================================================
+
+IF vehicle_is_standard_golf_cart = TRUE
+THEN do_not_default_to_title_and_registration = TRUE
+
+IF vehicle_is_low_speed_vehicle = TRUE
+THEN title_and_registration_review_required = TRUE
+
+IF golf_cart_converted_to_low_speed_vehicle = TRUE
+THEN converted_golf_cart_LSV_workflow_required = TRUE
+
+IF classification_unclear = TRUE
+THEN hold_and_escalate_before_title_registration = TRUE
+
+============================================================
+STANDARD GOLF CART LOGIC
+============================================================
+
+IF vehicle_top_speed <= 20_mph
+AND vehicle_designed_for_golf_course_recreational_use = TRUE
+THEN vehicle_classification = "Golf Cart"
+
+IF vehicle_classification = "Golf Cart"
+THEN do_not_process_as_standard_motor_vehicle_title_registration = TRUE
+
+IF customer_wants_to_operate_golf_cart_on_public_roads = TRUE
+THEN local_ordinance_and_designated_roadway_review_required = TRUE
+
+IF customer_wants_title_or_tag_for_golf_cart = TRUE
+AND vehicle_not_converted_to_LSV = TRUE
+THEN explain_standard_golf_cart_is_not_processed_like_LSV = TRUE
+
+IF golf_cart_question = TRUE
+THEN do_not_say_golf_cart_typically_requires_registration_on_public_roads_without_LSV_or_local_ordinance_context = TRUE
+
+============================================================
+LOW-SPEED VEHICLE / LSV LOGIC
+============================================================
+
+IF vehicle_has_4_wheels = TRUE
+AND top_speed_greater_than_20_mph = TRUE
+AND top_speed_not_greater_than_25_mph = TRUE
+THEN possible_low_speed_vehicle = TRUE
+
+IF possible_low_speed_vehicle = TRUE
+THEN verify_FMVSS_49_CFR_571_500_compliance = TRUE
+
+IF possible_low_speed_vehicle = TRUE
+THEN verify_Florida_LSV_requirements = TRUE
+
+IF vehicle_is_LSV = TRUE
+THEN Florida_title_registration_insurance_plate_review_required = TRUE
+
+IF vehicle_is_LSV = TRUE
+THEN HSMV_82040_title_application_review_required = TRUE
+
+IF vehicle_is_LSV = TRUE
+THEN proof_of_ownership_required = TRUE
+
+IF vehicle_is_LSV = TRUE
+THEN Florida_insurance_required_if_registration_plate_issued = TRUE
+
+============================================================
+CONVERTED GOLF CART TO LSV WORKFLOW
+============================================================
+
+FLHSMV guidance says the converted golf cart must be street-legal before applying for title and registration.
+
+Before titling/registering a converted golf cart:
+- The converted golf cart must be inspected.
+- The converted golf cart must be assigned a VIN at a Motorist Services Regional Office.
+- The applicant must present photographs of the front, back, and both sides of the converted vehicle.
+- The converted golf cart must be trailered to a Motorist Services Regional Office.
+- Documents and fees must be presented for inspection, VIN assignment, title, and registration.
+
+Required/review items listed by FLHSMV low-speed vehicle guidance include:
+- Manufacturer’s Certificate of Origin or bill of sale for the golf cart
+- HSMV 84490 Statement of Builder, completed by customer and Compliance Examiner/Inspector
+- HSMV 86064 Affidavit for Golf Cart Modified to a Low Speed Vehicle
+- Original bills of sale or receipts for all parts used to convert the golf cart to a low-speed vehicle
+- Certified weight slip for the converted golf cart
+- HSMV 82040 Application for Certificate of Title With/Without Registration
+- Inspection / VIN assignment by Motorist Services Regional Office
+- Applicable title, registration, and fees
+
+============================================================
+CONVERTED GOLF CART DOCUMENT LOGIC
+============================================================
+
+IF golf_cart_converted_to_LSV = TRUE
+THEN street_legal_before_title_registration_required = TRUE
+
+IF golf_cart_converted_to_LSV = TRUE
+THEN Regional_Office_inspection_required = TRUE
+
+IF golf_cart_converted_to_LSV = TRUE
+THEN VIN_assignment_required = TRUE
+
+IF golf_cart_converted_to_LSV = TRUE
+THEN trailer_to_Motorist_Services_Regional_Office_required = TRUE
+
+IF golf_cart_converted_to_LSV = TRUE
+THEN photos_front_back_both_sides_required = TRUE
+
+IF golf_cart_converted_to_LSV = TRUE
+THEN MCO_or_bill_of_sale_required = TRUE
+
+IF golf_cart_converted_to_LSV = TRUE
+THEN HSMV_84490_Statement_of_Builder_required = TRUE
+
+IF golf_cart_converted_to_LSV = TRUE
+THEN HSMV_86064_Affidavit_for_Golf_Cart_Modified_to_LSV_required = TRUE
+
+IF golf_cart_converted_to_LSV = TRUE
+THEN original_bills_of_sale_or_receipts_for_conversion_parts_required = TRUE
+
+IF golf_cart_converted_to_LSV = TRUE
+THEN certified_weight_slip_required = TRUE
+
+IF golf_cart_converted_to_LSV = TRUE
+THEN HSMV_82040_title_application_required = TRUE
+
+============================================================
+DEALERSHIP WORKFLOW
+============================================================
+
+When a customer asks to title/register a golf cart:
+
+1. Classify the vehicle first:
+   - Is it a standard golf cart?
+   - Is it already titled as a low-speed vehicle?
+   - Was it converted from golf cart to LSV?
+   - What is its top speed?
+   - Does it have a VIN?
+   - Does it meet federal/FMVSS and Florida LSV requirements?
+
+2. If standard golf cart:
+   - Do not default to title/registration.
+   - Explain that standard golf carts are not handled the same as LSVs.
+   - Review local roadway/ordinance rules if customer asks about road use.
+   - Escalate if customer insists it should be titled/tagged.
+
+3. If already an LSV:
+   - Verify existing title or MCO/MSO.
+   - Verify VIN.
+   - Complete/review HSMV 82040.
+   - Verify Florida insurance if registering.
+   - Process as title/registration if all LSV requirements are met.
+
+4. If converted golf cart:
+   - Do not submit as a normal title transaction.
+   - Confirm street-legal conversion.
+   - Send/refer for Motorist Services Regional Office inspection and VIN assignment.
+   - Require photos, HSMV 84490, HSMV 86064, conversion part receipts, certified weight slip, proof of ownership, HSMV 82040, and applicable fees.
+   - Escalate before submission if classification or conversion documents are unclear.
+
+============================================================
+REJECTION / DELAY RISKS
+============================================================
+
+High risk if:
+
+- App treats standard golf cart as automatically title/register eligible.
+- App fails to distinguish golf cart from LSV.
+- Top speed is unknown.
+- Vehicle has no VIN.
+- Vehicle is not street-legal.
+- Converted golf cart has not been inspected by Motorist Services Regional Office.
+- VIN assignment has not occurred.
+- Required photos are missing.
+- HSMV 86064 is missing.
+- HSMV 84490 is missing.
+- Conversion part receipts are missing.
+- Certified weight slip is missing.
+- HSMV 82040 is missing for LSV title application.
+- Florida insurance is missing when registration/plate issuance is requested.
+- Customer believes local golf cart road authorization equals state title/registration eligibility.
+- Dealership tries to process converted golf cart as normal motor vehicle without Regional Office inspection/VIN assignment.
+
+============================================================
+ANSWER WORDING RULE
+============================================================
+
+============================================================
+HARD WORDING RULE — CONVERTED GOLF CART
+============================================================
+
+For converted golf cart questions, use this exact wording:
+
+For a converted golf cart, Regional Office inspection and VIN assignment are required before title/registration.
+
+Do not soften this to:
+- “if VIN assignment is needed”
+- “VIN verification or assignment if applicable”
+- “coordinate with Regional Office if needed”
+
+Converted golf cart workflow requires Regional Office inspection and VIN assignment before title/registration.
+
+For golf cart questions, do not answer as if all golf carts are title/register eligible.
+
+Answer should start by saying:
+
+“First determine whether this is a standard golf cart, an existing low-speed vehicle, or a golf cart converted to a low-speed vehicle.”
+
+Do not say:
+- “Golf carts typically require registration if operated on public roads.”
+- “If exempt from titling, only registration may be required.”
+- “Issue a golf cart decal or plate as required by Florida law.”
+
+Instead say:
+- A standard golf cart is not the same as an LSV.
+- A standard golf cart is not processed like a normal titled/registered motor vehicle.
+- An LSV or converted golf cart may require title/registration if it meets LSV requirements.
+- Converted golf carts must be street-legal before applying for title/registration.
+- Converted golf carts require Motorist Services Regional Office inspection and VIN assignment before title/registration.
+- For a converted golf cart, Regional Office inspection and VIN assignment are required before title/registration.
+- Escalate if classification, VIN, top speed, street-legal status, or conversion documents are unclear.
+
+============================================================
+COMMON CLERK ANSWER
+============================================================
+
+For a customer wanting to title/register a golf cart in Florida, first determine whether it is a standard golf cart, an existing low-speed vehicle, or a golf cart converted to a low-speed vehicle. A standard golf cart is not the same as an LSV and should not be treated as automatically title/register eligible. If it is an LSV, verify title/MCO/MSO, VIN, HSMV 82040, Florida insurance if registering, and that it meets LSV requirements. If it is a converted golf cart, it must be street-legal before applying for title/registration. For a converted golf cart, Regional Office inspection and VIN assignment are required before title/registration. Review photos of all four sides, MCO or bill of sale, HSMV 84490 Statement of Builder, HSMV 86064 Affidavit for Golf Cart Modified to a Low Speed Vehicle, original receipts for conversion parts, certified weight slip, HSMV 82040, and applicable fees. Hold and escalate if classification, top speed, VIN, street-legal status, inspection, or conversion documents are unclear.
+
+============================================================
+RELATED FILES
+============================================================
+
+- fl_tl_10_original_certificate_of_title_operational_notes.txt
+- fl_title_ownership_and_transfer_law_notes.txt
+- validation_logic_map.txt
+- rejection_prevention_logic_map.txt
+- fees title registration notes if cost is asked
+
+============================================================
+END OF FILE
+============================================================
