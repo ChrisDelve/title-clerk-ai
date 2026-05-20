@@ -530,6 +530,26 @@ def search_documents(query):
             + content_lower[:800]
         )
 
+        out_of_state_customer_question = (
+            "customer wants title in" in query_lower
+            or "customer wants to title in" in query_lower
+            or "title in california" in query_lower
+            or "title in georgia" in query_lower
+            or "title in texas" in query_lower
+            or "register in california" in query_lower
+            or "register in georgia" in query_lower
+            or "out of state customer" in query_lower
+            or "out-of-state customer" in query_lower
+            or "customer lives in" in query_lower
+            or "customer is from" in query_lower
+        )
+
+        if not out_of_state_customer_question and (
+            "customer_titling_requirements_notes" in doc_identity_lower
+            or "out_of_state_customer_title_notes" in doc_identity_lower
+        ):
+            continue
+
         plate_only_fee_question = (
             (
                 "new plate" in query_lower
@@ -917,6 +937,45 @@ def search_documents(query):
         ):
             if "import_export_vehicle_logic_map" in doc_name_lower:
                 score += 200
+
+        # ------------------------------------------------------------
+        # DECEASED OWNER / POA AFTER DEATH ROUTING
+        # ------------------------------------------------------------
+
+        deceased_owner_keywords = [
+            "deceased owner",
+            "owner is deceased",
+            "owner died",
+            "customer died",
+            "seller died",
+            "death certificate",
+            "poa after death",
+            "power of attorney after death",
+            "can we use the poa",
+            "probate",
+            "estate",
+            "surviving spouse",
+            "heir",
+            "operation of law",
+        ]
+
+        deceased_owner_question = any(phrase in query_lower for phrase in deceased_owner_keywords)
+
+        if deceased_owner_question:
+            if "tl_18" in doc_identity_lower or "deceased" in doc_identity_lower:
+                score += 250
+
+            if "power_of_attorney" in doc_identity_lower or "tl_02" in doc_identity_lower:
+                score += 100
+
+            if "signature" in doc_identity_lower or "tl_01" in doc_identity_lower:
+                score += 50
+
+            if "operation_of_law" in doc_identity_lower or "319.28" in doc_identity_lower:
+                score += 100
+
+            if "trust" in doc_identity_lower and "trust" not in query_lower:
+                score -= 100
 
         # ------------------------------------------------------------
         # FLORIDA PLATE / TAG TRANSFER ROUTING
@@ -2318,6 +2377,29 @@ For converted golf carts, say clearly:
 - Regional Office inspection and VIN assignment are required before title/registration.
 
 Escalate if classification, top speed, VIN, street-legal status, HSMV 86064, HSMV 84490, conversion receipts, certified weight slip, or insurance is unclear.
+
+REGISTRATION ID / PASSPORT / TITLE-ONLY HARD RULE:
+If the user asks about a customer with a passport, foreign passport, U.S. passport, no Florida ID, no driver license, lawful presence, I-94, green card, immigrant visa, or Rule 15C-1.015:
+
+Always distinguish registration/plate issuance from title-only.
+
+For registration or plate issuance:
+- Apply Rule 15C-1.015 / INFO 24-023 valid passport requirements.
+- A foreign passport alone is not sufficient for Florida registration.
+- The foreign passport must be unexpired and supported by required lawful-presence documentation.
+
+For title-only:
+Use this exact wording:
+- Title-only may proceed only through dealership title-only workflow / controller approval.
+
+Do NOT say only:
+- Title-only transactions may proceed.
+- Title-only is exempt.
+- Title-only can be done without this requirement.
+- Title-only transactions may proceed without this rule.
+
+Always include:
+- dealership title-only workflow / controller approval
 
 CALIFORNIA CUSTOMER TITLING HARD RULE:
 If the user asks about a customer titling or registering a vehicle in California, California customer, title in California, register in California, or Florida dealer sale to California customer:

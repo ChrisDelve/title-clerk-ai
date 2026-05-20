@@ -342,7 +342,8 @@ QUESTION:
 Does this passport rule apply to title-only?
 
 ANSWER:
-No. INFO 24-023 states this new rule does not apply to title applications. It applies to vehicle registration applications.
+ANSWER:
+No. INFO 24-023 states this new rule does not apply to title applications. It applies to vehicle registration applications. Title-only may proceed only through dealership title-only workflow / controller approval.
 
 ------------------------------------------------------------
 
