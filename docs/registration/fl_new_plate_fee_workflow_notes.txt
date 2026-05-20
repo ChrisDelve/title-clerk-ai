@@ -1,0 +1,109 @@
+DOCUMENT: FL_NEW_PLATE_FEE_WORKFLOW_NOTES
+TITLE: Florida New Plate Fee / Initial Registration Fee Workflow Notes
+DOCUMENT_TYPE: Florida Registration Fee / New Plate / IRF / Dealership Workflow
+CATEGORY: NEW PLATE / NEW TAG / INITIAL REGISTRATION FEE / IRF / REGISTRATION FEES / SPECIALTY PLATE
+
+============================================================
+PURPOSE
+============================================================
+
+This file helps answer dealership questions about the cost and workflow for issuing a new Florida plate/tag.
+
+Use this file for questions like:
+
+- How much is a new plate?
+- How much is a new tag?
+- What does a new Florida plate cost?
+- Does IRF apply?
+- Is the Initial Registration Fee due?
+- Customer needs a new plate instead of transfer tag.
+
+============================================================
+CORE FEE ANSWER
+============================================================
+
+For a standard new Florida plate, review:
+
+- Standard new plate issuance fee: $28.00
+- Initial Registration Fee / IRF: $225.00 may apply unless a valid exemption applies
+- Registration class/weight/use fees may also apply
+- Specialty plate fees vary and may include additional specialty/surcharge fees
+- Agency/service fees may apply depending on dealership/vendor/tax collector workflow
+
+Do not quote only $28.00 as the full customer cost if IRF, registration fees, specialty plate fees, or agency/service fees may apply.
+
+============================================================
+DEALERSHIP WORKFLOW
+============================================================
+
+When a customer needs a new plate:
+
+1. Confirm this is a new plate, not a transfer plate.
+2. Verify whether the customer has an eligible Florida plate to transfer.
+3. If no eligible transfer plate exists, process as new plate issuance.
+4. Review Initial Registration Fee.
+5. Confirm whether any IRF exemption applies.
+6. Verify Florida insurance before registration/plate issuance.
+7. Check for registration stops or holds.
+8. Collect applicable plate, registration, IRF, specialty, and agency/service fees.
+9. Submit through dealership/tax collector workflow.
+
+============================================================
+IRF REVIEW LOGIC
+============================================================
+
+IF customer_has_no_eligible_Florida_plate_to_transfer = TRUE
+THEN new_plate_required = TRUE
+
+IF new_plate_required = TRUE
+THEN Initial_Registration_Fee_review_required = TRUE
+
+IF valid_IRF_exemption_exists = TRUE
+THEN IRF_may_not_apply_review_required = TRUE
+
+IF IRF_exemption_unclear = TRUE
+THEN escalate_before_waiving_IRF = TRUE
+
+IF plate_not_in_customer_name = TRUE
+THEN do_not_process_as_transfer_plate = TRUE
+AND new_plate_IRF_review_required = TRUE
+
+============================================================
+ANSWER WORDING RULE
+============================================================
+
+For “How much is a new plate?” questions, do not answer only with the $28.00 plate fee.
+
+Use this wording:
+
+A standard new Florida plate includes the $28.00 plate issuance fee, but the full amount may also include the $225.00 Initial Registration Fee unless a valid exemption applies, plus registration class/weight/use fees, specialty plate fees if requested, and any applicable agency/service fees.
+
+Do not say:
+- “A new plate is only $28.00.”
+- “IRF always applies.”
+- “IRF never applies.”
+
+Instead say:
+- “IRF may apply unless a valid exemption applies and is documented.”
+- “Verify whether the customer has an eligible plate to transfer before charging as a new plate.”
+- “Escalate if IRF exemption eligibility is unclear.”
+
+============================================================
+COMMON CLERK ANSWER
+============================================================
+
+A standard new Florida plate includes the $28.00 plate issuance fee, but the total customer cost may also include the $225.00 Initial Registration Fee unless a valid exemption applies, registration class/weight/use fees, specialty plate fees if requested, and any applicable agency/service fees. First verify whether the customer has an eligible Florida plate to transfer. If no eligible transfer plate exists, process as new plate issuance and review IRF. Verify Florida insurance, registration stops, customer eligibility, and any IRF exemption documentation before submission. Escalate if IRF exemption eligibility, plate ownership, insurance, or registration eligibility is unclear.
+
+============================================================
+RELATED FILES
+============================================================
+
+- fl_fees_02_registration_fees_notes.txt
+- fl_rs_30_initial_registration_fee_notes.txt
+- fl_plate_transfer_customer_name_notes.txt
+- Plate / Registration Action Logic Map
+- Registration / Plate / Insurance Law Notes
+
+============================================================
+END OF FILE
+============================================================

@@ -522,6 +522,62 @@ def search_documents(query):
         doc_name_lower = doc["name"].lower()
         doc_path_lower = doc.get("path", "").lower()
 
+        doc_identity_lower = (
+            doc_name_lower
+            + " "
+            + doc_path_lower
+            + " "
+            + content_lower[:800]
+        )
+
+        plate_only_fee_question = (
+            (
+                "new plate" in query_lower
+                or "new tag" in query_lower
+                or "license plate" in query_lower
+                or "how much is a new plate" in query_lower
+                or "how much is a new tag" in query_lower
+            )
+            and "duplicate title" not in query_lower
+            and "transfer title" not in query_lower
+            and "original title" not in query_lower
+        )
+
+        if (
+            "advanced replacement" not in query_lower
+            and "advance replacement" not in query_lower
+            and "replacement plate" not in query_lower
+            and "replace plate" not in query_lower
+            and "replacement tag" not in query_lower
+            and (
+                "fl_rs_42" in doc_identity_lower
+                or "advanced_replacement" in doc_identity_lower
+                or "advance_replacement" in doc_identity_lower
+            )
+        ):
+            continue
+
+        if plate_only_fee_question and (
+            "fees-01" in doc_identity_lower
+            or "fees_01" in doc_identity_lower
+            or "fl_fees_01" in doc_identity_lower
+            or "fl_fees01" in doc_identity_lower
+            or "raw title" in doc_identity_lower
+            or "raw_title" in doc_identity_lower
+            or "title / lien" in doc_identity_lower
+            or "title and lien" in doc_identity_lower
+            or "title_and_lien" in doc_identity_lower
+            or "schedule of title and lien" in doc_identity_lower
+        ):
+            continue
+
+        if plate_only_fee_question and (
+            "fl_rs_35" in doc_identity_lower
+            or "delinquent registration" in doc_identity_lower
+            or "delinquent_registration" in doc_identity_lower
+        ):
+            continue
+
         # ------------------------------------------------------------
         # GOLF CART / LOW-SPEED VEHICLE ROUTING
         # ------------------------------------------------------------
@@ -635,6 +691,48 @@ def search_documents(query):
             and (
                 "duplicate" in doc_name_lower
                 or "tl_05" in doc_name_lower
+            )
+        ):
+            continue
+
+        if (
+            "mobile home" not in query_lower
+            and "mobilehome" not in query_lower
+            and "manufactured home" not in query_lower
+            and (
+                "mobile_home" in doc_name_lower
+                or "tl_39" in doc_name_lower
+            )
+        ):
+            continue
+
+        if (
+            "vessel" not in query_lower
+            and "boat" not in query_lower
+            and "watercraft" not in query_lower
+            and "fl_fees_04_vessel" in doc_name_lower
+        ):
+            continue
+
+        if (
+            "refund" not in query_lower
+            and "refunds" not in query_lower
+            and "fl_rs_65_refunds" in doc_name_lower
+        ):
+            continue
+
+        if (
+            "delinquent" not in query_lower
+            and "late" not in query_lower
+            and "expired" not in query_lower
+            and "expiration" not in query_lower
+            and "penalty" not in query_lower
+            and "renewal" not in query_lower
+            and "renew" not in query_lower
+            and (
+                "fl_rs_35" in doc_name_lower
+                or "delinquent_registration" in doc_name_lower
+                or "delinquent" in doc_name_lower
             )
         ):
             continue
@@ -819,6 +917,82 @@ def search_documents(query):
         ):
             if "import_export_vehicle_logic_map" in doc_name_lower:
                 score += 200
+
+        # ------------------------------------------------------------
+        # FLORIDA PLATE / TAG TRANSFER ROUTING
+        # ------------------------------------------------------------
+
+        plate_transfer_keywords = [
+            "transfer tag",
+            "transfer plate",
+            "tag transfer",
+            "plate transfer",
+            "tag is not in customer",
+            "plate is not in customer",
+            "tag not in customer",
+            "plate not in customer",
+            "not in customer's name",
+            "not in customers name",
+            "new plate",
+            "initial registration fee",
+            "irf",
+            "new tag",
+            "how much is a new tag",
+            "original plate",
+        ]
+
+        plate_transfer_question = any(phrase in query_lower for phrase in plate_transfer_keywords)
+
+        if plate_transfer_question:
+            if "out_of_state_customer_title_notes" in doc_path_lower:
+                score -= 200
+
+            if "customer_titling_requirements_notes" in doc_name_lower:
+                score -= 200
+
+            if "fees-01" in doc_name_lower or "fl_fees_01" in doc_name_lower:
+                score -= 200
+
+            if "title_and_lien" in doc_name_lower or "title_lien" in doc_name_lower:
+                score -= 200    
+
+            if "mobile_home" in doc_name_lower or "tl_39" in doc_name_lower:
+                score -= 200
+
+            if "registration" in doc_name_lower:
+                score += 60
+
+            if "initial_registration" in doc_name_lower:
+                score += 80
+
+            if "license_plate" in doc_name_lower or "plate" in doc_name_lower:
+                score += 80
+
+            if "rejection_prevention" in doc_name_lower:
+                score += 40
+
+            if "fl_fees_02_registration_fees_notes" in doc_name_lower:
+                score += 120
+
+            if "fl_rs_30_initial_registration_fee_notes" in doc_name_lower:
+                score += 120
+
+            if "plate_registration_action_logic" in doc_name_lower or "registration_action_logic" in doc_name_lower:
+                score += 80
+
+            if "registration" in doc_name_lower and "plate" in doc_name_lower:
+                score += 60
+
+            if (
+                "fees-01" in doc_name_lower
+                or "fees_01" in doc_name_lower
+                or "fl_fees_01" in doc_name_lower
+                or "raw_title" in doc_name_lower
+                or "title_lien" in doc_name_lower
+                or "title_and_lien" in doc_name_lower
+                or "schedule_of_title_and_lien" in doc_name_lower
+            ):
+                score -= 500    
 
         # Canadian customer / Canada import routing
         if canada_question:

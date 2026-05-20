@@ -1,0 +1,125 @@
+DOCUMENT: FL_PLATE_TRANSFER_CUSTOMER_NAME_NOTES
+TITLE: Florida Plate / Tag Transfer — Plate Not in Customer’s Name
+DOCUMENT_TYPE: Florida Registration / License Plate Transfer / Rejection Prevention
+CATEGORY: FLORIDA REGISTRATION / TAG TRANSFER / PLATE TRANSFER / INITIAL REGISTRATION FEE / IRF / CUSTOMER NAME MISMATCH / REJECTION PREVENTION
+
+============================================================
+PURPOSE
+============================================================
+
+This file helps answer dealership questions about whether a Florida license plate/tag can be transferred when the plate is not registered in the customer’s name.
+
+Use this file for questions like:
+
+- Transfer tag is not in customer’s name. Can we use it?
+- Can customer use someone else’s tag?
+- Can we transfer a plate from another person?
+- Plate owner does not match buyer.
+- Tag is in spouse’s name.
+- Tag is in parent’s name.
+- Customer brought a plate but it is not registered to them.
+- Should this be a new plate with Initial Registration Fee?
+- Plate transfer rejection prevention.
+
+============================================================
+CORE RULE
+============================================================
+
+Do not transfer a Florida plate/tag just because the customer physically has the plate.
+
+The plate registration owner must be eligible to transfer the plate to the vehicle being registered.
+
+IF plate_owner_does_not_match_customer_or_registrant = TRUE
+THEN do_not_process_as_normal_plate_transfer = TRUE
+
+IF plate_is_not_in_customer_name = TRUE
+THEN new_plate_or_exception_review_required = TRUE
+
+IF no_valid_plate_transfer_exception_applies = TRUE
+THEN process_as_new_plate_and_review_initial_registration_fee = TRUE
+
+============================================================
+DEALERSHIP WORKFLOW
+============================================================
+
+When a customer wants to transfer a tag/plate:
+
+1. Verify the plate owner.
+   - Check who the plate is registered to.
+   - Do not rely only on the physical plate being present.
+
+2. Verify the vehicle registrant/applicant.
+   - The customer/applicant must be eligible to use the plate.
+   - The plate owner and registration applicant must align unless a valid exception applies.
+
+3. If plate is not in the customer’s name:
+   - Do not transfer the plate as a normal transfer.
+   - Review whether a valid exception applies, such as spouse, deceased owner, court order, business/entity authority, or other documented authority.
+   - If no valid exception applies, process as a new plate and review Initial Registration Fee.
+
+4. Verify Florida insurance.
+   - Florida insurance must match registration requirements before issuing registration/plate.
+
+5. Escalate before submission if unclear.
+
+============================================================
+REJECTION PREVENTION LOGIC
+============================================================
+
+IF customer_physically_has_plate = TRUE
+AND plate_registered_owner_not_customer = TRUE
+THEN do_not_use_plate_without_eligibility_review = TRUE
+
+IF plate_owner_name_not_same_as_customer_name = TRUE
+THEN hold_and_review_before_submission = TRUE
+
+IF plate_belongs_to_spouse = TRUE
+THEN spouse_transfer_rules_and_documents_review_required = TRUE
+
+IF plate_owner_deceased = TRUE
+THEN deceased_owner_plate_transfer_review_required = TRUE
+
+IF plate_belongs_to_trust_or_business = TRUE
+THEN entity_authority_review_required = TRUE
+
+IF customer_cannot_prove_authority_to_use_plate = TRUE
+THEN new_plate_required_review_IRF = TRUE
+
+IF title_clerk_unsure = TRUE
+THEN escalate_to_title_lead_or_tax_collector_before_submission = TRUE
+
+============================================================
+ANSWER WORDING RULE
+============================================================
+
+For plate/tag transfer questions, do not say the tag can be used just because the customer has it.
+
+Use this wording:
+
+A Florida plate/tag should not be transferred unless the plate owner is eligible to transfer it to the vehicle being registered. If the plate is not in the customer’s name, do not process it as a normal transfer. Review whether a valid exception applies. If no valid exception applies, process as a new plate and review Initial Registration Fee.
+
+Do not say:
+- “If the customer has the plate, they can transfer it.”
+- “The title owner can use any plate.”
+- “Use the transfer tag unless rejected.”
+
+============================================================
+COMMON CLERK ANSWER
+============================================================
+
+If the transfer tag is not in the customer’s name, do not use it as a normal plate transfer. First verify who the plate is registered to and whether the customer/applicant is legally eligible to transfer that plate. Physical possession of the plate is not enough. If the plate owner does not match the customer and no valid exception applies, process the transaction as a new plate and review Initial Registration Fee. Escalate before submission if the plate belongs to a spouse, deceased owner, trust, business, parent, or any person/entity other than the customer, or if the customer’s authority to use the plate is unclear.
+
+============================================================
+RELATED FILES
+============================================================
+
+- rejection_prevention_logic_map.txt
+- registration notes
+- initial registration fee notes
+- deceased owner notes if plate owner is deceased
+- trust notes if plate belongs to trust
+- business/entity authority notes if plate belongs to business
+
+============================================================
+END OF FILE
+============================================================
