@@ -352,8 +352,13 @@ padding: 0 1rem !important;
 # OPENAI CLIENT
 # ----------------------------
 
+try:
+    api_key = st.secrets["OPENAI_API_KEY"]
+except Exception:
+    api_key = os.getenv("OPENAI_API_KEY")
+
 client = OpenAI(
-    api_key=st.secrets["OPENAI_API_KEY"]
+    api_key=api_key
 )
 # ----------------------------
 # TRAINING CENTER CONFIG
@@ -438,7 +443,7 @@ TRAINING_TOPICS = {
             "url": "https://www.flhsmv.gov/pdf/forms/82053.pdf"
         }
     ]
-    
+
 },
     "How to Fill Out Titles": {
         "file": "training_center/how_to_fill_out_titles.txt",
