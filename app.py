@@ -357,6 +357,10 @@ try:
 except Exception:
     api_key = os.getenv("OPENAI_API_KEY")
 
+if not api_key:
+    st.error("OPENAI_API_KEY is missing. Add it in Railway Variables and redeploy.")
+    st.stop()
+
 client = OpenAI(
     api_key=api_key
 )
