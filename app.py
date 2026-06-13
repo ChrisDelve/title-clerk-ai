@@ -360,6 +360,7 @@ except Exception:
 client = OpenAI(
     api_key=api_key
 )
+
 # ----------------------------
 # TRAINING CENTER CONFIG
 # ----------------------------
