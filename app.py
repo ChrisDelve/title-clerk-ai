@@ -32,7 +32,37 @@ a:hover {
     color: #FFD700 !important;
     text-decoration: underline;
 }
-                                   
+
+/* Page Mode Radio Buttons */
+div[role="radiogroup"] {
+    display: flex;
+    gap: 1.25rem;
+    justify-content: center;
+    align-items: center;
+    margin: 1.4rem 0 1.8rem 0;
+}
+
+div[role="radiogroup"] label {
+    background: rgba(17, 17, 17, 0.9);
+    border: 1px solid rgba(200, 169, 107, 0.45);
+    border-radius: 999px;
+    padding: 0.85rem 1.35rem !important;
+    min-width: 190px;
+    justify-content: center;
+    box-shadow: 0 0 16px rgba(0, 0, 0, 0.22);
+}
+
+div[role="radiogroup"] label:hover {
+    border-color: rgba(255, 215, 0, 0.75);
+    background: rgba(200, 169, 107, 0.12);
+}
+
+div[role="radiogroup"] label p {
+    font-size: 1.05rem !important;
+    font-weight: 800 !important;
+    color: #FFFFFF !important;
+}            
+
 .scope-note {
     max-width: 900px;
     margin: 1.25rem auto 1.2rem auto;
