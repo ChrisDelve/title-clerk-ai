@@ -1,0 +1,464 @@
+## Summary
+
+Use this guide when a lien issue needs to be corrected after a deal has been processed, submitted, resigned, or completed incorrectly.
+
+Lien corrections are not all handled the same way. Before preparing paperwork, identify which scenario applies.
+
+There are three main lien correction scenarios:
+
+- [Scenario 1 — Wrong Lienholder Placed in Error](#scenario-1)
+- [Scenario 2 — Deal Processed With No Lienholder](#scenario-2)
+- [Scenario 3 — Resigned Deal / New Lienholder / Buyer or Co-Buyer Change](#scenario-3)
+
+
+**Do not submit a lien correction until the correct scenario is identified.**
+
+## First Step — Identify the Scenario
+
+Before preparing documents, ask:
+
+1. Was the wrong lienholder placed?
+2. Was no lienholder placed at all?
+3. Was the deal resigned?
+4. Did the sale date change?
+5. Did the odometer/mileage change?
+6. Did the buyer or co-buyer change?
+7. Did the ownership order change?
+8. Is there already an active lien showing?
+9. Is the title paper or electronic?
+10. Is a lien release needed before anything else can be done?
+
+If the answer is unclear, stop and escalate before submitting.
+
+---
+<a id="scenario-1"></a>
+
+## Scenario 1 — Wrong Lienholder Placed in Error
+
+### When This Applies
+
+Use this workflow when the wrong lienholder was placed in error during the original deal processing, but the rest of the deal is correct.
+
+This applies when:
+
+* The owner names are correct.
+* The owners are in the correct order.
+* The sale date is correct.
+* The odometer/mileage is correct.
+* The deal was not resigned.
+* The only issue is that the wrong lienholder was recorded.
+* The correct lienholder should have been listed on the original transaction.
+
+### What To Check First
+
+Before preparing the correction, confirm:
+
+1. VIN matches the deal.
+2. Customer names match the original deal.
+3. Owner order is correct.
+4. Sale date is correct.
+5. Odometer/mileage is correct.
+6. The lienholder currently showing is incorrect.
+7. The correct lienholder is supported by the deal documents.
+8. The deal was not resigned.
+9. No buyer or co-buyer was added, removed, or changed.
+
+### Required Documents / Support
+
+Commonly needed:
+
+* Corrected title application.
+* Dealer affidavit on dealer letterhead.
+* Supporting deal paperwork showing the correct lienholder.
+* Copy of title record or transaction record showing the incorrect lienholder, if available.
+* Any internal notes, lender documentation, or finance documents supporting the correct lienholder.
+
+### Corrected Title Application Requirements
+
+The corrected title application should match the original deal information except for the lienholder correction.
+
+The corrected title application should reflect:
+
+* Same customer name or names.
+* Same owner order.
+* Same sale date.
+* Same odometer/mileage.
+* Correct lienholder information.
+
+Do not change the dates, mileage, buyer, co-buyer, or ownership order if this is only an incorrect lienholder correction.
+
+### Dealer Affidavit Requirements
+
+Prepare an affidavit on dealer letterhead explaining that the incorrect lienholder was placed in error.
+
+The affidavit should clearly state:
+
+* The incorrect lienholder was placed in error.
+* The correct lienholder should be listed instead.
+* Vehicle year, make, and VIN.
+* Customer name or names.
+* Correct lienholder name.
+
+Suggested wording:
+
+“Incorrect lienholder was placed in error. Correct lienholder should read: [CORRECT LIENHOLDER NAME].”
+
+### Our Office Workflow
+
+1. Confirm this is a simple incorrect lienholder correction and not a missing lienholder or resigned deal.
+2. Verify VIN, customer names, owner order, sale date, and mileage.
+3. Confirm the lienholder currently showing is incorrect.
+4. Confirm the correct lienholder from the deal paperwork.
+5. Prepare a corrected title application.
+6. Use the same original sale date.
+7. Use the same original odometer/mileage.
+8. Keep the same owners and same ownership order.
+9. Correct only the lienholder information.
+10. Prepare a dealer affidavit on dealer letterhead.
+11. Make sure the affidavit clearly states the wrong lienholder was placed in error.
+12. Make sure the affidavit clearly states the correct lienholder.
+13. Attach supporting documentation showing the correct lienholder.
+14. Review the packet for consistency before submission.
+15. Submit through the correct internal process.
+
+### Escalate When
+
+Escalate before submission if:
+
+* Sale date changed.
+* Mileage changed.
+* Buyer or co-buyer changed.
+* Owner order changed.
+* Deal was resigned.
+* Correct lienholder cannot be confirmed.
+* There is no support showing the correct lienholder.
+* Title record has a stop, brand, fraud concern, or unusual status.
+
+---
+<a id="scenario-2"></a>
+
+## Scenario 2 — Deal Processed With No Lienholder
+
+### When This Applies
+
+Use this workflow when a deal was processed without a lienholder, but the deal should have had a lien recorded.
+
+This applies when:
+
+* The deal was financed.
+* A lienholder should have been added.
+* Title work was processed with no lienholder.
+* Customer information is otherwise correct.
+* Deal dates are otherwise correct.
+* Odometer/mileage is otherwise correct.
+* The issue is that the lienholder was missed during processing.
+
+### Important Rule
+
+If the title was processed with no lienholder, a Notice of Lien must be submitted to add the lienholder.
+
+The dates on the Notice of Lien must match the dates of the deal.
+
+If the title is paper, the paper title must be submitted with the Notice of Lien.
+
+If the paper title cannot be obtained from the customer, a duplicate title may need to be ordered before the lien can be properly added.
+
+This is different from a wrong lienholder correction. In this scenario, there was no lienholder placed at all.
+
+### What To Check First
+
+Before preparing the Notice of Lien, confirm:
+
+1. Deal was financed.
+2. Correct lienholder is known.
+3. Title was processed with no lienholder.
+4. Customer names match the deal.
+5. Deal date is confirmed.
+6. Notice of Lien dates will match the deal dates.
+7. Whether the title is paper or electronic.
+8. Whether the paper title is available, if the title is paper.
+9. Whether POA is available if the customer is not signing directly.
+
+### Required Documents / Support
+
+Commonly needed:
+
+* Notice of Lien form.
+* Correct lienholder information.
+* Supporting finance or lender documents.
+* Power of attorney, if signing by POA.
+* Paper title, if the title is paper.
+* Duplicate title, if the paper title is required but cannot be obtained.
+* Copy of deal paperwork showing the lienholder should have been listed.
+* Internal notes explaining that the deal was processed with no lienholder in error.
+
+### Notice of Lien Requirements
+
+The Notice of Lien should reflect the original deal information.
+
+Confirm:
+
+* Customer name or names match the deal.
+* VIN matches the vehicle.
+* Correct lienholder is listed.
+* Dates match the deal dates.
+* POA is included if signing by POA.
+* Paper title is included if the title is paper.
+
+Do not use new dates unless the deal was resigned. If the deal was resigned, review Scenario 3 instead.
+
+### POA Signing
+
+The Notice of Lien may be signed by POA when allowed by the office workflow and the POA is valid for the transaction.
+
+Before using POA, confirm:
+
+* POA is complete.
+* POA matches the customer and vehicle.
+* POA gives authority to sign for this transaction.
+* Signer is authorized under the POA.
+* POA is included with the packet if required.
+
+### Paper Title Requirement
+
+If the title is paper, the paper title must go in with the Notice of Lien.
+
+Before submission, confirm:
+
+* Whether the title is paper or electronic.
+* Whether the paper title is in hand.
+* Whether the customer has the paper title.
+* Whether the customer can provide the title.
+* Whether a duplicate title needs to be ordered because the paper title cannot be obtained.
+
+Do not assume a Notice of Lien can be completed without the paper title when the title is paper.
+
+### Duplicate Title Consideration
+
+A duplicate title may be needed when:
+
+* The title is paper.
+* The paper title is required for the Notice of Lien.
+* The customer cannot provide the paper title.
+* The paper title is lost, unavailable, or cannot be retrieved.
+
+Before ordering a duplicate, confirm the correct internal process and whether customer signature, POA, or additional support is required.
+
+### Our Office Workflow
+
+1. Confirm the deal was processed with no lienholder.
+2. Confirm the deal was financed.
+3. Confirm the correct lienholder from the deal paperwork.
+4. Confirm the original deal date.
+5. Prepare the Notice of Lien form.
+6. Make sure the Notice of Lien dates match the deal dates.
+7. Confirm whether the title is paper or electronic.
+8. If the title is paper, request the paper title from the customer.
+9. If the paper title cannot be obtained, determine whether a duplicate title must be ordered.
+10. If signing by POA, confirm the POA is valid and complete.
+11. Attach lender or finance support showing the correct lienholder.
+12. Review the full packet for consistency before submission.
+13. Submit through the correct internal process.
+
+### Escalate When
+
+Escalate before submission if:
+
+* The title is paper and the customer cannot provide the title.
+* A duplicate title may be needed.
+* POA is missing, incomplete, or unclear.
+* Lienholder information is not confirmed.
+* Deal dates are unclear.
+* Customer names do not match.
+* Title record has a stop, brand, fraud concern, or unusual status.
+* You are unsure whether the issue is missing lienholder, wrong lienholder, or resigned deal.
+
+---
+<a id="scenario-3"></a>
+
+## Scenario 3 — Resigned Deal / New Lienholder / Buyer or Co-Buyer Change
+
+### When This Applies
+
+Use this workflow when the original deal has been resigned or materially changed after the original title work was processed.
+
+This applies when:
+
+* The deal was resigned with new dates.
+* The lienholder changed.
+* Buyer was added.
+* Buyer was removed.
+* Co-buyer was added.
+* Co-buyer was removed.
+* Ownership order changed.
+* Original transaction no longer matches the corrected deal.
+* Original lienholder was already placed and now needs to be released.
+
+This is not a simple lienholder correction and it is not just a Notice of Lien issue.
+
+### Important Rule
+
+If the deal was resigned and the original lien was already placed, the original lien generally must be released before the corrected transaction can be completed.
+
+The vehicle may need to be reassigned back from the customer or customers to the dealership, then reassigned from the dealership back to the correct customer or customers with the new dates, lienholder, and ownership structure.
+
+Do not treat a resigned deal as a simple corrected title application or simple Notice of Lien unless management, compliance, or the proper processing authority confirms that is acceptable.
+
+### What To Check First
+
+Before starting the correction, confirm:
+
+1. Whether the original lien was already placed.
+2. Which lienholder is currently showing.
+3. Whether the title is paper or electronic.
+4. Whether the original lienholder must release the lien.
+5. Whether the deal was resigned with new dates.
+6. Whether the buyer changed.
+7. Whether the co-buyer changed.
+8. Whether the owner order changed.
+9. Whether the vehicle needs to be reassigned back to the dealership.
+10. Whether the vehicle then needs to be reassigned back to the customer with updated information.
+
+### Required Documents / Support
+
+Commonly needed:
+
+* Lien release from the lienholder currently showing.
+* Corrected or resigned deal paperwork.
+* New title application.
+* Reassignment support from customer back to dealership, if required.
+* Reassignment from dealership back to customer with corrected deal information.
+* Updated buyer/co-buyer documents, if applicable.
+* Updated lienholder or lender documents.
+* Odometer disclosure support, if applicable.
+* Power of attorney, if applicable.
+* Internal approval or supervisor review.
+
+### Our Office Workflow
+
+1. Confirm the deal was resigned or materially changed.
+2. Identify the lienholder currently showing on the title record.
+3. Confirm whether the current lienholder has already been placed.
+4. Request or obtain lien release from the lienholder currently showing.
+5. Do not continue until the lien release issue is resolved.
+6. Review the resigned deal paperwork.
+7. Confirm the new sale date.
+8. Confirm the new lienholder.
+9. Confirm whether the buyer or co-buyer changed.
+10. Confirm the correct owner names.
+11. Confirm the correct ownership order.
+12. Reassign the vehicle back from the customer or customers to the dealership, if required.
+13. Reassign the vehicle from the dealership back to the correct customer or customers.
+14. Use the new dates from the resigned deal.
+15. Use the correct lienholder from the resigned deal.
+16. Update buyer or co-buyer information if applicable.
+17. Prepare the new title application and supporting documents.
+18. Review the entire reassignment chain before submission.
+19. Submit through the correct internal process only after all support is complete.
+
+### Buyer / Co-Buyer Changes
+
+If a customer is being added or removed, verify carefully:
+
+* Which customer or customers were on the original deal.
+* Which customer or customers are on the resigned deal.
+* Whether ownership order changed.
+* Whether signatures are needed from the original customer or customers.
+* Whether signatures are needed from the corrected customer or customers.
+* Whether the reassignment chain supports the ownership change.
+
+Do not assume buyer or co-buyer changes can be corrected with only a title application.
+
+### Lien Release Requirement
+
+If the original lienholder was placed and the deal was later resigned with a different lienholder, the original lien must be addressed.
+
+Before continuing, confirm:
+
+* Current lienholder showing on the title record.
+* Whether that lienholder has released the lien.
+* Whether the lien release is acceptable.
+* Whether the title can be reassigned after the lien is released.
+* Whether the new lienholder can be added with the resigned deal.
+
+### Reassignment Chain
+
+When required, the reassignment chain must support the corrected transaction.
+
+Confirm:
+
+* Vehicle is reassigned back from the customer or customers to the dealership.
+* Vehicle is reassigned from the dealership back to the correct customer or customers.
+* New sale date is used.
+* New lienholder is used.
+* Correct buyer and co-buyer are listed.
+* Signatures are complete.
+* Odometer support is complete, if applicable.
+
+### Escalate When
+
+Escalate before submission if:
+
+* Lienholder will not release the lien.
+* Lien release is missing or unclear.
+* Buyer or co-buyer changed.
+* Ownership order changed.
+* Vehicle needs to be reassigned back to the dealership and the chain is unclear.
+* Customer refuses or cannot sign.
+* There is a deceased owner, POA issue, fraud concern, brand, stop, or unusual title status.
+* You are unsure whether to request a lien release, duplicate title, ELT print, title correction, Notice of Lien, or full reassignment chain.
+
+---
+## Quick Decision Guide
+
+### Use Scenario 1 if:
+
+* Same owners.
+* Same owner order.
+* Same sale date.
+* Same odometer/mileage.
+* Only the lienholder was wrong.
+* Wrong lienholder was placed in error.
+
+### Use Scenario 2 if:
+
+* Deal was financed.
+* No lienholder was placed.
+* Lienholder needs to be added after processing.
+* Notice of Lien is needed.
+* Dates must match the original deal.
+* Paper title may need to be submitted if the title is paper.
+* Duplicate title may be needed if the paper title cannot be obtained.
+
+### Use Scenario 3 if:
+
+* Deal was resigned.
+* Sale date changed.
+* Lienholder changed.
+* Buyer was added or removed.
+* Co-buyer was added or removed.
+* Ownership structure changed.
+* Existing lien may need to be released.
+* Vehicle may need to be reassigned back to the dealership and reassigned back to the customer.
+
+---
+## Final Review Before Submission
+
+Before any lien correction is submitted, confirm:
+
+* Which scenario applies.
+* Whether the lienholder was wrong, missing, or changed after a resigned deal.
+* Whether a lien was already placed.
+* Whether a lien release is required.
+* Whether a Notice of Lien is required.
+* Whether the title is paper or electronic.
+* Whether paper title is required.
+* Whether a duplicate title may be needed.
+* Whether dates changed.
+* Whether mileage changed.
+* Whether buyer or co-buyer changed.
+* Whether the title application or Notice of Lien matches the correct scenario.
+* Whether supporting documents explain the correction clearly.
+* Whether escalation is needed before submission.
+
+When unsure, stop and escalate before submitting.

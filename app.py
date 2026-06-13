@@ -21,6 +21,18 @@ st.markdown("""
     color: #EAEAEA;
 }
 
+/* App Links */
+a {
+    color: #C8A96B !important;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #FFD700 !important;
+    text-decoration: underline;
+}
+                                   
 .scope-note {
     max-width: 900px;
     margin: 1.25rem auto 1.2rem auto;
@@ -124,6 +136,52 @@ html, body, [class*="css"] {
     border-radius: 18px;
     padding: 28px;
     margin-top: 20px;
+}
+/* Training Center Cards */
+.training-card {
+    background-color: #111111;
+    border: 1px solid rgba(200, 169, 107, 0.35);
+    border-radius: 16px;
+    padding: 1.2rem;
+    margin: 0.75rem 0 0.35rem 0;
+    min-height: 230px;
+    box-shadow: 0 0 18px rgba(0, 0, 0, 0.22);
+}
+
+.training-card h3 {
+    margin-top: 0;
+    margin-bottom: 0.65rem;
+    color: #FFFFFF !important;
+    font-weight: 800;
+}
+
+.training-card p {
+    color: rgba(255, 255, 255, 0.78) !important;
+    font-size: 0.95rem;
+    line-height: 1.5;
+}
+            
+.training-resource-box {
+    background-color: #111111;
+    border: 1px solid rgba(200, 169, 107, 0.45);
+    border-radius: 16px;
+    padding: 1rem 1.2rem;
+    margin: 1rem 0 0.75rem 0;
+    box-shadow: 0 0 18px rgba(0, 0, 0, 0.18);
+}
+
+.training-resource-box h4 {
+    color: #FFFFFF !important;
+    margin-top: 0;
+    margin-bottom: 0.45rem;
+    font-size: 1.2rem;
+    font-weight: 800;
+}
+
+.training-resource-box p {
+    color: rgba(255, 255, 255, 0.75) !important;
+    margin-bottom: 0;
+    font-size: 0.95rem;
 }
 
 /* INFO TEXT */
@@ -297,6 +355,205 @@ padding: 0 1rem !important;
 client = OpenAI(
     api_key=st.secrets["OPENAI_API_KEY"]
 )
+# ----------------------------
+# TRAINING CENTER CONFIG
+# ----------------------------
+
+TRAINING_TOPICS = {
+    "Duplicate Titles": {
+        "file": "training_center/duplicate_titles.txt",
+        "summary": "Step-by-step duplicate title workflow, lien checks, Fast Title handling, and rejection prevention.",
+        "level": "Beginner",
+        "time": "10–15 minutes",
+        "forms": [
+        {
+            "name": "HSMV 82101 — Duplicate or Lost in Transit/Reassignment Title Application",
+            "url": "https://www.flhsmv.gov/pdf/forms/82101.pdf"
+        },
+        {
+            "name": "HSMV 82053 — Power of Attorney",
+            "url": "https://www.flhsmv.gov/pdf/forms/82053.pdf"
+        },
+        {
+            "name": "HSMV 82993 — Separate Odometer Disclosure Statement",
+            "url": "https://www.flhsmv.gov/pdf/forms/82993.pdf"
+        }
+    ]
+ },
+    
+    "ELT Flip / ELT Print": {
+        "file": "training_center/elt_flip_print.txt",
+        "summary": "How to handle electronic titles, lienholder releases, ELT print requests, and escalation points.",
+        "level": "Beginner–Intermediate",
+        "time": "10–15 minutes",
+        "forms": [
+        {
+            "name": "HSMV 82040 — Application for Certificate of Title With/Without Registration",
+            "url": "https://www.flhsmv.gov/pdf/forms/82040.pdf"
+        },
+        {
+            "name": "HSMV 82053 — Power of Attorney",
+            "url": "https://www.flhsmv.gov/pdf/forms/82053.pdf"
+        },
+        {
+            "name": "HSMV 82994 — Motor Vehicle Title Reassignment Supplement",
+            "url": "https://www.flhsmv.gov/pdf/forms/82994.pdf"
+        }
+    ]
+
+    },
+    "Lien Corrections": {
+        "file": "training_center/lien_corrections.txt",
+        "summary": "How to handle incorrect lienholders, missing lien information, lien releases, and payoff-related title issues.",
+        "level": "Intermediate",
+        "time": "15–20 minutes",
+        "forms": [
+        {
+            "name": "HSMV 82040 — Application for Certificate of Title With/Without Registration",
+            "url": "https://www.flhsmv.gov/pdf/forms/82040.pdf"
+        },
+        {
+            "name": "HSMV 82139 — Notice of Lien / Reassignment of Lien",
+            "url": "https://www.flhsmv.gov/pdf/forms/82139.pdf"
+        },
+        {
+            "name": "HSMV 82053 — Power of Attorney",
+            "url": "https://www.flhsmv.gov/pdf/forms/82053.pdf"
+        }
+    ]
+},
+    
+    "Plate Replacements": {
+    "file": "training_center/plate_replacements.txt",
+    "summary": "Simple workflow for lost plates, incorrect plate transfers, mailing issues, VIN-specific insurance, and Form 83146.",
+    "level": "Beginner",
+    "time": "10 minutes",
+    "forms": [
+        {
+            "name": "HSMV 83146 — Application for Replacement License Plate, Validation Decal or Parking Permit",
+            "url": "https://www.flhsmv.gov/pdf/forms/83146.pdf"
+        },
+        {
+            "name": "HSMV 82053 — Power of Attorney",
+            "url": "https://www.flhsmv.gov/pdf/forms/82053.pdf"
+        }
+    ]
+    
+},
+    "How to Fill Out Titles": {
+        "file": "training_center/how_to_fill_out_titles.txt",
+        "summary": "How to review buyer, seller, odometer, lienholder, date, and signature sections before submission.",
+        "level": "Beginner–Intermediate",
+        "time": "15–20 minutes"
+    },
+}
+
+
+def load_training_guide(file_path):
+    try:
+        with open(file_path, "r", encoding="utf-8") as f:
+            return f.read()
+    except FileNotFoundError:
+        return """
+# Training Guide Not Found
+
+This training file has not been created yet.
+
+Create the missing TXT file in the `training_center` folder, then add your operational notes.
+"""
+    except Exception as e:
+        return f"""
+# Training Guide Error
+
+There was a problem loading this training guide.
+
+Error:
+{e}
+"""
+
+def render_training_forms(topic_data):
+    forms = topic_data.get("forms", [])
+
+    if not forms:
+        return
+
+    st.markdown(
+        """
+        <div class="training-resource-box">
+            <h4>Forms / Resources Needed</h4>
+            <p>Use these links as quick access to commonly needed forms for this workflow.</p>
+        </div>
+        """,
+        unsafe_allow_html=True
+    )
+
+    for form in forms:
+        st.markdown(f"- [{form['name']}]({form['url']})")
+
+def render_training_center():
+    st.markdown("## DelveAI Training Center")
+    st.markdown(
+        """
+        <p class="subtext">
+        Guided dealership training for title, registration, lien, plate, and rejection workflows.
+        Choose a topic below to open the step-by-step office guide.
+        </p>
+        """,
+        unsafe_allow_html=True
+    )
+
+    if "selected_training_topic" not in st.session_state:
+        st.session_state.selected_training_topic = None
+
+    # Topic detail view
+    if st.session_state.selected_training_topic:
+        selected_topic = st.session_state.selected_training_topic
+        topic_data = TRAINING_TOPICS[selected_topic]
+
+        if st.button("← Back to Training Center"):
+            st.session_state.selected_training_topic = None
+            st.rerun()
+
+        st.markdown("---")
+        st.markdown(f"## {selected_topic}")
+
+        render_training_forms(topic_data)
+
+        guide_text = load_training_guide(topic_data["file"])
+
+        st.markdown(guide_text, unsafe_allow_html=True)
+
+        st.markdown("---")
+        st.info("Use this guide as internal workflow training. Escalate unclear ownership, lien, odometer, fraud, legal authority, or unusual title issues before submission.")
+        return
+
+    # Topic menu view
+    st.markdown("### Core Training Topics")
+
+    topic_names = list(TRAINING_TOPICS.keys())
+
+    for i in range(0, len(topic_names), 2):
+        cols = st.columns(2)
+
+        for col, topic_name in zip(cols, topic_names[i:i + 2]):
+            topic = TRAINING_TOPICS[topic_name]
+
+            with col:
+                st.markdown(
+                    f"""
+                    <div class="training-card">
+                        <h3>{topic_name}</h3>
+                        <p>{topic["summary"]}</p>
+                        <p><strong>Level:</strong> {topic["level"]}</p>
+                        <p><strong>Training time:</strong> {topic["time"]}</p>
+                    </div>
+                    """,
+                    unsafe_allow_html=True
+                )
+
+                if st.button(f"Open {topic_name}", key=f"open_{topic_name}"):
+                    st.session_state.selected_training_topic = topic_name
+                    st.rerun()
 
 # ----------------------------
 # SIDEBAR
@@ -361,7 +618,20 @@ st.markdown(
     """,
     unsafe_allow_html=True
 )
+# ----------------------------
+# PAGE MODE SELECTOR
+# ----------------------------
 
+page_mode = st.radio(
+    "Choose page",
+    ["Ask DelveAI", "Training Center"],
+    horizontal=True,
+    label_visibility="collapsed"
+)
+
+if page_mode == "Training Center":
+    render_training_center()
+    st.stop()
 # ------------------------------
 # LOAD DOCUMENTS
 # ------------------------------

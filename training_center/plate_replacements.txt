@@ -1,0 +1,64 @@
+## Summary
+
+Use this guide when a plate was lost in transit, mailed incorrectly, or the wrong plate was transferred to the customer.
+
+Form **HSMV 83416** is used for this workflow and may be signed by POA.
+
+## When This Applies
+
+* Plate was mailed out but lost in transit.
+* Plate was mailed to the wrong address.
+* Wrong plate was transferred to the customer.
+* A transfer plate was processed but should have been a new plate.
+* A new plate was issued but the customer did not receive it.
+
+## Our Office Workflow
+
+1. Confirm the VIN matches the deal.
+2. Confirm the customer is the owner of record.
+3. Confirm VIN-specific insurance.
+4. Confirm the customer’s correct mailing address.
+5. Confirm all required signatures are complete. 
+6. Complete APPLICATION FOR REPLACEMENT LICENSE PLATE Form 83416, may be signed by POA.
+	- Section 1 REPLACEMENT TYPE -Check box for License Plate & Decal
+	- Check a box for REPLACEMENT REASON
+	- Section 2 OWNER / CUSTOMER IDENTIFICATION
+	- Section 3 VEHICLE INFORMATION
+	- Section 4, sign and date 
+7. Submit through the appropriate tag agency.
+8. Save support documents and confirmation.
+
+## Common Mistakes
+
+* VIN does not match the deal.
+* VIN-specific insurance was not verified.
+* Mailing address was not confirmed.
+* Wrong plate was transferred.
+* Transfer plate was processed when a new plate was needed.
+* New plate was processed when a transfer plate should have been used.
+* Form 83416 is missing signatures.
+* POA is missing or incomplete when used.
+
+## When To Escalate
+
+* No VIN-specific insurance.
+* Customer is not the owner of record.
+* VIN does not match.
+* Correct mailing address cannot be confirmed.
+* Plate status is unclear.
+* It is unclear whether the transaction should be a replacement plate, new plate, or corrected transfer.
+* POA is unclear, missing, or incomplete.
+* There is a stop, registration issue, insurance issue, fraud concern, or unusual record status.
+
+## Quick Checklist
+
+* VIN checked.
+* Ownership checked.
+* VIN-specific insurance checked.
+* Mailing address confirmed.
+* Form 83416 completed.
+* Signatures checked.
+* POA checked, if used.
+* Fees confirmed.
+* Support documents saved.
+* Rejection risk reviewed.

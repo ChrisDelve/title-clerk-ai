@@ -1,0 +1,72 @@
+## Summary
+
+Use this guide when an electronic title needs to be printed or flipped into the dealership’s name.
+
+## When This Applies
+
+* Vehicle has an electronic Florida title.
+* Dealer needs the title printed into the dealership’s name.
+* Dealer needs the title for wholesale, resale, or correction.
+
+## Our Office Workflow
+
+1. Confirm the vehicle is titled in Florida.
+2. Confirm the title is electronic.
+3. Confirm the customer is the titled owner of record.
+4. Confirm there is a proper reassignment from the titled owner to the dealership.
+5. Confirm the reassignment has the correct date and mileage.
+6. Prepare the title application in the dealership’s name with proper dealership information.
+7. Confirm the date on the title application matches the reassignment date.
+8. Confirm the mileage on the title application matches the reassignment mileage.
+9. Confirm Section 7 is signed.
+10. Confirm Section 12 is signed.
+11. If there is no proper reassignment from customer to dealer, complete the reassignment by POA on specialty paper/rainbow reassignment when allowed.
+12. Confirm POA is valid if signing by POA.
+13. Submit through appropriate tag agency.
+14. Save support documents and confirmation.
+
+## Common Mistakes
+
+* No reassignment from customer/titled owner to dealership.
+* Reassignment does not list the dealership correctly.
+* Date on title application does not match reassignment date.
+* Mileage on title application does not match reassignment mileage.
+* Section 7 is not signed.
+* Section 12 is not signed.
+* POA is missing, incomplete, or does not match.
+* Specialty paper/rainbow reassignment is missing when needed.
+* Customer signing does not match titled owner of record.
+* Title application is not completed in the dealership’s name.
+* Trying to process an ELT print when the title is not electronic.
+
+## When To Escalate
+
+* Owner does not match.
+* Reassignment from customer to dealership is missing.
+* Reassignment is incomplete.
+* Date or mileage does not match.
+* Section 7 is not signed.
+* Section 12 is not signed.
+* POA is unclear, missing, or incomplete.
+* Customer is deceased.
+* Vehicle is not Florida-titled.
+* There is a stop, brand, fraud concern, or unusual title status.
+* You are unsure whether specialty paper/rainbow reassignment is required.
+
+## Quick Checklist
+
+* Florida title checked.
+* Electronic title confirmed.
+* Ownership checked.
+* Reassignment to dealership checked.
+* Title application completed in dealership’s name.
+* Dealership information checked.
+* Date matches reassignment.
+* Mileage matches reassignment.
+* Section 7 signed.
+* Section 12 signed.
+* POA checked, if used.
+* Rainbow reassignment checked, if used.
+* Forms complete.
+* Fees confirmed.
+* Rejection risk reviewed.
