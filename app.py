@@ -480,12 +480,22 @@ TRAINING_TOPICS = {
     ]
 
 },
-    "How to Fill Out Titles": {
-        "file": "training_center/how_to_fill_out_titles.txt",
-        "summary": "How to review buyer, seller, odometer, lienholder, date, and signature sections before submission.",
-        "level": "Beginner–Intermediate",
-        "time": "15–20 minutes"
-    },
+"How to Reassign Title": {
+    "file": "training_center/how_to_reassign_title.txt",
+    "summary": "Step-by-step workflow for reassigning a paper title, checking ownership, mileage, dates, purchaser information, and dealership reassignment sections.",
+    "level": "Beginner–Intermediate",
+    "time": "10–15 minutes",
+    "forms": [
+        {
+            "name": "HSMV 82993 — Separate Odometer Disclosure Statement and Acknowledgment",
+            "url": "https://www.flhsmv.gov/pdf/forms/82993.pdf"
+        },
+        {
+            "name": "HSMV 82053 — Power of Attorney",
+            "url": "https://www.flhsmv.gov/pdf/forms/82053.pdf"
+        }
+    ]
+}
 }
 
 
@@ -559,6 +569,39 @@ def render_training_center():
 
         render_training_forms(topic_data)
 
+        if selected_topic == "How to Reassign Title":
+            st.markdown("## Visual Title Guide")
+            st.markdown(
+                "Use the numbered title images with the step-by-step guide below."
+            )
+
+            col1, col2 = st.columns(2)
+
+            with col1:
+                st.image(
+                    "assets/reassign_title_front.png",
+                    caption="Front of Title — Steps 1–4",
+                    use_container_width=True
+                )
+
+            with col2:
+                st.image(
+                    "assets/reassign_title_back.png",
+                    caption="Reverse of Title — Step 5",
+                    use_container_width=True
+                )
+
+            st.markdown("---")
+
+        guide_text = load_training_guide(topic_data["file"])
+
+        st.markdown(guide_text, unsafe_allow_html=True)
+
+        st.markdown("---")
+        st.info(
+            "Use this guide as internal workflow training. Escalate unclear ownership, lien, odometer, fraud, legal authority, or unusual title issues before submission."
+        )
+        return
         guide_text = load_training_guide(topic_data["file"])
 
         st.markdown(guide_text, unsafe_allow_html=True)

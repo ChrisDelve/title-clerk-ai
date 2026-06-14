@@ -1,0 +1,155 @@
+## What Is Needed
+
+Use these items as quick access for this workflow:
+
+* Original paper title
+* Verify VIN number matches title and documents
+* Trade or gift documents
+* Notarized lien release, if needed
+* Odometer statement
+* Power of Attorney, if used
+* Audit trail, if signed by Power of Attorney
+* Dealer information:
+
+  * Dealership name
+  * Dealership address
+  * VF number / dealer number
+  * Sales tax number
+
+## Summary
+
+Use this guide when the dealership is taking in a vehicle and reassigning the paper title correctly from the title owner to the dealership, and then from the dealership to the purchaser.
+
+The main goal is to make sure the title owner, signatures, mileage, dates, purchaser information, and dealership reassignment information are completed correctly before the vehicle is resold.
+
+The numbered steps in this guide are designed to match the numbered areas on the title training image.
+
+---
+
+## Our Office Workflow
+
+### 1. Verify the title owner / signer
+
+a. Verify the person listed as the owner on the title is the same person signing the trade or gift documents.
+
+b. If there is more than one owner, verify the required owner signatures are present.
+
+c. If the person signing does not match the title owner, stop and escalate before continuing.
+
+---
+
+### 2. Verify Branded Mileage and Dates
+
+a. Make sure the title is not branded with more miles than what the trade-in/gift documents reads or resale paperwork.
+
+b. Verify the date on the title does not conflict with the dates on the trade-in/gift documents or resale paperwork.
+
+c. If mileage or dates do not line up, stop and escalate before continuing.
+
+---
+
+### 3. Signing the owner-to-dealer assignment
+
+a. Have the customer sign in the correct seller signature line.
+
+b. If the customer signed but did not print their name, print the customer’s name on the printed seller name line if needed.
+
+c. If the title is signed by Power of Attorney, verify “POA” is written next to the signature.
+
+d. If signed by Power of Attorney, the odometer statement and audit trail must be submitted with the title.
+
+e. Print your name on the purchaser printed name line.
+
+f. Sign your name on the purchaser signature line.
+
+---
+
+### 4. Complete the dealer-to-customer reassignment
+
+a. Enter the purchaser’s name.
+
+b. Enter the purchaser’s address.
+
+c. Enter the mileage.
+
+d. Enter the mileage read date.
+
+e. Enter the date sold.
+
+---
+
+### 5. Complete the first reassignment on the back of the title
+
+a. Enter the dealership name as the seller.
+
+b. Enter the dealership address.
+
+c. Enter the VF number / dealer number on the dealer number line.
+
+d. Enter the sales tax number.
+
+e. Print your name on the printed seller name line.
+
+f. Sign your name on the seller signature line.
+
+---
+
+## Common Mistakes
+
+* Title owner does not match the person signing the trade or gift documents.
+* Required owner signature is missing.
+* Customer signs in the wrong seller signature line.
+* Printed names are missing where needed.
+* “POA” is not written next to the signature when Power of Attorney is used.
+* Odometer statement or audit trail is missing when signed by Power of Attorney.
+* Mileage on the title conflicts with the odometer statement.
+* Mileage or dates conflict with the resale paperwork.
+* Purchaser name is incomplete or incorrect.
+* Purchaser address is incomplete.
+* Dealership information is incomplete.
+* VF number / dealer number is missing.
+* Sales tax number is missing.
+* Seller signature line is not signed.
+* Title appears altered, unclear, or incomplete.
+
+## When To Escalate
+
+Hold and escalate if:
+
+* The title owner does not match the signer.
+* Required owner signatures are missing.
+* The title shows more miles than the odometer statement.
+* Mileage is inconsistent.
+* Dates are inconsistent.
+* The title was signed incorrectly.
+* Power of Attorney is unclear, missing, or incomplete.
+* Audit trail is missing when Power of Attorney is used.
+* Required dealership information is missing.
+* There is a lien showing and no notarized lien release is provided.
+* Anything on the title appears altered, unclear, or incomplete.
+
+## Quick Checklist
+
+Before finalizing, confirm:
+
+* Title owner matches signed trade or gift documents.
+* Required owner signatures are present.
+* Mileage is correct.
+* Dates are correct.
+* Customer signed the correct seller line.
+* Printed seller name is present if needed.
+* POA is written next to signature, if used.
+* Odometer statement is included, if needed.
+* Audit trail is included, if signed by POA.
+* Dealership is entered correctly as purchaser.
+* Purchaser printed name is complete.
+* Purchaser signature is complete.
+* Purchaser name and address are completed.
+* Mileage read date is completed.
+* Date sold is completed.
+* Dealership seller section is completed.
+* Dealership address is entered.
+* VF number / dealer number is entered.
+* Sales tax number is entered.
+* Seller printed name and signature are completed.
+* Rejection risk reviewed.
