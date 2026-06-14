@@ -403,6 +403,23 @@ client = OpenAI(
 # ----------------------------
 
 TRAINING_TOPICS = {
+    "How to Reassign Title": {
+        "file": "training_center/how_to_reassign_title.txt",
+        "summary": "Step-by-step workflow for reassigning a paper title, checking ownership, mileage, dates, purchaser information, and dealership reassignment sections.",
+        "level": "Beginner–Intermediate",
+        "time": "10–15 minutes",
+        "forms": [
+        {
+            "name": "HSMV 82993 — Separate Odometer Disclosure Statement and Acknowledgment",
+            "url": "https://www.flhsmv.gov/pdf/forms/82993.pdf"
+        },
+        {
+            "name": "HSMV 82053 — Power of Attorney",
+            "url": "https://www.flhsmv.gov/pdf/forms/82053.pdf"
+        }
+    ]
+},
+    
     "Duplicate Titles": {
         "file": "training_center/duplicate_titles.txt",
         "summary": "Step-by-step duplicate title workflow, lien checks, Fast Title handling, and rejection prevention.",
@@ -445,6 +462,20 @@ TRAINING_TOPICS = {
     ]
 
     },
+
+    "Obtaining Lien Release": {
+    "file": "training_center/obtaining_lien_release.txt",
+    "summary": "Step-by-step workflow for contacting lienholders, verifying lien release status, confirming payoff shortages, and documenting ETA or release method.",
+    "level": "Beginner–Intermediate",
+    "time": "10–15 minutes",
+    "forms": [
+        {
+            "name": "FLHSMV Motor Vehicle Check — Verify title/lien status",
+            "url": "https://services.flhsmv.gov/mvcheckweb/"
+        }
+    ]
+},
+
     "Lien Corrections": {
         "file": "training_center/lien_corrections.txt",
         "summary": "How to handle incorrect lienholders, missing lien information, lien releases, and payoff-related title issues.",
@@ -482,22 +513,6 @@ TRAINING_TOPICS = {
         }
     ]
 
-},
-"How to Reassign Title": {
-    "file": "training_center/how_to_reassign_title.txt",
-    "summary": "Step-by-step workflow for reassigning a paper title, checking ownership, mileage, dates, purchaser information, and dealership reassignment sections.",
-    "level": "Beginner–Intermediate",
-    "time": "10–15 minutes",
-    "forms": [
-        {
-            "name": "HSMV 82993 — Separate Odometer Disclosure Statement and Acknowledgment",
-            "url": "https://www.flhsmv.gov/pdf/forms/82993.pdf"
-        },
-        {
-            "name": "HSMV 82053 — Power of Attorney",
-            "url": "https://www.flhsmv.gov/pdf/forms/82053.pdf"
-        }
-    ]
 }
 }
 
@@ -900,14 +915,10 @@ def render_lienholder_data_center():
         """
         <p class="subtext">
         Search lienholder / ELT records by lender name, bank name, credit union, finance company,
-        FEID, or ELT customer number.
+        FEID, or ELT customer number. *Always verify lienholder information matches before submission*
         </p>
         """,
         unsafe_allow_html=True
-    )
-
-    st.info(
-        "Use this lookup as an internal reference only. Always verify lienholder information before submission."
     )
 
     records = load_lienholder_data()
@@ -919,8 +930,6 @@ def render_lienholder_data_center():
             "Lienholder data file was not found. Confirm data/elt_lienholders_clean.csv exists."
         )
         return
-
-    st.markdown("---")
 
     query = st.text_input(
         "Search lienholder",

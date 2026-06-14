@@ -1,0 +1,171 @@
+## Summary
+
+Use this guide when a vehicle has a lien showing and the dealership needs to obtain, confirm, or follow up on the lien release from the financial institution.
+
+The goal is to confirm the exact lienholder, verify the customer is the title owner, determine the status of the lien release, and identify whether the lien is being released electronically or by paper title / notarized lien release.
+
+## When This Applies
+
+Use this workflow when:
+
+* A lien is showing on the title record.
+* The dealership is waiting on a lien release.
+* The payoff was sent but the lien has not released yet.
+* The lender needs to confirm payoff, release status, or payoff shortage.
+* The title, ELT release, or notarized lien release is needed to continue processing.
+
+## What To Check First
+
+Before contacting the lienholder, confirm:
+
+1. Exact lienholder name.
+2. Customer on the documents is the title owner.
+3. VIN matches the deal documents.
+4. Vehicle year, make, and model.
+5. Customer account number, if available.
+6. Payoff amount sent, if available.
+7. Payoff date and good-through date, if available.
+8. Whether the lien is paper or electronic.
+
+## Our Office Workflow
+
+### 1. Verify the lienholder and title owner
+
+a. Confirm the exact lienholder showing on the title record or paperwork.
+
+b. Confirm the customer on the documents is the title owner.
+
+c. If the lienholder or customer does not match the documents, stop and escalate before contacting the lender.
+
+---
+
+### 2. Contact the lienholder
+
+a. Contact the lienholder by phone unless the institution supports email.
+
+b. Ask for the loan department, title department, or lien release department.
+
+c. Be prepared to provide:
+
+* Customer name
+* Customer account number
+* VIN
+* Year, make, and model of vehicle
+* Dealership name
+* Reason for request
+
+---
+
+### 3. Determine lien release status
+
+Ask the lender for the current lien release status.
+
+The lender may state:
+
+* Lien release has been completed.
+* Lien release is pending.
+* An ETA is available.
+* Payoff was short.
+* Payoff has not been received.
+* Additional information is needed.
+
+Document the lender’s response clearly.
+
+---
+
+### 4. If the lender provides an ETA
+
+If the lender gives an ETA for the lien release:
+
+a. Confirm the expected release date.
+
+b. Confirm whether the lien is being released electronically.
+
+c. Confirm whether a paper title is being mailed.
+
+d. Confirm whether a notarized lien release is being mailed or emailed.
+
+e. Confirm where the title or lien release is being sent.
+
+f. Update notes with the ETA and release method.
+
+---
+
+### 5. If the payoff is short
+
+If the lender states the payoff was short:
+
+a. Confirm the shortage amount.
+
+b. Ask for the updated 10-day payoff amount.
+
+c. Confirm the good-through date.
+
+d. Confirm the acceptable payment method.
+
+e. Notify the billing team immediately.
+
+f. Do not assume the lien will release until the shortage is resolved.
+
+---
+
+### 6. If payoff has not been received
+
+If the lender states payoff has not been received:
+
+a. Confirm the payoff amount.
+
+b. Confirm the good-through date.
+
+c. Confirm the overnight payoff address.
+
+d. Confirm whether any specific payoff instructions are required.
+
+e. Notify the billing team immediately.
+
+f. Document the lender’s response and the information provided.
+
+## Common Mistakes
+
+* Contacting the wrong lienholder.
+* Not verifying the customer is the title owner.
+* Not having the account number, VIN, year, make, and model ready.
+* Not asking whether the lien is being released electronically or by paper.
+* Not confirming where the paper title or notarized lien release is being sent.
+* Not documenting the ETA.
+* Not notifying billing when payoff is short.
+* Not notifying billing when payoff has not been received.
+* Assuming payoff sent means the lien has already been released.
+
+## When To Escalate
+
+Hold and escalate if:
+
+* The lienholder does not match the documents.
+* The customer is not the title owner.
+* The lender will not provide release information.
+* The payoff was short.
+* The lender has not received payoff.
+* The lien release is being sent to the wrong party.
+* The lender requires additional documents.
+* The title is electronic but the release status is unclear.
+* The lender states there is a legal, fraud, bankruptcy, deceased owner, or account authority issue.
+
+## Quick Checklist
+
+Before ending the lienholder follow-up, confirm:
+
+* Exact lienholder was verified.
+* Customer/title owner was verified.
+* VIN was verified.
+* Account number was provided, if available.
+* Year, make, and model were provided.
+* Lien release status was confirmed.
+* ETA was documented, if provided.
+* Release method was confirmed: electronic, paper title, or notarized lien release.
+* Mailing destination was confirmed, if applicable.
+* Payoff shortage was documented, if applicable.
+* Updated 10-day payoff and good-through date were confirmed, if applicable.
+* Overnight payoff address was confirmed, if payoff was not received.
+* Billing team was notified immediately if payoff was short or not received.
+* Notes were updated before moving on.
