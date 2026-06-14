@@ -2,6 +2,9 @@ from annotated_types import doc
 import streamlit as st
 from openai import OpenAI
 import os
+import csv
+import re
+from pathlib import Path
 
 # ----------------------------
 # PAGE CONFIG
@@ -701,19 +704,276 @@ st.markdown(
     """,
     unsafe_allow_html=True
 )
+
+@st.cache_data
+def load_lienholder_data():
+    csv_path = Path("data/elt_lienholders_clean.csv")
+
+    if not csv_path.exists():
+        return []
+
+    with csv_path.open("r", encoding="utf-8", newline="") as f:
+        reader = csv.DictReader(f)
+        return list(reader)
+
+@st.cache_data
+def load_lienholder_internal_notes():
+    notes_path = Path("data/lienholder_internal_notes.csv")
+
+    if not notes_path.exists():
+        return []
+
+    with notes_path.open("r", encoding="utf-8", newline="") as f:
+        reader = csv.DictReader(f)
+        return list(reader)
+
+def normalize_search_text(value):
+    value = str(value or "").upper()
+    value = re.sub(r"[^A-Z0-9]+", " ", value)
+    value = re.sub(r"\s+", " ", value).strip()
+    return value
+
+def find_internal_note_for_record(record, internal_notes):
+    record_name = normalize_search_text(record.get("display_name", ""))
+    record_customer_number = normalize_search_text(record.get("elt_customer_number", ""))
+
+    for note in internal_notes:
+        note_name = normalize_search_text(note.get("display_name", ""))
+        note_customer_number = normalize_search_text(note.get("elt_customer_number", ""))
+        note_aliases = normalize_search_text(note.get("search_aliases", ""))
+
+        # Best match: exact ELT customer number when available
+        if note_customer_number and record_customer_number and note_customer_number == record_customer_number:
+            return note
+
+        # Strong match: exact display name
+        if note_name and note_name == record_name:
+            return note
+
+        # Alias match
+        if note_aliases:
+            aliases = [normalize_search_text(alias) for alias in note.get("search_aliases", "").split("|")]
+            for alias in aliases:
+                if alias and alias == record_name:
+                    return note
+
+        # Flexible name match
+        if note_name and note_name in record_name:
+            return note
+
+        if record_name and record_name in note_name:
+            return note
+
+    return None
+
+def search_lienholders(records, query, limit=25):
+    query_clean = normalize_search_text(query)
+
+    if not query_clean:
+        return []
+
+    query_terms = query_clean.split()
+    scored_results = []
+
+    for record in records:
+        searchable_text = " ".join([
+            record.get("display_name", ""),
+            record.get("search_name", ""),
+            record.get("search_aliases", ""),
+            record.get("mailing_address", ""),
+            record.get("city", ""),
+            record.get("state", ""),
+            record.get("zip", ""),
+            record.get("feid_number", ""),
+            record.get("elt_customer_number", ""),
+        ])
+
+        searchable_clean = normalize_search_text(searchable_text)
+        display_clean = normalize_search_text(record.get("display_name", ""))
+        search_name_clean = normalize_search_text(record.get("search_name", ""))
+
+        score = 0
+
+        # Strongest match: exact display/search name contains query
+        if query_clean in display_clean:
+            score += 100
+
+        if query_clean in search_name_clean:
+            score += 90
+
+        # Term matches
+        for term in query_terms:
+            if term in display_clean:
+                score += 20
+            elif term in searchable_clean:
+                score += 10
+
+        if score > 0:
+            scored_results.append((score, record))
+
+    scored_results.sort(
+        key=lambda item: (
+            item[0],
+            item[1].get("display_name", "")
+        ),
+        reverse=True
+    )
+
+    return [record for score, record in scored_results[:limit]]
+
+
+def render_lienholder_record(record, internal_notes_list=None):
+    display_name = record.get("display_name", "")
+    mailing_address = record.get("mailing_address", "")
+    city = record.get("city", "")
+    state = record.get("state", "")
+    zip_code = record.get("zip", "")
+    feid_number = record.get("feid_number", "")
+    feid_suffix = record.get("feid_suffix", "")
+    elt_customer_number = record.get("elt_customer_number", "")
+
+    matched_note = None
+    if internal_notes_list:
+        matched_note = find_internal_note_for_record(record, internal_notes_list)
+
+    phone = ""
+    email = ""
+    payoff_website = ""
+    lien_release_notes = ""
+    elt_notes = ""
+    search_aliases = ""
+    last_verified_date = ""
+    internal_notes = ""
+
+    if matched_note:
+        phone = matched_note.get("phone", "")
+        email = matched_note.get("email", "")
+        payoff_website = matched_note.get("payoff_website", "")
+        lien_release_notes = matched_note.get("lien_release_notes", "")
+        elt_notes = matched_note.get("elt_notes", "")
+        search_aliases = matched_note.get("search_aliases", "")
+        last_verified_date = matched_note.get("last_verified_date", "")
+        internal_notes = matched_note.get("internal_notes", "")
+    matched_note = None
+    if internal_notes:
+        matched_note = find_internal_note_for_record(record, internal_notes)
+
+    st.markdown(
+        f"""
+        <div class="training-card">
+            <h3>{display_name}</h3>
+            <p><strong>Mailing Address:</strong> {mailing_address}</p>
+            <p><strong>City / State / ZIP:</strong> {city}, {state} {zip_code}</p>
+            <p><strong>ELT Customer Number:</strong> {elt_customer_number}</p>
+            <p><strong>FEID:</strong> {feid_number}</p>
+            <p><strong>FEID Suffix:</strong> {feid_suffix}</p>
+            {f"<p><strong>Internal Phone:</strong> {phone}</p>" if phone else ""}
+            {f"<p><strong>Payoff Website:</strong> {payoff_website}</p>" if payoff_website else ""}
+        </div>
+        """,
+        unsafe_allow_html=True
+    )
+
+    if phone or email or payoff_website or lien_release_notes or elt_notes or search_aliases or last_verified_date or internal_notes:
+        with st.expander("Internal Contact / Notes"):
+            if phone:
+                st.write(f"**Phone:** {phone}")
+            if email:
+                st.write(f"**Email:** {email}")
+            if payoff_website:
+                st.write(f"**Payoff Website:** {payoff_website}")
+            if lien_release_notes:
+                st.write(f"**Lien Release Notes:** {lien_release_notes}")
+            if elt_notes:
+                st.write(f"**ELT Notes:** {elt_notes}")
+            if search_aliases:
+                st.write(f"**Aliases:** {search_aliases}")
+            if last_verified_date:
+                st.write(f"**Last Verified:** {last_verified_date}")
+            if internal_notes:
+                st.write(f"**Internal Notes:** {internal_notes}")
+
+
+def render_lienholder_data_center():
+    st.markdown("## Lienholder Data Center")
+    st.markdown(
+        """
+        <p class="subtext">
+        Search lienholder / ELT records by lender name, bank name, credit union, finance company,
+        FEID, or ELT customer number.
+        </p>
+        """,
+        unsafe_allow_html=True
+    )
+
+    st.info(
+        "Use this lookup as an internal reference only. Always verify lienholder information before submission."
+    )
+
+    records = load_lienholder_data()
+    internal_notes = load_lienholder_internal_notes()
+    
+
+    if not records:
+        st.error(
+            "Lienholder data file was not found. Confirm data/elt_lienholders_clean.csv exists."
+        )
+        return
+
+    st.markdown("---")
+
+    query = st.text_input(
+        "Search lienholder",
+        placeholder="Example: Toyota, Ally, Chase, Wells Fargo, Capital One...",
+        key="lienholder_search_query"
+    )
+
+    if not query:
+        st.markdown(
+            f"""
+            <div class="response-container">
+                <div class="response-text">
+                    <p><strong>{len(records):,}</strong> lienholder / ELT records loaded.</p>
+                    <p>Enter a lender, bank, credit union, finance company, FEID, or ELT customer number above.</p>
+                </div>
+            </div>
+            """,
+            unsafe_allow_html=True
+        )
+        return
+
+    results = search_lienholders(records, query)
+
+    st.markdown(f"### Search Results for: `{query}`")
+
+    if not results:
+        st.warning(
+            "No matching lienholder records found. Try a shorter search, alternate lender name, or customer number."
+        )
+        return
+
+    st.caption(f"Showing top {len(results)} result(s).")
+
+    for record in results:
+        render_lienholder_record(record, internal_notes)
+
 # ----------------------------
 # PAGE MODE SELECTOR
 # ----------------------------
 
 page_mode = st.radio(
     "Choose page",
-    ["Ask DelveAI", "Training Center"],
+    ["Ask DelveAI", "Training Center", "Lienholder Data Center"],
     horizontal=True,
     label_visibility="collapsed"
 )
 
 if page_mode == "Training Center":
     render_training_center()
+    st.stop()
+
+if page_mode == "Lienholder Data Center":
+    render_lienholder_data_center()
     st.stop()
 # ------------------------------
 # LOAD DOCUMENTS

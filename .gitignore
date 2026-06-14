@@ -1,1 +1,4 @@
 .streamlit/secrets.toml
+data/elt_raw.xlsx
+data/elt.xlsx
+data/*.numbers
