@@ -1,0 +1,207 @@
+# Unwinds
+
+## Summary
+
+Use this guide when a deal falls through after the vehicle was sold, titled, registered, or submitted for processing.
+
+An unwind means the transaction is being reversed and the vehicle needs to be brought back under dealership control. This may happen because the customer returned the vehicle, the bank would not fund the deal, the deal was cancelled, or the transaction cannot continue.
+
+The goal is to confirm the registration status, recover or correct the plate situation, obtain any needed lien release, and put the title back into the dealership’s name.
+
+## When This Applies
+
+Use this workflow when:
+
+* A customer returns a vehicle after the deal was completed or submitted.
+* A bank will not fund the deal.
+* A funded or pending deal is cancelled.
+* A lien was placed and must be released.
+* A title was issued or submitted in the customer’s name.
+* A new plate was issued and must be recovered.
+* A transfer plate was used and must be placed back correctly.
+* The vehicle needs to be titled back into the dealership’s name.
+
+## What To Check First
+
+Before processing an unwind, confirm:
+
+1. Why the deal is being unwound.
+2. Whether the customer was issued a new plate.
+3. Whether the customer transferred an existing plate.
+4. Whether the vehicle was titled in the customer’s name.
+5. Whether the title is paper or electronic.
+6. Whether a lienholder was added.
+7. Whether the lien has been released.
+8. Whether the dealership has the title or needs to wait for title/lien release.
+9. Whether POA is available to reassign the title back to the dealership.
+10. Whether the dates and mileage match the customer’s title transaction.
+11. Whether the schedule and sleeve notes reflect the current action.
+
+## Our Office Workflow
+
+### 1. Confirm the unwind reason
+
+a. Confirm why the deal is being unwound.
+
+b. Common reasons include:
+
+* Customer returned the vehicle.
+* Bank would not fund the deal.
+* Deal was cancelled.
+* Deal cannot continue due to paperwork, lien, title, registration, or funding issue.
+
+c. Update notes so the schedule or sleeve clearly shows that the deal is being unwound.
+
+---
+
+### 2. Confirm the plate situation
+
+a. Determine whether the customer was issued a new plate or transferred a plate.
+
+b. If the customer was issued a new plate, the plate must be recovered.
+
+c. Once recovered, the plate must be surrendered to the tag agency / DMV.
+
+d. Do not leave an issued plate active on an unwound deal.
+
+---
+
+### 3. If the customer used a transfer plate
+
+a. Confirm what vehicle the plate needs to go back onto.
+
+b. Confirm there is VIN-specific insurance on the vehicle the plate is going back on.
+
+c. Do not process the transfer correction without confirming the insurance matches the correct VIN.
+
+d. If insurance does not match the VIN, hold and escalate.
+
+---
+
+### 4. Verify whether a lienholder was added
+
+a. Check whether the deal had a lienholder.
+
+b. If a lienholder was added, the lien must be released before the title can be properly returned to the dealership’s name.
+
+c. Contact the lienholder or follow the lien release workflow if the lien has not been released.
+
+d. Do not assume the lien is released just because the deal was cancelled or unwound.
+
+---
+
+### 5. Confirm title status
+
+a. Determine whether the title is paper or electronic.
+
+b. If the title is paper, confirm the dealership has the physical title.
+
+c. If the title is electronic, confirm the title status and whether the lien has been released.
+
+d. If the title has not been received or the lien has not released, hold the unwind title work until the title/lien status is clear.
+
+---
+
+### 6. Reassign the title from the customer back to the dealership
+
+a. The title must be reassigned from the customer back to the dealership.
+
+b. Dates and mileage must match what the customer was titled in with.
+
+c. Do not create new dates or mileage that conflict with the customer’s title transaction.
+
+d. POA may be used to reassign the title back to the dealership when properly available.
+
+e. If POA is used, make sure the POA supports the reassignment and is included with the unwind paperwork.
+
+---
+
+### 7. If the title is paper
+
+a. Reassign the paper title from the customer back to the dealership.
+
+b. Complete a title application using HSMV 82040 in the dealership’s name.
+
+c. The dates and mileage on the title application must match the title reassignment.
+
+d. Review the title reassignment, signatures, printed names, dates, and mileage before submitting.
+
+---
+
+### 8. If the title is electronic
+
+a. Complete HSMV 82994 from the customer back to the dealership.
+
+b. Complete HSMV 82040 in the dealership’s name.
+
+c. The dates and mileage on the 82040 must match the reassignment.
+
+d. Include POA if POA was used to sign the reassignment.
+
+e. Confirm the lien release/title status before submitting the title back into the dealership’s name.
+
+---
+
+### 9. Submit title back into the dealership’s name
+
+a. Once the lien is released and/or the title is available, submit the title work to place the title back into the dealership’s name.
+
+b. Confirm all dates, mileage, ownership, signatures, and lien information match before submission.
+
+c. Update notes showing the action taken.
+
+d. Keep unwind paperwork together in the sleeve or designated file location.
+
+## Common Mistakes
+
+* Not recovering a newly issued plate.
+* Not surrendering a recovered new plate.
+* Treating a transfer plate like a new plate.
+* Not confirming VIN-specific insurance before correcting a transfer plate.
+* Assuming a lien is released because the deal was unwound.
+* Trying to title the vehicle back to the dealership before the lien is released.
+* Using dates or mileage that do not match what the customer was titled in with.
+* Completing the title application with dates/miles that do not match the reassignment.
+* Forgetting to include POA when POA was used.
+* Reassigning the title incorrectly from customer back to dealership.
+* Not updating schedule or sleeve notes.
+* Submitting the unwind without confirming title status.
+
+## When To Escalate
+
+Hold and escalate if:
+
+* The customer will not return the plate.
+* A new plate was issued but cannot be recovered.
+* The transfer plate situation is unclear.
+* VIN-specific insurance does not match the vehicle the plate is going back on.
+* The lienholder has not released the lien.
+* The title is electronic and release status is unclear.
+* The paper title cannot be located.
+* Dates or mileage do not match the customer’s title transaction.
+* POA is missing, unclear, or does not support the reassignment.
+* The customer refuses to sign required documents.
+* The unwind involves fraud, legal authority, deceased owner, bankruptcy, or management approval.
+* You are unsure whether to process the vehicle back into the dealership’s name.
+
+## Quick Checklist
+
+Before completing an unwind, confirm:
+
+* Reason for unwind was identified.
+* Notes were updated.
+* New plate or transfer plate status was confirmed.
+* New plate was recovered if issued.
+* New plate was surrendered to the tag agency / DMV if required.
+* Transfer plate has VIN-specific insurance for the vehicle it is going back on.
+* Lienholder was checked.
+* Lien release was obtained if a lien was placed.
+* Title status was confirmed: paper or electronic.
+* Paper title was physically available if paper.
+* Electronic title/lien release status was confirmed if electronic.
+* Title was reassigned from customer back to dealership.
+* Dates and mileage match what the customer was titled in with.
+* POA was included if used.
+* HSMV 82040 was completed in the dealership’s name.
+* HSMV 82994 was completed if electronic title reassignment was needed.
+* Final paperwork was reviewed before submission.
