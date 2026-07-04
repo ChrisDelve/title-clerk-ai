@@ -463,6 +463,14 @@ TRAINING_TOPICS = {
 
     },
 
+    "Intercompany Deals": {
+    "file": "training_center/intercompany_deals.txt",
+    "summary": "Workflow for intercompany buyer/seller transactions, title status, checks, sleeve notes, and DLR processing.",
+    "level": "Beginner–Intermediate",
+    "time": "10–15 minutes",
+    "forms": []
+},
+
     "Obtaining Lien Release": {
     "file": "training_center/obtaining_lien_release.txt",
     "summary": "Step-by-step workflow for contacting lienholders, verifying lien release status, confirming payoff shortages, and documenting ETA or release method.",
@@ -513,7 +521,33 @@ TRAINING_TOPICS = {
         }
     ]
 
+},
+
+"Unwinds": {
+    "file": "training_center/unwinds.txt",
+    "summary": "Workflow for cancelled or returned deals, lien releases, plate recovery, transfer plate corrections, and titling the vehicle back into the dealership’s name.",
+    "level": "Intermediate",
+    "time": "10–15 minutes",
+    "forms": [
+        {
+            "name": "HSMV 82040 — Application for Certificate of Title With/Without Registration",
+            "url": "https://www.flhsmv.gov/pdf/forms/82040.pdf"
+        },
+        {
+            "name": "HSMV 82994 — Motor Vehicle Title Reassignment Supplement",
+            "url": "https://www.flhsmv.gov/pdf/forms/82994.pdf"
+        },
+        {
+            "name": "HSMV 82053 — Power of Attorney",
+            "url": "https://www.flhsmv.gov/pdf/forms/82053.pdf"
+        },
+        {
+            "name": "FLHSMV Motor Vehicle Check — Verify title/lien status",
+            "url": "https://services.flhsmv.gov/mvcheckweb/"
+        }
+    ]
 }
+
 }
 
 

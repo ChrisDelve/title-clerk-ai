@@ -1,0 +1,128 @@
+# Intercompany Deals
+
+## Summary
+
+Use this guide when handling an intercompany transaction between dealerships or sister stores.
+
+An intercompany deal happens when one dealership is selling a vehicle to another dealership within the company. The title clerk must determine whether our dealer is the seller or the buyer, confirm title status, coordinate with the other title clerk, and make sure checks, titles, and paperwork are handled correctly.
+
+Do not shred intercompany paperwork unless directed by a supervisor or manager.
+
+## When This Applies
+
+Use this workflow when:
+
+* Our dealership is selling a vehicle to a sister store.
+* Our dealership is buying a vehicle from a sister store.
+* A title, reassignment, check, or sleeve needs to be sent between stores.
+* A vehicle was sold before the intercompany title/check process was completed.
+* The title status needs to be confirmed before sending paperwork or payment.
+
+## What To Check First
+
+Before processing an intercompany deal, confirm:
+
+1. Whether our dealer is the seller or the buyer.
+2. Whether the title is paper or electronic.
+3. Whether the vehicle has been paid off.
+4. Whether the title is already in the title folder.
+5. Whether a duplicate title needs to be ordered.
+6. Whether a check is needed.
+7. Whether the vehicle has already been sold on our end.
+8. Whether the schedule/sleeve notes explain the current action.
+
+## Our Office Workflow
+
+### 1. When our dealer is the seller and we have title
+
+a. Confirm whether the title is electronic or paper.
+
+b. If the title is electronic, reassignments can be used. A paper title is not needed unless required by the transaction or directed by management.
+
+c. If the title is paper, the paper title is needed before sending the completed paperwork.
+
+d. If the vehicle was paid off, wait for the title from the bank.
+
+e. If the vehicle was not paid off, check the title folder.
+
+f. If the title is not in the title folder, order a duplicate title if needed.
+
+g. Email the other title clerk for an ETA on the check.
+
+h. Once the other store has the check ready, send everything in the sleeve for that vehicle to the title clerk, except the wholesale slip unless specifically needed.
+
+i. Code the check.
+
+j. Note the schedule as paid.
+
+k. Take the check to the appropriate person for processing.
+
+---
+
+### 2. When our dealer is the buyer
+
+a. Email the other store’s title clerk for an ETA on the title.
+
+b. Update the sleeve notes with what is going on.
+
+c. Remember that the other store may have already sold the vehicle that we are buying.
+
+d. Since we are buying the vehicle from them, we will have a check for the other store.
+
+e. Once the other store has the title ready, send the check only unless additional documents are requested.
+
+f. If the vehicle is not sold on our end, file the title in the inventory binder once received.
+
+g. If the vehicle is sold on our end, find the recap.
+
+h. Print the needed paperwork.
+
+i. Process the deal in DLR.
+
+## Common Mistakes
+
+* Not confirming whether our dealer is the buyer or seller.
+* Sending the check before confirming the title is ready.
+* Sending paperwork without confirming whether the title is paper or electronic.
+* Forgetting to check the title folder before ordering a duplicate.
+* Not noting the schedule with the current action.
+* Not noting the sleeve when waiting on another store.
+* Sending the wholesale slip when it should stay with the file.
+* Filing the title in inventory when the vehicle has already been sold.
+* Forgetting to process the deal in DLR after the vehicle is sold.
+* Shredding intercompany paperwork that should be kept.
+
+## When To Escalate
+
+Hold and escalate if:
+
+* It is unclear whether our dealer is the buyer or seller.
+* The title cannot be located.
+* The title is paper but has not been received.
+* The title is electronic but reassignment requirements are unclear.
+* The payoff/title status is unclear.
+* A duplicate title may be needed but has not been approved.
+* The other store is requesting paperwork that does not match the deal.
+* The vehicle has already been sold and the title is not ready.
+* The check amount, coding, or receiving process is unclear.
+* There are conflicting instructions between the title clerk, billing, or management.
+
+## Quick Checklist
+
+Before completing an intercompany transaction, confirm:
+
+* Buyer/seller role was identified.
+* Title type was confirmed: paper or electronic.
+* Payoff/title status was checked.
+* Title folder was reviewed.
+* Duplicate title was ordered if needed.
+* Other title clerk was contacted for ETA.
+* Sleeve notes were updated.
+* Schedule notes were updated.
+* Check was coded if applicable.
+* Check was sent only when appropriate.
+* Title was filed in inventory if vehicle was not sold.
+* Recap was located if vehicle was sold.
+* Paperwork was printed if needed.
+* Deal was processed in DLR if sold.
+* Intercompany paperwork was kept and not shredded.
