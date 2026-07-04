@@ -993,7 +993,7 @@ def render_lienholder_record(record, internal_notes_list=None):
     )
 
     if phone or email or payoff_website or lien_release_notes or elt_notes or search_aliases or last_verified_date or internal_notes:
-        with st.expander("Internal Contact / Notes"):
+        with st.expander("Internal Contact Information"):
             if phone:
                 st.write(f"**Phone:** {phone}")
             if email:
