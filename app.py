@@ -1013,7 +1013,7 @@ def render_lienholder_data_center():
             <div class="response-container">
                 <div class="response-text">
                     <p><strong>{len(records):,}</strong> lienholder / ELT records loaded.</p>
-                    <p>Enter a lender, bank, credit union, finance company, FEID, or ELT customer number above.</p>
+                    <p>Enter lienholder's Name, FEID, or ELT customer number above.</p>
                 </div>
             </div>
             """,
