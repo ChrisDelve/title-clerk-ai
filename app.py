@@ -983,7 +983,7 @@ def render_lienholder_data_center():
     st.markdown(
         """
         <p class="subtext">
-        Search lienholder to verirfy or to for contact information. *Always verify lienholder information matches before submission*
+        Search lienholder to verirfy or for contact information.
         </p>
         """,
         unsafe_allow_html=True
@@ -1008,7 +1008,7 @@ def render_lienholder_data_center():
 
     if not query:
         st.markdown(
-            f"""s
+            f"""
             <div class="response-container">
                 <div class="response-text">
                     <p><strong>{len(records):,}</strong> lienholder / ELT records loaded.</p>
