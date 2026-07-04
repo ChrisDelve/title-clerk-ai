@@ -742,6 +742,17 @@ def load_lienholder_internal_notes():
         reader = csv.DictReader(f)
         return list(reader)
 
+@st.cache_data
+def load_lienholder_suppressed_records():
+    suppressed_path = Path("data/lienholder_suppressed_records.csv")
+
+    if not suppressed_path.exists():
+        return []
+
+    with suppressed_path.open("r", encoding="utf-8", newline="") as f:
+        reader = csv.DictReader(f)
+        return list(reader)
+
 def normalize_search_text(value):
     value = str(value or "").upper()
     value = re.sub(r"[^A-Z0-9]+", " ", value)
@@ -751,35 +762,75 @@ def normalize_search_text(value):
 def find_internal_note_for_record(record, internal_notes):
     record_name = normalize_search_text(record.get("display_name", ""))
     record_customer_number = normalize_search_text(record.get("elt_customer_number", ""))
+    record_search_name = normalize_search_text(record.get("search_name", ""))
+
+    best_note = None
+    best_score = 0
 
     for note in internal_notes:
         note_name = normalize_search_text(note.get("display_name", ""))
         note_customer_number = normalize_search_text(note.get("elt_customer_number", ""))
-        note_aliases = normalize_search_text(note.get("search_aliases", ""))
+        note_aliases_raw = str(note.get("search_aliases", "") or "")
 
-        # Best match: exact ELT customer number when available
+        aliases = [
+            normalize_search_text(alias)
+            for alias in note_aliases_raw.split("|")
+            if normalize_search_text(alias)
+        ]
+
+        score = 0
+
+        # Best possible match: exact ELT customer number
         if note_customer_number and record_customer_number and note_customer_number == record_customer_number:
-            return note
+            score += 1000
 
-        # Strong match: exact display name
+        # Exact name match
         if note_name and note_name == record_name:
-            return note
+            score += 500
 
-        # Alias match
-        if note_aliases:
-            aliases = [normalize_search_text(alias) for alias in note.get("search_aliases", "").split("|")]
-            for alias in aliases:
-                if alias and alias == record_name:
-                    return note
+        # Starts-with match only
+        # This allows BANK OF AMERICA NA to match Bank of America,
+        # but avoids FIRST NATIONAL BANK OF AMERICA.
+        if note_name and record_name.startswith(note_name + " "):
+            score += 400
 
-        # Flexible name match
-        if note_name and note_name in record_name:
-            return note
+        # Alias matching
+        for alias in aliases:
+            if alias == record_name:
+                score += 450
 
-        if record_name and record_name in note_name:
-            return note
+            if record_name.startswith(alias + " "):
+                score += 350
+
+            if alias == record_search_name:
+                score += 300
+
+            if record_search_name.startswith(alias + " "):
+                score += 250
+
+        if score > best_score:
+            best_score = score
+            best_note = note
+
+    if best_score >= 250:
+        return best_note
 
     return None
+def is_suppressed_lienholder_record(record, suppressed_records):
+    record_name = normalize_search_text(record.get("display_name", ""))
+    record_customer_number = normalize_search_text(record.get("elt_customer_number", ""))
+
+    for suppressed in suppressed_records:
+        suppressed_name = normalize_search_text(suppressed.get("display_name", ""))
+        suppressed_customer_number = normalize_search_text(suppressed.get("elt_customer_number", ""))
+
+        if suppressed_customer_number and record_customer_number == suppressed_customer_number:
+            return True
+
+        if suppressed_name and suppressed_name == record_name and suppressed_customer_number == record_customer_number:
+            return True
+
+    return False
 
 def search_lienholders(records, query, limit=25):
     query_clean = normalize_search_text(query)
@@ -791,8 +842,13 @@ def search_lienholders(records, query, limit=25):
     scored_results = []
 
     for record in records:
+        display_name = record.get("display_name", "")
+        display_clean = normalize_search_text(display_name)
+        search_name_clean = normalize_search_text(record.get("search_name", ""))
+        aliases_clean = normalize_search_text(record.get("search_aliases", ""))
+
         searchable_text = " ".join([
-            record.get("display_name", ""),
+            display_name,
             record.get("search_name", ""),
             record.get("search_aliases", ""),
             record.get("mailing_address", ""),
@@ -804,24 +860,40 @@ def search_lienholders(records, query, limit=25):
         ])
 
         searchable_clean = normalize_search_text(searchable_text)
-        display_clean = normalize_search_text(record.get("display_name", ""))
-        search_name_clean = normalize_search_text(record.get("search_name", ""))
 
         score = 0
 
-        # Strongest match: exact display/search name contains query
-        if query_clean in display_clean:
-            score += 100
+        # Highest priority: exact official name match
+        if display_clean == query_clean:
+            score += 1000
 
-        if query_clean in search_name_clean:
-            score += 90
+        # Very strong: official name starts with the search
+        # Example: BANK OF AMERICA NA should rank above FIRST NATIONAL BANK OF AMERICA
+        elif display_clean.startswith(query_clean + " "):
+            score += 800
 
-        # Term matches
+        # Strong: search name starts with query
+        elif search_name_clean.startswith(query_clean + " "):
+            score += 700
+
+        # Medium: query appears inside display name
+        elif query_clean in display_clean:
+            score += 350
+
+        # Medium-low: query appears elsewhere in searchable text
+        elif query_clean in searchable_clean:
+            score += 250
+
+        # Term matching
         for term in query_terms:
-            if term in display_clean:
-                score += 20
+            if term in display_clean.split():
+                score += 40
             elif term in searchable_clean:
-                score += 10
+                score += 15
+
+        # Slight boost for common financial keywords matching official name
+        if any(word in display_clean.split() for word in query_terms):
+            score += 20
 
         if score > 0:
             scored_results.append((score, record))
@@ -829,7 +901,7 @@ def search_lienholders(records, query, limit=25):
     scored_results.sort(
         key=lambda item: (
             item[0],
-            item[1].get("display_name", "")
+            normalize_search_text(item[1].get("display_name", ""))
         ),
         reverse=True
     )
@@ -869,9 +941,6 @@ def render_lienholder_record(record, internal_notes_list=None):
         search_aliases = matched_note.get("search_aliases", "")
         last_verified_date = matched_note.get("last_verified_date", "")
         internal_notes = matched_note.get("internal_notes", "")
-    matched_note = None
-    if internal_notes:
-        matched_note = find_internal_note_for_record(record, internal_notes)
 
     st.markdown(
         f"""
@@ -923,6 +992,7 @@ def render_lienholder_data_center():
 
     records = load_lienholder_data()
     internal_notes = load_lienholder_internal_notes()
+    suppressed_records = load_lienholder_suppressed_records()
     
 
     if not records:
@@ -952,6 +1022,11 @@ def render_lienholder_data_center():
         return
 
     results = search_lienholders(records, query)
+
+    results = [
+        record for record in results
+        if not is_suppressed_lienholder_record(record, suppressed_records)
+    ]
 
     st.markdown(f"### Search Results for: `{query}`")
 
