@@ -381,22 +381,26 @@ padding: 0 1rem !important;
 }
 </style>
 """, unsafe_allow_html=True)
+
+# Temporarily disable the Ask DelveAI AI functionality
+AI_ENABLED = False
 # ----------------------------
 # OPENAI CLIENT
 # ----------------------------
 
-try:
-    api_key = st.secrets["OPENAI_API_KEY"]
-except Exception:
-    api_key = os.getenv("OPENAI_API_KEY")
+client = None
 
-if not api_key:
-    st.error("OPENAI_API_KEY is missing. Add it in Railway Variables and redeploy.")
-    st.stop()
+if AI_ENABLED:
+    try:
+        api_key = st.secrets["OPENAI_API_KEY"]
+    except Exception:
+        api_key = os.getenv("OPENAI_API_KEY")
 
-client = OpenAI(
-    api_key=api_key
-)
+    if not api_key:
+        st.error("OPENAI_API_KEY is missing.")
+        st.stop()
+
+    client = OpenAI(api_key=api_key)
 
 # ----------------------------
 # TRAINING CENTER CONFIG
@@ -1011,6 +1015,157 @@ def render_lienholder_record(record, internal_notes_list=None):
             if internal_notes:
                 st.write(f"**Internal Notes:** {internal_notes}")
 
+OUT_OF_STATE_FILES = {
+    "Alabama": "alabama.txt",
+    "Alaska": "alaska.txt",
+    "Arizona": "arizona.txt",
+    "Arkansas": "arkansas.txt",
+    "California": "california.txt",
+    "Colorado": "colorado.txt",
+    "Connecticut": "connecticut.txt",
+    "Delaware": "delaware.txt",
+    "Florida": "florida.txt",
+    "Georgia": "georgia.txt",
+    "Hawaii": "hawaii.txt",
+    "Idaho": "idaho.txt",
+    "Illinois": "illinois.txt",
+    "Indiana": "indiana.txt",
+    "Iowa": "iowa.txt",
+    "Kansas": "kansas.txt",
+    "Kentucky": "kentucky.txt",
+    "Louisiana": "louisiana.txt",
+    "Maine": "maine.txt",
+    "Maryland": "maryland.txt",
+    "Massachusetts": "massachusetts.txt",
+    "Michigan": "michigan.txt",
+    "Minnesota": "minnesota.txt",
+    "Mississippi": "mississippi.txt",
+    "Missouri": "missouri.txt",
+    "Montana": "montana.txt",
+    "Nebraska": "nebraska.txt",
+    "Nevada": "nevada.txt",
+    "New Hampshire": "new_hampshire.txt",
+    "New Jersey": "new_jersey.txt",
+    "New Mexico": "new_mexico.txt",
+    "New York": "new_york.txt",
+    "North Carolina": "north_carolina.txt",
+    "North Dakota": "north_dakota.txt",
+    "Ohio": "ohio.txt",
+    "Oklahoma": "oklahoma.txt",
+    "Oregon": "oregon.txt",
+    "Pennsylvania": "pennsylvania.txt",
+    "Rhode Island": "rhode_island.txt",
+    "South Carolina": "south_carolina.txt",
+    "South Dakota": "south_dakota.txt",
+    "Tennessee": "tennessee.txt",
+    "Texas": "texas.txt",
+    "Utah": "utah.txt",
+    "Vermont": "vermont.txt",
+    "Virginia": "virginia.txt",
+    "Washington": "washington.txt",
+    "West Virginia": "west_virginia.txt",
+    "Wisconsin": "wisconsin.txt",
+    "Wyoming": "wyoming.txt",
+}
+
+
+def load_out_of_state_file(state_name):
+    file_name = OUT_OF_STATE_FILES.get(state_name)
+
+    if not file_name:
+        return ""
+
+    file_path = Path("out_of_state") / file_name
+
+    if not file_path.exists():
+        return ""
+
+    return file_path.read_text(encoding="utf-8")
+
+
+def render_out_of_state():
+    st.markdown("# Out of State")
+
+    st.markdown(
+        """
+        Quick state-by-state reference for out-of-state title, registration, and duplicate title intake.
+
+        Use this as a short prep guide before sending to vendor. Always verify final requirements with the processing vendor before submission.
+        """
+    )
+
+    map_path = Path("assets/us_map_outline.png")
+
+    if map_path.exists():
+        st.image(
+            str(map_path),
+            caption="Out of State Reference Map",
+            use_container_width=True
+        )
+
+    selected_state = st.selectbox(
+        "Select a state",
+        list(OUT_OF_STATE_FILES.keys()),
+        index=None,
+        placeholder="Choose a state..."
+    )
+
+    if not selected_state:
+        st.markdown(
+            """
+            <div class="training-card">
+                <h3>Out of State Reference</h3>
+                <p>Select a state above to view short title, registration, and duplicate title guidance.</p>
+                <p>This section is for intake and vendor-prep guidance only.</p>
+            </div>
+            """,
+            unsafe_allow_html=True
+        )
+        return
+
+    state_content = load_out_of_state_file(selected_state)
+
+    st.markdown(f"## {selected_state}")
+
+    if not state_content:
+        st.markdown(
+            f"""
+            <div class="training-card">
+                <h3>{selected_state}</h3>
+                <p>No out-of-state guide has been added for this state yet.</p>
+                <p>Create this file to add guidance:</p>
+                <p><strong>out_of_state/{OUT_OF_STATE_FILES[selected_state]}</strong></p>
+            </div>
+            """,
+            unsafe_allow_html=True
+        )
+        return
+
+    st.markdown(
+        """
+        <div class="training-card">
+        """,
+        unsafe_allow_html=True
+    )
+
+    st.markdown(state_content)
+
+    st.markdown(
+        """
+        </div>
+        """,
+        unsafe_allow_html=True
+    )
+
+    st.markdown(
+        """
+        <div class="training-card">
+            <p><strong>Reminder:</strong> Out-of-state requirements may change and vendor instructions control final processing. 
+            Hold and escalate if ownership, lien, odometer, registration, insurance, or duplicate title requirements are unclear.</p>
+        </div>
+        """,
+        unsafe_allow_html=True
+    )
 
 def render_lienholder_data_center():
     st.markdown("## Lienholder Data Center")
@@ -1080,7 +1235,7 @@ def render_lienholder_data_center():
 
 page_mode = st.radio(
     "Choose page",
-    ["Ask DelveAI", "Training Center", "Lienholder Data Center"],
+    ["Ask DelveAI", "Training Center", "Lienholder Data Center",],
     horizontal=True,
     label_visibility="collapsed"
 )
@@ -1092,6 +1247,33 @@ if page_mode == "Training Center":
 if page_mode == "Lienholder Data Center":
     render_lienholder_data_center()
     st.stop()
+
+if page_mode == "Out of State":
+    render_out_of_state()
+    st.stop()
+    
+if page_mode == "Ask DelveAI":
+    st.markdown(
+        """
+        <div style="
+            text-align: center;
+            padding: 70px 20px;
+        ">
+            <h2>Ask DelveAI is currently unavailable</h2>
+            <p style="
+                color: #A1A1A1;
+                font-size: 1rem;
+                max-width: 600px;
+                margin: 15px auto 0 auto;
+            ">
+                The AI assistant has been disabled.
+            </p>
+        </div>
+        """,
+        unsafe_allow_html=True,
+    )
+    st.stop()
+    
 # ------------------------------
 # LOAD DOCUMENTS
 # ------------------------------
