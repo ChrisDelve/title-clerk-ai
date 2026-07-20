@@ -723,7 +723,7 @@ st.markdown(
 st.markdown(
     """
     <p class="app-subtext">
-        Pilot Workflow Assistant — Ask about duplicate titles, ELT, lien releases, registrations, fees, title procedures, and rejection prevention.
+        Training Guides for basic title and registration workflows.
     </p>
     """,
     unsafe_allow_html=True
