@@ -66,23 +66,6 @@ div[role="radiogroup"] label p {
     color: #FFFFFF !important;
 }            
 
-.scope-note {
-    max-width: 900px;
-    margin: 1.25rem auto 1.2rem auto;
-    padding: 0.85rem 1rem;
-    border: 1px solid rgba(255, 204, 64, 0.28);
-    border-radius: 10px;
-    background: rgba(255, 204, 64, 0.06);
-    color: rgba(255, 255, 255, 0.72);
-    font-size: 0.86rem;
-    line-height: 1.45;
-    text-align: left;
-}
-
-.scope-note strong {
-    color: rgba(255, 218, 95, 0.95);
-    font-weight: 700;
-}
 
 .app-subtext {
     max-width: 900px;
@@ -707,18 +690,7 @@ st.image("logo.png", width=850)
 st.markdown('</div>', unsafe_allow_html=True)
 
 
-st.markdown(
-    """
-    <div class="scope-note">
-        <strong>Scope Note:</strong> This assistant provides dealership title and registration workflow guidance
-        based on uploaded Florida statutes, FLHSMV procedures, and internal operational notes.
-        It is not legal advice and does not replace FLHSMV, tax collector, lender, controller,
-        management, or compliance approval. When ownership, lien, odometer, fraud, legal authority,
-        or registration issues are unclear, hold and escalate before submission.
-    </div>
-    """,
-    unsafe_allow_html=True
-)
+
 
 st.markdown(
     """
